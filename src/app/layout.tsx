@@ -14,8 +14,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tool Compare",
-  description: "Constraint-based tool comparisons.",
+  title: {
+    default: "Decision Clarities",
+    template: "%s | Decision Clarities",
+  },
+  description:
+    "Constraint-based tool comparisons: X vs Y for a specific persona. Clear decision rules, not feature lists.",
 };
 
 export default function RootLayout({
