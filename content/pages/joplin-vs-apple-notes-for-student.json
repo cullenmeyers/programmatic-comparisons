@@ -1,0 +1,130 @@
+{
+"title": "Joplin vs Apple Notes for Students",
+"slug": "joplin-vs-apple-notes-for-student",
+"meta_description": "A student-focused comparison of Joplin vs Apple Notes for short-term study notes when setup time and switching cost must stay low.",
+"persona": "Student",
+"constraint_lens": "You only need notes for a short academic term and want a low switching cost, so any setup that doesn’t pay off this semester is wasted effort.",
+"verdict": {
+"winner": "y",
+"summary": "Apple Notes wins for students because it provides immediate usefulness with almost no setup. Joplin offers control and flexibility, but the initial configuration and syncing choices rarely pay back within a single term. When the goal is to study efficiently now and move on later, Apple Notes fits better.",
+"decision_rule": "If setup effort outweighs semester value, Joplin fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "What students need for one academic term",
+"content": "Students need tools that help them keep up with lectures and exams right away. The best option supports fast capture and review without locking them into a system they won’t need after finals."
+},
+{
+"type": "x_wins",
+"heading": "When Joplin can still make sense for short-term study",
+"bullets": [
+{
+"point": "You already know how you want to sync and store notes",
+"why_it_matters": "Clear decisions reduce setup friction. Without them, configuration time competes with studying."
+},
+{
+"point": "You plan to reuse notes beyond this term",
+"why_it_matters": "Joplin’s value increases over time. If notes end with the semester, that payoff never arrives."
+},
+{
+"point": "You prefer explicit control over where data lives",
+"why_it_matters": "Some students value ownership. For most, that control adds unnecessary overhead for a temporary need."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Why Apple Notes wins for short-term study notes",
+"bullets": [
+{
+"point": "It works immediately with no onboarding",
+"why_it_matters": "Classes move fast, and early weeks matter. Apple Notes lets students start capturing material from day one."
+},
+{
+"point": "Leaving the tool later has no penalty",
+"why_it_matters": "After the term ends, students can stop using it without feeling like time was wasted on setup."
+},
+{
+"point": "Organization stays simple and sufficient",
+"why_it_matters": "Folders and search are enough for most courses, keeping focus on studying rather than tooling."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "How each tool fails under short-term use",
+"items": [
+{
+"tool": "x",
+"fails_when": "The student spends time configuring sync, storage, or settings instead of reviewing course material.",
+"what_to_do_instead": "Use Apple Notes for straightforward capture and review during the semester."
+},
+{
+"tool": "y",
+"fails_when": "The student needs advanced organization across many years of study.",
+"what_to_do_instead": "Accept Apple Notes for now and adopt a more complex system only when long-term needs appear."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules to decide in 10 seconds",
+"rules": [
+"If notes are only for this semester, choose Apple Notes.",
+"If setup time won’t pay off before finals, avoid Joplin.",
+"If switching tools later is likely, keep it simple."
+]
+}
+],
+"faqs": [
+{
+"q": "Is Joplin overkill for most students?",
+"a": "For short-term use, often yes. Its strengths usually require more time than a single term provides."
+},
+{
+"q": "Why is low switching cost important for students?",
+"a": "Because academic needs change every term, and heavy setup can become wasted effort."
+},
+{
+"q": "Can I export notes from Apple Notes later?",
+"a": "Yes. Apple Notes keeps things lightweight, making it easy to move or leave notes behind."
+},
+{
+"q": "What’s the biggest mistake students make with note apps?",
+"a": "Optimizing for a long-term system when their real need is short-term academic performance."
+}
+],
+"related_pages": [
+{
+"x_name": "Obsidian",
+"y_name": "Apple Notes",
+"persona": "Student"
+},
+{
+"x_name": "Notion",
+"y_name": "Apple Notes",
+"persona": "Student"
+},
+{
+"x_name": "Evernote",
+"y_name": "Apple Notes",
+"persona": "Student"
+},
+{
+"x_name": "Logseq",
+"y_name": "Apple Notes",
+"persona": "Student"
+},
+{
+"x_name": "Bear",
+"y_name": "Apple Notes",
+"persona": "Student"
+},
+{
+"x_name": "Google Keep",
+"y_name": "Apple Notes",
+"persona": "Student"
+}
+]
+}
