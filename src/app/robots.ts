@@ -1,13 +1,20 @@
-import { MetadataRoute } from "next";
+// src/app/robots.ts
+import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.decisionclarities.com";
+
   return {
     rules: [
       {
         userAgent: "*",
-        allow: "/",
+        allow: ["/"],
+        // If you ever add private routes, put them here:
+        // disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://www.decisionclarities.com/sitemap.xml",
+    sitemap: `${siteUrl}/sitemap.xml`,
+    host: siteUrl,
   };
 }
+
