@@ -69,7 +69,11 @@ function FAQJsonLd({ faqs }: { faqs: Array<{ q: string; a: string }> }) {
  * - Otherwise we derive from doc.title like "Evernote vs Apple Notes for Solo Users".
  */
 function getToolNames(doc: PageDoc): { xName: string; yName: string } {
-  const maybe = doc as unknown as { x_name?: string; y_name?: string; title: string };
+  const maybe = doc as unknown as {
+    x_name?: string;
+    y_name?: string;
+    title: string;
+  };
 
   if (maybe.x_name?.trim() && maybe.y_name?.trim()) {
     return { xName: maybe.x_name.trim(), yName: maybe.y_name.trim() };
@@ -86,6 +90,13 @@ function getToolNames(doc: PageDoc): { xName: string; yName: string } {
   return { xName, yName };
 }
 
+// Backwards-compatible category getter (so old JSON pages don't break)
+function getCategory(doc: PageDoc): string {
+  const maybe = doc as unknown as { category?: string };
+  const raw = (maybe.category ?? "").toString().trim();
+  return raw || "Uncategorized";
+}
+
 function Section({
   section,
   xName,
@@ -99,7 +110,9 @@ function Section({
     case "persona_fit":
       return (
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold tracking-tight">{section.heading}</h2>
+          <h2 className="text-xl font-semibold tracking-tight">
+            {section.heading}
+          </h2>
           <p className="text-base leading-7 text-black/80">{section.content}</p>
         </section>
       );
@@ -108,12 +121,16 @@ function Section({
     case "y_wins":
       return (
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold tracking-tight">{section.heading}</h2>
+          <h2 className="text-xl font-semibold tracking-tight">
+            {section.heading}
+          </h2>
           <ul className="space-y-4 list-disc pl-5">
             {section.bullets.map((b, i) => (
               <li key={i}>
                 <div className="font-medium">{b.point}</div>
-                <div className="text-sm leading-6 text-black/70">{b.why_it_matters}</div>
+                <div className="text-sm leading-6 text-black/70">
+                  {b.why_it_matters}
+                </div>
               </li>
             ))}
           </ul>
@@ -123,7 +140,9 @@ function Section({
     case "failure_modes":
       return (
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold tracking-tight">{section.heading}</h2>
+          <h2 className="text-xl font-semibold tracking-tight">
+            {section.heading}
+          </h2>
           <div className="space-y-5">
             {section.items.map((it, i) => {
               const toolLabel = it.tool === "x" ? xName : yName;
@@ -136,11 +155,15 @@ function Section({
                 >
                   <div className="text-sm uppercase tracking-wide text-black/55">
                     {toolLabel}{" "}
-                    <span className="normal-case text-black/60">({optionLabel})</span>
+                    <span className="normal-case text-black/60">
+                      ({optionLabel})
+                    </span>
                   </div>
 
                   <div className="mt-3 font-medium">Fails when</div>
-                  <div className="text-sm leading-6 text-black/75">{it.fails_when}</div>
+                  <div className="text-sm leading-6 text-black/75">
+                    {it.fails_when}
+                  </div>
 
                   <div className="mt-4 font-medium">What to do instead</div>
                   <div className="text-sm leading-6 text-black/75">
@@ -156,7 +179,9 @@ function Section({
     case "quick_rules":
       return (
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold tracking-tight">{section.heading}</h2>
+          <h2 className="text-xl font-semibold tracking-tight">
+            {section.heading}
+          </h2>
           <ul className="space-y-2.5 list-disc pl-5">
             {section.rules.map((r, i) => (
               <li key={i} className="leading-7 text-black/85">
@@ -192,6 +217,7 @@ export default async function ComparePage({
   }
 
   const { xName, yName } = getToolNames(doc);
+  const category = getCategory(doc);
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-12 space-y-12">
@@ -199,20 +225,34 @@ export default async function ComparePage({
 
       {/* Minimal nav back to index */}
       <div className="text-sm">
-        <Link className="text-black/65 hover:text-black underline-offset-4 hover:underline" href="/compare">
+        <Link
+          className="text-black/65 hover:text-black underline-offset-4 hover:underline"
+          href="/compare"
+        >
           ← All comparisons
         </Link>
       </div>
 
       <header className="space-y-4">
+        {/* Category line (quiet, helpful, non-template-y) */}
+        <div className="text-xs uppercase tracking-wide text-black/55">
+          Category:{" "}
+          <span className="normal-case font-medium text-black/70">
+            {category}
+          </span>
+        </div>
+
         <h1 className="text-3xl font-bold tracking-tight">{doc.title}</h1>
 
         <div className="text-sm text-black/60">
-          Persona: <span className="font-medium text-black/75">{doc.persona}</span> ·
-          {" "}Lens: <span className="font-medium text-black/75">{doc.constraint_lens}</span>
+          Persona: <span className="font-medium text-black/75">{doc.persona}</span>{" "}
+          · Lens:{" "}
+          <span className="font-medium text-black/75">
+            {doc.constraint_lens}
+          </span>
         </div>
 
-        {/* Verdict anchor (slightly stronger than other boxes, still minimal) */}
+        {/* Verdict anchor */}
         <div className="rounded-2xl border border-black/10 bg-black/[0.02] p-6 space-y-3">
           <div className="text-sm uppercase tracking-wide text-black/55">
             Verdict
@@ -225,7 +265,6 @@ export default async function ComparePage({
         </div>
       </header>
 
-      {/* Bigger rhythm between major sections, smaller rhythm within */}
       <div className="space-y-12">
         {doc.sections.map((section, idx) => (
           <Section key={idx} section={section} xName={xName} yName={yName} />
@@ -236,7 +275,10 @@ export default async function ComparePage({
         <h2 className="text-xl font-semibold tracking-tight">FAQs</h2>
         <div className="space-y-5">
           {doc.faqs.map((f, i) => (
-            <div key={i} className="rounded-xl border border-black/10 bg-white p-5">
+            <div
+              key={i}
+              className="rounded-xl border border-black/10 bg-white p-5"
+            >
               <div className="font-medium">{f.q}</div>
               <div className="mt-2 text-sm leading-6 text-black/75">{f.a}</div>
             </div>
@@ -245,7 +287,9 @@ export default async function ComparePage({
       </section>
 
       <section className="space-y-4 pt-2">
-        <h2 className="text-xl font-semibold tracking-tight">Related comparisons</h2>
+        <h2 className="text-xl font-semibold tracking-tight">
+          Related comparisons
+        </h2>
 
         {(() => {
           const existing = new Set(listPageSlugs());
@@ -259,7 +303,9 @@ export default async function ComparePage({
           const anyLinks = items.some((x) => x.exists);
 
           if (items.length === 0) {
-            return <p className="text-sm text-black/60">No related comparisons yet.</p>;
+            return (
+              <p className="text-sm text-black/60">No related comparisons yet.</p>
+            );
           }
 
           return (
@@ -285,7 +331,8 @@ export default async function ComparePage({
 
               {!anyLinks && (
                 <p className="text-xs text-black/55">
-                  Related pages will become clickable as you publish more comparisons.
+                  Related pages will become clickable as you publish more
+                  comparisons.
                 </p>
               )}
             </>
