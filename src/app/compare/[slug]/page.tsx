@@ -1,3 +1,6 @@
+import GatesPanel from "@/components/gates/GatesPanel";
+import GatesEngine from "@/components/gates/GatesEngine";
+import { getGatesForDoc } from "@/lib/gates/selector";
 import Link from "next/link";
 import type { Metadata } from "next";
 import {
@@ -218,6 +221,7 @@ export default async function ComparePage({
 
   const { xName, yName } = getToolNames(doc);
   const category = getCategory(doc);
+ const gateIds = getGatesForDoc(doc);
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-12 space-y-12">
@@ -245,46 +249,54 @@ export default async function ComparePage({
         <h1 className="text-3xl font-bold tracking-tight">{doc.title}</h1>
 
         <div className="text-sm text-black/60">
-          Persona: <span className="font-medium text-black/75">{doc.persona}</span>{" "}
-          · Lens:{" "}
-          <span className="font-medium text-black/75">
-            {doc.constraint_lens}
-          </span>
-        </div>
+  Persona: <span className="font-medium text-black/75">{doc.persona}</span>{" "}
+  · Lens:{" "}
+  <span className="font-medium text-black/75">{doc.constraint_lens}</span>
+</div>
 
-        {/* Verdict anchor */}
-        <div className="rounded-2xl border border-black/10 bg-black/[0.02] p-6 space-y-3">
-          <div className="text-sm uppercase tracking-wide text-black/55">
-            Verdict
-          </div>
-          <p className="leading-7 text-black/85">{doc.verdict.summary}</p>
-          <p className="text-sm leading-6 text-black/65">
-            <span className="font-medium text-black/75">Rule:</span>{" "}
-            {doc.verdict.decision_rule}
-          </p>
-        </div>
-      </header>
+{/* Verdict anchor */}
+<div className="rounded-2xl border border-black/10 bg-black/[0.02] p-6 space-y-3">
+  <div className="text-sm uppercase tracking-wide text-black/55">Verdict</div>
+  <p className="leading-7 text-black/85">{doc.verdict.summary}</p>
+  <p className="text-sm leading-6 text-black/65">
+    <span className="font-medium text-black/75">Rule:</span>{" "}
+    {doc.verdict.decision_rule}
+  </p>
+</div>
 
-      <div className="space-y-12">
-        {doc.sections.map((section, idx) => (
-          <Section key={idx} section={section} xName={xName} yName={yName} />
-        ))}
+{/* Gate 1: always show */}
+<GatesPanel
+  gateIds={gateIds}
+  xName={xName}
+  yName={yName}
+  winner={doc.verdict.winner}
+  decisionRule={doc.verdict.decision_rule}
+  persona={doc.persona as any}
+  defaultOpen={false}
+/>
+
+
+
+</header>
+
+<div className="space-y-12">
+  {doc.sections.map((section, idx) => (
+    <Section key={idx} section={section} xName={xName} yName={yName} />
+  ))}
+</div>
+
+<section className="space-y-4 pt-2">
+  <h2 className="text-xl font-semibold tracking-tight">FAQs</h2>
+  <div className="space-y-5">
+    {doc.faqs.map((f, i) => (
+      <div key={i} className="rounded-xl border border-black/10 bg-white p-5">
+        <div className="font-medium">{f.q}</div>
+        <div className="mt-2 text-sm leading-6 text-black/75">{f.a}</div>
       </div>
+    ))}
+  </div>
+</section>
 
-      <section className="space-y-4 pt-2">
-        <h2 className="text-xl font-semibold tracking-tight">FAQs</h2>
-        <div className="space-y-5">
-          {doc.faqs.map((f, i) => (
-            <div
-              key={i}
-              className="rounded-xl border border-black/10 bg-white p-5"
-            >
-              <div className="font-medium">{f.q}</div>
-              <div className="mt-2 text-sm leading-6 text-black/75">{f.a}</div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       <section className="space-y-4 pt-2">
         <h2 className="text-xl font-semibold tracking-tight">

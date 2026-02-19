@@ -1,0 +1,131 @@
+{
+"category": "Calendar / Scheduling tools",
+"title": "Cal.com vs SavvyCal for Students",
+"slug": "cal.com-vs-savvycal-for-student",
+"meta_description": "Student choosing between Cal.com and SavvyCal? For short-term use with low switching cost, SavvyCal is simpler for sharing availability.",
+"persona": "Student",
+"constraint_lens": "You need something quick to set up and easy to abandon later, because you’re using it short-term and want low switching cost.",
+"verdict": {
+"winner": "y",
+"summary": "SavvyCal is the better fit for a student who needs a temporary booking link for coordinating study sessions. Cal.com can involve deeper configuration or even self-hosting considerations that add setup overhead. If advanced setup outweighs the short-term benefit, SavvyCal keeps things lighter and easier to drop after the project ends.",
+"decision_rule": "If self-hosting or deep configuration outweighs short-term benefit, Cal.com fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for quick academic coordination",
+"content": "You only need a booking link for a limited period, not a long-term scheduling system. With short-term use and low switching cost as priorities, fast setup matters more than deep customization. SavvyCal emphasizes easy link sharing, while Cal.com can introduce configuration layers that make more sense for longer-term or technical use."
+},
+{
+"type": "x_wins",
+"heading": "Where Cal.com can win (for advanced control)",
+"bullets": [
+{
+"point": "It offers flexible configuration and hosting options.",
+"why_it_matters": "If you want full control over scheduling infrastructure, customization can be powerful."
+},
+{
+"point": "It supports deeper integrations and workflows.",
+"why_it_matters": "For long-term or technical projects, extensibility can prevent future limits."
+},
+{
+"point": "It appeals to users who value ownership and control.",
+"why_it_matters": "If independence from managed platforms matters, extra setup may be worthwhile."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where SavvyCal wins for low switching cost",
+"bullets": [
+{
+"point": "You can create and share a booking link quickly.",
+"why_it_matters": "Fast setup allows you to focus on study sessions instead of configuring software."
+},
+{
+"point": "It avoids self-hosting or technical configuration.",
+"why_it_matters": "Less setup means lower friction for a short academic timeline."
+},
+{
+"point": "It’s easy to stop using after the semester ends.",
+"why_it_matters": "Low commitment ensures you’re not maintaining a system you no longer need."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Common failure modes (and what to do instead)",
+"items": [
+{
+"tool": "x",
+"fails_when": "You spend significant time configuring settings or considering hosting options for a temporary project.",
+"what_to_do_instead": "Switch to SavvyCal for a simpler, managed booking link that matches the project’s duration."
+},
+{
+"tool": "y",
+"fails_when": "You need advanced customization or infrastructure control beyond basic link sharing.",
+"what_to_do_instead": "Consider Cal.com only if your scheduling needs expand beyond short-term academic coordination."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules to decide fast",
+"rules": [
+"If you need a booking link for one semester, choose SavvyCal.",
+"If deep configuration feels heavier than the project requires, avoid Cal.com.",
+"If you want advanced control and long-term flexibility, Cal.com may be worth the setup."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is faster to set up for students?",
+"a": "SavvyCal is typically faster for creating a simple booking link without technical configuration."
+},
+{
+"q": "Is Cal.com overkill for a short academic project?",
+"a": "It can be if you don’t need customization or hosting control. Its flexibility is more valuable for longer-term use."
+},
+{
+"q": "Can I switch tools after the semester?",
+"a": "Yes. For short-term student use, switching is common and easier when you choose a lightweight setup."
+},
+{
+"q": "What matters most for student scheduling tools?",
+"a": "Speed of setup, simplicity, and the ability to stop using the tool without long-term commitment."
+}
+],
+"related_pages": [
+{
+"x_name": "Microsoft Bookings",
+"y_name": "Calendly",
+"persona": "Student"
+},
+{
+"x_name": "Doodle",
+"y_name": "Calendly",
+"persona": "Student"
+},
+{
+"x_name": "Calendly",
+"y_name": "Google Calendar",
+"persona": "Student"
+},
+{
+"x_name": "Cal.com",
+"y_name": "Calendly",
+"persona": "Student"
+},
+{
+"x_name": "Acuity Scheduling",
+"y_name": "SavvyCal",
+"persona": "Student"
+},
+{
+"x_name": "Zoho Bookings",
+"y_name": "Calendly",
+"persona": "Student"
+}
+]
+}
