@@ -1,0 +1,131 @@
+{
+"category": "Calendar / Scheduling tools",
+"title": "Doodle vs TidyCal for Students",
+"slug": "doodle-vs-tidycal-for-student",
+"meta_description": "Student choosing between Doodle and TidyCal? For short-term group coordination with low switching cost, Doodle is faster than booking page setup.",
+"persona": "Student",
+"constraint_lens": "You need something quick to set up and easy to abandon later, because you’re using it short-term and want low switching cost.",
+"verdict": {
+"winner": "x",
+"summary": "Doodle is the better fit for a student coordinating availability for a short group project. It lets you create a poll immediately without building a booking page. If configuring availability rules and booking settings takes longer than launching a simple poll, TidyCal adds unnecessary friction.",
+"decision_rule": "If booking page setup takes longer than creating a poll, TidyCal fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for quick academic coordination",
+"content": "You just need to find a meeting time that works for everyone, and the project won’t last long. With short-term use and low switching cost as priorities, setup time must be minimal. Doodle focuses on instant availability polling, while TidyCal centers around structured booking pages."
+},
+{
+"type": "x_wins",
+"heading": "Where Doodle wins for short-term group work",
+"bullets": [
+{
+"point": "You can create a time poll immediately.",
+"why_it_matters": "Fast setup keeps your focus on the project instead of configuring software."
+},
+{
+"point": "It’s designed for comparing group availability.",
+"why_it_matters": "Polling multiple classmates at once reduces scheduling back-and-forth."
+},
+{
+"point": "No long-term structure is required.",
+"why_it_matters": "You can stop using it once the project ends without maintaining a booking system."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where TidyCal can win (for structured bookings)",
+"bullets": [
+{
+"point": "It provides a formal booking page with defined availability.",
+"why_it_matters": "If one person needs others to choose from preset slots, a booking page can simplify coordination."
+},
+{
+"point": "It integrates availability rules into a clean interface.",
+"why_it_matters": "Structured time slots reduce confusion in one-on-one scheduling."
+},
+{
+"point": "It supports recurring or predefined meeting types.",
+"why_it_matters": "For ongoing coordination beyond a short project, structure can add clarity."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Common failure modes (and what to do instead)",
+"items": [
+{
+"tool": "x",
+"fails_when": "You need structured one-on-one booking with automatic confirmation and calendar integration.",
+"what_to_do_instead": "Use TidyCal if your coordination shifts from group polling to defined booking slots."
+},
+{
+"tool": "y",
+"fails_when": "You spend more time configuring a booking page than it would take to create a simple availability poll.",
+"what_to_do_instead": "Switch to Doodle for quick, no-friction group coordination."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules to decide fast",
+"rules": [
+"If you need to find a time quickly for a group, choose Doodle.",
+"If booking page setup feels heavier than the project requires, avoid TidyCal.",
+"If one person needs others to reserve defined slots, TidyCal may work."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is faster for group projects?",
+"a": "Doodle is typically faster because it allows you to create a simple availability poll without setting up booking rules."
+},
+{
+"q": "Is TidyCal overkill for a short academic project?",
+"a": "It can be if your main need is quick availability comparison rather than structured appointment booking."
+},
+{
+"q": "Can I switch tools if our coordination needs change?",
+"a": "Yes. For short-term student use, switching is low risk, especially if you start with a lightweight solution."
+},
+{
+"q": "What matters most for student scheduling tools?",
+"a": "Speed of setup, simplicity, and minimal commitment are key for short-term academic coordination."
+}
+],
+"related_pages": [
+{
+"x_name": "Doodle",
+"y_name": "Calendly",
+"persona": "Student"
+},
+{
+"x_name": "Microsoft Bookings",
+"y_name": "Calendly",
+"persona": "Student"
+},
+{
+"x_name": "Calendly",
+"y_name": "Google Calendar",
+"persona": "Student"
+},
+{
+"x_name": "Zoho Bookings",
+"y_name": "Calendly",
+"persona": "Student"
+},
+{
+"x_name": "Cal.com",
+"y_name": "SavvyCal",
+"persona": "Student"
+},
+{
+"x_name": "TidyCal",
+"y_name": "Calendly",
+"persona": "Student"
+}
+]
+}
