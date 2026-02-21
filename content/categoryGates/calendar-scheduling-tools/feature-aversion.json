@@ -1,29 +1,108 @@
 {
   "categoryLabel": "Calendar / Scheduling tools",
   "categorySlug": "calendar-scheduling-tools",
-
   "constraintLabel": "feature aversion",
   "constraintSlug": "feature-aversion",
   "uiConstraintName": "Keeps it simple",
-
-  "title": "Keeps It Simple — Calendar / Scheduling Tools",
+  "title": "Keeps it simple - Calendar / Scheduling tools",
   "description": [
-    "Use this gate when you want a calendar experience that stays clean and basic.",
-    "A tool fails if it adds heavy automation, task layers, or planning features that create extra decisions.",
-    "Pick the option that feels like “just a calendar” rather than a productivity system."
+    "Use this when you want calendar / scheduling tools that are keeps it simple.",
+    "Tools flagged here tend to feel risky or confusing to use.",
+    "Pick the option that stays obvious and dependable in daily use."
   ],
   "embedBlockTitle": "Quick Gate: Keeps it simple",
-
   "tools": [
-    { "name": "Apple Calendar", "fails": false },
-    { "name": "Google Calendar", "fails": false },
-    { "name": "Outlook Calendar", "fails": false },
-
-    { "name": "Motion", "fails": true, "note": "Adds automated planning/scheduling layers beyond basic event viewing." },
-    { "name": "Akiflow", "fails": true, "note": "Task + calendar blending adds extra interface decisions." },
-    { "name": "Clockwise", "fails": true, "note": "Optimization/automation introduces settings and moving parts." }
+    {
+      "name": "Akiflow",
+      "fails": true,
+      "note": "Too many features"
+    },
+    {
+      "name": "Apple Calendar",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Cal.com",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Calendly",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Clockwise",
+      "fails": true,
+      "note": "Too many features"
+    },
+    {
+      "name": "Doodle",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Google Calendar",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Microsoft Bookings",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Motion",
+      "fails": true,
+      "note": "Feels overbuilt"
+    },
+    {
+      "name": "Notion Calendar",
+      "fails": true,
+      "note": "Feels overbuilt"
+    },
+    {
+      "name": "Outlook Calendar",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Reclaim.ai",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "SavvyCal",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Skedda",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Square Appointments",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Teamup Calendar",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "TidyCal",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Zoho Bookings",
+      "fails": false,
+      "note": ""
+    }
   ],
-
   "relatedComparisons": [
     "akiflow-vs-apple-calendar-for-minimalist",
     "akiflow-vs-google-calendar-for-minimalist",

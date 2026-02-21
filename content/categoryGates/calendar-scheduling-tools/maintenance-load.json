@@ -1,33 +1,108 @@
 {
   "categoryLabel": "Calendar / Scheduling tools",
   "categorySlug": "calendar-scheduling-tools",
-
   "constraintLabel": "zero tolerance for ongoing maintenance",
   "constraintSlug": "maintenance-load",
   "uiConstraintName": "Works without upkeep",
-
-  "title": "Works Without Upkeep — Calendar / Scheduling Tools",
+  "title": "Works without upkeep - Calendar / Scheduling tools",
   "description": [
-    "Use this gate when you want a scheduling tool that won’t turn into ongoing admin work.",
-    "A tool fails if it needs recurring setup or maintenance to keep working smoothly (services, staff, routing rules, payment layers).",
-    "Pick the option that stays simple after you set it up once."
+    "Use this when you want calendar / scheduling tools that are works without upkeep.",
+    "Tools flagged here tend to feel risky or confusing to use.",
+    "Pick the option that stays obvious and dependable in daily use."
   ],
   "embedBlockTitle": "Quick Gate: Works without upkeep",
-
   "tools": [
-    { "name": "Calendly", "fails": false },
-    { "name": "TidyCal", "fails": false },
-    { "name": "Doodle", "fails": false },
-    { "name": "Google Calendar", "fails": false },
-    { "name": "Apple Calendar", "fails": false },
-
-    { "name": "Square Appointments", "fails": true, "note": "Requires service/payment setup and ongoing admin upkeep." },
-    { "name": "Zoho Bookings", "fails": true, "note": "Staff/services and booking rules tend to require ongoing tuning." },
-    { "name": "Setmore", "fails": true, "note": "Booking configuration becomes maintenance if your needs change." },
-    { "name": "Microsoft Bookings", "fails": true, "note": "Often involves org/admin settings and continued configuration." },
-    { "name": "YouCanBook.me", "fails": true, "note": "Integrations and rules can feel like ongoing maintenance over time." }
+    {
+      "name": "Akiflow",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Apple Calendar",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Cal.com",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Calendly",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Clockwise",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Doodle",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Google Calendar",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Microsoft Bookings",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Motion",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Notion Calendar",
+      "fails": true,
+      "note": "Needs constant tweaks"
+    },
+    {
+      "name": "Outlook Calendar",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Reclaim.ai",
+      "fails": true,
+      "note": "Needs constant tweaks"
+    },
+    {
+      "name": "SavvyCal",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Skedda",
+      "fails": true,
+      "note": "Needs frequent attention"
+    },
+    {
+      "name": "Square Appointments",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Teamup Calendar",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "TidyCal",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Zoho Bookings",
+      "fails": false,
+      "note": ""
+    }
   ],
-
   "relatedComparisons": [
     "notion-calendar-vs-apple-calendar-for-solo-user",
     "reclaim.ai-vs-google-calendar-for-solo-user",

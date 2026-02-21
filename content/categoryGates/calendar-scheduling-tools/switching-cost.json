@@ -1,40 +1,114 @@
 {
   "categoryLabel": "Calendar / Scheduling tools",
   "categorySlug": "calendar-scheduling-tools",
-
   "constraintLabel": "short-term use + low switching cost",
   "constraintSlug": "switching-cost",
   "uiConstraintName": "Easy to quit later",
-
-  "title": "Easy To Quit Later - Calendar / Scheduling Tools",
+  "title": "Easy to quit later - Calendar / Scheduling tools",
   "description": [
-    "Use this gate when your scheduling need is temporary and you do not want lock-in.",
-    "A tool fails if leaving it later creates cleanup work, migration effort, or operational dependency.",
-    "Pick the option you can stop using with minimal disruption."
+    "Use this when you want calendar / scheduling tools that are easy to quit later.",
+    "Tools flagged here tend to feel risky or confusing to use.",
+    "Pick the option that stays obvious and dependable in daily use."
   ],
   "embedBlockTitle": "Quick Gate: Easy to quit later",
-
   "tools": [
-    { "name": "Doodle", "fails": false },
-    { "name": "TidyCal", "fails": false },
-    { "name": "Google Calendar", "fails": false },
-    { "name": "Apple Calendar", "fails": false },
-    { "name": "Outlook Calendar", "fails": false },
-    { "name": "Calendly", "fails": false },
-
-    { "name": "Square Appointments", "fails": true, "note": "Service and payment setup can create exit cleanup." },
-    { "name": "Zoho Bookings", "fails": true, "note": "Configured booking flows are harder to unwind quickly." },
-    { "name": "Setmore", "fails": true, "note": "Operational setup can make short-term use sticky." },
-    { "name": "Microsoft Bookings", "fails": true, "note": "Org-linked configuration increases switching friction." },
-    { "name": "YouCanBook.me", "fails": true, "note": "Rules and integrations can add teardown work on exit." },
-    { "name": "Motion", "fails": true, "note": "Workflow dependence increases the cost of leaving." },
-    { "name": "Akiflow", "fails": true, "note": "Combined calendar/task setup raises migration effort." },
-    { "name": "Clockwise", "fails": true, "note": "Optimization dependencies increase switching friction." }
+    {
+      "name": "Akiflow",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Apple Calendar",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Cal.com",
+      "fails": true,
+      "note": "Hard to exit cleanly"
+    },
+    {
+      "name": "Calendly",
+      "fails": true,
+      "note": "Hard to exit cleanly"
+    },
+    {
+      "name": "Clockwise",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Doodle",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Google Calendar",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Microsoft Bookings",
+      "fails": true,
+      "note": "Exit is messy"
+    },
+    {
+      "name": "Motion",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Notion Calendar",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Outlook Calendar",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Reclaim.ai",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "SavvyCal",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Skedda",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Square Appointments",
+      "fails": true,
+      "note": "Hard to switch away"
+    },
+    {
+      "name": "Teamup Calendar",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "TidyCal",
+      "fails": true,
+      "note": "Hard to switch away"
+    },
+    {
+      "name": "Zoho Bookings",
+      "fails": false,
+      "note": ""
+    }
   ],
-
   "relatedComparisons": [
     "cal.com-vs-savvycal-for-student",
     "calendly-vs-microsoft-bookings-for-student",
-    "doodle-vs-tidycal-for-student"
+    "doodle-vs-calendly-for-student",
+    "doodle-vs-square-appointments-for-student",
+    "doodle-vs-tidycal-for-student",
+    "microsoft-bookings-vs-calendly-for-student"
   ]
 }
