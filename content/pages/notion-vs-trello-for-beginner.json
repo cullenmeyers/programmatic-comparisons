@@ -1,0 +1,110 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "setup-tolerance",
+"constraintUiName": "Publish fast",
+"title": "Notion vs Trello for Beginners",
+"slug": "notion-vs-trello-for-beginner",
+"meta_description": "Notion vs Trello for beginners who want to start organizing tasks without complex setup or database configuration.",
+"persona": "Beginner",
+"constraint_lens": "You need a task app that works quickly without requiring setup or configuration before you can start using it.",
+"verdict": {
+"winner": "y",
+"summary": "Trello wins for beginners who want to start organizing tasks right away. Its board-and-card layout lets you add tasks immediately without understanding databases or properties. Notion is powerful, but if database setup must be understood before adding tasks, it creates friction that stops beginners from starting. Follow the rule: if database setup must be understood before adding tasks, Notion fails first.",
+"decision_rule": "If database setup must be understood before adding tasks, Notion fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when you're just getting started",
+"content": "As a beginner, the biggest risk is getting stuck before you even begin. You don’t want to design a system—you just want to add tasks and see them organized. The right tool lets you start immediately without learning new terminology or configuring structure first."
+},
+{
+"type": "x_wins",
+"heading": "Where Notion still wins",
+"bullets": [
+{
+"point": "Highly flexible structure",
+"why_it_matters": "If you’re willing to learn, you can design a system that grows with you over time."
+},
+{
+"point": "Tasks integrated with notes and documents",
+"why_it_matters": "If you like combining planning and writing in one place, everything can live together."
+},
+{
+"point": "Custom views and properties",
+"why_it_matters": "As your projects become more complex, filtering and sorting can add clarity."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Trello wins under low setup tolerance",
+"bullets": [
+{
+"point": "Immediate visual board with no database concepts",
+"why_it_matters": "You can add a card instantly without understanding fields, properties, or templates."
+},
+{
+"point": "Simple drag-and-drop workflow",
+"why_it_matters": "Moving tasks between columns feels intuitive and doesn’t require configuration."
+},
+{
+"point": "Clear default structure",
+"why_it_matters": "Columns like “To Do” and “Done” provide instant organization without system design."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You feel confused by database terms, properties, or template choices before adding your first task.",
+"what_to_do_instead": "Start with a board-style task manager that lets you add tasks without setup decisions."
+},
+{
+"tool": "y",
+"fails_when": "Your projects require detailed tracking beyond simple columns.",
+"what_to_do_instead": "Upgrade to a more flexible system once you’re comfortable managing tasks."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want to add tasks immediately without setup, choose Trello.",
+"If database concepts feel confusing, avoid Notion at the start.",
+"If you’re ready to invest time learning a flexible system, Notion can grow with you."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is easier for someone new to task apps?",
+"a": "Trello is typically easier because you can start adding tasks without configuring databases or properties."
+},
+{
+"q": "Is Notion too complex for beginners?",
+"a": "Not necessarily, but its flexibility can create setup friction if you’re unsure how to structure projects."
+},
+{
+"q": "Can Trello handle more complex projects later?",
+"a": "It can manage moderate complexity, but very detailed workflows may require a more customizable tool."
+},
+{
+"q": "What’s the biggest risk for beginners?",
+"a": "Spending so much time setting up the system that you delay actually organizing and completing tasks."
+}
+],
+"related_pages": [
+{ "x_name": "Trello", "y_name": "Asana", "persona": "Beginner" },
+{ "x_name": "Notion", "y_name": "ClickUp", "persona": "Beginner" },
+{ "x_name": "Microsoft To Do", "y_name": "Trello", "persona": "Beginner" },
+{ "x_name": "Todoist", "y_name": "Trello", "persona": "Beginner" },
+{ "x_name": "Notion", "y_name": "Microsoft To Do", "persona": "Beginner" },
+{ "x_name": "ClickUp", "y_name": "Trello", "persona": "Beginner" }
+]
+}

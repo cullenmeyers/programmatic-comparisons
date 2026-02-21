@@ -1,0 +1,110 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "Sunsama vs Things 3 for Minimalists",
+"slug": "sunsama-vs-things-3-for-minimalist",
+"meta_description": "Sunsama vs Things 3 for minimalists who want a clean task list without daily planning rituals or extra interaction steps.",
+"persona": "Minimalist",
+"constraint_lens": "You prefer tools that keep it simple and avoid extra features that create more decisions than value.",
+"verdict": {
+"winner": "y",
+"summary": "Things 3 wins for minimalists who want a clean task list without daily planning rituals. It centers on straightforward lists and light structure, not mandatory planning layers. Sunsama is built around daily planning workflows, but if mandatory daily planning layers add extra interaction steps, it creates friction for someone who just wants a simple list. Follow the rule: if mandatory daily planning layers add extra interaction steps, Sunsama fails first.",
+"decision_rule": "If mandatory daily planning layers add extra interaction steps, Sunsama fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when you just want a list",
+"content": "As a minimalist, you don’t want to perform a daily planning ritual just to see your tasks. You want to open your list, see what’s there, and act. The right tool reduces steps between viewing tasks and doing them, instead of adding structured routines around planning."
+},
+{
+"type": "x_wins",
+"heading": "Where Sunsama still wins",
+"bullets": [
+{
+"point": "Structured daily planning built in",
+"why_it_matters": "If you benefit from guided daily focus, the extra structure can prevent overcommitment and clarify priorities."
+},
+{
+"point": "Integrated calendar alignment",
+"why_it_matters": "When tasks must align tightly with scheduled time blocks, planning layers can reduce conflicts."
+},
+{
+"point": "Intentional end-of-day review flow",
+"why_it_matters": "If reflection and carryover management are important to you, a guided process can reduce loose ends."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Things 3 wins under feature aversion",
+"bullets": [
+{
+"point": "List-first design without mandatory rituals",
+"why_it_matters": "You can open the app and immediately see your tasks without stepping through planning prompts."
+},
+{
+"point": "Lightweight organization with minimal panels",
+"why_it_matters": "Fewer layers and configuration screens mean fewer decisions before you get to work."
+},
+{
+"point": "Simple daily view that doesn’t require setup",
+"why_it_matters": "You can maintain a clean task list over time without maintaining a planning system."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You feel forced into daily planning steps before you can simply review or add tasks.",
+"what_to_do_instead": "Switch to a list-focused tool that lets you view and manage tasks without guided rituals."
+},
+{
+"tool": "y",
+"fails_when": "You need structured daily time-block planning tightly connected to your calendar.",
+"what_to_do_instead": "Use a planning-focused tool that deliberately integrates task scheduling into your day."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want to avoid daily planning rituals, choose Things 3.",
+"If guided daily planning helps you focus, consider Sunsama.",
+"If extra interaction steps feel like friction, avoid Sunsama as your main task list."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is simpler for maintaining a clean task list?",
+"a": "Things 3 is simpler for minimalists because it emphasizes list management without mandatory planning workflows."
+},
+{
+"q": "Does Sunsama require daily planning?",
+"a": "Sunsama is designed around structured daily planning, which can feel like extra steps if you just want a straightforward list."
+},
+{
+"q": "Can a minimalist still benefit from planning tools?",
+"a": "Yes, but only if the added structure clearly reduces stress rather than adding interaction overhead."
+},
+{
+"q": "What’s the main tradeoff between these tools?",
+"a": "Sunsama adds structured daily planning layers, while Things 3 keeps task management lighter and more list-focused."
+}
+],
+"related_pages": [
+{ "x_name": "Things 3", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Apple Reminders", "y_name": "Things 3", "persona": "Minimalist" },
+{ "x_name": "Sunsama", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Sunsama", "y_name": "Motion", "persona": "Minimalist" },
+{ "x_name": "TickTick", "y_name": "Things 3", "persona": "Minimalist" },
+{ "x_name": "ClickUp", "y_name": "Things 3", "persona": "Minimalist" }
+]
+}

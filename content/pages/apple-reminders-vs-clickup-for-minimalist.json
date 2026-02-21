@@ -1,0 +1,110 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "Apple Reminders vs ClickUp for Minimalists",
+"slug": "apple-reminders-vs-clickup-for-minimalist",
+"meta_description": "Apple Reminders vs ClickUp for minimalists who want basic task tracking without dashboards, views, or configuration overload.",
+"persona": "Minimalist",
+"constraint_lens": "You prefer tools that keep it simple and avoid extra features that create more decisions than value.",
+"verdict": {
+"winner": "x",
+"summary": "Apple Reminders wins for minimalists who want the simplest possible task list. It focuses on straightforward lists without dashboards, layered views, or configuration panels. ClickUp is powerful, but if multiple views and configuration panels add extra decisions, it creates friction instead of clarity. Follow the rule: if multiple views and configuration panels add extra decisions, ClickUp fails first.",
+"decision_rule": "If multiple views and configuration panels add extra decisions, ClickUp fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when you want fewer decisions",
+"content": "As a minimalist, every extra option feels like mental clutter. You don’t want dashboards, status columns, or customizable workflows. You want a clean list where you can see what needs to be done and move on without managing the system itself."
+},
+{
+"type": "x_wins",
+"heading": "Where Apple Reminders wins under feature aversion",
+"bullets": [
+{
+"point": "Single-purpose list experience",
+"why_it_matters": "When the interface is just a list, you avoid the distraction of choosing views, layouts, or workflows."
+},
+{
+"point": "Minimal configuration required",
+"why_it_matters": "Fewer settings mean fewer chances to overthink how your system should be structured."
+},
+{
+"point": "Clear, direct task flow",
+"why_it_matters": "You add a task, check it off, and move on—without navigating dashboards or side panels."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where ClickUp still wins (even for minimalists)",
+"bullets": [
+{
+"point": "Handles complexity if life expands",
+"why_it_matters": "If your responsibilities grow beyond basic lists, structured views can prevent chaos."
+},
+{
+"point": "Multiple perspectives on the same work",
+"why_it_matters": "Seeing tasks as lists, boards, or timelines can help when projects become layered."
+},
+{
+"point": "Customization for precise control",
+"why_it_matters": "If you later want to fine-tune statuses or organize by detailed workflows, flexibility is available."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "Your tasks require advanced workflows, team collaboration, or structured project tracking.",
+"what_to_do_instead": "Keep Apple Reminders for personal basics and move complex project work into a more structured platform."
+},
+{
+"tool": "y",
+"fails_when": "You spend more time choosing views, adjusting settings, or reorganizing spaces than actually completing tasks.",
+"what_to_do_instead": "Strip back to a simple list-based tool that removes configuration decisions."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want the cleanest possible list with almost no setup, choose Apple Reminders.",
+"If dashboards and multiple views feel like mental clutter, avoid ClickUp.",
+"If you expect your task system to grow into detailed project tracking, consider ClickUp despite the added features."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is simpler for basic task tracking?",
+"a": "Apple Reminders is simpler because it centers on straightforward lists without dashboards or layered views."
+},
+{
+"q": "Can ClickUp be used in a minimalist way?",
+"a": "It can, but its interface and available features may still introduce extra decisions even if you try to keep it simple."
+},
+{
+"q": "When would a minimalist outgrow Apple Reminders?",
+"a": "If tasks require structured workflows, dependencies, or collaboration across multiple projects, a more advanced tool may become necessary."
+},
+{
+"q": "Is having more features always better?",
+"a": "Not for minimalists. Extra features can increase cognitive load and reduce clarity if they aren’t truly needed."
+}
+],
+"related_pages": [
+{ "x_name": "Apple Reminders", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Apple Reminders", "y_name": "Microsoft To Do", "persona": "Minimalist" },
+{ "x_name": "ClickUp", "y_name": "Asana", "persona": "Minimalist" },
+{ "x_name": "ClickUp", "y_name": "Monday.com", "persona": "Minimalist" },
+{ "x_name": "Things 3", "y_name": "Apple Reminders", "persona": "Minimalist" },
+{ "x_name": "TickTick", "y_name": "Apple Reminders", "persona": "Minimalist" }
+]
+}
