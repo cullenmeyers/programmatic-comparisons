@@ -1,0 +1,39 @@
+{
+  "categoryLabel": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+
+  "constraintLabel": "time scarcity / cognitive overload",
+  "constraintSlug": "time-scarcity",
+  "uiConstraintName": "Fast to use daily",
+
+  "title": "Fast To Use Daily - Calendar / Scheduling Tools",
+  "description": [
+    "Use this gate when your day is overloaded and your calendar must stay quick to operate.",
+    "A tool fails if it adds extra daily steps, supervision, or decision overhead.",
+    "Pick the option that keeps routine scheduling actions fast and predictable."
+  ],
+  "embedBlockTitle": "Quick Gate: Fast to use daily",
+
+  "tools": [
+    { "name": "Google Calendar", "fails": false },
+    { "name": "Apple Calendar", "fails": false },
+    { "name": "Outlook Calendar", "fails": false },
+    { "name": "Calendly", "fails": false },
+    { "name": "TidyCal", "fails": false },
+
+    { "name": "Doodle", "fails": true, "note": "Polling workflows can add back-and-forth and extra coordination." },
+    { "name": "Square Appointments", "fails": true, "note": "Business settings and admin options add daily overhead." },
+    { "name": "Zoho Bookings", "fails": true, "note": "Rule-heavy booking setup can require ongoing attention." },
+    { "name": "Setmore", "fails": true, "note": "Operational configuration adds recurring cognitive load." },
+    { "name": "Microsoft Bookings", "fails": true, "note": "Enterprise-style controls add extra steps for routine use." },
+    { "name": "YouCanBook.me", "fails": true, "note": "Integrations and rule tuning create extra mental overhead." },
+    { "name": "Motion", "fails": true, "note": "Automation requires monitoring and interpretation during busy days." },
+    { "name": "Akiflow", "fails": true, "note": "Layered workflows add decision load in daily execution." },
+    { "name": "Clockwise", "fails": true, "note": "Auto-optimization introduces moving parts you still need to track." }
+  ],
+
+  "relatedComparisons": [
+    "motion-vs-google-calendar-for-busy-professional",
+    "reclaim.ai-vs-google-calendar-for-busy-professional"
+  ]
+}

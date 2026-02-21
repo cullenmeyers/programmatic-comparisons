@@ -1,6 +1,7 @@
 import GatesPanel from "@/components/gates/GatesPanel";
 import GatesEngine from "@/components/gates/GatesEngine";
 import { getGatesForDoc } from "@/lib/gates/selector";
+import PairGateFromCategoryGate from "@/components/gates/PairGateFromCategoryGate";
 import Link from "next/link";
 import type { Metadata } from "next";
 import {
@@ -221,7 +222,11 @@ export default async function ComparePage({
 
   const { xName, yName } = getToolNames(doc);
   const category = getCategory(doc);
- const gateIds = getGatesForDoc(doc);
+  const gateIds = getGatesForDoc(doc);
+  const maybeGateFields = doc as PageDoc & {
+    categorySlug?: string;
+    constraintSlug?: string;
+  };
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-12 space-y-12">
@@ -250,7 +255,7 @@ export default async function ComparePage({
 
         <div className="text-sm text-black/60">
   Persona: <span className="font-medium text-black/75">{doc.persona}</span>{" "}
-  · Lens:{" "}
+  · What you care about:{" "}
   <span className="font-medium text-black/75">{doc.constraint_lens}</span>
 </div>
 
@@ -264,6 +269,13 @@ export default async function ComparePage({
   </p>
 </div>
 
+<PairGateFromCategoryGate
+  categorySlug={maybeGateFields.categorySlug}
+  constraintSlug={maybeGateFields.constraintSlug}
+  xName={xName}
+  yName={yName}
+/>
+
 {/* Gate 1: always show */}
 <GatesPanel
   gateIds={gateIds}
@@ -274,8 +286,6 @@ export default async function ComparePage({
   persona={doc.persona as any}
   defaultOpen={false}
 />
-
-
 
 </header>
 

@@ -1,0 +1,40 @@
+{
+  "categoryLabel": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+
+  "constraintLabel": "short-term use + low switching cost",
+  "constraintSlug": "switching-cost",
+  "uiConstraintName": "Easy to quit later",
+
+  "title": "Easy To Quit Later - Calendar / Scheduling Tools",
+  "description": [
+    "Use this gate when your scheduling need is temporary and you do not want lock-in.",
+    "A tool fails if leaving it later creates cleanup work, migration effort, or operational dependency.",
+    "Pick the option you can stop using with minimal disruption."
+  ],
+  "embedBlockTitle": "Quick Gate: Easy to quit later",
+
+  "tools": [
+    { "name": "Doodle", "fails": false },
+    { "name": "TidyCal", "fails": false },
+    { "name": "Google Calendar", "fails": false },
+    { "name": "Apple Calendar", "fails": false },
+    { "name": "Outlook Calendar", "fails": false },
+    { "name": "Calendly", "fails": false },
+
+    { "name": "Square Appointments", "fails": true, "note": "Service and payment setup can create exit cleanup." },
+    { "name": "Zoho Bookings", "fails": true, "note": "Configured booking flows are harder to unwind quickly." },
+    { "name": "Setmore", "fails": true, "note": "Operational setup can make short-term use sticky." },
+    { "name": "Microsoft Bookings", "fails": true, "note": "Org-linked configuration increases switching friction." },
+    { "name": "YouCanBook.me", "fails": true, "note": "Rules and integrations can add teardown work on exit." },
+    { "name": "Motion", "fails": true, "note": "Workflow dependence increases the cost of leaving." },
+    { "name": "Akiflow", "fails": true, "note": "Combined calendar/task setup raises migration effort." },
+    { "name": "Clockwise", "fails": true, "note": "Optimization dependencies increase switching friction." }
+  ],
+
+  "relatedComparisons": [
+    "cal.com-vs-savvycal-for-student",
+    "calendly-vs-microsoft-bookings-for-student",
+    "doodle-vs-tidycal-for-student"
+  ]
+}

@@ -56,6 +56,12 @@ function HeaderNav() {
             Compare
           </Link>
           <Link
+            href="/tools"
+            className="text-black/65 hover:text-black underline-offset-4 hover:underline"
+          >
+            Tools
+          </Link>
+          <Link
             href="/about"
             className="text-black/65 hover:text-black underline-offset-4 hover:underline"
           >
@@ -88,4 +94,3 @@ export default function RootLayout({
     </html>
   );
 }
-

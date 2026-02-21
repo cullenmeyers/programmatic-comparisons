@@ -5,6 +5,8 @@ import path from "path";
 export type PageDoc = {
   // NEW (optional for now; required going forward)
   category?: string;
+  categorySlug?: string;
+  constraintSlug?: string;
 
   title: string;
   slug: string;
@@ -60,8 +62,17 @@ export function loadPageBySlug(slug: string): PageDoc | null {
   const filePath = path.join(PAGES_DIR, `${slug}.json`);
   if (!fs.existsSync(filePath)) return null;
 
-  const raw = fs.readFileSync(filePath, "utf8");
-  const parsed = JSON.parse(raw) as PageDoc;
+const raw = fs.readFileSync(filePath, "utf8");
+let parsed: PageDoc;
+
+try {
+  parsed = JSON.parse(raw) as PageDoc;
+} catch (err) {
+  console.error("❌ Invalid JSON in file:", filePath);
+  console.error("First 200 chars:", raw.slice(0, 200));
+  console.error("Last 200 chars:", raw.slice(-200));
+  throw err;
+}
 
   if (!parsed?.title || !parsed?.slug || parsed.slug !== slug) {
     throw new Error(`Invalid page doc for slug "${slug}" (title/slug mismatch).`);
@@ -75,8 +86,34 @@ export function loadPageBySlug(slug: string): PageDoc | null {
   if (typeof parsed.category === "string") {
     parsed.category = parsed.category.trim() || undefined;
   }
+  if (typeof parsed.categorySlug === "string") {
+    parsed.categorySlug = parsed.categorySlug.trim() || undefined;
+  }
+  if (typeof parsed.constraintSlug === "string") {
+    parsed.constraintSlug = parsed.constraintSlug.trim() || undefined;
+  }
 
   return parsed;
+}
+
+export function listPageDocs(): PageDoc[] {
+  return listPageSlugs()
+    .map((slug) => loadPageBySlug(slug))
+    .filter((doc): doc is PageDoc => doc !== null);
+}
+
+export function listComparisonsForGate(
+  categorySlug: string,
+  constraintSlug: string
+): string[] {
+  return listPageDocs()
+    .filter(
+      (doc) =>
+        doc.categorySlug === categorySlug &&
+        doc.constraintSlug === constraintSlug
+    )
+    .map((doc) => doc.slug)
+    .sort((a, b) => a.localeCompare(b));
 }
 
 export function slugifyCompare(xName: string, yName: string, persona: string) {

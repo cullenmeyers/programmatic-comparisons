@@ -1,0 +1,133 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"title": "Obsidian vs Apple Notes for Power Users",
+"slug": "obsidian-vs-apple-notes-for-power-user",
+"meta_description": "Power user choosing between Obsidian and Apple Notes? If ceiling matters for a scalable second brain, Obsidian offers deeper extensibility.",
+"persona": "Power user",
+"constraintSlug": "ceiling-check",
+"constraint_lens": "You care about long-term scalability and extensibility, because the ceiling of the tool matters more than initial simplicity.",
+"verdict": {
+"winner": "x",
+"summary": "Obsidian is the better fit for a Power user building a long-term second brain. Apple Notes works well for straightforward capture, but it constrains graph linking and deep extensibility. If advanced linking and plugin-based expansion are limited, Apple Notes hits its ceiling first.",
+"decision_rule": "If graph linking and plugin extensibility are constrained, Apple Notes fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when long-term ceiling matters",
+"content": "You’re not just taking notes—you’re architecting a knowledge system that compounds over time. As a Power user, you’ll eventually push against structural limits. Obsidian is designed for deep linking and extensibility, while Apple Notes prioritizes simplicity over system-level scalability."
+},
+{
+"type": "x_wins",
+"heading": "Where Obsidian wins for scalable knowledge systems",
+"bullets": [
+{
+"point": "It supports graph-style linking between notes.",
+"why_it_matters": "For a second brain, relationships between ideas are as important as the notes themselves."
+},
+{
+"point": "It offers plugin extensibility.",
+"why_it_matters": "As your system evolves, plugins allow you to expand functionality without switching tools."
+},
+{
+"point": "It is built around structured knowledge architecture.",
+"why_it_matters": "Power users benefit from tools that scale in complexity rather than capping out."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Apple Notes can win (for simplicity and speed)",
+"bullets": [
+{
+"point": "It offers frictionless note capture.",
+"why_it_matters": "For quick thoughts, speed can matter more than structure."
+},
+{
+"point": "It integrates seamlessly with Apple devices.",
+"why_it_matters": "Tight ecosystem integration can reduce setup effort."
+},
+{
+"point": "It requires little configuration to get started.",
+"why_it_matters": "If you prioritize ease over extensibility, lower setup friction can be appealing."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Common failure modes (and what to do instead)",
+"items": [
+{
+"tool": "x",
+"fails_when": "You prefer minimal setup and avoid maintaining plugins or structured linking systems.",
+"what_to_do_instead": "Use Apple Notes if your needs stay lightweight and you don’t require extensibility."
+},
+{
+"tool": "y",
+"fails_when": "Your knowledge system outgrows basic folders and limited linking capabilities.",
+"what_to_do_instead": "Migrate to Obsidian when you need graph linking and plugin-based expansion."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules to decide fast",
+"rules": [
+"If you’re building a long-term second brain, choose Obsidian.",
+"If graph linking and plugins matter, avoid Apple Notes.",
+"If you prioritize simplicity over extensibility, Apple Notes may suffice."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool scales better over time?",
+"a": "Obsidian scales better for complex knowledge systems because of its linking structure and plugin ecosystem."
+},
+{
+"q": "Is Apple Notes too limited for power users?",
+"a": "It can be if you require deep linking, extensibility, and system-level customization."
+},
+{
+"q": "Can I start with Apple Notes and switch later?",
+"a": "Yes, but migrating a large knowledge base can be time-consuming once your system grows."
+},
+{
+"q": "What matters most for building a second brain?",
+"a": "Long-term flexibility, strong linking between ideas, and the ability to extend functionality as your needs expand."
+}
+],
+"related_pages": [
+{
+"x_name": "Obsidian",
+"y_name": "Notion",
+"persona": "Power user"
+},
+{
+"x_name": "Obsidian",
+"y_name": "Evernote",
+"persona": "Power user"
+},
+{
+"x_name": "Notion",
+"y_name": "Apple Notes",
+"persona": "Power user"
+},
+{
+"x_name": "Obsidian",
+"y_name": "Bear",
+"persona": "Power user"
+},
+{
+"x_name": "Roam Research",
+"y_name": "Obsidian",
+"persona": "Power user"
+},
+{
+"x_name": "Logseq",
+"y_name": "Obsidian",
+"persona": "Power user"
+}
+]
+}

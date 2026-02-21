@@ -1,0 +1,36 @@
+{
+  "categoryLabel": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+
+  "constraintLabel": "zero tolerance for ongoing maintenance",
+  "constraintSlug": "maintenance-load",
+  "uiConstraintName": "Works without upkeep",
+
+  "title": "Works Without Upkeep — Calendar / Scheduling Tools",
+  "description": [
+    "Use this gate when you want a scheduling tool that won’t turn into ongoing admin work.",
+    "A tool fails if it needs recurring setup or maintenance to keep working smoothly (services, staff, routing rules, payment layers).",
+    "Pick the option that stays simple after you set it up once."
+  ],
+  "embedBlockTitle": "Quick Gate: Works without upkeep",
+
+  "tools": [
+    { "name": "Calendly", "fails": false },
+    { "name": "TidyCal", "fails": false },
+    { "name": "Doodle", "fails": false },
+    { "name": "Google Calendar", "fails": false },
+    { "name": "Apple Calendar", "fails": false },
+
+    { "name": "Square Appointments", "fails": true, "note": "Requires service/payment setup and ongoing admin upkeep." },
+    { "name": "Zoho Bookings", "fails": true, "note": "Staff/services and booking rules tend to require ongoing tuning." },
+    { "name": "Setmore", "fails": true, "note": "Booking configuration becomes maintenance if your needs change." },
+    { "name": "Microsoft Bookings", "fails": true, "note": "Often involves org/admin settings and continued configuration." },
+    { "name": "YouCanBook.me", "fails": true, "note": "Integrations and rules can feel like ongoing maintenance over time." }
+  ],
+
+  "relatedComparisons": [
+    "notion-calendar-vs-apple-calendar-for-solo-user",
+    "reclaim.ai-vs-google-calendar-for-solo-user",
+    "skedda-vs-google-calendar-for-solo-user"
+  ]
+}

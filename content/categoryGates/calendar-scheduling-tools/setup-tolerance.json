@@ -1,0 +1,40 @@
+{
+  "categoryLabel": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+
+  "constraintLabel": "low tolerance for setup/configuration",
+  "constraintSlug": "setup-tolerance",
+  "uiConstraintName": "Publish fast",
+
+  "title": "Publish Fast - Calendar / Scheduling Tools",
+  "description": [
+    "Use this gate when you need to publish availability quickly with minimal setup.",
+    "A tool fails if it requires multi-step configuration before you can share a usable scheduling link.",
+    "Pick the option that gets from account to first booking fastest."
+  ],
+  "embedBlockTitle": "Quick Gate: Publish fast",
+
+  "tools": [
+    { "name": "Google Calendar", "fails": false },
+    { "name": "Apple Calendar", "fails": false },
+    { "name": "Outlook Calendar", "fails": false },
+    { "name": "Doodle", "fails": false },
+    { "name": "TidyCal", "fails": false },
+
+    { "name": "Calendly", "fails": true, "note": "Usually needs event-type and availability setup before first share." },
+    { "name": "Square Appointments", "fails": true, "note": "Business workflow setup adds early friction." },
+    { "name": "Zoho Bookings", "fails": true, "note": "Service and routing configuration slows first publish." },
+    { "name": "Setmore", "fails": true, "note": "Initial booking settings take setup effort before useful output." },
+    { "name": "Microsoft Bookings", "fails": true, "note": "Admin and org-style setup can delay first booking page." },
+    { "name": "YouCanBook.me", "fails": true, "note": "Rules and integrations create extra first-run decisions." },
+    { "name": "Motion", "fails": true, "note": "Automation-first setup adds steps before simple sharing." },
+    { "name": "Akiflow", "fails": true, "note": "Cross-system setup adds complexity before quick publish." },
+    { "name": "Clockwise", "fails": true, "note": "Optimization setup is extra overhead for a basic first link." }
+  ],
+
+  "relatedComparisons": [
+    "google-calendar-vs-calendly-for-beginner",
+    "apple-calendar-vs-outlook-calendar-for-beginner",
+    "microsoft-bookings-vs-google-calendar-for-beginner"
+  ]
+}

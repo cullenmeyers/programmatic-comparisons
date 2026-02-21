@@ -101,7 +101,7 @@ export default function CompareIndexPage() {
                           <span className="font-medium text-black/75">
                             {p.persona}
                           </span>{" "}
-                          · Lens:{" "}
+                          · What you care about:{" "}
                           <span className="font-medium text-black/75">
                             {p.constraint_lens}
                           </span>
