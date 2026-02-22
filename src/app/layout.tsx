@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import HeaderNav from "@/components/ui/HeaderNav";
+import SiteFooter from "@/components/ui/SiteFooter";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -40,45 +41,6 @@ export const metadata: Metadata = {
   },
 };
 
-function HeaderNav() {
-  return (
-    <header className="border-b border-black/10">
-      <div className="mx-auto max-w-3xl px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="font-semibold tracking-tight text-black/85">
-          Decision Clarities
-        </Link>
-
-        <nav className="flex items-center gap-4 text-sm">
-          <Link
-            href="/compare"
-            className="text-black/65 hover:text-black underline-offset-4 hover:underline"
-          >
-            Compare
-          </Link>
-          <Link
-            href="/tools"
-            className="text-black/65 hover:text-black underline-offset-4 hover:underline"
-          >
-            Tools
-          </Link>
-          <Link
-            href="/about"
-            className="text-black/65 hover:text-black underline-offset-4 hover:underline"
-          >
-            About
-          </Link>
-          <Link
-            href="/contact"
-            className="text-black/65 hover:text-black underline-offset-4 hover:underline"
-          >
-            Contact
-          </Link>
-        </nav>
-      </div>
-    </header>
-  );
-}
-
 export default function RootLayout({
   children,
 }: {
@@ -92,6 +54,7 @@ export default function RootLayout({
       >
         <HeaderNav />
         {children}
+        <SiteFooter />
         <Analytics />
       </body>
     </html>

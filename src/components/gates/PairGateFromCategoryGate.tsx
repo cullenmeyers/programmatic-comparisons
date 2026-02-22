@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { getCategoryGate } from "@/content/categoryGates";
+import Card from "@/components/ui/Card";
 
 type Verdict = "X_FAILS" | "Y_FAILS" | "BOTH_FAIL" | "NEITHER_FAIL" | "UNKNOWN";
 
@@ -47,7 +48,7 @@ export default function PairGateFromCategoryGate(props: {
   const yNote = yEntry?.note?.trim();
 
   return (
-    <section className="mt-6 rounded-2xl border border-black/10 bg-white p-6">
+    <Card className="mt-1 space-y-4">
       <div className="flex items-start justify-between gap-4">
         <div className="space-y-2">
           <div className="text-xs uppercase tracking-wide text-black/55">
@@ -68,7 +69,7 @@ export default function PairGateFromCategoryGate(props: {
         </Link>
       </div>
 
-      <div className="mt-4 space-y-2 text-sm leading-6 text-black/75">
+      <div className="space-y-2 text-sm leading-6 text-black/75">
         {v === "X_FAILS" && (
           <>
             <div>
@@ -123,6 +124,6 @@ export default function PairGateFromCategoryGate(props: {
           </>
         )}
       </div>
-    </section>
+    </Card>
   );
 }

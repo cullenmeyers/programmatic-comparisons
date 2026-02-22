@@ -24,7 +24,7 @@ export default function ResultBar({
   // If user hasn’t interacted yet, don’t pretend anything ran
   if (!answeredAny) {
     return (
-      <div className="rounded-2xl border border-black/10 bg-black/[0.02] p-5 space-y-2">
+      <div className="rounded-xl border border-black/10 bg-black/[0.02] p-5 space-y-2">
         <div className="text-sm uppercase tracking-wide text-black/55">
           Your next step
         </div>
@@ -81,7 +81,7 @@ export default function ResultBar({
       : "Start with the gates to narrow this down.";
 
   return (
-    <div className="rounded-2xl border border-black/10 bg-black/[0.02] p-5 space-y-2">
+    <div className="rounded-xl border border-black/10 bg-black/[0.02] p-5 space-y-2">
       <div className="text-sm uppercase tracking-wide text-black/55">
         Your next step
       </div>

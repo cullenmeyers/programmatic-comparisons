@@ -1,9 +1,11 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import ButtonLink from "@/components/ui/ButtonLink";
+import Card from "@/components/ui/Card";
+import SectionHeading from "@/components/ui/SectionHeading";
 import GatesPanel from "@/components/gates/GatesPanel";
-import GatesEngine from "@/components/gates/GatesEngine";
 import { getGatesForDoc } from "@/lib/gates/selector";
 import PairGateFromCategoryGate from "@/components/gates/PairGateFromCategoryGate";
-import Link from "next/link";
-import type { Metadata } from "next";
 import {
   loadPageBySlug,
   listPageSlugs,
@@ -12,6 +14,14 @@ import {
 } from "@/lib/pages";
 
 type Params = { slug: string };
+type Persona =
+  | "Beginner"
+  | "Solo user"
+  | "Student"
+  | "Busy professional"
+  | "Power user"
+  | "Non-technical user"
+  | "Minimalist";
 
 export async function generateStaticParams() {
   return listPageSlugs().map((slug) => ({ slug }));
@@ -49,12 +59,12 @@ function FAQJsonLd({ faqs }: { faqs: Array<{ q: string; a: string }> }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
+    mainEntity: faqs.map((faq) => ({
       "@type": "Question",
-      name: f.q,
+      name: faq.q,
       acceptedAnswer: {
         "@type": "Answer",
-        text: f.a,
+        text: faq.a,
       },
     })),
   };
@@ -67,11 +77,6 @@ function FAQJsonLd({ faqs }: { faqs: Array<{ q: string; a: string }> }) {
   );
 }
 
-/**
- * Tool name extraction:
- * - If your JSON later includes x_name/y_name, we’ll use them (without TS errors).
- * - Otherwise we derive from doc.title like "Evernote vs Apple Notes for Solo Users".
- */
 function getToolNames(doc: PageDoc): { xName: string; yName: string } {
   const maybe = doc as unknown as {
     x_name?: string;
@@ -83,7 +88,6 @@ function getToolNames(doc: PageDoc): { xName: string; yName: string } {
     return { xName: maybe.x_name.trim(), yName: maybe.y_name.trim() };
   }
 
-  // Fallback: parse from title: "X vs Y for Persona"
   const title = doc.title || "";
   const beforeFor = title.split(" for ")[0] ?? title;
   const parts = beforeFor.split(" vs ");
@@ -94,7 +98,6 @@ function getToolNames(doc: PageDoc): { xName: string; yName: string } {
   return { xName, yName };
 }
 
-// Backwards-compatible category getter (so old JSON pages don't break)
 function getCategory(doc: PageDoc): string {
   const maybe = doc as unknown as { category?: string };
   const raw = (maybe.category ?? "").toString().trim();
@@ -114,9 +117,7 @@ function Section({
     case "persona_fit":
       return (
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold tracking-tight">
-            {section.heading}
-          </h2>
+          <h2 className="text-xl font-semibold tracking-tight">{section.heading}</h2>
           <p className="text-base leading-7 text-black/80">{section.content}</p>
         </section>
       );
@@ -125,15 +126,13 @@ function Section({
     case "y_wins":
       return (
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold tracking-tight">
-            {section.heading}
-          </h2>
-          <ul className="space-y-4 list-disc pl-5">
-            {section.bullets.map((b, i) => (
-              <li key={i}>
-                <div className="font-medium">{b.point}</div>
+          <h2 className="text-xl font-semibold tracking-tight">{section.heading}</h2>
+          <ul className="list-disc space-y-4 pl-5">
+            {section.bullets.map((bullet, index) => (
+              <li key={index}>
+                <div className="font-medium">{bullet.point}</div>
                 <div className="text-sm leading-6 text-black/70">
-                  {b.why_it_matters}
+                  {bullet.why_it_matters}
                 </div>
               </li>
             ))}
@@ -144,36 +143,29 @@ function Section({
     case "failure_modes":
       return (
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold tracking-tight">
-            {section.heading}
-          </h2>
-          <div className="space-y-5">
-            {section.items.map((it, i) => {
-              const toolLabel = it.tool === "x" ? xName : yName;
-              const optionLabel = it.tool === "x" ? "Option X" : "Option Y";
+          <h2 className="text-xl font-semibold tracking-tight">{section.heading}</h2>
+          <div className="space-y-4">
+            {section.items.map((item, index) => {
+              const toolLabel = item.tool === "x" ? xName : yName;
+              const optionLabel = item.tool === "x" ? "Option X" : "Option Y";
 
               return (
-                <div
-                  key={i}
-                  className="rounded-xl border border-black/10 bg-white p-5"
-                >
+                <Card key={index} className="space-y-3">
                   <div className="text-sm uppercase tracking-wide text-black/55">
                     {toolLabel}{" "}
-                    <span className="normal-case text-black/60">
-                      ({optionLabel})
-                    </span>
+                    <span className="normal-case text-black/60">({optionLabel})</span>
                   </div>
-
-                  <div className="mt-3 font-medium">Fails when</div>
-                  <div className="text-sm leading-6 text-black/75">
-                    {it.fails_when}
+                  <div>
+                    <div className="font-medium">Fails when</div>
+                    <p className="text-sm leading-6 text-black/75">{item.fails_when}</p>
                   </div>
-
-                  <div className="mt-4 font-medium">What to do instead</div>
-                  <div className="text-sm leading-6 text-black/75">
-                    {it.what_to_do_instead}
+                  <div>
+                    <div className="font-medium">What to do instead</div>
+                    <p className="text-sm leading-6 text-black/75">
+                      {item.what_to_do_instead}
+                    </p>
                   </div>
-                </div>
+                </Card>
               );
             })}
           </div>
@@ -183,13 +175,11 @@ function Section({
     case "quick_rules":
       return (
         <section className="space-y-3">
-          <h2 className="text-xl font-semibold tracking-tight">
-            {section.heading}
-          </h2>
-          <ul className="space-y-2.5 list-disc pl-5">
-            {section.rules.map((r, i) => (
-              <li key={i} className="leading-7 text-black/85">
-                {r}
+          <h2 className="text-xl font-semibold tracking-tight">{section.heading}</h2>
+          <ul className="list-disc space-y-2.5 pl-5">
+            {section.rules.map((rule, index) => (
+              <li key={index} className="leading-7 text-black/85">
+                {rule}
               </li>
             ))}
           </ul>
@@ -208,14 +198,14 @@ export default async function ComparePage({
 
   if (!doc) {
     return (
-      <main className="mx-auto max-w-3xl px-6 py-12 space-y-6">
-        <h1 className="text-2xl font-bold">Comparison not found</h1>
+      <main className="site-container page-shell content-stack">
+        <h1 className="text-2xl font-semibold tracking-tight">Comparison not found</h1>
         <p className="text-black/70">
-          That page doesn’t exist yet. Go back to the comparisons list.
+          That page does not exist yet. Go back to the comparisons list.
         </p>
-        <Link className="underline underline-offset-4" href="/compare">
-          ← All comparisons
-        </Link>
+        <ButtonLink href="/compare" variant="ghost" className="px-0 py-0">
+          All comparisons
+        </ButtonLink>
       </main>
     );
   }
@@ -229,139 +219,128 @@ export default async function ComparePage({
   };
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-12 space-y-12">
+    <main className="site-container page-shell content-stack max-w-4xl">
       <FAQJsonLd faqs={doc.faqs} />
 
-      {/* Minimal nav back to index */}
       <div className="text-sm">
-        <Link
-          className="text-black/65 hover:text-black underline-offset-4 hover:underline"
-          href="/compare"
-        >
-          ← All comparisons
-        </Link>
+        <ButtonLink href="/compare" variant="ghost" className="px-0 py-0">
+          All comparisons
+        </ButtonLink>
       </div>
 
-      <header className="space-y-4">
-        {/* Category line (quiet, helpful, non-template-y) */}
-        <div className="text-xs uppercase tracking-wide text-black/55">
-          Category:{" "}
-          <span className="normal-case font-medium text-black/70">
-            {category}
-          </span>
+      <header className="content-stack gap-5">
+        <div className="space-y-3">
+          <p className="text-xs uppercase tracking-wide text-black/55">
+            Category:{" "}
+            <span className="normal-case font-medium text-black/70">{category}</span>
+          </p>
+          <h1 className="max-w-3xl text-3xl font-semibold tracking-tight text-black sm:text-4xl">
+            {doc.title}
+          </h1>
+          <p className="text-sm text-black/60">
+            Persona: <span className="font-medium text-black/75">{doc.persona}</span> ·
+            Focus:{" "}
+            <span className="font-medium text-black/75">{doc.constraint_lens}</span>
+          </p>
         </div>
 
-        <h1 className="text-3xl font-bold tracking-tight">{doc.title}</h1>
+        <Card className="space-y-3 bg-black/[0.02]">
+          <p className="text-sm uppercase tracking-wide text-black/55">Verdict</p>
+          <p className="leading-7 text-black/85">{doc.verdict.summary}</p>
+          <p className="text-sm leading-6 text-black/65">
+            <span className="font-medium text-black/75">Rule:</span>{" "}
+            {doc.verdict.decision_rule}
+          </p>
+        </Card>
 
-        <div className="text-sm text-black/60">
-  Persona: <span className="font-medium text-black/75">{doc.persona}</span>{" "}
-  · What you care about:{" "}
-  <span className="font-medium text-black/75">{doc.constraint_lens}</span>
-</div>
+        <PairGateFromCategoryGate
+          categorySlug={maybeGateFields.categorySlug}
+          constraintSlug={maybeGateFields.constraintSlug}
+          xName={xName}
+          yName={yName}
+        />
 
-{/* Verdict anchor */}
-<div className="rounded-2xl border border-black/10 bg-black/[0.02] p-6 space-y-3">
-  <div className="text-sm uppercase tracking-wide text-black/55">Verdict</div>
-  <p className="leading-7 text-black/85">{doc.verdict.summary}</p>
-  <p className="text-sm leading-6 text-black/65">
-    <span className="font-medium text-black/75">Rule:</span>{" "}
-    {doc.verdict.decision_rule}
-  </p>
-</div>
+        <GatesPanel
+          gateIds={gateIds}
+          xName={xName}
+          yName={yName}
+          winner={doc.verdict.winner}
+          decisionRule={doc.verdict.decision_rule}
+          persona={doc.persona as Persona}
+          defaultOpen={false}
+        />
+      </header>
 
-<PairGateFromCategoryGate
-  categorySlug={maybeGateFields.categorySlug}
-  constraintSlug={maybeGateFields.constraintSlug}
-  xName={xName}
-  yName={yName}
-/>
-
-{/* Gate 1: always show */}
-<GatesPanel
-  gateIds={gateIds}
-  xName={xName}
-  yName={yName}
-  winner={doc.verdict.winner}
-  decisionRule={doc.verdict.decision_rule}
-  persona={doc.persona as any}
-  defaultOpen={false}
-/>
-
-</header>
-
-<div className="space-y-12">
-  {doc.sections.map((section, idx) => (
-    <Section key={idx} section={section} xName={xName} yName={yName} />
-  ))}
-</div>
-
-<section className="space-y-4 pt-2">
-  <h2 className="text-xl font-semibold tracking-tight">FAQs</h2>
-  <div className="space-y-5">
-    {doc.faqs.map((f, i) => (
-      <div key={i} className="rounded-xl border border-black/10 bg-white p-5">
-        <div className="font-medium">{f.q}</div>
-        <div className="mt-2 text-sm leading-6 text-black/75">{f.a}</div>
+      <div className="content-stack max-w-3xl">
+        {doc.sections.map((section, index) => (
+          <Section key={index} section={section} xName={xName} yName={yName} />
+        ))}
       </div>
-    ))}
-  </div>
-</section>
 
+      <section className="content-stack gap-4 max-w-3xl">
+        <SectionHeading title="FAQs" />
+        <div className="space-y-4">
+          {doc.faqs.map((faq, index) => (
+            <Card key={index}>
+              <p className="font-medium text-black">{faq.q}</p>
+              <p className="mt-2 text-sm leading-6 text-black/75">{faq.a}</p>
+            </Card>
+          ))}
+        </div>
+      </section>
 
-      <section className="space-y-4 pt-2">
-        <h2 className="text-xl font-semibold tracking-tight">
-          Related comparisons
-        </h2>
-
+      <section className="content-stack gap-4 max-w-3xl">
+        <SectionHeading title="Related comparisons" />
         {(() => {
           const existing = new Set(listPageSlugs());
 
-          const items = (doc.related_pages || []).map((rp) => {
-            const relatedSlug = slugifyCompare(rp.x_name, rp.y_name, rp.persona);
+          const items = (doc.related_pages || []).map((relatedPage) => {
+            const relatedSlug = slugifyCompare(
+              relatedPage.x_name,
+              relatedPage.y_name,
+              relatedPage.persona
+            );
             const exists = existing.has(relatedSlug);
-            return { rp, relatedSlug, exists };
+            return { relatedPage, relatedSlug, exists };
           });
 
-          const anyLinks = items.some((x) => x.exists);
+          const anyLinks = items.some((item) => item.exists);
 
           if (items.length === 0) {
-            return (
-              <p className="text-sm text-black/60">No related comparisons yet.</p>
-            );
+            return <p className="text-sm text-black/60">No related comparisons yet.</p>;
           }
 
           return (
-            <>
-              <ul className="list-disc pl-5 space-y-2">
-                {items.map(({ rp, relatedSlug, exists }, i) => (
-                  <li key={i} className="text-sm leading-6">
+            <Card>
+              <ul className="list-disc space-y-2 pl-5">
+                {items.map(({ relatedPage, relatedSlug, exists }, index) => (
+                  <li key={index} className="text-sm leading-6">
                     {exists ? (
                       <Link
-                        className="text-black/80 hover:text-black underline-offset-4 hover:underline"
+                        className="text-black/80 hover:text-black hover:underline"
                         href={`/compare/${relatedSlug}`}
                       >
-                        {rp.x_name} vs {rp.y_name} for {rp.persona}
+                        {relatedPage.x_name} vs {relatedPage.y_name} for{" "}
+                        {relatedPage.persona}
                       </Link>
                     ) : (
                       <span className="text-black/60">
-                        {rp.x_name} vs {rp.y_name} for {rp.persona}
+                        {relatedPage.x_name} vs {relatedPage.y_name} for{" "}
+                        {relatedPage.persona}
                       </span>
                     )}
                   </li>
                 ))}
               </ul>
-
               {!anyLinks && (
-                <p className="text-xs text-black/55">
-                  Related pages will become clickable as you publish more
-                  comparisons.
+                <p className="mt-4 text-xs text-black/55">
+                  Related pages become clickable as you publish more comparisons.
                 </p>
               )}
-            </>
+            </Card>
           );
         })()}
       </section>
     </main>
   );
 }
-
