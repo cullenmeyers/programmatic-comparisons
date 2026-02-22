@@ -1,0 +1,110 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "FacileThings vs Apple Reminders for Minimalists",
+"slug": "facilethings-vs-apple-reminders-for-minimalist",
+"meta_description": "FacileThings vs Apple Reminders for minimalists who want a plain checklist without GTD workflows or extra interaction steps.",
+"persona": "Minimalist",
+"constraint_lens": "You prefer tools that keep it simple and avoid extra features that create more decisions than value.",
+"verdict": {
+"winner": "y",
+"summary": "Apple Reminders wins for minimalists who just want a plain checklist. It focuses on simple lists without formal productivity frameworks layered on top. FacileThings is built around GTD-style workflows, but if GTD-style workflows introduce extra interaction steps, it adds friction for someone who wants straightforward daily to-dos. Follow the rule: if GTD-style workflows introduce extra interaction steps, FacileThings fails first.",
+"decision_rule": "If GTD-style workflows introduce extra interaction steps, FacileThings fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when you want zero methodology",
+"content": "As a minimalist, you don’t want to adopt a formal productivity system just to track daily tasks. You want to write something down, check it off, and move on. The right tool removes structure that feels like process for process’s sake."
+},
+{
+"type": "x_wins",
+"heading": "Where FacileThings still wins",
+"bullets": [
+{
+"point": "Structured GTD workflow built in",
+"why_it_matters": "If you value a clear method for capturing, clarifying, and reviewing tasks, built-in structure can reduce ambiguity."
+},
+{
+"point": "Defined stages for task processing",
+"why_it_matters": "When you prefer a systematic flow, predefined steps can prevent tasks from being forgotten."
+},
+{
+"point": "Strong review mechanics",
+"why_it_matters": "If weekly or periodic reviews matter to you, structured prompts can maintain consistency."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Apple Reminders wins under feature aversion",
+"bullets": [
+{
+"point": "Plain checklist interface",
+"why_it_matters": "You can add and complete tasks without engaging in a larger productivity framework."
+},
+{
+"point": "Minimal interaction layers",
+"why_it_matters": "Fewer required steps mean less friction between thinking of a task and logging it."
+},
+{
+"point": "No enforced methodology",
+"why_it_matters": "You’re not nudged into categories, contexts, or processing flows you didn’t ask for."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You feel slowed down by capture, clarify, or review stages that you didn’t intend to use.",
+"what_to_do_instead": "Switch to a simple checklist tool that lets you track tasks without structured processing."
+},
+{
+"tool": "y",
+"fails_when": "You start losing track of tasks because there’s no formal review or organizational system.",
+"what_to_do_instead": "Adopt a method-driven tool if you benefit from structured workflows and regular review prompts."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want a plain checklist with no framework, choose Apple Reminders.",
+"If GTD-style processing feels like extra work, avoid FacileThings.",
+"If you prefer a structured productivity method, FacileThings may be worth the added steps."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is simpler for daily to-dos?",
+"a": "Apple Reminders is simpler because it focuses on basic checklists without layered workflows."
+},
+{
+"q": "What is the main difference between these tools?",
+"a": "FacileThings is built around a formal GTD-style system, while Apple Reminders centers on straightforward list management."
+},
+{
+"q": "Is a structured productivity framework always better?",
+"a": "Not for minimalists. If the framework adds steps you don’t need, it can reduce clarity instead of improving it."
+},
+{
+"q": "When might FacileThings be a better choice?",
+"a": "If you benefit from a defined method for processing and reviewing tasks, its structured workflow can add consistency."
+}
+],
+"related_pages": [
+{ "x_name": "Apple Reminders", "y_name": "Microsoft To Do", "persona": "Minimalist" },
+{ "x_name": "Apple Reminders", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "FacileThings", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Things 3", "y_name": "Apple Reminders", "persona": "Minimalist" },
+{ "x_name": "Sunsama", "y_name": "Apple Reminders", "persona": "Minimalist" },
+{ "x_name": "TickTick", "y_name": "Apple Reminders", "persona": "Minimalist" }
+]
+}
