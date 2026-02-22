@@ -1,0 +1,110 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "fear-of-breaking",
+"constraintUiName": "Hard to mess up",
+"title": "Any.do vs Trello for Non-technical users",
+"slug": "anydo-vs-trello-for-non-technical-user",
+"meta_description": "Any.do vs Trello for non-technical users who want obvious task tracking without worrying about board structure or placement.",
+"persona": "Non-technical user",
+"constraint_lens": "You need a tool that feels hard to mess up and doesn’t make you second-guess where tasks belong.",
+"verdict": {
+"winner": "x",
+"summary": "Any.do wins for non-technical users who want tasks to feel obvious and safe. Its list-based layout reduces uncertainty about where items belong. Trello’s board structure can be powerful, but if visual board organization creates uncertainty about task placement, it increases hesitation and doubt. Follow the rule: if visual board organization creates uncertainty about task placement, Trello fails first.",
+"decision_rule": "If visual board organization creates uncertainty about task placement, Trello fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when you want clarity without structure anxiety",
+"content": "As a non-technical user, you want to add a task and trust it’s in the right place. You don’t want to think about columns, board logic, or where something should be moved. The right tool minimizes the risk of placing tasks incorrectly or feeling unsure about the system."
+},
+{
+"type": "x_wins",
+"heading": "Where Any.do wins under fear of breaking things",
+"bullets": [
+{
+"point": "Simple list-based organization",
+"why_it_matters": "When tasks live in straightforward lists, you don’t worry about dragging them to the wrong column."
+},
+{
+"point": "Minimal structural decisions",
+"why_it_matters": "Fewer layout choices mean fewer chances to feel like you’re organizing something incorrectly."
+},
+{
+"point": "Clear daily focus view",
+"why_it_matters": "Seeing a simple daily list reduces confusion about what to work on next."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Trello still wins",
+"bullets": [
+{
+"point": "Visual overview of project stages",
+"why_it_matters": "If you understand board logic, columns can clearly show progress from start to finish."
+},
+{
+"point": "Flexible card movement",
+"why_it_matters": "Dragging tasks between columns can make workflow changes visible and easy to track."
+},
+{
+"point": "Good for project-style work",
+"why_it_matters": "When responsibilities naturally move through defined stages, boards can make transitions clearer."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You need clear stage-based tracking across multiple project steps.",
+"what_to_do_instead": "Adopt a board-style tool if visual stage movement becomes important."
+},
+{
+"tool": "y",
+"fails_when": "You hesitate because you’re unsure which column a task belongs in.",
+"what_to_do_instead": "Switch to a simple list-focused app where placement decisions are minimal."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want tasks to feel obvious and safe, choose Any.do.",
+"If board structure makes you second-guess placement, avoid Trello.",
+"If you like seeing tasks move across stages visually, Trello may suit you."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool feels safer for non-technical users?",
+"a": "Any.do generally feels safer because it uses simple lists rather than visual boards with multiple columns."
+},
+{
+"q": "Is Trello confusing for beginners?",
+"a": "It can be if you’re unsure how to structure columns or where tasks should move within a board."
+},
+{
+"q": "What creates uncertainty in board-based tools?",
+"a": "Deciding which column a task belongs in or when to move it can create hesitation if the workflow isn’t obvious."
+},
+{
+"q": "When might Trello be a better choice?",
+"a": "If your work naturally moves through stages and you benefit from seeing progress visually, boards can add clarity."
+}
+],
+"related_pages": [
+{ "x_name": "Any.do", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
+{ "x_name": "Any.do", "y_name": "Apple Reminders", "persona": "Non-technical user" },
+{ "x_name": "Trello", "y_name": "Asana", "persona": "Non-technical user" },
+{ "x_name": "ClickUp", "y_name": "Trello", "persona": "Non-technical user" },
+{ "x_name": "Basecamp", "y_name": "Trello", "persona": "Non-technical user" },
+{ "x_name": "Todoist", "y_name": "Any.do", "persona": "Non-technical user" }
+]
+}

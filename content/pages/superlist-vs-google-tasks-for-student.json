@@ -1,0 +1,110 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
+"title": "Superlist vs Google Tasks for Students",
+"slug": "superlist-vs-google-tasks-for-student",
+"meta_description": "Superlist vs Google Tasks for students who need a short-term task list for one academic term without long-term system lock-in.",
+"persona": "Student",
+"constraint_lens": "You need a task manager that is easy to quit later and doesn’t lock you into a complex system for short-term use.",
+"verdict": {
+"winner": "y",
+"summary": "Google Tasks wins for students who only need a task list for one academic term. It keeps things simple and easy to abandon once the semester ends. Superlist offers richer collaboration features, but if collaboration features outweigh short-term academic needs, they add complexity and increase switching cost. Follow the rule: if collaboration features outweigh short-term academic needs, Superlist fails first.",
+"decision_rule": "If collaboration features outweigh short-term academic needs, Superlist fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for term-based planning",
+"content": "As a student, your planning horizon is often just one semester. You want something that works now and is easy to walk away from later. The right tool supports short-term clarity without pulling you into features that only make sense long term."
+},
+{
+"type": "x_wins",
+"heading": "Where Superlist still wins",
+"bullets": [
+{
+"point": "Built-in collaboration tools",
+"why_it_matters": "If you frequently work on group projects, shared lists can reduce coordination friction."
+},
+{
+"point": "Richer organization options",
+"why_it_matters": "If your coursework becomes complex, structured lists and views can help manage multiple classes."
+},
+{
+"point": "Polished, modern interface",
+"why_it_matters": "If visual clarity improves your engagement, a refined design can make task tracking more enjoyable."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Google Tasks wins under low switching cost",
+"bullets": [
+{
+"point": "Lightweight, no-friction setup",
+"why_it_matters": "You can start tracking assignments immediately without configuring workspaces or team features."
+},
+{
+"point": "Minimal feature overhead",
+"why_it_matters": "Fewer advanced features mean less to manage once the term ends."
+},
+{
+"point": "Easy to abandon after the semester",
+"why_it_matters": "You can stop using it without cleaning up shared spaces or structured systems."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You spend time managing collaboration settings that aren’t essential for your classes.",
+"what_to_do_instead": "Switch to a lightweight task list that focuses only on personal coursework."
+},
+{
+"tool": "y",
+"fails_when": "Your assignments require structured collaboration across multiple group projects.",
+"what_to_do_instead": "Adopt a more feature-rich platform if shared tracking becomes central to your workflow."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you just need a simple task list for one term, choose Google Tasks.",
+"If collaboration features feel unnecessary for your coursework, avoid Superlist.",
+"If group projects require shared task tracking, Superlist may be worth the added complexity."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is better for short-term academic use?",
+"a": "Google Tasks is often better because it keeps task tracking simple and easy to stop using after the semester."
+},
+{
+"q": "Does Superlist add unnecessary complexity for students?",
+"a": "It can if collaboration features and richer organization tools go beyond what you need for one term."
+},
+{
+"q": "What does low switching cost mean for students?",
+"a": "It means you can stop using the app at the end of the term without cleanup, restructuring, or lingering commitments."
+},
+{
+"q": "When might Superlist be the better choice?",
+"a": "If you rely heavily on shared task lists for group work, its collaboration features can justify the added setup."
+}
+],
+"related_pages": [
+{ "x_name": "Google Tasks", "y_name": "Todoist", "persona": "Student" },
+{ "x_name": "Google Tasks", "y_name": "Microsoft To Do", "persona": "Student" },
+{ "x_name": "Superlist", "y_name": "Todoist", "persona": "Student" },
+{ "x_name": "Superlist", "y_name": "TickTick", "persona": "Student" },
+{ "x_name": "Trello", "y_name": "Google Tasks", "persona": "Student" },
+{ "x_name": "Notion", "y_name": "Google Tasks", "persona": "Student" }
+]
+}

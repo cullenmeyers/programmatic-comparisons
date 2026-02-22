@@ -1,0 +1,110 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
+"title": "Habitica vs Todoist for Students",
+"slug": "habitica-vs-todoist-for-student",
+"meta_description": "Habitica vs Todoist for students who need a short-term task list without long-term gamified system overhead.",
+"persona": "Student",
+"constraint_lens": "You need a task manager that is easy to quit later and doesn’t lock you into a complex system for short-term use.",
+"verdict": {
+"winner": "y",
+"summary": "Todoist wins for students who need a temporary task list for a semester. It lets you track assignments without committing to a layered system. Habitica adds game mechanics that can be motivating, but if game mechanics introduce overhead beyond semester needs, they increase switching cost and complexity. Follow the rule: if game mechanics introduce overhead beyond semester needs, Habitica fails first.",
+"decision_rule": "If game mechanics introduce overhead beyond semester needs, Habitica fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for semester-based planning",
+"content": "As a student, your needs change every term. You want a tool that works now and is easy to abandon later without cleanup or emotional investment. The right choice supports short-term tracking without pulling you into a long-term system."
+},
+{
+"type": "x_wins",
+"heading": "Where Habitica still wins",
+"bullets": [
+{
+"point": "Gamified motivation",
+"why_it_matters": "If you struggle with consistency, game mechanics can increase engagement and daily follow-through."
+},
+{
+"point": "Habit tracking built alongside tasks",
+"why_it_matters": "If you want to build study routines, combining habits and tasks can reinforce structure."
+},
+{
+"point": "Social and accountability features",
+"why_it_matters": "If peer motivation helps you, group challenges can increase commitment."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Todoist wins under low switching cost",
+"bullets": [
+{
+"point": "Straightforward task lists",
+"why_it_matters": "You can add assignments quickly without learning a system that extends beyond the semester."
+},
+{
+"point": "No built-in game economy to manage",
+"why_it_matters": "Without points, streaks, or rewards, there’s nothing to maintain once the term ends."
+},
+{
+"point": "Easy to stop using",
+"why_it_matters": "When classes change or end, you can leave without feeling tied to progress mechanics."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You spend time managing rewards, streaks, or game elements instead of focusing on assignments.",
+"what_to_do_instead": "Switch to a simple task manager that removes gamified overhead."
+},
+{
+"tool": "y",
+"fails_when": "You lack motivation and need stronger engagement cues to stay consistent.",
+"what_to_do_instead": "Adopt a gamified tool if external reinforcement meaningfully improves follow-through."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want a temporary task list with no long-term system, choose Todoist.",
+"If game mechanics feel like extra overhead for one semester, avoid Habitica.",
+"If motivation is your main bottleneck, Habitica may be worth the added complexity."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is easier to use for just one semester?",
+"a": "Todoist is typically easier because it doesn’t require managing gamified systems or long-term progress mechanics."
+},
+{
+"q": "Can gamification help students?",
+"a": "Yes, but only if the added layers increase motivation more than they increase management overhead."
+},
+{
+"q": "What does low switching cost mean for students?",
+"a": "It means you can stop using the app after the term without cleanup, restructuring, or feeling tied to accumulated progress."
+},
+{
+"q": "Is Habitica too complex for short-term use?",
+"a": "It can be if the game elements require ongoing attention beyond what’s necessary to track assignments."
+}
+],
+"related_pages": [
+{ "x_name": "Todoist", "y_name": "Microsoft To Do", "persona": "Student" },
+{ "x_name": "TickTick", "y_name": "Todoist", "persona": "Student" },
+{ "x_name": "Notion", "y_name": "Todoist", "persona": "Student" },
+{ "x_name": "Trello", "y_name": "Todoist", "persona": "Student" },
+{ "x_name": "Habitica", "y_name": "TickTick", "persona": "Student" },
+{ "x_name": "Things 3", "y_name": "Todoist", "persona": "Student" }
+]
+}

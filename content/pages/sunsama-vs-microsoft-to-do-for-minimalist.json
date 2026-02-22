@@ -1,0 +1,110 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "Sunsama vs Microsoft To Do for Minimalists",
+"slug": "sunsama-vs-microsoft-to-do-for-minimalist",
+"meta_description": "Sunsama vs Microsoft To Do for minimalists who want a clean task list without structured daily planning sessions or extra steps.",
+"persona": "Minimalist",
+"constraint_lens": "You prefer tools that keep it simple and avoid extra features that create more decisions than value.",
+"verdict": {
+"winner": "y",
+"summary": "Microsoft To Do wins for minimalists who want tasks listed plainly without structured daily planning rituals. It focuses on straightforward lists that require minimal interaction. Sunsama is built around intentional daily planning, but if daily planning sessions add extra interaction steps, it creates friction for someone who just wants a clean list. Follow the rule: if daily planning sessions add extra interaction steps, Sunsama fails first.",
+"decision_rule": "If daily planning sessions add extra interaction steps, Sunsama fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when you want pure simplicity",
+"content": "As a minimalist, you want to open your task app and immediately see a clean list. You don’t want to be guided through planning flows or structured rituals. The right tool lets you capture and complete tasks without adding ceremony around your day."
+},
+{
+"type": "x_wins",
+"heading": "Where Sunsama still wins",
+"bullets": [
+{
+"point": "Guided daily planning structure",
+"why_it_matters": "If you benefit from intentional planning sessions, structured prompts can reduce overcommitment."
+},
+{
+"point": "Strong calendar alignment",
+"why_it_matters": "When tasks must map directly onto scheduled time, built-in planning layers can prevent overload."
+},
+{
+"point": "Built-in review process",
+"why_it_matters": "If reflecting on unfinished tasks is important to you, structured reviews can improve follow-through."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Microsoft To Do wins under feature aversion",
+"bullets": [
+{
+"point": "Plain list-first interface",
+"why_it_matters": "You can view and manage tasks without engaging with extra workflows or planning sessions."
+},
+{
+"point": "Minimal required interaction steps",
+"why_it_matters": "Fewer prompts and panels reduce friction between seeing a task and completing it."
+},
+{
+"point": "Stable, predictable structure",
+"why_it_matters": "You won’t be nudged into structured rituals, keeping the system lightweight over time."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You feel slowed down by required planning sessions before you can simply review or add tasks.",
+"what_to_do_instead": "Switch to a list-focused tool that removes guided daily rituals."
+},
+{
+"tool": "y",
+"fails_when": "You need structured daily planning tied closely to your calendar.",
+"what_to_do_instead": "Adopt a planning-centered app if intentional daily scheduling becomes necessary."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want a plain task list with no daily ritual, choose Microsoft To Do.",
+"If guided daily planning feels like extra work, avoid Sunsama.",
+"If you benefit from structured planning sessions, Sunsama may be worth the added steps."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is simpler for maintaining a clean task list?",
+"a": "Microsoft To Do is simpler because it focuses on straightforward lists without mandatory planning workflows."
+},
+{
+"q": "Does Sunsama require daily planning sessions?",
+"a": "Sunsama is designed around structured daily planning, which can feel like extra interaction for minimalists."
+},
+{
+"q": "Is structured planning always a downside?",
+"a": "Not necessarily. It can be helpful if you need more intention in your day, but it adds steps for those who prefer simplicity."
+},
+{
+"q": "What’s the main tradeoff between these tools?",
+"a": "Sunsama adds planning layers and intentional structure, while Microsoft To Do keeps task tracking lightweight and list-focused."
+}
+],
+"related_pages": [
+{ "x_name": "Microsoft To Do", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Microsoft To Do", "y_name": "Apple Reminders", "persona": "Minimalist" },
+{ "x_name": "Sunsama", "y_name": "Things 3", "persona": "Minimalist" },
+{ "x_name": "Sunsama", "y_name": "Motion", "persona": "Minimalist" },
+{ "x_name": "TickTick", "y_name": "Microsoft To Do", "persona": "Minimalist" },
+{ "x_name": "ClickUp", "y_name": "Microsoft To Do", "persona": "Minimalist" }
+]
+}
