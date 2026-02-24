@@ -1,0 +1,110 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "setup-tolerance",
+"constraintUiName": "Publish fast",
+"title": "Any.do vs Apple Reminders for Beginners",
+"slug": "anydo-vs-apple-reminders-for-beginner",
+"meta_description": "Any.do vs Apple Reminders for beginners who want to start tracking daily tasks instantly without navigating feature layers.",
+"persona": "Beginner",
+"constraint_lens": "You need a task app that works quickly without requiring setup or configuration before you can start using it.",
+"verdict": {
+"winner": "y",
+"summary": "Apple Reminders wins for beginners who want to start tracking tasks instantly. It opens to a simple checklist without habits, prompts, or layered features in the way. Any.do offers more features, but if habits and premium prompts appear before simple task entry, they create setup friction that slows beginners down. Follow the rule: if habits and premium prompts appear before simple task entry, Any.do fails first.",
+"decision_rule": "If habits and premium prompts appear before simple task entry, Any.do fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when you want zero setup",
+"content": "As a beginner, your biggest risk is getting distracted by features before adding your first task. You want to open the app and immediately write something down. The right tool removes prompts and layers so you can start tracking tasks in seconds."
+},
+{
+"type": "x_wins",
+"heading": "Where Any.do still wins",
+"bullets": [
+{
+"point": "Habit tracking built in",
+"why_it_matters": "If you want to build routines alongside tasks, integrated habits can help reinforce consistency."
+},
+{
+"point": "Richer reminder options",
+"why_it_matters": "If timing is critical, advanced reminders can reduce the chance of forgetting important items."
+},
+{
+"point": "Structured daily planning view",
+"why_it_matters": "If guided daily organization helps you focus, extra layers can provide clarity."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Apple Reminders wins under low setup tolerance",
+"bullets": [
+{
+"point": "Instant checklist entry",
+"why_it_matters": "You can add a task immediately without navigating habits, prompts, or upgrade messages."
+},
+{
+"point": "Minimal feature exposure",
+"why_it_matters": "Fewer visible layers reduce confusion for someone new to task apps."
+},
+{
+"point": "Clear, predictable interface",
+"why_it_matters": "The simplicity lowers the risk of feeling overwhelmed before you even start."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You feel distracted by habit prompts or upgrade nudges before logging basic tasks.",
+"what_to_do_instead": "Switch to a plain checklist app that prioritizes immediate task entry."
+},
+{
+"tool": "y",
+"fails_when": "You later need integrated habit tracking or more advanced reminder controls.",
+"what_to_do_instead": "Adopt a feature-rich tool once you’re comfortable with basic task management."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want to add tasks instantly with no prompts, choose Apple Reminders.",
+"If habits and upgrade messages appear before you log a task, avoid Any.do.",
+"If you specifically want built-in habit tracking, Any.do may be worth the added layers."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is easier for someone new to task apps?",
+"a": "Apple Reminders is generally easier because it centers on simple checklist entry without layered features."
+},
+{
+"q": "Does Any.do add setup friction for beginners?",
+"a": "It can if habit tracking and premium prompts appear before you’ve even added your first task."
+},
+{
+"q": "When might Any.do be better?",
+"a": "If you want habits and richer reminder options integrated from the start."
+},
+{
+"q": "What’s the main tradeoff here?",
+"a": "Apple Reminders prioritizes instant simplicity, while Any.do offers more features that may add early friction."
+}
+],
+"related_pages": [
+{ "x_name": "Apple Reminders", "y_name": "Microsoft To Do", "persona": "Beginner" },
+{ "x_name": "Apple Reminders", "y_name": "Todoist", "persona": "Beginner" },
+{ "x_name": "Any.do", "y_name": "Microsoft To Do", "persona": "Beginner" },
+{ "x_name": "Trello", "y_name": "Apple Reminders", "persona": "Beginner" },
+{ "x_name": "Notion", "y_name": "Apple Reminders", "persona": "Beginner" },
+{ "x_name": "TickTick", "y_name": "Apple Reminders", "persona": "Beginner" }
+]
+}

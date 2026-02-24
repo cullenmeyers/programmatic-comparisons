@@ -1,0 +1,110 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "Apple Reminders vs Any.do for Minimalists",
+"slug": "apple-reminders-vs-anydo-for-minimalist",
+"meta_description": "Apple Reminders vs Any.do for minimalists who want a built-in checklist without habits, reminders, or extra productivity layers.",
+"persona": "Minimalist",
+"constraint_lens": "You prefer tools that keep it simple and avoid extra features that create more decisions than value.",
+"verdict": {
+"winner": "x",
+"summary": "Apple Reminders wins for minimalists who want a built-in checklist without extra productivity layers. It keeps task tracking focused on simple lists with minimal interaction. Any.do adds habits and reminder features, but if habits and reminder layers introduce additional interaction steps, they create friction for someone who values simplicity. Follow the rule: if habits and reminder layers introduce additional interaction steps, Any.do fails first.",
+"decision_rule": "If habits and reminder layers introduce additional interaction steps, Any.do fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when you want nothing extra",
+"content": "As a minimalist, you don’t want habits, streaks, or layered reminder systems unless they are essential. You want a checklist that works out of the box. The right tool removes optional complexity so daily responsibilities stay clear and lightweight."
+},
+{
+"type": "x_wins",
+"heading": "Where Apple Reminders wins under feature aversion",
+"bullets": [
+{
+"point": "Built-in checklist simplicity",
+"why_it_matters": "You can add and complete tasks without navigating additional productivity features."
+},
+{
+"point": "Minimal conceptual layers",
+"why_it_matters": "There are no habits or gamified elements to manage, reducing decision fatigue."
+},
+{
+"point": "Stable, predictable structure",
+"why_it_matters": "The interface stays consistent, so you don’t need to adapt to evolving productivity layers."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Any.do still wins",
+"bullets": [
+{
+"point": "Habit tracking alongside tasks",
+"why_it_matters": "If you want to reinforce routines, combining habits and tasks can improve consistency."
+},
+{
+"point": "Richer reminder options",
+"why_it_matters": "If timing and notifications are critical, advanced reminders can reduce missed responsibilities."
+},
+{
+"point": "Integrated daily planning view",
+"why_it_matters": "If you prefer a more guided daily overview, extra layers can provide structure."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You need integrated habit tracking or advanced reminder logic beyond basic alerts.",
+"what_to_do_instead": "Use a tool with built-in habit and scheduling layers if those features are essential."
+},
+{
+"tool": "y",
+"fails_when": "You feel slowed down by managing habits or additional reminder settings for simple tasks.",
+"what_to_do_instead": "Switch to a straightforward checklist app that removes extra interaction steps."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want a pure checklist with no productivity layers, choose Apple Reminders.",
+"If habits and extra reminder options feel like overhead, avoid Any.do.",
+"If you need integrated habit tracking, Any.do may justify the added features."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is simpler for daily responsibilities?",
+"a": "Apple Reminders is simpler because it centers on straightforward checklists without additional productivity layers."
+},
+{
+"q": "Does Any.do add unnecessary complexity for minimalists?",
+"a": "It can, especially if habit tracking and advanced reminders introduce steps you don’t need."
+},
+{
+"q": "When might Any.do be the better choice?",
+"a": "If you want habit tracking and richer reminder control built into your task system."
+},
+{
+"q": "What’s the main tradeoff between these tools?",
+"a": "Apple Reminders prioritizes checklist simplicity, while Any.do offers expanded productivity features."
+}
+],
+"related_pages": [
+{ "x_name": "Apple Reminders", "y_name": "Microsoft To Do", "persona": "Minimalist" },
+{ "x_name": "Apple Reminders", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Any.do", "y_name": "Microsoft To Do", "persona": "Minimalist" },
+{ "x_name": "Things 3", "y_name": "Apple Reminders", "persona": "Minimalist" },
+{ "x_name": "TickTick", "y_name": "Apple Reminders", "persona": "Minimalist" },
+{ "x_name": "Sunsama", "y_name": "Apple Reminders", "persona": "Minimalist" }
+]
+}

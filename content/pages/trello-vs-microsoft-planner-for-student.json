@@ -1,0 +1,110 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
+"title": "Trello vs Microsoft Planner for Students",
+"slug": "trello-vs-microsoft-planner-for-student",
+"meta_description": "Trello vs Microsoft Planner for students coordinating short-term group assignments without enterprise setup overhead.",
+"persona": "Student",
+"constraint_lens": "You need a task manager that is easy to quit later and doesn’t lock you into a complex system for short-term use.",
+"verdict": {
+"winner": "x",
+"summary": "Trello wins for students coordinating short-term group assignments. It allows quick board setup without heavy administrative structure. Microsoft Planner is built for enterprise environments, but if enterprise setup and permissions exceed semester needs, it creates unnecessary friction and switching cost. Follow the rule: if enterprise setup and permissions exceed semester needs, Microsoft Planner fails first.",
+"decision_rule": "If enterprise setup and permissions exceed semester needs, Microsoft Planner fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for semester-based group work",
+"content": "As a student, your collaboration window is limited to a semester or even a few weeks. You need something your group can adopt quickly and abandon just as easily. The right tool minimizes setup and avoids administrative overhead that outlasts the project."
+},
+{
+"type": "x_wins",
+"heading": "Where Trello wins under low switching cost",
+"bullets": [
+{
+"point": "Fast board creation",
+"why_it_matters": "You can spin up a project board in minutes without configuring enterprise settings."
+},
+{
+"point": "Simple invite process",
+"why_it_matters": "Group members can join without navigating complex permission layers."
+},
+{
+"point": "Easy to archive after the project",
+"why_it_matters": "Once the semester ends, you can stop using it without cleaning up organizational structures."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Microsoft Planner still wins",
+"bullets": [
+{
+"point": "Deep integration with Microsoft ecosystem",
+"why_it_matters": "If your class relies heavily on Microsoft tools, integration can centralize collaboration."
+},
+{
+"point": "Structured permission controls",
+"why_it_matters": "For larger or formal groups, defined roles can prevent confusion about access."
+},
+{
+"point": "Enterprise-grade organization",
+"why_it_matters": "If your institution already uses Microsoft 365 extensively, Planner may align with existing workflows."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "Your project requires tight integration with Microsoft 365 permissions and organizational policies.",
+"what_to_do_instead": "Use Microsoft Planner if institutional structure and integration are mandatory."
+},
+{
+"tool": "y",
+"fails_when": "You spend time managing permissions or enterprise settings unrelated to the assignment.",
+"what_to_do_instead": "Switch to a lightweight board tool that fits short-term academic needs."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you need a quick, disposable board for one semester, choose Trello.",
+"If enterprise setup feels heavier than the assignment itself, avoid Microsoft Planner.",
+"If your school mandates Microsoft 365 integration, Microsoft Planner may be necessary."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is easier for short-term group projects?",
+"a": "Trello is usually easier because it requires minimal setup and can be abandoned after the project ends."
+},
+{
+"q": "Does Microsoft Planner add extra complexity for students?",
+"a": "It can if enterprise permissions and organizational structure exceed what’s needed for a semester assignment."
+},
+{
+"q": "What does low switching cost mean for group work?",
+"a": "It means the group can adopt and drop the tool without dealing with long-term account or administrative commitments."
+},
+{
+"q": "When would Microsoft Planner be the better choice?",
+"a": "If your institution requires Microsoft 365 tools and structured permission management."
+}
+],
+"related_pages": [
+{ "x_name": "Trello", "y_name": "Asana", "persona": "Student" },
+{ "x_name": "Trello", "y_name": "ClickUp", "persona": "Student" },
+{ "x_name": "Microsoft Planner", "y_name": "Asana", "persona": "Student" },
+{ "x_name": "Google Tasks", "y_name": "Trello", "persona": "Student" },
+{ "x_name": "Todoist", "y_name": "Trello", "persona": "Student" },
+{ "x_name": "Notion", "y_name": "Trello", "persona": "Student" }
+]
+}
