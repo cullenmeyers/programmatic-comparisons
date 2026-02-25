@@ -1,0 +1,110 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
+"title": "Todoist vs MeisterTask for Students",
+"slug": "todoist-vs-meistertask-for-student",
+"meta_description": "Todoist vs MeisterTask for students who need a short-term task manager for one semester without board setup overhead.",
+"persona": "Student",
+"constraint_lens": "You need a task manager that is easy to quit later and doesn’t lock you into a complex system for short-term use.",
+"verdict": {
+"winner": "x",
+"summary": "Todoist wins for students who only need a task manager for the current semester. It lets you track coursework without committing to board structures or project setups. MeisterTask is board-based, but if board structure and setup exceed short-term academic needs, it adds unnecessary friction and switching cost. Follow the rule: if board structure and setup exceed short-term academic needs, MeisterTask fails first.",
+"decision_rule": "If board structure and setup exceed short-term academic needs, MeisterTask fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for semester-only planning",
+"content": "As a student, your planning window is temporary. You need something that works for a few months and is easy to walk away from. The right tool keeps setup light so you can focus on coursework, not system design."
+},
+{
+"type": "x_wins",
+"heading": "Where Todoist wins under low switching cost",
+"bullets": [
+{
+"point": "Simple list-based structure",
+"why_it_matters": "You can add assignments quickly without creating boards or columns for each class."
+},
+{
+"point": "Minimal project setup",
+"why_it_matters": "Fewer structural decisions reduce time spent organizing instead of studying."
+},
+{
+"point": "Easy to stop using after the term",
+"why_it_matters": "When the semester ends, you can abandon the app without cleaning up board systems."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where MeisterTask still wins",
+"bullets": [
+{
+"point": "Visual board overview",
+"why_it_matters": "If you prefer seeing coursework move through stages, boards can make progress visible."
+},
+{
+"point": "Clear project separation",
+"why_it_matters": "Creating a board per class can keep assignments grouped visually."
+},
+{
+"point": "Useful for structured group work",
+"why_it_matters": "If collaboration is central, boards can clarify who is responsible for what."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "Your coursework requires clear visual stage tracking across multiple group projects.",
+"what_to_do_instead": "Adopt a board-style tool if visual workflow becomes essential."
+},
+{
+"tool": "y",
+"fails_when": "You spend time managing columns and board setup that don’t meaningfully improve your academic tracking.",
+"what_to_do_instead": "Switch to a simple list-based task manager for the remainder of the term."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you need a lightweight task list for one semester, choose Todoist.",
+"If board setup feels heavier than your coursework requires, avoid MeisterTask.",
+"If visual project stages improve your clarity, MeisterTask may fit better."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is easier to use for just one semester?",
+"a": "Todoist is generally easier because it requires minimal setup and is simple to stop using after the term."
+},
+{
+"q": "Does MeisterTask add unnecessary complexity for students?",
+"a": "It can if managing boards and columns exceeds what’s needed to track assignments."
+},
+{
+"q": "What does low switching cost mean for students?",
+"a": "It means you can abandon the tool after the semester without cleanup or structural commitments."
+},
+{
+"q": "When might MeisterTask be the better option?",
+"a": "If your coursework relies heavily on visual stage tracking or structured group collaboration."
+}
+],
+"related_pages": [
+{ "x_name": "Todoist", "y_name": "Microsoft To Do", "persona": "Student" },
+{ "x_name": "Todoist", "y_name": "TickTick", "persona": "Student" },
+{ "x_name": "MeisterTask", "y_name": "Trello", "persona": "Student" },
+{ "x_name": "Google Tasks", "y_name": "Todoist", "persona": "Student" },
+{ "x_name": "Notion", "y_name": "Todoist", "persona": "Student" },
+{ "x_name": "Trello", "y_name": "Todoist", "persona": "Student" }
+]
+}

@@ -1,0 +1,110 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "Quip vs Trello for Minimalists",
+"slug": "quip-vs-trello-for-minimalist",
+"meta_description": "Quip vs Trello for minimalists who want a simple task board without document collaboration layers or extra complexity.",
+"persona": "Minimalist",
+"constraint_lens": "You prefer tools that keep it simple and avoid extra features that create more decisions than value.",
+"verdict": {
+"winner": "y",
+"summary": "Trello wins for minimalists who want a simple task board without blending documents and collaboration layers. Its board-and-card model keeps tasks visually separated from long-form content. Quip combines documents and tasks, but if document collaboration layers add unnecessary complexity, it creates friction for someone who just wants clean task tracking. Follow the rule: if document collaboration layers add unnecessary complexity, Quip fails first.",
+"decision_rule": "If document collaboration layers add unnecessary complexity, Quip fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when you want tasks only",
+"content": "As a minimalist, you don’t want tasks mixed into documents, chats, or collaborative writing spaces. You want a board that shows what needs to be done, nothing more. The right tool keeps tasks separate from broader collaboration layers."
+},
+{
+"type": "x_wins",
+"heading": "Where Quip still wins",
+"bullets": [
+{
+"point": "Tasks embedded inside documents",
+"why_it_matters": "If your work revolves around shared documents, keeping tasks in context can reduce switching."
+},
+{
+"point": "Real-time collaboration",
+"why_it_matters": "If team editing and discussion are central, blending tasks with documents can streamline coordination."
+},
+{
+"point": "All-in-one workspace approach",
+"why_it_matters": "If you prefer fewer separate tools, combining docs and tasks can centralize work."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Trello wins under feature aversion",
+"bullets": [
+{
+"point": "Dedicated task board structure",
+"why_it_matters": "Tasks live in a clear board format without being embedded inside documents."
+},
+{
+"point": "Minimal conceptual blending",
+"why_it_matters": "You don’t have to think about document sections, comments, or shared editing while managing tasks."
+},
+{
+"point": "Visual simplicity",
+"why_it_matters": "Columns and cards focus attention on workflow rather than collaboration layers."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You feel distracted by document editing or collaboration features while trying to manage tasks.",
+"what_to_do_instead": "Switch to a task-only board tool that separates execution from document work."
+},
+{
+"tool": "y",
+"fails_when": "Your tasks must stay tightly connected to collaborative documents and shared notes.",
+"what_to_do_instead": "Adopt a document-centric workspace if context inside files is essential."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want a clean, task-only board, choose Trello.",
+"If document collaboration feels like extra complexity, avoid Quip.",
+"If tasks must live inside shared documents, Quip may fit better."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is simpler for task-only tracking?",
+"a": "Trello is simpler because it focuses on boards and cards without blending in document collaboration layers."
+},
+{
+"q": "Does Quip make task tracking more complex?",
+"a": "It can if document editing and collaboration features add layers you don’t need for simple task management."
+},
+{
+"q": "When would Quip be the better option?",
+"a": "If your tasks are closely tied to collaborative documents and shared editing workflows."
+},
+{
+"q": "What’s the core tradeoff?",
+"a": "Quip blends documents and tasks in one workspace, while Trello keeps task tracking visually focused and separate."
+}
+],
+"related_pages": [
+{ "x_name": "Trello", "y_name": "Asana", "persona": "Minimalist" },
+{ "x_name": "Trello", "y_name": "ClickUp", "persona": "Minimalist" },
+{ "x_name": "Quip", "y_name": "Notion", "persona": "Minimalist" },
+{ "x_name": "Apple Reminders", "y_name": "Trello", "persona": "Minimalist" },
+{ "x_name": "Todoist", "y_name": "Trello", "persona": "Minimalist" },
+{ "x_name": "MeisterTask", "y_name": "Trello", "persona": "Minimalist" }
+]
+}

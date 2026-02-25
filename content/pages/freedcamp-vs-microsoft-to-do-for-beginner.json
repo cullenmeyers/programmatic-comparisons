@@ -1,0 +1,110 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "setup-tolerance",
+"constraintUiName": "Publish fast",
+"title": "Freedcamp vs Microsoft To Do for Beginners",
+"slug": "freedcamp-vs-microsoft-to-do-for-beginner",
+"meta_description": "Freedcamp vs Microsoft To Do for beginners who want to start a simple task list without learning project modules or templates.",
+"persona": "Beginner",
+"constraint_lens": "You need a task app that works quickly without requiring setup or configuration before you can start using it.",
+"verdict": {
+"winner": "y",
+"summary": "Microsoft To Do wins for beginners who just want to track a few personal tasks. It opens to a simple list without requiring project setup or template decisions. Freedcamp offers project modules and templates, but if project templates and modules must be understood before adding tasks, it creates setup friction that stops beginners from starting. Follow the rule: if project templates and modules must be understood before adding tasks, Freedcamp fails first.",
+"decision_rule": "If project templates and modules must be understood before adding tasks, Freedcamp fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when you want to start immediately",
+"content": "As a beginner, your priority is getting tasks out of your head and into a list. You don’t want to choose project types or configure modules before you begin. The right tool lets you add your first task in seconds without learning a system."
+},
+{
+"type": "x_wins",
+"heading": "Where Freedcamp still wins",
+"bullets": [
+{
+"point": "Modular project features",
+"why_it_matters": "If you later manage structured projects, built-in modules can organize work clearly."
+},
+{
+"point": "Templates for repeatable setups",
+"why_it_matters": "Predefined project structures can save time once you understand how to use them."
+},
+{
+"point": "Collaboration capabilities",
+"why_it_matters": "If you expand into team work, shared modules can centralize tasks and communication."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Microsoft To Do wins under low setup tolerance",
+"bullets": [
+{
+"point": "Instant list creation",
+"why_it_matters": "You can begin adding tasks without selecting templates or configuring project modules."
+},
+{
+"point": "Minimal visible features",
+"why_it_matters": "Fewer options reduce confusion for someone new to task apps."
+},
+{
+"point": "Straightforward personal focus",
+"why_it_matters": "The interface centers on simple daily tasks rather than project management layers."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You feel unsure which project module or template to use before adding a basic task.",
+"what_to_do_instead": "Switch to a list-based tool that removes structural decisions at the start."
+},
+{
+"tool": "y",
+"fails_when": "You need structured project management with multiple modules and team collaboration.",
+"what_to_do_instead": "Adopt a project-focused platform once your needs expand."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want to add tasks immediately without setup, choose Microsoft To Do.",
+"If project templates feel confusing before you start, avoid Freedcamp.",
+"If you plan to manage structured team projects soon, Freedcamp may be worth learning."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is easier for someone new to task apps?",
+"a": "Microsoft To Do is generally easier because it focuses on simple lists without project modules."
+},
+{
+"q": "Does Freedcamp add setup friction for beginners?",
+"a": "It can if understanding project templates and modules becomes necessary before adding tasks."
+},
+{
+"q": "When would Freedcamp be a better option?",
+"a": "If you need structured project management features and collaboration tools beyond personal task tracking."
+},
+{
+"q": "What’s the main tradeoff here?",
+"a": "Freedcamp offers modular project management, while Microsoft To Do prioritizes instant, simple task entry."
+}
+],
+"related_pages": [
+{ "x_name": "Microsoft To Do", "y_name": "Todoist", "persona": "Beginner" },
+{ "x_name": "Microsoft To Do", "y_name": "Apple Reminders", "persona": "Beginner" },
+{ "x_name": "Freedcamp", "y_name": "Asana", "persona": "Beginner" },
+{ "x_name": "Freedcamp", "y_name": "Trello", "persona": "Beginner" },
+{ "x_name": "ClickUp", "y_name": "Microsoft To Do", "persona": "Beginner" },
+{ "x_name": "Notion", "y_name": "Microsoft To Do", "persona": "Beginner" }
+]
+}

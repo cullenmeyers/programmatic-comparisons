@@ -1,0 +1,110 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "Productive vs Apple Reminders for Minimalists",
+"slug": "productive-vs-apple-reminders-for-minimalist",
+"meta_description": "Productive vs Apple Reminders for minimalists who want a simple daily task list without habit metrics or streak systems.",
+"persona": "Minimalist",
+"constraint_lens": "You prefer tools that keep it simple and avoid extra features that create more decisions than value.",
+"verdict": {
+"winner": "y",
+"summary": "Apple Reminders wins for minimalists who want to track a few daily responsibilities without habit tracking layers. It focuses on plain checklists and minimal interaction. Productive is designed around habits and streak systems, but if built-in habit metrics and streak systems introduce extra interaction steps, they create friction instead of clarity. Follow the rule: if built-in habit metrics and streak systems introduce extra interaction steps, Productive fails first.",
+"decision_rule": "If built-in habit metrics and streak systems introduce extra interaction steps, Productive fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when you want tasks, not tracking systems",
+"content": "As a minimalist, you want to list a few daily responsibilities and check them off. You don’t want performance charts, streak counters, or progress dashboards. The right tool stays out of the way and keeps attention on completing tasks."
+},
+{
+"type": "x_wins",
+"heading": "Where Productive still wins",
+"bullets": [
+{
+"point": "Habit-focused design",
+"why_it_matters": "If building consistent routines is your goal, streak systems can reinforce repetition."
+},
+{
+"point": "Progress metrics and tracking",
+"why_it_matters": "Seeing measurable progress can increase motivation for long-term habit change."
+},
+{
+"point": "Structured daily guidance",
+"why_it_matters": "If you benefit from prompts and reminders tied to habits, extra layers can improve consistency."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Apple Reminders wins under feature aversion",
+"bullets": [
+{
+"point": "Plain checklist interface",
+"why_it_matters": "You can add and complete tasks without interacting with habit metrics or streak logic."
+},
+{
+"point": "Minimal visual clutter",
+"why_it_matters": "No dashboards or performance summaries reduce cognitive overhead."
+},
+{
+"point": "Immediate usability",
+"why_it_matters": "You can track daily tasks without learning or managing a system beyond the list."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You feel distracted by streaks, charts, or habit metrics for simple daily responsibilities.",
+"what_to_do_instead": "Switch to a straightforward checklist app that removes tracking layers."
+},
+{
+"tool": "y",
+"fails_when": "You need structured habit reinforcement and measurable progress tracking.",
+"what_to_do_instead": "Adopt a habit-focused tool if routine building becomes the main priority."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want a pure daily checklist, choose Apple Reminders.",
+"If streaks and habit metrics feel like extra steps, avoid Productive.",
+"If building consistent habits is your main goal, Productive may justify the added layers."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is simpler for tracking daily responsibilities?",
+"a": "Apple Reminders is simpler because it focuses on straightforward checklists without habit tracking systems."
+},
+{
+"q": "Does Productive add unnecessary complexity for minimalists?",
+"a": "It can if built-in metrics and streak systems introduce interaction steps you don’t need."
+},
+{
+"q": "When might Productive be the better choice?",
+"a": "If your main goal is building and measuring habits rather than just listing tasks."
+},
+{
+"q": "What’s the main tradeoff between these tools?",
+"a": "Productive emphasizes habit tracking and metrics, while Apple Reminders emphasizes simple task completion."
+}
+],
+"related_pages": [
+{ "x_name": "Apple Reminders", "y_name": "Microsoft To Do", "persona": "Minimalist" },
+{ "x_name": "Apple Reminders", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Productive", "y_name": "Habitica", "persona": "Minimalist" },
+{ "x_name": "Things 3", "y_name": "Apple Reminders", "persona": "Minimalist" },
+{ "x_name": "TickTick", "y_name": "Apple Reminders", "persona": "Minimalist" },
+{ "x_name": "Sunsama", "y_name": "Apple Reminders", "persona": "Minimalist" }
+]
+}

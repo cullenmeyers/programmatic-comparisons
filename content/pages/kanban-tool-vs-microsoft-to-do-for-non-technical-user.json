@@ -1,0 +1,110 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "fear-of-breaking",
+"constraintUiName": "Hard to mess up",
+"title": "Kanban Tool vs Microsoft To Do for Non-technical users",
+"slug": "kanban-tool-vs-microsoft-to-do-for-non-technical-user",
+"meta_description": "Kanban Tool vs Microsoft To Do for non-technical users who want straightforward personal to-dos without board customization.",
+"persona": "Non-technical user",
+"constraint_lens": "You need a tool that feels hard to mess up and doesn’t make you worry about placing tasks in the wrong spot.",
+"verdict": {
+"winner": "y",
+"summary": "Microsoft To Do wins for non-technical users who want straightforward personal task tracking. Its list-based design reduces uncertainty about where tasks belong. Kanban Tool is built around customizable boards, but if board customization creates uncertainty about task placement, it increases hesitation and fear of doing something wrong. Follow the rule: if board customization creates uncertainty about task placement, Kanban Tool fails first.",
+"decision_rule": "If board customization creates uncertainty about task placement, Kanban Tool fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when you want clarity without configuration",
+"content": "As a non-technical user, you want to add tasks and trust they’re in the right place. You don’t want to configure columns, workflows, or board rules. The right tool minimizes structure so you never feel unsure about what you just clicked."
+},
+{
+"type": "x_wins",
+"heading": "Where Kanban Tool still wins",
+"bullets": [
+{
+"point": "Visual workflow tracking",
+"why_it_matters": "If tasks naturally move through clear stages, boards can make progress visible."
+},
+{
+"point": "Customizable columns and processes",
+"why_it_matters": "If you need defined steps, tailored boards can match your workflow."
+},
+{
+"point": "Strong for project-style organization",
+"why_it_matters": "If your responsibilities resemble structured projects, boards can group related tasks clearly."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Microsoft To Do wins under fear of breaking things",
+"bullets": [
+{
+"point": "Simple list-based interface",
+"why_it_matters": "You add a task to a list without worrying about which column it belongs in."
+},
+{
+"point": "Minimal customization options",
+"why_it_matters": "Fewer settings reduce the chance of accidentally changing something important."
+},
+{
+"point": "Clear daily focus view",
+"why_it_matters": "Seeing a straightforward list lowers anxiety about managing structure."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You feel unsure about which column to use or how board settings affect your tasks.",
+"what_to_do_instead": "Switch to a simple checklist-based tool that removes board decisions."
+},
+{
+"tool": "y",
+"fails_when": "You need structured stage-based tracking for complex projects.",
+"what_to_do_instead": "Adopt a board-style tool if visual workflow becomes necessary."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want straightforward personal to-dos, choose Microsoft To Do.",
+"If board customization makes you second-guess placement, avoid Kanban Tool.",
+"If your tasks move through defined stages and you’re comfortable with boards, Kanban Tool may fit."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool feels safer for non-technical users?",
+"a": "Microsoft To Do generally feels safer because it centers on simple lists without customizable board settings."
+},
+{
+"q": "Is Kanban Tool too complex for personal tasks?",
+"a": "It can be if managing columns and board customization adds uncertainty about task placement."
+},
+{
+"q": "When would Kanban Tool be the better choice?",
+"a": "If your tasks move through clear stages and you’re comfortable configuring boards."
+},
+{
+"q": "What’s the main tradeoff between these tools?",
+"a": "Kanban Tool emphasizes customizable visual workflows, while Microsoft To Do emphasizes simple, low-risk task lists."
+}
+],
+"related_pages": [
+{ "x_name": "Microsoft To Do", "y_name": "Todoist", "persona": "Non-technical user" },
+{ "x_name": "Microsoft To Do", "y_name": "Apple Reminders", "persona": "Non-technical user" },
+{ "x_name": "Kanban Tool", "y_name": "Trello", "persona": "Non-technical user" },
+{ "x_name": "ClickUp", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
+{ "x_name": "Basecamp", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
+{ "x_name": "Any.do", "y_name": "Microsoft To Do", "persona": "Non-technical user" }
+]
+}
