@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "setup-tolerance",
+"constraintUiName": "Publish fast",
+"title": "Apple Notes vs Notion for Beginners",
+"slug": "apple-notes-vs-notion-for-beginner",
+"meta_description": "Apple Notes vs Notion for beginners who want to start writing simple notes without learning databases or page structure.",
+"persona": "Beginner",
+"constraint_lens": "You need a note app that works immediately without requiring setup or structural decisions before you start writing.",
+"verdict": {
+"winner": "x",
+"summary": "Apple Notes wins for beginners who just want to start typing without thinking about structure. It opens to a blank note with no database concepts or layout decisions required. Notion is powerful, but if databases and page structures must be understood before writing, it introduces setup friction that slows beginners down. Follow the rule: if databases and page structures must be understood before writing, Notion fails first.",
+"decision_rule": "If databases and page structures must be understood before writing, Notion fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when you want instant writing",
+"content": "As a beginner, you don’t want to design a system before capturing a thought. You just want to open the app and start typing. The right tool removes structural choices so your first note takes seconds, not setup decisions."
+},
+{
+"type": "x_wins",
+"heading": "Where Apple Notes wins under low setup tolerance",
+"bullets": [
+{
+"point": "Immediate blank note experience",
+"why_it_matters": "You can start typing instantly without selecting templates, blocks, or databases."
+},
+{
+"point": "Minimal visible structure",
+"why_it_matters": "Fewer layout elements reduce confusion for someone new to note apps."
+},
+{
+"point": "No database concepts to learn",
+"why_it_matters": "You don’t need to understand properties, tables, or linked pages before writing."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Notion still wins",
+"bullets": [
+{
+"point": "Flexible page and database system",
+"why_it_matters": "If you’re willing to learn structure, you can build a system that scales beyond simple notes."
+},
+{
+"point": "All-in-one workspace",
+"why_it_matters": "Notes, tasks, and projects can live together once you understand how to organize them."
+},
+{
+"point": "Custom templates",
+"why_it_matters": "Structured templates can save time after initial setup."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You need structured databases, linked notes, or advanced organization across many projects.",
+"what_to_do_instead": "Move to a more flexible system once you’re comfortable managing structure."
+},
+{
+"tool": "y",
+"fails_when": "You hesitate to write because you’re unsure which template, database, or page structure to use.",
+"what_to_do_instead": "Switch to a simple note app that prioritizes immediate typing."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want to start typing immediately, choose Apple Notes.",
+"If database concepts feel confusing before you write, avoid Notion at the start.",
+"If you’re ready to build a structured system, Notion may grow with you."
+]
+},
+{
+"type": "faqs",
+"heading": "",
+"content": ""
+}
+],
+"faqs": [
+{
+"q": "Which app is easier for someone new to note-taking?",
+"a": "Apple Notes is generally easier because it allows instant writing without structural setup."
+},
+{
+"q": "Is Notion too complex for beginners?",
+"a": "It can feel complex if you must understand databases and page structure before comfortably writing notes."
+},
+{
+"q": "Can Apple Notes handle more than simple notes?",
+"a": "It can handle moderate organization, but advanced database-style systems are limited."
+},
+{
+"q": "What’s the main tradeoff between these tools?",
+"a": "Apple Notes prioritizes instant simplicity, while Notion prioritizes flexible structure and scalability."
+}
+],
+"related_pages": [
+{ "x_name": "Apple Notes", "y_name": "Evernote", "persona": "Beginner" },
+{ "x_name": "Apple Notes", "y_name": "OneNote", "persona": "Beginner" },
+{ "x_name": "Notion", "y_name": "Evernote", "persona": "Beginner" },
+{ "x_name": "Google Keep", "y_name": "Apple Notes", "persona": "Beginner" },
+{ "x_name": "Notion", "y_name": "Google Docs", "persona": "Beginner" },
+{ "x_name": "UpNote", "y_name": "Apple Notes", "persona": "Beginner" }
+]
+}
