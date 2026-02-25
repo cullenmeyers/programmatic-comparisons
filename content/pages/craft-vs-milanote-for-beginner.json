@@ -1,0 +1,110 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "setup-tolerance",
+"constraintUiName": "Publish fast",
+"title": "Craft vs Milanote for Beginners",
+"slug": "craft-vs-milanote-for-beginner",
+"meta_description": "Craft vs Milanote for beginners who want to start typing ideas without learning board-style visual systems first.",
+"persona": "Beginner",
+"constraint_lens": "You need a note app that works immediately without requiring setup or structural decisions before you start writing.",
+"verdict": {
+"winner": "x",
+"summary": "Craft wins for beginners who just want to start typing ideas without learning a visual board system. It opens to a document-style writing space that feels familiar and direct. Milanote is built around board-style layouts, but if board-style layout must be understood before writing, it adds setup friction that slows beginners down. Follow the rule: if board-style layout must be understood before writing, Milanote fails first.",
+"decision_rule": "If board-style layout must be understood before writing, Milanote fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when you want to type immediately",
+"content": "As a beginner, your priority is capturing ideas without learning a system first. You don’t want to drag cards around or design visual boards before writing a sentence. The right tool gives you a clean document and lets you begin instantly."
+},
+{
+"type": "x_wins",
+"heading": "Where Craft wins under low setup tolerance",
+"bullets": [
+{
+"point": "Document-style writing experience",
+"why_it_matters": "You can start typing in a familiar layout without arranging visual elements."
+},
+{
+"point": "Minimal structural decisions upfront",
+"why_it_matters": "You avoid choosing board layouts or placing content blocks before writing."
+},
+{
+"point": "Clear, linear flow",
+"why_it_matters": "A straightforward page reduces cognitive load for someone new to note apps."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Milanote still wins",
+"bullets": [
+{
+"point": "Visual board organization",
+"why_it_matters": "If you think visually, boards can help map ideas spatially."
+},
+{
+"point": "Flexible layout positioning",
+"why_it_matters": "You can arrange notes, images, and links freely across a canvas."
+},
+{
+"point": "Creative brainstorming support",
+"why_it_matters": "For design-heavy projects, visual boards can clarify relationships between ideas."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You need freeform visual mapping rather than linear documents.",
+"what_to_do_instead": "Switch to a board-based tool if spatial organization becomes essential."
+},
+{
+"tool": "y",
+"fails_when": "You hesitate to write because you’re unsure how to structure or place items on a board.",
+"what_to_do_instead": "Use a document-style app that prioritizes immediate typing."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want to start typing without learning a layout system, choose Craft.",
+"If board-style structure feels like extra setup, avoid Milanote.",
+"If you prefer spatial, visual brainstorming, Milanote may fit better."
+]
+}
+],
+"faqs": [
+{
+"q": "Which app is easier for beginners to start writing?",
+"a": "Craft is generally easier because it opens to a document-style page without requiring board understanding."
+},
+{
+"q": "Is Milanote too complex for new users?",
+"a": "It can feel complex if you must understand board-style layouts before comfortably writing notes."
+},
+{
+"q": "When would Milanote be the better choice?",
+"a": "If you prefer visual brainstorming and arranging ideas spatially rather than in a linear document."
+},
+{
+"q": "What’s the main tradeoff between these tools?",
+"a": "Craft emphasizes linear writing simplicity, while Milanote emphasizes visual board-based organization."
+}
+],
+"related_pages": [
+{ "x_name": "Craft", "y_name": "Notion", "persona": "Beginner" },
+{ "x_name": "Milanote", "y_name": "Notion", "persona": "Beginner" },
+{ "x_name": "Apple Notes", "y_name": "Craft", "persona": "Beginner" },
+{ "x_name": "Google Docs", "y_name": "Craft", "persona": "Beginner" },
+{ "x_name": "Milanote", "y_name": "Evernote", "persona": "Beginner" },
+{ "x_name": "Craft", "y_name": "UpNote", "persona": "Beginner" }
+]
+}

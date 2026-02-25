@@ -1,0 +1,110 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "maintenance-load",
+"constraintUiName": "Works without upkeep",
+"title": "Joplin vs Notion for Solo users",
+"slug": "joplin-vs-notion-for-solo-user",
+"meta_description": "Joplin vs Notion for solo users who want a durable note archive without recurring database restructuring or redesign.",
+"persona": "Solo user",
+"constraint_lens": "You need a note system that works without upkeep and does not require periodic restructuring over time.",
+"verdict": {
+"winner": "x",
+"summary": "Joplin wins for solo users who want a durable, long-term note archive without ongoing redesign. Its notebook structure stays stable and does not depend on database schemas. Notion is flexible, but if database restructuring requires periodic redesign, it introduces maintenance work you did not sign up for. Follow the rule: if database restructuring requires periodic redesign, Notion fails first.",
+"decision_rule": "If database restructuring requires periodic redesign, Notion fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when you want long-term stability",
+"content": "As a solo user, you are not managing a team or evolving shared workflows. You just want your notes to remain accessible and organized for years. The right tool minimizes structural tinkering so your archive stays stable without recurring redesign."
+},
+{
+"type": "x_wins",
+"heading": "Where Joplin wins under zero maintenance tolerance",
+"bullets": [
+{
+"point": "Simple notebook and note hierarchy",
+"why_it_matters": "A straightforward structure reduces the temptation to rebuild your system every few months."
+},
+{
+"point": "No database schema to maintain",
+"why_it_matters": "You avoid periodic cleanup of properties, views, and relational links."
+},
+{
+"point": "Local-first durability",
+"why_it_matters": "Your archive remains stable without depending on evolving workspace configurations."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Notion still wins",
+"bullets": [
+{
+"point": "Highly customizable databases",
+"why_it_matters": "If you want to design a structured knowledge system, flexibility can match your exact needs."
+},
+{
+"point": "Integrated notes and tasks",
+"why_it_matters": "Combining documents and planning in one workspace can reduce tool switching."
+},
+{
+"point": "Multiple views on the same content",
+"why_it_matters": "If you enjoy refining how your notes are displayed, database views provide options."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You need complex relational databases or advanced workspace customization.",
+"what_to_do_instead": "Adopt a database-driven tool if structured interlinking becomes central."
+},
+{
+"tool": "y",
+"fails_when": "You find yourself periodically redesigning properties, views, or page structures to keep things usable.",
+"what_to_do_instead": "Simplify to a stable notebook-based app that removes restructuring pressure."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want a durable archive with no redesign cycles, choose Joplin.",
+"If periodic database restructuring sounds like maintenance, avoid Notion.",
+"If you enjoy customizing systems and refining views, Notion may fit better."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool requires less long-term maintenance?",
+"a": "Joplin generally requires less maintenance because it relies on simple notebook structure rather than evolving databases."
+},
+{
+"q": "Why might Notion require restructuring?",
+"a": "As databases grow, you may adjust properties, views, and relationships to keep the system organized."
+},
+{
+"q": "Is flexibility always better for solo users?",
+"a": "Not necessarily. Flexibility can lead to ongoing redesign if you prefer a stable, low-maintenance archive."
+},
+{
+"q": "When would Notion be the better choice?",
+"a": "If you actively want to build and refine a customizable knowledge system over time."
+}
+],
+"related_pages": [
+{ "x_name": "Joplin", "y_name": "Obsidian", "persona": "Solo user" },
+{ "x_name": "Joplin", "y_name": "Evernote", "persona": "Solo user" },
+{ "x_name": "Notion", "y_name": "Evernote", "persona": "Solo user" },
+{ "x_name": "Apple Notes", "y_name": "Joplin", "persona": "Solo user" },
+{ "x_name": "OneNote", "y_name": "Notion", "persona": "Solo user" },
+{ "x_name": "UpNote", "y_name": "Joplin", "persona": "Solo user" }
+]
+}

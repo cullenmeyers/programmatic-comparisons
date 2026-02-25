@@ -1,0 +1,110 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "time-scarcity",
+"constraintUiName": "Fast to use daily",
+"title": "Evernote vs DEVONthink for Busy professionals",
+"slug": "evernote-vs-devonthink-for-busy-professional",
+"meta_description": "Evernote vs DEVONthink for busy professionals who need fast access to work notes without database configuration overhead.",
+"persona": "Busy professional",
+"constraint_lens": "You need a note system that is fast to use daily, with minimal configuration between needing information and accessing it.",
+"verdict": {
+"winner": "x",
+"summary": "Evernote wins for busy professionals who need dependable access to work notes without managing complex systems. It provides quick capture and retrieval without database setup or indexing decisions. DEVONthink is powerful, but if database configuration and indexing require extra attention, it adds cognitive load that slows daily use. Follow the rule: if database configuration and indexing require extra attention, DEVONthink fails first.",
+"decision_rule": "If database configuration and indexing require extra attention, DEVONthink fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when speed beats structure",
+"content": "As a busy professional, you don’t have time to manage note architecture. You need to capture information quickly and retrieve it just as fast. The right tool minimizes configuration so your attention stays on work, not system design."
+},
+{
+"type": "x_wins",
+"heading": "Where Evernote wins under time scarcity",
+"bullets": [
+{
+"point": "Quick capture and retrieval",
+"why_it_matters": "You can save and search notes immediately without adjusting database settings."
+},
+{
+"point": "Minimal structural setup",
+"why_it_matters": "Tags and notebooks work out of the box without requiring indexing rules."
+},
+{
+"point": "Predictable interface",
+"why_it_matters": "A stable layout reduces mental friction during fast-paced workdays."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where DEVONthink still wins",
+"bullets": [
+{
+"point": "Advanced database organization",
+"why_it_matters": "If you manage large research archives, deep structuring can improve long-term clarity."
+},
+{
+"point": "Powerful indexing capabilities",
+"why_it_matters": "Extensive control over document storage can benefit heavy document workflows."
+},
+{
+"point": "Flexible file management",
+"why_it_matters": "If you want granular control over how information is stored and categorized, it offers depth."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You need deep database configuration and advanced document indexing for complex archives.",
+"what_to_do_instead": "Adopt a more database-driven tool if large-scale information management is central."
+},
+{
+"tool": "y",
+"fails_when": "You delay capturing or retrieving notes because indexing and database setup demand attention.",
+"what_to_do_instead": "Switch to a faster, simpler note app for daily operational work."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you need fast daily access to notes, choose Evernote.",
+"If database configuration feels like extra cognitive load, avoid DEVONthink.",
+"If you manage complex research databases and need granular control, DEVONthink may justify its depth."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is faster for daily work notes?",
+"a": "Evernote is typically faster because it requires less configuration and indexing management."
+},
+{
+"q": "Is DEVONthink too complex for busy professionals?",
+"a": "It can be if database configuration and indexing add extra steps before accessing notes."
+},
+{
+"q": "When would DEVONthink be the better choice?",
+"a": "If you manage large, complex document databases that require advanced organization."
+},
+{
+"q": "What’s the main tradeoff between these tools?",
+"a": "Evernote emphasizes speed and simplicity, while DEVONthink emphasizes deep database control and indexing power."
+}
+],
+"related_pages": [
+{ "x_name": "Evernote", "y_name": "Notion", "persona": "Busy professional" },
+{ "x_name": "Evernote", "y_name": "Microsoft OneNote", "persona": "Busy professional" },
+{ "x_name": "DEVONthink", "y_name": "Obsidian", "persona": "Busy professional" },
+{ "x_name": "Apple Notes", "y_name": "Evernote", "persona": "Busy professional" },
+{ "x_name": "Notion", "y_name": "Google Docs", "persona": "Busy professional" },
+{ "x_name": "Joplin", "y_name": "Evernote", "persona": "Busy professional" }
+]
+}

@@ -1,0 +1,110 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "ceiling-check",
+"constraintUiName": "Grows with you",
+"title": "Obsidian vs Evernote for Power users",
+"slug": "obsidian-vs-evernote-for-power-user",
+"meta_description": "Obsidian vs Evernote for power users building a scalable second brain with deep linking, plugins, and graph-level control.",
+"persona": "Power user",
+"constraint_lens": "You need a tool that grows with you and does not cap your system as complexity increases.",
+"verdict": {
+"winner": "x",
+"summary": "Obsidian wins for power users building a long-term, highly customized second brain. It offers deep linking, graph views, and plugin extensibility that expand as your system grows. Evernote is polished and structured, but if plugin extensibility and graph-level control are constrained, it limits long-term scalability. Follow the rule: if plugin extensibility and graph-level control are constrained, Evernote fails first.",
+"decision_rule": "If plugin extensibility and graph-level control are constrained, Evernote fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit when your system must scale",
+"content": "As a power user, you’re not just storing notes—you’re building infrastructure. You need deep linking, structural control, and the ability to extend the system over time. The right tool removes ceilings so your knowledge graph can grow without friction."
+},
+{
+"type": "x_wins",
+"heading": "Where Obsidian wins under ceiling pressure",
+"bullets": [
+{
+"point": "Extensive plugin ecosystem",
+"why_it_matters": "You can extend functionality as your system evolves instead of being locked into fixed features."
+},
+{
+"point": "Graph-level linking and bidirectional connections",
+"why_it_matters": "Heavy linking enables emergent structure, which is essential for a scalable second brain."
+},
+{
+"point": "Local-first file control",
+"why_it_matters": "Direct access to your files increases flexibility and reduces platform dependency over time."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Evernote still wins",
+"bullets": [
+{
+"point": "Polished capture experience",
+"why_it_matters": "If speed and simplicity of note capture matter more than structural depth, streamlined tools reduce friction."
+},
+{
+"point": "Strong search and organization defaults",
+"why_it_matters": "If you prefer tagging and notebooks over complex linking systems, structure is built in."
+},
+{
+"point": "Less setup required",
+"why_it_matters": "If you don’t want to design your own system architecture, defaults can be enough."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You prefer a ready-made structure and don’t want to manage plugins or system design.",
+"what_to_do_instead": "Choose a more opinionated note app with built-in organization defaults."
+},
+{
+"tool": "y",
+"fails_when": "You hit limits in linking depth, customization, or extensibility as your knowledge base grows.",
+"what_to_do_instead": "Move to a more extensible platform before structural constraints slow you down."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you need deep linking and plugin extensibility, choose Obsidian.",
+"If ceiling limits on customization would frustrate you long term, avoid Evernote.",
+"If you prefer a polished, structured default system without heavy customization, Evernote may be enough."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool has the higher long-term ceiling?",
+"a": "Obsidian generally has the higher ceiling due to its plugin ecosystem, graph view, and file-level control."
+},
+{
+"q": "Is Evernote too limiting for power users?",
+"a": "It can be if you need deep customization, advanced linking, and system extensibility beyond built-in features."
+},
+{
+"q": "What makes a second brain scalable?",
+"a": "Deep linking, flexible structure, extensibility, and the ability to evolve the system without hitting hard limits."
+},
+{
+"q": "When might Evernote still be the better choice?",
+"a": "If you value a polished capture experience and don’t need graph-level control or plugin-based expansion."
+}
+],
+"related_pages": [
+{ "x_name": "Obsidian", "y_name": "Notion", "persona": "Power user" },
+{ "x_name": "Obsidian", "y_name": "Roam Research", "persona": "Power user" },
+{ "x_name": "Evernote", "y_name": "OneNote", "persona": "Power user" },
+{ "x_name": "Logseq", "y_name": "Obsidian", "persona": "Power user" },
+{ "x_name": "Notion", "y_name": "Evernote", "persona": "Power user" },
+{ "x_name": "Bear", "y_name": "Obsidian", "persona": "Power user" }
+]
+}

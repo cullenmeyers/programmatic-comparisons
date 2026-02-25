@@ -1,0 +1,110 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
+"title": "RemNote vs Microsoft OneNote for Students",
+"slug": "remnote-vs-microsoft-onenote-for-student",
+"meta_description": "RemNote vs Microsoft OneNote for students who need semester-only notes without learning spaced repetition systems.",
+"persona": "Student",
+"constraint_lens": "You need a note tool that is easy to quit later and doesn’t require learning a complex system for short-term use.",
+"verdict": {
+"winner": "y",
+"summary": "Microsoft OneNote wins for students who need to organize class material for one semester without learning a study framework. It supports straightforward note organization without forcing a methodology. RemNote is built around spaced repetition and structured learning, but if spaced repetition structures must be understood before basic note-taking, it adds overhead that isn’t justified for short-term use. Follow the rule: if spaced repetition structures must be understood before basic note-taking, RemNote fails first.",
+"decision_rule": "If spaced repetition structures must be understood before basic note-taking, RemNote fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for semester-focused notes",
+"content": "As a student, you need something that works for a few months without requiring you to adopt a full study philosophy. Your priority is capturing lectures and organizing material quickly. The right tool keeps structure light so you can focus on content, not frameworks."
+},
+{
+"type": "x_wins",
+"heading": "Where RemNote still wins",
+"bullets": [
+{
+"point": "Built-in spaced repetition",
+"why_it_matters": "If long-term retention is your main goal, structured review can improve memory over time."
+},
+{
+"point": "Concept-based note linking",
+"why_it_matters": "Connecting ideas can strengthen understanding in cumulative subjects."
+},
+{
+"point": "Study workflow integration",
+"why_it_matters": "If you want notes and flashcards tightly integrated, the system supports that."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Microsoft OneNote wins under low switching cost",
+"bullets": [
+{
+"point": "Freeform note organization",
+"why_it_matters": "You can create sections and pages without adopting a formal study system."
+},
+{
+"point": "Familiar notebook structure",
+"why_it_matters": "Less learning curve means faster adoption for one academic term."
+},
+{
+"point": "Easy to abandon after the semester",
+"why_it_matters": "You won’t feel tied to a long-term spaced repetition system once the course ends."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Failure modes to watch for",
+"items": [
+{
+"tool": "x",
+"fails_when": "You feel pressured to structure notes as flashcards or spaced repetition items before simply capturing content.",
+"what_to_do_instead": "Use a straightforward notebook app for the semester and add study tools only if needed."
+},
+{
+"tool": "y",
+"fails_when": "You want built-in memory reinforcement and structured review cycles.",
+"what_to_do_instead": "Adopt a tool designed for integrated study workflows."
+}
+]
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules for deciding in 30 seconds",
+"rules": [
+"If you want simple class notes for one semester, choose Microsoft OneNote.",
+"If learning spaced repetition feels like extra overhead, avoid RemNote.",
+"If long-term memory reinforcement is central to your study plan, RemNote may fit better."
+]
+}
+],
+"faqs": [
+{
+"q": "Which tool is easier for short-term academic notes?",
+"a": "Microsoft OneNote is generally easier because it doesn’t require learning a study framework before writing notes."
+},
+{
+"q": "Is RemNote too structured for one semester?",
+"a": "It can be if spaced repetition and concept structures feel heavier than your immediate coursework needs."
+},
+{
+"q": "What does low switching cost mean here?",
+"a": "It means you can stop using the app after the term without leaving behind a complex study system."
+},
+{
+"q": "When would RemNote be the better choice?",
+"a": "If you want integrated flashcards and long-term memory reinforcement built directly into your notes."
+}
+],
+"related_pages": [
+{ "x_name": "Microsoft OneNote", "y_name": "Evernote", "persona": "Student" },
+{ "x_name": "Notion", "y_name": "Microsoft OneNote", "persona": "Student" },
+{ "x_name": "Google Docs", "y_name": "Microsoft OneNote", "persona": "Student" },
+{ "x_name": "RemNote", "y_name": "Notion", "persona": "Student" },
+{ "x_name": "Apple Notes", "y_name": "Microsoft OneNote", "persona": "Student" },
+{ "x_name": "Obsidian", "y_name": "RemNote", "persona": "Student" }
+]
+}
