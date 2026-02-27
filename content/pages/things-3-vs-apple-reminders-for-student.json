@@ -1,133 +1,115 @@
 {
 "category": "Task Managers",
 "categorySlug": "task-managers",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
 "title": "Things 3 vs Apple Reminders for Students",
 "slug": "things-3-vs-apple-reminders-for-student",
-"meta_description": "A student-focused comparison of Things 3 vs Apple Reminders for short-term academic task tracking with low learning time and easy switching.",
+"meta_description": "Things 3 vs Apple Reminders for students who need short-term academic task tracking without learning a new productivity system.",
 "persona": "Student",
-"constraintSlug": "switching-cost",
-"constraint_lens": "You need a task list only for a single term, so any learning curve that doesn’t pay off before exams is wasted effort.",
+"constraint_lens": "You need a task app just for school and exams that is quick to learn and easy to stop using later.",
 "verdict": {
 "winner": "y",
-"summary": "Apple Reminders wins for students because it works immediately with almost no learning cost. Things 3 is polished, but understanding its structure can take time that doesn’t pay back within a short academic term. When tasks are temporary and deadlines are close, Apple Reminders keeps friction low.",
+"summary": "Apple Reminders wins for students who only need academic task tracking for a term. You can create simple lists for each class and start immediately. Things 3 introduces projects, areas, and planning views that take time to understand. If learning the app takes longer than the term, Things fails first.",
 "decision_rule": "If learning the app takes longer than the term, Things fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What students need for academic task tracking",
-"content": "Students need task tools that help them keep up with assignments and exams right away. The best option supports fast entry and easy checking without committing to a system they won’t use after the term ends."
+"heading": "Why this matters for Students",
+"content": "You said you need tasks only for school and exams. As a student, you want something you can set up quickly and abandon after the semester ends. Spending time learning a system reduces the benefit of a short term tool."
 },
 {
 "type": "x_wins",
-"heading": "When Things 3 can still make sense for a student",
+"heading": "Where Things 3 wins",
 "bullets": [
 {
-"point": "You enjoy learning a dedicated task app",
-"why_it_matters": "If learning the tool feels motivating, the polish of Things 3 may be worth the upfront time."
+"point": "Structured system with Areas, Projects, and headings",
+"why_it_matters": "You can organize subjects deeply, but understanding how Areas differ from Projects takes time."
 },
 {
-"point": "You expect to reuse the app beyond school",
-"why_it_matters": "Things 3 pays off over longer periods. Short-term academic use limits that return."
+"point": "Today and Upcoming views tied to scheduled tasks",
+"why_it_matters": "You see deadlines clearly, yet learning how scheduling interacts with projects adds a small learning curve."
 },
 {
-"point": "You want more structure than basic lists",
-"why_it_matters": "If projects and scheduled views matter, Things 3 can feel more satisfying than a bare list."
+"point": "Clean interface designed around long term planning",
+"why_it_matters": "It supports ongoing productivity, but that depth may exceed a single term need."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why Apple Reminders wins for short-term school use",
+"heading": "Where Apple Reminders wins",
 "bullets": [
 {
-"point": "There is almost no learning curve",
-"why_it_matters": "Students can start tracking assignments immediately without onboarding time."
+"point": "Simple lists that can be named after each class",
+"why_it_matters": "You can create a list per subject without understanding project structures."
 },
 {
-"point": "Leaving the tool later has no cost",
-"why_it_matters": "After exams, you can stop using it without feeling invested in a system."
+"point": "Quick task entry with optional due dates",
+"why_it_matters": "You can add assignments in seconds without navigating planning views."
 },
 {
-"point": "The model matches simple academic tasks",
-"why_it_matters": "Assignments and deadlines fit naturally into plain reminder lists."
+"point": "No required system to maintain after exams",
+"why_it_matters": "You can delete or ignore lists once the term ends with no cleanup process."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool fails under short-term use",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The student spends time learning features instead of focusing on coursework.",
-"what_to_do_instead": "Use Apple Reminders to track assignments with minimal setup."
+"fails_when": "You spend time understanding Areas and Projects instead of simply listing assignments.",
+"what_to_do_instead": "Use Apple Reminders if you want immediate academic tracking."
 },
 {
 "tool": "y",
-"fails_when": "The student wants advanced task organization or planning views.",
-"what_to_do_instead": "Accept Apple Reminders’ simplicity or move complex planning into a separate tool."
+"fails_when": "You need more structured long term planning across multiple life areas.",
+"what_to_do_instead": "Use Things 3 if your academic work extends into ongoing personal systems."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you plan to continue using the app beyond school and want a structured system for long term projects, Things 3 may justify its learning curve."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick decision rules",
 "rules": [
-"If tasks are only for this term, choose Apple Reminders.",
-"If learning time matters, avoid Things 3.",
-"If switching later is likely, keep it simple."
+"If you need quick setup for one semester, choose Apple Reminders.",
+"If learning a system feels like extra work, avoid Things 3.",
+"If you want a long term productivity structure, Things 3 may fit better."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is Things 3 overkill for students?",
-"a": "Often yes, because its benefits usually appear over longer-term use."
+"q": "Is Things 3 difficult to learn?",
+"a": "It is clean but introduces concepts like Areas and Projects that require a short learning period."
 },
 {
-"q": "Why is Apple Reminders better for short-term tasks?",
-"a": "Because it requires almost no setup or learning to be useful."
+"q": "Can Apple Reminders handle exam deadlines?",
+"a": "Yes, you can set due dates and reminders for exams and assignments easily."
 },
 {
-"q": "Can students use Things 3 successfully?",
-"a": "Yes, especially if they plan to keep using it after school."
+"q": "Which app is easier to stop using after school?",
+"a": "Apple Reminders is easier to abandon because it does not require maintaining a structured system."
 },
 {
-"q": "What’s the biggest mistake students make with task apps?",
-"a": "Optimizing for a long-term system when their need is temporary."
+"q": "Does Things 3 support academic projects well?",
+"a": "Yes, it supports structured projects, but that depth may exceed short term academic needs."
 }
 ],
 "related_pages": [
-{
-"x_name": "Todoist",
-"y_name": "Apple Reminders",
-"persona": "Student"
-},
-{
-"x_name": "Microsoft To Do",
-"y_name": "Apple Reminders",
-"persona": "Student"
-},
-{
-"x_name": "Google Tasks",
-"y_name": "Apple Reminders",
-"persona": "Student"
-},
-{
-"x_name": "Notion",
-"y_name": "Apple Reminders",
-"persona": "Student"
-},
-{
-"x_name": "Asana",
-"y_name": "Apple Reminders",
-"persona": "Student"
-},
-{
-"x_name": "ClickUp",
-"y_name": "Apple Reminders",
-"persona": "Student"
-}
+{ "x_name": "Trello", "y_name": "Todoist", "persona": "Student" },
+{ "x_name": "MeisterTask", "y_name": "Google Tasks", "persona": "Student" },
+{ "x_name": "Doodle", "y_name": "Calendly", "persona": "Student" },
+{ "x_name": "Microsoft Bookings", "y_name": "Calendly", "persona": "Student" },
+{ "x_name": "Todoist", "y_name": "Google Tasks", "persona": "Student" },
+{ "x_name": "TickTick", "y_name": "Google Tasks", "persona": "Student" }
 ]
 }

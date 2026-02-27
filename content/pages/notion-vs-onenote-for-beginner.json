@@ -1,133 +1,116 @@
 {
 "category": "Note-taking apps",
 "categorySlug": "note-taking-apps",
+"constraintSlug": "setup-tolerance",
+"constraintUiName": "Publish fast",
 "title": "Notion vs OneNote for Beginners",
 "slug": "notion-vs-onenote-for-beginner",
-"meta_description": "A beginner-focused comparison of Notion vs OneNote for simple digital notes when replacing paper for the first time.",
+"meta_description": "Notion vs OneNote for beginners replacing paper notes who want to write immediately without layout or setup decisions.",
 "persona": "Beginner",
-"constraintSlug": "setup-tolerance",
-"constraint_lens": "You have a low tolerance for setup and configuration, so the best tool is the one that lets you start writing immediately without designing a system.",
+"constraint_lens": "You want to open the app and start typing right away without learning layouts or setting things up first.",
 "verdict": {
 "winner": "y",
-"summary": "OneNote wins for beginners because it feels familiar and allows immediate writing with minimal decisions. Notion’s blank-page flexibility often creates uncertainty about structure before the first note is written. When replacing paper notes for the first time, OneNote lowers friction and helps habits form faster.",
+"summary": "OneNote wins for beginners replacing paper notes for the first time. It opens like a digital notebook where you click anywhere and start writing, similar to paper. Notion presents pages, blocks, and optional templates before you fully understand the structure. If blank-page complexity prevents immediate writing, Notion fails first.",
 "decision_rule": "If blank-page complexity prevents immediate writing, Notion fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What beginners need when switching from paper to digital",
-"content": "Beginners benefit most from tools that feel intuitive and forgiving. The right app should resemble familiar note-taking behaviors and avoid forcing choices about structure before writing begins."
+"heading": "Best fit for first-time digital note takers",
+"content": "You are moving from paper to digital notes and want something familiar. OneNote mimics a notebook with sections and pages you can click into and write freely. Notion introduces a workspace made of pages and blocks, which can feel abstract if you just want a simple digital page."
 },
 {
 "type": "x_wins",
-"heading": "When Notion can still work for a beginner",
+"heading": "Where Notion wins",
 "bullets": [
 {
-"point": "You already know how you want to organize your notes",
-"why_it_matters": "Clear expectations reduce confusion. Without them, Notion’s flexibility can slow down the first note."
+"point": "Block-based editor with slash commands",
+"why_it_matters": "You can insert tables, checklists, and embeds directly in a page. This supports structured notes, but the visible block system adds new concepts to learn."
 },
 {
-"point": "You’re motivated by building a system as you learn",
-"why_it_matters": "Some beginners enjoy experimenting. For most, system-building delays consistent note-taking."
+"point": "Templates for different page types",
+"why_it_matters": "You can choose pre-built layouts for notes or projects. However, selecting a template before writing adds a decision step."
 },
 {
-"point": "You plan to expand beyond simple notes soon",
-"why_it_matters": "If you expect to outgrow basic notes quickly, early exposure to Notion may pay off later."
+"point": "Database pages for organizing notes",
+"why_it_matters": "You can store notes with properties like tags or dates in sortable views. For beginners, this can feel like setting up a system rather than writing."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why OneNote wins for low setup tolerance",
+"heading": "Where OneNote wins",
 "bullets": [
 {
-"point": "Writing can start immediately",
-"why_it_matters": "Beginners need momentum. OneNote removes barriers between opening the app and writing."
+"point": "Freeform page layout where you click anywhere to type",
+"why_it_matters": "You can place text on the page like writing on paper. There is no need to choose a structure before starting."
 },
 {
-"point": "The structure mirrors familiar notebooks",
-"why_it_matters": "Sections and pages resemble paper notebooks, reducing cognitive load when transitioning to digital notes."
+"point": "Notebook, section, and page structure",
+"why_it_matters": "Notes are grouped in a simple hierarchy that resembles physical notebooks. This reduces the learning curve."
 },
 {
-"point": "Organization is optional, not required",
-"why_it_matters": "You can write first and organize later, which supports habit formation."
+"point": "Familiar toolbar with basic formatting options",
+"why_it_matters": "Formatting works like common word processors. Beginners recognize the controls without learning new commands."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool fails under low setup tolerance",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The beginner hesitates because they’re unsure how to structure pages or databases.",
-"what_to_do_instead": "Use OneNote to start writing immediately and revisit more flexible tools later if needed."
+"fails_when": "You hesitate because you are unsure whether to create a page, database, or template before writing.",
+"what_to_do_instead": "Use OneNote where you can click and start typing without choosing a structure."
 },
 {
 "tool": "y",
-"fails_when": "The user wants highly customized layouts or advanced workflows.",
-"what_to_do_instead": "Accept OneNote’s simplicity or migrate specific needs to a more flexible tool later."
+"fails_when": "You later want tightly structured notes with linked databases and filtered views.",
+"what_to_do_instead": "Move to Notion once you are comfortable building more organized systems."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you quickly become interested in building structured pages and linking content together, Notion may feel exciting rather than overwhelming."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick rules",
 "rules": [
-"If you want to write immediately, choose OneNote.",
-"If the blank page feels intimidating, avoid Notion.",
-"If familiarity beats flexibility, OneNote wins."
+"If you want a digital notebook that feels like paper, choose OneNote.",
+"If choosing templates or page types slows you down, avoid Notion at first.",
+"If you plan to build structured systems later, Notion may grow with you."
 ]
 }
 ],
 "faqs": [
 {
 "q": "Is Notion too complex for beginners?",
-"a": "Often yes, because it requires early decisions about structure that can slow down first-time users."
+"a": "It can feel complex because it shows page types, blocks, and optional databases before you are used to digital notes."
 },
 {
-"q": "Why does OneNote feel easier than Notion?",
-"a": "Because it mirrors traditional notebooks and minimizes setup before writing."
+"q": "Does OneNote work like a real notebook?",
+"a": "Yes. It uses notebooks, sections, and pages that resemble physical organization."
 },
 {
-"q": "Can beginners switch from OneNote to Notion later?",
-"a": "Yes. Starting simple builds the habit first, making future transitions easier."
+"q": "Can I ignore advanced features in Notion?",
+"a": "You can, but the structure of pages and blocks remains visible in the interface."
 },
 {
-"q": "What’s the biggest mistake beginners make with note apps?",
-"a": "Choosing flexibility too early instead of prioritizing immediate writing."
+"q": "Which is easier for replacing paper notes?",
+"a": "OneNote is usually easier because its layout feels closer to writing on paper."
 }
 ],
 "related_pages": [
-{
-"x_name": "Notion",
-"y_name": "Apple Notes",
-"persona": "Beginner"
-},
-{
-"x_name": "Evernote",
-"y_name": "OneNote",
-"persona": "Beginner"
-},
-{
-"x_name": "Google Keep",
-"y_name": "OneNote",
-"persona": "Beginner"
-},
-{
-"x_name": "Bear",
-"y_name": "OneNote",
-"persona": "Beginner"
-},
-{
-"x_name": "Obsidian",
-"y_name": "OneNote",
-"persona": "Beginner"
-},
-{
-"x_name": "Simplenote",
-"y_name": "OneNote",
-"persona": "Beginner"
-}
+{ "x_name": "Roam Research", "y_name": "Bear", "persona": "Beginner" },
+{ "x_name": "Notion", "y_name": "Bear", "persona": "Beginner" },
+{ "x_name": "Evernote", "y_name": "Apple Notes", "persona": "Beginner" },
+{ "x_name": "Logseq", "y_name": "Apple Notes", "persona": "Beginner" },
+{ "x_name": "Craft", "y_name": "Google Docs", "persona": "Beginner" },
+{ "x_name": "RemNote", "y_name": "Google Keep", "persona": "Beginner" }
 ]
 }
+

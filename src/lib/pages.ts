@@ -41,6 +41,7 @@ export type PageDoc = {
           what_to_do_instead: string;
         }>;
       }
+    | { type: "edge_case"; heading: string; content: string }
     | { type: "quick_rules"; heading: string; rules: string[] }
   >;
 

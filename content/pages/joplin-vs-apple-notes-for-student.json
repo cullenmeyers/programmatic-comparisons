@@ -1,133 +1,115 @@
 {
 "category": "Note-taking apps",
 "categorySlug": "note-taking-apps",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
 "title": "Joplin vs Apple Notes for Students",
 "slug": "joplin-vs-apple-notes-for-student",
-"meta_description": "A student-focused comparison of Joplin vs Apple Notes for short-term study notes when setup time and switching cost must stay low.",
+"meta_description": "Joplin vs Apple Notes for students who need study notes for one term without setup overhead or system maintenance.",
 "persona": "Student",
-"constraintSlug": "switching-cost",
-"constraint_lens": "You only need notes for a short academic term and want a low switching cost, so any setup that doesn’t pay off this semester is wasted effort.",
+"constraint_lens": "You need note taking for a single academic term that is quick to start and easy to stop using later.",
 "verdict": {
 "winner": "y",
-"summary": "Apple Notes wins for students because it provides immediate usefulness with almost no setup. Joplin offers control and flexibility, but the initial configuration and syncing choices rarely pay back within a single term. When the goal is to study efficiently now and move on later, Apple Notes fits better.",
+"summary": "Apple Notes wins for students who only need study notes for one semester. You can open it and start typing without configuring sync targets or plugins. Joplin often requires choosing a sync method and understanding notebooks and markdown settings. If setup effort outweighs semester value, Joplin fails first.",
 "decision_rule": "If setup effort outweighs semester value, Joplin fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What students need for one academic term",
-"content": "Students need tools that help them keep up with lectures and exams right away. The best option supports fast capture and review without locking them into a system they won’t need after finals."
+"heading": "Why this matters for Students",
+"content": "You said you mainly need notes for a single academic term. For short term use, spending time configuring sync or learning formatting rules reduces the benefit. A ready to use editor keeps focus on studying."
 },
 {
 "type": "x_wins",
-"heading": "When Joplin can still make sense for short-term study",
+"heading": "Where Joplin wins",
 "bullets": [
 {
-"point": "You already know how you want to sync and store notes",
-"why_it_matters": "Clear decisions reduce setup friction. Without them, configuration time competes with studying."
+"point": "Markdown based editor with notebook structure",
+"why_it_matters": "You can write structured notes, but learning markdown syntax adds a small learning step."
 },
 {
-"point": "You plan to reuse notes beyond this term",
-"why_it_matters": "Joplin’s value increases over time. If notes end with the semester, that payoff never arrives."
+"point": "Manual sync configuration with services like cloud storage",
+"why_it_matters": "You control where notes live, yet choosing and setting up sync requires extra effort."
 },
 {
-"point": "You prefer explicit control over where data lives",
-"why_it_matters": "Some students value ownership. For most, that control adds unnecessary overhead for a temporary need."
+"point": "Plugin support for extended features",
+"why_it_matters": "You can expand functionality, but browsing and installing plugins adds decisions."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why Apple Notes wins for short-term study notes",
+"heading": "Where Apple Notes wins",
 "bullets": [
 {
-"point": "It works immediately with no onboarding",
-"why_it_matters": "Classes move fast, and early weeks matter. Apple Notes lets students start capturing material from day one."
+"point": "Built in editor ready on first launch",
+"why_it_matters": "You start writing class notes immediately without configuration."
 },
 {
-"point": "Leaving the tool later has no penalty",
-"why_it_matters": "After the term ends, students can stop using it without feeling like time was wasted on setup."
+"point": "Automatic device sync through system account",
+"why_it_matters": "Notes appear across devices without selecting or managing sync services."
 },
 {
-"point": "Organization stays simple and sufficient",
-"why_it_matters": "Folders and search are enough for most courses, keeping focus on studying rather than tooling."
+"point": "Simple folders for organizing by subject",
+"why_it_matters": "You can create a folder per class without learning new formatting rules."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool fails under short-term use",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The student spends time configuring sync, storage, or settings instead of reviewing course material.",
-"what_to_do_instead": "Use Apple Notes for straightforward capture and review during the semester."
+"fails_when": "You spend time setting up sync or adjusting markdown instead of studying.",
+"what_to_do_instead": "Use Apple Notes if you want immediate note taking with no setup."
 },
 {
 "tool": "y",
-"fails_when": "The student needs advanced organization across many years of study.",
-"what_to_do_instead": "Accept Apple Notes for now and adopt a more complex system only when long-term needs appear."
+"fails_when": "You require full control over file storage or advanced formatting features.",
+"what_to_do_instead": "Use Joplin if you need export control or extensibility."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you plan to keep your notes long term and want full control over storage location and export formats, Joplin may justify the extra setup."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick decision rules",
 "rules": [
-"If notes are only for this semester, choose Apple Notes.",
-"If setup time won’t pay off before finals, avoid Joplin.",
-"If switching tools later is likely, keep it simple."
+"If you need notes for one semester only, choose Apple Notes.",
+"If setup time feels wasteful for short term use, avoid Joplin.",
+"If you need control over sync and file storage, Joplin may fit better."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is Joplin overkill for most students?",
-"a": "For short-term use, often yes. Its strengths usually require more time than a single term provides."
+"q": "Does Joplin require manual sync setup?",
+"a": "Yes, you usually choose and configure a sync target yourself."
 },
 {
-"q": "Why is low switching cost important for students?",
-"a": "Because academic needs change every term, and heavy setup can become wasted effort."
+"q": "Is Apple Notes ready immediately?",
+"a": "Yes, you can start typing without selecting storage or plugins."
 },
 {
-"q": "Can I export notes from Apple Notes later?",
-"a": "Yes. Apple Notes keeps things lightweight, making it easy to move or leave notes behind."
+"q": "Which app is easier to stop using after exams?",
+"a": "Apple Notes is easier to abandon because it requires no custom configuration."
 },
 {
-"q": "What’s the biggest mistake students make with note apps?",
-"a": "Optimizing for a long-term system when their real need is short-term academic performance."
+"q": "Can Joplin export notes easily?",
+"a": "Yes, it offers export options that give you more control over files."
 }
 ],
 "related_pages": [
-{
-"x_name": "Obsidian",
-"y_name": "Apple Notes",
-"persona": "Student"
-},
-{
-"x_name": "Notion",
-"y_name": "Apple Notes",
-"persona": "Student"
-},
-{
-"x_name": "Evernote",
-"y_name": "Apple Notes",
-"persona": "Student"
-},
-{
-"x_name": "Logseq",
-"y_name": "Apple Notes",
-"persona": "Student"
-},
-{
-"x_name": "Bear",
-"y_name": "Apple Notes",
-"persona": "Student"
-},
-{
-"x_name": "Google Keep",
-"y_name": "Apple Notes",
-"persona": "Student"
-}
+{ "x_name": "RemNote", "y_name": "Microsoft OneNote", "persona": "Student" },
+{ "x_name": "OneNote", "y_name": "Google Keep", "persona": "Student" },
+{ "x_name": "Doodle", "y_name": "Calendly", "persona": "Student" },
+{ "x_name": "Microsoft Bookings", "y_name": "Calendly", "persona": "Student" },
+{ "x_name": "Trello", "y_name": "Todoist", "persona": "Student" },
+{ "x_name": "MeisterTask", "y_name": "Google Tasks", "persona": "Student" }
 ]
 }

@@ -1,133 +1,116 @@
 {
 "category": "Note-taking apps",
 "categorySlug": "note-taking-apps",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
 "title": "Craft vs Google Docs for Students",
 "slug": "craft-vs-google-docs-for-student",
-"meta_description": "A student-focused comparison of Craft vs Google Docs for academic writing when assignments and collaboration require low friction and easy sharing.",
+"meta_description": "Craft vs Google Docs for students who need to submit assignments and collaborate without export issues or sharing delays.",
 "persona": "Student",
-"constraintSlug": "switching-cost",
-"constraint_lens": "You need notes for short-term academic work with classmates, so the best tool is easy to share, submit, and leave behind without cost.",
+"constraint_lens": "You need a notes app that works for one semester, is easy to share, and does not trap you if you switch later.",
 "verdict": {
 "winner": "y",
-"summary": "Google Docs wins for students because it makes sharing, collaborating, and submitting assignments effortless. Craft offers a polished writing experience, but exporting and coordinating files can add friction that doesn’t pay off within a single term. When deadlines and collaboration matter most, Google Docs fits student workflows better.",
+"summary": "Google Docs wins for students who need to submit assignments and collaborate quickly. Files live in a standard document format, sharing is link-based, and teachers often expect Docs or Word files. Craft requires exporting to PDF or Word before submission, which adds steps and formatting risk. If exporting or sharing introduces friction, Craft fails first.",
 "decision_rule": "If exporting or sharing introduces friction, Craft fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What students need for academic writing and collaboration",
-"content": "Students need tools that work immediately with classmates and instructors. The right option supports real-time collaboration, easy submission, and short-term use without locking you into a system after the course ends."
+"heading": "Best fit for short-term academic use",
+"content": "You mainly need notes for one semester and to submit assignments without issues. Google Docs matches common school workflows because teachers already accept or request Docs links. Craft is strong for structured notes, but school submission systems usually expect standard document files."
 },
 {
 "type": "x_wins",
-"heading": "When Craft can still work for student writing",
+"heading": "Where Craft wins",
 "bullets": [
 {
-"point": "You mostly write solo and care about presentation",
-"why_it_matters": "Craft excels at clean, well-designed documents. If collaboration is minimal, its polish can be appealing."
+"point": "Block-based writing with drag-and-drop sections",
+"why_it_matters": "You can move headings, text blocks, and lists easily to reorganize study notes. This helps when outlining essays, but final submission still requires exporting to another format."
 },
 {
-"point": "Your assignments don’t require frequent sharing",
-"why_it_matters": "When sharing is rare, export friction matters less and Craft’s writing experience can shine."
+"point": "Linked pages and nested documents inside a workspace",
+"why_it_matters": "You can connect lecture notes to research pages in one place. This is useful for studying, but classmates or professors may not use Craft, so collaboration stays limited."
 },
 {
-"point": "You enjoy structured documents over quick drafts",
-"why_it_matters": "Craft encourages thoughtful formatting, which can feel satisfying for longer, individual writing tasks."
+"point": "Built-in styling and clean document layout",
+"why_it_matters": "Documents look polished without adjusting margins or fonts manually. However, once exported to Word or PDF, small layout shifts can appear."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why Google Docs wins for academic collaboration",
+"heading": "Where Google Docs wins",
 "bullets": [
 {
-"point": "Sharing is instant and universal",
-"why_it_matters": "Group projects and submissions move fast. Google Docs removes barriers to access for classmates and instructors."
+"point": "Real-time collaboration through shared links",
+"why_it_matters": "You can send a link and edit together instantly without extra accounts. For group projects, this removes setup steps and avoids format confusion."
 },
 {
-"point": "Real-time collaboration is built in",
-"why_it_matters": "Students can work together without managing versions or exports."
+"point": "Native support for Word file format and direct downloads",
+"why_it_matters": "You can download as .docx or PDF in one click. This matches most submission portals and reduces the risk of formatting errors."
 },
 {
-"point": "Walking away later has no cost",
-"why_it_matters": "After the semester ends, you can stop using Docs without feeling invested in a long-term system."
+"point": "Commenting and suggestion mode built into the editor",
+"why_it_matters": "Teachers and classmates can leave inline comments without changing the main text. This makes revisions straightforward during short-term academic use."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool fails under short-term academic use",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The student hesitates to share or submit work because exporting or permissions feel like extra steps.",
-"what_to_do_instead": "Use Google Docs so collaboration and submission are frictionless."
+"fails_when": "You must export to Word or PDF for every assignment and formatting changes slightly after export.",
+"what_to_do_instead": "Write directly in Google Docs so the file format matches what professors expect from the start."
 },
 {
 "tool": "y",
-"fails_when": "The student wants a more design-focused or structured writing experience.",
-"what_to_do_instead": "Accept Docs’ simplicity for coursework and use a separate tool for personal writing."
+"fails_when": "You want a tightly linked knowledge base across many personal notes beyond one semester.",
+"what_to_do_instead": "Use Craft for private study organization while keeping final assignments in Docs."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your school accepts PDF submissions only and you work mostly alone, Craft can work well because you can design clean documents and export them once without needing shared editing."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick rules",
 "rules": [
-"If you need to collaborate or submit assignments, choose Google Docs.",
-"If exporting feels like extra work, avoid Craft.",
-"If the semester is short, keep switching costs low."
+"If you need group editing and teacher comments, choose Google Docs.",
+"If your assignments require Word files, avoid tools that rely on exporting.",
+"If you mainly want organized personal study notes, Craft can complement Docs."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is Craft bad for students?",
-"a": "Not inherently, but its strengths matter more for personal writing than for short-term academic collaboration."
+"q": "Can I collaborate in Craft like in Google Docs?",
+"a": "Craft allows sharing, but most classmates already use Google accounts. Docs makes real-time group editing easier without new accounts."
 },
 {
-"q": "Why is Google Docs better for assignments?",
-"a": "Because it’s widely accepted, easy to share, and optimized for real-time collaboration."
+"q": "Does Craft export to Word format?",
+"a": "Yes, but exporting adds a step and formatting can shift slightly compared to writing directly in Docs."
 },
 {
-"q": "Can I use Craft alongside Google Docs?",
-"a": "Yes. Use Google Docs for coursework and Craft for personal or polished writing projects."
+"q": "Is Google Docs better for short-term school use?",
+"a": "Yes. It matches common classroom expectations, so you can submit and share without converting files."
 },
 {
-"q": "What’s the biggest mistake students make with writing tools?",
-"a": "Choosing a tool optimized for personal workflow when their real need is collaboration and submission."
+"q": "Can I switch away from Google Docs easily?",
+"a": "You can download documents as standard files, which makes it simple to move your work to another platform later."
 }
 ],
 "related_pages": [
-{
-"x_name": "Notion",
-"y_name": "Google Docs",
-"persona": "Student"
-},
-{
-"x_name": "Obsidian",
-"y_name": "Google Docs",
-"persona": "Student"
-},
-{
-"x_name": "Roam Research",
-"y_name": "Google Docs",
-"persona": "Student"
-},
-{
-"x_name": "Logseq",
-"y_name": "Google Docs",
-"persona": "Student"
-},
-{
-"x_name": "Evernote",
-"y_name": "Google Docs",
-"persona": "Student"
-},
-{
-"x_name": "Apple Notes",
-"y_name": "Google Docs",
-"persona": "Student"
-}
+{ "x_name": "Notion", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Evernote", "y_name": "OneNote", "persona": "Student" },
+{ "x_name": "Apple Notes", "y_name": "Google Keep", "persona": "Student" },
+{ "x_name": "UpNote", "y_name": "Microsoft OneNote", "persona": "Student" },
+{ "x_name": "RemNote", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Bear", "y_name": "Google Docs", "persona": "Student" }
 ]
 }
+

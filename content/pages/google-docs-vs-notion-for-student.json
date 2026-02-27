@@ -5,106 +5,112 @@
 "constraintUiName": "Easy to quit later",
 "title": "Google Docs vs Notion for Students",
 "slug": "google-docs-vs-notion-for-student",
-"meta_description": "Google Docs vs Notion for students who need short-term collaborative class notes without database setup overhead.",
+"meta_description": "Google Docs vs Notion for students who need simple shared class notes for one term without building databases or long-term systems.",
 "persona": "Student",
-"constraint_lens": "You need a note tool that is easy to quit later and doesn’t require building a complex system for short-term use.",
+"constraint_lens": "You need notes that work for one academic term without locking you into a system that’s hard to leave later.",
 "verdict": {
 "winner": "x",
-"summary": "Google Docs wins for students who only need collaborative notes for one academic term. It allows instant document sharing without designing databases or page systems. Notion is flexible, but if database setup outweighs short-term collaboration needs, it creates unnecessary overhead for temporary use. Follow the rule: if database setup outweighs short-term collaboration needs, Notion fails first.",
+"summary": "Google Docs wins for students who only need collaborative notes for one term. You can create a document, share a link, and start typing together immediately. Notion encourages pages inside workspaces and often pushes database structures for organization. If database setup outweighs short-term collaboration needs, Notion fails first.",
 "decision_rule": "If database setup outweighs short-term collaboration needs, Notion fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "Best fit for semester-long collaboration",
-"content": "As a student, your collaboration window is limited to a term. You want something quick to set up, easy to share, and simple to abandon after finals. The right tool supports group editing without requiring system design."
+"heading": "Which tool works for one academic term?",
+"content": "You need collaborative notes only for one academic term. As a student, you want to share class notes quickly and move on when the course ends. The right tool should not require building a long-term system. Anything that pushes you to design databases or workspace structures adds effort you won’t reuse later."
 },
 {
 "type": "x_wins",
-"heading": "Where Google Docs wins under low switching cost",
+"heading": "Where Google Docs works better for students",
 "bullets": [
 {
-"point": "Instant document sharing",
-"why_it_matters": "You can invite classmates immediately without creating databases or structuring pages."
+"point": "Instant document sharing with a link and live editing.",
+"why_it_matters": "You can create a doc and invite classmates in seconds. There’s no need to design a workspace or structure before collaborating."
 },
 {
-"point": "Familiar writing interface",
-"why_it_matters": "Less learning time means more focus on coursework instead of tool setup."
+"point": "Single linear document format without databases.",
+"why_it_matters": "You just type notes top to bottom like a normal paper. This avoids extra setup that doesn’t help with short-term group work."
 },
 {
-"point": "Easy to stop using after the term",
-"why_it_matters": "You can walk away without cleaning up complex workspaces or database structures."
+"point": "Export to PDF or Word with one click.",
+"why_it_matters": "When the term ends, you can download your notes easily. There’s no complex structure to untangle before leaving."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Where Notion still wins",
+"heading": "Where Notion works better",
 "bullets": [
 {
-"point": "Structured note databases",
-"why_it_matters": "If you want organized collections of notes with properties and filters, structure can help."
+"point": "Pages nested inside workspaces with linked databases.",
+"why_it_matters": "You can organize class notes, tasks, and schedules in one place. However, setting up databases and views takes time before collaboration even starts."
 },
 {
-"point": "Integrated tasks and notes",
-"why_it_matters": "Combining assignments and notes in one place can streamline planning."
+"point": "Custom views like tables, boards, and calendars.",
+"why_it_matters": "You can turn notes into structured systems. For one-term sharing, building these views may feel like extra work."
 },
 {
-"point": "Customizable page layouts",
-"why_it_matters": "If you want a tailored workspace for each class, flexibility is higher."
+"point": "All-in-one workspace for notes, tasks, and files.",
+"why_it_matters": "It reduces the need for multiple tools. But if your only goal is shared notes, managing a full workspace can be more than you need."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "Failure modes to watch for",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "You need structured databases linking notes, tasks, and multiple classes in one system.",
-"what_to_do_instead": "Adopt a database-driven workspace if long-term organization becomes essential."
+"fails_when": "You want structured dashboards, task boards, and linked content inside the same system.",
+"what_to_do_instead": "Use Notion if you want to combine notes with databases and project tracking."
 },
 {
 "tool": "y",
-"fails_when": "You spend time designing databases instead of collaborating on actual notes.",
-"what_to_do_instead": "Switch to a simple shared document tool for the rest of the semester."
+"fails_when": "You spend time building tables and organizing views before actually sharing notes.",
+"what_to_do_instead": "Use Google Docs if you only need a shared document for the semester."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your study group plans to manage assignments, deadlines, and shared resources in one connected space across multiple terms, Notion’s databases and linked pages may justify the extra setup."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules for deciding in 30 seconds",
+"heading": "Quick decision rules",
 "rules": [
-"If you need fast, shared notes for one term, choose Google Docs.",
-"If database setup feels heavier than your semester needs, avoid Notion.",
-"If you want structured, long-term academic systems, Notion may fit better."
+"If you just need a shared document for class, choose Google Docs.",
+"If you want notes plus task boards and structured systems, choose Notion.",
+"If setup feels heavier than the class itself, keep it simple."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Which tool is better for short-term class collaboration?",
-"a": "Google Docs is typically better because it requires no database setup and supports instant sharing."
+"q": "Is Google Docs better for group notes?",
+"a": "Yes, for quick collaboration. You can share a link and edit together without building a workspace first."
 },
 {
-"q": "Does Notion add unnecessary overhead for one semester?",
-"a": "It can if designing databases and structured pages takes more time than the collaboration itself."
+"q": "Does Notion require database setup?",
+"a": "Not always, but many useful setups involve creating tables or structured pages, which can add extra steps."
 },
 {
-"q": "What does low switching cost mean for students?",
-"a": "It means you can stop using the tool after the term without cleaning up complex systems."
+"q": "Which tool is easier to stop using after the term ends?",
+"a": "Google Docs is easier to leave because your notes exist as standalone documents that can be exported easily."
 },
 {
-"q": "When would Notion be the better choice?",
-"a": "If you plan to build a structured academic system that extends beyond a single semester."
+"q": "Can Notion handle simple shared notes?",
+"a": "Yes, but its design encourages building connected pages and databases, which may be more than needed for one term."
 }
 ],
 "related_pages": [
-{ "x_name": "Google Docs", "y_name": "Evernote", "persona": "Student" },
-{ "x_name": "Notion", "y_name": "Evernote", "persona": "Student" },
-{ "x_name": "Apple Notes", "y_name": "Google Docs", "persona": "Student" },
-{ "x_name": "OneNote", "y_name": "Google Docs", "persona": "Student" },
-{ "x_name": "Notion", "y_name": "OneNote", "persona": "Student" },
-{ "x_name": "Google Keep", "y_name": "Google Docs", "persona": "Student" }
+{ "x_name": "RemNote", "y_name": "Microsoft OneNote", "persona": "Student" },
+{ "x_name": "OneNote", "y_name": "Google Keep", "persona": "Student" },
+{ "x_name": "Evernote", "y_name": "UpNote", "persona": "Student" },
+{ "x_name": "Obsidian", "y_name": "Apple Notes", "persona": "Student" },
+{ "x_name": "Craft", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Standard Notes", "y_name": "Apple Notes", "persona": "Student" }
 ]
 }
+

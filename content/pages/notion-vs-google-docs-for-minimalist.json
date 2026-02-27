@@ -1,133 +1,115 @@
 {
 "category": "Note-taking apps",
 "categorySlug": "note-taking-apps",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
 "title": "Notion vs Google Docs for Minimalists",
 "slug": "notion-vs-google-docs-for-minimalist",
-"meta_description": "Minimalist choosing between Notion and Google Docs? If feature aversion matters and you want clean text notes, Google Docs keeps it simple.",
+"meta_description": "Notion vs Google Docs for minimalists who want clean text notes without databases, blocks, templates, or workspace decisions.",
 "persona": "Minimalist",
-"constraintSlug": "feature-aversion",
-"constraint_lens": "You prefer as few features and interface elements as possible, and you avoid tools that introduce templates, databases, or structural layers.",
+"constraint_lens": "You want to write clean text notes without databases, templates, or workspace blocks getting in the way.",
 "verdict": {
 "winner": "y",
-"summary": "Google Docs is the better fit for a Minimalist who wants to write clean text notes without workspace layers. Notion introduces blocks, templates, and database options that can create extra decisions. If structural features appear before you can simply write, Google Docs stays clearer and more focused.",
+"summary": "Google Docs wins for minimalists who just want to write clean text. It opens to a blank document where you start typing immediately. Notion is built around blocks, databases, and templates that introduce structural choices. If workspace blocks and templates create extra decisions, Notion fails first.",
 "decision_rule": "If workspace blocks and templates create extra decisions, Notion fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "Best fit when you just want a blank page",
-"content": "You want to open a document and start writing immediately. With feature aversion, seeing databases, blocks, and template suggestions can feel like clutter. Google Docs presents a straightforward document interface, while Notion layers writing inside a broader workspace system."
+"heading": "Which tool keeps writing distraction-free?",
+"content": "You want to write notes without seeing databases or templates. As a minimalist, extra layout options feel like noise. The right tool should feel like a blank page. Anything that presents blocks, properties, or templates adds decisions before writing."
 },
 {
 "type": "x_wins",
-"heading": "Where Notion can win (if you value structure)",
+"heading": "Where Notion works better",
 "bullets": [
 {
-"point": "It supports blocks that can be rearranged and embedded.",
-"why_it_matters": "If you want flexible layouts beyond plain text, blocks provide structural control."
+"point": "Block-based editor where each paragraph is a movable unit.",
+"why_it_matters": "You can drag and rearrange content easily. For simple writing, block handles and menus add visual clutter."
 },
 {
-"point": "It integrates writing with databases and task systems.",
-"why_it_matters": "For users building connected knowledge systems, integration reduces tool switching."
+"point": "Database pages with properties such as status or tags.",
+"why_it_matters": "You can turn notes into structured systems. Defining properties introduces extra setup choices."
 },
 {
-"point": "It offers templates for different workflows.",
-"why_it_matters": "If you benefit from predefined structures, templates can accelerate setup."
+"point": "Template gallery for prebuilt note systems.",
+"why_it_matters": "You can start with structured layouts. Choosing or modifying templates adds another decision layer."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Where Google Docs wins for feature-averse Minimalists",
+"heading": "Where Google Docs works better for minimalists",
 "bullets": [
 {
-"point": "You can start typing immediately in a clean document.",
-"why_it_matters": "Fewer structural prompts reduce hesitation and decision fatigue."
+"point": "Blank document that opens directly to a typing cursor.",
+"why_it_matters": "You start writing immediately without selecting a template."
 },
 {
-"point": "The interface centers on continuous text.",
-"why_it_matters": "A traditional document layout keeps attention on writing rather than formatting choices."
+"point": "Linear document structure without blocks or properties.",
+"why_it_matters": "Text flows naturally without structural elements around each paragraph."
 },
 {
-"point": "No database or template layers appear by default.",
-"why_it_matters": "Minimal exposure to extra systems preserves mental clarity."
+"point": "Basic formatting toolbar that stays consistent.",
+"why_it_matters": "You can ignore advanced tools and focus on plain text."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "Common failure modes (and what to do instead)",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "You feel distracted by block options, templates, or database features when you only want to write text.",
-"what_to_do_instead": "Use Google Docs for straightforward writing without workspace layers."
+"fails_when": "You feel distracted by block menus, properties, or template options before writing.",
+"what_to_do_instead": "Use Google Docs if you want a clean blank page."
 },
 {
 "tool": "y",
-"fails_when": "You need interconnected pages, structured databases, or advanced layout control.",
-"what_to_do_instead": "Switch to Notion if your writing evolves into a structured knowledge system."
+"fails_when": "You want interconnected notes, databases, and structured systems.",
+"what_to_do_instead": "Use Notion if you need block-based organization and linked pages."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you later want to turn notes into structured projects with linked pages and properties, Notion may justify the added layers."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide fast",
+"heading": "Quick decision rules",
 "rules": [
-"If you want a clean document with no structural decisions, choose Google Docs.",
-"If blocks and templates feel like extra thinking, avoid Notion.",
-"If you need integrated databases and flexible layouts, Notion may be better."
+"If you want a blank page and simple typing, choose Google Docs.",
+"If you want block-based structure and databases, choose Notion.",
+"If templates feel distracting, avoid workspace-driven tools."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is Notion too complex for simple note writing?",
-"a": "It can feel complex if your only goal is plain text, since it emphasizes blocks and structured workspaces."
+"q": "Is Notion too complex for simple notes?",
+"a": "It can feel complex because it uses blocks, properties, and templates by default."
 },
 {
-"q": "What’s the simplest tool for clean text notes?",
-"a": "Google Docs provides a straightforward writing environment without layered systems."
+"q": "Does Google Docs include databases?",
+"a": "No. It focuses on linear documents without structured properties."
 },
 {
-"q": "Can I ignore advanced features in Notion?",
-"a": "You can, but the interface still reflects its broader workspace design, which may not suit minimalists."
+"q": "Which tool is better for pure writing?",
+"a": "Google Docs is better for pure writing because it opens to a clean blank page."
 },
 {
-"q": "When does Notion become a better choice?",
-"a": "When you need interconnected pages, structured data, or templates to manage complex projects."
+"q": "Can Notion be used for plain text?",
+"a": "Yes, but its interface still shows block controls and workspace elements."
 }
 ],
 "related_pages": [
-{
-"x_name": "Notion",
-"y_name": "Evernote",
-"persona": "Minimalist"
-},
-{
-"x_name": "Google Docs",
-"y_name": "Apple Notes",
-"persona": "Minimalist"
-},
-{
-"x_name": "Obsidian",
-"y_name": "Notion",
-"persona": "Minimalist"
-},
-{
-"x_name": "Bear",
-"y_name": "Google Docs",
-"persona": "Minimalist"
-},
-{
-"x_name": "Simplenote",
-"y_name": "Google Docs",
-"persona": "Minimalist"
-},
-{
-"x_name": "Microsoft OneNote",
-"y_name": "Google Docs",
-"persona": "Minimalist"
-}
+{ "x_name": "Craft", "y_name": "Milanote", "persona": "Minimalist" },
+{ "x_name": "Simplenote", "y_name": "UpNote", "persona": "Minimalist" },
+{ "x_name": "Milanote", "y_name": "Evernote", "persona": "Minimalist" },
+{ "x_name": "Apple Notes", "y_name": "Notion", "persona": "Minimalist" },
+{ "x_name": "Standard Notes", "y_name": "UpNote", "persona": "Minimalist" },
+{ "x_name": "Obsidian", "y_name": "Evernote", "persona": "Minimalist" }
 ]
 }

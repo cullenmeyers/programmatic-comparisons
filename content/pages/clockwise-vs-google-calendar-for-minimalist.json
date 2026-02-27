@@ -1,133 +1,116 @@
 {
 "category": "Calendar / Scheduling tools",
 "categorySlug": "calendar-scheduling-tools",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
 "title": "Clockwise vs Google Calendar for Minimalists",
 "slug": "clockwise-vs-google-calendar-for-minimalist",
-"meta_description": "Minimalist choosing between Clockwise and Google Calendar? If feature aversion matters and you want stable visibility, Google Calendar keeps things simple.",
+"meta_description": "Clockwise vs Google Calendar for minimalists who want a clear schedule view without automated meeting reshuffling or optimization layers.",
 "persona": "Minimalist",
-"constraintSlug": "feature-aversion",
-"constraint_lens": "You prefer as few features and background processes as possible, and you avoid tools that automatically optimize or reshuffle your schedule.",
+"constraint_lens": "You want to see your meetings clearly without automation running in the background or rearranging your calendar.",
 "verdict": {
 "winner": "y",
-"summary": "Google Calendar is the better fit for a Minimalist who wants to see meetings clearly without automated reshuffling. Clockwise optimizes and rearranges events in the background to create focus time. If automated optimization introduces extra activity or unpredictability, Google Calendar preserves stability and clarity.",
+"summary": "Google Calendar wins for minimalists who only want to view meetings as scheduled. It shows events in a simple grid without modifying them automatically. Clockwise adds automated optimization that can move meetings to create focus time. If automated optimization adds unnecessary background activity, Clockwise fails first.",
 "decision_rule": "If automated optimization adds unnecessary background activity, Clockwise fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "Best fit when stability matters more than optimization",
-"content": "You want to open your calendar and trust that what you see stays put. With feature aversion, background optimization can feel intrusive rather than helpful. Google Calendar emphasizes straightforward event visibility, while Clockwise actively adjusts schedules to optimize time."
+"heading": "Which tool keeps your calendar predictable?",
+"content": "You want to keep your schedule visible without automated reshuffling. As a minimalist, background optimization can feel intrusive. The right tool should display meetings exactly as entered. Anything that changes events automatically adds another layer."
 },
 {
 "type": "x_wins",
-"heading": "Where Clockwise can win (if optimization truly helps)",
+"heading": "Where Clockwise works better",
 "bullets": [
 {
-"point": "It automatically reorganizes meetings to create focus blocks.",
-"why_it_matters": "If your day is fragmented, automation can consolidate meetings and protect deep work time."
+"point": "Automatic meeting optimization to create focus blocks.",
+"why_it_matters": "It rearranges flexible meetings to protect deep work time. For simple viewing, automatic movement adds complexity."
 },
 {
-"point": "It coordinates scheduling across teams.",
-"why_it_matters": "In collaborative environments, optimization can reduce scheduling conflicts."
+"point": "Team-wide scheduling coordination.",
+"why_it_matters": "It adjusts meetings across team calendars. For personal clarity, shared optimization feels unnecessary."
 },
 {
-"point": "It works continuously in the background.",
-"why_it_matters": "If you want scheduling improvements without manual effort, automation can save time."
+"point": "Background analysis of availability patterns.",
+"why_it_matters": "It runs logic to suggest better meeting times. If you only want visibility, this added layer may feel excessive."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Where Google Calendar wins for feature-averse users",
+"heading": "Where Google Calendar works better for minimalists",
 "bullets": [
 {
-"point": "Events stay fixed unless you change them.",
-"why_it_matters": "Predictability reduces mental friction and keeps your schedule easy to understand."
+"point": "Static event display in day, week, and month views.",
+"why_it_matters": "Meetings appear exactly where you place them."
 },
 {
-"point": "No automated reshuffling occurs behind the scenes.",
-"why_it_matters": "Minimalists benefit from knowing nothing changes without their input."
+"point": "Manual control over event edits.",
+"why_it_matters": "Nothing changes unless you move it yourself."
 },
 {
-"point": "The interface focuses solely on visibility.",
-"why_it_matters": "Fewer background processes mean fewer surprises or hidden adjustments."
+"point": "Optional additional calendars without automation.",
+"why_it_matters": "You can layer calendars visually without enabling optimization logic."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "Common failure modes (and what to do instead)",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "You feel distracted or unsettled by meetings moving automatically in your calendar.",
-"what_to_do_instead": "Use Google Calendar to maintain a stable, manually controlled schedule."
+"fails_when": "Meetings move automatically and you prefer a fixed, predictable schedule.",
+"what_to_do_instead": "Use Google Calendar if you want full manual control."
 },
 {
 "tool": "y",
-"fails_when": "Your schedule becomes overly fragmented and you struggle to find uninterrupted focus time.",
-"what_to_do_instead": "Introduce manual time blocking or limited optimization only if it clearly improves clarity."
+"fails_when": "You want meetings automatically rearranged to create uninterrupted focus time.",
+"what_to_do_instead": "Use Clockwise if you prefer automated schedule optimization."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your work requires frequent meeting adjustments to protect focus time, Clockwise may be worth the added automation."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide fast",
+"heading": "Quick decision rules",
 "rules": [
-"If you want a stable schedule with no background reshuffling, choose Google Calendar.",
-"If automated optimization feels like unnecessary activity, avoid Clockwise.",
-"If fragmented days are a persistent problem, Clockwise may help consolidate time."
+"If you want a fixed, predictable calendar, choose Google Calendar.",
+"If you want meetings optimized automatically, choose Clockwise.",
+"If background automation feels distracting, keep your calendar manual."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is calendar optimization always beneficial?",
-"a": "Only if it reduces friction without creating unpredictability. For minimalists, automatic changes can feel disruptive."
+"q": "Does Clockwise move meetings automatically?",
+"a": "Yes. It can reschedule flexible meetings to create focus blocks."
 },
 {
-"q": "What’s the simplest way to keep meetings visible?",
-"a": "A straightforward calendar like Google Calendar provides clear visibility without automated reshuffling."
+"q": "Is Google Calendar automated by default?",
+"a": "No. Events stay where you place them unless you edit them."
 },
 {
-"q": "Can I use Clockwise without full automation?",
-"a": "Its core value comes from optimization, so limiting automation may reduce its benefits."
+"q": "Which tool is more minimal?",
+"a": "Google Calendar is more minimal because it avoids optimization layers."
 },
 {
-"q": "How do I know if automation is hurting clarity?",
-"a": "If you frequently check or question changes in your schedule, the background optimization may be adding friction."
+"q": "Can Clockwise be used passively?",
+"a": "It integrates with your calendar, but its main feature is automated optimization."
 }
 ],
 "related_pages": [
-{
-"x_name": "Motion",
-"y_name": "Google Calendar",
-"persona": "Minimalist"
-},
-{
-"x_name": "Reclaim.ai",
-"y_name": "Google Calendar",
-"persona": "Minimalist"
-},
-{
-"x_name": "Apple Calendar",
-"y_name": "Google Calendar",
-"persona": "Minimalist"
-},
-{
-"x_name": "Fantastical",
-"y_name": "Google Calendar",
-"persona": "Minimalist"
-},
-{
-"x_name": "Notion Calendar",
-"y_name": "Google Calendar",
-"persona": "Minimalist"
-},
-{
-"x_name": "Akiflow",
-"y_name": "Google Calendar",
-"persona": "Minimalist"
-}
+{ "x_name": "Akiflow", "y_name": "Apple Calendar", "persona": "Minimalist" },
+{ "x_name": "Motion", "y_name": "Outlook Calendar", "persona": "Minimalist" },
+{ "x_name": "Zoho Bookings", "y_name": "TidyCal", "persona": "Beginner" },
+{ "x_name": "Square Appointments", "y_name": "Calendly", "persona": "Beginner" },
+{ "x_name": "Skedda", "y_name": "Google Calendar", "persona": "Solo user" },
+{ "x_name": "Doodle", "y_name": "TidyCal", "persona": "Student" }
 ]
 }
+

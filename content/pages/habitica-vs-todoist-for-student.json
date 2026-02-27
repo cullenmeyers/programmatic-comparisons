@@ -5,106 +5,112 @@
 "constraintUiName": "Easy to quit later",
 "title": "Habitica vs Todoist for Students",
 "slug": "habitica-vs-todoist-for-student",
-"meta_description": "Habitica vs Todoist for students who need a short-term task list without long-term gamified system overhead.",
+"meta_description": "Habitica vs Todoist for students who need a simple semester task list without managing avatars, rewards, or game systems.",
 "persona": "Student",
-"constraint_lens": "You need a task manager that is easy to quit later and doesn’t lock you into a complex system for short-term use.",
+"constraint_lens": "You need a task list that works for one semester and is easy to walk away from after finals.",
 "verdict": {
 "winner": "y",
-"summary": "Todoist wins for students who need a temporary task list for a semester. It lets you track assignments without committing to a layered system. Habitica adds game mechanics that can be motivating, but if game mechanics introduce overhead beyond semester needs, they increase switching cost and complexity. Follow the rule: if game mechanics introduce overhead beyond semester needs, Habitica fails first.",
+"summary": "Todoist wins for students who want a straightforward task list for one academic term. You can create projects for each class and log assignments without learning extra systems. Habitica adds avatars, rewards, and stat tracking that require ongoing attention. If game mechanics introduce overhead beyond semester needs, Habitica fails first.",
 "decision_rule": "If game mechanics introduce overhead beyond semester needs, Habitica fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "Best fit for semester-based planning",
-"content": "As a student, your needs change every term. You want a tool that works now and is easy to abandon later without cleanup or emotional investment. The right choice supports short-term tracking without pulling you into a long-term system."
+"heading": "Which tool fits a short academic term?",
+"content": "You need a temporary task list without managing gamified systems long-term. As a student, you want to track assignments and move on after the semester ends. The right tool should not require maintaining character stats or streak systems. Anything that creates a game layer adds work beyond the class itself."
 },
 {
 "type": "x_wins",
-"heading": "Where Habitica still wins",
+"heading": "Where Habitica works better",
 "bullets": [
 {
-"point": "Gamified motivation",
-"why_it_matters": "If you struggle with consistency, game mechanics can increase engagement and daily follow-through."
+"point": "Avatar system with health, experience, and rewards.",
+"why_it_matters": "Completing tasks increases stats and unlocks items. Managing character progress adds another layer beyond simply tracking homework."
 },
 {
-"point": "Habit tracking built alongside tasks",
-"why_it_matters": "If you want to build study routines, combining habits and tasks can reinforce structure."
+"point": "Habit, daily, and to-do categories with separate tracking rules.",
+"why_it_matters": "You classify tasks into different gameplay types. For short-term school work, deciding categories adds setup effort."
 },
 {
-"point": "Social and accountability features",
-"why_it_matters": "If peer motivation helps you, group challenges can increase commitment."
+"point": "Party quests and social accountability features.",
+"why_it_matters": "You can join groups for shared goals. This introduces coordination beyond basic task tracking."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Where Todoist wins under low switching cost",
+"heading": "Where Todoist works better for students",
 "bullets": [
 {
-"point": "Straightforward task lists",
-"why_it_matters": "You can add assignments quickly without learning a system that extends beyond the semester."
+"point": "Simple project lists for each class.",
+"why_it_matters": "You can create a project named History or Math and start adding assignments immediately."
 },
 {
-"point": "No built-in game economy to manage",
-"why_it_matters": "Without points, streaks, or rewards, there’s nothing to maintain once the term ends."
+"point": "Quick add input with natural language dates.",
+"why_it_matters": "You can type Essay Friday 5pm in one step without managing extra systems."
 },
 {
-"point": "Easy to stop using",
-"why_it_matters": "When classes change or end, you can leave without feeling tied to progress mechanics."
+"point": "Projects can be archived or deleted easily after finals.",
+"why_it_matters": "When the semester ends, you can remove class projects without untangling game progress."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "Failure modes to watch for",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "You spend time managing rewards, streaks, or game elements instead of focusing on assignments.",
-"what_to_do_instead": "Switch to a simple task manager that removes gamified overhead."
+"fails_when": "You spend time managing avatar stats or quest systems instead of tracking assignments.",
+"what_to_do_instead": "Use Todoist if you want a straightforward checklist for coursework."
 },
 {
 "tool": "y",
-"fails_when": "You lack motivation and need stronger engagement cues to stay consistent.",
-"what_to_do_instead": "Adopt a gamified tool if external reinforcement meaningfully improves follow-through."
+"fails_when": "You rely on game-style rewards to stay motivated.",
+"what_to_do_instead": "Use Habitica if you benefit from gamified accountability."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you struggle with motivation and find that game rewards genuinely increase consistency during the semester, Habitica may feel worth the added layers."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules for deciding in 30 seconds",
+"heading": "Quick decision rules",
 "rules": [
-"If you want a temporary task list with no long-term system, choose Todoist.",
-"If game mechanics feel like extra overhead for one semester, avoid Habitica.",
-"If motivation is your main bottleneck, Habitica may be worth the added complexity."
+"If you want a simple semester checklist, choose Todoist.",
+"If you want game-style rewards for completing tasks, choose Habitica.",
+"If managing avatars feels unnecessary, avoid gamified apps."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Which tool is easier to use for just one semester?",
-"a": "Todoist is typically easier because it doesn’t require managing gamified systems or long-term progress mechanics."
+"q": "Is Habitica mainly a game?",
+"a": "It combines task management with game mechanics like avatars, rewards, and stats."
 },
 {
-"q": "Can gamification help students?",
-"a": "Yes, but only if the added layers increase motivation more than they increase management overhead."
+"q": "Is Todoist better for short-term academic use?",
+"a": "Yes. It focuses on tasks and projects without additional game systems."
 },
 {
-"q": "What does low switching cost mean for students?",
-"a": "It means you can stop using the app after the term without cleanup, restructuring, or feeling tied to accumulated progress."
+"q": "Which tool is easier to stop using after the semester?",
+"a": "Todoist is easier to leave because it does not involve ongoing character progression."
 },
 {
-"q": "Is Habitica too complex for short-term use?",
-"a": "It can be if the game elements require ongoing attention beyond what’s necessary to track assignments."
+"q": "Can Habitica help with motivation?",
+"a": "Yes, especially if you respond well to rewards and visual progress systems."
 }
 ],
 "related_pages": [
-{ "x_name": "Todoist", "y_name": "Microsoft To Do", "persona": "Student" },
-{ "x_name": "TickTick", "y_name": "Todoist", "persona": "Student" },
-{ "x_name": "Notion", "y_name": "Todoist", "persona": "Student" },
-{ "x_name": "Trello", "y_name": "Todoist", "persona": "Student" },
-{ "x_name": "Habitica", "y_name": "TickTick", "persona": "Student" },
-{ "x_name": "Things 3", "y_name": "Todoist", "persona": "Student" }
+{ "x_name": "Todoist", "y_name": "MeisterTask", "persona": "Student" },
+{ "x_name": "Trello", "y_name": "Microsoft Planner", "persona": "Student" },
+{ "x_name": "Superlist", "y_name": "Google Tasks", "persona": "Student" },
+{ "x_name": "Asana", "y_name": "Trello", "persona": "Student" },
+{ "x_name": "ClickUp", "y_name": "Trello", "persona": "Student" },
+{ "x_name": "Microsoft To Do", "y_name": "Todoist", "persona": "Student" }
 ]
 }
+

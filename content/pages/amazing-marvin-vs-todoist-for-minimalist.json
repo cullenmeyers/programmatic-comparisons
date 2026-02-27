@@ -1,133 +1,115 @@
 {
 "category": "Task Managers",
 "categorySlug": "task-managers",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
 "title": "Amazing Marvin vs Todoist for Minimalists",
 "slug": "amazing-marvin-vs-todoist-for-minimalist",
-"meta_description": "A minimalist comparison of Amazing Marvin vs Todoist for simple task tracking when modes, experiments, and options feel distracting.",
+"meta_description": "Amazing Marvin vs Todoist for minimalists who want simple task tracking without modes, strategies, or customizable productivity systems.",
 "persona": "Minimalist",
-"constraintSlug": "feature-aversion",
-"constraint_lens": "You are averse to features, so the best task manager is the one that avoids modes, experiments, and customization in favor of simple lists.",
+"constraint_lens": "You want a straightforward task list without modes, strategies, or layered productivity systems.",
 "verdict": {
 "winner": "y",
-"summary": "Todoist wins for minimalists because it keeps task tracking straightforward and opinionated. Amazing Marvin is flexible by design, but its many modes and options invite experimentation that distracts from doing. When simplicity and calm matter most, Todoist stays focused on tasks.",
+"summary": "Todoist wins for minimalists who just want to track tasks simply. It focuses on lists, due dates, and priorities without requiring you to choose a productivity system. Amazing Marvin is built around customizable strategies, modes, and optional features that change how tasks behave. If the tool offers too many modes or options, Amazing Marvin fails first.",
 "decision_rule": "If the tool offers too many modes or options, Amazing Marvin fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What minimalists want from task tracking",
-"content": "Minimalists want tasks to be obvious and boring. The right tool minimizes choices and avoids turning productivity into a project."
+"heading": "Why this matters for Minimalists",
+"content": "You said you want tasks, not behavioral experiments or systems. As a minimalist, seeing many toggles, strategies, or workflow choices creates hesitation. A stable list that works the same way every day feels cleaner."
 },
 {
 "type": "x_wins",
-"heading": "When Amazing Marvin can still work for a minimalist",
+"heading": "Where Amazing Marvin wins",
 "bullets": [
 {
-"point": "You enjoy experimenting to find a perfect workflow",
-"why_it_matters": "Amazing Marvin rewards tinkering. For feature-averse users, that flexibility becomes a constant distraction."
+"point": "Modular feature system where you enable or disable specific productivity strategies",
+"why_it_matters": "You can tailor the app deeply, but choosing which modules to activate adds setup decisions."
 },
 {
-"point": "Your productivity needs change frequently",
-"why_it_matters": "Multiple modes help adapt, but adapting requires decisions minimalists prefer to avoid."
+"point": "Multiple task modes such as time blocking, sequential focus, or smart lists",
+"why_it_matters": "You can experiment with different workflows, yet switching modes changes how tasks appear."
 },
 {
-"point": "You like turning features on and off intentionally",
-"why_it_matters": "Control can be empowering, but it also invites ongoing attention and maintenance."
+"point": "Advanced customization for fields, habits, and goals",
+"why_it_matters": "You can build a full system, but configuring these options increases complexity."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why Todoist wins for feature-averse users",
+"heading": "Where Todoist wins",
 "bullets": [
 {
-"point": "The task model is simple and fixed",
-"why_it_matters": "A stable structure reduces mental overhead and prevents system drift."
+"point": "Single consistent list interface across projects",
+"why_it_matters": "You always see tasks in the same structure without activating modes."
 },
 {
-"point": "There are few choices to manage",
-"why_it_matters": "Fewer options keep attention on completing tasks rather than configuring tools."
+"point": "Quick add with natural language due dates",
+"why_it_matters": "You type submit paper tomorrow and the app sets the date automatically."
 },
 {
-"point": "The tool discourages experimentation",
-"why_it_matters": "By limiting modes, Todoist protects focus and consistency."
+"point": "Optional labels and filters that can be ignored",
+"why_it_matters": "You can keep everything as a basic checklist without enabling advanced layers."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool breaks under feature aversion",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The user feels tempted to tweak modes, strategies, or settings instead of finishing tasks.",
-"what_to_do_instead": "Use Todoist to keep tasks as simple lists without experimentation."
+"fails_when": "You feel pulled into configuring strategies or switching between modes instead of simply checking off tasks.",
+"what_to_do_instead": "Use Todoist if you want a stable and minimal task list."
 },
 {
 "tool": "y",
-"fails_when": "The user needs highly customized workflows or behavioral experiments.",
-"what_to_do_instead": "Accept Todoist’s limits or isolate experimentation in a separate, intentional tool."
+"fails_when": "You need highly customizable workflows tailored to your habits.",
+"what_to_do_instead": "Use Amazing Marvin if you enjoy building a personalized productivity system."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you enjoy experimenting with productivity methods and want full control over how tasks behave, Amazing Marvin may become appealing despite the added options."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick decision rules",
 "rules": [
-"If options feel distracting, choose Todoist.",
-"If you want tasks, not experiments, avoid Amazing Marvin.",
-"If fewer features mean more focus, Todoist wins."
+"If you want the fewest possible features, choose Todoist.",
+"If modes and strategies feel distracting, avoid Amazing Marvin.",
+"If you enjoy customizing your workflow deeply, Amazing Marvin may fit better."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is Amazing Marvin too complex for minimalists?",
-"a": "Often yes, because its many modes and options invite ongoing experimentation."
+"q": "Is Amazing Marvin complex?",
+"a": "It offers many optional modules and modes that increase flexibility but also complexity."
 },
 {
-"q": "Why does Todoist feel calmer?",
-"a": "Because it limits customization and keeps the focus on tasks."
+"q": "Can Todoist stay minimal long term?",
+"a": "Yes, you can ignore advanced features and keep it as a simple list."
 },
 {
-"q": "Can a minimalist still use Amazing Marvin?",
-"a": "Only with strong restraint. For most minimalists, the flexibility undermines simplicity."
+"q": "Which tool has fewer visible options?",
+"a": "Todoist presents fewer modes and configuration layers by default."
 },
 {
-"q": "What’s the biggest risk of ultra-flexible task tools?",
-"a": "That optimizing the system replaces doing the work."
+"q": "Does Amazing Marvin require setup?",
+"a": "It encourages choosing and configuring modules, which adds an initial learning step."
 }
 ],
 "related_pages": [
-{
-"x_name": "OmniFocus",
-"y_name": "Todoist",
-"persona": "Minimalist"
-},
-{
-"x_name": "ClickUp",
-"y_name": "Todoist",
-"persona": "Minimalist"
-},
-{
-"x_name": "Notion",
-"y_name": "Todoist",
-"persona": "Minimalist"
-},
-{
-"x_name": "Things",
-"y_name": "Todoist",
-"persona": "Minimalist"
-},
-{
-"x_name": "Microsoft To Do",
-"y_name": "Todoist",
-"persona": "Minimalist"
-},
-{
-"x_name": "Google Tasks",
-"y_name": "Todoist",
-"persona": "Minimalist"
-}
+{ "x_name": "Habitica", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "ClickUp", "y_name": "Apple Reminders", "persona": "Minimalist" },
+{ "x_name": "Sorted³", "y_name": "Things 3", "persona": "Minimalist" },
+{ "x_name": "Sunsama", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Notion", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "OmniFocus", "y_name": "Todoist", "persona": "Minimalist" }
 ]
 }

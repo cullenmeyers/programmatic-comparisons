@@ -1,133 +1,116 @@
 {
 "category": "Note-taking apps",
 "categorySlug": "note-taking-apps",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
 "title": "Obsidian vs Google Docs for Students",
 "slug": "obsidian-vs-google-docs-for-student",
-"meta_description": "A clear comparison of Obsidian vs Google Docs for students who need short-term notes and easy collaboration on class projects.",
+"meta_description": "Obsidian vs Google Docs for students who need easy collaboration and assignment sharing without export or format hassles.",
 "persona": "Student",
-"constraintSlug": "switching-cost",
-"constraint_lens": "You need notes for short-term academic use with classmates, so the best tool is easy to share and abandon without friction.",
+"constraint_lens": "You need a tool for one semester that is easy to share, collaborate on, and leave later without friction.",
 "verdict": {
 "winner": "y",
-"summary": "Google Docs wins for students because it supports effortless sharing and collaboration with almost no setup. Obsidian is powerful for personal knowledge systems, but exporting and coordinating notes adds friction that doesn’t pay off within a single semester. When collaboration and low switching cost matter most, Google Docs fits the reality of student work better.",
+"summary": "Google Docs wins for students who need class collaboration and simple submission. It allows instant sharing through links and real-time group editing. Obsidian stores notes as local Markdown files, which require exporting or extra setup for sharing. If exporting or sharing notes feels heavy for short-term use, Obsidian fails first.",
 "decision_rule": "If exporting or sharing notes feels heavy for short-term use, Obsidian fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What students need for short-term collaboration",
-"content": "Students often work under time pressure with changing groups and deadlines. The right tool makes sharing effortless, works immediately, and doesn’t lock you into a system you won’t use after the semester ends."
+"heading": "Best fit for semester-based collaboration",
+"content": "You need notes mainly for a single semester and group projects. Google Docs matches classroom habits where professors and classmates expect shared documents. Obsidian is centered on local files and personal knowledge systems, which adds steps when working with others."
 },
 {
 "type": "x_wins",
-"heading": "When Obsidian can still make sense for students",
+"heading": "Where Obsidian wins",
 "bullets": [
 {
-"point": "Your notes are mostly private and rarely shared",
-"why_it_matters": "Obsidian works best as a personal system. If collaboration is minimal, its setup cost may still be acceptable."
+"point": "Local Markdown files stored in a vault folder",
+"why_it_matters": "Your notes exist as plain text files you control. This is flexible, but sharing requires exporting or syncing that folder."
 },
 {
-"point": "You plan to keep and reuse notes beyond the semester",
-"why_it_matters": "Obsidian’s value compounds over time. For purely temporary coursework, that payoff usually never arrives."
+"point": "Backlinks and graph view for connecting ideas",
+"why_it_matters": "You can link lecture topics and see relationships visually. This supports deep study, though it does not directly help group editing."
 },
 {
-"point": "You’re comfortable exporting and managing files",
-"why_it_matters": "If file handling feels natural, sharing notes won’t be stressful. For most students, it adds unnecessary friction."
+"point": "Plugin system for templates and automation",
+"why_it_matters": "You can extend features for tasks or formatting. Managing plugins adds setup time that may not pay off in one semester."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why Google Docs wins for class collaboration",
+"heading": "Where Google Docs wins",
 "bullets": [
 {
-"point": "Sharing is instant and familiar",
-"why_it_matters": "Group projects move fast. Google Docs lets everyone access and edit notes without learning anything new."
+"point": "Real-time collaboration through shared links",
+"why_it_matters": "You send a link and edit together instantly. There is no exporting or file transfer step."
 },
 {
-"point": "Real-time collaboration is built in",
-"why_it_matters": "Students don’t need to coordinate versions or exports, which reduces confusion and wasted time."
+"point": "Direct download in common formats like docx or PDF",
+"why_it_matters": "Assignments match standard submission portals without conversion tools."
 },
 {
-"point": "Walking away later is painless",
-"why_it_matters": "After the semester, you can stop using Docs without feeling like you invested heavily in a system."
+"point": "Inline comments and suggestion mode",
+"why_it_matters": "Group members and instructors can leave feedback inside the same document, reducing back-and-forth."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool fails under short-term collaboration",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The student hesitates to share notes because exporting, syncing, or formatting feels like extra work.",
-"what_to_do_instead": "Use Google Docs for shared class notes and reserve Obsidian only for long-term personal knowledge."
+"fails_when": "You must export Markdown files or set up shared folders before classmates can edit.",
+"what_to_do_instead": "Use Google Docs where collaboration happens directly inside the browser."
 },
 {
 "tool": "y",
-"fails_when": "The student wants deep personal organization beyond simple documents.",
-"what_to_do_instead": "Accept Docs’ simplicity for group work and keep advanced organization separate."
+"fails_when": "You want advanced linking between notes across multiple semesters.",
+"what_to_do_instead": "Adopt Obsidian for personal long-term knowledge building."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your group uses version control or shared cloud folders and is comfortable managing files, Obsidian may work well for collaborative writing."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick rules",
 "rules": [
-"If you need to share notes with classmates, choose Google Docs.",
-"If the semester is short, avoid heavy setup tools.",
-"If switching tools later feels likely, keep collaboration simple."
+"If you need instant group editing, choose Google Docs.",
+"If exporting files sounds like extra work for one semester, avoid Obsidian.",
+"If you want long-term personal knowledge linking, Obsidian may be useful later."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is Obsidian bad for group projects?",
-"a": "Not inherently, but it adds friction for sharing and collaboration that rarely makes sense for short-term student work."
+"q": "Can Obsidian be used for group projects?",
+"a": "Yes, but it usually requires shared folders or exports, which adds steps compared to Docs."
 },
 {
-"q": "Why is Google Docs better for students?",
-"a": "Because it’s familiar, easy to share, and optimized for real-time collaboration with minimal setup."
+"q": "Is Google Docs easier for assignment submission?",
+"a": "Yes. It supports common formats and link sharing without conversion."
 },
 {
-"q": "Can I still use Obsidian alongside Google Docs?",
-"a": "Yes. Use Google Docs for shared class work and Obsidian only for personal notes you plan to keep long-term."
+"q": "Will I lose notes if I switch away from Docs later?",
+"a": "No. You can download documents in standard formats and move them elsewhere."
 },
 {
-"q": "What’s the biggest mistake students make with note tools?",
-"a": "Choosing a long-term personal system when their immediate need is short-term collaboration."
+"q": "Which is better for short-term school use?",
+"a": "Google Docs is generally easier because it matches typical classroom workflows."
 }
 ],
 "related_pages": [
-{
-"x_name": "Notion",
-"y_name": "Google Docs",
-"persona": "Student"
-},
-{
-"x_name": "Obsidian",
-"y_name": "Apple Notes",
-"persona": "Student"
-},
-{
-"x_name": "Evernote",
-"y_name": "Google Docs",
-"persona": "Student"
-},
-{
-"x_name": "Logseq",
-"y_name": "Google Docs",
-"persona": "Student"
-},
-{
-"x_name": "Bear",
-"y_name": "Google Docs",
-"persona": "Student"
-},
-{
-"x_name": "Google Keep",
-"y_name": "Google Docs",
-"persona": "Student"
-}
+{ "x_name": "Roam Research", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Notion", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Craft", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Evernote", "y_name": "OneNote", "persona": "Student" },
+{ "x_name": "Apple Notes", "y_name": "Google Keep", "persona": "Student" },
+{ "x_name": "RemNote", "y_name": "Google Docs", "persona": "Student" }
 ]
 }
+

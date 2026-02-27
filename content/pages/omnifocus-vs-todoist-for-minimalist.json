@@ -1,133 +1,115 @@
 {
 "category": "Task Managers",
 "categorySlug": "task-managers",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
 "title": "OmniFocus vs Todoist for Minimalists",
 "slug": "omnifocus-vs-todoist-for-minimalist",
-"meta_description": "A minimalist comparison of OmniFocus vs Todoist for simple task tracking when frameworks and terminology feel distracting.",
+"meta_description": "OmniFocus vs Todoist for minimalists who want simple task tracking without frameworks, perspectives, or advanced terminology.",
 "persona": "Minimalist",
-"constraintSlug": "feature-aversion",
-"constraint_lens": "You are averse to features, so the best task manager is the one that avoids frameworks, terminology, and setup in favor of simple checklists.",
+"constraint_lens": "You want the simplest possible way to track tasks without frameworks, perspectives, or special terminology.",
 "verdict": {
 "winner": "y",
-"summary": "Todoist wins for minimalists because it keeps task tracking straightforward and avoids imposing a methodology. OmniFocus is powerful, but its frameworks and concepts introduce mental overhead that works against simplicity. When fewer ideas about how to work lead to better follow-through, Todoist fits better.",
+"summary": "Todoist wins for minimalists who want straightforward task tracking. You can create lists and check off tasks without learning a system. OmniFocus introduces projects, tags, defer dates, and custom perspectives that reflect a broader framework. If the tool introduces frameworks or terminology, OmniFocus fails first.",
 "decision_rule": "If the tool introduces frameworks or terminology, OmniFocus fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What minimalists want from a task manager",
-"content": "Minimalists want to see a short list and get things done. The right tool minimizes language, structure, and decisions so tasks don’t turn into a system to manage."
+"heading": "Why this matters for Minimalists",
+"content": "You said you want the simplest possible way to track tasks. When an app uses terms like perspectives or defer dates, you must understand how the system works before using it comfortably. A basic list reduces mental friction."
 },
 {
 "type": "x_wins",
-"heading": "When OmniFocus can still work for a minimalist",
+"heading": "Where OmniFocus wins",
 "bullets": [
 {
-"point": "You already follow a structured task methodology",
-"why_it_matters": "If the framework is familiar, OmniFocus won’t feel heavy. For feature-averse users, learning the framework is the main cost."
+"point": "Custom perspectives that filter tasks by tags and availability",
+"why_it_matters": "You can create powerful views, but setting them up requires understanding advanced concepts."
 },
 {
-"point": "You manage complex, interdependent tasks",
-"why_it_matters": "OmniFocus excels when tasks require rules and dependencies. For simple lists, that power becomes noise."
+"point": "Defer dates that hide tasks until a future time",
+"why_it_matters": "You control when tasks appear, yet managing defer logic adds another layer to learn."
 },
 {
-"point": "You enjoy precision over simplicity",
-"why_it_matters": "Some users prefer explicit control. Minimalists usually prefer fewer controls altogether."
+"point": "Structured project types such as sequential or parallel",
+"why_it_matters": "You can model workflows precisely, but choosing project types introduces terminology beyond a simple list."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why Todoist wins for feature-averse users",
+"heading": "Where Todoist wins",
 "bullets": [
 {
-"point": "Tasks can be added and completed instantly",
-"why_it_matters": "Minimalists value speed and clarity over configuration."
+"point": "Single list based interface with optional projects",
+"why_it_matters": "You can keep everything in one list without activating advanced structures."
 },
 {
-"point": "There is no required methodology",
-"why_it_matters": "Todoist doesn’t ask you to think about how work should be structured before you start."
+"point": "Quick add with natural language due dates",
+"why_it_matters": "You type pay bill tomorrow and it sets the date automatically without extra configuration."
 },
 {
-"point": "The interface stays lightweight over time",
-"why_it_matters": "Fewer concepts mean less decay and less temptation to tinker."
+"point": "Minimal required concepts limited to tasks and optional labels",
+"why_it_matters": "You avoid learning frameworks and can use it as a basic checklist."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool breaks under feature aversion",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The user feels pressure to learn concepts, perspectives, or task frameworks before tracking work.",
-"what_to_do_instead": "Use Todoist to keep tasks as simple checklists without methodology."
+"fails_when": "You feel slowed down by terminology such as tags, perspectives, or defer dates.",
+"what_to_do_instead": "Use Todoist if you want a simple checklist without learning a system."
 },
 {
 "tool": "y",
-"fails_when": "The user needs strict rules, dependencies, or advanced task logic.",
-"what_to_do_instead": "Accept Todoist’s simplicity or move complex planning to a dedicated system."
+"fails_when": "You need highly structured workflows with detailed filtering.",
+"what_to_do_instead": "Use OmniFocus if advanced control becomes essential."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your workload grows complex and you need precise control over when tasks appear and how they relate, OmniFocus may justify its added terminology."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick decision rules",
 "rules": [
-"If you want a plain task list, choose Todoist.",
-"If terminology feels distracting, avoid OmniFocus.",
-"If fewer concepts equal better focus, Todoist wins."
+"If you want the simplest list possible, choose Todoist.",
+"If advanced terminology feels distracting, avoid OmniFocus.",
+"If you need structured control over task visibility, OmniFocus may fit better."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is OmniFocus too complex for minimalists?",
-"a": "Often yes, because it introduces frameworks and terminology that add mental overhead."
+"q": "Is OmniFocus hard to learn?",
+"a": "It includes advanced concepts that take time to understand compared to basic list apps."
 },
 {
-"q": "Why does Todoist feel simpler?",
-"a": "Because it focuses on adding and completing tasks without requiring a specific way of working."
+"q": "Can Todoist stay minimal long term?",
+"a": "Yes, you can ignore advanced features and keep it as a simple task list."
 },
 {
-"q": "Can a minimalist still use OmniFocus?",
-"a": "Only if they already embrace its methodology. Otherwise, the learning curve defeats simplicity."
+"q": "Which app has fewer concepts?",
+"a": "Todoist introduces fewer built in frameworks and terms."
 },
 {
-"q": "What’s the biggest risk of framework-heavy task tools?",
-"a": "That managing the system replaces the act of doing tasks."
+"q": "Does OmniFocus require setup before use?",
+"a": "It often requires choosing project types and understanding tags before fully benefiting from it."
 }
 ],
 "related_pages": [
-{
-"x_name": "Things",
-"y_name": "Todoist",
-"persona": "Minimalist"
-},
-{
-"x_name": "Notion",
-"y_name": "Todoist",
-"persona": "Minimalist"
-},
-{
-"x_name": "ClickUp",
-"y_name": "Todoist",
-"persona": "Minimalist"
-},
-{
-"x_name": "Microsoft To Do",
-"y_name": "Todoist",
-"persona": "Minimalist"
-},
-{
-"x_name": "Google Tasks",
-"y_name": "Todoist",
-"persona": "Minimalist"
-},
-{
-"x_name": "OmniFocus",
-"y_name": "Things",
-"persona": "Minimalist"
-}
+{ "x_name": "Amazing Marvin", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "ClickUp", "y_name": "Apple Reminders", "persona": "Minimalist" },
+{ "x_name": "Sorted³", "y_name": "Things 3", "persona": "Minimalist" },
+{ "x_name": "Sunsama", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Habitica", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Notion", "y_name": "Todoist", "persona": "Minimalist" }
 ]
 }

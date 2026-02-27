@@ -5,106 +5,112 @@
 "constraintUiName": "Publish fast",
 "title": "Craft vs Milanote for Beginners",
 "slug": "craft-vs-milanote-for-beginner",
-"meta_description": "Craft vs Milanote for beginners who want to start typing ideas without learning board-style visual systems first.",
+"meta_description": "Craft vs Milanote for beginners who want to type notes immediately without learning boards, cards, or visual layouts before writing ideas.",
 "persona": "Beginner",
-"constraint_lens": "You need a note app that works immediately without requiring setup or structural decisions before you start writing.",
+"constraint_lens": "You want to open the app and start typing right away without setting anything up first.",
 "verdict": {
 "winner": "x",
-"summary": "Craft wins for beginners who just want to start typing ideas without learning a visual board system. It opens to a document-style writing space that feels familiar and direct. Milanote is built around board-style layouts, but if board-style layout must be understood before writing, it adds setup friction that slows beginners down. Follow the rule: if board-style layout must be understood before writing, Milanote fails first.",
+"summary": "Craft wins for beginners who just want to start writing ideas immediately. It opens to a document-style page where you can click and type without arranging anything first. Milanote is built around boards and draggable cards, which means you must understand the layout before writing. If board-style layout must be understood before writing, Milanote fails first.",
 "decision_rule": "If board-style layout must be understood before writing, Milanote fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "Best fit when you want to type immediately",
-"content": "As a beginner, your priority is capturing ideas without learning a system first. You don’t want to drag cards around or design visual boards before writing a sentence. The right tool gives you a clean document and lets you begin instantly."
+"heading": "Which tool lets you write without learning a system first?",
+"content": "You just want to type notes without learning visual board systems. As a beginner, extra layout decisions or setup screens slow you down. The best fit is the tool that behaves like a blank page the moment you open it. Anything that makes you arrange boards or cards before writing adds hesitation."
 },
 {
 "type": "x_wins",
-"heading": "Where Craft wins under low setup tolerance",
+"heading": "Where Craft works better for beginners",
 "bullets": [
 {
-"point": "Document-style writing experience",
-"why_it_matters": "You can start typing in a familiar layout without arranging visual elements."
+"point": "Opens directly into a document-style page with a blinking cursor.",
+"why_it_matters": "You can click and type immediately, so there are no layout choices to make before writing. If an app makes you choose a board or structure first, it slows your first idea."
 },
 {
-"point": "Minimal structural decisions upfront",
-"why_it_matters": "You avoid choosing board layouts or placing content blocks before writing."
+"point": "Uses simple block editing inside a linear page.",
+"why_it_matters": "Content flows top to bottom like a normal document, so you don’t have to drag or position items. This keeps your focus on writing instead of arranging elements."
 },
 {
-"point": "Clear, linear flow",
-"why_it_matters": "A straightforward page reduces cognitive load for someone new to note apps."
+"point": "Minimal upfront structure—no boards or canvases to set up.",
+"why_it_matters": "You don’t need to understand a visual system before capturing ideas. If the first step is learning how the layout works, many beginners stop before they start."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Where Milanote still wins",
+"heading": "Where Milanote works better",
 "bullets": [
 {
-"point": "Visual board organization",
-"why_it_matters": "If you think visually, boards can help map ideas spatially."
+"point": "Freeform board canvas with draggable notes and cards.",
+"why_it_matters": "You can visually map ideas and move them around, which is helpful once you understand the board system. But needing to place and arrange cards adds extra decisions at the start."
 },
 {
-"point": "Flexible layout positioning",
-"why_it_matters": "You can arrange notes, images, and links freely across a canvas."
+"point": "Supports columns and visual grouping on a board.",
+"why_it_matters": "This helps when organizing complex ideas visually. However, deciding where each note belongs can interrupt quick idea capture."
 },
 {
-"point": "Creative brainstorming support",
-"why_it_matters": "For design-heavy projects, visual boards can clarify relationships between ideas."
+"point": "Designed around visual planning rather than linear writing.",
+"why_it_matters": "If you think in diagrams, this can feel natural. For someone who just wants to type text, the visual layout becomes an extra step before writing."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "Failure modes to watch for",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "You need freeform visual mapping rather than linear documents.",
-"what_to_do_instead": "Switch to a board-based tool if spatial organization becomes essential."
+"fails_when": "You need to brainstorm spatially and move ideas around freely on a large canvas.",
+"what_to_do_instead": "Switch to Milanote if you want to drag notes across a board and see everything at once."
 },
 {
 "tool": "y",
-"fails_when": "You hesitate to write because you’re unsure how to structure or place items on a board.",
-"what_to_do_instead": "Use a document-style app that prioritizes immediate typing."
+"fails_when": "You must understand boards, cards, and layout rules before you can comfortably start typing.",
+"what_to_do_instead": "Use Craft if you want a blank page that lets you start writing immediately."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you are a beginner who naturally thinks in mind maps and prefers moving ideas around visually instead of writing paragraphs, Milanote may feel more intuitive despite the board system."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules for deciding in 30 seconds",
+"heading": "Quick decision rules",
 "rules": [
-"If you want to start typing without learning a layout system, choose Craft.",
-"If board-style structure feels like extra setup, avoid Milanote.",
-"If you prefer spatial, visual brainstorming, Milanote may fit better."
+"If you want a blank page and a cursor right away, choose Craft.",
+"If you prefer dragging notes around a visual board, choose Milanote.",
+"If layout decisions slow you down, avoid board-based tools."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Which app is easier for beginners to start writing?",
-"a": "Craft is generally easier because it opens to a document-style page without requiring board understanding."
+"q": "Is Craft easier to start using than Milanote?",
+"a": "For beginners who just want to type, yes. Craft opens like a document, while Milanote requires understanding how boards and cards work first."
 },
 {
-"q": "Is Milanote too complex for new users?",
-"a": "It can feel complex if you must understand board-style layouts before comfortably writing notes."
+"q": "Does Milanote require setup before writing?",
+"a": "You typically create or enter a board and add cards to it, which introduces layout decisions before you simply start typing."
 },
 {
-"q": "When would Milanote be the better choice?",
-"a": "If you prefer visual brainstorming and arranging ideas spatially rather than in a linear document."
+"q": "Can beginners still use Milanote successfully?",
+"a": "Yes, especially if they prefer visual planning. The challenge is that the board system adds extra decisions before writing."
 },
 {
-"q": "What’s the main tradeoff between these tools?",
-"a": "Craft emphasizes linear writing simplicity, while Milanote emphasizes visual board-based organization."
+"q": "Which tool is better for fast idea capture?",
+"a": "Craft is better if your goal is to open the app and immediately type ideas without arranging elements on a canvas."
 }
 ],
 "related_pages": [
-{ "x_name": "Craft", "y_name": "Notion", "persona": "Beginner" },
-{ "x_name": "Milanote", "y_name": "Notion", "persona": "Beginner" },
-{ "x_name": "Apple Notes", "y_name": "Craft", "persona": "Beginner" },
-{ "x_name": "Google Docs", "y_name": "Craft", "persona": "Beginner" },
-{ "x_name": "Milanote", "y_name": "Evernote", "persona": "Beginner" },
-{ "x_name": "Craft", "y_name": "UpNote", "persona": "Beginner" }
+{ "x_name": "Notion", "y_name": "Google Docs", "persona": "Beginner" },
+{ "x_name": "Evernote", "y_name": "Apple Notes", "persona": "Beginner" },
+{ "x_name": "OneNote", "y_name": "Google Keep", "persona": "Beginner" },
+{ "x_name": "Obsidian", "y_name": "Apple Notes", "persona": "Beginner" },
+{ "x_name": "Standard Notes", "y_name": "Google Keep", "persona": "Beginner" },
+{ "x_name": "UpNote", "y_name": "Apple Notes", "persona": "Beginner" }
 ]
 }
+

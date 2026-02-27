@@ -115,6 +115,7 @@ function Section({
 }) {
   switch (section.type) {
     case "persona_fit":
+    case "edge_case":
       return (
         <section className="space-y-3">
           <h2 className="text-xl font-semibold tracking-tight">{section.heading}</h2>
@@ -185,6 +186,11 @@ function Section({
           </ul>
         </section>
       );
+
+    default: {
+      const _exhaustive: never = section;
+      return null;
+    }
   }
 }
 

@@ -1,133 +1,115 @@
 {
 "category": "Note-taking apps",
 "categorySlug": "note-taking-apps",
-"title": "Obsidian vs Evernote for Non-Technical Users",
-"slug": "obsidian-vs-evernote-for-non-technical-user",
-"meta_description": "A clear comparison of Obsidian vs Evernote for non-technical users who want safe, accessible notes without worrying about files, folders, or breaking things.",
-"persona": "Non-technical user",
 "constraintSlug": "fear-of-breaking",
-"constraint_lens": "You have a fear of breaking things, so the best tool is the one that feels managed, stable, and hard to mess up by accident.",
+"constraintUiName": "Hard to mess up",
+"title": "Obsidian vs Evernote for Non-technical users",
+"slug": "obsidian-vs-evernote-for-non-technical-user",
+"meta_description": "Obsidian vs Evernote for non-technical users who want safe, synced notes without managing files, folders, or plugins.",
+"persona": "Non-technical user",
+"constraint_lens": "You want notes that feel safe and automatic, without managing files, folders, sync tools, or extra settings.",
 "verdict": {
 "winner": "y",
-"summary": "Evernote wins for non-technical users because it removes exposure to files, plugins, and system-level decisions. Obsidian offers flexibility, but that flexibility comes with visible mechanics that can trigger fear of doing something wrong. When reliability and peace of mind matter most, Evernote feels safer and more hands-off.",
+"summary": "Evernote wins for non-technical users who want reliable, accessible notes without thinking about how they are stored. It handles syncing through its account system and keeps files hidden behind the app. Obsidian centers on local folders, vaults, and optional plugins that require more hands-on setup. If the user worries about managing local files or plugins, Obsidian fails first.",
 "decision_rule": "If the user worries about managing local files or plugins, Obsidian fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What a non-technical user needs to keep notes safe",
-"content": "For a non-technical user, confidence matters more than control. The right note tool should feel stable, predictable, and protected from accidental mistakes, with as little exposure as possible to how syncing or storage actually works."
+"heading": "Best fit for hands-off reliability",
+"content": "You want reliable notes without worrying about files, folders, or sync mechanics. Evernote works through a single account that syncs automatically across devices. Obsidian asks you to create or choose a vault folder on your device and decide how syncing will happen."
 },
 {
 "type": "x_wins",
-"heading": "When Obsidian can work despite fear of breaking things",
+"heading": "Where Obsidian wins",
 "bullets": [
 {
-"point": "You trust local storage and never touch settings or plugins",
-"why_it_matters": "Obsidian is safest when treated as a simple writing app. The moment you feel pressure to manage files or extensions, anxiety increases and the tool becomes harder to trust."
+"point": "Local Markdown files stored in a chosen vault folder",
+"why_it_matters": "Your notes exist as plain text files you can access outside the app. This gives control, but requires understanding where the folder lives."
 },
 {
-"point": "You value having full ownership of your notes over convenience",
-"why_it_matters": "Knowing your notes live as plain files can be reassuring for some users. For others, that visibility creates worry about accidental deletion or misplacement."
+"point": "Plugin system for adding features",
+"why_it_matters": "You can install plugins for tasks, templates, or themes. Managing plugins introduces extra settings that can feel risky."
 },
 {
-"point": "You have a single-device workflow with minimal syncing needs",
-"why_it_matters": "Obsidian feels simpler when syncing isn’t a concern. Once multiple devices enter the picture, perceived risk rises for non-technical users."
+"point": "Backlinks and graph view between notes",
+"why_it_matters": "You can link ideas and visualize connections. These advanced features may feel unnecessary for simple, safe storage."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why Evernote wins for non-technical users",
+"heading": "Where Evernote wins",
 "bullets": [
 {
-"point": "Storage and syncing are invisible",
-"why_it_matters": "Evernote hides the mechanics, reducing fear of accidental loss. Notes feel like they’re just “there,” which builds trust over time."
+"point": "Account-based cloud sync across devices",
+"why_it_matters": "Notes sync through your Evernote account without choosing a folder or sync method."
 },
 {
-"point": "The system feels managed rather than configurable",
-"why_it_matters": "A managed environment lowers anxiety. You’re less likely to feel responsible for breaking something you didn’t have to set up."
+"point": "Notebook and tag system inside the app",
+"why_it_matters": "Organization happens within visible notebooks and tags, not through system folders."
 },
 {
-"point": "Consistency across devices is automatic",
-"why_it_matters": "Non-technical users want reassurance that notes will appear everywhere without intervention. Evernote delivers that confidence without extra decisions."
+"point": "Built-in backup through the service account",
+"why_it_matters": "Your notes are stored on Evernote servers, so you do not manage file backups yourself."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool fails under fear of breaking things",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The user becomes aware of local files, folders, plugins, or syncing choices and worries about doing something wrong.",
-"what_to_do_instead": "Use Evernote to keep storage and syncing abstracted away, so note-taking doesn’t feel fragile."
+"fails_when": "You are unsure how to set up syncing for your vault or worry about moving or deleting the wrong folder.",
+"what_to_do_instead": "Use Evernote where syncing and storage are handled through your account."
 },
 {
 "tool": "y",
-"fails_when": "The user wants deep customization or control and feels limited by a managed system.",
-"what_to_do_instead": "Accept the trade-off for safety, or only explore more flexible tools once confidence and technical comfort increase."
+"fails_when": "You want full control over local files and do not trust cloud-only storage.",
+"what_to_do_instead": "Choose Obsidian and manage a dedicated vault folder with a clear backup plan."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you become comfortable managing folders and prefer owning your files directly on your device, Obsidian may feel safer because you control where everything lives."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick rules",
 "rules": [
-"If seeing files or plugins makes you nervous, choose Evernote.",
-"If you want notes to feel protected without thinking about how they sync, choose Evernote.",
-"If full control matters more than peace of mind, Obsidian may fit—but only with minimal configuration."
+"If managing folders or plugins causes stress, choose Evernote.",
+"If you want hands-off syncing through an account, avoid file-based tools.",
+"If full local file control matters more than simplicity, consider Obsidian."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is Obsidian risky for non-technical users?",
-"a": "It isn’t inherently risky, but it exposes storage and configuration details that can create anxiety for users who fear breaking things."
+"q": "Does Obsidian sync automatically?",
+"a": "Not by default. You choose a sync method or service, which adds setup steps."
 },
 {
-"q": "Why does Evernote feel safer?",
-"a": "Because it abstracts away files, syncing, and system decisions, making it harder to accidentally misconfigure or lose notes."
+"q": "Is Evernote easier for non-technical users?",
+"a": "It is often easier because syncing and storage are tied to a single account without managing local folders."
 },
 {
-"q": "Can a non-technical user grow into Obsidian later?",
-"a": "Yes. Once confidence increases and the desire for control outweighs fear, Obsidian can become appealing—but it’s rarely the best starting point."
+"q": "Can I access Obsidian notes outside the app?",
+"a": "Yes. They are stored as plain text files in your chosen folder."
 },
 {
-"q": "What’s the biggest mistake non-technical users make with note apps?",
-"a": "Choosing flexibility too early, which increases anxiety and reduces trust in the system instead of supporting consistent use."
+"q": "Which feels safer without technical knowledge?",
+"a": "Evernote usually feels safer because you do not interact with file paths or plugin systems."
 }
 ],
 "related_pages": [
-{
-"x_name": "Notion",
-"y_name": "Evernote",
-"persona": "Non-technical user"
-},
-{
-"x_name": "Obsidian",
-"y_name": "Apple Notes",
-"persona": "Non-technical user"
-},
-{
-"x_name": "OneNote",
-"y_name": "Evernote",
-"persona": "Non-technical user"
-},
-{
-"x_name": "Bear",
-"y_name": "Evernote",
-"persona": "Non-technical user"
-},
-{
-"x_name": "Simplenote",
-"y_name": "Evernote",
-"persona": "Non-technical user"
-},
-{
-"x_name": "Google Keep",
-"y_name": "Evernote",
-"persona": "Non-technical user"
-}
+{ "x_name": "Logseq", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Standard Notes", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Evernote", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Notion", "y_name": "Google Keep", "persona": "Non-technical user" },
+{ "x_name": "OneNote", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Craft", "y_name": "Apple Notes", "persona": "Non-technical user" }
 ]
 }

@@ -5,106 +5,112 @@
 "constraintUiName": "Works without upkeep",
 "title": "Joplin vs Notion for Solo users",
 "slug": "joplin-vs-notion-for-solo-user",
-"meta_description": "Joplin vs Notion for solo users who want a durable note archive without recurring database restructuring or redesign.",
+"meta_description": "Joplin vs Notion for solo users who want a durable long-term note archive without database redesign or recurring workspace restructuring.",
 "persona": "Solo user",
-"constraint_lens": "You need a note system that works without upkeep and does not require periodic restructuring over time.",
+"constraint_lens": "You want a note system that runs for years without needing to redesign or reorganize it.",
 "verdict": {
 "winner": "x",
-"summary": "Joplin wins for solo users who want a durable, long-term note archive without ongoing redesign. Its notebook structure stays stable and does not depend on database schemas. Notion is flexible, but if database restructuring requires periodic redesign, it introduces maintenance work you did not sign up for. Follow the rule: if database restructuring requires periodic redesign, Notion fails first.",
+"summary": "Joplin wins for solo users who want a long-term archive without ongoing restructuring. It stores notes in a simple notebook and markdown format that rarely needs redesign. Notion centers around databases and evolving workspace layouts that often require rethinking structure over time. If database restructuring requires periodic redesign, Notion fails first.",
 "decision_rule": "If database restructuring requires periodic redesign, Notion fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "Best fit when you want long-term stability",
-"content": "As a solo user, you are not managing a team or evolving shared workflows. You just want your notes to remain accessible and organized for years. The right tool minimizes structural tinkering so your archive stays stable without recurring redesign."
+"heading": "Which tool stays stable over time?",
+"content": "You keep personal notes long-term and don’t want recurring restructuring. As a solo user, you don’t want to redesign your system every few months. The right tool should feel stable and predictable year after year. Anything that pushes you to rebuild tables or layouts becomes ongoing work."
 },
 {
 "type": "x_wins",
-"heading": "Where Joplin wins under zero maintenance tolerance",
+"heading": "Where Joplin works better for solo users",
 "bullets": [
 {
-"point": "Simple notebook and note hierarchy",
-"why_it_matters": "A straightforward structure reduces the temptation to rebuild your system every few months."
+"point": "Notebook and sub-notebook structure with markdown files.",
+"why_it_matters": "Your notes live in a straightforward folder-like hierarchy. You don’t need to redesign the structure unless you choose to."
 },
 {
-"point": "No database schema to maintain",
-"why_it_matters": "You avoid periodic cleanup of properties, views, and relational links."
+"point": "Local storage with optional sync services.",
+"why_it_matters": "Your archive exists as files you control, reducing dependence on changing workspace features. This keeps the system stable over time."
 },
 {
-"point": "Local-first durability",
-"why_it_matters": "Your archive remains stable without depending on evolving workspace configurations."
+"point": "No database tables or custom views required.",
+"why_it_matters": "You create notes and organize them without building table schemas. There’s nothing to periodically rebuild as your archive grows."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Where Notion still wins",
+"heading": "Where Notion works better",
 "bullets": [
 {
-"point": "Highly customizable databases",
-"why_it_matters": "If you want to design a structured knowledge system, flexibility can match your exact needs."
+"point": "Database tables with custom properties and filtered views.",
+"why_it_matters": "You can create structured systems with tags, statuses, and relationships. Over time, adding new properties often leads to redesigning views."
 },
 {
-"point": "Integrated notes and tasks",
-"why_it_matters": "Combining documents and planning in one workspace can reduce tool switching."
+"point": "Linked pages and relational databases.",
+"why_it_matters": "You can connect notes across projects in powerful ways. However, maintaining those relationships can require updates as your needs change."
 },
 {
-"point": "Multiple views on the same content",
-"why_it_matters": "If you enjoy refining how your notes are displayed, database views provide options."
+"point": "Workspace dashboards combining notes and tasks.",
+"why_it_matters": "You can centralize everything in one place. For a solo archive, maintaining dashboards can become ongoing upkeep."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "Failure modes to watch for",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "You need complex relational databases or advanced workspace customization.",
-"what_to_do_instead": "Adopt a database-driven tool if structured interlinking becomes central."
+"fails_when": "You want highly structured databases with custom properties and cross-linked views.",
+"what_to_do_instead": "Use Notion if you prefer building structured dashboards and relational systems."
 },
 {
 "tool": "y",
-"fails_when": "You find yourself periodically redesigning properties, views, or page structures to keep things usable.",
-"what_to_do_instead": "Simplify to a stable notebook-based app that removes restructuring pressure."
+"fails_when": "You feel pressure to redesign tables, properties, or dashboards as your archive grows.",
+"what_to_do_instead": "Use Joplin if you want a stable folder-style archive that rarely needs restructuring."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you are a solo user who actively enjoys refining database schemas and building evolving dashboards as your archive grows, Notion may feel worth the periodic redesign."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules for deciding in 30 seconds",
+"heading": "Quick decision rules",
 "rules": [
-"If you want a durable archive with no redesign cycles, choose Joplin.",
-"If periodic database restructuring sounds like maintenance, avoid Notion.",
-"If you enjoy customizing systems and refining views, Notion may fit better."
+"If you want a stable archive that rarely needs redesign, choose Joplin.",
+"If you enjoy building and updating structured databases, choose Notion.",
+"If ongoing layout changes feel like work, avoid database-heavy systems."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Which tool requires less long-term maintenance?",
-"a": "Joplin generally requires less maintenance because it relies on simple notebook structure rather than evolving databases."
+"q": "Is Joplin good for long-term personal archives?",
+"a": "Yes. Its notebook structure and markdown storage make it stable for years without redesign."
 },
 {
-"q": "Why might Notion require restructuring?",
-"a": "As databases grow, you may adjust properties, views, and relationships to keep the system organized."
+"q": "Does Notion require restructuring over time?",
+"a": "It can. As you add properties or relationships, you may need to adjust tables and views."
 },
 {
-"q": "Is flexibility always better for solo users?",
-"a": "Not necessarily. Flexibility can lead to ongoing redesign if you prefer a stable, low-maintenance archive."
+"q": "Which tool is lower maintenance?",
+"a": "Joplin is lower maintenance because it avoids database schemas and dashboard redesign."
 },
 {
-"q": "When would Notion be the better choice?",
-"a": "If you actively want to build and refine a customizable knowledge system over time."
+"q": "Can Notion work as a simple note archive?",
+"a": "Yes, but its strength lies in structured databases, which can introduce ongoing adjustments."
 }
 ],
 "related_pages": [
-{ "x_name": "Joplin", "y_name": "Obsidian", "persona": "Solo user" },
-{ "x_name": "Joplin", "y_name": "Evernote", "persona": "Solo user" },
-{ "x_name": "Notion", "y_name": "Evernote", "persona": "Solo user" },
-{ "x_name": "Apple Notes", "y_name": "Joplin", "persona": "Solo user" },
-{ "x_name": "OneNote", "y_name": "Notion", "persona": "Solo user" },
-{ "x_name": "UpNote", "y_name": "Joplin", "persona": "Solo user" }
+{ "x_name": "Obsidian", "y_name": "Notion", "persona": "Solo user" },
+{ "x_name": "Evernote", "y_name": "OneNote", "persona": "Solo user" },
+{ "x_name": "Apple Notes", "y_name": "Google Keep", "persona": "Solo user" },
+{ "x_name": "Craft", "y_name": "UpNote", "persona": "Solo user" },
+{ "x_name": "Logseq", "y_name": "Notion", "persona": "Solo user" },
+{ "x_name": "Standard Notes", "y_name": "Joplin", "persona": "Solo user" }
 ]
 }
+

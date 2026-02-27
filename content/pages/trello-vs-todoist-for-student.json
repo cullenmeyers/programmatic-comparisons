@@ -1,133 +1,115 @@
 {
 "category": "Task Managers",
 "categorySlug": "task-managers",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
 "title": "Trello vs Todoist for Students",
 "slug": "trello-vs-todoist-for-student",
-"meta_description": "A student-focused comparison of Trello vs Todoist for tracking assignments during a single term with low setup and easy switching.",
+"meta_description": "Trello vs Todoist for students who need simple assignment tracking for one term without maintaining boards or extra structure.",
 "persona": "Student",
-"constraintSlug": "switching-cost",
-"constraint_lens": "You only need task tracking for a short academic term, so any structure that doesn’t clearly pay off before exams is unnecessary overhead.",
+"constraint_lens": "You want a task tool for one semester that is quick to set up and easy to stop using later.",
 "verdict": {
 "winner": "y",
-"summary": "Todoist wins for students because it allows quick task entry without committing to boards or workflows. Trello’s visual structure can be useful, but managing boards often adds work that doesn’t pay off within a single term. When assignments are temporary and deadlines move fast, Todoist keeps effort proportional.",
+"summary": "Todoist wins for students who only need assignment tracking for the current term. You can create simple project lists for each class and add due dates in seconds. Trello requires setting up and maintaining boards and columns that add structure beyond a semester need. If managing boards outweighs academic benefit, Trello fails first.",
 "decision_rule": "If managing boards outweighs academic benefit, Trello fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What students need for short-term assignment tracking",
-"content": "Students need tools that help them keep track of deadlines immediately. The best option supports quick setup, easy abandonment after the term, and minimal mental overhead."
+"heading": "Why this matters for Students",
+"content": "You said you only need tasks for the current term. As a student, you want something lightweight that you can abandon after exams without cleanup. Extra board management feels unnecessary for a few months of assignments."
 },
 {
 "type": "x_wins",
-"heading": "When Trello can still work for a student",
+"heading": "Where Trello wins",
 "bullets": [
 {
-"point": "Your classes follow clear stages like assigned, in progress, and submitted",
-"why_it_matters": "Boards help when work naturally moves through visible steps. For simple lists of deadlines, that structure can be unnecessary."
+"point": "Board layout with columns such as To do, Doing, and Done",
+"why_it_matters": "You can see assignment stages visually, but creating and organizing columns adds setup time."
 },
 {
-"point": "You enjoy visual organization",
-"why_it_matters": "Some students think better spatially, but visual comfort varies widely."
+"point": "Cards with checklists, attachments, and labels",
+"why_it_matters": "You can store detailed project information, yet opening and editing cards adds extra steps."
 },
 {
-"point": "You plan to reuse the boards later",
-"why_it_matters": "Trello’s setup pays off more when boards persist beyond one term."
+"point": "Separate boards for each class or project",
+"why_it_matters": "You can divide subjects clearly, but switching between boards increases management effort."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why Todoist wins for low switching cost",
+"heading": "Where Todoist wins",
 "bullets": [
 {
-"point": "Tasks can be added instantly",
-"why_it_matters": "Students can capture assignments as soon as they’re given, without setup."
+"point": "Simple project lists for each class",
+"why_it_matters": "You can create one list per subject without building visual boards."
 },
 {
-"point": "No board management is required",
-"why_it_matters": "Avoiding structure keeps focus on coursework rather than tooling."
+"point": "Quick add with natural language due dates",
+"why_it_matters": "Typing essay due Friday automatically sets the deadline, reducing setup time."
 },
 {
-"point": "Stopping after the term is effortless",
-"why_it_matters": "Todoist doesn’t encourage long-term investment, which fits temporary academic use."
+"point": "Upcoming and Today views that aggregate all assignments",
+"why_it_matters": "You see deadlines across classes in one place without switching boards."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool fails under short-term use",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The student spends time moving cards or maintaining boards instead of studying.",
-"what_to_do_instead": "Use Todoist to track assignments as simple tasks."
+"fails_when": "You spend time arranging boards and columns instead of listing assignments quickly.",
+"what_to_do_instead": "Use Todoist if you want a straightforward list for the semester."
 },
 {
 "tool": "y",
-"fails_when": "The student wants visual progress tracking across stages.",
-"what_to_do_instead": "Accept Todoist’s simplicity or use a visual board only for one complex project."
+"fails_when": "You need visual workflow stages for a complex group project.",
+"what_to_do_instead": "Use Trello if moving tasks across columns helps manage multi step work."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you are managing a large collaborative project with clear stages and shared task tracking, Trello may offer better visual coordination despite the extra setup."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick decision rules",
 "rules": [
-"If tasks are only for this term, choose Todoist.",
-"If boards feel like extra work, avoid Trello.",
-"If switching tools later matters, keep it simple."
+"If you want quick semester tracking with minimal setup, choose Todoist.",
+"If managing boards feels like extra work, avoid Trello.",
+"If you need visual stages for group projects, Trello may fit better."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is Trello overkill for most students?",
-"a": "Often yes, because its board management rarely pays off within a single academic term."
+"q": "Is Trello too much for one semester?",
+"a": "It can feel heavier because you must manage boards and columns even for simple assignment lists."
 },
 {
-"q": "Why is Todoist better for assignments?",
-"a": "Because it focuses on capturing and completing tasks without setup or maintenance."
+"q": "Can Todoist handle recurring study tasks?",
+"a": "Yes, you can set repeating deadlines for weekly readings or practice sessions."
 },
 {
-"q": "Can students still use Trello effectively?",
-"a": "Yes, especially for one complex project, but it’s usually unnecessary for general coursework."
+"q": "Which tool is easier to abandon after the term?",
+"a": "Todoist is easier to stop using because it does not require maintaining structured boards."
 },
 {
-"q": "What’s the biggest student mistake with task tools?",
-"a": "Choosing a system designed for long-term projects when their need is temporary."
+"q": "Does Trello require creating a board first?",
+"a": "Yes, tasks live inside boards, which adds an initial setup step."
 }
 ],
 "related_pages": [
-{
-"x_name": "Asana",
-"y_name": "Todoist",
-"persona": "Student"
-},
-{
-"x_name": "ClickUp",
-"y_name": "Todoist",
-"persona": "Student"
-},
-{
-"x_name": "Notion",
-"y_name": "Todoist",
-"persona": "Student"
-},
-{
-"x_name": "Things",
-"y_name": "Todoist",
-"persona": "Student"
-},
-{
-"x_name": "Microsoft To Do",
-"y_name": "Todoist",
-"persona": "Student"
-},
-{
-"x_name": "Apple Reminders",
-"y_name": "Todoist",
-"persona": "Student"
-}
+{ "x_name": "MeisterTask", "y_name": "Google Tasks", "persona": "Student" },
+{ "x_name": "Doodle", "y_name": "Calendly", "persona": "Student" },
+{ "x_name": "Microsoft Bookings", "y_name": "Calendly", "persona": "Student" },
+{ "x_name": "Todoist", "y_name": "Google Tasks", "persona": "Student" },
+{ "x_name": "Notion", "y_name": "Google Tasks", "persona": "Student" },
+{ "x_name": "TickTick", "y_name": "Google Tasks", "persona": "Student" }
 ]
 }

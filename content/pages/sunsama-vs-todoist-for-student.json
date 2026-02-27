@@ -1,133 +1,115 @@
 {
 "category": "Task Managers",
 "categorySlug": "task-managers",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
 "title": "Sunsama vs Todoist for Students",
 "slug": "sunsama-vs-todoist-for-student",
-"meta_description": "A comparison of Sunsama vs Todoist for students who need short-term organization without heavy daily planning rituals or switching costs.",
+"meta_description": "Sunsama vs Todoist for students who need short-term organization without committing to daily planning rituals or long setup.",
 "persona": "Student",
-"constraintSlug": "switching-cost",
-"constraint_lens": "You need organization for a short period of time, so any tool that requires daily rituals or long-term commitment creates unnecessary overhead.",
+"constraint_lens": "You need a task app for a limited period that is quick to start and easy to drop after the term.",
 "verdict": {
 "winner": "y",
-"summary": "Todoist wins for students because it supports lightweight organization without requiring daily planning rituals. Sunsama is designed for intentional daily planning, but that structure rarely pays off over a short academic window. When flexibility and easy exit matter, Todoist fits better.",
+"summary": "Todoist wins for students who need short-term organization across classes and personal life. You can create projects for each class and start adding assignments immediately. Sunsama centers around daily planning sessions and time blocking that take effort to maintain. If daily planning rituals outweigh short-term benefit, Sunsama fails first.",
 "decision_rule": "If daily planning rituals outweigh short-term benefit, Sunsama fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What students need for short-term organization",
-"content": "Students often need organization for a semester, not a lifestyle. The best tool should help manage classes and life quickly without locking the user into habits or workflows they won’t keep after the term ends."
+"heading": "Why this matters for Students",
+"content": "You said you are balancing classes, studying, and personal life temporarily. For a single term, you want something fast to adopt and easy to abandon later. A tool that requires daily rituals reduces its short-term value."
 },
 {
 "type": "x_wins",
-"heading": "When Sunsama can still work for a student",
+"heading": "Where Sunsama wins",
 "bullets": [
 {
-"point": "You enjoy structured daily planning",
-"why_it_matters": "Sunsama works best when daily reflection and planning feel motivating rather than heavy."
+"point": "Guided daily planning session before work begins",
+"why_it_matters": "You intentionally choose tasks each day, but this adds time before studying."
 },
 {
-"point": "Your schedule is complex and time-blocked",
-"why_it_matters": "If every day requires careful coordination, Sunsama’s guidance can add clarity."
+"point": "Calendar time blocking for tasks",
+"why_it_matters": "You see study blocks mapped visually, yet maintaining time slots requires adjustment."
 },
 {
-"point": "You plan to use the system beyond the semester",
-"why_it_matters": "Sunsama’s value compounds over time. Short-term use limits that payoff."
+"point": "End of day review and rollover process",
+"why_it_matters": "It encourages reflection, but creates a routine that may exceed semester needs."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why Todoist wins for low switching cost",
+"heading": "Where Todoist wins",
 "bullets": [
 {
-"point": "Tasks can be added and completed without rituals",
-"why_it_matters": "Students can stay organized without committing to daily planning sessions."
+"point": "Quick add with natural language due dates",
+"why_it_matters": "You can type math homework Friday and it sets the deadline instantly."
 },
 {
-"point": "The tool adapts to changing schedules",
-"why_it_matters": "Class workloads shift week to week, and Todoist tolerates inconsistency."
+"point": "Projects for each class with simple list structure",
+"why_it_matters": "You separate subjects without learning a new planning framework."
 },
 {
-"point": "Leaving the tool later is painless",
-"why_it_matters": "After the semester ends, students can stop using Todoist without feeling invested."
+"point": "Today and Upcoming views that combine school and personal tasks",
+"why_it_matters": "You see everything in one place without running a planning session."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool fails under short-term use",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The student skips planning sessions and the system stops feeling useful.",
-"what_to_do_instead": "Use Todoist to track tasks without required daily rituals."
+"fails_when": "You skip daily planning and feel slowed down by required review screens.",
+"what_to_do_instead": "Use Todoist if you want flexible tracking without rituals."
 },
 {
 "tool": "y",
-"fails_when": "The student wants guided daily reflection and timeboxing.",
-"what_to_do_instead": "Accept Todoist’s simplicity or use a planning tool only during peak stress periods."
+"fails_when": "You struggle to allocate time and need forced time blocks to study effectively.",
+"what_to_do_instead": "Use Sunsama if structured daily scheduling improves focus."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you find yourself procrastinating without structured daily planning, Sunsama may help by forcing intentional time blocks despite the extra routine."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick decision rules",
 "rules": [
-"If you don’t want daily planning rituals, choose Todoist.",
-"If organization is temporary, avoid Sunsama.",
-"If flexibility matters more than intention, Todoist wins."
+"If you want fast setup for one term, choose Todoist.",
+"If daily planning feels heavy for short-term use, avoid Sunsama.",
+"If you need enforced time blocking to stay disciplined, Sunsama may fit better."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is Sunsama too much for students?",
-"a": "Often yes, because its daily planning focus assumes long-term use and consistent habits."
+"q": "Is Sunsama too much for one semester?",
+"a": "It can feel heavy because it centers around daily planning rituals."
 },
 {
-"q": "Why is low switching cost important for students?",
-"a": "Because academic needs change frequently, and heavy systems can become wasted effort."
+"q": "Can Todoist handle both school and personal tasks?",
+"a": "Yes, you can create separate projects and view everything together in Today."
 },
 {
-"q": "Can students benefit from Sunsama at all?",
-"a": "Yes, especially during intense periods, but it’s rarely ideal for short-term use."
+"q": "Which tool is easier to stop using after exams?",
+"a": "Todoist is easier to abandon because it does not require maintaining daily routines."
 },
 {
-"q": "What’s the biggest risk of ritual-heavy tools?",
-"a": "That maintaining the ritual becomes the work instead of supporting it."
+"q": "Does Sunsama require daily review?",
+"a": "It strongly encourages a daily planning and review flow."
 }
 ],
 "related_pages": [
-{
-"x_name": "Notion",
-"y_name": "Todoist",
-"persona": "Student"
-},
-{
-"x_name": "ClickUp",
-"y_name": "Todoist",
-"persona": "Student"
-},
-{
-"x_name": "Asana",
-"y_name": "Todoist",
-"persona": "Student"
-},
-{
-"x_name": "Things",
-"y_name": "Todoist",
-"persona": "Student"
-},
-{
-"x_name": "Microsoft To Do",
-"y_name": "Todoist",
-"persona": "Student"
-},
-{
-"x_name": "Google Tasks",
-"y_name": "Todoist",
-"persona": "Student"
-}
+{ "x_name": "Trello", "y_name": "Todoist", "persona": "Student" },
+{ "x_name": "Things 3", "y_name": "Apple Reminders", "persona": "Student" },
+{ "x_name": "MeisterTask", "y_name": "Google Tasks", "persona": "Student" },
+{ "x_name": "Doodle", "y_name": "Calendly", "persona": "Student" },
+{ "x_name": "Microsoft Bookings", "y_name": "Calendly", "persona": "Student" },
+{ "x_name": "Todoist", "y_name": "Google Tasks", "persona": "Student" }
 ]
 }

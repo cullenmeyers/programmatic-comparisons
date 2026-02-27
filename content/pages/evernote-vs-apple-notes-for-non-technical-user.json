@@ -1,133 +1,115 @@
 {
 "category": "Note-taking apps",
 "categorySlug": "note-taking-apps",
-"title": "Evernote vs Apple Notes for Non-Technical Users",
-"slug": "evernote-vs-apple-notes-for-non-technical-user",
-"meta_description": "A comparison of Evernote vs Apple Notes for non-technical users who want personal notes to feel safe, predictable, and hard to break.",
-"persona": "Non-technical user",
 "constraintSlug": "fear-of-breaking",
-"constraint_lens": "You have a fear of breaking things, so the best tool is the one that feels predictable and managed without exposing plans, sync rules, or system decisions.",
+"constraintUiName": "Hard to mess up",
+"title": "Evernote vs Apple Notes for Non-technical users",
+"slug": "evernote-vs-apple-notes-for-non-technical-user",
+"meta_description": "Evernote vs Apple Notes for non-technical users who want predictable syncing and no plan limits that might lock or confuse access.",
+"persona": "Non-technical user",
+"constraint_lens": "You want a notes app that feels stable and safe, without hidden limits or confusing sync rules.",
 "verdict": {
 "winner": "y",
-"summary": "Apple Notes wins for non-technical users because it feels stable and predictable without requiring understanding of plans or syncing behavior. Evernote introduces visible limits and system rules that can create anxiety about doing something wrong. When peace of mind matters more than power, Apple Notes feels safer to trust.",
+"summary": "Apple Notes wins for non-technical users who want storage that feels predictable and built in. It syncs through your Apple ID automatically and does not show device caps or upload meters in daily use. Evernote includes plan tiers, device limits, and visible sync rules that can raise concern about losing access. If plan limits or sync behavior feel risky or confusing, Evernote fails first.",
 "decision_rule": "If plan limits or sync behavior feel risky or confusing, Evernote fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What non-technical users need to store notes safely",
-"content": "Non-technical users want notes to feel protected and boring in the best way. The right tool should avoid exposing system mechanics or decisions that make storage feel fragile."
+"heading": "Best fit for predictable, low-stress note storage",
+"content": "You want notes that feel safe and consistent. Apple Notes is built into your phone or computer and syncs quietly through your Apple account. Evernote introduces plan choices, upgrade prompts, and visible limits that may make you worry about what happens if you hit a cap."
 },
 {
 "type": "x_wins",
-"heading": "When Evernote can still work despite fear of breaking things",
+"heading": "Where Evernote wins",
 "bullets": [
 {
-"point": "You are comfortable understanding plan limits and sync rules",
-"why_it_matters": "Evernote assumes users can evaluate trade-offs. Without that comfort, limits and settings feel risky rather than empowering."
+"point": "Cross-platform apps for Windows, macOS, iOS, Android, and web",
+"why_it_matters": "You can access notes from almost any device, even outside one ecosystem. This is helpful if you switch hardware often, but it also means managing a separate account and login."
 },
 {
-"point": "You want one place for many content types",
-"why_it_matters": "Evernote handles diverse material well, which can justify complexity for users who need it."
+"point": "Notebook stacks and tagging system",
+"why_it_matters": "You can organize large collections of notes with tags and nested notebooks. This gives structure, yet more organizing tools can feel like extra decisions to manage."
 },
 {
-"point": "You don’t mind revisiting settings occasionally",
-"why_it_matters": "Evernote works best when users are willing to adjust behavior as rules or plans change."
+"point": "Document scanning with built-in OCR search",
+"why_it_matters": "Scanned receipts and papers become searchable text. This is useful for heavy document storage, though it may go unused for simple personal notes."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why Apple Notes wins for non-technical users",
+"heading": "Where Apple Notes wins",
 "bullets": [
 {
-"point": "The system feels managed and predictable",
-"why_it_matters": "Predictability builds trust, reducing fear of accidental mistakes."
+"point": "Automatic iCloud sync tied to your Apple ID",
+"why_it_matters": "There is no separate plan choice during normal use. Sync happens in the background, which reduces worry about settings."
 },
 {
-"point": "Syncing happens quietly in the background",
-"why_it_matters": "When syncing is invisible, users worry less about losing notes."
+"point": "No visible device limits or upload counters in daily use",
+"why_it_matters": "You are not shown plan caps while writing. This lowers fear that you will suddenly lose access because of a hidden limit."
 },
 {
-"point": "There are no visible limits to manage",
-"why_it_matters": "Fewer rules and prompts mean fewer chances to feel something might break."
+"point": "Simple lock note feature using Face ID or passcode",
+"why_it_matters": "You can protect private notes with the same method used to unlock your phone. There are no extra security panels to configure."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool fails under fear of breaking things",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The user feels anxious about plan restrictions, sync behavior, or whether notes are fully safe.",
-"what_to_do_instead": "Use Apple Notes to keep storage and syncing abstracted away."
+"fails_when": "You see plan upgrade messages, device limits, or sync restrictions and worry that your notes could stop syncing.",
+"what_to_do_instead": "Use Apple Notes where syncing is handled through your device account without visible tier limits."
 },
 {
 "tool": "y",
-"fails_when": "The user wants advanced workflows or cross-platform control.",
-"what_to_do_instead": "Accept Apple Notes’ simplicity or explore more flexible tools once confidence grows."
+"fails_when": "You move outside the Apple ecosystem and need equal access on non-Apple devices.",
+"what_to_do_instead": "Switch to Evernote so your notes remain accessible across different operating systems."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you regularly switch between Apple and non-Apple devices and want one central account that works everywhere, Evernote may feel more predictable than relying on a single hardware ecosystem."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick rules",
 "rules": [
-"If plan limits make you nervous, choose Apple Notes.",
-"If you don’t want to think about syncing, avoid Evernote.",
-"If predictability matters most, Apple Notes wins."
+"If you want notes that feel built into your phone with no visible limits, choose Apple Notes.",
+"If you use many types of devices, Evernote offers broader access.",
+"If plan tiers or upgrade prompts make you uneasy, avoid tools that highlight them."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is Evernote unsafe for non-technical users?",
-"a": "Not unsafe, but visible plans and sync rules can create anxiety for users who fear breaking things."
+"q": "Does Evernote limit devices on free plans?",
+"a": "Yes, certain plans restrict the number of devices or uploads, which can feel restrictive if you are not tracking usage."
 },
 {
-"q": "Why does Apple Notes feel safer?",
-"a": "Because it hides technical details and behaves predictably without requiring decisions."
+"q": "Is Apple Notes truly private?",
+"a": "It uses Apple account security and optional note locking, which covers most personal privacy needs without manual setup."
 },
 {
-"q": "Can a non-technical user still use Evernote?",
-"a": "Yes, if they’re comfortable understanding limits and managing settings over time."
+"q": "Can I organize many notes in Apple Notes?",
+"a": "Yes, you can use folders and tags, but the structure stays lighter than Evernote notebook stacks."
 },
 {
-"q": "What’s the biggest risk for non-technical users choosing note apps?",
-"a": "Choosing a tool that exposes system mechanics and undermines confidence."
+"q": "Which feels more stable for everyday use?",
+"a": "For non-technical users inside the Apple ecosystem, Apple Notes usually feels more predictable because there are fewer visible limits or plan decisions."
 }
 ],
 "related_pages": [
-{
-"x_name": "Notion",
-"y_name": "Apple Notes",
-"persona": "Non-technical user"
-},
-{
-"x_name": "Obsidian",
-"y_name": "Apple Notes",
-"persona": "Non-technical user"
-},
-{
-"x_name": "Logseq",
-"y_name": "Apple Notes",
-"persona": "Non-technical user"
-},
-{
-"x_name": "Evernote",
-"y_name": "Bear",
-"persona": "Non-technical user"
-},
-{
-"x_name": "Google Keep",
-"y_name": "Apple Notes",
-"persona": "Non-technical user"
-},
-{
-"x_name": "OneNote",
-"y_name": "Apple Notes",
-"persona": "Non-technical user"
-}
+{ "x_name": "Standard Notes", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Notion", "y_name": "Google Keep", "persona": "Non-technical user" },
+{ "x_name": "OneNote", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "UpNote", "y_name": "Google Keep", "persona": "Non-technical user" },
+{ "x_name": "Craft", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Bear", "y_name": "Google Keep", "persona": "Non-technical user" }
 ]
 }

@@ -1,133 +1,116 @@
 {
 "category": "Calendar / Scheduling tools",
 "categorySlug": "calendar-scheduling-tools",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
 "title": "Doodle vs Square Appointments for Students",
 "slug": "doodle-vs-square-appointments-for-student",
-"meta_description": "Student choosing between Doodle and Square Appointments? For short-term group coordination with low switching cost, Doodle is faster and simpler.",
+"meta_description": "Doodle vs Square Appointments for students who need quick group scheduling without setting up full service booking systems.",
 "persona": "Student",
-"constraintSlug": "switching-cost",
-"constraint_lens": "You need something quick to set up and easy to abandon later, because you’re using it short-term and want low switching cost.",
+"constraint_lens": "You need a scheduling tool for a short project and want something easy to start and easy to stop using later.",
 "verdict": {
 "winner": "x",
-"summary": "Doodle is the better fit for a student who needs to quickly coordinate group availability for a short project. Square Appointments is structured around service booking and payment workflows. If service booking setup takes longer than the project itself, Doodle keeps scheduling lightweight and temporary.",
+"summary": "Doodle wins for students coordinating a short-term group meeting. You create a poll, share a link, and collect availability without building a booking system. Square Appointments is designed for ongoing service scheduling with staff, services, and booking settings. If service booking setup exceeds the duration of the project, Square Appointments fails first.",
 "decision_rule": "If service booking setup exceeds the duration of the project, Square Appointments fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "Best fit for fast, temporary coordination",
-"content": "You just need to find a meeting time that works for everyone, and the project won’t last long. With short-term use and low switching cost as priorities, the tool must be quick to set up and easy to discard. Doodle focuses on instant availability polling, while Square Appointments is built for ongoing service-based scheduling."
+"heading": "Which tool fits a short group project?",
+"content": "You need to quickly find a meeting time for a short project. As a student, you do not want to build a long-term scheduling system. The right tool should work for a few weeks and then be easy to abandon. Anything that requires setting up services or business details adds unnecessary overhead."
 },
 {
 "type": "x_wins",
-"heading": "Where Doodle wins for short-term group work",
+"heading": "Where Doodle works better for students",
 "bullets": [
 {
-"point": "You can create a poll immediately without defining services.",
-"why_it_matters": "Fast setup keeps the focus on coordinating classmates, not configuring booking tools."
+"point": "Simple poll creation with multiple date and time options.",
+"why_it_matters": "You list possible times and let participants vote without configuring a booking system."
 },
 {
-"point": "It’s designed for comparing group availability.",
-"why_it_matters": "Polling multiple people at once reduces scheduling back-and-forth."
+"point": "Shareable link that collects responses without accounts.",
+"why_it_matters": "Group members can respond quickly without creating profiles."
 },
 {
-"point": "No payment or business setup is required.",
-"why_it_matters": "Avoiding commercial layers keeps switching cost low after the project ends."
+"point": "No need to define services, staff, or appointment types.",
+"why_it_matters": "You skip business-style setup and focus only on availability."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Where Square Appointments can win (for paid services)",
+"heading": "Where Square Appointments works better",
 "bullets": [
 {
-"point": "It supports service listings and structured booking flows.",
-"why_it_matters": "If you’re offering defined services or time slots, structured booking adds clarity."
+"point": "Structured service booking with defined appointment types.",
+"why_it_matters": "You can offer bookable services with set durations. For a short project, defining services adds setup steps."
 },
 {
-"point": "It integrates payment processing into scheduling.",
-"why_it_matters": "For paid sessions, built-in payments reduce administrative work."
+"point": "Calendar integration with automated confirmations.",
+"why_it_matters": "Clients receive confirmations and reminders. For temporary student use, this may be more than needed."
 },
 {
-"point": "It connects to broader business management tools.",
-"why_it_matters": "If scheduling is part of a larger business operation, integration streamlines processes."
+"point": "Staff management and availability settings.",
+"why_it_matters": "You can manage multiple providers. For a small group project, configuring staff feels excessive."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "Common failure modes (and what to do instead)",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "You need formal booking confirmations, payments, or defined service menus.",
-"what_to_do_instead": "Use Square Appointments if your coordination becomes service-based rather than group polling."
+"fails_when": "You need recurring bookings, payments, or structured service management.",
+"what_to_do_instead": "Use Square Appointments if you are running ongoing sessions or services."
 },
 {
 "tool": "y",
-"fails_when": "You spend time configuring services or payment settings for a short academic project.",
-"what_to_do_instead": "Switch to Doodle for a quick poll that matches the temporary nature of the project."
+"fails_when": "You must define services, staff, and booking rules just to find one meeting time.",
+"what_to_do_instead": "Use Doodle if you only need a simple availability poll."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your project turns into ongoing tutoring sessions or paid appointments, Square Appointments may become more suitable despite the initial setup."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide fast",
+"heading": "Quick decision rules",
 "rules": [
-"If you need to quickly poll a group, choose Doodle.",
-"If business setup feels heavier than the project requires, avoid Square Appointments.",
-"If you’re running paid or structured sessions, Square Appointments may be appropriate."
+"If you just need a quick group poll, choose Doodle.",
+"If you are booking structured services long term, choose Square Appointments.",
+"If setup takes longer than the project, keep it simple."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Which tool is faster for student group projects?",
-"a": "Doodle is typically faster because it lets you create a simple availability poll without configuring services or payments."
+"q": "Is Doodle good for short-term projects?",
+"a": "Yes. It focuses on quick availability polls without long-term setup."
 },
 {
-"q": "Is Square Appointments overkill for short academic use?",
-"a": "It can be if you don’t need payments or structured service menus. Its design is better suited to ongoing business scheduling."
+"q": "Does Square Appointments require service setup?",
+"a": "Yes. You typically define services, durations, and availability rules."
 },
 {
-"q": "Can I switch tools after the project ends?",
-"a": "Yes. With short-term academic use, switching is easy—especially when you start with a lightweight solution."
+"q": "Which tool is easier to stop using after one project?",
+"a": "Doodle is easier because it does not require maintaining a booking system."
 },
 {
-"q": "What matters most for student scheduling tools?",
-"a": "Speed of setup, simplicity, and minimal long-term commitment are key for short projects."
+"q": "Can Square Appointments work for student groups?",
+"a": "It can, but it is designed for ongoing service scheduling rather than one-time coordination."
 }
 ],
 "related_pages": [
-{
-"x_name": "Doodle",
-"y_name": "Calendly",
-"persona": "Student"
-},
-{
-"x_name": "Microsoft Bookings",
-"y_name": "Calendly",
-"persona": "Student"
-},
-{
-"x_name": "Calendly",
-"y_name": "Google Calendar",
-"persona": "Student"
-},
-{
-"x_name": "TidyCal",
-"y_name": "Calendly",
-"persona": "Student"
-},
-{
-"x_name": "Zoho Bookings",
-"y_name": "Calendly",
-"persona": "Student"
-},
-{
-"x_name": "Square Appointments",
-"y_name": "Calendly",
-"persona": "Student"
-}
+{ "x_name": "Timepage", "y_name": "Google Calendar", "persona": "Student" },
+{ "x_name": "Trello", "y_name": "Microsoft Planner", "persona": "Student" },
+{ "x_name": "Todoist", "y_name": "MeisterTask", "persona": "Student" },
+{ "x_name": "Superlist", "y_name": "Google Tasks", "persona": "Student" },
+{ "x_name": "Habitica", "y_name": "Todoist", "persona": "Student" },
+{ "x_name": "OneNote", "y_name": "Google Keep", "persona": "Student" }
 ]
 }
+

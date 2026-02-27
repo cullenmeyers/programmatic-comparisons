@@ -1,133 +1,115 @@
 {
 "category": "Note-taking apps",
 "categorySlug": "note-taking-apps",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
 "title": "Notion vs Bear for Minimalists",
 "slug": "notion-vs-bear-for-minimalist",
-"meta_description": "A minimalist comparison of Notion vs Bear for simple note writing when extra features and multifunction tools feel distracting.",
+"meta_description": "Notion vs Bear for minimalists who want to write without dashboards, databases, or extra panels getting in the way of focus.",
 "persona": "Minimalist",
-"constraintSlug": "feature-aversion",
-"constraint_lens": "You are averse to features, so the best tool is the one that removes non-essential options and keeps the focus on writing.",
+"constraint_lens": "You want a writing space that stays focused on text without showing tools or panels you do not plan to use.",
 "verdict": {
 "winner": "y",
-"summary": "Bear wins for minimalists because it centers the experience on writing and avoids unrelated options. Notion’s multifunction design introduces menus and possibilities that compete with focus. When simplicity and calm matter more than versatility, Bear aligns better with feature aversion.",
+"summary": "Bear wins for minimalists who want a calm place to write. It opens to a clean text editor with tags and basic formatting, without showing boards, databases, or workspace panels. Notion surfaces page types, blocks, and workspace navigation that are not directly related to writing. If the interface presents options unrelated to writing, Notion fails first.",
 "decision_rule": "If the interface presents options unrelated to writing, Notion fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What minimalists want from a notes app",
-"content": "Minimalists prefer tools that feel settled and purpose-built. The right notes app should reduce visual noise, limit choices, and make writing the obvious action."
+"heading": "Best fit for focused writing",
+"content": "You dislike multifunction tools and want to stay in a simple writing flow. Bear centers the screen on text with a lightweight sidebar for notes and tags. Notion is built as a workspace with pages, databases, and side panels, which can feel like extra layers when you only want to write."
 },
 {
 "type": "x_wins",
-"heading": "When Notion can still work for a minimalist",
+"heading": "Where Notion wins",
 "bullets": [
 {
-"point": "You want one tool to replace several apps",
-"why_it_matters": "If minimalism means fewer apps rather than fewer features, Notion can consolidate needs—even if the interface is busier."
+"point": "Block-based editor with slash command menu",
+"why_it_matters": "You can insert tables, toggles, embeds, and other elements inside a page. This supports mixed content, but the visible slash menu and block handles introduce options beyond plain writing."
 },
 {
-"point": "You can ignore features you don’t use",
-"why_it_matters": "Notion only stays calm if unused options don’t pull your attention, which is difficult for many feature-averse users."
+"point": "Database views such as table, board, and calendar",
+"why_it_matters": "Notes can turn into sortable collections with filters and views. This is useful for project tracking, yet these features sit alongside simple notes and add visual clutter."
 },
 {
-"point": "Your notes are tied to light organization tasks",
-"why_it_matters": "If writing and organizing happen together, Notion’s flexibility may feel justified despite added complexity."
+"point": "Workspace navigation with nested pages",
+"why_it_matters": "You can build a hierarchy of pages inside sidebars. While powerful for large systems, the persistent sidebar reminds you that the tool does more than writing."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why Bear wins for feature-averse writers",
+"heading": "Where Bear wins",
 "bullets": [
 {
-"point": "The interface is focused on writing",
-"why_it_matters": "Fewer visible options reduce mental interruptions and support sustained attention."
+"point": "Markdown-style inline formatting without block controls",
+"why_it_matters": "You type simple symbols for headings or lists and keep your hands on the keyboard. There are no block menus floating beside each paragraph."
 },
 {
-"point": "Writing is the default behavior",
-"why_it_matters": "Bear assumes you want to write, removing decisions that can break flow."
+"point": "Tag-based organization using hashtags inside notes",
+"why_it_matters": "You organize by typing a tag directly in the text, which avoids separate database views or property panels."
 },
 {
-"point": "Limits protect focus",
-"why_it_matters": "By not offering many unrelated features, Bear helps minimalists stay calm and productive."
+"point": "Minimal sidebar and distraction-free focus mode",
+"why_it_matters": "You can hide the note list and write on a clean screen. This reduces visual elements that are not related to your current paragraph."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool breaks under feature aversion",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The user notices menus, blocks, or options unrelated to writing and feels distracted.",
-"what_to_do_instead": "Switch to Bear to remove non-writing options and keep attention on words."
+"fails_when": "You open a new page and see workspace panels, database options, or block menus that are unrelated to writing.",
+"what_to_do_instead": "Use Bear to keep the interface centered on text with minimal visible controls."
 },
 {
 "tool": "y",
-"fails_when": "The user needs complex workflows or multi-purpose pages.",
-"what_to_do_instead": "Accept Bear’s limits or handle those needs in a separate tool."
+"fails_when": "You later need structured tables, linked pages, or project boards inside your notes.",
+"what_to_do_instead": "Switch to Notion when your needs grow beyond plain text and simple tags."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you start managing complex projects and need notes connected to tasks and databases, Notion may feel cleaner because everything lives inside one structured workspace instead of separate tools."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick rules",
 "rules": [
-"If extra options feel distracting, choose Bear.",
-"If you want a writing-only environment, avoid Notion.",
-"If focus beats flexibility, Bear wins."
+"If you only want to write and tag notes, choose Bear.",
+"If you feel distracted by side panels and database views, avoid Notion.",
+"If your notes must turn into project systems, Notion fits better."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is Notion too feature-heavy for minimalists?",
-"a": "Often yes, because its multifunction design introduces options that can distract from writing."
+"q": "Is Bear only for simple notes?",
+"a": "It focuses on text and tagging. It supports formatting, but it does not include boards or database-style views."
 },
 {
-"q": "Why does Bear feel more focused?",
-"a": "Because it limits features and keeps the interface centered on writing."
+"q": "Can Notion be used just as a writing app?",
+"a": "Yes, but its workspace layout and block menus remain visible, which can feel excessive for minimalists."
 },
 {
-"q": "Can a minimalist still use Notion?",
-"a": "Only if they are comfortable ignoring many features, which can undermine the goal of simplicity."
+"q": "Does Bear support collaboration like Notion?",
+"a": "Bear is more focused on personal writing. Notion offers broader sharing and team features."
 },
 {
-"q": "What’s the biggest risk of multifunction tools for minimalists?",
-"a": "That attention shifts from writing to navigating options."
+"q": "Which feels calmer on screen?",
+"a": "Bear usually feels calmer because it shows fewer panels and controls unrelated to writing."
 }
 ],
 "related_pages": [
-{
-"x_name": "Notion",
-"y_name": "Apple Notes",
-"persona": "Minimalist"
-},
-{
-"x_name": "Evernote",
-"y_name": "Bear",
-"persona": "Minimalist"
-},
-{
-"x_name": "Obsidian",
-"y_name": "Bear",
-"persona": "Minimalist"
-},
-{
-"x_name": "Roam Research",
-"y_name": "Bear",
-"persona": "Minimalist"
-},
-{
-"x_name": "Simplenote",
-"y_name": "Bear",
-"persona": "Minimalist"
-},
-{
-"x_name": "Google Keep",
-"y_name": "Bear",
-"persona": "Minimalist"
-}
+{ "x_name": "Evernote", "y_name": "Bear", "persona": "Minimalist" },
+{ "x_name": "Craft", "y_name": "UpNote", "persona": "Minimalist" },
+{ "x_name": "Notion", "y_name": "Google Docs", "persona": "Minimalist" },
+{ "x_name": "Apple Notes", "y_name": "Google Keep", "persona": "Minimalist" },
+{ "x_name": "RemNote", "y_name": "Bear", "persona": "Minimalist" },
+{ "x_name": "OneNote", "y_name": "UpNote", "persona": "Minimalist" }
 ]
 }

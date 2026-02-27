@@ -1,133 +1,116 @@
 {
 "category": "Note-taking apps",
 "categorySlug": "note-taking-apps",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
 "title": "OneNote vs Google Keep for Students",
 "slug": "onenote-vs-google-keep-for-student",
-"meta_description": "Student choosing between OneNote and Google Keep? For short-term semester notes with low switching cost, Google Keep keeps things lighter.",
+"meta_description": "OneNote vs Google Keep for students who need simple semester notes without setting up multi-level notebooks or long-term structure.",
 "persona": "Student",
-"constraintSlug": "switching-cost",
-"constraint_lens": "You need something quick to set up and easy to abandon later, because you’re using it short-term and want low switching cost.",
+"constraint_lens": "You need notes for one semester and want something easy to use now and easy to stop using later.",
 "verdict": {
 "winner": "y",
-"summary": "Google Keep is the better fit for a Student who only needs notes for the current semester. OneNote’s multi-level notebooks and sections add structural overhead. If notebook hierarchy must be set up before simple note capture, Google Keep stays lighter and easier to drop after the term ends.",
+"summary": "Google Keep wins for students who need lightweight notes for a single semester. You can create note cards instantly without building a structured notebook system. OneNote relies on notebooks, sections, and pages that require setup before notes feel organized. If multi-level notebooks require setup before simple note capture, OneNote fails first.",
 "decision_rule": "If multi-level notebooks require setup before simple note capture, OneNote fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "Best fit for temporary class notes",
-"content": "You’re organizing notes for a single semester, not building a lifelong archive. With short-term use and low switching cost in mind, setup time should be minimal. Google Keep emphasizes fast capture, while OneNote introduces layered notebooks, sections, and pages."
+"heading": "Which tool fits a short academic term?",
+"content": "You need notes only for the current semester and do not want overhead. As a student, you want to capture lecture notes quickly and move on. The right tool should not require building long-term structure. Anything that pushes you to design notebooks and sections adds setup work."
 },
 {
 "type": "x_wins",
-"heading": "Where OneNote can win (for structured semesters)",
+"heading": "Where OneNote works better",
 "bullets": [
 {
-"point": "It supports multi-level notebooks, sections, and pages.",
-"why_it_matters": "If you take extensive notes across many subjects, hierarchy can keep material organized."
+"point": "Multi-level structure with notebooks, sections, and pages.",
+"why_it_matters": "You can organize subjects in detail. Setting up this structure takes time before writing."
 },
 {
-"point": "It handles long-form and mixed media notes well.",
-"why_it_matters": "For detailed lecture notes with diagrams and formatting, richer structure can add clarity."
+"point": "Freeform canvas where you can place text and drawings anywhere.",
+"why_it_matters": "You can format notes flexibly. For quick capture, layout freedom may feel unnecessary."
 },
 {
-"point": "It’s suited for multi-course organization.",
-"why_it_matters": "If you want clear separation between classes, structured containers help prevent overlap."
+"point": "Integration with Microsoft 365 for sharing and syncing.",
+"why_it_matters": "You can collaborate within a larger system. Managing accounts and notebooks can add extra layers."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Where Google Keep wins for low overhead",
+"heading": "Where Google Keep works better for students",
 "bullets": [
 {
-"point": "You can start capturing notes instantly.",
-"why_it_matters": "Less setup means you focus on class content instead of organizing software."
+"point": "Instant note cards without predefined hierarchy.",
+"why_it_matters": "You click and start typing without creating notebooks."
 },
 {
-"point": "No notebook hierarchy is required.",
-"why_it_matters": "Avoiding structural decisions keeps switching cost low at the end of the semester."
+"point": "Simple labels instead of nested sections.",
+"why_it_matters": "You can tag notes by subject without building multi-level structure."
 },
 {
-"point": "It’s easy to stop using once the term ends.",
-"why_it_matters": "Minimal structure makes it simpler to move on without maintaining an archive."
+"point": "Easy deletion or archiving after the semester.",
+"why_it_matters": "When the term ends, you can clear notes without dismantling a notebook system."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "Common failure modes (and what to do instead)",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "You spend time organizing notebooks and sections before capturing simple lecture notes.",
-"what_to_do_instead": "Switch to Google Keep for frictionless capture during the semester."
+"fails_when": "You spend time creating notebooks and sections before simply writing lecture notes.",
+"what_to_do_instead": "Use Google Keep if you want instant capture without structure."
 },
 {
 "tool": "y",
-"fails_when": "Your notes become too scattered and hard to review for exams.",
-"what_to_do_instead": "Move to OneNote if you need structured organization across multiple classes."
+"fails_when": "You need detailed subject organization with subpages and rich formatting.",
+"what_to_do_instead": "Use OneNote if structured notebooks are important."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you are taking multiple complex courses and want detailed sections with embedded files and drawings, OneNote may justify the initial setup."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide fast",
+"heading": "Quick decision rules",
 "rules": [
-"If you want minimal setup for one semester, choose Google Keep.",
-"If notebook hierarchy feels like extra work, avoid OneNote.",
-"If you need structured separation between classes, OneNote may help."
+"If you want instant note capture, choose Google Keep.",
+"If you want structured notebooks with sections and pages, choose OneNote.",
+"If setup feels like overhead, keep it simple."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Which app is faster to start with for class notes?",
-"a": "Google Keep is typically faster because it allows immediate note capture without creating notebooks or sections."
+"q": "Is OneNote better for long-term note systems?",
+"a": "Yes. Its notebook and section structure supports detailed organization."
 },
 {
-"q": "Is OneNote overkill for a single semester?",
-"a": "It can be if your notes are simple and you don’t need layered organization."
+"q": "Is Google Keep enough for semester notes?",
+"a": "Yes. It works well for lightweight notes and quick capture."
 },
 {
-"q": "Can I switch tools after the semester?",
-"a": "Yes. Starting with a lightweight app keeps switching cost low when the term ends."
+"q": "Which tool requires less setup?",
+"a": "Google Keep requires less setup because it does not use nested notebooks."
 },
 {
-"q": "What matters most for student note apps?",
-"a": "Quick setup, simplicity, and the ability to stop using the tool without long-term maintenance are key."
+"q": "Can OneNote be used casually?",
+"a": "It can, but its structure encourages building organized notebook systems."
 }
 ],
 "related_pages": [
-{
-"x_name": "Google Keep",
-"y_name": "Evernote",
-"persona": "Student"
-},
-{
-"x_name": "Notion",
-"y_name": "Google Docs",
-"persona": "Student"
-},
-{
-"x_name": "Apple Notes",
-"y_name": "Google Keep",
-"persona": "Student"
-},
-{
-"x_name": "OneNote",
-"y_name": "Notion",
-"persona": "Student"
-},
-{
-"x_name": "Simplenote",
-"y_name": "Google Keep",
-"persona": "Student"
-},
-{
-"x_name": "Evernote",
-"y_name": "Google Docs",
-"persona": "Student"
-}
+{ "x_name": "RemNote", "y_name": "Microsoft OneNote", "persona": "Student" },
+{ "x_name": "Google Docs", "y_name": "Notion", "persona": "Student" },
+{ "x_name": "Superlist", "y_name": "Google Tasks", "persona": "Student" },
+{ "x_name": "Todoist", "y_name": "MeisterTask", "persona": "Student" },
+{ "x_name": "Habitica", "y_name": "Todoist", "persona": "Student" },
+{ "x_name": "Trello", "y_name": "Microsoft Planner", "persona": "Student" }
 ]
 }
+

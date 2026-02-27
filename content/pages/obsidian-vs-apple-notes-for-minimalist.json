@@ -1,133 +1,115 @@
 {
 "category": "Note-taking apps",
 "categorySlug": "note-taking-apps",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
 "title": "Obsidian vs Apple Notes for Minimalists",
 "slug": "obsidian-vs-apple-notes-for-minimalist",
-"meta_description": "A minimalist comparison of Obsidian vs Apple Notes for simple personal notes without managing a system or extra features.",
+"meta_description": "Obsidian vs Apple Notes for minimalists who want simple personal notes without vaults, plugins, or system building.",
 "persona": "Minimalist",
-"constraintSlug": "feature-aversion",
-"constraint_lens": "You are averse to features and systems, so the best tool is the one that lets you write without encouraging setup, structure, or optimization.",
+"constraint_lens": "You want a clean place to write notes without being pushed to build a system around them.",
 "verdict": {
 "winner": "y",
-"summary": "Apple Notes wins for minimalists because it keeps note-taking simple and avoids pulling you into system-building. Obsidian is powerful, but its emphasis on structure and workflows introduces decisions that distract from writing. When calm, system-free notes matter most, Apple Notes stays out of the way.",
+"summary": "Apple Notes wins for minimalists who want simple personal notes without system overhead. It uses folders and tags that stay in the background while you write. Obsidian is built around vaults, plugins, backlinks, and file structure that encourage system-building. If the tool encourages system-building over writing, Obsidian fails first.",
 "decision_rule": "If the tool encourages system-building over writing, Obsidian fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What minimalists want from personal notes",
-"content": "Minimalists want notes to exist without becoming a project. The right tool minimizes choices, avoids visible systems, and supports writing without nudging you toward optimization."
+"heading": "Best fit for writing without a framework",
+"content": "You want notes without managing a system. Apple Notes opens to a straightforward editor with optional folders and tags. Obsidian starts with creating or choosing a vault, and its interface highlights links, graph views, and plugin options that signal deeper structure."
 },
 {
 "type": "x_wins",
-"heading": "When Obsidian can still work for a minimalist",
+"heading": "Where Obsidian wins",
 "bullets": [
 {
-"point": "You enjoy structure but keep it extremely limited",
-"why_it_matters": "Obsidian only stays calm if you resist expanding the system. For most minimalists, that restraint is hard to maintain."
+"point": "Local vault stored as Markdown files in a chosen folder",
+"why_it_matters": "Your notes exist as files you can access outside the app. This gives control, but requires thinking about where your notes live."
 },
 {
-"point": "You value ownership of plain-text files",
-"why_it_matters": "Some minimalists prefer transparent storage. For others, seeing files and folders adds unnecessary mental overhead."
+"point": "Backlinks and graph view connecting notes",
+"why_it_matters": "You can link ideas and see how they relate visually. This supports knowledge systems, yet adds visible structure beyond simple writing."
 },
 {
-"point": "You already have a fixed, simple workflow",
-"why_it_matters": "If the system is decided once and never revisited, Obsidian’s flexibility won’t constantly demand attention."
+"point": "Plugin system for themes, templates, and automation",
+"why_it_matters": "You can extend the app with extra features. The plugin panel and settings invite customization that minimalists may not want to manage."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why Apple Notes wins for feature-averse users",
+"heading": "Where Apple Notes wins",
 "bullets": [
 {
-"point": "Writing is the default, not a choice",
-"why_it_matters": "Apple Notes opens directly to writing, which aligns with a minimalist desire to avoid decisions."
+"point": "Document-style editor with minimal visible controls",
+"why_it_matters": "You open a note and type immediately without choosing a vault or enabling features."
 },
 {
-"point": "There is no visible system to manage",
-"why_it_matters": "Folders and search stay in the background, preventing the urge to tweak or optimize."
+"point": "Simple folders and optional tags",
+"why_it_matters": "Organization stays lightweight and does not require properties, links, or dashboards."
 },
 {
-"point": "The app discourages overthinking",
-"why_it_matters": "By limiting customization, Apple Notes protects focus and keeps notes lightweight."
+"point": "Automatic sync through Apple ID",
+"why_it_matters": "Notes stay updated across devices without managing folders or sync tools."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool breaks under feature aversion",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The user starts thinking about links, folders, plugins, or workflows instead of writing.",
-"what_to_do_instead": "Switch to Apple Notes to remove system visibility and keep attention on content."
+"fails_when": "You feel drawn into setting up plugins, templates, or link structures before simply writing.",
+"what_to_do_instead": "Use Apple Notes where structure stays minimal and optional."
 },
 {
 "tool": "y",
-"fails_when": "The user wants advanced organization or interconnected notes.",
-"what_to_do_instead": "Accept Apple Notes’ simplicity or move only those specific needs into a more complex tool."
+"fails_when": "You later want full control over files or advanced linking between ideas.",
+"what_to_do_instead": "Switch to Obsidian when system-building becomes your goal."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you enjoy crafting a personal knowledge system and want your notes stored as plain files you control, Obsidian may feel satisfying rather than distracting."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick rules",
 "rules": [
-"If you don’t want to manage a system, choose Apple Notes.",
-"If structure feels like a distraction, avoid Obsidian.",
-"If fewer features equal more calm, Apple Notes wins."
+"If you want to open and write without setup, choose Apple Notes.",
+"If vaults, plugins, and graphs feel like extra noise, avoid Obsidian.",
+"If full file control matters more than simplicity, consider Obsidian."
 ]
 }
 ],
 "faqs": [
 {
 "q": "Is Obsidian too complex for minimalists?",
-"a": "Often yes, because it naturally encourages system-building, which conflicts with feature aversion."
+"a": "It can feel complex because it highlights linking, vaults, and plugins even if you do not use them."
 },
 {
-"q": "Why does Apple Notes feel simpler?",
-"a": "Because it limits customization and keeps organization largely invisible."
+"q": "Does Apple Notes require setup?",
+"a": "For most users, it works through the existing Apple account with little additional configuration."
 },
 {
-"q": "Can a minimalist still use Obsidian?",
-"a": "Only with strict self-restraint. For most minimalists, that effort defeats the purpose."
+"q": "Can Obsidian be used as a simple editor?",
+"a": "Yes, but its system-oriented features remain visible in the interface."
 },
 {
-"q": "What’s the biggest risk of system-heavy note apps?",
-"a": "That managing the system replaces the act of writing."
+"q": "Which feels lighter for daily personal notes?",
+"a": "Apple Notes generally feels lighter because it avoids system-building cues."
 }
 ],
 "related_pages": [
-{
-"x_name": "Notion",
-"y_name": "Apple Notes",
-"persona": "Minimalist"
-},
-{
-"x_name": "Evernote",
-"y_name": "Apple Notes",
-"persona": "Minimalist"
-},
-{
-"x_name": "Bear",
-"y_name": "Apple Notes",
-"persona": "Minimalist"
-},
-{
-"x_name": "Obsidian",
-"y_name": "Bear",
-"persona": "Minimalist"
-},
-{
-"x_name": "Simplenote",
-"y_name": "Apple Notes",
-"persona": "Minimalist"
-},
-{
-"x_name": "Google Keep",
-"y_name": "Apple Notes",
-"persona": "Minimalist"
-}
+{ "x_name": "Notion", "y_name": "Bear", "persona": "Minimalist" },
+{ "x_name": "Roam Research", "y_name": "Bear", "persona": "Minimalist" },
+{ "x_name": "Evernote", "y_name": "Bear", "persona": "Minimalist" },
+{ "x_name": "Apple Notes", "y_name": "Google Keep", "persona": "Minimalist" },
+{ "x_name": "Craft", "y_name": "UpNote", "persona": "Minimalist" },
+{ "x_name": "RemNote", "y_name": "UpNote", "persona": "Minimalist" }
 ]
 }

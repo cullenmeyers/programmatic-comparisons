@@ -1,133 +1,115 @@
 {
 "category": "Calendar / Scheduling tools",
 "categorySlug": "calendar-scheduling-tools",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
 "title": "Calendly vs Microsoft Bookings for Students",
 "slug": "calendly-vs-microsoft-bookings-for-student",
-"meta_description": "Student choosing between Calendly and Microsoft Bookings? For short-term use with low switching cost, Calendly is faster to set up for semester projects.",
+"meta_description": "Calendly vs Microsoft Bookings for students who need temporary scheduling links for a semester project without heavy enterprise setup.",
 "persona": "Student",
-"constraintSlug": "switching-cost",
-"constraint_lens": "You need something quick to set up and easy to abandon later, because you’re using it short-term and want low switching cost.",
+"constraint_lens": "You want a scheduling tool you can use for one semester without building a complex system or maintaining it afterward.",
 "verdict": {
 "winner": "x",
-"summary": "Calendly is the better choice for a student who needs temporary scheduling links for a semester project. Microsoft Bookings often assumes a more formal or enterprise-style setup. If configuration and account structure take longer than the semester requires, Calendly keeps things lightweight and easy to switch away from.",
+"summary": "Calendly wins for students who need temporary scheduling links for a semester project. You can create one event type, set availability, and share a link in minutes. Microsoft Bookings is structured around services and staff inside Microsoft 365, which can take longer to configure. If enterprise setup takes longer than the semester requires, Microsoft Bookings fails first.",
 "decision_rule": "If enterprise setup takes longer than the semester requires, Microsoft Bookings fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "Best fit for short-term academic use",
-"content": "You only need scheduling links for a limited period, not a long-term system. With short-term use and low switching cost as priorities, speed matters more than deep configuration. Calendly lets you create a link quickly and move on, while Microsoft Bookings may involve more setup than a semester project justifies."
+"heading": "Why this matters for Students",
+"content": "You said you need temporary scheduling links for a semester project. As a student, you do not want to invest time building a business style booking system for something that ends in a few months. The faster you can set it up and later ignore it, the better."
 },
 {
 "type": "x_wins",
-"heading": "Where Calendly wins for semester projects",
+"heading": "Where Calendly wins",
 "bullets": [
 {
-"point": "You can create a basic booking link quickly.",
-"why_it_matters": "When time is limited, fast setup means you can focus on the project instead of configuring software."
+"point": "Create a single event type and generate a public booking link from the main dashboard",
+"why_it_matters": "You can define meeting length and availability quickly without setting up staff profiles or service catalogs."
 },
 {
-"point": "It works well as a standalone scheduling link.",
-"why_it_matters": "Students often just need classmates to pick a time without complex organization structures."
+"point": "Availability settings are configured directly within the event setup screen",
+"why_it_matters": "There is no separate admin area for business details, which shortens setup time for a short term project."
 },
 {
-"point": "It’s easy to stop using after the project ends.",
-"why_it_matters": "Low switching cost ensures you’re not locked into a system once the semester is over."
+"point": "Easy to disable or ignore after the semester ends",
+"why_it_matters": "You can stop sharing the link without dismantling a structured organization account."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Where Microsoft Bookings can win (in structured environments)",
+"heading": "Where Microsoft Bookings wins",
 "bullets": [
 {
-"point": "It integrates tightly with Microsoft accounts.",
-"why_it_matters": "If your school relies heavily on Microsoft tools, integration can simplify coordination."
+"point": "Service based structure tied to Microsoft 365 accounts",
+"why_it_matters": "If your class already uses Microsoft accounts, bookings connect directly to shared calendars, but this structure requires more setup."
 },
 {
-"point": "It supports more formal scheduling structures.",
-"why_it_matters": "For larger teams or recurring academic programs, added structure can prevent confusion."
+"point": "Staff assignment and shared booking pages",
+"why_it_matters": "You can manage multiple people under one page, yet defining staff and roles adds steps before publishing."
 },
 {
-"point": "It’s suited for ongoing institutional use.",
-"why_it_matters": "If the scheduling need extends beyond one semester, a more robust setup may pay off."
+"point": "Admin controls for business hours and notifications",
+"why_it_matters": "These controls support organized scheduling, but they can feel excessive for a temporary academic project."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "Common failure modes (and what to do instead)",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "You need complex multi-person coordination or institutional controls beyond simple booking links.",
-"what_to_do_instead": "Consider Microsoft Bookings or another structured solution if your project grows beyond basic scheduling."
+"fails_when": "You need centralized management for multiple staff members under one shared booking page.",
+"what_to_do_instead": "Use Microsoft Bookings if your group requires structured team scheduling inside Microsoft 365."
 },
 {
 "tool": "y",
-"fails_when": "Setup and configuration take significant time relative to the short duration of your project.",
-"what_to_do_instead": "Switch to Calendly to create a simple link quickly and avoid unnecessary overhead."
+"fails_when": "You must configure services, staff, and business settings before classmates can book time.",
+"what_to_do_instead": "Use Calendly if your priority is getting a working link quickly for the semester."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your university requires all scheduling to run inside Microsoft 365 with shared departmental calendars, Microsoft Bookings may feel simpler because it fits that system directly."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide fast",
+"heading": "Quick decision rules",
 "rules": [
-"If you only need a booking link for one semester, choose Calendly.",
-"If setup feels heavier than the project requires, avoid Microsoft Bookings.",
-"If your school mandates Microsoft-based scheduling, consider Bookings despite the setup."
+"If you need a booking link fast for one semester, choose Calendly.",
+"If setup feels like building a small business system, avoid Microsoft Bookings.",
+"If your project depends fully on Microsoft 365 integration, Microsoft Bookings may fit better."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Which tool is easier to set up quickly?",
-"a": "Calendly is typically faster for creating a simple scheduling link without extensive configuration."
+"q": "Is Microsoft Bookings too heavy for students?",
+"a": "It can feel heavier because it centers around services and staff roles inside Microsoft 365 rather than quick single event links."
 },
 {
-"q": "Is Microsoft Bookings overkill for a semester project?",
-"a": "It can be if you only need temporary scheduling. Its structure makes more sense for ongoing or institutional use."
+"q": "Can I create multiple event types in Calendly?",
+"a": "Yes, but you can also keep it simple with just one event type for your semester project."
 },
 {
-"q": "Can I switch tools mid-semester if needed?",
-"a": "Yes. For short-term academic use, it’s common to switch if your needs change, especially if you started with a lightweight setup."
+"q": "Which one is easier to stop using after the project?",
+"a": "Calendly is usually easier to abandon because you are not required to maintain a structured organization setup."
 },
 {
-"q": "What matters most for student scheduling tools?",
-"a": "Speed of setup, ease of sharing links, and the ability to stop using the tool without long-term commitments."
+"q": "Do both tools sync with calendars?",
+"a": "Yes, both connect to calendar accounts so confirmed bookings appear automatically."
 }
 ],
 "related_pages": [
-{
-"x_name": "Calendly",
-"y_name": "Google Calendar",
-"persona": "Student"
-},
-{
-"x_name": "Calendly",
-"y_name": "Doodle",
-"persona": "Student"
-},
-{
-"x_name": "Microsoft Bookings",
-"y_name": "Google Calendar",
-"persona": "Student"
-},
-{
-"x_name": "Acuity Scheduling",
-"y_name": "Calendly",
-"persona": "Student"
-},
-{
-"x_name": "Fantastical",
-"y_name": "Google Calendar",
-"persona": "Student"
-},
-{
-"x_name": "Motion",
-"y_name": "Google Calendar",
-"persona": "Student"
-}
+{ "x_name": "Doodle", "y_name": "Calendly", "persona": "Student" },
+{ "x_name": "Zoho Bookings", "y_name": "Calendly", "persona": "Student" },
+{ "x_name": "Google Calendar", "y_name": "Calendly", "persona": "Student" },
+{ "x_name": "Apple Calendar", "y_name": "Calendly", "persona": "Student" },
+{ "x_name": "Outlook Calendar", "y_name": "Calendly", "persona": "Student" },
+{ "x_name": "Acuity Scheduling", "y_name": "Calendly", "persona": "Student" }
 ]
 }

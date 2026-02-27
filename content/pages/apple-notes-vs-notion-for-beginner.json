@@ -5,111 +5,112 @@
 "constraintUiName": "Publish fast",
 "title": "Apple Notes vs Notion for Beginners",
 "slug": "apple-notes-vs-notion-for-beginner",
-"meta_description": "Apple Notes vs Notion for beginners who want to start writing simple notes without learning databases or page structure.",
+"meta_description": "Apple Notes vs Notion for beginners who want to type immediately without setting up databases, pages, or structured workspaces first.",
 "persona": "Beginner",
-"constraint_lens": "You need a note app that works immediately without requiring setup or structural decisions before you start writing.",
+"constraint_lens": "You want to open the app and start typing without setting up pages, databases, or systems first.",
 "verdict": {
 "winner": "x",
-"summary": "Apple Notes wins for beginners who just want to start typing without thinking about structure. It opens to a blank note with no database concepts or layout decisions required. Notion is powerful, but if databases and page structures must be understood before writing, it introduces setup friction that slows beginners down. Follow the rule: if databases and page structures must be understood before writing, Notion fails first.",
+"summary": "Apple Notes wins for beginners who just want to type immediately. It opens to a simple note list and lets you create a new note with one tap. Notion centers around pages inside workspaces and often introduces database blocks and structured layouts. If databases and page structures must be understood before writing, Notion fails first.",
 "decision_rule": "If databases and page structures must be understood before writing, Notion fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "Best fit when you want instant writing",
-"content": "As a beginner, you don’t want to design a system before capturing a thought. You just want to open the app and start typing. The right tool removes structural choices so your first note takes seconds, not setup decisions."
+"heading": "Which tool lets you start without thinking?",
+"content": "You just want to start typing notes without thinking about structure. As a beginner, extra layout choices or setup screens slow you down. The right tool should feel like a blank sheet the moment you open it. Anything that asks you to choose blocks or build a structure adds hesitation."
 },
 {
 "type": "x_wins",
-"heading": "Where Apple Notes wins under low setup tolerance",
+"heading": "Where Apple Notes works better for beginners",
 "bullets": [
 {
-"point": "Immediate blank note experience",
-"why_it_matters": "You can start typing instantly without selecting templates, blocks, or databases."
+"point": "New note button opens a blank page instantly.",
+"why_it_matters": "You tap once and start typing. There are no templates or structural decisions before your first sentence."
 },
 {
-"point": "Minimal visible structure",
-"why_it_matters": "Fewer layout elements reduce confusion for someone new to note apps."
+"point": "Simple folder list with straightforward note view.",
+"why_it_matters": "You see a basic list of notes and folders without database views. This keeps navigation obvious and low effort."
 },
 {
-"point": "No database concepts to learn",
-"why_it_matters": "You don’t need to understand properties, tables, or linked pages before writing."
+"point": "Basic formatting tools hidden until needed.",
+"why_it_matters": "Formatting options stay minimal and don’t dominate the screen. You can ignore them and just write."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Where Notion still wins",
+"heading": "Where Notion works better",
 "bullets": [
 {
-"point": "Flexible page and database system",
-"why_it_matters": "If you’re willing to learn structure, you can build a system that scales beyond simple notes."
+"point": "Block-based editor that supports text, tables, boards, and embeds.",
+"why_it_matters": "You can build complex pages with many content types. However, choosing block types introduces extra decisions before writing."
 },
 {
-"point": "All-in-one workspace",
-"why_it_matters": "Notes, tasks, and projects can live together once you understand how to organize them."
+"point": "Database tables with custom properties and views.",
+"why_it_matters": "You can structure information with tags and filters. For a beginner, setting up properties and views adds setup work."
 },
 {
-"point": "Custom templates",
-"why_it_matters": "Structured templates can save time after initial setup."
+"point": "Nested pages inside a workspace.",
+"why_it_matters": "You can organize content deeply across projects. Understanding page hierarchy requires learning how the system is structured."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "Failure modes to watch for",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "You need structured databases, linked notes, or advanced organization across many projects.",
-"what_to_do_instead": "Move to a more flexible system once you’re comfortable managing structure."
+"fails_when": "You want advanced databases, task boards, or connected dashboards in the same system.",
+"what_to_do_instead": "Use Notion if you need structured databases and multi-page workspaces."
 },
 {
 "tool": "y",
-"fails_when": "You hesitate to write because you’re unsure which template, database, or page structure to use.",
-"what_to_do_instead": "Switch to a simple note app that prioritizes immediate typing."
+"fails_when": "You must decide between pages, blocks, and databases before comfortably writing a simple note.",
+"what_to_do_instead": "Use Apple Notes if you want immediate writing without structural choices."
 }
 ]
 },
 {
-"type": "quick_rules",
-"heading": "Quick rules for deciding in 30 seconds",
-"rules": [
-"If you want to start typing immediately, choose Apple Notes.",
-"If database concepts feel confusing before you write, avoid Notion at the start.",
-"If you’re ready to build a structured system, Notion may grow with you."
-]
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you are a beginner who already knows you want to build structured pages and manage projects inside the same tool, Notion may feel worth the learning curve."
 },
 {
-"type": "faqs",
-"heading": "",
-"content": ""
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"If you want one tap and a blank page, choose Apple Notes.",
+"If you want structured databases and customizable pages, choose Notion.",
+"If setup choices slow you down, avoid block-based systems."
+]
 }
 ],
 "faqs": [
 {
-"q": "Which app is easier for someone new to note-taking?",
-"a": "Apple Notes is generally easier because it allows instant writing without structural setup."
+"q": "Is Apple Notes easier for beginners?",
+"a": "Yes. It opens to a simple note list and lets you type immediately without building a structure first."
 },
 {
-"q": "Is Notion too complex for beginners?",
-"a": "It can feel complex if you must understand databases and page structure before comfortably writing notes."
+"q": "Does Notion require database setup?",
+"a": "Not always, but many useful setups involve pages, blocks, and databases, which can feel like extra steps before writing."
 },
 {
-"q": "Can Apple Notes handle more than simple notes?",
-"a": "It can handle moderate organization, but advanced database-style systems are limited."
+"q": "Which tool is better for simple notes?",
+"a": "Apple Notes is better if your goal is quick, straightforward writing without structural planning."
 },
 {
-"q": "What’s the main tradeoff between these tools?",
-"a": "Apple Notes prioritizes instant simplicity, while Notion prioritizes flexible structure and scalability."
+"q": "Can beginners grow into Notion later?",
+"a": "Yes. Many users start with simpler tools and move to Notion when they’re ready for structured pages and databases."
 }
 ],
 "related_pages": [
-{ "x_name": "Apple Notes", "y_name": "Evernote", "persona": "Beginner" },
-{ "x_name": "Apple Notes", "y_name": "OneNote", "persona": "Beginner" },
-{ "x_name": "Notion", "y_name": "Evernote", "persona": "Beginner" },
-{ "x_name": "Google Keep", "y_name": "Apple Notes", "persona": "Beginner" },
-{ "x_name": "Notion", "y_name": "Google Docs", "persona": "Beginner" },
+{ "x_name": "Craft", "y_name": "Milanote", "persona": "Beginner" },
+{ "x_name": "Evernote", "y_name": "Apple Notes", "persona": "Beginner" },
+{ "x_name": "OneNote", "y_name": "Google Keep", "persona": "Beginner" },
+{ "x_name": "Logseq", "y_name": "Apple Notes", "persona": "Beginner" },
+{ "x_name": "Standard Notes", "y_name": "Google Keep", "persona": "Beginner" },
 { "x_name": "UpNote", "y_name": "Apple Notes", "persona": "Beginner" }
 ]
 }
+

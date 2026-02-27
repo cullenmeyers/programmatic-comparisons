@@ -1,133 +1,115 @@
 {
 "category": "Note-taking apps",
 "categorySlug": "note-taking-apps",
-"title": "Standard Notes vs Apple Notes for Non-Technical Users",
-"slug": "standard-notes-vs-apple-notes-for-non-technical-user",
-"meta_description": "A comparison of Standard Notes vs Apple Notes for non-technical users who want private, safe notes without worrying about encryption settings or making mistakes.",
-"persona": "Non-technical user",
 "constraintSlug": "fear-of-breaking",
-"constraint_lens": "You have a fear of breaking things, so the best tool is the one that feels safe and private without exposing technical concepts or settings.",
+"constraintUiName": "Hard to mess up",
+"title": "Standard Notes vs Apple Notes for Non-technical users",
+"slug": "standard-notes-vs-apple-notes-for-non-technical-user",
+"meta_description": "Standard Notes vs Apple Notes for non-technical users who want private notes without dealing with encryption terms or risky settings.",
+"persona": "Non-technical user",
+"constraint_lens": "You want a notes app that feels safe to use without worrying that a setting or feature might break something.",
 "verdict": {
 "winner": "y",
-"summary": "Apple Notes wins for non-technical users because it provides privacy and reliability without requiring understanding of encryption or security settings. Standard Notes is secure by design, but its emphasis on encryption can create anxiety for users who fear misconfiguring something. When peace of mind matters more than explicit control, Apple Notes feels safer and easier.",
+"summary": "Apple Notes wins for non-technical users who want private notes without thinking about technical details. It uses device-level security and optional Face ID without asking you to manage keys or encryption terms. Standard Notes introduces language around encryption, accounts, and extensions that can feel risky if you are unsure what they do. If encryption concepts or settings create anxiety, Standard Notes fails first.",
 "decision_rule": "If encryption concepts or settings create anxiety, Standard Notes fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What non-technical users need for safe personal notes",
-"content": "Non-technical users want notes to feel protected without needing to understand how that protection works. The right tool should avoid surfacing security concepts that create fear of doing something wrong."
+"heading": "Best fit for someone who fears breaking things",
+"content": "You want safe personal notes without worrying about settings or mistakes. Apple Notes feels built into your iPhone or Mac, so there are fewer new concepts to learn. Standard Notes talks openly about encryption, keys, and account setup, which can make you wonder if one wrong click could lock you out."
 },
 {
 "type": "x_wins",
-"heading": "When Standard Notes can still work despite fear of breaking things",
+"heading": "Where Standard Notes wins",
 "bullets": [
 {
-"point": "You feel reassured by explicit security guarantees",
-"why_it_matters": "Some users find comfort in knowing exactly how their notes are protected. Without that comfort, security language can feel intimidating."
+"point": "End-to-end encryption by default with zero-knowledge design",
+"why_it_matters": "Your notes are encrypted before leaving your device, which means even the company cannot read them. For someone highly focused on privacy, this removes doubt about who can access the data."
 },
 {
-"point": "You are willing to ignore advanced settings",
-"why_it_matters": "Standard Notes works best when treated as a simple editor. Exploring options increases anxiety for feature-averse users."
+"point": "Optional extensions system for editors and themes",
+"why_it_matters": "You can add features like different editors or themes through extensions. This allows deeper control, but it also introduces extra switches that may feel risky if you are unsure what they change."
 },
 {
-"point": "Privacy concerns outweigh ease of use",
-"why_it_matters": "If privacy is the top priority, added complexity may feel justified despite discomfort."
+"point": "Manual account creation with password-based recovery",
+"why_it_matters": "You create a dedicated account and password that controls access to your notes. This gives clear ownership, but if you forget the password, recovery is limited, which can feel stressful."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why Apple Notes wins for non-technical users",
+"heading": "Where Apple Notes wins",
 "bullets": [
 {
-"point": "Privacy is handled automatically",
-"why_it_matters": "When protection happens quietly in the background, users worry less about making mistakes."
+"point": "Built into iOS and macOS with automatic iCloud sync",
+"why_it_matters": "Notes sync through your existing Apple ID without creating a separate account. There are fewer setup steps, so you are less likely to feel you misconfigured something."
 },
 {
-"point": "There are no security decisions to manage",
-"why_it_matters": "Removing settings and concepts reduces fear of misconfiguration."
+"point": "Lock note feature using Face ID, Touch ID, or device passcode",
+"why_it_matters": "You can lock individual notes with the same method you already use to unlock your phone. There are no encryption terms to understand, which lowers anxiety about making a mistake."
 },
 {
-"point": "The app feels predictable and stable",
-"why_it_matters": "Predictability builds trust, which is essential for users storing personal notes."
+"point": "No visible encryption settings or technical language in daily use",
+"why_it_matters": "Security runs in the background as part of the Apple ecosystem. Because you are not asked to manage keys or settings, there is less fear that one wrong change could break access."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool fails under fear of breaking things",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The user feels anxious about encryption, keys, or security settings they don’t fully understand.",
-"what_to_do_instead": "Use Apple Notes to keep privacy automatic and invisible."
+"fails_when": "You see terms like encryption keys, account recovery limits, or extension settings and worry that a wrong action could lock you out.",
+"what_to_do_instead": "Use Apple Notes with note locking so security stays behind the scenes and tied to your device login."
 },
 {
 "tool": "y",
-"fails_when": "The user wants explicit control or transparency over security mechanisms.",
-"what_to_do_instead": "Accept Apple Notes’ managed approach or move sensitive content to a dedicated security-focused tool later."
+"fails_when": "You need full zero-knowledge encryption and do not trust cloud providers to handle any part of your data.",
+"what_to_do_instead": "Choose Standard Notes and keep your password stored safely so you stay in control of access."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you become highly privacy-focused and are willing to learn how passwords and encryption work, Standard Notes can feel safer because you know exactly how your data is protected and who cannot read it."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick rules",
 "rules": [
-"If security concepts make you nervous, choose Apple Notes.",
-"If you don’t want to manage settings, avoid Standard Notes.",
-"If peace of mind matters more than control, Apple Notes wins."
+"If you want privacy without new terms or settings, choose Apple Notes.",
+"If you worry about forgetting passwords and losing access, avoid tools with limited recovery options.",
+"If you want maximum control over encryption and are comfortable managing it, consider Standard Notes."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is Standard Notes unsafe for non-technical users?",
-"a": "No, but its focus on encryption can feel intimidating to users who fear making mistakes."
+"q": "Is Apple Notes private enough for personal thoughts?",
+"a": "For most people, yes. Notes are protected by your Apple ID, device passcode, and optional note locking, which covers everyday privacy needs."
 },
 {
-"q": "Why does Apple Notes feel safer?",
-"a": "Because privacy and syncing are handled automatically without requiring user decisions."
+"q": "Can I lose my notes in Standard Notes if I forget my password?",
+"a": "Because of its encryption design, password recovery options are limited. If you forget your credentials, access can be permanently lost."
 },
 {
-"q": "Can a non-technical user use Standard Notes successfully?",
-"a": "Yes, if they are comfortable ignoring security details and trusting the defaults."
+"q": "Does Apple Notes use encryption?",
+"a": "Yes, it uses device and cloud encryption managed through Apple systems, but you do not have to manage keys or technical settings yourself."
 },
 {
-"q": "What’s the biggest risk with security-focused tools?",
-"a": "That exposing technical concepts undermines confidence instead of increasing trust."
+"q": "Is Standard Notes harder to use daily?",
+"a": "The writing experience is straightforward, but account setup, extension options, and encryption language can feel intimidating if you fear making mistakes."
 }
 ],
 "related_pages": [
-{
-"x_name": "Evernote",
-"y_name": "Apple Notes",
-"persona": "Non-technical user"
-},
-{
-"x_name": "Logseq",
-"y_name": "Apple Notes",
-"persona": "Non-technical user"
-},
-{
-"x_name": "Notion",
-"y_name": "Apple Notes",
-"persona": "Non-technical user"
-},
-{
-"x_name": "Standard Notes",
-"y_name": "Bear",
-"persona": "Non-technical user"
-},
-{
-"x_name": "Google Keep",
-"y_name": "Apple Notes",
-"persona": "Non-technical user"
-},
-{
-"x_name": "OneNote",
-"y_name": "Apple Notes",
-"persona": "Non-technical user"
-}
+{ "x_name": "Evernote", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Notion", "y_name": "Google Keep", "persona": "Non-technical user" },
+{ "x_name": "OneNote", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "UpNote", "y_name": "Google Keep", "persona": "Non-technical user" },
+{ "x_name": "Craft", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Bear", "y_name": "Google Keep", "persona": "Non-technical user" }
 ]
 }

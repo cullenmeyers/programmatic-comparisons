@@ -1,133 +1,115 @@
 {
 "category": "Task Managers",
 "categorySlug": "task-managers",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
 "title": "Sorted³ vs Things 3 for Minimalists",
 "slug": "sorted3-vs-things-3-for-minimalist",
-"meta_description": "A minimalist comparison of Sorted³ vs Things 3 for clearly listing tasks without time-blocking pressure or automatic scheduling.",
+"meta_description": "Sorted³ vs Things 3 for minimalists who want clear task lists without automatic scheduling, time blocking pressure, or dynamic reshuffling.",
 "persona": "Minimalist",
-"constraintSlug": "feature-aversion",
-"constraint_lens": "You are averse to features, so the best task manager is the one that shows what to do without adding scheduling mechanics or pressure.",
+"constraint_lens": "You want tasks listed clearly without automatic scheduling, time blocking pressure, or dynamic reshuffling.",
 "verdict": {
 "winner": "y",
-"summary": "Things 3 wins for minimalists because it presents tasks clearly without pushing time-blocking or automated scheduling. Sorted³ centers its experience around scheduling and rearranging time, which can feel like extra work. When you simply want to see what to do next, Things 3 stays calmer and more focused.",
+"summary": "Things 3 wins for minimalists who want a clean list of what to do. It centers on projects and simple lists without automatically scheduling tasks into time blocks. Sorted³ actively encourages time mapping and auto scheduling of tasks into your day. If automatic scheduling becomes a distraction, Sorted³ fails first.",
 "decision_rule": "If automatic scheduling becomes a distraction, Sorted³ fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What minimalists want from a task list",
-"content": "Minimalists want to open a task app and instantly understand what needs attention. The right tool should avoid turning tasks into calendar puzzles or requiring constant rearrangement."
+"heading": "Why this matters for Minimalists",
+"content": "You said you want tasks listed clearly without time blocking pressure. As a minimalist, features that push you to assign time slots or constantly adjust your day can feel like noise. A stable list that stays readable is easier to live with."
 },
 {
 "type": "x_wins",
-"heading": "When Sorted³ can still work for a minimalist",
+"heading": "Where Sorted³ wins",
 "bullets": [
 {
-"point": "You prefer scheduling tasks directly into time slots",
-"why_it_matters": "Sorted³ excels when time-blocking feels natural. For feature-averse users, that added layer feels unnecessary."
+"point": "Automatic scheduling that places tasks into available time slots",
+"why_it_matters": "Your day is mapped visually, but seeing tasks reshuffled adds movement that can distract from simple list clarity."
 },
 {
-"point": "Your day benefits from automatic reordering",
-"why_it_matters": "If shifting tasks around helps clarity, scheduling tools can feel useful instead of distracting."
+"point": "Time map view that blends calendar events and tasks together",
+"why_it_matters": "You get a full picture of your day, yet mixing tasks into calendar style blocks increases visual density."
 },
 {
-"point": "You like interacting with your timeline",
-"why_it_matters": "Sorted³ assumes engagement with time. Minimalists often prefer static clarity over dynamic movement."
+"point": "Auto rearrange feature when priorities change",
+"why_it_matters": "Tasks shift dynamically, but constant updates can make the list feel unstable."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why Things 3 wins under feature aversion",
+"heading": "Where Things 3 wins",
 "bullets": [
 {
-"point": "Tasks are presented as simple lists",
-"why_it_matters": "Clear lists reduce mental overhead and remove pressure to schedule."
+"point": "Clean Today list that shows tasks without forcing time slots",
+"why_it_matters": "You can see what to do without assigning each task a specific hour."
 },
 {
-"point": "Scheduling is optional, not central",
-"why_it_matters": "You can see what to do without committing to time-blocking."
+"point": "Simple project and area structure with optional headings",
+"why_it_matters": "You can organize lightly without activating scheduling systems."
 },
 {
-"point": "The interface stays calm and focused",
-"why_it_matters": "Fewer moving parts mean fewer decisions and less distraction."
+"point": "No automatic reshuffling of tasks",
+"why_it_matters": "Your lists stay stable unless you manually reorder them."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool fails under feature aversion",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The user feels pressure to constantly adjust time slots or interact with automatic scheduling.",
-"what_to_do_instead": "Use Things 3 to keep tasks as stable, readable lists."
+"fails_when": "You feel pressured to assign time blocks or react to auto rearranged tasks.",
+"what_to_do_instead": "Use Things 3 if you prefer a steady list without dynamic scheduling."
 },
 {
 "tool": "y",
-"fails_when": "The user wants aggressive time-based organization.",
-"what_to_do_instead": "Accept Things 3’s simplicity or use a scheduling-focused tool intentionally."
+"fails_when": "You want your tasks automatically mapped into open time in your day.",
+"what_to_do_instead": "Use Sorted³ if structured time mapping helps you stay on track."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you start missing deadlines because you never assign time to tasks, Sorted³ may become helpful by forcing tasks into visible time slots."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick decision rules",
 "rules": [
-"If you don’t want time-blocking pressure, choose Things 3.",
+"If you want a stable list with no time pressure, choose Things 3.",
 "If automatic scheduling feels distracting, avoid Sorted³.",
-"If seeing tasks clearly is the goal, Things 3 wins."
+"If you need tasks mapped directly into your calendar, Sorted³ may fit better."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is Sorted³ too active for minimalists?",
-"a": "Often yes, because its scheduling features encourage ongoing interaction with time blocks."
+"q": "Does Sorted³ require time blocking?",
+"a": "It strongly encourages mapping tasks into time slots through its scheduling view."
 },
 {
-"q": "Why does Things 3 feel calmer?",
-"a": "Because it centers on clear lists rather than dynamic scheduling."
+"q": "Is Things 3 minimal by design?",
+"a": "Yes, it focuses on clean lists and light structure without automatic scheduling."
 },
 {
-"q": "Can a minimalist still use Sorted³?",
-"a": "Yes, but only if they are comfortable with time-based interaction."
+"q": "Which tool keeps tasks more stable?",
+"a": "Things 3 keeps tasks stable because it does not auto rearrange them."
 },
 {
-"q": "What makes a task tool feel minimalist?",
-"a": "Static clarity, optional scheduling, and minimal required interaction."
+"q": "Can I ignore scheduling features in Sorted³?",
+"a": "You can, but the app is centered around its time mapping system, which remains prominent."
 }
 ],
 "related_pages": [
-{
-"x_name": "Motion",
-"y_name": "Things 3",
-"persona": "Minimalist"
-},
-{
-"x_name": "OmniFocus",
-"y_name": "Things 3",
-"persona": "Minimalist"
-},
-{
-"x_name": "ClickUp",
-"y_name": "Things 3",
-"persona": "Minimalist"
-},
-{
-"x_name": "Notion",
-"y_name": "Things 3",
-"persona": "Minimalist"
-},
-{
-"x_name": "Todoist",
-"y_name": "Things 3",
-"persona": "Minimalist"
-},
-{
-"x_name": "Apple Reminders",
-"y_name": "Things 3",
-"persona": "Minimalist"
-}
+{ "x_name": "Habitica", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Sunsama", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Notion", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "OmniFocus", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "TickTick", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Microsoft To Do", "y_name": "Todoist", "persona": "Minimalist" }
 ]
 }

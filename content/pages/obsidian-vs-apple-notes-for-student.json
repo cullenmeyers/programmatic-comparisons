@@ -1,133 +1,115 @@
 {
 "category": "Note-taking apps",
 "categorySlug": "note-taking-apps",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
 "title": "Obsidian vs Apple Notes for Students",
 "slug": "obsidian-vs-apple-notes-for-student",
-"meta_description": "A practical comparison of Obsidian vs Apple Notes for students who need to organize class notes for a single semester with minimal setup.",
+"meta_description": "Obsidian vs Apple Notes for students who need simple class organization for one semester without setup overhead.",
 "persona": "Student",
-"constraintSlug": "switching-cost",
-"constraint_lens": "You only need notes for a short period and want a low switching cost, so any setup that doesn’t pay off within a semester is wasted effort.",
+"constraint_lens": "You need a notes app for one semester that is quick to start and easy to walk away from later.",
 "verdict": {
 "winner": "y",
-"summary": "Apple Notes wins for students because it delivers immediate usefulness with almost no upfront investment. Obsidian can become powerful over time, but its setup and learning curve rarely pay back within a single semester. When short-term utility matters more than long-term systems, Apple Notes is the safer choice.",
+"summary": "Apple Notes wins for students who only need notes for a single semester. It works with simple folders and search without requiring a vault or plugin setup. Obsidian starts with creating a vault and understanding file-based structure before it feels comfortable. If the setup cost outweighs the semester length, Obsidian fails first.",
 "decision_rule": "If the setup cost outweighs the semester length, Obsidian fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What a student actually needs for a single semester",
-"content": "For a student, notes are a temporary support system tied to classes, deadlines, and exams. The best tool is the one that helps you stay organized immediately and can be abandoned without regret once the semester ends."
+"heading": "Best fit for short academic cycles",
+"content": "You need to organize class notes for one semester and do not expect long-term use. Apple Notes lets you create a folder per class and begin typing immediately. Obsidian encourages setting up a vault, choosing a storage folder, and learning its linking model."
 },
 {
 "type": "x_wins",
-"heading": "When Obsidian can still make sense for short-term study",
+"heading": "Where Obsidian wins",
 "bullets": [
 {
-"point": "You plan to reuse the notes beyond this semester",
-"why_it_matters": "Obsidian’s value compounds over time. If the notes won’t survive past finals week, the setup effort rarely earns a return."
+"point": "Vault-based storage using local Markdown files",
+"why_it_matters": "Your notes live as files in a folder you control. This gives flexibility, but requires choosing and managing that folder at the start."
 },
 {
-"point": "You already know how you want to structure your notes",
-"why_it_matters": "Clear structure reduces setup cost. Without it, time spent organizing competes directly with studying."
+"point": "Backlinks and graph view between notes",
+"why_it_matters": "You can connect lecture topics and visualize relationships. This helps long-term knowledge building, yet adds concepts to learn."
 },
 {
-"point": "You enjoy building a system as part of learning",
-"why_it_matters": "If system-building itself motivates you, Obsidian can feel rewarding. For most students, it’s a distraction from coursework."
+"point": "Plugin system for templates and task features",
+"why_it_matters": "You can extend functionality with community plugins. Installing and managing plugins adds setup time for short-term use."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why Apple Notes wins for students",
+"heading": "Where Apple Notes wins",
 "bullets": [
 {
-"point": "It’s useful from day one",
-"why_it_matters": "Classes move fast. Apple Notes lets you organize notes immediately without spending early weeks setting things up."
+"point": "Simple folder structure with drag-and-drop notes",
+"why_it_matters": "You can create one folder per class and move notes easily without configuring properties."
 },
 {
-"point": "Abandoning the tool later has no penalty",
-"why_it_matters": "At the end of the semester, you can stop using it without feeling like you wasted time building a system."
+"point": "Automatic sync through Apple ID",
+"why_it_matters": "Notes stay updated across devices without choosing a sync method or managing files."
 },
 {
-"point": "Organization stays simple and sufficient",
-"why_it_matters": "Folders and search are enough for short-term academic use, avoiding over-optimization for a temporary need."
+"point": "Built-in search across text and attachments",
+"why_it_matters": "You can quickly find terms during exam prep without building a complex system."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool fails under short-term use",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The user spends more time setting up folders, links, or workflows than actually taking or reviewing notes.",
-"what_to_do_instead": "Use Apple Notes to capture and organize class material quickly, then discard or archive it after the semester."
+"fails_when": "You spend time setting up vaults or learning linking instead of focusing on coursework.",
+"what_to_do_instead": "Use Apple Notes for the semester and keep the workflow simple."
 },
 {
 "tool": "y",
-"fails_when": "The user needs advanced organization across many years or subjects.",
-"what_to_do_instead": "Accept Apple Notes’ simplicity for now and move to a more complex system only when long-term needs appear."
+"fails_when": "You want deeply connected notes across multiple semesters or research projects.",
+"what_to_do_instead": "Adopt Obsidian later when long-term knowledge building becomes important."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you plan to continue building a personal knowledge system beyond this semester, starting with Obsidian could pay off despite the initial setup time."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick rules",
 "rules": [
 "If you only need notes for one semester, choose Apple Notes.",
-"If setup time won’t clearly pay off before finals, avoid Obsidian.",
-"If switching tools later feels likely, keep the system lightweight."
+"If vault setup feels like extra work for a short class, avoid Obsidian.",
+"If long-term linking matters more than quick setup, consider Obsidian."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is Obsidian overkill for most students?",
-"a": "For short-term use, yes. Its strengths usually require more time than a single semester allows."
+"q": "Is Obsidian hard to start using?",
+"a": "It requires creating a vault and understanding file-based storage, which can feel like extra setup."
 },
 {
-"q": "Why is low switching cost important for students?",
-"a": "Because academic needs change every term, and investing heavily in one system can become wasted effort."
+"q": "Can Apple Notes handle organized class notes?",
+"a": "Yes. Folders and search are usually enough for semester-level organization."
 },
 {
-"q": "Can I move notes from Apple Notes later?",
-"a": "Yes. Apple Notes keeps things simple, making it easy to export or leave behind when the semester ends."
+"q": "Will I lose flexibility with Apple Notes?",
+"a": "For short-term academic use, most students do not need advanced linking features."
 },
 {
-"q": "What’s the biggest mistake students make with note apps?",
-"a": "Optimizing for a long-term system when their actual need is short-term performance."
+"q": "Which is easier to leave after the semester?",
+"a": "Apple Notes is easier for short-term use because it requires less initial setup."
 }
 ],
 "related_pages": [
-{
-"x_name": "Notion",
-"y_name": "Apple Notes",
-"persona": "Student"
-},
-{
-"x_name": "Obsidian",
-"y_name": "Notion",
-"persona": "Student"
-},
-{
-"x_name": "Evernote",
-"y_name": "Apple Notes",
-"persona": "Student"
-},
-{
-"x_name": "OneNote",
-"y_name": "Apple Notes",
-"persona": "Student"
-},
-{
-"x_name": "Bear",
-"y_name": "Apple Notes",
-"persona": "Student"
-},
-{
-"x_name": "Google Keep",
-"y_name": "Apple Notes",
-"persona": "Student"
-}
+{ "x_name": "Roam Research", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Notion", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Obsidian", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Craft", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Evernote", "y_name": "OneNote", "persona": "Student" },
+{ "x_name": "Apple Notes", "y_name": "Google Keep", "persona": "Student" }
 ]
 }

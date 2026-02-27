@@ -1,133 +1,116 @@
 {
 "category": "Task Managers",
 "categorySlug": "task-managers",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
 "title": "Habitica vs Todoist for Minimalists",
 "slug": "habitica-vs-todoist-for-minimalist",
-"meta_description": "A minimalist comparison of Habitica vs Todoist for tracking daily to-dos without gamification, rewards, or extra mechanics.",
+"meta_description": "Habitica vs Todoist for minimalists who want to track daily to dos without avatars, rewards, or extra game mechanics getting in the way.",
 "persona": "Minimalist",
-"constraintSlug": "feature-aversion",
-"constraint_lens": "You are averse to features, so the best task manager avoids gamification, rewards, and mechanics that add decisions beyond checking off tasks.",
+"constraint_lens": "You want a clean task list without avatars, rewards, or extra mechanics layered on top of your to dos.",
 "verdict": {
 "winner": "y",
-"summary": "Todoist wins for minimalists because it keeps task tracking simple and direct. Habitica adds game mechanics, rewards, and character systems that introduce extra decisions unrelated to completing tasks. When you want clarity without layers of interaction, Todoist stays focused.",
+"summary": "Todoist wins for minimalists who want to track daily to dos without game layers. It focuses on lists, due dates, and simple checkboxes. Habitica adds avatars, experience points, and separate habit categories that introduce extra decisions. If game mechanics add unnecessary decisions, Habitica fails first.",
 "decision_rule": "If game mechanics add unnecessary decisions, Habitica fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "What minimalists want from daily task tracking",
-"content": "Minimalists want the shortest path between intent and completion. The right tool should avoid extra layers like points, rewards, or avatars that shift attention away from the task itself."
+"heading": "Why this matters for Minimalists",
+"content": "You said you want tasks without gamification or extra mechanics. As a minimalist, additional screens for character stats or reward systems feel like noise. A straightforward list that stays out of the way fits better."
 },
 {
 "type": "x_wins",
-"heading": "When Habitica can still work for a minimalist",
+"heading": "Where Habitica wins",
 "bullets": [
 {
-"point": "You are motivated by gamification",
-"why_it_matters": "Habitica works best when game elements increase engagement rather than distract from it."
+"point": "Tasks tied to experience points and leveling system",
+"why_it_matters": "You gain rewards for completion, but watching progress bars and levels adds elements beyond simple tracking."
 },
 {
-"point": "You enjoy tracking streaks and rewards",
-"why_it_matters": "For some users, visible progress systems create accountability. For minimalists, they add noise."
+"point": "Separate sections for habits, dailies, and to do items",
+"why_it_matters": "This structure encourages behavior tracking, yet deciding where each task belongs creates extra decisions."
 },
 {
-"point": "You want tasks to feel playful",
-"why_it_matters": "Habitica reframes productivity as a game. If play feels unnecessary, the system feels heavy."
+"point": "Avatar customization and in app rewards shop",
+"why_it_matters": "Personalization can motivate, but interacting with these features adds steps unrelated to finishing tasks."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Why Todoist wins for feature-averse users",
+"heading": "Where Todoist wins",
 "bullets": [
 {
-"point": "Tasks are plain and direct",
-"why_it_matters": "No additional mechanics compete for attention."
+"point": "Single list view with quick add task field",
+"why_it_matters": "You can type and save tasks instantly without choosing categories like habit or daily."
 },
 {
-"point": "There are few concepts beyond tasks",
-"why_it_matters": "Minimal structure reduces mental overhead."
+"point": "Optional features such as labels and filters can be ignored",
+"why_it_matters": "You can keep everything as a basic checklist without activating deeper layers."
 },
 {
-"point": "Completion is the only feedback loop",
-"why_it_matters": "Checking off tasks becomes the sole reward, keeping focus clear."
+"point": "Clean Today view focused only on due tasks",
+"why_it_matters": "You see what needs action without visual distractions like avatars or reward panels."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "How each tool fails under feature aversion",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "The user feels distracted by leveling systems, rewards, or character management.",
-"what_to_do_instead": "Use Todoist to keep daily to-dos as simple checklists."
+"fails_when": "You spend time interacting with game elements instead of simply completing tasks.",
+"what_to_do_instead": "Use Todoist if you want a stripped down checklist with minimal extras."
 },
 {
 "tool": "y",
-"fails_when": "The user struggles with motivation and benefits from external rewards.",
-"what_to_do_instead": "Accept Todoist’s simplicity or intentionally use a gamified tool when engagement is low."
+"fails_when": "You struggle with consistency and benefit from visible rewards or streak tracking.",
+"what_to_do_instead": "Use Habitica if game style motivation genuinely improves follow through."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you find that plain lists no longer motivate you and you need visible rewards or streaks to stay consistent, Habitica may become useful despite the added mechanics."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide in 10 seconds",
+"heading": "Quick decision rules",
 "rules": [
-"If you want tasks without game layers, choose Todoist.",
-"If rewards feel unnecessary, avoid Habitica.",
-"If simplicity beats stimulation, Todoist wins."
+"If you want a clean list with no extras, choose Todoist.",
+"If avatars and rewards feel unnecessary, avoid Habitica.",
+"If gamification keeps you consistent, Habitica may fit better."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is Habitica too complex for minimalists?",
-"a": "Often yes, because its game mechanics introduce extra decisions and systems."
+"q": "Is Habitica only about games?",
+"a": "It uses game style systems like levels and rewards to encourage task completion."
 },
 {
-"q": "Why does Todoist feel calmer?",
-"a": "Because it removes gamification and focuses only on tasks."
+"q": "Can Todoist stay minimal long term?",
+"a": "Yes, you can ignore advanced features and keep it as a simple daily list."
 },
 {
-"q": "Can gamification ever help?",
-"a": "Yes, especially for users who need extra motivation, but it adds layers beyond simple tracking."
+"q": "Which tool has fewer built in mechanics?",
+"a": "Todoist has fewer layers and focuses mainly on tasks and due dates."
 },
 {
-"q": "What makes a task tool feel minimalist?",
-"a": "Few concepts, no reward systems, and a direct path from task to completion."
+"q": "Does Habitica require categorizing tasks?",
+"a": "Yes, it encourages placing items into habits, dailies, or to do sections, which adds extra decisions."
 }
 ],
 "related_pages": [
-{
-"x_name": "Amazing Marvin",
-"y_name": "Todoist",
-"persona": "Minimalist"
-},
-{
-"x_name": "ClickUp",
-"y_name": "Todoist",
-"persona": "Minimalist"
-},
-{
-"x_name": "Notion",
-"y_name": "Todoist",
-"persona": "Minimalist"
-},
-{
-"x_name": "OmniFocus",
-"y_name": "Todoist",
-"persona": "Minimalist"
-},
-{
-"x_name": "Things",
-"y_name": "Todoist",
-"persona": "Minimalist"
-},
-{
-"x_name": "Google Tasks",
-"y_name": "Todoist",
-"persona": "Minimalist"
-}
+{ "x_name": "Sunsama", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Notion", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "OmniFocus", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "TickTick", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Microsoft To Do", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Things", "y_name": "Todoist", "persona": "Minimalist" }
 ]
 }
+

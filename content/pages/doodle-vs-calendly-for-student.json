@@ -1,133 +1,116 @@
 {
 "category": "Calendar / Scheduling tools",
 "categorySlug": "calendar-scheduling-tools",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
 "title": "Doodle vs Calendly for Students",
 "slug": "doodle-vs-calendly-for-student",
-"meta_description": "Student choosing between Doodle and Calendly? For short-term group coordination with low switching cost, Doodle is faster for polling availability.",
+"meta_description": "Doodle vs Calendly for students who need to find a group meeting time quickly without creating booking pages or long term scheduling setups.",
 "persona": "Student",
-"constraintSlug": "switching-cost",
-"constraint_lens": "You need something quick to set up and easy to abandon later, because you’re using it short-term and want low switching cost.",
+"constraint_lens": "You want something you can use for a short project without committing to long setup or ongoing account management.",
 "verdict": {
 "winner": "x",
-"summary": "Doodle is the better fit for a student coordinating group availability for a short-term project. It allows you to poll multiple time options without setting up individual booking links. If booking pages and event types must be configured before simply collecting availability, Calendly adds unnecessary friction.",
+"summary": "Doodle wins for students coordinating availability for a short term group project. It lets you create a poll with time options and send a link without building a booking page or workflow. Calendly is built around personal booking links and event types that require setup first. If individual booking links require setup before polling availability, Calendly fails first.",
 "decision_rule": "If individual booking links require setup before polling availability, Calendly fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "Best fit for quick group coordination",
-"content": "You just need to find a meeting time that works for everyone in a temporary academic project. With short-term use and low switching cost as priorities, the tool should require minimal setup and no long-term structure. Doodle focuses on fast availability polling, while Calendly is designed around individual booking flows."
+"heading": "Why this matters for Students",
+"content": "You said you need to coordinate group availability for a short term project. As a student, you do not want to build a long term scheduling system just to find one meeting time. The easier it is to create a poll and move on, the better."
 },
 {
 "type": "x_wins",
-"heading": "Where Doodle wins for short-term projects",
+"heading": "Where Doodle wins",
 "bullets": [
 {
-"point": "You can create a poll without setting up booking pages.",
-"why_it_matters": "Fast setup keeps the focus on the project rather than configuring scheduling software."
+"point": "Create a poll by selecting multiple time slots on a simple grid",
+"why_it_matters": "You can propose several meeting options at once and let classmates vote, without setting up personal availability rules first."
 },
 {
-"point": "It’s built for group availability comparison.",
-"why_it_matters": "When multiple classmates must agree on one time, polling reduces back-and-forth messages."
+"point": "Participants respond by marking yes, no, or if needed for each time",
+"why_it_matters": "Group availability becomes visible in one table, which makes it easier to spot the best time without back and forth messages."
 },
 {
-"point": "No long-term account structure is required.",
-"why_it_matters": "Low switching cost ensures you can stop using it once the project ends."
+"point": "No requirement to build a reusable booking page",
+"why_it_matters": "You can run one poll for this project and stop using it after, with no need to maintain event types or public links."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Where Calendly can win (in one-on-one scheduling)",
+"heading": "Where Calendly wins",
 "bullets": [
 {
-"point": "It provides structured booking links for individuals.",
-"why_it_matters": "If one person needs others to pick from predefined slots, booking links can streamline coordination."
+"point": "Personal booking link tied to your calendar availability",
+"why_it_matters": "Others can pick a time directly from your open slots, but you must first define your availability and event settings."
 },
 {
-"point": "It integrates directly with your calendar.",
-"why_it_matters": "Automatic blocking of confirmed times reduces the risk of double-booking."
+"point": "Automatic calendar booking once someone selects a slot",
+"why_it_matters": "It removes manual confirmation steps, yet this works best for one to one scheduling rather than group voting."
 },
 {
-"point": "It supports recurring and formal meeting types.",
-"why_it_matters": "For ongoing or professional coordination, structured event types can add clarity."
+"point": "Event type setup with buffers and rules",
+"why_it_matters": "You can control meeting length and spacing, but setting these up adds extra steps for a short term student project."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "Common failure modes (and what to do instead)",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "You need structured one-on-one booking with automatic confirmations and integrations.",
-"what_to_do_instead": "Use Calendly if your scheduling shifts from group polling to individual booking links."
+"fails_when": "You need ongoing one to one booking where people automatically reserve time on your calendar.",
+"what_to_do_instead": "Use Calendly if you want meetings to be confirmed instantly without manual selection after a poll."
 },
 {
 "tool": "y",
-"fails_when": "You must configure booking links before simply gathering group availability.",
-"what_to_do_instead": "Switch to Doodle for a quick poll-based approach that matches the short project timeline."
+"fails_when": "You must coordinate availability across several classmates before choosing a time.",
+"what_to_do_instead": "Use Doodle if your goal is to compare group availability in one shared poll."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the project turns into repeated one to one sessions such as tutoring or interviews, Calendly may feel easier because people can book directly into your calendar without group voting."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide fast",
+"heading": "Quick decision rules",
 "rules": [
-"If you need to poll a group quickly, choose Doodle.",
-"If setup for booking links feels heavier than the project requires, avoid Calendly.",
-"If you’re scheduling one-on-one meetings with defined time slots, Calendly may be better."
+"If you need a quick group vote on meeting times, choose Doodle.",
+"If you do not want to set up availability rules first, avoid Calendly.",
+"If people should book directly into your calendar one at a time, use Calendly."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Which tool is faster for group availability?",
-"a": "Doodle is typically faster because it lets you create a simple poll without configuring booking pages."
+"q": "Can I use Calendly for group scheduling?",
+"a": "You can share one booking link, but it does not show a voting table of everyone availability like a poll does."
 },
 {
-"q": "Is Calendly overkill for short student projects?",
-"a": "It can be if your main goal is just to compare availability across classmates rather than manage structured bookings."
+"q": "Does Doodle require everyone to create accounts?",
+"a": "Participants can usually respond through the poll link, which keeps it lightweight for short term coordination."
 },
 {
-"q": "Can I switch from Doodle to Calendly later?",
-"a": "Yes. For short-term academic use, switching tools is common if your coordination needs change."
+"q": "Which is faster for a single project?",
+"a": "Doodle is typically faster because you only create a poll and send it, without building a reusable booking system."
 },
 {
-"q": "What matters most for student scheduling tools?",
-"a": "Speed of setup, ease of sharing, and minimal long-term commitment are usually the top priorities."
+"q": "Will I need to keep using Doodle after the project?",
+"a": "No, you can run one poll, finalize a meeting time, and stop without maintaining event types or public scheduling pages."
 }
 ],
 "related_pages": [
-{
-"x_name": "Microsoft Bookings",
-"y_name": "Calendly",
-"persona": "Student"
-},
-{
-"x_name": "Calendly",
-"y_name": "Google Calendar",
-"persona": "Student"
-},
-{
-"x_name": "Doodle",
-"y_name": "Google Calendar",
-"persona": "Student"
-},
-{
-"x_name": "Acuity Scheduling",
-"y_name": "Calendly",
-"persona": "Student"
-},
-{
-"x_name": "Motion",
-"y_name": "Google Calendar",
-"persona": "Student"
-},
-{
-"x_name": "Zoho Bookings",
-"y_name": "Calendly",
-"persona": "Student"
-}
+{ "x_name": "Google Calendar", "y_name": "Apple Calendar", "persona": "Student" },
+{ "x_name": "Google Calendar", "y_name": "Outlook Calendar", "persona": "Student" },
+{ "x_name": "Calendly", "y_name": "Google Calendar", "persona": "Student" },
+{ "x_name": "Akiflow", "y_name": "Google Calendar", "persona": "Student" },
+{ "x_name": "Reclaim.ai", "y_name": "Google Calendar", "persona": "Student" },
+{ "x_name": "Fantastical", "y_name": "Google Calendar", "persona": "Student" }
 ]
 }
+

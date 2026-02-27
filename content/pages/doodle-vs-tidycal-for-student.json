@@ -1,133 +1,115 @@
 {
 "category": "Calendar / Scheduling tools",
 "categorySlug": "calendar-scheduling-tools",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
 "title": "Doodle vs TidyCal for Students",
 "slug": "doodle-vs-tidycal-for-student",
-"meta_description": "Student choosing between Doodle and TidyCal? For short-term group coordination with low switching cost, Doodle is faster than booking page setup.",
+"meta_description": "Doodle vs TidyCal for students who need fast group scheduling without setting up booking pages for short-term projects.",
 "persona": "Student",
-"constraintSlug": "switching-cost",
-"constraint_lens": "You need something quick to set up and easy to abandon later, because you’re using it short-term and want low switching cost.",
+"constraint_lens": "You need a scheduling tool for a short group project and want something fast to use and easy to stop using later.",
 "verdict": {
 "winner": "x",
-"summary": "Doodle is the better fit for a student coordinating availability for a short group project. It lets you create a poll immediately without building a booking page. If configuring availability rules and booking settings takes longer than launching a simple poll, TidyCal adds unnecessary friction.",
+"summary": "Doodle wins for students coordinating a short-term group meeting. You create a poll with time options and share a link immediately. TidyCal is built around personal booking pages that require defining event types first. If booking page setup takes longer than creating a poll, TidyCal fails first.",
 "decision_rule": "If booking page setup takes longer than creating a poll, TidyCal fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "Best fit for quick academic coordination",
-"content": "You just need to find a meeting time that works for everyone, and the project won’t last long. With short-term use and low switching cost as priorities, setup time must be minimal. Doodle focuses on instant availability polling, while TidyCal centers around structured booking pages."
+"heading": "Which tool fits a short group project?",
+"content": "You need to quickly find a meeting time for a short group project. As a student, you do not want to build a long-term booking system. The right tool should solve the coordination problem in minutes. Anything that requires defining event types or availability rules adds unnecessary setup."
 },
 {
 "type": "x_wins",
-"heading": "Where Doodle wins for short-term group work",
+"heading": "Where Doodle works better for students",
 "bullets": [
 {
-"point": "You can create a time poll immediately.",
-"why_it_matters": "Fast setup keeps your focus on the project instead of configuring software."
+"point": "Poll-based scheduling with multiple date and time options.",
+"why_it_matters": "You list possible times and let group members vote without configuring a booking page."
 },
 {
-"point": "It’s designed for comparing group availability.",
-"why_it_matters": "Polling multiple classmates at once reduces scheduling back-and-forth."
+"point": "No requirement to connect personal calendar availability.",
+"why_it_matters": "Participants simply select times that work instead of syncing accounts."
 },
 {
-"point": "No long-term structure is required.",
-"why_it_matters": "You can stop using it once the project ends without maintaining a booking system."
+"point": "Single-purpose link focused only on availability voting.",
+"why_it_matters": "You solve the meeting problem directly without building a reusable system."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Where TidyCal can win (for structured bookings)",
+"heading": "Where TidyCal works better",
 "bullets": [
 {
-"point": "It provides a formal booking page with defined availability.",
-"why_it_matters": "If one person needs others to choose from preset slots, a booking page can simplify coordination."
+"point": "Personal booking page with defined meeting types.",
+"why_it_matters": "You can reuse the same link for future bookings. Defining event types takes initial setup time."
 },
 {
-"point": "It integrates availability rules into a clean interface.",
-"why_it_matters": "Structured time slots reduce confusion in one-on-one scheduling."
+"point": "Calendar integration to prevent double booking.",
+"why_it_matters": "Availability updates automatically. For one short project, connecting calendars may be more than needed."
 },
 {
-"point": "It supports recurring or predefined meeting types.",
-"why_it_matters": "For ongoing coordination beyond a short project, structure can add clarity."
+"point": "Customizable time slots and buffers.",
+"why_it_matters": "You can control meeting length and spacing. Configuring these options adds setup decisions."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "Common failure modes (and what to do instead)",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "You need structured one-on-one booking with automatic confirmation and calendar integration.",
-"what_to_do_instead": "Use TidyCal if your coordination shifts from group polling to defined booking slots."
+"fails_when": "You need automated scheduling that blocks time on your personal calendar.",
+"what_to_do_instead": "Use TidyCal if you want a reusable booking link tied to your calendar."
 },
 {
 "tool": "y",
-"fails_when": "You spend more time configuring a booking page than it would take to create a simple availability poll.",
-"what_to_do_instead": "Switch to Doodle for quick, no-friction group coordination."
+"fails_when": "You spend time defining meeting types and availability just to schedule one group discussion.",
+"what_to_do_instead": "Use Doodle if you only need a quick availability poll."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you expect ongoing one-on-one meetings beyond the short project, TidyCal may be more efficient than repeatedly creating polls."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules to decide fast",
+"heading": "Quick decision rules",
 "rules": [
-"If you need to find a time quickly for a group, choose Doodle.",
-"If booking page setup feels heavier than the project requires, avoid TidyCal.",
-"If one person needs others to reserve defined slots, TidyCal may work."
+"If you just need a fast group poll, choose Doodle.",
+"If you want a reusable personal booking link, choose TidyCal.",
+"If setup takes longer than the project itself, keep it simple."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Which tool is faster for group projects?",
-"a": "Doodle is typically faster because it allows you to create a simple availability poll without setting up booking rules."
+"q": "Is Doodle better for one-time group meetings?",
+"a": "Yes. It focuses on quick availability polls without long-term setup."
 },
 {
-"q": "Is TidyCal overkill for a short academic project?",
-"a": "It can be if your main need is quick availability comparison rather than structured appointment booking."
+"q": "Does TidyCal require event setup?",
+"a": "Yes. You typically define meeting types and connect your calendar."
 },
 {
-"q": "Can I switch tools if our coordination needs change?",
-"a": "Yes. For short-term student use, switching is low risk, especially if you start with a lightweight solution."
+"q": "Which tool is easier to stop using after a semester?",
+"a": "Doodle is easier because it does not require maintaining a booking page."
 },
 {
-"q": "What matters most for student scheduling tools?",
-"a": "Speed of setup, simplicity, and minimal commitment are key for short-term academic coordination."
+"q": "Can TidyCal work for group scheduling?",
+"a": "It can, but it is designed more for individual booking links than group voting."
 }
 ],
 "related_pages": [
-{
-"x_name": "Doodle",
-"y_name": "Calendly",
-"persona": "Student"
-},
-{
-"x_name": "Microsoft Bookings",
-"y_name": "Calendly",
-"persona": "Student"
-},
-{
-"x_name": "Calendly",
-"y_name": "Google Calendar",
-"persona": "Student"
-},
-{
-"x_name": "Zoho Bookings",
-"y_name": "Calendly",
-"persona": "Student"
-},
-{
-"x_name": "Cal.com",
-"y_name": "SavvyCal",
-"persona": "Student"
-},
-{
-"x_name": "TidyCal",
-"y_name": "Calendly",
-"persona": "Student"
-}
+{ "x_name": "Doodle", "y_name": "Square Appointments", "persona": "Student" },
+{ "x_name": "Timepage", "y_name": "Google Calendar", "persona": "Student" },
+{ "x_name": "Trello", "y_name": "Microsoft Planner", "persona": "Student" },
+{ "x_name": "Todoist", "y_name": "MeisterTask", "persona": "Student" },
+{ "x_name": "Superlist", "y_name": "Google Tasks", "persona": "Student" },
+{ "x_name": "Habitica", "y_name": "Todoist", "persona": "Student" }
 ]
 }

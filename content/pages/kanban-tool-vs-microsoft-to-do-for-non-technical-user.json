@@ -5,106 +5,112 @@
 "constraintUiName": "Hard to mess up",
 "title": "Kanban Tool vs Microsoft To Do for Non-technical users",
 "slug": "kanban-tool-vs-microsoft-to-do-for-non-technical-user",
-"meta_description": "Kanban Tool vs Microsoft To Do for non-technical users who want straightforward personal to-dos without board customization.",
+"meta_description": "Kanban Tool vs Microsoft To Do for non-technical users who want simple personal to-dos without board settings or layout confusion.",
 "persona": "Non-technical user",
-"constraint_lens": "You need a tool that feels hard to mess up and doesn’t make you worry about placing tasks in the wrong spot.",
+"constraint_lens": "You want a task list that feels safe and obvious without worrying about settings or layout changes.",
 "verdict": {
 "winner": "y",
-"summary": "Microsoft To Do wins for non-technical users who want straightforward personal task tracking. Its list-based design reduces uncertainty about where tasks belong. Kanban Tool is built around customizable boards, but if board customization creates uncertainty about task placement, it increases hesitation and fear of doing something wrong. Follow the rule: if board customization creates uncertainty about task placement, Kanban Tool fails first.",
+"summary": "Microsoft To Do wins for non-technical users who want straightforward task tracking. It presents a simple list where you press 'Add a task' and nothing about the layout can be misconfigured. Kanban Tool centers on customizable boards with columns and workflow settings. If board customization creates uncertainty about task placement, Kanban Tool fails first.",
 "decision_rule": "If board customization creates uncertainty about task placement, Kanban Tool fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "Best fit when you want clarity without configuration",
-"content": "As a non-technical user, you want to add tasks and trust they’re in the right place. You don’t want to configure columns, workflows, or board rules. The right tool minimizes structure so you never feel unsure about what you just clicked."
+"heading": "Which tool feels safer to use?",
+"content": "You want straightforward task tracking without managing board settings. As a non-technical user, changing layouts or workflows can feel risky. The best tool should make it hard to put tasks in the wrong place. Anything that lets you edit board structure can create uncertainty."
 },
 {
 "type": "x_wins",
-"heading": "Where Kanban Tool still wins",
+"heading": "Where Kanban Tool works better",
 "bullets": [
 {
-"point": "Visual workflow tracking",
-"why_it_matters": "If tasks naturally move through clear stages, boards can make progress visible."
+"point": "Customizable columns that represent stages like To Do or Done.",
+"why_it_matters": "You can design a workflow that matches your process. However, editing or renaming columns may create doubt about where tasks belong."
 },
 {
-"point": "Customizable columns and processes",
-"why_it_matters": "If you need defined steps, tailored boards can match your workflow."
+"point": "WIP limits and board configuration options.",
+"why_it_matters": "You can control how many tasks appear in each column. For someone unfamiliar with board rules, these settings may feel technical."
 },
 {
-"point": "Strong for project-style organization",
-"why_it_matters": "If your responsibilities resemble structured projects, boards can group related tasks clearly."
+"point": "Swimlanes and card customization features.",
+"why_it_matters": "You can organize tasks visually in complex ways. Extra layout controls can make the board feel easy to misconfigure."
 }
 ]
 },
 {
 "type": "y_wins",
-"heading": "Where Microsoft To Do wins under fear of breaking things",
+"heading": "Where Microsoft To Do works better for non-technical users",
 "bullets": [
 {
-"point": "Simple list-based interface",
-"why_it_matters": "You add a task to a list without worrying about which column it belongs in."
+"point": "Simple list view with no board configuration.",
+"why_it_matters": "You see tasks in a vertical list without columns to adjust. There is little risk of misplacing items."
 },
 {
-"point": "Minimal customization options",
-"why_it_matters": "Fewer settings reduce the chance of accidentally changing something important."
+"point": "Clear input field labeled 'Add a task'.",
+"why_it_matters": "You type and press enter without choosing workflow stages. This reduces confusion about where tasks go."
 },
 {
-"point": "Clear daily focus view",
-"why_it_matters": "Seeing a straightforward list lowers anxiety about managing structure."
+"point": "Optional details like due date or steps that stay secondary.",
+"why_it_matters": "You can ignore extra fields and still keep tasks organized. Nothing forces you to manage layout rules."
 }
 ]
 },
 {
 "type": "failure_modes",
-"heading": "Failure modes to watch for",
+"heading": "Where each tool can break down",
 "items": [
 {
 "tool": "x",
-"fails_when": "You feel unsure about which column to use or how board settings affect your tasks.",
-"what_to_do_instead": "Switch to a simple checklist-based tool that removes board decisions."
+"fails_when": "You feel unsure which column a task belongs in or worry about changing board settings.",
+"what_to_do_instead": "Use Microsoft To Do if you prefer a fixed list that cannot be structurally altered."
 },
 {
 "tool": "y",
-"fails_when": "You need structured stage-based tracking for complex projects.",
-"what_to_do_instead": "Adopt a board-style tool if visual workflow becomes necessary."
+"fails_when": "You want visual workflow stages and movement between columns.",
+"what_to_do_instead": "Use Kanban Tool if you are comfortable adjusting board layouts."
 }
 ]
 },
 {
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you become comfortable with visual boards and want to see tasks move across stages, Kanban Tool may feel clearer despite the extra configuration options."
+},
+{
 "type": "quick_rules",
-"heading": "Quick rules for deciding in 30 seconds",
+"heading": "Quick decision rules",
 "rules": [
-"If you want straightforward personal to-dos, choose Microsoft To Do.",
-"If board customization makes you second-guess placement, avoid Kanban Tool.",
-"If your tasks move through defined stages and you’re comfortable with boards, Kanban Tool may fit."
+"If you want a fixed, simple list, choose Microsoft To Do.",
+"If you want visual columns and workflow stages, choose Kanban Tool.",
+"If layout settings make you nervous, avoid customizable boards."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Which tool feels safer for non-technical users?",
-"a": "Microsoft To Do generally feels safer because it centers on simple lists without customizable board settings."
+"q": "Is Kanban Tool too complex for non-technical users?",
+"a": "It can feel complex because it allows column editing and board customization, which may create uncertainty."
 },
 {
-"q": "Is Kanban Tool too complex for personal tasks?",
-"a": "It can be if managing columns and board customization adds uncertainty about task placement."
+"q": "Does Microsoft To Do have board settings?",
+"a": "No. It focuses on simple lists without workflow columns or board configuration."
 },
 {
-"q": "When would Kanban Tool be the better choice?",
-"a": "If your tasks move through clear stages and you’re comfortable configuring boards."
+"q": "Which tool is safer for personal tasks?",
+"a": "Microsoft To Do is safer because its layout cannot be easily misconfigured."
 },
 {
-"q": "What’s the main tradeoff between these tools?",
-"a": "Kanban Tool emphasizes customizable visual workflows, while Microsoft To Do emphasizes simple, low-risk task lists."
+"q": "Can a non-technical user learn Kanban Tool?",
+"a": "Yes, but it requires understanding columns and board structure, which may take time."
 }
 ],
 "related_pages": [
-{ "x_name": "Microsoft To Do", "y_name": "Todoist", "persona": "Non-technical user" },
-{ "x_name": "Microsoft To Do", "y_name": "Apple Reminders", "persona": "Non-technical user" },
-{ "x_name": "Kanban Tool", "y_name": "Trello", "persona": "Non-technical user" },
+{ "x_name": "Freedcamp", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
+{ "x_name": "Todoist", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
+{ "x_name": "Asana", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
 { "x_name": "ClickUp", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
-{ "x_name": "Basecamp", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
-{ "x_name": "Any.do", "y_name": "Microsoft To Do", "persona": "Non-technical user" }
+{ "x_name": "Trello", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
+{ "x_name": "Things", "y_name": "Microsoft To Do", "persona": "Non-technical user" }
 ]
 }
+
