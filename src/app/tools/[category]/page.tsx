@@ -86,12 +86,6 @@ export default async function ToolsCategoryPage({
               <h2 className="text-lg font-semibold tracking-tight text-black">
                 {cleanTitle(gate.embedBlockTitle)}
               </h2>
-              <p className="text-sm text-black/65">
-                Focus:{" "}
-                <span className="font-medium text-black/75">
-                  {gate.uiConstraintName ?? gate.constraintLabel}
-                </span>
-              </p>
               <p className="text-sm text-black/70">
                 {gate.description[0] || "Open this filter to narrow options quickly."}
               </p>

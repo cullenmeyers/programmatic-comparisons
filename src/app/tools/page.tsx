@@ -65,12 +65,6 @@ export default function ToolsIndexPage() {
                     <p className="text-sm font-semibold text-black/90">
                       {cleanTitle(gate.embedBlockTitle)}
                     </p>
-                    <p className="text-xs text-black/60">
-                      Focus:{" "}
-                      <span className="font-medium text-black/75">
-                        {gate.uiConstraintName ?? gate.constraintLabel}
-                      </span>
-                    </p>
                     <Link
                       className="text-sm text-black/80 hover:text-black hover:underline"
                       href={`/tools/${gate.categorySlug}/${gate.constraintSlug}`}

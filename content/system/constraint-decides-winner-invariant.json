@@ -1,0 +1,12 @@
+{
+  "title": "Constraint Decides Winner Invariant",
+  "type": "architecture",
+  "updated": "2026-02-27",
+  "summary": "The winner is determined by which tool fails first under the locked persona constraint.",
+  "what_this_is": "Defines the invariant decision logic across all comparisons to enforce inevitability through constraint-driven failure.",
+  "structural_problem": "Without a dominant invariant, comparisons degrade into feature lists or subjective preferences that do not scale.",
+  "rule": "Every verdict must resolve as a failure-first outcome under the locked persona constraint.",
+  "tradeoff": "Comparisons lacking inevitable failure logic are excluded.",
+  "failure_mode": "Verdicts become debatable, pages homogenize, and structural differentiation collapses.",
+  "structural_impact": "All generation, triage, gates, and tools must preserve constraint-first failure as the root decision rule."
+}

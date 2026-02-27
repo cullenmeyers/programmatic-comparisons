@@ -7,6 +7,7 @@ import { cx } from "./classnames";
 const navItems = [
   { href: "/compare", label: "Compare" },
   { href: "/tools", label: "Tools" },
+  { href: "/system", label: "System" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];

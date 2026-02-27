@@ -1,0 +1,12 @@
+{
+  "title": "Human Governance vs AI Production Boundary",
+  "type": "architecture",
+  "updated": "2026-02-27",
+  "summary": "Humans define invariants; AI operates strictly within them.",
+  "what_this_is": "Defines the permanent separation between human governance and AI execution to prevent structural drift.",
+  "structural_problem": "Without a fixed boundary, incremental edits and generation variance erode invariants.",
+  "rule": "Humans control personas, constraints, schemas, thresholds, and architectural changes; AI generates rows and pages only within those fixed definitions.",
+  "tradeoff": "Improvisation and out-of-scope optimization are disallowed.",
+  "failure_mode": "Constraint mapping diverges, schemas fragment, gates lose consistency, and determinism breaks.",
+  "structural_impact": "All evolution occurs through explicit architectural revision, never through generator behavior."
+}
