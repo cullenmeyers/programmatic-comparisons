@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "setup-tolerance",
+"constraintUiName": "Publish fast",
+"title": "Dropbox Paper vs Coda for Beginners",
+"slug": "dropbox-paper-vs-coda-for-beginner",
+"meta_description": "Dropbox Paper vs Coda for beginners who want simple collaboration without learning tables, formulas, or database blocks.",
+"persona": "Beginner",
+"constraint_lens": "You want to start writing and collaborating immediately without learning tables, formulas, or special page structures.",
+"verdict": {
+"winner": "x",
+"summary": "Dropbox Paper wins for beginners who want simple collaborative notes. It behaves like a shared document where you type and comment right away. Coda centers on table blocks, columns, and formula fields that can appear early in the workflow. If database blocks and formula fields must be understood before writing, Coda fails first.",
+"decision_rule": "If database blocks and formula fields must be understood before writing, Coda fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for immediate collaboration",
+"content": "You want to collaborate on notes without seeing formulas or structured grids. Dropbox Paper opens as a clean document with a simple toolbar. Coda documents often encourage adding tables with columns and properties, which can feel like setup before writing."
+},
+{
+"type": "x_wins",
+"heading": "Where Dropbox Paper wins",
+"bullets": [
+{
+"point": "Simple document-style editor",
+"why_it_matters": "You open a page and start typing without choosing a block type or data structure."
+},
+{
+"point": "Link-based sharing with instant editing",
+"why_it_matters": "You invite collaborators quickly without configuring workspace databases."
+},
+{
+"point": "Inline comments and mentions",
+"why_it_matters": "You can discuss directly in the text without building task tables or property columns."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Coda wins",
+"bullets": [
+{
+"point": "Table blocks with customizable columns",
+"why_it_matters": "You can structure information into rows and fields, which supports tracking but introduces visible structure."
+},
+{
+"point": "Formula fields inside tables",
+"why_it_matters": "You can calculate values automatically, though understanding formulas requires learning new concepts."
+},
+{
+"point": "Buttons and automations within pages",
+"why_it_matters": "You can trigger actions inside the doc, adding power but also complexity."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You later need structured tracking with calculated fields and filtered views.",
+"what_to_do_instead": "Switch to Coda if your notes evolve into structured project management."
+},
+{
+"tool": "y",
+"fails_when": "You hesitate because you see columns, properties, or formula cells before writing.",
+"what_to_do_instead": "Use Dropbox Paper to keep collaboration focused on text."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your collaboration quickly turns into tracking assignments or tasks with specific fields, Coda may feel helpful rather than overwhelming."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you want to start typing and sharing immediately, choose Dropbox Paper.",
+"If tables and formulas look confusing at first glance, avoid Coda.",
+"If structured tracking becomes necessary, consider Coda."
+]
+}
+],
+"faqs": [
+{
+"q": "Is Dropbox Paper easy for beginners?",
+"a": "Yes. It works like a shared document without requiring database setup."
+},
+{
+"q": "Does Coda require learning formulas?",
+"a": "Many Coda workflows involve table blocks and formula fields, which may require understanding new concepts."
+},
+{
+"q": "Which is better for simple group notes?",
+"a": "Dropbox Paper is usually better for straightforward shared writing."
+},
+{
+"q": "Can I ignore tables in Coda?",
+"a": "You can, but many templates and features are built around structured table blocks."
+}
+],
+"related_pages": [
+{ "x_name": "Notion", "y_name": "OneNote", "persona": "Beginner" },
+{ "x_name": "Roam Research", "y_name": "Bear", "persona": "Beginner" },
+{ "x_name": "Evernote", "y_name": "Apple Notes", "persona": "Beginner" },
+{ "x_name": "Logseq", "y_name": "Apple Notes", "persona": "Beginner" },
+{ "x_name": "Craft", "y_name": "Google Docs", "persona": "Beginner" },
+{ "x_name": "RemNote", "y_name": "Google Keep", "persona": "Beginner" }
+]
+}

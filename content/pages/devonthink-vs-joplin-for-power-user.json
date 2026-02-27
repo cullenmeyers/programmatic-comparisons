@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "ceiling-check",
+"constraintUiName": "Grows with you",
+"title": "DEVONthink vs Joplin for Power users",
+"slug": "devonthink-vs-joplin-for-power-user",
+"meta_description": "DEVONthink vs Joplin for power users managing massive research archives with deep indexing and automation control.",
+"persona": "Power user",
+"constraint_lens": "You need a research system that scales in indexing depth, automation rules, and database control without hitting limits.",
+"verdict": {
+"winner": "x",
+"summary": "DEVONthink wins for power users managing large research archives. It provides deep indexing, rule-based automation, and smart groups that operate at the database level. Joplin supports notebooks and plugins, but its indexing and automation are more limited. If database indexing and rule-based automation are constrained, Joplin fails first.",
+"decision_rule": "If database indexing and rule-based automation are constrained, Joplin fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for massive research control",
+"content": "You maintain a large research archive and expect fine control over how content is indexed and organized. DEVONthink operates as a database with built-in indexing, smart rules, and classification tools. Joplin centers on Markdown notes inside notebooks with lighter automation features."
+},
+{
+"type": "x_wins",
+"heading": "Where DEVONthink wins",
+"bullets": [
+{
+"point": "Database-level indexing of PDFs, emails, and files",
+"why_it_matters": "You can import large collections and search inside documents. This supports research at scale rather than just note text."
+},
+{
+"point": "Rule-based automation for filing and tagging",
+"why_it_matters": "You can define rules that move or tag documents automatically. This reduces manual sorting in a large archive."
+},
+{
+"point": "Smart groups built from search queries",
+"why_it_matters": "You create dynamic collections that update based on criteria. This allows flexible research views without duplicating files."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Joplin wins",
+"bullets": [
+{
+"point": "Open Markdown files with optional end-to-end encryption",
+"why_it_matters": "You keep notes in a portable format and can encrypt them for privacy."
+},
+{
+"point": "Notebook and tag organization",
+"why_it_matters": "You can group notes in folders and apply tags without complex database setup."
+},
+{
+"point": "Plugin system for added features",
+"why_it_matters": "You can extend functionality, though deeper database automation remains limited."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You want a lightweight Markdown notebook without database-style complexity.",
+"what_to_do_instead": "Use Joplin for simpler note collections without heavy indexing."
+},
+{
+"tool": "y",
+"fails_when": "You need automated filing, advanced indexing inside large document sets, or dynamic smart groups.",
+"what_to_do_instead": "Switch to DEVONthink for deeper database control."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your archive consists mostly of simple text notes rather than large document collections, Joplin may feel sufficient and lighter."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you manage thousands of research files, choose DEVONthink.",
+"If indexing and rule automation matter most, avoid limited notebook systems.",
+"If you only need structured Markdown notes, consider Joplin."
+]
+}
+],
+"faqs": [
+{
+"q": "Is DEVONthink better for research archives?",
+"a": "Yes. It supports deep indexing and rule-based automation suited for large databases."
+},
+{
+"q": "Can Joplin handle large note collections?",
+"a": "It can handle many notes, but lacks advanced database-style automation."
+},
+{
+"q": "Does Joplin support plugins?",
+"a": "Yes, but plugin capabilities do not replace full database-level indexing."
+},
+{
+"q": "Which has the higher ceiling for research management?",
+"a": "DEVONthink generally has the higher ceiling due to its indexing and rule engine."
+}
+],
+"related_pages": [
+{ "x_name": "TiddlyWiki", "y_name": "Standard Notes", "persona": "Power user" },
+{ "x_name": "Obsidian", "y_name": "Notebooks (Alfons Schmid)", "persona": "Power user" },
+{ "x_name": "Obsidian", "y_name": "Logseq", "persona": "Power user" },
+{ "x_name": "Roam Research", "y_name": "Obsidian", "persona": "Power user" },
+{ "x_name": "Notion", "y_name": "Obsidian", "persona": "Power user" },
+{ "x_name": "Logseq", "y_name": "Notion", "persona": "Power user" }
+]
+}

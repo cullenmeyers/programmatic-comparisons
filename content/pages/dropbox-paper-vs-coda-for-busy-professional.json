@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "time-scarcity",
+"constraintUiName": "Fast to use daily",
+"title": "Dropbox Paper vs Coda for Busy professionals",
+"slug": "dropbox-paper-vs-coda-for-busy-professional",
+"meta_description": "Dropbox Paper vs Coda for busy professionals who need fast collaboration without setting up tables or database blocks.",
+"persona": "Busy professional",
+"constraint_lens": "You need to share project notes quickly without building tables, properties, or mini-databases first.",
+"verdict": {
+"winner": "x",
+"summary": "Dropbox Paper wins for busy professionals who want immediate collaboration. It opens as a shared document where teammates can type and comment right away. Coda often centers on table blocks and structured pages that invite setup before collaboration. If database blocks and table setup slow immediate collaboration, Coda fails first.",
+"decision_rule": "If database blocks and table setup slow immediate collaboration, Coda fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for fast team notes",
+"content": "You need collaborative notes without building mini-databases. Dropbox Paper behaves like a lightweight shared document tied to a link. Coda documents frequently include tables with columns and properties that require upfront structure."
+},
+{
+"type": "x_wins",
+"heading": "Where Dropbox Paper wins",
+"bullets": [
+{
+"point": "Instant document sharing through link or invite",
+"why_it_matters": "You create a doc and teammates can edit immediately without configuring a workspace layout."
+},
+{
+"point": "Simple document editor without required table blocks",
+"why_it_matters": "You start typing meeting or project notes without defining rows, columns, or properties."
+},
+{
+"point": "Inline comments and mentions",
+"why_it_matters": "You can tag teammates and discuss directly in the doc without building a tracking table."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Coda wins",
+"bullets": [
+{
+"point": "Table blocks with sortable and filterable columns",
+"why_it_matters": "You can structure project data into rows with clear fields. This supports tracking, but requires initial setup."
+},
+{
+"point": "Formula fields inside tables",
+"why_it_matters": "You can automate calculations and status updates, which adds spreadsheet-like elements to the page."
+},
+{
+"point": "Buttons and automations within documents",
+"why_it_matters": "You can trigger actions such as updating fields. For quick note sharing, these controls may feel unnecessary."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You need structured tracking with calculated fields and filtered views.",
+"what_to_do_instead": "Use Coda when the project requires database-style management."
+},
+{
+"tool": "y",
+"fails_when": "You spend time defining columns or properties before teammates can start typing.",
+"what_to_do_instead": "Switch to Dropbox Paper for immediate shared writing."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your team relies on structured project dashboards with calculated fields and status tracking, Coda may justify the setup time."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you need instant shared notes, choose Dropbox Paper.",
+"If table setup slows the team, avoid Coda for quick collaboration.",
+"If structured tracking outweighs speed, consider Coda."
+]
+}
+],
+"faqs": [
+{
+"q": "Is Dropbox Paper enough for project notes?",
+"a": "Yes. It supports shared editing and comments without requiring structured tables."
+},
+{
+"q": "Does Coda require table setup?",
+"a": "Many workflows in Coda rely on table blocks with defined columns and properties."
+},
+{
+"q": "Which is faster for immediate collaboration?",
+"a": "Dropbox Paper is generally faster because it focuses on simple document sharing."
+},
+{
+"q": "When is Coda better?",
+"a": "Coda is better when you need structured data tracking and automation inside the document."
+}
+],
+"related_pages": [
+{ "x_name": "Craft", "y_name": "Apple Notes", "persona": "Busy professional" },
+{ "x_name": "Standard Notes", "y_name": "Google Keep", "persona": "Busy professional" },
+{ "x_name": "Notion", "y_name": "Google Keep", "persona": "Busy professional" },
+{ "x_name": "Roam Research", "y_name": "Google Keep", "persona": "Busy professional" },
+{ "x_name": "Obsidian", "y_name": "Google Keep", "persona": "Busy professional" },
+{ "x_name": "Notion", "y_name": "Google Docs", "persona": "Busy professional" }
+]
+}

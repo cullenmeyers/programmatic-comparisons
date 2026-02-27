@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
+"title": "RemNote vs Logseq for Students",
+"slug": "remnote-vs-logseq-for-student",
+"meta_description": "RemNote vs Logseq for students who want linked notes and flashcards without managing local files or graph setup.",
+"persona": "Student",
+"constraint_lens": "You want to connect notes to flashcards for one semester without managing folders, file paths, or system setup.",
+"verdict": {
+"winner": "x",
+"summary": "RemNote wins for students who want linked notes and built-in flashcards without technical setup. It combines note blocks and spaced repetition in one hosted system. Logseq stores notes as local files and requires setting up a graph folder before studying. If local file setup and graph configuration are required before studying, Logseq fails first.",
+"decision_rule": "If local file setup and graph configuration are required before studying, Logseq fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for quick study systems",
+"content": "You want to connect notes directly to flashcards but do not want to manage local file structures. RemNote runs as a web-based system where notes and flashcards are linked automatically. Logseq requires choosing a local folder and understanding its graph-based setup before you start."
+},
+{
+"type": "x_wins",
+"heading": "Where RemNote wins",
+"bullets": [
+{
+"point": "Built-in spaced repetition tied to note blocks",
+"why_it_matters": "You turn a line into a flashcard directly inside your notes without installing extensions."
+},
+{
+"point": "Hosted account with automatic sync",
+"why_it_matters": "You log in and study across devices without configuring folders or sync tools."
+},
+{
+"point": "Automatic linking between concepts",
+"why_it_matters": "You connect ideas using references without manually configuring a graph folder."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Logseq wins",
+"bullets": [
+{
+"point": "Local Markdown files in a chosen graph folder",
+"why_it_matters": "You fully control your files and can access them outside the app."
+},
+{
+"point": "Backlinks and block references across notes",
+"why_it_matters": "You can build a connected knowledge graph for long-term study."
+},
+{
+"point": "Plugin support for spaced repetition",
+"why_it_matters": "You can add flashcard features, but this requires installation and setup."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You want full local file ownership and deep plugin customization.",
+"what_to_do_instead": "Choose Logseq if long-term control matters more than quick setup."
+},
+{
+"tool": "y",
+"fails_when": "You must create a local graph folder and configure flashcard plugins before studying.",
+"what_to_do_instead": "Use RemNote to start linking notes and reviewing immediately."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you plan to build a long-term personal knowledge graph across multiple semesters and are comfortable managing local files, Logseq may offer more control."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you want flashcards built into notes immediately, choose RemNote.",
+"If local file setup feels like extra work for one semester, avoid Logseq.",
+"If long-term file control outweighs convenience, consider Logseq."
+]
+}
+],
+"faqs": [
+{
+"q": "Does RemNote include flashcards by default?",
+"a": "Yes. Flashcards are integrated directly into its note blocks."
+},
+{
+"q": "Does Logseq support spaced repetition?",
+"a": "Yes, but it often requires plugins and local configuration."
+},
+{
+"q": "Which is easier to start using for one semester?",
+"a": "RemNote is generally easier because it does not require managing a local graph folder."
+},
+{
+"q": "Which has more local control?",
+"a": "Logseq provides full control over local Markdown files."
+}
+],
+"related_pages": [
+{ "x_name": "Roam Research", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Notion", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Obsidian", "y_name": "Apple Notes", "persona": "Student" },
+{ "x_name": "Logseq", "y_name": "Apple Notes", "persona": "Student" },
+{ "x_name": "Dropbox Paper", "y_name": "Notion", "persona": "Student" },
+{ "x_name": "Craft", "y_name": "Google Docs", "persona": "Student" }
+]
+}

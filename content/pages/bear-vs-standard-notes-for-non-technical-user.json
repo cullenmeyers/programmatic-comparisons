@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "fear-of-breaking",
+"constraintUiName": "Hard to mess up",
+"title": "Bear vs Standard Notes for Non-technical users",
+"slug": "bear-vs-standard-notes-for-non-technical-user",
+"meta_description": "Bear vs Standard Notes for non-technical users who want private writing without configuring encryption or extensions.",
+"persona": "Non-technical user",
+"constraint_lens": "You want private notes that feel safe without configuring encryption settings or choosing special note types.",
+"verdict": {
+"winner": "x",
+"summary": "Bear wins for non-technical users who want private writing without security complexity. It allows locking notes with a simple device passcode or Face ID and keeps most security details out of sight. Standard Notes emphasizes encrypted editors and extension-based features that can require configuration. If encrypted note types and extension options require configuration, Standard Notes fails first.",
+"decision_rule": "If encrypted note types and extension options require configuration, Standard Notes fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for low-stress privacy",
+"content": "You want personal writing to feel safe but do not want to manage security modes. Bear offers a simple lock note option tied to your device security. Standard Notes highlights encryption, editor choices, and extension settings that can feel like something you must understand."
+},
+{
+"type": "x_wins",
+"heading": "Where Bear wins",
+"bullets": [
+{
+"point": "Lock note feature using device passcode or Face ID",
+"why_it_matters": "You protect a note with familiar device security without learning new encryption terms."
+},
+{
+"point": "Minimal settings panel",
+"why_it_matters": "Most features work out of the box without selecting different editor types."
+},
+{
+"point": "Simple Markdown-based writing interface",
+"why_it_matters": "You focus on text without navigating security or extension menus."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Standard Notes wins",
+"bullets": [
+{
+"point": "End-to-end encryption by default",
+"why_it_matters": "Notes are encrypted automatically, offering strong privacy for sensitive content."
+},
+{
+"point": "Optional encrypted editors and extensions",
+"why_it_matters": "You can add rich text or task editors, though this requires enabling extensions."
+},
+{
+"point": "Cross-device sync through account login",
+"why_it_matters": "Notes sync securely across devices without manual file handling."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You need advanced encryption controls or zero-knowledge security guarantees.",
+"what_to_do_instead": "Use Standard Notes if maximum encryption transparency matters."
+},
+{
+"tool": "y",
+"fails_when": "You feel unsure about enabling encrypted editors or installing extensions.",
+"what_to_do_instead": "Use Bear for straightforward privacy without extra configuration."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you become comfortable with encryption concepts and want visible security guarantees, Standard Notes may feel more reassuring."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you want privacy without security menus, choose Bear.",
+"If encryption modes look intimidating, avoid Standard Notes.",
+"If detailed encryption control matters most, consider Standard Notes."
+]
+}
+],
+"faqs": [
+{
+"q": "Is Bear secure enough for personal notes?",
+"a": "It supports locking notes with device security and keeps advanced security settings minimal."
+},
+{
+"q": "Does Standard Notes require configuration?",
+"a": "Some features, such as additional editors, require enabling extensions."
+},
+{
+"q": "Which feels simpler day to day?",
+"a": "Bear generally feels simpler because it shows fewer security options."
+},
+{
+"q": "Which offers stronger visible encryption?",
+"a": "Standard Notes emphasizes end-to-end encryption and security-focused design."
+}
+],
+"related_pages": [
+{ "x_name": "Logseq", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Standard Notes", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Evernote", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Obsidian", "y_name": "Evernote", "persona": "Non-technical user" },
+{ "x_name": "Milanote", "y_name": "Google Keep", "persona": "Non-technical user" },
+{ "x_name": "Notesnook", "y_name": "Apple Notes", "persona": "Non-technical user" }
+]
+}

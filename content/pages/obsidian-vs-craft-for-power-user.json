@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "ceiling-check",
+"constraintUiName": "Grows with you",
+"title": "Obsidian vs Craft for Power users",
+"slug": "obsidian-vs-craft-for-power-user",
+"meta_description": "Obsidian vs Craft for power users who want local file control, extensibility, and long-term second brain flexibility.",
+"persona": "Power user",
+"constraint_lens": "You want full control over your files and the freedom to extend your system without platform limits.",
+"verdict": {
+"winner": "x",
+"summary": "Obsidian wins for power users building an extensible second brain. It stores notes as local Markdown files and supports a large community plugin ecosystem. Craft runs as a hosted workspace with block-based documents and export limitations tied to its model. If block-level structure and export flexibility are constrained by a hosted model, Craft fails first.",
+"decision_rule": "If block-level structure and export flexibility are constrained by a hosted model, Craft fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for long-term extensibility",
+"content": "You want full control over local files and extensibility as your knowledge base grows. Obsidian stores everything in a vault folder you manage directly. Craft organizes notes inside a hosted workspace where structure and exports follow its block model."
+},
+{
+"type": "x_wins",
+"heading": "Where Obsidian wins",
+"bullets": [
+{
+"point": "Local Markdown files stored in a vault",
+"why_it_matters": "You can open, edit, or back up notes outside the app without converting formats."
+},
+{
+"point": "Extensive community plugin ecosystem",
+"why_it_matters": "You can install plugins for tasks, spaced repetition, dashboards, and custom queries, expanding system behavior."
+},
+{
+"point": "Backlinks and graph view across the vault",
+"why_it_matters": "You can build a networked knowledge map that scales beyond folder hierarchies."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Craft wins",
+"bullets": [
+{
+"point": "Polished block-based document editor",
+"why_it_matters": "You can create visually structured pages with styled blocks and sections."
+},
+{
+"point": "Built-in sharing and collaboration",
+"why_it_matters": "You can share documents via link without configuring sync tools."
+},
+{
+"point": "Integrated cross-device sync",
+"why_it_matters": "Your notes update automatically through the hosted account system."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You want a polished collaborative editor without managing plugins or local files.",
+"what_to_do_instead": "Use Craft if you prioritize presentation and built-in sharing."
+},
+{
+"tool": "y",
+"fails_when": "You need raw file access, deep automation, or export flexibility beyond the block format.",
+"what_to_do_instead": "Switch to Obsidian for local control and extensibility."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If collaboration and presentation matter more than local ownership and plugin extensibility, Craft may feel more practical despite its hosted limits."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you want full local file control, choose Obsidian.",
+"If hosted block structure feels limiting, avoid Craft.",
+"If collaboration and polish matter more than extensibility, consider Craft."
+]
+}
+],
+"faqs": [
+{
+"q": "Does Obsidian store notes locally?",
+"a": "Yes. Notes are saved as Markdown files in a folder you control."
+},
+{
+"q": "Is Craft fully file-based?",
+"a": "No. It operates as a hosted workspace with export options tied to its block model."
+},
+{
+"q": "Which has the higher extensibility ceiling?",
+"a": "Obsidian generally has the higher ceiling due to plugins and direct file access."
+},
+{
+"q": "Which is better for collaboration?",
+"a": "Craft is better for built-in sharing and collaborative editing."
+}
+],
+"related_pages": [
+{ "x_name": "TiddlyWiki", "y_name": "Standard Notes", "persona": "Power user" },
+{ "x_name": "DEVONthink", "y_name": "Joplin", "persona": "Power user" },
+{ "x_name": "Obsidian", "y_name": "Notebooks (Alfons Schmid)", "persona": "Power user" },
+{ "x_name": "Obsidian", "y_name": "Logseq", "persona": "Power user" },
+{ "x_name": "Roam Research", "y_name": "Obsidian", "persona": "Power user" },
+{ "x_name": "Notion", "y_name": "Obsidian", "persona": "Power user" }
+]
+}

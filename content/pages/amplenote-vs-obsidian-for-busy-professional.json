@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "time-scarcity",
+"constraintUiName": "Fast to use daily",
+"title": "Amplenote vs Obsidian for Busy professionals",
+"slug": "amplenote-vs-obsidian-for-busy-professional",
+"meta_description": "Amplenote vs Obsidian for busy professionals who want notes and tasks together without installing or configuring plugins.",
+"persona": "Busy professional",
+"constraint_lens": "You need notes and tasks connected in one place without installing or wiring together plugins after work.",
+"verdict": {
+"winner": "x",
+"summary": "Amplenote wins for busy professionals who want tasks tied directly to notes without extra setup. It includes built-in task management with due dates and priority views inside the same app. Obsidian can handle tasks, but often requires installing and configuring community plugins to match that workflow. If task integration requires installing and configuring community plugins before it works smoothly, Obsidian fails first.",
+"decision_rule": "If task integration requires installing and configuring community plugins before it works smoothly, Obsidian fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for built-in notes and tasks",
+"content": "You need notes and tasks in one place and do not want to assemble the system yourself. Amplenote combines note pages with task lists that can be filtered by date and priority. Obsidian focuses on Markdown notes and relies on plugins to create advanced task dashboards."
+},
+{
+"type": "x_wins",
+"heading": "Where Amplenote wins",
+"bullets": [
+{
+"point": "Native task system inside notes",
+"why_it_matters": "You can create tasks with due dates directly in a note without installing extensions."
+},
+{
+"point": "Global task view sorted by priority and date",
+"why_it_matters": "All tasks appear in one consolidated list automatically, reducing the need to build custom queries."
+},
+{
+"point": "Calendar integration for scheduling tasks",
+"why_it_matters": "You can see tasks on a calendar without configuring plugins or scripts."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Obsidian wins",
+"bullets": [
+{
+"point": "Local Markdown files stored in a vault",
+"why_it_matters": "Your notes live as portable text files under your control."
+},
+{
+"point": "Community plugins for task queries and dashboards",
+"why_it_matters": "You can install task plugins to generate filtered lists and custom views, but this requires setup."
+},
+{
+"point": "Backlinks between notes and projects",
+"why_it_matters": "You can link tasks conceptually across notes, supporting deep knowledge systems."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You want full control over files and prefer building your own workflow from modular pieces.",
+"what_to_do_instead": "Choose Obsidian if you are willing to configure plugins for custom task systems."
+},
+{
+"tool": "y",
+"fails_when": "You must install and configure task plugins before you can see a unified task list.",
+"what_to_do_instead": "Use Amplenote for immediate built-in task integration."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you enjoy customizing your own workflow and do not mind setting up task plugins once, Obsidian may offer more long-term flexibility."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you want tasks and notes working together immediately, choose Amplenote.",
+"If plugin setup feels like extra work after hours, avoid Obsidian for task management.",
+"If maximum customization matters more than speed, consider Obsidian."
+]
+}
+],
+"faqs": [
+{
+"q": "Does Obsidian support tasks natively?",
+"a": "It supports basic checkboxes, but advanced task views usually require community plugins."
+},
+{
+"q": "Can Amplenote replace a task manager?",
+"a": "It includes built-in task views and scheduling, which may be enough for many workflows."
+},
+{
+"q": "Is Obsidian more flexible long term?",
+"a": "Yes, especially if you are willing to configure plugins and custom queries."
+},
+{
+"q": "Which is faster to set up for combined notes and tasks?",
+"a": "Amplenote is generally faster because task features are built in."
+}
+],
+"related_pages": [
+{ "x_name": "Craft", "y_name": "Apple Notes", "persona": "Busy professional" },
+{ "x_name": "Standard Notes", "y_name": "Google Keep", "persona": "Busy professional" },
+{ "x_name": "Notion", "y_name": "Google Keep", "persona": "Busy professional" },
+{ "x_name": "Roam Research", "y_name": "Google Keep", "persona": "Busy professional" },
+{ "x_name": "Obsidian", "y_name": "Google Keep", "persona": "Busy professional" },
+{ "x_name": "Dropbox Paper", "y_name": "Coda", "persona": "Busy professional" }
+]
+}
