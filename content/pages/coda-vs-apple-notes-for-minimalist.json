@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "Coda vs Apple Notes for Minimalists",
+"slug": "coda-vs-apple-notes-for-minimalist",
+"meta_description": "Coda vs Apple Notes for minimalists who want calm writing without tables, formulas, or database-style pages.",
+"persona": "Minimalist",
+"constraint_lens": "You want a calm writing space without tables, formulas, or spreadsheet-style layouts appearing by default.",
+"verdict": {
+"winner": "y",
+"summary": "Apple Notes wins for minimalists who just want to write personal notes. It opens to a plain document with basic formatting and folders. Coda centers on tables, formulas, and interactive blocks that resemble spreadsheets. If tables, formulas, and database blocks appear as the default writing model, Coda fails first.",
+"decision_rule": "If tables, formulas, and database blocks appear as the default writing model, Coda fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for calm, text-first writing",
+"content": "You want straightforward personal notes without pages that look like tools for project tracking. Apple Notes focuses on text with simple lists and headings. Coda documents often mix text with tables and interactive elements that resemble spreadsheets."
+},
+{
+"type": "x_wins",
+"heading": "Where Coda wins",
+"bullets": [
+{
+"point": "Table blocks with sortable columns and filters",
+"why_it_matters": "You can manage structured data directly inside a page. This is powerful, but it shifts the focus from writing to managing rows and columns."
+},
+{
+"point": "Formula support inside tables",
+"why_it_matters": "You can calculate values and automate fields. Seeing formula cells can make a note feel like a spreadsheet rather than a journal."
+},
+{
+"point": "Interactive buttons and automations",
+"why_it_matters": "You can trigger actions inside a document. For simple personal notes, these controls add visual noise."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Apple Notes wins",
+"bullets": [
+{
+"point": "Plain document editor with minimal visible controls",
+"why_it_matters": "You open a note and type without seeing database blocks or calculation fields."
+},
+{
+"point": "Simple folder structure for organization",
+"why_it_matters": "You group notes by topic without building tables or properties."
+},
+{
+"point": "Optional checklists and headings without structural change",
+"why_it_matters": "You can add light structure while keeping the page text-focused."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You feel distracted or overwhelmed by tables, columns, and formula options inside a note.",
+"what_to_do_instead": "Use Apple Notes to keep pages text-based and simple."
+},
+{
+"tool": "y",
+"fails_when": "You later want to track structured information with sortable fields.",
+"what_to_do_instead": "Switch to Coda when table-driven organization becomes necessary."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your notes evolve into tracking habits, projects, or structured data, Coda may feel helpful rather than overwhelming."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you want calm, text-only pages, choose Apple Notes.",
+"If spreadsheet-style tables make you uneasy, avoid Coda.",
+"If structured tracking becomes central, consider Coda."
+]
+}
+],
+"faqs": [
+{
+"q": "Is Coda mainly for databases?",
+"a": "It centers around tables and interactive blocks, which makes it feel similar to a spreadsheet."
+},
+{
+"q": "Can Apple Notes handle simple lists?",
+"a": "Yes. It supports checklists and headings without changing the page into a data grid."
+},
+{
+"q": "Does Coda work for plain writing?",
+"a": "Yes, but its interface encourages mixing text with tables and interactive elements."
+},
+{
+"q": "Which feels calmer for daily journaling?",
+"a": "Apple Notes usually feels calmer because it stays focused on text."
+}
+],
+"related_pages": [
+{ "x_name": "Evernote", "y_name": "Bear", "persona": "Minimalist" },
+{ "x_name": "Notion", "y_name": "Bear", "persona": "Minimalist" },
+{ "x_name": "Roam Research", "y_name": "Bear", "persona": "Minimalist" },
+{ "x_name": "Obsidian", "y_name": "Apple Notes", "persona": "Minimalist" },
+{ "x_name": "Craft", "y_name": "UpNote", "persona": "Minimalist" },
+{ "x_name": "RemNote", "y_name": "UpNote", "persona": "Minimalist" }
+]
+}

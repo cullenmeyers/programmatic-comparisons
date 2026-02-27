@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "ceiling-check",
+"constraintUiName": "Grows with you",
+"title": "TiddlyWiki vs Standard Notes for Power users",
+"slug": "tiddlywiki-vs-standard-notes-for-power-user",
+"meta_description": "TiddlyWiki vs Standard Notes for power users building a portable, highly customizable knowledge archive in one file.",
+"persona": "Power user",
+"constraint_lens": "You want a system that scales in customization, structure, and control without hitting hard limits.",
+"verdict": {
+"winner": "x",
+"summary": "TiddlyWiki wins for power users who want a self-contained and deeply customizable knowledge archive. It runs as a single HTML file that stores content, structure, and custom behavior together. Standard Notes supports extensions, but customization is constrained by its editor and extension model. If extension-based customization is structurally limited, Standard Notes fails first.",
+"decision_rule": "If extension-based customization is structurally limited, Standard Notes fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for maximum control and portability",
+"content": "You want one portable file that contains your entire system. TiddlyWiki stores notes, layout, and custom logic inside a single HTML file you can move anywhere. Standard Notes separates notes from extensions and depends on its app framework for behavior."
+},
+{
+"type": "x_wins",
+"heading": "Where TiddlyWiki wins",
+"bullets": [
+{
+"point": "Single self-contained HTML file",
+"why_it_matters": "All notes and customizations live in one portable file. You can copy or back it up without exporting multiple folders."
+},
+{
+"point": "Built-in scripting and macro system",
+"why_it_matters": "You can create custom views, templates, and behaviors directly inside the wiki. This allows structural changes beyond simple editor extensions."
+},
+{
+"point": "Tag-based linking and transclusion",
+"why_it_matters": "You can embed one note inside another and build dynamic pages. This supports complex knowledge structures."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Standard Notes wins",
+"bullets": [
+{
+"point": "End-to-end encrypted notes by default",
+"why_it_matters": "Your archive is protected without building custom security layers."
+},
+{
+"point": "Extension system for editors and features",
+"why_it_matters": "You can add editors like rich text or markdown, but the system remains inside defined extension boundaries."
+},
+{
+"point": "Cross-device sync through an account",
+"why_it_matters": "Notes sync automatically without managing files manually."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You prefer a polished app with automatic syncing and minimal manual file handling.",
+"what_to_do_instead": "Use Standard Notes if you want encryption and account-based sync without managing a file."
+},
+{
+"tool": "y",
+"fails_when": "You want to redesign the system itself or embed custom logic beyond available extensions.",
+"what_to_do_instead": "Switch to TiddlyWiki for full structural control."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If security and automatic sync matter more than structural freedom, Standard Notes may feel more practical despite its limits."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you want one portable file with deep customization, choose TiddlyWiki.",
+"If you prefer encrypted notes with built-in sync, consider Standard Notes.",
+"If structural limits frustrate you, avoid extension-bound systems."
+]
+}
+],
+"faqs": [
+{
+"q": "Is TiddlyWiki really portable?",
+"a": "Yes. It can run as a single HTML file containing notes and custom logic."
+},
+{
+"q": "Can Standard Notes be customized?",
+"a": "Yes, through extensions, but changes remain within the extension framework."
+},
+{
+"q": "Which has the higher ceiling for customization?",
+"a": "TiddlyWiki generally has the higher ceiling because you can modify its structure directly."
+},
+{
+"q": "Which is easier to sync across devices?",
+"a": "Standard Notes is easier because it handles sync through its account system."
+}
+],
+"related_pages": [
+{ "x_name": "Obsidian", "y_name": "Notebooks (Alfons Schmid)", "persona": "Power user" },
+{ "x_name": "Obsidian", "y_name": "Logseq", "persona": "Power user" },
+{ "x_name": "Roam Research", "y_name": "Obsidian", "persona": "Power user" },
+{ "x_name": "Notion", "y_name": "Obsidian", "persona": "Power user" },
+{ "x_name": "Evernote", "y_name": "Obsidian", "persona": "Power user" },
+{ "x_name": "Logseq", "y_name": "Notion", "persona": "Power user" }
+]
+}

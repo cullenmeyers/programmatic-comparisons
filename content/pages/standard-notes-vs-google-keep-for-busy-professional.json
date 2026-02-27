@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "time-scarcity",
+"constraintUiName": "Fast to use daily",
+"title": "Standard Notes vs Google Keep for Busy professionals",
+"slug": "standard-notes-vs-google-keep-for-busy-professional",
+"meta_description": "Standard Notes vs Google Keep for busy professionals who need instant capture without unlocking or choosing note types first.",
+"persona": "Busy professional",
+"constraint_lens": "You need to start typing immediately without unlocking screens, choosing editors, or making decisions first.",
+"verdict": {
+"winner": "y",
+"summary": "Google Keep wins for busy professionals who jot thoughts between meetings. It opens directly to a quick note field and saves automatically as you type. Standard Notes may require unlocking with a passcode and sometimes choosing or loading an editor before writing. If unlocking or choosing note types adds friction before writing, Standard Notes fails first.",
+"decision_rule": "If unlocking or choosing note types adds friction before writing, Standard Notes fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for instant capture",
+"content": "You capture ideas quickly and will not tolerate extra steps. Google Keep is built for tap-and-type speed, especially on mobile. Standard Notes emphasizes security and editor choices, which can add seconds before your thought is recorded."
+},
+{
+"type": "x_wins",
+"heading": "Where Standard Notes wins",
+"bullets": [
+{
+"point": "End-to-end encryption with optional app passcode",
+"why_it_matters": "You can require unlocking before viewing notes. This protects data, but adds a step before writing."
+},
+{
+"point": "Multiple editor types such as plain text or rich text",
+"why_it_matters": "You can choose different note formats. Deciding or loading an editor can slow instant capture."
+},
+{
+"point": "Extension system for added features",
+"why_it_matters": "You can install extensions for tasks or formatting. More features mean more loading and configuration screens."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Google Keep wins",
+"bullets": [
+{
+"point": "One-tap quick note creation",
+"why_it_matters": "You open the app and start typing immediately without selecting a note type."
+},
+{
+"point": "Automatic saving as you type",
+"why_it_matters": "There is no save button or confirmation step, reducing hesitation."
+},
+{
+"point": "Optional labels added after capture",
+"why_it_matters": "You can organize later instead of making structure decisions up front."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You must unlock the app or wait for an editor to load before typing your thought.",
+"what_to_do_instead": "Use Google Keep to capture instantly and apply labels later."
+},
+{
+"tool": "y",
+"fails_when": "You need strong encryption and privacy controls beyond a simple Google account.",
+"what_to_do_instead": "Choose Standard Notes when security matters more than speed."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your role requires strict privacy and you accept a brief unlock step for security, Standard Notes may feel worth the extra second."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If every second counts between meetings, choose Google Keep.",
+"If unlocking the app feels like a delay, avoid Standard Notes.",
+"If encryption matters more than speed, consider Standard Notes."
+]
+}
+],
+"faqs": [
+{
+"q": "Does Standard Notes require unlocking every time?",
+"a": "It can if you enable a passcode or biometric lock, which adds a step before writing."
+},
+{
+"q": "Is Google Keep secure?",
+"a": "It relies on your Google account security rather than a separate encrypted vault."
+},
+{
+"q": "Can I organize notes quickly in Google Keep?",
+"a": "Yes. You can add labels or colors after capturing the note."
+},
+{
+"q": "Which is fastest for quick thoughts?",
+"a": "Google Keep is generally faster because it minimizes pre-writing steps."
+}
+],
+"related_pages": [
+{ "x_name": "Roam Research", "y_name": "Google Keep", "persona": "Busy professional" },
+{ "x_name": "Notion", "y_name": "Google Keep", "persona": "Busy professional" },
+{ "x_name": "Obsidian", "y_name": "Google Keep", "persona": "Busy professional" },
+{ "x_name": "Notion", "y_name": "Google Docs", "persona": "Busy professional" },
+{ "x_name": "Apple Notes", "y_name": "Google Keep", "persona": "Busy professional" },
+{ "x_name": "Craft", "y_name": "Google Docs", "persona": "Busy professional" }
+]
+}

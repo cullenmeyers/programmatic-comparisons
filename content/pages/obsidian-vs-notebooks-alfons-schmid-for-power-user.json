@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "ceiling-check",
+"constraintUiName": "Grows with you",
+"title": "Obsidian vs Notebooks (Alfons Schmid) for Power users",
+"slug": "obsidian-vs-notebooks-alfons-schmid-for-power-user",
+"meta_description": "Obsidian vs Notebooks Alfons Schmid for power users building extensible knowledge systems with plugins and graph linking.",
+"persona": "Power user",
+"constraint_lens": "You want a knowledge system that expands with plugins, deep linking, and structural control over time.",
+"verdict": {
+"winner": "x",
+"summary": "Obsidian wins for power users building an extensible personal knowledge base. It supports community plugins, graph view, and deep linking between notes. Notebooks Alfons Schmid focuses on document and folder organization with fewer workflow extensions. If plugin-driven workflows and graph-level linking are constrained, Notebooks Alfons Schmid fails first.",
+"decision_rule": "If plugin-driven workflows and graph-level linking are constrained, Notebooks (Alfons Schmid) fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for high-ceiling knowledge systems",
+"content": "You want an extensible system that evolves over time. Obsidian is built around Markdown files, backlinks, and plugins that change how the app behaves. Notebooks Alfons Schmid centers on structured folders and documents with fewer deep extension layers."
+},
+{
+"type": "x_wins",
+"heading": "Where Obsidian wins",
+"bullets": [
+{
+"point": "Extensive community plugin ecosystem",
+"why_it_matters": "You can install plugins for tasks, spaced repetition, dashboards, and custom views. This allows workflow-level customization beyond default features."
+},
+{
+"point": "Graph view with backlink indexing",
+"why_it_matters": "Every linked note becomes part of a visible network. You can explore relationships at scale rather than only through folders."
+},
+{
+"point": "Open Markdown files stored in a vault folder",
+"why_it_matters": "Your notes are portable plain text files that can integrate with scripts and external tools."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Notebooks (Alfons Schmid) wins",
+"bullets": [
+{
+"point": "Hierarchical folder and subfolder structure",
+"why_it_matters": "You organize notes in nested folders like a file system. This supports clear structure but limits network-style linking."
+},
+{
+"point": "Integrated task management within documents",
+"why_it_matters": "You can manage tasks inside notes without installing extensions."
+},
+{
+"point": "Built-in document export and formatting tools",
+"why_it_matters": "You can generate structured documents for output without external plugins."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You want a closed system with minimal tweaking and no plugin maintenance.",
+"what_to_do_instead": "Use Notebooks Alfons Schmid for a more contained document-based setup."
+},
+{
+"tool": "y",
+"fails_when": "You need graph-level linking, automation, or plugin-driven dashboards.",
+"what_to_do_instead": "Switch to Obsidian to unlock extensible workflows."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you prefer a stable document system without managing community plugins or experimenting with workflows, Notebooks Alfons Schmid may feel more controlled."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you want plugins and graph linking, choose Obsidian.",
+"If folder hierarchy is enough and you want fewer moving parts, consider Notebooks Alfons Schmid.",
+"If ceiling and extensibility matter most, avoid tools without plugin ecosystems."
+]
+}
+],
+"faqs": [
+{
+"q": "Does Obsidian require plugins to be powerful?",
+"a": "Core features are strong, but plugins unlock advanced workflows and automation."
+},
+{
+"q": "Is Notebooks Alfons Schmid extensible?",
+"a": "It supports structured documents and tasks but lacks a broad community plugin system."
+},
+{
+"q": "Which handles graph-style knowledge better?",
+"a": "Obsidian is built around backlinks and a visual graph of connections."
+},
+{
+"q": "Which has the higher ceiling?",
+"a": "Obsidian generally has the higher ceiling due to its plugin ecosystem and linking model."
+}
+],
+"related_pages": [
+{ "x_name": "Obsidian", "y_name": "Logseq", "persona": "Power user" },
+{ "x_name": "Roam Research", "y_name": "Obsidian", "persona": "Power user" },
+{ "x_name": "Notion", "y_name": "Obsidian", "persona": "Power user" },
+{ "x_name": "Evernote", "y_name": "Obsidian", "persona": "Power user" },
+{ "x_name": "Craft", "y_name": "Obsidian", "persona": "Power user" },
+{ "x_name": "Logseq", "y_name": "Notion", "persona": "Power user" }
+]
+}

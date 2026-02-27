@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
+"title": "Dropbox Paper vs Notion for Students",
+"slug": "dropbox-paper-vs-notion-for-student",
+"meta_description": "Dropbox Paper vs Notion for students who need simple semester collaboration without workspace setup or database overhead.",
+"persona": "Student",
+"constraint_lens": "You need a collaboration tool for one semester that is easy to start and easy to abandon later.",
+"verdict": {
+"winner": "x",
+"summary": "Dropbox Paper wins for short-term class collaboration. It works like a shared document where you invite classmates and start typing immediately. Notion introduces workspaces, pages, and optional databases that can require initial setup. If database structure and workspace setup outweigh short-term collaboration needs, Notion fails first.",
+"decision_rule": "If database structure and workspace setup outweigh short-term collaboration needs, Notion fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for semester-only collaboration",
+"content": "You need collaborative notes for one semester and want to leave the tool easily afterward. Dropbox Paper focuses on simple shared documents tied to a Dropbox account. Notion centers on building a workspace with nested pages and possible databases, which can feel heavier for temporary use."
+},
+{
+"type": "x_wins",
+"heading": "Where Dropbox Paper wins",
+"bullets": [
+{
+"point": "Single document sharing through direct invite or link",
+"why_it_matters": "You create a doc and invite classmates instantly without setting up a larger workspace structure."
+},
+{
+"point": "Lightweight document editor without database views",
+"why_it_matters": "Notes behave like a simple collaborative page, reducing setup time for short projects."
+},
+{
+"point": "Easy export to common formats",
+"why_it_matters": "You can download the document when the semester ends and move on without migrating a whole workspace."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Notion wins",
+"bullets": [
+{
+"point": "Workspace with nested pages",
+"why_it_matters": "You can organize multiple classes inside one structured area. This supports long-term use, but adds planning steps."
+},
+{
+"point": "Database tables with properties and filters",
+"why_it_matters": "You can track assignments with dates and status fields. Setting up these tables can outweigh short-term needs."
+},
+{
+"point": "Templates for course dashboards",
+"why_it_matters": "You can create structured layouts for classes. Choosing and customizing templates takes extra time."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You need advanced tracking like filtered assignment views or linked databases.",
+"what_to_do_instead": "Use Notion if the class requires structured tracking beyond shared notes."
+},
+{
+"tool": "y",
+"fails_when": "You spend time setting up pages and tables instead of collaborating on the document itself.",
+"what_to_do_instead": "Switch to Dropbox Paper for direct, document-focused collaboration."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you plan to reuse the workspace for multiple semesters and want one system for notes and assignment tracking, Notion may justify the initial setup time."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If the tool is only for one semester, choose Dropbox Paper.",
+"If workspace setup feels heavy for temporary use, avoid Notion.",
+"If you need assignment tracking with properties and filters, consider Notion."
+]
+}
+],
+"faqs": [
+{
+"q": "Is Dropbox Paper enough for class collaboration?",
+"a": "Yes. It supports shared editing and comments without requiring a structured workspace."
+},
+{
+"q": "Is Notion too heavy for one semester?",
+"a": "It can be if you spend time building pages and databases that you will not use long term."
+},
+{
+"q": "Can I export notes from Dropbox Paper easily?",
+"a": "Yes. Documents can be downloaded in common formats for later use."
+},
+{
+"q": "Which is easier to abandon after the class ends?",
+"a": "Dropbox Paper is easier to leave because it centers on standalone documents rather than a full workspace."
+}
+],
+"related_pages": [
+{ "x_name": "Roam Research", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Notion", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Obsidian", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Logseq", "y_name": "Apple Notes", "persona": "Student" },
+{ "x_name": "Craft", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Evernote", "y_name": "OneNote", "persona": "Student" }
+]
+}

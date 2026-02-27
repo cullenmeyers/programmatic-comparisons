@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "time-scarcity",
+"constraintUiName": "Fast to use daily",
+"title": "Craft vs Apple Notes for Busy professionals",
+"slug": "craft-vs-apple-notes-for-busy-professional",
+"meta_description": "Craft vs Apple Notes for busy professionals who need fast meeting notes without block menus or layout choices slowing capture.",
+"persona": "Busy professional",
+"constraint_lens": "You need to capture meeting notes instantly without choosing layouts, blocks, or formatting options first.",
+"verdict": {
+"winner": "y",
+"summary": "Apple Notes wins for busy professionals who need fast meeting capture. It opens to a plain note where you can start typing immediately with minimal visible controls. Craft uses block-based editing and layout options that surface formatting choices as you write. If blocks and layout choices slow fast note capture, Craft fails first.",
+"decision_rule": "If blocks and layout choices slow fast note capture, Craft fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for rapid meeting capture",
+"content": "You need fast meeting notes and will not tolerate layout decisions during capture. Apple Notes behaves like a straightforward document with simple formatting. Craft is built around blocks and styled sections that invite formatting decisions."
+},
+{
+"type": "x_wins",
+"heading": "Where Craft wins",
+"bullets": [
+{
+"point": "Block-based editor with draggable sections",
+"why_it_matters": "You can rearrange sections of a note after writing. This supports polished documents, but the visible block controls can distract during quick capture."
+},
+{
+"point": "Rich formatting and styling options",
+"why_it_matters": "You can create visually structured notes with headings and callouts. Choosing these styles during a meeting adds extra decisions."
+},
+{
+"point": "Linked pages within a workspace",
+"why_it_matters": "You can connect meeting notes to related project pages. Linking requires thinking about structure instead of just recording information."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Apple Notes wins",
+"bullets": [
+{
+"point": "Immediate blank note with standard text field",
+"why_it_matters": "You tap new note and start typing without selecting a layout or block type."
+},
+{
+"point": "Simple formatting toolbar",
+"why_it_matters": "Basic bold, lists, and headings are available without changing the structure of the note."
+},
+{
+"point": "Automatic save and sync through Apple ID",
+"why_it_matters": "Notes are stored and synced without extra setup, so you can focus only on capturing content."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You hesitate to choose block styles or rearrange sections while someone is speaking.",
+"what_to_do_instead": "Use Apple Notes to record raw points first and format later if needed."
+},
+{
+"tool": "y",
+"fails_when": "You want highly structured meeting documents with linked project pages.",
+"what_to_do_instead": "Switch to Craft when presentation and linking matter more than speed."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your workflow depends on linking every meeting note to project dashboards inside a single workspace, Craft may feel faster because everything stays connected."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you need to type immediately during meetings, choose Apple Notes.",
+"If block menus distract you, avoid Craft for live capture.",
+"If structured and linked meeting documents are essential, consider Craft."
+]
+}
+],
+"faqs": [
+{
+"q": "Is Craft slower for live meetings?",
+"a": "It can feel slower because block controls and layout options are visible as you write."
+},
+{
+"q": "Does Apple Notes support meeting formatting?",
+"a": "Yes. It supports headings, lists, and simple formatting without structural setup."
+},
+{
+"q": "Can I link notes in Apple Notes?",
+"a": "You can use folders and simple links, but it does not emphasize workspace linking like Craft."
+},
+{
+"q": "Which is best for quick note capture?",
+"a": "Apple Notes is usually faster because it minimizes layout decisions."
+}
+],
+"related_pages": [
+{ "x_name": "Notion", "y_name": "Google Keep", "persona": "Busy professional" },
+{ "x_name": "Roam Research", "y_name": "Google Keep", "persona": "Busy professional" },
+{ "x_name": "Obsidian", "y_name": "Google Keep", "persona": "Busy professional" },
+{ "x_name": "Standard Notes", "y_name": "Google Keep", "persona": "Busy professional" },
+{ "x_name": "Notion", "y_name": "Google Docs", "persona": "Busy professional" },
+{ "x_name": "Evernote", "y_name": "OneNote", "persona": "Busy professional" }
+]
+}

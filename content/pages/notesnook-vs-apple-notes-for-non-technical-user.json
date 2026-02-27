@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "fear-of-breaking",
+"constraintUiName": "Hard to mess up",
+"title": "Notesnook vs Apple Notes for Non-technical users",
+"slug": "notesnook-vs-apple-notes-for-non-technical-user",
+"meta_description": "Notesnook vs Apple Notes for non-technical users who want private notes without managing encryption, vaults, or security modes.",
+"persona": "Non-technical user",
+"constraint_lens": "You want private notes that feel secure without adjusting security modes or understanding encryption settings.",
+"verdict": {
+"winner": "y",
+"summary": "Apple Notes wins for non-technical users who want privacy without managing security features. It handles encryption in the background and lets you lock notes with Face ID or a passcode. Notesnook highlights vaults, encryption details, and security options that can create anxiety if you feel unsure about them. If encryption and vault options must be understood to feel secure, Notesnook fails first.",
+"decision_rule": "If encryption and vault options must be understood to feel secure, Notesnook fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for low-stress privacy",
+"content": "You want personal notes to feel safe without learning security terms. Apple Notes keeps encryption and syncing behind your Apple account. Notesnook emphasizes private vaults and encryption features, which can feel like something you need to configure correctly."
+},
+{
+"type": "x_wins",
+"heading": "Where Notesnook wins",
+"bullets": [
+{
+"point": "End-to-end encryption by default",
+"why_it_matters": "Notes are encrypted so only you can read them. This offers strong privacy, but the visible emphasis on encryption can make you wonder how it works."
+},
+{
+"point": "Private vault feature for locking selected notes",
+"why_it_matters": "You can move notes into a separate locked vault. Deciding what belongs in a vault adds an extra step."
+},
+{
+"point": "Dedicated security settings panel",
+"why_it_matters": "You can manage passcodes and protection features directly. More visible controls can increase fear of misconfiguring something."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Apple Notes wins",
+"bullets": [
+{
+"point": "Automatic encryption within the Apple ecosystem",
+"why_it_matters": "Security runs in the background without exposing detailed settings during daily use."
+},
+{
+"point": "Lock note option using Face ID or device passcode",
+"why_it_matters": "You protect notes with the same method you use to unlock your phone, without learning new concepts."
+},
+{
+"point": "No visible vault system to manage",
+"why_it_matters": "All notes live in the same simple structure, reducing decisions about where secure notes should go."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You feel unsure about encryption terms or whether your vault is configured correctly.",
+"what_to_do_instead": "Use Apple Notes so privacy features stay mostly invisible."
+},
+{
+"tool": "y",
+"fails_when": "You want full zero-knowledge encryption not tied to a hardware ecosystem.",
+"what_to_do_instead": "Choose Notesnook and learn its vault and encryption setup."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you become comfortable with encryption concepts and want maximum privacy control beyond a single ecosystem, Notesnook may feel more reassuring."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If security settings make you anxious, choose Apple Notes.",
+"If you want privacy without managing vaults, avoid tools that highlight encryption panels.",
+"If full encryption control matters more than simplicity, consider Notesnook."
+]
+}
+],
+"faqs": [
+{
+"q": "Is Notesnook more secure than Apple Notes?",
+"a": "Notesnook focuses on end-to-end encryption with visible security controls, while Apple Notes handles most protection behind the scenes."
+},
+{
+"q": "Do I need to manage encryption in Apple Notes?",
+"a": "No. For most users, encryption works automatically without manual configuration."
+},
+{
+"q": "What is a vault in Notesnook?",
+"a": "A vault is a separate locked area for sensitive notes, which requires deciding which notes belong there."
+},
+{
+"q": "Which feels simpler day to day?",
+"a": "Apple Notes usually feels simpler because security features are less visible."
+}
+],
+"related_pages": [
+{ "x_name": "Standard Notes", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Logseq", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Evernote", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Notion", "y_name": "Google Keep", "persona": "Non-technical user" },
+{ "x_name": "OneNote", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Craft", "y_name": "Apple Notes", "persona": "Non-technical user" }
+]
+}

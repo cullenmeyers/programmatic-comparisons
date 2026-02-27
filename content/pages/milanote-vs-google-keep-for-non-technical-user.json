@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "fear-of-breaking",
+"constraintUiName": "Hard to mess up",
+"title": "Milanote vs Google Keep for Non-technical users",
+"slug": "milanote-vs-google-keep-for-non-technical-user",
+"meta_description": "Milanote vs Google Keep for non-technical users who want to capture ideas without worrying about arranging boards or layouts.",
+"persona": "Non-technical user",
+"constraint_lens": "You want to jot ideas without worrying that you are arranging them the wrong way.",
+"verdict": {
+"winner": "y",
+"summary": "Google Keep wins for non-technical users who want safe, simple idea capture. It opens to a straightforward note field without layout decisions. Milanote is built around boards where you drag cards, images, and columns into place. If spatial arrangement choices create uncertainty about the right way to organize, Milanote fails first.",
+"decision_rule": "If spatial arrangement choices create uncertainty about the “right” way to organize, Milanote fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for low-pressure idea capture",
+"content": "You want to jot ideas but feel unsure when there are many ways to arrange things. Google Keep presents a simple list of notes with optional labels. Milanote opens into a visual board where items can be dragged anywhere, which may create doubt about placement."
+},
+{
+"type": "x_wins",
+"heading": "Where Milanote wins",
+"bullets": [
+{
+"point": "Drag-and-drop visual boards",
+"why_it_matters": "You can place notes, images, and links freely on a canvas. This supports creative layouts, but invites constant rearranging."
+},
+{
+"point": "Columns and nested boards",
+"why_it_matters": "You can build structured boards with grouped sections. Deciding how many columns or boards to create adds planning steps."
+},
+{
+"point": "Mixed media support on the same canvas",
+"why_it_matters": "You can combine text, images, and links visually. This is useful for creative projects, though unnecessary for simple idea capture."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Google Keep wins",
+"bullets": [
+{
+"point": "Simple list-style notes by default",
+"why_it_matters": "You create a note and it appears in a clear grid or list without arranging it manually."
+},
+{
+"point": "One-tap note creation",
+"why_it_matters": "You start typing immediately without choosing a board or layout."
+},
+{
+"point": "Optional labels and colors applied after writing",
+"why_it_matters": "You can organize later instead of worrying about structure while capturing the idea."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You hesitate because you are unsure where to place a new card on the board.",
+"what_to_do_instead": "Use Google Keep to capture the idea first and keep organization minimal."
+},
+{
+"tool": "y",
+"fails_when": "You need a visual planning board for creative projects with images and links.",
+"what_to_do_instead": "Switch to Milanote when spatial layout becomes useful."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you enjoy arranging ideas visually and feel motivated by moving cards around a board, Milanote may feel intuitive rather than uncertain."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you want to jot ideas without layout decisions, choose Google Keep.",
+"If arranging items on a board makes you second-guess yourself, avoid Milanote.",
+"If visual planning matters more than simplicity, consider Milanote."
+]
+}
+],
+"faqs": [
+{
+"q": "Is Milanote difficult for non-technical users?",
+"a": "It is visual and flexible, but the freedom to arrange items can feel overwhelming."
+},
+{
+"q": "Does Google Keep limit organization?",
+"a": "It keeps organization simple with labels and colors rather than board layouts."
+},
+{
+"q": "Can Milanote be used just for text notes?",
+"a": "Yes, but its main design encourages visual board arrangement."
+},
+{
+"q": "Which feels safer for quick ideas?",
+"a": "Google Keep usually feels safer because it avoids layout choices during capture."
+}
+],
+"related_pages": [
+{ "x_name": "Logseq", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Standard Notes", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Evernote", "y_name": "Apple Notes", "persona": "Non-technical user" },
+{ "x_name": "Obsidian", "y_name": "Evernote", "persona": "Non-technical user" },
+{ "x_name": "Notion", "y_name": "Google Keep", "persona": "Non-technical user" },
+{ "x_name": "Craft", "y_name": "Apple Notes", "persona": "Non-technical user" }
+]
+}
