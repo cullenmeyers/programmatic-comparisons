@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
+"title": "RemNote vs Obsidian for Students",
+"slug": "remnote-vs-obsidian-for-student",
+"meta_description": "RemNote vs Obsidian for students who want flashcard-linked notes without installing plugins or configuring study workflows.",
+"persona": "Student",
+"constraint_lens": "You want to link notes to flashcards for one semester without installing plugins or building custom workflows.",
+"verdict": {
+"winner": "x",
+"summary": "RemNote wins for students who study with flashcards and want everything built in. It connects note blocks directly to spaced repetition without extra setup. Obsidian can support flashcards, but usually through community plugins and manual configuration. If flashcard workflows require plugin configuration before use, Obsidian fails first.",
+"decision_rule": "If flashcard workflows require plugin configuration before use, Obsidian fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for built-in study workflows",
+"content": "You study with flashcards and refuse to install plugins to make notes useful. RemNote turns lines of text into question and answer prompts inside the same interface. Obsidian focuses on Markdown notes and depends on plugins to create advanced flashcard systems."
+},
+{
+"type": "x_wins",
+"heading": "Where RemNote wins",
+"bullets": [
+{
+"point": "Native flashcard creation inside notes",
+"why_it_matters": "You convert a sentence into a study prompt without installing extensions."
+},
+{
+"point": "Built-in spaced repetition queue",
+"why_it_matters": "Due cards appear automatically in a review view without building custom queries."
+},
+{
+"point": "Automatic concept linking",
+"why_it_matters": "You connect related notes through references without configuring extra tools."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Obsidian wins",
+"bullets": [
+{
+"point": "Local Markdown file storage",
+"why_it_matters": "You keep full control over your files for long-term use beyond one semester."
+},
+{
+"point": "Community plugin ecosystem",
+"why_it_matters": "You can install flashcard plugins and customize workflows, though this requires setup."
+},
+{
+"point": "Graph view across all notes",
+"why_it_matters": "You visualize connections between topics, supporting broader knowledge building."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You want full control over local files and advanced customization beyond built-in study features.",
+"what_to_do_instead": "Use Obsidian if you are willing to install and configure plugins."
+},
+{
+"tool": "y",
+"fails_when": "You must install a flashcard plugin and adjust settings before reviewing cards.",
+"what_to_do_instead": "Switch to RemNote for immediate flashcard support."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you already use Obsidian and have a flashcard plugin configured, the extra setup cost may no longer matter."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you want flashcards working immediately, choose RemNote.",
+"If installing plugins feels like extra work for one semester, avoid Obsidian.",
+"If long-term customization matters more than speed, consider Obsidian."
+]
+}
+],
+"faqs": [
+{
+"q": "Does RemNote include spaced repetition?",
+"a": "Yes. Flashcards and review sessions are built into the platform."
+},
+{
+"q": "Can Obsidian handle flashcards?",
+"a": "Yes, but typically through community plugins that require installation and setup."
+},
+{
+"q": "Which is easier for a single semester?",
+"a": "RemNote is usually easier because it avoids plugin configuration."
+},
+{
+"q": "Which offers more long-term control?",
+"a": "Obsidian offers more control over files and customization if you are willing to configure it."
+}
+],
+"related_pages": [
+{ "x_name": "RemNote", "y_name": "Notion", "persona": "Student" },
+{ "x_name": "RemNote", "y_name": "Logseq", "persona": "Student" },
+{ "x_name": "Roam Research", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Notion", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Logseq", "y_name": "Apple Notes", "persona": "Student" },
+{ "x_name": "Obsidian", "y_name": "Apple Notes", "persona": "Student" }
+]
+}

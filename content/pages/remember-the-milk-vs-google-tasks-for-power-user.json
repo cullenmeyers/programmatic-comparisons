@@ -1,0 +1,115 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "ceiling-check",
+"constraintUiName": "Grows with you",
+"title": "Remember The Milk vs Google Tasks for Power users",
+"slug": "remember-the-milk-vs-google-tasks-for-power-user",
+"meta_description": "Remember The Milk vs Google Tasks for power users who need advanced recurring rules and smart list logic.",
+"persona": "Power user",
+"constraint_lens": "You need advanced recurring rules and smart list logic that can handle hundreds of tasks without hitting limits.",
+"verdict": {
+"winner": "x",
+"summary": "Remember The Milk wins for power users managing complex recurring task systems. It supports advanced repeat rules and smart lists built from saved search filters. Google Tasks offers basic repeating tasks and simple lists tied to Google services. If recurring rule customization and smart list logic are constrained, Google Tasks fails first.",
+"decision_rule": "If recurring rule customization and smart list logic are constrained, Google Tasks fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for complex recurring systems",
+"content": "You handle hundreds of recurring tasks and expect rule-driven logic. Remember The Milk allows detailed repeat patterns and saved smart lists based on filters. Google Tasks provides simple repeat options inside a basic list interface."
+},
+{
+"type": "x_wins",
+"heading": "Where Remember The Milk wins",
+"bullets": [
+{
+"point": "Advanced repeat rules such as every X days or after completion",
+"why_it_matters": "You control how tasks recur based on completion or specific intervals."
+},
+{
+"point": "Smart lists built from search filters",
+"why_it_matters": "You create dynamic lists that update automatically based on tags, due dates, or priorities."
+},
+{
+"point": "Tagging and priority fields with filter logic",
+"why_it_matters": "You slice large task collections into focused views without duplicating tasks."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Google Tasks wins",
+"bullets": [
+{
+"point": "Simple repeating task setup",
+"why_it_matters": "You add a repeat schedule quickly without defining complex rules."
+},
+{
+"point": "Integration with Gmail and Google Calendar",
+"why_it_matters": "You create tasks from emails and see them next to calendar events."
+},
+{
+"point": "Minimal list-based interface",
+"why_it_matters": "You focus on straightforward to-do lists without managing filters or advanced logic."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You only need simple repeating tasks tied to your Google account.",
+"what_to_do_instead": "Use Google Tasks for lightweight personal reminders."
+},
+{
+"tool": "y",
+"fails_when": "You must customize repeat logic or create dynamic lists based on multiple conditions.",
+"what_to_do_instead": "Switch to Remember The Milk for advanced recurring and smart list control."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your recurring tasks follow simple weekly or monthly schedules and you value tight Google integration, Google Tasks may feel sufficient."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you need advanced repeat rules and smart lists, choose Remember The Milk.",
+"If simple recurring reminders are enough, Google Tasks may work.",
+"If filter-based task views matter, avoid basic list-only tools."
+]
+}
+],
+"faqs": [
+{
+"q": "Does Google Tasks support advanced repeat rules?",
+"a": "It supports basic recurring schedules but not complex after-completion logic."
+},
+{
+"q": "Can Remember The Milk create dynamic task lists?",
+"a": "Yes. Smart lists update automatically based on saved search filters."
+},
+{
+"q": "Which is better for large recurring systems?",
+"a": "Remember The Milk generally handles complex recurring logic better."
+},
+{
+"q": "Which is simpler for casual use?",
+"a": "Google Tasks is simpler and tightly integrated with Google services."
+}
+],
+"related_pages": [
+{ "x_name": "Pagico", "y_name": "Things 3", "persona": "Power user" },
+{ "x_name": "Taskheat", "y_name": "Apple Reminders", "persona": "Power user" },
+{ "x_name": "OmniFocus", "y_name": "Things 3", "persona": "Power user" },
+{ "x_name": "ClickUp", "y_name": "Todoist", "persona": "Power user" },
+{ "x_name": "Asana", "y_name": "Things 3", "persona": "Power user" },
+{ "x_name": "Notion", "y_name": "Todoist", "persona": "Power user" }
+]
+}
