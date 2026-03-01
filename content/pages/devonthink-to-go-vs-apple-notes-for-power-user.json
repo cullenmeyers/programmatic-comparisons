@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "ceiling-check",
+"constraintUiName": "Grows with you",
+"title": "DEVONthink To Go vs Apple Notes for Power users",
+"slug": "devonthink-to-go-vs-apple-notes-for-power-user",
+"meta_description": "DEVONthink To Go vs Apple Notes for power users who rely on boolean search and smart groups to retrieve research fast.",
+"persona": "Power user",
+"constraint_lens": "You need advanced search operators and rule-based smart groups to retrieve research from a large database.",
+"verdict": {
+"winner": "x",
+"summary": "DEVONthink To Go wins for power users managing deep research databases. It supports boolean search operators and smart groups built from saved queries. Apple Notes offers keyword search and folders but lacks advanced query logic and rule-based grouping. If boolean search and rule-based smart groups are constrained, Apple Notes fails first.",
+"decision_rule": "If boolean search and rule-based smart groups are constrained, Apple Notes fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for advanced retrieval control",
+"content": "You manage a deep research archive and expect advanced search behavior. DEVONthink To Go allows boolean operators such as AND, OR, and NOT to refine queries. Apple Notes provides simple text search across notes without rule-based smart collections."
+},
+{
+"type": "x_wins",
+"heading": "Where DEVONthink To Go wins",
+"bullets": [
+{
+"point": "Boolean search operators",
+"why_it_matters": "You combine terms with AND, OR, and NOT to narrow results precisely in large databases."
+},
+{
+"point": "Smart groups built from saved search queries",
+"why_it_matters": "You create dynamic collections that update automatically based on defined rules."
+},
+{
+"point": "Indexing of PDFs and document content",
+"why_it_matters": "Search reaches inside attached documents rather than just note titles."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Apple Notes wins",
+"bullets": [
+{
+"point": "Simple keyword search field",
+"why_it_matters": "You type a word and instantly see matching notes without constructing query syntax."
+},
+{
+"point": "Folder and tag organization",
+"why_it_matters": "You group notes manually without building saved queries."
+},
+{
+"point": "Automatic device sync",
+"why_it_matters": "Your notes stay updated across devices without managing databases."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You only need basic keyword search and prefer a lighter app without database features.",
+"what_to_do_instead": "Use Apple Notes if advanced query logic is unnecessary."
+},
+{
+"tool": "y",
+"fails_when": "You must filter research using combined conditions or maintain dynamic smart collections.",
+"what_to_do_instead": "Switch to DEVONthink To Go for boolean search and smart groups."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your archive remains small and simple keyword search finds what you need quickly, Apple Notes may feel sufficient."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you rely on boolean operators, choose DEVONthink To Go.",
+"If simple keyword search is enough, Apple Notes may work.",
+"If dynamic smart groups matter, avoid tools without saved query support."
+]
+}
+],
+"faqs": [
+{
+"q": "Does Apple Notes support boolean search operators?",
+"a": "It primarily supports simple keyword search without advanced boolean logic."
+},
+{
+"q": "Can DEVONthink To Go create dynamic collections?",
+"a": "Yes. Smart groups update automatically based on saved search rules."
+},
+{
+"q": "Which is better for large research databases?",
+"a": "DEVONthink To Go generally handles complex retrieval better."
+},
+{
+"q": "Is Apple Notes easier for casual use?",
+"a": "Yes. It focuses on straightforward search and folder organization."
+}
+],
+"related_pages": [
+{ "x_name": "DEVONthink", "y_name": "Joplin", "persona": "Power user" },
+{ "x_name": "Scrivener", "y_name": "Ulysses", "persona": "Power user" },
+{ "x_name": "TiddlyWiki", "y_name": "Standard Notes", "persona": "Power user" },
+{ "x_name": "Obsidian", "y_name": "Craft", "persona": "Power user" },
+{ "x_name": "Obsidian", "y_name": "Notebooks (Alfons Schmid)", "persona": "Power user" },
+{ "x_name": "Obsidian", "y_name": "Logseq", "persona": "Power user" }
+]
+}

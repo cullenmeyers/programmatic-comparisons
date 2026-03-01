@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "setup-tolerance",
+"constraintUiName": "Publish fast",
+"title": "Foam vs Obsidian for Beginners",
+"slug": "foam-vs-obsidian-for-beginner",
+"meta_description": "Foam vs Obsidian for beginners exploring linked notes without setting up VS Code or editing configuration files first.",
+"persona": "Beginner",
+"constraint_lens": "You want to try linked notes without installing developer tools or editing configuration files first.",
+"verdict": {
+"winner": "y",
+"summary": "Obsidian wins for beginners curious about networked note-taking. It provides backlinks and graph view inside a ready-to-use app. Foam runs inside VS Code and often requires setting up a workspace and configuration files. If VS Code setup and configuration files must be configured before writing, Foam fails first.",
+"decision_rule": "If VS Code setup and configuration files must be configured before writing, Foam fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for low-setup linked notes",
+"content": "You are curious about linked notes but will quit if setup feels technical. Obsidian installs as a standalone app where you create a vault and start typing. Foam depends on VS Code and a project folder with configuration files, which can look like coding work."
+},
+{
+"type": "x_wins",
+"heading": "Where Foam wins",
+"bullets": [
+{
+"point": "Runs inside VS Code editor",
+"why_it_matters": "You can combine notes with coding projects in one workspace. This suits technical users, but requires installing and understanding VS Code."
+},
+{
+"point": "Markdown files managed through a project folder",
+"why_it_matters": "You control notes like source files, which offers flexibility but exposes folder structure."
+},
+{
+"point": "Configurable through JSON and extension settings",
+"why_it_matters": "You can tweak behavior deeply, though editing configuration files can intimidate beginners."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Obsidian wins",
+"bullets": [
+{
+"point": "Standalone app with built-in backlink support",
+"why_it_matters": "You create links with double brackets and see connections without installing coding tools."
+},
+{
+"point": "Graph view available out of the box",
+"why_it_matters": "You visualize relationships immediately without editing config files."
+},
+{
+"point": "Vault setup through a simple folder picker",
+"why_it_matters": "You select or create a folder through the app interface instead of configuring a project manually."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You must install VS Code and edit configuration files before writing your first note.",
+"what_to_do_instead": "Use Obsidian to explore linking without developer setup."
+},
+{
+"tool": "y",
+"fails_when": "You want to integrate notes tightly with coding workflows inside one editor.",
+"what_to_do_instead": "Switch to Foam if you are comfortable working inside VS Code."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you already use VS Code daily and are comfortable with project folders and JSON settings, Foam may feel natural rather than technical."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you want linked notes without coding setup, choose Obsidian.",
+"If installing VS Code feels like extra work, avoid Foam.",
+"If you already live inside VS Code, Foam may fit your workflow."
+]
+}
+],
+"faqs": [
+{
+"q": "Does Foam require coding knowledge?",
+"a": "It runs inside VS Code and may require editing configuration files, which can feel technical."
+},
+{
+"q": "Is Obsidian easier for beginners?",
+"a": "Yes. It provides linking and graph features in a ready-to-use app."
+},
+{
+"q": "Can Foam store notes as plain files?",
+"a": "Yes. Notes are Markdown files inside a project folder."
+},
+{
+"q": "Which is faster to try for networked notes?",
+"a": "Obsidian is generally faster because it requires less setup."
+}
+],
+"related_pages": [
+{ "x_name": "Notion", "y_name": "Apple Notes", "persona": "Beginner" },
+{ "x_name": "Notion", "y_name": "OneNote", "persona": "Beginner" },
+{ "x_name": "Roam Research", "y_name": "Bear", "persona": "Beginner" },
+{ "x_name": "Dropbox Paper", "y_name": "Coda", "persona": "Beginner" },
+{ "x_name": "Craft", "y_name": "Google Docs", "persona": "Beginner" },
+{ "x_name": "Evernote", "y_name": "Apple Notes", "persona": "Beginner" }
+]
+}

@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "ceiling-check",
+"constraintUiName": "Grows with you",
+"title": "Jupyter Notebook vs Quiver for Power users",
+"slug": "jupyter-notebook-vs-quiver-for-power-user",
+"meta_description": "Jupyter Notebook vs Quiver for power users who need native live code execution and inspectable output inside research notes.",
+"persona": "Power user",
+"constraint_lens": "You need native live code execution and output inspection inside your notes without hitting structural limits.",
+"verdict": {
+"winner": "x",
+"summary": "Jupyter Notebook wins for power users combining executable code and research notes. It runs live code cells connected to an active kernel and displays outputs inline. Quiver supports code cells, but they are static snippets without a native execution environment. If live code cells and execution environments are not native, Quiver fails first.",
+"decision_rule": "If live code cells and execution environments are not native, Quiver fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for executable research workflows",
+"content": "You write research notes that require running code and inspecting results immediately. Jupyter Notebook connects each code cell to a live kernel so you can execute, rerun, and inspect variables. Quiver allows mixing Markdown and code blocks, but execution is not built into the notebook environment."
+},
+{
+"type": "x_wins",
+"heading": "Where Jupyter Notebook wins",
+"bullets": [
+{
+"point": "Native live code cells tied to a running kernel",
+"why_it_matters": "You execute code directly inside the notebook and see output without switching tools."
+},
+{
+"point": "Inline output including plots and data tables",
+"why_it_matters": "Charts, tables, and printed results appear below each cell, supporting iterative analysis."
+},
+{
+"point": "Multiple language kernels such as Python and R",
+"why_it_matters": "You switch languages while keeping execution integrated in the same document structure."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Quiver wins",
+"bullets": [
+{
+"point": "Mixed Markdown and code cells in a single note",
+"why_it_matters": "You organize explanations and code together in a structured format."
+},
+{
+"point": "Library-style notebook organization",
+"why_it_matters": "You store notes in folders with a clear hierarchy."
+},
+{
+"point": "Offline desktop app with simple interface",
+"why_it_matters": "You write notes without setting up a running server, though execution must happen elsewhere."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You only need static code documentation without running it.",
+"what_to_do_instead": "Use Quiver if execution is not required and you prefer a lightweight desktop note app."
+},
+{
+"tool": "y",
+"fails_when": "You must run code, inspect variables, and iterate on results directly inside the note.",
+"what_to_do_instead": "Switch to Jupyter Notebook for native execution."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you mainly document code snippets and rarely need to execute them inline, Quiver may feel simpler and more focused."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you need live code execution inside notes, choose Jupyter Notebook.",
+"If code blocks are only for reference, Quiver may be enough.",
+"If execution environments are required, avoid static code note tools."
+]
+}
+],
+"faqs": [
+{
+"q": "Does Quiver execute code natively?",
+"a": "It supports code cells, but execution is not built into the app environment."
+},
+{
+"q": "Can Jupyter display plots inline?",
+"a": "Yes. Outputs such as charts and tables appear directly under the executed cell."
+},
+{
+"q": "Is Jupyter limited to one programming language?",
+"a": "No. It supports multiple language kernels such as Python and R."
+},
+{
+"q": "Which has the higher ceiling for computational research?",
+"a": "Jupyter Notebook has the higher ceiling because it integrates execution with documentation."
+}
+],
+"related_pages": [
+{ "x_name": "Scrivener", "y_name": "Ulysses", "persona": "Power user" },
+{ "x_name": "DEVONthink", "y_name": "Joplin", "persona": "Power user" },
+{ "x_name": "TiddlyWiki", "y_name": "Standard Notes", "persona": "Power user" },
+{ "x_name": "Obsidian", "y_name": "Craft", "persona": "Power user" },
+{ "x_name": "Obsidian", "y_name": "Notebooks (Alfons Schmid)", "persona": "Power user" },
+{ "x_name": "Obsidian", "y_name": "Logseq", "persona": "Power user" }
+]
+}

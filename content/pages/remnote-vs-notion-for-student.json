@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
+"title": "RemNote vs Notion for Students",
+"slug": "remnote-vs-notion-for-student",
+"meta_description": "RemNote vs Notion for students who need flashcard-linked notes for one semester without building databases first.",
+"persona": "Student",
+"constraint_lens": "You need linked notes and flashcards for one semester without building databases or complex structures first.",
+"verdict": {
+"winner": "x",
+"summary": "RemNote wins for students who want flashcard-linked notes without database setup. It turns note blocks into study prompts with built-in spaced repetition. Notion relies on pages and database properties to structure study systems. If database properties must be created before linking notes to study prompts, Notion fails first.",
+"decision_rule": "If database properties must be created before linking notes to study prompts, Notion fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for semester-length study systems",
+"content": "You need flashcard-linked notes for one semester and will not build databases. RemNote allows you to convert text into question and answer prompts directly inside notes. Notion often requires creating databases with properties before building structured study workflows."
+},
+{
+"type": "x_wins",
+"heading": "Where RemNote wins",
+"bullets": [
+{
+"point": "Built-in spaced repetition tied to note blocks",
+"why_it_matters": "You convert a line into a study prompt without creating tables or properties."
+},
+{
+"point": "Automatic linking between concepts",
+"why_it_matters": "You connect related notes using references without building a database first."
+},
+{
+"point": "Dedicated study queue view",
+"why_it_matters": "You review due flashcards in one place without constructing custom filtered views."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Notion wins",
+"bullets": [
+{
+"point": "Database tables with customizable properties",
+"why_it_matters": "You can create structured study trackers, though this requires defining columns first."
+},
+{
+"point": "Template pages for study systems",
+"why_it_matters": "You duplicate templates to organize notes, but still manage properties and views."
+},
+{
+"point": "Multiple filtered views of the same database",
+"why_it_matters": "You can sort and filter entries, though setting up filters adds steps."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You want full database-style tracking with custom fields and dashboards.",
+"what_to_do_instead": "Use Notion if you are willing to build and manage database properties."
+},
+{
+"tool": "y",
+"fails_when": "You must define properties and views before turning notes into study prompts.",
+"what_to_do_instead": "Switch to RemNote to link notes and flashcards immediately."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you already use Notion for other classes and have a study database template ready, the setup cost may feel lower."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you want flashcards built directly into notes, choose RemNote.",
+"If building database properties feels like extra work for one semester, avoid Notion.",
+"If you need structured dashboards beyond flashcards, consider Notion."
+]
+}
+],
+"faqs": [
+{
+"q": "Does RemNote include flashcards automatically?",
+"a": "Yes. You can turn note lines into study prompts without building separate tables."
+},
+{
+"q": "Can Notion handle flashcards?",
+"a": "It can, but typically through databases and templates that require setup."
+},
+{
+"q": "Which is easier for one semester?",
+"a": "RemNote is usually easier because it avoids database configuration."
+},
+{
+"q": "Which is better for long-term structured tracking?",
+"a": "Notion is better if you want dashboards and database-driven study systems."
+}
+],
+"related_pages": [
+{ "x_name": "RemNote", "y_name": "Logseq", "persona": "Student" },
+{ "x_name": "Roam Research", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Notion", "y_name": "Google Docs", "persona": "Student" },
+{ "x_name": "Obsidian", "y_name": "Apple Notes", "persona": "Student" },
+{ "x_name": "Logseq", "y_name": "Apple Notes", "persona": "Student" },
+{ "x_name": "Dropbox Paper", "y_name": "Notion", "persona": "Student" }
+]
+}

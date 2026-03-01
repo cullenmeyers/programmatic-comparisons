@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "ceiling-check",
+"constraintUiName": "Grows with you",
+"title": "Scrivener vs Ulysses for Power users",
+"slug": "scrivener-vs-ulysses-for-power-user",
+"meta_description": "Scrivener vs Ulysses for power users managing long research projects with binder hierarchy and detailed compilation control.",
+"persona": "Power user",
+"constraint_lens": "You need deep structural control over large writing projects without hitting hierarchy or export limits.",
+"verdict": {
+"winner": "x",
+"summary": "Scrivener wins for power users managing complex research projects. Its binder supports deep folder hierarchies and granular document splitting. The compile tool allows detailed control over formatting and export rules. If binder-level hierarchy and compilation control are constrained, Ulysses fails first.",
+"decision_rule": "If binder-level hierarchy and compilation control are constrained, Ulysses fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for deeply structured writing",
+"content": "You write long structured research projects and expect granular document control. Scrivener uses a binder that lets you nest folders, sections, and research materials at many levels. Ulysses organizes writing into groups and sheets, which is simpler but less hierarchical."
+},
+{
+"type": "x_wins",
+"heading": "Where Scrivener wins",
+"bullets": [
+{
+"point": "Binder with multi-level folder hierarchy",
+"why_it_matters": "You can break a manuscript into chapters, sections, and sub-sections without flattening structure."
+},
+{
+"point": "Compile tool with detailed export presets",
+"why_it_matters": "You control formatting, layout, and document assembly for different output targets."
+},
+{
+"point": "Research panel storing PDFs and notes inside the project",
+"why_it_matters": "You keep reference material in the same project file without external linking."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Ulysses wins",
+"bullets": [
+{
+"point": "Minimal group and sheet organization",
+"why_it_matters": "You manage writing in a clean, distraction-free list rather than a complex binder."
+},
+{
+"point": "Unified export styles",
+"why_it_matters": "You export quickly with predefined styles, though with less granular control."
+},
+{
+"point": "Cloud-based sync across devices",
+"why_it_matters": "Your writing stays updated automatically without managing project files."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You prefer a minimalist writing interface without managing complex binder structures.",
+"what_to_do_instead": "Use Ulysses if simplicity matters more than structural depth."
+},
+{
+"tool": "y",
+"fails_when": "You need nested sections, detailed compile rules, or separate research storage within the project.",
+"what_to_do_instead": "Switch to Scrivener for full structural control."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your projects remain linear essays without deep sub-sections or complex export requirements, Ulysses may feel sufficient and cleaner."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you need multi-level hierarchy and granular export control, choose Scrivener.",
+"If compile customization is limited, avoid simpler writing apps.",
+"If minimalist structure is enough, consider Ulysses."
+]
+}
+],
+"faqs": [
+{
+"q": "Does Scrivener support complex document structures?",
+"a": "Yes. Its binder allows deep nesting of folders and documents."
+},
+{
+"q": "Is Ulysses easier to use?",
+"a": "It is simpler and cleaner, but offers less granular control over structure."
+},
+{
+"q": "Which handles export customization better?",
+"a": "Scrivener provides more detailed compile and export options."
+},
+{
+"q": "Which has the higher ceiling for long research projects?",
+"a": "Scrivener generally has the higher ceiling due to its structural and compilation control."
+}
+],
+"related_pages": [
+{ "x_name": "Obsidian", "y_name": "Craft", "persona": "Power user" },
+{ "x_name": "DEVONthink", "y_name": "Joplin", "persona": "Power user" },
+{ "x_name": "TiddlyWiki", "y_name": "Standard Notes", "persona": "Power user" },
+{ "x_name": "Obsidian", "y_name": "Notebooks (Alfons Schmid)", "persona": "Power user" },
+{ "x_name": "Obsidian", "y_name": "Logseq", "persona": "Power user" },
+{ "x_name": "Roam Research", "y_name": "Obsidian", "persona": "Power user" }
+]
+}
