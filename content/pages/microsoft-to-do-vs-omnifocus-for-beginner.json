@@ -5,35 +5,35 @@
 "constraintUiName": "Publish fast",
 "title": "Microsoft To Do vs OmniFocus for Beginners",
 "slug": "microsoft-to-do-vs-omnifocus-for-beginner",
-"meta_description": "Microsoft To Do vs OmniFocus for beginners who want to capture simple tasks without learning perspectives or review workflows.",
+"meta_description": "Microsoft To Do vs OmniFocus for beginners who want to capture tasks quickly without learning perspectives, contexts, or review workflows.",
 "persona": "Beginner",
-"constraint_lens": "You want to add tasks quickly without learning advanced planning concepts or configuring complex views.",
+"constraint_lens": "You want to add tasks quickly without learning advanced planning concepts or configuring complex task systems.",
 "verdict": {
 "winner": "x",
-"summary": "Microsoft To Do wins for beginners who just want to capture tasks quickly. It opens with a simple list where you add items immediately. OmniFocus introduces concepts like perspectives, contexts, and structured reviews that require understanding before the system makes sense. If perspectives, contexts, and review workflows must be understood before normal use, OmniFocus fails first.",
+"summary": "Microsoft To Do wins for beginners who want to capture tasks quickly. It opens with a simple list where tasks can be added immediately without learning system concepts. OmniFocus introduces perspectives, contexts, and structured review workflows that require understanding before normal use. If perspectives, contexts, and review workflows must be understood before normal use, OmniFocus fails first.",
 "decision_rule": "If perspectives, contexts, and review workflows must be understood before normal use, OmniFocus fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
-"heading": "Best fit for simple task capture",
-"content": "You want to add tasks quickly and abandon apps that expose complex planning systems. Microsoft To Do presents a straightforward list where you type tasks immediately. OmniFocus organizes work through projects, tags, and filtered perspectives that require learning how the system works."
+"heading": "Best fit for first-time digital task tracking",
+"content": "You just want to add tasks quickly and will abandon apps that introduce complex planning concepts. Microsoft To Do shows a simple list with a task entry field immediately visible. OmniFocus centers on projects, tags, perspectives, and review workflows that require learning how the system works."
 },
 {
 "type": "x_wins",
 "heading": "Where Microsoft To Do wins",
 "bullets": [
 {
-"point": "Single task list with quick add field",
-"why_it_matters": "You type a task immediately without choosing a project or tag."
+"point": "Immediate task entry field on the main screen",
+"why_it_matters": "You start typing tasks instantly without choosing projects or tags."
 },
 {
-"point": "My Day list for daily focus",
-"why_it_matters": "You pick a few tasks for today without learning scheduling systems."
+"point": "My Day list for selecting daily tasks",
+"why_it_matters": "You move tasks into today without learning scheduling systems."
 },
 {
 "point": "Basic reminders and due dates",
-"why_it_matters": "You add simple time cues without configuring complex planning views."
+"why_it_matters": "You add simple time cues without configuring planning frameworks."
 }
 ]
 },
@@ -42,16 +42,16 @@
 "heading": "Where OmniFocus wins",
 "bullets": [
 {
-"point": "Custom perspectives built from filters",
-"why_it_matters": "You create specialized task views once you understand the filtering system."
+"point": "Custom perspectives built from filtering rules",
+"why_it_matters": "You create specialized task views when managing complex workflows."
 },
 {
-"point": "Project and tag structure",
-"why_it_matters": "You organize large task systems with defined categories."
+"point": "Project and tag structure for task organization",
+"why_it_matters": "You manage large task systems through structured categories."
 },
 {
-"point": "Structured review mode",
-"why_it_matters": "You periodically review projects to keep complex systems organized."
+"point": "Structured review mode for projects",
+"why_it_matters": "You periodically review projects to maintain complex task systems."
 }
 ]
 },
@@ -61,55 +61,55 @@
 "items": [
 {
 "tool": "x",
-"fails_when": "You later require advanced filtering, perspectives, or structured review cycles.",
-"what_to_do_instead": "Switch to OmniFocus if your task system becomes complex."
+"fails_when": "Your task system later requires advanced filtering or structured project reviews.",
+"what_to_do_instead": "Switch to OmniFocus if your task management becomes complex."
 },
 {
 "tool": "y",
-"fails_when": "You open the app and must learn perspectives, tags, or project structures before adding tasks.",
-"what_to_do_instead": "Use Microsoft To Do for immediate task entry."
+"fails_when": "You open the app and must understand perspectives, contexts, or review systems before adding a task.",
+"what_to_do_instead": "Use Microsoft To Do for simple task capture."
 }
 ]
 },
 {
 "type": "edge_case",
 "heading": "When this verdict might flip",
-"content": "If you become comfortable managing projects and filtering tasks across contexts, OmniFocus may provide deeper control."
+"content": "If your workload grows into a complex system with many projects and filtered task views, OmniFocus may eventually become useful."
 },
 {
 "type": "quick_rules",
 "heading": "Quick rules",
 "rules": [
-"If you want to add tasks immediately with no setup, choose Microsoft To Do.",
-"If learning planning concepts feels overwhelming, avoid OmniFocus.",
-"If you later need advanced filtering and structured reviews, consider OmniFocus."
+"If you want to start writing tasks immediately, choose Microsoft To Do.",
+"If planning concepts appear before task entry, avoid OmniFocus.",
+"If your task system becomes highly structured later, consider OmniFocus."
 ]
 }
 ],
 "faqs": [
 {
-"q": "Is Microsoft To Do easy for beginners?",
-"a": "Yes. It focuses on simple lists and quick task entry."
+"q": "Is Microsoft To Do good for beginners?",
+"a": "Yes. It focuses on simple task lists and quick task entry."
 },
 {
-"q": "Why might OmniFocus feel complicated?",
-"a": "It includes advanced planning concepts like perspectives, tags, and review workflows."
+"q": "Why can OmniFocus feel complicated at first?",
+"a": "It introduces concepts like perspectives, tags, and review workflows designed for complex task systems."
 },
 {
-"q": "Which is faster for capturing tasks?",
-"a": "Microsoft To Do is faster because you can add tasks immediately."
+"q": "Which tool is faster for adding tasks?",
+"a": "Microsoft To Do is faster because you can start typing tasks immediately."
 },
 {
-"q": "When would OmniFocus be better?",
-"a": "It becomes better if you later build a complex task management system."
+"q": "When would OmniFocus be the better option?",
+"a": "It becomes useful if you later manage a large task system with advanced filtering."
 }
 ],
 "related_pages": [
-{ "x_name": "TaskPaper", "y_name": "OmniFocus", "persona": "Minimalist" },
-{ "x_name": "TeuxDeux", "y_name": "Things 3", "persona": "Minimalist" },
-{ "x_name": "Pagico", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "Remember The Milk", "y_name": "Google Tasks", "persona": "Power user" },
-{ "x_name": "Nirvana", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "Kanboard", "y_name": "Trello", "persona": "Solo user" }
+{ "x_name": "Dropbox Paper", "y_name": "Coda", "persona": "Beginner" },
+{ "x_name": "Notion", "y_name": "OneNote", "persona": "Beginner" },
+{ "x_name": "Roam Research", "y_name": "Bear", "persona": "Beginner" },
+{ "x_name": "Foam", "y_name": "Obsidian", "persona": "Beginner" },
+{ "x_name": "Notion", "y_name": "Apple Notes", "persona": "Beginner" },
+{ "x_name": "Google Keep", "y_name": "Evernote", "persona": "Beginner" }
 ]
 }
