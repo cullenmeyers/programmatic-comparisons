@@ -1,0 +1,115 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "setup-tolerance",
+"constraintUiName": "Publish fast",
+"title": "Microsoft To Do vs OmniFocus for Beginners",
+"slug": "microsoft-to-do-vs-omnifocus-for-beginner",
+"meta_description": "Microsoft To Do vs OmniFocus for beginners who want to capture simple tasks without learning perspectives or review workflows.",
+"persona": "Beginner",
+"constraint_lens": "You want to add tasks quickly without learning advanced planning concepts or configuring complex views.",
+"verdict": {
+"winner": "x",
+"summary": "Microsoft To Do wins for beginners who just want to capture tasks quickly. It opens with a simple list where you add items immediately. OmniFocus introduces concepts like perspectives, contexts, and structured reviews that require understanding before the system makes sense. If perspectives, contexts, and review workflows must be understood before normal use, OmniFocus fails first.",
+"decision_rule": "If perspectives, contexts, and review workflows must be understood before normal use, OmniFocus fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for simple task capture",
+"content": "You want to add tasks quickly and abandon apps that expose complex planning systems. Microsoft To Do presents a straightforward list where you type tasks immediately. OmniFocus organizes work through projects, tags, and filtered perspectives that require learning how the system works."
+},
+{
+"type": "x_wins",
+"heading": "Where Microsoft To Do wins",
+"bullets": [
+{
+"point": "Single task list with quick add field",
+"why_it_matters": "You type a task immediately without choosing a project or tag."
+},
+{
+"point": "My Day list for daily focus",
+"why_it_matters": "You pick a few tasks for today without learning scheduling systems."
+},
+{
+"point": "Basic reminders and due dates",
+"why_it_matters": "You add simple time cues without configuring complex planning views."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where OmniFocus wins",
+"bullets": [
+{
+"point": "Custom perspectives built from filters",
+"why_it_matters": "You create specialized task views once you understand the filtering system."
+},
+{
+"point": "Project and tag structure",
+"why_it_matters": "You organize large task systems with defined categories."
+},
+{
+"point": "Structured review mode",
+"why_it_matters": "You periodically review projects to keep complex systems organized."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You later require advanced filtering, perspectives, or structured review cycles.",
+"what_to_do_instead": "Switch to OmniFocus if your task system becomes complex."
+},
+{
+"tool": "y",
+"fails_when": "You open the app and must learn perspectives, tags, or project structures before adding tasks.",
+"what_to_do_instead": "Use Microsoft To Do for immediate task entry."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If you become comfortable managing projects and filtering tasks across contexts, OmniFocus may provide deeper control."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you want to add tasks immediately with no setup, choose Microsoft To Do.",
+"If learning planning concepts feels overwhelming, avoid OmniFocus.",
+"If you later need advanced filtering and structured reviews, consider OmniFocus."
+]
+}
+],
+"faqs": [
+{
+"q": "Is Microsoft To Do easy for beginners?",
+"a": "Yes. It focuses on simple lists and quick task entry."
+},
+{
+"q": "Why might OmniFocus feel complicated?",
+"a": "It includes advanced planning concepts like perspectives, tags, and review workflows."
+},
+{
+"q": "Which is faster for capturing tasks?",
+"a": "Microsoft To Do is faster because you can add tasks immediately."
+},
+{
+"q": "When would OmniFocus be better?",
+"a": "It becomes better if you later build a complex task management system."
+}
+],
+"related_pages": [
+{ "x_name": "TaskPaper", "y_name": "OmniFocus", "persona": "Minimalist" },
+{ "x_name": "TeuxDeux", "y_name": "Things 3", "persona": "Minimalist" },
+{ "x_name": "Pagico", "y_name": "Things 3", "persona": "Power user" },
+{ "x_name": "Remember The Milk", "y_name": "Google Tasks", "persona": "Power user" },
+{ "x_name": "Nirvana", "y_name": "Things 3", "persona": "Power user" },
+{ "x_name": "Kanboard", "y_name": "Trello", "persona": "Solo user" }
+]
+}

@@ -1,0 +1,115 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "TeuxDeux vs Todoist for Minimalists",
+"slug": "teuxdeux-vs-todoist-for-minimalist",
+"meta_description": "TeuxDeux vs Todoist for minimalists who want a daily task list that resets automatically without projects, labels, or filters.",
+"persona": "Minimalist",
+"constraint_lens": "You want a daily task list that resets automatically without managing projects, labels, or extra organizational layers.",
+"verdict": {
+"winner": "x",
+"summary": "TeuxDeux wins for minimalists who want a daily task list that resets automatically. It uses a calendar-style list where unfinished tasks roll forward to the next day without manual rescheduling. Todoist introduces projects, labels, filters, and priority fields that require structural decisions during organization. If projects, filters, and labels introduce extra structural decisions, Todoist fails first.",
+"decision_rule": "If projects, filters, and labels introduce extra structural decisions, Todoist fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for a resettable daily list",
+"content": "You want a daily task list that resets automatically without managing projects or labels. TeuxDeux presents tasks in daily columns and moves unfinished items forward automatically. Todoist organizes tasks through projects, labels, and filtered views that require more structural choices."
+},
+{
+"type": "x_wins",
+"heading": "Where TeuxDeux wins",
+"bullets": [
+{
+"point": "Daily column layout with automatic rollover",
+"why_it_matters": "Unfinished tasks automatically move to the next day instead of requiring manual rescheduling."
+},
+{
+"point": "Direct task entry into a day",
+"why_it_matters": "You type tasks immediately without choosing a project, label, or filter."
+},
+{
+"point": "Week-focused interface with only seven day columns",
+"why_it_matters": "You see the entire week at once without navigating multiple planning views."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Todoist wins",
+"bullets": [
+{
+"point": "Project structure for organizing tasks",
+"why_it_matters": "You group tasks into structured project lists for larger systems."
+},
+{
+"point": "Label and priority fields",
+"why_it_matters": "You segment tasks into multiple categories and urgency levels."
+},
+{
+"point": "Saved filters combining multiple conditions",
+"why_it_matters": "You generate dynamic task views across projects using custom rules."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "Your workload grows into large projects that require labels, categories, or filtered task views.",
+"what_to_do_instead": "Use Todoist if you need structured organization and filtering."
+},
+{
+"tool": "y",
+"fails_when": "You hesitate before adding a task because you must choose a project or label first.",
+"what_to_do_instead": "Switch to TeuxDeux for simple daily planning."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your task system grows large enough to require categories, filters, or priority sorting, Todoist may become worth the extra structure."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you want a daily list that rolls tasks forward automatically, choose TeuxDeux.",
+"If labels and filters feel like extra decisions, avoid Todoist.",
+"If your tasks grow into large structured projects, consider Todoist."
+]
+}
+],
+"faqs": [
+{
+"q": "Does TeuxDeux automatically move unfinished tasks?",
+"a": "Yes. Tasks roll forward to the next day if they are not completed."
+},
+{
+"q": "Why might Todoist feel complex to minimalists?",
+"a": "It includes projects, labels, priorities, and filters that require organization decisions."
+},
+{
+"q": "Which tool is better for a simple daily list?",
+"a": "TeuxDeux is better for a straightforward daily planning approach."
+},
+{
+"q": "When would Todoist be the better option?",
+"a": "It becomes better when you need structured projects and advanced task filtering."
+}
+],
+"related_pages": [
+{ "x_name": "TaskPaper", "y_name": "OmniFocus", "persona": "Minimalist" },
+{ "x_name": "TeuxDeux", "y_name": "Things 3", "persona": "Minimalist" },
+{ "x_name": "Habitica", "y_name": "TickTick", "persona": "Minimalist" },
+{ "x_name": "Coda", "y_name": "Apple Notes", "persona": "Minimalist" },
+{ "x_name": "Milanote", "y_name": "Coda", "persona": "Minimalist" },
+{ "x_name": "Evernote", "y_name": "Bear", "persona": "Minimalist" }
+]
+}
