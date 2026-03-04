@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Todo.txt vs Taskwarrior for Minimalists",
-"slug": "todo.txt-vs-taskwarrior-for-minimalist",
-"meta_description": "Todo.txt vs Taskwarrior for minimalists who want a plain text task list without command-line syntax or configuration files.",
-"persona": "Minimalist",
-"constraint_lens": "You want a plain text task list without learning command-line syntax or managing configuration files.",
-"verdict": {
-"winner": "x",
-"summary": "Todo.txt wins for minimalists who want a plain text task list. Tasks are written directly inside a simple text file where each line represents an item. Taskwarrior uses command-line commands and configuration files to manage tasks through a structured system. If command-line commands and configuration files must be managed to update tasks, Taskwarrior fails first.",
-"decision_rule": "If command-line commands and configuration files must be managed to update tasks, Taskwarrior fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for simple text-based task lists",
-"content": "You want a text-based task list and avoid command-line systems with complex syntax. Todo.txt stores tasks as plain lines inside a single text file that can be edited with any editor. Taskwarrior manages tasks through terminal commands and configuration files that control behavior."
-},
-{
-"type": "x_wins",
-"heading": "Where Todo.txt wins",
-"bullets": [
-{
-"point": "Single plain text file storing all tasks",
-"why_it_matters": "You add or remove tasks by editing lines in a file without running commands."
-},
-{
-"point": "Simple task format using basic text conventions",
-"why_it_matters": "Projects or contexts can be written as text markers without system configuration."
-},
-{
-"point": "Editable with any text editor",
-"why_it_matters": "Tasks can be updated quickly without opening a specialized application."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Taskwarrior wins",
-"bullets": [
-{
-"point": "Command-line task management interface",
-"why_it_matters": "You create and modify tasks directly through terminal commands."
-},
-{
-"point": "Advanced filtering through command queries",
-"why_it_matters": "Tasks can be filtered by project, tag, or due date using terminal expressions."
-},
-{
-"point": "Configuration files controlling task behavior",
-"why_it_matters": "The system can be customized through settings that shape how tasks are handled."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You need automation, scripted task manipulation, or complex filtering across large task sets.",
-"what_to_do_instead": "Use Taskwarrior if command-driven task automation becomes necessary."
-},
-{
-"tool": "y",
-"fails_when": "You must remember command syntax or edit configuration files just to add or modify tasks.",
-"what_to_do_instead": "Switch to Todo.txt for simple file-based task lists."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you begin automating tasks through scripts or terminal workflows, Taskwarrior may become more useful despite the added complexity."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you want tasks stored in a plain text file, choose Todo.txt.",
-"If command syntax feels like extra work, avoid Taskwarrior.",
-"If you later automate tasks through scripts, consider Taskwarrior."
-]
-}
-],
-"faqs": [
-{
-"q": "What is Todo.txt?",
-"a": "It is a plain text task system where each line in a text file represents a task."
-},
-{
-"q": "Does Taskwarrior require command-line usage?",
-"a": "Yes. Tasks are created and modified using terminal commands."
-},
-{
-"q": "Which tool is simpler for minimal task tracking?",
-"a": "Todo.txt is simpler because tasks are just lines in a text file."
-},
-{
-"q": "When would Taskwarrior be the better option?",
-"a": "It becomes useful when tasks must be automated or filtered through command-line workflows."
-}
-],
-"related_pages": [
-{ "x_name": "TeuxDeux", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "TaskPaper", "y_name": "OmniFocus", "persona": "Minimalist" },
-{ "x_name": "Habitica", "y_name": "TickTick", "persona": "Minimalist" },
-{ "x_name": "Coda", "y_name": "Apple Notes", "persona": "Minimalist" },
-{ "x_name": "Milanote", "y_name": "Coda", "persona": "Minimalist" },
-{ "x_name": "Evernote", "y_name": "Bear", "persona": "Minimalist" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Todo.txt vs Taskwarrior for Minimalists",
+  "slug": "todo.txt-vs-taskwarrior-for-minimalist",
+  "meta_description": "Todo.txt vs Taskwarrior for minimalists who want a plain text task list without command-line syntax or configuration files.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a plain text task list without learning command-line syntax or managing configuration files.",
+  "verdict": {
+    "winner": "x",
+    "summary": "Todo.txt wins for minimalists who want a plain text task list. Tasks are written directly inside a simple text file where each line represents an item. Taskwarrior uses command-line commands and configuration files to manage tasks through a structured system. If command-line commands and configuration files must be managed to update tasks, Taskwarrior fails first.",
+    "decision_rule": "If command-line commands and configuration files must be managed to update tasks, Taskwarrior fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for simple text-based task lists",
+      "content": "You want a text-based task list and avoid command-line systems with complex syntax. Todo.txt stores tasks as plain lines inside a single text file that can be edited with any editor. Taskwarrior manages tasks through terminal commands and configuration files that control behavior."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Todo.txt wins",
+      "bullets": [
+        {
+          "point": "Single plain text file storing all tasks",
+          "why_it_matters": "You add or remove tasks by editing lines in a file without running commands."
+        },
+        {
+          "point": "Simple task format using basic text conventions",
+          "why_it_matters": "Projects or contexts can be written as text markers without system configuration."
+        },
+        {
+          "point": "Editable with any text editor",
+          "why_it_matters": "Tasks can be updated quickly without opening a specialized application."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Taskwarrior wins",
+      "bullets": [
+        {
+          "point": "Command-line task management interface",
+          "why_it_matters": "You create and modify tasks directly through terminal commands."
+        },
+        {
+          "point": "Advanced filtering through command queries",
+          "why_it_matters": "Tasks can be filtered by project, tag, or due date using terminal expressions."
+        },
+        {
+          "point": "Configuration files controlling task behavior",
+          "why_it_matters": "The system can be customized through settings that shape how tasks are handled."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need automation, scripted task manipulation, or complex filtering across large task sets.",
+          "what_to_do_instead": "Use Taskwarrior if command-driven task automation becomes necessary."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You must remember command syntax or edit configuration files just to add or modify tasks.",
+          "what_to_do_instead": "Switch to Todo.txt for simple file-based task lists."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you begin automating tasks through scripts or terminal workflows, Taskwarrior may become more useful despite the added complexity."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you want tasks stored in a plain text file, choose Todo.txt.",
+        "If command syntax feels like extra work, avoid Taskwarrior.",
+        "If you later automate tasks through scripts, consider Taskwarrior."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is Todo.txt?",
+      "a": "It is a plain text task system where each line in a text file represents a task."
+    },
+    {
+      "q": "Does Taskwarrior require command-line usage?",
+      "a": "Yes. Tasks are created and modified using terminal commands."
+    },
+    {
+      "q": "Which tool is simpler for minimal task tracking?",
+      "a": "Todo.txt is simpler because tasks are just lines in a text file."
+    },
+    {
+      "q": "When would Taskwarrior be the better option?",
+      "a": "It becomes useful when tasks must be automated or filtered through command-line workflows."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "ClickUp",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Apple Reminders",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Quip",
+      "y_name": "Trello",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Amazing Marvin",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "Any.do",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "FacileThings",
+      "y_name": "Apple Reminders",
+      "persona": "Minimalist"
+    }
+  ]
 }

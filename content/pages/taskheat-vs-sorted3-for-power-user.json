@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "Taskheat vs Sorted³ for Power users",
-"slug": "taskheat-vs-sorted3-for-power-user",
-"meta_description": "Taskheat vs Sorted³ for power users who plan work visually and need task dependency mapping between related tasks.",
-"persona": "Power user",
-"constraint_lens": "You need a task manager that allows visual dependency mapping between tasks so work sequences can be modeled clearly.",
-"verdict": {
-"winner": "x",
-"summary": "Taskheat wins for power users who need to model relationships between tasks. It allows tasks to be connected with dependency links on a visual map. Sorted³ focuses on timeline-based scheduling where tasks are placed into time blocks rather than dependency graphs. If dependency relationships cannot be modeled between tasks, Sorted³ fails first.",
-"decision_rule": "If dependency relationships cannot be modeled between tasks, Sorted³ fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for visual task dependency planning",
-"content": "You plan tasks visually and expect to map relationships between work items. Taskheat lets you draw dependency links between tasks to represent sequence or prerequisites. Sorted³ focuses on scheduling tasks along a timeline rather than modeling how tasks depend on one another."
-},
-{
-"type": "x_wins",
-"heading": "Where Taskheat wins",
-"bullets": [
-{
-"point": "Visual dependency map connecting tasks",
-"why_it_matters": "You see which tasks must happen before others rather than managing a flat list."
-},
-{
-"point": "Flow-style interface for sequencing work",
-"why_it_matters": "Tasks are arranged as connected nodes so complex work sequences become visible."
-},
-{
-"point": "Automatic propagation of task order through dependency links",
-"why_it_matters": "When a task moves, dependent tasks reflect the sequence without manual reordering."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Sorted³ wins",
-"bullets": [
-{
-"point": "Timeline-style daily planning interface",
-"why_it_matters": "You drag tasks into specific time slots during the day."
-},
-{
-"point": "Automatic task scheduling suggestions",
-"why_it_matters": "The app proposes time blocks based on available time windows."
-},
-{
-"point": "Calendar-based task organization",
-"why_it_matters": "Tasks align with daily schedules rather than dependency structures."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "Your workflow focuses on scheduling tasks into daily time blocks rather than mapping dependencies.",
-"what_to_do_instead": "Use Sorted³ if timeline planning is the main requirement."
-},
-{
-"tool": "y",
-"fails_when": "You must represent which tasks depend on other tasks before work can begin.",
-"what_to_do_instead": "Switch to Taskheat for visual dependency mapping."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your work focuses more on scheduling tasks during specific time windows rather than modeling dependencies, Sorted³ may become the better fit."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you need to map task dependencies visually, choose Taskheat.",
-"If your focus is daily time scheduling, choose Sorted³.",
-"If tasks must show prerequisite relationships, avoid timeline-only tools."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Taskheat support task dependencies?",
-"a": "Yes. Tasks can be linked together to represent dependency relationships."
-},
-{
-"q": "What does Sorted³ focus on instead of dependencies?",
-"a": "It focuses on scheduling tasks into time blocks along a daily timeline."
-},
-{
-"q": "Which tool is better for modeling work sequences?",
-"a": "Taskheat is better because it allows tasks to be connected visually."
-},
-{
-"q": "When would Sorted³ be a better option?",
-"a": "It is better if you mainly plan tasks according to daily time schedules."
-}
-],
-"related_pages": [
-{ "x_name": "Pagico", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "Remember The Milk", "y_name": "Google Tasks", "persona": "Power user" },
-{ "x_name": "Nirvana", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "GQueues", "y_name": "Google Tasks", "persona": "Power user" },
-{ "x_name": "Todoist", "y_name": "Microsoft To Do", "persona": "Power user" },
-{ "x_name": "Taskwarrior", "y_name": "Todoist", "persona": "Power user" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Taskheat vs SortedÂ³ for Power users",
+  "slug": "taskheat-vs-sorted3-for-power-user",
+  "meta_description": "Taskheat vs SortedÂ³ for power users who plan work visually and need task dependency mapping between related tasks.",
+  "persona": "Power user",
+  "constraint_lens": "You need a task manager that allows visual dependency mapping between tasks so work sequences can be modeled clearly.",
+  "verdict": {
+    "winner": "x",
+    "summary": "Taskheat wins for power users who need to model relationships between tasks. It allows tasks to be connected with dependency links on a visual map. SortedÂ³ focuses on timeline-based scheduling where tasks are placed into time blocks rather than dependency graphs. If dependency relationships cannot be modeled between tasks, SortedÂ³ fails first.",
+    "decision_rule": "If dependency relationships cannot be modeled between tasks, SortedÂ³ fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for visual task dependency planning",
+      "content": "You plan tasks visually and expect to map relationships between work items. Taskheat lets you draw dependency links between tasks to represent sequence or prerequisites. SortedÂ³ focuses on scheduling tasks along a timeline rather than modeling how tasks depend on one another."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Taskheat wins",
+      "bullets": [
+        {
+          "point": "Visual dependency map connecting tasks",
+          "why_it_matters": "You see which tasks must happen before others rather than managing a flat list."
+        },
+        {
+          "point": "Flow-style interface for sequencing work",
+          "why_it_matters": "Tasks are arranged as connected nodes so complex work sequences become visible."
+        },
+        {
+          "point": "Automatic propagation of task order through dependency links",
+          "why_it_matters": "When a task moves, dependent tasks reflect the sequence without manual reordering."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where SortedÂ³ wins",
+      "bullets": [
+        {
+          "point": "Timeline-style daily planning interface",
+          "why_it_matters": "You drag tasks into specific time slots during the day."
+        },
+        {
+          "point": "Automatic task scheduling suggestions",
+          "why_it_matters": "The app proposes time blocks based on available time windows."
+        },
+        {
+          "point": "Calendar-based task organization",
+          "why_it_matters": "Tasks align with daily schedules rather than dependency structures."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Your workflow focuses on scheduling tasks into daily time blocks rather than mapping dependencies.",
+          "what_to_do_instead": "Use SortedÂ³ if timeline planning is the main requirement."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You must represent which tasks depend on other tasks before work can begin.",
+          "what_to_do_instead": "Switch to Taskheat for visual dependency mapping."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your work focuses more on scheduling tasks during specific time windows rather than modeling dependencies, SortedÂ³ may become the better fit."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you need to map task dependencies visually, choose Taskheat.",
+        "If your focus is daily time scheduling, choose SortedÂ³.",
+        "If tasks must show prerequisite relationships, avoid timeline-only tools."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Taskheat support task dependencies?",
+      "a": "Yes. Tasks can be linked together to represent dependency relationships."
+    },
+    {
+      "q": "What does SortedÂ³ focus on instead of dependencies?",
+      "a": "It focuses on scheduling tasks into time blocks along a daily timeline."
+    },
+    {
+      "q": "Which tool is better for modeling work sequences?",
+      "a": "Taskheat is better because it allows tasks to be connected visually."
+    },
+    {
+      "q": "When would SortedÂ³ be a better option?",
+      "a": "It is better if you mainly plan tasks according to daily time schedules."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Taskwarrior",
+      "y_name": "Todoist",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Asana",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "GQueues",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Nirvana",
+      "y_name": "Things 3",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Pagico",
+      "y_name": "Things 3",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Remember The Milk",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    }
+  ]
 }
