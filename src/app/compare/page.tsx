@@ -2,6 +2,7 @@ import ButtonLink from "@/components/ui/ButtonLink";
 import Card from "@/components/ui/Card";
 import PillLink from "@/components/ui/PillLink";
 import SectionHeading from "@/components/ui/SectionHeading";
+import ComparePageBehavior from "./ComparePageBehavior";
 import Link from "next/link";
 import { listPageSlugs, loadPageBySlug, type PageDoc } from "@/lib/pages";
 
@@ -55,6 +56,7 @@ export default function CompareIndexPage() {
 
   return (
     <main className="site-container page-shell content-stack">
+      <ComparePageBehavior />
       <header className="max-w-3xl space-y-4">
         <h1 className="text-4xl font-semibold tracking-tight text-black sm:text-5xl">
           Compare tools
