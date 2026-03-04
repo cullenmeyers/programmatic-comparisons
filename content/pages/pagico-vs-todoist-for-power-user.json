@@ -1,0 +1,115 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "ceiling-check",
+"constraintUiName": "Grows with you",
+"title": "Pagico vs Todoist for Power users",
+"slug": "pagico-vs-todoist-for-power-user",
+"meta_description": "Pagico vs Todoist for power users who link tasks with files, contacts, and notes in a structured workspace.",
+"persona": "Power user",
+"constraint_lens": "You need a task manager that can connect tasks to related files, contacts, and notes in a structured workspace.",
+"verdict": {
+"winner": "x",
+"summary": "Pagico wins for power users who manage tasks alongside files, contacts, and notes. It uses a unified object model where tasks can be directly linked to documents and related resources. Todoist focuses on task lists and projects without native links to external information objects. If tasks cannot be structurally linked to files and related information objects, Todoist fails first.",
+"decision_rule": "If tasks cannot be structurally linked to files and related information objects, Todoist fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for integrating tasks with resources",
+"content": "You manage tasks that are connected to documents, contacts, and notes. Pagico lets tasks live inside a workspace where files, notes, and contacts are stored as related objects. Todoist focuses on task lists organized by projects and labels rather than linking tasks to supporting resources."
+},
+{
+"type": "x_wins",
+"heading": "Where Pagico wins",
+"bullets": [
+{
+"point": "Unified workspace linking tasks with files and notes",
+"why_it_matters": "Tasks can directly reference documents or information needed to complete the work."
+},
+{
+"point": "Object-based structure connecting contacts, tasks, and documents",
+"why_it_matters": "You keep related information together instead of spreading it across separate apps."
+},
+{
+"point": "Project hubs that group tasks with supporting materials",
+"why_it_matters": "Each project contains tasks, notes, and files in one structured location."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Todoist wins",
+"bullets": [
+{
+"point": "Quick task entry through natural language input",
+"why_it_matters": "You type due dates and task details in one line without opening structured views."
+},
+{
+"point": "Cross-platform apps with instant sync",
+"why_it_matters": "Tasks stay updated across devices without managing a workspace structure."
+},
+{
+"point": "Simple project and label system for organizing tasks",
+"why_it_matters": "Tasks are grouped quickly without creating complex information models."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "Your workflow only requires quick task lists without storing related documents or contacts.",
+"what_to_do_instead": "Use Todoist if tasks do not need to be connected to other information."
+},
+{
+"tool": "y",
+"fails_when": "Tasks must reference files, notes, or contacts directly within the same workspace.",
+"what_to_do_instead": "Switch to Pagico to manage tasks alongside related resources."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your workflow focuses only on capturing and completing tasks without attaching documents or reference materials, Todoist may feel faster."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If tasks must link to files and notes, choose Pagico.",
+"If tasks live alone without supporting materials, Todoist works well.",
+"If your projects include documents, contacts, and tasks together, Pagico fits better."
+]
+}
+],
+"faqs": [
+{
+"q": "What makes Pagico different from a normal task manager?",
+"a": "Pagico combines tasks with files, notes, and contacts inside a single structured workspace."
+},
+{
+"q": "Does Todoist support linking tasks to files and notes?",
+"a": "Tasks can include attachments, but the system does not treat files and contacts as linked objects."
+},
+{
+"q": "Which tool is better for complex knowledge-driven projects?",
+"a": "Pagico works better because tasks can connect directly to related resources."
+},
+{
+"q": "When is Todoist the better option?",
+"a": "It is better when you only need quick task lists without managing supporting materials."
+}
+],
+"related_pages": [
+{ "x_name": "Remember The Milk", "y_name": "Google Tasks", "persona": "Power user" },
+{ "x_name": "Todoist", "y_name": "Microsoft To Do", "persona": "Power user" },
+{ "x_name": "Taskwarrior", "y_name": "Todoist", "persona": "Power user" },
+{ "x_name": "Taskheat", "y_name": "Sorted³", "persona": "Power user" },
+{ "x_name": "GQueues", "y_name": "Google Tasks", "persona": "Power user" },
+{ "x_name": "Asana", "y_name": "Trello", "persona": "Power user" }
+]
+}
