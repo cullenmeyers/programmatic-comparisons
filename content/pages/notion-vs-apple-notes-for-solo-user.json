@@ -1,115 +1,119 @@
 {
-"category": "Note-taking apps",
-"categorySlug": "note-taking-apps",
-"constraintSlug": "maintenance-load",
-"constraintUiName": "Works without upkeep",
-"title": "Notion vs Apple Notes for Solo users",
-"slug": "notion-vs-apple-notes-for-solo-user",
-"meta_description": "Notion vs Apple Notes for solo users who want long-term personal notes without constant reorganization or workspace upkeep.",
-"persona": "Solo user",
-"constraint_lens": "You want a notes system that stays usable for years without needing regular cleanup or redesign.",
-"verdict": {
-"winner": "y",
-"summary": "Apple Notes wins for solo users who want long-term personal notes without ongoing upkeep. It uses simple folders and tags that continue working even as notes pile up. Notion encourages custom pages, databases, and structures that can feel messy over time if not maintained. If the system degrades without regular re-organization, Notion fails first.",
-"decision_rule": "If the system degrades without regular re-organization, Notion fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for low-maintenance long-term notes",
-"content": "You keep personal notes for years and do not want to redesign your system every few months. Apple Notes relies on basic folders and optional tags, which stay readable even if you ignore them. Notion invites you to build custom dashboards and linked databases that may require occasional cleanup."
-},
-{
-"type": "x_wins",
-"heading": "Where Notion wins",
-"bullets": [
-{
-"point": "Custom databases with filters and views",
-"why_it_matters": "You can sort notes by properties like date or topic. This works well when actively managed, but filters and views can become outdated if you stop maintaining them."
-},
-{
-"point": "Linked pages and internal backlinks",
-"why_it_matters": "You can connect ideas across your workspace. Over years, broken or unused links can accumulate and require manual tidying."
-},
-{
-"point": "Editable dashboards with widgets and layouts",
-"why_it_matters": "You can design a home screen that surfaces key notes. If your habits change, that dashboard may need redesign to stay useful."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Apple Notes wins",
-"bullets": [
-{
-"point": "Simple folder structure with drag-and-drop organization",
-"why_it_matters": "You move notes between folders without setting up properties or views. Even if you ignore folders, search still works reliably."
-},
-{
-"point": "Automatic sorting by date with consistent layout",
-"why_it_matters": "Notes appear in chronological order without creating custom systems. This prevents structural decay over time."
-},
-{
-"point": "Built-in search that scans text, attachments, and handwriting",
-"why_it_matters": "You can rely on search instead of constant reorganization. This reduces the need to redesign your structure as it grows."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You build databases and dashboards that stop matching your current needs and require manual cleanup.",
-"what_to_do_instead": "Switch to Apple Notes where structure remains simple and does not require redesign."
-},
-{
-"tool": "y",
-"fails_when": "You want highly structured tracking with custom fields and filtered views.",
-"what_to_do_instead": "Use Notion to manage structured data that goes beyond basic folders."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you enjoy periodically refining your note system and treat it like an evolving project, Notion may feel sustainable because you are willing to maintain and redesign it over time."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you do not want to maintain dashboards or views, choose Apple Notes.",
-"If your system should run quietly in the background, avoid tools that require redesign.",
-"If you enjoy structured tracking and upkeep, Notion may fit."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Notion require ongoing maintenance?",
-"a": "It can if you rely on custom databases and dashboards that need updating as your needs change."
-},
-{
-"q": "Can Apple Notes handle years of notes?",
-"a": "Yes. With folders and strong search, it remains usable even as notes accumulate."
-},
-{
-"q": "Is Notion bad for long-term use?",
-"a": "Not necessarily, but it works best if you are willing to maintain and refine your setup."
-},
-{
-"q": "Which feels more stable over time?",
-"a": "Apple Notes generally feels more stable because it relies on simple structures that do not need regular redesign."
-}
-],
-"related_pages": [
-{ "x_name": "Evernote", "y_name": "Apple Notes", "persona": "Solo user" },
-{ "x_name": "Logseq", "y_name": "Apple Notes", "persona": "Solo user" },
-{ "x_name": "Craft", "y_name": "Google Docs", "persona": "Solo user" },
-{ "x_name": "RemNote", "y_name": "Bear", "persona": "Solo user" },
-{ "x_name": "OneNote", "y_name": "Apple Notes", "persona": "Solo user" },
-{ "x_name": "Standard Notes", "y_name": "Apple Notes", "persona": "Solo user" }
-]
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Notion vs Apple Notes for Solo users",
+  "slug": "notion-vs-apple-notes-for-solo-user",
+  "meta_description": "Notion vs Apple Notes for solo users who want long-term personal notes without constant reorganization or workspace upkeep.",
+  "persona": "Solo user",
+  "constraint_lens": "You want a notes system that stays usable for years without needing regular cleanup or redesign.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Apple Notes wins for solo users who want long-term personal notes without ongoing upkeep. It uses simple folders and tags that continue working even as notes pile up. Notion encourages custom pages, databases, and structures that can feel messy over time if not maintained. If the system degrades without regular re-organization, Notion fails first.",
+    "decision_rule": "If the system degrades without regular re-organization, Notion fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for low-maintenance long-term notes",
+      "content": "You keep personal notes for years and do not want to redesign your system every few months. Apple Notes relies on basic folders and optional tags, which stay readable even if you ignore them. Notion invites you to build custom dashboards and linked databases that may require occasional cleanup."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Notion wins",
+      "bullets": [
+        {
+          "point": "Custom databases with filters and views",
+          "why_it_matters": "You can sort notes by properties like date or topic. This works well when actively managed, but filters and views can become outdated if you stop maintaining them."
+        },
+        {
+          "point": "Linked pages and internal backlinks",
+          "why_it_matters": "You can connect ideas across your workspace. Over years, broken or unused links can accumulate and require manual tidying."
+        },
+        {
+          "point": "Editable dashboards with widgets and layouts",
+          "why_it_matters": "You can design a home screen that surfaces key notes. If your habits change, that dashboard may need redesign to stay useful."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Apple Notes wins",
+      "bullets": [
+        {
+          "point": "Simple folder structure with drag-and-drop organization",
+          "why_it_matters": "You move notes between folders without setting up properties or views. Even if you ignore folders, search still works reliably."
+        },
+        {
+          "point": "Automatic sorting by date with consistent layout",
+          "why_it_matters": "Notes appear in chronological order without creating custom systems. This prevents structural decay over time."
+        },
+        {
+          "point": "Built-in search that scans text, attachments, and handwriting",
+          "why_it_matters": "You can rely on search instead of constant reorganization. This reduces the need to redesign your structure as it grows."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You build databases and dashboards that stop matching your current needs and require manual cleanup.",
+          "what_to_do_instead": "Switch to Apple Notes where structure remains simple and does not require redesign."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want highly structured tracking with custom fields and filtered views.",
+          "what_to_do_instead": "Use Notion to manage structured data that goes beyond basic folders."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you enjoy periodically refining your note system and treat it like an evolving project, Notion may feel sustainable because you are willing to maintain and redesign it over time."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you do not want to maintain dashboards or views, choose Apple Notes.",
+        "If your system should run quietly in the background, avoid tools that require redesign.",
+        "If you enjoy structured tracking and upkeep, Notion may fit."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Notion require ongoing maintenance?",
+      "a": "It can if you rely on custom databases and dashboards that need updating as your needs change."
+    },
+    {
+      "q": "Can Apple Notes handle years of notes?",
+      "a": "Yes. With folders and strong search, it remains usable even as notes accumulate."
+    },
+    {
+      "q": "Is Notion bad for long-term use?",
+      "a": "Not necessarily, but it works best if you are willing to maintain and refine your setup."
+    },
+    {
+      "q": "Which feels more stable over time?",
+      "a": "Apple Notes generally feels more stable because it relies on simple structures that do not need regular redesign."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Evernote",
+      "y_name": "Apple Notes",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Joplin",
+      "y_name": "Notion",
+      "persona": "Solo user"
+    }
+  ]
 }

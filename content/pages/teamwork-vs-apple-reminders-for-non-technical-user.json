@@ -1,116 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "fear-of-breaking",
-"constraintUiName": "Hard to mess up",
-"title": "Teamwork vs Apple Reminders for Non-technical users",
-"slug": "teamwork-vs-apple-reminders-for-non-technical-user",
-"meta_description": "Teamwork vs Apple Reminders for non-technical users who need simple reminders without navigating project dashboards or complex views.",
-"persona": "Non-technical user",
-"constraint_lens": "You want simple reminders that feel safe to use without complex dashboards or project screens that could confuse you.",
-"verdict": {
-"winner": "y",
-"summary": "Apple Reminders wins for non-technical users who just need simple everyday reminders. It opens to a clean list where you can add and check off tasks without navigating project dashboards. Teamwork is built around projects, boards, and reporting views that can feel complex. If dashboards or project views feel overwhelming, Teamwork fails first.",
-"decision_rule": "If dashboards or project views feel overwhelming, Teamwork fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Non-technical users",
-"content": "You said you need simple reminders, not project dashboards. When an app shows charts, boards, or advanced views, it can create anxiety about clicking the wrong thing. A straightforward checklist reduces that fear."
-},
-{
-"type": "x_wins",
-"heading": "Where Teamwork wins",
-"bullets": [
-{
-"point": "Project dashboards with task lists, milestones, and activity feeds",
-"why_it_matters": "You can manage complex work, but multiple panels and metrics can feel overwhelming if you only want reminders."
-},
-{
-"point": "Board and list views for tracking task progress",
-"why_it_matters": "You can organize work visually, yet switching between views adds confusion for simple everyday tasks."
-},
-{
-"point": "Time tracking and reporting tools inside projects",
-"why_it_matters": "These features support professional project management, but introduce extra screens that are unnecessary for personal reminders."
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Teamwork vs Apple Reminders for Non-technical users",
+  "slug": "teamwork-vs-apple-reminders-for-non-technical-user",
+  "meta_description": "Teamwork vs Apple Reminders for non-technical users who need simple reminders without navigating project dashboards or complex views.",
+  "persona": "Non-technical user",
+  "constraint_lens": "You want simple reminders that feel safe to use without complex dashboards or project screens that could confuse you.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Apple Reminders wins for non-technical users who just need simple everyday reminders. It opens to a clean list where you can add and check off tasks without navigating project dashboards. Teamwork is built around projects, boards, and reporting views that can feel complex. If dashboards or project views feel overwhelming, Teamwork fails first.",
+    "decision_rule": "If dashboards or project views feel overwhelming, Teamwork fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Non-technical users",
+      "content": "You said you need simple reminders, not project dashboards. When an app shows charts, boards, or advanced views, it can create anxiety about clicking the wrong thing. A straightforward checklist reduces that fear."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Teamwork wins",
+      "bullets": [
+        {
+          "point": "Project dashboards with task lists, milestones, and activity feeds",
+          "why_it_matters": "You can manage complex work, but multiple panels and metrics can feel overwhelming if you only want reminders."
+        },
+        {
+          "point": "Board and list views for tracking task progress",
+          "why_it_matters": "You can organize work visually, yet switching between views adds confusion for simple everyday tasks."
+        },
+        {
+          "point": "Time tracking and reporting tools inside projects",
+          "why_it_matters": "These features support professional project management, but introduce extra screens that are unnecessary for personal reminders."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Apple Reminders wins",
+      "bullets": [
+        {
+          "point": "Single list layout with clear add button",
+          "why_it_matters": "You can create a reminder instantly without navigating dashboards."
+        },
+        {
+          "point": "Simple due date and notification options inside each task",
+          "why_it_matters": "Setting a reminder is direct and does not require configuring projects or views."
+        },
+        {
+          "point": "Minimal interface focused on checkboxes",
+          "why_it_matters": "The clean design lowers the chance of feeling lost or breaking something."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You feel unsure where to click because of dashboards, reports, or multiple project views.",
+          "what_to_do_instead": "Use Apple Reminders if you want a simple list with clear actions."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need structured project management with milestones and team tracking.",
+          "what_to_do_instead": "Use Teamwork if you require full project dashboards and collaboration tools."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you begin managing larger team projects with deadlines, milestones, and shared task tracking, Teamwork may provide the structure you need despite its complexity."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want simple reminders with no confusion, choose Apple Reminders.",
+        "If dashboards and reports feel overwhelming, avoid Teamwork.",
+        "If you need full project tracking later, Teamwork may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Teamwork only for businesses?",
+      "a": "It is primarily designed for managing team projects with dashboards and reporting tools."
+    },
+    {
+      "q": "Can Apple Reminders handle recurring reminders?",
+      "a": "Yes, you can set tasks to repeat without entering complex project settings."
+    },
+    {
+      "q": "Which tool feels safer for beginners?",
+      "a": "Apple Reminders generally feels safer because it focuses on a simple list without advanced views."
+    },
+    {
+      "q": "Can Teamwork be used for personal tasks?",
+      "a": "It can, but its project oriented interface may feel excessive for basic everyday reminders."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Any.do",
+      "y_name": "Apple Reminders",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Trello",
+      "y_name": "Apple Reminders",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Any.do",
+      "y_name": "Trello",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Microsoft To Do",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Kanban Tool",
+      "y_name": "Microsoft To Do",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Microsoft Planner",
+      "y_name": "Microsoft To Do",
+      "persona": "Non-technical user"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Apple Reminders wins",
-"bullets": [
-{
-"point": "Single list layout with clear add button",
-"why_it_matters": "You can create a reminder instantly without navigating dashboards."
-},
-{
-"point": "Simple due date and notification options inside each task",
-"why_it_matters": "Setting a reminder is direct and does not require configuring projects or views."
-},
-{
-"point": "Minimal interface focused on checkboxes",
-"why_it_matters": "The clean design lowers the chance of feeling lost or breaking something."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You feel unsure where to click because of dashboards, reports, or multiple project views.",
-"what_to_do_instead": "Use Apple Reminders if you want a simple list with clear actions."
-},
-{
-"tool": "y",
-"fails_when": "You need structured project management with milestones and team tracking.",
-"what_to_do_instead": "Use Teamwork if you require full project dashboards and collaboration tools."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you begin managing larger team projects with deadlines, milestones, and shared task tracking, Teamwork may provide the structure you need despite its complexity."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want simple reminders with no confusion, choose Apple Reminders.",
-"If dashboards and reports feel overwhelming, avoid Teamwork.",
-"If you need full project tracking later, Teamwork may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Teamwork only for businesses?",
-"a": "It is primarily designed for managing team projects with dashboards and reporting tools."
-},
-{
-"q": "Can Apple Reminders handle recurring reminders?",
-"a": "Yes, you can set tasks to repeat without entering complex project settings."
-},
-{
-"q": "Which tool feels safer for beginners?",
-"a": "Apple Reminders generally feels safer because it focuses on a simple list without advanced views."
-},
-{
-"q": "Can Teamwork be used for personal tasks?",
-"a": "It can, but its project oriented interface may feel excessive for basic everyday reminders."
-}
-],
-"related_pages": [
-{ "x_name": "Superlist", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
-{ "x_name": "OmniFocus", "y_name": "Apple Reminders", "persona": "Non-technical user" },
-{ "x_name": "Todoist", "y_name": "Apple Reminders", "persona": "Non-technical user" },
-{ "x_name": "TickTick", "y_name": "Apple Reminders", "persona": "Non-technical user" },
-{ "x_name": "Things", "y_name": "Apple Reminders", "persona": "Non-technical user" },
-{ "x_name": "Notion", "y_name": "Apple Reminders", "persona": "Non-technical user" }
-]
-}
-

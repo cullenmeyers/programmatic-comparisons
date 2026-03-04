@@ -1,116 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "switching-cost",
-"constraintUiName": "Easy to quit later",
-"title": "Trello vs Microsoft Planner for Students",
-"slug": "trello-vs-microsoft-planner-for-student",
-"meta_description": "Trello vs Microsoft Planner for students who need a short-term group project board without enterprise setup or permission layers.",
-"persona": "Student",
-"constraint_lens": "You need a task tool for one semester that is easy to set up, share, and leave when the class ends.",
-"verdict": {
-"winner": "x",
-"summary": "Trello wins for students coordinating short-term group assignments. You can create a board, invite teammates by link, and start moving cards immediately. Microsoft Planner is tied to Microsoft 365 groups with permission settings and admin structures. If enterprise setup and permissions exceed semester needs, Microsoft Planner fails first.",
-"decision_rule": "If enterprise setup and permissions exceed semester needs, Microsoft Planner fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Which tool fits a semester project?",
-"content": "You need a task tool for short-term group assignments. As a student, you want something easy to share and easy to abandon after finals. The best tool should not require account administration or IT-style setup. Anything tied to enterprise permissions can feel heavier than the project itself."
-},
-{
-"type": "x_wins",
-"heading": "Where Trello works better for students",
-"bullets": [
-{
-"point": "Create a board and share it with a simple invite link.",
-"why_it_matters": "Your group can join quickly without creating formal teams or admin roles."
-},
-{
-"point": "Drag and drop cards across lists like To Do and Done.",
-"why_it_matters": "You can visually coordinate progress without configuring backend settings."
-},
-{
-"point": "Boards can be archived or deleted easily.",
-"why_it_matters": "When the semester ends, you can close the board without managing long-term workspace structure."
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "switching-cost",
+  "constraintUiName": "Easy to quit later",
+  "title": "Trello vs Microsoft Planner for Students",
+  "slug": "trello-vs-microsoft-planner-for-student",
+  "meta_description": "Trello vs Microsoft Planner for students who need a short-term group project board without enterprise setup or permission layers.",
+  "persona": "Student",
+  "constraint_lens": "You need a task tool for one semester that is easy to set up, share, and leave when the class ends.",
+  "verdict": {
+    "winner": "x",
+    "summary": "Trello wins for students coordinating short-term group assignments. You can create a board, invite teammates by link, and start moving cards immediately. Microsoft Planner is tied to Microsoft 365 groups with permission settings and admin structures. If enterprise setup and permissions exceed semester needs, Microsoft Planner fails first.",
+    "decision_rule": "If enterprise setup and permissions exceed semester needs, Microsoft Planner fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool fits a semester project?",
+      "content": "You need a task tool for short-term group assignments. As a student, you want something easy to share and easy to abandon after finals. The best tool should not require account administration or IT-style setup. Anything tied to enterprise permissions can feel heavier than the project itself."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Trello works better for students",
+      "bullets": [
+        {
+          "point": "Create a board and share it with a simple invite link.",
+          "why_it_matters": "Your group can join quickly without creating formal teams or admin roles."
+        },
+        {
+          "point": "Drag and drop cards across lists like To Do and Done.",
+          "why_it_matters": "You can visually coordinate progress without configuring backend settings."
+        },
+        {
+          "point": "Boards can be archived or deleted easily.",
+          "why_it_matters": "When the semester ends, you can close the board without managing long-term workspace structure."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Microsoft Planner works better",
+      "bullets": [
+        {
+          "point": "Integrated with Microsoft 365 groups and Teams.",
+          "why_it_matters": "Tasks connect directly to class Teams channels. However, this depends on institutional accounts and group permissions."
+        },
+        {
+          "point": "Structured buckets and assignment tracking.",
+          "why_it_matters": "You can assign tasks clearly within a defined group space. Creating and managing that group can require extra setup."
+        },
+        {
+          "point": "Built-in permission management for members.",
+          "why_it_matters": "You can control who edits or views tasks. For a short-term student project, these controls may be more than necessary."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need deep integration with institutional Microsoft accounts and structured permission layers.",
+          "what_to_do_instead": "Use Microsoft Planner if your class already operates inside Microsoft Teams."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You must create or manage Microsoft 365 groups before teammates can access tasks.",
+          "what_to_do_instead": "Use Trello if you want instant access without enterprise-style setup."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your university requires Microsoft Teams for all collaboration and your group already has a configured class team, Microsoft Planner may feel more seamless."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want quick group access by link, choose Trello.",
+        "If your class runs fully inside Microsoft Teams, choose Microsoft Planner.",
+        "If permission setup feels heavier than the assignment, keep it simple."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Trello easier for short-term projects?",
+      "a": "Yes. You can create and share a board quickly without managing enterprise accounts."
+    },
+    {
+      "q": "Does Microsoft Planner require Microsoft 365?",
+      "a": "Yes. It works inside Microsoft 365 groups and often depends on institutional access."
+    },
+    {
+      "q": "Which tool is easier to leave after the semester?",
+      "a": "Trello is easier to archive or delete without affecting other systems."
+    },
+    {
+      "q": "Can Microsoft Planner work for student teams?",
+      "a": "Yes, especially if the class already uses Microsoft Teams and group accounts."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Trello",
+      "y_name": "Todoist",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Habitica",
+      "y_name": "Todoist",
+      "persona": "Student"
+    },
+    {
+      "x_name": "MeisterTask",
+      "y_name": "Google Tasks",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Sunsama",
+      "y_name": "Todoist",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Superlist",
+      "y_name": "Google Tasks",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Things 3",
+      "y_name": "Apple Reminders",
+      "persona": "Student"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Microsoft Planner works better",
-"bullets": [
-{
-"point": "Integrated with Microsoft 365 groups and Teams.",
-"why_it_matters": "Tasks connect directly to class Teams channels. However, this depends on institutional accounts and group permissions."
-},
-{
-"point": "Structured buckets and assignment tracking.",
-"why_it_matters": "You can assign tasks clearly within a defined group space. Creating and managing that group can require extra setup."
-},
-{
-"point": "Built-in permission management for members.",
-"why_it_matters": "You can control who edits or views tasks. For a short-term student project, these controls may be more than necessary."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You need deep integration with institutional Microsoft accounts and structured permission layers.",
-"what_to_do_instead": "Use Microsoft Planner if your class already operates inside Microsoft Teams."
-},
-{
-"tool": "y",
-"fails_when": "You must create or manage Microsoft 365 groups before teammates can access tasks.",
-"what_to_do_instead": "Use Trello if you want instant access without enterprise-style setup."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your university requires Microsoft Teams for all collaboration and your group already has a configured class team, Microsoft Planner may feel more seamless."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want quick group access by link, choose Trello.",
-"If your class runs fully inside Microsoft Teams, choose Microsoft Planner.",
-"If permission setup feels heavier than the assignment, keep it simple."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Trello easier for short-term projects?",
-"a": "Yes. You can create and share a board quickly without managing enterprise accounts."
-},
-{
-"q": "Does Microsoft Planner require Microsoft 365?",
-"a": "Yes. It works inside Microsoft 365 groups and often depends on institutional access."
-},
-{
-"q": "Which tool is easier to leave after the semester?",
-"a": "Trello is easier to archive or delete without affecting other systems."
-},
-{
-"q": "Can Microsoft Planner work for student teams?",
-"a": "Yes, especially if the class already uses Microsoft Teams and group accounts."
-}
-],
-"related_pages": [
-{ "x_name": "Todoist", "y_name": "MeisterTask", "persona": "Student" },
-{ "x_name": "Asana", "y_name": "Trello", "persona": "Student" },
-{ "x_name": "ClickUp", "y_name": "Trello", "persona": "Student" },
-{ "x_name": "Microsoft To Do", "y_name": "Todoist", "persona": "Student" },
-{ "x_name": "Things", "y_name": "Todoist", "persona": "Student" },
-{ "x_name": "TickTick", "y_name": "Todoist", "persona": "Student" }
-]
-}
-

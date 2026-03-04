@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "Todoist vs Microsoft To Do for Power users",
-"slug": "todoist-vs-microsoft-to-do-for-power-user",
-"meta_description": "Todoist vs Microsoft To Do for power users who manage hundreds of recurring tasks and rely on advanced filters and rule-based automation.",
-"persona": "Power user",
-"constraint_lens": "You need a task manager that can handle complex recurring rules and filtered views without hitting structural limits.",
-"verdict": {
-"winner": "x",
-"summary": "Todoist wins for power users managing large volumes of recurring tasks. It supports rule-based recurrence patterns and saved filters that generate dynamic task views. Microsoft To Do focuses on simple lists and basic recurrence without layered filtering. If advanced filters and complex recurrence rules are constrained, Microsoft To Do fails first.",
-"decision_rule": "If advanced filters and complex recurrence rules are constrained, Microsoft To Do fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for large automated task systems",
-"content": "You manage hundreds of recurring tasks and expect advanced filtering. Todoist supports rule-based recurrence like every third weekday or every two weeks and allows saved filters across projects. Microsoft To Do provides basic recurring tasks but limited filtering across lists."
-},
-{
-"type": "x_wins",
-"heading": "Where Todoist wins",
-"bullets": [
-{
-"point": "Natural language recurrence rules",
-"why_it_matters": "You create patterns like every second Monday or every three days without manual scheduling."
-},
-{
-"point": "Saved filters combining multiple conditions",
-"why_it_matters": "You generate dynamic task views using tags, priority levels, and due dates."
-},
-{
-"point": "Labels and priority fields",
-"why_it_matters": "You segment hundreds of tasks into focused execution views."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Microsoft To Do wins",
-"bullets": [
-{
-"point": "Simple list structure with minimal fields",
-"why_it_matters": "You add tasks without assigning labels or building filter logic."
-},
-{
-"point": "My Day focus list",
-"why_it_matters": "You manually select tasks for today without managing automated views."
-},
-{
-"point": "Direct Outlook and Microsoft account integration",
-"why_it_matters": "You convert flagged emails into tasks without external setup."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You only need a lightweight checklist and never use filters or advanced recurrence patterns.",
-"what_to_do_instead": "Use Microsoft To Do for simpler list management."
-},
-{
-"tool": "y",
-"fails_when": "You must automate complex recurring schedules or view tasks through multi-condition filters.",
-"what_to_do_instead": "Switch to Todoist for rule-based recurrence and filtered views."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your task list remains small and you mainly capture reminders from Outlook or email, Microsoft To Do may feel sufficient."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you rely on advanced recurrence patterns, choose Todoist.",
-"If you want dynamic task views using filters, choose Todoist.",
-"If you only need a basic checklist tied to Outlook, Microsoft To Do may be enough."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Microsoft To Do support advanced filters?",
-"a": "No. It mainly organizes tasks into lists without multi-condition filtering."
-},
-{
-"q": "Can Todoist automate complex recurring schedules?",
-"a": "Yes. It supports rule-based recurrence patterns using natural language input."
-},
-{
-"q": "Which is better for managing hundreds of recurring tasks?",
-"a": "Todoist handles large recurring task systems more effectively."
-},
-{
-"q": "When would Microsoft To Do be the better choice?",
-"a": "It works well for simple reminders or small task lists tied to Outlook."
-}
-],
-"related_pages": [
-{ "x_name": "Remember The Milk", "y_name": "Google Tasks", "persona": "Power user" },
-{ "x_name": "Pagico", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "Taskheat", "y_name": "Apple Reminders", "persona": "Power user" },
-{ "x_name": "Nirvana", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "GQueues", "y_name": "Google Tasks", "persona": "Power user" },
-{ "x_name": "Scrivener", "y_name": "Ulysses", "persona": "Power user" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Todoist vs Microsoft To Do for Power users",
+  "slug": "todoist-vs-microsoft-to-do-for-power-user",
+  "meta_description": "Todoist vs Microsoft To Do for power users who manage hundreds of recurring tasks and rely on advanced filters and rule-based automation.",
+  "persona": "Power user",
+  "constraint_lens": "You need a task manager that can handle complex recurring rules and filtered views without hitting structural limits.",
+  "verdict": {
+    "winner": "x",
+    "summary": "Todoist wins for power users managing large volumes of recurring tasks. It supports rule-based recurrence patterns and saved filters that generate dynamic task views. Microsoft To Do focuses on simple lists and basic recurrence without layered filtering. If advanced filters and complex recurrence rules are constrained, Microsoft To Do fails first.",
+    "decision_rule": "If advanced filters and complex recurrence rules are constrained, Microsoft To Do fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for large automated task systems",
+      "content": "You manage hundreds of recurring tasks and expect advanced filtering. Todoist supports rule-based recurrence like every third weekday or every two weeks and allows saved filters across projects. Microsoft To Do provides basic recurring tasks but limited filtering across lists."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Natural language recurrence rules",
+          "why_it_matters": "You create patterns like every second Monday or every three days without manual scheduling."
+        },
+        {
+          "point": "Saved filters combining multiple conditions",
+          "why_it_matters": "You generate dynamic task views using tags, priority levels, and due dates."
+        },
+        {
+          "point": "Labels and priority fields",
+          "why_it_matters": "You segment hundreds of tasks into focused execution views."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Microsoft To Do wins",
+      "bullets": [
+        {
+          "point": "Simple list structure with minimal fields",
+          "why_it_matters": "You add tasks without assigning labels or building filter logic."
+        },
+        {
+          "point": "My Day focus list",
+          "why_it_matters": "You manually select tasks for today without managing automated views."
+        },
+        {
+          "point": "Direct Outlook and Microsoft account integration",
+          "why_it_matters": "You convert flagged emails into tasks without external setup."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only need a lightweight checklist and never use filters or advanced recurrence patterns.",
+          "what_to_do_instead": "Use Microsoft To Do for simpler list management."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You must automate complex recurring schedules or view tasks through multi-condition filters.",
+          "what_to_do_instead": "Switch to Todoist for rule-based recurrence and filtered views."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your task list remains small and you mainly capture reminders from Outlook or email, Microsoft To Do may feel sufficient."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you rely on advanced recurrence patterns, choose Todoist.",
+        "If you want dynamic task views using filters, choose Todoist.",
+        "If you only need a basic checklist tied to Outlook, Microsoft To Do may be enough."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Microsoft To Do support advanced filters?",
+      "a": "No. It mainly organizes tasks into lists without multi-condition filtering."
+    },
+    {
+      "q": "Can Todoist automate complex recurring schedules?",
+      "a": "Yes. It supports rule-based recurrence patterns using natural language input."
+    },
+    {
+      "q": "Which is better for managing hundreds of recurring tasks?",
+      "a": "Todoist handles large recurring task systems more effectively."
+    },
+    {
+      "q": "When would Microsoft To Do be the better choice?",
+      "a": "It works well for simple reminders or small task lists tied to Outlook."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Taskwarrior",
+      "y_name": "Todoist",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Asana",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "GQueues",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Nirvana",
+      "y_name": "Things 3",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Pagico",
+      "y_name": "Things 3",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Remember The Milk",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    }
+  ]
 }

@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "setup-tolerance",
-"constraintUiName": "Publish fast",
-"title": "FacileThings vs Todoist for Beginners",
-"slug": "facilethings-vs-todoist-for-beginner",
-"meta_description": "FacileThings vs Todoist for beginners who want to organize to dos without learning structured workflows or setup steps first.",
-"persona": "Beginner",
-"constraint_lens": "You want to start adding and organizing tasks immediately without learning a structured productivity system first.",
-"verdict": {
-"winner": "y",
-"summary": "Todoist wins for beginners who are new to productivity systems and want to organize to dos quickly. It lets you add tasks directly into simple lists without going through workflow stages. FacileThings is built around a structured method with defined steps like collect, clarify, and review. If structured workflow steps are required before task entry, FacileThings fails first.",
-"decision_rule": "If structured workflow steps are required before task entry, FacileThings fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Beginners",
-"content": "You said you are new to productivity systems and unsure how deep to go. As a beginner, being guided through multiple workflow stages before simply adding tasks can feel overwhelming. A tool that behaves like a straightforward list makes it easier to get started."
-},
-{
-"type": "x_wins",
-"heading": "Where FacileThings wins",
-"bullets": [
-{
-"point": "Dedicated workflow stages such as inbox, clarify, organize, and review",
-"why_it_matters": "You are guided through a clear process, but you must understand and use these stages before tasks feel settled."
-},
-{
-"point": "Context and next action structure tied to task processing",
-"why_it_matters": "You can break down tasks methodically, yet deciding contexts and actions adds setup before execution."
-},
-{
-"point": "Built in review cycle for regular system maintenance",
-"why_it_matters": "It encourages disciplined planning, but adds a layer of routine that may feel heavy for someone just starting."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Todoist wins",
-"bullets": [
-{
-"point": "Quick add task field available from any view",
-"why_it_matters": "You can type a task and press enter without moving through structured workflow stages."
-},
-{
-"point": "Simple project lists instead of required processing steps",
-"why_it_matters": "Tasks can live in basic lists without assigning contexts or next actions first."
-},
-{
-"point": "Today and Upcoming views with automatic sorting by date",
-"why_it_matters": "You see what is due without setting up a full productivity framework."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You feel required to process tasks through multiple stages before simply seeing them in a list.",
-"what_to_do_instead": "Use Todoist if you want immediate list based organization with minimal structure."
-},
-{
-"tool": "y",
-"fails_when": "You want a fully guided productivity method with enforced review cycles.",
-"what_to_do_instead": "Use FacileThings if you decide you want a structured system from the start."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you later decide you want a complete step by step system with built in review routines and defined processing stages, FacileThings may offer more guidance despite the added structure."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want to start with a simple task list, choose Todoist.",
-"If structured workflow steps feel confusing, avoid FacileThings.",
-"If you want a guided productivity method later, FacileThings may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is FacileThings based on a specific productivity method?",
-"a": "Yes, it is built around a structured approach with defined processing and review steps."
-},
-{
-"q": "Can Todoist stay simple over time?",
-"a": "Yes, you can use it as a basic list without activating advanced features."
-},
-{
-"q": "Which tool is faster to begin using?",
-"a": "Todoist is typically faster because you can add tasks immediately."
-},
-{
-"q": "Can I move from Todoist to a more structured tool later?",
-"a": "Yes, many beginners start simple and switch if they want a deeper workflow system."
-}
-],
-"related_pages": [
-{ "x_name": "OmniFocus", "y_name": "Apple Reminders", "persona": "Beginner" },
-{ "x_name": "Superlist", "y_name": "Microsoft To Do", "persona": "Beginner" },
-{ "x_name": "Todoist", "y_name": "Apple Reminders", "persona": "Beginner" },
-{ "x_name": "TickTick", "y_name": "Apple Reminders", "persona": "Beginner" },
-{ "x_name": "Things", "y_name": "Apple Reminders", "persona": "Beginner" },
-{ "x_name": "Notion", "y_name": "Apple Reminders", "persona": "Beginner" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "FacileThings vs Todoist for Beginners",
+  "slug": "facilethings-vs-todoist-for-beginner",
+  "meta_description": "FacileThings vs Todoist for beginners who want to organize to dos without learning structured workflows or setup steps first.",
+  "persona": "Beginner",
+  "constraint_lens": "You want to start adding and organizing tasks immediately without learning a structured productivity system first.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist wins for beginners who are new to productivity systems and want to organize to dos quickly. It lets you add tasks directly into simple lists without going through workflow stages. FacileThings is built around a structured method with defined steps like collect, clarify, and review. If structured workflow steps are required before task entry, FacileThings fails first.",
+    "decision_rule": "If structured workflow steps are required before task entry, FacileThings fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Beginners",
+      "content": "You said you are new to productivity systems and unsure how deep to go. As a beginner, being guided through multiple workflow stages before simply adding tasks can feel overwhelming. A tool that behaves like a straightforward list makes it easier to get started."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where FacileThings wins",
+      "bullets": [
+        {
+          "point": "Dedicated workflow stages such as inbox, clarify, organize, and review",
+          "why_it_matters": "You are guided through a clear process, but you must understand and use these stages before tasks feel settled."
+        },
+        {
+          "point": "Context and next action structure tied to task processing",
+          "why_it_matters": "You can break down tasks methodically, yet deciding contexts and actions adds setup before execution."
+        },
+        {
+          "point": "Built in review cycle for regular system maintenance",
+          "why_it_matters": "It encourages disciplined planning, but adds a layer of routine that may feel heavy for someone just starting."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Quick add task field available from any view",
+          "why_it_matters": "You can type a task and press enter without moving through structured workflow stages."
+        },
+        {
+          "point": "Simple project lists instead of required processing steps",
+          "why_it_matters": "Tasks can live in basic lists without assigning contexts or next actions first."
+        },
+        {
+          "point": "Today and Upcoming views with automatic sorting by date",
+          "why_it_matters": "You see what is due without setting up a full productivity framework."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You feel required to process tasks through multiple stages before simply seeing them in a list.",
+          "what_to_do_instead": "Use Todoist if you want immediate list based organization with minimal structure."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want a fully guided productivity method with enforced review cycles.",
+          "what_to_do_instead": "Use FacileThings if you decide you want a structured system from the start."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you later decide you want a complete step by step system with built in review routines and defined processing stages, FacileThings may offer more guidance despite the added structure."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want to start with a simple task list, choose Todoist.",
+        "If structured workflow steps feel confusing, avoid FacileThings.",
+        "If you want a guided productivity method later, FacileThings may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is FacileThings based on a specific productivity method?",
+      "a": "Yes, it is built around a structured approach with defined processing and review steps."
+    },
+    {
+      "q": "Can Todoist stay simple over time?",
+      "a": "Yes, you can use it as a basic list without activating advanced features."
+    },
+    {
+      "q": "Which tool is faster to begin using?",
+      "a": "Todoist is typically faster because you can add tasks immediately."
+    },
+    {
+      "q": "Can I move from Todoist to a more structured tool later?",
+      "a": "Yes, many beginners start simple and switch if they want a deeper workflow system."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Asana",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Notion",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Any.do",
+      "y_name": "Apple Reminders",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Microsoft To Do",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Freedcamp",
+      "y_name": "Microsoft To Do",
+      "persona": "Beginner"
+    }
+  ]
 }

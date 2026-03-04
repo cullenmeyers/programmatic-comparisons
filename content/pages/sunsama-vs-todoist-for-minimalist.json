@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Sunsama vs Todoist for Minimalists",
-"slug": "sunsama-vs-todoist-for-minimalist",
-"meta_description": "Sunsama vs Todoist for minimalists who want a clean daily task list without guided planning rituals or structured daily review sessions.",
-"persona": "Minimalist",
-"constraint_lens": "You want to list and check off tasks without guided rituals, planning sessions, or layered workflows.",
-"verdict": {
-"winner": "y",
-"summary": "Todoist wins for minimalists who just want a clean daily task list. You can add tasks instantly and view them in a simple Today list without going through a planning routine. Sunsama is built around a structured daily planning flow that encourages reviewing and scheduling tasks each day. If daily planning sessions become mandatory, Sunsama fails first.",
-"decision_rule": "If daily planning sessions become mandatory, Sunsama fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Minimalists",
-"content": "You said you want to list tasks without structured daily rituals. As a minimalist, extra steps like guided planning screens or daily shutdown prompts feel unnecessary when your goal is simply to see and complete tasks. A straightforward list view fits you better."
-},
-{
-"type": "x_wins",
-"heading": "Where Sunsama wins",
-"bullets": [
-{
-"point": "Daily planning screen that asks you to select and schedule tasks for the day",
-"why_it_matters": "It helps you focus intentionally, but it introduces a required review step before starting work."
-},
-{
-"point": "Calendar based task scheduling with drag and drop time blocks",
-"why_it_matters": "You can assign specific time slots to tasks, yet this adds structure beyond a simple checklist."
-},
-{
-"point": "End of day review and carryover flow",
-"why_it_matters": "It encourages reflection and rollover, but it creates a ritual that may feel heavy if you just want to check items off."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Todoist wins",
-"bullets": [
-{
-"point": "Quick add task field available from any view",
-"why_it_matters": "You can type a task and press enter without entering a planning mode."
-},
-{
-"point": "Simple Today and Upcoming list views",
-"why_it_matters": "Your daily tasks appear in a clean list without requiring scheduling into time blocks."
-},
-{
-"point": "Optional features like labels and filters can be ignored",
-"why_it_matters": "You can keep everything as a basic list and avoid deeper structuring if you prefer."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You feel required to go through a daily planning session before seeing or completing tasks.",
-"what_to_do_instead": "Use Todoist if you want immediate access to a simple task list."
-},
-{
-"tool": "y",
-"fails_when": "You need enforced daily reviews and time blocking to stay focused.",
-"what_to_do_instead": "Use Sunsama if structured daily planning helps you stay accountable."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you start struggling with distraction and need a guided daily planning ritual to decide what to work on, Sunsama may feel more supportive despite the added structure."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want a clean task list with no ritual, choose Todoist.",
-"If daily planning sessions feel like extra work, avoid Sunsama.",
-"If structured daily reviews help you focus, Sunsama may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Sunsama only for people who like structure?",
-"a": "It is designed around daily planning and scheduling, which suits people who want a guided routine."
-},
-{
-"q": "Can I keep Todoist very simple?",
-"a": "Yes, you can use it as a basic checklist without labels, filters, or complex project structures."
-},
-{
-"q": "Does Sunsama require time blocking?",
-"a": "It strongly encourages scheduling tasks into calendar slots as part of its daily workflow."
-},
-{
-"q": "Which tool feels lighter day to day?",
-"a": "Todoist generally feels lighter because you can open it and immediately see your task list."
-}
-],
-"related_pages": [
-{ "x_name": "Notion", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "Things", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "OmniFocus", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "TickTick", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "Microsoft To Do", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "Any.do", "y_name": "Todoist", "persona": "Minimalist" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Sunsama vs Todoist for Minimalists",
+  "slug": "sunsama-vs-todoist-for-minimalist",
+  "meta_description": "Sunsama vs Todoist for minimalists who want a clean daily task list without guided planning rituals or structured daily review sessions.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want to list and check off tasks without guided rituals, planning sessions, or layered workflows.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist wins for minimalists who just want a clean daily task list. You can add tasks instantly and view them in a simple Today list without going through a planning routine. Sunsama is built around a structured daily planning flow that encourages reviewing and scheduling tasks each day. If daily planning sessions become mandatory, Sunsama fails first.",
+    "decision_rule": "If daily planning sessions become mandatory, Sunsama fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Minimalists",
+      "content": "You said you want to list tasks without structured daily rituals. As a minimalist, extra steps like guided planning screens or daily shutdown prompts feel unnecessary when your goal is simply to see and complete tasks. A straightforward list view fits you better."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Sunsama wins",
+      "bullets": [
+        {
+          "point": "Daily planning screen that asks you to select and schedule tasks for the day",
+          "why_it_matters": "It helps you focus intentionally, but it introduces a required review step before starting work."
+        },
+        {
+          "point": "Calendar based task scheduling with drag and drop time blocks",
+          "why_it_matters": "You can assign specific time slots to tasks, yet this adds structure beyond a simple checklist."
+        },
+        {
+          "point": "End of day review and carryover flow",
+          "why_it_matters": "It encourages reflection and rollover, but it creates a ritual that may feel heavy if you just want to check items off."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Quick add task field available from any view",
+          "why_it_matters": "You can type a task and press enter without entering a planning mode."
+        },
+        {
+          "point": "Simple Today and Upcoming list views",
+          "why_it_matters": "Your daily tasks appear in a clean list without requiring scheduling into time blocks."
+        },
+        {
+          "point": "Optional features like labels and filters can be ignored",
+          "why_it_matters": "You can keep everything as a basic list and avoid deeper structuring if you prefer."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You feel required to go through a daily planning session before seeing or completing tasks.",
+          "what_to_do_instead": "Use Todoist if you want immediate access to a simple task list."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need enforced daily reviews and time blocking to stay focused.",
+          "what_to_do_instead": "Use Sunsama if structured daily planning helps you stay accountable."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you start struggling with distraction and need a guided daily planning ritual to decide what to work on, Sunsama may feel more supportive despite the added structure."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a clean task list with no ritual, choose Todoist.",
+        "If daily planning sessions feel like extra work, avoid Sunsama.",
+        "If structured daily reviews help you focus, Sunsama may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Sunsama only for people who like structure?",
+      "a": "It is designed around daily planning and scheduling, which suits people who want a guided routine."
+    },
+    {
+      "q": "Can I keep Todoist very simple?",
+      "a": "Yes, you can use it as a basic checklist without labels, filters, or complex project structures."
+    },
+    {
+      "q": "Does Sunsama require time blocking?",
+      "a": "It strongly encourages scheduling tasks into calendar slots as part of its daily workflow."
+    },
+    {
+      "q": "Which tool feels lighter day to day?",
+      "a": "Todoist generally feels lighter because you can open it and immediately see your task list."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Amazing Marvin",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Habitica",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "MeisterTask",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "OmniFocus",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Sunsama",
+      "y_name": "Microsoft To Do",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Sunsama",
+      "y_name": "Things 3",
+      "persona": "Minimalist"
+    }
+  ]
 }

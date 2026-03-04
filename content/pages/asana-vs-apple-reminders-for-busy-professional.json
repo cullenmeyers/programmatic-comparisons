@@ -1,116 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "time-scarcity",
-"constraintUiName": "Fast to use daily",
-"title": "Asana vs Apple Reminders for Busy professionals",
-"slug": "asana-vs-apple-reminders-for-busy-professional",
-"meta_description": "Asana vs Apple Reminders for busy professionals who need to capture tasks instantly without choosing projects or workflow structures first.",
-"persona": "Busy professional",
-"constraint_lens": "You need to capture tasks instantly during the day without selecting projects or navigating workflow structures.",
-"verdict": {
-"winner": "y",
-"summary": "Apple Reminders wins for busy professionals who need to capture work tasks fast. You can open the app and type a task immediately without choosing a project or status. Asana is built around projects, sections, and workflow views that assume structure before entry. If task entry assumes project context or structure, Asana fails first.",
-"decision_rule": "If task entry assumes project context or structure, Asana fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Busy professionals",
-"content": "You said you need to capture work tasks instantly during the day. When moving between meetings, even a few extra clicks to choose a project or section can slow you down. A direct list that accepts tasks immediately fits your pace."
-},
-{
-"type": "x_wins",
-"heading": "Where Asana wins",
-"bullets": [
-{
-"point": "Project based task creation with sections and status fields",
-"why_it_matters": "You can organize tasks clearly, but selecting the correct project and section adds steps before saving."
-},
-{
-"point": "Multiple views such as list, board, and timeline",
-"why_it_matters": "You can manage complex workflows, yet navigating views increases cognitive load when you just want to capture a task."
-},
-{
-"point": "Task details panel with assignees, dependencies, and due dates",
-"why_it_matters": "You can define responsibilities and relationships, but these fields introduce extra decisions during quick entry."
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Asana vs Apple Reminders for Busy professionals",
+  "slug": "asana-vs-apple-reminders-for-busy-professional",
+  "meta_description": "Asana vs Apple Reminders for busy professionals who need to capture tasks instantly without choosing projects or workflow structures first.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need to capture tasks instantly during the day without selecting projects or navigating workflow structures.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Apple Reminders wins for busy professionals who need to capture work tasks fast. You can open the app and type a task immediately without choosing a project or status. Asana is built around projects, sections, and workflow views that assume structure before entry. If task entry assumes project context or structure, Asana fails first.",
+    "decision_rule": "If task entry assumes project context or structure, Asana fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Busy professionals",
+      "content": "You said you need to capture work tasks instantly during the day. When moving between meetings, even a few extra clicks to choose a project or section can slow you down. A direct list that accepts tasks immediately fits your pace."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Asana wins",
+      "bullets": [
+        {
+          "point": "Project based task creation with sections and status fields",
+          "why_it_matters": "You can organize tasks clearly, but selecting the correct project and section adds steps before saving."
+        },
+        {
+          "point": "Multiple views such as list, board, and timeline",
+          "why_it_matters": "You can manage complex workflows, yet navigating views increases cognitive load when you just want to capture a task."
+        },
+        {
+          "point": "Task details panel with assignees, dependencies, and due dates",
+          "why_it_matters": "You can define responsibilities and relationships, but these fields introduce extra decisions during quick entry."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Apple Reminders wins",
+      "bullets": [
+        {
+          "point": "Immediate add button in a simple list view",
+          "why_it_matters": "You can type a task and save without assigning it to a project."
+        },
+        {
+          "point": "Minimal task fields limited to title and optional date",
+          "why_it_matters": "Fewer fields mean fewer decisions during fast capture."
+        },
+        {
+          "point": "No required workflow stages or sections",
+          "why_it_matters": "Tasks appear instantly in your list without needing structural placement."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You must choose a project, section, or workflow before quickly logging a simple task.",
+          "what_to_do_instead": "Use Apple Reminders if you want immediate capture with minimal structure."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need team coordination with task assignments and dependencies.",
+          "what_to_do_instead": "Use Asana if your tasks must live inside shared project workflows."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your role requires every task to be tracked inside shared projects with clear ownership and workflow stages, Asana may be necessary despite the extra structure."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you need instant task capture between meetings, choose Apple Reminders.",
+        "If selecting projects slows you down, avoid Asana for personal capture.",
+        "If your work depends on shared project tracking, Asana may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Asana mainly for teams?",
+      "a": "It is designed around shared projects with structured task organization."
+    },
+    {
+      "q": "Can Apple Reminders handle recurring tasks?",
+      "a": "Yes, you can set tasks to repeat without setting up projects."
+    },
+    {
+      "q": "Which tool is faster for quick capture?",
+      "a": "Apple Reminders is typically faster because it minimizes required fields."
+    },
+    {
+      "q": "Does Asana require a project to create tasks?",
+      "a": "Tasks are usually created within projects, which adds structure before entry."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Habitica",
+      "y_name": "Apple Reminders",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Sunsama",
+      "y_name": "Apple Reminders",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Todoist",
+      "y_name": "Asana",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Trello",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Jira",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Apple Reminders wins",
-"bullets": [
-{
-"point": "Immediate add button in a simple list view",
-"why_it_matters": "You can type a task and save without assigning it to a project."
-},
-{
-"point": "Minimal task fields limited to title and optional date",
-"why_it_matters": "Fewer fields mean fewer decisions during fast capture."
-},
-{
-"point": "No required workflow stages or sections",
-"why_it_matters": "Tasks appear instantly in your list without needing structural placement."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You must choose a project, section, or workflow before quickly logging a simple task.",
-"what_to_do_instead": "Use Apple Reminders if you want immediate capture with minimal structure."
-},
-{
-"tool": "y",
-"fails_when": "You need team coordination with task assignments and dependencies.",
-"what_to_do_instead": "Use Asana if your tasks must live inside shared project workflows."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your role requires every task to be tracked inside shared projects with clear ownership and workflow stages, Asana may be necessary despite the extra structure."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you need instant task capture between meetings, choose Apple Reminders.",
-"If selecting projects slows you down, avoid Asana for personal capture.",
-"If your work depends on shared project tracking, Asana may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Asana mainly for teams?",
-"a": "It is designed around shared projects with structured task organization."
-},
-{
-"q": "Can Apple Reminders handle recurring tasks?",
-"a": "Yes, you can set tasks to repeat without setting up projects."
-},
-{
-"q": "Which tool is faster for quick capture?",
-"a": "Apple Reminders is typically faster because it minimizes required fields."
-},
-{
-"q": "Does Asana require a project to create tasks?",
-"a": "Tasks are usually created within projects, which adds structure before entry."
-}
-],
-"related_pages": [
-{ "x_name": "Wrike", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Jira", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Linear", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Monday.com", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Sunsama", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Basecamp", "y_name": "Trello", "persona": "Busy professional" }
-]
-}
-

@@ -1,116 +1,139 @@
 {
-"category": "Note-taking apps",
-"categorySlug": "note-taking-apps",
-"constraintSlug": "time-scarcity",
-"constraintUiName": "Fast to use daily",
-"title": "Evernote vs DEVONthink for Busy professionals",
-"slug": "evernote-vs-devonthink-for-busy-professional",
-"meta_description": "Evernote vs DEVONthink for busy professionals who need dependable work notes fast without managing complex databases or indexing systems.",
-"persona": "Busy professional",
-"constraint_lens": "You need to open your notes and find what you need quickly without managing complex systems.",
-"verdict": {
-"winner": "x",
-"summary": "Evernote wins for busy professionals who need dependable notes without managing a database system. It focuses on notebooks, tags, and search without requiring manual indexing or database structure decisions. DEVONthink is built around databases, groups, and indexing controls that demand attention. If database configuration and indexing require extra attention, DEVONthink fails first.",
-"decision_rule": "If database configuration and indexing require extra attention, DEVONthink fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Which tool gets you to your notes faster?",
-"content": "You need dependable notes without managing complex databases. As a busy professional, you don’t have time to think about indexing settings or database structure. The right tool should let you search, click, and move on. Anything that requires ongoing attention or structural decisions slows your day."
-},
-{
-"type": "x_wins",
-"heading": "Where Evernote works better for busy professionals",
-"bullets": [
-{
-"point": "Automatic sync and search across notebooks without manual indexing.",
-"why_it_matters": "You can save a note and trust it will appear everywhere and be searchable without extra steps. If you have to manage how files are indexed, that adds mental overhead during a busy day."
-},
-{
-"point": "Simple notebook and tag system for organizing notes.",
-"why_it_matters": "You choose a notebook or add a tag and move on. There’s no need to design a database structure before capturing information."
-},
-{
-"point": "Web clipper and quick note capture flow.",
-"why_it_matters": "You can grab content from email or the web directly into a note without setting up import rules. Fewer steps mean less interruption between meetings."
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Evernote vs DEVONthink for Busy professionals",
+  "slug": "evernote-vs-devonthink-for-busy-professional",
+  "meta_description": "Evernote vs DEVONthink for busy professionals who need dependable work notes fast without managing complex databases or indexing systems.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need to open your notes and find what you need quickly without managing complex systems.",
+  "verdict": {
+    "winner": "x",
+    "summary": "Evernote wins for busy professionals who need dependable notes without managing a database system. It focuses on notebooks, tags, and search without requiring manual indexing or database structure decisions. DEVONthink is built around databases, groups, and indexing controls that demand attention. If database configuration and indexing require extra attention, DEVONthink fails first.",
+    "decision_rule": "If database configuration and indexing require extra attention, DEVONthink fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool gets you to your notes faster?",
+      "content": "You need dependable notes without managing complex databases. As a busy professional, you don’t have time to think about indexing settings or database structure. The right tool should let you search, click, and move on. Anything that requires ongoing attention or structural decisions slows your day."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Evernote works better for busy professionals",
+      "bullets": [
+        {
+          "point": "Automatic sync and search across notebooks without manual indexing.",
+          "why_it_matters": "You can save a note and trust it will appear everywhere and be searchable without extra steps. If you have to manage how files are indexed, that adds mental overhead during a busy day."
+        },
+        {
+          "point": "Simple notebook and tag system for organizing notes.",
+          "why_it_matters": "You choose a notebook or add a tag and move on. There’s no need to design a database structure before capturing information."
+        },
+        {
+          "point": "Web clipper and quick note capture flow.",
+          "why_it_matters": "You can grab content from email or the web directly into a note without setting up import rules. Fewer steps mean less interruption between meetings."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where DEVONthink works better",
+      "bullets": [
+        {
+          "point": "Local database system with granular control over groups and folders.",
+          "why_it_matters": "You can create detailed structures for large knowledge archives. But building and maintaining that structure requires ongoing attention."
+        },
+        {
+          "point": "Manual indexing of external folders and files.",
+          "why_it_matters": "You can connect outside documents into the system. However, deciding what to index and how to organize it adds extra decisions during setup."
+        },
+        {
+          "point": "Advanced sorting and filtering inside databases.",
+          "why_it_matters": "You can fine-tune how information is grouped and retrieved. For someone short on time, adjusting these options can slow daily use."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need deep control over local files, complex archives, or custom database rules.",
+          "what_to_do_instead": "Use DEVONthink if you want to manage large document libraries with detailed structure."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You must configure databases or think about indexing before reliably accessing notes.",
+          "what_to_do_instead": "Use Evernote if you want to capture and retrieve notes without managing system settings."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you are a busy professional who manages a large research archive or legal document library and needs tight control over local files, DEVONthink may justify the extra setup time."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want notes that just sync and search without setup, choose Evernote.",
+        "If you need full control over local document databases, choose DEVONthink.",
+        "If database decisions slow you down, avoid database-first tools."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is DEVONthink too complex for busy professionals?",
+      "a": "It can be if you don’t need database control. Its indexing and structure tools require attention that may not fit a packed schedule."
+    },
+    {
+      "q": "Does Evernote require database setup?",
+      "a": "No. You organize notes using notebooks and tags without creating or managing a database system."
+    },
+    {
+      "q": "Which tool is faster for daily work notes?",
+      "a": "Evernote is generally faster for quick capture and search because it avoids manual indexing and structural setup."
+    },
+    {
+      "q": "Can DEVONthink be used simply?",
+      "a": "Yes, but its design centers around databases and indexing, so its strengths show when you actively manage those features."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Amplenote",
+      "y_name": "Obsidian",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Craft",
+      "y_name": "Apple Notes",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Dropbox Paper",
+      "y_name": "Coda",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Notejoy",
+      "y_name": "Coda",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Notezilla",
+      "y_name": "Google Keep",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Notion",
+      "y_name": "Google Docs",
+      "persona": "Busy professional"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where DEVONthink works better",
-"bullets": [
-{
-"point": "Local database system with granular control over groups and folders.",
-"why_it_matters": "You can create detailed structures for large knowledge archives. But building and maintaining that structure requires ongoing attention."
-},
-{
-"point": "Manual indexing of external folders and files.",
-"why_it_matters": "You can connect outside documents into the system. However, deciding what to index and how to organize it adds extra decisions during setup."
-},
-{
-"point": "Advanced sorting and filtering inside databases.",
-"why_it_matters": "You can fine-tune how information is grouped and retrieved. For someone short on time, adjusting these options can slow daily use."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You need deep control over local files, complex archives, or custom database rules.",
-"what_to_do_instead": "Use DEVONthink if you want to manage large document libraries with detailed structure."
-},
-{
-"tool": "y",
-"fails_when": "You must configure databases or think about indexing before reliably accessing notes.",
-"what_to_do_instead": "Use Evernote if you want to capture and retrieve notes without managing system settings."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you are a busy professional who manages a large research archive or legal document library and needs tight control over local files, DEVONthink may justify the extra setup time."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want notes that just sync and search without setup, choose Evernote.",
-"If you need full control over local document databases, choose DEVONthink.",
-"If database decisions slow you down, avoid database-first tools."
-]
-}
-],
-"faqs": [
-{
-"q": "Is DEVONthink too complex for busy professionals?",
-"a": "It can be if you don’t need database control. Its indexing and structure tools require attention that may not fit a packed schedule."
-},
-{
-"q": "Does Evernote require database setup?",
-"a": "No. You organize notes using notebooks and tags without creating or managing a database system."
-},
-{
-"q": "Which tool is faster for daily work notes?",
-"a": "Evernote is generally faster for quick capture and search because it avoids manual indexing and structural setup."
-},
-{
-"q": "Can DEVONthink be used simply?",
-"a": "Yes, but its design centers around databases and indexing, so its strengths show when you actively manage those features."
-}
-],
-"related_pages": [
-{ "x_name": "Notion", "y_name": "Evernote", "persona": "Busy professional" },
-{ "x_name": "OneNote", "y_name": "Evernote", "persona": "Busy professional" },
-{ "x_name": "Obsidian", "y_name": "Evernote", "persona": "Busy professional" },
-{ "x_name": "Apple Notes", "y_name": "Evernote", "persona": "Busy professional" },
-{ "x_name": "Google Keep", "y_name": "Evernote", "persona": "Busy professional" },
-{ "x_name": "UpNote", "y_name": "Evernote", "persona": "Busy professional" }
-]
-}
-

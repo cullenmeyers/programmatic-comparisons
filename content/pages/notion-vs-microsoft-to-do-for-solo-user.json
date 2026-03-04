@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "maintenance-load",
-"constraintUiName": "Works without upkeep",
-"title": "Notion vs Microsoft To Do for Solo users",
-"slug": "notion-vs-microsoft-to-do-for-solo-user",
-"meta_description": "Notion vs Microsoft To Do for solo users who want a personal task list that stays clean without constant restructuring or database upkeep.",
-"persona": "Solo user",
-"constraint_lens": "You want a personal task list that stays usable over time without constant restructuring or database upkeep.",
-"verdict": {
-"winner": "y",
-"summary": "Microsoft To Do wins for solo users who want a task list that stays stable without tuning. You can add tasks to simple lists and leave them alone. Notion tasks usually live inside databases that require properties, views, and occasional cleanup. If tasks require regular restructuring to stay clean, Notion fails first.",
-"decision_rule": "If tasks require regular restructuring to stay clean, Notion fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Solo users",
-"content": "You said you want a task list that stays usable without constant tuning. When tasks live inside flexible databases, you may feel pressure to adjust properties or views as your list grows. A fixed list structure reduces maintenance."
-},
-{
-"type": "x_wins",
-"heading": "Where Notion wins",
-"bullets": [
-{
-"point": "Database based task tables with customizable properties",
-"why_it_matters": "You can add fields like status or priority, but maintaining those fields requires periodic updates."
-},
-{
-"point": "Multiple views such as board, calendar, and filtered lists",
-"why_it_matters": "You can reshape how tasks appear, yet switching and maintaining views adds overhead."
-},
-{
-"point": "Tasks embedded inside broader workspaces and pages",
-"why_it_matters": "You can connect notes and tasks, but reorganizing pages to keep things tidy takes effort."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Microsoft To Do wins",
-"bullets": [
-{
-"point": "Simple list structure without database properties",
-"why_it_matters": "You add and check off tasks without adjusting fields or schemas."
-},
-{
-"point": "My Day view that highlights tasks without restructuring lists",
-"why_it_matters": "You focus on what matters today without reorganizing your system."
-},
-{
-"point": "No required templates or page layout decisions",
-"why_it_matters": "You avoid rebuilding structure as your list grows."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You spend time cleaning up properties, filters, or page layouts just to keep tasks readable.",
-"what_to_do_instead": "Use Microsoft To Do if you want a list that stays simple without adjustment."
-},
-{
-"tool": "y",
-"fails_when": "You need tasks tightly integrated with notes, documents, and custom workflows.",
-"what_to_do_instead": "Use Notion if your personal system depends on connected databases."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you rely on linking tasks with detailed notes, references, and custom views inside one workspace, Notion may justify the added upkeep."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want a stable list with no tuning, choose Microsoft To Do.",
-"If database properties feel like extra work, avoid Notion.",
-"If you need tasks connected to pages and notes, Notion may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Notion require ongoing organization?",
-"a": "Its flexible databases often need occasional restructuring to stay clean."
-},
-{
-"q": "Is Microsoft To Do easier to maintain?",
-"a": "Yes, it focuses on fixed lists that require little adjustment."
-},
-{
-"q": "Can Notion handle simple tasks?",
-"a": "Yes, but its strength lies in customization, which can add upkeep."
-},
-{
-"q": "Which tool is better for connected notes and tasks?",
-"a": "Notion is better if you want tasks embedded within a broader workspace."
-}
-],
-"related_pages": [
-{ "x_name": "Asana", "y_name": "Microsoft To Do", "persona": "Solo user" },
-{ "x_name": "Basecamp", "y_name": "Microsoft To Do", "persona": "Solo user" },
-{ "x_name": "Sunsama", "y_name": "Apple Reminders", "persona": "Solo user" },
-{ "x_name": "Teamwork", "y_name": "Apple Reminders", "persona": "Solo user" },
-{ "x_name": "Wrike", "y_name": "Todoist", "persona": "Solo user" },
-{ "x_name": "Jira", "y_name": "Todoist", "persona": "Solo user" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Notion vs Microsoft To Do for Solo users",
+  "slug": "notion-vs-microsoft-to-do-for-solo-user",
+  "meta_description": "Notion vs Microsoft To Do for solo users who want a personal task list that stays clean without constant restructuring or database upkeep.",
+  "persona": "Solo user",
+  "constraint_lens": "You want a personal task list that stays usable over time without constant restructuring or database upkeep.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Microsoft To Do wins for solo users who want a task list that stays stable without tuning. You can add tasks to simple lists and leave them alone. Notion tasks usually live inside databases that require properties, views, and occasional cleanup. If tasks require regular restructuring to stay clean, Notion fails first.",
+    "decision_rule": "If tasks require regular restructuring to stay clean, Notion fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Solo users",
+      "content": "You said you want a task list that stays usable without constant tuning. When tasks live inside flexible databases, you may feel pressure to adjust properties or views as your list grows. A fixed list structure reduces maintenance."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Notion wins",
+      "bullets": [
+        {
+          "point": "Database based task tables with customizable properties",
+          "why_it_matters": "You can add fields like status or priority, but maintaining those fields requires periodic updates."
+        },
+        {
+          "point": "Multiple views such as board, calendar, and filtered lists",
+          "why_it_matters": "You can reshape how tasks appear, yet switching and maintaining views adds overhead."
+        },
+        {
+          "point": "Tasks embedded inside broader workspaces and pages",
+          "why_it_matters": "You can connect notes and tasks, but reorganizing pages to keep things tidy takes effort."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Microsoft To Do wins",
+      "bullets": [
+        {
+          "point": "Simple list structure without database properties",
+          "why_it_matters": "You add and check off tasks without adjusting fields or schemas."
+        },
+        {
+          "point": "My Day view that highlights tasks without restructuring lists",
+          "why_it_matters": "You focus on what matters today without reorganizing your system."
+        },
+        {
+          "point": "No required templates or page layout decisions",
+          "why_it_matters": "You avoid rebuilding structure as your list grows."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You spend time cleaning up properties, filters, or page layouts just to keep tasks readable.",
+          "what_to_do_instead": "Use Microsoft To Do if you want a list that stays simple without adjustment."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need tasks tightly integrated with notes, documents, and custom workflows.",
+          "what_to_do_instead": "Use Notion if your personal system depends on connected databases."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you rely on linking tasks with detailed notes, references, and custom views inside one workspace, Notion may justify the added upkeep."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a stable list with no tuning, choose Microsoft To Do.",
+        "If database properties feel like extra work, avoid Notion.",
+        "If you need tasks connected to pages and notes, Notion may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Notion require ongoing organization?",
+      "a": "Its flexible databases often need occasional restructuring to stay clean."
+    },
+    {
+      "q": "Is Microsoft To Do easier to maintain?",
+      "a": "Yes, it focuses on fixed lists that require little adjustment."
+    },
+    {
+      "q": "Can Notion handle simple tasks?",
+      "a": "Yes, but its strength lies in customization, which can add upkeep."
+    },
+    {
+      "q": "Which tool is better for connected notes and tasks?",
+      "a": "Notion is better if you want tasks embedded within a broader workspace."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Microsoft To Do",
+      "y_name": "Notion",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Asana",
+      "y_name": "Microsoft To Do",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Microsoft To Do",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Focalboard",
+      "y_name": "Monday.com",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Kanboard",
+      "y_name": "Trello",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Sunsama",
+      "y_name": "Apple Reminders",
+      "persona": "Solo user"
+    }
+  ]
 }

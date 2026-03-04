@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "fear-of-breaking",
-"constraintUiName": "Hard to mess up",
-"title": "Basecamp vs Microsoft To Do for Non-technical users",
-"slug": "basecamp-vs-microsoft-to-do-for-non-technical-user",
-"meta_description": "Basecamp vs Microsoft To Do for non-technical users who want simple task tracking without message boards or layered project tools.",
-"persona": "Non-technical user",
-"constraint_lens": "You want straightforward task tracking that feels safe without project boards, message threads, or layered tools.",
-"verdict": {
-"winner": "y",
-"summary": "Microsoft To Do wins for non-technical users who want everyday task tracking without extra layers. It presents tasks in simple lists with clear add buttons and minimal structure. Basecamp combines to-dos with message boards, group chats, and project areas. If message boards and project layers feel risky or confusing, Basecamp fails first.",
-"decision_rule": "If message boards and project layers feel risky or confusing, Basecamp fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Which tool feels safer to use?",
-"content": "You need straightforward task tracking without project communication layers. As a non-technical user, extra panels and discussion threads can feel like places to make mistakes. The right tool should act like a simple checklist. Anything that mixes tasks with messaging can create uncertainty."
-},
-{
-"type": "x_wins",
-"heading": "Where Basecamp works better",
-"bullets": [
-{
-"point": "Project spaces that combine to-dos, message boards, and files.",
-"why_it_matters": "You can manage full projects in one place. For simple personal tasks, navigating multiple sections adds complexity."
-},
-{
-"point": "Team communication threads linked to tasks.",
-"why_it_matters": "You can discuss work inside the project. For everyday responsibilities, comment threads may feel unnecessary."
-},
-{
-"point": "Separate tools inside each project such as schedules and docs.",
-"why_it_matters": "You can coordinate larger efforts. Switching between tools inside a project introduces more screens."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Microsoft To Do works better for non-technical users",
-"bullets": [
-{
-"point": "Single list view with checkboxes.",
-"why_it_matters": "You open the app and see tasks immediately without navigating project areas."
-},
-{
-"point": "Clear Add a task field at the top of each list.",
-"why_it_matters": "You type and save tasks without entering a project workspace."
-},
-{
-"point": "Optional due dates and reminders that stay simple.",
-"why_it_matters": "You can add details if needed, but the app still works as a plain checklist."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You feel unsure where to place tasks inside project sections or message boards.",
-"what_to_do_instead": "Use Microsoft To Do if you want a simple personal checklist."
-},
-{
-"tool": "y",
-"fails_when": "You need built-in team communication and project coordination tools.",
-"what_to_do_instead": "Use Basecamp if collaboration and messaging are central to your work."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you regularly coordinate tasks with a group and want discussions and files connected to each project, Basecamp may feel more complete despite the added layers."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want a plain personal checklist, choose Microsoft To Do.",
-"If you need tasks combined with team communication, choose Basecamp.",
-"If extra project panels feel confusing, avoid project-heavy tools."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Basecamp mainly for teams?",
-"a": "Yes. It combines task lists with message boards and project communication."
-},
-{
-"q": "Does Microsoft To Do include messaging tools?",
-"a": "No. It focuses on simple personal task lists."
-},
-{
-"q": "Which tool feels more straightforward?",
-"a": "Microsoft To Do feels more straightforward because it centers on lists."
-},
-{
-"q": "Can Basecamp be used for personal tasks?",
-"a": "It can, but its project and communication layers may feel unnecessary for solo everyday use."
-}
-],
-"related_pages": [
-{ "x_name": "Any.do", "y_name": "Trello", "persona": "Non-technical user" },
-{ "x_name": "Kanban Tool", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
-{ "x_name": "Freedcamp", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
-{ "x_name": "Todoist", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
-{ "x_name": "Asana", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
-{ "x_name": "ClickUp", "y_name": "Microsoft To Do", "persona": "Non-technical user" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Basecamp vs Microsoft To Do for Non-technical users",
+  "slug": "basecamp-vs-microsoft-to-do-for-non-technical-user",
+  "meta_description": "Basecamp vs Microsoft To Do for non-technical users who want simple task tracking without message boards or layered project tools.",
+  "persona": "Non-technical user",
+  "constraint_lens": "You want straightforward task tracking that feels safe without project boards, message threads, or layered tools.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Microsoft To Do wins for non-technical users who want everyday task tracking without extra layers. It presents tasks in simple lists with clear add buttons and minimal structure. Basecamp combines to-dos with message boards, group chats, and project areas. If message boards and project layers feel risky or confusing, Basecamp fails first.",
+    "decision_rule": "If message boards and project layers feel risky or confusing, Basecamp fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool feels safer to use?",
+      "content": "You need straightforward task tracking without project communication layers. As a non-technical user, extra panels and discussion threads can feel like places to make mistakes. The right tool should act like a simple checklist. Anything that mixes tasks with messaging can create uncertainty."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Basecamp works better",
+      "bullets": [
+        {
+          "point": "Project spaces that combine to-dos, message boards, and files.",
+          "why_it_matters": "You can manage full projects in one place. For simple personal tasks, navigating multiple sections adds complexity."
+        },
+        {
+          "point": "Team communication threads linked to tasks.",
+          "why_it_matters": "You can discuss work inside the project. For everyday responsibilities, comment threads may feel unnecessary."
+        },
+        {
+          "point": "Separate tools inside each project such as schedules and docs.",
+          "why_it_matters": "You can coordinate larger efforts. Switching between tools inside a project introduces more screens."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Microsoft To Do works better for non-technical users",
+      "bullets": [
+        {
+          "point": "Single list view with checkboxes.",
+          "why_it_matters": "You open the app and see tasks immediately without navigating project areas."
+        },
+        {
+          "point": "Clear Add a task field at the top of each list.",
+          "why_it_matters": "You type and save tasks without entering a project workspace."
+        },
+        {
+          "point": "Optional due dates and reminders that stay simple.",
+          "why_it_matters": "You can add details if needed, but the app still works as a plain checklist."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You feel unsure where to place tasks inside project sections or message boards.",
+          "what_to_do_instead": "Use Microsoft To Do if you want a simple personal checklist."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need built-in team communication and project coordination tools.",
+          "what_to_do_instead": "Use Basecamp if collaboration and messaging are central to your work."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you regularly coordinate tasks with a group and want discussions and files connected to each project, Basecamp may feel more complete despite the added layers."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a plain personal checklist, choose Microsoft To Do.",
+        "If you need tasks combined with team communication, choose Basecamp.",
+        "If extra project panels feel confusing, avoid project-heavy tools."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Basecamp mainly for teams?",
+      "a": "Yes. It combines task lists with message boards and project communication."
+    },
+    {
+      "q": "Does Microsoft To Do include messaging tools?",
+      "a": "No. It focuses on simple personal task lists."
+    },
+    {
+      "q": "Which tool feels more straightforward?",
+      "a": "Microsoft To Do feels more straightforward because it centers on lists."
+    },
+    {
+      "q": "Can Basecamp be used for personal tasks?",
+      "a": "It can, but its project and communication layers may feel unnecessary for solo everyday use."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Kanban Tool",
+      "y_name": "Microsoft To Do",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Microsoft Planner",
+      "y_name": "Microsoft To Do",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Any.do",
+      "y_name": "Apple Reminders",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Any.do",
+      "y_name": "Trello",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "ProofHub",
+      "y_name": "Bitrix24",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Teamwork",
+      "y_name": "Apple Reminders",
+      "persona": "Non-technical user"
+    }
+  ]
 }

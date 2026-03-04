@@ -1,115 +1,119 @@
 {
-"category": "Note-taking apps",
-"categorySlug": "note-taking-apps",
-"constraintSlug": "maintenance-load",
-"constraintUiName": "Works without upkeep",
-"title": "Evernote vs Apple Notes for Solo users",
-"slug": "evernote-vs-apple-notes-for-solo-user",
-"meta_description": "Evernote vs Apple Notes for solo users who want long-term storage without plan decisions, sync limits, or periodic cleanup.",
-"persona": "Solo user",
-"constraint_lens": "You want a note system that runs quietly for years without plan choices, cleanup sessions, or regular adjustments.",
-"verdict": {
-"winner": "y",
-"summary": "Apple Notes wins for solo users who want long-term storage without ongoing upkeep. It syncs automatically through your Apple ID and does not surface plan tiers during normal use. Evernote includes subscription levels, device limits, and visible usage rules that can require periodic decisions. If the tool requires plan decisions or periodic cleanups, Evernote fails first.",
-"decision_rule": "If the tool requires plan decisions or periodic cleanups, Evernote fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for low-maintenance long-term notes",
-"content": "You keep personal notes for years and do not want to manage them like a project. Apple Notes relies on simple folders and search, which stay usable even if you ignore organization for months. Evernote encourages tagging systems, notebook stacks, and awareness of plan limits that may need attention over time."
-},
-{
-"type": "x_wins",
-"heading": "Where Evernote wins",
-"bullets": [
-{
-"point": "Advanced tagging and notebook stack organization",
-"why_it_matters": "You can group notes with multiple tags and nested notebooks. This helps large archives, but can require occasional cleanup to stay tidy."
-},
-{
-"point": "Cross-platform apps beyond a single ecosystem",
-"why_it_matters": "You can access notes on many device types with one account. This is useful if you change hardware, yet it adds a separate login and plan layer."
-},
-{
-"point": "Document scanning with OCR search",
-"why_it_matters": "Scanned documents become searchable text. This supports heavy document storage, though it may introduce extra organization decisions."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Apple Notes wins",
-"bullets": [
-{
-"point": "Automatic iCloud sync without visible device caps",
-"why_it_matters": "Notes stay updated across devices without showing plan tiers or sync limits in daily writing."
-},
-{
-"point": "Simple folder structure with optional tags",
-"why_it_matters": "You can leave notes loosely organized and rely on search. There is no need to maintain complex tag systems."
-},
-{
-"point": "Built-in search across text, attachments, and handwriting",
-"why_it_matters": "You can find old notes quickly without reorganizing them. This reduces the need for periodic cleanup sessions."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You must review subscription plans, device limits, or clean up tags to keep the system manageable.",
-"what_to_do_instead": "Use Apple Notes where syncing and storage stay tied to your device account without visible tiers."
-},
-{
-"tool": "y",
-"fails_when": "You move outside the Apple ecosystem and need equal access across non-Apple devices.",
-"what_to_do_instead": "Switch to Evernote for broader cross-platform access."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you regularly switch between operating systems and want one independent account not tied to a specific hardware ecosystem, Evernote may feel more stable long term."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you want notes to run quietly for years, choose Apple Notes.",
-"If subscription tiers or device limits feel like ongoing decisions, avoid Evernote.",
-"If cross-platform access matters more than simplicity, consider Evernote."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Evernote require a subscription for full features?",
-"a": "Yes, certain features and device limits depend on the plan you choose."
-},
-{
-"q": "Can Apple Notes handle large archives?",
-"a": "Yes. With folders and strong search, it remains usable even as notes grow over time."
-},
-{
-"q": "Will I need to reorganize Apple Notes regularly?",
-"a": "Not usually. Many users rely on search instead of constant restructuring."
-},
-{
-"q": "Which feels more hands-off long term?",
-"a": "Apple Notes generally feels more hands-off because it avoids visible plan management."
-}
-],
-"related_pages": [
-{ "x_name": "Notion", "y_name": "Apple Notes", "persona": "Solo user" },
-{ "x_name": "Logseq", "y_name": "Apple Notes", "persona": "Solo user" },
-{ "x_name": "Craft", "y_name": "Google Docs", "persona": "Solo user" },
-{ "x_name": "RemNote", "y_name": "Bear", "persona": "Solo user" },
-{ "x_name": "OneNote", "y_name": "Apple Notes", "persona": "Solo user" },
-{ "x_name": "Standard Notes", "y_name": "Apple Notes", "persona": "Solo user" }
-]
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Evernote vs Apple Notes for Solo users",
+  "slug": "evernote-vs-apple-notes-for-solo-user",
+  "meta_description": "Evernote vs Apple Notes for solo users who want long-term storage without plan decisions, sync limits, or periodic cleanup.",
+  "persona": "Solo user",
+  "constraint_lens": "You want a note system that runs quietly for years without plan choices, cleanup sessions, or regular adjustments.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Apple Notes wins for solo users who want long-term storage without ongoing upkeep. It syncs automatically through your Apple ID and does not surface plan tiers during normal use. Evernote includes subscription levels, device limits, and visible usage rules that can require periodic decisions. If the tool requires plan decisions or periodic cleanups, Evernote fails first.",
+    "decision_rule": "If the tool requires plan decisions or periodic cleanups, Evernote fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for low-maintenance long-term notes",
+      "content": "You keep personal notes for years and do not want to manage them like a project. Apple Notes relies on simple folders and search, which stay usable even if you ignore organization for months. Evernote encourages tagging systems, notebook stacks, and awareness of plan limits that may need attention over time."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Evernote wins",
+      "bullets": [
+        {
+          "point": "Advanced tagging and notebook stack organization",
+          "why_it_matters": "You can group notes with multiple tags and nested notebooks. This helps large archives, but can require occasional cleanup to stay tidy."
+        },
+        {
+          "point": "Cross-platform apps beyond a single ecosystem",
+          "why_it_matters": "You can access notes on many device types with one account. This is useful if you change hardware, yet it adds a separate login and plan layer."
+        },
+        {
+          "point": "Document scanning with OCR search",
+          "why_it_matters": "Scanned documents become searchable text. This supports heavy document storage, though it may introduce extra organization decisions."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Apple Notes wins",
+      "bullets": [
+        {
+          "point": "Automatic iCloud sync without visible device caps",
+          "why_it_matters": "Notes stay updated across devices without showing plan tiers or sync limits in daily writing."
+        },
+        {
+          "point": "Simple folder structure with optional tags",
+          "why_it_matters": "You can leave notes loosely organized and rely on search. There is no need to maintain complex tag systems."
+        },
+        {
+          "point": "Built-in search across text, attachments, and handwriting",
+          "why_it_matters": "You can find old notes quickly without reorganizing them. This reduces the need for periodic cleanup sessions."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You must review subscription plans, device limits, or clean up tags to keep the system manageable.",
+          "what_to_do_instead": "Use Apple Notes where syncing and storage stay tied to your device account without visible tiers."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You move outside the Apple ecosystem and need equal access across non-Apple devices.",
+          "what_to_do_instead": "Switch to Evernote for broader cross-platform access."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you regularly switch between operating systems and want one independent account not tied to a specific hardware ecosystem, Evernote may feel more stable long term."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you want notes to run quietly for years, choose Apple Notes.",
+        "If subscription tiers or device limits feel like ongoing decisions, avoid Evernote.",
+        "If cross-platform access matters more than simplicity, consider Evernote."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Evernote require a subscription for full features?",
+      "a": "Yes, certain features and device limits depend on the plan you choose."
+    },
+    {
+      "q": "Can Apple Notes handle large archives?",
+      "a": "Yes. With folders and strong search, it remains usable even as notes grow over time."
+    },
+    {
+      "q": "Will I need to reorganize Apple Notes regularly?",
+      "a": "Not usually. Many users rely on search instead of constant restructuring."
+    },
+    {
+      "q": "Which feels more hands-off long term?",
+      "a": "Apple Notes generally feels more hands-off because it avoids visible plan management."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Notion",
+      "y_name": "Apple Notes",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Joplin",
+      "y_name": "Notion",
+      "persona": "Solo user"
+    }
+  ]
 }

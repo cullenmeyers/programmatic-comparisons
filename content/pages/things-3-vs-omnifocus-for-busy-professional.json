@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "time-scarcity",
-"constraintUiName": "Fast to use daily",
-"title": "Things 3 vs OmniFocus for Busy professionals",
-"slug": "things-3-vs-omnifocus-for-busy-professional",
-"meta_description": "Things 3 vs OmniFocus for busy professionals who need fast task capture between meetings without complex planning frameworks.",
-"persona": "Busy professional",
-"constraint_lens": "You need to capture and complete tasks quickly between meetings without navigating complex planning systems.",
-"verdict": {
-"winner": "x",
-"summary": "Things 3 wins for busy professionals who need fast task entry between meetings. It allows tasks to be captured instantly and sorted later using simple projects and tags. OmniFocus includes contexts, perspectives, and structured review workflows that require extra steps to manage. If contexts, perspectives, and review workflows slow simple task capture, OmniFocus fails first.",
-"decision_rule": "If contexts, perspectives, and review workflows slow simple task capture, OmniFocus fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for fast task capture during busy days",
-"content": "You capture tasks quickly between meetings and avoid complex planning frameworks. Things 3 opens with a quick entry field and organizes tasks into simple lists like Today and Upcoming. OmniFocus centers on projects, tags, perspectives, and structured review systems that require more ongoing interaction."
-},
-{
-"type": "x_wins",
-"heading": "Where Things 3 wins",
-"bullets": [
-{
-"point": "Quick entry field accessible from anywhere",
-"why_it_matters": "You capture tasks instantly without selecting tags or perspectives first."
-},
-{
-"point": "Today and Upcoming views built into the main interface",
-"why_it_matters": "You immediately see what needs attention without configuring filtered views."
-},
-{
-"point": "Lightweight project structure with optional tags",
-"why_it_matters": "You organize tasks later instead of making structural decisions during capture."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where OmniFocus wins",
-"bullets": [
-{
-"point": "Custom perspectives created from filtering rules",
-"why_it_matters": "You build highly specialized task views when managing complex systems."
-},
-{
-"point": "Tag system used to model contexts and locations",
-"why_it_matters": "You filter tasks based on situation or environment."
-},
-{
-"point": "Structured review mode for projects",
-"why_it_matters": "You periodically revisit projects to maintain large task systems."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "Your workflow requires highly customized filtered views across large task systems.",
-"what_to_do_instead": "Switch to OmniFocus if advanced filtering and structured reviews become necessary."
-},
-{
-"tool": "y",
-"fails_when": "You must choose tags, contexts, or project structures before quickly capturing a task.",
-"what_to_do_instead": "Use Things 3 for faster capture during busy workdays."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your task system grows complex enough to require specialized filtered views across contexts, OmniFocus may become worth the extra structure."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you capture tasks between meetings, choose Things 3.",
-"If planning frameworks feel slow during capture, avoid OmniFocus.",
-"If you later need highly customized task views, consider OmniFocus."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Things 3 faster for capturing tasks?",
-"a": "Yes. It focuses on quick entry and simple daily lists."
-},
-{
-"q": "Why can OmniFocus feel slower?",
-"a": "It includes contexts, perspectives, and review systems designed for complex planning."
-},
-{
-"q": "Which tool works better during busy workdays?",
-"a": "Things 3 is generally better for quick capture and execution."
-},
-{
-"q": "When would OmniFocus be the better option?",
-"a": "It works better when managing large task systems that require advanced filtering."
-}
-],
-"related_pages": [
-{ "x_name": "Todoist", "y_name": "Microsoft To Do", "persona": "Power user" },
-{ "x_name": "Notejoy", "y_name": "Coda", "persona": "Busy professional" },
-{ "x_name": "Nuclino", "y_name": "Notion", "persona": "Busy professional" },
-{ "x_name": "Dropbox Paper", "y_name": "Coda", "persona": "Busy professional" },
-{ "x_name": "Amplenote", "y_name": "Obsidian", "persona": "Busy professional" },
-{ "x_name": "Notezilla", "y_name": "Google Keep", "persona": "Busy professional" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Things 3 vs OmniFocus for Busy professionals",
+  "slug": "things-3-vs-omnifocus-for-busy-professional",
+  "meta_description": "Things 3 vs OmniFocus for busy professionals who need fast task capture between meetings without complex planning frameworks.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need to capture and complete tasks quickly between meetings without navigating complex planning systems.",
+  "verdict": {
+    "winner": "x",
+    "summary": "Things 3 wins for busy professionals who need fast task entry between meetings. It allows tasks to be captured instantly and sorted later using simple projects and tags. OmniFocus includes contexts, perspectives, and structured review workflows that require extra steps to manage. If contexts, perspectives, and review workflows slow simple task capture, OmniFocus fails first.",
+    "decision_rule": "If contexts, perspectives, and review workflows slow simple task capture, OmniFocus fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for fast task capture during busy days",
+      "content": "You capture tasks quickly between meetings and avoid complex planning frameworks. Things 3 opens with a quick entry field and organizes tasks into simple lists like Today and Upcoming. OmniFocus centers on projects, tags, perspectives, and structured review systems that require more ongoing interaction."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Things 3 wins",
+      "bullets": [
+        {
+          "point": "Quick entry field accessible from anywhere",
+          "why_it_matters": "You capture tasks instantly without selecting tags or perspectives first."
+        },
+        {
+          "point": "Today and Upcoming views built into the main interface",
+          "why_it_matters": "You immediately see what needs attention without configuring filtered views."
+        },
+        {
+          "point": "Lightweight project structure with optional tags",
+          "why_it_matters": "You organize tasks later instead of making structural decisions during capture."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where OmniFocus wins",
+      "bullets": [
+        {
+          "point": "Custom perspectives created from filtering rules",
+          "why_it_matters": "You build highly specialized task views when managing complex systems."
+        },
+        {
+          "point": "Tag system used to model contexts and locations",
+          "why_it_matters": "You filter tasks based on situation or environment."
+        },
+        {
+          "point": "Structured review mode for projects",
+          "why_it_matters": "You periodically revisit projects to maintain large task systems."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Your workflow requires highly customized filtered views across large task systems.",
+          "what_to_do_instead": "Switch to OmniFocus if advanced filtering and structured reviews become necessary."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You must choose tags, contexts, or project structures before quickly capturing a task.",
+          "what_to_do_instead": "Use Things 3 for faster capture during busy workdays."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your task system grows complex enough to require specialized filtered views across contexts, OmniFocus may become worth the extra structure."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you capture tasks between meetings, choose Things 3.",
+        "If planning frameworks feel slow during capture, avoid OmniFocus.",
+        "If you later need highly customized task views, consider OmniFocus."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Things 3 faster for capturing tasks?",
+      "a": "Yes. It focuses on quick entry and simple daily lists."
+    },
+    {
+      "q": "Why can OmniFocus feel slower?",
+      "a": "It includes contexts, perspectives, and review systems designed for complex planning."
+    },
+    {
+      "q": "Which tool works better during busy workdays?",
+      "a": "Things 3 is generally better for quick capture and execution."
+    },
+    {
+      "q": "When would OmniFocus be the better option?",
+      "a": "It works better when managing large task systems that require advanced filtering."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "OmniFocus",
+      "y_name": "Things 3",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Asana",
+      "y_name": "Apple Reminders",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Trello",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Habitica",
+      "y_name": "Apple Reminders",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Jira",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    }
+  ]
 }

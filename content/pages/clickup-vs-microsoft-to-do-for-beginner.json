@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "setup-tolerance",
-"constraintUiName": "Publish fast",
-"title": "ClickUp vs Microsoft To Do for Beginners",
-"slug": "clickup-vs-microsoft-to-do-for-beginner",
-"meta_description": "ClickUp vs Microsoft To Do for beginners who want a simple checklist without setting up spaces, folders, or project plans first.",
-"persona": "Beginner",
-"constraint_lens": "You want to start with a simple checklist without setting up spaces, folders, or project plans first.",
-"verdict": {
-"winner": "y",
-"summary": "Microsoft To Do wins for beginners who just want a checklist. You can open a list and start typing tasks immediately. ClickUp is structured around spaces, folders, and project views that assume planning before simple entry. If the tool assumes project planning before task entry, ClickUp fails first.",
-"decision_rule": "If the tool assumes project planning before task entry, ClickUp fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Beginners",
-"content": "You said you want a checklist, not a work platform. As a beginner, seeing spaces, folders, and dashboards can feel overwhelming. A flat list that works instantly reduces hesitation."
-},
-{
-"type": "x_wins",
-"heading": "Where ClickUp wins",
-"bullets": [
-{
-"point": "Hierarchy with spaces, folders, lists, and tasks",
-"why_it_matters": "You can organize complex work, but choosing where a task belongs adds setup before entry."
-},
-{
-"point": "Custom statuses, fields, and workflow options",
-"why_it_matters": "You can tailor processes, yet these options introduce extra decisions unrelated to a basic checklist."
-},
-{
-"point": "Multiple views such as board, calendar, and timeline",
-"why_it_matters": "You can manage projects visually, but selecting and configuring views adds learning steps."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Microsoft To Do wins",
-"bullets": [
-{
-"point": "Immediate task entry in a simple personal list",
-"why_it_matters": "You can type and save tasks without creating projects or folders."
-},
-{
-"point": "Minimal task fields limited to name and optional date",
-"why_it_matters": "Fewer fields mean fewer decisions before checking off tasks."
-},
-{
-"point": "Clean interface without dashboards or planning panels",
-"why_it_matters": "You see only your tasks, not platform level structure."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You feel unsure how to set up spaces or projects before adding simple tasks.",
-"what_to_do_instead": "Use Microsoft To Do if you want instant checklist style tracking."
-},
-{
-"tool": "y",
-"fails_when": "You need structured project management with multiple stages and reporting.",
-"what_to_do_instead": "Use ClickUp if your needs expand into full project planning."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your responsibilities grow and you need structured projects with custom workflows and shared collaboration, ClickUp may justify its additional setup."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want a checklist immediately, choose Microsoft To Do.",
-"If spaces and folders feel confusing, avoid ClickUp.",
-"If you need full project planning later, ClickUp may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is ClickUp too advanced for beginners?",
-"a": "It includes many planning layers that can feel overwhelming if you only want a simple list."
-},
-{
-"q": "Can Microsoft To Do handle recurring reminders?",
-"a": "Yes, you can set repeating tasks without building project structures."
-},
-{
-"q": "Which tool is faster to start using?",
-"a": "Microsoft To Do is typically faster because it opens directly to a personal list."
-},
-{
-"q": "Does ClickUp require project setup first?",
-"a": "Tasks are usually created inside structured spaces or lists, which adds setup before simple entry."
-}
-],
-"related_pages": [
-{ "x_name": "Quire", "y_name": "Google Tasks", "persona": "Beginner" },
-{ "x_name": "Trello", "y_name": "Google Tasks", "persona": "Beginner" },
-{ "x_name": "FacileThings", "y_name": "Todoist", "persona": "Beginner" },
-{ "x_name": "Superlist", "y_name": "Microsoft To Do", "persona": "Beginner" },
-{ "x_name": "OmniFocus", "y_name": "Apple Reminders", "persona": "Beginner" },
-{ "x_name": "Todoist", "y_name": "Apple Reminders", "persona": "Beginner" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "ClickUp vs Microsoft To Do for Beginners",
+  "slug": "clickup-vs-microsoft-to-do-for-beginner",
+  "meta_description": "ClickUp vs Microsoft To Do for beginners who want a simple checklist without setting up spaces, folders, or project plans first.",
+  "persona": "Beginner",
+  "constraint_lens": "You want to start with a simple checklist without setting up spaces, folders, or project plans first.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Microsoft To Do wins for beginners who just want a checklist. You can open a list and start typing tasks immediately. ClickUp is structured around spaces, folders, and project views that assume planning before simple entry. If the tool assumes project planning before task entry, ClickUp fails first.",
+    "decision_rule": "If the tool assumes project planning before task entry, ClickUp fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Beginners",
+      "content": "You said you want a checklist, not a work platform. As a beginner, seeing spaces, folders, and dashboards can feel overwhelming. A flat list that works instantly reduces hesitation."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where ClickUp wins",
+      "bullets": [
+        {
+          "point": "Hierarchy with spaces, folders, lists, and tasks",
+          "why_it_matters": "You can organize complex work, but choosing where a task belongs adds setup before entry."
+        },
+        {
+          "point": "Custom statuses, fields, and workflow options",
+          "why_it_matters": "You can tailor processes, yet these options introduce extra decisions unrelated to a basic checklist."
+        },
+        {
+          "point": "Multiple views such as board, calendar, and timeline",
+          "why_it_matters": "You can manage projects visually, but selecting and configuring views adds learning steps."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Microsoft To Do wins",
+      "bullets": [
+        {
+          "point": "Immediate task entry in a simple personal list",
+          "why_it_matters": "You can type and save tasks without creating projects or folders."
+        },
+        {
+          "point": "Minimal task fields limited to name and optional date",
+          "why_it_matters": "Fewer fields mean fewer decisions before checking off tasks."
+        },
+        {
+          "point": "Clean interface without dashboards or planning panels",
+          "why_it_matters": "You see only your tasks, not platform level structure."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You feel unsure how to set up spaces or projects before adding simple tasks.",
+          "what_to_do_instead": "Use Microsoft To Do if you want instant checklist style tracking."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need structured project management with multiple stages and reporting.",
+          "what_to_do_instead": "Use ClickUp if your needs expand into full project planning."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your responsibilities grow and you need structured projects with custom workflows and shared collaboration, ClickUp may justify its additional setup."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a checklist immediately, choose Microsoft To Do.",
+        "If spaces and folders feel confusing, avoid ClickUp.",
+        "If you need full project planning later, ClickUp may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is ClickUp too advanced for beginners?",
+      "a": "It includes many planning layers that can feel overwhelming if you only want a simple list."
+    },
+    {
+      "q": "Can Microsoft To Do handle recurring reminders?",
+      "a": "Yes, you can set repeating tasks without building project structures."
+    },
+    {
+      "q": "Which tool is faster to start using?",
+      "a": "Microsoft To Do is typically faster because it opens directly to a personal list."
+    },
+    {
+      "q": "Does ClickUp require project setup first?",
+      "a": "Tasks are usually created inside structured spaces or lists, which adds setup before simple entry."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Freedcamp",
+      "y_name": "Microsoft To Do",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Microsoft To Do",
+      "y_name": "OmniFocus",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Superlist",
+      "y_name": "Microsoft To Do",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Any.do",
+      "y_name": "Apple Reminders",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Asana",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    }
+  ]
 }

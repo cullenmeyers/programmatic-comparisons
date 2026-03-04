@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "setup-tolerance",
-"constraintUiName": "Publish fast",
-"title": "Any.do vs Apple Reminders for Beginners",
-"slug": "anydo-vs-apple-reminders-for-beginner",
-"meta_description": "Any.do vs Apple Reminders for beginners who want instant task tracking without habit prompts, premium popups, or layered features.",
-"persona": "Beginner",
-"constraint_lens": "You want to open the app and add a task immediately without navigating habits, prompts, or extra layers.",
-"verdict": {
-"winner": "y",
-"summary": "Apple Reminders wins for beginners who want to track tasks instantly. It opens to a simple list and lets you tap 'New Reminder' and type right away. Any.do includes habit sections and premium upgrade prompts that appear alongside basic task features. If habits and premium prompts appear before simple task entry, Any.do fails first.",
-"decision_rule": "If habits and premium prompts appear before simple task entry, Any.do fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Which tool lets you start instantly?",
-"content": "You want to start tracking tasks without navigating feature layers. As a beginner, extra tabs and upgrade messages can feel distracting. The best tool should behave like a basic checklist from the first screen. Anything that adds habit dashboards or feature prompts slows the first task."
-},
-{
-"type": "x_wins",
-"heading": "Where Any.do works better",
-"bullets": [
-{
-"point": "Built-in habit tracking section alongside tasks.",
-"why_it_matters": "You can track recurring habits and routines in the same app. For beginners, switching between habits and tasks adds extra navigation."
-},
-{
-"point": "Calendar view integrated with task lists.",
-"why_it_matters": "You can see tasks across dates visually. This introduces another layer beyond a simple list."
-},
-{
-"point": "Premium feature prompts for advanced reminders and themes.",
-"why_it_matters": "You are shown upgrade options during use. These prompts can interrupt the simple flow of adding tasks."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Apple Reminders works better for beginners",
-"bullets": [
-{
-"point": "Default list view with clear add button.",
-"why_it_matters": "You tap 'New Reminder' and type immediately without choosing between features."
-},
-{
-"point": "No habit dashboard competing with tasks.",
-"why_it_matters": "The screen focuses only on reminders. There are no streak counters or habit tabs."
-},
-{
-"point": "Minimal interface with optional details hidden.",
-"why_it_matters": "You can ignore due dates and tags if you want. Nothing forces you into extra setup."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "Habit sections and upgrade prompts appear before you comfortably add basic tasks.",
-"what_to_do_instead": "Use Apple Reminders if you want a clean checklist without layered features."
-},
-{
-"tool": "y",
-"fails_when": "You want integrated habit tracking and visual calendar planning in the same app.",
-"what_to_do_instead": "Use Any.do if you prefer combining habits and tasks together."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you quickly want to add habit tracking and calendar planning alongside tasks, Any.do may feel more complete despite the extra layers."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want a simple reminder list, choose Apple Reminders.",
-"If you want habits and calendar views built in, choose Any.do.",
-"If extra feature tabs slow you down, avoid layered task apps."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Apple Reminders easier for beginners?",
-"a": "Yes. It focuses on simple lists and lets you add tasks immediately."
-},
-{
-"q": "Does Any.do include habit tracking?",
-"a": "Yes. It includes habit features and calendar views beyond basic task lists."
-},
-{
-"q": "Which tool has fewer distractions?",
-"a": "Apple Reminders has fewer feature layers and no habit dashboards."
-},
-{
-"q": "Can Any.do be used as a simple list?",
-"a": "Yes, but habit sections and upgrade prompts are still part of the interface."
-}
-],
-"related_pages": [
-{ "x_name": "Freedcamp", "y_name": "Microsoft To Do", "persona": "Beginner" },
-{ "x_name": "Todoist", "y_name": "Microsoft To Do", "persona": "Beginner" },
-{ "x_name": "ClickUp", "y_name": "Microsoft To Do", "persona": "Beginner" },
-{ "x_name": "Trello", "y_name": "Microsoft To Do", "persona": "Beginner" },
-{ "x_name": "Things", "y_name": "Todoist", "persona": "Beginner" },
-{ "x_name": "TickTick", "y_name": "Microsoft To Do", "persona": "Beginner" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Any.do vs Apple Reminders for Beginners",
+  "slug": "anydo-vs-apple-reminders-for-beginner",
+  "meta_description": "Any.do vs Apple Reminders for beginners who want instant task tracking without habit prompts, premium popups, or layered features.",
+  "persona": "Beginner",
+  "constraint_lens": "You want to open the app and add a task immediately without navigating habits, prompts, or extra layers.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Apple Reminders wins for beginners who want to track tasks instantly. It opens to a simple list and lets you tap 'New Reminder' and type right away. Any.do includes habit sections and premium upgrade prompts that appear alongside basic task features. If habits and premium prompts appear before simple task entry, Any.do fails first.",
+    "decision_rule": "If habits and premium prompts appear before simple task entry, Any.do fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool lets you start instantly?",
+      "content": "You want to start tracking tasks without navigating feature layers. As a beginner, extra tabs and upgrade messages can feel distracting. The best tool should behave like a basic checklist from the first screen. Anything that adds habit dashboards or feature prompts slows the first task."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Any.do works better",
+      "bullets": [
+        {
+          "point": "Built-in habit tracking section alongside tasks.",
+          "why_it_matters": "You can track recurring habits and routines in the same app. For beginners, switching between habits and tasks adds extra navigation."
+        },
+        {
+          "point": "Calendar view integrated with task lists.",
+          "why_it_matters": "You can see tasks across dates visually. This introduces another layer beyond a simple list."
+        },
+        {
+          "point": "Premium feature prompts for advanced reminders and themes.",
+          "why_it_matters": "You are shown upgrade options during use. These prompts can interrupt the simple flow of adding tasks."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Apple Reminders works better for beginners",
+      "bullets": [
+        {
+          "point": "Default list view with clear add button.",
+          "why_it_matters": "You tap 'New Reminder' and type immediately without choosing between features."
+        },
+        {
+          "point": "No habit dashboard competing with tasks.",
+          "why_it_matters": "The screen focuses only on reminders. There are no streak counters or habit tabs."
+        },
+        {
+          "point": "Minimal interface with optional details hidden.",
+          "why_it_matters": "You can ignore due dates and tags if you want. Nothing forces you into extra setup."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Habit sections and upgrade prompts appear before you comfortably add basic tasks.",
+          "what_to_do_instead": "Use Apple Reminders if you want a clean checklist without layered features."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want integrated habit tracking and visual calendar planning in the same app.",
+          "what_to_do_instead": "Use Any.do if you prefer combining habits and tasks together."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you quickly want to add habit tracking and calendar planning alongside tasks, Any.do may feel more complete despite the extra layers."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a simple reminder list, choose Apple Reminders.",
+        "If you want habits and calendar views built in, choose Any.do.",
+        "If extra feature tabs slow you down, avoid layered task apps."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Apple Reminders easier for beginners?",
+      "a": "Yes. It focuses on simple lists and lets you add tasks immediately."
+    },
+    {
+      "q": "Does Any.do include habit tracking?",
+      "a": "Yes. It includes habit features and calendar views beyond basic task lists."
+    },
+    {
+      "q": "Which tool has fewer distractions?",
+      "a": "Apple Reminders has fewer feature layers and no habit dashboards."
+    },
+    {
+      "q": "Can Any.do be used as a simple list?",
+      "a": "Yes, but habit sections and upgrade prompts are still part of the interface."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "OmniFocus",
+      "y_name": "Apple Reminders",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Asana",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Microsoft To Do",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "FacileThings",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Freedcamp",
+      "y_name": "Microsoft To Do",
+      "persona": "Beginner"
+    }
+  ]
 }

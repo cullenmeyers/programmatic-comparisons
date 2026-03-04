@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "Nirvana vs Things 3 for Power users",
-"slug": "nirvana-vs-things-3-for-power-user",
-"meta_description": "Nirvana vs Things 3 for power users running strict GTD systems with granular context filtering and review workflows.",
-"persona": "Power user",
-"constraint_lens": "You run a strict GTD workflow and need granular context filters and structured review depth.",
-"verdict": {
-"winner": "x",
-"summary": "Nirvana wins for power users implementing a strict GTD system. It includes dedicated lists for Next, Waiting, and Scheduled, plus context-based filtering built into the model. Things 3 supports areas, projects, and tags but does not enforce deep GTD stages or review layers. If context-based filtering and review workflow depth are constrained, Things 3 fails first.",
-"decision_rule": "If context-based filtering and review workflow depth are constrained, Things 3 fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for structured GTD execution",
-"content": "You run strict GTD workflows and expect granular context filtering. Nirvana separates tasks into GTD stages such as Next and Waiting and allows filtering by context directly. Things 3 organizes work into areas and projects with tags, but does not center the system around GTD stages."
-},
-{
-"type": "x_wins",
-"heading": "Where Nirvana wins",
-"bullets": [
-{
-"point": "Dedicated GTD stage lists such as Next and Waiting",
-"why_it_matters": "You move tasks through defined stages instead of managing everything in general project lists."
-},
-{
-"point": "Context-based filtering built into task views",
-"why_it_matters": "You filter tasks by location or tool without building custom perspectives."
-},
-{
-"point": "Structured weekly review support",
-"why_it_matters": "You systematically review projects and next actions using the built-in workflow."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Things 3 wins",
-"bullets": [
-{
-"point": "Clean project and area hierarchy",
-"why_it_matters": "You organize responsibilities simply without managing GTD stage transitions."
-},
-{
-"point": "Forecast view combining calendar and tasks",
-"why_it_matters": "You see upcoming tasks and events together without configuring complex filters."
-},
-{
-"point": "Quick entry and minimal interface",
-"why_it_matters": "You capture tasks rapidly without navigating multiple GTD-specific lists."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You want a lighter system without managing strict GTD stages and context lists.",
-"what_to_do_instead": "Use Things 3 if you prefer a simpler project-based workflow."
-},
-{
-"tool": "y",
-"fails_when": "You require granular context filters and clearly separated GTD stages for review.",
-"what_to_do_instead": "Switch to Nirvana for deeper GTD alignment."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you follow a loose version of GTD and mainly rely on tags and simple project lists, Things 3 may feel sufficient."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you need built-in GTD stages and context filters, choose Nirvana.",
-"If you prefer a clean project-focused system, consider Things 3.",
-"If weekly review depth matters, avoid lighter task-only models."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Things 3 support strict GTD stages?",
-"a": "It supports projects and tags but does not enforce dedicated GTD stage lists."
-},
-{
-"q": "Can Nirvana filter tasks by context?",
-"a": "Yes. Context-based filtering is built into its core views."
-},
-{
-"q": "Which is better for advanced GTD workflows?",
-"a": "Nirvana is generally better for strict GTD implementation."
-},
-{
-"q": "Which is simpler for general task tracking?",
-"a": "Things 3 is simpler if you do not need full GTD structure."
-}
-],
-"related_pages": [
-{ "x_name": "Pagico", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "Taskheat", "y_name": "Apple Reminders", "persona": "Power user" },
-{ "x_name": "Remember The Milk", "y_name": "Google Tasks", "persona": "Power user" },
-{ "x_name": "OmniFocus", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "ClickUp", "y_name": "Todoist", "persona": "Power user" },
-{ "x_name": "Asana", "y_name": "Things 3", "persona": "Power user" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Nirvana vs Things 3 for Power users",
+  "slug": "nirvana-vs-things-3-for-power-user",
+  "meta_description": "Nirvana vs Things 3 for power users running strict GTD systems with granular context filtering and review workflows.",
+  "persona": "Power user",
+  "constraint_lens": "You run a strict GTD workflow and need granular context filters and structured review depth.",
+  "verdict": {
+    "winner": "x",
+    "summary": "Nirvana wins for power users implementing a strict GTD system. It includes dedicated lists for Next, Waiting, and Scheduled, plus context-based filtering built into the model. Things 3 supports areas, projects, and tags but does not enforce deep GTD stages or review layers. If context-based filtering and review workflow depth are constrained, Things 3 fails first.",
+    "decision_rule": "If context-based filtering and review workflow depth are constrained, Things 3 fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for structured GTD execution",
+      "content": "You run strict GTD workflows and expect granular context filtering. Nirvana separates tasks into GTD stages such as Next and Waiting and allows filtering by context directly. Things 3 organizes work into areas and projects with tags, but does not center the system around GTD stages."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Nirvana wins",
+      "bullets": [
+        {
+          "point": "Dedicated GTD stage lists such as Next and Waiting",
+          "why_it_matters": "You move tasks through defined stages instead of managing everything in general project lists."
+        },
+        {
+          "point": "Context-based filtering built into task views",
+          "why_it_matters": "You filter tasks by location or tool without building custom perspectives."
+        },
+        {
+          "point": "Structured weekly review support",
+          "why_it_matters": "You systematically review projects and next actions using the built-in workflow."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Things 3 wins",
+      "bullets": [
+        {
+          "point": "Clean project and area hierarchy",
+          "why_it_matters": "You organize responsibilities simply without managing GTD stage transitions."
+        },
+        {
+          "point": "Forecast view combining calendar and tasks",
+          "why_it_matters": "You see upcoming tasks and events together without configuring complex filters."
+        },
+        {
+          "point": "Quick entry and minimal interface",
+          "why_it_matters": "You capture tasks rapidly without navigating multiple GTD-specific lists."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want a lighter system without managing strict GTD stages and context lists.",
+          "what_to_do_instead": "Use Things 3 if you prefer a simpler project-based workflow."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You require granular context filters and clearly separated GTD stages for review.",
+          "what_to_do_instead": "Switch to Nirvana for deeper GTD alignment."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you follow a loose version of GTD and mainly rely on tags and simple project lists, Things 3 may feel sufficient."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you need built-in GTD stages and context filters, choose Nirvana.",
+        "If you prefer a clean project-focused system, consider Things 3.",
+        "If weekly review depth matters, avoid lighter task-only models."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Things 3 support strict GTD stages?",
+      "a": "It supports projects and tags but does not enforce dedicated GTD stage lists."
+    },
+    {
+      "q": "Can Nirvana filter tasks by context?",
+      "a": "Yes. Context-based filtering is built into its core views."
+    },
+    {
+      "q": "Which is better for advanced GTD workflows?",
+      "a": "Nirvana is generally better for strict GTD implementation."
+    },
+    {
+      "q": "Which is simpler for general task tracking?",
+      "a": "Things 3 is simpler if you do not need full GTD structure."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Pagico",
+      "y_name": "Things 3",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Asana",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "GQueues",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Remember The Milk",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Taskheat",
+      "y_name": "Apple Reminders",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Taskwarrior",
+      "y_name": "Todoist",
+      "persona": "Power user"
+    }
+  ]
 }

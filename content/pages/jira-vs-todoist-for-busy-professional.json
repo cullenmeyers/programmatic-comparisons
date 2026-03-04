@@ -1,116 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "time-scarcity",
-"constraintUiName": "Fast to use daily",
-"title": "Jira vs Todoist for Busy professionals",
-"slug": "jira-vs-todoist-for-busy-professional",
-"meta_description": "Jira vs Todoist for busy professionals who need to log personal work tasks fast without navigating issue types, boards, or project workflows.",
-"persona": "Busy professional",
-"constraint_lens": "You need to capture and see tasks instantly without navigating complex issue tracking structures.",
-"verdict": {
-"winner": "y",
-"summary": "Todoist wins for busy professionals who need to log personal tasks quickly between meetings. It lets you type and save a task in seconds from a simple input field. Jira is built around issue types, projects, and workflows that require selecting fields before creating an item. If issue-tracking structure slows simple task entry, Jira fails first.",
-"decision_rule": "If issue-tracking structure slows simple task entry, Jira fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Busy professionals",
-"content": "You said you need to log personal work tasks quickly between meetings. When your calendar is full, extra fields like issue type, sprint, or workflow status create delay. A tool that lets you capture and move on fits your reality."
-},
-{
-"type": "x_wins",
-"heading": "Where Jira wins",
-"bullets": [
-{
-"point": "Issue creation form with fields for project, issue type, priority, and assignee",
-"why_it_matters": "You can track work in a structured way, but filling multiple fields slows quick personal task capture."
-},
-{
-"point": "Board views with columns tied to workflow stages",
-"why_it_matters": "You can see tasks move across stages, yet you must open and navigate boards before acting."
-},
-{
-"point": "Integration with sprints and backlog management",
-"why_it_matters": "This supports team planning cycles, but it adds layers that are unnecessary for simple daily execution."
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Jira vs Todoist for Busy professionals",
+  "slug": "jira-vs-todoist-for-busy-professional",
+  "meta_description": "Jira vs Todoist for busy professionals who need to log personal work tasks fast without navigating issue types, boards, or project workflows.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need to capture and see tasks instantly without navigating complex issue tracking structures.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist wins for busy professionals who need to log personal tasks quickly between meetings. It lets you type and save a task in seconds from a simple input field. Jira is built around issue types, projects, and workflows that require selecting fields before creating an item. If issue-tracking structure slows simple task entry, Jira fails first.",
+    "decision_rule": "If issue-tracking structure slows simple task entry, Jira fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Busy professionals",
+      "content": "You said you need to log personal work tasks quickly between meetings. When your calendar is full, extra fields like issue type, sprint, or workflow status create delay. A tool that lets you capture and move on fits your reality."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Jira wins",
+      "bullets": [
+        {
+          "point": "Issue creation form with fields for project, issue type, priority, and assignee",
+          "why_it_matters": "You can track work in a structured way, but filling multiple fields slows quick personal task capture."
+        },
+        {
+          "point": "Board views with columns tied to workflow stages",
+          "why_it_matters": "You can see tasks move across stages, yet you must open and navigate boards before acting."
+        },
+        {
+          "point": "Integration with sprints and backlog management",
+          "why_it_matters": "This supports team planning cycles, but it adds layers that are unnecessary for simple daily execution."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Quick add task field accessible from any view",
+          "why_it_matters": "You can type a task and press enter without selecting issue types or workflow stages."
+        },
+        {
+          "point": "Today view that aggregates due tasks in one list",
+          "why_it_matters": "You open the app and instantly see what needs attention without navigating projects."
+        },
+        {
+          "point": "Optional project lists instead of mandatory workflow boards",
+          "why_it_matters": "You can keep tasks in simple lists without committing to a structured development process."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You must choose project, issue type, and status before saving a simple personal task.",
+          "what_to_do_instead": "Use Todoist if you need fast, low friction task entry."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need detailed tracking across workflow stages and sprint cycles.",
+          "what_to_do_instead": "Use Jira if your tasks must align with structured team development processes."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your role requires every task to be tracked within formal project boards and sprint workflows, Jira may be necessary despite the added complexity."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you need to capture tasks in seconds between meetings, choose Todoist.",
+        "If selecting issue types and projects feels slow, avoid Jira for personal tasks.",
+        "If your work must live inside structured development boards, Jira may be required."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can Jira be used for personal task lists?",
+      "a": "It can, but its issue based structure is designed for team workflows rather than quick personal capture."
+    },
+    {
+      "q": "Is Todoist too simple for professional work?",
+      "a": "For personal daily tasks, its simplicity is often an advantage when time is limited."
+    },
+    {
+      "q": "Which tool is faster to open and act on?",
+      "a": "Todoist is typically faster because it shows a consolidated list without requiring board navigation."
+    },
+    {
+      "q": "Does Jira require setup before use?",
+      "a": "Yes, you usually work inside predefined projects and workflows, which adds structure before logging tasks."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "ClickUp",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Linear",
+      "y_name": "Jira",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Linear",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Monday.com",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Motion",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Todoist",
+      "y_name": "Asana",
+      "persona": "Busy professional"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Todoist wins",
-"bullets": [
-{
-"point": "Quick add task field accessible from any view",
-"why_it_matters": "You can type a task and press enter without selecting issue types or workflow stages."
-},
-{
-"point": "Today view that aggregates due tasks in one list",
-"why_it_matters": "You open the app and instantly see what needs attention without navigating projects."
-},
-{
-"point": "Optional project lists instead of mandatory workflow boards",
-"why_it_matters": "You can keep tasks in simple lists without committing to a structured development process."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You must choose project, issue type, and status before saving a simple personal task.",
-"what_to_do_instead": "Use Todoist if you need fast, low friction task entry."
-},
-{
-"tool": "y",
-"fails_when": "You need detailed tracking across workflow stages and sprint cycles.",
-"what_to_do_instead": "Use Jira if your tasks must align with structured team development processes."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your role requires every task to be tracked within formal project boards and sprint workflows, Jira may be necessary despite the added complexity."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you need to capture tasks in seconds between meetings, choose Todoist.",
-"If selecting issue types and projects feels slow, avoid Jira for personal tasks.",
-"If your work must live inside structured development boards, Jira may be required."
-]
-}
-],
-"faqs": [
-{
-"q": "Can Jira be used for personal task lists?",
-"a": "It can, but its issue based structure is designed for team workflows rather than quick personal capture."
-},
-{
-"q": "Is Todoist too simple for professional work?",
-"a": "For personal daily tasks, its simplicity is often an advantage when time is limited."
-},
-{
-"q": "Which tool is faster to open and act on?",
-"a": "Todoist is typically faster because it shows a consolidated list without requiring board navigation."
-},
-{
-"q": "Does Jira require setup before use?",
-"a": "Yes, you usually work inside predefined projects and workflows, which adds structure before logging tasks."
-}
-],
-"related_pages": [
-{ "x_name": "Monday.com", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Sunsama", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Notion", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Asana", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Things", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "TickTick", "y_name": "Todoist", "persona": "Busy professional" }
-]
-}
-

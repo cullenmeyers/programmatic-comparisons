@@ -1,116 +1,139 @@
 {
-"category": "Note-taking apps",
-"categorySlug": "note-taking-apps",
-"constraintSlug": "setup-tolerance",
-"constraintUiName": "Publish fast",
-"title": "Google Keep vs Evernote for Beginners",
-"slug": "google-keep-vs-evernote-for-beginner",
-"meta_description": "Google Keep vs Evernote for beginners who want to jot quick thoughts without setting up notebooks, tags, or note structure.",
-"persona": "Beginner",
-"constraint_lens": "You want to jot down thoughts instantly without setting up notebooks, tags, or note organization first.",
-"verdict": {
-"winner": "x",
-"summary": "Google Keep wins for beginners who just want to capture quick thoughts. It opens to simple note cards where you click and start typing. Evernote relies on notebooks, stacks, and tags that introduce organization decisions early on. If notebooks and tagging must be understood before writing, Evernote fails first.",
-"decision_rule": "If notebooks and tagging must be understood before writing, Evernote fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Which tool lets you write immediately?",
-"content": "You just want to jot down thoughts without thinking about structure. As a beginner, creating notebooks and choosing tags feels like setup work. The right tool should let you click and type. Anything that highlights organization systems before writing adds hesitation."
-},
-{
-"type": "x_wins",
-"heading": "Where Google Keep works better for beginners",
-"bullets": [
-{
-"point": "Instant note card creation from the main screen.",
-"why_it_matters": "You click and start typing without choosing a notebook."
-},
-{
-"point": "Optional labels instead of required folders.",
-"why_it_matters": "You can ignore labeling entirely and still use the app."
-},
-{
-"point": "Lightweight interface focused on short notes.",
-"why_it_matters": "The screen emphasizes quick capture rather than long-term structure."
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Google Keep vs Evernote for Beginners",
+  "slug": "google-keep-vs-evernote-for-beginner",
+  "meta_description": "Google Keep vs Evernote for beginners who want to jot quick thoughts without setting up notebooks, tags, or note structure.",
+  "persona": "Beginner",
+  "constraint_lens": "You want to jot down thoughts instantly without setting up notebooks, tags, or note organization first.",
+  "verdict": {
+    "winner": "x",
+    "summary": "Google Keep wins for beginners who just want to capture quick thoughts. It opens to simple note cards where you click and start typing. Evernote relies on notebooks, stacks, and tags that introduce organization decisions early on. If notebooks and tagging must be understood before writing, Evernote fails first.",
+    "decision_rule": "If notebooks and tagging must be understood before writing, Evernote fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool lets you write immediately?",
+      "content": "You just want to jot down thoughts without thinking about structure. As a beginner, creating notebooks and choosing tags feels like setup work. The right tool should let you click and type. Anything that highlights organization systems before writing adds hesitation."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Google Keep works better for beginners",
+      "bullets": [
+        {
+          "point": "Instant note card creation from the main screen.",
+          "why_it_matters": "You click and start typing without choosing a notebook."
+        },
+        {
+          "point": "Optional labels instead of required folders.",
+          "why_it_matters": "You can ignore labeling entirely and still use the app."
+        },
+        {
+          "point": "Lightweight interface focused on short notes.",
+          "why_it_matters": "The screen emphasizes quick capture rather than long-term structure."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Evernote works better",
+      "bullets": [
+        {
+          "point": "Notebook system with nested stacks.",
+          "why_it_matters": "You can organize notes deeply by subject. Setting up notebooks introduces structure decisions."
+        },
+        {
+          "point": "Tagging system for filtering and search.",
+          "why_it_matters": "You can label notes with multiple tags. Understanding tagging adds an extra concept."
+        },
+        {
+          "point": "Rich formatting and document-style notes.",
+          "why_it_matters": "You can create longer structured notes. For quick thoughts, advanced formatting may feel unnecessary."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need detailed organization with notebooks and advanced formatting.",
+          "what_to_do_instead": "Use Evernote if you want structured long-term note management."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You feel pressured to choose a notebook or apply tags before writing.",
+          "what_to_do_instead": "Use Google Keep if you want instant capture without setup."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your quick notes grow into long documents that require deep organization and tagging, Evernote may justify the extra structure."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want instant jotting, choose Google Keep.",
+        "If you want structured notebooks and tags, choose Evernote.",
+        "If setup feels distracting, keep it simple."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Google Keep better for quick thoughts?",
+      "a": "Yes. It is designed for fast note cards without required structure."
+    },
+    {
+      "q": "Does Evernote require notebooks?",
+      "a": "It organizes notes inside notebooks, which introduces structure decisions."
+    },
+    {
+      "q": "Which tool is easier to start with?",
+      "a": "Google Keep is easier because you can write without creating folders first."
+    },
+    {
+      "q": "Can Evernote be used casually?",
+      "a": "It can, but its notebook and tag system encourages structured organization."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Apple Notes",
+      "y_name": "Notion",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Craft",
+      "y_name": "Milanote",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Dropbox Paper",
+      "y_name": "Coda",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Foam",
+      "y_name": "Obsidian",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Logseq",
+      "y_name": "Apple Notes",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Notion",
+      "y_name": "Apple Notes",
+      "persona": "Beginner"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Evernote works better",
-"bullets": [
-{
-"point": "Notebook system with nested stacks.",
-"why_it_matters": "You can organize notes deeply by subject. Setting up notebooks introduces structure decisions."
-},
-{
-"point": "Tagging system for filtering and search.",
-"why_it_matters": "You can label notes with multiple tags. Understanding tagging adds an extra concept."
-},
-{
-"point": "Rich formatting and document-style notes.",
-"why_it_matters": "You can create longer structured notes. For quick thoughts, advanced formatting may feel unnecessary."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You need detailed organization with notebooks and advanced formatting.",
-"what_to_do_instead": "Use Evernote if you want structured long-term note management."
-},
-{
-"tool": "y",
-"fails_when": "You feel pressured to choose a notebook or apply tags before writing.",
-"what_to_do_instead": "Use Google Keep if you want instant capture without setup."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your quick notes grow into long documents that require deep organization and tagging, Evernote may justify the extra structure."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want instant jotting, choose Google Keep.",
-"If you want structured notebooks and tags, choose Evernote.",
-"If setup feels distracting, keep it simple."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Google Keep better for quick thoughts?",
-"a": "Yes. It is designed for fast note cards without required structure."
-},
-{
-"q": "Does Evernote require notebooks?",
-"a": "It organizes notes inside notebooks, which introduces structure decisions."
-},
-{
-"q": "Which tool is easier to start with?",
-"a": "Google Keep is easier because you can write without creating folders first."
-},
-{
-"q": "Can Evernote be used casually?",
-"a": "It can, but its notebook and tag system encourages structured organization."
-}
-],
-"related_pages": [
-{ "x_name": "Apple Notes", "y_name": "Notion", "persona": "Beginner" },
-{ "x_name": "Logseq", "y_name": "Apple Notes", "persona": "Beginner" },
-{ "x_name": "Craft", "y_name": "Milanote", "persona": "Beginner" },
-{ "x_name": "Notion", "y_name": "Trello", "persona": "Beginner" },
-{ "x_name": "Trello", "y_name": "ClickUp", "persona": "Beginner" },
-{ "x_name": "Airtable", "y_name": "Trello", "persona": "Beginner" }
-]
-}
-

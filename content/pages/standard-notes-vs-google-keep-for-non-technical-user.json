@@ -1,115 +1,139 @@
 {
-"category": "Note-taking apps",
-"categorySlug": "note-taking-apps",
-"constraintSlug": "fear-of-breaking",
-"constraintUiName": "Hard to mess up",
-"title": "Standard Notes vs Google Keep for Non-technical users",
-"slug": "standard-notes-vs-google-keep-for-non-technical-user",
-"meta_description": "Standard Notes vs Google Keep for non-technical users who want private notes without dealing with encryption settings or security terms.",
-"persona": "Non-technical user",
-"constraint_lens": "You want to store personal thoughts safely without worrying about encryption settings or technical security terms.",
-"verdict": {
-"winner": "y",
-"summary": "Google Keep wins for non-technical users who want simple, private note storage without technical language. It opens to colorful note cards and works without exposing encryption concepts. Standard Notes centers on end-to-end encryption and secure key handling, which can feel intimidating. If encryption and security terminology create uncertainty, Standard Notes fails first.",
-"decision_rule": "If encryption and security terminology create uncertainty, Standard Notes fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Which tool feels safer to use?",
-"content": "You want private notes without worrying about encryption concepts. As a non-technical user, terms related to keys and security can feel risky. The right tool should store notes without asking you to understand how security works. Anything that highlights technical protection details can create doubt."
-},
-{
-"type": "x_wins",
-"heading": "Where Standard Notes works better",
-"bullets": [
-{
-"point": "End-to-end encrypted notes with secure account keys.",
-"why_it_matters": "Your notes are encrypted before leaving your device. Managing passwords and understanding recovery keys may feel stressful."
-},
-{
-"point": "Optional secure extensions for advanced note features.",
-"why_it_matters": "You can add editors and tools for structured notes. Enabling extensions introduces extra setup steps."
-},
-{
-"point": "Manual control over encryption passphrase.",
-"why_it_matters": "You are responsible for remembering your passphrase. Losing it can mean losing access, which may create anxiety."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Google Keep works better for non-technical users",
-"bullets": [
-{
-"point": "Simple note cards with automatic cloud saving.",
-"why_it_matters": "You type and your notes are saved without managing security settings."
-},
-{
-"point": "Google account login without separate encryption keys.",
-"why_it_matters": "You use an existing account instead of handling special recovery phrases."
-},
-{
-"point": "Minimal settings focused on reminders and labels.",
-"why_it_matters": "The interface centers on writing notes, not security terminology."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You feel unsure about managing passphrases or understanding encryption-related messages.",
-"what_to_do_instead": "Use Google Keep if you prefer automatic saving without security terminology."
-},
-{
-"tool": "y",
-"fails_when": "You require strong end-to-end encryption with full control over your data.",
-"what_to_do_instead": "Use Standard Notes if maximum privacy control is essential."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you prioritize strong encryption and are comfortable managing secure passwords, Standard Notes may feel safer despite the added terminology."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want effortless private notes, choose Google Keep.",
-"If you want full encryption control, choose Standard Notes.",
-"If security terminology feels intimidating, avoid encryption-heavy apps."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Standard Notes more secure?",
-"a": "It emphasizes end-to-end encryption and user-controlled passphrases."
-},
-{
-"q": "Does Google Keep use encryption?",
-"a": "It protects data through your Google account without exposing encryption controls to the user."
-},
-{
-"q": "Which tool is easier to understand?",
-"a": "Google Keep is easier because it does not surface technical security language."
-},
-{
-"q": "Can Standard Notes be used simply?",
-"a": "Yes, but its focus on encryption and passphrase control may feel technical."
-}
-],
-"related_pages": [
-{ "x_name": "Kanban Tool", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
-{ "x_name": "Any.do", "y_name": "Trello", "persona": "Non-technical user" },
-{ "x_name": "Basecamp", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
-{ "x_name": "Freedcamp", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
-{ "x_name": "Todoist", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
-{ "x_name": "Asana", "y_name": "Microsoft To Do", "persona": "Non-technical user" }
-]
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Standard Notes vs Google Keep for Non-technical users",
+  "slug": "standard-notes-vs-google-keep-for-non-technical-user",
+  "meta_description": "Standard Notes vs Google Keep for non-technical users who want private notes without dealing with encryption settings or security terms.",
+  "persona": "Non-technical user",
+  "constraint_lens": "You want to store personal thoughts safely without worrying about encryption settings or technical security terms.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Google Keep wins for non-technical users who want simple, private note storage without technical language. It opens to colorful note cards and works without exposing encryption concepts. Standard Notes centers on end-to-end encryption and secure key handling, which can feel intimidating. If encryption and security terminology create uncertainty, Standard Notes fails first.",
+    "decision_rule": "If encryption and security terminology create uncertainty, Standard Notes fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool feels safer to use?",
+      "content": "You want private notes without worrying about encryption concepts. As a non-technical user, terms related to keys and security can feel risky. The right tool should store notes without asking you to understand how security works. Anything that highlights technical protection details can create doubt."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Standard Notes works better",
+      "bullets": [
+        {
+          "point": "End-to-end encrypted notes with secure account keys.",
+          "why_it_matters": "Your notes are encrypted before leaving your device. Managing passwords and understanding recovery keys may feel stressful."
+        },
+        {
+          "point": "Optional secure extensions for advanced note features.",
+          "why_it_matters": "You can add editors and tools for structured notes. Enabling extensions introduces extra setup steps."
+        },
+        {
+          "point": "Manual control over encryption passphrase.",
+          "why_it_matters": "You are responsible for remembering your passphrase. Losing it can mean losing access, which may create anxiety."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Google Keep works better for non-technical users",
+      "bullets": [
+        {
+          "point": "Simple note cards with automatic cloud saving.",
+          "why_it_matters": "You type and your notes are saved without managing security settings."
+        },
+        {
+          "point": "Google account login without separate encryption keys.",
+          "why_it_matters": "You use an existing account instead of handling special recovery phrases."
+        },
+        {
+          "point": "Minimal settings focused on reminders and labels.",
+          "why_it_matters": "The interface centers on writing notes, not security terminology."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You feel unsure about managing passphrases or understanding encryption-related messages.",
+          "what_to_do_instead": "Use Google Keep if you prefer automatic saving without security terminology."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You require strong end-to-end encryption with full control over your data.",
+          "what_to_do_instead": "Use Standard Notes if maximum privacy control is essential."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you prioritize strong encryption and are comfortable managing secure passwords, Standard Notes may feel safer despite the added terminology."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want effortless private notes, choose Google Keep.",
+        "If you want full encryption control, choose Standard Notes.",
+        "If security terminology feels intimidating, avoid encryption-heavy apps."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Standard Notes more secure?",
+      "a": "It emphasizes end-to-end encryption and user-controlled passphrases."
+    },
+    {
+      "q": "Does Google Keep use encryption?",
+      "a": "It protects data through your Google account without exposing encryption controls to the user."
+    },
+    {
+      "q": "Which tool is easier to understand?",
+      "a": "Google Keep is easier because it does not surface technical security language."
+    },
+    {
+      "q": "Can Standard Notes be used simply?",
+      "a": "Yes, but its focus on encryption and passphrase control may feel technical."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Bear",
+      "y_name": "Standard Notes",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Milanote",
+      "y_name": "Google Keep",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Standard Notes",
+      "y_name": "Apple Notes",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Evernote",
+      "y_name": "Apple Notes",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Logseq",
+      "y_name": "Apple Notes",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Notesnook",
+      "y_name": "Apple Notes",
+      "persona": "Non-technical user"
+    }
+  ]
 }

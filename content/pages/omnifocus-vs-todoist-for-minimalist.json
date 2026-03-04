@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "OmniFocus vs Todoist for Minimalists",
-"slug": "omnifocus-vs-todoist-for-minimalist",
-"meta_description": "OmniFocus vs Todoist for minimalists who want simple task tracking without frameworks, perspectives, or advanced terminology.",
-"persona": "Minimalist",
-"constraint_lens": "You want the simplest possible way to track tasks without frameworks, perspectives, or special terminology.",
-"verdict": {
-"winner": "y",
-"summary": "Todoist wins for minimalists who want straightforward task tracking. You can create lists and check off tasks without learning a system. OmniFocus introduces projects, tags, defer dates, and custom perspectives that reflect a broader framework. If the tool introduces frameworks or terminology, OmniFocus fails first.",
-"decision_rule": "If the tool introduces frameworks or terminology, OmniFocus fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Minimalists",
-"content": "You said you want the simplest possible way to track tasks. When an app uses terms like perspectives or defer dates, you must understand how the system works before using it comfortably. A basic list reduces mental friction."
-},
-{
-"type": "x_wins",
-"heading": "Where OmniFocus wins",
-"bullets": [
-{
-"point": "Custom perspectives that filter tasks by tags and availability",
-"why_it_matters": "You can create powerful views, but setting them up requires understanding advanced concepts."
-},
-{
-"point": "Defer dates that hide tasks until a future time",
-"why_it_matters": "You control when tasks appear, yet managing defer logic adds another layer to learn."
-},
-{
-"point": "Structured project types such as sequential or parallel",
-"why_it_matters": "You can model workflows precisely, but choosing project types introduces terminology beyond a simple list."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Todoist wins",
-"bullets": [
-{
-"point": "Single list based interface with optional projects",
-"why_it_matters": "You can keep everything in one list without activating advanced structures."
-},
-{
-"point": "Quick add with natural language due dates",
-"why_it_matters": "You type pay bill tomorrow and it sets the date automatically without extra configuration."
-},
-{
-"point": "Minimal required concepts limited to tasks and optional labels",
-"why_it_matters": "You avoid learning frameworks and can use it as a basic checklist."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You feel slowed down by terminology such as tags, perspectives, or defer dates.",
-"what_to_do_instead": "Use Todoist if you want a simple checklist without learning a system."
-},
-{
-"tool": "y",
-"fails_when": "You need highly structured workflows with detailed filtering.",
-"what_to_do_instead": "Use OmniFocus if advanced control becomes essential."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your workload grows complex and you need precise control over when tasks appear and how they relate, OmniFocus may justify its added terminology."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want the simplest list possible, choose Todoist.",
-"If advanced terminology feels distracting, avoid OmniFocus.",
-"If you need structured control over task visibility, OmniFocus may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is OmniFocus hard to learn?",
-"a": "It includes advanced concepts that take time to understand compared to basic list apps."
-},
-{
-"q": "Can Todoist stay minimal long term?",
-"a": "Yes, you can ignore advanced features and keep it as a simple task list."
-},
-{
-"q": "Which app has fewer concepts?",
-"a": "Todoist introduces fewer built in frameworks and terms."
-},
-{
-"q": "Does OmniFocus require setup before use?",
-"a": "It often requires choosing project types and understanding tags before fully benefiting from it."
-}
-],
-"related_pages": [
-{ "x_name": "Amazing Marvin", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "ClickUp", "y_name": "Apple Reminders", "persona": "Minimalist" },
-{ "x_name": "Sorted³", "y_name": "Things 3", "persona": "Minimalist" },
-{ "x_name": "Sunsama", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "Habitica", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "Notion", "y_name": "Todoist", "persona": "Minimalist" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "OmniFocus vs Todoist for Minimalists",
+  "slug": "omnifocus-vs-todoist-for-minimalist",
+  "meta_description": "OmniFocus vs Todoist for minimalists who want simple task tracking without frameworks, perspectives, or advanced terminology.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want the simplest possible way to track tasks without frameworks, perspectives, or special terminology.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist wins for minimalists who want straightforward task tracking. You can create lists and check off tasks without learning a system. OmniFocus introduces projects, tags, defer dates, and custom perspectives that reflect a broader framework. If the tool introduces frameworks or terminology, OmniFocus fails first.",
+    "decision_rule": "If the tool introduces frameworks or terminology, OmniFocus fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Minimalists",
+      "content": "You said you want the simplest possible way to track tasks. When an app uses terms like perspectives or defer dates, you must understand how the system works before using it comfortably. A basic list reduces mental friction."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where OmniFocus wins",
+      "bullets": [
+        {
+          "point": "Custom perspectives that filter tasks by tags and availability",
+          "why_it_matters": "You can create powerful views, but setting them up requires understanding advanced concepts."
+        },
+        {
+          "point": "Defer dates that hide tasks until a future time",
+          "why_it_matters": "You control when tasks appear, yet managing defer logic adds another layer to learn."
+        },
+        {
+          "point": "Structured project types such as sequential or parallel",
+          "why_it_matters": "You can model workflows precisely, but choosing project types introduces terminology beyond a simple list."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Single list based interface with optional projects",
+          "why_it_matters": "You can keep everything in one list without activating advanced structures."
+        },
+        {
+          "point": "Quick add with natural language due dates",
+          "why_it_matters": "You type pay bill tomorrow and it sets the date automatically without extra configuration."
+        },
+        {
+          "point": "Minimal required concepts limited to tasks and optional labels",
+          "why_it_matters": "You avoid learning frameworks and can use it as a basic checklist."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You feel slowed down by terminology such as tags, perspectives, or defer dates.",
+          "what_to_do_instead": "Use Todoist if you want a simple checklist without learning a system."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need highly structured workflows with detailed filtering.",
+          "what_to_do_instead": "Use OmniFocus if advanced control becomes essential."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your workload grows complex and you need precise control over when tasks appear and how they relate, OmniFocus may justify its added terminology."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want the simplest list possible, choose Todoist.",
+        "If advanced terminology feels distracting, avoid OmniFocus.",
+        "If you need structured control over task visibility, OmniFocus may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is OmniFocus hard to learn?",
+      "a": "It includes advanced concepts that take time to understand compared to basic list apps."
+    },
+    {
+      "q": "Can Todoist stay minimal long term?",
+      "a": "Yes, you can ignore advanced features and keep it as a simple task list."
+    },
+    {
+      "q": "Which app has fewer concepts?",
+      "a": "Todoist introduces fewer built in frameworks and terms."
+    },
+    {
+      "q": "Does OmniFocus require setup before use?",
+      "a": "It often requires choosing project types and understanding tags before fully benefiting from it."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Amazing Marvin",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Habitica",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "MeisterTask",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Sunsama",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "TaskPaper",
+      "y_name": "OmniFocus",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "TeuxDeux",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    }
+  ]
 }

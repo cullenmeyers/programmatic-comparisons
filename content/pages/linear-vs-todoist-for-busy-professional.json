@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "time-scarcity",
-"constraintUiName": "Fast to use daily",
-"title": "Linear vs Todoist for Busy professionals",
-"slug": "linear-vs-todoist-for-busy-professional",
-"meta_description": "Linear vs Todoist for busy professionals who need fast personal task capture without navigating issue types, cycles, or engineering workflows.",
-"persona": "Busy professional",
-"constraint_lens": "You need to capture and see daily tasks instantly without navigating engineering style issue tracking structures.",
-"verdict": {
-"winner": "y",
-"summary": "Todoist wins for busy professionals who need to log personal work tasks quickly. It opens to a simple list and lets you add tasks in seconds. Linear is built around issues, cycles, and team workflows that require selecting context before saving. If issue-tracking concepts slow simple task entry, Linear fails first.",
-"decision_rule": "If issue-tracking concepts slow simple task entry, Linear fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Busy professionals",
-"content": "You said you need to capture personal work tasks quickly without engineering style structure. When your day is packed, choosing issue types, projects, or cycles creates delay. A fast list that works between meetings fits better."
-},
-{
-"type": "x_wins",
-"heading": "Where Linear wins",
-"bullets": [
-{
-"point": "Issue based system with fields for project, priority, and status",
-"why_it_matters": "You can track work in a structured way, but selecting these fields slows quick personal capture."
-},
-{
-"point": "Board and list views tied to workflow stages",
-"why_it_matters": "Tasks move through defined stages, yet you must navigate project views before acting."
-},
-{
-"point": "Cycle planning and roadmap features",
-"why_it_matters": "It supports sprint style planning, but adds layers that are unnecessary for simple daily tasks."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Todoist wins",
-"bullets": [
-{
-"point": "Quick add task input available from any screen",
-"why_it_matters": "You can type a task and press enter without choosing project structures first."
-},
-{
-"point": "Today view that shows all due tasks in one list",
-"why_it_matters": "You open the app and immediately see what needs attention."
-},
-{
-"point": "Optional project lists instead of mandatory workflow cycles",
-"why_it_matters": "You can keep tasks simple without aligning them to engineering style planning systems."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You must select project, priority, or cycle before saving a simple personal task.",
-"what_to_do_instead": "Use Todoist if you need immediate task entry with minimal structure."
-},
-{
-"tool": "y",
-"fails_when": "You require detailed tracking across team workflows and sprint cycles.",
-"what_to_do_instead": "Use Linear if your tasks must align with structured engineering processes."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your role requires every task to be logged inside a formal project workflow with defined statuses and cycles, Linear may be necessary despite the extra structure."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you need to log tasks quickly between meetings, choose Todoist.",
-"If selecting issue fields feels slow, avoid Linear for personal tasks.",
-"If your work depends on structured engineering workflows, Linear may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Linear only for engineering teams?",
-"a": "It is designed around issue tracking and sprint style workflows commonly used by product and engineering teams."
-},
-{
-"q": "Can Todoist handle professional workloads?",
-"a": "Yes, it can manage projects and deadlines without requiring formal workflow stages."
-},
-{
-"q": "Which tool is faster to open and act on?",
-"a": "Todoist is typically faster because it focuses on direct list based task entry."
-},
-{
-"q": "Does Linear require predefined projects?",
-"a": "Yes, tasks are generally created within project and workflow contexts."
-}
-],
-"related_pages": [
-{ "x_name": "Jira", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Monday.com", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Sunsama", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Asana", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Notion", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Things", "y_name": "Todoist", "persona": "Busy professional" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Linear vs Todoist for Busy professionals",
+  "slug": "linear-vs-todoist-for-busy-professional",
+  "meta_description": "Linear vs Todoist for busy professionals who need fast personal task capture without navigating issue types, cycles, or engineering workflows.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need to capture and see daily tasks instantly without navigating engineering style issue tracking structures.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist wins for busy professionals who need to log personal work tasks quickly. It opens to a simple list and lets you add tasks in seconds. Linear is built around issues, cycles, and team workflows that require selecting context before saving. If issue-tracking concepts slow simple task entry, Linear fails first.",
+    "decision_rule": "If issue-tracking concepts slow simple task entry, Linear fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Busy professionals",
+      "content": "You said you need to capture personal work tasks quickly without engineering style structure. When your day is packed, choosing issue types, projects, or cycles creates delay. A fast list that works between meetings fits better."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Linear wins",
+      "bullets": [
+        {
+          "point": "Issue based system with fields for project, priority, and status",
+          "why_it_matters": "You can track work in a structured way, but selecting these fields slows quick personal capture."
+        },
+        {
+          "point": "Board and list views tied to workflow stages",
+          "why_it_matters": "Tasks move through defined stages, yet you must navigate project views before acting."
+        },
+        {
+          "point": "Cycle planning and roadmap features",
+          "why_it_matters": "It supports sprint style planning, but adds layers that are unnecessary for simple daily tasks."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Quick add task input available from any screen",
+          "why_it_matters": "You can type a task and press enter without choosing project structures first."
+        },
+        {
+          "point": "Today view that shows all due tasks in one list",
+          "why_it_matters": "You open the app and immediately see what needs attention."
+        },
+        {
+          "point": "Optional project lists instead of mandatory workflow cycles",
+          "why_it_matters": "You can keep tasks simple without aligning them to engineering style planning systems."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You must select project, priority, or cycle before saving a simple personal task.",
+          "what_to_do_instead": "Use Todoist if you need immediate task entry with minimal structure."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You require detailed tracking across team workflows and sprint cycles.",
+          "what_to_do_instead": "Use Linear if your tasks must align with structured engineering processes."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your role requires every task to be logged inside a formal project workflow with defined statuses and cycles, Linear may be necessary despite the extra structure."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you need to log tasks quickly between meetings, choose Todoist.",
+        "If selecting issue fields feels slow, avoid Linear for personal tasks.",
+        "If your work depends on structured engineering workflows, Linear may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Linear only for engineering teams?",
+      "a": "It is designed around issue tracking and sprint style workflows commonly used by product and engineering teams."
+    },
+    {
+      "q": "Can Todoist handle professional workloads?",
+      "a": "Yes, it can manage projects and deadlines without requiring formal workflow stages."
+    },
+    {
+      "q": "Which tool is faster to open and act on?",
+      "a": "Todoist is typically faster because it focuses on direct list based task entry."
+    },
+    {
+      "q": "Does Linear require predefined projects?",
+      "a": "Yes, tasks are generally created within project and workflow contexts."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "ClickUp",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Jira",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Linear",
+      "y_name": "Jira",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Monday.com",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Motion",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Todoist",
+      "y_name": "Asana",
+      "persona": "Busy professional"
+    }
+  ]
 }

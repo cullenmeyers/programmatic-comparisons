@@ -1,115 +1,139 @@
 {
-"category": "Note-taking apps",
-"categorySlug": "note-taking-apps",
-"constraintSlug": "time-scarcity",
-"constraintUiName": "Fast to use daily",
-"title": "Notion vs Google Docs for Busy professionals",
-"slug": "notion-vs-google-docs-for-busy-professional",
-"meta_description": "Notion vs Google Docs for busy professionals who need to capture ideas fast without setting up pages, blocks, or databases first.",
-"persona": "Busy professional",
-"constraint_lens": "You need a notes tool that lets you capture ideas instantly without extra steps or mental overhead.",
-"verdict": {
-"winner": "y",
-"summary": "Google Docs wins for busy professionals who need to capture ideas quickly between meetings. It opens to a blank document where you can start typing immediately without choosing page types or layouts. Notion often asks you to pick a page format or shows blocks and templates before you write. If the tool asks for structure before content, Notion fails first.",
-"decision_rule": "If the tool asks for structure before content, Notion fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit when time is tight",
-"content": "You write quick notes, not systems or databases. Google Docs matches that behavior because it starts as a plain document with no layout decisions required. Notion is designed around pages, blocks, and optional databases, which can slow you down when you only want to jot an idea."
-},
-{
-"type": "x_wins",
-"heading": "Where Notion wins",
-"bullets": [
-{
-"point": "Block-based editor with slash commands for inserting content",
-"why_it_matters": "You can type slash to add tables, toggles, or embeds inside a page. This is powerful for structured work, but seeing these options can add mental steps when you just want to type fast."
-},
-{
-"point": "Database views like table, board, and calendar",
-"why_it_matters": "You can turn notes into sortable lists or kanban boards. This helps when managing projects, yet choosing a database type takes extra time during quick capture."
-},
-{
-"point": "Custom templates inside a workspace",
-"why_it_matters": "You can pre-build note layouts for recurring tasks. However, selecting or editing templates adds setup moments that interrupt rapid idea capture."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Google Docs wins",
-"bullets": [
-{
-"point": "Immediate blank document on creation",
-"why_it_matters": "You click new document and start typing with no layout choice. This removes decisions when your schedule is packed."
-},
-{
-"point": "Minimal interface focused on text editing",
-"why_it_matters": "The top toolbar stays consistent and does not change based on page type. This predictability lowers mental load during quick note sessions."
-},
-{
-"point": "Fast sharing through link permissions",
-"why_it_matters": "You can send a link and set view or edit access in seconds. This avoids extra setup when you need to forward notes right after a meeting."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You open a new page and pause to choose templates, page types, or database structure before writing.",
-"what_to_do_instead": "Use Google Docs for quick capture and reserve Notion for structured planning later."
-},
-{
-"tool": "y",
-"fails_when": "You later need to organize dozens of notes into linked projects with filters and views.",
-"what_to_do_instead": "Move ongoing projects into Notion where database views help manage complexity."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your work already lives inside a structured Notion workspace and you rely on linked databases daily, creating notes directly inside that system may save time compared to switching between tools."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you need to write instantly with zero layout decisions, choose Google Docs.",
-"If you are building structured workspaces, Notion fits better.",
-"If speed between meetings matters most, avoid tools that ask for page setup first."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Notion slower for quick notes?",
-"a": "It can feel slower because new pages often show templates, blocks, or database options before you start typing."
-},
-{
-"q": "Does Google Docs support structured content?",
-"a": "It supports headings, tables, and comments, but it does not include database-style views like boards or filtered tables."
-},
-{
-"q": "Can I use both together?",
-"a": "Yes. Many professionals capture ideas in Docs and later move long-term projects into Notion."
-},
-{
-"q": "Which is better for daily idea capture?",
-"a": "For pure speed and minimal decisions, Google Docs is usually the faster starting point."
-}
-],
-"related_pages": [
-{ "x_name": "Evernote", "y_name": "OneNote", "persona": "Busy professional" },
-{ "x_name": "Apple Notes", "y_name": "Google Keep", "persona": "Busy professional" },
-{ "x_name": "Craft", "y_name": "Google Docs", "persona": "Busy professional" },
-{ "x_name": "UpNote", "y_name": "Notion", "persona": "Busy professional" },
-{ "x_name": "Bear", "y_name": "Google Docs", "persona": "Busy professional" },
-{ "x_name": "RemNote", "y_name": "Evernote", "persona": "Busy professional" }
-]
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Notion vs Google Docs for Busy professionals",
+  "slug": "notion-vs-google-docs-for-busy-professional",
+  "meta_description": "Notion vs Google Docs for busy professionals who need to capture ideas fast without setting up pages, blocks, or databases first.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need a notes tool that lets you capture ideas instantly without extra steps or mental overhead.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Google Docs wins for busy professionals who need to capture ideas quickly between meetings. It opens to a blank document where you can start typing immediately without choosing page types or layouts. Notion often asks you to pick a page format or shows blocks and templates before you write. If the tool asks for structure before content, Notion fails first.",
+    "decision_rule": "If the tool asks for structure before content, Notion fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit when time is tight",
+      "content": "You write quick notes, not systems or databases. Google Docs matches that behavior because it starts as a plain document with no layout decisions required. Notion is designed around pages, blocks, and optional databases, which can slow you down when you only want to jot an idea."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Notion wins",
+      "bullets": [
+        {
+          "point": "Block-based editor with slash commands for inserting content",
+          "why_it_matters": "You can type slash to add tables, toggles, or embeds inside a page. This is powerful for structured work, but seeing these options can add mental steps when you just want to type fast."
+        },
+        {
+          "point": "Database views like table, board, and calendar",
+          "why_it_matters": "You can turn notes into sortable lists or kanban boards. This helps when managing projects, yet choosing a database type takes extra time during quick capture."
+        },
+        {
+          "point": "Custom templates inside a workspace",
+          "why_it_matters": "You can pre-build note layouts for recurring tasks. However, selecting or editing templates adds setup moments that interrupt rapid idea capture."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Google Docs wins",
+      "bullets": [
+        {
+          "point": "Immediate blank document on creation",
+          "why_it_matters": "You click new document and start typing with no layout choice. This removes decisions when your schedule is packed."
+        },
+        {
+          "point": "Minimal interface focused on text editing",
+          "why_it_matters": "The top toolbar stays consistent and does not change based on page type. This predictability lowers mental load during quick note sessions."
+        },
+        {
+          "point": "Fast sharing through link permissions",
+          "why_it_matters": "You can send a link and set view or edit access in seconds. This avoids extra setup when you need to forward notes right after a meeting."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You open a new page and pause to choose templates, page types, or database structure before writing.",
+          "what_to_do_instead": "Use Google Docs for quick capture and reserve Notion for structured planning later."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You later need to organize dozens of notes into linked projects with filters and views.",
+          "what_to_do_instead": "Move ongoing projects into Notion where database views help manage complexity."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your work already lives inside a structured Notion workspace and you rely on linked databases daily, creating notes directly inside that system may save time compared to switching between tools."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you need to write instantly with zero layout decisions, choose Google Docs.",
+        "If you are building structured workspaces, Notion fits better.",
+        "If speed between meetings matters most, avoid tools that ask for page setup first."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Notion slower for quick notes?",
+      "a": "It can feel slower because new pages often show templates, blocks, or database options before you start typing."
+    },
+    {
+      "q": "Does Google Docs support structured content?",
+      "a": "It supports headings, tables, and comments, but it does not include database-style views like boards or filtered tables."
+    },
+    {
+      "q": "Can I use both together?",
+      "a": "Yes. Many professionals capture ideas in Docs and later move long-term projects into Notion."
+    },
+    {
+      "q": "Which is better for daily idea capture?",
+      "a": "For pure speed and minimal decisions, Google Docs is usually the faster starting point."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Notion",
+      "y_name": "Google Keep",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Nuclino",
+      "y_name": "Notion",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Amplenote",
+      "y_name": "Obsidian",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Craft",
+      "y_name": "Apple Notes",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Dropbox Paper",
+      "y_name": "Coda",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Evernote",
+      "y_name": "DEVONthink",
+      "persona": "Busy professional"
+    }
+  ]
 }

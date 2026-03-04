@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "Taskwarrior vs Todoist for Power users",
-"slug": "taskwarrior-vs-todoist-for-power-user",
-"meta_description": "Taskwarrior vs Todoist for power users who manage tasks through scripts and need full command-line control and automation.",
-"persona": "Power user",
-"constraint_lens": "You need a task manager that supports command-line workflows and programmable automation without limiting control.",
-"verdict": {
-"winner": "x",
-"summary": "Taskwarrior wins for power users who manage tasks through scripts and command-line workflows. It allows tasks to be created, filtered, and modified through terminal commands that can be embedded into scripts and automation pipelines. Todoist focuses on graphical interfaces and API-based automation but does not operate as a native command-line task system. If command-line scripting and programmable task control are constrained, Todoist fails first.",
-"decision_rule": "If command-line scripting and programmable task control are constrained, Todoist fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for programmable task control",
-"content": "You manage tasks through scripts and expect command-line control. Taskwarrior runs directly in the terminal and supports command-driven task creation, filtering, and modification. Todoist primarily operates through a graphical interface where tasks are managed through lists and views."
-},
-{
-"type": "x_wins",
-"heading": "Where Taskwarrior wins",
-"bullets": [
-{
-"point": "Terminal-based task creation and editing",
-"why_it_matters": "You add and modify tasks directly from the command line without opening a graphical interface."
-},
-{
-"point": "Command-line filtering with query expressions",
-"why_it_matters": "You generate dynamic task lists using tags, due dates, or project filters in terminal commands."
-},
-{
-"point": "Script integration through shell commands",
-"why_it_matters": "You automate task workflows by embedding task commands into scripts and automation pipelines."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Todoist wins",
-"bullets": [
-{
-"point": "Graphical task lists with drag-and-drop organization",
-"why_it_matters": "You organize tasks visually without writing commands."
-},
-{
-"point": "Natural language task entry",
-"why_it_matters": "You type phrases like tomorrow or next Monday to set deadlines quickly."
-},
-{
-"point": "Cross-platform apps for web and mobile",
-"why_it_matters": "You access tasks easily across devices without using terminal tools."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You prefer visual task boards or mobile-first task management rather than terminal workflows.",
-"what_to_do_instead": "Use Todoist for a graphical interface across devices."
-},
-{
-"tool": "y",
-"fails_when": "You need to manipulate tasks through scripts or command-line pipelines.",
-"what_to_do_instead": "Switch to Taskwarrior for programmable task control."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your workflow depends more on mobile apps and visual task management than terminal automation, Todoist may feel more practical."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you manage tasks through terminal commands, choose Taskwarrior.",
-"If programmable task control matters, avoid graphical-only tools.",
-"If you want visual task lists across devices, choose Todoist."
-]
-}
-],
-"faqs": [
-{
-"q": "What makes Taskwarrior different from typical task apps?",
-"a": "It operates directly from the command line and supports scripting workflows."
-},
-{
-"q": "Does Todoist support command-line task management?",
-"a": "No. It primarily relies on graphical apps and web interfaces."
-},
-{
-"q": "Which tool is better for automation through scripts?",
-"a": "Taskwarrior is designed specifically for command-line automation."
-},
-{
-"q": "When would Todoist be the better option?",
-"a": "It works better for users who prefer visual task lists and mobile apps."
-}
-],
-"related_pages": [
-{ "x_name": "Pagico", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "Remember The Milk", "y_name": "Google Tasks", "persona": "Power user" },
-{ "x_name": "Taskheat", "y_name": "Apple Reminders", "persona": "Power user" },
-{ "x_name": "Nirvana", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "GQueues", "y_name": "Google Tasks", "persona": "Power user" },
-{ "x_name": "Asana", "y_name": "Trello", "persona": "Power user" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Taskwarrior vs Todoist for Power users",
+  "slug": "taskwarrior-vs-todoist-for-power-user",
+  "meta_description": "Taskwarrior vs Todoist for power users who manage tasks through scripts and need full command-line control and automation.",
+  "persona": "Power user",
+  "constraint_lens": "You need a task manager that supports command-line workflows and programmable automation without limiting control.",
+  "verdict": {
+    "winner": "x",
+    "summary": "Taskwarrior wins for power users who manage tasks through scripts and command-line workflows. It allows tasks to be created, filtered, and modified through terminal commands that can be embedded into scripts and automation pipelines. Todoist focuses on graphical interfaces and API-based automation but does not operate as a native command-line task system. If command-line scripting and programmable task control are constrained, Todoist fails first.",
+    "decision_rule": "If command-line scripting and programmable task control are constrained, Todoist fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for programmable task control",
+      "content": "You manage tasks through scripts and expect command-line control. Taskwarrior runs directly in the terminal and supports command-driven task creation, filtering, and modification. Todoist primarily operates through a graphical interface where tasks are managed through lists and views."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Taskwarrior wins",
+      "bullets": [
+        {
+          "point": "Terminal-based task creation and editing",
+          "why_it_matters": "You add and modify tasks directly from the command line without opening a graphical interface."
+        },
+        {
+          "point": "Command-line filtering with query expressions",
+          "why_it_matters": "You generate dynamic task lists using tags, due dates, or project filters in terminal commands."
+        },
+        {
+          "point": "Script integration through shell commands",
+          "why_it_matters": "You automate task workflows by embedding task commands into scripts and automation pipelines."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Graphical task lists with drag-and-drop organization",
+          "why_it_matters": "You organize tasks visually without writing commands."
+        },
+        {
+          "point": "Natural language task entry",
+          "why_it_matters": "You type phrases like tomorrow or next Monday to set deadlines quickly."
+        },
+        {
+          "point": "Cross-platform apps for web and mobile",
+          "why_it_matters": "You access tasks easily across devices without using terminal tools."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You prefer visual task boards or mobile-first task management rather than terminal workflows.",
+          "what_to_do_instead": "Use Todoist for a graphical interface across devices."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need to manipulate tasks through scripts or command-line pipelines.",
+          "what_to_do_instead": "Switch to Taskwarrior for programmable task control."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your workflow depends more on mobile apps and visual task management than terminal automation, Todoist may feel more practical."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you manage tasks through terminal commands, choose Taskwarrior.",
+        "If programmable task control matters, avoid graphical-only tools.",
+        "If you want visual task lists across devices, choose Todoist."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What makes Taskwarrior different from typical task apps?",
+      "a": "It operates directly from the command line and supports scripting workflows."
+    },
+    {
+      "q": "Does Todoist support command-line task management?",
+      "a": "No. It primarily relies on graphical apps and web interfaces."
+    },
+    {
+      "q": "Which tool is better for automation through scripts?",
+      "a": "Taskwarrior is designed specifically for command-line automation."
+    },
+    {
+      "q": "When would Todoist be the better option?",
+      "a": "It works better for users who prefer visual task lists and mobile apps."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Todoist",
+      "y_name": "Microsoft To Do",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Asana",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "GQueues",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Nirvana",
+      "y_name": "Things 3",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Pagico",
+      "y_name": "Things 3",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Remember The Milk",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    }
+  ]
 }

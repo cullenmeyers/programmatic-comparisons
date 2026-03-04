@@ -1,115 +1,134 @@
 {
-"category": "Calendar / Scheduling tools",
-"categorySlug": "calendar-scheduling-tools",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Motion vs Apple Calendar for Minimalists",
-"slug": "motion-vs-apple-calendar-for-minimalist",
-"meta_description": "Motion vs Apple Calendar for minimalists who want to see daily events clearly without auto planning tools, task layers, or rescheduling engines.",
-"persona": "Minimalist",
-"constraint_lens": "You want a calendar that shows events only, without automated planning tools or extra scheduling panels.",
-"verdict": {
-"winner": "y",
-"summary": "Apple Calendar wins for minimalists who only want to view their daily schedule. It displays events exactly as entered, without auto scheduling tasks or reshuffling time blocks. Motion adds an automated planning engine that schedules tasks into open slots and adjusts them as your day changes. If automated planning adds extra interaction steps, Motion fails first.",
-"decision_rule": "If automated planning adds extra interaction steps, Motion fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Minimalists",
-"content": "You said you want only to see events without automated scheduling layers. As a minimalist, extra task panels, priority settings, and auto placed blocks feel like clutter when your goal is simply to scan your day. A clean event grid fits you better."
-},
-{
-"type": "x_wins",
-"heading": "Where Motion wins",
-"bullets": [
-{
-"point": "Automatic task scheduling into open calendar slots",
-"why_it_matters": "Your tasks are placed directly into your calendar, but this adds extra blocks that go beyond fixed events."
-},
-{
-"point": "Dynamic rescheduling when meetings are added or changed",
-"why_it_matters": "The system moves flexible work blocks automatically, which introduces shifting time slots that a minimalist may not want to track."
-},
-{
-"point": "Built in task manager tied to priority and deadlines",
-"why_it_matters": "You can manage work and time together, yet the visible task layer adds more items to your daily view than simple events."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Apple Calendar wins",
-"bullets": [
-{
-"point": "Calendar grid shows only events you manually create or accept",
-"why_it_matters": "You open the day view and see meetings without automatically generated task blocks filling empty space."
-},
-{
-"point": "No automatic rescheduling engine running in the background",
-"why_it_matters": "Your schedule remains stable, with events staying exactly where you placed them."
-},
-{
-"point": "Event creation limited to title, time, location, and optional details",
-"why_it_matters": "There are no built in task priorities or deadline driven rules, keeping the interface focused on time based events."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "Automatically scheduled task blocks crowd your daily view and require review or adjustment.",
-"what_to_do_instead": "Use Apple Calendar if you prefer to see only fixed events without extra planning blocks."
-},
-{
-"tool": "y",
-"fails_when": "You want tasks automatically distributed across your day instead of manually assigning time.",
-"what_to_do_instead": "Use Motion if your goal shifts from viewing events to actively structuring your entire workday."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you reach a point where manually fitting tasks around meetings feels overwhelming and you want a system that fills open time automatically, Motion may feel more helpful despite the added layers."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you only want to see events on a clean daily view, choose Apple Calendar.",
-"If auto scheduled task blocks feel like clutter, avoid Motion.",
-"If you want your day structured automatically around deadlines, Motion may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Motion replace my calendar?",
-"a": "It connects to your existing calendar and adds automated task scheduling on top, which means more layers rather than a simple event view."
-},
-{
-"q": "Is Apple Calendar too basic?",
-"a": "It is basic by design, which keeps the interface focused on viewing and adding events without task planning tools."
-},
-{
-"q": "Will Motion constantly change my schedule?",
-"a": "It can move flexible tasks when meetings change, since its planning engine reshuffles blocks based on priorities."
-},
-{
-"q": "Which one is calmer to look at each day?",
-"a": "Apple Calendar is usually calmer because it shows only scheduled events without automated task blocks."
-}
-],
-"related_pages": [
-{ "x_name": "Akiflow", "y_name": "Google Calendar", "persona": "Minimalist" },
-{ "x_name": "Reclaim.ai", "y_name": "Google Calendar", "persona": "Minimalist" },
-{ "x_name": "Motion", "y_name": "Google Calendar", "persona": "Minimalist" },
-{ "x_name": "Apple Calendar", "y_name": "Google Calendar", "persona": "Minimalist" },
-{ "x_name": "Outlook Calendar", "y_name": "Google Calendar", "persona": "Minimalist" },
-{ "x_name": "Sunsama", "y_name": "Google Calendar", "persona": "Minimalist" }
-]
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Motion vs Apple Calendar for Minimalists",
+  "slug": "motion-vs-apple-calendar-for-minimalist",
+  "meta_description": "Motion vs Apple Calendar for minimalists who want to see daily events clearly without auto planning tools, task layers, or rescheduling engines.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a calendar that shows events only, without automated planning tools or extra scheduling panels.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Apple Calendar wins for minimalists who only want to view their daily schedule. It displays events exactly as entered, without auto scheduling tasks or reshuffling time blocks. Motion adds an automated planning engine that schedules tasks into open slots and adjusts them as your day changes. If automated planning adds extra interaction steps, Motion fails first.",
+    "decision_rule": "If automated planning adds extra interaction steps, Motion fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Minimalists",
+      "content": "You said you want only to see events without automated scheduling layers. As a minimalist, extra task panels, priority settings, and auto placed blocks feel like clutter when your goal is simply to scan your day. A clean event grid fits you better."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Motion wins",
+      "bullets": [
+        {
+          "point": "Automatic task scheduling into open calendar slots",
+          "why_it_matters": "Your tasks are placed directly into your calendar, but this adds extra blocks that go beyond fixed events."
+        },
+        {
+          "point": "Dynamic rescheduling when meetings are added or changed",
+          "why_it_matters": "The system moves flexible work blocks automatically, which introduces shifting time slots that a minimalist may not want to track."
+        },
+        {
+          "point": "Built in task manager tied to priority and deadlines",
+          "why_it_matters": "You can manage work and time together, yet the visible task layer adds more items to your daily view than simple events."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Apple Calendar wins",
+      "bullets": [
+        {
+          "point": "Calendar grid shows only events you manually create or accept",
+          "why_it_matters": "You open the day view and see meetings without automatically generated task blocks filling empty space."
+        },
+        {
+          "point": "No automatic rescheduling engine running in the background",
+          "why_it_matters": "Your schedule remains stable, with events staying exactly where you placed them."
+        },
+        {
+          "point": "Event creation limited to title, time, location, and optional details",
+          "why_it_matters": "There are no built in task priorities or deadline driven rules, keeping the interface focused on time based events."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Automatically scheduled task blocks crowd your daily view and require review or adjustment.",
+          "what_to_do_instead": "Use Apple Calendar if you prefer to see only fixed events without extra planning blocks."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want tasks automatically distributed across your day instead of manually assigning time.",
+          "what_to_do_instead": "Use Motion if your goal shifts from viewing events to actively structuring your entire workday."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you reach a point where manually fitting tasks around meetings feels overwhelming and you want a system that fills open time automatically, Motion may feel more helpful despite the added layers."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you only want to see events on a clean daily view, choose Apple Calendar.",
+        "If auto scheduled task blocks feel like clutter, avoid Motion.",
+        "If you want your day structured automatically around deadlines, Motion may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Motion replace my calendar?",
+      "a": "It connects to your existing calendar and adds automated task scheduling on top, which means more layers rather than a simple event view."
+    },
+    {
+      "q": "Is Apple Calendar too basic?",
+      "a": "It is basic by design, which keeps the interface focused on viewing and adding events without task planning tools."
+    },
+    {
+      "q": "Will Motion constantly change my schedule?",
+      "a": "It can move flexible tasks when meetings change, since its planning engine reshuffles blocks based on priorities."
+    },
+    {
+      "q": "Which one is calmer to look at each day?",
+      "a": "Apple Calendar is usually calmer because it shows only scheduled events without automated task blocks."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Akiflow",
+      "y_name": "Apple Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Motion",
+      "y_name": "Outlook Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Akiflow",
+      "y_name": "Google Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Clockwise",
+      "y_name": "Google Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Notion Calendar",
+      "y_name": "Google Calendar",
+      "persona": "Minimalist"
+    }
+  ]
 }

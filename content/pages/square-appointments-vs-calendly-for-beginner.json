@@ -1,116 +1,139 @@
 {
-"category": "Calendar / Scheduling tools",
-"categorySlug": "calendar-scheduling-tools",
-"constraintSlug": "setup-tolerance",
-"constraintUiName": "Publish fast",
-"title": "Square Appointments vs Calendly for Beginners",
-"slug": "square-appointments-vs-calendly-for-beginner",
-"meta_description": "Square Appointments vs Calendly for beginners who want a booking link without configuring payments, services, or business menus.",
-"persona": "Beginner",
-"constraint_lens": "You want to share a booking link quickly without setting up payments, services, or business menus first.",
-"verdict": {
-"winner": "y",
-"summary": "Calendly wins for beginners who want a simple booking link. You define an event type, connect your calendar, and share availability with minimal setup. Square Appointments is built for service businesses with payment and service configuration layers. If payment and service setup must be completed before sharing availability, Square Appointments fails first.",
-"decision_rule": "If payment and service setup must be completed before sharing availability, Square Appointments fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Which tool gets your booking link live faster?",
-"content": "You want clients to book time without configuring payments or service menus. As a beginner, business setup screens feel overwhelming. The right tool should let you define a meeting and share a link. Anything that requires service catalogs or pricing adds delay."
-},
-{
-"type": "x_wins",
-"heading": "Where Square Appointments works better",
-"bullets": [
-{
-"point": "Service-based booking with defined offerings and durations.",
-"why_it_matters": "You can structure different services clearly. Defining services takes time before sharing a link."
-},
-{
-"point": "Integrated payment processing for appointments.",
-"why_it_matters": "You can collect payments at booking. Setting up payment details adds configuration steps."
-},
-{
-"point": "Staff profiles with individual availability.",
-"why_it_matters": "You can assign bookings to team members. Creating staff profiles introduces extra setup layers."
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Square Appointments vs Calendly for Beginners",
+  "slug": "square-appointments-vs-calendly-for-beginner",
+  "meta_description": "Square Appointments vs Calendly for beginners who want a booking link without configuring payments, services, or business menus.",
+  "persona": "Beginner",
+  "constraint_lens": "You want to share a booking link quickly without setting up payments, services, or business menus first.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Calendly wins for beginners who want a simple booking link. You define an event type, connect your calendar, and share availability with minimal setup. Square Appointments is built for service businesses with payment and service configuration layers. If payment and service setup must be completed before sharing availability, Square Appointments fails first.",
+    "decision_rule": "If payment and service setup must be completed before sharing availability, Square Appointments fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool gets your booking link live faster?",
+      "content": "You want clients to book time without configuring payments or service menus. As a beginner, business setup screens feel overwhelming. The right tool should let you define a meeting and share a link. Anything that requires service catalogs or pricing adds delay."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Square Appointments works better",
+      "bullets": [
+        {
+          "point": "Service-based booking with defined offerings and durations.",
+          "why_it_matters": "You can structure different services clearly. Defining services takes time before sharing a link."
+        },
+        {
+          "point": "Integrated payment processing for appointments.",
+          "why_it_matters": "You can collect payments at booking. Setting up payment details adds configuration steps."
+        },
+        {
+          "point": "Staff profiles with individual availability.",
+          "why_it_matters": "You can assign bookings to team members. Creating staff profiles introduces extra setup layers."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Calendly works better for beginners",
+      "bullets": [
+        {
+          "point": "Simple event type creation with fixed meeting lengths.",
+          "why_it_matters": "You define a meeting and generate a link quickly."
+        },
+        {
+          "point": "Direct calendar sync without service catalogs.",
+          "why_it_matters": "You connect availability without building a business menu."
+        },
+        {
+          "point": "Shareable booking link immediately after setup.",
+          "why_it_matters": "You can send your link without configuring payments or pricing."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You must configure services and payment settings before sharing a simple meeting link.",
+          "what_to_do_instead": "Use Calendly if you want immediate link sharing."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need built-in payment collection or multiple staff scheduling.",
+          "what_to_do_instead": "Use Square Appointments if you run structured paid services."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you are running paid appointments with multiple services and staff members, Square Appointments may justify its deeper setup."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a fast booking link, choose Calendly.",
+        "If you need payments and service menus, choose Square Appointments.",
+        "If setup feels heavy, avoid business-layer scheduling tools."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Square Appointments built for businesses?",
+      "a": "Yes. It focuses on service offerings, payments, and staff management."
+    },
+    {
+      "q": "Is Calendly easier to set up?",
+      "a": "Yes. It centers on simple event types and quick link sharing."
+    },
+    {
+      "q": "Which tool requires less configuration?",
+      "a": "Calendly requires less configuration for basic booking links."
+    },
+    {
+      "q": "Can Square Appointments be used without payments?",
+      "a": "It can, but its structure assumes service and payment setup."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Google Calendar",
+      "y_name": "Calendly",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Zoho Bookings",
+      "y_name": "Calendly",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Apple Calendar",
+      "y_name": "Outlook Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Microsoft Bookings",
+      "y_name": "Google Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Teamup Calendar",
+      "y_name": "Google Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "TidyCal",
+      "y_name": "Google Calendar",
+      "persona": "Beginner"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Calendly works better for beginners",
-"bullets": [
-{
-"point": "Simple event type creation with fixed meeting lengths.",
-"why_it_matters": "You define a meeting and generate a link quickly."
-},
-{
-"point": "Direct calendar sync without service catalogs.",
-"why_it_matters": "You connect availability without building a business menu."
-},
-{
-"point": "Shareable booking link immediately after setup.",
-"why_it_matters": "You can send your link without configuring payments or pricing."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You must configure services and payment settings before sharing a simple meeting link.",
-"what_to_do_instead": "Use Calendly if you want immediate link sharing."
-},
-{
-"tool": "y",
-"fails_when": "You need built-in payment collection or multiple staff scheduling.",
-"what_to_do_instead": "Use Square Appointments if you run structured paid services."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you are running paid appointments with multiple services and staff members, Square Appointments may justify its deeper setup."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want a fast booking link, choose Calendly.",
-"If you need payments and service menus, choose Square Appointments.",
-"If setup feels heavy, avoid business-layer scheduling tools."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Square Appointments built for businesses?",
-"a": "Yes. It focuses on service offerings, payments, and staff management."
-},
-{
-"q": "Is Calendly easier to set up?",
-"a": "Yes. It centers on simple event types and quick link sharing."
-},
-{
-"q": "Which tool requires less configuration?",
-"a": "Calendly requires less configuration for basic booking links."
-},
-{
-"q": "Can Square Appointments be used without payments?",
-"a": "It can, but its structure assumes service and payment setup."
-}
-],
-"related_pages": [
-{ "x_name": "Zoho Bookings", "y_name": "TidyCal", "persona": "Beginner" },
-{ "x_name": "SimplyMeet.me", "y_name": "Calendly", "persona": "Beginner" },
-{ "x_name": "Book Like A Boss", "y_name": "Calendly", "persona": "Beginner" },
-{ "x_name": "Rise Calendar", "y_name": "Apple Calendar", "persona": "Beginner" },
-{ "x_name": "Timepage", "y_name": "Google Calendar", "persona": "Beginner" },
-{ "x_name": "Skedda", "y_name": "Google Calendar", "persona": "Beginner" }
-]
-}
-

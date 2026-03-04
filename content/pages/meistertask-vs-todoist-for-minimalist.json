@@ -1,120 +1,144 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "MeisterTask vs Todoist for Minimalists",
-"slug": "meistertask-vs-todoist-for-minimalist",
-"meta_description": "MeisterTask vs Todoist for minimalists who want a clean daily checklist without visual boards, columns, or extra task views.",
-"persona": "Minimalist",
-"constraint_lens": "You want a clean checklist without visual boards, multiple views, or extra layers to manage.",
-"verdict": {
-"winner": "y",
-"summary": "Todoist wins for minimalists who want a straightforward daily checklist. It centers on simple lists and optional labels without forcing board views. MeisterTask is built around Kanban boards with columns and visual movement between stages. If board-based organization introduces unnecessary interaction steps, MeisterTask fails first.",
-"decision_rule": "If board-based organization introduces unnecessary interaction steps, MeisterTask fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Which tool stays focused on a simple list?",
-"content": "You want a clean checklist without visual boards or extra views. As a minimalist, moving cards across columns feels like extra work. The right tool should look like a plain list of tasks. Anything that emphasizes board structure adds another layer to manage."
-},
-{
-"type": "x_wins",
-"heading": "Where MeisterTask works better",
-"bullets": [
-{
-"point": "Kanban board with customizable columns such as To Do and Done.",
-"why_it_matters": "You can see tasks move across stages visually. For a simple daily list, deciding which column to use adds extra interaction."
-},
-{
-"point": "Drag and drop cards between lists.",
-"why_it_matters": "You can update progress by moving cards. This requires navigating board space instead of checking off a single list item."
-},
-{
-"point": "Multiple board views and project spaces.",
-"why_it_matters": "You can organize work visually across projects. Switching between boards introduces more screens than a basic checklist."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Todoist works better for minimalists",
-"bullets": [
-{
-"point": "List-based task view with simple checkboxes.",
-"why_it_matters": "You open a project and see a straightforward vertical list."
-},
-{
-"point": "Quick add field that accepts natural language dates.",
-"why_it_matters": "You can type a task and due date in one line without navigating board columns."
-},
-{
-"point": "Optional labels and filters that can be ignored.",
-"why_it_matters": "You are not forced to use advanced views, keeping the experience close to a plain checklist."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You find yourself managing columns and board layouts for everyday tasks.",
-"what_to_do_instead": "Use Todoist if you want a clean list without board interaction."
-},
-{
-"tool": "y",
-"fails_when": "You prefer visual task movement across stages rather than checking off a list.",
-"what_to_do_instead": "Use MeisterTask if you want a Kanban-style workflow."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you realize you think best by moving tasks across visible stages and enjoy visual workflow tracking, MeisterTask may feel clearer despite the board structure."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want a plain checklist, choose Todoist.",
-"If you want visual columns and card movement, choose MeisterTask.",
-"If board views feel like extra work, avoid Kanban-first apps."
-]
-},
-{
-"type": "faqs",
-"heading": "",
-"content": ""
-}
-],
-"faqs": [
-{
-"q": "Is Todoist better for simple daily tasks?",
-"a": "Yes. It focuses on list-based task entry without requiring board navigation."
-},
-{
-"q": "Does MeisterTask require using boards?",
-"a": "Yes. Tasks live inside Kanban boards with columns and card movement."
-},
-{
-"q": "Which tool has fewer views to manage?",
-"a": "Todoist has fewer required views because you can stay inside a single list."
-},
-{
-"q": "Can MeisterTask be used minimally?",
-"a": "It can, but its core design revolves around board-based organization."
-}
-],
-"related_pages": [
-{ "x_name": "Productive", "y_name": "Apple Reminders", "persona": "Minimalist" },
-{ "x_name": "Apple Reminders", "y_name": "Any.do", "persona": "Minimalist" },
-{ "x_name": "Nirvana", "y_name": "Apple Reminders", "persona": "Minimalist" },
-{ "x_name": "Todoist", "y_name": "TickTick", "persona": "Minimalist" },
-{ "x_name": "Microsoft To Do", "y_name": "Things", "persona": "Minimalist" },
-{ "x_name": "OmniFocus", "y_name": "Todoist", "persona": "Minimalist" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "MeisterTask vs Todoist for Minimalists",
+  "slug": "meistertask-vs-todoist-for-minimalist",
+  "meta_description": "MeisterTask vs Todoist for minimalists who want a clean daily checklist without visual boards, columns, or extra task views.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a clean checklist without visual boards, multiple views, or extra layers to manage.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist wins for minimalists who want a straightforward daily checklist. It centers on simple lists and optional labels without forcing board views. MeisterTask is built around Kanban boards with columns and visual movement between stages. If board-based organization introduces unnecessary interaction steps, MeisterTask fails first.",
+    "decision_rule": "If board-based organization introduces unnecessary interaction steps, MeisterTask fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool stays focused on a simple list?",
+      "content": "You want a clean checklist without visual boards or extra views. As a minimalist, moving cards across columns feels like extra work. The right tool should look like a plain list of tasks. Anything that emphasizes board structure adds another layer to manage."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where MeisterTask works better",
+      "bullets": [
+        {
+          "point": "Kanban board with customizable columns such as To Do and Done.",
+          "why_it_matters": "You can see tasks move across stages visually. For a simple daily list, deciding which column to use adds extra interaction."
+        },
+        {
+          "point": "Drag and drop cards between lists.",
+          "why_it_matters": "You can update progress by moving cards. This requires navigating board space instead of checking off a single list item."
+        },
+        {
+          "point": "Multiple board views and project spaces.",
+          "why_it_matters": "You can organize work visually across projects. Switching between boards introduces more screens than a basic checklist."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist works better for minimalists",
+      "bullets": [
+        {
+          "point": "List-based task view with simple checkboxes.",
+          "why_it_matters": "You open a project and see a straightforward vertical list."
+        },
+        {
+          "point": "Quick add field that accepts natural language dates.",
+          "why_it_matters": "You can type a task and due date in one line without navigating board columns."
+        },
+        {
+          "point": "Optional labels and filters that can be ignored.",
+          "why_it_matters": "You are not forced to use advanced views, keeping the experience close to a plain checklist."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You find yourself managing columns and board layouts for everyday tasks.",
+          "what_to_do_instead": "Use Todoist if you want a clean list without board interaction."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You prefer visual task movement across stages rather than checking off a list.",
+          "what_to_do_instead": "Use MeisterTask if you want a Kanban-style workflow."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you realize you think best by moving tasks across visible stages and enjoy visual workflow tracking, MeisterTask may feel clearer despite the board structure."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a plain checklist, choose Todoist.",
+        "If you want visual columns and card movement, choose MeisterTask.",
+        "If board views feel like extra work, avoid Kanban-first apps."
+      ]
+    },
+    {
+      "type": "faqs",
+      "heading": "",
+      "content": ""
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Todoist better for simple daily tasks?",
+      "a": "Yes. It focuses on list-based task entry without requiring board navigation."
+    },
+    {
+      "q": "Does MeisterTask require using boards?",
+      "a": "Yes. Tasks live inside Kanban boards with columns and card movement."
+    },
+    {
+      "q": "Which tool has fewer views to manage?",
+      "a": "Todoist has fewer required views because you can stay inside a single list."
+    },
+    {
+      "q": "Can MeisterTask be used minimally?",
+      "a": "It can, but its core design revolves around board-based organization."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Amazing Marvin",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Habitica",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "OmniFocus",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Sunsama",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "TeuxDeux",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "Any.do",
+      "persona": "Minimalist"
+    }
+  ]
 }

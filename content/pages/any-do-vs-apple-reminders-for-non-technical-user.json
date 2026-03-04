@@ -1,116 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "fear-of-breaking",
-"constraintUiName": "Hard to mess up",
-"title": "Any.do vs Apple Reminders for Non-technical users",
-"slug": "any-do-vs-apple-reminders-for-non-technical-user",
-"meta_description": "Any.do vs Apple Reminders for non-technical users who want native, predictable task lists without syncing confusion or unexpected UI changes.",
-"persona": "Non-technical user",
-"constraint_lens": "You want tasks that feel native and predictable without confusing syncing or unexpected interface behavior.",
-"verdict": {
-"winner": "y",
-"summary": "Apple Reminders wins for non-technical users who want something that feels impossible to mess up. It is built into the system and follows familiar patterns for lists and notifications. Any.do relies on its own syncing layer and cross platform behavior that can feel inconsistent. If syncing or UI behavior feels unpredictable, Any.do fails first.",
-"decision_rule": "If syncing or UI behavior feels unpredictable, Any.do fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Non-technical users",
-"content": "You said you want tasks that feel native and safe. When apps behave differently across devices or require account syncing, it can create doubt about whether something was saved. A built in list that behaves consistently reduces that anxiety."
-},
-{
-"type": "x_wins",
-"heading": "Where Any.do wins",
-"bullets": [
-{
-"point": "Cross platform syncing across web, Android, and iOS",
-"why_it_matters": "You can access tasks anywhere, but syncing relies on an external account and network stability."
-},
-{
-"point": "Daily planning prompt that asks you to review tasks",
-"why_it_matters": "It encourages reflection, yet the prompt changes the flow compared to a simple static list."
-},
-{
-"point": "Integrated calendar and task view inside the app",
-"why_it_matters": "You see tasks and dates together, but blending views can make the interface feel busier."
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Any.do vs Apple Reminders for Non-technical users",
+  "slug": "any-do-vs-apple-reminders-for-non-technical-user",
+  "meta_description": "Any.do vs Apple Reminders for non-technical users who want native, predictable task lists without syncing confusion or unexpected UI changes.",
+  "persona": "Non-technical user",
+  "constraint_lens": "You want tasks that feel native and predictable without confusing syncing or unexpected interface behavior.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Apple Reminders wins for non-technical users who want something that feels impossible to mess up. It is built into the system and follows familiar patterns for lists and notifications. Any.do relies on its own syncing layer and cross platform behavior that can feel inconsistent. If syncing or UI behavior feels unpredictable, Any.do fails first.",
+    "decision_rule": "If syncing or UI behavior feels unpredictable, Any.do fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Non-technical users",
+      "content": "You said you want tasks that feel native and safe. When apps behave differently across devices or require account syncing, it can create doubt about whether something was saved. A built in list that behaves consistently reduces that anxiety."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Any.do wins",
+      "bullets": [
+        {
+          "point": "Cross platform syncing across web, Android, and iOS",
+          "why_it_matters": "You can access tasks anywhere, but syncing relies on an external account and network stability."
+        },
+        {
+          "point": "Daily planning prompt that asks you to review tasks",
+          "why_it_matters": "It encourages reflection, yet the prompt changes the flow compared to a simple static list."
+        },
+        {
+          "point": "Integrated calendar and task view inside the app",
+          "why_it_matters": "You see tasks and dates together, but blending views can make the interface feel busier."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Apple Reminders wins",
+      "bullets": [
+        {
+          "point": "Native integration with the operating system and iCloud",
+          "why_it_matters": "Tasks sync automatically within the device ecosystem without requiring separate setup."
+        },
+        {
+          "point": "Simple checklist interface consistent with other system apps",
+          "why_it_matters": "The layout feels familiar, lowering fear of pressing the wrong option."
+        },
+        {
+          "point": "Stable notification behavior tied to system settings",
+          "why_it_matters": "Reminders follow the same rules as other alerts, reducing unpredictability."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You worry whether tasks synced correctly or notice differences between devices.",
+          "what_to_do_instead": "Use Apple Reminders if you want native behavior that feels consistent."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need full cross platform access outside one device ecosystem.",
+          "what_to_do_instead": "Use Any.do if you rely on multiple operating systems daily."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you frequently switch between different device platforms and need identical access everywhere, Any.do may become more practical despite its separate syncing layer."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want tasks that feel native and predictable, choose Apple Reminders.",
+        "If syncing issues make you uneasy, avoid Any.do.",
+        "If you need broad cross platform access, Any.do may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Apple Reminders safer for casual use?",
+      "a": "It often feels safer because it is built into the system and follows familiar patterns."
+    },
+    {
+      "q": "Does Any.do require an account?",
+      "a": "Yes, it uses an account to sync tasks across devices."
+    },
+    {
+      "q": "Which app feels more native on Apple devices?",
+      "a": "Apple Reminders feels more native because it is part of the operating system."
+    },
+    {
+      "q": "Can Any.do work offline?",
+      "a": "It can, but syncing changes across devices depends on network connection."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Any.do",
+      "y_name": "Trello",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Teamwork",
+      "y_name": "Apple Reminders",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Trello",
+      "y_name": "Apple Reminders",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Microsoft To Do",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Kanban Tool",
+      "y_name": "Microsoft To Do",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Microsoft Planner",
+      "y_name": "Microsoft To Do",
+      "persona": "Non-technical user"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Apple Reminders wins",
-"bullets": [
-{
-"point": "Native integration with the operating system and iCloud",
-"why_it_matters": "Tasks sync automatically within the device ecosystem without requiring separate setup."
-},
-{
-"point": "Simple checklist interface consistent with other system apps",
-"why_it_matters": "The layout feels familiar, lowering fear of pressing the wrong option."
-},
-{
-"point": "Stable notification behavior tied to system settings",
-"why_it_matters": "Reminders follow the same rules as other alerts, reducing unpredictability."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You worry whether tasks synced correctly or notice differences between devices.",
-"what_to_do_instead": "Use Apple Reminders if you want native behavior that feels consistent."
-},
-{
-"tool": "y",
-"fails_when": "You need full cross platform access outside one device ecosystem.",
-"what_to_do_instead": "Use Any.do if you rely on multiple operating systems daily."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you frequently switch between different device platforms and need identical access everywhere, Any.do may become more practical despite its separate syncing layer."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want tasks that feel native and predictable, choose Apple Reminders.",
-"If syncing issues make you uneasy, avoid Any.do.",
-"If you need broad cross platform access, Any.do may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Apple Reminders safer for casual use?",
-"a": "It often feels safer because it is built into the system and follows familiar patterns."
-},
-{
-"q": "Does Any.do require an account?",
-"a": "Yes, it uses an account to sync tasks across devices."
-},
-{
-"q": "Which app feels more native on Apple devices?",
-"a": "Apple Reminders feels more native because it is part of the operating system."
-},
-{
-"q": "Can Any.do work offline?",
-"a": "It can, but syncing changes across devices depends on network connection."
-}
-],
-"related_pages": [
-{ "x_name": "Microsoft Planner", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
-{ "x_name": "Teamwork", "y_name": "Apple Reminders", "persona": "Non-technical user" },
-{ "x_name": "Superlist", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
-{ "x_name": "ClickUp", "y_name": "Apple Reminders", "persona": "Non-technical user" },
-{ "x_name": "OmniFocus", "y_name": "Apple Reminders", "persona": "Non-technical user" },
-{ "x_name": "Todoist", "y_name": "Apple Reminders", "persona": "Non-technical user" }
-]
-}
-

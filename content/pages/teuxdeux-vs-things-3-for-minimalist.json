@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "TeuxDeux vs Things 3 for Minimalists",
-"slug": "teuxdeux-vs-things-3-for-minimalist",
-"meta_description": "TeuxDeux vs Things 3 for minimalists who want a daily list that resets without projects, areas, or layered reviews.",
-"persona": "Minimalist",
-"constraint_lens": "You want a simple daily task list that resets without managing projects, areas, or layered review systems.",
-"verdict": {
-"winner": "x",
-"summary": "TeuxDeux wins for minimalists who want a clean daily list that rolls forward automatically. It centers on a calendar-style column where unfinished tasks move to the next day. Things 3 introduces areas, projects, and structured review layers that require extra decisions. If areas, projects, and review layers introduce extra structural decisions, Things 3 fails first.",
-"decision_rule": "If areas, projects, and review layers introduce extra structural decisions, Things 3 fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for a resettable daily list",
-"content": "You want a simple daily list that resets without managing projects or areas. TeuxDeux shows tasks in daily columns and automatically rolls unfinished items forward. Things 3 organizes tasks into areas and projects that must be structured before daily use."
-},
-{
-"type": "x_wins",
-"heading": "Where TeuxDeux wins",
-"bullets": [
-{
-"point": "Daily column layout with automatic rollover",
-"why_it_matters": "Unfinished tasks move to the next day without manual rescheduling."
-},
-{
-"point": "Single-layer task entry without projects",
-"why_it_matters": "You add items directly to a day without deciding which project they belong to."
-},
-{
-"point": "Minimal interface focused on today and the week",
-"why_it_matters": "You see only what is scheduled without navigating multiple structural views."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Things 3 wins",
-"bullets": [
-{
-"point": "Areas and projects hierarchy",
-"why_it_matters": "You group responsibilities long term, though this adds setup decisions."
-},
-{
-"point": "Forecast view combining calendar and tasks",
-"why_it_matters": "You see upcoming tasks with events, but must maintain project structure."
-},
-{
-"point": "Someday and Anytime lists",
-"why_it_matters": "You park future ideas, though this expands the system beyond a daily list."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You need long-term project tracking with multiple layers of responsibility.",
-"what_to_do_instead": "Use Things 3 if you require structured areas and projects."
-},
-{
-"tool": "y",
-"fails_when": "You hesitate before adding a task because you must decide its project or area.",
-"what_to_do_instead": "Switch to TeuxDeux for direct daily entry."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your workload grows beyond daily planning and requires structured projects, Things 3 may become useful despite added layers."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you want a daily list that rolls forward automatically, choose TeuxDeux.",
-"If projects and areas feel like extra decisions, avoid Things 3.",
-"If long-term structure becomes necessary, reconsider Things 3."
-]
-}
-],
-"faqs": [
-{
-"q": "Does TeuxDeux support projects?",
-"a": "It focuses on daily lists and does not emphasize multi-layer project structures."
-},
-{
-"q": "What makes Things 3 more complex?",
-"a": "It includes areas, projects, and structured lists that require ongoing organization."
-},
-{
-"q": "Which is better for simple daily planning?",
-"a": "TeuxDeux is better for a minimal daily reset approach."
-},
-{
-"q": "When would Things 3 be the better option?",
-"a": "It is better if you need structured long-term project management."
-}
-],
-"related_pages": [
-{ "x_name": "TaskPaper", "y_name": "OmniFocus", "persona": "Minimalist" },
-{ "x_name": "Coda", "y_name": "Apple Notes", "persona": "Minimalist" },
-{ "x_name": "Milanote", "y_name": "Coda", "persona": "Minimalist" },
-{ "x_name": "Evernote", "y_name": "Bear", "persona": "Minimalist" },
-{ "x_name": "Obsidian", "y_name": "Apple Notes", "persona": "Minimalist" },
-{ "x_name": "Notion", "y_name": "Bear", "persona": "Minimalist" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "TeuxDeux vs Things 3 for Minimalists",
+  "slug": "teuxdeux-vs-things-3-for-minimalist",
+  "meta_description": "TeuxDeux vs Things 3 for minimalists who want a daily list that resets without projects, areas, or layered reviews.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a simple daily task list that resets without managing projects, areas, or layered review systems.",
+  "verdict": {
+    "winner": "x",
+    "summary": "TeuxDeux wins for minimalists who want a clean daily list that rolls forward automatically. It centers on a calendar-style column where unfinished tasks move to the next day. Things 3 introduces areas, projects, and structured review layers that require extra decisions. If areas, projects, and review layers introduce extra structural decisions, Things 3 fails first.",
+    "decision_rule": "If areas, projects, and review layers introduce extra structural decisions, Things 3 fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for a resettable daily list",
+      "content": "You want a simple daily list that resets without managing projects or areas. TeuxDeux shows tasks in daily columns and automatically rolls unfinished items forward. Things 3 organizes tasks into areas and projects that must be structured before daily use."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where TeuxDeux wins",
+      "bullets": [
+        {
+          "point": "Daily column layout with automatic rollover",
+          "why_it_matters": "Unfinished tasks move to the next day without manual rescheduling."
+        },
+        {
+          "point": "Single-layer task entry without projects",
+          "why_it_matters": "You add items directly to a day without deciding which project they belong to."
+        },
+        {
+          "point": "Minimal interface focused on today and the week",
+          "why_it_matters": "You see only what is scheduled without navigating multiple structural views."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Things 3 wins",
+      "bullets": [
+        {
+          "point": "Areas and projects hierarchy",
+          "why_it_matters": "You group responsibilities long term, though this adds setup decisions."
+        },
+        {
+          "point": "Forecast view combining calendar and tasks",
+          "why_it_matters": "You see upcoming tasks with events, but must maintain project structure."
+        },
+        {
+          "point": "Someday and Anytime lists",
+          "why_it_matters": "You park future ideas, though this expands the system beyond a daily list."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need long-term project tracking with multiple layers of responsibility.",
+          "what_to_do_instead": "Use Things 3 if you require structured areas and projects."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You hesitate before adding a task because you must decide its project or area.",
+          "what_to_do_instead": "Switch to TeuxDeux for direct daily entry."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your workload grows beyond daily planning and requires structured projects, Things 3 may become useful despite added layers."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you want a daily list that rolls forward automatically, choose TeuxDeux.",
+        "If projects and areas feel like extra decisions, avoid Things 3.",
+        "If long-term structure becomes necessary, reconsider Things 3."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does TeuxDeux support projects?",
+      "a": "It focuses on daily lists and does not emphasize multi-layer project structures."
+    },
+    {
+      "q": "What makes Things 3 more complex?",
+      "a": "It includes areas, projects, and structured lists that require ongoing organization."
+    },
+    {
+      "q": "Which is better for simple daily planning?",
+      "a": "TeuxDeux is better for a minimal daily reset approach."
+    },
+    {
+      "q": "When would Things 3 be the better option?",
+      "a": "It is better if you need structured long-term project management."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Sorted³",
+      "y_name": "Things 3",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Sunsama",
+      "y_name": "Things 3",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "TeuxDeux",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Amazing Marvin",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "Any.do",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "ClickUp",
+      "persona": "Minimalist"
+    }
+  ]
 }

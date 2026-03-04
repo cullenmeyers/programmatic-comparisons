@@ -1,116 +1,139 @@
 {
-"category": "Note-taking apps",
-"categorySlug": "note-taking-apps",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Evernote vs Bear for Minimalists",
-"slug": "evernote-vs-bear-for-minimalist",
-"meta_description": "Evernote vs Bear for minimalists who want calm writing without crowded sidebars, templates, or extra panels.",
-"persona": "Minimalist",
-"constraint_lens": "You want a calm writing space without crowded sidebars, upgrade prompts, or extra tools you do not plan to use.",
-"verdict": {
-"winner": "y",
-"summary": "Bear wins for minimalists who value focus and dislike bloated tools. It centers on a clean text editor with light tagging and minimal panels. Evernote includes notebook stacks, task features, scanning tools, and visible plan prompts that make the interface feel busier. If the tool feels heavy or crowded, Evernote fails first.",
-"decision_rule": "If the tool feels heavy or crowded, Evernote fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for calm, uncluttered writing",
-"content": "You value focus and dislike cluttered interfaces. Bear keeps the screen centered on text with a simple note list and tag sidebar. Evernote presents notebooks, tags, tasks, and upgrade prompts that can make the workspace feel more crowded."
-},
-{
-"type": "x_wins",
-"heading": "Where Evernote wins",
-"bullets": [
-{
-"point": "Notebook stacks with nested organization",
-"why_it_matters": "You can group notebooks into larger stacks for complex projects. This supports large archives, but adds visible structure that minimalists may not want."
-},
-{
-"point": "Integrated tasks and reminders inside notes",
-"why_it_matters": "You can convert text into tasks with due dates. This blends notes and task management, which increases feature density."
-},
-{
-"point": "Document scanning and OCR search",
-"why_it_matters": "Scanned papers become searchable within the app. While useful, these extra tools add more options to the interface."
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Evernote vs Bear for Minimalists",
+  "slug": "evernote-vs-bear-for-minimalist",
+  "meta_description": "Evernote vs Bear for minimalists who want calm writing without crowded sidebars, templates, or extra panels.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a calm writing space without crowded sidebars, upgrade prompts, or extra tools you do not plan to use.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Bear wins for minimalists who value focus and dislike bloated tools. It centers on a clean text editor with light tagging and minimal panels. Evernote includes notebook stacks, task features, scanning tools, and visible plan prompts that make the interface feel busier. If the tool feels heavy or crowded, Evernote fails first.",
+    "decision_rule": "If the tool feels heavy or crowded, Evernote fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for calm, uncluttered writing",
+      "content": "You value focus and dislike cluttered interfaces. Bear keeps the screen centered on text with a simple note list and tag sidebar. Evernote presents notebooks, tags, tasks, and upgrade prompts that can make the workspace feel more crowded."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Evernote wins",
+      "bullets": [
+        {
+          "point": "Notebook stacks with nested organization",
+          "why_it_matters": "You can group notebooks into larger stacks for complex projects. This supports large archives, but adds visible structure that minimalists may not want."
+        },
+        {
+          "point": "Integrated tasks and reminders inside notes",
+          "why_it_matters": "You can convert text into tasks with due dates. This blends notes and task management, which increases feature density."
+        },
+        {
+          "point": "Document scanning and OCR search",
+          "why_it_matters": "Scanned papers become searchable within the app. While useful, these extra tools add more options to the interface."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Bear wins",
+      "bullets": [
+        {
+          "point": "Minimal document-style editor with Markdown shortcuts",
+          "why_it_matters": "You write in a clean text area without block handles or extra panels beside each paragraph."
+        },
+        {
+          "point": "Tagging through simple hashtags",
+          "why_it_matters": "You organize by typing a hashtag inside the note instead of managing separate tag dashboards."
+        },
+        {
+          "point": "Limited visible feature set in the main interface",
+          "why_it_matters": "There are no task boards, scanning panels, or complex settings on the writing screen."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Sidebars, stacks, task features, and upgrade prompts make the app feel busy or distracting.",
+          "what_to_do_instead": "Use Bear for a simpler interface focused mainly on writing."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need advanced organization across large projects with nested notebooks.",
+          "what_to_do_instead": "Switch to Evernote when structured management becomes necessary."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you begin managing complex archives with many categories and attachments, Evernote may feel justified despite its heavier interface."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you want a calm, distraction-free writing space, choose Bear.",
+        "If crowded sidebars or task features bother you, avoid Evernote.",
+        "If advanced organization outweighs simplicity, consider Evernote."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Evernote cluttered?",
+      "a": "It includes many features such as tasks, notebook stacks, and scanning tools, which can feel busy to minimalists."
+    },
+    {
+      "q": "Does Bear support organization?",
+      "a": "Yes. It uses simple tags and a clean sidebar without adding dashboards or extra panels."
+    },
+    {
+      "q": "Can Evernote be simplified?",
+      "a": "You can ignore some features, but the interface still shows more panels and options."
+    },
+    {
+      "q": "Which feels lighter for daily writing?",
+      "a": "Bear generally feels lighter because it focuses on text and minimal controls."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Milanote",
+      "y_name": "Bear",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Notion",
+      "y_name": "Bear",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Roam Research",
+      "y_name": "Bear",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Coda",
+      "y_name": "Apple Notes",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Milanote",
+      "y_name": "Coda",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Notion",
+      "y_name": "Google Docs",
+      "persona": "Minimalist"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Bear wins",
-"bullets": [
-{
-"point": "Minimal document-style editor with Markdown shortcuts",
-"why_it_matters": "You write in a clean text area without block handles or extra panels beside each paragraph."
-},
-{
-"point": "Tagging through simple hashtags",
-"why_it_matters": "You organize by typing a hashtag inside the note instead of managing separate tag dashboards."
-},
-{
-"point": "Limited visible feature set in the main interface",
-"why_it_matters": "There are no task boards, scanning panels, or complex settings on the writing screen."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "Sidebars, stacks, task features, and upgrade prompts make the app feel busy or distracting.",
-"what_to_do_instead": "Use Bear for a simpler interface focused mainly on writing."
-},
-{
-"tool": "y",
-"fails_when": "You need advanced organization across large projects with nested notebooks.",
-"what_to_do_instead": "Switch to Evernote when structured management becomes necessary."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you begin managing complex archives with many categories and attachments, Evernote may feel justified despite its heavier interface."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you want a calm, distraction-free writing space, choose Bear.",
-"If crowded sidebars or task features bother you, avoid Evernote.",
-"If advanced organization outweighs simplicity, consider Evernote."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Evernote cluttered?",
-"a": "It includes many features such as tasks, notebook stacks, and scanning tools, which can feel busy to minimalists."
-},
-{
-"q": "Does Bear support organization?",
-"a": "Yes. It uses simple tags and a clean sidebar without adding dashboards or extra panels."
-},
-{
-"q": "Can Evernote be simplified?",
-"a": "You can ignore some features, but the interface still shows more panels and options."
-},
-{
-"q": "Which feels lighter for daily writing?",
-"a": "Bear generally feels lighter because it focuses on text and minimal controls."
-}
-],
-"related_pages": [
-{ "x_name": "Notion", "y_name": "Bear", "persona": "Minimalist" },
-{ "x_name": "Roam Research", "y_name": "Bear", "persona": "Minimalist" },
-{ "x_name": "Obsidian", "y_name": "Apple Notes", "persona": "Minimalist" },
-{ "x_name": "Apple Notes", "y_name": "Google Keep", "persona": "Minimalist" },
-{ "x_name": "Craft", "y_name": "UpNote", "persona": "Minimalist" },
-{ "x_name": "RemNote", "y_name": "UpNote", "persona": "Minimalist" }
-]
-}
-

@@ -1,116 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Quip vs Trello for Minimalists",
-"slug": "quip-vs-trello-for-minimalist",
-"meta_description": "Quip vs Trello for minimalists who want a clean task board without mixing documents, spreadsheets, and collaboration layers.",
-"persona": "Minimalist",
-"constraint_lens": "You want a clean task board without extra features, collaboration layers, or document tools getting in the way.",
-"verdict": {
-"winner": "y",
-"summary": "Trello wins for minimalists who want a simple task board. It centers on lists and cards without forcing documents or spreadsheets into the same space. Quip blends documents, spreadsheets, and task lists inside shared workspaces, which adds extra layers to manage. If document collaboration layers add unnecessary complexity, Quip fails first.",
-"decision_rule": "If document collaboration layers add unnecessary complexity, Quip fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Which tool keeps task tracking clean?",
-"content": "You want task tracking without blending documents and collaboration layers. As a minimalist, extra panels and editing tools feel like clutter. The right tool should look like a board with tasks, nothing more. Anything that mixes writing documents with task tracking adds noise."
-},
-{
-"type": "x_wins",
-"heading": "Where Quip works better",
-"bullets": [
-{
-"point": "Documents that combine text, spreadsheets, and task lists in one file.",
-"why_it_matters": "You can manage notes and tasks together in a shared document. For minimal task tracking, having document editing tools on the same screen adds extra options."
-},
-{
-"point": "Inline comments and live document collaboration.",
-"why_it_matters": "Teams can discuss tasks directly inside documents. If you only want a board, comment threads and editing controls feel unnecessary."
-},
-{
-"point": "Embedded checklists inside rich text documents.",
-"why_it_matters": "You can place tasks alongside written plans. However, switching between document editing and task management introduces additional interaction steps."
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Quip vs Trello for Minimalists",
+  "slug": "quip-vs-trello-for-minimalist",
+  "meta_description": "Quip vs Trello for minimalists who want a clean task board without mixing documents, spreadsheets, and collaboration layers.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a clean task board without extra features, collaboration layers, or document tools getting in the way.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Trello wins for minimalists who want a simple task board. It centers on lists and cards without forcing documents or spreadsheets into the same space. Quip blends documents, spreadsheets, and task lists inside shared workspaces, which adds extra layers to manage. If document collaboration layers add unnecessary complexity, Quip fails first.",
+    "decision_rule": "If document collaboration layers add unnecessary complexity, Quip fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool keeps task tracking clean?",
+      "content": "You want task tracking without blending documents and collaboration layers. As a minimalist, extra panels and editing tools feel like clutter. The right tool should look like a board with tasks, nothing more. Anything that mixes writing documents with task tracking adds noise."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Quip works better",
+      "bullets": [
+        {
+          "point": "Documents that combine text, spreadsheets, and task lists in one file.",
+          "why_it_matters": "You can manage notes and tasks together in a shared document. For minimal task tracking, having document editing tools on the same screen adds extra options."
+        },
+        {
+          "point": "Inline comments and live document collaboration.",
+          "why_it_matters": "Teams can discuss tasks directly inside documents. If you only want a board, comment threads and editing controls feel unnecessary."
+        },
+        {
+          "point": "Embedded checklists inside rich text documents.",
+          "why_it_matters": "You can place tasks alongside written plans. However, switching between document editing and task management introduces additional interaction steps."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Trello works better for minimalists",
+      "bullets": [
+        {
+          "point": "Kanban board with lists and draggable cards.",
+          "why_it_matters": "You see tasks visually in columns like To Do and Done. There are no document panels to manage."
+        },
+        {
+          "point": "Card-based task details that stay hidden until opened.",
+          "why_it_matters": "The board stays clean, and extra details appear only when needed. This keeps the main view uncluttered."
+        },
+        {
+          "point": "Optional power-ups instead of mandatory document tools.",
+          "why_it_matters": "You can ignore add-ons and keep a basic board. Nothing forces you into document editing layers."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You find yourself navigating document editors and comment threads instead of just moving task cards.",
+          "what_to_do_instead": "Use Trello if you want a clean board focused only on tasks."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need deep document collaboration combined directly with tasks in the same file.",
+          "what_to_do_instead": "Use Quip if your workflow depends on editing shared documents alongside checklists."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you are a minimalist who works mainly inside shared documents and prefers tasks embedded within those documents, Quip may feel simpler because everything lives in one place."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a plain board with draggable cards, choose Trello.",
+        "If you want tasks inside collaborative documents, choose Quip.",
+        "If document tools feel like clutter, avoid blended systems."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Trello simpler than Quip for task boards?",
+      "a": "Yes. Trello focuses on lists and cards, while Quip combines documents, spreadsheets, and task lists."
+    },
+    {
+      "q": "Does Quip mix documents with tasks?",
+      "a": "Yes. Tasks often live inside collaborative documents, which can add extra editing features."
+    },
+    {
+      "q": "Which tool is better for visual task tracking?",
+      "a": "Trello is better because it centers on a board layout with columns and cards."
+    },
+    {
+      "q": "Can Trello handle document collaboration?",
+      "a": "It can attach files and comments, but it does not center on document editing the way Quip does."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "ClickUp",
+      "y_name": "Trello",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Amazing Marvin",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "Any.do",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "ClickUp",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Apple Reminders",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "FacileThings",
+      "y_name": "Apple Reminders",
+      "persona": "Minimalist"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Trello works better for minimalists",
-"bullets": [
-{
-"point": "Kanban board with lists and draggable cards.",
-"why_it_matters": "You see tasks visually in columns like To Do and Done. There are no document panels to manage."
-},
-{
-"point": "Card-based task details that stay hidden until opened.",
-"why_it_matters": "The board stays clean, and extra details appear only when needed. This keeps the main view uncluttered."
-},
-{
-"point": "Optional power-ups instead of mandatory document tools.",
-"why_it_matters": "You can ignore add-ons and keep a basic board. Nothing forces you into document editing layers."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You find yourself navigating document editors and comment threads instead of just moving task cards.",
-"what_to_do_instead": "Use Trello if you want a clean board focused only on tasks."
-},
-{
-"tool": "y",
-"fails_when": "You need deep document collaboration combined directly with tasks in the same file.",
-"what_to_do_instead": "Use Quip if your workflow depends on editing shared documents alongside checklists."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you are a minimalist who works mainly inside shared documents and prefers tasks embedded within those documents, Quip may feel simpler because everything lives in one place."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want a plain board with draggable cards, choose Trello.",
-"If you want tasks inside collaborative documents, choose Quip.",
-"If document tools feel like clutter, avoid blended systems."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Trello simpler than Quip for task boards?",
-"a": "Yes. Trello focuses on lists and cards, while Quip combines documents, spreadsheets, and task lists."
-},
-{
-"q": "Does Quip mix documents with tasks?",
-"a": "Yes. Tasks often live inside collaborative documents, which can add extra editing features."
-},
-{
-"q": "Which tool is better for visual task tracking?",
-"a": "Trello is better because it centers on a board layout with columns and cards."
-},
-{
-"q": "Can Trello handle document collaboration?",
-"a": "It can attach files and comments, but it does not center on document editing the way Quip does."
-}
-],
-"related_pages": [
-{ "x_name": "Todoist", "y_name": "TickTick", "persona": "Minimalist" },
-{ "x_name": "Microsoft To Do", "y_name": "Things", "persona": "Minimalist" },
-{ "x_name": "Asana", "y_name": "Trello", "persona": "Minimalist" },
-{ "x_name": "ClickUp", "y_name": "Trello", "persona": "Minimalist" },
-{ "x_name": "Basecamp", "y_name": "Trello", "persona": "Minimalist" },
-{ "x_name": "Jira", "y_name": "Trello", "persona": "Minimalist" }
-]
-}
-

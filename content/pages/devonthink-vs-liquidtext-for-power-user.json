@@ -1,115 +1,139 @@
 {
-"category": "Note-taking apps",
-"categorySlug": "note-taking-apps",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "DEVONthink vs LiquidText for Power users",
-"slug": "devonthink-vs-liquidtext-for-power-user",
-"meta_description": "DEVONthink vs LiquidText for power users organizing large research archives with automated indexing and smart rules.",
-"persona": "Power user",
-"constraint_lens": "You need automated indexing and rule-based organization that scales with a growing research database.",
-"verdict": {
-"winner": "x",
-"summary": "DEVONthink wins for power users maintaining large research archives. It offers automated indexing, rule-based filing, and smart groups built from saved searches. LiquidText focuses on annotating and linking excerpts across documents rather than database automation. If automated indexing and rule-based organization are constrained, LiquidText fails first.",
-"decision_rule": "If automated indexing and rule-based organization are constrained, LiquidText fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for automated research organization",
-"content": "You maintain a research database and expect automation to handle scale. DEVONthink indexes documents, PDFs, and notes and lets you define rules that move or tag items automatically. LiquidText centers on interactive PDF reading and excerpt linking, not automated database management."
-},
-{
-"type": "x_wins",
-"heading": "Where DEVONthink wins",
-"bullets": [
-{
-"point": "Automated indexing of documents and PDFs",
-"why_it_matters": "You search inside large document collections without manually tagging every file."
-},
-{
-"point": "Rule-based filing and tagging",
-"why_it_matters": "You create conditions that automatically organize incoming material."
-},
-{
-"point": "Smart groups built from saved queries",
-"why_it_matters": "Dynamic collections update automatically based on defined criteria."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where LiquidText wins",
-"bullets": [
-{
-"point": "Drag excerpts into a spatial workspace",
-"why_it_matters": "You visually compare passages from different PDFs in one place."
-},
-{
-"point": "Bidirectional links between excerpts and source pages",
-"why_it_matters": "You jump back to context instantly while analyzing text."
-},
-{
-"point": "Touch-friendly annotation tools",
-"why_it_matters": "You mark up documents naturally with pen gestures."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You mainly need visual excerpt comparison rather than large-scale database automation.",
-"what_to_do_instead": "Use LiquidText if spatial PDF analysis is your core task."
-},
-{
-"tool": "y",
-"fails_when": "You must automatically index and organize thousands of documents with rules.",
-"what_to_do_instead": "Switch to DEVONthink for database-level control."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your archive is small and your main focus is deep reading and visual excerpt linking, LiquidText may feel more focused."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you need automated indexing and smart rules, choose DEVONthink.",
-"If visual PDF analysis matters more than database automation, consider LiquidText.",
-"If rule-based organization is essential, avoid tools built mainly for annotation."
-]
-}
-],
-"faqs": [
-{
-"q": "Does LiquidText support automated filing rules?",
-"a": "It focuses on annotation and linking rather than rule-based database organization."
-},
-{
-"q": "Can DEVONthink index large PDF collections?",
-"a": "Yes. It indexes document content and supports advanced search operators."
-},
-{
-"q": "Which has the higher ceiling for research management?",
-"a": "DEVONthink generally offers a higher ceiling for large automated archives."
-},
-{
-"q": "Which is better for spatial reading?",
-"a": "LiquidText is better for comparing and linking excerpts visually."
-}
-],
-"related_pages": [
-{ "x_name": "DEVONthink To Go", "y_name": "Apple Notes", "persona": "Power user" },
-{ "x_name": "Jupyter Notebook", "y_name": "Quiver", "persona": "Power user" },
-{ "x_name": "Scrivener", "y_name": "Ulysses", "persona": "Power user" },
-{ "x_name": "TiddlyWiki", "y_name": "Standard Notes", "persona": "Power user" },
-{ "x_name": "Obsidian", "y_name": "Craft", "persona": "Power user" },
-{ "x_name": "LiquidText", "y_name": "GoodNotes", "persona": "Power user" }
-]
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "DEVONthink vs LiquidText for Power users",
+  "slug": "devonthink-vs-liquidtext-for-power-user",
+  "meta_description": "DEVONthink vs LiquidText for power users organizing large research archives with automated indexing and smart rules.",
+  "persona": "Power user",
+  "constraint_lens": "You need automated indexing and rule-based organization that scales with a growing research database.",
+  "verdict": {
+    "winner": "x",
+    "summary": "DEVONthink wins for power users maintaining large research archives. It offers automated indexing, rule-based filing, and smart groups built from saved searches. LiquidText focuses on annotating and linking excerpts across documents rather than database automation. If automated indexing and rule-based organization are constrained, LiquidText fails first.",
+    "decision_rule": "If automated indexing and rule-based organization are constrained, LiquidText fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for automated research organization",
+      "content": "You maintain a research database and expect automation to handle scale. DEVONthink indexes documents, PDFs, and notes and lets you define rules that move or tag items automatically. LiquidText centers on interactive PDF reading and excerpt linking, not automated database management."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where DEVONthink wins",
+      "bullets": [
+        {
+          "point": "Automated indexing of documents and PDFs",
+          "why_it_matters": "You search inside large document collections without manually tagging every file."
+        },
+        {
+          "point": "Rule-based filing and tagging",
+          "why_it_matters": "You create conditions that automatically organize incoming material."
+        },
+        {
+          "point": "Smart groups built from saved queries",
+          "why_it_matters": "Dynamic collections update automatically based on defined criteria."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where LiquidText wins",
+      "bullets": [
+        {
+          "point": "Drag excerpts into a spatial workspace",
+          "why_it_matters": "You visually compare passages from different PDFs in one place."
+        },
+        {
+          "point": "Bidirectional links between excerpts and source pages",
+          "why_it_matters": "You jump back to context instantly while analyzing text."
+        },
+        {
+          "point": "Touch-friendly annotation tools",
+          "why_it_matters": "You mark up documents naturally with pen gestures."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You mainly need visual excerpt comparison rather than large-scale database automation.",
+          "what_to_do_instead": "Use LiquidText if spatial PDF analysis is your core task."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You must automatically index and organize thousands of documents with rules.",
+          "what_to_do_instead": "Switch to DEVONthink for database-level control."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your archive is small and your main focus is deep reading and visual excerpt linking, LiquidText may feel more focused."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you need automated indexing and smart rules, choose DEVONthink.",
+        "If visual PDF analysis matters more than database automation, consider LiquidText.",
+        "If rule-based organization is essential, avoid tools built mainly for annotation."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does LiquidText support automated filing rules?",
+      "a": "It focuses on annotation and linking rather than rule-based database organization."
+    },
+    {
+      "q": "Can DEVONthink index large PDF collections?",
+      "a": "Yes. It indexes document content and supports advanced search operators."
+    },
+    {
+      "q": "Which has the higher ceiling for research management?",
+      "a": "DEVONthink generally offers a higher ceiling for large automated archives."
+    },
+    {
+      "q": "Which is better for spatial reading?",
+      "a": "LiquidText is better for comparing and linking excerpts visually."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "DEVONthink",
+      "y_name": "Joplin",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "LiquidText",
+      "y_name": "GoodNotes",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "DEVONthink To Go",
+      "y_name": "Apple Notes",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Jupyter Notebook",
+      "y_name": "Quiver",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Obsidian",
+      "y_name": "Apple Notes",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Obsidian",
+      "y_name": "Craft",
+      "persona": "Power user"
+    }
+  ]
 }

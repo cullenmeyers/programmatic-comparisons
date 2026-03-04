@@ -1,115 +1,139 @@
 {
-"category": "Note-taking apps",
-"categorySlug": "note-taking-apps",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Milanote vs Bear for Minimalists",
-"slug": "milanote-vs-bear-for-minimalist",
-"meta_description": "Milanote vs Bear for minimalists who want clean writing without visual boards, draggable cards, or canvas layout decisions.",
-"persona": "Minimalist",
-"constraint_lens": "You want clean note writing without visual boards, draggable cards, or layout decisions.",
-"verdict": {
-"winner": "y",
-"summary": "Bear wins for minimalists who want focused writing. It opens to a clean text editor with simple tags and no layout choices. Milanote is built around visual boards with draggable cards and free placement on a canvas. If visual freedom creates extra decisions, Milanote fails first.",
-"decision_rule": "If visual freedom creates extra decisions, Milanote fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Minimalists",
-"content": "You said you want writing, not visual boards or canvases. When notes can be moved, resized, or arranged visually, you must decide where things go. A fixed text page reduces those choices."
-},
-{
-"type": "x_wins",
-"heading": "Where Milanote wins",
-"bullets": [
-{
-"point": "Freeform canvas where notes are added as draggable cards",
-"why_it_matters": "You can arrange ideas visually, but positioning cards requires layout decisions."
-},
-{
-"point": "Boards that mix images, links, and text blocks",
-"why_it_matters": "You can build mood boards or project maps, yet mixing media adds interface elements beyond writing."
-},
-{
-"point": "Zoomable workspace with nested boards",
-"why_it_matters": "You can structure complex projects, but navigating between boards increases interaction steps."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Bear wins",
-"bullets": [
-{
-"point": "Single document editor with markdown formatting",
-"why_it_matters": "You start typing immediately without placing elements on a canvas."
-},
-{
-"point": "Tag based organization instead of visual boards",
-"why_it_matters": "You organize notes by simple hashtags without managing layouts."
-},
-{
-"point": "Distraction free writing mode",
-"why_it_matters": "The interface minimizes visible controls so attention stays on text."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You spend time arranging cards or resizing elements instead of writing.",
-"what_to_do_instead": "Use Bear if you want fixed pages focused only on text."
-},
-{
-"tool": "y",
-"fails_when": "You need spatial layouts to map visual ideas or creative projects.",
-"what_to_do_instead": "Use Milanote if visual arrangement becomes essential."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your work depends on arranging images and notes spatially for design or creative planning, Milanote may justify its canvas despite the added decisions."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want pure writing, choose Bear.",
-"If moving cards feels distracting, avoid Milanote.",
-"If visual layout is part of your thinking process, Milanote may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Milanote built for writing?",
-"a": "It supports writing, but its main structure is a visual board with draggable cards."
-},
-{
-"q": "Does Bear include visual boards?",
-"a": "No, Bear focuses on text documents with simple formatting."
-},
-{
-"q": "Which app has fewer layout decisions?",
-"a": "Bear has fewer layout decisions because notes are fixed documents."
-},
-{
-"q": "Can Bear organize notes effectively?",
-"a": "Yes, it uses tags and nested tags to group notes without visual canvases."
-}
-],
-"related_pages": [
-{ "x_name": "Notion", "y_name": "Google Docs", "persona": "Minimalist" },
-{ "x_name": "Milanote", "y_name": "Evernote", "persona": "Minimalist" },
-{ "x_name": "Craft", "y_name": "Milanote", "persona": "Minimalist" },
-{ "x_name": "Standard Notes", "y_name": "Google Keep", "persona": "Minimalist" },
-{ "x_name": "Obsidian", "y_name": "Apple Notes", "persona": "Minimalist" },
-{ "x_name": "Evernote", "y_name": "Google Keep", "persona": "Minimalist" }
-]
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Milanote vs Bear for Minimalists",
+  "slug": "milanote-vs-bear-for-minimalist",
+  "meta_description": "Milanote vs Bear for minimalists who want clean writing without visual boards, draggable cards, or canvas layout decisions.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want clean note writing without visual boards, draggable cards, or layout decisions.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Bear wins for minimalists who want focused writing. It opens to a clean text editor with simple tags and no layout choices. Milanote is built around visual boards with draggable cards and free placement on a canvas. If visual freedom creates extra decisions, Milanote fails first.",
+    "decision_rule": "If visual freedom creates extra decisions, Milanote fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Minimalists",
+      "content": "You said you want writing, not visual boards or canvases. When notes can be moved, resized, or arranged visually, you must decide where things go. A fixed text page reduces those choices."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Milanote wins",
+      "bullets": [
+        {
+          "point": "Freeform canvas where notes are added as draggable cards",
+          "why_it_matters": "You can arrange ideas visually, but positioning cards requires layout decisions."
+        },
+        {
+          "point": "Boards that mix images, links, and text blocks",
+          "why_it_matters": "You can build mood boards or project maps, yet mixing media adds interface elements beyond writing."
+        },
+        {
+          "point": "Zoomable workspace with nested boards",
+          "why_it_matters": "You can structure complex projects, but navigating between boards increases interaction steps."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Bear wins",
+      "bullets": [
+        {
+          "point": "Single document editor with markdown formatting",
+          "why_it_matters": "You start typing immediately without placing elements on a canvas."
+        },
+        {
+          "point": "Tag based organization instead of visual boards",
+          "why_it_matters": "You organize notes by simple hashtags without managing layouts."
+        },
+        {
+          "point": "Distraction free writing mode",
+          "why_it_matters": "The interface minimizes visible controls so attention stays on text."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You spend time arranging cards or resizing elements instead of writing.",
+          "what_to_do_instead": "Use Bear if you want fixed pages focused only on text."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need spatial layouts to map visual ideas or creative projects.",
+          "what_to_do_instead": "Use Milanote if visual arrangement becomes essential."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your work depends on arranging images and notes spatially for design or creative planning, Milanote may justify its canvas despite the added decisions."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want pure writing, choose Bear.",
+        "If moving cards feels distracting, avoid Milanote.",
+        "If visual layout is part of your thinking process, Milanote may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Milanote built for writing?",
+      "a": "It supports writing, but its main structure is a visual board with draggable cards."
+    },
+    {
+      "q": "Does Bear include visual boards?",
+      "a": "No, Bear focuses on text documents with simple formatting."
+    },
+    {
+      "q": "Which app has fewer layout decisions?",
+      "a": "Bear has fewer layout decisions because notes are fixed documents."
+    },
+    {
+      "q": "Can Bear organize notes effectively?",
+      "a": "Yes, it uses tags and nested tags to group notes without visual canvases."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Evernote",
+      "y_name": "Bear",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Milanote",
+      "y_name": "Coda",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Notion",
+      "y_name": "Bear",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Roam Research",
+      "y_name": "Bear",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Coda",
+      "y_name": "Apple Notes",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Notion",
+      "y_name": "Google Docs",
+      "persona": "Minimalist"
+    }
+  ]
 }

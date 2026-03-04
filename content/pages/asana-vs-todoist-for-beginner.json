@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "setup-tolerance",
-"constraintUiName": "Publish fast",
-"title": "Asana vs Todoist for Beginners",
-"slug": "asana-vs-todoist-for-beginner",
-"meta_description": "Asana vs Todoist for beginners who want to organize to dos without learning projects, sections, or workflow structure first.",
-"persona": "Beginner",
-"constraint_lens": "You want to start organizing tasks immediately without learning projects, sections, or workflow structure first.",
-"verdict": {
-"winner": "y",
-"summary": "Todoist wins for beginners who are unsure how much structure they need. You can open a list and start typing tasks right away. Asana is built around projects, sections, and structured views that assume you understand how work is grouped. If the user must understand projects before adding tasks, Asana fails first.",
-"decision_rule": "If the user must understand projects before adding tasks, Asana fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Beginners",
-"content": "You said you are new to task apps and unsure how much structure you need. When an app asks you to create projects and sections first, it can feel like there is a right system to follow. A simple list lowers that pressure."
-},
-{
-"type": "x_wins",
-"heading": "Where Asana wins",
-"bullets": [
-{
-"point": "Project based organization with sections inside each project",
-"why_it_matters": "You can separate areas of work clearly, but you must choose or create a project before adding tasks."
-},
-{
-"point": "Multiple views such as list and board tied to project structure",
-"why_it_matters": "You can visualize workflows, yet understanding views adds a learning step."
-},
-{
-"point": "Task fields for assignee, due date, and status",
-"why_it_matters": "You can define detailed context, but these options introduce extra decisions during setup."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Todoist wins",
-"bullets": [
-{
-"point": "Quick add field available from any screen",
-"why_it_matters": "You can capture a task instantly without placing it inside a structured project first."
-},
-{
-"point": "Simple project lists that are optional",
-"why_it_matters": "You can begin with one list and add structure later only if needed."
-},
-{
-"point": "Clean Today and Upcoming views with no required configuration",
-"why_it_matters": "You see what matters without setting up workflow stages."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You hesitate because you are unsure which project or section a new task belongs in.",
-"what_to_do_instead": "Use Todoist if you want to start with a simple list and add structure later."
-},
-{
-"tool": "y",
-"fails_when": "You need structured team workflows with clearly defined stages.",
-"what_to_do_instead": "Use Asana if your tasks must live inside shared project boards."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you quickly move into managing shared projects with clear stages and assigned responsibilities, Asana may become helpful despite its added structure."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want to start with minimal setup, choose Todoist.",
-"If creating projects feels confusing at first, avoid Asana.",
-"If you need structured team boards later, Asana may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Asana hard for beginners?",
-"a": "It introduces projects and sections that require some understanding before full use."
-},
-{
-"q": "Can Todoist be used without projects?",
-"a": "Yes, you can keep tasks in a simple list and add structure later."
-},
-{
-"q": "Which app is faster to start with?",
-"a": "Todoist is typically faster because you can add tasks immediately."
-},
-{
-"q": "Does Asana require a project for each task?",
-"a": "Tasks are usually created inside projects, which adds a structural step."
-}
-],
-"related_pages": [
-{ "x_name": "ClickUp", "y_name": "Microsoft To Do", "persona": "Beginner" },
-{ "x_name": "Trello", "y_name": "Google Tasks", "persona": "Beginner" },
-{ "x_name": "Quire", "y_name": "Google Tasks", "persona": "Beginner" },
-{ "x_name": "FacileThings", "y_name": "Todoist", "persona": "Beginner" },
-{ "x_name": "Superlist", "y_name": "Microsoft To Do", "persona": "Beginner" },
-{ "x_name": "OmniFocus", "y_name": "Apple Reminders", "persona": "Beginner" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Asana vs Todoist for Beginners",
+  "slug": "asana-vs-todoist-for-beginner",
+  "meta_description": "Asana vs Todoist for beginners who want to organize to dos without learning projects, sections, or workflow structure first.",
+  "persona": "Beginner",
+  "constraint_lens": "You want to start organizing tasks immediately without learning projects, sections, or workflow structure first.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist wins for beginners who are unsure how much structure they need. You can open a list and start typing tasks right away. Asana is built around projects, sections, and structured views that assume you understand how work is grouped. If the user must understand projects before adding tasks, Asana fails first.",
+    "decision_rule": "If the user must understand projects before adding tasks, Asana fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Beginners",
+      "content": "You said you are new to task apps and unsure how much structure you need. When an app asks you to create projects and sections first, it can feel like there is a right system to follow. A simple list lowers that pressure."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Asana wins",
+      "bullets": [
+        {
+          "point": "Project based organization with sections inside each project",
+          "why_it_matters": "You can separate areas of work clearly, but you must choose or create a project before adding tasks."
+        },
+        {
+          "point": "Multiple views such as list and board tied to project structure",
+          "why_it_matters": "You can visualize workflows, yet understanding views adds a learning step."
+        },
+        {
+          "point": "Task fields for assignee, due date, and status",
+          "why_it_matters": "You can define detailed context, but these options introduce extra decisions during setup."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Quick add field available from any screen",
+          "why_it_matters": "You can capture a task instantly without placing it inside a structured project first."
+        },
+        {
+          "point": "Simple project lists that are optional",
+          "why_it_matters": "You can begin with one list and add structure later only if needed."
+        },
+        {
+          "point": "Clean Today and Upcoming views with no required configuration",
+          "why_it_matters": "You see what matters without setting up workflow stages."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You hesitate because you are unsure which project or section a new task belongs in.",
+          "what_to_do_instead": "Use Todoist if you want to start with a simple list and add structure later."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need structured team workflows with clearly defined stages.",
+          "what_to_do_instead": "Use Asana if your tasks must live inside shared project boards."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you quickly move into managing shared projects with clear stages and assigned responsibilities, Asana may become helpful despite its added structure."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want to start with minimal setup, choose Todoist.",
+        "If creating projects feels confusing at first, avoid Asana.",
+        "If you need structured team boards later, Asana may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Asana hard for beginners?",
+      "a": "It introduces projects and sections that require some understanding before full use."
+    },
+    {
+      "q": "Can Todoist be used without projects?",
+      "a": "Yes, you can keep tasks in a simple list and add structure later."
+    },
+    {
+      "q": "Which app is faster to start with?",
+      "a": "Todoist is typically faster because you can add tasks immediately."
+    },
+    {
+      "q": "Does Asana require a project for each task?",
+      "a": "Tasks are usually created inside projects, which adds a structural step."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "FacileThings",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Notion",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Any.do",
+      "y_name": "Apple Reminders",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Microsoft To Do",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Freedcamp",
+      "y_name": "Microsoft To Do",
+      "persona": "Beginner"
+    }
+  ]
 }

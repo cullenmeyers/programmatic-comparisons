@@ -1,116 +1,139 @@
 {
-"category": "Calendar / Scheduling tools",
-"categorySlug": "calendar-scheduling-tools",
-"constraintSlug": "setup-tolerance",
-"constraintUiName": "Publish fast",
-"title": "Microsoft Bookings vs Google Calendar for Beginners",
-"slug": "microsoft-bookings-vs-google-calendar-for-beginner",
-"meta_description": "Microsoft Bookings vs Google Calendar for beginners who want to track meetings quickly without setting up services, staff roles, or business workflows.",
-"persona": "Beginner",
-"constraint_lens": "You want to start adding and viewing meetings right away without setting up services, staff roles, or business settings first.",
-"verdict": {
-"winner": "y",
-"summary": "Google Calendar wins for beginners who just want to track meetings without building a booking system. It lets you click a date, enter a title and time, and save. Microsoft Bookings is designed around services and staff assignments before publishing availability. If service configuration is required before basic scheduling, Microsoft Bookings fails first.",
-"decision_rule": "If service configuration is required before basic scheduling, Microsoft Bookings fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Beginners",
-"content": "You said you just want to add appointments without setting up services or staff roles. As a beginner, screens asking you to define services, business hours, or staff create extra decisions before you can even enter a meeting. The simpler event entry flow fits you better."
-},
-{
-"type": "x_wins",
-"heading": "Where Microsoft Bookings wins",
-"bullets": [
-{
-"point": "Service based booking setup tied to staff calendars",
-"why_it_matters": "You can manage multiple people and appointment types in one place, but defining services and assigning staff adds setup steps before basic use."
-},
-{
-"point": "Public booking page with automatic confirmations",
-"why_it_matters": "Others can schedule directly with you, yet you must configure business details before sharing that page."
-},
-{
-"point": "Integration with Microsoft 365 accounts and shared calendars",
-"why_it_matters": "This supports structured team scheduling, but it introduces enterprise layers that a beginner may not need."
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Microsoft Bookings vs Google Calendar for Beginners",
+  "slug": "microsoft-bookings-vs-google-calendar-for-beginner",
+  "meta_description": "Microsoft Bookings vs Google Calendar for beginners who want to track meetings quickly without setting up services, staff roles, or business workflows.",
+  "persona": "Beginner",
+  "constraint_lens": "You want to start adding and viewing meetings right away without setting up services, staff roles, or business settings first.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Google Calendar wins for beginners who just want to track meetings without building a booking system. It lets you click a date, enter a title and time, and save. Microsoft Bookings is designed around services and staff assignments before publishing availability. If service configuration is required before basic scheduling, Microsoft Bookings fails first.",
+    "decision_rule": "If service configuration is required before basic scheduling, Microsoft Bookings fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Beginners",
+      "content": "You said you just want to add appointments without setting up services or staff roles. As a beginner, screens asking you to define services, business hours, or staff create extra decisions before you can even enter a meeting. The simpler event entry flow fits you better."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Microsoft Bookings wins",
+      "bullets": [
+        {
+          "point": "Service based booking setup tied to staff calendars",
+          "why_it_matters": "You can manage multiple people and appointment types in one place, but defining services and assigning staff adds setup steps before basic use."
+        },
+        {
+          "point": "Public booking page with automatic confirmations",
+          "why_it_matters": "Others can schedule directly with you, yet you must configure business details before sharing that page."
+        },
+        {
+          "point": "Integration with Microsoft 365 accounts and shared calendars",
+          "why_it_matters": "This supports structured team scheduling, but it introduces enterprise layers that a beginner may not need."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Google Calendar wins",
+      "bullets": [
+        {
+          "point": "Click on any date or time slot to create an event instantly",
+          "why_it_matters": "You can add a meeting in seconds without defining services or availability rules."
+        },
+        {
+          "point": "Event form focused on title, time, and optional guests",
+          "why_it_matters": "There are no required business fields, so you are not forced to think about staff roles or appointment types."
+        },
+        {
+          "point": "Meetings stay exactly where you place them",
+          "why_it_matters": "There is no booking workflow or service structure to maintain after saving an event."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You must define services and staff members before being able to track a simple meeting.",
+          "what_to_do_instead": "Use Google Calendar if you only need to record and view appointments."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need clients or classmates to book time with you through a public scheduling page.",
+          "what_to_do_instead": "Use Microsoft Bookings if your goal shifts from tracking meetings to offering structured booking slots."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you later need people to book appointments with you directly and manage multiple staff calendars, Microsoft Bookings may make more sense because it is built around that structure."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you just want to add and view meetings quickly, choose Google Calendar.",
+        "If service and staff setup feels unnecessary, avoid Microsoft Bookings.",
+        "If you need a public booking page with structured appointment types, Microsoft Bookings may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Microsoft Bookings only for businesses?",
+      "a": "It is designed around services and staff roles inside Microsoft 365, which can feel business oriented for simple personal scheduling."
+    },
+    {
+      "q": "Can Google Calendar handle recurring meetings?",
+      "a": "Yes, you can set a repeat pattern directly when creating an event without additional setup layers."
+    },
+    {
+      "q": "Do I need to configure services in Google Calendar?",
+      "a": "No, you simply create events without defining service types or staff assignments."
+    },
+    {
+      "q": "Which one is faster for a first time user?",
+      "a": "Google Calendar is typically faster because you can start adding events immediately after opening the app."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Google Calendar",
+      "y_name": "Calendly",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Teamup Calendar",
+      "y_name": "Google Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "TidyCal",
+      "y_name": "Google Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Apple Calendar",
+      "y_name": "Outlook Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Square Appointments",
+      "y_name": "Calendly",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Zoho Bookings",
+      "y_name": "Calendly",
+      "persona": "Beginner"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Google Calendar wins",
-"bullets": [
-{
-"point": "Click on any date or time slot to create an event instantly",
-"why_it_matters": "You can add a meeting in seconds without defining services or availability rules."
-},
-{
-"point": "Event form focused on title, time, and optional guests",
-"why_it_matters": "There are no required business fields, so you are not forced to think about staff roles or appointment types."
-},
-{
-"point": "Meetings stay exactly where you place them",
-"why_it_matters": "There is no booking workflow or service structure to maintain after saving an event."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You must define services and staff members before being able to track a simple meeting.",
-"what_to_do_instead": "Use Google Calendar if you only need to record and view appointments."
-},
-{
-"tool": "y",
-"fails_when": "You need clients or classmates to book time with you through a public scheduling page.",
-"what_to_do_instead": "Use Microsoft Bookings if your goal shifts from tracking meetings to offering structured booking slots."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you later need people to book appointments with you directly and manage multiple staff calendars, Microsoft Bookings may make more sense because it is built around that structure."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you just want to add and view meetings quickly, choose Google Calendar.",
-"If service and staff setup feels unnecessary, avoid Microsoft Bookings.",
-"If you need a public booking page with structured appointment types, Microsoft Bookings may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Microsoft Bookings only for businesses?",
-"a": "It is designed around services and staff roles inside Microsoft 365, which can feel business oriented for simple personal scheduling."
-},
-{
-"q": "Can Google Calendar handle recurring meetings?",
-"a": "Yes, you can set a repeat pattern directly when creating an event without additional setup layers."
-},
-{
-"q": "Do I need to configure services in Google Calendar?",
-"a": "No, you simply create events without defining service types or staff assignments."
-},
-{
-"q": "Which one is faster for a first time user?",
-"a": "Google Calendar is typically faster because you can start adding events immediately after opening the app."
-}
-],
-"related_pages": [
-{ "x_name": "Zoho Bookings", "y_name": "Calendly", "persona": "Beginner" },
-{ "x_name": "Doodle", "y_name": "Calendly", "persona": "Beginner" },
-{ "x_name": "Apple Calendar", "y_name": "Google Calendar", "persona": "Beginner" },
-{ "x_name": "Outlook Calendar", "y_name": "Google Calendar", "persona": "Beginner" },
-{ "x_name": "Acuity Scheduling", "y_name": "Calendly", "persona": "Beginner" },
-{ "x_name": "Fantastical", "y_name": "Google Calendar", "persona": "Beginner" }
-]
-}
-

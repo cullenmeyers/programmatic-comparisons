@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "Pagico vs Things 3 for Power users",
-"slug": "pagico-vs-things-3-for-power-user",
-"meta_description": "Pagico vs Things 3 for power users who need tasks linked natively to files, contacts, and related resources.",
-"persona": "Power user",
-"constraint_lens": "You need tasks, files, and contacts connected inside one system without hitting structural limits.",
-"verdict": {
-"winner": "x",
-"summary": "Pagico wins for power users who manage tasks, files, and contacts together. It uses a unified model where projects can contain tasks, attached files, and linked contacts. Things 3 focuses on tasks with areas and projects but does not natively link files and contacts as first-class entities. If task management cannot link natively to files and contacts within one model, Things 3 fails first.",
-"decision_rule": "If task management cannot link natively to files and contacts within one model, Things 3 fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for cross-entity task systems",
-"content": "You manage tasks, files, and contacts together and expect cross-entity linking. Pagico allows you to attach documents and connect contacts directly inside projects. Things 3 organizes tasks into projects and areas but treats files and contacts as external references."
-},
-{
-"type": "x_wins",
-"heading": "Where Pagico wins",
-"bullets": [
-{
-"point": "Unified model for tasks, files, and contacts",
-"why_it_matters": "You store related resources inside the same project rather than linking out to separate apps."
-},
-{
-"point": "Native contact linking within projects",
-"why_it_matters": "You associate specific people directly with tasks and documents."
-},
-{
-"point": "Timeline and Gantt-style project view",
-"why_it_matters": "You visualize dependencies and project flow beyond simple task lists."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Things 3 wins",
-"bullets": [
-{
-"point": "Clean task-focused interface",
-"why_it_matters": "You manage to-dos with minimal distraction from non-task entities."
-},
-{
-"point": "Areas and projects hierarchy",
-"why_it_matters": "You structure responsibilities without configuring complex project models."
-},
-{
-"point": "Quick entry with keyboard shortcut",
-"why_it_matters": "You capture tasks rapidly without opening additional panels."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You only want lightweight task lists without managing files and contacts inside the app.",
-"what_to_do_instead": "Use Things 3 for a focused task-only workflow."
-},
-{
-"tool": "y",
-"fails_when": "You need tasks linked directly to project files and specific contacts within one system.",
-"what_to_do_instead": "Switch to Pagico for integrated resource management."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you keep files in cloud storage and contacts in a separate CRM and only need clean task tracking, Things 3 may feel sufficient."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you need tasks, files, and contacts linked natively, choose Pagico.",
-"If you prefer a clean task-only app, consider Things 3.",
-"If cross-entity linking matters long term, avoid task-only models."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Things 3 support linking contacts inside projects?",
-"a": "It focuses on tasks and does not treat contacts as first-class linked entities."
-},
-{
-"q": "Can Pagico store project files?",
-"a": "Yes. Files can be attached directly within project spaces."
-},
-{
-"q": "Which has the higher ceiling for integrated work management?",
-"a": "Pagico generally has the higher ceiling due to its unified entity model."
-},
-{
-"q": "Which is simpler for pure task tracking?",
-"a": "Things 3 is simpler if you only need structured to-do lists."
-}
-],
-"related_pages": [
-{ "x_name": "ClickUp", "y_name": "Todoist", "persona": "Power user" },
-{ "x_name": "Notion", "y_name": "Todoist", "persona": "Power user" },
-{ "x_name": "OmniFocus", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "TickTick", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "Taskade", "y_name": "ClickUp", "persona": "Power user" },
-{ "x_name": "Asana", "y_name": "Things 3", "persona": "Power user" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Pagico vs Things 3 for Power users",
+  "slug": "pagico-vs-things-3-for-power-user",
+  "meta_description": "Pagico vs Things 3 for power users who need tasks linked natively to files, contacts, and related resources.",
+  "persona": "Power user",
+  "constraint_lens": "You need tasks, files, and contacts connected inside one system without hitting structural limits.",
+  "verdict": {
+    "winner": "x",
+    "summary": "Pagico wins for power users who manage tasks, files, and contacts together. It uses a unified model where projects can contain tasks, attached files, and linked contacts. Things 3 focuses on tasks with areas and projects but does not natively link files and contacts as first-class entities. If task management cannot link natively to files and contacts within one model, Things 3 fails first.",
+    "decision_rule": "If task management cannot link natively to files and contacts within one model, Things 3 fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for cross-entity task systems",
+      "content": "You manage tasks, files, and contacts together and expect cross-entity linking. Pagico allows you to attach documents and connect contacts directly inside projects. Things 3 organizes tasks into projects and areas but treats files and contacts as external references."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Pagico wins",
+      "bullets": [
+        {
+          "point": "Unified model for tasks, files, and contacts",
+          "why_it_matters": "You store related resources inside the same project rather than linking out to separate apps."
+        },
+        {
+          "point": "Native contact linking within projects",
+          "why_it_matters": "You associate specific people directly with tasks and documents."
+        },
+        {
+          "point": "Timeline and Gantt-style project view",
+          "why_it_matters": "You visualize dependencies and project flow beyond simple task lists."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Things 3 wins",
+      "bullets": [
+        {
+          "point": "Clean task-focused interface",
+          "why_it_matters": "You manage to-dos with minimal distraction from non-task entities."
+        },
+        {
+          "point": "Areas and projects hierarchy",
+          "why_it_matters": "You structure responsibilities without configuring complex project models."
+        },
+        {
+          "point": "Quick entry with keyboard shortcut",
+          "why_it_matters": "You capture tasks rapidly without opening additional panels."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only want lightweight task lists without managing files and contacts inside the app.",
+          "what_to_do_instead": "Use Things 3 for a focused task-only workflow."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need tasks linked directly to project files and specific contacts within one system.",
+          "what_to_do_instead": "Switch to Pagico for integrated resource management."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you keep files in cloud storage and contacts in a separate CRM and only need clean task tracking, Things 3 may feel sufficient."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you need tasks, files, and contacts linked natively, choose Pagico.",
+        "If you prefer a clean task-only app, consider Things 3.",
+        "If cross-entity linking matters long term, avoid task-only models."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Things 3 support linking contacts inside projects?",
+      "a": "It focuses on tasks and does not treat contacts as first-class linked entities."
+    },
+    {
+      "q": "Can Pagico store project files?",
+      "a": "Yes. Files can be attached directly within project spaces."
+    },
+    {
+      "q": "Which has the higher ceiling for integrated work management?",
+      "a": "Pagico generally has the higher ceiling due to its unified entity model."
+    },
+    {
+      "q": "Which is simpler for pure task tracking?",
+      "a": "Things 3 is simpler if you only need structured to-do lists."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Nirvana",
+      "y_name": "Things 3",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Asana",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "GQueues",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Remember The Milk",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Taskheat",
+      "y_name": "Apple Reminders",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Taskwarrior",
+      "y_name": "Todoist",
+      "persona": "Power user"
+    }
+  ]
 }

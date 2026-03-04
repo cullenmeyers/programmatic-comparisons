@@ -1,116 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "ClickUp vs Apple Reminders for Minimalists",
-"slug": "clickup-vs-apple-reminders-for-minimalist",
-"meta_description": "ClickUp vs Apple Reminders for minimalists who want to track simple tasks without dashboards, views, or extra options unrelated to checking off tasks.",
-"persona": "Minimalist",
-"constraint_lens": "You want the fewest possible concepts between deciding to do something and checking it off.",
-"verdict": {
-"winner": "y",
-"summary": "Apple Reminders wins for minimalists who want the shortest path from intent to action. It shows a clean list where you add and check off tasks with almost no extra decisions. ClickUp presents multiple views, statuses, and configuration options before you settle into a simple list. If the interface presents options unrelated to checking off tasks, ClickUp fails first.",
-"decision_rule": "If the interface presents options unrelated to checking off tasks, ClickUp fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Minimalists",
-"content": "You said you want the fewest possible concepts between intent and action. When an app shows dashboards, spaces, folders, and view types, you must decide where and how to work before doing the task itself. A plain checklist reduces that gap."
-},
-{
-"type": "x_wins",
-"heading": "Where ClickUp wins",
-"bullets": [
-{
-"point": "Hierarchical structure with spaces, folders, lists, and tasks",
-"why_it_matters": "You can organize work deeply, but choosing where a task belongs adds layers before execution."
-},
-{
-"point": "Multiple view types such as list, board, calendar, and timeline",
-"why_it_matters": "You can customize how you see work, yet switching or selecting views adds decisions unrelated to completing a task."
-},
-{
-"point": "Custom fields, statuses, and automation rules",
-"why_it_matters": "You can tailor workflows, but these options increase visual and mental complexity for simple to dos."
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "ClickUp vs Apple Reminders for Minimalists",
+  "slug": "clickup-vs-apple-reminders-for-minimalist",
+  "meta_description": "ClickUp vs Apple Reminders for minimalists who want to track simple tasks without dashboards, views, or extra options unrelated to checking off tasks.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want the fewest possible concepts between deciding to do something and checking it off.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Apple Reminders wins for minimalists who want the shortest path from intent to action. It shows a clean list where you add and check off tasks with almost no extra decisions. ClickUp presents multiple views, statuses, and configuration options before you settle into a simple list. If the interface presents options unrelated to checking off tasks, ClickUp fails first.",
+    "decision_rule": "If the interface presents options unrelated to checking off tasks, ClickUp fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Minimalists",
+      "content": "You said you want the fewest possible concepts between intent and action. When an app shows dashboards, spaces, folders, and view types, you must decide where and how to work before doing the task itself. A plain checklist reduces that gap."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where ClickUp wins",
+      "bullets": [
+        {
+          "point": "Hierarchical structure with spaces, folders, lists, and tasks",
+          "why_it_matters": "You can organize work deeply, but choosing where a task belongs adds layers before execution."
+        },
+        {
+          "point": "Multiple view types such as list, board, calendar, and timeline",
+          "why_it_matters": "You can customize how you see work, yet switching or selecting views adds decisions unrelated to completing a task."
+        },
+        {
+          "point": "Custom fields, statuses, and automation rules",
+          "why_it_matters": "You can tailor workflows, but these options increase visual and mental complexity for simple to dos."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Apple Reminders wins",
+      "bullets": [
+        {
+          "point": "Single list interface with clear add button",
+          "why_it_matters": "You open the app and immediately see tasks without navigating dashboards or structures."
+        },
+        {
+          "point": "Basic due date and repeat settings inside the task",
+          "why_it_matters": "You can set reminders without interacting with advanced fields or workflow settings."
+        },
+        {
+          "point": "No required projects, statuses, or custom views",
+          "why_it_matters": "The app stays focused on adding and checking off tasks rather than managing systems."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You spend time choosing views, statuses, or locations before simply adding a task.",
+          "what_to_do_instead": "Use Apple Reminders if you want a direct checklist with minimal options."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need advanced workflow tracking, custom fields, or team collaboration.",
+          "what_to_do_instead": "Use ClickUp if your needs expand beyond basic task tracking."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your responsibilities grow to include structured projects, shared workspaces, and custom workflows, ClickUp may become useful despite its added layers."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want the shortest path from idea to checkmark, choose Apple Reminders.",
+        "If dashboards and multiple views feel unnecessary, avoid ClickUp.",
+        "If you need deep customization later, ClickUp may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is ClickUp too complex for minimal use?",
+      "a": "It offers many organizational layers, which can feel excessive if you only want a simple checklist."
+    },
+    {
+      "q": "Can Apple Reminders handle recurring tasks?",
+      "a": "Yes, you can set repeating reminders without configuring advanced workflows."
+    },
+    {
+      "q": "Which tool has fewer built in concepts?",
+      "a": "Apple Reminders has fewer built in layers and focuses on basic task entry."
+    },
+    {
+      "q": "Can ClickUp be simplified?",
+      "a": "You can limit features, but its interface still presents multiple structural options."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "ClickUp",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "Any.do",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Trello",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "FacileThings",
+      "y_name": "Apple Reminders",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Nirvana",
+      "y_name": "Apple Reminders",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Productive",
+      "y_name": "Apple Reminders",
+      "persona": "Minimalist"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Apple Reminders wins",
-"bullets": [
-{
-"point": "Single list interface with clear add button",
-"why_it_matters": "You open the app and immediately see tasks without navigating dashboards or structures."
-},
-{
-"point": "Basic due date and repeat settings inside the task",
-"why_it_matters": "You can set reminders without interacting with advanced fields or workflow settings."
-},
-{
-"point": "No required projects, statuses, or custom views",
-"why_it_matters": "The app stays focused on adding and checking off tasks rather than managing systems."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You spend time choosing views, statuses, or locations before simply adding a task.",
-"what_to_do_instead": "Use Apple Reminders if you want a direct checklist with minimal options."
-},
-{
-"tool": "y",
-"fails_when": "You need advanced workflow tracking, custom fields, or team collaboration.",
-"what_to_do_instead": "Use ClickUp if your needs expand beyond basic task tracking."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your responsibilities grow to include structured projects, shared workspaces, and custom workflows, ClickUp may become useful despite its added layers."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want the shortest path from idea to checkmark, choose Apple Reminders.",
-"If dashboards and multiple views feel unnecessary, avoid ClickUp.",
-"If you need deep customization later, ClickUp may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is ClickUp too complex for minimal use?",
-"a": "It offers many organizational layers, which can feel excessive if you only want a simple checklist."
-},
-{
-"q": "Can Apple Reminders handle recurring tasks?",
-"a": "Yes, you can set repeating reminders without configuring advanced workflows."
-},
-{
-"q": "Which tool has fewer built in concepts?",
-"a": "Apple Reminders has fewer built in layers and focuses on basic task entry."
-},
-{
-"q": "Can ClickUp be simplified?",
-"a": "You can limit features, but its interface still presents multiple structural options."
-}
-],
-"related_pages": [
-{ "x_name": "Habitica", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "Sunsama", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "Sorted³", "y_name": "Things 3", "persona": "Minimalist" },
-{ "x_name": "Notion", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "OmniFocus", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "TickTick", "y_name": "Todoist", "persona": "Minimalist" }
-]
-}
-

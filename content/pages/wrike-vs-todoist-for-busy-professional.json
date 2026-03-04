@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "time-scarcity",
-"constraintUiName": "Fast to use daily",
-"title": "Wrike vs Todoist for Busy professionals",
-"slug": "wrike-vs-todoist-for-busy-professional",
-"meta_description": "Wrike vs Todoist for busy professionals who need to execute work tasks quickly without navigating enterprise dashboards or layered project setup.",
-"persona": "Busy professional",
-"constraint_lens": "You need to capture and execute tasks fast without navigating enterprise dashboards or layered project structures.",
-"verdict": {
-"winner": "y",
-"summary": "Todoist wins for busy professionals who need to manage personal work tasks between meetings. It lets you add and view tasks instantly in a simple list. Wrike is structured around projects, folders, and reporting dashboards that assume enterprise level organization. If the tool assumes enterprise-level structure before execution, Wrike fails first.",
-"decision_rule": "If the tool assumes enterprise-level structure before execution, Wrike fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Busy professionals",
-"content": "You said you need to manage personal work tasks quickly between meetings. When time is limited, navigating folders, dashboards, or reports adds mental load. A direct list that shows what to do next fits better."
-},
-{
-"type": "x_wins",
-"heading": "Where Wrike wins",
-"bullets": [
-{
-"point": "Project and folder hierarchy with task dependencies",
-"why_it_matters": "You can model complex workflows, but deciding where a task belongs takes extra steps before saving it."
-},
-{
-"point": "Dashboard widgets and workload views",
-"why_it_matters": "You can track team capacity and progress, yet scanning dashboards slows simple personal execution."
-},
-{
-"point": "Custom workflows with status stages",
-"why_it_matters": "Tasks move through defined stages, but setting and maintaining these stages adds overhead."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Todoist wins",
-"bullets": [
-{
-"point": "Quick add task field with instant save",
-"why_it_matters": "You can capture a task in seconds without assigning it to enterprise structures."
-},
-{
-"point": "Today view that aggregates due tasks in one place",
-"why_it_matters": "You immediately see what needs action without navigating project folders."
-},
-{
-"point": "Optional project lists instead of mandatory dashboards",
-"why_it_matters": "You can keep tasks lightweight without interacting with reports or workload views."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You must choose folders, workflows, or dashboards before simply executing a task.",
-"what_to_do_instead": "Use Todoist if you want immediate clarity and fast task entry."
-},
-{
-"tool": "y",
-"fails_when": "You need detailed reporting, workload tracking, and structured team workflows.",
-"what_to_do_instead": "Use Wrike if your responsibilities require enterprise level coordination."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your role involves coordinating multiple teams with dependencies, workload tracking, and formal reporting, Wrike may justify its added structure despite the heavier interface."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you need fast personal task execution, choose Todoist.",
-"If dashboards and workflow setup feel slow, avoid Wrike.",
-"If you manage complex team projects with reporting needs, Wrike may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Wrike mainly for teams?",
-"a": "Yes, it is designed for structured project management with dashboards and reporting tools."
-},
-{
-"q": "Can Todoist handle professional work?",
-"a": "Yes, it can manage projects and deadlines without requiring enterprise level setup."
-},
-{
-"q": "Which tool is faster between meetings?",
-"a": "Todoist is typically faster because it focuses on direct list based task entry."
-},
-{
-"q": "Does Wrike require initial setup?",
-"a": "Yes, you usually create project folders and workflows before fully using it."
-}
-],
-"related_pages": [
-{ "x_name": "Jira", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Linear", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Monday.com", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Sunsama", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Asana", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Things", "y_name": "Todoist", "persona": "Busy professional" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Wrike vs Todoist for Busy professionals",
+  "slug": "wrike-vs-todoist-for-busy-professional",
+  "meta_description": "Wrike vs Todoist for busy professionals who need to execute work tasks quickly without navigating enterprise dashboards or layered project setup.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need to capture and execute tasks fast without navigating enterprise dashboards or layered project structures.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist wins for busy professionals who need to manage personal work tasks between meetings. It lets you add and view tasks instantly in a simple list. Wrike is structured around projects, folders, and reporting dashboards that assume enterprise level organization. If the tool assumes enterprise-level structure before execution, Wrike fails first.",
+    "decision_rule": "If the tool assumes enterprise-level structure before execution, Wrike fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Busy professionals",
+      "content": "You said you need to manage personal work tasks quickly between meetings. When time is limited, navigating folders, dashboards, or reports adds mental load. A direct list that shows what to do next fits better."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Wrike wins",
+      "bullets": [
+        {
+          "point": "Project and folder hierarchy with task dependencies",
+          "why_it_matters": "You can model complex workflows, but deciding where a task belongs takes extra steps before saving it."
+        },
+        {
+          "point": "Dashboard widgets and workload views",
+          "why_it_matters": "You can track team capacity and progress, yet scanning dashboards slows simple personal execution."
+        },
+        {
+          "point": "Custom workflows with status stages",
+          "why_it_matters": "Tasks move through defined stages, but setting and maintaining these stages adds overhead."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Quick add task field with instant save",
+          "why_it_matters": "You can capture a task in seconds without assigning it to enterprise structures."
+        },
+        {
+          "point": "Today view that aggregates due tasks in one place",
+          "why_it_matters": "You immediately see what needs action without navigating project folders."
+        },
+        {
+          "point": "Optional project lists instead of mandatory dashboards",
+          "why_it_matters": "You can keep tasks lightweight without interacting with reports or workload views."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You must choose folders, workflows, or dashboards before simply executing a task.",
+          "what_to_do_instead": "Use Todoist if you want immediate clarity and fast task entry."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need detailed reporting, workload tracking, and structured team workflows.",
+          "what_to_do_instead": "Use Wrike if your responsibilities require enterprise level coordination."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your role involves coordinating multiple teams with dependencies, workload tracking, and formal reporting, Wrike may justify its added structure despite the heavier interface."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you need fast personal task execution, choose Todoist.",
+        "If dashboards and workflow setup feel slow, avoid Wrike.",
+        "If you manage complex team projects with reporting needs, Wrike may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Wrike mainly for teams?",
+      "a": "Yes, it is designed for structured project management with dashboards and reporting tools."
+    },
+    {
+      "q": "Can Todoist handle professional work?",
+      "a": "Yes, it can manage projects and deadlines without requiring enterprise level setup."
+    },
+    {
+      "q": "Which tool is faster between meetings?",
+      "a": "Todoist is typically faster because it focuses on direct list based task entry."
+    },
+    {
+      "q": "Does Wrike require initial setup?",
+      "a": "Yes, you usually create project folders and workflows before fully using it."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "ClickUp",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Jira",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Linear",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Monday.com",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Motion",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Todoist",
+      "y_name": "Asana",
+      "persona": "Busy professional"
+    }
+  ]
 }

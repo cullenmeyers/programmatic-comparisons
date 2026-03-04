@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "setup-tolerance",
-"constraintUiName": "Publish fast",
-"title": "Notion vs Todoist for Beginners",
-"slug": "notion-vs-todoist-for-beginner",
-"meta_description": "Notion vs Todoist for beginners who want to track daily tasks without building databases, templates, or custom systems first.",
-"persona": "Beginner",
-"constraint_lens": "You want to list tasks and check them off immediately without building databases, templates, or custom systems first.",
-"verdict": {
-"winner": "y",
-"summary": "Todoist wins for beginners who just want to list tasks and check them off. You can open the app and start typing without choosing a template or building structure. Notion typically requires creating a page, selecting a database, or designing a layout before tasks feel organized. If the user must design a system before adding tasks, Notion fails first.",
-"decision_rule": "If the user must design a system before adding tasks, Notion fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Beginners",
-"content": "You said you just want to list tasks and check them off without setup. When an app asks you to choose templates or configure properties, it slows your start. A ready made task list removes that first barrier."
-},
-{
-"type": "x_wins",
-"heading": "Where Notion wins",
-"bullets": [
-{
-"point": "Custom database tables with properties such as status and priority",
-"why_it_matters": "You can design your own task system, but you must decide on fields before it feels complete."
-},
-{
-"point": "Templates that pre build task layouts",
-"why_it_matters": "You can start from a structure, yet choosing and modifying templates adds decisions."
-},
-{
-"point": "Tasks embedded inside pages and workspaces",
-"why_it_matters": "You can combine notes and tasks, but setting up pages takes extra steps."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Todoist wins",
-"bullets": [
-{
-"point": "Immediate task entry field on first launch",
-"why_it_matters": "You can add a task without creating a system or layout."
-},
-{
-"point": "Simple project lists that work without customization",
-"why_it_matters": "You can keep everything in one list and ignore advanced features."
-},
-{
-"point": "Checkbox completion with no structural movement",
-"why_it_matters": "You mark tasks done without adjusting views or properties."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You feel stuck choosing templates or designing properties before writing tasks.",
-"what_to_do_instead": "Use Todoist if you want instant task entry with no setup."
-},
-{
-"tool": "y",
-"fails_when": "You later want tasks deeply connected to notes and custom views.",
-"what_to_do_instead": "Use Notion if building a flexible system becomes important."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you quickly move from simple lists to wanting tasks linked with detailed notes and custom views, Notion may justify its setup time."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want to start immediately, choose Todoist.",
-"If designing a system feels overwhelming, avoid Notion.",
-"If you plan to build a connected workspace later, Notion may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Notion require setup before tasks?",
-"a": "You usually create a page or database before tasks feel organized."
-},
-{
-"q": "Is Todoist ready to use instantly?",
-"a": "Yes, you can begin adding tasks as soon as you open it."
-},
-{
-"q": "Which app has fewer initial decisions?",
-"a": "Todoist has fewer upfront choices because it centers on simple lists."
-},
-{
-"q": "Can Notion be used simply?",
-"a": "It can, but its flexibility often invites customization that adds setup steps."
-}
-],
-"related_pages": [
-{ "x_name": "Asana", "y_name": "Todoist", "persona": "Beginner" },
-{ "x_name": "ClickUp", "y_name": "Microsoft To Do", "persona": "Beginner" },
-{ "x_name": "Trello", "y_name": "Google Tasks", "persona": "Beginner" },
-{ "x_name": "Quire", "y_name": "Google Tasks", "persona": "Beginner" },
-{ "x_name": "FacileThings", "y_name": "Todoist", "persona": "Beginner" },
-{ "x_name": "Superlist", "y_name": "Microsoft To Do", "persona": "Beginner" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Notion vs Todoist for Beginners",
+  "slug": "notion-vs-todoist-for-beginner",
+  "meta_description": "Notion vs Todoist for beginners who want to track daily tasks without building databases, templates, or custom systems first.",
+  "persona": "Beginner",
+  "constraint_lens": "You want to list tasks and check them off immediately without building databases, templates, or custom systems first.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist wins for beginners who just want to list tasks and check them off. You can open the app and start typing without choosing a template or building structure. Notion typically requires creating a page, selecting a database, or designing a layout before tasks feel organized. If the user must design a system before adding tasks, Notion fails first.",
+    "decision_rule": "If the user must design a system before adding tasks, Notion fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Beginners",
+      "content": "You said you just want to list tasks and check them off without setup. When an app asks you to choose templates or configure properties, it slows your start. A ready made task list removes that first barrier."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Notion wins",
+      "bullets": [
+        {
+          "point": "Custom database tables with properties such as status and priority",
+          "why_it_matters": "You can design your own task system, but you must decide on fields before it feels complete."
+        },
+        {
+          "point": "Templates that pre build task layouts",
+          "why_it_matters": "You can start from a structure, yet choosing and modifying templates adds decisions."
+        },
+        {
+          "point": "Tasks embedded inside pages and workspaces",
+          "why_it_matters": "You can combine notes and tasks, but setting up pages takes extra steps."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Immediate task entry field on first launch",
+          "why_it_matters": "You can add a task without creating a system or layout."
+        },
+        {
+          "point": "Simple project lists that work without customization",
+          "why_it_matters": "You can keep everything in one list and ignore advanced features."
+        },
+        {
+          "point": "Checkbox completion with no structural movement",
+          "why_it_matters": "You mark tasks done without adjusting views or properties."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You feel stuck choosing templates or designing properties before writing tasks.",
+          "what_to_do_instead": "Use Todoist if you want instant task entry with no setup."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You later want tasks deeply connected to notes and custom views.",
+          "what_to_do_instead": "Use Notion if building a flexible system becomes important."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you quickly move from simple lists to wanting tasks linked with detailed notes and custom views, Notion may justify its setup time."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want to start immediately, choose Todoist.",
+        "If designing a system feels overwhelming, avoid Notion.",
+        "If you plan to build a connected workspace later, Notion may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Notion require setup before tasks?",
+      "a": "You usually create a page or database before tasks feel organized."
+    },
+    {
+      "q": "Is Todoist ready to use instantly?",
+      "a": "Yes, you can begin adding tasks as soon as you open it."
+    },
+    {
+      "q": "Which app has fewer initial decisions?",
+      "a": "Todoist has fewer upfront choices because it centers on simple lists."
+    },
+    {
+      "q": "Can Notion be used simply?",
+      "a": "It can, but its flexibility often invites customization that adds setup steps."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Asana",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "FacileThings",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Notion",
+      "y_name": "Trello",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Any.do",
+      "y_name": "Apple Reminders",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Microsoft To Do",
+      "persona": "Beginner"
+    }
+  ]
 }

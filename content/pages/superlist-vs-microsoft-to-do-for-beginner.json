@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "setup-tolerance",
-"constraintUiName": "Publish fast",
-"title": "Superlist vs Microsoft To Do for Beginners",
-"slug": "superlist-vs-microsoft-to-do-for-beginner",
-"meta_description": "Superlist vs Microsoft To Do for beginners who want a simple daily checklist without learning shared workspaces or collaboration features.",
-"persona": "Beginner",
-"constraint_lens": "You want to add and check off tasks immediately without learning collaboration tools or shared workspace concepts.",
-"verdict": {
-"winner": "y",
-"summary": "Microsoft To Do wins for beginners who want a simple daily checklist. You can open the app and start adding tasks to My Day without setting up shared spaces. Superlist is designed around shared lists, notes, and collaborative features from the start. If the interface assumes collaborative workflows before basic task entry, Superlist fails first.",
-"decision_rule": "If the interface assumes collaborative workflows before basic task entry, Superlist fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Beginners",
-"content": "You said you want a simple checklist without understanding new collaboration concepts. As a beginner, prompts about workspaces, team sharing, or comments create hesitation before you even add your first task. A tool that behaves like a straightforward list feels easier to trust."
-},
-{
-"type": "x_wins",
-"heading": "Where Superlist wins",
-"bullets": [
-{
-"point": "Shared lists with built in comments and reactions on each task",
-"why_it_matters": "You can collaborate directly on items, but seeing discussion features early can distract from basic checklist use."
-},
-{
-"point": "Rich task cards that support notes and structured details",
-"why_it_matters": "You can add context and documentation, yet this adds layers beyond a simple line item."
-},
-{
-"point": "Workspace style organization for teams",
-"why_it_matters": "Projects can be grouped and shared, but understanding workspace structure takes time for someone new."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Microsoft To Do wins",
-"bullets": [
-{
-"point": "Default My Day list for immediate task entry",
-"why_it_matters": "You can start typing tasks instantly without setting up shared spaces."
-},
-{
-"point": "Simple list and subtask structure",
-"why_it_matters": "Tasks appear as straightforward checkboxes without required collaboration settings."
-},
-{
-"point": "Optional sharing instead of required collaboration",
-"why_it_matters": "You can keep everything personal and ignore team features entirely."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You feel prompted to create or join shared lists before comfortably using it as a personal checklist.",
-"what_to_do_instead": "Use Microsoft To Do if you want to stay in a private list without workspace setup."
-},
-{
-"tool": "y",
-"fails_when": "You need structured team collaboration with comments and shared task discussions.",
-"what_to_do_instead": "Use Superlist if your focus shifts to collaborative task management."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you begin working closely with a team and want shared lists with built in discussion on each task, Superlist may become more useful despite the added collaboration layers."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want a personal checklist with no setup, choose Microsoft To Do.",
-"If shared workspaces feel confusing at first, avoid Superlist.",
-"If built in task discussion becomes important, Superlist may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Superlist only for teams?",
-"a": "It can be used solo, but its interface highlights sharing and collaboration features from the start."
-},
-{
-"q": "Can Microsoft To Do handle recurring tasks?",
-"a": "Yes, you can set tasks to repeat without configuring collaborative settings."
-},
-{
-"q": "Which tool is easier for first time users?",
-"a": "Microsoft To Do is generally easier because it opens directly to a simple list view."
-},
-{
-"q": "Can I share lists in Microsoft To Do later?",
-"a": "Yes, sharing is optional and can be added if you decide you need it."
-}
-],
-"related_pages": [
-{ "x_name": "OmniFocus", "y_name": "Apple Reminders", "persona": "Beginner" },
-{ "x_name": "Todoist", "y_name": "Apple Reminders", "persona": "Beginner" },
-{ "x_name": "TickTick", "y_name": "Apple Reminders", "persona": "Beginner" },
-{ "x_name": "Things", "y_name": "Apple Reminders", "persona": "Beginner" },
-{ "x_name": "Notion", "y_name": "Apple Reminders", "persona": "Beginner" },
-{ "x_name": "Sunsama", "y_name": "Apple Reminders", "persona": "Beginner" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Superlist vs Microsoft To Do for Beginners",
+  "slug": "superlist-vs-microsoft-to-do-for-beginner",
+  "meta_description": "Superlist vs Microsoft To Do for beginners who want a simple daily checklist without learning shared workspaces or collaboration features.",
+  "persona": "Beginner",
+  "constraint_lens": "You want to add and check off tasks immediately without learning collaboration tools or shared workspace concepts.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Microsoft To Do wins for beginners who want a simple daily checklist. You can open the app and start adding tasks to My Day without setting up shared spaces. Superlist is designed around shared lists, notes, and collaborative features from the start. If the interface assumes collaborative workflows before basic task entry, Superlist fails first.",
+    "decision_rule": "If the interface assumes collaborative workflows before basic task entry, Superlist fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Beginners",
+      "content": "You said you want a simple checklist without understanding new collaboration concepts. As a beginner, prompts about workspaces, team sharing, or comments create hesitation before you even add your first task. A tool that behaves like a straightforward list feels easier to trust."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Superlist wins",
+      "bullets": [
+        {
+          "point": "Shared lists with built in comments and reactions on each task",
+          "why_it_matters": "You can collaborate directly on items, but seeing discussion features early can distract from basic checklist use."
+        },
+        {
+          "point": "Rich task cards that support notes and structured details",
+          "why_it_matters": "You can add context and documentation, yet this adds layers beyond a simple line item."
+        },
+        {
+          "point": "Workspace style organization for teams",
+          "why_it_matters": "Projects can be grouped and shared, but understanding workspace structure takes time for someone new."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Microsoft To Do wins",
+      "bullets": [
+        {
+          "point": "Default My Day list for immediate task entry",
+          "why_it_matters": "You can start typing tasks instantly without setting up shared spaces."
+        },
+        {
+          "point": "Simple list and subtask structure",
+          "why_it_matters": "Tasks appear as straightforward checkboxes without required collaboration settings."
+        },
+        {
+          "point": "Optional sharing instead of required collaboration",
+          "why_it_matters": "You can keep everything personal and ignore team features entirely."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You feel prompted to create or join shared lists before comfortably using it as a personal checklist.",
+          "what_to_do_instead": "Use Microsoft To Do if you want to stay in a private list without workspace setup."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need structured team collaboration with comments and shared task discussions.",
+          "what_to_do_instead": "Use Superlist if your focus shifts to collaborative task management."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you begin working closely with a team and want shared lists with built in discussion on each task, Superlist may become more useful despite the added collaboration layers."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a personal checklist with no setup, choose Microsoft To Do.",
+        "If shared workspaces feel confusing at first, avoid Superlist.",
+        "If built in task discussion becomes important, Superlist may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Superlist only for teams?",
+      "a": "It can be used solo, but its interface highlights sharing and collaboration features from the start."
+    },
+    {
+      "q": "Can Microsoft To Do handle recurring tasks?",
+      "a": "Yes, you can set tasks to repeat without configuring collaborative settings."
+    },
+    {
+      "q": "Which tool is easier for first time users?",
+      "a": "Microsoft To Do is generally easier because it opens directly to a simple list view."
+    },
+    {
+      "q": "Can I share lists in Microsoft To Do later?",
+      "a": "Yes, sharing is optional and can be added if you decide you need it."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "ClickUp",
+      "y_name": "Microsoft To Do",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Freedcamp",
+      "y_name": "Microsoft To Do",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Microsoft To Do",
+      "y_name": "OmniFocus",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Any.do",
+      "y_name": "Apple Reminders",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Asana",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    }
+  ]
 }

@@ -1,115 +1,139 @@
 {
-"category": "Note-taking apps",
-"categorySlug": "note-taking-apps",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Roam Research vs Bear for Minimalists",
-"slug": "roam-research-vs-bear-for-minimalist",
-"meta_description": "Roam Research vs Bear for minimalists who want calm writing without backlinks, graphs, or structured systems adding noise.",
-"persona": "Minimalist",
-"constraint_lens": "You want a quiet writing space that does not surface systems, graphs, or extra structure.",
-"verdict": {
-"winner": "y",
-"summary": "Bear wins for minimalists who want calm writing without system thinking. It centers on a simple text editor with light tags and minimal panels. Roam Research constantly surfaces backlinks, block handles, and graph structure that remind you of the system behind your notes. If backlinks and structure add mental noise, Roam fails first.",
-"decision_rule": "If backlinks and structure add mental noise, Roam fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for calm, focused writing",
-"content": "You want to write without feeling pulled into a system. Bear keeps the screen centered on text with a small note list and optional tags. Roam is built around linking ideas and showing connections, which can feel like extra layers when you only want a clean page."
-},
-{
-"type": "x_wins",
-"heading": "Where Roam Research wins",
-"bullets": [
-{
-"point": "Automatic backlinks using double brackets",
-"why_it_matters": "Typing double brackets creates links between notes instantly. This builds a network of ideas, but the visible linking behavior keeps structure front and center."
-},
-{
-"point": "Block-based outline editor",
-"why_it_matters": "Each line is a movable block that can be nested and rearranged. This supports complex thinking, yet the indentation controls and block bullets are always present."
-},
-{
-"point": "Graph view of note connections",
-"why_it_matters": "You can open a visual map of how notes connect. For minimalists, this visual layer may feel like noise unrelated to simple writing."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Bear wins",
-"bullets": [
-{
-"point": "Clean document-style editor without visible block handles",
-"why_it_matters": "Text flows like a normal document without structural markers beside each paragraph. This keeps attention on sentences instead of systems."
-},
-{
-"point": "Tagging with simple hashtags inside notes",
-"why_it_matters": "You organize by typing a hashtag in the text. There are no backlink panels or reference counters appearing automatically."
-},
-{
-"point": "Minimal sidebar and optional focus mode",
-"why_it_matters": "You can hide the note list and write on a nearly blank screen. This reduces on-screen elements that are not directly related to writing."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "Backlink counts, block bullets, or graph features keep drawing attention away from the paragraph you are writing.",
-"what_to_do_instead": "Use Bear for a calmer interface that limits visible structure."
-},
-{
-"tool": "y",
-"fails_when": "You later want automatic linking and a network view of your ideas.",
-"what_to_do_instead": "Switch to Roam when connecting notes becomes more important than simplicity."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you begin to enjoy mapping relationships between ideas and find visual connections motivating rather than distracting, Roam may feel energizing instead of noisy."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you want a quiet page with minimal visual elements, choose Bear.",
-"If backlinks and graphs feel distracting, avoid Roam.",
-"If connecting ideas becomes your priority, Roam may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Roam too complex for minimalists?",
-"a": "It is not unusable, but its linking and block system stay visible and can feel busy."
-},
-{
-"q": "Does Bear support linking between notes?",
-"a": "It supports note links and tags, but without the constant backlink panels or graph view."
-},
-{
-"q": "Which feels calmer on screen?",
-"a": "Bear usually feels calmer because it shows fewer structural elements while you write."
-},
-{
-"q": "Can I ignore Roam graph view?",
-"a": "Yes, but backlinks and block structure remain part of the main writing experience."
-}
-],
-"related_pages": [
-{ "x_name": "Notion", "y_name": "Bear", "persona": "Minimalist" },
-{ "x_name": "Evernote", "y_name": "Bear", "persona": "Minimalist" },
-{ "x_name": "Apple Notes", "y_name": "Google Keep", "persona": "Minimalist" },
-{ "x_name": "Craft", "y_name": "UpNote", "persona": "Minimalist" },
-{ "x_name": "OneNote", "y_name": "Bear", "persona": "Minimalist" },
-{ "x_name": "RemNote", "y_name": "UpNote", "persona": "Minimalist" }
-]
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Roam Research vs Bear for Minimalists",
+  "slug": "roam-research-vs-bear-for-minimalist",
+  "meta_description": "Roam Research vs Bear for minimalists who want calm writing without backlinks, graphs, or structured systems adding noise.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a quiet writing space that does not surface systems, graphs, or extra structure.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Bear wins for minimalists who want calm writing without system thinking. It centers on a simple text editor with light tags and minimal panels. Roam Research constantly surfaces backlinks, block handles, and graph structure that remind you of the system behind your notes. If backlinks and structure add mental noise, Roam fails first.",
+    "decision_rule": "If backlinks and structure add mental noise, Roam fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for calm, focused writing",
+      "content": "You want to write without feeling pulled into a system. Bear keeps the screen centered on text with a small note list and optional tags. Roam is built around linking ideas and showing connections, which can feel like extra layers when you only want a clean page."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Roam Research wins",
+      "bullets": [
+        {
+          "point": "Automatic backlinks using double brackets",
+          "why_it_matters": "Typing double brackets creates links between notes instantly. This builds a network of ideas, but the visible linking behavior keeps structure front and center."
+        },
+        {
+          "point": "Block-based outline editor",
+          "why_it_matters": "Each line is a movable block that can be nested and rearranged. This supports complex thinking, yet the indentation controls and block bullets are always present."
+        },
+        {
+          "point": "Graph view of note connections",
+          "why_it_matters": "You can open a visual map of how notes connect. For minimalists, this visual layer may feel like noise unrelated to simple writing."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Bear wins",
+      "bullets": [
+        {
+          "point": "Clean document-style editor without visible block handles",
+          "why_it_matters": "Text flows like a normal document without structural markers beside each paragraph. This keeps attention on sentences instead of systems."
+        },
+        {
+          "point": "Tagging with simple hashtags inside notes",
+          "why_it_matters": "You organize by typing a hashtag in the text. There are no backlink panels or reference counters appearing automatically."
+        },
+        {
+          "point": "Minimal sidebar and optional focus mode",
+          "why_it_matters": "You can hide the note list and write on a nearly blank screen. This reduces on-screen elements that are not directly related to writing."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Backlink counts, block bullets, or graph features keep drawing attention away from the paragraph you are writing.",
+          "what_to_do_instead": "Use Bear for a calmer interface that limits visible structure."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You later want automatic linking and a network view of your ideas.",
+          "what_to_do_instead": "Switch to Roam when connecting notes becomes more important than simplicity."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you begin to enjoy mapping relationships between ideas and find visual connections motivating rather than distracting, Roam may feel energizing instead of noisy."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you want a quiet page with minimal visual elements, choose Bear.",
+        "If backlinks and graphs feel distracting, avoid Roam.",
+        "If connecting ideas becomes your priority, Roam may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Roam too complex for minimalists?",
+      "a": "It is not unusable, but its linking and block system stay visible and can feel busy."
+    },
+    {
+      "q": "Does Bear support linking between notes?",
+      "a": "It supports note links and tags, but without the constant backlink panels or graph view."
+    },
+    {
+      "q": "Which feels calmer on screen?",
+      "a": "Bear usually feels calmer because it shows fewer structural elements while you write."
+    },
+    {
+      "q": "Can I ignore Roam graph view?",
+      "a": "Yes, but backlinks and block structure remain part of the main writing experience."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Evernote",
+      "y_name": "Bear",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Milanote",
+      "y_name": "Bear",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Notion",
+      "y_name": "Bear",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Coda",
+      "y_name": "Apple Notes",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Milanote",
+      "y_name": "Coda",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Notion",
+      "y_name": "Google Docs",
+      "persona": "Minimalist"
+    }
+  ]
 }

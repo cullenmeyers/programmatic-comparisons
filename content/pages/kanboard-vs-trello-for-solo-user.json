@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "maintenance-load",
-"constraintUiName": "Works without upkeep",
-"title": "Kanboard vs Trello for Solo users",
-"slug": "kanboard-vs-trello-for-solo-user",
-"meta_description": "Kanboard vs Trello for solo users who want a stable kanban board without self-hosting or plugin upkeep.",
-"persona": "Solo user",
-"constraint_lens": "You want a kanban board that works reliably without self-hosting, plugin updates, or technical upkeep.",
-"verdict": {
-"winner": "y",
-"summary": "Trello wins for solo users who refuse ongoing maintenance. It runs as a hosted service where boards work without managing servers or plugins. Kanboard often involves self-hosting and updating plugins for extended features. If self-hosting and plugin maintenance require periodic technical upkeep, Kanboard fails first.",
-"decision_rule": "If self-hosting and plugin maintenance require periodic technical upkeep, Kanboard fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for zero-maintenance boards",
-"content": "You host personal projects and refuse to maintain plugin updates or server setups. Trello operates as a hosted web app with automatic updates handled by the provider. Kanboard is commonly self-hosted, which can involve server configuration and plugin management."
-},
-{
-"type": "x_wins",
-"heading": "Where Kanboard wins",
-"bullets": [
-{
-"point": "Self-hosted deployment option",
-"why_it_matters": "You control your own server and data environment, but must manage updates yourself."
-},
-{
-"point": "Plugin system for extending features",
-"why_it_matters": "You add functionality such as reporting or automation, though this may require version compatibility checks."
-},
-{
-"point": "Minimal core interface without forced integrations",
-"why_it_matters": "You run a lean kanban board, but maintenance remains your responsibility."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Trello wins",
-"bullets": [
-{
-"point": "Fully hosted service with automatic updates",
-"why_it_matters": "Boards stay operational without managing servers or software versions."
-},
-{
-"point": "Built-in drag-and-drop kanban interface",
-"why_it_matters": "You create lists and move cards without configuring hosting environments."
-},
-{
-"point": "Optional power-ups managed through the platform",
-"why_it_matters": "You enable extra features without manually updating plugins on a server."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You must apply security patches, update plugins, or troubleshoot hosting issues.",
-"what_to_do_instead": "Use Trello for a board that requires no server management."
-},
-{
-"tool": "y",
-"fails_when": "You require full control over hosting and custom plugin development.",
-"what_to_do_instead": "Switch to Kanboard if self-hosting control outweighs maintenance concerns."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you already maintain a server for other projects and are comfortable handling updates, Kanboard may feel manageable."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you want zero technical upkeep, choose Trello.",
-"If server and plugin updates sound like ongoing work, avoid Kanboard.",
-"If full hosting control matters more than maintenance load, consider Kanboard."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Kanboard require self-hosting?",
-"a": "It is often self-hosted, which means you manage server updates and maintenance."
-},
-{
-"q": "Is Trello fully hosted?",
-"a": "Yes. Trello runs as a web service with updates handled automatically."
-},
-{
-"q": "Which is easier for a solo user with no technical upkeep?",
-"a": "Trello is easier because it does not require server or plugin maintenance."
-},
-{
-"q": "When would Kanboard make sense?",
-"a": "It makes sense if you need full hosting control and are comfortable maintaining it."
-}
-],
-"related_pages": [
-{ "x_name": "Remember The Milk", "y_name": "Google Tasks", "persona": "Power user" },
-{ "x_name": "Pagico", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "Taskheat", "y_name": "Apple Reminders", "persona": "Power user" },
-{ "x_name": "OmniFocus", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "ClickUp", "y_name": "Todoist", "persona": "Power user" },
-{ "x_name": "Asana", "y_name": "Things 3", "persona": "Power user" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Kanboard vs Trello for Solo users",
+  "slug": "kanboard-vs-trello-for-solo-user",
+  "meta_description": "Kanboard vs Trello for solo users who want a stable kanban board without self-hosting or plugin upkeep.",
+  "persona": "Solo user",
+  "constraint_lens": "You want a kanban board that works reliably without self-hosting, plugin updates, or technical upkeep.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Trello wins for solo users who refuse ongoing maintenance. It runs as a hosted service where boards work without managing servers or plugins. Kanboard often involves self-hosting and updating plugins for extended features. If self-hosting and plugin maintenance require periodic technical upkeep, Kanboard fails first.",
+    "decision_rule": "If self-hosting and plugin maintenance require periodic technical upkeep, Kanboard fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for zero-maintenance boards",
+      "content": "You host personal projects and refuse to maintain plugin updates or server setups. Trello operates as a hosted web app with automatic updates handled by the provider. Kanboard is commonly self-hosted, which can involve server configuration and plugin management."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Kanboard wins",
+      "bullets": [
+        {
+          "point": "Self-hosted deployment option",
+          "why_it_matters": "You control your own server and data environment, but must manage updates yourself."
+        },
+        {
+          "point": "Plugin system for extending features",
+          "why_it_matters": "You add functionality such as reporting or automation, though this may require version compatibility checks."
+        },
+        {
+          "point": "Minimal core interface without forced integrations",
+          "why_it_matters": "You run a lean kanban board, but maintenance remains your responsibility."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Trello wins",
+      "bullets": [
+        {
+          "point": "Fully hosted service with automatic updates",
+          "why_it_matters": "Boards stay operational without managing servers or software versions."
+        },
+        {
+          "point": "Built-in drag-and-drop kanban interface",
+          "why_it_matters": "You create lists and move cards without configuring hosting environments."
+        },
+        {
+          "point": "Optional power-ups managed through the platform",
+          "why_it_matters": "You enable extra features without manually updating plugins on a server."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You must apply security patches, update plugins, or troubleshoot hosting issues.",
+          "what_to_do_instead": "Use Trello for a board that requires no server management."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You require full control over hosting and custom plugin development.",
+          "what_to_do_instead": "Switch to Kanboard if self-hosting control outweighs maintenance concerns."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you already maintain a server for other projects and are comfortable handling updates, Kanboard may feel manageable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you want zero technical upkeep, choose Trello.",
+        "If server and plugin updates sound like ongoing work, avoid Kanboard.",
+        "If full hosting control matters more than maintenance load, consider Kanboard."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Kanboard require self-hosting?",
+      "a": "It is often self-hosted, which means you manage server updates and maintenance."
+    },
+    {
+      "q": "Is Trello fully hosted?",
+      "a": "Yes. Trello runs as a web service with updates handled automatically."
+    },
+    {
+      "q": "Which is easier for a solo user with no technical upkeep?",
+      "a": "Trello is easier because it does not require server or plugin maintenance."
+    },
+    {
+      "q": "When would Kanboard make sense?",
+      "a": "It makes sense if you need full hosting control and are comfortable maintaining it."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Asana",
+      "y_name": "Microsoft To Do",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Microsoft To Do",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Focalboard",
+      "y_name": "Monday.com",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Microsoft To Do",
+      "y_name": "Notion",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Notion",
+      "y_name": "Microsoft To Do",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Sunsama",
+      "y_name": "Apple Reminders",
+      "persona": "Solo user"
+    }
+  ]
 }

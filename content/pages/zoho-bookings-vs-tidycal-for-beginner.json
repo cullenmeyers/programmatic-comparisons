@@ -1,116 +1,139 @@
 {
-"category": "Calendar / Scheduling tools",
-"categorySlug": "calendar-scheduling-tools",
-"constraintSlug": "setup-tolerance",
-"constraintUiName": "Publish fast",
-"title": "Zoho Bookings vs TidyCal for Beginners",
-"slug": "zoho-bookings-vs-tidycal-for-beginner",
-"meta_description": "Zoho Bookings vs TidyCal for beginners who need a quick booking link without configuring services, staff, or business settings.",
-"persona": "Beginner",
-"constraint_lens": "You want to create and share a booking link immediately without setting up services, staff, or business settings first.",
-"verdict": {
-"winner": "y",
-"summary": "TidyCal wins for beginners who need a fast booking link. You create an event type, connect your calendar, and share the link with minimal setup. Zoho Bookings is built for structured service businesses with staff, services, and availability rules. If service and staff configuration must be set before link creation, Zoho Bookings fails first.",
-"decision_rule": "If service and staff configuration must be set before link creation, Zoho Bookings fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Which tool gets your link live faster?",
-"content": "You need a quick booking link without configuring business layers. As a beginner, multiple setup screens can feel overwhelming. The right tool should let you define a simple meeting and share it. Anything that requires staff roles or service categories adds delay."
-},
-{
-"type": "x_wins",
-"heading": "Where Zoho Bookings works better",
-"bullets": [
-{
-"point": "Service-based setup with defined appointment types and durations.",
-"why_it_matters": "You can structure different services clearly. Defining these services takes time before sharing a link."
-},
-{
-"point": "Staff management with individual availability settings.",
-"why_it_matters": "You can assign bookings to team members. Setting up staff profiles adds configuration steps."
-},
-{
-"point": "Custom booking pages with branding options.",
-"why_it_matters": "You can match the booking page to your business. Adjusting branding introduces extra setup panels."
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Zoho Bookings vs TidyCal for Beginners",
+  "slug": "zoho-bookings-vs-tidycal-for-beginner",
+  "meta_description": "Zoho Bookings vs TidyCal for beginners who need a quick booking link without configuring services, staff, or business settings.",
+  "persona": "Beginner",
+  "constraint_lens": "You want to create and share a booking link immediately without setting up services, staff, or business settings first.",
+  "verdict": {
+    "winner": "y",
+    "summary": "TidyCal wins for beginners who need a fast booking link. You create an event type, connect your calendar, and share the link with minimal setup. Zoho Bookings is built for structured service businesses with staff, services, and availability rules. If service and staff configuration must be set before link creation, Zoho Bookings fails first.",
+    "decision_rule": "If service and staff configuration must be set before link creation, Zoho Bookings fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool gets your link live faster?",
+      "content": "You need a quick booking link without configuring business layers. As a beginner, multiple setup screens can feel overwhelming. The right tool should let you define a simple meeting and share it. Anything that requires staff roles or service categories adds delay."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Zoho Bookings works better",
+      "bullets": [
+        {
+          "point": "Service-based setup with defined appointment types and durations.",
+          "why_it_matters": "You can structure different services clearly. Defining these services takes time before sharing a link."
+        },
+        {
+          "point": "Staff management with individual availability settings.",
+          "why_it_matters": "You can assign bookings to team members. Setting up staff profiles adds configuration steps."
+        },
+        {
+          "point": "Custom booking pages with branding options.",
+          "why_it_matters": "You can match the booking page to your business. Adjusting branding introduces extra setup panels."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where TidyCal works better for beginners",
+      "bullets": [
+        {
+          "point": "Simple event type creation with fixed time slots.",
+          "why_it_matters": "You define a meeting length and generate a link quickly."
+        },
+        {
+          "point": "Direct calendar connection without business categories.",
+          "why_it_matters": "You sync availability without configuring staff or departments."
+        },
+        {
+          "point": "Single booking page per event type.",
+          "why_it_matters": "You share one clear link instead of managing layered booking settings."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You must configure services and staff before generating a simple booking link.",
+          "what_to_do_instead": "Use TidyCal if you want immediate link creation."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need multiple staff members, service categories, or detailed booking rules.",
+          "what_to_do_instead": "Use Zoho Bookings if you are running a structured service business."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your scheduling needs grow into managing multiple services or team members, Zoho Bookings may justify its deeper setup."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a quick booking link, choose TidyCal.",
+        "If you manage multiple services or staff, choose Zoho Bookings.",
+        "If setup screens feel heavy, avoid business-layer tools."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Zoho Bookings meant for businesses?",
+      "a": "Yes. It includes service types, staff management, and structured booking rules."
+    },
+    {
+      "q": "Is TidyCal faster to set up?",
+      "a": "Yes. It focuses on creating event links with minimal configuration."
+    },
+    {
+      "q": "Which tool is easier for beginners?",
+      "a": "TidyCal is easier because it requires fewer setup steps."
+    },
+    {
+      "q": "Can Zoho Bookings be used simply?",
+      "a": "It can, but its design assumes service and staff structure."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "TidyCal",
+      "y_name": "Google Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Zoho Bookings",
+      "y_name": "Calendly",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Apple Calendar",
+      "y_name": "Outlook Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Google Calendar",
+      "y_name": "Calendly",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Microsoft Bookings",
+      "y_name": "Google Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Square Appointments",
+      "y_name": "Calendly",
+      "persona": "Beginner"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where TidyCal works better for beginners",
-"bullets": [
-{
-"point": "Simple event type creation with fixed time slots.",
-"why_it_matters": "You define a meeting length and generate a link quickly."
-},
-{
-"point": "Direct calendar connection without business categories.",
-"why_it_matters": "You sync availability without configuring staff or departments."
-},
-{
-"point": "Single booking page per event type.",
-"why_it_matters": "You share one clear link instead of managing layered booking settings."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You must configure services and staff before generating a simple booking link.",
-"what_to_do_instead": "Use TidyCal if you want immediate link creation."
-},
-{
-"tool": "y",
-"fails_when": "You need multiple staff members, service categories, or detailed booking rules.",
-"what_to_do_instead": "Use Zoho Bookings if you are running a structured service business."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your scheduling needs grow into managing multiple services or team members, Zoho Bookings may justify its deeper setup."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want a quick booking link, choose TidyCal.",
-"If you manage multiple services or staff, choose Zoho Bookings.",
-"If setup screens feel heavy, avoid business-layer tools."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Zoho Bookings meant for businesses?",
-"a": "Yes. It includes service types, staff management, and structured booking rules."
-},
-{
-"q": "Is TidyCal faster to set up?",
-"a": "Yes. It focuses on creating event links with minimal configuration."
-},
-{
-"q": "Which tool is easier for beginners?",
-"a": "TidyCal is easier because it requires fewer setup steps."
-},
-{
-"q": "Can Zoho Bookings be used simply?",
-"a": "It can, but its design assumes service and staff structure."
-}
-],
-"related_pages": [
-{ "x_name": "Doodle", "y_name": "Square Appointments", "persona": "Student" },
-{ "x_name": "SimplyMeet.me", "y_name": "Calendly", "persona": "Beginner" },
-{ "x_name": "Book Like A Boss", "y_name": "Calendly", "persona": "Beginner" },
-{ "x_name": "Rise Calendar", "y_name": "Apple Calendar", "persona": "Beginner" },
-{ "x_name": "Timepage", "y_name": "Google Calendar", "persona": "Beginner" },
-{ "x_name": "Skedda", "y_name": "Google Calendar", "persona": "Beginner" }
-]
-}
-

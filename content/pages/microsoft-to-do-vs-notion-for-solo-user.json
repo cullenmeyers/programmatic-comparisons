@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "maintenance-load",
-"constraintUiName": "Works without upkeep",
-"title": "Microsoft To Do vs Notion for Solo users",
-"slug": "microsoft-to-do-vs-notion-for-solo-user",
-"meta_description": "Microsoft To Do vs Notion for solo users who want a stable task list without redesigning databases or restructuring systems over time.",
-"persona": "Solo user",
-"constraint_lens": "You manage responsibilities alone and want a task list that works long term without redesigning or rebuilding it.",
-"verdict": {
-"winner": "x",
-"summary": "Microsoft To Do wins for solo users who want a stable task list with no ongoing redesign. It centers on simple lists that do not require structural changes over time. Notion uses databases with properties and views that often evolve as your system grows. If databases require periodic restructuring to stay usable, Notion fails first.",
-"decision_rule": "If databases require periodic restructuring to stay usable, Notion fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Which tool stays stable over time?",
-"content": "You manage personal responsibilities alone and do not want to redesign systems every few months. As a solo user, you need something that keeps working without maintenance. The right tool should not require restructuring as tasks grow. Anything that pushes you to adjust fields or rebuild layouts adds upkeep."
-},
-{
-"type": "x_wins",
-"heading": "Where Microsoft To Do works better for solo users",
-"bullets": [
-{
-"point": "Simple list structure without customizable databases.",
-"why_it_matters": "Your task list remains the same over time without needing new properties or redesign."
-},
-{
-"point": "Tasks organized into basic lists and optional groups.",
-"why_it_matters": "You can separate areas of life without building layered systems."
-},
-{
-"point": "Minimal settings and no view configuration panels.",
-"why_it_matters": "There are fewer structural decisions that could require later adjustment."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Notion works better",
-"bullets": [
-{
-"point": "Database tables with customizable properties such as status and priority.",
-"why_it_matters": "You can design a highly tailored task system. Over time, you may feel the need to modify fields."
-},
-{
-"point": "Multiple views such as board, calendar, and table.",
-"why_it_matters": "You can change how tasks appear. Managing views can require periodic updates."
-},
-{
-"point": "Templates for advanced project tracking.",
-"why_it_matters": "You can start with structured systems. As needs change, templates may need adjustment."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You want detailed custom fields, filtered dashboards, or complex project layers.",
-"what_to_do_instead": "Use Notion if you need a flexible database system."
-},
-{
-"tool": "y",
-"fails_when": "You find yourself redesigning database properties or reorganizing views to keep tasks manageable.",
-"what_to_do_instead": "Use Microsoft To Do if you want a stable list that rarely changes structure."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you enjoy refining and evolving your task system with custom properties and multiple layouts, Notion may feel worth the extra upkeep."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want a stable list with no redesign, choose Microsoft To Do.",
-"If you want flexible database structure, choose Notion.",
-"If ongoing system adjustments sound tiring, avoid database-heavy tools."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Notion harder to maintain long term?",
-"a": "It can require updates to properties and views as your task system grows."
-},
-{
-"q": "Does Microsoft To Do require system redesign?",
-"a": "No. Its list structure stays consistent over time."
-},
-{
-"q": "Which tool has less ongoing upkeep?",
-"a": "Microsoft To Do has less upkeep because it does not rely on customizable databases."
-},
-{
-"q": "Can Notion work for solo task tracking?",
-"a": "Yes, but it encourages building and refining structured systems."
-}
-],
-"related_pages": [
-{ "x_name": "Joplin", "y_name": "Notion", "persona": "Solo user" },
-{ "x_name": "Todoist", "y_name": "Notion", "persona": "Solo user" },
-{ "x_name": "Things", "y_name": "Notion", "persona": "Solo user" },
-{ "x_name": "Microsoft To Do", "y_name": "ClickUp", "persona": "Solo user" },
-{ "x_name": "Apple Reminders", "y_name": "Notion", "persona": "Solo user" },
-{ "x_name": "Todoist", "y_name": "ClickUp", "persona": "Solo user" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Microsoft To Do vs Notion for Solo users",
+  "slug": "microsoft-to-do-vs-notion-for-solo-user",
+  "meta_description": "Microsoft To Do vs Notion for solo users who want a stable task list without redesigning databases or restructuring systems over time.",
+  "persona": "Solo user",
+  "constraint_lens": "You manage responsibilities alone and want a task list that works long term without redesigning or rebuilding it.",
+  "verdict": {
+    "winner": "x",
+    "summary": "Microsoft To Do wins for solo users who want a stable task list with no ongoing redesign. It centers on simple lists that do not require structural changes over time. Notion uses databases with properties and views that often evolve as your system grows. If databases require periodic restructuring to stay usable, Notion fails first.",
+    "decision_rule": "If databases require periodic restructuring to stay usable, Notion fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool stays stable over time?",
+      "content": "You manage personal responsibilities alone and do not want to redesign systems every few months. As a solo user, you need something that keeps working without maintenance. The right tool should not require restructuring as tasks grow. Anything that pushes you to adjust fields or rebuild layouts adds upkeep."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Microsoft To Do works better for solo users",
+      "bullets": [
+        {
+          "point": "Simple list structure without customizable databases.",
+          "why_it_matters": "Your task list remains the same over time without needing new properties or redesign."
+        },
+        {
+          "point": "Tasks organized into basic lists and optional groups.",
+          "why_it_matters": "You can separate areas of life without building layered systems."
+        },
+        {
+          "point": "Minimal settings and no view configuration panels.",
+          "why_it_matters": "There are fewer structural decisions that could require later adjustment."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Notion works better",
+      "bullets": [
+        {
+          "point": "Database tables with customizable properties such as status and priority.",
+          "why_it_matters": "You can design a highly tailored task system. Over time, you may feel the need to modify fields."
+        },
+        {
+          "point": "Multiple views such as board, calendar, and table.",
+          "why_it_matters": "You can change how tasks appear. Managing views can require periodic updates."
+        },
+        {
+          "point": "Templates for advanced project tracking.",
+          "why_it_matters": "You can start with structured systems. As needs change, templates may need adjustment."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want detailed custom fields, filtered dashboards, or complex project layers.",
+          "what_to_do_instead": "Use Notion if you need a flexible database system."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You find yourself redesigning database properties or reorganizing views to keep tasks manageable.",
+          "what_to_do_instead": "Use Microsoft To Do if you want a stable list that rarely changes structure."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you enjoy refining and evolving your task system with custom properties and multiple layouts, Notion may feel worth the extra upkeep."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a stable list with no redesign, choose Microsoft To Do.",
+        "If you want flexible database structure, choose Notion.",
+        "If ongoing system adjustments sound tiring, avoid database-heavy tools."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Notion harder to maintain long term?",
+      "a": "It can require updates to properties and views as your task system grows."
+    },
+    {
+      "q": "Does Microsoft To Do require system redesign?",
+      "a": "No. Its list structure stays consistent over time."
+    },
+    {
+      "q": "Which tool has less ongoing upkeep?",
+      "a": "Microsoft To Do has less upkeep because it does not rely on customizable databases."
+    },
+    {
+      "q": "Can Notion work for solo task tracking?",
+      "a": "Yes, but it encourages building and refining structured systems."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Notion",
+      "y_name": "Microsoft To Do",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Asana",
+      "y_name": "Microsoft To Do",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Microsoft To Do",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Focalboard",
+      "y_name": "Monday.com",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Kanboard",
+      "y_name": "Trello",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Sunsama",
+      "y_name": "Apple Reminders",
+      "persona": "Solo user"
+    }
+  ]
 }

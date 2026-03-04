@@ -1,116 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "setup-tolerance",
-"constraintUiName": "Publish fast",
-"title": "Notion vs Trello for Beginners",
-"slug": "notion-vs-trello-for-beginner",
-"meta_description": "Notion vs Trello for beginners who want to organize tasks quickly without understanding database properties or project structure first.",
-"persona": "Beginner",
-"constraint_lens": "You want to start organizing tasks right away without learning database structure or project setup first.",
-"verdict": {
-"winner": "y",
-"summary": "Trello wins for beginners who are unsure how to structure projects. You can create a board and begin adding cards immediately. Notion relies on databases with properties and views that must be defined before tasks feel organized. If database setup must be understood before adding tasks, Notion fails first.",
-"decision_rule": "If database setup must be understood before adding tasks, Notion fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Which tool feels easier to start with?",
-"content": "You are new to task apps and unsure how to structure projects. As a beginner, defining fields and layouts can feel technical. The right tool should let you add tasks without designing a system. Anything that requires understanding database properties creates hesitation."
-},
-{
-"type": "x_wins",
-"heading": "Where Notion works better",
-"bullets": [
-{
-"point": "Database tables with customizable properties such as status and priority.",
-"why_it_matters": "You can create structured task systems. For beginners, deciding which properties to add introduces setup decisions."
-},
-{
-"point": "Multiple views including board, table, and calendar.",
-"why_it_matters": "You can switch layouts for the same tasks. Choosing and configuring views adds extra steps before simple use."
-},
-{
-"point": "Templates for project management and task tracking.",
-"why_it_matters": "Templates provide structure, but selecting and adjusting them requires understanding how they work."
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Notion vs Trello for Beginners",
+  "slug": "notion-vs-trello-for-beginner",
+  "meta_description": "Notion vs Trello for beginners who want to organize tasks quickly without understanding database properties or project structure first.",
+  "persona": "Beginner",
+  "constraint_lens": "You want to start organizing tasks right away without learning database structure or project setup first.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Trello wins for beginners who are unsure how to structure projects. You can create a board and begin adding cards immediately. Notion relies on databases with properties and views that must be defined before tasks feel organized. If database setup must be understood before adding tasks, Notion fails first.",
+    "decision_rule": "If database setup must be understood before adding tasks, Notion fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool feels easier to start with?",
+      "content": "You are new to task apps and unsure how to structure projects. As a beginner, defining fields and layouts can feel technical. The right tool should let you add tasks without designing a system. Anything that requires understanding database properties creates hesitation."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Notion works better",
+      "bullets": [
+        {
+          "point": "Database tables with customizable properties such as status and priority.",
+          "why_it_matters": "You can create structured task systems. For beginners, deciding which properties to add introduces setup decisions."
+        },
+        {
+          "point": "Multiple views including board, table, and calendar.",
+          "why_it_matters": "You can switch layouts for the same tasks. Choosing and configuring views adds extra steps before simple use."
+        },
+        {
+          "point": "Templates for project management and task tracking.",
+          "why_it_matters": "Templates provide structure, but selecting and adjusting them requires understanding how they work."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Trello works better for beginners",
+      "bullets": [
+        {
+          "point": "Default Kanban board with ready-made columns.",
+          "why_it_matters": "You can add cards immediately without defining database fields."
+        },
+        {
+          "point": "Drag and drop card movement.",
+          "why_it_matters": "You update task progress visually without configuring properties."
+        },
+        {
+          "point": "Minimal setup before inviting collaborators.",
+          "why_it_matters": "You share a board link and start working without building a structured system first."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You must define database properties and views before comfortably adding tasks.",
+          "what_to_do_instead": "Use Trello if you want immediate board-based task entry."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need structured task data with detailed properties and filtered views.",
+          "what_to_do_instead": "Use Notion if you want database-level organization."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you quickly want a highly customized task system with detailed properties and flexible layouts, Notion may become worth the setup."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want instant board-based organization, choose Trello.",
+        "If you want customizable database properties, choose Notion.",
+        "If setup screens feel confusing, avoid database-first tools."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Notion harder for beginners?",
+      "a": "It can feel harder because tasks are built inside databases with properties and views."
+    },
+    {
+      "q": "Does Trello require database setup?",
+      "a": "No. You can create a board and start adding cards immediately."
+    },
+    {
+      "q": "Which tool is faster to start with?",
+      "a": "Trello is faster because it does not require defining properties before use."
+    },
+    {
+      "q": "Can Notion be used for simple tasks?",
+      "a": "Yes, but its database structure introduces setup decisions first."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Notion",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Trello",
+      "y_name": "Google Tasks",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Any.do",
+      "y_name": "Apple Reminders",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Asana",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Microsoft To Do",
+      "persona": "Beginner"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Trello works better for beginners",
-"bullets": [
-{
-"point": "Default Kanban board with ready-made columns.",
-"why_it_matters": "You can add cards immediately without defining database fields."
-},
-{
-"point": "Drag and drop card movement.",
-"why_it_matters": "You update task progress visually without configuring properties."
-},
-{
-"point": "Minimal setup before inviting collaborators.",
-"why_it_matters": "You share a board link and start working without building a structured system first."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You must define database properties and views before comfortably adding tasks.",
-"what_to_do_instead": "Use Trello if you want immediate board-based task entry."
-},
-{
-"tool": "y",
-"fails_when": "You need structured task data with detailed properties and filtered views.",
-"what_to_do_instead": "Use Notion if you want database-level organization."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you quickly want a highly customized task system with detailed properties and flexible layouts, Notion may become worth the setup."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want instant board-based organization, choose Trello.",
-"If you want customizable database properties, choose Notion.",
-"If setup screens feel confusing, avoid database-first tools."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Notion harder for beginners?",
-"a": "It can feel harder because tasks are built inside databases with properties and views."
-},
-{
-"q": "Does Trello require database setup?",
-"a": "No. You can create a board and start adding cards immediately."
-},
-{
-"q": "Which tool is faster to start with?",
-"a": "Trello is faster because it does not require defining properties before use."
-},
-{
-"q": "Can Notion be used for simple tasks?",
-"a": "Yes, but its database structure introduces setup decisions first."
-}
-],
-"related_pages": [
-{ "x_name": "Airtable", "y_name": "Trello", "persona": "Beginner" },
-{ "x_name": "Freedcamp", "y_name": "Microsoft To Do", "persona": "Beginner" },
-{ "x_name": "Any.do", "y_name": "Apple Reminders", "persona": "Beginner" },
-{ "x_name": "Kanban Tool", "y_name": "Microsoft To Do", "persona": "Beginner" },
-{ "x_name": "Todoist", "y_name": "Microsoft To Do", "persona": "Beginner" },
-{ "x_name": "Trello", "y_name": "ClickUp", "persona": "Beginner" }
-]
-}
-

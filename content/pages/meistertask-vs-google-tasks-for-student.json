@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "switching-cost",
-"constraintUiName": "Easy to quit later",
-"title": "MeisterTask vs Google Tasks for Students",
-"slug": "meistertask-vs-google-tasks-for-student",
-"meta_description": "MeisterTask vs Google Tasks for students who need simple assignment tracking for one term without setting up boards or project workflows.",
-"persona": "Student",
-"constraint_lens": "You want something simple for one semester that you can start quickly and stop using without cleanup.",
-"verdict": {
-"winner": "y",
-"summary": "Google Tasks wins for students who only need assignment tracking for the current term. It lets you create lists directly inside Gmail or Google Calendar with almost no setup. MeisterTask is built around Kanban boards and project columns that require structure. If board management outweighs semester benefit, MeisterTask fails first.",
-"decision_rule": "If board management outweighs semester benefit, MeisterTask fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Students",
-"content": "You said you only need tasks for the current term and do not want setup overhead. As a student, building boards and workflows for a few months of assignments can feel unnecessary. A tool that works immediately and is easy to abandon later fits better."
-},
-{
-"type": "x_wins",
-"heading": "Where MeisterTask wins",
-"bullets": [
-{
-"point": "Kanban boards with customizable columns such as To do, Doing, and Done",
-"why_it_matters": "You can visually track progress across stages, but creating and maintaining boards adds setup before tracking assignments."
-},
-{
-"point": "Task cards with checklists, due dates, and attachments",
-"why_it_matters": "Assignments can include detailed steps, yet deciding where each card belongs requires ongoing board management."
-},
-{
-"point": "Multiple project boards inside one workspace",
-"why_it_matters": "You can separate classes into boards, but managing several boards increases structure for a short term need."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Google Tasks wins",
-"bullets": [
-{
-"point": "Simple list based task creation inside Gmail or Google Calendar",
-"why_it_matters": "You can add assignments directly from tools you already use without creating project boards."
-},
-{
-"point": "Basic due dates that appear in Google Calendar",
-"why_it_matters": "Deadlines show up on your schedule automatically, reducing the need for separate planning views."
-},
-{
-"point": "No required board or workflow setup",
-"why_it_matters": "You can create a single list for the semester and delete it later with minimal effort."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You spend time organizing columns and boards instead of simply listing assignments.",
-"what_to_do_instead": "Use Google Tasks if you want a lightweight list you can abandon after the term."
-},
-{
-"tool": "y",
-"fails_when": "You need visual workflow stages for complex group projects.",
-"what_to_do_instead": "Use MeisterTask if tracking progress across stages becomes important."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you are managing a large group project with clear stages and shared responsibilities, MeisterTask boards may help visualize progress despite the extra setup."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want a simple semester list, choose Google Tasks.",
-"If managing boards sounds unnecessary, avoid MeisterTask.",
-"If you need visual stages for complex projects, MeisterTask may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is MeisterTask too complex for short term use?",
-"a": "It is designed around boards and columns, which can feel heavier than a basic list for one semester."
-},
-{
-"q": "Does Google Tasks integrate with Google Calendar?",
-"a": "Yes, tasks with due dates appear directly in your calendar view."
-},
-{
-"q": "Which tool is easier to stop using after the term?",
-"a": "Google Tasks is easier to abandon because it requires minimal structure."
-},
-{
-"q": "Can MeisterTask be used solo?",
-"a": "Yes, but its board structure is often more beneficial for collaborative or multi stage projects."
-}
-],
-"related_pages": [
-{ "x_name": "Todoist", "y_name": "Google Tasks", "persona": "Student" },
-{ "x_name": "Notion", "y_name": "Google Tasks", "persona": "Student" },
-{ "x_name": "TickTick", "y_name": "Google Tasks", "persona": "Student" },
-{ "x_name": "Microsoft To Do", "y_name": "Google Tasks", "persona": "Student" },
-{ "x_name": "Things", "y_name": "Google Tasks", "persona": "Student" },
-{ "x_name": "Sunsama", "y_name": "Google Tasks", "persona": "Student" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "switching-cost",
+  "constraintUiName": "Easy to quit later",
+  "title": "MeisterTask vs Google Tasks for Students",
+  "slug": "meistertask-vs-google-tasks-for-student",
+  "meta_description": "MeisterTask vs Google Tasks for students who need simple assignment tracking for one term without setting up boards or project workflows.",
+  "persona": "Student",
+  "constraint_lens": "You want something simple for one semester that you can start quickly and stop using without cleanup.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Google Tasks wins for students who only need assignment tracking for the current term. It lets you create lists directly inside Gmail or Google Calendar with almost no setup. MeisterTask is built around Kanban boards and project columns that require structure. If board management outweighs semester benefit, MeisterTask fails first.",
+    "decision_rule": "If board management outweighs semester benefit, MeisterTask fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Students",
+      "content": "You said you only need tasks for the current term and do not want setup overhead. As a student, building boards and workflows for a few months of assignments can feel unnecessary. A tool that works immediately and is easy to abandon later fits better."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where MeisterTask wins",
+      "bullets": [
+        {
+          "point": "Kanban boards with customizable columns such as To do, Doing, and Done",
+          "why_it_matters": "You can visually track progress across stages, but creating and maintaining boards adds setup before tracking assignments."
+        },
+        {
+          "point": "Task cards with checklists, due dates, and attachments",
+          "why_it_matters": "Assignments can include detailed steps, yet deciding where each card belongs requires ongoing board management."
+        },
+        {
+          "point": "Multiple project boards inside one workspace",
+          "why_it_matters": "You can separate classes into boards, but managing several boards increases structure for a short term need."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Google Tasks wins",
+      "bullets": [
+        {
+          "point": "Simple list based task creation inside Gmail or Google Calendar",
+          "why_it_matters": "You can add assignments directly from tools you already use without creating project boards."
+        },
+        {
+          "point": "Basic due dates that appear in Google Calendar",
+          "why_it_matters": "Deadlines show up on your schedule automatically, reducing the need for separate planning views."
+        },
+        {
+          "point": "No required board or workflow setup",
+          "why_it_matters": "You can create a single list for the semester and delete it later with minimal effort."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You spend time organizing columns and boards instead of simply listing assignments.",
+          "what_to_do_instead": "Use Google Tasks if you want a lightweight list you can abandon after the term."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need visual workflow stages for complex group projects.",
+          "what_to_do_instead": "Use MeisterTask if tracking progress across stages becomes important."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you are managing a large group project with clear stages and shared responsibilities, MeisterTask boards may help visualize progress despite the extra setup."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a simple semester list, choose Google Tasks.",
+        "If managing boards sounds unnecessary, avoid MeisterTask.",
+        "If you need visual stages for complex projects, MeisterTask may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is MeisterTask too complex for short term use?",
+      "a": "It is designed around boards and columns, which can feel heavier than a basic list for one semester."
+    },
+    {
+      "q": "Does Google Tasks integrate with Google Calendar?",
+      "a": "Yes, tasks with due dates appear directly in your calendar view."
+    },
+    {
+      "q": "Which tool is easier to stop using after the term?",
+      "a": "Google Tasks is easier to abandon because it requires minimal structure."
+    },
+    {
+      "q": "Can MeisterTask be used solo?",
+      "a": "Yes, but its board structure is often more beneficial for collaborative or multi stage projects."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Superlist",
+      "y_name": "Google Tasks",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Todoist",
+      "y_name": "MeisterTask",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Habitica",
+      "y_name": "Todoist",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Sunsama",
+      "y_name": "Todoist",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Things 3",
+      "y_name": "Apple Reminders",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Trello",
+      "y_name": "Microsoft Planner",
+      "persona": "Student"
+    }
+  ]
 }

@@ -1,116 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "fear-of-breaking",
-"constraintUiName": "Hard to mess up",
-"title": "Trello vs Apple Reminders for Non-technical users",
-"slug": "trello-vs-apple-reminders-for-non-technical-user",
-"meta_description": "Trello vs Apple Reminders for non-technical users who want basic tasks without boards, cards, or workflow stages.",
-"persona": "Non-technical user",
-"constraint_lens": "You want a basic task list that feels safe and simple, without boards, cards, or workflow stages.",
-"verdict": {
-"winner": "y",
-"summary": "Apple Reminders wins for non-technical users who just want to remember basic tasks. It opens to a simple checklist where you add and complete items with no structural decisions. Trello is built around boards, columns, and draggable cards that imply workflow stages. If moving cards feels like doing it wrong, Trello fails first.",
-"decision_rule": "If moving cards feels like “doing it wrong,” Trello fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Non-technical users",
-"content": "You said you want tasks without boards, cards, or workflows. When an app shows columns and movable cards, it can feel like there is a correct way to organize them. A plain list lowers the fear of making a mistake."
-},
-{
-"type": "x_wins",
-"heading": "Where Trello wins",
-"bullets": [
-{
-"point": "Board layout with columns representing stages such as To do and Done",
-"why_it_matters": "You can visualize progress clearly, but you must understand what each column means."
-},
-{
-"point": "Draggable cards that move between columns",
-"why_it_matters": "You track status by moving cards, yet dragging items can feel like changing structure."
-},
-{
-"point": "Card details with checklists, labels, and attachments",
-"why_it_matters": "You can store more information, but opening cards introduces extra screens."
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Trello vs Apple Reminders for Non-technical users",
+  "slug": "trello-vs-apple-reminders-for-non-technical-user",
+  "meta_description": "Trello vs Apple Reminders for non-technical users who want basic tasks without boards, cards, or workflow stages.",
+  "persona": "Non-technical user",
+  "constraint_lens": "You want a basic task list that feels safe and simple, without boards, cards, or workflow stages.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Apple Reminders wins for non-technical users who just want to remember basic tasks. It opens to a simple checklist where you add and complete items with no structural decisions. Trello is built around boards, columns, and draggable cards that imply workflow stages. If moving cards feels like doing it wrong, Trello fails first.",
+    "decision_rule": "If moving cards feels like “doing it wrong,” Trello fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Non-technical users",
+      "content": "You said you want tasks without boards, cards, or workflows. When an app shows columns and movable cards, it can feel like there is a correct way to organize them. A plain list lowers the fear of making a mistake."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Trello wins",
+      "bullets": [
+        {
+          "point": "Board layout with columns representing stages such as To do and Done",
+          "why_it_matters": "You can visualize progress clearly, but you must understand what each column means."
+        },
+        {
+          "point": "Draggable cards that move between columns",
+          "why_it_matters": "You track status by moving cards, yet dragging items can feel like changing structure."
+        },
+        {
+          "point": "Card details with checklists, labels, and attachments",
+          "why_it_matters": "You can store more information, but opening cards introduces extra screens."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Apple Reminders wins",
+      "bullets": [
+        {
+          "point": "Single list interface with clear add button",
+          "why_it_matters": "You type a task and see it immediately without choosing a stage."
+        },
+        {
+          "point": "Checkbox completion without structural movement",
+          "why_it_matters": "Marking a task complete does not require moving it between columns."
+        },
+        {
+          "point": "Minimal settings and no workflow terminology",
+          "why_it_matters": "The app avoids terms like board or stage that might feel technical."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You hesitate to move cards because you are unsure which column is correct.",
+          "what_to_do_instead": "Use Apple Reminders if you want a simple checklist with no stages."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need visual workflow stages for team coordination.",
+          "what_to_do_instead": "Use Trello if tracking tasks across columns becomes necessary."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you later manage shared tasks and need visual stages to show progress, Trello may become useful despite its board structure."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a plain checklist, choose Apple Reminders.",
+        "If boards and card movement feel confusing, avoid Trello.",
+        "If visual stages help you track progress, Trello may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Trello difficult for casual users?",
+      "a": "It can feel structured because tasks live inside boards and columns."
+    },
+    {
+      "q": "Does Apple Reminders require setup?",
+      "a": "No, you can open it and start adding tasks to a list immediately."
+    },
+    {
+      "q": "Which tool feels safer for beginners?",
+      "a": "Apple Reminders often feels safer because it behaves like a simple checklist."
+    },
+    {
+      "q": "Can Trello be used as a basic list?",
+      "a": "You can simplify it, but its board and column layout remains central."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Any.do",
+      "y_name": "Apple Reminders",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Any.do",
+      "y_name": "Trello",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Teamwork",
+      "y_name": "Apple Reminders",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Microsoft To Do",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Kanban Tool",
+      "y_name": "Microsoft To Do",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Microsoft Planner",
+      "y_name": "Microsoft To Do",
+      "persona": "Non-technical user"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Apple Reminders wins",
-"bullets": [
-{
-"point": "Single list interface with clear add button",
-"why_it_matters": "You type a task and see it immediately without choosing a stage."
-},
-{
-"point": "Checkbox completion without structural movement",
-"why_it_matters": "Marking a task complete does not require moving it between columns."
-},
-{
-"point": "Minimal settings and no workflow terminology",
-"why_it_matters": "The app avoids terms like board or stage that might feel technical."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You hesitate to move cards because you are unsure which column is correct.",
-"what_to_do_instead": "Use Apple Reminders if you want a simple checklist with no stages."
-},
-{
-"tool": "y",
-"fails_when": "You need visual workflow stages for team coordination.",
-"what_to_do_instead": "Use Trello if tracking tasks across columns becomes necessary."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you later manage shared tasks and need visual stages to show progress, Trello may become useful despite its board structure."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want a plain checklist, choose Apple Reminders.",
-"If boards and card movement feel confusing, avoid Trello.",
-"If visual stages help you track progress, Trello may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Trello difficult for casual users?",
-"a": "It can feel structured because tasks live inside boards and columns."
-},
-{
-"q": "Does Apple Reminders require setup?",
-"a": "No, you can open it and start adding tasks to a list immediately."
-},
-{
-"q": "Which tool feels safer for beginners?",
-"a": "Apple Reminders often feels safer because it behaves like a simple checklist."
-},
-{
-"q": "Can Trello be used as a basic list?",
-"a": "You can simplify it, but its board and column layout remains central."
-}
-],
-"related_pages": [
-{ "x_name": "Microsoft Planner", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
-{ "x_name": "Any.do", "y_name": "Apple Reminders", "persona": "Non-technical user" },
-{ "x_name": "Teamwork", "y_name": "Apple Reminders", "persona": "Non-technical user" },
-{ "x_name": "ClickUp", "y_name": "Apple Reminders", "persona": "Non-technical user" },
-{ "x_name": "OmniFocus", "y_name": "Apple Reminders", "persona": "Non-technical user" },
-{ "x_name": "Todoist", "y_name": "Apple Reminders", "persona": "Non-technical user" }
-]
-}
-

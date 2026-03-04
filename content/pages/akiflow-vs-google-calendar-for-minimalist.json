@@ -1,116 +1,134 @@
 {
-"category": "Calendar / Scheduling tools",
-"categorySlug": "calendar-scheduling-tools",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Akiflow vs Google Calendar for Minimalists",
-"slug": "akiflow-vs-google-calendar-for-minimalist",
-"meta_description": "Akiflow vs Google Calendar for minimalists who want to see meetings clearly without task panels, time blocking tools, or blended planning layers.",
-"persona": "Minimalist",
-"constraint_lens": "You want a calendar that shows events only, without extra planning panels, task systems, or layered controls.",
-"verdict": {
-"winner": "y",
-"summary": "Google Calendar wins for minimalists who only want to see meetings on a clean grid. It focuses on time based events without mixing in task inboxes or scheduling workflows. Akiflow blends tasks and calendar blocks into one planning screen, which adds extra panels and decisions. If task integration adds unnecessary interface layers, Akiflow fails first.",
-"decision_rule": "If task integration adds unnecessary interface layers, Akiflow fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Minimalists",
-"content": "You said you want events only, not blended task planning layers. As a minimalist, extra sidebars, inbox panels, and drag to schedule workflows feel like noise when you just want to see your meetings. The cleaner the calendar grid, the better."
-},
-{
-"type": "x_wins",
-"heading": "Where Akiflow wins",
-"bullets": [
-{
-"point": "Unified inbox that pulls tasks from tools like Notion, Slack, and Asana into one panel",
-"why_it_matters": "You can review tasks and schedule them onto your calendar in one place, but this creates an always visible task layer that a minimalist may not want."
-},
-{
-"point": "Drag tasks directly onto time slots to create calendar blocks",
-"why_it_matters": "This makes time blocking efficient if you plan your day actively, yet it adds another interaction step beyond simply viewing meetings."
-},
-{
-"point": "Dedicated planning mode that separates inbox processing from calendar view",
-"why_it_matters": "Power users may like switching between modes, but the presence of modes and panels adds structure that can feel unnecessary if you only care about events."
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Akiflow vs Google Calendar for Minimalists",
+  "slug": "akiflow-vs-google-calendar-for-minimalist",
+  "meta_description": "Akiflow vs Google Calendar for minimalists who want to see meetings clearly without task panels, time blocking tools, or blended planning layers.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a calendar that shows events only, without extra planning panels, task systems, or layered controls.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Google Calendar wins for minimalists who only want to see meetings on a clean grid. It focuses on time based events without mixing in task inboxes or scheduling workflows. Akiflow blends tasks and calendar blocks into one planning screen, which adds extra panels and decisions. If task integration adds unnecessary interface layers, Akiflow fails first.",
+    "decision_rule": "If task integration adds unnecessary interface layers, Akiflow fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Minimalists",
+      "content": "You said you want events only, not blended task planning layers. As a minimalist, extra sidebars, inbox panels, and drag to schedule workflows feel like noise when you just want to see your meetings. The cleaner the calendar grid, the better."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Akiflow wins",
+      "bullets": [
+        {
+          "point": "Unified inbox that pulls tasks from tools like Notion, Slack, and Asana into one panel",
+          "why_it_matters": "You can review tasks and schedule them onto your calendar in one place, but this creates an always visible task layer that a minimalist may not want."
+        },
+        {
+          "point": "Drag tasks directly onto time slots to create calendar blocks",
+          "why_it_matters": "This makes time blocking efficient if you plan your day actively, yet it adds another interaction step beyond simply viewing meetings."
+        },
+        {
+          "point": "Dedicated planning mode that separates inbox processing from calendar view",
+          "why_it_matters": "Power users may like switching between modes, but the presence of modes and panels adds structure that can feel unnecessary if you only care about events."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Google Calendar wins",
+      "bullets": [
+        {
+          "point": "Default view shows only time based events on a day, week, or month grid",
+          "why_it_matters": "You open the app and immediately see meetings without a task inbox or planning sidebar competing for attention."
+        },
+        {
+          "point": "Event creation form focuses on title, time, guests, and location",
+          "why_it_matters": "There are no built in task scheduling workflows layered into the same screen, so adding or viewing meetings stays straightforward."
+        },
+        {
+          "point": "Optional task features are separated and not required for basic use",
+          "why_it_matters": "You can ignore task lists entirely and still use the calendar fully, keeping the interface centered on events only."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The visible task inbox and planning panels distract you from simply scanning your meetings.",
+          "what_to_do_instead": "Use Google Calendar if you prefer a clean grid that shows only scheduled events."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need to pull tasks from multiple apps and actively schedule them into time blocks each day.",
+          "what_to_do_instead": "Use Akiflow if your main goal shifts from viewing meetings to structuring your entire workday around tasks."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you move into a workflow where every task must be assigned a time slot and you rely on pulling tasks from several apps into one daily plan, Akiflow may feel clearer because everything is scheduled in one place."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want meetings only on a clean grid, choose Google Calendar.",
+        "If you dislike seeing task inbox panels inside your calendar, avoid Akiflow.",
+        "If your day revolves around dragging tasks onto time blocks, Akiflow makes more sense."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Google Calendar have tasks at all?",
+      "a": "Yes, but task features are optional and can be ignored, so the main calendar view stays focused on scheduled events."
+    },
+    {
+      "q": "Is Akiflow a calendar or a task manager?",
+      "a": "It combines both by pulling tasks from other apps and letting you schedule them on your calendar, which adds extra layers beyond basic event viewing."
+    },
+    {
+      "q": "Which one is better for just seeing meetings?",
+      "a": "Google Calendar is usually clearer because it centers the interface on time based events without showing a planning inbox by default."
+    },
+    {
+      "q": "Will I miss features if I choose Google Calendar?",
+      "a": "You may miss advanced task scheduling workflows, but if you only want to see and add meetings, those extra layers are not necessary."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Akiflow",
+      "y_name": "Apple Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Clockwise",
+      "y_name": "Google Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Notion Calendar",
+      "y_name": "Google Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Motion",
+      "y_name": "Apple Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Motion",
+      "y_name": "Outlook Calendar",
+      "persona": "Minimalist"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Google Calendar wins",
-"bullets": [
-{
-"point": "Default view shows only time based events on a day, week, or month grid",
-"why_it_matters": "You open the app and immediately see meetings without a task inbox or planning sidebar competing for attention."
-},
-{
-"point": "Event creation form focuses on title, time, guests, and location",
-"why_it_matters": "There are no built in task scheduling workflows layered into the same screen, so adding or viewing meetings stays straightforward."
-},
-{
-"point": "Optional task features are separated and not required for basic use",
-"why_it_matters": "You can ignore task lists entirely and still use the calendar fully, keeping the interface centered on events only."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The visible task inbox and planning panels distract you from simply scanning your meetings.",
-"what_to_do_instead": "Use Google Calendar if you prefer a clean grid that shows only scheduled events."
-},
-{
-"tool": "y",
-"fails_when": "You need to pull tasks from multiple apps and actively schedule them into time blocks each day.",
-"what_to_do_instead": "Use Akiflow if your main goal shifts from viewing meetings to structuring your entire workday around tasks."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you move into a workflow where every task must be assigned a time slot and you rely on pulling tasks from several apps into one daily plan, Akiflow may feel clearer because everything is scheduled in one place."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want meetings only on a clean grid, choose Google Calendar.",
-"If you dislike seeing task inbox panels inside your calendar, avoid Akiflow.",
-"If your day revolves around dragging tasks onto time blocks, Akiflow makes more sense."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Google Calendar have tasks at all?",
-"a": "Yes, but task features are optional and can be ignored, so the main calendar view stays focused on scheduled events."
-},
-{
-"q": "Is Akiflow a calendar or a task manager?",
-"a": "It combines both by pulling tasks from other apps and letting you schedule them on your calendar, which adds extra layers beyond basic event viewing."
-},
-{
-"q": "Which one is better for just seeing meetings?",
-"a": "Google Calendar is usually clearer because it centers the interface on time based events without showing a planning inbox by default."
-},
-{
-"q": "Will I miss features if I choose Google Calendar?",
-"a": "You may miss advanced task scheduling workflows, but if you only want to see and add meetings, those extra layers are not necessary."
-}
-],
-"related_pages": [
-{ "x_name": "Apple Calendar", "y_name": "Google Calendar", "persona": "Minimalist" },
-{ "x_name": "Outlook Calendar", "y_name": "Google Calendar", "persona": "Minimalist" },
-{ "x_name": "Fantastical", "y_name": "Google Calendar", "persona": "Minimalist" },
-{ "x_name": "Akiflow", "y_name": "Outlook Calendar", "persona": "Minimalist" },
-{ "x_name": "Motion", "y_name": "Google Calendar", "persona": "Minimalist" },
-{ "x_name": "Sunsama", "y_name": "Google Calendar", "persona": "Minimalist" }
-]
-}
-

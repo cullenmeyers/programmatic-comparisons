@@ -1,116 +1,134 @@
 {
-"category": "Calendar / Scheduling tools",
-"categorySlug": "calendar-scheduling-tools",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Akiflow vs Apple Calendar for Minimalists",
-"slug": "akiflow-vs-apple-calendar-for-minimalist",
-"meta_description": "Akiflow vs Apple Calendar for minimalists who want a clean daily schedule view without blended task panels or workflow layers.",
-"persona": "Minimalist",
-"constraint_lens": "You want to see your daily schedule clearly without task panels, integrations, or workflow layers mixed in.",
-"verdict": {
-"winner": "y",
-"summary": "Apple Calendar wins for minimalists who only want to view events. It shows a clean daily and weekly calendar without task dashboards or planning layers. Akiflow blends tasks, inbox capture, and calendar time blocking into one interface. If task integration introduces extra interface decisions, Akiflow fails first.",
-"decision_rule": "If task integration introduces extra interface decisions, Akiflow fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Which tool keeps your schedule uncluttered?",
-"content": "You want to see events without blended task management layers. As a minimalist, extra panels and workflow steps feel unnecessary. The right tool should open to a simple calendar grid. Anything that mixes tasks and scheduling adds visual noise."
-},
-{
-"type": "x_wins",
-"heading": "Where Akiflow works better",
-"bullets": [
-{
-"point": "Unified inbox that pulls tasks from other apps into one view.",
-"why_it_matters": "You can manage tasks and events together. For simple schedule viewing, the inbox adds another layer."
-},
-{
-"point": "Drag tasks directly onto calendar time slots.",
-"why_it_matters": "You can time block work easily. If you only want to see events, this feature introduces planning decisions."
-},
-{
-"point": "Keyboard-driven workflow for task capture and scheduling.",
-"why_it_matters": "You can manage your day quickly. For pure calendar viewing, these controls feel extra."
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Akiflow vs Apple Calendar for Minimalists",
+  "slug": "akiflow-vs-apple-calendar-for-minimalist",
+  "meta_description": "Akiflow vs Apple Calendar for minimalists who want a clean daily schedule view without blended task panels or workflow layers.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want to see your daily schedule clearly without task panels, integrations, or workflow layers mixed in.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Apple Calendar wins for minimalists who only want to view events. It shows a clean daily and weekly calendar without task dashboards or planning layers. Akiflow blends tasks, inbox capture, and calendar time blocking into one interface. If task integration introduces extra interface decisions, Akiflow fails first.",
+    "decision_rule": "If task integration introduces extra interface decisions, Akiflow fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool keeps your schedule uncluttered?",
+      "content": "You want to see events without blended task management layers. As a minimalist, extra panels and workflow steps feel unnecessary. The right tool should open to a simple calendar grid. Anything that mixes tasks and scheduling adds visual noise."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Akiflow works better",
+      "bullets": [
+        {
+          "point": "Unified inbox that pulls tasks from other apps into one view.",
+          "why_it_matters": "You can manage tasks and events together. For simple schedule viewing, the inbox adds another layer."
+        },
+        {
+          "point": "Drag tasks directly onto calendar time slots.",
+          "why_it_matters": "You can time block work easily. If you only want to see events, this feature introduces planning decisions."
+        },
+        {
+          "point": "Keyboard-driven workflow for task capture and scheduling.",
+          "why_it_matters": "You can manage your day quickly. For pure calendar viewing, these controls feel extra."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Apple Calendar works better for minimalists",
+      "bullets": [
+        {
+          "point": "Clean day, week, and month views focused only on events.",
+          "why_it_matters": "You see scheduled appointments without task panels."
+        },
+        {
+          "point": "Simple event creation with title, time, and location.",
+          "why_it_matters": "You add events without configuring workflows or integrations."
+        },
+        {
+          "point": "Minimal sidebar with optional calendars.",
+          "why_it_matters": "You can toggle calendars on or off without managing task systems."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You feel distracted by task inboxes and time blocking tools when you only want to view events.",
+          "what_to_do_instead": "Use Apple Calendar if you want a clean schedule view."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want to combine tasks and events into a unified daily planning workflow.",
+          "what_to_do_instead": "Use Akiflow if you prefer integrated task scheduling."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you prefer planning your day by dragging tasks onto your calendar and managing everything in one workspace, Akiflow may be worth the added layers."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you only want to view events, choose Apple Calendar.",
+        "If you want tasks and calendar in one interface, choose Akiflow.",
+        "If blended panels feel distracting, keep your calendar separate."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Akiflow include task management?",
+      "a": "Yes. It combines tasks, inbox capture, and calendar scheduling in one interface."
+    },
+    {
+      "q": "Is Apple Calendar focused only on events?",
+      "a": "Yes. It centers on event scheduling without task dashboards."
+    },
+    {
+      "q": "Which tool is more minimal?",
+      "a": "Apple Calendar is more minimal because it avoids integrated task layers."
+    },
+    {
+      "q": "Can Akiflow be used as a simple calendar?",
+      "a": "It can display events, but its design emphasizes integrated task planning."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Akiflow",
+      "y_name": "Google Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Motion",
+      "y_name": "Apple Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Clockwise",
+      "y_name": "Google Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Motion",
+      "y_name": "Outlook Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Notion Calendar",
+      "y_name": "Google Calendar",
+      "persona": "Minimalist"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Apple Calendar works better for minimalists",
-"bullets": [
-{
-"point": "Clean day, week, and month views focused only on events.",
-"why_it_matters": "You see scheduled appointments without task panels."
-},
-{
-"point": "Simple event creation with title, time, and location.",
-"why_it_matters": "You add events without configuring workflows or integrations."
-},
-{
-"point": "Minimal sidebar with optional calendars.",
-"why_it_matters": "You can toggle calendars on or off without managing task systems."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You feel distracted by task inboxes and time blocking tools when you only want to view events.",
-"what_to_do_instead": "Use Apple Calendar if you want a clean schedule view."
-},
-{
-"tool": "y",
-"fails_when": "You want to combine tasks and events into a unified daily planning workflow.",
-"what_to_do_instead": "Use Akiflow if you prefer integrated task scheduling."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you prefer planning your day by dragging tasks onto your calendar and managing everything in one workspace, Akiflow may be worth the added layers."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you only want to view events, choose Apple Calendar.",
-"If you want tasks and calendar in one interface, choose Akiflow.",
-"If blended panels feel distracting, keep your calendar separate."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Akiflow include task management?",
-"a": "Yes. It combines tasks, inbox capture, and calendar scheduling in one interface."
-},
-{
-"q": "Is Apple Calendar focused only on events?",
-"a": "Yes. It centers on event scheduling without task dashboards."
-},
-{
-"q": "Which tool is more minimal?",
-"a": "Apple Calendar is more minimal because it avoids integrated task layers."
-},
-{
-"q": "Can Akiflow be used as a simple calendar?",
-"a": "It can display events, but its design emphasizes integrated task planning."
-}
-],
-"related_pages": [
-{ "x_name": "Zoho Bookings", "y_name": "TidyCal", "persona": "Beginner" },
-{ "x_name": "Doodle", "y_name": "Square Appointments", "persona": "Student" },
-{ "x_name": "Sunsama", "y_name": "Things 3", "persona": "Minimalist" },
-{ "x_name": "Apple Reminders", "y_name": "ClickUp", "persona": "Minimalist" },
-{ "x_name": "Nirvana", "y_name": "Apple Reminders", "persona": "Minimalist" },
-{ "x_name": "FacileThings", "y_name": "Apple Reminders", "persona": "Minimalist" }
-]
-}
-

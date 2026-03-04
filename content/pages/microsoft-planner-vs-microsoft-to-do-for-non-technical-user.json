@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "fear-of-breaking",
-"constraintUiName": "Hard to mess up",
-"title": "Microsoft Planner vs Microsoft To Do for Non-technical users",
-"slug": "microsoft-planner-vs-microsoft-to-do-for-non-technical-user",
-"meta_description": "Microsoft Planner vs Microsoft To Do for non-technical users who want simple task tracking without formal plans, boards, or rigid project structure.",
-"persona": "Non-technical user",
-"constraint_lens": "You want simple work tasks that feel safe to use without formal plans, boards, or rigid project structure.",
-"verdict": {
-"winner": "y",
-"summary": "Microsoft To Do wins for non-technical users who use tasks casually. It presents a simple list where you add and check off items without creating plans or buckets. Microsoft Planner is built around formal plans, boards, and grouped task buckets inside Microsoft 365. If task organization feels formal or rigid, Planner fails first.",
-"decision_rule": "If task organization feels formal or rigid, Planner fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Non-technical users",
-"content": "You said you use tasks casually and avoid project concepts. When an app asks you to create a plan, assign buckets, or think in terms of boards, it can feel intimidating. A simple checklist lowers the chance of feeling lost or clicking the wrong thing."
-},
-{
-"type": "x_wins",
-"heading": "Where Microsoft Planner wins",
-"bullets": [
-{
-"point": "Board view with buckets for organizing tasks by stage or category",
-"why_it_matters": "You can structure team work clearly, but creating and managing buckets introduces formal organization."
-},
-{
-"point": "Integration with Microsoft 365 groups and shared plans",
-"why_it_matters": "Tasks connect to team spaces, yet this assumes coordination and shared ownership."
-},
-{
-"point": "Task cards with assignments, due dates, and progress status",
-"why_it_matters": "You can track responsibility and status, but these fields add a sense of rigidity for casual use."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Microsoft To Do wins",
-"bullets": [
-{
-"point": "Personal lists with a simple add field",
-"why_it_matters": "You can type a task instantly without creating a plan or board."
-},
-{
-"point": "My Day view that highlights tasks without requiring buckets",
-"why_it_matters": "You see what needs attention without interacting with formal project structure."
-},
-{
-"point": "Optional sharing instead of required group setup",
-"why_it_matters": "You can keep everything personal and avoid team based concepts entirely."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You feel unsure about creating plans, buckets, or assigning tasks inside a formal board.",
-"what_to_do_instead": "Use Microsoft To Do if you want a straightforward list without project terminology."
-},
-{
-"tool": "y",
-"fails_when": "You need shared boards and structured task grouping for a team.",
-"what_to_do_instead": "Use Microsoft Planner if collaboration and bucket organization become necessary."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you begin working inside a team that requires shared plans with clear buckets and assignments, Microsoft Planner may provide better structure despite feeling more formal."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want a casual personal task list, choose Microsoft To Do.",
-"If plans and buckets feel rigid or confusing, avoid Microsoft Planner.",
-"If your work requires shared boards and assignments, Microsoft Planner may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Microsoft Planner mainly for teams?",
-"a": "Yes, it is designed around shared plans and group task management inside Microsoft 365."
-},
-{
-"q": "Can Microsoft To Do handle recurring tasks?",
-"a": "Yes, you can set tasks to repeat without creating formal project boards."
-},
-{
-"q": "Which tool feels simpler at first glance?",
-"a": "Microsoft To Do feels simpler because it centers on personal lists rather than plans and buckets."
-},
-{
-"q": "Can Planner be used personally?",
-"a": "It can, but its structure is built around plans and boards that may feel formal for casual use."
-}
-],
-"related_pages": [
-{ "x_name": "Teamwork", "y_name": "Apple Reminders", "persona": "Non-technical user" },
-{ "x_name": "Superlist", "y_name": "Microsoft To Do", "persona": "Non-technical user" },
-{ "x_name": "OmniFocus", "y_name": "Apple Reminders", "persona": "Non-technical user" },
-{ "x_name": "Todoist", "y_name": "Apple Reminders", "persona": "Non-technical user" },
-{ "x_name": "TickTick", "y_name": "Apple Reminders", "persona": "Non-technical user" },
-{ "x_name": "ClickUp", "y_name": "Apple Reminders", "persona": "Non-technical user" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Microsoft Planner vs Microsoft To Do for Non-technical users",
+  "slug": "microsoft-planner-vs-microsoft-to-do-for-non-technical-user",
+  "meta_description": "Microsoft Planner vs Microsoft To Do for non-technical users who want simple task tracking without formal plans, boards, or rigid project structure.",
+  "persona": "Non-technical user",
+  "constraint_lens": "You want simple work tasks that feel safe to use without formal plans, boards, or rigid project structure.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Microsoft To Do wins for non-technical users who use tasks casually. It presents a simple list where you add and check off items without creating plans or buckets. Microsoft Planner is built around formal plans, boards, and grouped task buckets inside Microsoft 365. If task organization feels formal or rigid, Planner fails first.",
+    "decision_rule": "If task organization feels formal or rigid, Planner fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Non-technical users",
+      "content": "You said you use tasks casually and avoid project concepts. When an app asks you to create a plan, assign buckets, or think in terms of boards, it can feel intimidating. A simple checklist lowers the chance of feeling lost or clicking the wrong thing."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Microsoft Planner wins",
+      "bullets": [
+        {
+          "point": "Board view with buckets for organizing tasks by stage or category",
+          "why_it_matters": "You can structure team work clearly, but creating and managing buckets introduces formal organization."
+        },
+        {
+          "point": "Integration with Microsoft 365 groups and shared plans",
+          "why_it_matters": "Tasks connect to team spaces, yet this assumes coordination and shared ownership."
+        },
+        {
+          "point": "Task cards with assignments, due dates, and progress status",
+          "why_it_matters": "You can track responsibility and status, but these fields add a sense of rigidity for casual use."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Microsoft To Do wins",
+      "bullets": [
+        {
+          "point": "Personal lists with a simple add field",
+          "why_it_matters": "You can type a task instantly without creating a plan or board."
+        },
+        {
+          "point": "My Day view that highlights tasks without requiring buckets",
+          "why_it_matters": "You see what needs attention without interacting with formal project structure."
+        },
+        {
+          "point": "Optional sharing instead of required group setup",
+          "why_it_matters": "You can keep everything personal and avoid team based concepts entirely."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You feel unsure about creating plans, buckets, or assigning tasks inside a formal board.",
+          "what_to_do_instead": "Use Microsoft To Do if you want a straightforward list without project terminology."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need shared boards and structured task grouping for a team.",
+          "what_to_do_instead": "Use Microsoft Planner if collaboration and bucket organization become necessary."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you begin working inside a team that requires shared plans with clear buckets and assignments, Microsoft Planner may provide better structure despite feeling more formal."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a casual personal task list, choose Microsoft To Do.",
+        "If plans and buckets feel rigid or confusing, avoid Microsoft Planner.",
+        "If your work requires shared boards and assignments, Microsoft Planner may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Microsoft Planner mainly for teams?",
+      "a": "Yes, it is designed around shared plans and group task management inside Microsoft 365."
+    },
+    {
+      "q": "Can Microsoft To Do handle recurring tasks?",
+      "a": "Yes, you can set tasks to repeat without creating formal project boards."
+    },
+    {
+      "q": "Which tool feels simpler at first glance?",
+      "a": "Microsoft To Do feels simpler because it centers on personal lists rather than plans and buckets."
+    },
+    {
+      "q": "Can Planner be used personally?",
+      "a": "It can, but its structure is built around plans and boards that may feel formal for casual use."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Basecamp",
+      "y_name": "Microsoft To Do",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Kanban Tool",
+      "y_name": "Microsoft To Do",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Any.do",
+      "y_name": "Apple Reminders",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Any.do",
+      "y_name": "Trello",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "ProofHub",
+      "y_name": "Bitrix24",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Teamwork",
+      "y_name": "Apple Reminders",
+      "persona": "Non-technical user"
+    }
+  ]
 }

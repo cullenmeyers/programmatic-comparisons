@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "time-scarcity",
-"constraintUiName": "Fast to use daily",
-"title": "ClickUp vs Todoist for Busy professionals",
-"slug": "clickup-vs-todoist-for-busy-professional",
-"meta_description": "ClickUp vs Todoist for busy professionals who need fast task execution without navigating spaces, dashboards, or planning layers.",
-"persona": "Busy professional",
-"constraint_lens": "You need to stay on top of work between meetings without navigating dashboards, spaces, or planning layers.",
-"verdict": {
-"winner": "y",
-"summary": "Todoist wins for busy professionals with limited mental energy. It lets you capture and execute tasks in a clean list without entering a planning workspace. ClickUp centers on spaces, folders, dashboards, and view selection before work begins. If the interface demands planning instead of execution, ClickUp fails first.",
-"decision_rule": "If the interface demands planning instead of execution, ClickUp fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Busy professionals",
-"content": "You said you manage work tasks between meetings with limited mental energy. When an app opens to dashboards or structured spaces, you must orient yourself before acting. A direct list that shows tasks instantly reduces cognitive load."
-},
-{
-"type": "x_wins",
-"heading": "Where ClickUp wins",
-"bullets": [
-{
-"point": "Hierarchy with spaces, folders, lists, and tasks",
-"why_it_matters": "You can organize complex teams, but navigating this structure takes attention before adding a task."
-},
-{
-"point": "Multiple views such as board, calendar, and timeline",
-"why_it_matters": "You can plan visually, yet choosing and switching views adds extra decisions."
-},
-{
-"point": "Custom statuses and fields on each task",
-"why_it_matters": "You can define detailed workflows, but filling in fields slows quick capture."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Todoist wins",
-"bullets": [
-{
-"point": "Quick add input accessible from any screen",
-"why_it_matters": "You can log a task in seconds without opening a project dashboard."
-},
-{
-"point": "Stable Today and Upcoming views",
-"why_it_matters": "You see priorities instantly without configuring filters or layouts."
-},
-{
-"point": "Minimal required fields limited to task and optional due date",
-"why_it_matters": "You focus on execution rather than filling out workflow details."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You spend time navigating spaces or adjusting views before acting on tasks.",
-"what_to_do_instead": "Use Todoist if you want direct execution with minimal setup."
-},
-{
-"tool": "y",
-"fails_when": "You need complex team collaboration with structured workflows and reporting.",
-"what_to_do_instead": "Use ClickUp if detailed planning outweighs speed."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your responsibilities require managing multiple team spaces with detailed reporting and automation, ClickUp may justify its heavier interface."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you need speed between meetings, choose Todoist.",
-"If dashboards feel like extra work, avoid ClickUp.",
-"If your work depends on structured team planning, ClickUp may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is ClickUp better for teams?",
-"a": "Yes, it is built around structured workspaces with detailed planning features."
-},
-{
-"q": "Can Todoist handle professional tasks?",
-"a": "Yes, it supports projects and deadlines without requiring heavy planning layers."
-},
-{
-"q": "Which tool is faster for quick capture?",
-"a": "Todoist is typically faster because it minimizes navigation and required fields."
-},
-{
-"q": "Does ClickUp require initial setup?",
-"a": "It usually involves creating spaces or lists before fully organizing tasks."
-}
-],
-"related_pages": [
-{ "x_name": "Asana", "y_name": "Apple Reminders", "persona": "Busy professional" },
-{ "x_name": "Motion", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Wrike", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Jira", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Linear", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Sunsama", "y_name": "Apple Reminders", "persona": "Busy professional" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "ClickUp vs Todoist for Busy professionals",
+  "slug": "clickup-vs-todoist-for-busy-professional",
+  "meta_description": "ClickUp vs Todoist for busy professionals who need fast task execution without navigating spaces, dashboards, or planning layers.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need to stay on top of work between meetings without navigating dashboards, spaces, or planning layers.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist wins for busy professionals with limited mental energy. It lets you capture and execute tasks in a clean list without entering a planning workspace. ClickUp centers on spaces, folders, dashboards, and view selection before work begins. If the interface demands planning instead of execution, ClickUp fails first.",
+    "decision_rule": "If the interface demands planning instead of execution, ClickUp fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Busy professionals",
+      "content": "You said you manage work tasks between meetings with limited mental energy. When an app opens to dashboards or structured spaces, you must orient yourself before acting. A direct list that shows tasks instantly reduces cognitive load."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where ClickUp wins",
+      "bullets": [
+        {
+          "point": "Hierarchy with spaces, folders, lists, and tasks",
+          "why_it_matters": "You can organize complex teams, but navigating this structure takes attention before adding a task."
+        },
+        {
+          "point": "Multiple views such as board, calendar, and timeline",
+          "why_it_matters": "You can plan visually, yet choosing and switching views adds extra decisions."
+        },
+        {
+          "point": "Custom statuses and fields on each task",
+          "why_it_matters": "You can define detailed workflows, but filling in fields slows quick capture."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Quick add input accessible from any screen",
+          "why_it_matters": "You can log a task in seconds without opening a project dashboard."
+        },
+        {
+          "point": "Stable Today and Upcoming views",
+          "why_it_matters": "You see priorities instantly without configuring filters or layouts."
+        },
+        {
+          "point": "Minimal required fields limited to task and optional due date",
+          "why_it_matters": "You focus on execution rather than filling out workflow details."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You spend time navigating spaces or adjusting views before acting on tasks.",
+          "what_to_do_instead": "Use Todoist if you want direct execution with minimal setup."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need complex team collaboration with structured workflows and reporting.",
+          "what_to_do_instead": "Use ClickUp if detailed planning outweighs speed."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your responsibilities require managing multiple team spaces with detailed reporting and automation, ClickUp may justify its heavier interface."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you need speed between meetings, choose Todoist.",
+        "If dashboards feel like extra work, avoid ClickUp.",
+        "If your work depends on structured team planning, ClickUp may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is ClickUp better for teams?",
+      "a": "Yes, it is built around structured workspaces with detailed planning features."
+    },
+    {
+      "q": "Can Todoist handle professional tasks?",
+      "a": "Yes, it supports projects and deadlines without requiring heavy planning layers."
+    },
+    {
+      "q": "Which tool is faster for quick capture?",
+      "a": "Todoist is typically faster because it minimizes navigation and required fields."
+    },
+    {
+      "q": "Does ClickUp require initial setup?",
+      "a": "It usually involves creating spaces or lists before fully organizing tasks."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Jira",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Linear",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Monday.com",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Motion",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Todoist",
+      "y_name": "Asana",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Todoist",
+      "y_name": "MeisterTask",
+      "persona": "Busy professional"
+    }
+  ]
 }

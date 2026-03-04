@@ -1,116 +1,134 @@
 {
-"category": "Calendar / Scheduling tools",
-"categorySlug": "calendar-scheduling-tools",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Motion vs Outlook Calendar for Minimalists",
-"slug": "motion-vs-outlook-calendar-for-minimalist",
-"meta_description": "Motion vs Outlook Calendar for minimalists who want to view meetings without algorithmic scheduling or automated task reshuffling.",
-"persona": "Minimalist",
-"constraint_lens": "You want to see your meetings clearly without automation layers or scheduling logic changing your calendar.",
-"verdict": {
-"winner": "y",
-"summary": "Outlook Calendar wins for minimalists who only want to view meetings. It presents events in a standard day or week grid without automated rescheduling. Motion uses algorithmic planning to rearrange tasks around meetings and deadlines. If automation logic adds complexity beyond event viewing, Motion fails first.",
-"decision_rule": "If automation logic adds complexity beyond event viewing, Motion fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Which tool keeps your schedule straightforward?",
-"content": "You want to see meetings without algorithmic scheduling layers. As a minimalist, automatic task reshuffling can feel intrusive. The right tool should display events as they are. Anything that modifies your schedule using hidden logic adds extra mental load."
-},
-{
-"type": "x_wins",
-"heading": "Where Motion works better",
-"bullets": [
-{
-"point": "Automatic task scheduling based on deadlines and availability.",
-"why_it_matters": "Tasks are placed on your calendar without manual planning. If you only want to view meetings, automatic changes add complexity."
-},
-{
-"point": "Dynamic rescheduling when meetings are added or moved.",
-"why_it_matters": "The system adjusts your day automatically. For minimal use, shifting events can feel unpredictable."
-},
-{
-"point": "Integrated task and calendar dashboard.",
-"why_it_matters": "You manage work and meetings together. Combined panels add interface layers beyond event viewing."
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Motion vs Outlook Calendar for Minimalists",
+  "slug": "motion-vs-outlook-calendar-for-minimalist",
+  "meta_description": "Motion vs Outlook Calendar for minimalists who want to view meetings without algorithmic scheduling or automated task reshuffling.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want to see your meetings clearly without automation layers or scheduling logic changing your calendar.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Outlook Calendar wins for minimalists who only want to view meetings. It presents events in a standard day or week grid without automated rescheduling. Motion uses algorithmic planning to rearrange tasks around meetings and deadlines. If automation logic adds complexity beyond event viewing, Motion fails first.",
+    "decision_rule": "If automation logic adds complexity beyond event viewing, Motion fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool keeps your schedule straightforward?",
+      "content": "You want to see meetings without algorithmic scheduling layers. As a minimalist, automatic task reshuffling can feel intrusive. The right tool should display events as they are. Anything that modifies your schedule using hidden logic adds extra mental load."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Motion works better",
+      "bullets": [
+        {
+          "point": "Automatic task scheduling based on deadlines and availability.",
+          "why_it_matters": "Tasks are placed on your calendar without manual planning. If you only want to view meetings, automatic changes add complexity."
+        },
+        {
+          "point": "Dynamic rescheduling when meetings are added or moved.",
+          "why_it_matters": "The system adjusts your day automatically. For minimal use, shifting events can feel unpredictable."
+        },
+        {
+          "point": "Integrated task and calendar dashboard.",
+          "why_it_matters": "You manage work and meetings together. Combined panels add interface layers beyond event viewing."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Outlook Calendar works better for minimalists",
+      "bullets": [
+        {
+          "point": "Standard calendar grid with fixed events.",
+          "why_it_matters": "Meetings appear exactly as scheduled without algorithmic adjustments."
+        },
+        {
+          "point": "Simple event creation with title, time, and attendees.",
+          "why_it_matters": "You add meetings directly without activating automation systems."
+        },
+        {
+          "point": "Optional calendar overlays without task reshuffling.",
+          "why_it_matters": "You can view multiple calendars without blending automated planning logic."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You feel distracted by automatic task placement and schedule adjustments when you only want to see meetings.",
+          "what_to_do_instead": "Use Outlook Calendar if you prefer static event viewing."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want tasks automatically scheduled around meetings and deadlines.",
+          "what_to_do_instead": "Use Motion if you prefer algorithm-driven planning."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you want your tasks automatically arranged around meetings and deadlines, Motion may justify its automation layers."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you only want to view meetings, choose Outlook Calendar.",
+        "If you want automatic task scheduling, choose Motion.",
+        "If hidden automation feels complex, keep your calendar simple."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Motion automatically reschedule tasks?",
+      "a": "Yes. It adjusts tasks based on deadlines and calendar changes."
+    },
+    {
+      "q": "Is Outlook Calendar focused only on events?",
+      "a": "Yes. It centers on viewing and managing scheduled meetings."
+    },
+    {
+      "q": "Which tool is more minimal?",
+      "a": "Outlook Calendar is more minimal because it does not include algorithmic scheduling."
+    },
+    {
+      "q": "Can Motion be used just to view events?",
+      "a": "It can display events, but its design emphasizes automated planning."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Motion",
+      "y_name": "Apple Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Akiflow",
+      "y_name": "Apple Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Akiflow",
+      "y_name": "Google Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Clockwise",
+      "y_name": "Google Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Notion Calendar",
+      "y_name": "Google Calendar",
+      "persona": "Minimalist"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Outlook Calendar works better for minimalists",
-"bullets": [
-{
-"point": "Standard calendar grid with fixed events.",
-"why_it_matters": "Meetings appear exactly as scheduled without algorithmic adjustments."
-},
-{
-"point": "Simple event creation with title, time, and attendees.",
-"why_it_matters": "You add meetings directly without activating automation systems."
-},
-{
-"point": "Optional calendar overlays without task reshuffling.",
-"why_it_matters": "You can view multiple calendars without blending automated planning logic."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You feel distracted by automatic task placement and schedule adjustments when you only want to see meetings.",
-"what_to_do_instead": "Use Outlook Calendar if you prefer static event viewing."
-},
-{
-"tool": "y",
-"fails_when": "You want tasks automatically scheduled around meetings and deadlines.",
-"what_to_do_instead": "Use Motion if you prefer algorithm-driven planning."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you want your tasks automatically arranged around meetings and deadlines, Motion may justify its automation layers."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you only want to view meetings, choose Outlook Calendar.",
-"If you want automatic task scheduling, choose Motion.",
-"If hidden automation feels complex, keep your calendar simple."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Motion automatically reschedule tasks?",
-"a": "Yes. It adjusts tasks based on deadlines and calendar changes."
-},
-{
-"q": "Is Outlook Calendar focused only on events?",
-"a": "Yes. It centers on viewing and managing scheduled meetings."
-},
-{
-"q": "Which tool is more minimal?",
-"a": "Outlook Calendar is more minimal because it does not include algorithmic scheduling."
-},
-{
-"q": "Can Motion be used just to view events?",
-"a": "It can display events, but its design emphasizes automated planning."
-}
-],
-"related_pages": [
-{ "x_name": "Akiflow", "y_name": "Apple Calendar", "persona": "Minimalist" },
-{ "x_name": "Zoho Bookings", "y_name": "TidyCal", "persona": "Beginner" },
-{ "x_name": "Square Appointments", "y_name": "Calendly", "persona": "Beginner" },
-{ "x_name": "Teamup Calendar", "y_name": "Google Calendar", "persona": "Beginner" },
-{ "x_name": "Skedda", "y_name": "Google Calendar", "persona": "Solo user" },
-{ "x_name": "Doodle", "y_name": "TidyCal", "persona": "Student" }
-]
-}
-

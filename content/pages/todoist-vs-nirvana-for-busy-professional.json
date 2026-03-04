@@ -1,116 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "time-scarcity",
-"constraintUiName": "Fast to use daily",
-"title": "Todoist vs Nirvana for Busy professionals",
-"slug": "todoist-vs-nirvana-for-busy-professional",
-"meta_description": "Todoist vs Nirvana for busy professionals who need instant task capture without following structured GTD workflow steps first.",
-"persona": "Busy professional",
-"constraint_lens": "You need to capture tasks immediately without following structured workflows or extra processing steps.",
-"verdict": {
-"winner": "x",
-"summary": "Todoist wins for busy professionals who need to log work tasks quickly between meetings. It lets you type a task into a single input field and move on without sorting it into a workflow first. Nirvana is built around a GTD flow that encourages clarifying and assigning contexts before processing tasks. If GTD-style workflow steps must be followed before task entry, Nirvana fails first.",
-"decision_rule": "If GTD-style workflow steps must be followed before task entry, Nirvana fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Which tool captures tasks without slowing you down?",
-"content": "You need fast capture without managing GTD frameworks. As a busy professional, every extra decision adds mental load. The right tool should let you dump a task and return to work. Anything that requires sorting into contexts or stages before entry slows you down."
-},
-{
-"type": "x_wins",
-"heading": "Where Todoist works better for busy professionals",
-"bullets": [
-{
-"point": "Quick add bar that accepts natural language like 'Call client tomorrow at 3pm'.",
-"why_it_matters": "You can type the task and deadline in one line without opening multiple fields. This reduces steps during fast task capture."
-},
-{
-"point": "Inbox-first design where tasks can remain unsorted.",
-"why_it_matters": "You can drop tasks into Inbox and organize later. There is no required processing stage before saving."
-},
-{
-"point": "Optional labels and projects instead of mandatory contexts.",
-"why_it_matters": "You can add structure only when needed. If you skip labels, the task still saves instantly."
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Todoist vs Nirvana for Busy professionals",
+  "slug": "todoist-vs-nirvana-for-busy-professional",
+  "meta_description": "Todoist vs Nirvana for busy professionals who need instant task capture without following structured GTD workflow steps first.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need to capture tasks immediately without following structured workflows or extra processing steps.",
+  "verdict": {
+    "winner": "x",
+    "summary": "Todoist wins for busy professionals who need to log work tasks quickly between meetings. It lets you type a task into a single input field and move on without sorting it into a workflow first. Nirvana is built around a GTD flow that encourages clarifying and assigning contexts before processing tasks. If GTD-style workflow steps must be followed before task entry, Nirvana fails first.",
+    "decision_rule": "If GTD-style workflow steps must be followed before task entry, Nirvana fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool captures tasks without slowing you down?",
+      "content": "You need fast capture without managing GTD frameworks. As a busy professional, every extra decision adds mental load. The right tool should let you dump a task and return to work. Anything that requires sorting into contexts or stages before entry slows you down."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Todoist works better for busy professionals",
+      "bullets": [
+        {
+          "point": "Quick add bar that accepts natural language like 'Call client tomorrow at 3pm'.",
+          "why_it_matters": "You can type the task and deadline in one line without opening multiple fields. This reduces steps during fast task capture."
+        },
+        {
+          "point": "Inbox-first design where tasks can remain unsorted.",
+          "why_it_matters": "You can drop tasks into Inbox and organize later. There is no required processing stage before saving."
+        },
+        {
+          "point": "Optional labels and projects instead of mandatory contexts.",
+          "why_it_matters": "You can add structure only when needed. If you skip labels, the task still saves instantly."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Nirvana works better",
+      "bullets": [
+        {
+          "point": "Structured GTD areas such as Next, Waiting, and Someday.",
+          "why_it_matters": "You can move tasks through defined stages. However, thinking through these stages adds decisions before acting."
+        },
+        {
+          "point": "Context-based organization built into task flow.",
+          "why_it_matters": "You can assign contexts like Office or Home for clarity. Assigning these fields requires extra attention during entry."
+        },
+        {
+          "point": "Explicit processing step for clarifying tasks.",
+          "why_it_matters": "The system encourages reviewing and clarifying items before execution. For someone short on time, this slows immediate capture."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want strict GTD stages and context-driven task reviews.",
+          "what_to_do_instead": "Use Nirvana if you prefer structured processing before execution."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You must decide context, area, or processing stage before feeling comfortable saving a task.",
+          "what_to_do_instead": "Use Todoist if you want instant capture without workflow steps."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you are a busy professional already trained in GTD and rely on structured review sessions to manage complex projects, Nirvana may feel more aligned despite the extra steps."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want to type and save in one step, choose Todoist.",
+        "If you follow strict GTD stages, choose Nirvana.",
+        "If workflow processing slows you down, avoid GTD-first tools."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Todoist faster for quick task entry?",
+      "a": "Yes. Its single-line quick add lets you enter task and date without navigating multiple fields."
+    },
+    {
+      "q": "Does Nirvana require GTD processing?",
+      "a": "It is designed around GTD stages and encourages clarifying and organizing tasks before execution."
+    },
+    {
+      "q": "Which tool is better between meetings?",
+      "a": "Todoist is better for rapid capture because it does not require assigning contexts first."
+    },
+    {
+      "q": "Can Nirvana work without strict GTD use?",
+      "a": "Yes, but its structure is built around GTD concepts, so its interface reflects that workflow."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "ClickUp",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Jira",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Linear",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Monday.com",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Motion",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Todoist",
+      "y_name": "Asana",
+      "persona": "Busy professional"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Nirvana works better",
-"bullets": [
-{
-"point": "Structured GTD areas such as Next, Waiting, and Someday.",
-"why_it_matters": "You can move tasks through defined stages. However, thinking through these stages adds decisions before acting."
-},
-{
-"point": "Context-based organization built into task flow.",
-"why_it_matters": "You can assign contexts like Office or Home for clarity. Assigning these fields requires extra attention during entry."
-},
-{
-"point": "Explicit processing step for clarifying tasks.",
-"why_it_matters": "The system encourages reviewing and clarifying items before execution. For someone short on time, this slows immediate capture."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You want strict GTD stages and context-driven task reviews.",
-"what_to_do_instead": "Use Nirvana if you prefer structured processing before execution."
-},
-{
-"tool": "y",
-"fails_when": "You must decide context, area, or processing stage before feeling comfortable saving a task.",
-"what_to_do_instead": "Use Todoist if you want instant capture without workflow steps."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you are a busy professional already trained in GTD and rely on structured review sessions to manage complex projects, Nirvana may feel more aligned despite the extra steps."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want to type and save in one step, choose Todoist.",
-"If you follow strict GTD stages, choose Nirvana.",
-"If workflow processing slows you down, avoid GTD-first tools."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Todoist faster for quick task entry?",
-"a": "Yes. Its single-line quick add lets you enter task and date without navigating multiple fields."
-},
-{
-"q": "Does Nirvana require GTD processing?",
-"a": "It is designed around GTD stages and encourages clarifying and organizing tasks before execution."
-},
-{
-"q": "Which tool is better between meetings?",
-"a": "Todoist is better for rapid capture because it does not require assigning contexts first."
-},
-{
-"q": "Can Nirvana work without strict GTD use?",
-"a": "Yes, but its structure is built around GTD concepts, so its interface reflects that workflow."
-}
-],
-"related_pages": [
-{ "x_name": "Jira", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Asana", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "ClickUp", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Things", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "Microsoft To Do", "y_name": "Todoist", "persona": "Busy professional" },
-{ "x_name": "TickTick", "y_name": "Todoist", "persona": "Busy professional" }
-]
-}
-

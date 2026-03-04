@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Habitica vs TickTick for Minimalists",
-"slug": "habitica-vs-ticktick-for-minimalist",
-"meta_description": "Habitica vs TickTick for minimalists who want a simple task list without RPG-style gamification systems or reward mechanics.",
-"persona": "Minimalist",
-"constraint_lens": "You want a straightforward task list without game mechanics, character systems, or reward layers.",
-"verdict": {
-"winner": "y",
-"summary": "TickTick wins for minimalists who want a straightforward task list. It focuses on tasks, lists, and due dates without requiring interaction with game systems. Habitica turns tasks into RPG-style actions tied to character progression and rewards. If RPG mechanics and character progression layers introduce extra interaction steps, Habitica fails first.",
-"decision_rule": "If RPG mechanics and character progression layers introduce extra interaction steps, Habitica fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for simple daily tracking",
-"content": "You want a task list and avoid gamification systems. TickTick opens with simple lists where tasks are checked off when complete. Habitica connects tasks to a character system where completing items affects health, experience, and rewards."
-},
-{
-"type": "x_wins",
-"heading": "Where Habitica wins",
-"bullets": [
-{
-"point": "Task completion tied to character leveling",
-"why_it_matters": "You gain experience and rewards when tasks are finished, which can motivate some users."
-},
-{
-"point": "Habit, daily, and to-do task categories",
-"why_it_matters": "Different task types affect game progress in distinct ways."
-},
-{
-"point": "Party quests and cooperative challenges",
-"why_it_matters": "You complete tasks together with others in shared game-style goals."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where TickTick wins",
-"bullets": [
-{
-"point": "Plain task lists with quick entry",
-"why_it_matters": "You add and complete tasks without navigating game interfaces."
-},
-{
-"point": "Due dates and recurring task settings",
-"why_it_matters": "You track daily responsibilities without linking them to character mechanics."
-},
-{
-"point": "Calendar and list views for tasks",
-"why_it_matters": "You see upcoming work in a clear structure rather than through gameplay systems."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You must interact with character progress, rewards, or quests to manage simple tasks.",
-"what_to_do_instead": "Use TickTick for a direct checklist workflow."
-},
-{
-"tool": "y",
-"fails_when": "You rely on external rewards or game systems to stay motivated.",
-"what_to_do_instead": "Switch to Habitica if gamification helps maintain habits."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If game-style rewards strongly motivate you to finish tasks, Habitica may become more engaging than a plain list."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you want a simple checklist without game systems, choose TickTick.",
-"If RPG-style mechanics feel distracting, avoid Habitica.",
-"If rewards and leveling motivate you, consider Habitica."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Habitica require interacting with a game system?",
-"a": "Yes. Tasks are tied to character progress and rewards."
-},
-{
-"q": "Is TickTick focused mainly on tasks?",
-"a": "Yes. It centers on lists, due dates, and recurring tasks."
-},
-{
-"q": "Which is better for minimal task tracking?",
-"a": "TickTick is better for a simple checklist approach."
-},
-{
-"q": "When would Habitica be a better choice?",
-"a": "It can be better if game-style rewards motivate you to complete tasks."
-}
-],
-"related_pages": [
-{ "x_name": "TeuxDeux", "y_name": "Things 3", "persona": "Minimalist" },
-{ "x_name": "TaskPaper", "y_name": "OmniFocus", "persona": "Minimalist" },
-{ "x_name": "Coda", "y_name": "Apple Notes", "persona": "Minimalist" },
-{ "x_name": "Milanote", "y_name": "Coda", "persona": "Minimalist" },
-{ "x_name": "Evernote", "y_name": "Bear", "persona": "Minimalist" },
-{ "x_name": "Notion", "y_name": "Bear", "persona": "Minimalist" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Habitica vs TickTick for Minimalists",
+  "slug": "habitica-vs-ticktick-for-minimalist",
+  "meta_description": "Habitica vs TickTick for minimalists who want a simple task list without RPG-style gamification systems or reward mechanics.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a straightforward task list without game mechanics, character systems, or reward layers.",
+  "verdict": {
+    "winner": "y",
+    "summary": "TickTick wins for minimalists who want a straightforward task list. It focuses on tasks, lists, and due dates without requiring interaction with game systems. Habitica turns tasks into RPG-style actions tied to character progression and rewards. If RPG mechanics and character progression layers introduce extra interaction steps, Habitica fails first.",
+    "decision_rule": "If RPG mechanics and character progression layers introduce extra interaction steps, Habitica fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for simple daily tracking",
+      "content": "You want a task list and avoid gamification systems. TickTick opens with simple lists where tasks are checked off when complete. Habitica connects tasks to a character system where completing items affects health, experience, and rewards."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Habitica wins",
+      "bullets": [
+        {
+          "point": "Task completion tied to character leveling",
+          "why_it_matters": "You gain experience and rewards when tasks are finished, which can motivate some users."
+        },
+        {
+          "point": "Habit, daily, and to-do task categories",
+          "why_it_matters": "Different task types affect game progress in distinct ways."
+        },
+        {
+          "point": "Party quests and cooperative challenges",
+          "why_it_matters": "You complete tasks together with others in shared game-style goals."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where TickTick wins",
+      "bullets": [
+        {
+          "point": "Plain task lists with quick entry",
+          "why_it_matters": "You add and complete tasks without navigating game interfaces."
+        },
+        {
+          "point": "Due dates and recurring task settings",
+          "why_it_matters": "You track daily responsibilities without linking them to character mechanics."
+        },
+        {
+          "point": "Calendar and list views for tasks",
+          "why_it_matters": "You see upcoming work in a clear structure rather than through gameplay systems."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You must interact with character progress, rewards, or quests to manage simple tasks.",
+          "what_to_do_instead": "Use TickTick for a direct checklist workflow."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You rely on external rewards or game systems to stay motivated.",
+          "what_to_do_instead": "Switch to Habitica if gamification helps maintain habits."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If game-style rewards strongly motivate you to finish tasks, Habitica may become more engaging than a plain list."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you want a simple checklist without game systems, choose TickTick.",
+        "If RPG-style mechanics feel distracting, avoid Habitica.",
+        "If rewards and leveling motivate you, consider Habitica."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Habitica require interacting with a game system?",
+      "a": "Yes. Tasks are tied to character progress and rewards."
+    },
+    {
+      "q": "Is TickTick focused mainly on tasks?",
+      "a": "Yes. It centers on lists, due dates, and recurring tasks."
+    },
+    {
+      "q": "Which is better for minimal task tracking?",
+      "a": "TickTick is better for a simple checklist approach."
+    },
+    {
+      "q": "When would Habitica be a better choice?",
+      "a": "It can be better if game-style rewards motivate you to complete tasks."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Habitica",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Amazing Marvin",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "Any.do",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "ClickUp",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Apple Reminders",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Trello",
+      "persona": "Minimalist"
+    }
+  ]
 }

@@ -1,116 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Habitica vs Todoist for Minimalists",
-"slug": "habitica-vs-todoist-for-minimalist",
-"meta_description": "Habitica vs Todoist for minimalists who want to track daily to dos without avatars, rewards, or extra game mechanics getting in the way.",
-"persona": "Minimalist",
-"constraint_lens": "You want a clean task list without avatars, rewards, or extra mechanics layered on top of your to dos.",
-"verdict": {
-"winner": "y",
-"summary": "Todoist wins for minimalists who want to track daily to dos without game layers. It focuses on lists, due dates, and simple checkboxes. Habitica adds avatars, experience points, and separate habit categories that introduce extra decisions. If game mechanics add unnecessary decisions, Habitica fails first.",
-"decision_rule": "If game mechanics add unnecessary decisions, Habitica fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this matters for Minimalists",
-"content": "You said you want tasks without gamification or extra mechanics. As a minimalist, additional screens for character stats or reward systems feel like noise. A straightforward list that stays out of the way fits better."
-},
-{
-"type": "x_wins",
-"heading": "Where Habitica wins",
-"bullets": [
-{
-"point": "Tasks tied to experience points and leveling system",
-"why_it_matters": "You gain rewards for completion, but watching progress bars and levels adds elements beyond simple tracking."
-},
-{
-"point": "Separate sections for habits, dailies, and to do items",
-"why_it_matters": "This structure encourages behavior tracking, yet deciding where each task belongs creates extra decisions."
-},
-{
-"point": "Avatar customization and in app rewards shop",
-"why_it_matters": "Personalization can motivate, but interacting with these features adds steps unrelated to finishing tasks."
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Habitica vs Todoist for Minimalists",
+  "slug": "habitica-vs-todoist-for-minimalist",
+  "meta_description": "Habitica vs Todoist for minimalists who want to track daily to dos without avatars, rewards, or extra game mechanics getting in the way.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a clean task list without avatars, rewards, or extra mechanics layered on top of your to dos.",
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist wins for minimalists who want to track daily to dos without game layers. It focuses on lists, due dates, and simple checkboxes. Habitica adds avatars, experience points, and separate habit categories that introduce extra decisions. If game mechanics add unnecessary decisions, Habitica fails first.",
+    "decision_rule": "If game mechanics add unnecessary decisions, Habitica fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Minimalists",
+      "content": "You said you want tasks without gamification or extra mechanics. As a minimalist, additional screens for character stats or reward systems feel like noise. A straightforward list that stays out of the way fits better."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Habitica wins",
+      "bullets": [
+        {
+          "point": "Tasks tied to experience points and leveling system",
+          "why_it_matters": "You gain rewards for completion, but watching progress bars and levels adds elements beyond simple tracking."
+        },
+        {
+          "point": "Separate sections for habits, dailies, and to do items",
+          "why_it_matters": "This structure encourages behavior tracking, yet deciding where each task belongs creates extra decisions."
+        },
+        {
+          "point": "Avatar customization and in app rewards shop",
+          "why_it_matters": "Personalization can motivate, but interacting with these features adds steps unrelated to finishing tasks."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Single list view with quick add task field",
+          "why_it_matters": "You can type and save tasks instantly without choosing categories like habit or daily."
+        },
+        {
+          "point": "Optional features such as labels and filters can be ignored",
+          "why_it_matters": "You can keep everything as a basic checklist without activating deeper layers."
+        },
+        {
+          "point": "Clean Today view focused only on due tasks",
+          "why_it_matters": "You see what needs action without visual distractions like avatars or reward panels."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You spend time interacting with game elements instead of simply completing tasks.",
+          "what_to_do_instead": "Use Todoist if you want a stripped down checklist with minimal extras."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You struggle with consistency and benefit from visible rewards or streak tracking.",
+          "what_to_do_instead": "Use Habitica if game style motivation genuinely improves follow through."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you find that plain lists no longer motivate you and you need visible rewards or streaks to stay consistent, Habitica may become useful despite the added mechanics."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a clean list with no extras, choose Todoist.",
+        "If avatars and rewards feel unnecessary, avoid Habitica.",
+        "If gamification keeps you consistent, Habitica may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Habitica only about games?",
+      "a": "It uses game style systems like levels and rewards to encourage task completion."
+    },
+    {
+      "q": "Can Todoist stay minimal long term?",
+      "a": "Yes, you can ignore advanced features and keep it as a simple daily list."
+    },
+    {
+      "q": "Which tool has fewer built in mechanics?",
+      "a": "Todoist has fewer layers and focuses mainly on tasks and due dates."
+    },
+    {
+      "q": "Does Habitica require categorizing tasks?",
+      "a": "Yes, it encourages placing items into habits, dailies, or to do sections, which adds extra decisions."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Amazing Marvin",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Habitica",
+      "y_name": "TickTick",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "MeisterTask",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "OmniFocus",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Sunsama",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "TeuxDeux",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    }
+  ]
 }
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Todoist wins",
-"bullets": [
-{
-"point": "Single list view with quick add task field",
-"why_it_matters": "You can type and save tasks instantly without choosing categories like habit or daily."
-},
-{
-"point": "Optional features such as labels and filters can be ignored",
-"why_it_matters": "You can keep everything as a basic checklist without activating deeper layers."
-},
-{
-"point": "Clean Today view focused only on due tasks",
-"why_it_matters": "You see what needs action without visual distractions like avatars or reward panels."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You spend time interacting with game elements instead of simply completing tasks.",
-"what_to_do_instead": "Use Todoist if you want a stripped down checklist with minimal extras."
-},
-{
-"tool": "y",
-"fails_when": "You struggle with consistency and benefit from visible rewards or streak tracking.",
-"what_to_do_instead": "Use Habitica if game style motivation genuinely improves follow through."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you find that plain lists no longer motivate you and you need visible rewards or streaks to stay consistent, Habitica may become useful despite the added mechanics."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"If you want a clean list with no extras, choose Todoist.",
-"If avatars and rewards feel unnecessary, avoid Habitica.",
-"If gamification keeps you consistent, Habitica may fit better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is Habitica only about games?",
-"a": "It uses game style systems like levels and rewards to encourage task completion."
-},
-{
-"q": "Can Todoist stay minimal long term?",
-"a": "Yes, you can ignore advanced features and keep it as a simple daily list."
-},
-{
-"q": "Which tool has fewer built in mechanics?",
-"a": "Todoist has fewer layers and focuses mainly on tasks and due dates."
-},
-{
-"q": "Does Habitica require categorizing tasks?",
-"a": "Yes, it encourages placing items into habits, dailies, or to do sections, which adds extra decisions."
-}
-],
-"related_pages": [
-{ "x_name": "Sunsama", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "Notion", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "OmniFocus", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "TickTick", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "Microsoft To Do", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "Things", "y_name": "Todoist", "persona": "Minimalist" }
-]
-}
-

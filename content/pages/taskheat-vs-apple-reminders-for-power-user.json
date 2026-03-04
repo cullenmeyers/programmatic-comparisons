@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "Taskheat vs Apple Reminders for Power users",
-"slug": "taskheat-vs-apple-reminders-for-power-user",
-"meta_description": "Taskheat vs Apple Reminders for power users who need visual task dependencies and connected flow diagrams.",
-"persona": "Power user",
-"constraint_lens": "You need to model tasks as connected flows with visible dependencies, not just isolated checklist items.",
-"verdict": {
-"winner": "x",
-"summary": "Taskheat wins for power users who map task dependencies visually. It lets you connect tasks with arrows to show cause and sequence. Apple Reminders organizes tasks in lists with due dates but does not model dependency flows. If task dependencies cannot be modeled as connected flows, Apple Reminders fails first.",
-"decision_rule": "If task dependencies cannot be modeled as connected flows, Apple Reminders fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for visual dependency planning",
-"content": "You map task dependencies visually and expect causal linking between tasks. Taskheat provides a canvas where tasks are nodes connected by directional arrows. Apple Reminders presents tasks in simple lists without native dependency mapping."
-},
-{
-"type": "x_wins",
-"heading": "Where Taskheat wins",
-"bullets": [
-{
-"point": "Visual node-and-arrow task canvas",
-"why_it_matters": "You see how one task leads to another instead of scanning a flat checklist."
-},
-{
-"point": "Explicit dependency links between tasks",
-"why_it_matters": "You define which tasks must happen first, making sequence and causality clear."
-},
-{
-"point": "Automatic highlighting of next actionable tasks",
-"why_it_matters": "Tasks become available based on completed dependencies, supporting flow-based execution."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Apple Reminders wins",
-"bullets": [
-{
-"point": "Simple list-based task interface",
-"why_it_matters": "You capture tasks quickly without designing a flow diagram."
-},
-{
-"point": "Due dates and priority flags",
-"why_it_matters": "You manage time-based reminders without modeling dependencies."
-},
-{
-"point": "System-level integration with Apple devices",
-"why_it_matters": "You add tasks through Siri and see them across devices instantly."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You only need quick checklist reminders without visual mapping.",
-"what_to_do_instead": "Use Apple Reminders for fast capture and simple time-based tasks."
-},
-{
-"tool": "y",
-"fails_when": "You must represent tasks as connected flows with clear dependencies.",
-"what_to_do_instead": "Switch to Taskheat for visual dependency modeling."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your projects are simple and rarely require modeling which task unlocks another, Apple Reminders may be sufficient."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you need to see task dependencies visually, choose Taskheat.",
-"If checklist simplicity is enough, Apple Reminders may work.",
-"If modeling task flows matters, avoid flat list tools."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Apple Reminders support task dependencies?",
-"a": "It focuses on list-based tasks and does not provide native dependency flow modeling."
-},
-{
-"q": "Can Taskheat show which task unlocks another?",
-"a": "Yes. Tasks are connected with arrows that represent dependency relationships."
-},
-{
-"q": "Which is better for simple reminders?",
-"a": "Apple Reminders is better for quick, time-based checklist tasks."
-},
-{
-"q": "Which has the higher ceiling for complex project planning?",
-"a": "Taskheat generally has the higher ceiling for visual dependency mapping."
-}
-],
-"related_pages": [
-{ "x_name": "Pagico", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "OmniFocus", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "ClickUp", "y_name": "Todoist", "persona": "Power user" },
-{ "x_name": "Notion", "y_name": "Todoist", "persona": "Power user" },
-{ "x_name": "Asana", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "TickTick", "y_name": "Things 3", "persona": "Power user" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Taskheat vs Apple Reminders for Power users",
+  "slug": "taskheat-vs-apple-reminders-for-power-user",
+  "meta_description": "Taskheat vs Apple Reminders for power users who need visual task dependencies and connected flow diagrams.",
+  "persona": "Power user",
+  "constraint_lens": "You need to model tasks as connected flows with visible dependencies, not just isolated checklist items.",
+  "verdict": {
+    "winner": "x",
+    "summary": "Taskheat wins for power users who map task dependencies visually. It lets you connect tasks with arrows to show cause and sequence. Apple Reminders organizes tasks in lists with due dates but does not model dependency flows. If task dependencies cannot be modeled as connected flows, Apple Reminders fails first.",
+    "decision_rule": "If task dependencies cannot be modeled as connected flows, Apple Reminders fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for visual dependency planning",
+      "content": "You map task dependencies visually and expect causal linking between tasks. Taskheat provides a canvas where tasks are nodes connected by directional arrows. Apple Reminders presents tasks in simple lists without native dependency mapping."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Taskheat wins",
+      "bullets": [
+        {
+          "point": "Visual node-and-arrow task canvas",
+          "why_it_matters": "You see how one task leads to another instead of scanning a flat checklist."
+        },
+        {
+          "point": "Explicit dependency links between tasks",
+          "why_it_matters": "You define which tasks must happen first, making sequence and causality clear."
+        },
+        {
+          "point": "Automatic highlighting of next actionable tasks",
+          "why_it_matters": "Tasks become available based on completed dependencies, supporting flow-based execution."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Apple Reminders wins",
+      "bullets": [
+        {
+          "point": "Simple list-based task interface",
+          "why_it_matters": "You capture tasks quickly without designing a flow diagram."
+        },
+        {
+          "point": "Due dates and priority flags",
+          "why_it_matters": "You manage time-based reminders without modeling dependencies."
+        },
+        {
+          "point": "System-level integration with Apple devices",
+          "why_it_matters": "You add tasks through Siri and see them across devices instantly."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only need quick checklist reminders without visual mapping.",
+          "what_to_do_instead": "Use Apple Reminders for fast capture and simple time-based tasks."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You must represent tasks as connected flows with clear dependencies.",
+          "what_to_do_instead": "Switch to Taskheat for visual dependency modeling."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your projects are simple and rarely require modeling which task unlocks another, Apple Reminders may be sufficient."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you need to see task dependencies visually, choose Taskheat.",
+        "If checklist simplicity is enough, Apple Reminders may work.",
+        "If modeling task flows matters, avoid flat list tools."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Apple Reminders support task dependencies?",
+      "a": "It focuses on list-based tasks and does not provide native dependency flow modeling."
+    },
+    {
+      "q": "Can Taskheat show which task unlocks another?",
+      "a": "Yes. Tasks are connected with arrows that represent dependency relationships."
+    },
+    {
+      "q": "Which is better for simple reminders?",
+      "a": "Apple Reminders is better for quick, time-based checklist tasks."
+    },
+    {
+      "q": "Which has the higher ceiling for complex project planning?",
+      "a": "Taskheat generally has the higher ceiling for visual dependency mapping."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Asana",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "GQueues",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Nirvana",
+      "y_name": "Things 3",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Pagico",
+      "y_name": "Things 3",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Remember The Milk",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Taskwarrior",
+      "y_name": "Todoist",
+      "persona": "Power user"
+    }
+  ]
 }
