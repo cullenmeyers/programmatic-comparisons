@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "OmniFocus vs Things 3 for Power users",
-"slug": "omnifocus-vs-things-3-for-power-user",
-"meta_description": "OmniFocus vs Things 3 for power users running strict GTD workflows with contexts, review cycles, and automation.",
-"persona": "Power user",
-"constraint_lens": "You need a task manager that supports deep GTD workflows with contexts, perspectives, and automated review structures.",
-"verdict": {
-"winner": "x",
-"summary": "OmniFocus wins for power users running strict GTD workflows. It includes contexts, perspectives, and built-in review cycles that support structured task management. Things 3 focuses on clean project lists and areas but limits advanced filtering and automation rules. If contexts, perspectives, and automation rules are structurally limited, Things 3 fails first.",
-"decision_rule": "If contexts, perspectives, and automation rules are structurally limited, Things 3 fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for strict GTD systems",
-"content": "You run advanced GTD workflows with contexts and review cycles. OmniFocus is built around contexts, perspectives, and structured reviews that help maintain a disciplined task system. Things 3 keeps projects and areas simple but removes many of the deeper workflow controls used in strict GTD setups."
-},
-{
-"type": "x_wins",
-"heading": "Where OmniFocus wins",
-"bullets": [
-{
-"point": "Context fields attached to every task",
-"why_it_matters": "You filter tasks by situation or resource such as phone, computer, or errands."
-},
-{
-"point": "Custom perspective views built from filtering rules",
-"why_it_matters": "You create focused task views for specific workflows without restructuring projects."
-},
-{
-"point": "Built-in review mode cycling through projects",
-"why_it_matters": "You maintain GTD review habits by checking each project on a scheduled cadence."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Things 3 wins",
-"bullets": [
-{
-"point": "Project and area structure with clean visual layout",
-"why_it_matters": "You navigate tasks quickly without configuring complex workflow layers."
-},
-{
-"point": "Natural language date entry during task creation",
-"why_it_matters": "You add due dates quickly while typing tasks."
-},
-{
-"point": "Simplified upcoming and today views",
-"why_it_matters": "You see near-term tasks without building custom filtering views."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You want a lightweight task manager without managing contexts, perspectives, and review workflows.",
-"what_to_do_instead": "Use Things 3 if you prefer a simple project-based task list."
-},
-{
-"tool": "y",
-"fails_when": "You need advanced filtering, context grouping, or automated review cycles across many projects.",
-"what_to_do_instead": "Switch to OmniFocus for a deeper GTD system."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your workflow focuses on simple project lists rather than formal GTD systems with contexts and review cycles, Things 3 may feel faster."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you run a strict GTD system with contexts and reviews, choose OmniFocus.",
-"If you prefer a clean project list without workflow layers, choose Things 3.",
-"If filtering tasks into custom views is essential, OmniFocus fits better."
-]
-}
-],
-"faqs": [
-{
-"q": "Is OmniFocus designed for GTD workflows?",
-"a": "Yes. It includes contexts, perspectives, and review tools built for structured GTD systems."
-},
-{
-"q": "Does Things 3 support contexts like OmniFocus?",
-"a": "No. Things 3 uses tags and project areas instead of dedicated context fields."
-},
-{
-"q": "Which tool supports advanced task filtering?",
-"a": "OmniFocus allows custom perspectives that filter tasks using multiple conditions."
-},
-{
-"q": "When would Things 3 be the better option?",
-"a": "It works well when you want a clean project list without maintaining complex GTD structures."
-}
-],
-"related_pages": [
-{ "x_name": "Pagico", "y_name": "Todoist", "persona": "Power user" },
-{ "x_name": "Remember The Milk", "y_name": "Google Tasks", "persona": "Power user" },
-{ "x_name": "Todoist", "y_name": "Microsoft To Do", "persona": "Power user" },
-{ "x_name": "GQueues", "y_name": "Google Tasks", "persona": "Power user" },
-{ "x_name": "Kanban Tool", "y_name": "Trello", "persona": "Power user" },
-{ "x_name": "Taskheat", "y_name": "Sorted³", "persona": "Power user" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "OmniFocus vs Things 3 for Power users",
+  "slug": "omnifocus-vs-things-3-for-power-user",
+  "meta_description": "OmniFocus vs Things 3 for power users running strict GTD workflows with contexts, review cycles, and automation.",
+  "persona": "Power user",
+  "constraint_lens": "You need a task manager that supports deep GTD workflows with contexts, perspectives, and automated review structures.",
+  "verdict": {
+    "winner": "x",
+    "summary": "OmniFocus wins for power users running strict GTD workflows. It includes contexts, perspectives, and built-in review cycles that support structured task management. Things 3 focuses on clean project lists and areas but limits advanced filtering and automation rules. If contexts, perspectives, and automation rules are structurally limited, Things 3 fails first.",
+    "decision_rule": "If contexts, perspectives, and automation rules are structurally limited, Things 3 fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for strict GTD systems",
+      "content": "You run advanced GTD workflows with contexts and review cycles. OmniFocus is built around contexts, perspectives, and structured reviews that help maintain a disciplined task system. Things 3 keeps projects and areas simple but removes many of the deeper workflow controls used in strict GTD setups."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where OmniFocus wins",
+      "bullets": [
+        {
+          "point": "Context fields attached to every task",
+          "why_it_matters": "You filter tasks by situation or resource such as phone, computer, or errands."
+        },
+        {
+          "point": "Custom perspective views built from filtering rules",
+          "why_it_matters": "You create focused task views for specific workflows without restructuring projects."
+        },
+        {
+          "point": "Built-in review mode cycling through projects",
+          "why_it_matters": "You maintain GTD review habits by checking each project on a scheduled cadence."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Things 3 wins",
+      "bullets": [
+        {
+          "point": "Project and area structure with clean visual layout",
+          "why_it_matters": "You navigate tasks quickly without configuring complex workflow layers."
+        },
+        {
+          "point": "Natural language date entry during task creation",
+          "why_it_matters": "You add due dates quickly while typing tasks."
+        },
+        {
+          "point": "Simplified upcoming and today views",
+          "why_it_matters": "You see near-term tasks without building custom filtering views."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want a lightweight task manager without managing contexts, perspectives, and review workflows.",
+          "what_to_do_instead": "Use Things 3 if you prefer a simple project-based task list."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need advanced filtering, context grouping, or automated review cycles across many projects.",
+          "what_to_do_instead": "Switch to OmniFocus for a deeper GTD system."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your workflow focuses on simple project lists rather than formal GTD systems with contexts and review cycles, Things 3 may feel faster."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you run a strict GTD system with contexts and reviews, choose OmniFocus.",
+        "If you prefer a clean project list without workflow layers, choose Things 3.",
+        "If filtering tasks into custom views is essential, OmniFocus fits better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is OmniFocus designed for GTD workflows?",
+      "a": "Yes. It includes contexts, perspectives, and review tools built for structured GTD systems."
+    },
+    {
+      "q": "Does Things 3 support contexts like OmniFocus?",
+      "a": "No. Things 3 uses tags and project areas instead of dedicated context fields."
+    },
+    {
+      "q": "Which tool supports advanced task filtering?",
+      "a": "OmniFocus allows custom perspectives that filter tasks using multiple conditions."
+    },
+    {
+      "q": "When would Things 3 be the better option?",
+      "a": "It works well when you want a clean project list without maintaining complex GTD structures."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Pagico",
+      "y_name": "Todoist",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Remember The Milk",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Todoist",
+      "y_name": "Microsoft To Do",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "GQueues",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Kanban Tool",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Nirvana",
+      "y_name": "Things 3",
+      "persona": "Power user"
+    }
+  ]
 }

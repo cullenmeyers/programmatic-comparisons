@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "Toodledo vs Microsoft To Do for Power users",
-"slug": "toodledo-vs-microsoft-to-do-for-power-user",
-"meta_description": "Toodledo vs Microsoft To Do for power users managing large task databases with custom fields and advanced filtering rules.",
-"persona": "Power user",
-"constraint_lens": "You need a task manager that can filter and sort large task databases using custom fields and detailed rules.",
-"verdict": {
-"winner": "x",
-"summary": "Toodledo wins for power users managing large task databases. It supports custom fields and advanced filtering rules that allow tasks to be sorted in many ways. Microsoft To Do focuses on simple lists and does not support complex filtering structures. If custom filters and advanced task fields are constrained, Microsoft To Do fails first.",
-"decision_rule": "If custom filters and advanced task fields are constrained, Microsoft To Do fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for complex task databases",
-"content": "You manage large task databases and expect powerful filtering rules. Toodledo includes multiple task attributes such as priority levels, contexts, tags, folders, and custom fields that can be combined in filters. Microsoft To Do keeps tasks in simple lists with limited sorting options."
-},
-{
-"type": "x_wins",
-"heading": "Where Toodledo wins",
-"bullets": [
-{
-"point": "Custom task fields added to each task record",
-"why_it_matters": "You attach extra attributes to tasks that help organize large databases."
-},
-{
-"point": "Advanced filtering rules combining multiple task attributes",
-"why_it_matters": "Tasks can be sorted and displayed based on complex criteria."
-},
-{
-"point": "Multiple organizational layers including folders, tags, and contexts",
-"why_it_matters": "Large task collections remain structured without becoming cluttered."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Microsoft To Do wins",
-"bullets": [
-{
-"point": "Simple list-based interface",
-"why_it_matters": "You see tasks quickly without configuring database-style structures."
-},
-{
-"point": "Tight integration with Microsoft accounts and Outlook tasks",
-"why_it_matters": "Tasks appear automatically inside the Microsoft productivity ecosystem."
-},
-{
-"point": "Quick task entry from desktop and mobile apps",
-"why_it_matters": "You capture tasks immediately without setting additional fields."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You only need a simple daily task list without managing complex task attributes.",
-"what_to_do_instead": "Use Microsoft To Do if a straightforward list works better than a structured task database."
-},
-{
-"tool": "y",
-"fails_when": "Your task list grows large and requires detailed filtering across multiple attributes.",
-"what_to_do_instead": "Switch to Toodledo to control tasks through custom fields and filtering rules."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your workflow mainly involves capturing and completing small daily task lists rather than managing large structured task collections, Microsoft To Do may feel faster."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If tasks must be filtered using many attributes, choose Toodledo.",
-"If you only manage simple lists of tasks, Microsoft To Do works well.",
-"If your task system behaves like a database, Toodledo fits better."
-]
-}
-],
-"faqs": [
-{
-"q": "What makes Toodledo powerful for task management?",
-"a": "It supports custom fields, contexts, folders, and advanced filtering rules for organizing large task collections."
-},
-{
-"q": "Does Microsoft To Do support advanced filtering?",
-"a": "No. Tasks are mainly organized through simple lists and basic sorting."
-},
-{
-"q": "Which tool is better for large task databases?",
-"a": "Toodledo is designed for managing large and complex task systems."
-},
-{
-"q": "When would Microsoft To Do be the better choice?",
-"a": "It works better when you only need simple daily task lists without advanced filtering."
-}
-],
-"related_pages": [
-{ "x_name": "OmniFocus", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "Pagico", "y_name": "Todoist", "persona": "Power user" },
-{ "x_name": "Remember The Milk", "y_name": "Google Tasks", "persona": "Power user" },
-{ "x_name": "Todoist", "y_name": "Microsoft To Do", "persona": "Power user" },
-{ "x_name": "Kanban Tool", "y_name": "Trello", "persona": "Power user" },
-{ "x_name": "Taskheat", "y_name": "Sorted³", "persona": "Power user" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Toodledo vs Microsoft To Do for Power users",
+  "slug": "toodledo-vs-microsoft-to-do-for-power-user",
+  "meta_description": "Toodledo vs Microsoft To Do for power users managing large task databases with custom fields and advanced filtering rules.",
+  "persona": "Power user",
+  "constraint_lens": "You need a task manager that can filter and sort large task databases using custom fields and detailed rules.",
+  "verdict": {
+    "winner": "x",
+    "summary": "Toodledo wins for power users managing large task databases. It supports custom fields and advanced filtering rules that allow tasks to be sorted in many ways. Microsoft To Do focuses on simple lists and does not support complex filtering structures. If custom filters and advanced task fields are constrained, Microsoft To Do fails first.",
+    "decision_rule": "If custom filters and advanced task fields are constrained, Microsoft To Do fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for complex task databases",
+      "content": "You manage large task databases and expect powerful filtering rules. Toodledo includes multiple task attributes such as priority levels, contexts, tags, folders, and custom fields that can be combined in filters. Microsoft To Do keeps tasks in simple lists with limited sorting options."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Toodledo wins",
+      "bullets": [
+        {
+          "point": "Custom task fields added to each task record",
+          "why_it_matters": "You attach extra attributes to tasks that help organize large databases."
+        },
+        {
+          "point": "Advanced filtering rules combining multiple task attributes",
+          "why_it_matters": "Tasks can be sorted and displayed based on complex criteria."
+        },
+        {
+          "point": "Multiple organizational layers including folders, tags, and contexts",
+          "why_it_matters": "Large task collections remain structured without becoming cluttered."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Microsoft To Do wins",
+      "bullets": [
+        {
+          "point": "Simple list-based interface",
+          "why_it_matters": "You see tasks quickly without configuring database-style structures."
+        },
+        {
+          "point": "Tight integration with Microsoft accounts and Outlook tasks",
+          "why_it_matters": "Tasks appear automatically inside the Microsoft productivity ecosystem."
+        },
+        {
+          "point": "Quick task entry from desktop and mobile apps",
+          "why_it_matters": "You capture tasks immediately without setting additional fields."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only need a simple daily task list without managing complex task attributes.",
+          "what_to_do_instead": "Use Microsoft To Do if a straightforward list works better than a structured task database."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Your task list grows large and requires detailed filtering across multiple attributes.",
+          "what_to_do_instead": "Switch to Toodledo to control tasks through custom fields and filtering rules."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your workflow mainly involves capturing and completing small daily task lists rather than managing large structured task collections, Microsoft To Do may feel faster."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If tasks must be filtered using many attributes, choose Toodledo.",
+        "If you only manage simple lists of tasks, Microsoft To Do works well.",
+        "If your task system behaves like a database, Toodledo fits better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What makes Toodledo powerful for task management?",
+      "a": "It supports custom fields, contexts, folders, and advanced filtering rules for organizing large task collections."
+    },
+    {
+      "q": "Does Microsoft To Do support advanced filtering?",
+      "a": "No. Tasks are mainly organized through simple lists and basic sorting."
+    },
+    {
+      "q": "Which tool is better for large task databases?",
+      "a": "Toodledo is designed for managing large and complex task systems."
+    },
+    {
+      "q": "When would Microsoft To Do be the better choice?",
+      "a": "It works better when you only need simple daily task lists without advanced filtering."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "OmniFocus",
+      "y_name": "Things 3",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Pagico",
+      "y_name": "Todoist",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Remember The Milk",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Todoist",
+      "y_name": "Microsoft To Do",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Kanban Tool",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "GQueues",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    }
+  ]
 }

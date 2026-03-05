@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "TickTick vs Google Tasks for Power users",
-"slug": "ticktick-vs-google-tasks-for-power-user",
-"meta_description": "TickTick vs Google Tasks for power users who automate recurring tasks with flexible scheduling rules and task filters.",
-"persona": "Power user",
-"constraint_lens": "You need recurring tasks and filters that can handle complex scheduling rules without manual work.",
-"verdict": {
-"winner": "x",
-"summary": "TickTick wins for power users who automate complex recurring responsibilities. It supports flexible recurrence patterns and task filters that organize large task lists automatically. Google Tasks focuses on simple lists with limited scheduling rules and minimal filtering options. If advanced recurrence rules and task filters are constrained, Google Tasks fails first.",
-"decision_rule": "If advanced recurrence rules and task filters are constrained, Google Tasks fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for complex recurring schedules",
-"content": "You manage many recurring responsibilities and expect flexible scheduling logic. TickTick includes rule-based recurrence patterns and task filters that automatically organize tasks. Google Tasks keeps tasks in simple lists with limited recurrence control and minimal filtering."
-},
-{
-"type": "x_wins",
-"heading": "Where TickTick wins",
-"bullets": [
-{
-"point": "Flexible recurrence rules such as every third Monday or custom intervals",
-"why_it_matters": "Complex schedules regenerate automatically without rewriting tasks."
-},
-{
-"point": "Smart task filters combining due date, priority, and tags",
-"why_it_matters": "Large task lists remain organized without manually sorting tasks."
-},
-{
-"point": "Tag and priority fields attached to tasks",
-"why_it_matters": "Tasks can be grouped and filtered using multiple attributes."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Google Tasks wins",
-"bullets": [
-{
-"point": "Simple list interface integrated with Google Workspace",
-"why_it_matters": "Tasks appear directly inside Gmail and Google Calendar."
-},
-{
-"point": "Quick task creation from email messages",
-"why_it_matters": "Emails convert into tasks without opening another tool."
-},
-{
-"point": "Minimal task structure with only lists and subtasks",
-"why_it_matters": "Users capture tasks quickly without managing many fields."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You only need a simple task list tied closely to Gmail and Google Calendar.",
-"what_to_do_instead": "Use Google Tasks if tight integration with Google Workspace matters more than scheduling logic."
-},
-{
-"tool": "y",
-"fails_when": "Recurring tasks require complex schedules or must be filtered automatically across large task lists.",
-"what_to_do_instead": "Switch to TickTick to automate recurring schedules and filtering."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your tasks mainly come from Gmail and you only manage simple daily lists, Google Tasks may feel faster."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If tasks repeat using complex schedules, choose TickTick.",
-"If filtering tasks automatically matters, choose TickTick.",
-"If you only need simple lists tied to Gmail, Google Tasks works."
-]
-}
-],
-"faqs": [
-{
-"q": "Does TickTick support complex recurring tasks?",
-"a": "Yes. Tasks can repeat using flexible rules such as specific intervals or custom patterns."
-},
-{
-"q": "Can Google Tasks handle advanced recurrence rules?",
-"a": "No. Recurring schedules are limited compared to advanced task managers."
-},
-{
-"q": "Which tool is better for managing large recurring task systems?",
-"a": "TickTick works better because it includes flexible scheduling rules and filtering."
-},
-{
-"q": "When would Google Tasks be the better option?",
-"a": "It works well when tasks mainly come from Gmail and require only simple scheduling."
-}
-],
-"related_pages": [
-{ "x_name": "OmniFocus", "y_name": "Things 3", "persona": "Power user" },
-{ "x_name": "Pagico", "y_name": "Todoist", "persona": "Power user" },
-{ "x_name": "Remember The Milk", "y_name": "Google Tasks", "persona": "Power user" },
-{ "x_name": "Todoist", "y_name": "Microsoft To Do", "persona": "Power user" },
-{ "x_name": "Kanban Tool", "y_name": "Trello", "persona": "Power user" },
-{ "x_name": "Taskheat", "y_name": "Sorted³", "persona": "Power user" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "TickTick vs Google Tasks for Power users",
+  "slug": "ticktick-vs-google-tasks-for-power-user",
+  "meta_description": "TickTick vs Google Tasks for power users who automate recurring tasks with flexible scheduling rules and task filters.",
+  "persona": "Power user",
+  "constraint_lens": "You need recurring tasks and filters that can handle complex scheduling rules without manual work.",
+  "verdict": {
+    "winner": "x",
+    "summary": "TickTick wins for power users who automate complex recurring responsibilities. It supports flexible recurrence patterns and task filters that organize large task lists automatically. Google Tasks focuses on simple lists with limited scheduling rules and minimal filtering options. If advanced recurrence rules and task filters are constrained, Google Tasks fails first.",
+    "decision_rule": "If advanced recurrence rules and task filters are constrained, Google Tasks fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for complex recurring schedules",
+      "content": "You manage many recurring responsibilities and expect flexible scheduling logic. TickTick includes rule-based recurrence patterns and task filters that automatically organize tasks. Google Tasks keeps tasks in simple lists with limited recurrence control and minimal filtering."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where TickTick wins",
+      "bullets": [
+        {
+          "point": "Flexible recurrence rules such as every third Monday or custom intervals",
+          "why_it_matters": "Complex schedules regenerate automatically without rewriting tasks."
+        },
+        {
+          "point": "Smart task filters combining due date, priority, and tags",
+          "why_it_matters": "Large task lists remain organized without manually sorting tasks."
+        },
+        {
+          "point": "Tag and priority fields attached to tasks",
+          "why_it_matters": "Tasks can be grouped and filtered using multiple attributes."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Google Tasks wins",
+      "bullets": [
+        {
+          "point": "Simple list interface integrated with Google Workspace",
+          "why_it_matters": "Tasks appear directly inside Gmail and Google Calendar."
+        },
+        {
+          "point": "Quick task creation from email messages",
+          "why_it_matters": "Emails convert into tasks without opening another tool."
+        },
+        {
+          "point": "Minimal task structure with only lists and subtasks",
+          "why_it_matters": "Users capture tasks quickly without managing many fields."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only need a simple task list tied closely to Gmail and Google Calendar.",
+          "what_to_do_instead": "Use Google Tasks if tight integration with Google Workspace matters more than scheduling logic."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Recurring tasks require complex schedules or must be filtered automatically across large task lists.",
+          "what_to_do_instead": "Switch to TickTick to automate recurring schedules and filtering."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your tasks mainly come from Gmail and you only manage simple daily lists, Google Tasks may feel faster."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If tasks repeat using complex schedules, choose TickTick.",
+        "If filtering tasks automatically matters, choose TickTick.",
+        "If you only need simple lists tied to Gmail, Google Tasks works."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does TickTick support complex recurring tasks?",
+      "a": "Yes. Tasks can repeat using flexible rules such as specific intervals or custom patterns."
+    },
+    {
+      "q": "Can Google Tasks handle advanced recurrence rules?",
+      "a": "No. Recurring schedules are limited compared to advanced task managers."
+    },
+    {
+      "q": "Which tool is better for managing large recurring task systems?",
+      "a": "TickTick works better because it includes flexible scheduling rules and filtering."
+    },
+    {
+      "q": "When would Google Tasks be the better option?",
+      "a": "It works well when tasks mainly come from Gmail and require only simple scheduling."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "OmniFocus",
+      "y_name": "Things 3",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Pagico",
+      "y_name": "Todoist",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Remember The Milk",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Todoist",
+      "y_name": "Microsoft To Do",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Kanban Tool",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "GQueues",
+      "y_name": "Google Tasks",
+      "persona": "Power user"
+    }
+  ]
 }
