@@ -1,0 +1,115 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "ceiling-check",
+"constraintUiName": "Grows with you",
+"title": "OmniFocus vs Microsoft To Do for Power users",
+"slug": "omnifocus-vs-microsoft-to-do-for-power-user",
+"meta_description": "OmniFocus vs Microsoft To Do for power users running strict GTD systems with contexts, perspectives, and automated reviews.",
+"persona": "Power user",
+"constraint_lens": "You need a task manager that supports advanced GTD workflows with contexts, filtered views, and structured review cycles.",
+"verdict": {
+"winner": "x",
+"summary": "OmniFocus wins for power users running complex GTD systems. It supports contexts, custom perspectives, and built-in review cycles that maintain structured task workflows. Microsoft To Do focuses on simple lists and lacks the workflow layers required for strict GTD systems. If contexts, perspectives, and review automation are structurally limited, Microsoft To Do fails first.",
+"decision_rule": "If contexts, perspectives, and review automation are structurally limited, Microsoft To Do fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for strict GTD workflows",
+"content": "You run a strict GTD workflow with contexts and scheduled reviews. OmniFocus is built around structured task attributes such as contexts and supports custom perspectives that filter tasks in many ways. Microsoft To Do organizes work through simple lists and lacks the advanced filtering and review tools used in GTD systems."
+},
+{
+"type": "x_wins",
+"heading": "Where OmniFocus wins",
+"bullets": [
+{
+"point": "Context fields attached to each task",
+"why_it_matters": "You filter tasks by situation such as computer, errands, or calls."
+},
+{
+"point": "Custom perspectives built from filtering rules",
+"why_it_matters": "You create focused task views without reorganizing projects."
+},
+{
+"point": "Built-in review mode cycling through projects",
+"why_it_matters": "Projects are checked regularly to maintain GTD discipline."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Microsoft To Do wins",
+"bullets": [
+{
+"point": "Simple list structure with minimal task fields",
+"why_it_matters": "You capture tasks quickly without managing complex attributes."
+},
+{
+"point": "Integration with Outlook and Microsoft accounts",
+"why_it_matters": "Tasks appear alongside email and calendar workflows."
+},
+{
+"point": "My Day view for selecting daily tasks",
+"why_it_matters": "You focus on a short list of tasks without building custom filters."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You only need simple task lists without contexts, perspectives, or structured reviews.",
+"what_to_do_instead": "Use Microsoft To Do for lightweight daily task tracking."
+},
+{
+"tool": "y",
+"fails_when": "Your workflow depends on filtering tasks by contexts or reviewing projects through scheduled cycles.",
+"what_to_do_instead": "Switch to OmniFocus to support complex GTD workflows."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your workflow shifts toward simple daily task lists rather than maintaining a strict GTD system with contexts and reviews, Microsoft To Do may feel easier."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you run a strict GTD workflow with contexts, choose OmniFocus.",
+"If you need custom filtered views of tasks, choose OmniFocus.",
+"If you only track simple daily lists, Microsoft To Do may be enough."
+]
+}
+],
+"faqs": [
+{
+"q": "Is OmniFocus designed for GTD workflows?",
+"a": "Yes. It includes contexts, perspectives, and review tools built specifically for structured GTD systems."
+},
+{
+"q": "Does Microsoft To Do support contexts like OmniFocus?",
+"a": "No. Tasks are mainly organized through lists and basic categories."
+},
+{
+"q": "Which tool is better for complex task systems?",
+"a": "OmniFocus works better because it includes advanced filtering and workflow tools."
+},
+{
+"q": "When would Microsoft To Do be the better option?",
+"a": "It works well when you only need a simple daily task list without managing GTD structures."
+}
+],
+"related_pages": [
+{ "x_name": "OmniFocus", "y_name": "Things 3", "persona": "Power user" },
+{ "x_name": "Pagico", "y_name": "Todoist", "persona": "Power user" },
+{ "x_name": "Remember The Milk", "y_name": "Google Tasks", "persona": "Power user" },
+{ "x_name": "TickTick", "y_name": "Google Tasks", "persona": "Power user" },
+{ "x_name": "Kanban Tool", "y_name": "Trello", "persona": "Power user" },
+{ "x_name": "Taskheat", "y_name": "Sorted³", "persona": "Power user" }
+]
+}

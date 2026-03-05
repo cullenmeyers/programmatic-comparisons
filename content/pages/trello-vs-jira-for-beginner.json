@@ -1,0 +1,115 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "setup-tolerance",
+"constraintUiName": "Publish fast",
+"title": "Trello vs Jira for Beginners",
+"slug": "trello-vs-jira-for-beginner",
+"meta_description": "Trello vs Jira for beginners who want simple task boards without learning issue types, workflows, or configuration panels.",
+"persona": "Beginner",
+"constraint_lens": "You want to start moving task cards on a board immediately without learning issue types or configuring workflows.",
+"verdict": {
+"winner": "x",
+"summary": "Trello wins for beginners who only need a visual task board. A board opens with lists and cards that can be moved between columns immediately. Jira requires understanding issue types, workflow states, and project configuration before teams typically use it effectively. If issue types, workflow schemes, and board configuration must be understood before using the board, Jira fails first.",
+"decision_rule": "If issue types, workflow schemes, and board configuration must be understood before using the board, Jira fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for simple visual task boards",
+"content": "You join a small team and just need to move cards between columns. Trello boards start with simple lists where tasks are added as cards and dragged across stages. Jira organizes work using issue types and workflow states, which introduces more structure before tasks appear on a board."
+},
+{
+"type": "x_wins",
+"heading": "Where Trello wins",
+"bullets": [
+{
+"point": "Board opens with lists and draggable task cards",
+"why_it_matters": "You begin adding tasks and moving them between columns without setup steps."
+},
+{
+"point": "Card creation directly inside a list",
+"why_it_matters": "Tasks appear instantly without selecting issue categories."
+},
+{
+"point": "Visual workflow built from simple column lists",
+"why_it_matters": "You understand the board immediately without learning system concepts."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Jira wins",
+"bullets": [
+{
+"point": "Issue types such as bug, story, and task",
+"why_it_matters": "Teams categorize engineering work with structured data."
+},
+{
+"point": "Custom workflow states controlling task progress",
+"why_it_matters": "Teams define stages such as development, testing, and release."
+},
+{
+"point": "Sprint boards connected to backlog planning",
+"why_it_matters": "Engineering teams plan and track work through structured sprint cycles."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "Your team later needs structured issue tracking, sprint planning, or workflow automation.",
+"what_to_do_instead": "Switch to Jira when engineering processes require structured tracking."
+},
+{
+"tool": "y",
+"fails_when": "Users must understand issue types, workflows, or configuration screens before moving tasks on a board.",
+"what_to_do_instead": "Use Trello to track tasks visually with minimal setup."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your team begins running formal sprint cycles with issue tracking and structured workflows, Jira may become the better tool."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If you just want a board with cards and columns, choose Trello.",
+"If learning issue types or workflow schemes feels heavy, avoid Jira.",
+"If your team later adopts structured engineering workflows, consider Jira."
+]
+}
+],
+"faqs": [
+{
+"q": "Why is Trello easier for beginners?",
+"a": "Boards open with simple lists and cards that can be moved immediately."
+},
+{
+"q": "Does Jira require learning issue types?",
+"a": "Yes. Tasks are usually created as structured issue types with workflow states."
+},
+{
+"q": "Which tool is better for visual task boards?",
+"a": "Trello is easier because the board structure is simple and immediately usable."
+},
+{
+"q": "When would Jira be the better option?",
+"a": "It works better when teams need structured issue tracking and sprint planning."
+}
+],
+"related_pages": [
+{ "x_name": "Microsoft To Do", "y_name": "OmniFocus", "persona": "Beginner" },
+{ "x_name": "Taskade", "y_name": "Notion", "persona": "Beginner" },
+{ "x_name": "Dropbox Paper", "y_name": "Coda", "persona": "Beginner" },
+{ "x_name": "Notion", "y_name": "OneNote", "persona": "Beginner" },
+{ "x_name": "Roam Research", "y_name": "Bear", "persona": "Beginner" },
+{ "x_name": "Notion", "y_name": "Apple Notes", "persona": "Beginner" }
+]
+}
