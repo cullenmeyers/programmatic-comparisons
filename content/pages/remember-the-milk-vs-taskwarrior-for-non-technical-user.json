@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "fear-of-breaking",
-"constraintUiName": "Hard to mess up",
-"title": "Remember The Milk vs Taskwarrior for Non-technical users",
-"slug": "remember-the-milk-vs-taskwarrior-for-non-technical-user",
-"meta_description": "Remember The Milk vs Taskwarrior for non-technical users who want reminders without learning command-line syntax.",
-"persona": "Non-technical user",
-"constraint_lens": "You want reminders and task updates to work without learning command-line syntax or worrying about breaking the system.",
-"verdict": {
-"winner": "x",
-"summary": "Remember The Milk wins for non-technical users who want reminders to work without technical steps. Tasks are added and edited through a normal interface with due dates and reminder settings. Taskwarrior runs through a command-line interface where tasks are created and updated using typed commands. If command-line commands must be learned to update tasks, Taskwarrior fails first.",
-"decision_rule": "If command-line commands must be learned to update tasks, Taskwarrior fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for simple reminder-based task tracking",
-"content": "You want reminders to work without worrying about technical commands. Remember The Milk provides a visual interface where tasks, due dates, and reminders are set through menus. Taskwarrior operates through a command-line interface where tasks are managed by typing commands into a terminal."
-},
-{
-"type": "x_wins",
-"heading": "Where Remember The Milk wins",
-"bullets": [
-{
-"point": "Visual task interface with buttons and menus",
-"why_it_matters": "Tasks can be created and edited without typing commands."
-},
-{
-"point": "Built-in reminder settings tied to due dates",
-"why_it_matters": "Notifications appear automatically without configuring scripts."
-},
-{
-"point": "Task editing through standard input fields",
-"why_it_matters": "You update tasks without worrying about breaking a command."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Taskwarrior wins",
-"bullets": [
-{
-"point": "Command-line task management inside a terminal",
-"why_it_matters": "Power users manage tasks quickly through typed commands."
-},
-{
-"point": "Scriptable task operations through command arguments",
-"why_it_matters": "Tasks can be automated through scripts and command pipelines."
-},
-{
-"point": "Plain text task storage files",
-"why_it_matters": "Tasks can be manipulated directly through scripts or external tools."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You want to manage tasks through scripts or command-line automation.",
-"what_to_do_instead": "Use Taskwarrior when tasks must be controlled through terminal commands."
-},
-{
-"tool": "y",
-"fails_when": "Tasks must be created or edited through terminal commands that are easy to mistype.",
-"what_to_do_instead": "Switch to Remember The Milk to manage reminders through a visual interface."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If you later become comfortable using terminal commands and want to automate task management through scripts, Taskwarrior may become the better tool."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you want reminders without technical commands, choose Remember The Milk.",
-"If typing terminal commands feels risky, avoid Taskwarrior.",
-"If you want scriptable task control later, consider Taskwarrior."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Remember The Milk require technical knowledge?",
-"a": "No. Tasks and reminders are managed through a standard visual interface."
-},
-{
-"q": "Why can Taskwarrior feel intimidating?",
-"a": "Tasks are created and updated by typing commands in a terminal."
-},
-{
-"q": "Which tool is easier for setting reminders?",
-"a": "Remember The Milk is easier because reminders are set through menus."
-},
-{
-"q": "When would Taskwarrior be the better choice?",
-"a": "It works better for users who manage tasks through command-line scripts."
-}
-],
-"related_pages": [
-{ "x_name": "ProofHub", "y_name": "Bitrix24", "persona": "Non-technical user" },
-{ "x_name": "Remember The Milk", "y_name": "Google Tasks", "persona": "Non-technical user" },
-{ "x_name": "Obsidian", "y_name": "Evernote", "persona": "Non-technical user" },
-{ "x_name": "Standard Notes", "y_name": "Apple Notes", "persona": "Non-technical user" },
-{ "x_name": "Milanote", "y_name": "Google Keep", "persona": "Non-technical user" },
-{ "x_name": "Bear", "y_name": "Standard Notes", "persona": "Non-technical user" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Remember The Milk vs Taskwarrior for Non-technical users",
+  "slug": "remember-the-milk-vs-taskwarrior-for-non-technical-user",
+  "meta_description": "Remember The Milk vs Taskwarrior for non-technical users who want reminders without learning command-line syntax.",
+  "persona": "Non-technical user",
+  "constraint_lens": "You want reminders and task updates to work without learning command-line syntax or worrying about breaking the system.",
+  "verdict": {
+    "winner": "x",
+    "summary": "Remember The Milk wins for non-technical users who want reminders to work without technical steps. Tasks are added and edited through a normal interface with due dates and reminder settings. Taskwarrior runs through a command-line interface where tasks are created and updated using typed commands. If command-line commands must be learned to update tasks, Taskwarrior fails first.",
+    "decision_rule": "If command-line commands must be learned to update tasks, Taskwarrior fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for simple reminder-based task tracking",
+      "content": "You want reminders to work without worrying about technical commands. Remember The Milk provides a visual interface where tasks, due dates, and reminders are set through menus. Taskwarrior operates through a command-line interface where tasks are managed by typing commands into a terminal."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Remember The Milk wins",
+      "bullets": [
+        {
+          "point": "Visual task interface with buttons and menus",
+          "why_it_matters": "Tasks can be created and edited without typing commands."
+        },
+        {
+          "point": "Built-in reminder settings tied to due dates",
+          "why_it_matters": "Notifications appear automatically without configuring scripts."
+        },
+        {
+          "point": "Task editing through standard input fields",
+          "why_it_matters": "You update tasks without worrying about breaking a command."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Taskwarrior wins",
+      "bullets": [
+        {
+          "point": "Command-line task management inside a terminal",
+          "why_it_matters": "Power users manage tasks quickly through typed commands."
+        },
+        {
+          "point": "Scriptable task operations through command arguments",
+          "why_it_matters": "Tasks can be automated through scripts and command pipelines."
+        },
+        {
+          "point": "Plain text task storage files",
+          "why_it_matters": "Tasks can be manipulated directly through scripts or external tools."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want to manage tasks through scripts or command-line automation.",
+          "what_to_do_instead": "Use Taskwarrior when tasks must be controlled through terminal commands."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Tasks must be created or edited through terminal commands that are easy to mistype.",
+          "what_to_do_instead": "Switch to Remember The Milk to manage reminders through a visual interface."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you later become comfortable using terminal commands and want to automate task management through scripts, Taskwarrior may become the better tool."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you want reminders without technical commands, choose Remember The Milk.",
+        "If typing terminal commands feels risky, avoid Taskwarrior.",
+        "If you want scriptable task control later, consider Taskwarrior."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Remember The Milk require technical knowledge?",
+      "a": "No. Tasks and reminders are managed through a standard visual interface."
+    },
+    {
+      "q": "Why can Taskwarrior feel intimidating?",
+      "a": "Tasks are created and updated by typing commands in a terminal."
+    },
+    {
+      "q": "Which tool is easier for setting reminders?",
+      "a": "Remember The Milk is easier because reminders are set through menus."
+    },
+    {
+      "q": "When would Taskwarrior be the better choice?",
+      "a": "It works better for users who manage tasks through command-line scripts."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Any.do",
+      "y_name": "Apple Reminders",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Any.do",
+      "y_name": "Trello",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Teamwork",
+      "y_name": "Apple Reminders",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Microsoft To Do",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Kanban Tool",
+      "y_name": "Microsoft To Do",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Microsoft Planner",
+      "y_name": "Microsoft To Do",
+      "persona": "Non-technical user"
+    }
+  ]
 }

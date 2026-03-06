@@ -1,115 +1,139 @@
 {
-"category": "Task Managers",
-"categorySlug": "task-managers",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Trello vs Monday.com for Minimalists",
-"slug": "trello-vs-mondaycom-for-minimalist",
-"meta_description": "Trello vs Monday.com for minimalists who want simple visual task boards without spreadsheet-style columns or structured fields.",
-"persona": "Minimalist",
-"constraint_lens": "You want a visual task board without spreadsheet-style columns or structured data fields adding extra complexity.",
-"verdict": {
-"winner": "x",
-"summary": "Trello wins for minimalists who want simple visual task boards. Boards use columns and cards that can be moved between stages without configuring data fields. Monday.com organizes tasks as rows with multiple columns for structured project data. If spreadsheet-style columns and structured data fields introduce extra structural complexity, Monday.com fails first.",
-"decision_rule": "If spreadsheet-style columns and structured data fields introduce extra structural complexity, Monday.com fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Best fit for simple visual task boards",
-"content": "You want a board where tasks move visually across stages without extra structure. Trello uses lists and cards so tasks can be dragged between columns immediately. Monday.com displays tasks as rows with multiple data columns, which creates a layout that resembles a spreadsheet."
-},
-{
-"type": "x_wins",
-"heading": "Where Trello wins",
-"bullets": [
-{
-"point": "Column-based kanban board with draggable cards",
-"why_it_matters": "You move tasks between stages visually without configuring fields."
-},
-{
-"point": "Card creation directly inside a column",
-"why_it_matters": "Tasks can be added instantly without defining structured properties."
-},
-{
-"point": "Minimal task attributes such as labels and checklists",
-"why_it_matters": "The board stays visually simple instead of behaving like a data table."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Monday.com wins",
-"bullets": [
-{
-"point": "Row-based task boards with multiple data columns",
-"why_it_matters": "Projects store detailed information such as owners, statuses, and dates."
-},
-{
-"point": "Custom field columns for structured task data",
-"why_it_matters": "Teams track complex project information directly on the board."
-},
-{
-"point": "Automation rules triggered by column changes",
-"why_it_matters": "Workflow steps update automatically when task data changes."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "Your workflow requires tracking structured task data such as numeric fields, owners, or status columns.",
-"what_to_do_instead": "Use Monday.com when tasks must store multiple structured attributes."
-},
-{
-"tool": "y",
-"fails_when": "Boards feel like spreadsheets with many columns before tasks can be tracked visually.",
-"what_to_do_instead": "Switch to Trello to keep the board simple."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your projects require tracking structured task information such as owners, deadlines, and numeric values, Monday.com may become the better tool."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"If you want a simple board with cards and columns, choose Trello.",
-"If spreadsheet-style task boards feel complex, avoid Monday.com.",
-"If tasks require structured data fields, consider Monday.com."
-]
-}
-],
-"faqs": [
-{
-"q": "Why do minimalists prefer Trello boards?",
-"a": "Trello uses simple columns and cards without spreadsheet-style task tables."
-},
-{
-"q": "Does Monday.com behave like a spreadsheet?",
-"a": "Boards display tasks as rows with columns representing different data fields."
-},
-{
-"q": "Which tool is simpler for visual task tracking?",
-"a": "Trello is simpler because tasks are just cards moved between columns."
-},
-{
-"q": "When would Monday.com be the better choice?",
-"a": "It works better when tasks must store detailed project data across multiple columns."
-}
-],
-"related_pages": [
-{ "x_name": "TaskPaper", "y_name": "OmniFocus", "persona": "Minimalist" },
-{ "x_name": "TeuxDeux", "y_name": "Things 3", "persona": "Minimalist" },
-{ "x_name": "Todo.txt", "y_name": "Taskwarrior", "persona": "Minimalist" },
-{ "x_name": "Habitica", "y_name": "TickTick", "persona": "Minimalist" },
-{ "x_name": "TeuxDeux", "y_name": "Todoist", "persona": "Minimalist" },
-{ "x_name": "Milanote", "y_name": "Coda", "persona": "Minimalist" }
-]
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Trello vs Monday.com for Minimalists",
+  "slug": "trello-vs-mondaycom-for-minimalist",
+  "meta_description": "Trello vs Monday.com for minimalists who want simple visual task boards without spreadsheet-style columns or structured fields.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a visual task board without spreadsheet-style columns or structured data fields adding extra complexity.",
+  "verdict": {
+    "winner": "x",
+    "summary": "Trello wins for minimalists who want simple visual task boards. Boards use columns and cards that can be moved between stages without configuring data fields. Monday.com organizes tasks as rows with multiple columns for structured project data. If spreadsheet-style columns and structured data fields introduce extra structural complexity, Monday.com fails first.",
+    "decision_rule": "If spreadsheet-style columns and structured data fields introduce extra structural complexity, Monday.com fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for simple visual task boards",
+      "content": "You want a board where tasks move visually across stages without extra structure. Trello uses lists and cards so tasks can be dragged between columns immediately. Monday.com displays tasks as rows with multiple data columns, which creates a layout that resembles a spreadsheet."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Trello wins",
+      "bullets": [
+        {
+          "point": "Column-based kanban board with draggable cards",
+          "why_it_matters": "You move tasks between stages visually without configuring fields."
+        },
+        {
+          "point": "Card creation directly inside a column",
+          "why_it_matters": "Tasks can be added instantly without defining structured properties."
+        },
+        {
+          "point": "Minimal task attributes such as labels and checklists",
+          "why_it_matters": "The board stays visually simple instead of behaving like a data table."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Monday.com wins",
+      "bullets": [
+        {
+          "point": "Row-based task boards with multiple data columns",
+          "why_it_matters": "Projects store detailed information such as owners, statuses, and dates."
+        },
+        {
+          "point": "Custom field columns for structured task data",
+          "why_it_matters": "Teams track complex project information directly on the board."
+        },
+        {
+          "point": "Automation rules triggered by column changes",
+          "why_it_matters": "Workflow steps update automatically when task data changes."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Your workflow requires tracking structured task data such as numeric fields, owners, or status columns.",
+          "what_to_do_instead": "Use Monday.com when tasks must store multiple structured attributes."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Boards feel like spreadsheets with many columns before tasks can be tracked visually.",
+          "what_to_do_instead": "Switch to Trello to keep the board simple."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your projects require tracking structured task information such as owners, deadlines, and numeric values, Monday.com may become the better tool."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you want a simple board with cards and columns, choose Trello.",
+        "If spreadsheet-style task boards feel complex, avoid Monday.com.",
+        "If tasks require structured data fields, consider Monday.com."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why do minimalists prefer Trello boards?",
+      "a": "Trello uses simple columns and cards without spreadsheet-style task tables."
+    },
+    {
+      "q": "Does Monday.com behave like a spreadsheet?",
+      "a": "Boards display tasks as rows with columns representing different data fields."
+    },
+    {
+      "q": "Which tool is simpler for visual task tracking?",
+      "a": "Trello is simpler because tasks are just cards moved between columns."
+    },
+    {
+      "q": "When would Monday.com be the better choice?",
+      "a": "It works better when tasks must store detailed project data across multiple columns."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "ClickUp",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Apple Reminders",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Quip",
+      "y_name": "Trello",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Amazing Marvin",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "Any.do",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "FacileThings",
+      "y_name": "Apple Reminders",
+      "persona": "Minimalist"
+    }
+  ]
 }
