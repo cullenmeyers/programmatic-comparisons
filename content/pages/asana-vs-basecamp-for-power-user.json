@@ -1,0 +1,115 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "ceiling-check",
+"constraintUiName": "Grows with you",
+"title": "Asana vs Basecamp for Power users",
+"slug": "asana-vs-basecamp-for-power-user",
+"meta_description": "Asana vs Basecamp for power users coordinating teams with task dependencies and timeline-based project planning.",
+"persona": "Power user",
+"constraint_lens": "You need a project system that supports task dependencies and timeline planning across multiple teams.",
+"verdict": {
+"winner": "x",
+"summary": "Asana wins for power users coordinating complex project workflows. It includes task dependencies and timeline planning so teams can schedule work across projects. Basecamp focuses on simple task lists and message boards without built-in dependency planning. If task dependencies and timeline scheduling are constrained, Basecamp fails first.",
+"decision_rule": "If task dependencies and timeline scheduling are constrained, Basecamp fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Best fit for multi-team project coordination",
+"content": "You coordinate multiple teams and expect task dependencies and timeline planning. Asana includes dependency links between tasks and a timeline view that shows when work must start and finish. Basecamp organizes work through to-do lists and message threads but does not model dependencies between tasks."
+},
+{
+"type": "x_wins",
+"heading": "Where Asana wins",
+"bullets": [
+{
+"point": "Task dependency links between work items",
+"why_it_matters": "Teams see which tasks must be completed before another task begins."
+},
+{
+"point": "Timeline view that schedules tasks across projects",
+"why_it_matters": "Managers visualize project schedules and adjust work timing."
+},
+{
+"point": "Project boards and list views tied to the same task data",
+"why_it_matters": "Teams switch between planning views without duplicating tasks."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Basecamp wins",
+"bullets": [
+{
+"point": "Simple to-do lists inside each project",
+"why_it_matters": "Teams track tasks without configuring workflow structures."
+},
+{
+"point": "Integrated message boards and team discussions",
+"why_it_matters": "Project communication stays inside the same workspace."
+},
+{
+"point": "Central project hub combining tasks, files, and conversations",
+"why_it_matters": "Teams keep project communication and tasks together."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "Your team only needs simple project checklists without dependency planning.",
+"what_to_do_instead": "Use Basecamp when lightweight project coordination is enough."
+},
+{
+"tool": "y",
+"fails_when": "Projects require scheduling tasks that depend on each other across teams.",
+"what_to_do_instead": "Switch to Asana to manage dependencies and timelines."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your projects mainly involve small teams with simple task lists and communication threads rather than structured planning, Basecamp may feel easier."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"If tasks depend on other tasks, choose Asana.",
+"If you need timeline planning across teams, choose Asana.",
+"If projects are simple checklists with discussions, Basecamp may work."
+]
+}
+],
+"faqs": [
+{
+"q": "Does Asana support task dependencies?",
+"a": "Yes. Tasks can be linked so one must be completed before another starts."
+},
+{
+"q": "Does Basecamp include timeline planning?",
+"a": "No. Basecamp focuses mainly on lists and communication tools."
+},
+{
+"q": "Which tool is better for managing complex projects?",
+"a": "Asana works better because it supports dependencies and scheduling."
+},
+{
+"q": "When would Basecamp be the better option?",
+"a": "It works well for smaller projects focused on communication and simple task lists."
+}
+],
+"related_pages": [
+{ "x_name": "Jira", "y_name": "Trello", "persona": "Power user" },
+{ "x_name": "OmniFocus", "y_name": "Things 3", "persona": "Power user" },
+{ "x_name": "Pagico", "y_name": "Todoist", "persona": "Power user" },
+{ "x_name": "TickTick", "y_name": "Google Tasks", "persona": "Power user" },
+{ "x_name": "Kanban Tool", "y_name": "Trello", "persona": "Power user" },
+{ "x_name": "Toodledo", "y_name": "Microsoft To Do", "persona": "Power user" }
+]
+}
