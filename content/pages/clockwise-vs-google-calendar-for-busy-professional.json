@@ -1,0 +1,115 @@
+{
+"category": "Calendar / Scheduling tools",
+"categorySlug": "calendar-scheduling-tools",
+"constraintSlug": "time-scarcity",
+"constraintUiName": "Fast to use daily",
+"title": "Clockwise vs Google Calendar for Busy professionals",
+"slug": "clockwise-vs-google-calendar-for-busy-professional",
+"meta_description": "Compare Clockwise vs Google Calendar for busy professionals protecting focus time. See why Clockwise wins when meetings must auto optimize.",
+"persona": "Busy professional",
+"constraint_lens": "Busy professionals need tools that automatically reorganize schedules to reduce interruptions and preserve uninterrupted work time.",
+"verdict": {
+"winner": "x",
+"summary": "Clockwise wins because it automatically rearranges flexible meetings to create uninterrupted focus blocks. The system analyzes calendars and shifts meetings to reduce fragmented schedules. Google Calendar displays events but requires users to manually move meetings to create focus time. For busy professionals with packed schedules, manual reorganization becomes the bottleneck.",
+"decision_rule": "If meeting conflicts must be manually reorganized instead of automatically optimized around focus blocks, Google Calendar fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Clockwise fits busy professionals protecting focus time",
+"content": "This busy professional wants long uninterrupted blocks of time to work without constantly reorganizing meetings. Clockwise analyzes the calendar and automatically moves flexible meetings to create larger focus windows. The system continuously adjusts the schedule when meetings are added or changed. Google Calendar provides a visual timeline but requires the user to manually move events to achieve the same result."
+},
+{
+"type": "x_wins",
+"heading": "Where Clockwise wins",
+"bullets": [
+{
+"point": "Automatic meeting optimization for focus blocks",
+"why_it_matters": "Clockwise scans the calendar and shifts flexible meetings to consolidate interruptions, creating longer periods of uninterrupted work time."
+},
+{
+"point": "Dynamic rescheduling when new events appear",
+"why_it_matters": "When new meetings are added, Clockwise automatically adjusts other flexible meetings to maintain focus time without manual calendar edits."
+},
+{
+"point": "Focus time blocks reserved automatically",
+"why_it_matters": "The system inserts dedicated focus blocks into the calendar and reorganizes surrounding meetings to protect those blocks."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Google Calendar wins",
+"bullets": [
+{
+"point": "Direct manual control over event placement",
+"why_it_matters": "Users can drag events to any time slot in the calendar, allowing full manual control over scheduling decisions."
+},
+{
+"point": "Simple calendar timeline without automation layers",
+"why_it_matters": "Google Calendar focuses on displaying events and leaves scheduling adjustments entirely to the user."
+},
+{
+"point": "Widely integrated scheduling hub",
+"why_it_matters": "Many apps create and read events from Google Calendar, making it a common central timeline for scheduling data."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You want meetings to stay exactly where they were scheduled without being automatically moved by optimization logic.",
+"what_to_do_instead": "Use Google Calendar so events remain fixed unless manually changed."
+},
+{
+"tool": "y",
+"fails_when": "You want software to automatically rearrange meetings to create uninterrupted focus blocks.",
+"what_to_do_instead": "Use Clockwise so the system reorganizes meetings automatically."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If your meetings must stay fixed at specific times and should never move automatically, Google Calendar may be the better choice because it leaves scheduling entirely under manual control."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Choose Clockwise if you want meetings automatically rearranged to protect focus time.",
+"Choose Clockwise if your calendar frequently becomes fragmented by meetings.",
+"Choose Google Calendar if you prefer full manual control over event placement."
+]
+}
+],
+"faqs": [
+{
+"q": "What does Clockwise do differently from a normal calendar?",
+"a": "Clockwise analyzes the schedule and automatically moves flexible meetings to create longer uninterrupted focus blocks."
+},
+{
+"q": "Does Google Calendar automatically reorganize meetings?",
+"a": "No. Google Calendar displays events on a timeline but requires users to manually move meetings to change the schedule."
+},
+{
+"q": "Why do busy professionals use Clockwise?",
+"a": "Because it automatically protects focus time by rearranging meetings instead of requiring manual calendar adjustments."
+},
+{
+"q": "When is Google Calendar the better choice?",
+"a": "Google Calendar is better when meetings must remain fixed and should not be automatically rescheduled."
+}
+],
+"related_pages": [
+{ "x_name": "Calendly", "y_name": "Google Calendar", "persona": "Busy professional" },
+{ "x_name": "Calendly", "y_name": "Cal.com", "persona": "Busy professional" },
+{ "x_name": "Cal.com", "y_name": "Calendly", "persona": "Busy professional" },
+{ "x_name": "Motion", "y_name": "Google Calendar", "persona": "Busy professional" },
+{ "x_name": "Fantastical", "y_name": "Google Calendar", "persona": "Busy professional" },
+{ "x_name": "Cron", "y_name": "Google Calendar", "persona": "Busy professional" }
+]
+}
