@@ -109,8 +109,8 @@ export default function PairGateFromCategoryGate(props: {
 
         {v === "NEITHER_FAIL" && (
           <>
-            <div>Neither tool is flagged by this filter.</div>
-            <div>Use the page’s verdict rule to break the tie.</div>
+            <div>This filter checks whether tools in this category break this rule.</div>
+            <div>Neither tool fails this category rule on this page; use the page verdict to decide.</div>
           </>
         )}
 

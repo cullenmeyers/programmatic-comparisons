@@ -7,6 +7,7 @@ import GatesPanel from "@/components/gates/GatesPanel";
 import { getGatesForDoc } from "@/lib/gates/selector";
 import PairGateFromCategoryGate from "@/components/gates/PairGateFromCategoryGate";
 import {
+  getToolNamesFromDoc,
   loadPageBySlug,
   listPageSlugs,
   slugifyCompare,
@@ -75,27 +76,6 @@ function FAQJsonLd({ faqs }: { faqs: Array<{ q: string; a: string }> }) {
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
     />
   );
-}
-
-function getToolNames(doc: PageDoc): { xName: string; yName: string } {
-  const maybe = doc as unknown as {
-    x_name?: string;
-    y_name?: string;
-    title: string;
-  };
-
-  if (maybe.x_name?.trim() && maybe.y_name?.trim()) {
-    return { xName: maybe.x_name.trim(), yName: maybe.y_name.trim() };
-  }
-
-  const title = doc.title || "";
-  const beforeFor = title.split(" for ")[0] ?? title;
-  const parts = beforeFor.split(" vs ");
-
-  const xName = (parts[0] ?? "Option X").trim() || "Option X";
-  const yName = (parts[1] ?? "Option Y").trim() || "Option Y";
-
-  return { xName, yName };
 }
 
 function getCategory(doc: PageDoc): string {
@@ -216,7 +196,7 @@ export default async function ComparePage({
     );
   }
 
-  const { xName, yName } = getToolNames(doc);
+  const { xName, yName } = getToolNamesFromDoc(doc);
   const category = getCategory(doc);
   const gateIds = getGatesForDoc(doc);
   const maybeGateFields = doc as PageDoc & {

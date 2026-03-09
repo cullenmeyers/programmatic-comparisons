@@ -4,6 +4,7 @@ import type { CategoryGateSpec } from "./types";
 import { getGateKey } from "./helpers";
 import fs from "node:fs";
 import path from "node:path";
+import { getToolNamesFromDoc, listPageDocs } from "@/lib/pages";
 
 const GATES_ROOT = path.join(process.cwd(), "content", "categoryGates");
 
@@ -102,6 +103,60 @@ function loadGateCache(): Map<string, CategoryGateSpec> {
   return map;
 }
 
+function withInferredTools(gate: CategoryGateSpec): CategoryGateSpec {
+  const byName = new Map(gate.tools.map((tool) => [tool.name, tool]));
+  const manualNames = new Set(gate.tools.map((tool) => tool.name));
+  const scoreByTool = new Map<string, { wins: number; losses: number }>();
+
+  const docsInCategory = listPageDocs().filter(
+    (doc) => doc.categorySlug === gate.categorySlug
+  );
+  const docsForGate = docsInCategory.filter(
+    (doc) => doc.constraintSlug === gate.constraintSlug
+  );
+
+  for (const doc of docsInCategory) {
+    const { xName, yName } = getToolNamesFromDoc(doc);
+    if (!byName.has(xName)) {
+      byName.set(xName, { name: xName, fails: false, note: "" });
+    }
+    if (!byName.has(yName)) {
+      byName.set(yName, { name: yName, fails: false, note: "" });
+    }
+  }
+
+  for (const doc of docsForGate) {
+    const { xName, yName } = getToolNamesFromDoc(doc);
+    const xScore = scoreByTool.get(xName) ?? { wins: 0, losses: 0 };
+    const yScore = scoreByTool.get(yName) ?? { wins: 0, losses: 0 };
+
+    if (doc.verdict.winner === "x") {
+      xScore.wins += 1;
+      yScore.losses += 1;
+    } else if (doc.verdict.winner === "y") {
+      yScore.wins += 1;
+      xScore.losses += 1;
+    }
+
+    scoreByTool.set(xName, xScore);
+    scoreByTool.set(yName, yScore);
+  }
+
+  for (const [name, score] of scoreByTool) {
+    if (manualNames.has(name)) continue;
+    byName.set(name, {
+      name,
+      fails: score.losses > score.wins,
+      note: "",
+    });
+  }
+
+  return {
+    ...gate,
+    tools: Array.from(byName.values()),
+  };
+}
+
 export function listCategoryGateParams(): Array<{
   category: string;
   constraint: string;
@@ -115,5 +170,7 @@ export function listCategoryGateParams(): Array<{
 export function getCategoryGate(categorySlug: string, constraintSlug: string) {
   const key = getGateKey(categorySlug, constraintSlug);
   const cache = loadGateCache();
-  return cache.get(key);
+  const gate = cache.get(key);
+  if (!gate) return undefined;
+  return withInferredTools(gate);
 }

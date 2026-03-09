@@ -103,6 +103,27 @@ export function listPageDocs(): PageDoc[] {
     .filter((doc): doc is PageDoc => doc !== null);
 }
 
+export function getToolNamesFromDoc(doc: PageDoc): { xName: string; yName: string } {
+  const maybe = doc as unknown as {
+    x_name?: string;
+    y_name?: string;
+    title: string;
+  };
+
+  if (maybe.x_name?.trim() && maybe.y_name?.trim()) {
+    return { xName: maybe.x_name.trim(), yName: maybe.y_name.trim() };
+  }
+
+  const title = doc.title || "";
+  const beforeFor = title.split(" for ")[0] ?? title;
+  const parts = beforeFor.split(" vs ");
+
+  const xName = (parts[0] ?? "Option X").trim() || "Option X";
+  const yName = (parts[1] ?? "Option Y").trim() || "Option Y";
+
+  return { xName, yName };
+}
+
 export function listComparisonsForGate(
   categorySlug: string,
   constraintSlug: string
