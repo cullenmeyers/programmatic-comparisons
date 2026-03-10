@@ -1,0 +1,115 @@
+{
+"category": "Note-taking apps",
+"categorySlug": "note-taking-apps",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "Dynalist vs Notion for Minimalists",
+"slug": "dynalist-vs-notion-for-minimalist",
+"meta_description": "Compare Dynalist vs Notion for minimalists organizing ideas in outlines. See why Dynalist wins when outlining must stay simple.",
+"persona": "Minimalist",
+"constraint_lens": "Minimalists prefer tools that keep the interface focused on one structure instead of adding multiple content systems.",
+"verdict": {
+"winner": "x",
+"summary": "Dynalist wins because it is built around a continuous bullet outline where ideas expand into nested lists. Users can keep adding sub bullets without switching between pages or layout elements. Notion stores notes inside pages that contain blocks and database structures. For minimalists who think entirely in outlines, those extra layers become unnecessary complexity.",
+"decision_rule": "If outlining ideas requires interacting with block editors or page structures instead of a continuous bullet hierarchy, Notion fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Dynalist fits minimalists who think in outlines",
+"content": "This minimalist organizes ideas entirely as bullet lists. Dynalist allows each bullet to expand into nested sub bullets, creating a continuous outline structure. Users stay inside one writing interface while zooming into sections of the hierarchy. Notion places notes inside pages where blocks and layout elements appear alongside text, which adds interface layers that outline focused users do not want."
+},
+{
+"type": "x_wins",
+"heading": "Where Dynalist wins",
+"bullets": [
+{
+"point": "Continuous nested bullet outline",
+"why_it_matters": "Every line in Dynalist is a bullet that can expand into deeper levels, allowing ideas to form a natural hierarchy."
+},
+{
+"point": "Zoom into any bullet branch",
+"why_it_matters": "Users can focus on one part of the outline without navigating to a different page or document."
+},
+{
+"point": "Editor focused entirely on lists",
+"why_it_matters": "The writing interface shows bullets and indentation only, avoiding tables, page layouts, or database panels."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Notion wins",
+"bullets": [
+{
+"point": "Block based editor supporting multiple content types",
+"why_it_matters": "Users can insert headings, tables, images, and other content blocks into a page."
+},
+{
+"point": "Database structures for organizing information",
+"why_it_matters": "Notion allows information to be stored in database tables and displayed as lists, boards, or calendars."
+},
+{
+"point": "Workspace combining notes and projects",
+"why_it_matters": "Notes can exist alongside project boards, documents, and team workspaces inside one system."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You want notes connected to databases, task boards, or collaborative workspace pages.",
+"what_to_do_instead": "Use Notion so notes can live alongside structured project systems."
+},
+{
+"tool": "y",
+"fails_when": "You want to organize ideas strictly as nested bullet outlines without page structures.",
+"what_to_do_instead": "Use Dynalist for a pure hierarchical outline."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If notes must connect to task systems, databases, or collaborative workspace pages, Notion may become the better option because it supports many content structures beyond outlines."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Choose Dynalist if you organize ideas as nested bullet outlines.",
+"Choose Dynalist if you want one continuous outline instead of pages.",
+"Choose Notion if notes must connect to databases or workspace systems."
+]
+}
+],
+"faqs": [
+{
+"q": "What is Dynalist mainly used for?",
+"a": "Dynalist is used to organize ideas in nested bullet outlines where each bullet can expand into sub bullets."
+},
+{
+"q": "Why does Notion feel more complex for outline users?",
+"a": "Notion organizes information through pages and blocks, which introduces additional layout elements beyond simple outlines."
+},
+{
+"q": "Why might minimalists prefer Dynalist?",
+"a": "Because the interface focuses entirely on bullet outlines without additional workspace features."
+},
+{
+"q": "When is Notion the better option?",
+"a": "Notion is better when notes must connect to databases, project pages, or collaborative workspace systems."
+}
+],
+"related_pages": [
+{ "x_name": "Simplenote", "y_name": "Notion", "persona": "Minimalist" },
+{ "x_name": "Workflowy", "y_name": "Notion", "persona": "Minimalist" },
+{ "x_name": "Apple Notes", "y_name": "Notion", "persona": "Minimalist" },
+{ "x_name": "Google Keep", "y_name": "Notion", "persona": "Minimalist" },
+{ "x_name": "Bear", "y_name": "Notion", "persona": "Minimalist" },
+{ "x_name": "Simplenote", "y_name": "Evernote", "persona": "Minimalist" }
+]
+}

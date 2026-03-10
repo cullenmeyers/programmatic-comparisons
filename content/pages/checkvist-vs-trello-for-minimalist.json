@@ -1,0 +1,115 @@
+{
+"category": "Task Managers",
+"categorySlug": "task-managers",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "Checkvist vs Trello for Minimalists",
+"slug": "checkvist-vs-trello-for-minimalist",
+"meta_description": "Compare Checkvist vs Trello for minimalists structuring tasks in outlines. See why Checkvist wins when tasks must stay in nested lists.",
+"persona": "Minimalist",
+"constraint_lens": "Minimalists prefer tools that organize tasks in one simple structure instead of managing visual boards and layouts.",
+"verdict": {
+"winner": "x",
+"summary": "Checkvist wins because it organizes tasks in nested bullet outlines where each task can expand into deeper levels. Projects can be structured as hierarchical lists without switching views or managing visual layouts. Trello organizes tasks as cards on kanban boards where work is moved between columns. For minimalists who plan work as outlines, that board system adds unnecessary complexity.",
+"decision_rule": "If organizing tasks requires dragging cards across kanban columns instead of expanding nested bullet lists, Trello fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Checkvist fits minimalists structuring tasks in outlines",
+"content": "This minimalist plans projects entirely as nested lists rather than visual boards. Checkvist lets users write tasks as bullets and indent them to create sub tasks and deeper structures. Entire projects can be organized inside a single outline where sections expand and collapse. Trello requires users to create cards and move them across columns on boards, which introduces a visual workflow instead of a simple hierarchy."
+},
+{
+"type": "x_wins",
+"heading": "Where Checkvist wins",
+"bullets": [
+{
+"point": "Nested outline structure for tasks",
+"why_it_matters": "Each task can expand into multiple levels of sub tasks, allowing projects to be structured hierarchically."
+},
+{
+"point": "Keyboard driven task editing",
+"why_it_matters": "Tasks can be added, indented, and reorganized quickly without switching views or dragging interface elements."
+},
+{
+"point": "Single continuous task list interface",
+"why_it_matters": "All tasks live inside an outline editor instead of being separated across multiple boards and columns."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Trello wins",
+"bullets": [
+{
+"point": "Kanban boards with draggable task cards",
+"why_it_matters": "Tasks appear as cards that move between columns representing workflow stages."
+},
+{
+"point": "Visual pipeline for project progress",
+"why_it_matters": "Teams can track work as cards move across stages such as backlog, in progress, and done."
+},
+{
+"point": "Card level attachments and comments",
+"why_it_matters": "Each card can include files, comments, and activity updates tied to the task."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You want tasks visualized as workflow stages on a board rather than structured as lists.",
+"what_to_do_instead": "Use Trello for kanban style project tracking."
+},
+{
+"tool": "y",
+"fails_when": "You want to plan projects using nested outlines instead of moving cards between columns.",
+"what_to_do_instead": "Use Checkvist for hierarchical task lists."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the project requires tracking work through stages such as backlog, active work, and completion using a visual board, Trello may become the better option because it is built for kanban workflows."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Choose Checkvist if you plan projects using nested task outlines.",
+"Choose Checkvist if you prefer keyboard driven list editing.",
+"Choose Trello if tasks must move across kanban workflow columns."
+]
+}
+],
+"faqs": [
+{
+"q": "What is Checkvist mainly used for?",
+"a": "Checkvist is used to organize tasks as nested outlines where projects expand into multiple levels of sub tasks."
+},
+{
+"q": "Why does Trello feel different from outline based task tools?",
+"a": "Trello organizes tasks as cards on boards that move across columns rather than hierarchical lists."
+},
+{
+"q": "Why might minimalists prefer Checkvist?",
+"a": "Because it keeps task planning inside a simple nested outline instead of visual boards."
+},
+{
+"q": "When is Trello the better option?",
+"a": "Trello works well when teams manage work through kanban boards and visual workflow stages."
+}
+],
+"related_pages": [
+{ "x_name": "Workflowy", "y_name": "Trello", "persona": "Minimalist" },
+{ "x_name": "TickTick", "y_name": "Google Tasks", "persona": "Minimalist" },
+{ "x_name": "Todoist", "y_name": "Google Tasks", "persona": "Minimalist" },
+{ "x_name": "Microsoft To Do", "y_name": "Google Tasks", "persona": "Minimalist" },
+{ "x_name": "Remember The Milk", "y_name": "Todoist", "persona": "Minimalist" },
+{ "x_name": "Things", "y_name": "Todoist", "persona": "Minimalist" }
+]
+}
