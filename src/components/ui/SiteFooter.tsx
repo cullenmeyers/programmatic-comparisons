@@ -11,7 +11,7 @@ export default function SiteFooter() {
               Compare
             </Link>
             <Link className="hover:text-black" href="/tools">
-              Tools
+              Find Tools
             </Link>
             <Link className="hover:text-black" href="/about">
               About

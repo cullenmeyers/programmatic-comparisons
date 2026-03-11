@@ -82,7 +82,6 @@ export default async function ToolsCategoryPage({
         <div className="grid gap-4 sm:grid-cols-2">
           {gates.map((gate) => (
             <Card key={`${gate.categorySlug}-${gate.constraintSlug}`} className="space-y-3">
-              <p className="text-xs uppercase tracking-wide text-black/55">Quick filter</p>
               <h2 className="text-lg font-semibold tracking-tight text-black">
                 {cleanTitle(gate.embedBlockTitle)}
               </h2>

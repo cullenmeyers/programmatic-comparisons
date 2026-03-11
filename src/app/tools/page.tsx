@@ -59,9 +59,6 @@ export default function ToolsIndexPage() {
                     key={`${gate.categorySlug}__${gate.constraintSlug}`}
                     className="space-y-3 bg-black/[0.02] p-4"
                   >
-                    <p className="text-xs uppercase tracking-wide text-black/55">
-                      Quick filter
-                    </p>
                     <p className="text-sm font-semibold text-black/90">
                       {cleanTitle(gate.embedBlockTitle)}
                     </p>

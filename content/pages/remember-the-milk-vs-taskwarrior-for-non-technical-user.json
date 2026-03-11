@@ -8,6 +8,11 @@
   "meta_description": "Remember The Milk vs Taskwarrior for non-technical users who want reminders without learning command-line syntax.",
   "persona": "Non-technical user",
   "constraint_lens": "You want reminders and task updates to work without learning command-line syntax or worrying about breaking the system.",
+  "one_second_verdict": {
+    "winner_label": "Remember The Milk",
+    "summary": "Best for non-technical users who need reminders to work without technical steps.",
+    "reason": "Taskwarrior fails first because command-line commands must be learned to update tasks."
+  },
   "verdict": {
     "winner": "x",
     "summary": "Remember The Milk wins for non-technical users who want reminders to work without technical steps. Tasks are added and edited through a normal interface with due dates and reminder settings. Taskwarrior runs through a command-line interface where tasks are created and updated using typed commands. If command-line commands must be learned to update tasks, Taskwarrior fails first.",

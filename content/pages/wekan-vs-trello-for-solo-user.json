@@ -8,6 +8,11 @@
   "meta_description": "Wekan vs Trello for solo users who want visual kanban boards without running servers, updates, or self-hosted infrastructure.",
   "persona": "Solo user",
   "constraint_lens": "You want a visual kanban board that works without maintaining servers, updates, or technical infrastructure.",
+  "one_second_verdict": {
+    "winner_label": "Trello",
+    "summary": "Best for solo users who need a visual kanban board without running infrastructure.",
+    "reason": "Wekan fails first because self-hosting and server updates must be maintained to keep the board running."
+  },
   "verdict": {
     "winner": "y",
     "summary": "Trello wins for solo users who want a visual kanban board without running infrastructure. It provides hosted boards that work immediately after creating an account. Wekan requires installing and maintaining a self-hosted instance with server updates. If self-hosting and server updates must be maintained to keep the board running, Wekan fails first.",

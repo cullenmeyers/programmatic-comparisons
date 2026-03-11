@@ -7,6 +7,16 @@ export type PageDoc = {
   category?: string;
   categorySlug?: string;
   constraintSlug?: string;
+  oneSecondVerdict?: {
+    winnerLabel: string;
+    summary: string;
+    reason: string;
+  };
+  one_second_verdict?: {
+    winner_label: string;
+    summary: string;
+    reason: string;
+  };
 
   title: string;
   slug: string;
@@ -92,6 +102,26 @@ try {
   }
   if (typeof parsed.constraintSlug === "string") {
     parsed.constraintSlug = parsed.constraintSlug.trim() || undefined;
+  }
+  if (parsed.one_second_verdict) {
+    const winnerLabel = parsed.one_second_verdict.winner_label?.trim() || "";
+    const summary = parsed.one_second_verdict.summary?.trim() || "";
+    const reason = parsed.one_second_verdict.reason?.trim() || "";
+
+    parsed.oneSecondVerdict =
+      winnerLabel && summary && reason
+        ? { winnerLabel, summary, reason }
+        : parsed.oneSecondVerdict;
+  }
+  if (parsed.oneSecondVerdict) {
+    const winnerLabel = parsed.oneSecondVerdict.winnerLabel?.trim() || "";
+    const summary = parsed.oneSecondVerdict.summary?.trim() || "";
+    const reason = parsed.oneSecondVerdict.reason?.trim() || "";
+
+    parsed.oneSecondVerdict =
+      winnerLabel && summary && reason
+        ? { winnerLabel, summary, reason }
+        : undefined;
   }
 
   return parsed;

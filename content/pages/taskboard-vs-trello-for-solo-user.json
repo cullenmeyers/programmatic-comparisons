@@ -8,6 +8,11 @@
   "meta_description": "TaskBoard vs Trello for solo users who want a kanban board that runs without server setup, updates, or ongoing hosting maintenance.",
   "persona": "Solo user",
   "constraint_lens": "You want a kanban board that runs without maintaining servers, hosting environments, or technical infrastructure.",
+  "one_second_verdict": {
+    "winner_label": "Trello",
+    "summary": "Best for solo users who need a kanban board without maintaining infrastructure.",
+    "reason": "TaskBoard fails first because self-hosted setup and server maintenance are required to keep the board running."
+  },
   "verdict": {
     "winner": "y",
     "summary": "Trello wins for solo users who want a kanban board without maintaining infrastructure. It runs as a hosted service where boards work immediately after creating an account. TaskBoard requires installing and hosting the application on a server or local environment. If self-hosted setup and server maintenance are required to keep the board running, TaskBoard fails first.",

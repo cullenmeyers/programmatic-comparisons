@@ -8,6 +8,11 @@
   "meta_description": "Jupyter Notebook vs Quiver for power users who need native live code execution and inspectable output inside research notes.",
   "persona": "Power user",
   "constraint_lens": "You need native live code execution and output inspection inside your notes without hitting structural limits.",
+  "one_second_verdict": {
+    "winner_label": "Jupyter Notebook",
+    "summary": "Best for power users combining executable code and research notes.",
+    "reason": "Quiver fails first because live code cells and execution environments are not native."
+  },
   "verdict": {
     "winner": "x",
     "summary": "Jupyter Notebook wins for power users combining executable code and research notes. It runs live code cells connected to an active kernel and displays outputs inline. Quiver supports code cells, but they are static snippets without a native execution environment. If live code cells and execution environments are not native, Quiver fails first.",

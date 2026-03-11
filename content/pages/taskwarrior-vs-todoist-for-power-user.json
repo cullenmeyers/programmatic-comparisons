@@ -8,6 +8,11 @@
   "meta_description": "Taskwarrior vs Todoist for power users who manage tasks through scripts and need full command-line control and automation.",
   "persona": "Power user",
   "constraint_lens": "You need a task manager that supports command-line workflows and programmable automation without limiting control.",
+  "one_second_verdict": {
+    "winner_label": "Taskwarrior",
+    "summary": "Best for power users who manage tasks through scripts and command-line workflows.",
+    "reason": "Todoist fails first because command-line scripting and programmable task control are constrained."
+  },
   "verdict": {
     "winner": "x",
     "summary": "Taskwarrior wins for power users who manage tasks through scripts and command-line workflows. It allows tasks to be created, filtered, and modified through terminal commands that can be embedded into scripts and automation pipelines. Todoist focuses on graphical interfaces and API-based automation but does not operate as a native command-line task system. If command-line scripting and programmable task control are constrained, Todoist fails first.",
