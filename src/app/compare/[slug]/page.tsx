@@ -3,8 +3,6 @@ import Link from "next/link";
 import ButtonLink from "@/components/ui/ButtonLink";
 import Card from "@/components/ui/Card";
 import SectionHeading from "@/components/ui/SectionHeading";
-import GatesPanel from "@/components/gates/GatesPanel";
-import { getGatesForDoc } from "@/lib/gates/selector";
 import PairGateFromCategoryGate from "@/components/gates/PairGateFromCategoryGate";
 import {
   getToolNamesFromDoc,
@@ -15,14 +13,6 @@ import {
 } from "@/lib/pages";
 
 type Params = { slug: string };
-type Persona =
-  | "Beginner"
-  | "Solo user"
-  | "Student"
-  | "Busy professional"
-  | "Power user"
-  | "Non-technical user"
-  | "Minimalist";
 
 export async function generateStaticParams() {
   return listPageSlugs().map((slug) => ({ slug }));
@@ -169,6 +159,7 @@ function Section({
 
     default: {
       const _exhaustive: never = section;
+      void _exhaustive;
       return null;
     }
   }
@@ -198,7 +189,6 @@ export default async function ComparePage({
 
   const { xName, yName } = getToolNamesFromDoc(doc);
   const category = getCategory(doc);
-  const gateIds = getGatesForDoc(doc);
   const maybeGateFields = doc as PageDoc & {
     categorySlug?: string;
     constraintSlug?: string;
@@ -244,16 +234,6 @@ export default async function ComparePage({
           constraintSlug={maybeGateFields.constraintSlug}
           xName={xName}
           yName={yName}
-        />
-
-        <GatesPanel
-          gateIds={gateIds}
-          xName={xName}
-          yName={yName}
-          winner={doc.verdict.winner}
-          decisionRule={doc.verdict.decision_rule}
-          persona={doc.persona as Persona}
-          defaultOpen={false}
         />
       </header>
 
