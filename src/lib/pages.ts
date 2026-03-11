@@ -61,6 +61,24 @@ export type PageDoc = {
 
 const PAGES_DIR = path.join(process.cwd(), "content", "pages");
 
+export const LOCKED_PERSONA_ORDER = [
+  "Beginner",
+  "Solo user",
+  "Student",
+  "Busy professional",
+  "Power user",
+  "Non-technical user",
+  "Minimalist",
+] as const;
+
+type LockedPersona = (typeof LOCKED_PERSONA_ORDER)[number];
+
+export type CategoryIndex = {
+  slug: string;
+  label: string;
+  pages: PageDoc[];
+};
+
 export function listPageSlugs(): string[] {
   if (!fs.existsSync(PAGES_DIR)) return [];
   return fs
@@ -133,6 +151,68 @@ export function listPageDocs(): PageDoc[] {
     .filter((doc): doc is PageDoc => doc !== null);
 }
 
+function titleCaseSlug(slug: string) {
+  return slug
+    .split("-")
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+}
+
+export function getPageCategoryLabel(doc: PageDoc): string {
+  const raw = (doc.category ?? "").toString().trim();
+  if (raw) return raw;
+
+  const slug = getPageCategorySlug(doc);
+  return slug ? titleCaseSlug(slug) : "Uncategorized";
+}
+
+export function getPageCategorySlug(doc: PageDoc): string | null {
+  const raw = (doc.categorySlug ?? "").toString().trim();
+  return raw || null;
+}
+
+export function isLockedPersona(persona: string): persona is LockedPersona {
+  return (LOCKED_PERSONA_ORDER as readonly string[]).includes(persona);
+}
+
+export function listCategoryIndexes(): CategoryIndex[] {
+  const groups = new Map<string, CategoryIndex>();
+
+  for (const doc of listPageDocs()) {
+    const slug = getPageCategorySlug(doc);
+    if (!slug) continue;
+
+    const existing = groups.get(slug);
+    if (existing) {
+      existing.pages.push(doc);
+      if (existing.label === "Uncategorized" && doc.category?.trim()) {
+        existing.label = doc.category.trim();
+      }
+      continue;
+    }
+
+    groups.set(slug, {
+      slug,
+      label: getPageCategoryLabel(doc),
+      pages: [doc],
+    });
+  }
+
+  return Array.from(groups.values())
+    .map((group) => ({
+      ...group,
+      pages: group.pages.slice().sort((a, b) => a.title.localeCompare(b.title)),
+    }))
+    .sort((a, b) => a.label.localeCompare(b.label));
+}
+
+export function getCategoryIndexBySlug(categorySlug: string): CategoryIndex | null {
+  return (
+    listCategoryIndexes().find((category) => category.slug === categorySlug) ?? null
+  );
+}
+
 export function getToolNamesFromDoc(doc: PageDoc): { xName: string; yName: string } {
   const maybe = doc as unknown as {
     x_name?: string;
@@ -152,6 +232,42 @@ export function getToolNamesFromDoc(doc: PageDoc): { xName: string; yName: strin
   const yName = (parts[1] ?? "Option Y").trim() || "Option Y";
 
   return { xName, yName };
+}
+
+function firstSentence(text: string) {
+  if (!text) return "";
+  const trimmed = text.trim();
+  const match = trimmed.match(/^(.+?[.!?])(\s|$)/);
+  return match ? match[1] : trimmed;
+}
+
+function buildHubPreviewWinnerLabel(
+  doc: PageDoc,
+  xName: string,
+  yName: string
+) {
+  const explicitWinner = doc.oneSecondVerdict?.winnerLabel?.trim();
+  if (explicitWinner) return explicitWinner;
+
+  if (doc.verdict.winner === "x") return xName;
+  if (doc.verdict.winner === "y") return yName;
+  return "Depends";
+}
+
+export function buildCategoryHubPreview(doc: PageDoc): string {
+  const { xName, yName } = getToolNamesFromDoc(doc);
+  const winnerLabel = buildHubPreviewWinnerLabel(doc, xName, yName);
+  const summary = firstSentence(
+    doc.oneSecondVerdict?.summary?.trim() || doc.verdict.summary?.trim() || ""
+  );
+
+  if (!summary) return "";
+
+  if (/depends/i.test(winnerLabel)) {
+    return `Verdict depends - ${summary}`;
+  }
+
+  return `${winnerLabel} wins - ${summary}`;
 }
 
 export function listComparisonsForGate(

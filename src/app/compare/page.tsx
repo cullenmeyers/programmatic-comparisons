@@ -2,9 +2,14 @@ import ButtonLink from "@/components/ui/ButtonLink";
 import Card from "@/components/ui/Card";
 import PillLink from "@/components/ui/PillLink";
 import SectionHeading from "@/components/ui/SectionHeading";
-import ComparePageBehavior from "./ComparePageBehavior";
 import Link from "next/link";
-import { listPageSlugs, loadPageBySlug, type PageDoc } from "@/lib/pages";
+import ComparePageBehavior from "./ComparePageBehavior";
+import {
+  getPageCategoryLabel,
+  getPageCategorySlug,
+  listPageDocs,
+  type PageDoc,
+} from "@/lib/pages";
 
 export const dynamic = "force-static";
 
@@ -13,11 +18,6 @@ function firstSentence(text: string) {
   const trimmed = text.trim();
   const match = trimmed.match(/^(.+?[.!?])(\s|$)/);
   return match ? match[1] : trimmed;
-}
-
-function getCategory(page: PageDoc) {
-  const raw = (page.category ?? "").toString().trim();
-  return raw || "Uncategorized";
 }
 
 function categoryAnchorId(label: string) {
@@ -29,30 +29,35 @@ function categoryAnchorId(label: string) {
 }
 
 export default function CompareIndexPage() {
-  const slugs = listPageSlugs();
+  const pages: PageDoc[] = listPageDocs().sort((a, b) => a.title.localeCompare(b.title));
 
-  const pages: PageDoc[] = slugs
-    .map((slug) => loadPageBySlug(slug))
-    .filter((page): page is PageDoc => page !== null)
-    .sort((a, b) => a.title.localeCompare(b.title));
+  const groups = new Map<
+    string,
+    { label: string; slug: string | null; pages: PageDoc[] }
+  >();
 
-  const groups = new Map<string, PageDoc[]>();
   for (const page of pages) {
-    const category = getCategory(page);
-    const inCategory = groups.get(category) || [];
-    inCategory.push(page);
-    groups.set(category, inCategory);
+    const label = getPageCategoryLabel(page);
+    const existing = groups.get(label);
+
+    if (existing) {
+      existing.pages.push(page);
+      if (!existing.slug) {
+        existing.slug = getPageCategorySlug(page);
+      }
+      continue;
+    }
+
+    groups.set(label, {
+      label,
+      slug: getPageCategorySlug(page),
+      pages: [page],
+    });
   }
 
-  const categories = Array.from(groups.keys()).sort((a, b) => a.localeCompare(b));
-  const categoryMeta = categories.map((category) => {
-    const items = groups.get(category) || [];
-    return {
-      category,
-      id: categoryAnchorId(category),
-      count: items.length,
-    };
-  });
+  const categories = Array.from(groups.values()).sort((a, b) =>
+    a.label.localeCompare(b.label)
+  );
 
   return (
     <main className="site-container page-shell content-stack">
@@ -77,52 +82,79 @@ export default function CompareIndexPage() {
         <>
           <section id="categories" className="content-stack gap-4">
             <div className="flex flex-wrap items-end justify-between gap-3">
-              <SectionHeading title="Jump to a category" />
+              <SectionHeading title="Browse by category" />
               <p className="text-sm text-black/55">
                 {pages.length} total comparisons
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
-              {categoryMeta.map(({ category, id, count }) => (
-                <PillLink key={id} href={`#${id}`}>
-                  {category} <span className="text-black/50">({count})</span>
-                </PillLink>
-              ))}
+              {categories.map((category) => {
+                const href = category.slug
+                  ? `/${category.slug}`
+                  : `#${categoryAnchorId(category.label)}`;
+
+                return (
+                  <PillLink
+                    key={category.label}
+                    href={href}
+                  >
+                    {category.label}{" "}
+                    <span className="text-black/50">({category.pages.length})</span>
+                  </PillLink>
+                );
+              })}
             </div>
             <p className="text-xs text-black/55">
-              Categories are collapsible. Expand only what you need.
+              Category links open the dedicated hub page. The full directory stays below.
             </p>
           </section>
 
           <div className="content-stack gap-5">
             {categories.map((category, index) => {
-              const items = (groups.get(category) || [])
-                .slice()
-                .sort((a, b) => a.title.localeCompare(b.title));
-              const sectionId = categoryAnchorId(category);
+              const sectionId = categoryAnchorId(category.label);
+              const categoryHref = category.slug ? `/${category.slug}` : null;
+              const items = category.pages.slice().sort((a, b) => a.title.localeCompare(b.title));
 
               return (
-                <section key={category} id={sectionId} className="scroll-mt-28">
+                <section key={category.label} id={sectionId} className="scroll-mt-28">
                   <details
                     open={index < 2}
                     className="rounded-xl border border-black/10 bg-white"
                   >
                     <summary className="list-none cursor-pointer p-5">
                       <div className="flex flex-wrap items-center justify-between gap-3">
-                        <h2 className="text-2xl font-semibold tracking-tight text-black">
-                          {category}
-                        </h2>
+                        {categoryHref ? (
+                          <Link
+                            href={categoryHref}
+                            className="text-2xl font-semibold tracking-tight text-black hover:underline"
+                          >
+                            {category.label}
+                          </Link>
+                        ) : (
+                          <h2 className="text-2xl font-semibold tracking-tight text-black">
+                            {category.label}
+                          </h2>
+                        )}
                         <p className="text-sm text-black/55">
                           {items.length}{" "}
                           {items.length === 1 ? "comparison" : "comparisons"}
                         </p>
                       </div>
                       <div className="mt-2 text-sm text-black/55">
-                        Expand or collapse this group.
+                        {categoryHref
+                          ? "Open the category page or expand this group."
+                          : "Expand or collapse this group."}
                       </div>
                     </summary>
 
                     <div className="space-y-3 px-5 pb-5">
+                      {categoryHref ? (
+                        <div className="pb-1">
+                          <ButtonLink href={categoryHref} variant="ghost" className="px-0 py-0 text-sm">
+                            View category page
+                          </ButtonLink>
+                        </div>
+                      ) : null}
                       {items.map((page) => {
                         const verdictPreview = firstSentence(page.verdict.summary);
                         return (
@@ -138,7 +170,7 @@ export default function CompareIndexPage() {
                               <span className="font-medium text-black/75">
                                 {page.persona}
                               </span>{" "}
-                              · Focus:{" "}
+                              | Focus:{" "}
                               <span className="font-medium text-black/75">
                                 {page.constraint_lens}
                               </span>

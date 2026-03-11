@@ -1,6 +1,6 @@
 // src/app/sitemap.ts
 import type { MetadataRoute } from "next";
-import { listPageSlugs } from "@/lib/pages";
+import { listCategoryIndexes, listPageSlugs } from "@/lib/pages";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.decisionclarities.com";
@@ -20,5 +20,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...compareRoutes];
+  const categoryRoutes: MetadataRoute.Sitemap = listCategoryIndexes().map((category) => ({
+    url: `${siteUrl}/${category.slug}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
+
+  return [...staticRoutes, ...categoryRoutes, ...compareRoutes];
 }

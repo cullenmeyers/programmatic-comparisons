@@ -5,6 +5,8 @@ import Card from "@/components/ui/Card";
 import SectionHeading from "@/components/ui/SectionHeading";
 import PairGateFromCategoryGate from "@/components/gates/PairGateFromCategoryGate";
 import {
+  getPageCategoryLabel,
+  getPageCategorySlug,
   getToolNamesFromDoc,
   loadPageBySlug,
   listPageSlugs,
@@ -69,9 +71,7 @@ function FAQJsonLd({ faqs }: { faqs: Array<{ q: string; a: string }> }) {
 }
 
 function getCategory(doc: PageDoc): string {
-  const maybe = doc as unknown as { category?: string };
-  const raw = (maybe.category ?? "").toString().trim();
-  return raw || "Uncategorized";
+  return getPageCategoryLabel(doc);
 }
 
 function firstSentence(text: string) {
@@ -107,12 +107,15 @@ function deriveOneSecondSummary(
   const winnerSection = doc.sections.find((section) =>
     doc.verdict.winner === "x" ? section.type === "x_wins" : section.type === "y_wins"
   );
-  const winnerBullet = winnerSection?.type === "x_wins" || winnerSection?.type === "y_wins"
-    ? winnerSection.bullets[0]?.point
-    : "";
+  const winnerBullet =
+    winnerSection?.type === "x_wins" || winnerSection?.type === "y_wins"
+      ? winnerSection.bullets[0]?.point
+      : "";
 
   if (winnerBullet) {
-    return normalizeSentence(`Best for ${winnerBullet.charAt(0).toLowerCase()}${winnerBullet.slice(1)}`);
+    return normalizeSentence(
+      `Best for ${winnerBullet.charAt(0).toLowerCase()}${winnerBullet.slice(1)}`
+    );
   }
 
   const personaFit = doc.sections.find((section) => section.type === "persona_fit");
@@ -122,7 +125,9 @@ function deriveOneSecondSummary(
       "i"
     );
     if (headingPrefix.test(personaFit.heading)) {
-      return normalizeSentence(`Best for ${personaFit.heading.replace(headingPrefix, "")}`);
+      return normalizeSentence(
+        `Best for ${personaFit.heading.replace(headingPrefix, "")}`
+      );
     }
 
     const toolSpecificContent = firstSentence(personaFit.content)
@@ -130,11 +135,15 @@ function deriveOneSecondSummary(
       .replace(new RegExp(`^${escapeRegex(yName)}\\s+`, "i"), "");
 
     if (toolSpecificContent) {
-      return normalizeSentence(`Best for ${toolSpecificContent.charAt(0).toLowerCase()}${toolSpecificContent.slice(1)}`);
+      return normalizeSentence(
+        `Best for ${toolSpecificContent.charAt(0).toLowerCase()}${toolSpecificContent.slice(1)}`
+      );
     }
   }
 
-  return normalizeSentence(`Best for ${doc.persona.toLowerCase()}s who need the lower-failure option here`);
+  return normalizeSentence(
+    `Best for ${doc.persona.toLowerCase()}s who need the lower-failure option here`
+  );
 }
 
 function deriveOneSecondReason(doc: PageDoc) {
@@ -153,7 +162,9 @@ function deriveOneSecondReason(doc: PageDoc) {
     doc.verdict.winner === "x" ? "y" : doc.verdict.winner === "y" ? "x" : null;
   const losingFailure = failureModes?.items.find((item) => item.tool === losingTool);
 
-  return normalizeSentence(losingFailure?.fails_when ?? "The other option fails first under this constraint");
+  return normalizeSentence(
+    losingFailure?.fails_when ?? "The other option fails first under this constraint"
+  );
 }
 
 function getOneSecondVerdict(doc: PageDoc, xName: string, yName: string) {
@@ -286,6 +297,7 @@ export default async function ComparePage({
 
   const { xName, yName } = getToolNamesFromDoc(doc);
   const category = getCategory(doc);
+  const categorySlug = getPageCategorySlug(doc);
   const oneSecondVerdict = getOneSecondVerdict(doc, xName, yName);
   const maybeGateFields = doc as PageDoc & {
     categorySlug?: string;
@@ -296,24 +308,37 @@ export default async function ComparePage({
     <main className="site-container page-shell content-stack max-w-4xl">
       <FAQJsonLd faqs={doc.faqs} />
 
-      <div className="text-sm">
+      <div className="flex flex-wrap items-center gap-3 text-sm">
         <ButtonLink href="/compare" variant="ghost" className="px-0 py-0">
           All comparisons
         </ButtonLink>
+        {categorySlug ? (
+          <ButtonLink href={`/${categorySlug}`} variant="ghost" className="px-0 py-0">
+            {category}
+          </ButtonLink>
+        ) : null}
       </div>
 
       <header className="content-stack gap-5">
         <div className="space-y-3">
           <p className="text-xs uppercase tracking-wide text-black/55">
             Category:{" "}
-            <span className="normal-case font-medium text-black/70">{category}</span>
+            {categorySlug ? (
+              <Link
+                href={`/${categorySlug}`}
+                className="normal-case font-medium text-black/70 hover:text-black"
+              >
+                {category}
+              </Link>
+            ) : (
+              <span className="normal-case font-medium text-black/70">{category}</span>
+            )}
           </p>
           <h1 className="max-w-3xl text-3xl font-semibold tracking-tight text-black sm:text-4xl">
             {doc.title}
           </h1>
           <p className="text-sm text-black/60">
-            Persona: <span className="font-medium text-black/75">{doc.persona}</span> ·
-            Focus:{" "}
+            Persona: <span className="font-medium text-black/75">{doc.persona}</span> | Focus:{" "}
             <span className="font-medium text-black/75">{doc.constraint_lens}</span>
           </p>
         </div>
