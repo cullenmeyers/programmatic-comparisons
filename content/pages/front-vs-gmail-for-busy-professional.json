@@ -1,0 +1,120 @@
+{
+"category": "Email / Inbox tools",
+"categorySlug": "email-inbox-tools",
+"constraintSlug": "time-scarcity",
+"constraintUiName": "Fast to use daily",
+"title": "Front vs Gmail for Busy professionals",
+"slug": "front-vs-gmail-for-busy-professional",
+"meta_description": "Front vs Gmail for busy professionals managing shared inboxes. See why Front wins when teams need assignments, internal comments, and shared email replies.",
+"persona": "Busy professional",
+"constraint_lens": "Busy professionals avoid tools that require extra coordination steps or switching between apps just to manage everyday communication.",
+"one_second_verdict": {
+"winner_label": "Front",
+"summary": "Best for busy professionals who need teammates to handle the same inbox together without extra coordination.",
+"reason": "Gmail fails first because it lacks built in thread assignment and internal comments inside the email conversation."
+},
+"verdict": {
+"winner": "x",
+"summary": "Front is the better choice for busy professionals who manage shared inboxes with teammates. It allows multiple people to see the same email thread, assign the conversation to a specific teammate, and leave internal notes directly inside the thread. Gmail treats each inbox as personal and requires forwarding, labels, or external chat to coordinate replies. Those extra steps slow teams down when many messages arrive throughout the day.",
+"decision_rule": "If multiple teammates cannot collaborate inside the same email thread with shared assignment and internal comments, Gmail fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Front fits busy professionals",
+"content": "The user manages customer conversations with teammates and needs several people to respond from the same inbox. Front structures email as a shared workspace where everyone can see the same thread and know who is responsible for replying. Messages can be assigned to a teammate and discussed with internal comments inside the conversation. This removes the need to forward emails or coordinate responses in a separate chat tool."
+},
+{
+"type": "x_wins",
+"heading": "Where Front wins",
+"bullets": [
+{
+"point": "Front lets teammates assign an email thread to a specific person inside the shared inbox.",
+"why_it_matters": "This mechanism makes ownership clear so teams avoid duplicate replies or long delays while people wonder who should answer."
+},
+{
+"point": "Front includes internal comments directly inside the email thread that are invisible to the customer.",
+"why_it_matters": "Teammates can discuss how to respond without switching to another chat app, which saves time during fast moving support conversations."
+},
+{
+"point": "Front shows shared inboxes where multiple teammates can read and respond to the same thread.",
+"why_it_matters": "Everyone works from the same conversation view instead of forwarding messages between personal inboxes."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Gmail wins",
+"bullets": [
+{
+"point": "Gmail provides strong search that finds messages quickly using sender names, keywords, and attachments.",
+"why_it_matters": "Users who work mostly alone can quickly locate older emails without building extra folder structures."
+},
+{
+"point": "Gmail integrates directly with Google tools such as Drive, Calendar, and Meet from the email interface.",
+"why_it_matters": "People already working inside the Google ecosystem can schedule meetings or attach files without leaving the inbox."
+},
+{
+"point": "Gmail is free for personal use and widely adopted across individuals and small teams.",
+"why_it_matters": "Teams with simple communication needs may prefer the familiarity of Gmail without adding a specialized team inbox tool."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user only manages their own personal inbox and does not need shared team access to email conversations.",
+"what_to_do_instead": "Use Gmail where a single person can manage messages without the extra shared inbox structure."
+},
+{
+"tool": "y",
+"fails_when": "Several teammates need to collaborate on the same customer conversation because Gmail requires forwarding emails or coordinating replies outside the thread.",
+"what_to_do_instead": "Use Front so teammates can assign threads and leave internal comments directly inside the conversation."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the team handles very few shared conversations and most messages belong to individual employees, Gmail may feel simpler than maintaining a dedicated shared inbox tool."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick Front if several teammates need to reply from the same inbox.",
+"Pick Front if you want thread assignment and internal notes inside the email conversation.",
+"Pick Gmail if most email conversations belong to one person instead of a team."
+]
+}
+],
+"faqs": [
+{
+"q": "Why is Front better for shared inboxes?",
+"a": "Front allows teams to assign email threads, leave internal comments, and collaborate inside the same conversation without forwarding messages."
+},
+{
+"q": "Can Gmail handle shared team inboxes?",
+"a": "Gmail can share access to an inbox, but it lacks built in thread assignment and internal discussion inside the email conversation."
+},
+{
+"q": "Do teams still use Gmail with Front?",
+"a": "Yes. Many teams connect their Gmail accounts to Front so Front becomes the collaboration layer on top of the inbox."
+},
+{
+"q": "Who benefits most from Front?",
+"a": "Teams managing support, sales, or customer communication benefit most because several people can work on the same email thread."
+}
+],
+"related_pages": [
+{ "x_name": "Front", "y_name": "Outlook", "persona": "Busy professional" },
+{ "x_name": "Front", "y_name": "Apple Mail", "persona": "Busy professional" },
+{ "x_name": "Shortwave", "y_name": "Gmail", "persona": "Busy professional" },
+{ "x_name": "Spike", "y_name": "Gmail", "persona": "Busy professional" },
+{ "x_name": "Superhuman", "y_name": "Gmail", "persona": "Busy professional" },
+{ "x_name": "Front", "y_name": "Superhuman", "persona": "Busy professional" }
+]
+}

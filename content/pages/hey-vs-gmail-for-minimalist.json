@@ -1,0 +1,120 @@
+{
+"category": "Email / Inbox tools",
+"categorySlug": "email-inbox-tools",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "HEY vs Gmail for Minimalists",
+"slug": "hey-vs-gmail-for-minimalist",
+"meta_description": "HEY vs Gmail for minimalists who want full control over who can email them. See why HEY wins when you want to screen senders before messages reach your inbox.",
+"persona": "Minimalist",
+"constraint_lens": "Minimalists avoid tools that require constant filtering, extra settings, or ongoing inbox management.",
+"one_second_verdict": {
+"winner_label": "HEY",
+"summary": "Best for minimalists who want to approve every sender before emails appear in their inbox.",
+"reason": "Gmail fails first because it delivers every message to the inbox or spam first and requires manual filters or unsubscribe actions after the email arrives."
+},
+"verdict": {
+"winner": "x",
+"summary": "HEY is the better choice for minimalists who want strict control over who can send them email. Its first contact screen forces every new sender to be approved or rejected before any message enters the inbox. Gmail accepts all messages first and expects the user to clean things up afterward with filters, labels, or unsubscribe links. That extra sorting step creates ongoing inbox work that minimalists try to avoid.",
+"decision_rule": "If senders cannot be screened before reaching the inbox and must be filtered manually after delivery, Gmail fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why HEY fits minimalists",
+"content": "The user wants to approve every sender before messages reach the inbox and refuses to spend time unsubscribing from newsletters. HEY is built around a sender screening flow that appears the first time someone emails you. You either allow or block the sender before the message is delivered to the inbox. This removes the need for constant cleanup and keeps the inbox limited to approved contacts only."
+},
+{
+"type": "x_wins",
+"heading": "Where HEY wins",
+"bullets": [
+{
+"point": "HEY forces a sender approval screen before any first email appears in the inbox.",
+"why_it_matters": "This mechanism stops newsletters, marketing lists, and unknown senders before they ever reach the inbox, eliminating the need for later cleanup."
+},
+{
+"point": "HEY provides a 'Screener' inbox that asks you to approve or reject new senders the first time they contact you.",
+"why_it_matters": "Once rejected, that sender can never reach your inbox again, which prevents repeated unwanted emails and reduces ongoing inbox management."
+},
+{
+"point": "HEY automatically separates approved emails into clear areas like 'Imbox' and 'The Feed' based on sender type.",
+"why_it_matters": "This design reduces the need for labels, folders, or rule setup because the sorting behavior is built into the product structure."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Gmail wins",
+"bullets": [
+{
+"point": "Gmail allows detailed filtering rules based on sender, subject line, or keywords.",
+"why_it_matters": "Users who enjoy building automated inbox rules can route messages to folders or labels automatically."
+},
+{
+"point": "Gmail integrates directly with other Google services such as Drive, Calendar, and Meet.",
+"why_it_matters": "People who rely heavily on the Google ecosystem may prefer keeping email connected to those tools."
+},
+{
+"point": "Gmail includes multiple inbox views such as Primary, Promotions, and Social tabs.",
+"why_it_matters": "These categories can help sort marketing emails, although messages still arrive first and must be handled after delivery."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user depends on advanced automation rules such as complex filters that move messages between many folders.",
+"what_to_do_instead": "Use Gmail where detailed filtering rules can automatically route incoming messages."
+},
+{
+"tool": "y",
+"fails_when": "The inbox receives large numbers of newsletters or unknown senders because Gmail delivers messages first and expects the user to unsubscribe or create filters afterward.",
+"what_to_do_instead": "Use HEY so new senders must be approved before any message reaches the inbox."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user already manages email through automated Gmail filters and rarely receives unknown senders, the need for sender screening becomes less important and Gmail may feel easier."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick HEY if you want to approve every sender before emails reach your inbox.",
+"Pick HEY if you refuse to unsubscribe from newsletters or manage filters later.",
+"Pick Gmail if you prefer building custom filters that route messages automatically."
+]
+}
+],
+"faqs": [
+{
+"q": "Does HEY really block emails before they reach the inbox?",
+"a": "Yes. HEY places first time senders in a screening area where you must approve or reject them before their messages appear in the inbox."
+},
+{
+"q": "Can Gmail screen senders before emails arrive?",
+"a": "No. Gmail delivers the email first and then relies on spam detection, unsubscribe links, or user created filters after the message arrives."
+},
+{
+"q": "Why do minimalists prefer HEY for email control?",
+"a": "HEY removes the need for constant inbox cleanup by forcing a decision about each sender once, preventing future messages from unwanted senders."
+},
+{
+"q": "Is Gmail still good for heavy email users?",
+"a": "Yes. Gmail works well for people who rely on labels, filters, and integrations with other Google tools to organize large inboxes."
+}
+],
+"related_pages": [
+{ "x_name": "HEY", "y_name": "Outlook", "persona": "Minimalist" },
+{ "x_name": "Proton Mail", "y_name": "Gmail", "persona": "Minimalist" },
+{ "x_name": "Fastmail", "y_name": "Gmail", "persona": "Minimalist" },
+{ "x_name": "HEY", "y_name": "Apple Mail", "persona": "Minimalist" },
+{ "x_name": "Proton Mail", "y_name": "Outlook", "persona": "Minimalist" },
+{ "x_name": "Fastmail", "y_name": "Outlook", "persona": "Minimalist" }
+]
+}

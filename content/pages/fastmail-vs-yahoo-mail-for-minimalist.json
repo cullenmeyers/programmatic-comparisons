@@ -1,0 +1,120 @@
+{
+"category": "Email / Inbox tools",
+"categorySlug": "email-inbox-tools",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "Fastmail vs Yahoo Mail for Minimalists",
+"slug": "fastmail-vs-yahoo-mail-for-minimalist",
+"meta_description": "Fastmail vs Yahoo Mail for minimalists who want an inbox without ads. See why Fastmail wins when you want to read email without promotional panels.",
+"persona": "Minimalist",
+"constraint_lens": "Minimalists prefer tools that remove visual clutter and avoid extra panels, ads, or features that distract from the main task.",
+"one_second_verdict": {
+"winner_label": "Fastmail",
+"summary": "Best for minimalists who want an inbox interface without advertising or promotional panels.",
+"reason": "Yahoo Mail fails first because it places advertising banners and promotional panels directly inside the inbox interface."
+},
+"verdict": {
+"winner": "x",
+"summary": "Fastmail is the better choice for minimalists who want a focused email interface. It displays messages in a clean inbox without advertising banners or promotional panels. Yahoo Mail includes advertising spaces and promotional modules within the inbox layout. Those visual elements create distractions that minimalists try to avoid when reading email.",
+"decision_rule": "If the inbox interface displays promotional advertising alongside messages, Yahoo Mail fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Fastmail fits minimalists",
+"content": "The user wants a focused inbox without ads or promotional panels inside the interface. Fastmail presents email in a clean layout where the message list and reading pane are the primary elements on screen. There are no advertising banners competing for attention. This design keeps the interface focused on reading and replying to messages."
+},
+{
+"type": "x_wins",
+"heading": "Where Fastmail wins",
+"bullets": [
+{
+"point": "Fastmail does not place advertising banners or sponsored panels inside the inbox layout.",
+"why_it_matters": "Minimalists can focus on reading messages without visual distractions appearing beside or between emails."
+},
+{
+"point": "Fastmail displays messages in a simple message list and reading pane layout.",
+"why_it_matters": "The interface prioritizes the email content instead of surrounding the inbox with promotional widgets."
+},
+{
+"point": "Fastmail relies on a subscription model instead of advertising inside the inbox.",
+"why_it_matters": "Because the service is not funded by ads, the interface does not include marketing panels competing for attention."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Yahoo Mail wins",
+"bullets": [
+{
+"point": "Yahoo Mail provides large free inbox storage for email accounts.",
+"why_it_matters": "Users can store many messages and attachments without paying for additional space."
+},
+{
+"point": "Yahoo Mail includes built in newsletter and promotion sorting features.",
+"why_it_matters": "Messages from mailing lists can be grouped automatically to reduce clutter in the main inbox."
+},
+{
+"point": "Yahoo Mail works entirely through a web browser without installing software.",
+"why_it_matters": "Users can sign in from different devices and access their inbox immediately."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user wants a completely free email service and prefers not to pay for inbox access.",
+"what_to_do_instead": "Use Yahoo Mail where the inbox can be used without paying a subscription."
+},
+{
+"tool": "y",
+"fails_when": "The user wants a distraction free inbox because Yahoo Mail places advertising banners and promotional elements inside the interface.",
+"what_to_do_instead": "Use Fastmail where the inbox layout avoids advertising panels."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user prioritizes having a free email service and does not mind advertising inside the interface, Yahoo Mail may be acceptable despite the visual clutter."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick Fastmail if you want an inbox without advertising panels.",
+"Pick Fastmail if you prefer a focused interface built around reading messages.",
+"Pick Yahoo Mail if you want a free email service and do not mind ads."
+]
+}
+],
+"faqs": [
+{
+"q": "Why do minimalists prefer Fastmail?",
+"a": "Fastmail avoids advertising panels in the inbox, which keeps the interface focused on reading and replying to messages."
+},
+{
+"q": "Does Yahoo Mail show ads in the inbox?",
+"a": "Yes. Yahoo Mail includes advertising banners and promotional panels within the inbox interface."
+},
+{
+"q": "Is Fastmail free to use?",
+"a": "No. Fastmail is a paid email service that relies on subscriptions instead of advertising."
+},
+{
+"q": "Who might still choose Yahoo Mail?",
+"a": "Users who want a free email account and do not mind seeing advertising in the inbox may prefer Yahoo Mail."
+}
+],
+"related_pages": [
+{ "x_name": "Fastmail", "y_name": "Gmail", "persona": "Minimalist" },
+{ "x_name": "Fastmail", "y_name": "Proton Mail", "persona": "Minimalist" },
+{ "x_name": "HEY", "y_name": "Gmail", "persona": "Minimalist" },
+{ "x_name": "Proton Mail", "y_name": "Gmail", "persona": "Minimalist" },
+{ "x_name": "Fastmail", "y_name": "Outlook", "persona": "Minimalist" },
+{ "x_name": "HEY", "y_name": "Outlook", "persona": "Minimalist" }
+]
+}
