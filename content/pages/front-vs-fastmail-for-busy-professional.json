@@ -1,0 +1,120 @@
+{
+"category": "Email / Inbox tools",
+"categorySlug": "email-inbox-tools",
+"constraintSlug": "time-scarcity",
+"constraintUiName": "Fast to use daily",
+"title": "Front vs Fastmail for Busy professionals",
+"slug": "front-vs-fastmail-for-busy-professional",
+"meta_description": "Front vs Fastmail for busy professionals managing team inboxes. See why Front wins when teams must assign and coordinate replies in shared threads.",
+"persona": "Busy professional",
+"constraint_lens": "Busy professionals prefer tools that let teams handle conversations quickly without extra coordination outside the inbox.",
+"one_second_verdict": {
+"winner_label": "Front",
+"summary": "Best for busy professionals who manage shared customer inboxes with teammates.",
+"reason": "Fastmail fails first because it does not allow assigning or coordinating replies inside the same shared email thread."
+},
+"verdict": {
+"winner": "x",
+"summary": "Front is the better choice for busy professionals managing team email conversations. It allows teammates to collaborate directly inside shared inbox threads using assignments and internal comments. Fastmail is designed as a personal email service and does not include built in team coordination tools inside message threads. When several people must handle the same support inbox, Fastmail requires external coordination which slows responses.",
+"decision_rule": "If multiple teammates cannot assign and coordinate replies inside the same email thread, Fastmail fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Front fits busy professionals",
+"content": "The user manages a shared support inbox where several teammates must coordinate responses to incoming customer emails. Front turns email into a shared workspace where the entire team can see and work inside the same thread. Conversations can be assigned to a teammate and discussed with internal notes directly inside the inbox. This allows support teams to coordinate replies quickly without forwarding messages or switching to another tool."
+},
+{
+"type": "x_wins",
+"heading": "Where Front wins",
+"bullets": [
+{
+"point": "Front allows assigning an email thread to a specific teammate directly inside the conversation.",
+"why_it_matters": "This mechanism prevents duplicate replies and clearly shows who is responsible for responding to the customer."
+},
+{
+"point": "Front supports internal comments inside the email thread that are hidden from the recipient.",
+"why_it_matters": "Teammates can discuss the best response without leaving the inbox or using a separate chat tool."
+},
+{
+"point": "Front provides shared inbox views where multiple teammates can read and reply to the same email conversation.",
+"why_it_matters": "Everyone works from the same thread instead of forwarding emails between personal inboxes."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Fastmail wins",
+"bullets": [
+{
+"point": "Fastmail offers a clean inbox interface without advertising panels.",
+"why_it_matters": "Users who prefer a focused personal inbox can read messages without distractions from promotional content."
+},
+{
+"point": "Fastmail supports advanced filtering rules that automatically sort incoming messages into folders.",
+"why_it_matters": "Individuals can organize large personal inboxes without manually sorting every message."
+},
+{
+"point": "Fastmail hosts the email service and works directly through a web interface.",
+"why_it_matters": "Users can access their inbox from different devices without installing additional software."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user manages email alone and does not need collaboration features inside the inbox.",
+"what_to_do_instead": "Use Fastmail where a single person can manage messages in a clean personal inbox."
+},
+{
+"tool": "y",
+"fails_when": "Multiple teammates must coordinate replies to the same support message because Fastmail does not allow assigning conversations or leaving internal comments inside threads.",
+"what_to_do_instead": "Use Front where teams can assign and discuss replies directly within the inbox."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user manages email alone and does not collaborate with teammates on support conversations, Fastmail may feel simpler than a shared inbox system."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick Front if several teammates must coordinate replies to the same inbox.",
+"Pick Front if you want assignments and internal comments inside email threads.",
+"Pick Fastmail if you manage email alone in a personal inbox."
+]
+}
+],
+"faqs": [
+{
+"q": "Why is Front better for team email coordination?",
+"a": "Front allows teams to assign conversations, leave internal comments, and collaborate directly inside shared email threads."
+},
+{
+"q": "Does Fastmail support shared inbox collaboration?",
+"a": "No. Fastmail is designed primarily for individual inbox management and does not include built in thread assignment or internal commenting."
+},
+{
+"q": "Can Front connect to existing email accounts?",
+"a": "Yes. Front connects to existing email providers and adds collaboration tools on top of those inboxes."
+},
+{
+"q": "Who should choose Fastmail instead of Front?",
+"a": "Individuals who manage their own email without team collaboration may prefer Fastmail for its simple personal inbox."
+}
+],
+"related_pages": [
+{ "x_name": "Front", "y_name": "Gmail", "persona": "Busy professional" },
+{ "x_name": "Front", "y_name": "Apple Mail", "persona": "Busy professional" },
+{ "x_name": "Missive", "y_name": "Apple Mail", "persona": "Busy professional" },
+{ "x_name": "Missive", "y_name": "Gmail", "persona": "Busy professional" },
+{ "x_name": "Shortwave", "y_name": "Gmail", "persona": "Busy professional" },
+{ "x_name": "Spike", "y_name": "Gmail", "persona": "Busy professional" }
+]
+}

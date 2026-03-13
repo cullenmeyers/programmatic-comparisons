@@ -1,0 +1,120 @@
+{
+"category": "Email / Inbox tools",
+"categorySlug": "email-inbox-tools",
+"constraintSlug": "setup-tolerance",
+"constraintUiName": "Publish fast",
+"title": "Gmail vs RainLoop for Beginners",
+"slug": "gmail-vs-rainloop-for-beginner",
+"meta_description": "Gmail vs RainLoop for beginners who want email instantly. See why Gmail wins when you want to sign up and start sending messages immediately.",
+"persona": "Beginner",
+"constraint_lens": "Beginners prefer tools that start working immediately without installing programs or configuring technical settings.",
+"one_second_verdict": {
+"winner_label": "Gmail",
+"summary": "Best for beginners who want to create an email account and start sending messages immediately.",
+"reason": "RainLoop fails first because it requires installing and configuring a self hosted webmail interface before email can be used."
+},
+"verdict": {
+"winner": "x",
+"summary": "Gmail is the better choice for beginners who want email working instantly. After creating an account, the inbox opens immediately in a web browser and messages can be sent right away. RainLoop is a webmail interface that must be installed on a server and connected to an email account before it works. Those setup steps add complexity that beginners usually want to avoid.",
+"decision_rule": "If using email requires installing and configuring a self-hosted webmail interface before messages can be sent, RainLoop fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Gmail fits beginners",
+"content": "The user wants to create an email account and start sending messages immediately without installing or hosting anything. Gmail works entirely in a web browser and activates the inbox as soon as the account is created. There are no server installations or software configurations required. This makes Gmail easy for beginners who want email working instantly."
+},
+{
+"type": "x_wins",
+"heading": "Where Gmail wins",
+"bullets": [
+{
+"point": "Gmail runs directly in a web browser without requiring any installation.",
+"why_it_matters": "Beginners can sign in from any device and access their inbox immediately instead of setting up a separate mail interface."
+},
+{
+"point": "Gmail automatically activates the inbox after the account is created.",
+"why_it_matters": "Users do not need to configure server details such as IMAP or SMTP before sending their first email."
+},
+{
+"point": "Gmail hosts the entire email service instead of requiring the user to run their own mail software.",
+"why_it_matters": "Beginners avoid technical tasks such as hosting and maintaining an email server or webmail interface."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where RainLoop wins",
+"bullets": [
+{
+"point": "RainLoop can be installed on a server to create a custom webmail interface.",
+"why_it_matters": "Organizations can provide their own branded email interface instead of using a third party inbox."
+},
+{
+"point": "RainLoop connects to existing mail servers using IMAP and SMTP.",
+"why_it_matters": "Users who already operate their own mail infrastructure can access messages through a lightweight web interface."
+},
+{
+"point": "RainLoop allows customization of the webmail interface when hosted on a personal server.",
+"why_it_matters": "Administrators can control how the email interface behaves and integrate it into their own systems."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user wants to operate their own email system and control the interface hosted on their own server.",
+"what_to_do_instead": "Use RainLoop where a custom webmail interface can run on a self managed server."
+},
+{
+"tool": "y",
+"fails_when": "The user expects email to work immediately because RainLoop requires installing and configuring the webmail interface before messages can be sent.",
+"what_to_do_instead": "Use Gmail where the inbox is ready immediately after creating the account."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user operates their own mail server and wants to host a custom webmail interface for accessing messages, RainLoop may become the better option."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick Gmail if you want to create an email account and start sending messages immediately.",
+"Pick Gmail if you do not want to install or configure mail software.",
+"Pick RainLoop if you want to host your own webmail interface on a server."
+]
+}
+],
+"faqs": [
+{
+"q": "Why is Gmail easier for beginners?",
+"a": "Gmail works directly in a browser and activates the inbox automatically after account creation."
+},
+{
+"q": "Does RainLoop require installation before using email?",
+"a": "Yes. RainLoop must be installed on a server and connected to a mail system before it can be used."
+},
+{
+"q": "Can Gmail be accessed from any device?",
+"a": "Yes. Gmail runs in a web browser, allowing users to check email from different devices."
+},
+{
+"q": "Who should use RainLoop instead of Gmail?",
+"a": "Users who operate their own mail servers and want a self hosted webmail interface may prefer RainLoop."
+}
+],
+"related_pages": [
+{ "x_name": "Gmail", "y_name": "Thunderbird", "persona": "Beginner" },
+{ "x_name": "Gmail", "y_name": "Outlook", "persona": "Beginner" },
+{ "x_name": "Gmail", "y_name": "Mailbird", "persona": "Beginner" },
+{ "x_name": "Gmail", "y_name": "Postbox", "persona": "Beginner" },
+{ "x_name": "Gmail", "y_name": "Mailpile", "persona": "Beginner" },
+{ "x_name": "Gmail", "y_name": "Proton Mail", "persona": "Beginner" }
+]
+}

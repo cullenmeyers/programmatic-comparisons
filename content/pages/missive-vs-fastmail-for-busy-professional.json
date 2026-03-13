@@ -1,0 +1,120 @@
+{
+"category": "Email / Inbox tools",
+"categorySlug": "email-inbox-tools",
+"constraintSlug": "time-scarcity",
+"constraintUiName": "Fast to use daily",
+"title": "Missive vs Fastmail for Busy professionals",
+"slug": "missive-vs-fastmail-for-busy-professional",
+"meta_description": "Missive vs Fastmail for busy professionals managing team inboxes. See why Missive wins when teams must coordinate replies inside email threads.",
+"persona": "Busy professional",
+"constraint_lens": "Busy professionals prefer tools that let teams coordinate replies directly inside the inbox without extra communication steps.",
+"one_second_verdict": {
+"winner_label": "Missive",
+"summary": "Best for busy professionals who must coordinate team replies inside shared email threads.",
+"reason": "Fastmail fails first because it does not allow teammates to leave internal comments inside the same email conversation."
+},
+"verdict": {
+"winner": "x",
+"summary": "Missive is the better choice for busy professionals managing customer emails with teammates. It allows multiple people to collaborate inside the same email thread using internal comments and shared inbox views. Fastmail is designed primarily for individual inbox management and does not provide built in discussion features within email conversations. When teams need to coordinate replies quickly, Fastmail requires external communication tools which slows the process.",
+"decision_rule": "If teammates cannot leave internal comments and coordinate replies inside the same email thread, Fastmail fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Missive fits busy professionals",
+"content": "The user manages customer emails with teammates and needs internal discussion before replying to clients. Missive allows several team members to view the same email thread and leave internal comments that are hidden from the recipient. Teammates can discuss the best response directly inside the conversation. This keeps coordination inside the inbox instead of spreading communication across chat tools."
+},
+{
+"type": "x_wins",
+"heading": "Where Missive wins",
+"bullets": [
+{
+"point": "Missive allows internal comments directly inside an email thread.",
+"why_it_matters": "Teammates can discuss how to respond to the customer without switching to another messaging tool."
+},
+{
+"point": "Missive provides shared inbox views where multiple teammates can access the same conversation.",
+"why_it_matters": "Everyone sees the same message thread instead of forwarding emails between personal inboxes."
+},
+{
+"point": "Missive supports assigning conversations to teammates within the inbox.",
+"why_it_matters": "Clear ownership prevents duplicate replies and ensures someone is responsible for responding."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Fastmail wins",
+"bullets": [
+{
+"point": "Fastmail offers a clean web interface without advertising panels.",
+"why_it_matters": "Individuals can read messages in a focused inbox without promotional distractions."
+},
+{
+"point": "Fastmail supports advanced filtering rules that automatically move messages into folders.",
+"why_it_matters": "Users managing personal inboxes can organize large message volumes without manual sorting."
+},
+{
+"point": "Fastmail allows custom domain email addresses for personal or business use.",
+"why_it_matters": "Users can create addresses under their own domain instead of using a shared provider address."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user manages email alone and does not need shared inbox collaboration features.",
+"what_to_do_instead": "Use Fastmail where a single person can manage messages in a simple personal inbox."
+},
+{
+"tool": "y",
+"fails_when": "Multiple teammates must coordinate responses to the same email because Fastmail does not allow internal discussion inside message threads.",
+"what_to_do_instead": "Use Missive where team members can comment and coordinate replies within the conversation."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user manages email alone and does not collaborate with teammates on replies, Fastmail may feel simpler than maintaining a shared inbox system."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick Missive if your team must discuss responses inside email threads.",
+"Pick Missive if several teammates work on the same customer conversations.",
+"Pick Fastmail if you manage email alone in a personal inbox."
+]
+}
+],
+"faqs": [
+{
+"q": "Why is Missive better for team email collaboration?",
+"a": "Missive allows teammates to leave internal comments, assign conversations, and coordinate replies inside the same email thread."
+},
+{
+"q": "Does Fastmail support internal discussion inside email threads?",
+"a": "No. Fastmail is designed for individual inbox management and does not include internal comments within message threads."
+},
+{
+"q": "Can Missive connect to existing email accounts?",
+"a": "Yes. Missive connects to existing email providers and adds collaboration features on top of those inboxes."
+},
+{
+"q": "Who should use Fastmail instead of Missive?",
+"a": "Individuals who manage their own inbox without team collaboration may prefer Fastmail for its simple interface."
+}
+],
+"related_pages": [
+{ "x_name": "Missive", "y_name": "Apple Mail", "persona": "Busy professional" },
+{ "x_name": "Front", "y_name": "Apple Mail", "persona": "Busy professional" },
+{ "x_name": "Front", "y_name": "Fastmail", "persona": "Busy professional" },
+{ "x_name": "Front", "y_name": "Gmail", "persona": "Busy professional" },
+{ "x_name": "Missive", "y_name": "Gmail", "persona": "Busy professional" },
+{ "x_name": "Shortwave", "y_name": "Gmail", "persona": "Busy professional" }
+]
+}

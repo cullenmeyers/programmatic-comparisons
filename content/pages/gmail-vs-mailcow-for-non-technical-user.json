@@ -1,0 +1,120 @@
+{
+"category": "Email / Inbox tools",
+"categorySlug": "email-inbox-tools",
+"constraintSlug": "fear-of-breaking",
+"constraintUiName": "Hard to mess up",
+"title": "Gmail vs Mailcow for Non-technical users",
+"slug": "gmail-vs-mailcow-for-non-technical-user",
+"meta_description": "Gmail vs Mailcow for non-technical users who want email instantly. See why Gmail wins when you want an inbox without server setup.",
+"persona": "Non-technical user",
+"constraint_lens": "Non-technical users prefer tools that work immediately and avoid steps where configuration mistakes could break the system.",
+"one_second_verdict": {
+"winner_label": "Gmail",
+"summary": "Best for non-technical users who want email that works instantly without server setup.",
+"reason": "Mailcow fails first because it requires deploying and managing a self hosted mail server before messages appear."
+},
+"verdict": {
+"winner": "x",
+"summary": "Gmail is the better choice for non-technical users who want email working immediately. The inbox opens in a browser as soon as the account is created and messages can be sent without configuring anything. Mailcow is designed as a self hosted mail server environment that must be deployed and managed before email accounts function. Those infrastructure steps introduce technical decisions that non-technical users often fear breaking.",
+"decision_rule": "If accessing email requires deploying and managing a self-hosted mail server before messages appear, Mailcow fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Gmail fits non-technical users",
+"content": "The user wants email that works immediately and avoids tools that require server setup. Gmail hosts the entire email service and activates the inbox as soon as the account is created. There are no server deployments or configuration steps required. This removes the risk of misconfiguring infrastructure and keeps email simple to access."
+},
+{
+"type": "x_wins",
+"heading": "Where Gmail wins",
+"bullets": [
+{
+"point": "Gmail runs entirely as a hosted email service in a web browser.",
+"why_it_matters": "Users can open their inbox instantly without installing software or deploying server infrastructure."
+},
+{
+"point": "Gmail automatically activates the inbox after the account is created.",
+"why_it_matters": "Users do not need to configure technical components such as mail servers, domain records, or SMTP settings."
+},
+{
+"point": "Gmail manages spam filtering, storage, and delivery systems automatically.",
+"why_it_matters": "Users avoid maintaining server software or troubleshooting email delivery problems."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Mailcow wins",
+"bullets": [
+{
+"point": "Mailcow allows organizations to run a complete mail server environment on their own infrastructure.",
+"why_it_matters": "Teams can control how email accounts, domains, and storage are managed."
+},
+{
+"point": "Mailcow provides administrative controls for managing mailboxes and server configuration.",
+"why_it_matters": "Administrators can create and manage multiple email accounts within their own system."
+},
+{
+"point": "Mailcow allows customization of the email infrastructure because it runs on a self managed server.",
+"why_it_matters": "Advanced users can integrate the mail system with other internal services."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user wants full control over email infrastructure and prefers hosting their own mail server environment.",
+"what_to_do_instead": "Use Mailcow where the mail system can be deployed and managed on a personal or organizational server."
+},
+{
+"tool": "y",
+"fails_when": "The user expects email to work immediately because Mailcow requires deploying and maintaining a full mail server before messages appear.",
+"what_to_do_instead": "Use Gmail where the inbox works instantly after creating the account."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user has a technical team responsible for deploying and maintaining the mail server, Mailcow may become acceptable because the infrastructure is managed for them."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick Gmail if you want email that works immediately without server setup.",
+"Pick Gmail if you want to avoid managing technical infrastructure.",
+"Pick Mailcow if you want to host and control your own mail server."
+]
+}
+],
+"faqs": [
+{
+"q": "Why is Gmail easier for non-technical users?",
+"a": "Gmail hosts the entire email service and activates the inbox automatically after account creation."
+},
+{
+"q": "Does Mailcow require server deployment before using email?",
+"a": "Yes. Mailcow must be deployed and configured as a self hosted mail server environment before accounts can be used."
+},
+{
+"q": "Can Gmail be accessed from any device?",
+"a": "Yes. Gmail runs in a web browser, allowing users to sign in and access their inbox from different computers or phones."
+},
+{
+"q": "Who should consider Mailcow instead of Gmail?",
+"a": "Organizations or users who want to host and manage their own email infrastructure may prefer Mailcow."
+}
+],
+"related_pages": [
+{ "x_name": "Gmail", "y_name": "Thunderbird", "persona": "Non-technical user" },
+{ "x_name": "Gmail", "y_name": "Outlook", "persona": "Non-technical user" },
+{ "x_name": "Gmail", "y_name": "Mailbird", "persona": "Non-technical user" },
+{ "x_name": "Gmail", "y_name": "Postbox", "persona": "Non-technical user" },
+{ "x_name": "Gmail", "y_name": "Proton Mail", "persona": "Non-technical user" },
+{ "x_name": "Gmail", "y_name": "HEY", "persona": "Non-technical user" }
+]
+}

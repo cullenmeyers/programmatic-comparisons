@@ -1,0 +1,120 @@
+{
+"category": "Email / Inbox tools",
+"categorySlug": "email-inbox-tools",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "HEY vs Yahoo Mail for Minimalists",
+"slug": "hey-vs-yahoo-mail-for-minimalist",
+"meta_description": "HEY vs Yahoo Mail for minimalists who want control over incoming email. See why HEY wins when you can screen senders before messages reach your inbox.",
+"persona": "Minimalist",
+"constraint_lens": "Minimalists prefer tools that remove ongoing inbox maintenance and avoid manual sorting steps.",
+"one_second_verdict": {
+"winner_label": "HEY",
+"summary": "Best for minimalists who want to approve senders before emails reach the inbox.",
+"reason": "Yahoo Mail fails first because it delivers messages immediately and requires filtering or cleanup after emails arrive."
+},
+"verdict": {
+"winner": "x",
+"summary": "HEY is the better choice for minimalists who want strict control over incoming email. It forces every new sender through a screening step where the user must approve or block the address before any message enters the inbox. Yahoo Mail accepts messages first and expects the user to filter or clean the inbox afterward. That extra sorting work creates ongoing inbox maintenance that minimalists try to avoid.",
+"decision_rule": "If senders cannot be screened before reaching the inbox and must be filtered after delivery, Yahoo Mail fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why HEY fits minimalists",
+"content": "The user wants to decide which senders can contact them and refuses to manually clean a cluttered inbox. HEY places all first time senders in a screening queue before their messages reach the inbox. The user must approve or reject each sender once. After rejection, that sender cannot reach the inbox again, eliminating repeated inbox cleanup."
+},
+{
+"type": "x_wins",
+"heading": "Where HEY wins",
+"bullets": [
+{
+"point": "HEY places first time senders into a screening queue before messages reach the inbox.",
+"why_it_matters": "The user decides once whether the sender is allowed, preventing unwanted messages from appearing in the inbox."
+},
+{
+"point": "HEY permanently blocks rejected senders after the screening decision.",
+"why_it_matters": "This mechanism stops newsletters or promotional senders without requiring manual unsubscribe actions."
+},
+{
+"point": "HEY separates newsletters into a dedicated reading area called The Feed.",
+"why_it_matters": "Marketing emails can be reviewed later without cluttering the main inbox."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Yahoo Mail wins",
+"bullets": [
+{
+"point": "Yahoo Mail provides large free inbox storage for email accounts.",
+"why_it_matters": "Users can store many messages and attachments without paying for additional space."
+},
+{
+"point": "Yahoo Mail includes automated sorting for newsletters and promotional emails.",
+"why_it_matters": "Subscription messages can be grouped so they appear less frequently in the main inbox."
+},
+{
+"point": "Yahoo Mail works entirely through a web browser without installing software.",
+"why_it_matters": "Users can sign in from different devices and access their inbox immediately."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user prefers a free email service and does not want to pay for inbox access.",
+"what_to_do_instead": "Use Yahoo Mail where a basic inbox can be used without a subscription."
+},
+{
+"tool": "y",
+"fails_when": "The user wants to block unwanted senders before messages arrive because Yahoo Mail delivers emails first and requires filtering afterward.",
+"what_to_do_instead": "Use HEY where new senders must be approved before messages reach the inbox."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user prefers a free email service and is willing to clean or filter incoming messages manually, Yahoo Mail may become acceptable."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick HEY if you want to approve every sender before emails reach your inbox.",
+"Pick HEY if you refuse to manually clean a cluttered inbox.",
+"Pick Yahoo Mail if you want a free inbox and do not mind filtering messages afterward."
+]
+}
+],
+"faqs": [
+{
+"q": "Why do minimalists prefer HEY?",
+"a": "HEY allows users to approve or reject senders before their messages reach the inbox, preventing ongoing inbox cleanup."
+},
+{
+"q": "Does Yahoo Mail screen senders before email arrives?",
+"a": "No. Yahoo Mail delivers messages first and relies on filters or manual cleanup afterward."
+},
+{
+"q": "What is the HEY screening feature?",
+"a": "HEY places first time senders in a screening queue where users must approve or reject them before their messages reach the inbox."
+},
+{
+"q": "When might Yahoo Mail be a better choice?",
+"a": "Yahoo Mail may be better for users who want a free email service and do not mind filtering or organizing incoming messages."
+}
+],
+"related_pages": [
+{ "x_name": "HEY", "y_name": "Gmail", "persona": "Minimalist" },
+{ "x_name": "Fastmail", "y_name": "Yahoo Mail", "persona": "Minimalist" },
+{ "x_name": "Proton Mail", "y_name": "Yahoo Mail", "persona": "Minimalist" },
+{ "x_name": "Fastmail", "y_name": "Gmail", "persona": "Minimalist" },
+{ "x_name": "HEY", "y_name": "Outlook", "persona": "Minimalist" },
+{ "x_name": "Proton Mail", "y_name": "Gmail", "persona": "Minimalist" }
+]
+}
