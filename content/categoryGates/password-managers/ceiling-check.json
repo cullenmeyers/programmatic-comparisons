@@ -1,0 +1,80 @@
+{
+  "categoryLabel": "Password Managers",
+  "categorySlug": "password-managers",
+  "constraintLabel": "ceiling matters",
+  "constraintSlug": "ceiling-check",
+  "uiConstraintName": "Doesn't cap you",
+  "title": "Doesn't cap you - Password Managers",
+  "description": [
+    "Use this when you want password managers that are doesn't cap you.",
+    "Tools flagged here tend to feel risky or confusing to use.",
+    "Pick the option that stays obvious and dependable in daily use."
+  ],
+  "embedBlockTitle": "Quick Gate: Doesn't cap you",
+  "tools": [
+    {
+      "name": "1Password",
+      "fails": true,
+      "note": "Caps you too soon"
+    },
+    {
+      "name": "Bitwarden",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Dashlane",
+      "fails": true,
+      "note": "Runs out of room"
+    },
+    {
+      "name": "Enpass",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "KeePass",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "KeePassXC",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "LastPass",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "NordPass",
+      "fails": true,
+      "note": "Ceiling shows up early"
+    },
+    {
+      "name": "Passbolt",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Proton Pass",
+      "fails": true,
+      "note": "Ceiling shows up early"
+    },
+    {
+      "name": "RoboForm",
+      "fails": true,
+      "note": "Ceiling shows up early"
+    }
+  ],
+  "relatedComparisons": [
+    "bitwarden-vs-1password-for-power-user",
+    "keepass-vs-dashlane-for-power-user",
+    "keepassxc-vs-nordpass-for-power-user",
+    "keepassxc-vs-proton-pass-for-power-user",
+    "passbolt-vs-dashlane-for-power-user",
+    "passbolt-vs-proton-pass-for-power-user",
+    "passbolt-vs-roboform-for-power-user"
+  ]
+}
