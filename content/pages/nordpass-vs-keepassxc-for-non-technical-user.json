@@ -1,0 +1,120 @@
+{
+"category": "Password Managers",
+"categorySlug": "password-managers",
+"constraintSlug": "fear-of-breaking",
+"constraintUiName": "Hard to mess up",
+"title": "NordPass vs KeePassXC for Non-technical users",
+"slug": "nordpass-vs-keepassxc-for-non-technical-user",
+"meta_description": "NordPass vs KeePassXC for non-technical users who want passwords synced across devices. See why NordPass wins when syncing must be automatic.",
+"persona": "Non-technical user",
+"constraint_lens": "Non-technical users prefer tools that handle syncing automatically so passwords appear across devices without manual setup.",
+"one_second_verdict": {
+"winner_label": "NordPass",
+"summary": "Best for non-technical users who want passwords to sync automatically between phone and laptop.",
+"reason": "KeePassXC fails first because syncing passwords requires configuring external storage or manually transferring the vault file."
+},
+"verdict": {
+"winner": "x",
+"summary": "NordPass is the better choice for non-technical users who want passwords available on multiple devices without setup work. The vault syncs automatically through the account so saved passwords appear instantly on a phone, laptop, or browser extension. KeePassXC stores passwords inside a local database file that must be copied or synced through external storage. That manual setup can be confusing and risky for users who worry about breaking their password manager.",
+"decision_rule": "If syncing passwords requires configuring external cloud storage or manually transferring database files, KeePassXC fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why NordPass fits non-technical users",
+"content": "The user wants passwords to automatically sync between phone and laptop without touching configuration settings. NordPass connects the vault to the user account and synchronizes credentials automatically. When signing into a new device, the password vault appears immediately after logging in. This removes the need to move database files or configure external storage services."
+},
+{
+"type": "x_wins",
+"heading": "Where NordPass wins",
+"bullets": [
+{
+"point": "NordPass automatically synchronizes the password vault across devices through the user account.",
+"why_it_matters": "Passwords saved on one device immediately appear on another without manual setup."
+},
+{
+"point": "NordPass browser extensions detect login forms and autofill saved credentials.",
+"why_it_matters": "Users can sign into websites quickly without copying passwords between applications."
+},
+{
+"point": "NordPass restores the vault automatically when the user signs into a new device.",
+"why_it_matters": "Non-technical users can recover their passwords simply by logging into the account."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where KeePassXC wins",
+"bullets": [
+{
+"point": "KeePassXC stores passwords in a local encrypted database file on the device.",
+"why_it_matters": "Users maintain full control over where the password vault file is stored."
+},
+{
+"point": "KeePassXC works entirely offline without requiring an online account.",
+"why_it_matters": "Passwords remain accessible even without internet access."
+},
+{
+"point": "KeePassXC allows the vault file to be stored in any location chosen by the user.",
+"why_it_matters": "Advanced users can manage their own synchronization system using storage tools they prefer."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user wants to keep passwords completely offline and avoid using an account for syncing.",
+"what_to_do_instead": "Use KeePassXC where the vault exists as a local encrypted file."
+},
+{
+"tool": "y",
+"fails_when": "The user expects passwords to appear automatically across devices because KeePassXC requires manually transferring or syncing the vault database file.",
+"what_to_do_instead": "Use NordPass where the vault synchronizes automatically."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user prefers storing passwords entirely in a local encrypted file and is comfortable setting up their own file synchronization system, KeePassXC may become the better option."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick NordPass if you want passwords to sync automatically between phone and laptop.",
+"Pick NordPass if you do not want to configure storage or move vault files.",
+"Pick KeePassXC if you prefer storing passwords in a local encrypted file."
+]
+}
+],
+"faqs": [
+{
+"q": "Why is NordPass easier for non-technical users?",
+"a": "NordPass automatically synchronizes the password vault across devices without manual configuration."
+},
+{
+"q": "Does KeePassXC sync passwords automatically?",
+"a": "No. KeePassXC stores passwords in a local database file that must be synchronized manually."
+},
+{
+"q": "Can NordPass restore passwords on a new device?",
+"a": "Yes. Signing into the account restores the encrypted vault automatically."
+},
+{
+"q": "Who should choose KeePassXC instead?",
+"a": "Users who want to keep their password vault entirely local and manage synchronization themselves may prefer KeePassXC."
+}
+],
+"related_pages": [
+{ "x_name": "Dashlane", "y_name": "KeePass", "persona": "Non-technical user" },
+{ "x_name": "Bitwarden", "y_name": "Dashlane", "persona": "Non-technical user" },
+{ "x_name": "1Password", "y_name": "NordPass", "persona": "Non-technical user" },
+{ "x_name": "Proton Pass", "y_name": "KeePassXC", "persona": "Non-technical user" },
+{ "x_name": "Bitwarden", "y_name": "KeePassXC", "persona": "Non-technical user" },
+{ "x_name": "1Password", "y_name": "KeePass", "persona": "Non-technical user" }
+]
+}

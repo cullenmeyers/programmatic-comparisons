@@ -1,0 +1,120 @@
+{
+"category": "Password Managers",
+"categorySlug": "password-managers",
+"constraintSlug": "ceiling-check",
+"constraintUiName": "Grows with you",
+"title": "KeePassXC vs Proton Pass for Power users",
+"slug": "keepassxc-vs-proton-pass-for-power-user",
+"meta_description": "KeePassXC vs Proton Pass for power users who want an offline password vault. See why KeePassXC wins when local database control matters.",
+"persona": "Power user",
+"constraint_lens": "Power users prefer tools that allow full control over how password data is stored and accessed.",
+"one_second_verdict": {
+"winner_label": "KeePassXC",
+"summary": "Best for power users who want an offline password vault that opens directly from a local database.",
+"reason": "Proton Pass fails first because accessing the vault requires logging into an external account instead of opening a local encrypted database."
+},
+"verdict": {
+"winner": "x",
+"summary": "KeePassXC is the better choice for power users who want an offline password database. It stores credentials in a local encrypted file that opens directly inside the application without connecting to an external service. Proton Pass requires signing into an account and accessing the vault through the hosted service. For users who want a password system that works entirely offline, that login requirement creates a dependency on an external service.",
+"decision_rule": "If accessing the password vault requires logging into an external service account instead of opening a local encrypted database, Proton Pass fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why KeePassXC fits power users",
+"content": "The user wants a fully offline password vault that opens without logging into any external account. KeePassXC stores passwords in a local encrypted database file that opens directly from the device. The vault can be accessed even when the computer is offline because it does not depend on a hosted service. This approach gives power users full control over how and where the password database is used."
+},
+{
+"type": "x_wins",
+"heading": "Where KeePassXC wins",
+"bullets": [
+{
+"point": "KeePassXC opens password vaults directly from a local encrypted database file.",
+"why_it_matters": "Power users can access credentials without connecting to an external account or service."
+},
+{
+"point": "KeePassXC works completely offline without requiring an internet connection.",
+"why_it_matters": "Passwords remain accessible even when the system cannot reach external services."
+},
+{
+"point": "KeePassXC allows the vault file to be stored anywhere the user chooses.",
+"why_it_matters": "Users maintain full control over where the password database is stored and backed up."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Proton Pass wins",
+"bullets": [
+{
+"point": "Proton Pass automatically synchronizes passwords across devices through the account.",
+"why_it_matters": "Credentials appear instantly on multiple devices without transferring database files."
+},
+{
+"point": "Proton Pass browser extensions detect login forms and autofill credentials.",
+"why_it_matters": "Users can sign into websites quickly without copying passwords manually."
+},
+{
+"point": "Proton Pass restores the vault automatically after logging into the account on a new device.",
+"why_it_matters": "Passwords become available immediately after signing in."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user wants passwords to synchronize automatically across multiple devices without managing database files.",
+"what_to_do_instead": "Use Proton Pass where the vault synchronizes automatically through the account."
+},
+{
+"tool": "y",
+"fails_when": "The user requires an offline password vault because Proton Pass requires signing into an external account to access the vault.",
+"what_to_do_instead": "Use KeePassXC where the vault opens directly from a local encrypted database file."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user prefers passwords to automatically appear across multiple devices without managing database files manually, Proton Pass may become the better option."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick KeePassXC if you want a password vault that opens from a local encrypted database file.",
+"Pick KeePassXC if you need password access without logging into an external account.",
+"Pick Proton Pass if you want automatic syncing and autofill across devices."
+]
+}
+],
+"faqs": [
+{
+"q": "Why do power users prefer KeePassXC?",
+"a": "KeePassXC allows password vaults to open directly from a local encrypted database without relying on external services."
+},
+{
+"q": "Does Proton Pass require an account login?",
+"a": "Yes. Proton Pass requires signing into an account to access the hosted password vault."
+},
+{
+"q": "Can KeePassXC work without internet access?",
+"a": "Yes. KeePassXC operates entirely offline because the password database is stored locally."
+},
+{
+"q": "Who should choose Proton Pass instead?",
+"a": "Users who want automatic synchronization and browser autofill across multiple devices may prefer Proton Pass."
+}
+],
+"related_pages": [
+{ "x_name": "Bitwarden", "y_name": "1Password", "persona": "Power user" },
+{ "x_name": "Passbolt", "y_name": "Dashlane", "persona": "Power user" },
+{ "x_name": "Passbolt", "y_name": "RoboForm", "persona": "Power user" },
+{ "x_name": "Passbolt", "y_name": "Proton Pass", "persona": "Power user" },
+{ "x_name": "KeePassXC", "y_name": "NordPass", "persona": "Power user" },
+{ "x_name": "KeePassXC", "y_name": "1Password", "persona": "Power user" }
+]
+}

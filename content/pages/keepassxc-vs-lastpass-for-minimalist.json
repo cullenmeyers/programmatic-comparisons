@@ -1,0 +1,120 @@
+{
+"category": "Password Managers",
+"categorySlug": "password-managers",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "KeePassXC vs LastPass for Minimalists",
+"slug": "keepassxc-vs-lastpass-for-minimalist",
+"meta_description": "KeePassXC vs LastPass for minimalists who want local password storage. See why KeePassXC wins when avoiding hosted vault services.",
+"persona": "Minimalist",
+"constraint_lens": "Minimalists prefer tools that avoid extra accounts and keep password storage limited to a simple local system.",
+"one_second_verdict": {
+"winner_label": "KeePassXC",
+"summary": "Best for minimalists who want passwords stored locally instead of in a hosted vault.",
+"reason": "LastPass fails first because passwords must be stored inside a vendor hosted vault instead of a local encrypted database file."
+},
+"verdict": {
+"winner": "x",
+"summary": "KeePassXC is the better choice for minimalists who refuse to store personal passwords inside a hosted service. It keeps all credentials inside a local encrypted database file stored on the user's device. LastPass requires creating an account and storing the password vault inside the vendor hosted service. For users who want a simple local system with no external dependency, the hosted vault requirement adds unnecessary complexity.",
+"decision_rule": "If passwords must be stored inside a vendor-hosted vault rather than a local encrypted database file, LastPass fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why KeePassXC fits minimalists",
+"content": "The user refuses to store personal passwords inside a third party hosted service. KeePassXC keeps all passwords inside a local encrypted database file that exists directly on the user's device. The vault opens in the application without creating an account or connecting to a hosted system. This keeps password storage simple and fully under the user's control."
+},
+{
+"type": "x_wins",
+"heading": "Where KeePassXC wins",
+"bullets": [
+{
+"point": "KeePassXC stores passwords in a local encrypted database file on the device.",
+"why_it_matters": "Minimalists can keep credentials stored locally without relying on a hosted vault."
+},
+{
+"point": "KeePassXC works without creating an online account.",
+"why_it_matters": "Users avoid managing another login or linking their passwords to a vendor service."
+},
+{
+"point": "KeePassXC allows the vault file to be stored in any location the user chooses.",
+"why_it_matters": "The password database can remain on a personal device or storage location controlled by the user."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where LastPass wins",
+"bullets": [
+{
+"point": "LastPass automatically synchronizes the password vault across devices through the user account.",
+"why_it_matters": "Users can access credentials on multiple devices without manually moving vault files."
+},
+{
+"point": "LastPass browser extensions detect login forms and autofill saved passwords.",
+"why_it_matters": "Signing into websites becomes faster without copying credentials manually."
+},
+{
+"point": "LastPass restores the vault when the user signs into a new device.",
+"why_it_matters": "Passwords become available automatically after logging into the account."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user wants passwords to automatically sync across multiple devices without transferring files.",
+"what_to_do_instead": "Use LastPass where the vault synchronizes automatically through the account."
+},
+{
+"tool": "y",
+"fails_when": "The user refuses to store passwords in a hosted vault because LastPass stores credentials inside the vendor service.",
+"what_to_do_instead": "Use KeePassXC where passwords live inside a local encrypted database file."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user wants passwords to automatically appear across multiple devices without managing vault files manually, LastPass may become the better option."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick KeePassXC if you want passwords stored locally in an encrypted database file.",
+"Pick KeePassXC if you refuse to store credentials in a hosted vault service.",
+"Pick LastPass if you want passwords to sync automatically across devices."
+]
+}
+],
+"faqs": [
+{
+"q": "Why do minimalists prefer KeePassXC?",
+"a": "KeePassXC stores passwords locally in an encrypted file and does not require using a hosted vault service."
+},
+{
+"q": "Does LastPass store passwords locally?",
+"a": "No. LastPass stores passwords inside a hosted vault tied to the user account."
+},
+{
+"q": "Can KeePassXC work without internet access?",
+"a": "Yes. KeePassXC runs locally and does not require an online service."
+},
+{
+"q": "Who should choose LastPass instead?",
+"a": "Users who want passwords to sync automatically across devices may prefer LastPass."
+}
+],
+"related_pages": [
+{ "x_name": "KeePassXC", "y_name": "1Password", "persona": "Minimalist" },
+{ "x_name": "KeePassXC", "y_name": "NordPass", "persona": "Minimalist" },
+{ "x_name": "Bitwarden", "y_name": "1Password", "persona": "Minimalist" },
+{ "x_name": "KeePassXC", "y_name": "Bitwarden", "persona": "Minimalist" },
+{ "x_name": "Enpass", "y_name": "NordPass", "persona": "Minimalist" },
+{ "x_name": "KeePass", "y_name": "Proton Pass", "persona": "Minimalist" }
+]
+}
