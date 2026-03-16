@@ -398,15 +398,22 @@ export default async function ComparePage({
         <SectionHeading title="Related comparisons" />
         {(() => {
           const existing = new Set(listPageSlugs());
+          const currentCategorySlug = getPageCategorySlug(doc);
 
-          const items = (doc.related_pages || []).map((relatedPage) => {
+          const items = (doc.related_pages || []).flatMap((relatedPage) => {
             const relatedSlug = slugifyCompare(
               relatedPage.x_name,
               relatedPage.y_name,
               relatedPage.persona
             );
             const exists = existing.has(relatedSlug);
-            return { relatedPage, relatedSlug, exists };
+            if (exists && currentCategorySlug) {
+              const relatedDoc = loadPageBySlug(relatedSlug);
+              if (relatedDoc && getPageCategorySlug(relatedDoc) !== currentCategorySlug) {
+                return [];
+              }
+            }
+            return [{ relatedPage, relatedSlug, exists }];
           });
 
           const anyLinks = items.some((item) => item.exists);
