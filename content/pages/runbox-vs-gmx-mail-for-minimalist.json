@@ -1,0 +1,120 @@
+{
+"category": "Email / Inbox tools",
+"categorySlug": "email-inbox-tools",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "Runbox vs GMX Mail for Minimalists",
+"slug": "runbox-vs-gmx-mail-for-minimalist",
+"meta_description": "Runbox vs GMX Mail for minimalists who want an inbox without ads. See why Runbox wins when you want email without advertising panels.",
+"persona": "Minimalist",
+"constraint_lens": "Minimalists prefer inbox tools that avoid extra panels and promotions so the mailbox stays focused only on messages.",
+"one_second_verdict": {
+"winner_label": "Runbox",
+"summary": "Best for minimalists who want a paid email service with an inbox free of advertising panels.",
+"reason": "GMX Mail fails first because the inbox interface displays advertising panels and promotional message placements beside emails."
+},
+"verdict": {
+"winner": "x",
+"summary": "Runbox is the better option for minimalists who want an inbox focused on communication rather than advertising. The mailbox interface shows folders and messages without inserting banner ads or promotional panels next to the inbox. GMX Mail relies on advertising banners and promotional placements inside the mailbox layout. For users who want a clean inbox experience, those advertising elements add unnecessary clutter.",
+"decision_rule": "If the inbox interface displays advertising panels or promotional message placement, GMX Mail fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Runbox fits minimalists",
+"content": "The user wants a paid email provider focused on communication and refuses inbox interfaces filled with advertisements. Runbox presents the mailbox interface as a message list with folders and tools centered around email management. The layout avoids advertising banners and promotional placements that appear next to conversations in ad supported services. This keeps the inbox visually simple."
+},
+{
+"type": "x_wins",
+"heading": "Where Runbox wins",
+"bullets": [
+{
+"point": "Runbox displays the inbox interface without advertising banners beside the message list.",
+"why_it_matters": "Minimalists can read and manage messages without visual distractions around conversations."
+},
+{
+"point": "Runbox organizes the mailbox layout around folders and messages instead of promotional panels.",
+"why_it_matters": "The interface stays easier to scan because only communication tools appear in the inbox."
+},
+{
+"point": "Runbox operates as a paid email provider rather than an advertising funded service.",
+"why_it_matters": "The mailbox does not rely on promotional placements to support the platform."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where GMX Mail wins",
+"bullets": [
+{
+"point": "GMX Mail provides a free email account supported by advertising.",
+"why_it_matters": "Users can create a mailbox without paying for a subscription."
+},
+{
+"point": "GMX Mail runs entirely in a browser without installing software.",
+"why_it_matters": "Users can access their inbox quickly from any device."
+},
+{
+"point": "GMX Mail automatically manages spam filtering and mailbox hosting.",
+"why_it_matters": "Users can use email without managing server infrastructure."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user wants a completely free mailbox and does not want to pay for a privacy focused email service.",
+"what_to_do_instead": "Use GMX Mail where the service is free and supported by advertising."
+},
+{
+"tool": "y",
+"fails_when": "The user wants a clean inbox because GMX Mail displays advertising banners and promotional placements beside messages.",
+"what_to_do_instead": "Use Runbox where the mailbox interface avoids advertising panels."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user prefers a completely free email account and does not mind advertising panels inside the inbox interface, GMX Mail may become the better option."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick Runbox if you want an inbox without advertising banners.",
+"Pick Runbox if you prefer a paid email provider focused on communication.",
+"Pick GMX Mail if you want a free email account supported by ads."
+]
+}
+],
+"faqs": [
+{
+"q": "Why do minimalists prefer Runbox?",
+"a": "Runbox keeps the mailbox interface focused on messages instead of placing advertising banners next to the inbox."
+},
+{
+"q": "Does GMX Mail include advertising in the inbox?",
+"a": "Yes. GMX Mail displays advertising panels and promotional modules inside the mailbox interface."
+},
+{
+"q": "Is Runbox a free email provider?",
+"a": "No. Runbox operates as a paid service that avoids advertising in the mailbox interface."
+},
+{
+"q": "Who should choose GMX Mail instead?",
+"a": "Users who want a free hosted email account and do not mind advertising panels may prefer GMX Mail."
+}
+],
+"related_pages": [
+{ "x_name": "Mailbox.org", "y_name": "GMX Mail", "persona": "Minimalist" },
+{ "x_name": "StartMail", "y_name": "GMX Mail", "persona": "Minimalist" },
+{ "x_name": "Hushmail", "y_name": "GMX Mail", "persona": "Minimalist" },
+{ "x_name": "Mailbox.org", "y_name": "Yahoo Mail", "persona": "Minimalist" },
+{ "x_name": "StartMail", "y_name": "Yahoo Mail", "persona": "Minimalist" },
+{ "x_name": "Fastmail", "y_name": "Yahoo Mail", "persona": "Minimalist" }
+]
+}

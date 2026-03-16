@@ -1,0 +1,120 @@
+{
+"category": "Password Managers",
+"categorySlug": "password-managers",
+"constraintSlug": "fear-of-breaking",
+"constraintUiName": "Hard to mess up",
+"title": "Keeper vs KeePass for Non-technical users",
+"slug": "keeper-vs-keepass-for-non-technical-user",
+"meta_description": "Keeper vs KeePass for non-technical users worried about losing passwords. See why Keeper wins when automatic cloud backup matters.",
+"persona": "Non-technical user",
+"constraint_lens": "Non-technical users prefer tools that protect data automatically so they do not risk losing passwords if a device fails.",
+"one_second_verdict": {
+"winner_label": "Keeper",
+"summary": "Best for non-technical users who want passwords automatically backed up in case their device fails.",
+"reason": "KeePass fails first because protecting the vault requires manually copying or backing up the encrypted database file."
+},
+"verdict": {
+"winner": "x",
+"summary": "Keeper is the better choice for non-technical users worried about losing their password vault if a device breaks. The service stores the vault in a hosted account and automatically backs it up in the cloud. KeePass stores passwords inside a local encrypted database file that must be copied or backed up manually. For users who want automatic protection against device failure, relying on manual file backups creates risk.",
+"decision_rule": "If safeguarding the vault depends on manually copying or backing up database files instead of automatic cloud backup, KeePass fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Keeper fits non-technical users",
+"content": "The user is afraid of losing passwords if their computer fails and wants automatic backup. Keeper stores the vault inside the Keeper service and keeps encrypted copies synchronized across devices. When the user signs into a new device, the entire vault appears automatically. This removes the need to copy database files or maintain manual backups."
+},
+{
+"type": "x_wins",
+"heading": "Where Keeper wins",
+"bullets": [
+{
+"point": "Keeper automatically backs up the vault inside the hosted service.",
+"why_it_matters": "Passwords remain protected even if a computer or phone is lost."
+},
+{
+"point": "Keeper restores the vault automatically after logging into the account on a new device.",
+"why_it_matters": "Users recover all credentials without importing backup files."
+},
+{
+"point": "Keeper synchronizes encrypted vault data across devices automatically.",
+"why_it_matters": "Users always have an up to date backup without managing files."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where KeePass wins",
+"bullets": [
+{
+"point": "KeePass stores passwords inside a local encrypted database file.",
+"why_it_matters": "Users maintain full control over where the vault file is stored."
+},
+{
+"point": "KeePass works completely offline once the database file exists.",
+"why_it_matters": "Passwords remain accessible even without internet connectivity."
+},
+{
+"point": "KeePass allows users to copy the encrypted vault file anywhere.",
+"why_it_matters": "Advanced users can manage their own backup and storage systems."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user refuses to store passwords inside a hosted vault service.",
+"what_to_do_instead": "Use KeePass where the vault remains as a local encrypted database file."
+},
+{
+"tool": "y",
+"fails_when": "The user wants automatic protection against device loss because KeePass requires manually copying or backing up the encrypted vault file.",
+"what_to_do_instead": "Use Keeper where the vault is automatically backed up through the account."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user prefers storing passwords entirely offline and managing their own backup system, KeePass may become the better option."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick Keeper if you want automatic password backup in case your device fails.",
+"Pick Keeper if you want the vault restored automatically on new devices.",
+"Pick KeePass if you want passwords stored only in a local encrypted file."
+]
+}
+],
+"faqs": [
+{
+"q": "Why is Keeper safer for non-technical users?",
+"a": "Keeper automatically backs up the encrypted vault in the cloud so passwords can be restored if a device is lost."
+},
+{
+"q": "Does KeePass automatically back up the password vault?",
+"a": "No. KeePass stores passwords in a local encrypted database file that must be backed up manually."
+},
+{
+"q": "Can Keeper restore passwords on a new device?",
+"a": "Yes. Signing into the Keeper account automatically restores the vault on a new device."
+},
+{
+"q": "Who should choose KeePass instead?",
+"a": "Users who want complete local control of the encrypted database file may prefer KeePass."
+}
+],
+"related_pages": [
+{ "x_name": "Dashlane", "y_name": "KeePass", "persona": "Non-technical user" },
+{ "x_name": "NordPass", "y_name": "KeePassXC", "persona": "Non-technical user" },
+{ "x_name": "Bitwarden", "y_name": "KeePassXC", "persona": "Non-technical user" },
+{ "x_name": "pCloud Pass", "y_name": "KeePassXC", "persona": "Non-technical user" },
+{ "x_name": "1Password", "y_name": "KeePass", "persona": "Non-technical user" },
+{ "x_name": "Proton Pass", "y_name": "KeePass", "persona": "Non-technical user" }
+]
+}

@@ -1,0 +1,120 @@
+{
+"category": "Email / Inbox tools",
+"categorySlug": "email-inbox-tools",
+"constraintSlug": "time-scarcity",
+"constraintUiName": "Fast to use daily",
+"title": "HEY vs Gmail for Busy professionals",
+"slug": "hey-vs-gmail-for-busy-professional",
+"meta_description": "HEY vs Gmail for busy professionals who want to approve senders before messages reach the inbox. See why HEY wins when filtering must happen first.",
+"persona": "Busy professional",
+"constraint_lens": "Busy professionals prefer tools that reduce inbox noise so they spend less time sorting and filtering messages.",
+"one_second_verdict": {
+"winner_label": "HEY",
+"summary": "Best for busy professionals who want to approve senders before messages reach the inbox.",
+"reason": "Gmail fails first because messages arrive in the inbox before senders can be screened."
+},
+"verdict": {
+"winner": "x",
+"summary": "HEY is the better choice for busy professionals who want strict control over incoming senders. It uses a screening system where first time senders must be approved before their messages appear in the inbox. Gmail delivers emails immediately and relies on filters or manual cleanup after messages arrive. For users trying to reduce inbox noise quickly, screening senders before delivery prevents unnecessary messages from appearing.",
+"decision_rule": "If senders cannot be screened before reaching the inbox and must be filtered manually after arrival, Gmail fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why HEY fits busy professionals",
+"content": "The user wants to approve senders before messages reach the inbox so unwanted emails never appear. HEY places emails from new senders in a screening queue where the user decides whether to allow or block them. Once a sender is approved, their messages reach the inbox automatically in the future. This approach prevents unknown senders from filling the inbox and reduces time spent filtering messages."
+},
+{
+"type": "x_wins",
+"heading": "Where HEY wins",
+"bullets": [
+{
+"point": "HEY screens first time senders before their emails appear in the inbox.",
+"why_it_matters": "Users can approve or block senders before messages interrupt their workflow."
+},
+{
+"point": "HEY automatically blocks future messages from rejected senders.",
+"why_it_matters": "Once a sender is denied, their emails stop appearing entirely."
+},
+{
+"point": "HEY separates approved messages from newsletters and automated content.",
+"why_it_matters": "Important conversations stay visible while bulk messages stay out of the main inbox."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Gmail wins",
+"bullets": [
+{
+"point": "Gmail automatically sorts emails into categories such as Primary, Social, and Promotions.",
+"why_it_matters": "Users can scan the main inbox without reading every marketing message."
+},
+{
+"point": "Gmail supports advanced filtering rules that move or label incoming emails.",
+"why_it_matters": "Users can automate inbox organization after messages arrive."
+},
+{
+"point": "Gmail integrates with many third party apps and productivity tools.",
+"why_it_matters": "Users can connect email workflows with other services."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user depends on integrations with external productivity tools connected to Gmail.",
+"what_to_do_instead": "Use Gmail where integrations with other services are widely supported."
+},
+{
+"tool": "y",
+"fails_when": "The user wants to stop unwanted senders before messages reach the inbox because Gmail delivers messages first and filters them later.",
+"what_to_do_instead": "Use HEY where senders must be approved before emails reach the inbox."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user relies on extensive integrations with other productivity tools that connect directly to Gmail, Gmail may become the better option."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick HEY if you want to approve senders before messages reach your inbox.",
+"Pick HEY if reducing inbox noise is your top priority.",
+"Pick Gmail if you rely heavily on integrations with other tools."
+]
+}
+],
+"faqs": [
+{
+"q": "What makes HEY different from Gmail?",
+"a": "HEY allows users to screen new senders before their messages appear in the inbox."
+},
+{
+"q": "Can Gmail block emails before they arrive?",
+"a": "No. Gmail typically delivers messages first and then filters or sorts them afterward."
+},
+{
+"q": "Why does sender screening help busy professionals?",
+"a": "It prevents unwanted emails from appearing in the inbox so users spend less time filtering messages."
+},
+{
+"q": "Who should still choose Gmail?",
+"a": "Users who rely on integrations with many third party tools may prefer Gmail."
+}
+],
+"related_pages": [
+{ "x_name": "Front", "y_name": "Gmail", "persona": "Busy professional" },
+{ "x_name": "Missive", "y_name": "Apple Mail", "persona": "Busy professional" },
+{ "x_name": "Front", "y_name": "Apple Mail", "persona": "Busy professional" },
+{ "x_name": "Missive", "y_name": "Fastmail", "persona": "Busy professional" },
+{ "x_name": "Hiver", "y_name": "Apple Mail", "persona": "Busy professional" },
+{ "x_name": "Hiver", "y_name": "Yahoo Mail", "persona": "Busy professional" }
+]
+}

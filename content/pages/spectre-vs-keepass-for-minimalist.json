@@ -1,0 +1,125 @@
+{
+"category": "Password Managers",
+"categorySlug": "password-managers",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "Spectre vs KeePass for Minimalists",
+"slug": "spectre-vs-keepass-for-minimalist",
+"meta_description": "Spectre vs KeePass for minimalists who refuse password vault files. See why Spectre wins when passwords are generated instead of stored.",
+"persona": "Minimalist",
+"constraint_lens": "Minimalists prefer tools that avoid maintaining password databases or vault files and instead keep the system as simple as possible.",
+"one_second_verdict": {
+"winner_label": "Spectre",
+"summary": "Best for minimalists who want passwords generated algorithmically instead of stored in a vault.",
+"reason": "KeePass fails first because it requires maintaining and syncing an encrypted password database file."
+},
+"verdict": {
+"winner": "x",
+"summary": "Spectre is the better choice for minimalists who do not want to maintain password vault files. It generates passwords algorithmically from a master identity and site information, recreating the same password each time without storing a database. KeePass stores credentials inside an encrypted KDBX vault file that must be maintained and backed up. For users who want to avoid managing password databases entirely, maintaining a vault file adds unnecessary overhead.",
+"decision_rule": "If password management requires maintaining and syncing an encrypted database file instead of generating passwords deterministically, KeePass fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Spectre fits minimalists",
+"content": "The user refuses to maintain encrypted password databases and prefers generating passwords algorithmically. Spectre derives passwords from a master identity combined with the site name. The same inputs always produce the same password, so there is no vault file to maintain or synchronize. This allows password access without storing any database."
+},
+{
+"type": "x_wins",
+"heading": "Where Spectre wins",
+"bullets": [
+{
+"point": "Spectre generates passwords algorithmically using a master identity and site information.",
+"why_it_matters": "Users avoid maintaining a stored password vault."
+},
+{
+"point": "Spectre recreates the same password each time the same inputs are used.",
+"why_it_matters": "Credentials can be regenerated without retrieving entries from a vault database."
+},
+{
+"point": "Spectre operates without storing encrypted password collections on disk.",
+"why_it_matters": "Minimalists avoid managing vault backups or synchronization."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where KeePass wins",
+"bullets": [
+{
+"point": "KeePass stores credentials in an encrypted KDBX database file.",
+"why_it_matters": "Users can retrieve saved passwords instantly instead of regenerating them."
+},
+{
+"point": "KeePass supports offline access to the password vault file.",
+"why_it_matters": "Passwords remain available without internet connectivity."
+},
+{
+"point": "KeePass allows the encrypted vault file to be backed up or copied anywhere.",
+"why_it_matters": "Users can control how and where the password database is stored."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user wants saved credential entries with automatic autofill across websites.",
+"what_to_do_instead": "Use KeePass where passwords are stored in an encrypted database."
+},
+{
+"tool": "y",
+"fails_when": "The user refuses to maintain vault files because KeePass requires storing and syncing an encrypted database.",
+"what_to_do_instead": "Use Spectre where passwords are generated algorithmically instead of stored."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user prefers storing passwords in a database so they can retrieve them instantly instead of regenerating them manually, KeePass may become the better option."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick Spectre if you refuse to maintain a password vault file.",
+"Pick Spectre if you want passwords generated algorithmically instead of stored.",
+"Pick KeePass if you prefer storing passwords inside an encrypted vault database."
+]
+},
+{
+"type": "faqs",
+"heading": "",
+"content": ""
+}
+],
+"faqs": [
+{
+"q": "How does Spectre work without storing passwords?",
+"a": "Spectre derives passwords algorithmically from a master identity and site information so no vault database is required."
+},
+{
+"q": "Does KeePass store passwords in a vault?",
+"a": "Yes. KeePass stores credentials inside an encrypted KDBX database file."
+},
+{
+"q": "Can Spectre regenerate the same password later?",
+"a": "Yes. Using the same master identity and site name produces the same password each time."
+},
+{
+"q": "Who should choose KeePass instead?",
+"a": "Users who want saved password entries instead of generating them manually may prefer KeePass."
+}
+],
+"related_pages": [
+{ "x_name": "LessPass", "y_name": "Bitwarden", "persona": "Minimalist" },
+{ "x_name": "KeePassXC", "y_name": "Keeper", "persona": "Minimalist" },
+{ "x_name": "KeePassXC", "y_name": "Dashlane", "persona": "Minimalist" },
+{ "x_name": "KeePassXC", "y_name": "LastPass", "persona": "Minimalist" },
+{ "x_name": "Enpass", "y_name": "1Password", "persona": "Minimalist" },
+{ "x_name": "Enpass", "y_name": "NordPass", "persona": "Minimalist" }
+]
+}

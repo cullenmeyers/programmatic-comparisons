@@ -1,0 +1,120 @@
+{
+"category": "Password Managers",
+"categorySlug": "password-managers",
+"constraintSlug": "fear-of-breaking",
+"constraintUiName": "Hard to mess up",
+"title": "Keeper vs Buttercup for Non-technical users",
+"slug": "keeper-vs-buttercup-for-non-technical-user",
+"meta_description": "Keeper vs Buttercup for non-technical users who want automatic password syncing. See why Keeper wins when vault files are avoided.",
+"persona": "Non-technical user",
+"constraint_lens": "Non-technical users prefer tools that handle syncing automatically so they do not need to manage vault files across devices.",
+"one_second_verdict": {
+"winner_label": "Keeper",
+"summary": "Best for non-technical users who want passwords to appear automatically on phone and laptop.",
+"reason": "Buttercup fails first because syncing requires manually managing encrypted vault files across devices."
+},
+"verdict": {
+"winner": "x",
+"summary": "Keeper is the better option for non-technical users who want passwords available on multiple devices automatically. The service stores the password vault inside a hosted account and synchronizes it across devices whenever credentials change. Buttercup stores passwords inside encrypted vault files that must be synchronized manually using external storage or file transfer. For users who want everything to work automatically, managing vault files creates unnecessary risk and confusion.",
+"decision_rule": "If syncing passwords requires manually managing encrypted vault files across devices, Buttercup fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Keeper fits non-technical users",
+"content": "The user wants passwords to sync automatically across phone and laptop without touching vault files. Keeper stores the vault inside the account and synchronizes credentials through the service whenever they change. Signing into Keeper on another device automatically restores the same password vault. This removes the need to copy encrypted database files or configure storage services."
+},
+{
+"type": "x_wins",
+"heading": "Where Keeper wins",
+"bullets": [
+{
+"point": "Keeper synchronizes passwords automatically through the account vault.",
+"why_it_matters": "Passwords appear on all devices without transferring encrypted files."
+},
+{
+"point": "Keeper restores the vault automatically after signing into the account on a new device.",
+"why_it_matters": "Users recover their entire password collection without importing files."
+},
+{
+"point": "Keeper manages encryption and storage inside the service automatically.",
+"why_it_matters": "Users avoid handling vault files or configuring synchronization tools."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Buttercup wins",
+"bullets": [
+{
+"point": "Buttercup stores passwords inside a local encrypted vault file.",
+"why_it_matters": "Users keep full control over where the password database is stored."
+},
+{
+"point": "Buttercup works offline once the vault file exists on the device.",
+"why_it_matters": "Passwords remain accessible without internet connectivity."
+},
+{
+"point": "Buttercup allows the vault file to be stored in user controlled storage locations.",
+"why_it_matters": "Advanced users can integrate the vault into custom backup systems."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user refuses to store passwords inside a hosted vault service.",
+"what_to_do_instead": "Use Buttercup where passwords are stored in a local encrypted vault file."
+},
+{
+"tool": "y",
+"fails_when": "The user wants automatic syncing across devices because Buttercup requires manually syncing encrypted vault files.",
+"what_to_do_instead": "Use Keeper where the vault synchronizes automatically through the account."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user prefers storing the vault locally and is comfortable managing encrypted database files, Buttercup may become the better option."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick Keeper if you want passwords to sync automatically across phone and laptop.",
+"Pick Keeper if you do not want to manage encrypted vault files.",
+"Pick Buttercup if you prefer storing the password vault locally."
+]
+}
+],
+"faqs": [
+{
+"q": "Why is Keeper easier for non-technical users?",
+"a": "Keeper automatically synchronizes passwords across devices through the account vault."
+},
+{
+"q": "Does Buttercup sync passwords automatically?",
+"a": "No. Buttercup stores passwords in encrypted vault files that must be synchronized manually."
+},
+{
+"q": "Can Buttercup work offline?",
+"a": "Yes. Buttercup opens the encrypted vault file locally and does not require internet access."
+},
+{
+"q": "Who should choose Buttercup instead?",
+"a": "Users who prefer storing passwords locally and managing vault files themselves may prefer Buttercup."
+}
+],
+"related_pages": [
+{ "x_name": "Keeper", "y_name": "KeePass", "persona": "Non-technical user" },
+{ "x_name": "Bitwarden", "y_name": "KeePassXC", "persona": "Non-technical user" },
+{ "x_name": "NordPass", "y_name": "KeePassXC", "persona": "Non-technical user" },
+{ "x_name": "Dashlane", "y_name": "KeePass", "persona": "Non-technical user" },
+{ "x_name": "Proton Pass", "y_name": "KeePass", "persona": "Non-technical user" },
+{ "x_name": "pCloud Pass", "y_name": "KeePassXC", "persona": "Non-technical user" }
+]
+}

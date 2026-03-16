@@ -1,0 +1,120 @@
+{
+"category": "Password Managers",
+"categorySlug": "password-managers",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "KeePassXC vs Keeper for Minimalists",
+"slug": "keepassxc-vs-keeper-for-minimalist",
+"meta_description": "KeePassXC vs Keeper for minimalists who want passwords stored locally. See why KeePassXC wins when you refuse vendor hosted vault services.",
+"persona": "Minimalist",
+"constraint_lens": "Minimalists prefer tools that avoid accounts and external services so password storage stays simple and fully under their control.",
+"one_second_verdict": {
+"winner_label": "KeePassXC",
+"summary": "Best for minimalists who want passwords stored in a local encrypted database file they control.",
+"reason": "Keeper fails first because passwords are stored inside a vendor hosted vault instead of a local encrypted database file."
+},
+"verdict": {
+"winner": "x",
+"summary": "KeePassXC is the better option for minimalists who refuse to store credentials in vendor hosted vault services. It stores passwords inside a local encrypted KDBX database file that the user controls directly. Keeper keeps credentials inside a hosted vault tied to an account login. For users who want password storage to remain fully local, requiring a hosted vault introduces an unnecessary service dependency.",
+"decision_rule": "If storing passwords requires keeping the vault inside a vendor-hosted cloud service instead of a local encrypted database file, Keeper fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why KeePassXC fits minimalists",
+"content": "The user refuses to create accounts or store credentials in vendor hosted services. KeePassXC opens a local encrypted KDBX database file that exists directly on the user's device. The vault can be backed up, copied, or moved manually without connecting to external services. This keeps password storage entirely under the user's control."
+},
+{
+"type": "x_wins",
+"heading": "Where KeePassXC wins",
+"bullets": [
+{
+"point": "KeePassXC stores passwords inside a local encrypted KDBX database file.",
+"why_it_matters": "Users maintain full control of the vault without relying on external services."
+},
+{
+"point": "KeePassXC works without creating an account or connecting to hosted infrastructure.",
+"why_it_matters": "Minimalists can manage passwords without maintaining service logins."
+},
+{
+"point": "KeePassXC allows the vault file to be stored anywhere such as local folders or external drives.",
+"why_it_matters": "Users can manage backups and storage locations directly."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Keeper wins",
+"bullets": [
+{
+"point": "Keeper synchronizes passwords automatically across devices through the account vault.",
+"why_it_matters": "Users can access the same passwords on multiple devices without moving files."
+},
+{
+"point": "Keeper integrates directly with browsers for automatic login autofill.",
+"why_it_matters": "Credentials can be filled quickly when signing into websites."
+},
+{
+"point": "Keeper manages vault storage and encryption inside the hosted service.",
+"why_it_matters": "Users do not need to manage encrypted database files themselves."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user wants passwords to synchronize automatically across multiple devices without manually moving a vault file.",
+"what_to_do_instead": "Use Keeper where the vault synchronizes automatically through the account."
+},
+{
+"tool": "y",
+"fails_when": "The user refuses hosted vault services because Keeper stores credentials inside a vendor managed account vault.",
+"what_to_do_instead": "Use KeePassXC where the password database exists as a local encrypted file."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user prefers automatic password syncing across devices and does not mind using a hosted vault service, Keeper may become the better option."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick KeePassXC if you want passwords stored in a local encrypted database file.",
+"Pick KeePassXC if you refuse to create accounts for password storage.",
+"Pick Keeper if you want passwords synchronized automatically across devices."
+]
+}
+],
+"faqs": [
+{
+"q": "Why do minimalists prefer KeePassXC?",
+"a": "KeePassXC stores passwords in a local encrypted database file instead of a hosted vault."
+},
+{
+"q": "Does Keeper store passwords locally?",
+"a": "No. Keeper stores passwords inside a vendor hosted vault linked to an account."
+},
+{
+"q": "Can KeePassXC work without internet access?",
+"a": "Yes. KeePassXC opens the encrypted database file locally and works completely offline."
+},
+{
+"q": "Who should choose Keeper instead?",
+"a": "Users who want automatic password syncing across multiple devices may prefer Keeper."
+}
+],
+"related_pages": [
+{ "x_name": "KeePassXC", "y_name": "LastPass", "persona": "Minimalist" },
+{ "x_name": "KeePassXC", "y_name": "Dashlane", "persona": "Minimalist" },
+{ "x_name": "KeePass", "y_name": "Proton Pass", "persona": "Minimalist" },
+{ "x_name": "Enpass", "y_name": "NordPass", "persona": "Minimalist" },
+{ "x_name": "Enpass", "y_name": "1Password", "persona": "Minimalist" },
+{ "x_name": "KeePassXC", "y_name": "NordPass", "persona": "Minimalist" }
+]
+}

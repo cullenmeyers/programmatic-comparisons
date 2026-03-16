@@ -1,0 +1,120 @@
+{
+"category": "Password Managers",
+"categorySlug": "password-managers",
+"constraintSlug": "fear-of-breaking",
+"constraintUiName": "Hard to mess up",
+"title": "Keeper vs KeePassDX for Non-technical users",
+"slug": "keeper-vs-keepassdx-for-non-technical-user",
+"meta_description": "Keeper vs KeePassDX for non-technical users who want passwords synced automatically. See why Keeper wins when vault files are avoided.",
+"persona": "Non-technical user",
+"constraint_lens": "Non-technical users prefer tools that handle syncing automatically so they do not need to manage encrypted vault files.",
+"one_second_verdict": {
+"winner_label": "Keeper",
+"summary": "Best for non-technical users who want passwords to sync automatically across devices.",
+"reason": "KeePassDX fails first because syncing requires manually transferring encrypted vault database files between devices."
+},
+"verdict": {
+"winner": "x",
+"summary": "Keeper is the better option for non-technical users who want their passwords to appear automatically on multiple devices. The service stores the password vault inside the Keeper account and synchronizes credentials whenever they change. KeePassDX stores passwords in a local encrypted KDBX database file that must be copied or synchronized manually. For users who do not want to manage vault files, manual file transfer introduces risk and confusion.",
+"decision_rule": "If syncing passwords requires manually transferring encrypted database files between devices, KeePassDX fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Keeper fits non-technical users",
+"content": "The user wants passwords to appear automatically across devices and does not want to manage vault files. Keeper synchronizes the password vault through the account so credentials update automatically across devices. Signing into Keeper on another device immediately restores the same vault. This removes the need to copy encrypted database files or configure synchronization tools."
+},
+{
+"type": "x_wins",
+"heading": "Where Keeper wins",
+"bullets": [
+{
+"point": "Keeper synchronizes the password vault automatically through the account service.",
+"why_it_matters": "Passwords appear on phone and laptop without copying encrypted files."
+},
+{
+"point": "Keeper restores the entire vault after signing into the account on a new device.",
+"why_it_matters": "Users regain access to passwords instantly without importing database files."
+},
+{
+"point": "Keeper manages vault encryption and storage inside the hosted service.",
+"why_it_matters": "Users avoid handling encrypted database files themselves."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where KeePassDX wins",
+"bullets": [
+{
+"point": "KeePassDX stores passwords inside a local encrypted KDBX vault file.",
+"why_it_matters": "Users maintain full control over where the database file is stored."
+},
+{
+"point": "KeePassDX works offline once the vault file exists locally.",
+"why_it_matters": "Passwords remain accessible without internet connectivity."
+},
+{
+"point": "KeePassDX allows the encrypted vault file to be backed up or moved manually.",
+"why_it_matters": "Advanced users can control backup and storage strategies."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The user refuses to store passwords inside a hosted vault service.",
+"what_to_do_instead": "Use KeePassDX where the vault exists as a local encrypted database file."
+},
+{
+"tool": "y",
+"fails_when": "The user expects passwords to sync automatically because KeePassDX requires transferring encrypted vault files between devices.",
+"what_to_do_instead": "Use Keeper where the vault synchronizes automatically through the account."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the user prefers storing passwords locally as an encrypted database file and is comfortable managing vault backups manually, KeePassDX may become the better option."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Pick Keeper if you want passwords to sync automatically across devices.",
+"Pick Keeper if you do not want to manage encrypted vault files.",
+"Pick KeePassDX if you want a fully local password database."
+]
+}
+],
+"faqs": [
+{
+"q": "Why is Keeper easier for non-technical users?",
+"a": "Keeper automatically synchronizes the password vault across devices without requiring file transfers."
+},
+{
+"q": "Does KeePassDX sync passwords automatically?",
+"a": "No. KeePassDX stores passwords in a local encrypted database file that must be transferred between devices."
+},
+{
+"q": "Can KeePassDX work offline?",
+"a": "Yes. KeePassDX opens the encrypted vault file locally and does not require internet access."
+},
+{
+"q": "Who should choose KeePassDX instead?",
+"a": "Users who want full control of a local encrypted password database may prefer KeePassDX."
+}
+],
+"related_pages": [
+{ "x_name": "Keeper", "y_name": "KeePass", "persona": "Non-technical user" },
+{ "x_name": "Bitwarden", "y_name": "KeePassXC", "persona": "Non-technical user" },
+{ "x_name": "NordPass", "y_name": "KeePassXC", "persona": "Non-technical user" },
+{ "x_name": "Dashlane", "y_name": "KeePass", "persona": "Non-technical user" },
+{ "x_name": "Proton Pass", "y_name": "KeePass", "persona": "Non-technical user" },
+{ "x_name": "pCloud Pass", "y_name": "KeePassXC", "persona": "Non-technical user" }
+]
+}
