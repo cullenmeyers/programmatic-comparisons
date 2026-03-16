@@ -1,0 +1,120 @@
+{
+"category": "Project Management Tools",
+"categorySlug": "project-management-tools",
+"constraintSlug": "ceiling-check",
+"constraintUiName": "Grows with you",
+"title": "Microsoft Project vs Trello for Power users",
+"slug": "microsoft-project-vs-trello-for-power-user",
+"meta_description": "Compare Microsoft Project vs Trello for power users planning complex schedules. See which tool models task dependencies and team resource allocation.",
+"persona": "Power user",
+"constraint_lens": "Power users need a system that can handle complex scheduling logic such as task dependencies and shared team resources without hitting limits.",
+"one_second_verdict": {
+"winner_label": "Microsoft Project",
+"summary": "Best for power users planning complex project schedules with dependencies and team resource allocation.",
+"reason": "Trello fails first because its board cards cannot model dependency based scheduling or allocate resources across multiple tasks."
+},
+"verdict": {
+"winner": "x",
+"summary": "Microsoft Project is the better system for power users planning large projects with strict scheduling requirements. Tasks can be linked with dependency relationships and assigned to specific resources so the schedule automatically adjusts when delays occur. Trello organizes work through cards on boards, which works for visual task tracking but does not support dependency based scheduling or resource planning. If project planning cannot model dependency-based scheduling and resource allocation across tasks, Trello fails first.",
+"decision_rule": "If project planning cannot model dependency-based scheduling and resource allocation across tasks, Trello fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why this comparison matters for Power users",
+"content": "This comparison is for someone planning large projects where tasks depend on each other and teams share limited resources. A delay in one task may shift the entire schedule, and managers must see how resources are distributed across multiple tasks. When the project system cannot represent these relationships, planning becomes guesswork. Power users running large projects need tools that calculate schedules rather than simply listing tasks."
+},
+{
+"type": "x_wins",
+"heading": "Where Microsoft Project wins",
+"bullets": [
+{
+"point": "Dependency based task scheduling",
+"why_it_matters": "Tasks can be linked with relationships such as finish to start so the schedule automatically shifts when an earlier task is delayed."
+},
+{
+"point": "Resource allocation across tasks",
+"why_it_matters": "Team members can be assigned as resources to tasks, allowing managers to track workload and prevent the same person from being scheduled for overlapping work."
+},
+{
+"point": "Gantt chart planning for complex timelines",
+"why_it_matters": "Projects appear on Gantt timelines where managers can adjust task dates and immediately see how changes affect dependent tasks."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Trello wins",
+"bullets": [
+{
+"point": "Visual drag and drop workflow boards",
+"why_it_matters": "Tasks appear as cards that move across columns such as to do, doing, and done, which makes work progress easy to visualize."
+},
+{
+"point": "Quick task creation with minimal setup",
+"why_it_matters": "A card can be added instantly to a board without defining dependencies, schedules, or resource assignments first."
+},
+{
+"point": "Lightweight collaboration inside task cards",
+"why_it_matters": "Comments, attachments, and checklists are stored inside each card, allowing teams to coordinate work without complex scheduling tools."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "The team only needs simple task boards and does not manage complex schedules or shared resources.",
+"what_to_do_instead": "Use Trello where tasks can be organized visually without dependency based planning."
+},
+{
+"tool": "y",
+"fails_when": "Projects require strict task order where delays automatically affect future work and where resources must be scheduled across tasks.",
+"what_to_do_instead": "Use Microsoft Project where task dependencies and resource allocation are built into the planning system."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "If the team mainly needs a visual board to track task progress and does not require strict scheduling or resource planning, Trello may be easier because it avoids the complexity of dependency driven project planning."
+},
+{
+"type": "quick_rules",
+"heading": "Quick decision rules",
+"rules": [
+"Choose Microsoft Project if your project schedule depends on task relationships and shared resources.",
+"Choose Microsoft Project if delays in one task must automatically shift other tasks.",
+"Choose Trello if you only need a visual board to track task progress."
+]
+}
+],
+"faqs": [
+{
+"q": "What is Microsoft Project mainly used for?",
+"a": "Microsoft Project is used for planning complex project schedules with task dependencies, resource allocation, and timeline management."
+},
+{
+"q": "Can Trello handle dependency based scheduling?",
+"a": "Trello does not provide built in dependency relationships between tasks, so scheduling dependencies must be tracked manually."
+},
+{
+"q": "Why do large projects require dependency scheduling?",
+"a": "Many tasks cannot start until earlier work finishes, so project planning tools must automatically adjust schedules when delays occur."
+},
+{
+"q": "When is Trello better than Microsoft Project?",
+"a": "Trello is better when teams need a simple visual board to organize tasks rather than detailed project scheduling."
+}
+],
+"related_pages": [
+{ "x_name": "Celoxis", "y_name": "Trello", "persona": "Power user" },
+{ "x_name": "Forecast", "y_name": "Basecamp", "persona": "Power user" },
+{ "x_name": "GitLab", "y_name": "Trello", "persona": "Power user" },
+{ "x_name": "Linear", "y_name": "Basecamp", "persona": "Power user" },
+{ "x_name": "Airtable", "y_name": "Trello", "persona": "Power user" },
+{ "x_name": "Redmine", "y_name": "ClickUp", "persona": "Power user" }
+]
+}
