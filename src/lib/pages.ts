@@ -56,7 +56,16 @@ export type PageDoc = {
   >;
 
   faqs: Array<{ q: string; a: string }>;
-  related_pages: Array<{ x_name: string; y_name: string; persona: string }>;
+  related_pages: RelatedPageDoc[];
+};
+
+export type RelatedPageDoc = {
+  title: string;
+  slug: string;
+  exists: boolean;
+  x_name: string;
+  y_name: string;
+  persona: string;
 };
 
 const PAGES_DIR = path.join(process.cwd(), "content", "pages");
@@ -85,6 +94,50 @@ export function listPageSlugs(): string[] {
     .readdirSync(PAGES_DIR)
     .filter((f) => f.endsWith(".json"))
     .map((f) => f.replace(/\.json$/, ""));
+}
+
+export function buildRelatedPageTitle(
+  xName: string,
+  yName: string,
+  persona: string
+) {
+  return `${xName} vs ${yName} for ${persona}`;
+}
+
+function parseRelatedTitle(title: string) {
+  const [pairPart, ...rest] = String(title || "").split(" for ");
+  const [xName = "", yName = ""] = pairPart.split(" vs ");
+
+  return {
+    xName: xName.trim(),
+    yName: yName.trim(),
+    persona: rest.join(" for ").trim(),
+  };
+}
+
+function normalizeRelatedPage(raw: unknown): RelatedPageDoc | null {
+  const item =
+    raw && typeof raw === "object" ? (raw as Partial<RelatedPageDoc>) : null;
+  const titleBits = parseRelatedTitle(String(item?.title || ""));
+  const xName = String(item?.x_name || titleBits.xName || "").trim();
+  const yName = String(item?.y_name || titleBits.yName || "").trim();
+  const persona = String(item?.persona || titleBits.persona || "").trim();
+
+  if (!xName || !yName || !persona) {
+    return null;
+  }
+
+  return {
+    title:
+      String(item?.title || "").trim() ||
+      buildRelatedPageTitle(xName, yName, persona),
+    slug:
+      String(item?.slug || "").trim() || slugifyCompare(xName, yName, persona),
+    exists: typeof item?.exists === "boolean" ? item.exists : false,
+    x_name: xName,
+    y_name: yName,
+    persona,
+  };
 }
 
 export function loadPageBySlug(slug: string): PageDoc | null {
@@ -140,6 +193,14 @@ try {
       winnerLabel && summary && reason
         ? { winnerLabel, summary, reason }
         : undefined;
+  }
+
+  if (Array.isArray(parsed.related_pages)) {
+    parsed.related_pages = parsed.related_pages
+      .map((item) => normalizeRelatedPage(item))
+      .filter((item): item is RelatedPageDoc => item !== null);
+  } else {
+    parsed.related_pages = [];
   }
 
   return parsed;

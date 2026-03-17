@@ -113,31 +113,49 @@
     {
       "x_name": "1Password",
       "y_name": "KeePassXC",
-      "persona": "Minimalist"
-    },
-    {
-      "x_name": "KeePassXC",
-      "y_name": "NordPass",
-      "persona": "Minimalist"
-    },
-    {
-      "x_name": "1Password",
-      "y_name": "Bitwarden",
-      "persona": "Minimalist"
-    },
-    {
-      "x_name": "Bitwarden",
-      "y_name": "KeePassXC",
-      "persona": "Minimalist"
+      "persona": "Minimalist",
+      "slug": "1password-vs-keepassxc-for-minimalist",
+      "title": "1Password vs KeePassXC for Minimalist",
+      "exists": true
     },
     {
       "x_name": "Enpass",
       "y_name": "NordPass",
-      "persona": "Minimalist"
+      "persona": "Minimalist",
+      "slug": "enpass-vs-nordpass-for-minimalist",
+      "title": "Enpass vs NordPass for Minimalist",
+      "exists": true
     },
     {
       "x_name": "KeePass",
       "y_name": "Proton Pass",
+      "persona": "Minimalist",
+      "slug": "keepass-vs-proton-pass-for-minimalist",
+      "title": "KeePass vs Proton Pass for Minimalist",
+      "exists": true
+    },
+    {
+      "title": "KeePassXC vs Keeper for Minimalist",
+      "slug": "keepassxc-vs-keeper-for-minimalist",
+      "exists": true,
+      "x_name": "KeePassXC",
+      "y_name": "Keeper",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Dashlane vs KeePassXC for Minimalist",
+      "slug": "dashlane-vs-keepassxc-for-minimalist",
+      "exists": true,
+      "x_name": "Dashlane",
+      "y_name": "KeePassXC",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "KeePass2Android vs KeePassXC for Minimalist",
+      "slug": "keepass2android-vs-keepassxc-for-minimalist",
+      "exists": false,
+      "x_name": "KeePass2Android",
+      "y_name": "KeePassXC",
       "persona": "Minimalist"
     }
   ]
