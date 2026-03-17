@@ -7,6 +7,7 @@ const PAGES_DIR = path.join(ROOT, "content", "pages");
 const REPORTS_DIR = path.join(ROOT, "reports");
 const REPORT_PATH = path.join(REPORTS_DIR, "related-comparisons-rebuild-report.md");
 const MAX_RELATED = 6;
+const DEBUG_SAMPLE_LIMIT = 5;
 
 function toSlug(value) {
   return String(value || "")
@@ -17,54 +18,47 @@ function toSlug(value) {
     .replace(/^-+|-+$/g, "");
 }
 
-function slugifyCompare(xName, yName, persona) {
-  return `${toSlug(xName)}-vs-${toSlug(yName)}-for-${toSlug(persona)}`;
-}
-
-function canonicalizePair(xName, yName) {
-  return [String(xName || "").trim(), String(yName || "").trim()].sort((a, b) =>
+function canonicalizePair(left, right) {
+  return [String(left || "").trim(), String(right || "").trim()].sort((a, b) =>
     toSlug(a).localeCompare(toSlug(b))
   );
 }
 
-function buildTitle(xName, yName, persona) {
-  return `${xName} vs ${yName} for ${persona}`;
-}
-
-function parsePairFromTitle(title) {
+function parseTitle(title) {
   const [pairPart = "", ...rest] = String(title || "").split(" for ");
-  const [xName = "", yName = ""] = pairPart.split(" vs ");
+  const [rawLeft = "", rawRight = ""] = pairPart.split(" vs ");
+  const [toolA, toolB] = canonicalizePair(rawLeft, rawRight);
 
   return {
-    xName: xName.trim(),
-    yName: yName.trim(),
+    rawLeft: rawLeft.trim(),
+    rawRight: rawRight.trim(),
+    toolA,
+    toolB,
     persona: rest.join(" for ").trim(),
   };
 }
 
-function parseRelatedItem(raw) {
-  const titleBits = parsePairFromTitle(String(raw?.title || ""));
-  const xName = String(raw?.x_name || titleBits.xName || "").trim();
-  const yName = String(raw?.y_name || titleBits.yName || "").trim();
-  const persona = String(raw?.persona || titleBits.persona || "").trim();
+function ensureDir(dirPath) {
+  fs.mkdirSync(dirPath, { recursive: true });
+}
 
-  if (!xName || !yName || !persona) {
-    return null;
-  }
+function formatComparePath(slug) {
+  return `/compare/${slug}`;
+}
 
-  const [canonicalX, canonicalY] = canonicalizePair(xName, yName);
-  const slug =
-    String(raw?.slug || "").trim() ||
-    slugifyCompare(canonicalX, canonicalY, persona);
-
+function buildRelatedEntry(doc, toolA, toolB) {
   return {
-    x_name: canonicalX,
-    y_name: canonicalY,
-    persona,
-    slug,
-    title: buildTitle(canonicalX, canonicalY, persona),
-    exists: typeof raw?.exists === "boolean" ? raw.exists : false,
+    title: doc.title,
+    slug: doc.slug,
+    exists: true,
+    x_name: toolA,
+    y_name: toolB,
+    persona: doc.persona,
   };
+}
+
+function entriesEqual(a, b) {
+  return JSON.stringify(a) === JSON.stringify(b);
 }
 
 function loadPageEntries() {
@@ -75,48 +69,210 @@ function loadPageEntries() {
     .map((file) => {
       const filePath = path.join(PAGES_DIR, file);
       const doc = JSON.parse(fs.readFileSync(filePath, "utf8"));
-      const { xName, yName } = parsePairFromTitle(doc.title);
+      const parsed = parseTitle(doc.title);
 
       return {
+        file,
         filePath,
         doc,
-        xName,
-        yName,
+        rawXName: parsed.rawLeft,
+        rawYName: parsed.rawRight,
+        toolA: parsed.toolA,
+        toolB: parsed.toolB,
+        categorySlug: String(doc.categorySlug || "").trim(),
+        persona: String(doc.persona || parsed.persona || "").trim(),
+        sourcePath: formatComparePath(doc.slug),
       };
     });
 }
 
-function ensureDir(dirPath) {
-  fs.mkdirSync(dirPath, { recursive: true });
+function compareStrings(a, b) {
+  return String(a).localeCompare(String(b));
 }
 
-function entriesEqual(a, b) {
-  return JSON.stringify(a) === JSON.stringify(b);
+function pushUnique(target, seen, candidate) {
+  if (!candidate || seen.has(candidate.doc.slug)) {
+    return false;
+  }
+
+  target.push(candidate);
+  seen.add(candidate.doc.slug);
+  return true;
 }
 
-function formatComparePath(slug) {
-  return `/compare/${slug}`;
+function getWinnerTool(entry) {
+  if (entry.doc.verdict?.winner === "x") {
+    return entry.rawXName || entry.toolA;
+  }
+  if (entry.doc.verdict?.winner === "y") {
+    return entry.rawYName || entry.toolB;
+  }
+  return null;
 }
 
-function buildCandidate(xName, yName, persona, exists) {
-  const [canonicalX, canonicalY] = canonicalizePair(xName, yName);
-  const slug = slugifyCompare(canonicalX, canonicalY, persona);
+function getLoserTool(entry) {
+  if (entry.doc.verdict?.winner === "x") {
+    return entry.rawYName || entry.toolB;
+  }
+  if (entry.doc.verdict?.winner === "y") {
+    return entry.rawXName || entry.toolA;
+  }
+  return null;
+}
+
+function buildCandidate(entry, source, toolFrequency) {
+  const tools = [entry.toolA, entry.toolB];
+  const sharesSourceA = tools.includes(source.toolA);
+  const sharesSourceB = tools.includes(source.toolB);
+  const sharedToolCount = Number(sharesSourceA) + Number(sharesSourceB);
+  const winningTool = getWinnerTool(source);
+  const losingTool = getLoserTool(source);
+  const sharedWinningTool = Boolean(winningTool && tools.includes(winningTool));
+  const sharedLosingTool = Boolean(losingTool && tools.includes(losingTool));
+  const otherTools = tools.filter(
+    (tool) => tool !== source.toolA && tool !== source.toolB
+  );
+  const secondaryToolFrequency = otherTools.reduce(
+    (max, tool) => Math.max(max, toolFrequency.get(tool) || 0),
+    0
+  );
+  const totalToolFrequency = tools.reduce(
+    (sum, tool) => sum + (toolFrequency.get(tool) || 0),
+    0
+  );
 
   return {
-    title: buildTitle(canonicalX, canonicalY, persona),
-    slug,
-    exists,
-    x_name: canonicalX,
-    y_name: canonicalY,
-    persona,
+    entry,
+    doc: entry.doc,
+    toolA: entry.toolA,
+    toolB: entry.toolB,
+    sharedToolCount,
+    sharesSourceA,
+    sharesSourceB,
+    sharedWinningTool,
+    sharedLosingTool,
+    secondaryToolFrequency,
+    totalToolFrequency,
+    title: entry.doc.title,
+    slug: entry.doc.slug,
   };
 }
 
-function sharedSourceToolCount(candidate, sourceX, sourceY) {
-  let count = 0;
-  if (candidate.x_name === sourceX || candidate.y_name === sourceX) count += 1;
-  if (candidate.x_name === sourceY || candidate.y_name === sourceY) count += 1;
-  return count;
+function compareBucketACandidates(a, b) {
+  if (a.secondaryToolFrequency !== b.secondaryToolFrequency) {
+    return b.secondaryToolFrequency - a.secondaryToolFrequency;
+  }
+
+  if (a.totalToolFrequency !== b.totalToolFrequency) {
+    return b.totalToolFrequency - a.totalToolFrequency;
+  }
+
+  const titleResult = compareStrings(a.title, b.title);
+  if (titleResult !== 0) {
+    return titleResult;
+  }
+
+  return compareStrings(a.slug, b.slug);
+}
+
+function compareBucketBCandidates(a, b) {
+  if (a.totalToolFrequency !== b.totalToolFrequency) {
+    return b.totalToolFrequency - a.totalToolFrequency;
+  }
+
+  if (a.secondaryToolFrequency !== b.secondaryToolFrequency) {
+    return b.secondaryToolFrequency - a.secondaryToolFrequency;
+  }
+
+  const titleResult = compareStrings(a.title, b.title);
+  if (titleResult !== 0) {
+    return titleResult;
+  }
+
+  return compareStrings(a.slug, b.slug);
+}
+
+function selectBucketA(source, bucketA) {
+  const winnerTool = getWinnerTool(source);
+  const loserTool = getLoserTool(source);
+  const seen = new Set();
+
+  const winnerCandidates = bucketA
+    .filter((candidate) => winnerTool && [candidate.toolA, candidate.toolB].includes(winnerTool))
+    .sort(compareBucketACandidates);
+  const loserCandidates = bucketA
+    .filter((candidate) => loserTool && [candidate.toolA, candidate.toolB].includes(loserTool))
+    .sort(compareBucketACandidates);
+
+  const selected = [];
+
+  if (winnerCandidates.length > 0 && loserCandidates.length > 0) {
+    const maxPairs = Math.min(
+      Math.min(winnerCandidates.length, loserCandidates.length),
+      Math.floor(MAX_RELATED / 2)
+    );
+
+    for (let index = 0; index < maxPairs && selected.length < MAX_RELATED; index += 1) {
+      pushUnique(selected, seen, winnerCandidates[index]);
+      if (selected.length < MAX_RELATED) {
+        pushUnique(selected, seen, loserCandidates[index]);
+      }
+    }
+  }
+
+  const remainingWinner = winnerCandidates.filter((candidate) => !seen.has(candidate.doc.slug));
+  const remainingLoser = loserCandidates.filter((candidate) => !seen.has(candidate.doc.slug));
+
+  for (const candidate of remainingWinner) {
+    if (selected.length >= MAX_RELATED) {
+      break;
+    }
+    pushUnique(selected, seen, candidate);
+  }
+
+  for (const candidate of remainingLoser) {
+    if (selected.length >= MAX_RELATED) {
+      break;
+    }
+    pushUnique(selected, seen, candidate);
+  }
+
+  const neutralCandidates = bucketA
+    .filter((candidate) => !seen.has(candidate.doc.slug))
+    .sort(compareBucketACandidates);
+
+  for (const candidate of neutralCandidates) {
+    if (selected.length >= MAX_RELATED) {
+      break;
+    }
+    pushUnique(selected, seen, candidate);
+  }
+
+  return selected;
+}
+
+function buildReason(candidate, source) {
+  const reasons = [];
+
+  if (candidate.sharedToolCount === 1) {
+    const sharedTool = candidate.sharesSourceA ? source.toolA : source.toolB;
+    reasons.push(`shares exactly one source tool (${sharedTool})`);
+  }
+
+  if (candidate.sharedWinningTool) {
+    reasons.push(`matches the winning tool (${getWinnerTool(source)})`);
+  }
+
+  if (candidate.sharedLosingTool) {
+    reasons.push(`matches the losing tool (${getLoserTool(source)})`);
+  }
+
+  if (reasons.length === 0) {
+    reasons.push("same category and persona fallback");
+  }
+
+  reasons.push(`secondary tool frequency ${candidate.secondaryToolFrequency}`);
+  return reasons.join("; ");
 }
 
 function buildReport(report) {
@@ -129,210 +285,193 @@ function buildReport(report) {
     "",
     `- Total pages scanned: ${report.totalPagesScanned}`,
     `- Total pages updated: ${report.totalPagesUpdated}`,
-    `- Total existing related comparisons preserved: ${report.totalExistingRelatedComparisonsPreserved}`,
-    `- Total unpublished related comparisons added: ${report.totalUnpublishedRelatedComparisonsAdded}`,
-    `- Total mirrored duplicates removed: ${report.totalMirroredDuplicatesRemoved}`,
-    `- Total pages that still have fewer than 6 valid related comparisons after the pass: ${report.totalPagesUnderfilled}`,
+    `- Average related_pages count: ${report.averageRelatedCount.toFixed(2)}`,
+    `- Pages with 0 related pages: ${report.zeroRelatedPages.length}`,
+    `- Pages with 1 related page: ${report.oneRelatedPage.length}`,
+    `- Pages with fewer than 3 related pages: ${report.fewerThanThreeRelatedPages.length}`,
     "",
-    "## Updated Pages",
+    "## Sparse Pages",
     "",
   ];
 
-  if (report.updatedPages.length === 0) {
+  const sparseSections = [
+    ["Pages with 0 related pages", report.zeroRelatedPages],
+    ["Pages with 1 related page", report.oneRelatedPage],
+    ["Pages with fewer than 3 related pages", report.fewerThanThreeRelatedPages],
+  ];
+
+  for (const [heading, pages] of sparseSections) {
+    lines.push(`### ${heading}`, "");
+    if (pages.length === 0) {
+      lines.push("- None", "");
+      continue;
+    }
+
+    for (const page of pages) {
+      lines.push(`- ${page}`);
+    }
+    lines.push("");
+  }
+
+  lines.push("## Sample Debug Output", "");
+
+  if (report.debugSamples.length === 0) {
     lines.push("- None");
   } else {
-    for (const page of report.updatedPages) {
-      lines.push(`- Source page: ${page.sourcePage}`);
-      lines.push(`  Total related_pages after update: ${page.totalRelatedPages}`);
-      lines.push(`  exist=true: ${page.existsTrue}`);
-      lines.push(`  exist=false: ${page.existsFalse}`);
+    for (const sample of report.debugSamples) {
+      lines.push(`### ${sample.sourcePage}`, "");
+      lines.push(`- Selected related_pages: ${sample.selected.length}`);
+
+      if (sample.selected.length === 0) {
+        lines.push("- No valid published related pages in the same category and persona.");
+      } else {
+        for (const item of sample.selected) {
+          lines.push(`- ${item.title} (${formatComparePath(item.slug)})`);
+          lines.push(`  Why ranked highly: ${item.reason}`);
+        }
+      }
+
+      lines.push("");
     }
   }
+
+  lines.push("## Rerun", "");
+  lines.push("- Run `npm run rebuild:related` after adding or publishing new comparison pages.");
+  lines.push("- The script only rebuilds `related_pages` from existing published page data and is safe to rerun.");
 
   return `${lines.join("\n")}\n`;
 }
 
 function main() {
   const pageEntries = loadPageEntries();
-  const bySlug = new Map(pageEntries.map((entry) => [entry.doc.slug, entry]));
-  const groups = new Map();
+  const groupedEntries = new Map();
+  const canonicalEntries = new Map();
 
   for (const entry of pageEntries) {
-    const groupKey = `${entry.doc.categorySlug}::${entry.doc.persona}`;
-    if (!groups.has(groupKey)) {
-      groups.set(groupKey, {
-        entries: [],
-        tools: new Set(),
-        toolDegree: new Map(),
-      });
-    }
+    const canonicalKey = [
+      entry.categorySlug,
+      entry.persona,
+      entry.toolA,
+      entry.toolB,
+    ].join("::");
+    const existingCanonical = canonicalEntries.get(canonicalKey);
 
-    const group = groups.get(groupKey);
-    group.entries.push(entry);
-    group.tools.add(entry.xName);
-    group.tools.add(entry.yName);
-    group.toolDegree.set(entry.xName, (group.toolDegree.get(entry.xName) || 0) + 1);
-    group.toolDegree.set(entry.yName, (group.toolDegree.get(entry.yName) || 0) + 1);
+    if (!existingCanonical || compareStrings(entry.doc.slug, existingCanonical.doc.slug) < 0) {
+      canonicalEntries.set(canonicalKey, entry);
+    }
+  }
+
+  for (const entry of canonicalEntries.values()) {
+    const groupKey = `${entry.categorySlug}::${entry.persona}`;
+    if (!groupedEntries.has(groupKey)) {
+      groupedEntries.set(groupKey, []);
+    }
+    groupedEntries.get(groupKey).push(entry);
+  }
+
+  for (const entries of groupedEntries.values()) {
+    entries.sort(
+      (a, b) => compareStrings(a.doc.title, b.doc.title) || compareStrings(a.doc.slug, b.doc.slug)
+    );
   }
 
   const report = {
     totalPagesScanned: pageEntries.length,
     totalPagesUpdated: 0,
-    totalExistingRelatedComparisonsPreserved: 0,
-    totalUnpublishedRelatedComparisonsAdded: 0,
-    totalMirroredDuplicatesRemoved: 0,
-    totalPagesUnderfilled: 0,
-    updatedPages: [],
+    averageRelatedCount: 0,
+    zeroRelatedPages: [],
+    oneRelatedPage: [],
+    fewerThanThreeRelatedPages: [],
+    debugSamples: [],
   };
 
+  let totalRelatedCount = 0;
+
   for (const entry of pageEntries) {
-    const { doc, filePath, xName, yName } = entry;
-    const sourceSlug = doc.slug;
-    const sourcePage = formatComparePath(sourceSlug);
-    const groupKey = `${doc.categorySlug}::${doc.persona}`;
-    const group = groups.get(groupKey);
-    const seenCurrent = new Set();
-    const preservedCurrent = [];
+    const groupKey = `${entry.categorySlug}::${entry.persona}`;
+    const group = groupedEntries.get(groupKey) || [];
+    const toolFrequency = new Map();
 
-    for (const rawItem of Array.isArray(doc.related_pages) ? doc.related_pages : []) {
-      const item = parseRelatedItem(rawItem);
-      if (!item) {
+    for (const groupEntry of group) {
+      toolFrequency.set(groupEntry.toolA, (toolFrequency.get(groupEntry.toolA) || 0) + 1);
+      toolFrequency.set(groupEntry.toolB, (toolFrequency.get(groupEntry.toolB) || 0) + 1);
+    }
+
+    const candidateMap = new Map();
+
+    for (const candidateEntry of group) {
+      if (candidateEntry.doc.slug === entry.doc.slug) {
         continue;
       }
 
-      if (item.slug === sourceSlug) {
+      const samePair =
+        candidateEntry.toolA === entry.toolA && candidateEntry.toolB === entry.toolB;
+
+      if (samePair) {
         continue;
       }
 
-      if (seenCurrent.has(item.slug)) {
-        report.totalMirroredDuplicatesRemoved += 1;
-        continue;
-      }
-      seenCurrent.add(item.slug);
-
-      if (item.persona !== doc.persona) {
-        continue;
-      }
-
-      const target = bySlug.get(item.slug);
-      if (target) {
-        if (target.doc.categorySlug !== doc.categorySlug || target.doc.persona !== doc.persona) {
-          continue;
-        }
-        item.exists = true;
-      } else {
-        item.exists = false;
-        const usesKnownTools =
-          group.tools.has(item.x_name) && group.tools.has(item.y_name);
-        const sharesSourceTool = sharedSourceToolCount(item, xName, yName) > 0;
-
-        if (!usesKnownTools || !sharesSourceTool) {
-          continue;
-        }
-      }
-
-      preservedCurrent.push(item);
+      candidateMap.set(
+        candidateEntry.doc.slug,
+        buildCandidate(candidateEntry, entry, toolFrequency)
+      );
     }
 
-    const selected = [];
-    const selectedSlugs = new Set();
+    const candidates = Array.from(candidateMap.values());
+    const bucketA = candidates.filter((candidate) => candidate.sharedToolCount === 1);
+    const bucketB = candidates
+      .filter((candidate) => candidate.sharedToolCount === 0)
+      .sort(compareBucketBCandidates);
 
-    const pushIfRoom = (candidate, options = {}) => {
-      if (!candidate || selected.length >= MAX_RELATED) return false;
-      if (candidate.slug === sourceSlug || selectedSlugs.has(candidate.slug)) return false;
+    const selectedCandidates = selectBucketA(entry, bucketA);
 
-      selected.push(candidate);
-      selectedSlugs.add(candidate.slug);
-
-      if (options.preservedExisting) {
-        report.totalExistingRelatedComparisonsPreserved += 1;
+    for (const candidate of bucketB) {
+      if (selectedCandidates.length >= MAX_RELATED) {
+        break;
       }
-      if (options.addedUnpublished) {
-        report.totalUnpublishedRelatedComparisonsAdded += 1;
-      }
-
-      return true;
-    };
-
-    for (const candidate of preservedCurrent) {
-      pushIfRoom(candidate, { preservedExisting: candidate.exists });
+      selectedCandidates.push(candidate);
     }
 
-    const toolList = Array.from(group.tools).sort((a, b) => toSlug(a).localeCompare(toSlug(b)));
-    const xCandidates = [];
-    const yCandidates = [];
+    const finalCandidates = selectedCandidates.slice(0, MAX_RELATED);
+    const nextRelatedPages = finalCandidates.map((candidate) =>
+      buildRelatedEntry(candidate.doc, candidate.toolA, candidate.toolB)
+    );
 
-    for (const toolName of toolList) {
-      if (toolName === xName || toolName === yName) continue;
+    totalRelatedCount += nextRelatedPages.length;
 
-      const xCandidate = buildCandidate(xName, toolName, doc.persona, false);
-      const yCandidate = buildCandidate(yName, toolName, doc.persona, false);
-
-      xCandidate.exists = bySlug.has(xCandidate.slug);
-      yCandidate.exists = bySlug.has(yCandidate.slug);
-
-      xCandidates.push(xCandidate);
-      yCandidates.push(yCandidate);
+    if (nextRelatedPages.length === 0) {
+      report.zeroRelatedPages.push(entry.sourcePath);
+    }
+    if (nextRelatedPages.length === 1) {
+      report.oneRelatedPage.push(entry.sourcePath);
+    }
+    if (nextRelatedPages.length < 3) {
+      report.fewerThanThreeRelatedPages.push(entry.sourcePath);
     }
 
-    const rankCandidates = (candidates, sourceTool) =>
-      candidates.sort((a, b) => {
-        if (a.exists !== b.exists) return a.exists ? -1 : 1;
-
-        const aOtherTool = a.x_name === sourceTool ? a.y_name : a.x_name;
-        const bOtherTool = b.x_name === sourceTool ? b.y_name : b.x_name;
-        const aDegree = group.toolDegree.get(aOtherTool) || 0;
-        const bDegree = group.toolDegree.get(bOtherTool) || 0;
-
-        if (aDegree !== bDegree) return bDegree - aDegree;
-        return a.title.localeCompare(b.title);
-      });
-
-    rankCandidates(xCandidates, xName);
-    rankCandidates(yCandidates, yName);
-
-    const xExisting = xCandidates.filter((candidate) => candidate.exists);
-    const yExisting = yCandidates.filter((candidate) => candidate.exists);
-    const xUnpublished = xCandidates.filter((candidate) => !candidate.exists);
-    const yUnpublished = yCandidates.filter((candidate) => !candidate.exists);
-
-    const mergeAlternating = (left, right, options = {}) => {
-      let index = 0;
-      while (selected.length < MAX_RELATED && (index < left.length || index < right.length)) {
-        if (index < left.length) {
-          pushIfRoom(left[index], options);
-        }
-        if (index < right.length) {
-          pushIfRoom(right[index], options);
-        }
-        index += 1;
-      }
-    };
-
-    mergeAlternating(xExisting, yExisting);
-    mergeAlternating(xUnpublished, yUnpublished, { addedUnpublished: true });
-
-    const nextRelatedPages = selected.slice(0, MAX_RELATED);
-
-    if (nextRelatedPages.length < MAX_RELATED) {
-      report.totalPagesUnderfilled += 1;
-    }
-
-    if (!entriesEqual(doc.related_pages, nextRelatedPages)) {
-      report.totalPagesUpdated += 1;
+    if (!entriesEqual(entry.doc.related_pages, nextRelatedPages)) {
       const nextDoc = {
-        ...doc,
+        ...entry.doc,
         related_pages: nextRelatedPages,
       };
-      fs.writeFileSync(filePath, `${JSON.stringify(nextDoc, null, 2)}\n`);
-      report.updatedPages.push({
-        sourcePage,
-        totalRelatedPages: nextRelatedPages.length,
-        existsTrue: nextRelatedPages.filter((item) => item.exists).length,
-        existsFalse: nextRelatedPages.filter((item) => !item.exists).length,
+      fs.writeFileSync(entry.filePath, `${JSON.stringify(nextDoc, null, 2)}\n`);
+      report.totalPagesUpdated += 1;
+    }
+
+    if (report.debugSamples.length < DEBUG_SAMPLE_LIMIT) {
+      report.debugSamples.push({
+        sourcePage: entry.sourcePath,
+        selected: finalCandidates.map((candidate) => ({
+          title: candidate.doc.title,
+          slug: candidate.doc.slug,
+          reason: buildReason(candidate, entry),
+        })),
       });
     }
   }
+
+  report.averageRelatedCount =
+    report.totalPagesScanned === 0 ? 0 : totalRelatedCount / report.totalPagesScanned;
 
   ensureDir(REPORTS_DIR);
   fs.writeFileSync(REPORT_PATH, buildReport(report));

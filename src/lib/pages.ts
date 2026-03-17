@@ -68,6 +68,11 @@ export type RelatedPageDoc = {
   persona: string;
 };
 
+export type PublishedRelatedPage = {
+  title: string;
+  slug: string;
+};
+
 const PAGES_DIR = path.join(process.cwd(), "content", "pages");
 
 export const LOCKED_PERSONA_ORDER = [
@@ -231,6 +236,38 @@ export function getPageCategoryLabel(doc: PageDoc): string {
 export function getPageCategorySlug(doc: PageDoc): string | null {
   const raw = (doc.categorySlug ?? "").toString().trim();
   return raw || null;
+}
+
+export function getPublishedRelatedPages(doc: PageDoc): PublishedRelatedPage[] {
+  const currentCategorySlug = getPageCategorySlug(doc);
+
+  return doc.related_pages.flatMap((relatedPage) => {
+    const relatedSlug = relatedPage.slug?.trim();
+
+    if (!relatedPage.exists || !relatedSlug || relatedSlug === doc.slug) {
+      return [];
+    }
+
+    const relatedDoc = loadPageBySlug(relatedSlug);
+    if (!relatedDoc) {
+      return [];
+    }
+
+    if (relatedDoc.persona !== doc.persona) {
+      return [];
+    }
+
+    if (currentCategorySlug && getPageCategorySlug(relatedDoc) !== currentCategorySlug) {
+      return [];
+    }
+
+    return [
+      {
+        title: relatedDoc.title,
+        slug: relatedDoc.slug,
+      },
+    ];
+  });
 }
 
 export function isLockedPersona(persona: string): persona is LockedPersona {

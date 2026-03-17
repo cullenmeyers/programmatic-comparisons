@@ -5,9 +5,8 @@ import Card from "@/components/ui/Card";
 import SectionHeading from "@/components/ui/SectionHeading";
 import PairGateFromCategoryGate from "@/components/gates/PairGateFromCategoryGate";
 import {
-  buildRelatedPageTitle,
   getPageCategoryLabel,
-  getPageCategorySlug,
+  getPublishedRelatedPages,
   getToolNamesFromDoc,
   listPageSlugs,
   loadPageBySlug,
@@ -297,7 +296,8 @@ export default async function ComparePage({
 
   const { xName, yName } = getToolNamesFromDoc(doc);
   const category = getCategory(doc);
-  const categorySlug = getPageCategorySlug(doc);
+  const categorySlug = doc.categorySlug?.trim() || null;
+  const relatedPages = getPublishedRelatedPages(doc);
   const oneSecondVerdict = getOneSecondVerdict(doc, xName, yName);
   const maybeGateFields = doc as PageDoc & {
     categorySlug?: string;
@@ -396,65 +396,24 @@ export default async function ComparePage({
 
       <section className="content-stack gap-4 max-w-3xl">
         <SectionHeading title="Related comparisons" />
-        {(() => {
-          const currentCategorySlug = getPageCategorySlug(doc);
-
-          const items = (doc.related_pages || []).flatMap((relatedPage) => {
-            const title =
-              relatedPage.title ||
-              buildRelatedPageTitle(
-                relatedPage.x_name,
-                relatedPage.y_name,
-                relatedPage.persona
-              );
-            const relatedSlug = relatedPage.slug;
-            const relatedDoc =
-              relatedPage.exists && relatedSlug ? loadPageBySlug(relatedSlug) : null;
-            const exists = Boolean(
-              relatedPage.exists &&
-                relatedDoc &&
-                (!currentCategorySlug ||
-                  getPageCategorySlug(relatedDoc) === currentCategorySlug)
-            );
-
-            return [{ relatedPage, relatedSlug, exists, title }];
-          });
-
-          const anyLinks = items.some((item) => item.exists);
-
-          if (items.length === 0) {
-            return <p className="text-sm text-black/60">No related comparisons yet.</p>;
-          }
-
-          return (
-            <Card>
-              <ul className="list-disc space-y-2 pl-5">
-                {items.map(({ relatedSlug, exists, title }, index) => (
-                  <li key={index} className="text-sm leading-6">
-                    {exists ? (
-                      <Link
-                        className="text-black/80 hover:text-black hover:underline"
-                        href={`/compare/${relatedSlug}`}
-                      >
-                        {title}
-                      </Link>
-                    ) : (
-                      <span className="text-black/60">
-                        {title}{" "}
-                        <span className="text-black/45">(Coming soon)</span>
-                      </span>
-                    )}
-                  </li>
-                ))}
-              </ul>
-              {!anyLinks && (
-                <p className="mt-4 text-xs text-black/55">
-                  These related comparisons are queued for publishing.
-                </p>
-              )}
-            </Card>
-          );
-        })()}
+        {relatedPages.length === 0 ? (
+          <p className="text-sm text-black/60">No related comparisons yet.</p>
+        ) : (
+          <Card>
+            <ul className="list-disc space-y-2 pl-5">
+              {relatedPages.map((relatedPage) => (
+                <li key={relatedPage.slug} className="text-sm leading-6">
+                  <Link
+                    className="text-black/80 hover:text-black hover:underline"
+                    href={`/compare/${relatedPage.slug}`}
+                  >
+                    {relatedPage.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Card>
+        )}
       </section>
     </main>
   );

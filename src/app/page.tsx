@@ -72,16 +72,16 @@ const categories: CategoryLink[] = [
 
 const examples: ExampleLink[] = [
   {
-    label: "Notion vs Apple Notes for beginners",
-    href: "/compare/notion-vs-apple-notes-for-beginner",
+    label: "Apple Notes vs Notion for beginners",
+    href: "/compare/apple-notes-vs-notion-for-beginner",
   },
   {
-    label: "Evernote vs Apple Notes for non-technical users",
-    href: "/compare/evernote-vs-apple-notes-for-non-technical-user",
+    label: "Apple Notes vs Evernote for non-technical users",
+    href: "/compare/apple-notes-vs-evernote-for-non-technical-user",
   },
   {
-    label: "Skedda vs Google Calendar for solo users",
-    href: "/compare/skedda-vs-google-calendar-for-solo-user",
+    label: "Google Calendar vs Skedda for solo users",
+    href: "/compare/google-calendar-vs-skedda-for-solo-user",
   },
 ];
 
