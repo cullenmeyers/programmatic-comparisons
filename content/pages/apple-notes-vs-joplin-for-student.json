@@ -1,0 +1,144 @@
+{
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "switching-cost",
+  "constraintUiName": "Easy to quit later",
+  "title": "Apple Notes vs Joplin for Students",
+  "slug": "apple-notes-vs-joplin-for-student",
+  "meta_description": "Apple Notes vs Joplin for students who need study notes for one term without setup overhead or system maintenance.",
+  "persona": "Student",
+  "constraint_lens": "You need note taking for a single academic term that is quick to start and easy to stop using later.",
+  "one_second_verdict": {
+    "winner_label": "Apple Notes",
+    "summary": "Best for students who need study notes for one semester.",
+    "reason": "Joplin fails first because setup effort outweighs semester value."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Apple Notes wins for students who only need study notes for one semester. You can open it and start typing without configuring sync targets or plugins. Joplin often requires choosing a sync method and understanding notebooks and markdown settings. If setup effort outweighs semester value, Joplin fails first.",
+    "decision_rule": "If setup effort outweighs semester value, Joplin fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Students",
+      "content": "You said you mainly need notes for a single academic term. For short term use, spending time configuring sync or learning formatting rules reduces the benefit. A ready to use editor keeps focus on studying."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Joplin wins",
+      "bullets": [
+        {
+          "point": "Markdown based editor with notebook structure",
+          "why_it_matters": "You can write structured notes, but learning markdown syntax adds a small learning step."
+        },
+        {
+          "point": "Manual sync configuration with services like cloud storage",
+          "why_it_matters": "You control where notes live, yet choosing and setting up sync requires extra effort."
+        },
+        {
+          "point": "Plugin support for extended features",
+          "why_it_matters": "You can expand functionality, but browsing and installing plugins adds decisions."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Apple Notes wins",
+      "bullets": [
+        {
+          "point": "Built in editor ready on first launch",
+          "why_it_matters": "You start writing class notes immediately without configuration."
+        },
+        {
+          "point": "Automatic device sync through system account",
+          "why_it_matters": "Notes appear across devices without selecting or managing sync services."
+        },
+        {
+          "point": "Simple folders for organizing by subject",
+          "why_it_matters": "You can create a folder per class without learning new formatting rules."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You spend time setting up sync or adjusting markdown instead of studying.",
+          "what_to_do_instead": "Use Apple Notes if you want immediate note taking with no setup."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You require full control over file storage or advanced formatting features.",
+          "what_to_do_instead": "Use Joplin if you need export control or extensibility."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you plan to keep your notes long term and want full control over storage location and export formats, Joplin may justify the extra setup."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you need notes for one semester only, choose Apple Notes.",
+        "If setup time feels wasteful for short term use, avoid Joplin.",
+        "If you need control over sync and file storage, Joplin may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Joplin require manual sync setup?",
+      "a": "Yes, you usually choose and configure a sync target yourself."
+    },
+    {
+      "q": "Is Apple Notes ready immediately?",
+      "a": "Yes, you can start typing without selecting storage or plugins."
+    },
+    {
+      "q": "Which app is easier to stop using after exams?",
+      "a": "Apple Notes is easier to abandon because it requires no custom configuration."
+    },
+    {
+      "q": "Can Joplin export notes easily?",
+      "a": "Yes, it offers export options that give you more control over files."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Apple Notes",
+      "y_name": "Logseq",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Apple Notes",
+      "y_name": "Obsidian",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Craft",
+      "y_name": "Google Docs",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Dropbox Paper",
+      "y_name": "Notion",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Google Docs",
+      "y_name": "Notion",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Google Docs",
+      "y_name": "Obsidian",
+      "persona": "Student"
+    }
+  ]
+}

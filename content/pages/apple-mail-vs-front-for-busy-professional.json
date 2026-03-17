@@ -1,0 +1,144 @@
+{
+  "category": "Email / Inbox tools",
+  "categorySlug": "email-inbox-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Apple Mail vs Front for Busy professionals",
+  "slug": "apple-mail-vs-front-for-busy-professional",
+  "meta_description": "Apple Mail vs Front for busy professionals managing team inboxes. See why Front wins when teams need shared threads, assignments, and internal comments.",
+  "persona": "Busy professional",
+  "constraint_lens": "Busy professionals choose tools that reduce coordination steps and let teams handle communication quickly inside one place.",
+  "one_second_verdict": {
+    "winner_label": "Front",
+    "summary": "Best for busy professionals who manage shared inbox conversations with a support team.",
+    "reason": "Apple Mail fails first because it cannot assign threads or add internal comments inside the same email conversation."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Front is the better choice for busy professionals who manage team email conversations. It allows multiple teammates to work inside the same inbox thread with assignments and internal notes. Apple Mail treats email accounts as individual inboxes without built in collaboration tools. Teams must coordinate replies outside the email thread, which slows down response times during busy support workflows.",
+    "decision_rule": "If teammates cannot assign, comment on, or collaborate within the same email thread, Apple Mail fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Front fits busy professionals",
+      "content": "The user works with a support team and needs multiple people to coordinate responses inside shared inbox threads. Front structures email as a shared workspace where teammates see the same conversation. A message can be assigned to a specific teammate and discussed using internal comments directly inside the thread. This keeps team coordination inside the inbox instead of spreading it across chat tools and forwarded emails."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Front wins",
+      "bullets": [
+        {
+          "point": "Front allows assigning an email conversation to a specific teammate directly inside the thread.",
+          "why_it_matters": "This mechanism makes ownership clear and prevents two people from replying to the same customer message."
+        },
+        {
+          "point": "Front supports internal comments inside the email thread that are invisible to the recipient.",
+          "why_it_matters": "Teammates can discuss the best response without leaving the inbox or switching to another communication tool."
+        },
+        {
+          "point": "Front provides shared inboxes where multiple teammates can read and respond to the same conversation.",
+          "why_it_matters": "The entire team works from one conversation view instead of forwarding emails between personal inboxes."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Apple Mail wins",
+      "bullets": [
+        {
+          "point": "Apple Mail integrates directly with macOS and iOS as the built in email application.",
+          "why_it_matters": "Users can start reading and sending messages immediately on Apple devices without installing another email client."
+        },
+        {
+          "point": "Apple Mail can connect multiple email accounts from different providers.",
+          "why_it_matters": "Individuals managing several personal or work accounts can read all messages from one application."
+        },
+        {
+          "point": "Apple Mail stores synced messages locally on the device.",
+          "why_it_matters": "Previously downloaded emails remain readable even when the device is offline."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "The user manages email alone and does not need teammates collaborating inside inbox threads.",
+          "what_to_do_instead": "Use Apple Mail where a single person can manage messages in a simple personal inbox."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Several teammates must coordinate responses to the same email because Apple Mail cannot assign conversations or add internal comments within the thread.",
+          "what_to_do_instead": "Use Front where shared inbox threads allow team assignments and internal discussion."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user manages email individually on Apple devices and rarely collaborates with teammates on responses, Apple Mail may feel simpler than maintaining a shared inbox system."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Front if multiple teammates need to respond from the same inbox.",
+        "Pick Front if you want assignments and internal comments inside email threads.",
+        "Pick Apple Mail if you manage email alone on Apple devices."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Front better for team inboxes?",
+      "a": "Front allows teams to assign conversations, add internal comments, and reply from the same email thread."
+    },
+    {
+      "q": "Does Apple Mail support shared team comments?",
+      "a": "No. Apple Mail does not provide internal comments or shared thread collaboration features."
+    },
+    {
+      "q": "Can Front work with existing email accounts?",
+      "a": "Yes. Front connects to existing email providers and adds collaboration features on top of those inboxes."
+    },
+    {
+      "q": "Who should use Apple Mail instead?",
+      "a": "Individuals who manage their own inbox and primarily use Apple devices may prefer Apple Mail for its built in simplicity."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Front",
+      "y_name": "Gmail",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Apple Mail",
+      "y_name": "Missive",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Missive",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Shortwave",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Spike",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Superhuman",
+      "persona": "Busy professional"
+    }
+  ]
+}

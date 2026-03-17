@@ -1,0 +1,144 @@
+{
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Cron vs Google Calendar for Beginners",
+  "slug": "cron-vs-google-calendar-for-beginner",
+  "meta_description": "Compare Cron vs Google Calendar for beginners starting with Gmail. See why Google Calendar wins when events must be created without installing apps.",
+  "persona": "Beginner",
+  "constraint_lens": "Beginners need tools that work immediately without installing additional software or configuring extra applications.",
+  "one_second_verdict": {
+    "winner_label": "Google Calendar",
+    "summary": "Best for beginners who need to work immediately without installing additional software or configuring extra applications.",
+    "reason": "Cron fails first because installing a separate calendar client is required before creating events."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Google Calendar wins because it is already available inside every Gmail account and works immediately in a web browser. A new user can open the calendar page and start creating events without installing anything. Cron requires installing a separate calendar application before events can be managed through its interface. For beginners who want the fastest possible start, that extra step becomes the breaking point.",
+    "decision_rule": "If installing a separate calendar client is required before creating events, Cron fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Google Calendar fits beginners starting with a new Gmail account",
+      "content": "This beginner has just created a Gmail account and wants to start tracking appointments immediately. Google Calendar is already included with the account and opens directly in the browser. Events can be created by clicking a time slot and entering the meeting details. Cron requires installing a separate client application before using its interface, which adds a step that beginners may not want to handle."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Google Calendar wins",
+      "bullets": [
+        {
+          "point": "Built directly into every Gmail account",
+          "why_it_matters": "A new Gmail user can open the calendar from the account menu and start creating events immediately. No additional setup steps are required."
+        },
+        {
+          "point": "Works fully inside a web browser",
+          "why_it_matters": "Events can be added and managed without installing software. Beginners can access their calendar from any device with a browser."
+        },
+        {
+          "point": "Simple event creation by clicking the timeline",
+          "why_it_matters": "Users click a time slot, enter the event title and time, and the event appears on the calendar instantly."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Cron wins",
+      "bullets": [
+        {
+          "point": "Keyboard driven event creation",
+          "why_it_matters": "Cron allows events to be created using keyboard commands instead of navigating menus. This speeds up scheduling for experienced users."
+        },
+        {
+          "point": "Desktop focused calendar interface",
+          "why_it_matters": "Cron runs as a dedicated application with a layout optimized for fast navigation between days and events."
+        },
+        {
+          "point": "Advanced scheduling shortcuts",
+          "why_it_matters": "Power users can manage events using quick commands and keyboard shortcuts rather than relying on mouse navigation."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You want a keyboard driven calendar interface designed for fast navigation through shortcuts.",
+          "what_to_do_instead": "Use Cron for a desktop style calendar focused on keyboard control."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You want to start adding events immediately without installing another calendar application.",
+          "what_to_do_instead": "Use Google Calendar so events can be created directly in the browser."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user already installs productivity apps and prefers managing their schedule through keyboard shortcuts instead of browser navigation, Cron may become the better choice because it is designed around fast desktop scheduling workflows."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose Google Calendar if you want to start scheduling immediately from a Gmail account.",
+        "Choose Google Calendar if you prefer using a calendar directly in a web browser.",
+        "Choose Cron if you want a dedicated calendar application with keyboard shortcuts."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do you need to install Google Calendar to use it?",
+      "a": "No. Google Calendar works directly in the browser through a Gmail account, so events can be created without installing software."
+    },
+    {
+      "q": "Does Cron require installation?",
+      "a": "Yes. Cron runs as a separate calendar application that must be installed before using its interface."
+    },
+    {
+      "q": "Why is Google Calendar easier for beginners?",
+      "a": "Because it is already included with Gmail and works immediately without requiring additional setup steps."
+    },
+    {
+      "q": "When is Cron a better option?",
+      "a": "Cron can be better for experienced users who prefer keyboard shortcuts and a dedicated desktop calendar interface."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Google Calendar",
+      "y_name": "Outlook Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Apple Calendar",
+      "y_name": "Google Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Apple Calendar",
+      "y_name": "Fantastical",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Google Calendar",
+      "y_name": "Motion",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Calendly",
+      "y_name": "Google Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Cal.com",
+      "y_name": "Calendly",
+      "persona": "Beginner"
+    }
+  ]
+}

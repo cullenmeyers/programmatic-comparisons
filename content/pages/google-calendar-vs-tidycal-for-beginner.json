@@ -1,0 +1,144 @@
+{
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Google Calendar vs TidyCal for Beginners",
+  "slug": "google-calendar-vs-tidycal-for-beginner",
+  "meta_description": "Google Calendar vs TidyCal for beginners who want to add events quickly without setting up booking pages or availability rules.",
+  "persona": "Beginner",
+  "constraint_lens": "You want to add and view events immediately without learning booking pages or availability setup.",
+  "one_second_verdict": {
+    "winner_label": "Google Calendar",
+    "summary": "Best for beginners who just want to track appointments.",
+    "reason": "TidyCal fails first because booking setup must be understood before simple event entry."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Google Calendar wins for beginners who just want to track appointments. You click on a time slot and create an event instantly. TidyCal is built around creating booking pages and defining event types before others can schedule time. If booking setup must be understood before simple event entry, TidyCal fails first.",
+    "decision_rule": "If booking setup must be understood before simple event entry, TidyCal fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool lets you add events with no setup?",
+      "content": "You just want to add events and not configure booking systems. As a beginner, defining event types and availability rules feels unnecessary. The right tool should open to a calendar grid ready for entry. Anything that centers on booking logic adds extra steps."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where TidyCal works better",
+      "bullets": [
+        {
+          "point": "Create reusable booking pages with defined meeting lengths.",
+          "why_it_matters": "You can share a link for others to book time. Setting up meeting types takes configuration before use."
+        },
+        {
+          "point": "Calendar integration to prevent double booking.",
+          "why_it_matters": "Availability syncs automatically. Connecting calendars and defining buffers adds setup steps."
+        },
+        {
+          "point": "Customizable booking rules such as time buffers.",
+          "why_it_matters": "You can control how appointments are spaced. Adjusting these rules introduces extra decisions."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Google Calendar works better for beginners",
+      "bullets": [
+        {
+          "point": "Direct event creation by clicking a time slot.",
+          "why_it_matters": "You add appointments instantly without defining booking logic."
+        },
+        {
+          "point": "Simple day, week, and month views.",
+          "why_it_matters": "You see and manage events without navigating booking panels."
+        },
+        {
+          "point": "Optional event details without required configuration.",
+          "why_it_matters": "You can add location or notes, but nothing forces setup beyond basic entry."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You must define event types and availability rules before simply adding an appointment for yourself.",
+          "what_to_do_instead": "Use Google Calendar if you only need personal event tracking."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You want others to book time automatically through a shared link.",
+          "what_to_do_instead": "Use TidyCal if you need a booking page for external scheduling."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you start sharing a booking link with clients or classmates regularly, TidyCal may become more practical than manual event entry."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you just want to add events quickly, choose Google Calendar.",
+        "If you need a shareable booking link, choose TidyCal.",
+        "If setup feels heavier than the task, keep it simple."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is TidyCal mainly for booking links?",
+      "a": "Yes. It focuses on creating pages where others can schedule time with you."
+    },
+    {
+      "q": "Does Google Calendar require booking setup?",
+      "a": "No. You can create events directly on the calendar grid."
+    },
+    {
+      "q": "Which tool is faster for personal appointments?",
+      "a": "Google Calendar is faster because it does not require event type configuration."
+    },
+    {
+      "q": "Can TidyCal be used just for personal tracking?",
+      "a": "It can sync with your calendar, but its main purpose is external booking."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Calendly",
+      "y_name": "Google Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Google Calendar",
+      "y_name": "Microsoft Bookings",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Google Calendar",
+      "y_name": "Teamup Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "TidyCal",
+      "y_name": "Zoho Bookings",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Apple Calendar",
+      "y_name": "Outlook Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Calendly",
+      "y_name": "Square Appointments",
+      "persona": "Beginner"
+    }
+  ]
+}

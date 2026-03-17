@@ -1,0 +1,144 @@
+{
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Google Calendar vs Motion for Power users",
+  "slug": "google-calendar-vs-motion-for-power-user",
+  "meta_description": "Compare Google Calendar vs Motion for power users who want tasks auto scheduled into free calendar slots. See why Motion wins when tasks must generate time blocks.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need tools that expand what the system can do instead of requiring manual steps for complex workflows.",
+  "one_second_verdict": {
+    "winner_label": "Motion",
+    "summary": "Best for power users who need expand what the system can do instead of requiring manual steps for complex workflows.",
+    "reason": "Google Calendar fails first because tasks cannot automatically generate scheduled calendar blocks."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Motion wins because it automatically converts tasks into scheduled time blocks in the calendar. The system scans available time and places work sessions without requiring manual planning. Google Calendar shows events on a timeline but does not generate time blocks for tasks. For power users who want scheduling handled automatically, that missing capability becomes the ceiling.",
+    "decision_rule": "If tasks cannot automatically generate scheduled calendar blocks, Google Calendar fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Motion fits power users who want automatic planning",
+      "content": "This power user wants tasks to appear directly in open calendar time without manually choosing slots. Motion includes a scheduling engine that converts tasks into real calendar blocks based on deadlines and available time. Google Calendar acts as a visual timeline where events must be created manually. For users who want the system to handle scheduling logic, Motion provides the missing layer."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Motion wins",
+      "bullets": [
+        {
+          "point": "Automatic task scheduling engine",
+          "why_it_matters": "When a task is created with a deadline or priority, Motion scans open calendar time and inserts a scheduled work block. This removes the need to manually decide when tasks will be completed."
+        },
+        {
+          "point": "Tasks appear as real calendar blocks",
+          "why_it_matters": "Motion places tasks directly on the calendar timeline as time blocks. This means the schedule shows both meetings and work sessions in the same view."
+        },
+        {
+          "point": "Automatic rescheduling when meetings change",
+          "why_it_matters": "If a meeting is added or moved, Motion automatically shifts task blocks to new open slots. This prevents manual re planning every time the calendar changes."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Google Calendar wins",
+      "bullets": [
+        {
+          "point": "Direct manual control over event placement",
+          "why_it_matters": "Users can create events by clicking a time slot or dragging across the timeline. This keeps scheduling decisions entirely manual."
+        },
+        {
+          "point": "Simple timeline focused calendar interface",
+          "why_it_matters": "Google Calendar shows meetings on a clear time grid without an automated scheduling engine modifying events in the background."
+        },
+        {
+          "point": "Wide compatibility with external apps",
+          "why_it_matters": "Many scheduling tools and productivity apps integrate directly with Google Calendar, allowing it to act as a central timeline for multiple services."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You want to manually choose the exact time for every task instead of letting software place work sessions automatically.",
+          "what_to_do_instead": "Use Google Calendar so events stay exactly where you schedule them."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You expect tasks to automatically appear in open calendar slots without manually creating work blocks.",
+          "what_to_do_instead": "Use Motion so tasks automatically generate scheduled time blocks."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your workflow focuses mainly on scheduling meetings rather than planning work sessions, Google Calendar may be the better choice because it provides a straightforward timeline without automated scheduling behavior."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose Motion if you want tasks automatically placed into open calendar time.",
+        "Choose Motion if you want the system to move work sessions when meetings change.",
+        "Choose Google Calendar if you prefer manually placing events on a simple timeline."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can Google Calendar automatically schedule tasks?",
+      "a": "No. Google Calendar shows events on a timeline but does not automatically place tasks into open time slots."
+    },
+    {
+      "q": "What makes Motion different from a normal calendar?",
+      "a": "Motion includes a scheduling engine that converts tasks into real calendar blocks and places them in available time automatically."
+    },
+    {
+      "q": "Does Motion move tasks if meetings change?",
+      "a": "Yes. Motion automatically shifts scheduled task blocks to other available time if meetings move or new events are added."
+    },
+    {
+      "q": "Why might someone still choose Google Calendar?",
+      "a": "People who want complete manual control over event placement may prefer a simple timeline without automated scheduling behavior."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Fantastical",
+      "y_name": "Motion",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Fantastical",
+      "y_name": "Google Calendar",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Cron",
+      "y_name": "Google Calendar",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Google Calendar",
+      "y_name": "Outlook Calendar",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Cron",
+      "y_name": "Motion",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Fantastical",
+      "y_name": "Outlook Calendar",
+      "persona": "Power user"
+    }
+  ]
+}

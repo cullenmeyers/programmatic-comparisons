@@ -1,0 +1,144 @@
+{
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Apple Reminders vs OmniFocus for Beginners",
+  "slug": "apple-reminders-vs-omnifocus-for-beginner",
+  "meta_description": "Apple Reminders vs OmniFocus for beginners who want a simple to do list without learning productivity frameworks or complex setup first.",
+  "persona": "Beginner",
+  "constraint_lens": "You want to start adding tasks immediately without learning complex systems or setting up detailed structures first.",
+  "one_second_verdict": {
+    "winner_label": "Apple Reminders",
+    "summary": "Best for beginners who just want a simple to do list.",
+    "reason": "OmniFocus fails first because productivity frameworks must be learned first."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Apple Reminders wins for beginners who just want a simple to do list. You can open the app and start typing tasks without defining projects, perspectives, or review systems. OmniFocus is built around structured planning concepts that take time to understand. If productivity frameworks must be learned first, OmniFocus fails first.",
+    "decision_rule": "If productivity frameworks must be learned first, OmniFocus fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Beginners",
+      "content": "You said you are new to task apps and unsure how deep you want to go. As a beginner, too many concepts like contexts, perspectives, or custom views can feel overwhelming. A tool that behaves like a simple checklist helps you build comfort first."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where OmniFocus wins",
+      "bullets": [
+        {
+          "point": "Project based structure with nested tasks and sequential or parallel actions",
+          "why_it_matters": "You can break large goals into structured steps, but this requires deciding how to organize projects before adding tasks."
+        },
+        {
+          "point": "Custom perspectives for filtering tasks by tags, status, or deadlines",
+          "why_it_matters": "You can create powerful task views, yet setting up and understanding these filters takes time."
+        },
+        {
+          "point": "Built in review system for scheduled project check ins",
+          "why_it_matters": "It supports disciplined planning, but introduces a workflow that may feel heavy for someone just wanting a list."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Apple Reminders wins",
+      "bullets": [
+        {
+          "point": "Immediate list creation with a simple add button",
+          "why_it_matters": "You can start typing tasks instantly without defining projects or frameworks."
+        },
+        {
+          "point": "Basic due date and reminder options inside the task field",
+          "why_it_matters": "You can set a time or date without navigating advanced planning screens."
+        },
+        {
+          "point": "Default Today and Scheduled views",
+          "why_it_matters": "You can see what is due at a glance without customizing filters or perspectives."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You feel stuck deciding how to structure projects before adding simple tasks.",
+          "what_to_do_instead": "Use Apple Reminders if you want to capture tasks without planning a full system."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You need advanced project breakdown, custom views, and structured reviews.",
+          "what_to_do_instead": "Use OmniFocus if you decide you want deeper organization and control."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you later become comfortable with task management and want structured projects, custom views, and regular reviews, OmniFocus may offer more long term control."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a simple checklist to start, choose Apple Reminders.",
+        "If learning a task framework feels overwhelming, avoid OmniFocus.",
+        "If you want structured project control later, OmniFocus may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is OmniFocus too advanced for beginners?",
+      "a": "It is designed around structured project management concepts that can feel complex at first."
+    },
+    {
+      "q": "Can Apple Reminders handle recurring tasks?",
+      "a": "Yes, you can set repeating reminders directly when creating a task."
+    },
+    {
+      "q": "Which tool is faster to start using?",
+      "a": "Apple Reminders is typically faster because you can add tasks immediately without setup."
+    },
+    {
+      "q": "Can I switch later if I outgrow Apple Reminders?",
+      "a": "Yes, many people start simple and move to a more structured tool like OmniFocus if their needs expand."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Any.do",
+      "y_name": "Apple Reminders",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Microsoft To Do",
+      "y_name": "OmniFocus",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Asana",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Microsoft To Do",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "FacileThings",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    }
+  ]
+}

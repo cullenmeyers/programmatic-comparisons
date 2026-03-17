@@ -1,0 +1,144 @@
+{
+  "category": "Email / Inbox tools",
+  "categorySlug": "email-inbox-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Mailbox.org vs Yahoo Mail for Minimalists",
+  "slug": "mailbox-org-vs-yahoo-mail-for-minimalist",
+  "meta_description": "Mailbox.org vs Yahoo Mail for minimalists who want a clean inbox without ads. See why Mailbox.org wins when you want email without advertising panels.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists prefer inbox tools that remove unnecessary panels and distractions so the mailbox stays focused only on messages.",
+  "one_second_verdict": {
+    "winner_label": "Mailbox.org",
+    "summary": "Best for minimalists who want a clean inbox without advertising panels.",
+    "reason": "Yahoo Mail fails first because the inbox interface displays advertising banners and promotional placements beside messages."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Mailbox.org is the better option for minimalists who want an inbox focused purely on messages. Its mailbox interface displays folders and messages without placing advertising panels inside the layout. Yahoo Mail places banner ads and promotional modules next to the message list inside the inbox. For users trying to keep the mailbox visually simple, those advertising elements create extra clutter.",
+    "decision_rule": "If the inbox interface displays advertising banners or promotional placements, Yahoo Mail fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Mailbox.org fits minimalists",
+      "content": "The user wants a mailbox provider that does not display advertising panels inside the inbox interface. Mailbox.org presents the inbox as a message list with folders and tools arranged around communication rather than advertising. The layout avoids promotional banners or marketing panels next to conversations. This keeps the mailbox interface clean and predictable."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Mailbox.org wins",
+      "bullets": [
+        {
+          "point": "Mailbox.org shows the inbox without advertising banners inside the message interface.",
+          "why_it_matters": "Minimalists can read and manage email without visual distractions around the message list."
+        },
+        {
+          "point": "Mailbox.org organizes the interface around folders, messages, and contacts instead of promotional modules.",
+          "why_it_matters": "The inbox remains easier to scan because only communication tools appear in the layout."
+        },
+        {
+          "point": "Mailbox.org operates as a paid service instead of relying on advertising revenue.",
+          "why_it_matters": "The interface does not need to include marketing panels that interrupt the mailbox view."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Yahoo Mail wins",
+      "bullets": [
+        {
+          "point": "Yahoo Mail provides a free hosted email account supported by advertising.",
+          "why_it_matters": "Users can create and use an inbox without paying for a subscription."
+        },
+        {
+          "point": "Yahoo Mail runs entirely in a browser with no server setup or installation.",
+          "why_it_matters": "Users can sign in and access their inbox from any device quickly."
+        },
+        {
+          "point": "Yahoo Mail automatically manages spam filtering and mailbox hosting.",
+          "why_it_matters": "Users do not need to maintain servers or configure mail infrastructure."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The user wants a completely free mailbox and does not want to pay for email service.",
+          "what_to_do_instead": "Use Yahoo Mail where the service is free and supported by advertising."
+        },
+        {
+          "tool": "y",
+          "fails_when": "The user wants a clean inbox because Yahoo Mail displays advertising banners and promotional placements beside messages.",
+          "what_to_do_instead": "Use Mailbox.org where the inbox interface avoids advertising panels."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user prefers a free mailbox and does not mind advertising panels inside the inbox interface, Yahoo Mail may become the better option."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Mailbox.org if you want an inbox without advertising banners.",
+        "Pick Mailbox.org if a clean interface matters more than a free plan.",
+        "Pick Yahoo Mail if you want a free email account supported by ads."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why do minimalists prefer Mailbox.org?",
+      "a": "Mailbox.org keeps the inbox interface focused on messages instead of placing advertising banners next to the message list."
+    },
+    {
+      "q": "Does Yahoo Mail display ads in the inbox?",
+      "a": "Yes. Yahoo Mail shows advertising banners and promotional panels inside the mailbox interface."
+    },
+    {
+      "q": "Is Mailbox.org a free email service?",
+      "a": "No. Mailbox.org is a paid email provider that avoids advertising in the mailbox interface."
+    },
+    {
+      "q": "Who should choose Yahoo Mail instead?",
+      "a": "Users who want a free hosted email service and do not mind advertising panels may prefer Yahoo Mail."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Fastmail",
+      "y_name": "Yahoo Mail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Proton Mail",
+      "y_name": "Yahoo Mail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Tuta Mail",
+      "y_name": "Yahoo Mail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "HEY",
+      "y_name": "Yahoo Mail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Mailfence",
+      "y_name": "Yahoo Mail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Skiff Mail",
+      "y_name": "Yahoo Mail",
+      "persona": "Minimalist"
+    }
+  ]
+}

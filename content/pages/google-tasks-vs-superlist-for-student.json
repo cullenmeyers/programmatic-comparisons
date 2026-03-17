@@ -1,0 +1,144 @@
+{
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "switching-cost",
+  "constraintUiName": "Easy to quit later",
+  "title": "Google Tasks vs Superlist for Students",
+  "slug": "google-tasks-vs-superlist-for-student",
+  "meta_description": "Google Tasks vs Superlist for students who need a simple task list for one academic term without heavy collaboration layers.",
+  "persona": "Student",
+  "constraint_lens": "You need a task list that works for one academic term and is easy to leave after the semester ends.",
+  "one_second_verdict": {
+    "winner_label": "Google Tasks",
+    "summary": "Best for students who need a temporary task list for school work.",
+    "reason": "Superlist fails first because collaboration features outweigh short-term academic needs."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Google Tasks wins for students who only need a temporary task list for school work. It offers simple lists tied to your Google account without team workspaces or layered collaboration tools. Superlist emphasizes shared lists, comments, and team-style features. If collaboration features outweigh short-term academic needs, Superlist fails first.",
+    "decision_rule": "If collaboration features outweigh short-term academic needs, Superlist fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool fits a single semester?",
+      "content": "You need a temporary task list for one academic term. As a student, you want to track assignments and stop using the tool after finals. The right tool should not push you into building shared workspaces. Anything that feels designed for ongoing collaboration may be more than you need."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Superlist works better",
+      "bullets": [
+        {
+          "point": "Shared lists with built-in comments under each task.",
+          "why_it_matters": "You can discuss assignments directly inside tasks. For a short solo semester list, comment threads may add extra layers."
+        },
+        {
+          "point": "Team-style workspaces for organizing multiple lists.",
+          "why_it_matters": "You can group projects and collaborate across them. Setting up and managing workspaces adds structure beyond a simple class list."
+        },
+        {
+          "point": "Rich task details with descriptions and attachments.",
+          "why_it_matters": "You can store more context per task. If you only need to note assignment names and due dates, this depth may be unnecessary."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Google Tasks works better for students",
+      "bullets": [
+        {
+          "point": "Simple task lists integrated into Gmail and Calendar.",
+          "why_it_matters": "You can add tasks directly from email without creating new workspaces."
+        },
+        {
+          "point": "Minimal interface with basic checkboxes and due dates.",
+          "why_it_matters": "You see a straightforward list without collaboration panels."
+        },
+        {
+          "point": "Tasks can be deleted or archived easily after the term.",
+          "why_it_matters": "When the semester ends, you can clear the list without dismantling shared spaces."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You spend time managing shared lists or comment threads for simple personal assignments.",
+          "what_to_do_instead": "Use Google Tasks if you only need a basic checklist for school work."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You need built-in collaboration and discussion under each assignment.",
+          "what_to_do_instead": "Use Superlist if group coordination is central to your coursework."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If most of your coursework involves group projects with shared responsibilities and discussion, Superlist may feel more useful despite its added layers."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a simple semester checklist, choose Google Tasks.",
+        "If you need shared task discussion for group work, choose Superlist.",
+        "If collaboration features feel unnecessary, keep it minimal."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Google Tasks enough for tracking assignments?",
+      "a": "Yes. It supports simple lists and due dates without extra collaboration layers."
+    },
+    {
+      "q": "Does Superlist focus on collaboration?",
+      "a": "Yes. It emphasizes shared lists and built-in discussion under tasks."
+    },
+    {
+      "q": "Which tool is easier to stop using after the semester?",
+      "a": "Google Tasks is easier to leave because it does not depend on team workspaces."
+    },
+    {
+      "q": "Can Superlist work for solo students?",
+      "a": "Yes, but its collaboration features may feel unnecessary for short-term personal use."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Google Tasks",
+      "y_name": "MeisterTask",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Habitica",
+      "y_name": "Todoist",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Sunsama",
+      "y_name": "Todoist",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "Things 3",
+      "persona": "Student"
+    },
+    {
+      "x_name": "MeisterTask",
+      "y_name": "Todoist",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Microsoft Planner",
+      "y_name": "Trello",
+      "persona": "Student"
+    }
+  ]
+}

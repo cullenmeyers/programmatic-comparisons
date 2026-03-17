@@ -1,120 +1,144 @@
 {
-"category": "Email / Inbox tools",
-"categorySlug": "email-inbox-tools",
-"constraintSlug": "switching-cost",
-"constraintUiName": "Easy to quit later",
-"title": "Gmail vs HEY for Students",
-"slug": "gmail-vs-hey-for-student",
-"meta_description": "Gmail vs HEY for students who need a free inbox for school. See why Gmail wins when you want to create an email account quickly without a subscription.",
-"persona": "Student",
-"constraint_lens": "Students prefer tools that are free to start and easy to stop using later without paying ongoing fees.",
-"one_second_verdict": {
-"winner_label": "Gmail",
-"summary": "Best for students who need a free email account quickly for school sign ups.",
-"reason": "HEY fails first because using the inbox requires paying a recurring subscription instead of creating a free account immediately."
-},
-"verdict": {
-"winner": "x",
-"summary": "Gmail is the better choice for students who need a quick inbox for school sign ups. It allows anyone to create a free account and start sending and receiving messages immediately. HEY requires paying a monthly subscription to use the inbox. That requirement adds unnecessary commitment for students who may only need the email account for a semester or short school period.",
-"decision_rule": "If using the inbox requires paying a recurring subscription instead of creating a free account immediately, HEY fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Gmail fits students",
-"content": "The user needs an email account quickly for school sign ups and wants to use it temporarily without paying a subscription. Gmail allows anyone to create a free inbox and start sending messages immediately. There are no billing steps or subscription commitments required to keep the account active. This makes Gmail easy to use for short term school needs."
-},
-{
-"type": "x_wins",
-"heading": "Where Gmail wins",
-"bullets": [
-{
-"point": "Gmail accounts can be created and used for free without a subscription.",
-"why_it_matters": "Students can sign up and start receiving school emails without committing to a paid service."
-},
-{
-"point": "Gmail runs directly in a web browser and activates the inbox immediately after account creation.",
-"why_it_matters": "Students can access their email from any computer without installing additional software."
-},
-{
-"point": "Gmail integrates with tools like Google Docs and Google Drive used in many school environments.",
-"why_it_matters": "Assignments, shared documents, and collaboration links often appear directly through these services."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where HEY wins",
-"bullets": [
-{
-"point": "HEY includes a sender screening system that requires approving a new contact before their messages reach the inbox.",
-"why_it_matters": "Users can block unwanted senders immediately instead of cleaning up spam later."
-},
-{
-"point": "HEY separates newsletters into a reading stream called The Feed instead of mixing them with regular messages.",
-"why_it_matters": "Users can review newsletters later without cluttering the main inbox."
-},
-{
-"point": "HEY bundles promotional emails together instead of displaying them as separate inbox messages.",
-"why_it_matters": "Large volumes of newsletters appear in one place instead of filling the main inbox."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The user wants strict control over who can send email before messages appear in the inbox.",
-"what_to_do_instead": "Use HEY where new senders must be approved before their emails are delivered."
-},
-{
-"tool": "y",
-"fails_when": "The user needs a quick school inbox but must pay a recurring subscription before using the email account.",
-"what_to_do_instead": "Use Gmail where a free inbox can be created instantly."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the student plans to keep the inbox long term and wants strong control over who can send them email, HEY may become worth the subscription."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick Gmail if you want a free email account for school.",
-"Pick Gmail if you need to create an inbox quickly without paying.",
-"Pick HEY if controlling who can send you email matters more than cost."
-]
-}
-],
-"faqs": [
-{
-"q": "Why is Gmail better for students?",
-"a": "Gmail provides free email accounts that can be created instantly without requiring a subscription."
-},
-{
-"q": "Does HEY require a paid subscription?",
-"a": "Yes. HEY requires a recurring subscription to access and use the inbox."
-},
-{
-"q": "Can Gmail be used only for a short time?",
-"a": "Yes. Gmail accounts can be used temporarily and stopped later without any subscription commitment."
-},
-{
-"q": "What makes HEY different from Gmail?",
-"a": "HEY uses a sender screening system that requires approving contacts before their messages appear in the inbox."
-}
-],
-"related_pages": [
-{ "x_name": "Gmail", "y_name": "Superhuman", "persona": "Student" },
-{ "x_name": "Gmail", "y_name": "Outlook", "persona": "Student" },
-{ "x_name": "Gmail", "y_name": "Proton Mail", "persona": "Student" },
-{ "x_name": "Proton Mail", "y_name": "Gmail", "persona": "Student" },
-{ "x_name": "Outlook", "y_name": "Gmail", "persona": "Student" },
-{ "x_name": "Gmail", "y_name": "Fastmail", "persona": "Student" }
-]
+  "category": "Email / Inbox tools",
+  "categorySlug": "email-inbox-tools",
+  "constraintSlug": "switching-cost",
+  "constraintUiName": "Easy to quit later",
+  "title": "Gmail vs HEY for Students",
+  "slug": "gmail-vs-hey-for-student",
+  "meta_description": "Gmail vs HEY for students who need a free inbox for school. See why Gmail wins when you want to create an email account quickly without a subscription.",
+  "persona": "Student",
+  "constraint_lens": "Students prefer tools that are free to start and easy to stop using later without paying ongoing fees.",
+  "one_second_verdict": {
+    "winner_label": "Gmail",
+    "summary": "Best for students who need a free email account quickly for school sign ups.",
+    "reason": "HEY fails first because using the inbox requires paying a recurring subscription instead of creating a free account immediately."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Gmail is the better choice for students who need a quick inbox for school sign ups. It allows anyone to create a free account and start sending and receiving messages immediately. HEY requires paying a monthly subscription to use the inbox. That requirement adds unnecessary commitment for students who may only need the email account for a semester or short school period.",
+    "decision_rule": "If using the inbox requires paying a recurring subscription instead of creating a free account immediately, HEY fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Gmail fits students",
+      "content": "The user needs an email account quickly for school sign ups and wants to use it temporarily without paying a subscription. Gmail allows anyone to create a free inbox and start sending messages immediately. There are no billing steps or subscription commitments required to keep the account active. This makes Gmail easy to use for short term school needs."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Gmail wins",
+      "bullets": [
+        {
+          "point": "Gmail accounts can be created and used for free without a subscription.",
+          "why_it_matters": "Students can sign up and start receiving school emails without committing to a paid service."
+        },
+        {
+          "point": "Gmail runs directly in a web browser and activates the inbox immediately after account creation.",
+          "why_it_matters": "Students can access their email from any computer without installing additional software."
+        },
+        {
+          "point": "Gmail integrates with tools like Google Docs and Google Drive used in many school environments.",
+          "why_it_matters": "Assignments, shared documents, and collaboration links often appear directly through these services."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where HEY wins",
+      "bullets": [
+        {
+          "point": "HEY includes a sender screening system that requires approving a new contact before their messages reach the inbox.",
+          "why_it_matters": "Users can block unwanted senders immediately instead of cleaning up spam later."
+        },
+        {
+          "point": "HEY separates newsletters into a reading stream called The Feed instead of mixing them with regular messages.",
+          "why_it_matters": "Users can review newsletters later without cluttering the main inbox."
+        },
+        {
+          "point": "HEY bundles promotional emails together instead of displaying them as separate inbox messages.",
+          "why_it_matters": "Large volumes of newsletters appear in one place instead of filling the main inbox."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The user wants strict control over who can send email before messages appear in the inbox.",
+          "what_to_do_instead": "Use HEY where new senders must be approved before their emails are delivered."
+        },
+        {
+          "tool": "y",
+          "fails_when": "The user needs a quick school inbox but must pay a recurring subscription before using the email account.",
+          "what_to_do_instead": "Use Gmail where a free inbox can be created instantly."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the student plans to keep the inbox long term and wants strong control over who can send them email, HEY may become worth the subscription."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Gmail if you want a free email account for school.",
+        "Pick Gmail if you need to create an inbox quickly without paying.",
+        "Pick HEY if controlling who can send you email matters more than cost."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Gmail better for students?",
+      "a": "Gmail provides free email accounts that can be created instantly without requiring a subscription."
+    },
+    {
+      "q": "Does HEY require a paid subscription?",
+      "a": "Yes. HEY requires a recurring subscription to access and use the inbox."
+    },
+    {
+      "q": "Can Gmail be used only for a short time?",
+      "a": "Yes. Gmail accounts can be used temporarily and stopped later without any subscription commitment."
+    },
+    {
+      "q": "What makes HEY different from Gmail?",
+      "a": "HEY uses a sender screening system that requires approving contacts before their messages appear in the inbox."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Gmail",
+      "y_name": "Superhuman",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Outlook",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Proton Mail",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Proton Mail",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Outlook",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Fastmail",
+      "y_name": "Gmail",
+      "persona": "Student"
+    }
+  ]
 }

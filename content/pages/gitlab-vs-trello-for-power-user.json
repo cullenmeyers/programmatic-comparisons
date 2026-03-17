@@ -1,120 +1,144 @@
 {
-"category": "Project Management Tools",
-"categorySlug": "project-management-tools",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "GitLab vs Trello for Power users",
-"slug": "gitlab-vs-trello-for-power-user",
-"meta_description": "Compare GitLab vs Trello for power users managing software projects. See which tool links issues, commits, and merge requests in one workflow.",
-"persona": "Power user",
-"constraint_lens": "Power users need a system that can manage complex development workflows without breaking when projects involve code, issues, and deployment steps.",
-"one_second_verdict": {
-"winner_label": "GitLab",
-"summary": "Best for power users managing software projects where tasks must connect directly to code and merge workflows.",
-"reason": "Trello fails first because its cards cannot link natively to commits, branches, and merge requests inside the same development workflow."
-},
-"verdict": {
-"winner": "x",
-"summary": "GitLab is the better system for power users managing software development workflows end to end. Issues, code commits, branches, and merge requests all live inside the same repository environment, allowing work items to link directly to the code that implements them. Trello organizes tasks as cards on boards, which works for general project tracking but does not integrate directly with code repositories or development workflows. If project tasks cannot link directly to code repositories, merge requests, and issue tracking workflows, Trello fails first.",
-"decision_rule": "If project tasks cannot link directly to code repositories, merge requests, and issue tracking workflows, Trello fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this comparison matters for Power users",
-"content": "This comparison is for someone running a software project where task tracking and code development must stay connected. Instead of tracking tasks in one system and code in another, they want issues, commits, and merge requests to exist in the same workflow. When the project system cannot link work items directly to repository activity, tracking development progress becomes fragmented. Power users managing code heavy projects need a system that connects planning and implementation in one place."
-},
-{
-"type": "x_wins",
-"heading": "Where GitLab wins",
-"bullets": [
-{
-"point": "Issues connected directly to repository activity",
-"why_it_matters": "Each issue can link to commits, branches, and merge requests inside the repository, allowing developers to see exactly which code changes implement a task."
-},
-{
-"point": "Merge request workflow integrated with task tracking",
-"why_it_matters": "Code changes are submitted through merge requests that reference issues, creating a visible connection between planning, development, and review steps."
-},
-{
-"point": "Development lifecycle managed in one system",
-"why_it_matters": "Source code hosting, issue tracking, and deployment pipelines exist within the same platform, preventing project tracking from being separated across multiple tools."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Trello wins",
-"bullets": [
-{
-"point": "Simple visual workflow boards",
-"why_it_matters": "Tasks appear as cards that move across columns such as to do, doing, and done, which makes progress easy to visualize without technical setup."
-},
-{
-"point": "Quick task creation with minimal structure",
-"why_it_matters": "Cards can be added instantly to a board without defining issue fields, repository connections, or development workflows first."
-},
-{
-"point": "Lightweight collaboration on tasks",
-"why_it_matters": "Comments, attachments, and checklists live inside each card, allowing teams to discuss and track general work without needing a development platform."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The project only requires simple task boards and the team does not manage code repositories or merge workflows.",
-"what_to_do_instead": "Use Trello where tasks can be tracked as simple cards without development platform complexity."
-},
-{
-"tool": "y",
-"fails_when": "Developers need tasks to connect directly to repository activity such as commits, branches, and merge requests.",
-"what_to_do_instead": "Use GitLab where issues and code changes exist inside the same development system."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the project tracks general work such as marketing tasks or planning steps rather than software development, Trello may be easier because it avoids the repository and development features built into GitLab."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Choose GitLab if project tasks must link directly to code commits and merge requests.",
-"Choose GitLab if the project system should manage issues, repositories, and development workflows together.",
-"Choose Trello if the project only needs visual task boards without code integration."
-]
-}
-],
-"faqs": [
-{
-"q": "Is GitLab a project management tool or a development platform?",
-"a": "GitLab is primarily a development platform that includes issue tracking, code repositories, and merge request workflows in the same environment."
-},
-{
-"q": "Why do developers track tasks inside GitLab?",
-"a": "Tasks can link directly to commits, branches, and merge requests, making it easier to see which code changes implement each issue."
-},
-{
-"q": "Can Trello manage software development tasks?",
-"a": "Trello can track development tasks as cards on a board, but it does not connect directly to repository activity such as commits or merge requests."
-},
-{
-"q": "When is Trello a better option than GitLab?",
-"a": "Trello works better when the project involves general tasks and collaboration rather than managing code repositories and development workflows."
-}
-],
-"related_pages": [
-{ "x_name": "Linear", "y_name": "Jira", "persona": "Power user" },
-{ "x_name": "ClickUp", "y_name": "Airtable", "persona": "Power user" },
-{ "x_name": "Smartsheet", "y_name": "Trello", "persona": "Power user" },
-{ "x_name": "OpenProject", "y_name": "Teamwork", "persona": "Power user" },
-{ "x_name": "Taiga", "y_name": "Jira", "persona": "Power user" },
-{ "x_name": "Height", "y_name": "Linear", "persona": "Power user" }
-]
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "GitLab vs Trello for Power users",
+  "slug": "gitlab-vs-trello-for-power-user",
+  "meta_description": "Compare GitLab vs Trello for power users managing software projects. See which tool links issues, commits, and merge requests in one workflow.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need a system that can manage complex development workflows without breaking when projects involve code, issues, and deployment steps.",
+  "one_second_verdict": {
+    "winner_label": "GitLab",
+    "summary": "Best for power users managing software projects where tasks must connect directly to code and merge workflows.",
+    "reason": "Trello fails first because its cards cannot link natively to commits, branches, and merge requests inside the same development workflow."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "GitLab is the better system for power users managing software development workflows end to end. Issues, code commits, branches, and merge requests all live inside the same repository environment, allowing work items to link directly to the code that implements them. Trello organizes tasks as cards on boards, which works for general project tracking but does not integrate directly with code repositories or development workflows. If project tasks cannot link directly to code repositories, merge requests, and issue tracking workflows, Trello fails first.",
+    "decision_rule": "If project tasks cannot link directly to code repositories, merge requests, and issue tracking workflows, Trello fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this comparison matters for Power users",
+      "content": "This comparison is for someone running a software project where task tracking and code development must stay connected. Instead of tracking tasks in one system and code in another, they want issues, commits, and merge requests to exist in the same workflow. When the project system cannot link work items directly to repository activity, tracking development progress becomes fragmented. Power users managing code heavy projects need a system that connects planning and implementation in one place."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where GitLab wins",
+      "bullets": [
+        {
+          "point": "Issues connected directly to repository activity",
+          "why_it_matters": "Each issue can link to commits, branches, and merge requests inside the repository, allowing developers to see exactly which code changes implement a task."
+        },
+        {
+          "point": "Merge request workflow integrated with task tracking",
+          "why_it_matters": "Code changes are submitted through merge requests that reference issues, creating a visible connection between planning, development, and review steps."
+        },
+        {
+          "point": "Development lifecycle managed in one system",
+          "why_it_matters": "Source code hosting, issue tracking, and deployment pipelines exist within the same platform, preventing project tracking from being separated across multiple tools."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Trello wins",
+      "bullets": [
+        {
+          "point": "Simple visual workflow boards",
+          "why_it_matters": "Tasks appear as cards that move across columns such as to do, doing, and done, which makes progress easy to visualize without technical setup."
+        },
+        {
+          "point": "Quick task creation with minimal structure",
+          "why_it_matters": "Cards can be added instantly to a board without defining issue fields, repository connections, or development workflows first."
+        },
+        {
+          "point": "Lightweight collaboration on tasks",
+          "why_it_matters": "Comments, attachments, and checklists live inside each card, allowing teams to discuss and track general work without needing a development platform."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The project only requires simple task boards and the team does not manage code repositories or merge workflows.",
+          "what_to_do_instead": "Use Trello where tasks can be tracked as simple cards without development platform complexity."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Developers need tasks to connect directly to repository activity such as commits, branches, and merge requests.",
+          "what_to_do_instead": "Use GitLab where issues and code changes exist inside the same development system."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the project tracks general work such as marketing tasks or planning steps rather than software development, Trello may be easier because it avoids the repository and development features built into GitLab."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose GitLab if project tasks must link directly to code commits and merge requests.",
+        "Choose GitLab if the project system should manage issues, repositories, and development workflows together.",
+        "Choose Trello if the project only needs visual task boards without code integration."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is GitLab a project management tool or a development platform?",
+      "a": "GitLab is primarily a development platform that includes issue tracking, code repositories, and merge request workflows in the same environment."
+    },
+    {
+      "q": "Why do developers track tasks inside GitLab?",
+      "a": "Tasks can link directly to commits, branches, and merge requests, making it easier to see which code changes implement each issue."
+    },
+    {
+      "q": "Can Trello manage software development tasks?",
+      "a": "Trello can track development tasks as cards on a board, but it does not connect directly to repository activity such as commits or merge requests."
+    },
+    {
+      "q": "When is Trello a better option than GitLab?",
+      "a": "Trello works better when the project involves general tasks and collaboration rather than managing code repositories and development workflows."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Jira",
+      "y_name": "Linear",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Airtable",
+      "y_name": "ClickUp",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Smartsheet",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "OpenProject",
+      "y_name": "Teamwork",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Jira",
+      "y_name": "Taiga",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Height",
+      "y_name": "Linear",
+      "persona": "Power user"
+    }
+  ]
 }

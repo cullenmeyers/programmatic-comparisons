@@ -1,120 +1,144 @@
 {
-"category": "Calendar / Scheduling tools",
-"categorySlug": "calendar-scheduling-tools",
-"constraintSlug": "setup-tolerance",
-"constraintUiName": "Publish fast",
-"title": "Calendly vs Doodle for Beginners",
-"slug": "calendly-vs-doodle-for-beginner",
-"meta_description": "Calendly vs Doodle for beginners who want a simple booking link. See why Calendly wins when meetings must be scheduled instantly.",
-"persona": "Beginner",
-"constraint_lens": "Beginners prefer tools that work immediately without extra setup steps or confusing scheduling workflows.",
-"one_second_verdict": {
-"winner_label": "Calendly",
-"summary": "Best for beginners who want a simple link people can use to book a meeting instantly.",
-"reason": "Doodle fails first because scheduling starts by creating a poll instead of letting guests book a fixed time slot."
-},
-"verdict": {
-"winner": "x",
-"summary": "Calendly is the better choice for beginners who want a simple scheduling link. It generates a booking page where guests immediately select an available time from the host calendar. Doodle starts by creating a poll where participants vote on possible times before a meeting is finalized. For users who want scheduling to work immediately with a single link, the poll workflow introduces extra steps and confusion.",
-"decision_rule": "If scheduling requires creating a poll and collecting responses instead of letting people immediately book a time, Doodle fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Calendly fits beginners",
-"content": "The user wants to send a link where people can immediately book a meeting. Calendly creates a scheduling page that shows open time slots based on the host calendar. Guests simply choose a time and the meeting is scheduled instantly. This removes the need to manage responses or coordinate multiple options."
-},
-{
-"type": "x_wins",
-"heading": "Where Calendly wins",
-"bullets": [
-{
-"point": "Calendly generates a booking page that shows available time slots from the host calendar.",
-"why_it_matters": "Guests can immediately choose a time without sending responses or waiting for confirmation."
-},
-{
-"point": "Calendly automatically adds the meeting to both calendars after a slot is selected.",
-"why_it_matters": "Beginners do not need to manually confirm or coordinate meeting times."
-},
-{
-"point": "Calendly scheduling links work by sharing one simple URL.",
-"why_it_matters": "Users can schedule meetings by sending a single link instead of managing polls."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Doodle wins",
-"bullets": [
-{
-"point": "Doodle allows the host to create a poll with multiple possible meeting times.",
-"why_it_matters": "Groups can vote on options when a shared time is difficult to find."
-},
-{
-"point": "Doodle collects availability from multiple participants before confirming a meeting.",
-"why_it_matters": "Large groups can identify the time that works best for everyone."
-},
-{
-"point": "Doodle supports scheduling where the final meeting time is chosen after responses are collected.",
-"why_it_matters": "Hosts can review responses and select the most popular option."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The meeting involves many participants who need to vote on possible time options.",
-"what_to_do_instead": "Use Doodle where participants respond to a poll to determine the best time."
-},
-{
-"tool": "y",
-"fails_when": "The user wants people to immediately book a meeting because Doodle requires creating a poll first.",
-"what_to_do_instead": "Use Calendly where invitees can select a fixed time slot instantly."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the meeting involves a large group where the host must collect availability from many people before choosing a time, Doodle may become the better option."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick Calendly if you want a link where people can immediately book a meeting.",
-"Pick Calendly if you want meetings scheduled automatically when a slot is chosen.",
-"Pick Doodle if you need participants to vote on possible meeting times."
-]
-}
-],
-"faqs": [
-{
-"q": "Why is Calendly easier for beginners?",
-"a": "Calendly lets people book a meeting directly by choosing an available time slot from a shared link."
-},
-{
-"q": "Does Doodle use a booking page like Calendly?",
-"a": "No. Doodle typically starts with a poll where participants vote on possible meeting times."
-},
-{
-"q": "When is Doodle useful?",
-"a": "Doodle works well when multiple participants need to vote on the best meeting time."
-},
-{
-"q": "Can Calendly schedule meetings automatically?",
-"a": "Yes. Once a guest selects a time slot, the meeting is automatically added to calendars."
-}
-],
-"related_pages": [
-{ "x_name": "Google Calendar", "y_name": "Calendly", "persona": "Beginner" },
-{ "x_name": "Calendly", "y_name": "YouCanBookMe", "persona": "Beginner" },
-{ "x_name": "TidyCal", "y_name": "Calendly", "persona": "Beginner" },
-{ "x_name": "Google Calendar", "y_name": "Doodle", "persona": "Beginner" },
-{ "x_name": "Calendly", "y_name": "Acuity Scheduling", "persona": "Beginner" },
-{ "x_name": "TidyCal", "y_name": "Doodle", "persona": "Beginner" }
-]
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Calendly vs Doodle for Beginners",
+  "slug": "calendly-vs-doodle-for-beginner",
+  "meta_description": "Calendly vs Doodle for beginners who want a simple booking link. See why Calendly wins when meetings must be scheduled instantly.",
+  "persona": "Beginner",
+  "constraint_lens": "Beginners prefer tools that work immediately without extra setup steps or confusing scheduling workflows.",
+  "one_second_verdict": {
+    "winner_label": "Calendly",
+    "summary": "Best for beginners who want a simple link people can use to book a meeting instantly.",
+    "reason": "Doodle fails first because scheduling starts by creating a poll instead of letting guests book a fixed time slot."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Calendly is the better choice for beginners who want a simple scheduling link. It generates a booking page where guests immediately select an available time from the host calendar. Doodle starts by creating a poll where participants vote on possible times before a meeting is finalized. For users who want scheduling to work immediately with a single link, the poll workflow introduces extra steps and confusion.",
+    "decision_rule": "If scheduling requires creating a poll and collecting responses instead of letting people immediately book a time, Doodle fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Calendly fits beginners",
+      "content": "The user wants to send a link where people can immediately book a meeting. Calendly creates a scheduling page that shows open time slots based on the host calendar. Guests simply choose a time and the meeting is scheduled instantly. This removes the need to manage responses or coordinate multiple options."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Calendly wins",
+      "bullets": [
+        {
+          "point": "Calendly generates a booking page that shows available time slots from the host calendar.",
+          "why_it_matters": "Guests can immediately choose a time without sending responses or waiting for confirmation."
+        },
+        {
+          "point": "Calendly automatically adds the meeting to both calendars after a slot is selected.",
+          "why_it_matters": "Beginners do not need to manually confirm or coordinate meeting times."
+        },
+        {
+          "point": "Calendly scheduling links work by sharing one simple URL.",
+          "why_it_matters": "Users can schedule meetings by sending a single link instead of managing polls."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Doodle wins",
+      "bullets": [
+        {
+          "point": "Doodle allows the host to create a poll with multiple possible meeting times.",
+          "why_it_matters": "Groups can vote on options when a shared time is difficult to find."
+        },
+        {
+          "point": "Doodle collects availability from multiple participants before confirming a meeting.",
+          "why_it_matters": "Large groups can identify the time that works best for everyone."
+        },
+        {
+          "point": "Doodle supports scheduling where the final meeting time is chosen after responses are collected.",
+          "why_it_matters": "Hosts can review responses and select the most popular option."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The meeting involves many participants who need to vote on possible time options.",
+          "what_to_do_instead": "Use Doodle where participants respond to a poll to determine the best time."
+        },
+        {
+          "tool": "y",
+          "fails_when": "The user wants people to immediately book a meeting because Doodle requires creating a poll first.",
+          "what_to_do_instead": "Use Calendly where invitees can select a fixed time slot instantly."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the meeting involves a large group where the host must collect availability from many people before choosing a time, Doodle may become the better option."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Calendly if you want a link where people can immediately book a meeting.",
+        "Pick Calendly if you want meetings scheduled automatically when a slot is chosen.",
+        "Pick Doodle if you need participants to vote on possible meeting times."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Calendly easier for beginners?",
+      "a": "Calendly lets people book a meeting directly by choosing an available time slot from a shared link."
+    },
+    {
+      "q": "Does Doodle use a booking page like Calendly?",
+      "a": "No. Doodle typically starts with a poll where participants vote on possible meeting times."
+    },
+    {
+      "q": "When is Doodle useful?",
+      "a": "Doodle works well when multiple participants need to vote on the best meeting time."
+    },
+    {
+      "q": "Can Calendly schedule meetings automatically?",
+      "a": "Yes. Once a guest selects a time slot, the meeting is automatically added to calendars."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Calendly",
+      "y_name": "Google Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Calendly",
+      "y_name": "YouCanBookMe",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Calendly",
+      "y_name": "TidyCal",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Doodle",
+      "y_name": "Google Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Acuity Scheduling",
+      "y_name": "Calendly",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Doodle",
+      "y_name": "TidyCal",
+      "persona": "Beginner"
+    }
+  ]
 }

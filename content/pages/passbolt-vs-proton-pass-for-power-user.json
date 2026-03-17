@@ -1,120 +1,144 @@
 {
-"category": "Password Managers",
-"categorySlug": "password-managers",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "Passbolt vs Proton Pass for Power users",
-"slug": "passbolt-vs-proton-pass-for-power-user",
-"meta_description": "Passbolt vs Proton Pass for power users who want self-hosted password infrastructure. See why Passbolt wins when server control matters.",
-"persona": "Power user",
-"constraint_lens": "Power users prefer tools that can run inside infrastructure they control instead of relying entirely on vendor hosted services.",
-"one_second_verdict": {
-"winner_label": "Passbolt",
-"summary": "Best for power users who want to run password management inside their own server environment.",
-"reason": "Proton Pass fails first because it cannot be deployed inside a self hosted server controlled by the user."
-},
-"verdict": {
-"winner": "x",
-"summary": "Passbolt is the better choice for power users who manage credentials inside their own infrastructure. It installs on a server controlled by the organization and allows administrators to manage password storage, access permissions, and integrations directly. Proton Pass operates as a vendor hosted password manager and cannot run inside a private server environment. For users who want infrastructure level control, the hosted model limits how the password system can be deployed.",
-"decision_rule": "If the password manager cannot be deployed inside a self-hosted server environment controlled by the user, Proton Pass fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Passbolt fits power users",
-"content": "The user runs internal infrastructure for a small team and wants password management integrated directly into their server environment. Passbolt installs on a self hosted server and allows administrators to control the credential system inside their own network. Teams can integrate it with internal authentication and infrastructure tools. This design gives power users full ownership over how credentials are stored and shared."
-},
-{
-"type": "x_wins",
-"heading": "Where Passbolt wins",
-"bullets": [
-{
-"point": "Passbolt can be deployed on a self hosted server controlled by the organization.",
-"why_it_matters": "Power users can run password management inside their own infrastructure rather than relying on a hosted service."
-},
-{
-"point": "Passbolt provides administrative control over server configuration and credential storage.",
-"why_it_matters": "Administrators can define how passwords are stored, secured, and backed up."
-},
-{
-"point": "Passbolt integrates with internal authentication systems and network infrastructure.",
-"why_it_matters": "Teams can connect password management directly to existing internal services."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Proton Pass wins",
-"bullets": [
-{
-"point": "Proton Pass automatically synchronizes passwords across devices through the user account.",
-"why_it_matters": "Credentials appear instantly on laptops, phones, and browsers without maintaining servers."
-},
-{
-"point": "Proton Pass browser extensions detect login forms and autofill credentials.",
-"why_it_matters": "Users can sign into websites quickly without copying passwords manually."
-},
-{
-"point": "Proton Pass manages hosting and updates as part of the service.",
-"why_it_matters": "Users do not need to maintain infrastructure or apply system updates."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The user wants a password manager that works instantly without deploying or maintaining server infrastructure.",
-"what_to_do_instead": "Use Proton Pass where the service runs through a hosted account."
-},
-{
-"tool": "y",
-"fails_when": "The user needs password management inside a private server environment because Proton Pass cannot run on a self hosted server.",
-"what_to_do_instead": "Use Passbolt where the password system can be deployed inside your own infrastructure."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the user prefers a password manager that works immediately without deploying or maintaining server infrastructure, Proton Pass may become the better option."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick Passbolt if you want password management deployed on your own server.",
-"Pick Passbolt if you need full administrative control over credential infrastructure.",
-"Pick Proton Pass if you want a hosted password manager with no server maintenance."
-]
-}
-],
-"faqs": [
-{
-"q": "Why do power users prefer Passbolt?",
-"a": "Passbolt can run on a self hosted server where administrators control the infrastructure."
-},
-{
-"q": "Can Proton Pass run on a private server?",
-"a": "No. Proton Pass operates as a hosted password manager and does not support self hosted deployment."
-},
-{
-"q": "Does Passbolt require server infrastructure?",
-"a": "Yes. Passbolt typically runs on a server environment controlled by the organization."
-},
-{
-"q": "Who should choose Proton Pass instead?",
-"a": "Users who want a password manager that works immediately without maintaining server infrastructure may prefer Proton Pass."
-}
-],
-"related_pages": [
-{ "x_name": "Passbolt", "y_name": "Dashlane", "persona": "Power user" },
-{ "x_name": "Passbolt", "y_name": "RoboForm", "persona": "Power user" },
-{ "x_name": "KeePassXC", "y_name": "NordPass", "persona": "Power user" },
-{ "x_name": "KeePassXC", "y_name": "1Password", "persona": "Power user" },
-{ "x_name": "KeePassXC", "y_name": "Bitwarden", "persona": "Power user" },
-{ "x_name": "Dashlane", "y_name": "NordPass", "persona": "Power user" }
-]
+  "category": "Password Managers",
+  "categorySlug": "password-managers",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Passbolt vs Proton Pass for Power users",
+  "slug": "passbolt-vs-proton-pass-for-power-user",
+  "meta_description": "Passbolt vs Proton Pass for power users who want self-hosted password infrastructure. See why Passbolt wins when server control matters.",
+  "persona": "Power user",
+  "constraint_lens": "Power users prefer tools that can run inside infrastructure they control instead of relying entirely on vendor hosted services.",
+  "one_second_verdict": {
+    "winner_label": "Passbolt",
+    "summary": "Best for power users who want to run password management inside their own server environment.",
+    "reason": "Proton Pass fails first because it cannot be deployed inside a self hosted server controlled by the user."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Passbolt is the better choice for power users who manage credentials inside their own infrastructure. It installs on a server controlled by the organization and allows administrators to manage password storage, access permissions, and integrations directly. Proton Pass operates as a vendor hosted password manager and cannot run inside a private server environment. For users who want infrastructure level control, the hosted model limits how the password system can be deployed.",
+    "decision_rule": "If the password manager cannot be deployed inside a self-hosted server environment controlled by the user, Proton Pass fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Passbolt fits power users",
+      "content": "The user runs internal infrastructure for a small team and wants password management integrated directly into their server environment. Passbolt installs on a self hosted server and allows administrators to control the credential system inside their own network. Teams can integrate it with internal authentication and infrastructure tools. This design gives power users full ownership over how credentials are stored and shared."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Passbolt wins",
+      "bullets": [
+        {
+          "point": "Passbolt can be deployed on a self hosted server controlled by the organization.",
+          "why_it_matters": "Power users can run password management inside their own infrastructure rather than relying on a hosted service."
+        },
+        {
+          "point": "Passbolt provides administrative control over server configuration and credential storage.",
+          "why_it_matters": "Administrators can define how passwords are stored, secured, and backed up."
+        },
+        {
+          "point": "Passbolt integrates with internal authentication systems and network infrastructure.",
+          "why_it_matters": "Teams can connect password management directly to existing internal services."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Proton Pass wins",
+      "bullets": [
+        {
+          "point": "Proton Pass automatically synchronizes passwords across devices through the user account.",
+          "why_it_matters": "Credentials appear instantly on laptops, phones, and browsers without maintaining servers."
+        },
+        {
+          "point": "Proton Pass browser extensions detect login forms and autofill credentials.",
+          "why_it_matters": "Users can sign into websites quickly without copying passwords manually."
+        },
+        {
+          "point": "Proton Pass manages hosting and updates as part of the service.",
+          "why_it_matters": "Users do not need to maintain infrastructure or apply system updates."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The user wants a password manager that works instantly without deploying or maintaining server infrastructure.",
+          "what_to_do_instead": "Use Proton Pass where the service runs through a hosted account."
+        },
+        {
+          "tool": "y",
+          "fails_when": "The user needs password management inside a private server environment because Proton Pass cannot run on a self hosted server.",
+          "what_to_do_instead": "Use Passbolt where the password system can be deployed inside your own infrastructure."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user prefers a password manager that works immediately without deploying or maintaining server infrastructure, Proton Pass may become the better option."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Passbolt if you want password management deployed on your own server.",
+        "Pick Passbolt if you need full administrative control over credential infrastructure.",
+        "Pick Proton Pass if you want a hosted password manager with no server maintenance."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why do power users prefer Passbolt?",
+      "a": "Passbolt can run on a self hosted server where administrators control the infrastructure."
+    },
+    {
+      "q": "Can Proton Pass run on a private server?",
+      "a": "No. Proton Pass operates as a hosted password manager and does not support self hosted deployment."
+    },
+    {
+      "q": "Does Passbolt require server infrastructure?",
+      "a": "Yes. Passbolt typically runs on a server environment controlled by the organization."
+    },
+    {
+      "q": "Who should choose Proton Pass instead?",
+      "a": "Users who want a password manager that works immediately without maintaining server infrastructure may prefer Proton Pass."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Dashlane",
+      "y_name": "Passbolt",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Passbolt",
+      "y_name": "RoboForm",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "KeePassXC",
+      "y_name": "NordPass",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "1Password",
+      "y_name": "KeePassXC",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Bitwarden",
+      "y_name": "KeePassXC",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Dashlane",
+      "y_name": "NordPass",
+      "persona": "Power user"
+    }
+  ]
 }

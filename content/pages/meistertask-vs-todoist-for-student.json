@@ -1,0 +1,144 @@
+{
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "switching-cost",
+  "constraintUiName": "Easy to quit later",
+  "title": "MeisterTask vs Todoist for Students",
+  "slug": "meistertask-vs-todoist-for-student",
+  "meta_description": "MeisterTask vs Todoist for students who need a simple task manager for one semester without setting up boards or long-term systems.",
+  "persona": "Student",
+  "constraint_lens": "You need a task manager that works for one semester without locking you into a setup that is hard to leave later.",
+  "one_second_verdict": {
+    "winner_label": "Todoist",
+    "summary": "Best for students who need to track coursework for the current semester.",
+    "reason": "MeisterTask fails first because board structure and setup exceed short-term academic needs."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist wins for students who only need to track coursework for the current semester. You can create projects for each class and add tasks in a simple list without designing boards. MeisterTask centers on Kanban-style boards that require column setup and structure decisions. If board structure and setup exceed short-term academic needs, MeisterTask fails first.",
+    "decision_rule": "If board structure and setup exceed short-term academic needs, MeisterTask fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool fits one semester of coursework?",
+      "content": "You need a task manager only for the current semester. As a student, you want to organize assignments quickly and move on after finals. The right tool should not require building a long-term workflow. Anything that takes time to design boards may feel unnecessary for short-term use."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist works better for students",
+      "bullets": [
+        {
+          "point": "Project lists for each class without mandatory board layout.",
+          "why_it_matters": "You can create a project named Biology or Math and start adding assignments immediately. There is no need to define workflow columns first."
+        },
+        {
+          "point": "Natural language input for due dates like 'Essay Friday 5pm'.",
+          "why_it_matters": "You can type the task and deadline in one line, which saves time during busy weeks."
+        },
+        {
+          "point": "Simple export and deletion of projects.",
+          "why_it_matters": "When the semester ends, you can archive or delete class projects easily without untangling board structures."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where MeisterTask works better",
+      "bullets": [
+        {
+          "point": "Kanban boards with customizable columns.",
+          "why_it_matters": "You can move assignments across stages like To Do and Done. However, setting up columns adds structure work at the beginning."
+        },
+        {
+          "point": "Visual progress tracking across tasks.",
+          "why_it_matters": "Seeing cards move can feel motivating. For short-term academic tracking, this visual system may be more than you need."
+        },
+        {
+          "point": "Integrated collaboration inside boards.",
+          "why_it_matters": "You can share boards with classmates for group work. If you only track personal coursework, this extra layer may not matter."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You prefer visual boards and moving tasks across stages instead of working from lists.",
+          "what_to_do_instead": "Use MeisterTask if you want a Kanban-style view of your coursework."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You spend time designing columns and board layouts before entering assignments.",
+          "what_to_do_instead": "Use Todoist if you want to add tasks immediately without board setup."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you are working on multiple group projects and want a shared visual board for coordination, MeisterTask may justify the extra setup."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want quick lists for each class, choose Todoist.",
+        "If you want a visual board for assignments, choose MeisterTask.",
+        "If setup time feels longer than the semester, keep it simple."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Todoist better for short-term school use?",
+      "a": "Yes. Its list-based projects are fast to create and easy to remove after the semester."
+    },
+    {
+      "q": "Does MeisterTask require board setup?",
+      "a": "Yes. You typically create columns and organize tasks visually before using it fully."
+    },
+    {
+      "q": "Which tool is easier to stop using after finals?",
+      "a": "Todoist is easier to leave because you can archive or delete projects without dismantling board layouts."
+    },
+    {
+      "q": "Can MeisterTask work for solo students?",
+      "a": "Yes, but its board system is often more useful for collaborative or visual workflows."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Habitica",
+      "y_name": "Todoist",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Google Tasks",
+      "y_name": "MeisterTask",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Sunsama",
+      "y_name": "Todoist",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Todoist",
+      "y_name": "Trello",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Google Tasks",
+      "y_name": "Superlist",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "Things 3",
+      "persona": "Student"
+    }
+  ]
+}

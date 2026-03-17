@@ -1,120 +1,144 @@
 {
-"category": "Email / Inbox tools",
-"categorySlug": "email-inbox-tools",
-"constraintSlug": "switching-cost",
-"constraintUiName": "Easy to quit later",
-"title": "Gmail vs Superhuman for Students",
-"slug": "gmail-vs-superhuman-for-student",
-"meta_description": "Gmail vs Superhuman for students who need a free email account for school. See why Gmail wins when you want email without a paid subscription.",
-"persona": "Student",
-"constraint_lens": "Students prefer tools that are free to start and easy to stop using later without losing access or paying ongoing fees.",
-"one_second_verdict": {
-"winner_label": "Gmail",
-"summary": "Best for students who need a free email account for school without paying a monthly fee.",
-"reason": "Superhuman fails first because sending and receiving email requires paying a recurring subscription instead of using a free account."
-},
-"verdict": {
-"winner": "x",
-"summary": "Gmail is the better choice for students who simply need an email account for classes. It allows users to send and receive messages immediately with a free account and no subscription. Superhuman requires a monthly payment to access its email interface. That cost creates unnecessary commitment for students who only need email for a semester or school year.",
-"decision_rule": "If sending and receiving email requires paying a recurring subscription instead of using a free account, Superhuman fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Gmail fits students",
-"content": "The user needs an email account for school and does not want to pay subscription fees. Gmail allows anyone to create an account and start sending messages for free in a web browser. There are no billing steps or recurring charges required to keep the inbox active. This makes Gmail easy to adopt for temporary school use and easy to leave later."
-},
-{
-"type": "x_wins",
-"heading": "Where Gmail wins",
-"bullets": [
-{
-"point": "Gmail accounts can be created and used for free with no monthly payment.",
-"why_it_matters": "Students can send and receive school emails without committing to a subscription that continues after the semester ends."
-},
-{
-"point": "Gmail runs directly in a web browser and works immediately after account creation.",
-"why_it_matters": "Students can access their inbox from school computers or personal devices without installing extra software."
-},
-{
-"point": "Gmail integrates with school tools such as Google Drive and Google Docs.",
-"why_it_matters": "Students often receive assignments, documents, and shared files through these services, which appear directly in the Gmail interface."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Superhuman wins",
-"bullets": [
-{
-"point": "Superhuman provides keyboard driven email navigation designed for extremely fast inbox processing.",
-"why_it_matters": "Users who send and read large volumes of email can move through messages quickly using shortcuts instead of clicking through menus."
-},
-{
-"point": "Superhuman includes features like read status tracking and scheduled follow up reminders.",
-"why_it_matters": "These tools help professionals track conversations and ensure important emails receive responses."
-},
-{
-"point": "Superhuman organizes the inbox with fast search and message triage shortcuts.",
-"why_it_matters": "Heavy email users can process large inboxes quickly by archiving, replying, or scheduling messages with minimal clicks."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The user processes hundreds of emails daily and wants a keyboard driven workflow designed for extremely fast inbox handling.",
-"what_to_do_instead": "Use Superhuman where shortcut driven navigation helps power through large inbox volumes."
-},
-{
-"tool": "y",
-"fails_when": "The user needs a basic email account for school but does not want to pay a recurring monthly subscription just to send and receive messages.",
-"what_to_do_instead": "Use Gmail where email access is free and available immediately."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the student runs a business, internship, or startup that involves processing large numbers of emails daily, Superhuman may become worth the subscription."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick Gmail if you want a free email account for school.",
-"Pick Gmail if you do not want to pay a subscription just to access email.",
-"Pick Superhuman if extremely fast keyboard driven inbox handling matters more than cost."
-]
-}
-],
-"faqs": [
-{
-"q": "Why is Gmail better for students?",
-"a": "Gmail provides free email accounts that work immediately without requiring a monthly subscription."
-},
-{
-"q": "Does Superhuman require a paid subscription?",
-"a": "Yes. Superhuman requires a recurring subscription in order to access its email interface."
-},
-{
-"q": "Can students still use Gmail with school tools?",
-"a": "Yes. Gmail connects directly with Google Drive and other document tools commonly used in school environments."
-},
-{
-"q": "Who benefits most from Superhuman?",
-"a": "Professionals who process very large volumes of email benefit most from its shortcut based inbox workflow."
-}
-],
-"related_pages": [
-{ "x_name": "Gmail", "y_name": "Outlook", "persona": "Student" },
-{ "x_name": "Gmail", "y_name": "Proton Mail", "persona": "Student" },
-{ "x_name": "Gmail", "y_name": "HEY", "persona": "Student" },
-{ "x_name": "Gmail", "y_name": "Fastmail", "persona": "Student" },
-{ "x_name": "Proton Mail", "y_name": "Gmail", "persona": "Student" },
-{ "x_name": "Outlook", "y_name": "Gmail", "persona": "Student" }
-]
+  "category": "Email / Inbox tools",
+  "categorySlug": "email-inbox-tools",
+  "constraintSlug": "switching-cost",
+  "constraintUiName": "Easy to quit later",
+  "title": "Gmail vs Superhuman for Students",
+  "slug": "gmail-vs-superhuman-for-student",
+  "meta_description": "Gmail vs Superhuman for students who need a free email account for school. See why Gmail wins when you want email without a paid subscription.",
+  "persona": "Student",
+  "constraint_lens": "Students prefer tools that are free to start and easy to stop using later without losing access or paying ongoing fees.",
+  "one_second_verdict": {
+    "winner_label": "Gmail",
+    "summary": "Best for students who need a free email account for school without paying a monthly fee.",
+    "reason": "Superhuman fails first because sending and receiving email requires paying a recurring subscription instead of using a free account."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Gmail is the better choice for students who simply need an email account for classes. It allows users to send and receive messages immediately with a free account and no subscription. Superhuman requires a monthly payment to access its email interface. That cost creates unnecessary commitment for students who only need email for a semester or school year.",
+    "decision_rule": "If sending and receiving email requires paying a recurring subscription instead of using a free account, Superhuman fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Gmail fits students",
+      "content": "The user needs an email account for school and does not want to pay subscription fees. Gmail allows anyone to create an account and start sending messages for free in a web browser. There are no billing steps or recurring charges required to keep the inbox active. This makes Gmail easy to adopt for temporary school use and easy to leave later."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Gmail wins",
+      "bullets": [
+        {
+          "point": "Gmail accounts can be created and used for free with no monthly payment.",
+          "why_it_matters": "Students can send and receive school emails without committing to a subscription that continues after the semester ends."
+        },
+        {
+          "point": "Gmail runs directly in a web browser and works immediately after account creation.",
+          "why_it_matters": "Students can access their inbox from school computers or personal devices without installing extra software."
+        },
+        {
+          "point": "Gmail integrates with school tools such as Google Drive and Google Docs.",
+          "why_it_matters": "Students often receive assignments, documents, and shared files through these services, which appear directly in the Gmail interface."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Superhuman wins",
+      "bullets": [
+        {
+          "point": "Superhuman provides keyboard driven email navigation designed for extremely fast inbox processing.",
+          "why_it_matters": "Users who send and read large volumes of email can move through messages quickly using shortcuts instead of clicking through menus."
+        },
+        {
+          "point": "Superhuman includes features like read status tracking and scheduled follow up reminders.",
+          "why_it_matters": "These tools help professionals track conversations and ensure important emails receive responses."
+        },
+        {
+          "point": "Superhuman organizes the inbox with fast search and message triage shortcuts.",
+          "why_it_matters": "Heavy email users can process large inboxes quickly by archiving, replying, or scheduling messages with minimal clicks."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The user processes hundreds of emails daily and wants a keyboard driven workflow designed for extremely fast inbox handling.",
+          "what_to_do_instead": "Use Superhuman where shortcut driven navigation helps power through large inbox volumes."
+        },
+        {
+          "tool": "y",
+          "fails_when": "The user needs a basic email account for school but does not want to pay a recurring monthly subscription just to send and receive messages.",
+          "what_to_do_instead": "Use Gmail where email access is free and available immediately."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the student runs a business, internship, or startup that involves processing large numbers of emails daily, Superhuman may become worth the subscription."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Gmail if you want a free email account for school.",
+        "Pick Gmail if you do not want to pay a subscription just to access email.",
+        "Pick Superhuman if extremely fast keyboard driven inbox handling matters more than cost."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Gmail better for students?",
+      "a": "Gmail provides free email accounts that work immediately without requiring a monthly subscription."
+    },
+    {
+      "q": "Does Superhuman require a paid subscription?",
+      "a": "Yes. Superhuman requires a recurring subscription in order to access its email interface."
+    },
+    {
+      "q": "Can students still use Gmail with school tools?",
+      "a": "Yes. Gmail connects directly with Google Drive and other document tools commonly used in school environments."
+    },
+    {
+      "q": "Who benefits most from Superhuman?",
+      "a": "Professionals who process very large volumes of email benefit most from its shortcut based inbox workflow."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Gmail",
+      "y_name": "Outlook",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Proton Mail",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "HEY",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Fastmail",
+      "y_name": "Gmail",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Proton Mail",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Outlook",
+      "persona": "Student"
+    }
+  ]
 }

@@ -1,120 +1,144 @@
 {
-"category": "Password Managers",
-"categorySlug": "password-managers",
-"constraintSlug": "fear-of-breaking",
-"constraintUiName": "Hard to mess up",
-"title": "Dashlane vs KeePass for Non-technical users",
-"slug": "dashlane-vs-keepass-for-non-technical-user",
-"meta_description": "Dashlane vs KeePass for non-technical users who want automatic password backups. See why Dashlane wins when recovery must be simple.",
-"persona": "Non-technical user",
-"constraint_lens": "Non-technical users prefer tools that protect their data automatically so mistakes or device failures do not cause permanent loss.",
-"one_second_verdict": {
-"winner_label": "Dashlane",
-"summary": "Best for non-technical users who want passwords automatically backed up and recoverable.",
-"reason": "KeePass fails first because password backups rely on manually copying or exporting the vault database file."
-},
-"verdict": {
-"winner": "x",
-"summary": "Dashlane is the better choice for non-technical users who worry about losing their passwords. The vault automatically syncs and backs up through the Dashlane account so credentials remain accessible even if a device is lost or replaced. KeePass stores passwords in a local database file that the user must back up manually. If the file is deleted, corrupted, or lost with the device, recovery becomes difficult for non-technical users.",
-"decision_rule": "If password backups depend on manually exporting or copying database files, KeePass fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Dashlane fits non-technical users",
-"content": "The user is afraid of losing their passwords if something breaks and wants automatic backup and recovery. Dashlane stores the vault inside an account that syncs securely across devices. When the user logs in on a new device, the password vault automatically appears again. This removes the risk of forgetting to back up important password files."
-},
-{
-"type": "x_wins",
-"heading": "Where Dashlane wins",
-"bullets": [
-{
-"point": "Dashlane automatically syncs the password vault through the user account.",
-"why_it_matters": "Passwords remain accessible on new devices without manually copying backup files."
-},
-{
-"point": "Dashlane stores encrypted vault backups through its cloud synchronization system.",
-"why_it_matters": "If a device fails or is replaced, the vault can be restored simply by signing into the account."
-},
-{
-"point": "Dashlane browser extensions automatically save new passwords during website logins.",
-"why_it_matters": "Users do not need to manually add credentials into a separate application."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where KeePass wins",
-"bullets": [
-{
-"point": "KeePass stores passwords in a local encrypted database file on the device.",
-"why_it_matters": "Users maintain full control over where the password vault is stored."
-},
-{
-"point": "KeePass works completely offline without requiring an account.",
-"why_it_matters": "Passwords remain accessible without depending on a hosted service."
-},
-{
-"point": "KeePass allows users to copy or move the vault database file manually.",
-"why_it_matters": "Advanced users can store the file wherever they prefer."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The user wants password storage that never relies on a hosted account or online service.",
-"what_to_do_instead": "Use KeePass where the vault exists only as a local encrypted file."
-},
-{
-"tool": "y",
-"fails_when": "The user forgets to manually back up the vault file because KeePass stores passwords in a single database file that must be copied manually.",
-"what_to_do_instead": "Use Dashlane where encrypted vault backups are automatically synchronized."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the user is comfortable manually managing backups and prefers keeping the password vault entirely offline, KeePass may become the better option."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick Dashlane if you want passwords automatically backed up and synced.",
-"Pick Dashlane if you worry about losing your password vault after device failure.",
-"Pick KeePass if you prefer storing passwords in a local encrypted file."
-]
-}
-],
-"faqs": [
-{
-"q": "Why is Dashlane safer for non-technical users?",
-"a": "Dashlane automatically backs up and syncs the password vault through the account so passwords remain recoverable."
-},
-{
-"q": "Does KeePass automatically back up passwords?",
-"a": "No. KeePass stores passwords in a database file that must be backed up manually."
-},
-{
-"q": "What happens if a Dashlane user gets a new device?",
-"a": "The user signs into their account and the encrypted password vault automatically syncs to the new device."
-},
-{
-"q": "Who might still prefer KeePass?",
-"a": "Users who want complete control over a local password database and are comfortable managing backups may prefer KeePass."
-}
-],
-"related_pages": [
-{ "x_name": "Dashlane", "y_name": "NordPass", "persona": "Non-technical user" },
-{ "x_name": "Dashlane", "y_name": "1Password", "persona": "Non-technical user" },
-{ "x_name": "Bitwarden", "y_name": "Dashlane", "persona": "Non-technical user" },
-{ "x_name": "NordPass", "y_name": "KeePassXC", "persona": "Non-technical user" },
-{ "x_name": "Bitwarden", "y_name": "KeePassXC", "persona": "Non-technical user" },
-{ "x_name": "Proton Pass", "y_name": "KeePassXC", "persona": "Non-technical user" }
-]
+  "category": "Password Managers",
+  "categorySlug": "password-managers",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Dashlane vs KeePass for Non-technical users",
+  "slug": "dashlane-vs-keepass-for-non-technical-user",
+  "meta_description": "Dashlane vs KeePass for non-technical users who want automatic password backups. See why Dashlane wins when recovery must be simple.",
+  "persona": "Non-technical user",
+  "constraint_lens": "Non-technical users prefer tools that protect their data automatically so mistakes or device failures do not cause permanent loss.",
+  "one_second_verdict": {
+    "winner_label": "Dashlane",
+    "summary": "Best for non-technical users who want passwords automatically backed up and recoverable.",
+    "reason": "KeePass fails first because password backups rely on manually copying or exporting the vault database file."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Dashlane is the better choice for non-technical users who worry about losing their passwords. The vault automatically syncs and backs up through the Dashlane account so credentials remain accessible even if a device is lost or replaced. KeePass stores passwords in a local database file that the user must back up manually. If the file is deleted, corrupted, or lost with the device, recovery becomes difficult for non-technical users.",
+    "decision_rule": "If password backups depend on manually exporting or copying database files, KeePass fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Dashlane fits non-technical users",
+      "content": "The user is afraid of losing their passwords if something breaks and wants automatic backup and recovery. Dashlane stores the vault inside an account that syncs securely across devices. When the user logs in on a new device, the password vault automatically appears again. This removes the risk of forgetting to back up important password files."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Dashlane wins",
+      "bullets": [
+        {
+          "point": "Dashlane automatically syncs the password vault through the user account.",
+          "why_it_matters": "Passwords remain accessible on new devices without manually copying backup files."
+        },
+        {
+          "point": "Dashlane stores encrypted vault backups through its cloud synchronization system.",
+          "why_it_matters": "If a device fails or is replaced, the vault can be restored simply by signing into the account."
+        },
+        {
+          "point": "Dashlane browser extensions automatically save new passwords during website logins.",
+          "why_it_matters": "Users do not need to manually add credentials into a separate application."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where KeePass wins",
+      "bullets": [
+        {
+          "point": "KeePass stores passwords in a local encrypted database file on the device.",
+          "why_it_matters": "Users maintain full control over where the password vault is stored."
+        },
+        {
+          "point": "KeePass works completely offline without requiring an account.",
+          "why_it_matters": "Passwords remain accessible without depending on a hosted service."
+        },
+        {
+          "point": "KeePass allows users to copy or move the vault database file manually.",
+          "why_it_matters": "Advanced users can store the file wherever they prefer."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The user wants password storage that never relies on a hosted account or online service.",
+          "what_to_do_instead": "Use KeePass where the vault exists only as a local encrypted file."
+        },
+        {
+          "tool": "y",
+          "fails_when": "The user forgets to manually back up the vault file because KeePass stores passwords in a single database file that must be copied manually.",
+          "what_to_do_instead": "Use Dashlane where encrypted vault backups are automatically synchronized."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user is comfortable manually managing backups and prefers keeping the password vault entirely offline, KeePass may become the better option."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Dashlane if you want passwords automatically backed up and synced.",
+        "Pick Dashlane if you worry about losing your password vault after device failure.",
+        "Pick KeePass if you prefer storing passwords in a local encrypted file."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Dashlane safer for non-technical users?",
+      "a": "Dashlane automatically backs up and syncs the password vault through the account so passwords remain recoverable."
+    },
+    {
+      "q": "Does KeePass automatically back up passwords?",
+      "a": "No. KeePass stores passwords in a database file that must be backed up manually."
+    },
+    {
+      "q": "What happens if a Dashlane user gets a new device?",
+      "a": "The user signs into their account and the encrypted password vault automatically syncs to the new device."
+    },
+    {
+      "q": "Who might still prefer KeePass?",
+      "a": "Users who want complete control over a local password database and are comfortable managing backups may prefer KeePass."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Dashlane",
+      "y_name": "NordPass",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "1Password",
+      "y_name": "Dashlane",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Bitwarden",
+      "y_name": "Dashlane",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "KeePassXC",
+      "y_name": "NordPass",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Bitwarden",
+      "y_name": "KeePassXC",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "KeePassXC",
+      "y_name": "Proton Pass",
+      "persona": "Non-technical user"
+    }
+  ]
 }

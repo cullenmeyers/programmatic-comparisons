@@ -1,0 +1,147 @@
+{
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Notion vs Workflowy for Minimalists",
+  "slug": "notion-vs-workflowy-for-minimalist",
+  "meta_description": "Compare Notion vs Workflowy for minimalists organizing ideas in outlines. See why Workflowy wins when outlining must stay simple.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists prefer tools that focus on a single structure without adding interface layers or complex workspace systems.",
+  "one_second_verdict": {
+    "winner_label": "Workflowy",
+    "summary": "Best for minimalists who need minimalists prefer tools that focus on a single structure without adding interface layers or complex workspace systems.",
+    "reason": "Notion fails first because outlining ideas requires interacting with block editors or database structures instead of a continuous bullet hierarchy."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Workflowy wins because it is built entirely around a continuous bullet outline where ideas expand and collapse in a hierarchy. Users can keep adding nested bullets without interacting with layout tools or page systems. Notion organizes information using blocks, pages, and database views, which introduces additional interface layers. For minimalists who only want a simple outline, those structures become unnecessary complexity.",
+    "decision_rule": "If outlining ideas requires interacting with block editors or database structures instead of a continuous bullet hierarchy, Notion fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Workflowy fits minimalists who think in outlines",
+      "content": "This minimalist organizes ideas as bullet lists rather than documents or pages. Workflowy allows users to write a bullet, press enter, and continue expanding nested points indefinitely. The entire note system is one continuous outline where sections can be collapsed or expanded. Notion places content inside pages where blocks, layouts, or databases may appear alongside notes, which adds interface elements that outline focused users do not want."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Workflowy wins",
+      "bullets": [
+        {
+          "point": "Continuous bullet outline structure",
+          "why_it_matters": "Every note is a bullet that can expand into nested sub bullets, allowing ideas to be organized naturally as a hierarchy."
+        },
+        {
+          "point": "Instant expansion and collapse of sections",
+          "why_it_matters": "Users can zoom into a bullet to focus on a single branch of the outline without navigating between pages."
+        },
+        {
+          "point": "Single writing interface without layout tools",
+          "why_it_matters": "The editor focuses only on bullets and indentation, avoiding tables, databases, or formatting panels."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Notion wins",
+      "bullets": [
+        {
+          "point": "Block based editor supporting many content types",
+          "why_it_matters": "Users can insert headings, tables, checklists, and other content blocks into a page."
+        },
+        {
+          "point": "Database views for organizing structured information",
+          "why_it_matters": "Information can be stored in database tables and displayed as lists, boards, or calendars."
+        },
+        {
+          "point": "Workspace system combining notes and projects",
+          "why_it_matters": "Notes can live alongside tasks, documents, and shared team pages inside one workspace."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You want notes connected to databases, project boards, or structured workspace pages.",
+          "what_to_do_instead": "Use Notion so information can live inside database views and project systems."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You only want a continuous bullet outline without interacting with blocks, tables, or page layouts.",
+          "what_to_do_instead": "Use Workflowy for a pure hierarchical outline."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your notes need to connect to task boards, databases, or collaborative workspace pages, Notion may be the better choice because it supports multiple content structures beyond outlines."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose Workflowy if you organize ideas as nested bullet lists.",
+        "Choose Workflowy if you want a continuous outline instead of pages.",
+        "Choose Notion if notes must connect to databases or workspace systems."
+      ]
+    },
+    {
+      "type": "faqs"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is Workflowy mainly used for?",
+      "a": "Workflowy is designed for organizing ideas in nested bullet outlines where each bullet can expand into sub bullets."
+    },
+    {
+      "q": "Why does Notion feel more complex than an outline tool?",
+      "a": "Notion uses blocks, pages, and database views to organize information, which introduces additional interface structures."
+    },
+    {
+      "q": "Why might minimalists prefer Workflowy?",
+      "a": "Because it focuses entirely on bullet outlines and avoids additional layout or database features."
+    },
+    {
+      "q": "When is Notion the better option?",
+      "a": "Notion is better when notes must connect to structured data, project pages, or collaborative workspace systems."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Notion",
+      "y_name": "Simplenote",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Notes",
+      "y_name": "Notion",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Google Keep",
+      "y_name": "Notion",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Bear",
+      "y_name": "Notion",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Evernote",
+      "y_name": "Simplenote",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Notes",
+      "y_name": "Evernote",
+      "persona": "Minimalist"
+    }
+  ]
+}

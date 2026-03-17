@@ -1,0 +1,144 @@
+{
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Taiga vs ZenHub for Solo users",
+  "slug": "taiga-vs-zenhub-for-solo-user",
+  "meta_description": "Taiga vs ZenHub for solo developers who want task boards integrated with code without self-hosting or server upkeep.",
+  "persona": "Solo user",
+  "constraint_lens": "You want development tasks integrated with your code without managing servers or maintaining separate hosting environments.",
+  "one_second_verdict": {
+    "winner_label": "ZenHub",
+    "summary": "Best for solo users who need dev tasks integrated directly with their code repository.",
+    "reason": "Taiga fails first because self-hosting and server upkeep are required to keep the board running."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "ZenHub wins for solo users who want dev tasks integrated directly with their code repository. It runs as a hosted service connected to GitHub without managing your own server. Taiga often involves self-hosting or maintaining a separate instance. If self-hosting and server upkeep are required to keep the board running, Taiga fails first.",
+    "decision_rule": "If self-hosting and server upkeep are required to keep the board running, Taiga fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for zero-maintenance dev boards",
+      "content": "You track development tasks alone and refuse to maintain separate hosting environments. ZenHub integrates directly into GitHub issues and pull requests inside the same interface. Taiga can require hosting a server or maintaining a dedicated instance apart from your code platform."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where ZenHub wins",
+      "bullets": [
+        {
+          "point": "Native integration with GitHub issues",
+          "why_it_matters": "You manage tasks directly alongside code without switching platforms."
+        },
+        {
+          "point": "Hosted infrastructure with automatic updates",
+          "why_it_matters": "You avoid server setup and version maintenance."
+        },
+        {
+          "point": "Board views tied to repository workflows",
+          "why_it_matters": "Issues move across pipelines without syncing separate systems."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Taiga wins",
+      "bullets": [
+        {
+          "point": "Open-source project management platform",
+          "why_it_matters": "You can customize the platform if you manage hosting yourself."
+        },
+        {
+          "point": "Built-in scrum and kanban modes",
+          "why_it_matters": "You switch between agile frameworks within the same system."
+        },
+        {
+          "point": "Custom workflow states",
+          "why_it_matters": "You define task stages in detail, though configuration may require maintenance."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You require full open-source control and deep customization beyond repository integration.",
+          "what_to_do_instead": "Use Taiga if you are willing to manage hosting for full flexibility."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You must maintain server updates or troubleshoot hosting issues to keep boards running.",
+          "what_to_do_instead": "Switch to ZenHub for hosted integration with your code."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you already maintain your own server environment and want full customization control, Taiga may feel manageable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you want tasks integrated directly with GitHub and no server upkeep, choose ZenHub.",
+        "If self-hosting sounds like ongoing work, avoid Taiga.",
+        "If full open-source control matters more than maintenance load, consider Taiga."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Taiga require self-hosting?",
+      "a": "It can be self-hosted, which means managing server setup and updates."
+    },
+    {
+      "q": "Is ZenHub integrated with GitHub?",
+      "a": "Yes. It connects directly to GitHub issues and pull requests."
+    },
+    {
+      "q": "Which is easier for a solo developer with no maintenance time?",
+      "a": "ZenHub is easier because it avoids separate server management."
+    },
+    {
+      "q": "When would Taiga be preferable?",
+      "a": "It is preferable if you want full open-source control and are comfortable hosting it."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Asana",
+      "y_name": "Microsoft To Do",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Microsoft To Do",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Focalboard",
+      "y_name": "Monday.com",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Kanboard",
+      "y_name": "Trello",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Microsoft To Do",
+      "y_name": "Notion",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Microsoft To Do",
+      "y_name": "Notion",
+      "persona": "Solo user"
+    }
+  ]
+}

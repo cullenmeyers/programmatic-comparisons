@@ -1,120 +1,144 @@
 {
-"category": "Email / Inbox tools",
-"categorySlug": "email-inbox-tools",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "Thunderbird vs Yahoo Mail for Power users",
-"slug": "thunderbird-vs-yahoo-mail-for-power-user",
-"meta_description": "Thunderbird vs Yahoo Mail for power users who want extensions and deep customization. See why Thunderbird wins when inbox flexibility matters.",
-"persona": "Power user",
-"constraint_lens": "Power users prefer tools that can be extended and customized so the inbox can adapt to complex workflows.",
-"one_second_verdict": {
-"winner_label": "Thunderbird",
-"summary": "Best for power users who want to extend and customize their inbox with plugins and advanced settings.",
-"reason": "Yahoo Mail fails first because the inbox cannot be extended with plugins or deeply customized through advanced configuration."
-},
-"verdict": {
-"winner": "x",
-"summary": "Thunderbird is the better choice for power users who want to customize how their inbox works. It supports add-ons and extensions that modify how email is organized, filtered, and displayed across multiple accounts. Yahoo Mail runs as a fixed web interface where the features and behavior cannot be extended with plugins. For users who want an inbox environment that can evolve with their workflow, the lack of extension support limits what Yahoo Mail can do.",
-"decision_rule": "If the inbox environment cannot be extended with plugins or customized with advanced configuration options, Yahoo Mail fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Thunderbird fits power users",
-"content": "The user wants to install extensions and deeply customize inbox behavior across multiple email accounts. Thunderbird supports a plugin system where add-ons can change how the inbox behaves, including filtering, tagging, automation, and layout changes. The application also exposes advanced configuration settings that allow deeper adjustments to how email is handled. This flexibility allows power users to shape the inbox around their workflow."
-},
-{
-"type": "x_wins",
-"heading": "Where Thunderbird wins",
-"bullets": [
-{
-"point": "Thunderbird supports add-ons that extend inbox functionality.",
-"why_it_matters": "Power users can install plugins to modify filtering, tagging, or workflow automation."
-},
-{
-"point": "Thunderbird allows advanced configuration through detailed application settings.",
-"why_it_matters": "Users can customize how messages are handled, displayed, and organized."
-},
-{
-"point": "Thunderbird manages multiple email accounts inside a single customizable interface.",
-"why_it_matters": "Power users can unify several inboxes and apply rules across accounts."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Yahoo Mail wins",
-"bullets": [
-{
-"point": "Yahoo Mail runs directly in a browser without installing desktop software.",
-"why_it_matters": "Users can access their inbox immediately from any device."
-},
-{
-"point": "Yahoo Mail automatically handles account setup and server configuration.",
-"why_it_matters": "Users do not need to manually connect email servers or configure accounts."
-},
-{
-"point": "Yahoo Mail provides built-in spam filtering and inbox organization features.",
-"why_it_matters": "Users receive automated sorting without configuring rules themselves."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The user wants a browser-based inbox that works instantly without installing desktop software.",
-"what_to_do_instead": "Use Yahoo Mail where email runs entirely in a web interface."
-},
-{
-"tool": "y",
-"fails_when": "The user needs to install extensions or deeply customize inbox behavior because Yahoo Mail does not support plugin based modification.",
-"what_to_do_instead": "Use Thunderbird where add-ons extend and customize the inbox environment."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the user prefers accessing email through a browser without installing desktop software, Yahoo Mail may become the better option."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick Thunderbird if you want to install plugins that extend inbox functionality.",
-"Pick Thunderbird if you need deep configuration control over how email behaves.",
-"Pick Yahoo Mail if you want a browser-based inbox with no software installation."
-]
-}
-],
-"faqs": [
-{
-"q": "Why do power users prefer Thunderbird?",
-"a": "Thunderbird supports extensions and advanced settings that allow deep customization of inbox behavior."
-},
-{
-"q": "Can Yahoo Mail install plugins?",
-"a": "No. Yahoo Mail runs as a web interface and does not support plugin extensions."
-},
-{
-"q": "Can Thunderbird manage multiple email accounts?",
-"a": "Yes. Thunderbird can combine several email accounts into a single customizable inbox interface."
-},
-{
-"q": "Who should choose Yahoo Mail instead?",
-"a": "Users who want a browser-based email service without installing desktop software may prefer Yahoo Mail."
-}
-],
-"related_pages": [
-{ "x_name": "Thunderbird", "y_name": "Proton Mail", "persona": "Power user" },
-{ "x_name": "Outlook", "y_name": "HEY", "persona": "Power user" },
-{ "x_name": "Front", "y_name": "Fastmail", "persona": "Power user" },
-{ "x_name": "Thunderbird", "y_name": "Gmail", "persona": "Power user" },
-{ "x_name": "Outlook", "y_name": "Gmail", "persona": "Power user" },
-{ "x_name": "Thunderbird", "y_name": "Fastmail", "persona": "Power user" }
-]
+  "category": "Email / Inbox tools",
+  "categorySlug": "email-inbox-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Thunderbird vs Yahoo Mail for Power users",
+  "slug": "thunderbird-vs-yahoo-mail-for-power-user",
+  "meta_description": "Thunderbird vs Yahoo Mail for power users who want extensions and deep customization. See why Thunderbird wins when inbox flexibility matters.",
+  "persona": "Power user",
+  "constraint_lens": "Power users prefer tools that can be extended and customized so the inbox can adapt to complex workflows.",
+  "one_second_verdict": {
+    "winner_label": "Thunderbird",
+    "summary": "Best for power users who want to extend and customize their inbox with plugins and advanced settings.",
+    "reason": "Yahoo Mail fails first because the inbox cannot be extended with plugins or deeply customized through advanced configuration."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Thunderbird is the better choice for power users who want to customize how their inbox works. It supports add-ons and extensions that modify how email is organized, filtered, and displayed across multiple accounts. Yahoo Mail runs as a fixed web interface where the features and behavior cannot be extended with plugins. For users who want an inbox environment that can evolve with their workflow, the lack of extension support limits what Yahoo Mail can do.",
+    "decision_rule": "If the inbox environment cannot be extended with plugins or customized with advanced configuration options, Yahoo Mail fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Thunderbird fits power users",
+      "content": "The user wants to install extensions and deeply customize inbox behavior across multiple email accounts. Thunderbird supports a plugin system where add-ons can change how the inbox behaves, including filtering, tagging, automation, and layout changes. The application also exposes advanced configuration settings that allow deeper adjustments to how email is handled. This flexibility allows power users to shape the inbox around their workflow."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Thunderbird wins",
+      "bullets": [
+        {
+          "point": "Thunderbird supports add-ons that extend inbox functionality.",
+          "why_it_matters": "Power users can install plugins to modify filtering, tagging, or workflow automation."
+        },
+        {
+          "point": "Thunderbird allows advanced configuration through detailed application settings.",
+          "why_it_matters": "Users can customize how messages are handled, displayed, and organized."
+        },
+        {
+          "point": "Thunderbird manages multiple email accounts inside a single customizable interface.",
+          "why_it_matters": "Power users can unify several inboxes and apply rules across accounts."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Yahoo Mail wins",
+      "bullets": [
+        {
+          "point": "Yahoo Mail runs directly in a browser without installing desktop software.",
+          "why_it_matters": "Users can access their inbox immediately from any device."
+        },
+        {
+          "point": "Yahoo Mail automatically handles account setup and server configuration.",
+          "why_it_matters": "Users do not need to manually connect email servers or configure accounts."
+        },
+        {
+          "point": "Yahoo Mail provides built-in spam filtering and inbox organization features.",
+          "why_it_matters": "Users receive automated sorting without configuring rules themselves."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The user wants a browser-based inbox that works instantly without installing desktop software.",
+          "what_to_do_instead": "Use Yahoo Mail where email runs entirely in a web interface."
+        },
+        {
+          "tool": "y",
+          "fails_when": "The user needs to install extensions or deeply customize inbox behavior because Yahoo Mail does not support plugin based modification.",
+          "what_to_do_instead": "Use Thunderbird where add-ons extend and customize the inbox environment."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user prefers accessing email through a browser without installing desktop software, Yahoo Mail may become the better option."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Thunderbird if you want to install plugins that extend inbox functionality.",
+        "Pick Thunderbird if you need deep configuration control over how email behaves.",
+        "Pick Yahoo Mail if you want a browser-based inbox with no software installation."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why do power users prefer Thunderbird?",
+      "a": "Thunderbird supports extensions and advanced settings that allow deep customization of inbox behavior."
+    },
+    {
+      "q": "Can Yahoo Mail install plugins?",
+      "a": "No. Yahoo Mail runs as a web interface and does not support plugin extensions."
+    },
+    {
+      "q": "Can Thunderbird manage multiple email accounts?",
+      "a": "Yes. Thunderbird can combine several email accounts into a single customizable inbox interface."
+    },
+    {
+      "q": "Who should choose Yahoo Mail instead?",
+      "a": "Users who want a browser-based email service without installing desktop software may prefer Yahoo Mail."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Proton Mail",
+      "y_name": "Thunderbird",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "HEY",
+      "y_name": "Outlook",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Fastmail",
+      "y_name": "Front",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Thunderbird",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Outlook",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Fastmail",
+      "y_name": "Thunderbird",
+      "persona": "Power user"
+    }
+  ]
 }

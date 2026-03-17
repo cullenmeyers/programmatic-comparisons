@@ -1,0 +1,147 @@
+{
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "switching-cost",
+  "constraintUiName": "Easy to quit later",
+  "title": "Google Keep vs RemNote for Students",
+  "slug": "google-keep-vs-remnote-for-student",
+  "meta_description": "Compare Google Keep vs RemNote for students studying from notes. See why RemNote wins when notes must generate spaced repetition flashcards.",
+  "persona": "Student",
+  "constraint_lens": "Students prefer tools that help them study quickly and can be used temporarily without building a long term knowledge system.",
+  "one_second_verdict": {
+    "winner_label": "RemNote",
+    "summary": "Best for students who need students prefer tools that help them study quickly and can be used temporarily without building a long term knowledge system.",
+    "reason": "Google Keep fails first because notes cannot generate spaced-repetition flashcards directly from written content."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "RemNote wins because it converts written notes directly into spaced repetition flashcards. Students can write concepts and definitions that automatically become review cards inside the study system. Google Keep allows quick notes and lists but does not transform notes into flashcards for structured study. For students studying technical material, that missing review mechanism becomes the limit.",
+    "decision_rule": "If notes cannot generate spaced-repetition flashcards directly from written content, Google Keep fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why RemNote fits students studying technical subjects",
+      "content": "This student studies subjects where memorizing concepts and definitions is important. RemNote allows notes to be written in a structured format where questions and answers automatically become flashcards. These cards are scheduled for review using spaced repetition. Google Keep focuses on quick notes and reminders, which means students must manually copy information into another flashcard system to study."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where RemNote wins",
+      "bullets": [
+        {
+          "point": "Notes convert directly into flashcards",
+          "why_it_matters": "Students can write a concept followed by its definition and the system automatically generates a study card from the text."
+        },
+        {
+          "point": "Built in spaced repetition review system",
+          "why_it_matters": "Flashcards appear in review sessions based on a scheduling algorithm that increases the interval after successful recall."
+        },
+        {
+          "point": "Linked note structure for concept relationships",
+          "why_it_matters": "Topics and subtopics can be connected within notes, helping students review related ideas during study sessions."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Google Keep wins",
+      "bullets": [
+        {
+          "point": "Quick note capture interface",
+          "why_it_matters": "Users can create notes instantly without organizing content into structured formats."
+        },
+        {
+          "point": "Simple list and reminder notes",
+          "why_it_matters": "Students can quickly record tasks, reminders, or short notes without building a study system."
+        },
+        {
+          "point": "Integration with Google account services",
+          "why_it_matters": "Notes automatically sync across devices connected to the same account."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You only need quick notes or reminders and do not plan to review the content through flashcards.",
+          "what_to_do_instead": "Use Google Keep for simple note capture."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You want study notes to automatically become flashcards for repeated review.",
+          "what_to_do_instead": "Use RemNote so notes can generate spaced repetition flashcards."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the notes are only short reminders or quick ideas rather than study material that must be memorized, Google Keep may be the better choice because it focuses on simple note capture."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose RemNote if notes should automatically become flashcards.",
+        "Choose RemNote if you plan to review concepts through spaced repetition.",
+        "Choose Google Keep if you only need quick notes or reminders."
+      ]
+    },
+    {
+      "type": "faqs"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What makes RemNote useful for studying?",
+      "a": "RemNote converts written notes into flashcards and schedules them for review using spaced repetition."
+    },
+    {
+      "q": "Can Google Keep generate flashcards from notes?",
+      "a": "No. Google Keep stores notes and lists but does not automatically convert content into study flashcards."
+    },
+    {
+      "q": "Why do students use spaced repetition tools?",
+      "a": "Spaced repetition schedules reviews over increasing intervals so information is reinforced over time."
+    },
+    {
+      "q": "When is Google Keep the better option?",
+      "a": "Google Keep works well for quick reminders, lists, and short notes that do not require structured study review."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Notion",
+      "y_name": "Simplenote",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Apple Notes",
+      "y_name": "Notion",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Google Keep",
+      "y_name": "Notion",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Evernote",
+      "y_name": "Notion",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Bear",
+      "y_name": "Notion",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Apple Notes",
+      "y_name": "Evernote",
+      "persona": "Student"
+    }
+  ]
+}

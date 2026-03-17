@@ -1,0 +1,144 @@
+{
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Evernote vs Obsidian for Power users",
+  "slug": "evernote-vs-obsidian-for-power-user",
+  "meta_description": "Evernote vs Obsidian for power users building a long-term second brain with heavy linking, plugins, and full graph-level control.",
+  "persona": "Power user",
+  "constraint_lens": "You need a note system that can expand in complexity and customization as your knowledge system grows.",
+  "one_second_verdict": {
+    "winner_label": "Obsidian",
+    "summary": "Best for power users building a scalable second brain.",
+    "reason": "Evernote fails first because plugin extensibility and graph-level control are constrained."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Obsidian wins for power users building a scalable second brain. It stores notes as markdown files with full bidirectional linking, graph view, and deep plugin support. Evernote focuses on notebooks and tags with limited extensibility and no graph-level control. If plugin extensibility and graph-level control are constrained, Evernote fails first.",
+    "decision_rule": "If plugin extensibility and graph-level control are constrained, Evernote fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool has a higher ceiling?",
+      "content": "You build a long-term knowledge system with heavy linking and customization. As a power user, you care about how far the tool can stretch over years. The right tool must allow structural depth, automation, and control over how notes connect. If the system limits linking or customization, you will eventually outgrow it."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Obsidian works better for power users",
+      "bullets": [
+        {
+          "point": "Bidirectional links with automatic backlink panels and graph view.",
+          "why_it_matters": "You can see how ideas connect across your entire vault. This supports building a true networked knowledge system instead of isolated notes."
+        },
+        {
+          "point": "Plugin ecosystem that adds custom workflows and automation.",
+          "why_it_matters": "You can install plugins for task queries, spaced repetition, templating, or visual dashboards. This lets your system evolve without switching tools."
+        },
+        {
+          "point": "Local markdown file storage with full folder control.",
+          "why_it_matters": "Your notes exist as portable text files you can reorganize or script externally. This removes structural limits as your archive grows."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Evernote works better",
+      "bullets": [
+        {
+          "point": "Built-in web clipper with direct saving to notebooks.",
+          "why_it_matters": "You can capture articles quickly into a structured notebook. This makes intake simple but doesn’t expand into a deep linking system."
+        },
+        {
+          "point": "Notebook and tag-based organization model.",
+          "why_it_matters": "You can group notes reliably with tags and stacks. However, it doesn’t support graph-level visibility between notes."
+        },
+        {
+          "point": "Automatic cloud sync without managing local files.",
+          "why_it_matters": "You don’t need to think about storage or backups. For a power user seeking structural control, this simplicity can become limiting."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You want a fully managed cloud system without handling plugins, themes, or local file organization.",
+          "what_to_do_instead": "Use Evernote if you prefer a ready-made system with minimal customization."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You need graph-level visibility, custom plugins, or advanced linking beyond notebooks and tags.",
+          "what_to_do_instead": "Use Obsidian if you want to build a deeply connected and extensible knowledge system."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you are a power user focused mainly on capturing and retrieving clipped content rather than building a linked knowledge graph, Evernote’s streamlined capture flow may be sufficient."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want full control over linking and plugins, choose Obsidian.",
+        "If you prefer a managed cloud notebook system, choose Evernote.",
+        "If you expect your system to grow in complexity, avoid tools with fixed structures."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Obsidian better for building a second brain?",
+      "a": "Yes, especially if you value bidirectional links, graph view, and plugin-based extensions for custom workflows."
+    },
+    {
+      "q": "Does Evernote support deep linking between notes?",
+      "a": "It supports internal links, but it does not provide full graph visualization or plugin extensibility."
+    },
+    {
+      "q": "Which tool scales better over many years?",
+      "a": "Obsidian scales better for users who want control over file structure, automation, and linking systems."
+    },
+    {
+      "q": "Is Evernote too limited for power users?",
+      "a": "It can feel limiting if you want deep customization or network-style knowledge mapping."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Apple Notes",
+      "y_name": "Obsidian",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Craft",
+      "y_name": "Obsidian",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Notebooks (Alfons Schmid)",
+      "y_name": "Obsidian",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Apple Notes",
+      "y_name": "DEVONthink To Go",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "DEVONthink",
+      "y_name": "Joplin",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "DEVONthink",
+      "y_name": "LiquidText",
+      "persona": "Power user"
+    }
+  ]
+}

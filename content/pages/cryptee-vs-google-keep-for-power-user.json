@@ -1,120 +1,144 @@
 {
-"category": "Note-taking apps",
-"categorySlug": "note-taking-apps",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "Cryptee vs Google Keep for Power users",
-"slug": "cryptee-vs-google-keep-for-power-user",
-"meta_description": "Compare Cryptee vs Google Keep for power users protecting personal notes. See why Cryptee wins when notes must be encrypted before storage.",
-"persona": "Power user",
-"constraint_lens": "Power users need tools that guarantee strong privacy and data control when storing sensitive information.",
-"one_second_verdict": {
-  "winner_label": "Cryptee",
-  "summary": "Best for power users who need guarantee strong privacy and data control when storing sensitive information.",
-  "reason": "Google Keep fails first because notes cannot be encrypted end-to-end before being stored online."
-},
-"verdict": {
-"winner": "x",
-"summary": "Cryptee wins because it encrypts notes end to end before they are stored online. The content is encrypted on the device so only the user with the key can read it. Google Keep stores notes within the Google account system without user controlled end to end encryption. For people storing private information, that lack of encrypted storage becomes the ceiling.",
-"decision_rule": "If notes cannot be encrypted end-to-end before being stored online, Google Keep fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Cryptee fits power users protecting sensitive notes",
-"content": "This power user stores personal or private information and expects strong security protections. Cryptee encrypts note content directly on the device before syncing it to online storage. Only the user who holds the encryption key can read the notes. Google Keep stores notes inside the Google service environment where access depends on the account rather than user controlled encryption keys."
-},
-{
-"type": "x_wins",
-"heading": "Where Cryptee wins",
-"bullets": [
-{
-"point": "End to end encryption for note content",
-"why_it_matters": "Notes are encrypted on the device before they are uploaded, meaning the service storing the files cannot read the contents."
-},
-{
-"point": "User controlled encryption keys",
-"why_it_matters": "Only the user who created the notes has the key required to decrypt them, protecting private information even if the storage service is accessed."
-},
-{
-"point": "Encrypted document storage environment",
-"why_it_matters": "Notes and documents remain encrypted while stored online, protecting sensitive personal data from unauthorized viewing."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Google Keep wins",
-"bullets": [
-{
-"point": "Instant note capture from the main interface",
-"why_it_matters": "Users can quickly create notes, lists, or reminders without configuring encryption settings."
-},
-{
-"point": "Simple card based note layout",
-"why_it_matters": "Notes appear as visual cards that can be labeled and organized quickly."
-},
-{
-"point": "Automatic syncing through a Google account",
-"why_it_matters": "Notes automatically appear across devices connected to the same account without managing encryption keys."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You only need a quick note app and do not want to manage encryption keys or privacy settings.",
-"what_to_do_instead": "Use Google Keep for lightweight note capture."
-},
-{
-"tool": "y",
-"fails_when": "You want note content encrypted before it is stored online so only you can read it.",
-"what_to_do_instead": "Use Cryptee so notes remain encrypted end to end."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the notes are simple reminders or everyday lists that do not contain private information, Google Keep may be the better option because it focuses on quick capture without encryption setup."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Choose Cryptee if notes must remain encrypted end to end.",
-"Choose Cryptee if you store private or sensitive information.",
-"Choose Google Keep if you only need quick notes and reminders."
-]
-}
-],
-"faqs": [
-{
-"q": "What does end to end encryption mean for notes?",
-"a": "End to end encryption means the note is encrypted before leaving the device so only the user with the key can read it."
-},
-{
-"q": "Does Google Keep use end to end encryption for notes?",
-"a": "Google Keep protects accounts with standard security systems but does not encrypt note content with a user controlled key."
-},
-{
-"q": "Why might privacy focused users choose Cryptee?",
-"a": "Because the service encrypts note content before storage so only the user can access the information."
-},
-{
-"q": "When is Google Keep the better option?",
-"a": "Google Keep works best for quick reminders or notes that do not require advanced privacy protection."
-}
-],
-"related_pages": [
-{ "x_name": "Simplenote", "y_name": "Notion", "persona": "Power user" },
-{ "x_name": "Apple Notes", "y_name": "Notion", "persona": "Power user" },
-{ "x_name": "Evernote", "y_name": "Notion", "persona": "Power user" },
-{ "x_name": "Obsidian", "y_name": "Notion", "persona": "Power user" },
-{ "x_name": "Bear", "y_name": "Notion", "persona": "Power user" },
-{ "x_name": "Apple Notes", "y_name": "Evernote", "persona": "Power user" }
-]
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Cryptee vs Google Keep for Power users",
+  "slug": "cryptee-vs-google-keep-for-power-user",
+  "meta_description": "Compare Cryptee vs Google Keep for power users protecting personal notes. See why Cryptee wins when notes must be encrypted before storage.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need tools that guarantee strong privacy and data control when storing sensitive information.",
+  "one_second_verdict": {
+    "winner_label": "Cryptee",
+    "summary": "Best for power users who need guarantee strong privacy and data control when storing sensitive information.",
+    "reason": "Google Keep fails first because notes cannot be encrypted end-to-end before being stored online."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Cryptee wins because it encrypts notes end to end before they are stored online. The content is encrypted on the device so only the user with the key can read it. Google Keep stores notes within the Google account system without user controlled end to end encryption. For people storing private information, that lack of encrypted storage becomes the ceiling.",
+    "decision_rule": "If notes cannot be encrypted end-to-end before being stored online, Google Keep fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Cryptee fits power users protecting sensitive notes",
+      "content": "This power user stores personal or private information and expects strong security protections. Cryptee encrypts note content directly on the device before syncing it to online storage. Only the user who holds the encryption key can read the notes. Google Keep stores notes inside the Google service environment where access depends on the account rather than user controlled encryption keys."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Cryptee wins",
+      "bullets": [
+        {
+          "point": "End to end encryption for note content",
+          "why_it_matters": "Notes are encrypted on the device before they are uploaded, meaning the service storing the files cannot read the contents."
+        },
+        {
+          "point": "User controlled encryption keys",
+          "why_it_matters": "Only the user who created the notes has the key required to decrypt them, protecting private information even if the storage service is accessed."
+        },
+        {
+          "point": "Encrypted document storage environment",
+          "why_it_matters": "Notes and documents remain encrypted while stored online, protecting sensitive personal data from unauthorized viewing."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Google Keep wins",
+      "bullets": [
+        {
+          "point": "Instant note capture from the main interface",
+          "why_it_matters": "Users can quickly create notes, lists, or reminders without configuring encryption settings."
+        },
+        {
+          "point": "Simple card based note layout",
+          "why_it_matters": "Notes appear as visual cards that can be labeled and organized quickly."
+        },
+        {
+          "point": "Automatic syncing through a Google account",
+          "why_it_matters": "Notes automatically appear across devices connected to the same account without managing encryption keys."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only need a quick note app and do not want to manage encryption keys or privacy settings.",
+          "what_to_do_instead": "Use Google Keep for lightweight note capture."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want note content encrypted before it is stored online so only you can read it.",
+          "what_to_do_instead": "Use Cryptee so notes remain encrypted end to end."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the notes are simple reminders or everyday lists that do not contain private information, Google Keep may be the better option because it focuses on quick capture without encryption setup."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose Cryptee if notes must remain encrypted end to end.",
+        "Choose Cryptee if you store private or sensitive information.",
+        "Choose Google Keep if you only need quick notes and reminders."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does end to end encryption mean for notes?",
+      "a": "End to end encryption means the note is encrypted before leaving the device so only the user with the key can read it."
+    },
+    {
+      "q": "Does Google Keep use end to end encryption for notes?",
+      "a": "Google Keep protects accounts with standard security systems but does not encrypt note content with a user controlled key."
+    },
+    {
+      "q": "Why might privacy focused users choose Cryptee?",
+      "a": "Because the service encrypts note content before storage so only the user can access the information."
+    },
+    {
+      "q": "When is Google Keep the better option?",
+      "a": "Google Keep works best for quick reminders or notes that do not require advanced privacy protection."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Notion",
+      "y_name": "Simplenote",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Apple Notes",
+      "y_name": "Notion",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Evernote",
+      "y_name": "Notion",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Notion",
+      "y_name": "Obsidian",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Bear",
+      "y_name": "Notion",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Apple Notes",
+      "y_name": "Evernote",
+      "persona": "Power user"
+    }
+  ]
 }

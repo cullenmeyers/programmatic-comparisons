@@ -1,0 +1,144 @@
+{
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Any.do vs Apple Reminders for Minimalists",
+  "slug": "any-do-vs-apple-reminders-for-minimalist",
+  "meta_description": "Any.do vs Apple Reminders for minimalists who want a built-in daily checklist without habit tracking, productivity layers, or extra screens.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a built-in checklist that focuses only on tasks without habits, dashboards, or extra productivity layers.",
+  "one_second_verdict": {
+    "winner_label": "Apple Reminders",
+    "summary": "Best for minimalists who need a clean, built-in checklist.",
+    "reason": "Any.do fails first because habits and reminder layers introduce additional interaction steps."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Apple Reminders wins for minimalists who want a clean, built-in checklist. It opens to simple lists with checkboxes and keeps advanced options out of the way. Any.do blends tasks with habits, calendar views, and layered features that add more screens and taps. If habits and reminder layers introduce additional interaction steps, Any.do fails first.",
+    "decision_rule": "If habits and reminder layers introduce additional interaction steps, Any.do fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool keeps daily tasks clean?",
+      "content": "You want a built-in checklist without extra productivity layers. As a minimalist, dashboards and habit sections feel unnecessary. The right tool should look like a simple list of things to do. Anything that adds tabs and feature layers shifts attention away from the task itself."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Apple Reminders works better for minimalists",
+      "bullets": [
+        {
+          "point": "Simple list view with checkboxes and minimal controls.",
+          "why_it_matters": "You open a list and immediately see tasks without dashboards or streak counters."
+        },
+        {
+          "point": "Quick add field labeled New Reminder.",
+          "why_it_matters": "You can type and save a task without navigating through feature tabs."
+        },
+        {
+          "point": "Optional due dates and subtasks that stay secondary.",
+          "why_it_matters": "You can ignore extra fields and still use the app fully as a plain checklist."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Any.do works better",
+      "bullets": [
+        {
+          "point": "Habit tracking section integrated with task lists.",
+          "why_it_matters": "You can track recurring routines alongside tasks. This adds another layer beyond a basic checklist."
+        },
+        {
+          "point": "Calendar view showing tasks across dates.",
+          "why_it_matters": "You can visually plan days and weeks. Switching views introduces extra navigation steps."
+        },
+        {
+          "point": "Premium reminder options and feature prompts.",
+          "why_it_matters": "Advanced reminder settings and upgrade prompts appear in the interface, adding complexity."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You want built-in habit streak tracking and detailed calendar planning.",
+          "what_to_do_instead": "Use Any.do if you prefer combining habits and scheduling tools."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Habit sections and layered reminders distract you from a simple daily checklist.",
+          "what_to_do_instead": "Use Apple Reminders if you want a focused, built-in task list."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you decide you want visual calendar planning and recurring habit tracking in the same app, Any.do may feel worth the added layers."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a clean built-in checklist, choose Apple Reminders.",
+        "If you want habits and calendar views combined, choose Any.do.",
+        "If extra feature tabs feel distracting, avoid layered task apps."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Apple Reminders enough for daily responsibilities?",
+      "a": "Yes. It provides simple lists and reminders without extra productivity layers."
+    },
+    {
+      "q": "Does Any.do include habit tracking?",
+      "a": "Yes. It includes habit features and calendar planning alongside tasks."
+    },
+    {
+      "q": "Which tool is more minimal?",
+      "a": "Apple Reminders is more minimal because it focuses on checklists without dashboards."
+    },
+    {
+      "q": "Can Any.do be used simply?",
+      "a": "It can, but habit sections and feature layers remain part of the interface."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "ClickUp",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "ClickUp",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "FacileThings",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "Nirvana",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "Productive",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Amazing Marvin",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    }
+  ]
+}

@@ -1,120 +1,144 @@
 {
-"category": "Email / Inbox tools",
-"categorySlug": "email-inbox-tools",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Mailfence vs Yahoo Mail for Minimalists",
-"slug": "mailfence-vs-yahoo-mail-for-minimalist",
-"meta_description": "Mailfence vs Yahoo Mail for minimalists who want an inbox without ads. See why Mailfence wins when you want a clean email interface.",
-"persona": "Minimalist",
-"constraint_lens": "Minimalists prefer tools that remove visual clutter and avoid panels, ads, or features that distract from reading messages.",
-"one_second_verdict": {
-"winner_label": "Mailfence",
-"summary": "Best for minimalists who want an inbox focused on messages without advertising panels.",
-"reason": "Yahoo Mail fails first because it displays advertising banners and promotional panels alongside messages in the inbox."
-},
-"verdict": {
-"winner": "x",
-"summary": "Mailfence is the better choice for minimalists who want a clean inbox interface. The layout focuses on reading and managing messages without advertising banners competing for attention. Yahoo Mail includes advertising placements and promotional panels inside the inbox screen. Those elements introduce visual clutter that minimalists try to avoid when reading email.",
-"decision_rule": "If the inbox interface displays advertising panels alongside personal messages, Yahoo Mail fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Mailfence fits minimalists",
-"content": "The user wants email without advertising panels or promotional inbox placements. Mailfence displays messages in a focused inbox layout where the message list and reading area remain the primary elements. There are no advertising banners placed beside or between messages. This design keeps the experience centered on reading and replying to email."
-},
-{
-"type": "x_wins",
-"heading": "Where Mailfence wins",
-"bullets": [
-{
-"point": "Mailfence does not display advertising banners inside the inbox interface.",
-"why_it_matters": "Minimalists can focus on messages without promotional panels appearing beside or between emails."
-},
-{
-"point": "Mailfence uses a subscription based model rather than advertising funded email.",
-"why_it_matters": "Because the service is not supported by ads, the inbox layout avoids marketing placements that distract from reading messages."
-},
-{
-"point": "Mailfence presents messages in a simple inbox and reading pane layout.",
-"why_it_matters": "The interface prioritizes message content instead of surrounding the inbox with promotional widgets."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Yahoo Mail wins",
-"bullets": [
-{
-"point": "Yahoo Mail provides a free email account with large storage capacity.",
-"why_it_matters": "Users can keep many messages and attachments without paying for additional storage."
-},
-{
-"point": "Yahoo Mail includes automated sorting for newsletters and promotional emails.",
-"why_it_matters": "Subscription emails can be grouped together so they appear less frequently in the main inbox."
-},
-{
-"point": "Yahoo Mail runs entirely through a web browser without installing software.",
-"why_it_matters": "Users can access their inbox quickly from different devices."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The user wants a completely free email service and does not want to pay for inbox access.",
-"what_to_do_instead": "Use Yahoo Mail where a basic inbox can be used without paying."
-},
-{
-"tool": "y",
-"fails_when": "The user wants a distraction free inbox because Yahoo Mail displays advertising banners and promotional placements inside the interface.",
-"what_to_do_instead": "Use Mailfence where the inbox layout avoids advertising panels."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the user prioritizes having a free email account and does not mind advertising panels appearing in the inbox, Yahoo Mail may be acceptable."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick Mailfence if you want an inbox without advertising panels.",
-"Pick Mailfence if you prefer a focused interface built around reading messages.",
-"Pick Yahoo Mail if you want a free email service and do not mind ads."
-]
-}
-],
-"faqs": [
-{
-"q": "Why do minimalists prefer Mailfence?",
-"a": "Mailfence avoids advertising panels in the inbox, keeping the interface focused on reading and replying to messages."
-},
-{
-"q": "Does Yahoo Mail show ads in the inbox?",
-"a": "Yes. Yahoo Mail includes advertising banners and promotional placements inside the inbox interface."
-},
-{
-"q": "Is Mailfence free to use?",
-"a": "Mailfence offers limited free access, though additional storage and features require upgrading."
-},
-{
-"q": "Who might still choose Yahoo Mail?",
-"a": "Users who want a free email service with large storage and do not mind advertising may prefer Yahoo Mail."
-}
-],
-"related_pages": [
-{ "x_name": "Proton Mail", "y_name": "Yahoo Mail", "persona": "Minimalist" },
-{ "x_name": "Fastmail", "y_name": "Yahoo Mail", "persona": "Minimalist" },
-{ "x_name": "HEY", "y_name": "Yahoo Mail", "persona": "Minimalist" },
-{ "x_name": "HEY", "y_name": "Gmail", "persona": "Minimalist" },
-{ "x_name": "Fastmail", "y_name": "Gmail", "persona": "Minimalist" },
-{ "x_name": "Proton Mail", "y_name": "Gmail", "persona": "Minimalist" }
-]
+  "category": "Email / Inbox tools",
+  "categorySlug": "email-inbox-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Mailfence vs Yahoo Mail for Minimalists",
+  "slug": "mailfence-vs-yahoo-mail-for-minimalist",
+  "meta_description": "Mailfence vs Yahoo Mail for minimalists who want an inbox without ads. See why Mailfence wins when you want a clean email interface.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists prefer tools that remove visual clutter and avoid panels, ads, or features that distract from reading messages.",
+  "one_second_verdict": {
+    "winner_label": "Mailfence",
+    "summary": "Best for minimalists who want an inbox focused on messages without advertising panels.",
+    "reason": "Yahoo Mail fails first because it displays advertising banners and promotional panels alongside messages in the inbox."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Mailfence is the better choice for minimalists who want a clean inbox interface. The layout focuses on reading and managing messages without advertising banners competing for attention. Yahoo Mail includes advertising placements and promotional panels inside the inbox screen. Those elements introduce visual clutter that minimalists try to avoid when reading email.",
+    "decision_rule": "If the inbox interface displays advertising panels alongside personal messages, Yahoo Mail fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Mailfence fits minimalists",
+      "content": "The user wants email without advertising panels or promotional inbox placements. Mailfence displays messages in a focused inbox layout where the message list and reading area remain the primary elements. There are no advertising banners placed beside or between messages. This design keeps the experience centered on reading and replying to email."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Mailfence wins",
+      "bullets": [
+        {
+          "point": "Mailfence does not display advertising banners inside the inbox interface.",
+          "why_it_matters": "Minimalists can focus on messages without promotional panels appearing beside or between emails."
+        },
+        {
+          "point": "Mailfence uses a subscription based model rather than advertising funded email.",
+          "why_it_matters": "Because the service is not supported by ads, the inbox layout avoids marketing placements that distract from reading messages."
+        },
+        {
+          "point": "Mailfence presents messages in a simple inbox and reading pane layout.",
+          "why_it_matters": "The interface prioritizes message content instead of surrounding the inbox with promotional widgets."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Yahoo Mail wins",
+      "bullets": [
+        {
+          "point": "Yahoo Mail provides a free email account with large storage capacity.",
+          "why_it_matters": "Users can keep many messages and attachments without paying for additional storage."
+        },
+        {
+          "point": "Yahoo Mail includes automated sorting for newsletters and promotional emails.",
+          "why_it_matters": "Subscription emails can be grouped together so they appear less frequently in the main inbox."
+        },
+        {
+          "point": "Yahoo Mail runs entirely through a web browser without installing software.",
+          "why_it_matters": "Users can access their inbox quickly from different devices."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The user wants a completely free email service and does not want to pay for inbox access.",
+          "what_to_do_instead": "Use Yahoo Mail where a basic inbox can be used without paying."
+        },
+        {
+          "tool": "y",
+          "fails_when": "The user wants a distraction free inbox because Yahoo Mail displays advertising banners and promotional placements inside the interface.",
+          "what_to_do_instead": "Use Mailfence where the inbox layout avoids advertising panels."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user prioritizes having a free email account and does not mind advertising panels appearing in the inbox, Yahoo Mail may be acceptable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Mailfence if you want an inbox without advertising panels.",
+        "Pick Mailfence if you prefer a focused interface built around reading messages.",
+        "Pick Yahoo Mail if you want a free email service and do not mind ads."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why do minimalists prefer Mailfence?",
+      "a": "Mailfence avoids advertising panels in the inbox, keeping the interface focused on reading and replying to messages."
+    },
+    {
+      "q": "Does Yahoo Mail show ads in the inbox?",
+      "a": "Yes. Yahoo Mail includes advertising banners and promotional placements inside the inbox interface."
+    },
+    {
+      "q": "Is Mailfence free to use?",
+      "a": "Mailfence offers limited free access, though additional storage and features require upgrading."
+    },
+    {
+      "q": "Who might still choose Yahoo Mail?",
+      "a": "Users who want a free email service with large storage and do not mind advertising may prefer Yahoo Mail."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Proton Mail",
+      "y_name": "Yahoo Mail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Fastmail",
+      "y_name": "Yahoo Mail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "HEY",
+      "y_name": "Yahoo Mail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "HEY",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Fastmail",
+      "y_name": "Gmail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Proton Mail",
+      "persona": "Minimalist"
+    }
+  ]
 }

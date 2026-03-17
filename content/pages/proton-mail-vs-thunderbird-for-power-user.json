@@ -1,0 +1,144 @@
+{
+  "category": "Email / Inbox tools",
+  "categorySlug": "email-inbox-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Proton Mail vs Thunderbird for Power users",
+  "slug": "proton-mail-vs-thunderbird-for-power-user",
+  "meta_description": "Proton Mail vs Thunderbird for power users managing multiple accounts. See why Thunderbird wins when you need extensions and advanced local email setup.",
+  "persona": "Power user",
+  "constraint_lens": "Power users choose tools that allow deeper customization, extensions, and control over how workflows behave.",
+  "one_second_verdict": {
+    "winner_label": "Thunderbird",
+    "summary": "Best for power users who want to extend and customize how their email client works.",
+    "reason": "Proton Mail fails first because its web interface cannot be extended with add-ons or deeply customized with local workflow settings."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Thunderbird is the better choice for power users who want to customize their email workflows. It runs as a local email client that supports extensions, advanced settings, and multi account management inside one interface. Proton Mail focuses on a controlled web based environment with limited customization options. When advanced workflow control or extension support becomes important, Proton Mail reaches its limits first.",
+    "decision_rule": "If the email client cannot be extended with add-ons or configured with advanced local settings, Proton Mail fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Thunderbird fits power users",
+      "content": "The user wants to manage several email accounts locally and customize workflows with extensions and advanced settings. Thunderbird stores messages locally and allows deep configuration of how the email client behaves. Users can install add-ons that change interface behavior, add automation tools, or connect external services. This gives power users full control over how their inbox works across multiple accounts."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Thunderbird wins",
+      "bullets": [
+        {
+          "point": "Thunderbird supports installable extensions that modify the email interface and workflow behavior.",
+          "why_it_matters": "Power users can add features like advanced search tools, automation helpers, or custom interface layouts that reshape how email is processed."
+        },
+        {
+          "point": "Thunderbird connects to multiple email providers through IMAP or POP accounts inside one local client.",
+          "why_it_matters": "This mechanism lets users manage several inboxes in a single workspace instead of switching between separate web interfaces."
+        },
+        {
+          "point": "Thunderbird includes advanced local configuration options such as message filtering, folder automation, and account level settings.",
+          "why_it_matters": "These controls allow users to build detailed workflows that route messages and organize communication exactly the way they want."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Proton Mail wins",
+      "bullets": [
+        {
+          "point": "Proton Mail encrypts messages automatically using built in end to end encryption.",
+          "why_it_matters": "Users who prioritize message privacy benefit from automatic encryption without needing to configure security tools."
+        },
+        {
+          "point": "Proton Mail runs entirely in a web interface that works consistently across devices.",
+          "why_it_matters": "Users can access their inbox from any browser without installing a desktop client."
+        },
+        {
+          "point": "Proton Mail manages security features like encryption keys and secure message delivery automatically.",
+          "why_it_matters": "This removes the need for users to configure encryption tools or security settings themselves."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "The user wants automatic end to end encryption built directly into the email service without installing security extensions or configuring encryption tools.",
+          "what_to_do_instead": "Use Proton Mail where encrypted messaging is built into the platform."
+        },
+        {
+          "tool": "x",
+          "fails_when": "The user wants to install add-ons or deeply customize how the email interface and workflow behave because Proton Mail does not allow extension based customization.",
+          "what_to_do_instead": "Use Thunderbird where extensions and local settings allow full workflow customization."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user values automatic encrypted email above workflow customization, Proton Mail may be the better choice despite having fewer extension and configuration options."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Thunderbird if you want to install extensions and customize how your inbox works.",
+        "Pick Thunderbird if you manage multiple email accounts in one local client.",
+        "Pick Proton Mail if built in encrypted email is more important than workflow customization."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why do power users prefer Thunderbird?",
+      "a": "Thunderbird supports extensions, advanced settings, and multi account management which allows users to customize their email workflows."
+    },
+    {
+      "q": "Can Proton Mail use extensions?",
+      "a": "No. Proton Mail runs as a controlled web interface and does not support installable add-ons that change how the interface works."
+    },
+    {
+      "q": "Can Thunderbird connect to different email providers?",
+      "a": "Yes. Thunderbird can connect to many providers using IMAP or POP, allowing several email accounts to be managed inside one client."
+    },
+    {
+      "q": "Is Proton Mail better for privacy?",
+      "a": "Yes. Proton Mail includes built in end to end encryption that protects messages without requiring additional setup."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Outlook",
+      "y_name": "Thunderbird",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Apple Mail",
+      "y_name": "Thunderbird",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Superhuman",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Front",
+      "y_name": "Outlook",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "HEY",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Shortwave",
+      "persona": "Power user"
+    }
+  ]
+}

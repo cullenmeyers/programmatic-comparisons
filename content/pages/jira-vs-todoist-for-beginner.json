@@ -1,0 +1,139 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Jira vs Todoist for Beginners",
+  "slug": "jira-vs-todoist-for-beginner",
+  "meta_description": "Compare Jira vs Todoist for beginners starting their first project. See which tool lets you add tasks instantly without boards, issue types, or sprint setup.",
+  "persona": "Beginner",
+  "constraint_lens": "Beginners need a project tool where they can start adding tasks immediately without learning complex setup steps first.",
+  "one_second_verdict": {
+    "winner_label": "Todoist",
+    "summary": "Best for beginners who want to start tracking project tasks immediately without setting up a project system first.",
+    "reason": "Jira fails first because adding tasks usually requires creating a project, choosing issue types, and setting up boards or workflows before work can begin."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist is the better choice for beginners managing their first small project. Tasks can be added instantly from the main input field without configuring a project structure or learning workflow terminology. Jira is built around issue types, boards, and sprint workflows that typically require initial setup before tasks appear in the system. If adding tasks requires configuring issue types, boards, or sprint workflows first, Jira fails first.",
+    "decision_rule": "If adding tasks requires configuring issue types, boards, or sprint workflows first, Jira fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this comparison matters for Beginners",
+      "content": "This comparison is for someone managing their first small project and trying to track tasks quickly. They want to open a tool and start writing tasks immediately instead of learning project management terminology. When the tool asks for issue types, sprint setup, or board configuration before work begins, beginners often abandon it. The easier it is to start typing tasks right away, the more likely the tool will actually get used."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Instant task entry from a single input field",
+          "why_it_matters": "Todoist lets you press 'Add task' and type a task immediately without creating boards or choosing a task category, which allows beginners to start tracking work within seconds."
+        },
+        {
+          "point": "Flat project lists instead of workflow structures",
+          "why_it_matters": "Projects in Todoist behave like simple task lists where items are added directly under a project, avoiding the need to choose issue types or move tasks across workflow stages."
+        },
+        {
+          "point": "Natural language task entry",
+          "why_it_matters": "Typing phrases like 'Submit proposal tomorrow at 3pm' automatically creates the task and date, reducing the number of fields and decisions beginners must handle before saving a task."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Jira wins",
+      "bullets": [
+        {
+          "point": "Structured issue types for different work categories",
+          "why_it_matters": "Jira separates work into items like story, task, or bug, which helps larger teams organize development work and track different types of project activity."
+        },
+        {
+          "point": "Kanban and sprint boards for workflow tracking",
+          "why_it_matters": "Tasks move across columns such as to do, in progress, and done, which makes it easier for teams to visualize how work flows through development stages."
+        },
+        {
+          "point": "Sprint planning tools for scheduled work cycles",
+          "why_it_matters": "Jira allows teams to group issues into timed sprints and track progress through sprint boards, which is useful for teams following structured development methods."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "The project requires tracking different issue types, managing development workflows, or running sprint cycles with multiple team members.",
+          "what_to_do_instead": "Use Jira where work can be organized through issue types, boards, and sprint planning."
+        },
+        {
+          "tool": "x",
+          "fails_when": "The user opens the tool and must choose issue types, configure boards, or understand sprint workflows before adding simple tasks.",
+          "what_to_do_instead": "Use Todoist where tasks can be typed and saved immediately with no setup."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the beginner joins a software team already using sprint boards and issue tracking, Jira may become easier because the workflow is already configured and the user only needs to add issues within the existing system."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose Todoist if you want to start writing tasks immediately without setting up a project workflow.",
+        "Choose Todoist if this is your first small project and you want a simple task list.",
+        "Choose Jira if you are working inside a team that already runs sprint boards and issue tracking."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Todoist a project management tool or a task list?",
+      "a": "Todoist is primarily a task manager where projects behave like organized task lists, which makes it easier for beginners to start tracking work quickly."
+    },
+    {
+      "q": "Why is Jira harder for beginners?",
+      "a": "Jira organizes work through projects, issue types, and workflow boards, which often require understanding several concepts before tasks are added."
+    },
+    {
+      "q": "Can Jira be used for simple task tracking?",
+      "a": "Yes, but the interface is still built around issue tracking and workflow boards, which can feel heavy for small personal projects."
+    },
+    {
+      "q": "When should someone move from Todoist to Jira?",
+      "a": "Moving to Jira makes sense when projects involve structured workflows, multiple team members, or development style tracking such as sprint planning."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Asana",
+      "y_name": "Trello",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Jira",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Jira",
+      "y_name": "Notion",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Asana",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "ClickUp",
+      "persona": "Beginner"
+    }
+  ]
+}

@@ -1,120 +1,144 @@
 {
-"category": "Password Managers",
-"categorySlug": "password-managers",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "KeePass2Android vs Keeper for Minimalists",
-"slug": "keepass2android-vs-keeper-for-minimalist",
-"meta_description": "KeePass2Android vs Keeper for minimalists who open vault files from personal storage. See why KeePass2Android wins without vendor accounts.",
-"persona": "Minimalist",
-"constraint_lens": "Minimalists prefer tools that open a local encrypted vault file directly instead of requiring vendor hosted service accounts.",
-"one_second_verdict": {
-"winner_label": "KeePass2Android",
-"summary": "Best for minimalists who want to open a password vault file directly from personal cloud storage.",
-"reason": "Keeper fails first because accessing the vault requires maintaining a vendor hosted account instead of opening a local encrypted database file."
-},
-"verdict": {
-"winner": "x",
-"summary": "KeePass2Android is the better choice for minimalists who store their password vault as an encrypted file in personal cloud storage. The app opens standard KDBX vault files directly from locations such as Google Drive or Dropbox. Keeper stores credentials inside a hosted vault tied to a service account. For users who refuse vendor accounts and want direct control of their vault file, requiring a hosted login introduces unnecessary dependency.",
-"decision_rule": "If accessing the password vault requires maintaining a vendor-hosted account instead of opening an encrypted database file from personal storage, Keeper fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why KeePass2Android fits minimalists",
-"content": "The user keeps an encrypted vault file in personal storage and refuses to create vendor service accounts. KeePass2Android opens KDBX vault files directly from local storage or connected personal cloud providers. The vault remains a file the user controls and can move or back up independently. This allows password access without maintaining a service account."
-},
-{
-"type": "x_wins",
-"heading": "Where KeePass2Android wins",
-"bullets": [
-{
-"point": "KeePass2Android opens KDBX encrypted vault files directly from personal storage providers.",
-"why_it_matters": "Users can access their password database without creating vendor accounts."
-},
-{
-"point": "KeePass2Android reads the vault file directly from locations such as Google Drive or device storage.",
-"why_it_matters": "The password database stays under the user's control rather than inside a hosted service."
-},
-{
-"point": "KeePass2Android allows users to move or back up the encrypted vault file anywhere.",
-"why_it_matters": "Minimalists can manage storage and backups without relying on service infrastructure."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Keeper wins",
-"bullets": [
-{
-"point": "Keeper synchronizes the password vault automatically through the account service.",
-"why_it_matters": "Passwords appear across devices without manually managing vault files."
-},
-{
-"point": "Keeper restores the vault automatically after signing into the account on a new device.",
-"why_it_matters": "Users regain access to passwords instantly without importing database files."
-},
-{
-"point": "Keeper provides shared vault permissions for teams.",
-"why_it_matters": "Organizations can assign credential access without distributing vault files."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The user wants passwords synchronized automatically across devices without managing vault files.",
-"what_to_do_instead": "Use Keeper where the vault synchronizes automatically through the account."
-},
-{
-"tool": "y",
-"fails_when": "The user refuses vendor accounts because Keeper requires logging into a hosted vault service.",
-"what_to_do_instead": "Use KeePass2Android where a local encrypted database file can be opened directly."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the user wants automatic password syncing across devices and does not mind maintaining a hosted vault account, Keeper may become the better option."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick KeePass2Android if you store your password vault as a file in personal storage.",
-"Pick KeePass2Android if you refuse to create vendor service accounts.",
-"Pick Keeper if you want passwords synchronized automatically across devices."
-]
-}
-],
-"faqs": [
-{
-"q": "Why do minimalists prefer KeePass2Android?",
-"a": "KeePass2Android opens encrypted vault files directly from personal storage without requiring a service account."
-},
-{
-"q": "Does Keeper require an account to access passwords?",
-"a": "Yes. Keeper stores credentials inside a hosted vault that requires signing into a service account."
-},
-{
-"q": "Can KeePass2Android open standard KeePass vault files?",
-"a": "Yes. It opens KDBX encrypted database files used by KeePass compatible managers."
-},
-{
-"q": "Who should choose Keeper instead?",
-"a": "Users who want automatic password syncing across devices may prefer Keeper."
-}
-],
-"related_pages": [
-{ "x_name": "KeeWeb", "y_name": "Keeper", "persona": "Minimalist" },
-{ "x_name": "LessPass", "y_name": "Bitwarden", "persona": "Minimalist" },
-{ "x_name": "Spectre", "y_name": "KeePass", "persona": "Minimalist" },
-{ "x_name": "KeePassXC", "y_name": "Dashlane", "persona": "Minimalist" },
-{ "x_name": "KeePassXC", "y_name": "LastPass", "persona": "Minimalist" },
-{ "x_name": "Enpass", "y_name": "1Password", "persona": "Minimalist" }
-]
+  "category": "Password Managers",
+  "categorySlug": "password-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "KeePass2Android vs Keeper for Minimalists",
+  "slug": "keepass2android-vs-keeper-for-minimalist",
+  "meta_description": "KeePass2Android vs Keeper for minimalists who open vault files from personal storage. See why KeePass2Android wins without vendor accounts.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists prefer tools that open a local encrypted vault file directly instead of requiring vendor hosted service accounts.",
+  "one_second_verdict": {
+    "winner_label": "KeePass2Android",
+    "summary": "Best for minimalists who want to open a password vault file directly from personal cloud storage.",
+    "reason": "Keeper fails first because accessing the vault requires maintaining a vendor hosted account instead of opening a local encrypted database file."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "KeePass2Android is the better choice for minimalists who store their password vault as an encrypted file in personal cloud storage. The app opens standard KDBX vault files directly from locations such as Google Drive or Dropbox. Keeper stores credentials inside a hosted vault tied to a service account. For users who refuse vendor accounts and want direct control of their vault file, requiring a hosted login introduces unnecessary dependency.",
+    "decision_rule": "If accessing the password vault requires maintaining a vendor-hosted account instead of opening an encrypted database file from personal storage, Keeper fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why KeePass2Android fits minimalists",
+      "content": "The user keeps an encrypted vault file in personal storage and refuses to create vendor service accounts. KeePass2Android opens KDBX vault files directly from local storage or connected personal cloud providers. The vault remains a file the user controls and can move or back up independently. This allows password access without maintaining a service account."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where KeePass2Android wins",
+      "bullets": [
+        {
+          "point": "KeePass2Android opens KDBX encrypted vault files directly from personal storage providers.",
+          "why_it_matters": "Users can access their password database without creating vendor accounts."
+        },
+        {
+          "point": "KeePass2Android reads the vault file directly from locations such as Google Drive or device storage.",
+          "why_it_matters": "The password database stays under the user's control rather than inside a hosted service."
+        },
+        {
+          "point": "KeePass2Android allows users to move or back up the encrypted vault file anywhere.",
+          "why_it_matters": "Minimalists can manage storage and backups without relying on service infrastructure."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Keeper wins",
+      "bullets": [
+        {
+          "point": "Keeper synchronizes the password vault automatically through the account service.",
+          "why_it_matters": "Passwords appear across devices without manually managing vault files."
+        },
+        {
+          "point": "Keeper restores the vault automatically after signing into the account on a new device.",
+          "why_it_matters": "Users regain access to passwords instantly without importing database files."
+        },
+        {
+          "point": "Keeper provides shared vault permissions for teams.",
+          "why_it_matters": "Organizations can assign credential access without distributing vault files."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The user wants passwords synchronized automatically across devices without managing vault files.",
+          "what_to_do_instead": "Use Keeper where the vault synchronizes automatically through the account."
+        },
+        {
+          "tool": "y",
+          "fails_when": "The user refuses vendor accounts because Keeper requires logging into a hosted vault service.",
+          "what_to_do_instead": "Use KeePass2Android where a local encrypted database file can be opened directly."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user wants automatic password syncing across devices and does not mind maintaining a hosted vault account, Keeper may become the better option."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick KeePass2Android if you store your password vault as a file in personal storage.",
+        "Pick KeePass2Android if you refuse to create vendor service accounts.",
+        "Pick Keeper if you want passwords synchronized automatically across devices."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why do minimalists prefer KeePass2Android?",
+      "a": "KeePass2Android opens encrypted vault files directly from personal storage without requiring a service account."
+    },
+    {
+      "q": "Does Keeper require an account to access passwords?",
+      "a": "Yes. Keeper stores credentials inside a hosted vault that requires signing into a service account."
+    },
+    {
+      "q": "Can KeePass2Android open standard KeePass vault files?",
+      "a": "Yes. It opens KDBX encrypted database files used by KeePass compatible managers."
+    },
+    {
+      "q": "Who should choose Keeper instead?",
+      "a": "Users who want automatic password syncing across devices may prefer Keeper."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Keeper",
+      "y_name": "KeeWeb",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Bitwarden",
+      "y_name": "LessPass",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "KeePass",
+      "y_name": "Spectre",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Dashlane",
+      "y_name": "KeePassXC",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "KeePassXC",
+      "y_name": "LastPass",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "1Password",
+      "y_name": "Enpass",
+      "persona": "Minimalist"
+    }
+  ]
 }

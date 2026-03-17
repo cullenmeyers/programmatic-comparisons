@@ -1,0 +1,144 @@
+{
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Bear vs Notion for Minimalists",
+  "slug": "bear-vs-notion-for-minimalist",
+  "meta_description": "Bear vs Notion for minimalists who want to write without dashboards, databases, or extra panels getting in the way of focus.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a writing space that stays focused on text without showing tools or panels you do not plan to use.",
+  "one_second_verdict": {
+    "winner_label": "Bear",
+    "summary": "Best for minimalists who need a calm place to write.",
+    "reason": "Notion fails first because the interface presents options unrelated to writing."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Bear wins for minimalists who want a calm place to write. It opens to a clean text editor with tags and basic formatting, without showing boards, databases, or workspace panels. Notion surfaces page types, blocks, and workspace navigation that are not directly related to writing. If the interface presents options unrelated to writing, Notion fails first.",
+    "decision_rule": "If the interface presents options unrelated to writing, Notion fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for focused writing",
+      "content": "You dislike multifunction tools and want to stay in a simple writing flow. Bear centers the screen on text with a lightweight sidebar for notes and tags. Notion is built as a workspace with pages, databases, and side panels, which can feel like extra layers when you only want to write."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Notion wins",
+      "bullets": [
+        {
+          "point": "Block-based editor with slash command menu",
+          "why_it_matters": "You can insert tables, toggles, embeds, and other elements inside a page. This supports mixed content, but the visible slash menu and block handles introduce options beyond plain writing."
+        },
+        {
+          "point": "Database views such as table, board, and calendar",
+          "why_it_matters": "Notes can turn into sortable collections with filters and views. This is useful for project tracking, yet these features sit alongside simple notes and add visual clutter."
+        },
+        {
+          "point": "Workspace navigation with nested pages",
+          "why_it_matters": "You can build a hierarchy of pages inside sidebars. While powerful for large systems, the persistent sidebar reminds you that the tool does more than writing."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Bear wins",
+      "bullets": [
+        {
+          "point": "Markdown-style inline formatting without block controls",
+          "why_it_matters": "You type simple symbols for headings or lists and keep your hands on the keyboard. There are no block menus floating beside each paragraph."
+        },
+        {
+          "point": "Tag-based organization using hashtags inside notes",
+          "why_it_matters": "You organize by typing a tag directly in the text, which avoids separate database views or property panels."
+        },
+        {
+          "point": "Minimal sidebar and distraction-free focus mode",
+          "why_it_matters": "You can hide the note list and write on a clean screen. This reduces visual elements that are not related to your current paragraph."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You open a new page and see workspace panels, database options, or block menus that are unrelated to writing.",
+          "what_to_do_instead": "Use Bear to keep the interface centered on text with minimal visible controls."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You later need structured tables, linked pages, or project boards inside your notes.",
+          "what_to_do_instead": "Switch to Notion when your needs grow beyond plain text and simple tags."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you start managing complex projects and need notes connected to tasks and databases, Notion may feel cleaner because everything lives inside one structured workspace instead of separate tools."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you only want to write and tag notes, choose Bear.",
+        "If you feel distracted by side panels and database views, avoid Notion.",
+        "If your notes must turn into project systems, Notion fits better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Bear only for simple notes?",
+      "a": "It focuses on text and tagging. It supports formatting, but it does not include boards or database-style views."
+    },
+    {
+      "q": "Can Notion be used just as a writing app?",
+      "a": "Yes, but its workspace layout and block menus remain visible, which can feel excessive for minimalists."
+    },
+    {
+      "q": "Does Bear support collaboration like Notion?",
+      "a": "Bear is more focused on personal writing. Notion offers broader sharing and team features."
+    },
+    {
+      "q": "Which feels calmer on screen?",
+      "a": "Bear usually feels calmer because it shows fewer panels and controls unrelated to writing."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Bear",
+      "y_name": "Evernote",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Bear",
+      "y_name": "Milanote",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Google Docs",
+      "y_name": "Notion",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Bear",
+      "y_name": "Roam Research",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Notes",
+      "y_name": "Coda",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Coda",
+      "y_name": "Milanote",
+      "persona": "Minimalist"
+    }
+  ]
+}

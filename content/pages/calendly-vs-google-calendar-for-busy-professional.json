@@ -1,120 +1,144 @@
 {
-"category": "Calendar / Scheduling tools",
-"categorySlug": "calendar-scheduling-tools",
-"constraintSlug": "time-scarcity",
-"constraintUiName": "Fast to use daily",
-"title": "Calendly vs Google Calendar for Busy professionals",
-"slug": "calendly-vs-google-calendar-for-busy-professional",
-"meta_description": "Compare Calendly vs Google Calendar for busy professionals sharing meeting availability. See why Calendly wins when booking links replace email scheduling.",
-"persona": "Busy professional",
-"constraint_lens": "Busy professionals need scheduling tools that remove back and forth communication and let meetings get booked with minimal effort.",
-"one_second_verdict": {
-  "winner_label": "Calendly",
-  "summary": "Best for busy professionals who need scheduling tools that remove back and forth communication and let meetings get booked with minimal effort.",
-  "reason": "Google Calendar fails first because scheduling requires manual email negotiation instead of automated booking links."
-},
-"verdict": {
-"winner": "x",
-"summary": "Calendly wins because it generates booking pages where others can select available meeting times directly. This removes the need for email threads asking what time works. Google Calendar can send invitations but still requires someone to propose a time manually. For busy professionals who want scheduling handled automatically, the lack of booking links becomes the limit.",
-"decision_rule": "If scheduling requires manual email negotiation instead of automated booking links, Google Calendar fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Calendly fits busy professionals who refuse email scheduling",
-"content": "This busy professional wants to avoid long email threads negotiating meeting times. Calendly creates a booking page that displays available time slots pulled from the connected calendar. The recipient chooses a time and the meeting is added automatically. Google Calendar works well for creating events but still relies on someone proposing a time first. That extra step slows down scheduling when many meetings are involved."
-},
-{
-"type": "x_wins",
-"heading": "Where Calendly wins",
-"bullets": [
-{
-"point": "Shareable booking link with live availability",
-"why_it_matters": "Calendly generates a page showing open time slots pulled from the connected calendar. Clients pick a slot without needing to ask when you are free."
-},
-{
-"point": "Automatic meeting creation after a time is chosen",
-"why_it_matters": "Once someone selects a time, Calendly creates the calendar event and sends confirmation automatically. This removes manual scheduling work."
-},
-{
-"point": "Availability rules that block busy times automatically",
-"why_it_matters": "Calendly reads existing events in the calendar and hides those times from the booking page. This prevents double booking without manual checking."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Google Calendar wins",
-"bullets": [
-{
-"point": "Direct event creation on the calendar timeline",
-"why_it_matters": "Users can click a time slot and create an event instantly. This is useful when the meeting time is already agreed upon."
-},
-{
-"point": "Simple interface for managing scheduled events",
-"why_it_matters": "Google Calendar displays events on a clear time grid where meetings can be moved or edited quickly."
-},
-{
-"point": "Acts as a central timeline for many integrations",
-"why_it_matters": "Many tools connect to Google Calendar for reading and writing events, making it a common hub for scheduling data."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You already know the meeting time and simply want to place an event directly onto the calendar timeline.",
-"what_to_do_instead": "Use Google Calendar to create the event immediately."
-},
-{
-"tool": "y",
-"fails_when": "You expect people to choose available meeting times themselves instead of negotiating through email.",
-"what_to_do_instead": "Use Calendly so recipients can book from a link showing your availability."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If meetings are usually scheduled internally with coworkers who already share the same calendar system, Google Calendar can work well because people can quickly view availability and place events directly."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Choose Calendly if you want people to book meetings from a link instead of negotiating times.",
-"Choose Calendly if clients schedule meetings with you frequently.",
-"Choose Google Calendar if meeting times are already agreed upon before creating the event."
-]
-}
-],
-"faqs": [
-{
-"q": "Does Google Calendar create booking links?",
-"a": "Google Calendar primarily creates events on a timeline. It does not generate shareable booking pages where others select available times."
-},
-{
-"q": "How does Calendly avoid email scheduling?",
-"a": "Calendly shows your available time slots on a booking page so the other person simply chooses a time instead of discussing options in messages."
-},
-{
-"q": "What happens after someone books a Calendly slot?",
-"a": "Calendly automatically creates the calendar event, sends confirmations, and blocks the time so it cannot be double booked."
-},
-{
-"q": "Can Calendly work with Google Calendar?",
-"a": "Yes. Calendly reads availability from Google Calendar and writes new events back to it when meetings are booked."
-}
-],
-"related_pages": [
-{ "x_name": "Calendly", "y_name": "SavvyCal", "persona": "Busy professional" },
-{ "x_name": "Calendly", "y_name": "Cal.com", "persona": "Busy professional" },
-{ "x_name": "Calendly", "y_name": "Motion", "persona": "Busy professional" },
-{ "x_name": "Motion", "y_name": "Google Calendar", "persona": "Busy professional" },
-{ "x_name": "Fantastical", "y_name": "Google Calendar", "persona": "Busy professional" },
-{ "x_name": "Cron", "y_name": "Google Calendar", "persona": "Busy professional" }
-]
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Calendly vs Google Calendar for Busy professionals",
+  "slug": "calendly-vs-google-calendar-for-busy-professional",
+  "meta_description": "Compare Calendly vs Google Calendar for busy professionals sharing meeting availability. See why Calendly wins when booking links replace email scheduling.",
+  "persona": "Busy professional",
+  "constraint_lens": "Busy professionals need scheduling tools that remove back and forth communication and let meetings get booked with minimal effort.",
+  "one_second_verdict": {
+    "winner_label": "Calendly",
+    "summary": "Best for busy professionals who need scheduling tools that remove back and forth communication and let meetings get booked with minimal effort.",
+    "reason": "Google Calendar fails first because scheduling requires manual email negotiation instead of automated booking links."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Calendly wins because it generates booking pages where others can select available meeting times directly. This removes the need for email threads asking what time works. Google Calendar can send invitations but still requires someone to propose a time manually. For busy professionals who want scheduling handled automatically, the lack of booking links becomes the limit.",
+    "decision_rule": "If scheduling requires manual email negotiation instead of automated booking links, Google Calendar fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Calendly fits busy professionals who refuse email scheduling",
+      "content": "This busy professional wants to avoid long email threads negotiating meeting times. Calendly creates a booking page that displays available time slots pulled from the connected calendar. The recipient chooses a time and the meeting is added automatically. Google Calendar works well for creating events but still relies on someone proposing a time first. That extra step slows down scheduling when many meetings are involved."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Calendly wins",
+      "bullets": [
+        {
+          "point": "Shareable booking link with live availability",
+          "why_it_matters": "Calendly generates a page showing open time slots pulled from the connected calendar. Clients pick a slot without needing to ask when you are free."
+        },
+        {
+          "point": "Automatic meeting creation after a time is chosen",
+          "why_it_matters": "Once someone selects a time, Calendly creates the calendar event and sends confirmation automatically. This removes manual scheduling work."
+        },
+        {
+          "point": "Availability rules that block busy times automatically",
+          "why_it_matters": "Calendly reads existing events in the calendar and hides those times from the booking page. This prevents double booking without manual checking."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Google Calendar wins",
+      "bullets": [
+        {
+          "point": "Direct event creation on the calendar timeline",
+          "why_it_matters": "Users can click a time slot and create an event instantly. This is useful when the meeting time is already agreed upon."
+        },
+        {
+          "point": "Simple interface for managing scheduled events",
+          "why_it_matters": "Google Calendar displays events on a clear time grid where meetings can be moved or edited quickly."
+        },
+        {
+          "point": "Acts as a central timeline for many integrations",
+          "why_it_matters": "Many tools connect to Google Calendar for reading and writing events, making it a common hub for scheduling data."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You already know the meeting time and simply want to place an event directly onto the calendar timeline.",
+          "what_to_do_instead": "Use Google Calendar to create the event immediately."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You expect people to choose available meeting times themselves instead of negotiating through email.",
+          "what_to_do_instead": "Use Calendly so recipients can book from a link showing your availability."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If meetings are usually scheduled internally with coworkers who already share the same calendar system, Google Calendar can work well because people can quickly view availability and place events directly."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose Calendly if you want people to book meetings from a link instead of negotiating times.",
+        "Choose Calendly if clients schedule meetings with you frequently.",
+        "Choose Google Calendar if meeting times are already agreed upon before creating the event."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Google Calendar create booking links?",
+      "a": "Google Calendar primarily creates events on a timeline. It does not generate shareable booking pages where others select available times."
+    },
+    {
+      "q": "How does Calendly avoid email scheduling?",
+      "a": "Calendly shows your available time slots on a booking page so the other person simply chooses a time instead of discussing options in messages."
+    },
+    {
+      "q": "What happens after someone books a Calendly slot?",
+      "a": "Calendly automatically creates the calendar event, sends confirmations, and blocks the time so it cannot be double booked."
+    },
+    {
+      "q": "Can Calendly work with Google Calendar?",
+      "a": "Yes. Calendly reads availability from Google Calendar and writes new events back to it when meetings are booked."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Calendly",
+      "y_name": "SavvyCal",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Cal.com",
+      "y_name": "Calendly",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Calendly",
+      "y_name": "Motion",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Google Calendar",
+      "y_name": "Motion",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Fantastical",
+      "y_name": "Google Calendar",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Cron",
+      "y_name": "Google Calendar",
+      "persona": "Busy professional"
+    }
+  ]
 }

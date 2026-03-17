@@ -1,0 +1,144 @@
+{
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Apple Reminders vs Sunsama for Solo users",
+  "slug": "apple-reminders-vs-sunsama-for-solo-user",
+  "meta_description": "Apple Reminders vs Sunsama for solo users who want stable task tracking without daily planning sessions or ongoing ritual maintenance.",
+  "persona": "Solo user",
+  "constraint_lens": "You want tasks to remain usable without running daily planning sessions or maintaining a structured routine.",
+  "one_second_verdict": {
+    "winner_label": "Apple Reminders",
+    "summary": "Best for solo users who need stable task tracking with no ongoing ritual.",
+    "reason": "Sunsama fails first because daily planning is required to function."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Apple Reminders wins for solo users who want stable task tracking with no ongoing ritual. You can add tasks and leave them in lists without daily setup. Sunsama is built around a daily planning flow that expects you to select and schedule tasks each day. If daily planning is required to function, Sunsama fails first.",
+    "decision_rule": "If daily planning is required to function, Sunsama fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Solo users",
+      "content": "You said you want tasks to stay usable without daily planning rituals. As a solo user, you do not want to maintain a system every day just to keep your list relevant. A tool that works quietly without required routines fits better."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Sunsama wins",
+      "bullets": [
+        {
+          "point": "Guided daily planning screen that asks you to choose tasks for today",
+          "why_it_matters": "It helps prioritize work, but requires daily interaction before tasks feel organized."
+        },
+        {
+          "point": "Calendar based time blocking for selected tasks",
+          "why_it_matters": "You can assign tasks to time slots, yet maintaining these blocks requires regular adjustments."
+        },
+        {
+          "point": "End of day review and rollover flow",
+          "why_it_matters": "It encourages reflection and carryover, but adds a repeated ritual to keep the system running."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Apple Reminders wins",
+      "bullets": [
+        {
+          "point": "Persistent task lists that remain visible without daily reset",
+          "why_it_matters": "Tasks stay in place until completed, with no requirement to reselect them each day."
+        },
+        {
+          "point": "Simple due date and repeat options inside each task",
+          "why_it_matters": "You can set reminders once without revisiting a planning session."
+        },
+        {
+          "point": "No required daily review screen",
+          "why_it_matters": "You can open the app and act immediately without maintaining a routine."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You skip daily planning and your tasks no longer feel organized inside the system.",
+          "what_to_do_instead": "Use Apple Reminders if you want a list that works even when you ignore it for days."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You need structured daily prioritization and time blocking to stay focused.",
+          "what_to_do_instead": "Use Sunsama if guided daily planning genuinely improves your workflow."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you find that without a daily planning session your tasks pile up and lose focus, Sunsama may provide helpful structure despite the added routine."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want tasks that work without daily rituals, choose Apple Reminders.",
+        "If planning every morning feels like upkeep, avoid Sunsama.",
+        "If guided daily time blocking improves your discipline, Sunsama may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Sunsama require daily planning?",
+      "a": "It is built around a daily planning workflow that encourages selecting and scheduling tasks each day."
+    },
+    {
+      "q": "Can Apple Reminders be used without daily review?",
+      "a": "Yes, tasks remain in lists and can be completed at any time without a required session."
+    },
+    {
+      "q": "Which tool needs less maintenance over time?",
+      "a": "Apple Reminders typically needs less ongoing interaction to remain usable."
+    },
+    {
+      "q": "Is Sunsama better for structured routines?",
+      "a": "Yes, it is designed for users who want a defined daily planning and review process."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Asana",
+      "y_name": "Microsoft To Do",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Microsoft To Do",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Focalboard",
+      "y_name": "Monday.com",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Kanboard",
+      "y_name": "Trello",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Microsoft To Do",
+      "y_name": "Notion",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Microsoft To Do",
+      "y_name": "Notion",
+      "persona": "Solo user"
+    }
+  ]
+}

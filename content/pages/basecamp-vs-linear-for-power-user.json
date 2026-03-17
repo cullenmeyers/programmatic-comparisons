@@ -1,0 +1,144 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Basecamp vs Linear for Power users",
+  "slug": "basecamp-vs-linear-for-power-user",
+  "meta_description": "Compare Basecamp vs Linear for power users running software teams. See which tool supports issue tracking, sprint cycles, and release workflows.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need a system that can manage structured development workflows such as issues, sprint cycles, and releases without hitting limits.",
+  "one_second_verdict": {
+    "winner_label": "Linear",
+    "summary": "Best for power users running software teams that manage issues through sprint cycles and release workflows.",
+    "reason": "Basecamp fails first because its task lists cannot operate inside structured issue tracking with sprint cycles and release workflows."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Linear is the better system for power users managing software development workflows. Issues are tracked inside cycles, organized by teams, and connected to releases so developers can plan work across structured iterations. Basecamp organizes projects through message boards, task lists, and schedules, which works for general coordination but does not provide structured issue tracking or sprint workflows. If project tasks cannot operate inside structured issue tracking with sprint cycles and release workflows, Basecamp fails first.",
+    "decision_rule": "If project tasks cannot operate inside structured issue tracking with sprint cycles and release workflows, Basecamp fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this comparison matters for Power users",
+      "content": "This comparison is for someone running a software team where development work must be planned across structured cycles and releases. Instead of simple task lists, the system needs to track issues, assign them to sprints, and connect completed work to releases. When these workflows are not supported directly in the tool, development planning becomes fragmented. Power users managing engineering teams need a system designed around issue tracking rather than general project coordination."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Linear wins",
+      "bullets": [
+        {
+          "point": "Issue tracking built around development workflows",
+          "why_it_matters": "Work items are created as issues that include status, priority, labels, and team ownership, which allows engineering teams to track development work systematically."
+        },
+        {
+          "point": "Sprint cycles for structured planning",
+          "why_it_matters": "Issues can be assigned to time based cycles so teams can plan work in fixed iterations instead of managing open ended task lists."
+        },
+        {
+          "point": "Release tracking connected to completed issues",
+          "why_it_matters": "Completed issues can be grouped into releases, allowing teams to organize development work around deployable versions of the product."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Basecamp wins",
+      "bullets": [
+        {
+          "point": "Simple task lists for general project coordination",
+          "why_it_matters": "Tasks can be added quickly to to do lists without defining issue types, sprint cycles, or development workflows."
+        },
+        {
+          "point": "Built in team communication tools",
+          "why_it_matters": "Message boards, chat threads, and file sharing are integrated directly into each project space, allowing teams to coordinate work easily."
+        },
+        {
+          "point": "Minimal setup for project workspaces",
+          "why_it_matters": "Projects can be created quickly with built in lists and schedules without configuring structured development processes."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "The team mainly needs lightweight task lists and communication rather than structured development workflows.",
+          "what_to_do_instead": "Use Basecamp where projects can be coordinated through simple lists and discussions."
+        },
+        {
+          "tool": "x",
+          "fails_when": "A software team needs to plan work through sprint cycles and track development issues tied to releases.",
+          "what_to_do_instead": "Use Linear where issues operate inside cycles and release planning workflows."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the project focuses more on communication and general task coordination rather than managing structured engineering workflows, Basecamp may be easier because it avoids development specific issue tracking features."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose Linear if your team manages development issues through sprint cycles.",
+        "Choose Linear if releases must be organized from completed development work.",
+        "Choose Basecamp if you only need simple project coordination and communication."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is Linear mainly used for?",
+      "a": "Linear is an issue tracking system designed for software teams that plan work through cycles, manage development issues, and organize releases."
+    },
+    {
+      "q": "Can Basecamp manage software development workflows?",
+      "a": "Basecamp can track tasks and discussions, but it does not include built in issue tracking, sprint cycles, or release management features."
+    },
+    {
+      "q": "Why do software teams prefer issue tracking tools?",
+      "a": "Issue tracking systems organize development work with statuses, priorities, and cycles so teams can plan releases and monitor progress across iterations."
+    },
+    {
+      "q": "When is Basecamp better than Linear?",
+      "a": "Basecamp is better when the project mainly requires communication, simple tasks, and coordination rather than structured engineering workflows."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Basecamp",
+      "y_name": "Forecast",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Celoxis",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "GitLab",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Redmine",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "OpenProject",
+      "y_name": "Teamwork",
+      "persona": "Power user"
+    }
+  ]
+}

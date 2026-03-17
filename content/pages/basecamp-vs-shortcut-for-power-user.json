@@ -1,0 +1,144 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Basecamp vs Shortcut for Power users",
+  "slug": "basecamp-vs-shortcut-for-power-user",
+  "meta_description": "Compare Basecamp vs Shortcut for power users managing product development. See which tool supports backlog prioritization and sprint planning.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need a system that can manage structured product development workflows such as backlog prioritization and sprint planning.",
+  "one_second_verdict": {
+    "winner_label": "Shortcut",
+    "summary": "Best for power users managing product development cycles with backlog prioritization and sprint planning.",
+    "reason": "Basecamp fails first because its task lists cannot support backlog prioritization or structured sprint planning workflows."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Shortcut is the better choice for power users running product development cycles. Work items can live in a backlog where teams prioritize upcoming work and move selected items into sprint iterations. Basecamp organizes projects through message boards and to do lists, which works for general coordination but does not support backlog prioritization or sprint planning workflows. If managing product work cannot include backlog prioritization and sprint planning workflows, Basecamp fails first.",
+    "decision_rule": "If managing product work cannot include backlog prioritization and sprint planning workflows, Basecamp fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this comparison matters for Power users",
+      "content": "This comparison matters for someone managing a software product where work must move through structured development cycles. Teams typically maintain a backlog of upcoming work, prioritize items based on importance, and then plan which items enter each sprint. When the project system cannot represent backlog prioritization or sprint planning directly, product planning becomes scattered across multiple tools. Power users managing product development need a system built around these workflows."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Shortcut wins",
+      "bullets": [
+        {
+          "point": "Dedicated backlog management",
+          "why_it_matters": "Stories can live in a prioritized backlog where teams rank upcoming work, making it clear which features or fixes should be addressed next."
+        },
+        {
+          "point": "Sprint planning through iterations",
+          "why_it_matters": "Work items can be assigned to time boxed iterations so teams can plan development cycles instead of managing an open ended task list."
+        },
+        {
+          "point": "Issue tracking designed for product development",
+          "why_it_matters": "Each work item includes status, labels, and workflow stages, which allows engineering teams to manage development progress systematically."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Basecamp wins",
+      "bullets": [
+        {
+          "point": "Simple to do lists for general tasks",
+          "why_it_matters": "Tasks can be added quickly without defining backlog priorities, sprint cycles, or development workflows."
+        },
+        {
+          "point": "Integrated team communication tools",
+          "why_it_matters": "Message boards, chats, and file sharing are built into each project space, making it easy for teams to coordinate work."
+        },
+        {
+          "point": "Minimal setup for new projects",
+          "why_it_matters": "Projects can be created quickly with built in lists and schedules without configuring development workflows."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "The team mainly needs simple project coordination and communication rather than structured product development workflows.",
+          "what_to_do_instead": "Use Basecamp where tasks and discussions can be organized without backlog and sprint planning features."
+        },
+        {
+          "tool": "x",
+          "fails_when": "A product team needs to prioritize a backlog and plan work through structured sprint cycles.",
+          "what_to_do_instead": "Use Shortcut where backlog items can be prioritized and scheduled into iterations."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the team mainly needs a shared workspace for communication and lightweight task coordination rather than managing structured development cycles, Basecamp may be easier because it avoids product development specific workflows."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose Shortcut if your team prioritizes a backlog and plans work through sprint cycles.",
+        "Choose Shortcut if product development requires structured issue tracking.",
+        "Choose Basecamp if you only need simple task lists and team communication."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is Shortcut used for?",
+      "a": "Shortcut is an issue tracking platform designed for product teams that manage development through backlogs, iterations, and structured workflows."
+    },
+    {
+      "q": "Does Basecamp support backlog prioritization?",
+      "a": "No. Basecamp organizes work through task lists and discussions but does not include a dedicated backlog prioritization system."
+    },
+    {
+      "q": "Why do product teams use sprint planning tools?",
+      "a": "Sprint planning allows teams to group prioritized work into time boxed development cycles so progress can be measured across iterations."
+    },
+    {
+      "q": "When is Basecamp better than Shortcut?",
+      "a": "Basecamp is better when a team mainly needs simple project coordination and communication rather than managing product development workflows."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Basecamp",
+      "y_name": "Linear",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Forecast",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Celoxis",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "GitLab",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Redmine",
+      "persona": "Power user"
+    }
+  ]
+}

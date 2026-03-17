@@ -1,0 +1,144 @@
+{
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Google Keep vs Standard Notes for Power users",
+  "slug": "google-keep-vs-standard-notes-for-power-user",
+  "meta_description": "Compare Google Keep vs Standard Notes for power users securing personal knowledge. See why Standard Notes wins when notes must remain encrypted.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need tools that allow full control over security and data portability instead of locking notes inside a service.",
+  "one_second_verdict": {
+    "winner_label": "Standard Notes",
+    "summary": "Best for power users who need allow full control over security and data portability instead of locking notes inside a service.",
+    "reason": "Google Keep fails first because notes cannot be protected with end-to-end encryption and independent export options."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Standard Notes wins because it protects notes with end to end encryption and allows data to be exported independently. Notes are encrypted before leaving the device so the service cannot read the content. Google Keep stores notes inside the Google service without end to end encryption and relies on the platform account for access. For users storing sensitive information, the lack of encrypted storage becomes the ceiling.",
+    "decision_rule": "If notes cannot be protected with end-to-end encryption and independent export options, Google Keep fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Standard Notes fits power users protecting sensitive notes",
+      "content": "This power user stores personal knowledge and sensitive information that must remain secure. Standard Notes encrypts notes directly on the device before syncing them to its servers. The encryption key stays with the user so the service cannot read the stored content. Google Keep stores notes inside the Google platform where they are accessible through the account rather than encrypted with a user controlled key."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Standard Notes wins",
+      "bullets": [
+        {
+          "point": "End to end encryption for all notes",
+          "why_it_matters": "Notes are encrypted on the device before they sync to the service. Only the user with the encryption key can read the content."
+        },
+        {
+          "point": "Independent data export options",
+          "why_it_matters": "Users can export their notes in structured formats that can be stored or used outside the application."
+        },
+        {
+          "point": "Open platform design for long term access",
+          "why_it_matters": "Because the note format and encryption approach are documented, users can maintain access to their data outside the service if needed."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Google Keep wins",
+      "bullets": [
+        {
+          "point": "Quick note capture inside the Google interface",
+          "why_it_matters": "Users can create notes instantly from the web or mobile apps without configuring encryption settings."
+        },
+        {
+          "point": "Visual note organization with labels and colors",
+          "why_it_matters": "Notes can be grouped visually using labels and colored cards, which helps organize quick reminders."
+        },
+        {
+          "point": "Integrated with Google account services",
+          "why_it_matters": "Notes appear alongside other Google tools and can sync automatically across devices linked to the account."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You want the fastest possible note capture without managing encryption keys or export settings.",
+          "what_to_do_instead": "Use Google Keep for quick capture notes connected to a Google account."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You need notes that remain encrypted and accessible outside the platform hosting them.",
+          "what_to_do_instead": "Use Standard Notes so the content stays protected and portable."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the notes are mainly reminders, lists, or quick thoughts that do not contain sensitive information, Google Keep may be the better choice because it focuses on fast capture without security configuration."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose Standard Notes if notes must remain encrypted.",
+        "Choose Standard Notes if you want full control over exporting your data.",
+        "Choose Google Keep if you only need quick notes connected to a Google account."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does end to end encryption mean for notes?",
+      "a": "End to end encryption means the note content is encrypted on the device so only the user with the key can read it."
+    },
+    {
+      "q": "Does Google Keep encrypt notes end to end?",
+      "a": "Google Keep protects accounts with standard security measures but does not encrypt note content with a user controlled key."
+    },
+    {
+      "q": "Why do security focused users choose Standard Notes?",
+      "a": "Because the application encrypts notes before syncing and allows data to be exported independently."
+    },
+    {
+      "q": "When is Google Keep the better option?",
+      "a": "Google Keep is useful for quick reminders and lightweight notes that do not require advanced security."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Notion",
+      "y_name": "Simplenote",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Apple Notes",
+      "y_name": "Notion",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Evernote",
+      "y_name": "Notion",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Notion",
+      "y_name": "Obsidian",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Bear",
+      "y_name": "Notion",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Apple Notes",
+      "y_name": "Evernote",
+      "persona": "Power user"
+    }
+  ]
+}

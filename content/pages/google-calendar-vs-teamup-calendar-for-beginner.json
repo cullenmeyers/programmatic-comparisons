@@ -1,0 +1,144 @@
+{
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Google Calendar vs Teamup Calendar for Beginners",
+  "slug": "google-calendar-vs-teamup-calendar-for-beginner",
+  "meta_description": "Google Calendar vs Teamup Calendar for beginners who want to add personal events without configuring shared calendar structures.",
+  "persona": "Beginner",
+  "constraint_lens": "You want to add and view personal events immediately without learning shared calendar structures or setup steps.",
+  "one_second_verdict": {
+    "winner_label": "Google Calendar",
+    "summary": "Best for beginners who just want to add personal events.",
+    "reason": "Teamup Calendar fails first because shared calendar configuration must be understood before adding events."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Google Calendar wins for beginners who just want to add personal events. You click on a time slot and create an event with minimal setup. Teamup Calendar is built around shared sub-calendars and permission settings. If shared calendar configuration must be understood before adding events, Teamup Calendar fails first.",
+    "decision_rule": "If shared calendar configuration must be understood before adding events, Teamup Calendar fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool lets you add events instantly?",
+      "content": "You just want to add personal events without learning shared calendar structures. As a beginner, extra settings and permission layers feel confusing. The right tool should let you click and type. Anything that introduces sub-calendars or access controls adds delay."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Teamup Calendar works better",
+      "bullets": [
+        {
+          "point": "Multiple sub-calendars within one main calendar.",
+          "why_it_matters": "You can separate categories clearly. Understanding which sub-calendar to use requires setup decisions."
+        },
+        {
+          "point": "Granular permission settings for shared access.",
+          "why_it_matters": "You can control who edits or views events. Managing permissions adds configuration work."
+        },
+        {
+          "point": "Color-coded layers for teams and groups.",
+          "why_it_matters": "You can visualize shared schedules. For personal use, choosing and maintaining layers may feel unnecessary."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Google Calendar works better for beginners",
+      "bullets": [
+        {
+          "point": "Click on any time slot to create an event.",
+          "why_it_matters": "You add events directly without setting up shared structures."
+        },
+        {
+          "point": "Default personal calendar ready to use.",
+          "why_it_matters": "You do not need to create or manage sub-calendars first."
+        },
+        {
+          "point": "Simple day, week, and month views.",
+          "why_it_matters": "You see events clearly without navigating layered calendar settings."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You must choose sub-calendars or adjust permissions before comfortably adding personal events.",
+          "what_to_do_instead": "Use Google Calendar if you want direct event entry."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You need structured shared calendars with detailed access control.",
+          "what_to_do_instead": "Use Teamup Calendar if you manage group schedules."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you later manage schedules for clubs, teams, or shared spaces, Teamup Calendar may justify its shared calendar structure."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want to add events instantly, choose Google Calendar.",
+        "If you manage shared group calendars, choose Teamup Calendar.",
+        "If setup feels confusing, avoid layered calendar systems."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Teamup Calendar designed for shared use?",
+      "a": "Yes. It focuses on shared sub-calendars and permission controls."
+    },
+    {
+      "q": "Does Google Calendar require configuration first?",
+      "a": "No. You can start adding events immediately."
+    },
+    {
+      "q": "Which tool is easier for personal scheduling?",
+      "a": "Google Calendar is easier because it centers on a ready-to-use personal calendar."
+    },
+    {
+      "q": "Can Teamup Calendar be used personally?",
+      "a": "It can, but its design assumes shared structures and layered access."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Calendly",
+      "y_name": "Google Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Google Calendar",
+      "y_name": "Microsoft Bookings",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Google Calendar",
+      "y_name": "TidyCal",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Apple Calendar",
+      "y_name": "Outlook Calendar",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Calendly",
+      "y_name": "Square Appointments",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Calendly",
+      "y_name": "Zoho Bookings",
+      "persona": "Beginner"
+    }
+  ]
+}

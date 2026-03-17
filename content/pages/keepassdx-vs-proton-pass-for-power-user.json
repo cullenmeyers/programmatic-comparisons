@@ -1,120 +1,144 @@
 {
-"category": "Password Managers",
-"categorySlug": "password-managers",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "KeePassDX vs Proton Pass for Power users",
-"slug": "keepassdx-vs-proton-pass-for-power-user",
-"meta_description": "KeePassDX vs Proton Pass for power users who want a portable offline password vault on Android. See why KeePassDX wins for full local control.",
-"persona": "Power user",
-"constraint_lens": "Power users prefer tools that keep full control over their data so the system can be moved, modified, or integrated freely.",
-"one_second_verdict": {
-"winner_label": "KeePassDX",
-"summary": "Best for power users who want a portable encrypted password vault stored locally on their Android device.",
-"reason": "Proton Pass fails first because accessing the vault requires logging into a hosted account instead of opening a local encrypted database file."
-},
-"verdict": {
-"winner": "x",
-"summary": "KeePassDX is the better choice for power users who want their entire password database stored as a portable encrypted file. The app opens a local KDBX database file directly on the device or from any storage location the user controls. Proton Pass works through a hosted account where the vault is accessed after logging into the Proton service. For users who want a fully portable offline vault they can move or store anywhere, requiring an account login limits that flexibility.",
-"decision_rule": "If accessing the password vault requires logging into a hosted account service rather than opening a local encrypted database file, Proton Pass fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why KeePassDX fits power users",
-"content": "The user runs Android and wants their password database as a portable encrypted file. KeePassDX opens a standard KDBX database file that can be stored anywhere on the device such as local storage or external drives. The vault can be copied, backed up, or transferred manually without depending on any hosted service. This gives power users full control over where their password data lives."
-},
-{
-"type": "x_wins",
-"heading": "Where KeePassDX wins",
-"bullets": [
-{
-"point": "KeePassDX opens a local KDBX encrypted database file stored on the device.",
-"why_it_matters": "Power users can move or back up the vault file anywhere without relying on an account."
-},
-{
-"point": "KeePassDX works entirely offline once the encrypted database file exists.",
-"why_it_matters": "Passwords remain accessible even when the device has no internet connection."
-},
-{
-"point": "KeePassDX allows users to store the vault file in any storage location such as local folders or external drives.",
-"why_it_matters": "The vault can be integrated into custom backup or synchronization workflows."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Proton Pass wins",
-"bullets": [
-{
-"point": "Proton Pass automatically syncs passwords across devices through a Proton account.",
-"why_it_matters": "Users can access the same vault on multiple devices without moving files manually."
-},
-{
-"point": "Proton Pass integrates directly with browser extensions for autofill.",
-"why_it_matters": "Logins can be filled automatically while browsing websites."
-},
-{
-"point": "Proton Pass manages vault storage and encryption inside the hosted service.",
-"why_it_matters": "Users do not need to handle encrypted database files themselves."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The user wants passwords automatically synchronized across multiple devices without moving database files.",
-"what_to_do_instead": "Use Proton Pass where vault syncing happens automatically through the account."
-},
-{
-"tool": "y",
-"fails_when": "The user wants a portable offline vault because Proton Pass requires logging into a hosted account service to access the vault.",
-"what_to_do_instead": "Use KeePassDX where the encrypted vault exists as a local database file."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the user prefers automatic password syncing across multiple devices instead of manually moving a vault file, Proton Pass may become the better option."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick KeePassDX if you want your password vault stored as a portable encrypted file.",
-"Pick KeePassDX if you want to open the vault locally without logging into an account.",
-"Pick Proton Pass if you want passwords automatically synced across devices."
-]
-}
-],
-"faqs": [
-{
-"q": "Why do power users prefer KeePassDX?",
-"a": "KeePassDX stores passwords in a portable encrypted database file that users can move or back up anywhere."
-},
-{
-"q": "Does Proton Pass store passwords locally as a file?",
-"a": "No. Proton Pass vaults are accessed through a Proton account instead of opening a local database file."
-},
-{
-"q": "Can KeePassDX work without internet access?",
-"a": "Yes. KeePassDX opens the encrypted database file locally and works fully offline."
-},
-{
-"q": "Who should choose Proton Pass instead?",
-"a": "Users who want automatic password syncing and browser autofill across devices may prefer Proton Pass."
-}
-],
-"related_pages": [
-{ "x_name": "KeePassXC", "y_name": "NordPass", "persona": "Power user" },
-{ "x_name": "Passbolt", "y_name": "Dashlane", "persona": "Power user" },
-{ "x_name": "Passbolt", "y_name": "Proton Pass", "persona": "Power user" },
-{ "x_name": "Passbolt", "y_name": "RoboForm", "persona": "Power user" },
-{ "x_name": "Bitwarden", "y_name": "1Password", "persona": "Power user" },
-{ "x_name": "KeePass", "y_name": "Dashlane", "persona": "Power user" }
-]
+  "category": "Password Managers",
+  "categorySlug": "password-managers",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "KeePassDX vs Proton Pass for Power users",
+  "slug": "keepassdx-vs-proton-pass-for-power-user",
+  "meta_description": "KeePassDX vs Proton Pass for power users who want a portable offline password vault on Android. See why KeePassDX wins for full local control.",
+  "persona": "Power user",
+  "constraint_lens": "Power users prefer tools that keep full control over their data so the system can be moved, modified, or integrated freely.",
+  "one_second_verdict": {
+    "winner_label": "KeePassDX",
+    "summary": "Best for power users who want a portable encrypted password vault stored locally on their Android device.",
+    "reason": "Proton Pass fails first because accessing the vault requires logging into a hosted account instead of opening a local encrypted database file."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "KeePassDX is the better choice for power users who want their entire password database stored as a portable encrypted file. The app opens a local KDBX database file directly on the device or from any storage location the user controls. Proton Pass works through a hosted account where the vault is accessed after logging into the Proton service. For users who want a fully portable offline vault they can move or store anywhere, requiring an account login limits that flexibility.",
+    "decision_rule": "If accessing the password vault requires logging into a hosted account service rather than opening a local encrypted database file, Proton Pass fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why KeePassDX fits power users",
+      "content": "The user runs Android and wants their password database as a portable encrypted file. KeePassDX opens a standard KDBX database file that can be stored anywhere on the device such as local storage or external drives. The vault can be copied, backed up, or transferred manually without depending on any hosted service. This gives power users full control over where their password data lives."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where KeePassDX wins",
+      "bullets": [
+        {
+          "point": "KeePassDX opens a local KDBX encrypted database file stored on the device.",
+          "why_it_matters": "Power users can move or back up the vault file anywhere without relying on an account."
+        },
+        {
+          "point": "KeePassDX works entirely offline once the encrypted database file exists.",
+          "why_it_matters": "Passwords remain accessible even when the device has no internet connection."
+        },
+        {
+          "point": "KeePassDX allows users to store the vault file in any storage location such as local folders or external drives.",
+          "why_it_matters": "The vault can be integrated into custom backup or synchronization workflows."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Proton Pass wins",
+      "bullets": [
+        {
+          "point": "Proton Pass automatically syncs passwords across devices through a Proton account.",
+          "why_it_matters": "Users can access the same vault on multiple devices without moving files manually."
+        },
+        {
+          "point": "Proton Pass integrates directly with browser extensions for autofill.",
+          "why_it_matters": "Logins can be filled automatically while browsing websites."
+        },
+        {
+          "point": "Proton Pass manages vault storage and encryption inside the hosted service.",
+          "why_it_matters": "Users do not need to handle encrypted database files themselves."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The user wants passwords automatically synchronized across multiple devices without moving database files.",
+          "what_to_do_instead": "Use Proton Pass where vault syncing happens automatically through the account."
+        },
+        {
+          "tool": "y",
+          "fails_when": "The user wants a portable offline vault because Proton Pass requires logging into a hosted account service to access the vault.",
+          "what_to_do_instead": "Use KeePassDX where the encrypted vault exists as a local database file."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user prefers automatic password syncing across multiple devices instead of manually moving a vault file, Proton Pass may become the better option."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick KeePassDX if you want your password vault stored as a portable encrypted file.",
+        "Pick KeePassDX if you want to open the vault locally without logging into an account.",
+        "Pick Proton Pass if you want passwords automatically synced across devices."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why do power users prefer KeePassDX?",
+      "a": "KeePassDX stores passwords in a portable encrypted database file that users can move or back up anywhere."
+    },
+    {
+      "q": "Does Proton Pass store passwords locally as a file?",
+      "a": "No. Proton Pass vaults are accessed through a Proton account instead of opening a local database file."
+    },
+    {
+      "q": "Can KeePassDX work without internet access?",
+      "a": "Yes. KeePassDX opens the encrypted database file locally and works fully offline."
+    },
+    {
+      "q": "Who should choose Proton Pass instead?",
+      "a": "Users who want automatic password syncing and browser autofill across devices may prefer Proton Pass."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "KeePassXC",
+      "y_name": "NordPass",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Dashlane",
+      "y_name": "Passbolt",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Passbolt",
+      "y_name": "Proton Pass",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Passbolt",
+      "y_name": "RoboForm",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "1Password",
+      "y_name": "Bitwarden",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Dashlane",
+      "y_name": "KeePass",
+      "persona": "Power user"
+    }
+  ]
 }

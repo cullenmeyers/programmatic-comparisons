@@ -1,120 +1,144 @@
 {
-"category": "Calendar / Scheduling tools",
-"categorySlug": "calendar-scheduling-tools",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "Skedda vs Teamup Calendar for Power users",
-"slug": "skedda-vs-teamup-calendar-for-power-user",
-"meta_description": "Compare Skedda vs Teamup Calendar for power users managing room bookings. See why Skedda wins when resource rules must control space availability.",
-"persona": "Power user",
-"constraint_lens": "Power users need scheduling tools that enforce complex booking rules and resource constraints instead of acting as simple shared calendars.",
-"one_second_verdict": {
-  "winner_label": "Skedda",
-  "summary": "Best for power users who need scheduling tools that enforce complex booking rules and resource constraints instead of acting as simple shared calendars.",
-  "reason": "Teamup Calendar fails first because resource booking rules and availability constraints cannot be enforced per location."
-},
-"verdict": {
-"winner": "x",
-"summary": "Skedda wins because it is designed specifically for managing bookable resources such as rooms and shared spaces. Each space can have its own booking rules, permissions, and availability restrictions. Teamup Calendar works well as a shared calendar but does not enforce detailed booking constraints tied to physical resources. For power users managing facilities, that limitation becomes the ceiling.",
-"decision_rule": "If resource booking rules and availability constraints cannot be enforced per location, Teamup Calendar fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Skedda fits power users managing physical spaces",
-"content": "This power user manages rooms, desks, or shared spaces and needs booking rules tied to each resource. Skedda treats each space as a bookable resource with its own availability rules and restrictions. Administrators can define booking limits, user permissions, and access policies for each location. Teamup Calendar organizes events across calendars but does not enforce detailed rules about who can book a specific space or when."
-},
-{
-"type": "x_wins",
-"heading": "Where Skedda wins",
-"bullets": [
-{
-"point": "Resource based booking system for spaces",
-"why_it_matters": "Skedda treats each room or location as a separate bookable resource. Users reserve the space directly rather than creating generic calendar events."
-},
-{
-"point": "Availability rules defined per location",
-"why_it_matters": "Administrators can limit booking hours, maximum durations, and allowed booking windows for each space. This prevents misuse of shared facilities."
-},
-{
-"point": "Access permissions tied to specific resources",
-"why_it_matters": "Different user groups can be allowed or blocked from booking certain rooms. This ensures spaces are reserved only by authorized users."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Teamup Calendar wins",
-"bullets": [
-{
-"point": "Multiple sub calendars for organizing events",
-"why_it_matters": "Teamup allows events to be organized across multiple color coded calendars. This helps teams track schedules visually."
-},
-{
-"point": "Simple shared calendar interface",
-"why_it_matters": "Users can add events directly to a calendar without defining resource booking systems or facility rules."
-},
-{
-"point": "Flexible event fields for additional information",
-"why_it_matters": "Teamup allows event entries to include custom information such as notes or tags, which helps track different types of activities."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You only need a shared calendar to track events and do not require structured room booking rules.",
-"what_to_do_instead": "Use Teamup Calendar for a simpler shared schedule."
-},
-{
-"tool": "y",
-"fails_when": "You must control how specific rooms or spaces are booked with limits and permissions.",
-"what_to_do_instead": "Use Skedda so booking rules are enforced per resource."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the goal is only to display events across multiple teams without managing physical space reservations, Teamup Calendar may be the better option because it focuses on simple shared calendar coordination."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Choose Skedda if you manage rooms, desks, or shared spaces that require booking rules.",
-"Choose Skedda if different locations must enforce their own availability restrictions.",
-"Choose Teamup Calendar if you only need a shared calendar for events."
-]
-}
-],
-"faqs": [
-{
-"q": "What is Skedda mainly used for?",
-"a": "Skedda is designed for booking physical resources such as rooms, desks, studios, or shared facilities."
-},
-{
-"q": "Does Teamup Calendar manage room booking rules?",
-"a": "Teamup focuses on shared calendars and event organization rather than enforcing detailed resource booking rules."
-},
-{
-"q": "Why do facility managers prefer Skedda?",
-"a": "Because it allows administrators to enforce booking limits, access permissions, and availability rules for each resource."
-},
-{
-"q": "When should someone use Teamup Calendar instead?",
-"a": "Teamup is better when teams only need to track events across shared calendars without managing physical resource reservations."
-}
-],
-"related_pages": [
-{ "x_name": "Cal.com", "y_name": "Calendly", "persona": "Power user" },
-{ "x_name": "Calendly", "y_name": "SavvyCal", "persona": "Power user" },
-{ "x_name": "Motion", "y_name": "Google Calendar", "persona": "Power user" },
-{ "x_name": "Fantastical", "y_name": "Google Calendar", "persona": "Power user" },
-{ "x_name": "Cron", "y_name": "Google Calendar", "persona": "Power user" },
-{ "x_name": "Motion", "y_name": "Fantastical", "persona": "Power user" }
-]
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Skedda vs Teamup Calendar for Power users",
+  "slug": "skedda-vs-teamup-calendar-for-power-user",
+  "meta_description": "Compare Skedda vs Teamup Calendar for power users managing room bookings. See why Skedda wins when resource rules must control space availability.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need scheduling tools that enforce complex booking rules and resource constraints instead of acting as simple shared calendars.",
+  "one_second_verdict": {
+    "winner_label": "Skedda",
+    "summary": "Best for power users who need scheduling tools that enforce complex booking rules and resource constraints instead of acting as simple shared calendars.",
+    "reason": "Teamup Calendar fails first because resource booking rules and availability constraints cannot be enforced per location."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Skedda wins because it is designed specifically for managing bookable resources such as rooms and shared spaces. Each space can have its own booking rules, permissions, and availability restrictions. Teamup Calendar works well as a shared calendar but does not enforce detailed booking constraints tied to physical resources. For power users managing facilities, that limitation becomes the ceiling.",
+    "decision_rule": "If resource booking rules and availability constraints cannot be enforced per location, Teamup Calendar fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Skedda fits power users managing physical spaces",
+      "content": "This power user manages rooms, desks, or shared spaces and needs booking rules tied to each resource. Skedda treats each space as a bookable resource with its own availability rules and restrictions. Administrators can define booking limits, user permissions, and access policies for each location. Teamup Calendar organizes events across calendars but does not enforce detailed rules about who can book a specific space or when."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Skedda wins",
+      "bullets": [
+        {
+          "point": "Resource based booking system for spaces",
+          "why_it_matters": "Skedda treats each room or location as a separate bookable resource. Users reserve the space directly rather than creating generic calendar events."
+        },
+        {
+          "point": "Availability rules defined per location",
+          "why_it_matters": "Administrators can limit booking hours, maximum durations, and allowed booking windows for each space. This prevents misuse of shared facilities."
+        },
+        {
+          "point": "Access permissions tied to specific resources",
+          "why_it_matters": "Different user groups can be allowed or blocked from booking certain rooms. This ensures spaces are reserved only by authorized users."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Teamup Calendar wins",
+      "bullets": [
+        {
+          "point": "Multiple sub calendars for organizing events",
+          "why_it_matters": "Teamup allows events to be organized across multiple color coded calendars. This helps teams track schedules visually."
+        },
+        {
+          "point": "Simple shared calendar interface",
+          "why_it_matters": "Users can add events directly to a calendar without defining resource booking systems or facility rules."
+        },
+        {
+          "point": "Flexible event fields for additional information",
+          "why_it_matters": "Teamup allows event entries to include custom information such as notes or tags, which helps track different types of activities."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only need a shared calendar to track events and do not require structured room booking rules.",
+          "what_to_do_instead": "Use Teamup Calendar for a simpler shared schedule."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You must control how specific rooms or spaces are booked with limits and permissions.",
+          "what_to_do_instead": "Use Skedda so booking rules are enforced per resource."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the goal is only to display events across multiple teams without managing physical space reservations, Teamup Calendar may be the better option because it focuses on simple shared calendar coordination."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose Skedda if you manage rooms, desks, or shared spaces that require booking rules.",
+        "Choose Skedda if different locations must enforce their own availability restrictions.",
+        "Choose Teamup Calendar if you only need a shared calendar for events."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is Skedda mainly used for?",
+      "a": "Skedda is designed for booking physical resources such as rooms, desks, studios, or shared facilities."
+    },
+    {
+      "q": "Does Teamup Calendar manage room booking rules?",
+      "a": "Teamup focuses on shared calendars and event organization rather than enforcing detailed resource booking rules."
+    },
+    {
+      "q": "Why do facility managers prefer Skedda?",
+      "a": "Because it allows administrators to enforce booking limits, access permissions, and availability rules for each resource."
+    },
+    {
+      "q": "When should someone use Teamup Calendar instead?",
+      "a": "Teamup is better when teams only need to track events across shared calendars without managing physical resource reservations."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Cal.com",
+      "y_name": "Calendly",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Calendly",
+      "y_name": "SavvyCal",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Google Calendar",
+      "y_name": "Motion",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Fantastical",
+      "y_name": "Google Calendar",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Cron",
+      "y_name": "Google Calendar",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Fantastical",
+      "y_name": "Motion",
+      "persona": "Power user"
+    }
+  ]
 }

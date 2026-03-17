@@ -1,120 +1,144 @@
 {
-"category": "Email / Inbox tools",
-"categorySlug": "email-inbox-tools",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "MailMate vs Spark Mail for Power users",
-"slug": "mailmate-vs-spark-mail-for-power-user",
-"meta_description": "MailMate vs Spark Mail for power users managing complex tagging workflows. See why MailMate wins when deep email filtering and tagging matter.",
-"persona": "Power user",
-"constraint_lens": "Power users prefer email tools that allow deep customization of filtering rules and tagging workflows.",
-"one_second_verdict": {
-"winner_label": "MailMate",
-"summary": "Best for power users who need deeply customizable tagging and filtering workflows.",
-"reason": "Spark Mail fails first because tagging and filtering rules cannot be customized with the same level of control."
-},
-"verdict": {
-"winner": "x",
-"summary": "MailMate is the better option for power users managing large volumes of email with advanced tagging systems. It allows users to build detailed filtering rules that automatically assign tags and organize messages based on complex conditions. Spark Mail provides simpler inbox features but limits how deeply tags and filtering logic can be configured. When managing thousands of messages, limited rule control makes it harder to automate organization.",
-"decision_rule": "If tagging systems and filtering rules cannot be configured with deep customization, Spark Mail fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why MailMate fits power users",
-"content": "The user manages thousands of messages using complex tagging and filtering workflows. MailMate allows detailed rule creation where messages can be filtered using multiple conditions and automatically assigned tags. The system supports advanced search expressions and customizable rules that control how messages move through the mailbox. This makes it easier to manage large inbox systems without manually sorting messages."
-},
-{
-"type": "x_wins",
-"heading": "Where MailMate wins",
-"bullets": [
-{
-"point": "MailMate supports advanced rule based filtering that can assign tags automatically.",
-"why_it_matters": "Users can organize incoming messages using detailed conditions instead of manual sorting."
-},
-{
-"point": "MailMate allows complex search expressions to define message rules.",
-"why_it_matters": "Power users can create precise filtering logic for large inbox systems."
-},
-{
-"point": "MailMate provides customizable tagging workflows across folders and messages.",
-"why_it_matters": "Users can manage thousands of emails using structured tagging systems."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Spark Mail wins",
-"bullets": [
-{
-"point": "Spark Mail provides a simplified inbox interface with built in sorting features.",
-"why_it_matters": "Users can quickly separate personal messages from newsletters or notifications."
-},
-{
-"point": "Spark Mail includes collaboration features such as shared drafts and internal comments.",
-"why_it_matters": "Teams can coordinate responses inside the inbox."
-},
-{
-"point": "Spark Mail runs across multiple devices with synchronized accounts.",
-"why_it_matters": "Users can access the same mailbox on mobile and desktop devices."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The user wants a simplified inbox with built in team collaboration tools.",
-"what_to_do_instead": "Use Spark Mail where shared drafts and internal comments support team workflows."
-},
-{
-"tool": "y",
-"fails_when": "The user needs deeply customizable tagging and filtering systems because Spark Mail limits rule customization.",
-"what_to_do_instead": "Use MailMate where tagging workflows and filtering logic can be configured in detail."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the user works in a team that needs shared drafts and internal discussion inside email threads, Spark Mail may become the better option."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick MailMate if you rely on complex tagging and filtering rules.",
-"Pick MailMate if you manage thousands of messages with automated organization.",
-"Pick Spark Mail if you need collaboration features inside the inbox."
-]
-}
-],
-"faqs": [
-{
-"q": "Why do power users prefer MailMate?",
-"a": "MailMate supports advanced filtering rules and tagging workflows that automate email organization."
-},
-{
-"q": "Can Spark Mail create complex tagging rules?",
-"a": "Spark Mail provides simpler inbox sorting but does not support the same level of rule customization."
-},
-{
-"q": "Does MailMate support automated message organization?",
-"a": "Yes. MailMate can apply rules that automatically tag and organize incoming messages."
-},
-{
-"q": "Who should choose Spark Mail instead?",
-"a": "Users who want collaboration tools such as shared drafts and team comments may prefer Spark Mail."
-}
-],
-"related_pages": [
-{ "x_name": "Thunderbird", "y_name": "Proton Mail", "persona": "Power user" },
-{ "x_name": "Thunderbird", "y_name": "Yahoo Mail", "persona": "Power user" },
-{ "x_name": "Roundcube", "y_name": "Gmail", "persona": "Power user" },
-{ "x_name": "Roundcube", "y_name": "Yahoo Mail", "persona": "Power user" },
-{ "x_name": "Outlook", "y_name": "HEY", "persona": "Power user" },
-{ "x_name": "Front", "y_name": "Fastmail", "persona": "Power user" }
-]
+  "category": "Email / Inbox tools",
+  "categorySlug": "email-inbox-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "MailMate vs Spark Mail for Power users",
+  "slug": "mailmate-vs-spark-mail-for-power-user",
+  "meta_description": "MailMate vs Spark Mail for power users managing complex tagging workflows. See why MailMate wins when deep email filtering and tagging matter.",
+  "persona": "Power user",
+  "constraint_lens": "Power users prefer email tools that allow deep customization of filtering rules and tagging workflows.",
+  "one_second_verdict": {
+    "winner_label": "MailMate",
+    "summary": "Best for power users who need deeply customizable tagging and filtering workflows.",
+    "reason": "Spark Mail fails first because tagging and filtering rules cannot be customized with the same level of control."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "MailMate is the better option for power users managing large volumes of email with advanced tagging systems. It allows users to build detailed filtering rules that automatically assign tags and organize messages based on complex conditions. Spark Mail provides simpler inbox features but limits how deeply tags and filtering logic can be configured. When managing thousands of messages, limited rule control makes it harder to automate organization.",
+    "decision_rule": "If tagging systems and filtering rules cannot be configured with deep customization, Spark Mail fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why MailMate fits power users",
+      "content": "The user manages thousands of messages using complex tagging and filtering workflows. MailMate allows detailed rule creation where messages can be filtered using multiple conditions and automatically assigned tags. The system supports advanced search expressions and customizable rules that control how messages move through the mailbox. This makes it easier to manage large inbox systems without manually sorting messages."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where MailMate wins",
+      "bullets": [
+        {
+          "point": "MailMate supports advanced rule based filtering that can assign tags automatically.",
+          "why_it_matters": "Users can organize incoming messages using detailed conditions instead of manual sorting."
+        },
+        {
+          "point": "MailMate allows complex search expressions to define message rules.",
+          "why_it_matters": "Power users can create precise filtering logic for large inbox systems."
+        },
+        {
+          "point": "MailMate provides customizable tagging workflows across folders and messages.",
+          "why_it_matters": "Users can manage thousands of emails using structured tagging systems."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Spark Mail wins",
+      "bullets": [
+        {
+          "point": "Spark Mail provides a simplified inbox interface with built in sorting features.",
+          "why_it_matters": "Users can quickly separate personal messages from newsletters or notifications."
+        },
+        {
+          "point": "Spark Mail includes collaboration features such as shared drafts and internal comments.",
+          "why_it_matters": "Teams can coordinate responses inside the inbox."
+        },
+        {
+          "point": "Spark Mail runs across multiple devices with synchronized accounts.",
+          "why_it_matters": "Users can access the same mailbox on mobile and desktop devices."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The user wants a simplified inbox with built in team collaboration tools.",
+          "what_to_do_instead": "Use Spark Mail where shared drafts and internal comments support team workflows."
+        },
+        {
+          "tool": "y",
+          "fails_when": "The user needs deeply customizable tagging and filtering systems because Spark Mail limits rule customization.",
+          "what_to_do_instead": "Use MailMate where tagging workflows and filtering logic can be configured in detail."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user works in a team that needs shared drafts and internal discussion inside email threads, Spark Mail may become the better option."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick MailMate if you rely on complex tagging and filtering rules.",
+        "Pick MailMate if you manage thousands of messages with automated organization.",
+        "Pick Spark Mail if you need collaboration features inside the inbox."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why do power users prefer MailMate?",
+      "a": "MailMate supports advanced filtering rules and tagging workflows that automate email organization."
+    },
+    {
+      "q": "Can Spark Mail create complex tagging rules?",
+      "a": "Spark Mail provides simpler inbox sorting but does not support the same level of rule customization."
+    },
+    {
+      "q": "Does MailMate support automated message organization?",
+      "a": "Yes. MailMate can apply rules that automatically tag and organize incoming messages."
+    },
+    {
+      "q": "Who should choose Spark Mail instead?",
+      "a": "Users who want collaboration tools such as shared drafts and team comments may prefer Spark Mail."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Proton Mail",
+      "y_name": "Thunderbird",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Thunderbird",
+      "y_name": "Yahoo Mail",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Roundcube",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Roundcube",
+      "y_name": "Yahoo Mail",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "HEY",
+      "y_name": "Outlook",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Fastmail",
+      "y_name": "Front",
+      "persona": "Power user"
+    }
+  ]
 }

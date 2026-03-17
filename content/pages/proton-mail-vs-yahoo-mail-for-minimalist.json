@@ -1,120 +1,144 @@
 {
-"category": "Email / Inbox tools",
-"categorySlug": "email-inbox-tools",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Proton Mail vs Yahoo Mail for Minimalists",
-"slug": "proton-mail-vs-yahoo-mail-for-minimalist",
-"meta_description": "Proton Mail vs Yahoo Mail for minimalists who want an inbox without ads. See why Proton Mail wins when you want a clean email interface.",
-"persona": "Minimalist",
-"constraint_lens": "Minimalists prefer tools that remove visual clutter and avoid extra panels, ads, or features that distract from reading messages.",
-"one_second_verdict": {
-"winner_label": "Proton Mail",
-"summary": "Best for minimalists who want a clean inbox without advertising panels.",
-"reason": "Yahoo Mail fails first because it displays advertising banners and promotional panels alongside messages in the inbox interface."
-},
-"verdict": {
-"winner": "x",
-"summary": "Proton Mail is the better choice for minimalists who want a clean and focused inbox. Its interface avoids advertising panels and keeps the layout centered around reading messages. Yahoo Mail includes advertising banners and promotional placements inside the inbox screen. Those elements add visual clutter that minimalists prefer to avoid when managing email.",
-"decision_rule": "If the inbox interface includes advertising panels and promotional placements alongside messages, Yahoo Mail fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Proton Mail fits minimalists",
-"content": "The user wants an email service that avoids advertising panels and promotional inbox clutter. Proton Mail presents messages in a focused inbox layout without ad banners competing for space. The interface prioritizes the message list and reading view instead of surrounding the inbox with marketing panels. This keeps the experience centered on reading and replying to email."
-},
-{
-"type": "x_wins",
-"heading": "Where Proton Mail wins",
-"bullets": [
-{
-"point": "Proton Mail does not place advertising banners inside the inbox interface.",
-"why_it_matters": "Minimalists can focus on messages without promotional panels appearing beside or between emails."
-},
-{
-"point": "Proton Mail organizes messages in a simple inbox and reading layout.",
-"why_it_matters": "The screen prioritizes email content rather than surrounding the inbox with promotional widgets or extra panels."
-},
-{
-"point": "Proton Mail uses a privacy focused service model instead of advertising funded email.",
-"why_it_matters": "Because the platform is not funded by ads, the interface avoids promotional placements that distract from reading email."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Yahoo Mail wins",
-"bullets": [
-{
-"point": "Yahoo Mail offers a free email account with large inbox storage.",
-"why_it_matters": "Users can store many messages and attachments without paying for additional space."
-},
-{
-"point": "Yahoo Mail includes built in sorting tools for newsletters and promotional emails.",
-"why_it_matters": "Users can group subscription emails together to reduce clutter in the main inbox."
-},
-{
-"point": "Yahoo Mail works entirely in a browser without installing additional software.",
-"why_it_matters": "Users can sign in from different devices and access the inbox immediately."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The user wants a completely free email account and does not want to pay for premium features or storage.",
-"what_to_do_instead": "Use Yahoo Mail where the inbox can be used without paying for the service."
-},
-{
-"tool": "y",
-"fails_when": "The user wants a distraction free inbox because Yahoo Mail displays advertising banners and promotional panels inside the interface.",
-"what_to_do_instead": "Use Proton Mail where the inbox layout avoids advertising placements."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the user wants a completely free email service and does not mind seeing advertising panels inside the inbox interface, Yahoo Mail may be acceptable."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick Proton Mail if you want an inbox without advertising panels.",
-"Pick Proton Mail if you prefer a focused interface built around reading messages.",
-"Pick Yahoo Mail if you want a free email service and do not mind ads."
-]
-}
-],
-"faqs": [
-{
-"q": "Why do minimalists prefer Proton Mail?",
-"a": "Proton Mail avoids advertising panels in the inbox interface, keeping the layout focused on reading and replying to messages."
-},
-{
-"q": "Does Yahoo Mail display ads in the inbox?",
-"a": "Yes. Yahoo Mail includes advertising banners and promotional placements inside the inbox screen."
-},
-{
-"q": "Is Proton Mail free to use?",
-"a": "Proton Mail offers a free plan, though some features require upgrading to a paid plan."
-},
-{
-"q": "Who might still choose Yahoo Mail?",
-"a": "Users who want a completely free inbox with large storage and do not mind seeing advertising may prefer Yahoo Mail."
-}
-],
-"related_pages": [
-{ "x_name": "Proton Mail", "y_name": "Gmail", "persona": "Minimalist" },
-{ "x_name": "Fastmail", "y_name": "Yahoo Mail", "persona": "Minimalist" },
-{ "x_name": "HEY", "y_name": "Gmail", "persona": "Minimalist" },
-{ "x_name": "Fastmail", "y_name": "Gmail", "persona": "Minimalist" },
-{ "x_name": "HEY", "y_name": "Outlook", "persona": "Minimalist" },
-{ "x_name": "Proton Mail", "y_name": "Outlook", "persona": "Minimalist" }
-]
+  "category": "Email / Inbox tools",
+  "categorySlug": "email-inbox-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Proton Mail vs Yahoo Mail for Minimalists",
+  "slug": "proton-mail-vs-yahoo-mail-for-minimalist",
+  "meta_description": "Proton Mail vs Yahoo Mail for minimalists who want an inbox without ads. See why Proton Mail wins when you want a clean email interface.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists prefer tools that remove visual clutter and avoid extra panels, ads, or features that distract from reading messages.",
+  "one_second_verdict": {
+    "winner_label": "Proton Mail",
+    "summary": "Best for minimalists who want a clean inbox without advertising panels.",
+    "reason": "Yahoo Mail fails first because it displays advertising banners and promotional panels alongside messages in the inbox interface."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Proton Mail is the better choice for minimalists who want a clean and focused inbox. Its interface avoids advertising panels and keeps the layout centered around reading messages. Yahoo Mail includes advertising banners and promotional placements inside the inbox screen. Those elements add visual clutter that minimalists prefer to avoid when managing email.",
+    "decision_rule": "If the inbox interface includes advertising panels and promotional placements alongside messages, Yahoo Mail fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Proton Mail fits minimalists",
+      "content": "The user wants an email service that avoids advertising panels and promotional inbox clutter. Proton Mail presents messages in a focused inbox layout without ad banners competing for space. The interface prioritizes the message list and reading view instead of surrounding the inbox with marketing panels. This keeps the experience centered on reading and replying to email."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Proton Mail wins",
+      "bullets": [
+        {
+          "point": "Proton Mail does not place advertising banners inside the inbox interface.",
+          "why_it_matters": "Minimalists can focus on messages without promotional panels appearing beside or between emails."
+        },
+        {
+          "point": "Proton Mail organizes messages in a simple inbox and reading layout.",
+          "why_it_matters": "The screen prioritizes email content rather than surrounding the inbox with promotional widgets or extra panels."
+        },
+        {
+          "point": "Proton Mail uses a privacy focused service model instead of advertising funded email.",
+          "why_it_matters": "Because the platform is not funded by ads, the interface avoids promotional placements that distract from reading email."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Yahoo Mail wins",
+      "bullets": [
+        {
+          "point": "Yahoo Mail offers a free email account with large inbox storage.",
+          "why_it_matters": "Users can store many messages and attachments without paying for additional space."
+        },
+        {
+          "point": "Yahoo Mail includes built in sorting tools for newsletters and promotional emails.",
+          "why_it_matters": "Users can group subscription emails together to reduce clutter in the main inbox."
+        },
+        {
+          "point": "Yahoo Mail works entirely in a browser without installing additional software.",
+          "why_it_matters": "Users can sign in from different devices and access the inbox immediately."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The user wants a completely free email account and does not want to pay for premium features or storage.",
+          "what_to_do_instead": "Use Yahoo Mail where the inbox can be used without paying for the service."
+        },
+        {
+          "tool": "y",
+          "fails_when": "The user wants a distraction free inbox because Yahoo Mail displays advertising banners and promotional panels inside the interface.",
+          "what_to_do_instead": "Use Proton Mail where the inbox layout avoids advertising placements."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user wants a completely free email service and does not mind seeing advertising panels inside the inbox interface, Yahoo Mail may be acceptable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Proton Mail if you want an inbox without advertising panels.",
+        "Pick Proton Mail if you prefer a focused interface built around reading messages.",
+        "Pick Yahoo Mail if you want a free email service and do not mind ads."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why do minimalists prefer Proton Mail?",
+      "a": "Proton Mail avoids advertising panels in the inbox interface, keeping the layout focused on reading and replying to messages."
+    },
+    {
+      "q": "Does Yahoo Mail display ads in the inbox?",
+      "a": "Yes. Yahoo Mail includes advertising banners and promotional placements inside the inbox screen."
+    },
+    {
+      "q": "Is Proton Mail free to use?",
+      "a": "Proton Mail offers a free plan, though some features require upgrading to a paid plan."
+    },
+    {
+      "q": "Who might still choose Yahoo Mail?",
+      "a": "Users who want a completely free inbox with large storage and do not mind seeing advertising may prefer Yahoo Mail."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Gmail",
+      "y_name": "Proton Mail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Fastmail",
+      "y_name": "Yahoo Mail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "HEY",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Fastmail",
+      "y_name": "Gmail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "HEY",
+      "y_name": "Outlook",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Outlook",
+      "y_name": "Proton Mail",
+      "persona": "Minimalist"
+    }
+  ]
 }

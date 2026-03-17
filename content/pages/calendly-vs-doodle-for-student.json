@@ -1,0 +1,139 @@
+{
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "switching-cost",
+  "constraintUiName": "Easy to quit later",
+  "title": "Calendly vs Doodle for Students",
+  "slug": "calendly-vs-doodle-for-student",
+  "meta_description": "Calendly vs Doodle for students who need to find a group meeting time quickly without creating booking pages or long term scheduling setups.",
+  "persona": "Student",
+  "constraint_lens": "You want something you can use for a short project without committing to long setup or ongoing account management.",
+  "one_second_verdict": {
+    "winner_label": "Doodle",
+    "summary": "Best for students coordinating availability for a short term group project.",
+    "reason": "Calendly fails first because individual booking links require setup before polling availability."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Doodle wins for students coordinating availability for a short term group project. It lets you create a poll with time options and send a link without building a booking page or workflow. Calendly is built around personal booking links and event types that require setup first. If individual booking links require setup before polling availability, Calendly fails first.",
+    "decision_rule": "If individual booking links require setup before polling availability, Calendly fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Students",
+      "content": "You said you need to coordinate group availability for a short term project. As a student, you do not want to build a long term scheduling system just to find one meeting time. The easier it is to create a poll and move on, the better."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Doodle wins",
+      "bullets": [
+        {
+          "point": "Create a poll by selecting multiple time slots on a simple grid",
+          "why_it_matters": "You can propose several meeting options at once and let classmates vote, without setting up personal availability rules first."
+        },
+        {
+          "point": "Participants respond by marking yes, no, or if needed for each time",
+          "why_it_matters": "Group availability becomes visible in one table, which makes it easier to spot the best time without back and forth messages."
+        },
+        {
+          "point": "No requirement to build a reusable booking page",
+          "why_it_matters": "You can run one poll for this project and stop using it after, with no need to maintain event types or public links."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Calendly wins",
+      "bullets": [
+        {
+          "point": "Personal booking link tied to your calendar availability",
+          "why_it_matters": "Others can pick a time directly from your open slots, but you must first define your availability and event settings."
+        },
+        {
+          "point": "Automatic calendar booking once someone selects a slot",
+          "why_it_matters": "It removes manual confirmation steps, yet this works best for one to one scheduling rather than group voting."
+        },
+        {
+          "point": "Event type setup with buffers and rules",
+          "why_it_matters": "You can control meeting length and spacing, but setting these up adds extra steps for a short term student project."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You need ongoing one to one booking where people automatically reserve time on your calendar.",
+          "what_to_do_instead": "Use Calendly if you want meetings to be confirmed instantly without manual selection after a poll."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You must coordinate availability across several classmates before choosing a time.",
+          "what_to_do_instead": "Use Doodle if your goal is to compare group availability in one shared poll."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the project turns into repeated one to one sessions such as tutoring or interviews, Calendly may feel easier because people can book directly into your calendar without group voting."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you need a quick group vote on meeting times, choose Doodle.",
+        "If you do not want to set up availability rules first, avoid Calendly.",
+        "If people should book directly into your calendar one at a time, use Calendly."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I use Calendly for group scheduling?",
+      "a": "You can share one booking link, but it does not show a voting table of everyone availability like a poll does."
+    },
+    {
+      "q": "Does Doodle require everyone to create accounts?",
+      "a": "Participants can usually respond through the poll link, which keeps it lightweight for short term coordination."
+    },
+    {
+      "q": "Which is faster for a single project?",
+      "a": "Doodle is typically faster because you only create a poll and send it, without building a reusable booking system."
+    },
+    {
+      "q": "Will I need to keep using Doodle after the project?",
+      "a": "No, you can run one poll, finalize a meeting time, and stop without maintaining event types or public scheduling pages."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Calendly",
+      "y_name": "Microsoft Bookings",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Doodle",
+      "y_name": "Square Appointments",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Doodle",
+      "y_name": "TidyCal",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Calendly",
+      "y_name": "Microsoft Bookings",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Cal.com",
+      "y_name": "SavvyCal",
+      "persona": "Student"
+    }
+  ]
+}

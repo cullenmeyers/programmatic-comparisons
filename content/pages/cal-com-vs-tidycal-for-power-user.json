@@ -1,0 +1,144 @@
+{
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Cal.com vs TidyCal for Power users",
+  "slug": "cal-com-vs-tidycal-for-power-user",
+  "meta_description": "Compare Cal.com vs TidyCal for power users customizing booking workflows. See why Cal.com wins when APIs and self hosting are required.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need tools that allow deep customization and infrastructure control instead of limiting how scheduling workflows can evolve.",
+  "one_second_verdict": {
+    "winner_label": "Cal.com",
+    "summary": "Best for power users who need allow deep customization and infrastructure control instead of limiting how scheduling workflows can evolve.",
+    "reason": "TidyCal fails first because booking workflows cannot be extended through APIs or self-hosted configuration."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Cal.com wins because it allows booking systems to be customized through APIs and can run on infrastructure you control. Developers can modify scheduling logic or integrate the booking engine into other applications. TidyCal focuses on simple booking pages and limits customization to built in settings. For power users building advanced scheduling systems, those limits become the ceiling.",
+    "decision_rule": "If booking workflows cannot be extended through APIs or self-hosted configuration, TidyCal fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Cal.com fits power users customizing booking systems",
+      "content": "This power user runs a consulting site and expects scheduling to behave like infrastructure rather than a fixed product. Cal.com exposes its booking system through APIs and can run on your own servers, which allows developers to change how scheduling logic works. This makes it possible to embed scheduling directly into custom websites or applications. TidyCal focuses on ready made booking pages that work immediately but offer limited ways to extend the workflow."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Cal.com wins",
+      "bullets": [
+        {
+          "point": "Self hosted booking engine",
+          "why_it_matters": "Cal.com provides server code that can run on your own infrastructure. This allows full control over how the booking system operates and where scheduling data is stored."
+        },
+        {
+          "point": "Full API access for booking logic",
+          "why_it_matters": "Developers can create bookings, update availability, and control scheduling workflows through APIs. This enables custom integrations with websites or internal systems."
+        },
+        {
+          "point": "Editable scheduling behavior in the codebase",
+          "why_it_matters": "Because the system is open source, teams can modify routing logic, booking flows, and integration behavior directly in the application code."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where TidyCal wins",
+      "bullets": [
+        {
+          "point": "Quick setup booking pages",
+          "why_it_matters": "TidyCal allows users to create a booking page by selecting meeting durations and availability times. This requires very little setup."
+        },
+        {
+          "point": "Simple scheduling interface",
+          "why_it_matters": "The interface focuses on creating booking links and managing appointments without exposing developer tools or infrastructure controls."
+        },
+        {
+          "point": "All in one hosted scheduling system",
+          "why_it_matters": "TidyCal runs entirely as a hosted service, so users do not need to manage servers or configure system infrastructure."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only need a simple booking page and do not want to manage infrastructure or developer level integrations.",
+          "what_to_do_instead": "Use TidyCal for a straightforward hosted booking link."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need to extend scheduling logic through APIs or run the booking system on infrastructure you control.",
+          "what_to_do_instead": "Use Cal.com so the scheduling engine can be customized and self hosted."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the goal is simply to create a booking link for consulting calls and there is no need to modify the scheduling system itself, TidyCal may be the faster choice because it works immediately without infrastructure decisions."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose Cal.com if you need API level control over booking workflows.",
+        "Choose Cal.com if you want the option to self host the scheduling engine.",
+        "Choose TidyCal if you only need a simple hosted booking page."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can TidyCal be self hosted?",
+      "a": "No. TidyCal operates as a hosted service and does not provide server code for running the system independently."
+    },
+    {
+      "q": "Why do developers choose Cal.com?",
+      "a": "Cal.com exposes scheduling features through APIs and open source code, allowing developers to customize booking workflows and integrate scheduling into other systems."
+    },
+    {
+      "q": "Is Cal.com harder to set up than TidyCal?",
+      "a": "It can require more technical setup if you plan to customize the system or run it on your own infrastructure."
+    },
+    {
+      "q": "When is TidyCal the better option?",
+      "a": "TidyCal is better when the goal is to create a simple booking page quickly without developer integrations."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Cal.com",
+      "y_name": "Calendly",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Calendly",
+      "y_name": "SavvyCal",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Google Calendar",
+      "y_name": "Motion",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Fantastical",
+      "y_name": "Google Calendar",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Cron",
+      "y_name": "Google Calendar",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Fantastical",
+      "y_name": "Motion",
+      "persona": "Power user"
+    }
+  ]
+}

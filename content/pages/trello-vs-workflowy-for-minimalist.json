@@ -1,0 +1,144 @@
+{
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Trello vs Workflowy for Minimalists",
+  "slug": "trello-vs-workflowy-for-minimalist",
+  "meta_description": "Compare Trello vs Workflowy for minimalists planning tasks in outlines. See why Workflowy wins when tasks must stay in nested lists.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists prefer tools that organize tasks in a single structure instead of switching between multiple interface layouts.",
+  "one_second_verdict": {
+    "winner_label": "Workflowy",
+    "summary": "Best for minimalists who need minimalists prefer tools that organize tasks in a single structure instead of switching between multiple interface layouts.",
+    "reason": "Trello fails first because organizing tasks requires moving cards across boards instead of structuring them as nested bullet lists."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Workflowy wins because it organizes tasks in a continuous nested outline where each task can expand into sub tasks. Users can structure work as bullet hierarchies without switching views. Trello organizes tasks as cards inside columns on visual boards that require dragging cards between lists. For minimalists who think in outlines, the board and card interface adds unnecessary complexity.",
+    "decision_rule": "If organizing tasks requires moving cards across boards instead of structuring them as nested bullet lists, Trello fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Workflowy fits minimalists planning tasks in outlines",
+      "content": "This minimalist organizes tasks as nested lists rather than visual boards. Workflowy lets users write a task as a bullet and create sub tasks by indenting deeper levels. Entire projects can live inside a single outline where sections expand and collapse. Trello uses boards made of columns and cards that must be moved between lists, which introduces visual layout management instead of a simple hierarchy."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Workflowy wins",
+      "bullets": [
+        {
+          "point": "Continuous nested bullet outline for tasks",
+          "why_it_matters": "Every task can become a parent bullet with sub tasks nested underneath, forming a clear hierarchy."
+        },
+        {
+          "point": "Zoom into any branch of the outline",
+          "why_it_matters": "Users can focus on a single project or section of tasks without navigating between boards."
+        },
+        {
+          "point": "Single list based interface",
+          "why_it_matters": "Tasks are written and organized inside one outline editor without switching between board layouts or card panels."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Trello wins",
+      "bullets": [
+        {
+          "point": "Visual board with draggable task cards",
+          "why_it_matters": "Tasks appear as cards that can be moved between columns representing stages such as to do and done."
+        },
+        {
+          "point": "Columns representing workflow stages",
+          "why_it_matters": "Teams can structure work pipelines where cards move across stages during a project."
+        },
+        {
+          "point": "Card level attachments and comments",
+          "why_it_matters": "Each task card can include attachments, comments, and activity history within the board."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You want tasks visualized as workflow stages or shared boards with cards.",
+          "what_to_do_instead": "Use Trello for board based project workflows."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You want to structure tasks as nested lists instead of managing boards and card layouts.",
+          "what_to_do_instead": "Use Workflowy for hierarchical task outlines."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If tasks must move through stages such as backlog, in progress, and completed using a visual workflow board, Trello may become the better choice because it is designed for card based pipelines."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose Workflowy if you organize tasks as nested outlines.",
+        "Choose Workflowy if you want a continuous list instead of visual boards.",
+        "Choose Trello if tasks must move across workflow columns."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is Workflowy mainly used for in task planning?",
+      "a": "Workflowy is used to organize tasks in nested bullet outlines where projects expand into sub tasks."
+    },
+    {
+      "q": "Why does Trello feel different from an outline task tool?",
+      "a": "Trello organizes work through boards and draggable cards rather than hierarchical lists."
+    },
+    {
+      "q": "Why might minimalists prefer Workflowy for tasks?",
+      "a": "Because it focuses on simple hierarchical lists instead of visual board layouts."
+    },
+    {
+      "q": "When is Trello the better option?",
+      "a": "Trello is better when tasks move through visual workflow stages on a board."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Google Tasks",
+      "y_name": "TickTick",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Google Tasks",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Google Tasks",
+      "y_name": "Microsoft To Do",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Remember The Milk",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Things",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Any.do",
+      "y_name": "Google Tasks",
+      "persona": "Minimalist"
+    }
+  ]
+}

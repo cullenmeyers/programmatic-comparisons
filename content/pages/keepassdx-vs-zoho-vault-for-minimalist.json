@@ -1,120 +1,144 @@
 {
-"category": "Password Managers",
-"categorySlug": "password-managers",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "KeePassDX vs Zoho Vault for Minimalists",
-"slug": "keepassdx-vs-zoho-vault-for-minimalist",
-"meta_description": "KeePassDX vs Zoho Vault for minimalists who want a fully local password vault. See why KeePassDX wins when you refuse hosted vault services.",
-"persona": "Minimalist",
-"constraint_lens": "Minimalists prefer tools that avoid accounts and external services so password storage stays local and fully under their control.",
-"one_second_verdict": {
-"winner_label": "KeePassDX",
-"summary": "Best for minimalists who want passwords stored locally as an encrypted vault file on their device.",
-"reason": "Zoho Vault fails first because passwords are stored inside a hosted service account instead of a local encrypted database file."
-},
-"verdict": {
-"winner": "x",
-"summary": "KeePassDX is the better choice for minimalists who refuse to store passwords inside hosted services. It stores credentials inside a local encrypted KDBX vault file directly on the device. Zoho Vault keeps the password vault inside a hosted account and requires signing into the service to access credentials. For users who want the vault to remain entirely local, relying on a hosted account breaks the requirement.",
-"decision_rule": "If the password vault must be stored inside a hosted service account rather than a local encrypted database file, Zoho Vault fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why KeePassDX fits minimalists",
-"content": "The user refuses to store passwords inside hosted services and wants full control of the vault file. KeePassDX stores credentials inside a local encrypted KDBX database file that exists directly on the device. The file can be backed up, copied, or stored anywhere the user chooses. This approach avoids creating service accounts or relying on vendor infrastructure."
-},
-{
-"type": "x_wins",
-"heading": "Where KeePassDX wins",
-"bullets": [
-{
-"point": "KeePassDX stores passwords inside a local encrypted KDBX database file on the device.",
-"why_it_matters": "Users keep full control over the vault without relying on hosted services."
-},
-{
-"point": "KeePassDX opens the vault directly from local storage without requiring an account login.",
-"why_it_matters": "Minimalists can manage passwords without maintaining service credentials."
-},
-{
-"point": "KeePassDX allows the encrypted vault file to be stored anywhere such as device storage or external drives.",
-"why_it_matters": "Users can manage backups and storage locations directly."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Zoho Vault wins",
-"bullets": [
-{
-"point": "Zoho Vault synchronizes passwords automatically through the account vault.",
-"why_it_matters": "Passwords appear across multiple devices without transferring files."
-},
-{
-"point": "Zoho Vault allows credentials to be shared with teammates using built in permission controls.",
-"why_it_matters": "Teams can manage access to credentials without sending vault files."
-},
-{
-"point": "Zoho Vault restores the vault automatically after logging into the account on a new device.",
-"why_it_matters": "Users can recover passwords quickly without importing backup files."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The user wants passwords to synchronize automatically across devices without moving a vault file.",
-"what_to_do_instead": "Use Zoho Vault where the vault synchronizes through the account."
-},
-{
-"tool": "y",
-"fails_when": "The user refuses hosted password services because Zoho Vault stores the vault inside an account based service.",
-"what_to_do_instead": "Use KeePassDX where the vault exists as a local encrypted database file."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the user wants passwords to synchronize automatically across devices and does not mind storing the vault inside a hosted account service, Zoho Vault may become the better option."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick KeePassDX if you want passwords stored locally as an encrypted vault file.",
-"Pick KeePassDX if you refuse to store credentials in hosted password services.",
-"Pick Zoho Vault if you want automatic syncing and device recovery through an account."
-]
-}
-],
-"faqs": [
-{
-"q": "Why do minimalists prefer KeePassDX?",
-"a": "KeePassDX stores passwords in a local encrypted database file instead of a hosted vault service."
-},
-{
-"q": "Does Zoho Vault store passwords locally?",
-"a": "No. Zoho Vault stores the password vault inside a hosted account service."
-},
-{
-"q": "Can KeePassDX work without internet access?",
-"a": "Yes. KeePassDX opens the encrypted vault file locally and works offline."
-},
-{
-"q": "Who should choose Zoho Vault instead?",
-"a": "Users who want automatic syncing across devices or team sharing features may prefer Zoho Vault."
-}
-],
-"related_pages": [
-{ "x_name": "KeePassXC", "y_name": "Keeper", "persona": "Minimalist" },
-{ "x_name": "Enpass", "y_name": "NordPass", "persona": "Minimalist" },
-{ "x_name": "Enpass", "y_name": "1Password", "persona": "Minimalist" },
-{ "x_name": "KeePass", "y_name": "Proton Pass", "persona": "Minimalist" },
-{ "x_name": "KeePassXC", "y_name": "Dashlane", "persona": "Minimalist" },
-{ "x_name": "KeePassXC", "y_name": "LastPass", "persona": "Minimalist" }
-]
+  "category": "Password Managers",
+  "categorySlug": "password-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "KeePassDX vs Zoho Vault for Minimalists",
+  "slug": "keepassdx-vs-zoho-vault-for-minimalist",
+  "meta_description": "KeePassDX vs Zoho Vault for minimalists who want a fully local password vault. See why KeePassDX wins when you refuse hosted vault services.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists prefer tools that avoid accounts and external services so password storage stays local and fully under their control.",
+  "one_second_verdict": {
+    "winner_label": "KeePassDX",
+    "summary": "Best for minimalists who want passwords stored locally as an encrypted vault file on their device.",
+    "reason": "Zoho Vault fails first because passwords are stored inside a hosted service account instead of a local encrypted database file."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "KeePassDX is the better choice for minimalists who refuse to store passwords inside hosted services. It stores credentials inside a local encrypted KDBX vault file directly on the device. Zoho Vault keeps the password vault inside a hosted account and requires signing into the service to access credentials. For users who want the vault to remain entirely local, relying on a hosted account breaks the requirement.",
+    "decision_rule": "If the password vault must be stored inside a hosted service account rather than a local encrypted database file, Zoho Vault fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why KeePassDX fits minimalists",
+      "content": "The user refuses to store passwords inside hosted services and wants full control of the vault file. KeePassDX stores credentials inside a local encrypted KDBX database file that exists directly on the device. The file can be backed up, copied, or stored anywhere the user chooses. This approach avoids creating service accounts or relying on vendor infrastructure."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where KeePassDX wins",
+      "bullets": [
+        {
+          "point": "KeePassDX stores passwords inside a local encrypted KDBX database file on the device.",
+          "why_it_matters": "Users keep full control over the vault without relying on hosted services."
+        },
+        {
+          "point": "KeePassDX opens the vault directly from local storage without requiring an account login.",
+          "why_it_matters": "Minimalists can manage passwords without maintaining service credentials."
+        },
+        {
+          "point": "KeePassDX allows the encrypted vault file to be stored anywhere such as device storage or external drives.",
+          "why_it_matters": "Users can manage backups and storage locations directly."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Zoho Vault wins",
+      "bullets": [
+        {
+          "point": "Zoho Vault synchronizes passwords automatically through the account vault.",
+          "why_it_matters": "Passwords appear across multiple devices without transferring files."
+        },
+        {
+          "point": "Zoho Vault allows credentials to be shared with teammates using built in permission controls.",
+          "why_it_matters": "Teams can manage access to credentials without sending vault files."
+        },
+        {
+          "point": "Zoho Vault restores the vault automatically after logging into the account on a new device.",
+          "why_it_matters": "Users can recover passwords quickly without importing backup files."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The user wants passwords to synchronize automatically across devices without moving a vault file.",
+          "what_to_do_instead": "Use Zoho Vault where the vault synchronizes through the account."
+        },
+        {
+          "tool": "y",
+          "fails_when": "The user refuses hosted password services because Zoho Vault stores the vault inside an account based service.",
+          "what_to_do_instead": "Use KeePassDX where the vault exists as a local encrypted database file."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user wants passwords to synchronize automatically across devices and does not mind storing the vault inside a hosted account service, Zoho Vault may become the better option."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick KeePassDX if you want passwords stored locally as an encrypted vault file.",
+        "Pick KeePassDX if you refuse to store credentials in hosted password services.",
+        "Pick Zoho Vault if you want automatic syncing and device recovery through an account."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why do minimalists prefer KeePassDX?",
+      "a": "KeePassDX stores passwords in a local encrypted database file instead of a hosted vault service."
+    },
+    {
+      "q": "Does Zoho Vault store passwords locally?",
+      "a": "No. Zoho Vault stores the password vault inside a hosted account service."
+    },
+    {
+      "q": "Can KeePassDX work without internet access?",
+      "a": "Yes. KeePassDX opens the encrypted vault file locally and works offline."
+    },
+    {
+      "q": "Who should choose Zoho Vault instead?",
+      "a": "Users who want automatic syncing across devices or team sharing features may prefer Zoho Vault."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "KeePassXC",
+      "y_name": "Keeper",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Enpass",
+      "y_name": "NordPass",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "1Password",
+      "y_name": "Enpass",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "KeePass",
+      "y_name": "Proton Pass",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Dashlane",
+      "y_name": "KeePassXC",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "KeePassXC",
+      "y_name": "LastPass",
+      "persona": "Minimalist"
+    }
+  ]
 }

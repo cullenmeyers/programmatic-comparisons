@@ -1,0 +1,144 @@
+{
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Jira vs Linear for Busy professionals",
+  "slug": "jira-vs-linear-for-busy-professional",
+  "meta_description": "Jira vs Linear for busy professionals who track engineering tasks and need fast updates without managing workflow configuration panels.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need to update engineering tasks quickly without configuring complex workflow systems or navigating administrative panels.",
+  "one_second_verdict": {
+    "winner_label": "Linear",
+    "summary": "Best for busy professionals who need to update engineering tasks quickly.",
+    "reason": "Jira fails first because workflow schemes and configuration panels must be tuned before updating issues."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Linear wins for busy professionals who need to update engineering tasks quickly. It uses a streamlined issue interface with keyboard shortcuts and minimal configuration. Jira relies on workflow schemes, fields, and configuration panels that often require tuning before teams work efficiently. If workflow schemes and configuration panels must be tuned before updating issues, Jira fails first.",
+    "decision_rule": "If workflow schemes and configuration panels must be tuned before updating issues, Jira fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for fast engineering task updates",
+      "content": "You track development tasks and refuse to manage enterprise workflow configuration. Linear focuses on quick issue creation and keyboard-driven navigation. Jira includes workflow schemes, custom fields, and configuration panels that often require administrative setup."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Linear wins",
+      "bullets": [
+        {
+          "point": "Keyboard-driven issue creation and editing",
+          "why_it_matters": "You add and update issues quickly without navigating multiple menus."
+        },
+        {
+          "point": "Simple workflow stages built into the interface",
+          "why_it_matters": "Tasks move across statuses without configuring custom workflow schemes."
+        },
+        {
+          "point": "Lightweight issue fields with minimal configuration",
+          "why_it_matters": "You focus on writing and updating tasks rather than managing field settings."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Jira wins",
+      "bullets": [
+        {
+          "point": "Custom workflow schemes with multiple states",
+          "why_it_matters": "Large teams can define detailed task lifecycle stages."
+        },
+        {
+          "point": "Custom field system for issue data",
+          "why_it_matters": "Organizations track structured metadata across projects."
+        },
+        {
+          "point": "Permission and role configuration",
+          "why_it_matters": "Enterprises control how teams interact with issues and workflows."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "Your organization requires heavily customized workflows and detailed permission structures.",
+          "what_to_do_instead": "Use Jira if enterprise configuration and governance are required."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You must navigate configuration panels or adjust workflow settings before updating everyday issues.",
+          "what_to_do_instead": "Switch to Linear for faster task updates."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your engineering process requires strict workflow governance and structured issue fields, Jira may become necessary."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you want to update engineering tasks quickly, choose Linear.",
+        "If workflow configuration slows daily work, avoid Jira.",
+        "If enterprise governance and custom workflows are required, consider Jira."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Jira often require configuration?",
+      "a": "It uses workflow schemes, custom fields, and permission settings that teams frequently customize."
+    },
+    {
+      "q": "Is Linear designed for faster issue updates?",
+      "a": "Yes. Its interface emphasizes quick navigation and minimal configuration."
+    },
+    {
+      "q": "Which tool is better for enterprise governance?",
+      "a": "Jira is better when organizations require strict workflow and permission control."
+    },
+    {
+      "q": "Which tool is faster for everyday engineering tasks?",
+      "a": "Linear is generally faster for quick issue updates."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Jira",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Linear",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "Asana",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Trello",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "Habitica",
+      "persona": "Busy professional"
+    }
+  ]
+}

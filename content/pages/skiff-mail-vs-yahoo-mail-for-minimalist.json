@@ -1,120 +1,144 @@
 {
-"category": "Email / Inbox tools",
-"categorySlug": "email-inbox-tools",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Skiff Mail vs Yahoo Mail for Minimalists",
-"slug": "skiff-mail-vs-yahoo-mail-for-minimalist",
-"meta_description": "Skiff Mail vs Yahoo Mail for minimalists who want private email without ads. See why Skiff Mail wins when a clean inbox matters.",
-"persona": "Minimalist",
-"constraint_lens": "Minimalists prefer tools that remove unnecessary interface elements so the inbox stays focused on messages instead of distractions.",
-"one_second_verdict": {
-"winner_label": "Skiff Mail",
-"summary": "Best for minimalists who want a private inbox without advertising panels or promotional clutter.",
-"reason": "Yahoo Mail fails first because the inbox interface displays advertising panels and promotional content alongside messages."
-},
-"verdict": {
-"winner": "x",
-"summary": "Skiff Mail is the better choice for minimalists who want a private inbox without advertising clutter. The interface focuses on messages and folders instead of showing ads or promotional placements. Yahoo Mail places advertising panels and sponsored content next to the message list. For users who want a clean mailbox experience centered on communication rather than advertising, those interface elements create unnecessary noise.",
-"decision_rule": "If the inbox interface displays advertising panels or promotional inbox placement, Yahoo Mail fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Skiff Mail fits minimalists",
-"content": "The user wants a mailbox provider built around privacy and encryption rather than advertising. Skiff Mail presents messages inside a clean interface without advertising panels or promotional content. Emails appear in a straightforward message list and the layout focuses on communication rather than marketing. This keeps the inbox simple and predictable for users who want fewer distractions."
-},
-{
-"type": "x_wins",
-"heading": "Where Skiff Mail wins",
-"bullets": [
-{
-"point": "Skiff Mail shows the inbox without advertising panels or sponsored placements.",
-"why_it_matters": "Minimalists can read and manage messages without visual distractions next to conversations."
-},
-{
-"point": "Skiff Mail focuses the interface on messages and folders instead of promotional sections.",
-"why_it_matters": "The inbox stays simple and easier to scan."
-},
-{
-"point": "Skiff Mail is designed around encrypted email communication.",
-"why_it_matters": "Users who prioritize privacy can keep their conversations protected by default."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Yahoo Mail wins",
-"bullets": [
-{
-"point": "Yahoo Mail provides a free hosted email account without requiring payment.",
-"why_it_matters": "Users can create and start using an inbox without subscribing."
-},
-{
-"point": "Yahoo Mail runs entirely in a browser without installing software.",
-"why_it_matters": "Users can access their inbox quickly from any device."
-},
-{
-"point": "Yahoo Mail includes built in spam filtering and automated sorting.",
-"why_it_matters": "Users receive basic inbox organization without creating rules."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The user wants a completely free email service supported by advertising.",
-"what_to_do_instead": "Use Yahoo Mail where the service includes ads to support free accounts."
-},
-{
-"tool": "y",
-"fails_when": "The user wants a clean inbox because Yahoo Mail displays advertising panels and promotional sections next to messages.",
-"what_to_do_instead": "Use Skiff Mail where the interface focuses on messages instead of advertising."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the user prefers a free email account and does not mind advertising panels inside the inbox interface, Yahoo Mail may become the better option."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick Skiff Mail if you want an inbox without advertising panels.",
-"Pick Skiff Mail if privacy and encryption matter more than free access.",
-"Pick Yahoo Mail if you want a free email account supported by ads."
-]
-}
-],
-"faqs": [
-{
-"q": "Why is Skiff Mail better for minimalists?",
-"a": "Skiff Mail keeps the inbox focused on messages without advertising panels or promotional sections."
-},
-{
-"q": "Does Yahoo Mail include advertising inside the inbox?",
-"a": "Yes. Yahoo Mail places advertising panels and sponsored content next to the message list."
-},
-{
-"q": "Does Skiff Mail support encrypted email communication?",
-"a": "Yes. Skiff Mail is designed around encrypted email messaging."
-},
-{
-"q": "Who should choose Yahoo Mail instead?",
-"a": "Users who want a free hosted email service and do not mind advertising may prefer Yahoo Mail."
-}
-],
-"related_pages": [
-{ "x_name": "Fastmail", "y_name": "Yahoo Mail", "persona": "Minimalist" },
-{ "x_name": "Proton Mail", "y_name": "Yahoo Mail", "persona": "Minimalist" },
-{ "x_name": "Tuta Mail", "y_name": "Yahoo Mail", "persona": "Minimalist" },
-{ "x_name": "HEY", "y_name": "Yahoo Mail", "persona": "Minimalist" },
-{ "x_name": "Mailfence", "y_name": "Yahoo Mail", "persona": "Minimalist" },
-{ "x_name": "HEY", "y_name": "Fastmail", "persona": "Minimalist" }
-]
+  "category": "Email / Inbox tools",
+  "categorySlug": "email-inbox-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Skiff Mail vs Yahoo Mail for Minimalists",
+  "slug": "skiff-mail-vs-yahoo-mail-for-minimalist",
+  "meta_description": "Skiff Mail vs Yahoo Mail for minimalists who want private email without ads. See why Skiff Mail wins when a clean inbox matters.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists prefer tools that remove unnecessary interface elements so the inbox stays focused on messages instead of distractions.",
+  "one_second_verdict": {
+    "winner_label": "Skiff Mail",
+    "summary": "Best for minimalists who want a private inbox without advertising panels or promotional clutter.",
+    "reason": "Yahoo Mail fails first because the inbox interface displays advertising panels and promotional content alongside messages."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Skiff Mail is the better choice for minimalists who want a private inbox without advertising clutter. The interface focuses on messages and folders instead of showing ads or promotional placements. Yahoo Mail places advertising panels and sponsored content next to the message list. For users who want a clean mailbox experience centered on communication rather than advertising, those interface elements create unnecessary noise.",
+    "decision_rule": "If the inbox interface displays advertising panels or promotional inbox placement, Yahoo Mail fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Skiff Mail fits minimalists",
+      "content": "The user wants a mailbox provider built around privacy and encryption rather than advertising. Skiff Mail presents messages inside a clean interface without advertising panels or promotional content. Emails appear in a straightforward message list and the layout focuses on communication rather than marketing. This keeps the inbox simple and predictable for users who want fewer distractions."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Skiff Mail wins",
+      "bullets": [
+        {
+          "point": "Skiff Mail shows the inbox without advertising panels or sponsored placements.",
+          "why_it_matters": "Minimalists can read and manage messages without visual distractions next to conversations."
+        },
+        {
+          "point": "Skiff Mail focuses the interface on messages and folders instead of promotional sections.",
+          "why_it_matters": "The inbox stays simple and easier to scan."
+        },
+        {
+          "point": "Skiff Mail is designed around encrypted email communication.",
+          "why_it_matters": "Users who prioritize privacy can keep their conversations protected by default."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Yahoo Mail wins",
+      "bullets": [
+        {
+          "point": "Yahoo Mail provides a free hosted email account without requiring payment.",
+          "why_it_matters": "Users can create and start using an inbox without subscribing."
+        },
+        {
+          "point": "Yahoo Mail runs entirely in a browser without installing software.",
+          "why_it_matters": "Users can access their inbox quickly from any device."
+        },
+        {
+          "point": "Yahoo Mail includes built in spam filtering and automated sorting.",
+          "why_it_matters": "Users receive basic inbox organization without creating rules."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The user wants a completely free email service supported by advertising.",
+          "what_to_do_instead": "Use Yahoo Mail where the service includes ads to support free accounts."
+        },
+        {
+          "tool": "y",
+          "fails_when": "The user wants a clean inbox because Yahoo Mail displays advertising panels and promotional sections next to messages.",
+          "what_to_do_instead": "Use Skiff Mail where the interface focuses on messages instead of advertising."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user prefers a free email account and does not mind advertising panels inside the inbox interface, Yahoo Mail may become the better option."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Skiff Mail if you want an inbox without advertising panels.",
+        "Pick Skiff Mail if privacy and encryption matter more than free access.",
+        "Pick Yahoo Mail if you want a free email account supported by ads."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Skiff Mail better for minimalists?",
+      "a": "Skiff Mail keeps the inbox focused on messages without advertising panels or promotional sections."
+    },
+    {
+      "q": "Does Yahoo Mail include advertising inside the inbox?",
+      "a": "Yes. Yahoo Mail places advertising panels and sponsored content next to the message list."
+    },
+    {
+      "q": "Does Skiff Mail support encrypted email communication?",
+      "a": "Yes. Skiff Mail is designed around encrypted email messaging."
+    },
+    {
+      "q": "Who should choose Yahoo Mail instead?",
+      "a": "Users who want a free hosted email service and do not mind advertising may prefer Yahoo Mail."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Fastmail",
+      "y_name": "Yahoo Mail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Proton Mail",
+      "y_name": "Yahoo Mail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Tuta Mail",
+      "y_name": "Yahoo Mail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "HEY",
+      "y_name": "Yahoo Mail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Mailfence",
+      "y_name": "Yahoo Mail",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Fastmail",
+      "y_name": "HEY",
+      "persona": "Minimalist"
+    }
+  ]
 }

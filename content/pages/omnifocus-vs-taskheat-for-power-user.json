@@ -1,0 +1,144 @@
+{
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "OmniFocus vs Taskheat for Power users",
+  "slug": "omnifocus-vs-taskheat-for-power-user",
+  "meta_description": "OmniFocus vs Taskheat for power users who plan work visually and need task dependencies shown as connected flows.",
+  "persona": "Power user",
+  "constraint_lens": "You need a task manager that can visually represent dependencies between tasks so work sequences are easy to understand.",
+  "one_second_verdict": {
+    "winner_label": "Taskheat",
+    "summary": "Best for power users who need to visualize how tasks depend on each other.",
+    "reason": "OmniFocus fails first because dependency relationships cannot be visualized directly between tasks."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Taskheat wins for power users who want to visualize how tasks depend on each other. It displays tasks as nodes connected by arrows so prerequisite work appears as a flow. OmniFocus organizes tasks through projects, tags, and perspectives but does not show dependency links between tasks. If dependency relationships cannot be visualized directly between tasks, OmniFocus fails first.",
+    "decision_rule": "If dependency relationships cannot be visualized directly between tasks, OmniFocus fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for visual dependency planning",
+      "content": "You plan work visually and expect tasks to appear as connected flows. Taskheat displays tasks as nodes on a map with arrows that show prerequisite relationships. OmniFocus organizes tasks into projects and lists, which keeps tasks structured but does not visually represent how one task leads to another."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Taskheat wins",
+      "bullets": [
+        {
+          "point": "Visual flow map connecting tasks with arrows",
+          "why_it_matters": "You see which tasks must happen before others rather than scanning through lists."
+        },
+        {
+          "point": "Dependency links drawn directly between tasks",
+          "why_it_matters": "Work sequences become visible as connected paths across the map."
+        },
+        {
+          "point": "Automatic highlighting of downstream tasks",
+          "why_it_matters": "When one task is delayed you immediately see which other tasks are affected."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where OmniFocus wins",
+      "bullets": [
+        {
+          "point": "Project hierarchy with sequential task options",
+          "why_it_matters": "Tasks can be forced to appear one at a time within a project."
+        },
+        {
+          "point": "Context and tag system for filtering work",
+          "why_it_matters": "You view tasks based on location, resource, or situation."
+        },
+        {
+          "point": "Perspective views that filter task lists dynamically",
+          "why_it_matters": "Large task systems can be sliced into focused views for daily work."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "Your workflow depends on advanced filtering and custom views across large task lists rather than visual flows.",
+          "what_to_do_instead": "Use OmniFocus when complex filtering and perspectives are more important than dependency maps."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You must see tasks as connected prerequisite chains rather than independent checklist items.",
+          "what_to_do_instead": "Switch to Taskheat to map dependencies visually."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your workflow relies more on filtering tasks by context or creating custom task views rather than visualizing dependencies, OmniFocus may become the better tool."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If tasks must appear as connected flows, choose Taskheat.",
+        "If filtering tasks by tags and contexts matters more than visual maps, choose OmniFocus.",
+        "If understanding task dependencies visually is critical, avoid list-only systems."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Taskheat show dependencies between tasks?",
+      "a": "Yes. Tasks appear as nodes connected by arrows that represent prerequisite relationships."
+    },
+    {
+      "q": "Can OmniFocus visualize task dependencies?",
+      "a": "No. Tasks can be sequential within projects but are not shown as visual dependency maps."
+    },
+    {
+      "q": "Which tool is better for mapping project flows?",
+      "a": "Taskheat works better because it displays tasks as connected flows."
+    },
+    {
+      "q": "When would OmniFocus be the better choice?",
+      "a": "It works better when managing large task systems that rely on filtering and custom perspectives."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Taskwarrior",
+      "y_name": "Todoist",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Asana",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Google Tasks",
+      "y_name": "GQueues",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Nirvana",
+      "y_name": "Things 3",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Pagico",
+      "y_name": "Things 3",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Google Tasks",
+      "y_name": "Remember The Milk",
+      "persona": "Power user"
+    }
+  ]
+}

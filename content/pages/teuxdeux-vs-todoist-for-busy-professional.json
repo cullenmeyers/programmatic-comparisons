@@ -1,0 +1,144 @@
+{
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "TeuxDeux vs Todoist for Busy professionals",
+  "slug": "teuxdeux-vs-todoist-for-busy-professional",
+  "meta_description": "TeuxDeux vs Todoist for busy professionals who automate recurring tasks instead of rewriting them each day.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need recurring tasks to regenerate automatically so daily responsibilities do not require manual rewriting.",
+  "one_second_verdict": {
+    "winner_label": "Todoist",
+    "summary": "Best for busy professionals who rely on recurring task automation.",
+    "reason": "TeuxDeux fails first because recurring tasks must be rewritten manually each day."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist wins for busy professionals who rely on recurring task automation. It includes rule-based recurrence where tasks regenerate automatically based on schedules such as every day, every Monday, or every two weeks. TeuxDeux resets a daily list but recurring tasks often require manual rewriting or duplication. If recurring tasks must be rewritten manually each day, TeuxDeux fails first.",
+    "decision_rule": "If recurring tasks must be rewritten manually each day, TeuxDeux fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for automated recurring responsibilities",
+      "content": "You track responsibilities that repeat regularly and will not rewrite them each day. Todoist automatically regenerates tasks using recurrence rules built into each task entry. TeuxDeux focuses on a daily list that resets visually, which can require rewriting tasks when they repeat."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Recurring task rules built into task creation",
+          "why_it_matters": "Tasks such as pay bills every month or send report every Monday appear automatically."
+        },
+        {
+          "point": "Natural language scheduling when typing tasks",
+          "why_it_matters": "You type phrases like every Friday and the schedule is created instantly."
+        },
+        {
+          "point": "Automatic regeneration after task completion",
+          "why_it_matters": "The next instance of the task appears without re-entering the task."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where TeuxDeux wins",
+      "bullets": [
+        {
+          "point": "Weekly grid showing each day as a column",
+          "why_it_matters": "You see tasks across the week in a simple visual layout."
+        },
+        {
+          "point": "Drag tasks between days on the calendar grid",
+          "why_it_matters": "You move unfinished tasks to another day quickly."
+        },
+        {
+          "point": "Minimal interface focused on daily planning",
+          "why_it_matters": "You avoid managing complex scheduling rules."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You prefer planning tasks manually day by day rather than using automated schedules.",
+          "what_to_do_instead": "Use TeuxDeux if a visual daily planning board fits your workflow."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Recurring responsibilities must be recreated repeatedly instead of appearing automatically.",
+          "what_to_do_instead": "Switch to Todoist to automate recurring tasks."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your workflow focuses on planning each day manually using a visual weekly board rather than relying on automated recurrence rules, TeuxDeux may feel simpler."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If tasks repeat automatically on a schedule, choose Todoist.",
+        "If rewriting tasks every day would slow you down, avoid TeuxDeux.",
+        "If you prefer manual daily planning with a weekly board, TeuxDeux can work."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Todoist automate recurring tasks?",
+      "a": "Yes. Tasks regenerate automatically based on recurrence rules such as daily, weekly, or monthly schedules."
+    },
+    {
+      "q": "Does TeuxDeux support recurring tasks?",
+      "a": "It focuses mainly on daily lists and manual task movement across the week."
+    },
+    {
+      "q": "Which tool is better for managing repeating responsibilities?",
+      "a": "Todoist works better because recurring tasks appear automatically."
+    },
+    {
+      "q": "When would TeuxDeux be the better choice?",
+      "a": "It works well when planning each day manually on a visual weekly board."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Asana",
+      "y_name": "Workast",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Jira",
+      "y_name": "Linear",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Motion",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "OmniFocus",
+      "y_name": "Things 3",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Monday.com",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    }
+  ]
+}

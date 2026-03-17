@@ -1,120 +1,144 @@
 {
-"category": "Project Management Tools",
-"categorySlug": "project-management-tools",
-"constraintSlug": "ceiling-check",
-"constraintUiName": "Grows with you",
-"title": "GitHub Projects vs Trello for Power users",
-"slug": "github-projects-vs-trello-for-power-user",
-"meta_description": "Compare GitHub Projects vs Trello for power users managing code tasks. See which tool links tasks directly to repositories and pull requests.",
-"persona": "Power user",
-"constraint_lens": "Power users need a system that can connect development tasks directly to repositories, pull requests, and issue tracking without breaking the workflow.",
-"one_second_verdict": {
-"winner_label": "GitHub Projects",
-"summary": "Best for power users managing development tasks that must link directly to repositories and pull requests.",
-"reason": "Trello fails first because its cards cannot connect natively to repository issues, commits, and pull request workflows."
-},
-"verdict": {
-"winner": "x",
-"summary": "GitHub Projects is the better system for power users managing development work alongside code. Tasks can be created directly from repository issues and linked to pull requests so development activity stays connected to project tracking. Trello organizes work as cards on boards, which works for general task coordination but does not link tasks directly to repository workflows. If project tasks cannot link directly to repositories and pull requests inside the development workflow, Trello fails first.",
-"decision_rule": "If project tasks cannot link directly to repositories and pull requests inside the development workflow, Trello fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why this comparison matters for Power users",
-"content": "This comparison matters for someone managing software development work where tasks must stay connected to the codebase. Developers often track issues, open pull requests, and merge code changes that correspond to specific tasks. When the project system cannot link directly to those repository events, development tracking becomes fragmented. Power users managing engineering work need project tools that operate inside the development workflow rather than outside it."
-},
-{
-"type": "x_wins",
-"heading": "Where GitHub Projects wins",
-"bullets": [
-{
-"point": "Issues connected directly to repositories",
-"why_it_matters": "Tasks can exist as repository issues so development work is tracked inside the same system where code is stored."
-},
-{
-"point": "Pull requests linked to project tasks",
-"why_it_matters": "When developers open pull requests referencing issues, the project board automatically reflects progress between coding and task tracking."
-},
-{
-"point": "Project boards built on repository data",
-"why_it_matters": "Boards and tables display issues directly from repositories, allowing development progress to update automatically as code work changes."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Trello wins",
-"bullets": [
-{
-"point": "Simple visual task boards",
-"why_it_matters": "Cards can be moved across columns such as to do, doing, and done, making task progress easy to understand visually."
-},
-{
-"point": "Quick task creation without development setup",
-"why_it_matters": "Tasks can be added as cards instantly without connecting repositories, issue trackers, or development workflows."
-},
-{
-"point": "Flexible collaboration on task cards",
-"why_it_matters": "Comments, attachments, and checklists live inside each card, allowing teams to coordinate work without needing a development platform."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The team mainly needs a lightweight visual task board and does not track work through code repositories.",
-"what_to_do_instead": "Use Trello where tasks can be managed as simple cards without development platform complexity."
-},
-{
-"tool": "y",
-"fails_when": "Development work must connect tasks to repository issues and pull request activity.",
-"what_to_do_instead": "Use GitHub Projects where tasks link directly to repository workflows."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the project tracks general work such as marketing tasks or planning steps rather than software development, Trello may be easier because it avoids repository specific features."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Choose GitHub Projects if development tasks must connect directly to repository issues and pull requests.",
-"Choose GitHub Projects if project tracking should update automatically from development activity.",
-"Choose Trello if you only need a visual board to organize general tasks."
-]
-}
-],
-"faqs": [
-{
-"q": "What is GitHub Projects used for?",
-"a": "GitHub Projects organizes repository issues into boards and tables so development tasks can be tracked alongside code activity."
-},
-{
-"q": "Can Trello connect directly to code repositories?",
-"a": "Trello can link to external services, but its cards do not natively operate inside repository issue and pull request workflows."
-},
-{
-"q": "Why do development teams track tasks in GitHub?",
-"a": "Issues, commits, and pull requests live in the same system, making it easier to see how code changes relate to project tasks."
-},
-{
-"q": "When is Trello better than GitHub Projects?",
-"a": "Trello works better when the project tracks general tasks rather than development work tied to repositories."
-}
-],
-"related_pages": [
-{ "x_name": "GitLab", "y_name": "Trello", "persona": "Power user" },
-{ "x_name": "Linear", "y_name": "Basecamp", "persona": "Power user" },
-{ "x_name": "Shortcut", "y_name": "Basecamp", "persona": "Power user" },
-{ "x_name": "Forecast", "y_name": "Basecamp", "persona": "Power user" },
-{ "x_name": "Celoxis", "y_name": "Trello", "persona": "Power user" },
-{ "x_name": "Airtable", "y_name": "Trello", "persona": "Power user" }
-]
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "GitHub Projects vs Trello for Power users",
+  "slug": "github-projects-vs-trello-for-power-user",
+  "meta_description": "Compare GitHub Projects vs Trello for power users managing code tasks. See which tool links tasks directly to repositories and pull requests.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need a system that can connect development tasks directly to repositories, pull requests, and issue tracking without breaking the workflow.",
+  "one_second_verdict": {
+    "winner_label": "GitHub Projects",
+    "summary": "Best for power users managing development tasks that must link directly to repositories and pull requests.",
+    "reason": "Trello fails first because its cards cannot connect natively to repository issues, commits, and pull request workflows."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "GitHub Projects is the better system for power users managing development work alongside code. Tasks can be created directly from repository issues and linked to pull requests so development activity stays connected to project tracking. Trello organizes work as cards on boards, which works for general task coordination but does not link tasks directly to repository workflows. If project tasks cannot link directly to repositories and pull requests inside the development workflow, Trello fails first.",
+    "decision_rule": "If project tasks cannot link directly to repositories and pull requests inside the development workflow, Trello fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this comparison matters for Power users",
+      "content": "This comparison matters for someone managing software development work where tasks must stay connected to the codebase. Developers often track issues, open pull requests, and merge code changes that correspond to specific tasks. When the project system cannot link directly to those repository events, development tracking becomes fragmented. Power users managing engineering work need project tools that operate inside the development workflow rather than outside it."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where GitHub Projects wins",
+      "bullets": [
+        {
+          "point": "Issues connected directly to repositories",
+          "why_it_matters": "Tasks can exist as repository issues so development work is tracked inside the same system where code is stored."
+        },
+        {
+          "point": "Pull requests linked to project tasks",
+          "why_it_matters": "When developers open pull requests referencing issues, the project board automatically reflects progress between coding and task tracking."
+        },
+        {
+          "point": "Project boards built on repository data",
+          "why_it_matters": "Boards and tables display issues directly from repositories, allowing development progress to update automatically as code work changes."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Trello wins",
+      "bullets": [
+        {
+          "point": "Simple visual task boards",
+          "why_it_matters": "Cards can be moved across columns such as to do, doing, and done, making task progress easy to understand visually."
+        },
+        {
+          "point": "Quick task creation without development setup",
+          "why_it_matters": "Tasks can be added as cards instantly without connecting repositories, issue trackers, or development workflows."
+        },
+        {
+          "point": "Flexible collaboration on task cards",
+          "why_it_matters": "Comments, attachments, and checklists live inside each card, allowing teams to coordinate work without needing a development platform."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The team mainly needs a lightweight visual task board and does not track work through code repositories.",
+          "what_to_do_instead": "Use Trello where tasks can be managed as simple cards without development platform complexity."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Development work must connect tasks to repository issues and pull request activity.",
+          "what_to_do_instead": "Use GitHub Projects where tasks link directly to repository workflows."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the project tracks general work such as marketing tasks or planning steps rather than software development, Trello may be easier because it avoids repository specific features."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose GitHub Projects if development tasks must connect directly to repository issues and pull requests.",
+        "Choose GitHub Projects if project tracking should update automatically from development activity.",
+        "Choose Trello if you only need a visual board to organize general tasks."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is GitHub Projects used for?",
+      "a": "GitHub Projects organizes repository issues into boards and tables so development tasks can be tracked alongside code activity."
+    },
+    {
+      "q": "Can Trello connect directly to code repositories?",
+      "a": "Trello can link to external services, but its cards do not natively operate inside repository issue and pull request workflows."
+    },
+    {
+      "q": "Why do development teams track tasks in GitHub?",
+      "a": "Issues, commits, and pull requests live in the same system, making it easier to see how code changes relate to project tasks."
+    },
+    {
+      "q": "When is Trello better than GitHub Projects?",
+      "a": "Trello works better when the project tracks general tasks rather than development work tied to repositories."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "GitLab",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Linear",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Shortcut",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Forecast",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Celoxis",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Power user"
+    }
+  ]
 }

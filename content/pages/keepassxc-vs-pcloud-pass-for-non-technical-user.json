@@ -1,0 +1,144 @@
+{
+  "category": "Password Managers",
+  "categorySlug": "password-managers",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "KeePassXC vs pCloud Pass for Non-technical users",
+  "slug": "keepassxc-vs-pcloud-pass-for-non-technical-user",
+  "meta_description": "KeePassXC vs pCloud Pass for non-technical users who want automatic password syncing. See why pCloud Pass wins when file handling is avoided.",
+  "persona": "Non-technical user",
+  "constraint_lens": "Non-technical users prefer tools that handle syncing and storage automatically so they do not need to move or manage vault files.",
+  "one_second_verdict": {
+    "winner_label": "pCloud Pass",
+    "summary": "Best for non-technical users who want passwords to sync automatically between devices.",
+    "reason": "KeePassXC fails first because syncing passwords requires manually transferring encrypted database files between devices."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "pCloud Pass is the better choice for non-technical users who want their passwords to appear automatically on all devices. The service stores the vault inside a hosted account and syncs changes between devices without any manual steps. KeePassXC stores passwords in a local encrypted database file that must be copied or synchronized manually. For users who want passwords to simply appear on every device, manual file handling creates confusion and risk of mistakes.",
+    "decision_rule": "If syncing passwords requires manually transferring or syncing encrypted database files between devices, KeePassXC fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why pCloud Pass fits non-technical users",
+      "content": "The user wants passwords synced automatically between phone and laptop without managing vault files. pCloud Pass stores credentials inside an account based vault that synchronizes whenever passwords change. Once logged in on a new device, the vault appears automatically. This removes the need to copy database files or configure external synchronization tools."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where pCloud Pass wins",
+      "bullets": [
+        {
+          "point": "pCloud Pass automatically synchronizes passwords through the account vault.",
+          "why_it_matters": "Users do not need to move vault files between devices."
+        },
+        {
+          "point": "pCloud Pass restores the vault automatically after logging into the account on a new device.",
+          "why_it_matters": "Passwords appear immediately without importing database files."
+        },
+        {
+          "point": "pCloud Pass manages encryption and storage inside the service automatically.",
+          "why_it_matters": "Users avoid handling database files or synchronization tools."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where KeePassXC wins",
+      "bullets": [
+        {
+          "point": "KeePassXC stores passwords inside a local encrypted KDBX database file.",
+          "why_it_matters": "Users maintain full control over where the vault file is stored."
+        },
+        {
+          "point": "KeePassXC works completely offline once the vault file exists.",
+          "why_it_matters": "Passwords remain accessible without internet connectivity."
+        },
+        {
+          "point": "KeePassXC allows users to place the database file in any storage location.",
+          "why_it_matters": "Advanced users can integrate the vault into custom backup systems."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "The user refuses to store passwords in a hosted vault service.",
+          "what_to_do_instead": "Use KeePassXC where the vault exists as a local encrypted database file."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Passwords must sync across devices automatically because KeePassXC requires manually copying or synchronizing the encrypted vault file.",
+          "what_to_do_instead": "Use pCloud Pass where the vault syncs automatically through the account."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user wants the vault stored only as a local encrypted database file instead of inside a hosted service, KeePassXC may become the better option."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick pCloud Pass if you want passwords to sync automatically between devices.",
+        "Pick pCloud Pass if you do not want to handle vault files manually.",
+        "Pick KeePassXC if you want full control of a local encrypted database file."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is pCloud Pass easier for non-technical users?",
+      "a": "pCloud Pass automatically syncs passwords through an account so users do not need to move vault files."
+    },
+    {
+      "q": "Does KeePassXC sync passwords automatically?",
+      "a": "No. KeePassXC stores passwords in a local encrypted database file that must be synchronized manually."
+    },
+    {
+      "q": "Can KeePassXC work offline?",
+      "a": "Yes. KeePassXC opens the encrypted vault file locally and does not require internet access."
+    },
+    {
+      "q": "Who should choose KeePassXC instead?",
+      "a": "Users who want full control over a portable encrypted database file may prefer KeePassXC."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "KeePassXC",
+      "y_name": "NordPass",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Bitwarden",
+      "y_name": "KeePassXC",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Dashlane",
+      "y_name": "KeePass",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "KeePass",
+      "y_name": "Proton Pass",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "1Password",
+      "y_name": "KeePass",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "KeePass",
+      "y_name": "Zoho Vault",
+      "persona": "Non-technical user"
+    }
+  ]
+}

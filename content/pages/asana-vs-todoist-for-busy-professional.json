@@ -1,0 +1,144 @@
+{
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Asana vs Todoist for Busy professionals",
+  "slug": "asana-vs-todoist-for-busy-professional",
+  "meta_description": "Asana vs Todoist for busy professionals who need instant task capture between meetings without project setup delays.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need to capture work tasks instantly between meetings without setting up projects or navigating complex layouts.",
+  "one_second_verdict": {
+    "winner_label": "Todoist",
+    "summary": "Best for busy professionals who need to log tasks immediately.",
+    "reason": "Asana fails first because project setup slows immediate task entry."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist wins for busy professionals who need to log tasks immediately. Its quick add field lets you type and save a task in one step without choosing a project layout. Asana centers on projects, sections, and team structure before tasks feel organized. If project setup slows immediate task entry, Asana fails first.",
+    "decision_rule": "If project setup slows immediate task entry, Asana fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Which tool captures tasks fastest?",
+      "content": "You need to capture work tasks instantly between meetings. As a busy professional, even small delays add mental load. The right tool should let you type and move on. Anything that requires selecting or configuring a project slows capture."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist works better for busy professionals",
+      "bullets": [
+        {
+          "point": "Quick add field that accepts natural language like Submit report tomorrow 3pm.",
+          "why_it_matters": "You can enter the task and deadline in one line without navigating to a project view."
+        },
+        {
+          "point": "Inbox that collects tasks before organizing them.",
+          "why_it_matters": "You can capture first and sort later, reducing decisions during busy moments."
+        },
+        {
+          "point": "Keyboard shortcuts for rapid task entry.",
+          "why_it_matters": "You can log tasks without clicking through project menus."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Asana works better",
+      "bullets": [
+        {
+          "point": "Structured projects with sections and task assignments.",
+          "why_it_matters": "You can organize team workflows clearly. Creating or selecting projects adds steps before saving a task."
+        },
+        {
+          "point": "Multiple views such as list, board, and timeline.",
+          "why_it_matters": "You can manage complex planning visually. Switching views adds navigation before simple entry."
+        },
+        {
+          "point": "Team collaboration features built into each project.",
+          "why_it_matters": "You can assign tasks and track progress across teammates. For solo quick capture, these layers may feel heavy."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You rely on structured team workflows and need detailed project tracking.",
+          "what_to_do_instead": "Use Asana if collaboration and project structure are central."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You must choose a project or navigate sections before logging a quick task.",
+          "what_to_do_instead": "Use Todoist if you want immediate task capture."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your work revolves around managing team projects with defined sections and assignments, Asana may justify the extra structure."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you need one-step task capture, choose Todoist.",
+        "If you manage structured team projects, choose Asana.",
+        "If project setup slows you down, avoid workflow-heavy tools."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Todoist faster for quick entry?",
+      "a": "Yes. Its quick add field allows rapid task logging without project navigation."
+    },
+    {
+      "q": "Does Asana require project structure?",
+      "a": "Yes. Tasks are typically tied to projects and sections."
+    },
+    {
+      "q": "Which tool works better between meetings?",
+      "a": "Todoist works better for rapid capture when time is limited."
+    },
+    {
+      "q": "Can Asana be used for personal tasks?",
+      "a": "It can, but its project and collaboration layers are designed for team workflows."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "Asana",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Jira",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Linear",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Monday.com",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Motion",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    }
+  ]
+}

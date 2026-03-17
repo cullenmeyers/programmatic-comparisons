@@ -1,0 +1,144 @@
+{
+  "category": "Password Managers",
+  "categorySlug": "password-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Dashlane vs KeePassXC for Minimalists",
+  "slug": "dashlane-vs-keepassxc-for-minimalist",
+  "meta_description": "Dashlane vs KeePassXC for minimalists who want local password storage. See why KeePassXC wins when avoiding vendor-hosted vaults.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists prefer tools that avoid extra services and keep password storage under their own direct control.",
+  "one_second_verdict": {
+    "winner_label": "KeePassXC",
+    "summary": "Best for minimalists who want passwords stored in a local encrypted database.",
+    "reason": "Dashlane fails first because passwords must be stored inside a vendor hosted cloud vault instead of a local database file."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "KeePassXC is the better choice for minimalists who refuse to store credentials inside a hosted vault service. It keeps passwords in a local encrypted database file stored on the user's device. Dashlane requires creating an account and storing credentials inside a vendor hosted vault that synchronizes through the service. For users who want password storage fully under their own control, that hosted vault model adds a dependency they prefer to avoid.",
+    "decision_rule": "If passwords must be stored inside a vendor-hosted cloud vault instead of a locally controlled encrypted database file, Dashlane fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why KeePassXC fits minimalists",
+      "content": "The user refuses to store passwords inside a vendor hosted vault and prefers keeping them entirely in a local encrypted database. KeePassXC stores credentials inside a local database file that remains on the device. The vault can be backed up or moved manually without connecting to an external service. This approach keeps password storage independent from hosted platforms."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where KeePassXC wins",
+      "bullets": [
+        {
+          "point": "KeePassXC stores passwords in a local encrypted database file on the device.",
+          "why_it_matters": "Minimalists can keep credentials fully under their own control without relying on a hosted vault."
+        },
+        {
+          "point": "KeePassXC works without creating an online account.",
+          "why_it_matters": "Users avoid linking their password database to a vendor account system."
+        },
+        {
+          "point": "KeePassXC allows the vault file to be stored anywhere the user chooses.",
+          "why_it_matters": "The password database can remain on personal storage instead of being locked inside a service."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Dashlane wins",
+      "bullets": [
+        {
+          "point": "Dashlane automatically synchronizes the password vault across devices through the account.",
+          "why_it_matters": "Users can access passwords on phones, laptops, and browsers without transferring files."
+        },
+        {
+          "point": "Dashlane browser extensions detect login forms and autofill credentials.",
+          "why_it_matters": "Signing into websites becomes faster without copying passwords manually."
+        },
+        {
+          "point": "Dashlane restores the vault automatically when signing into a new device.",
+          "why_it_matters": "Passwords become available immediately after logging into the account."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "The user wants passwords to synchronize automatically across multiple devices without managing vault files.",
+          "what_to_do_instead": "Use Dashlane where the vault syncs automatically through the account."
+        },
+        {
+          "tool": "x",
+          "fails_when": "The user refuses to store credentials in a hosted vault because Dashlane stores passwords inside the vendor service.",
+          "what_to_do_instead": "Use KeePassXC where the database remains a local encrypted file."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user wants passwords to appear automatically across multiple devices without manually managing vault files, Dashlane may become the better option."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick KeePassXC if you want passwords stored locally in an encrypted database.",
+        "Pick KeePassXC if you refuse to store credentials in a vendor hosted vault.",
+        "Pick Dashlane if you want automatic syncing and autofill across devices."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why do minimalists prefer KeePassXC?",
+      "a": "KeePassXC stores passwords in a local encrypted database and does not require a hosted vault service."
+    },
+    {
+      "q": "Does Dashlane store passwords locally?",
+      "a": "No. Dashlane stores credentials inside a hosted vault connected to the user account."
+    },
+    {
+      "q": "Can KeePassXC work without internet access?",
+      "a": "Yes. KeePassXC runs locally and does not require an online service."
+    },
+    {
+      "q": "Who should choose Dashlane instead?",
+      "a": "Users who want passwords to synchronize automatically across devices may prefer Dashlane."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "1Password",
+      "y_name": "KeePassXC",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "KeePassXC",
+      "y_name": "NordPass",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "KeePassXC",
+      "y_name": "LastPass",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Enpass",
+      "y_name": "NordPass",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "1Password",
+      "y_name": "Enpass",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "KeePass",
+      "y_name": "Proton Pass",
+      "persona": "Minimalist"
+    }
+  ]
+}

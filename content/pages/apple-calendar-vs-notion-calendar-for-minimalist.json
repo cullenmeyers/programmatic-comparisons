@@ -1,120 +1,144 @@
 {
-"category": "Calendar / Scheduling tools",
-"categorySlug": "calendar-scheduling-tools",
-"constraintSlug": "feature-aversion",
-"constraintUiName": "Keeps it simple",
-"title": "Apple Calendar vs Notion Calendar for Minimalists",
-"slug": "apple-calendar-vs-notion-calendar-for-minimalist",
-"meta_description": "Compare Apple Calendar vs Notion Calendar for minimalists tracking events. See why Apple Calendar wins when workspace layers add interface complexity.",
-"persona": "Minimalist",
-"constraint_lens": "Minimalists prefer tools that focus on a single job and avoid extra layers that make the interface feel like a workspace.",
-"one_second_verdict": {
-  "winner_label": "Apple Calendar",
-  "summary": "Best for minimalists who need minimalists prefer tools that focus on a single job and avoid extra layers that make the interface feel like a workspace.",
-  "reason": "Notion Calendar fails first because workspace databases and task layers introduce extra interface complexity."
-},
-"verdict": {
-"winner": "x",
-"summary": "Apple Calendar wins because it functions as a straightforward event timeline without workspace features layered on top. Creating and viewing events happens directly inside a simple calendar grid. Notion Calendar is designed to connect with workspace pages and databases, which introduces additional interface layers. For minimalists who want a basic event calendar, those workspace features become unnecessary complexity.",
-"decision_rule": "If workspace databases and task layers introduce extra interface complexity, Notion Calendar fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Apple Calendar fits minimalists tracking personal events",
-"content": "This minimalist wants a calendar that focuses only on events. Apple Calendar presents a timeline where events are added directly into time slots without linking to workspace databases or project systems. The interface stays focused on viewing days, weeks, and months. Notion Calendar connects closely with the broader workspace system, where events can link to pages, tasks, or database entries, adding extra interface elements that minimalists may not want."
-},
-{
-"type": "x_wins",
-"heading": "Where Apple Calendar wins",
-"bullets": [
-{
-"point": "Direct event creation on the calendar timeline",
-"why_it_matters": "Users create events by clicking a time slot or entering a title and time. The event immediately appears in the calendar without connecting to workspace items."
-},
-{
-"point": "Calendar interface focused only on dates and events",
-"why_it_matters": "The interface centers on day, week, and month views that display scheduled events without additional workspace panels or task systems."
-},
-{
-"point": "Integrated across Apple devices without extra layers",
-"why_it_matters": "Events automatically sync across devices using the system calendar service. This keeps scheduling separate from note taking or project management systems."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Notion Calendar wins",
-"bullets": [
-{
-"point": "Links events to workspace pages",
-"why_it_matters": "Events can connect directly to workspace pages containing notes, project details, or documentation related to the meeting."
-},
-{
-"point": "Calendar views connected to databases",
-"why_it_matters": "Tasks or projects stored in workspace databases can appear on the calendar, allowing planning across multiple types of content."
-},
-{
-"point": "Unified workspace planning system",
-"why_it_matters": "Notion Calendar allows events to exist alongside tasks, documents, and project tracking, creating a combined planning environment."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You want events connected directly to project pages or task databases inside a workspace system.",
-"what_to_do_instead": "Use Notion Calendar so meetings can link to workspace content."
-},
-{
-"tool": "y",
-"fails_when": "You only want a basic event calendar without workspace pages, database views, or project layers.",
-"what_to_do_instead": "Use Apple Calendar for a simple event focused timeline."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If your calendar needs to connect directly to project pages, meeting notes, or task databases in a workspace system, Notion Calendar may be the better choice because it integrates scheduling with those resources."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Choose Apple Calendar if you want a simple calendar focused only on events.",
-"Choose Apple Calendar if you prefer scheduling separate from workspace systems.",
-"Choose Notion Calendar if events should connect to project pages or databases."
-]
-}
-],
-"faqs": [
-{
-"q": "What is Apple Calendar mainly used for?",
-"a": "Apple Calendar is a straightforward event calendar used to track meetings, appointments, and personal events."
-},
-{
-"q": "How does Notion Calendar differ from a normal calendar?",
-"a": "Notion Calendar connects events to workspace pages and databases, allowing meetings to link to project information and tasks."
-},
-{
-"q": "Why might minimalists prefer Apple Calendar?",
-"a": "Because the interface focuses only on events and avoids additional workspace features or database layers."
-},
-{
-"q": "When is Notion Calendar the better option?",
-"a": "Notion Calendar works well when events need to connect directly with project pages, documentation, or task databases."
-}
-],
-"related_pages": [
-{ "x_name": "Apple Calendar", "y_name": "Google Calendar", "persona": "Minimalist" },
-{ "x_name": "Fantastical", "y_name": "Apple Calendar", "persona": "Minimalist" },
-{ "x_name": "Cron", "y_name": "Google Calendar", "persona": "Minimalist" },
-{ "x_name": "Motion", "y_name": "Google Calendar", "persona": "Minimalist" },
-{ "x_name": "Google Calendar", "y_name": "Outlook Calendar", "persona": "Minimalist" },
-{ "x_name": "Apple Calendar", "y_name": "Outlook Calendar", "persona": "Minimalist" }
-]
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Apple Calendar vs Notion Calendar for Minimalists",
+  "slug": "apple-calendar-vs-notion-calendar-for-minimalist",
+  "meta_description": "Compare Apple Calendar vs Notion Calendar for minimalists tracking events. See why Apple Calendar wins when workspace layers add interface complexity.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists prefer tools that focus on a single job and avoid extra layers that make the interface feel like a workspace.",
+  "one_second_verdict": {
+    "winner_label": "Apple Calendar",
+    "summary": "Best for minimalists who need minimalists prefer tools that focus on a single job and avoid extra layers that make the interface feel like a workspace.",
+    "reason": "Notion Calendar fails first because workspace databases and task layers introduce extra interface complexity."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Apple Calendar wins because it functions as a straightforward event timeline without workspace features layered on top. Creating and viewing events happens directly inside a simple calendar grid. Notion Calendar is designed to connect with workspace pages and databases, which introduces additional interface layers. For minimalists who want a basic event calendar, those workspace features become unnecessary complexity.",
+    "decision_rule": "If workspace databases and task layers introduce extra interface complexity, Notion Calendar fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Apple Calendar fits minimalists tracking personal events",
+      "content": "This minimalist wants a calendar that focuses only on events. Apple Calendar presents a timeline where events are added directly into time slots without linking to workspace databases or project systems. The interface stays focused on viewing days, weeks, and months. Notion Calendar connects closely with the broader workspace system, where events can link to pages, tasks, or database entries, adding extra interface elements that minimalists may not want."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Apple Calendar wins",
+      "bullets": [
+        {
+          "point": "Direct event creation on the calendar timeline",
+          "why_it_matters": "Users create events by clicking a time slot or entering a title and time. The event immediately appears in the calendar without connecting to workspace items."
+        },
+        {
+          "point": "Calendar interface focused only on dates and events",
+          "why_it_matters": "The interface centers on day, week, and month views that display scheduled events without additional workspace panels or task systems."
+        },
+        {
+          "point": "Integrated across Apple devices without extra layers",
+          "why_it_matters": "Events automatically sync across devices using the system calendar service. This keeps scheduling separate from note taking or project management systems."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Notion Calendar wins",
+      "bullets": [
+        {
+          "point": "Links events to workspace pages",
+          "why_it_matters": "Events can connect directly to workspace pages containing notes, project details, or documentation related to the meeting."
+        },
+        {
+          "point": "Calendar views connected to databases",
+          "why_it_matters": "Tasks or projects stored in workspace databases can appear on the calendar, allowing planning across multiple types of content."
+        },
+        {
+          "point": "Unified workspace planning system",
+          "why_it_matters": "Notion Calendar allows events to exist alongside tasks, documents, and project tracking, creating a combined planning environment."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want events connected directly to project pages or task databases inside a workspace system.",
+          "what_to_do_instead": "Use Notion Calendar so meetings can link to workspace content."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You only want a basic event calendar without workspace pages, database views, or project layers.",
+          "what_to_do_instead": "Use Apple Calendar for a simple event focused timeline."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your calendar needs to connect directly to project pages, meeting notes, or task databases in a workspace system, Notion Calendar may be the better choice because it integrates scheduling with those resources."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose Apple Calendar if you want a simple calendar focused only on events.",
+        "Choose Apple Calendar if you prefer scheduling separate from workspace systems.",
+        "Choose Notion Calendar if events should connect to project pages or databases."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is Apple Calendar mainly used for?",
+      "a": "Apple Calendar is a straightforward event calendar used to track meetings, appointments, and personal events."
+    },
+    {
+      "q": "How does Notion Calendar differ from a normal calendar?",
+      "a": "Notion Calendar connects events to workspace pages and databases, allowing meetings to link to project information and tasks."
+    },
+    {
+      "q": "Why might minimalists prefer Apple Calendar?",
+      "a": "Because the interface focuses only on events and avoids additional workspace features or database layers."
+    },
+    {
+      "q": "When is Notion Calendar the better option?",
+      "a": "Notion Calendar works well when events need to connect directly with project pages, documentation, or task databases."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Apple Calendar",
+      "y_name": "Google Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Calendar",
+      "y_name": "Fantastical",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Cron",
+      "y_name": "Google Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Google Calendar",
+      "y_name": "Motion",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Google Calendar",
+      "y_name": "Outlook Calendar",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Calendar",
+      "y_name": "Outlook Calendar",
+      "persona": "Minimalist"
+    }
+  ]
 }

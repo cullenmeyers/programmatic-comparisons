@@ -1,0 +1,124 @@
+{
+  "category": "Calendar / Scheduling tools",
+  "categorySlug": "calendar-scheduling-tools",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Google Calendar vs Reclaim.ai for Solo users",
+  "slug": "google-calendar-vs-reclaim-ai-for-solo-user",
+  "meta_description": "Google Calendar vs Reclaim.ai for solo users who want stable personal scheduling without retuning automation rules or constant adjustments.",
+  "persona": "Solo user",
+  "constraint_lens": "You want your schedule to stay steady without having to adjust rules, settings, or automation every week.",
+  "one_second_verdict": {
+    "winner_label": "Google Calendar",
+    "summary": "Best for solo users who need their schedule to stay stable without ongoing tuning.",
+    "reason": "Reclaim.ai fails first because automated scheduling requires frequent manual adjustments."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Google Calendar wins for solo users who want their schedule to stay stable without ongoing tuning. It shows fixed events exactly where you place them, with no auto reshuffling rules running in the background. Reclaim.ai automatically moves tasks and habits based on priorities and availability, which can require adjustments when plans change. If automated scheduling requires frequent manual adjustments, Reclaim.ai fails first.",
+    "decision_rule": "If automated scheduling requires frequent manual adjustments, Reclaim.ai fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Solo users",
+      "content": "You said you want personal scheduling to remain stable without constant automation tuning. As a solo user, you do not want to babysit rules or rework settings every time your week shifts. The tool that works quietly after setup fits you better."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Reclaim.ai wins",
+      "bullets": [
+        {
+          "point": "Automatically schedules tasks and habits into open calendar slots",
+          "why_it_matters": "Your to do items are placed into available time without manual dragging, but this relies on background rules that may need updates when priorities shift."
+        },
+        {
+          "point": "Priority system that reshuffles flexible events when meetings are added",
+          "why_it_matters": "Important work blocks can be protected, yet lower priority items may move around, which can feel unstable if you prefer a fixed layout."
+        },
+        {
+          "point": "Habit scheduling with target hours per week",
+          "why_it_matters": "It ensures recurring activities happen, but you may need to adjust target hours or time windows as your routine changes."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Google Calendar wins",
+      "bullets": [
+        {
+          "point": "Events stay exactly where you place them unless you move them",
+          "why_it_matters": "There is no automatic reshuffling, so your schedule remains predictable week to week."
+        },
+        {
+          "point": "Simple recurring event setup without priority rules",
+          "why_it_matters": "You set a repeat pattern once and it continues without needing to tune weightings or availability settings."
+        },
+        {
+          "point": "No background task automation engine",
+          "why_it_matters": "Because it does not auto optimize your calendar, there is nothing to maintain or recalibrate over time."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You frequently adjust priorities, working hours, or habit targets to stop the system from moving blocks in ways you did not expect.",
+          "what_to_do_instead": "Use Google Calendar if you prefer to place events manually and leave them untouched."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You want tasks to be automatically redistributed when meetings crowd your day.",
+          "what_to_do_instead": "Use Reclaim.ai if your main goal becomes automatic time blocking rather than stability."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your schedule changes daily and you rely on automatic time blocking to fit deep work and habits around new meetings, Reclaim.ai may feel easier because it actively reorganizes your calendar for you."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want events to stay put once scheduled, choose Google Calendar.",
+        "If you do not want to adjust automation rules over time, avoid Reclaim.ai.",
+        "If you prefer tasks to auto fit around meetings, Reclaim.ai makes more sense."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Reclaim.ai replace Google Calendar?",
+      "a": "It connects to Google Calendar and adds automatic scheduling on top, which means you are adding another layer rather than replacing your base calendar."
+    },
+    {
+      "q": "Is Google Calendar too basic for solo planning?",
+      "a": "It is simpler, but that simplicity means fewer moving parts and no ongoing rule adjustments."
+    },
+    {
+      "q": "Will Reclaim.ai constantly move my events?",
+      "a": "It can move flexible tasks and habits based on priority settings, which may require occasional tuning to match your preferences."
+    },
+    {
+      "q": "Which one requires less ongoing effort?",
+      "a": "Google Calendar usually requires less ongoing effort because it does not run automatic rescheduling rules in the background."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Google Calendar",
+      "y_name": "Skedda",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Apple Calendar",
+      "y_name": "Notion Calendar",
+      "persona": "Solo user"
+    }
+  ]
+}

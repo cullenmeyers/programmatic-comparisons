@@ -1,0 +1,144 @@
+{
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Focalboard vs Monday.com for Solo users",
+  "slug": "focalboard-vs-monday-com-for-solo-user",
+  "meta_description": "Focalboard vs Monday.com for solo users who want personal project boards without self-hosted setup or update cycles.",
+  "persona": "Solo user",
+  "constraint_lens": "You want personal project boards that run without self-hosting, manual updates, or technical upkeep.",
+  "one_second_verdict": {
+    "winner_label": "Monday.com",
+    "summary": "Best for solo users who refuse ongoing technical maintenance.",
+    "reason": "Focalboard fails first because self-hosted setup and update cycles require ongoing technical upkeep."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Monday.com wins for solo users who refuse ongoing technical maintenance. It runs as a hosted service with updates and infrastructure handled automatically. Focalboard often involves self-hosted setup or managing installations yourself. If self-hosted setup and update cycles require ongoing technical upkeep, Focalboard fails first.",
+    "decision_rule": "If self-hosted setup and update cycles require ongoing technical upkeep, Focalboard fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for zero-maintenance project boards",
+      "content": "You prefer open-source boards but refuse recurring enterprise complexity or technical upkeep. Monday.com works as a fully hosted web platform where updates happen automatically. Focalboard can require server setup, installation steps, or manual version updates depending on how you deploy it."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Focalboard wins",
+      "bullets": [
+        {
+          "point": "Open-source codebase",
+          "why_it_matters": "You can inspect and control the software if you host it yourself."
+        },
+        {
+          "point": "Self-hosted deployment option",
+          "why_it_matters": "You keep data on your own server, though this requires setup and maintenance."
+        },
+        {
+          "point": "Kanban-style boards without enterprise add-ons",
+          "why_it_matters": "You avoid large enterprise feature bundles, but updates remain your responsibility."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Monday.com wins",
+      "bullets": [
+        {
+          "point": "Fully hosted infrastructure",
+          "why_it_matters": "You use boards without installing software or managing servers."
+        },
+        {
+          "point": "Automatic platform updates",
+          "why_it_matters": "You do not track version changes or apply patches yourself."
+        },
+        {
+          "point": "Board templates with prebuilt columns",
+          "why_it_matters": "You start organizing projects immediately without configuring backend systems."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You must manage server updates, security patches, or manual installations.",
+          "what_to_do_instead": "Use Monday.com to avoid infrastructure responsibility."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You require full control over hosting and open-source customization.",
+          "what_to_do_instead": "Switch to Focalboard if control outweighs maintenance concerns."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you already run a personal server and are comfortable handling updates, Focalboard may feel manageable and aligned with your preferences."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you want no technical upkeep, choose Monday.com.",
+        "If self-hosting sounds like ongoing work, avoid Focalboard.",
+        "If full software control matters more than maintenance load, consider Focalboard."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Focalboard require self-hosting?",
+      "a": "It can be self-hosted, which means you manage installation and updates."
+    },
+    {
+      "q": "Is Monday.com fully hosted?",
+      "a": "Yes. It runs as a web service with updates handled by the provider."
+    },
+    {
+      "q": "Which is easier for a solo user who wants no upkeep?",
+      "a": "Monday.com is easier because you do not manage servers or software versions."
+    },
+    {
+      "q": "When would Focalboard make sense?",
+      "a": "It makes sense if you value open-source control and are comfortable maintaining it."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Asana",
+      "y_name": "Microsoft To Do",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Basecamp",
+      "y_name": "Microsoft To Do",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Kanboard",
+      "y_name": "Trello",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Microsoft To Do",
+      "y_name": "Notion",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Microsoft To Do",
+      "y_name": "Notion",
+      "persona": "Solo user"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "Sunsama",
+      "persona": "Solo user"
+    }
+  ]
+}

@@ -1,120 +1,144 @@
 {
-"category": "Email / Inbox tools",
-"categorySlug": "email-inbox-tools",
-"constraintSlug": "setup-tolerance",
-"constraintUiName": "Publish fast",
-"title": "Gmail vs Thunderbird for Beginners",
-"slug": "gmail-vs-thunderbird-for-beginner",
-"meta_description": "Gmail vs Thunderbird for beginners who want email working instantly. See why Gmail wins when you want to open a browser and start sending messages.",
-"persona": "Beginner",
-"constraint_lens": "Beginners prefer tools that work immediately without installing software or entering technical server settings.",
-"one_second_verdict": {
-"winner_label": "Gmail",
-"summary": "Best for beginners who want to open a browser and start sending email immediately.",
-"reason": "Thunderbird fails first because it requires installing a desktop app and configuring IMAP or SMTP accounts before email can be sent."
-},
-"verdict": {
-"winner": "x",
-"summary": "Gmail is the better choice for beginners who want email working right away. It runs entirely in a web browser and automatically connects your inbox as soon as you sign in. Thunderbird is a desktop email client that must be installed and then configured with account settings before messages can be sent or received. That extra setup step slows beginners down when their goal is simply sending email quickly.",
-"decision_rule": "If email requires configuring IMAP or SMTP accounts before messages can be sent, Thunderbird fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Gmail fits beginners",
-"content": "The user wants to open a browser and start sending email without configuring mail servers or installing software. Gmail runs entirely in a web page and activates the inbox automatically once the account is created. There are no server settings to enter and no software installation required. This makes the first email experience immediate and easy for beginners."
-},
-{
-"type": "x_wins",
-"heading": "Where Gmail wins",
-"bullets": [
-{
-"point": "Gmail works directly in a web browser with no software installation.",
-"why_it_matters": "Beginners can sign in and start sending messages instantly instead of downloading and setting up a separate email program."
-},
-{
-"point": "Gmail automatically connects the inbox without requiring server settings.",
-"why_it_matters": "The user never has to enter technical fields like IMAP or SMTP server details, which are confusing for new email users."
-},
-{
-"point": "Gmail includes built in categories like Primary and Promotions that automatically organize incoming messages.",
-"why_it_matters": "Beginners avoid creating folders or rules because the inbox sorts common message types automatically."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Thunderbird wins",
-"bullets": [
-{
-"point": "Thunderbird can manage multiple email accounts from different providers inside one desktop client.",
-"why_it_matters": "Users who later manage several inboxes can read and reply to all messages from one application."
-},
-{
-"point": "Thunderbird stores email locally on the computer instead of only in a web account.",
-"why_it_matters": "Users can keep offline copies of messages that remain accessible even without an internet connection."
-},
-{
-"point": "Thunderbird supports extensions that add new features or change the interface behavior.",
-"why_it_matters": "More advanced users can expand the email client with additional tools once their needs grow."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The user wants to manage several different email providers in one desktop workspace or customize the email client with extensions.",
-"what_to_do_instead": "Use Thunderbird where multiple accounts and extensions can be managed inside a local client."
-},
-{
-"tool": "y",
-"fails_when": "The user expects email to work instantly because Thunderbird requires installing the application and configuring account settings before messages appear.",
-"what_to_do_instead": "Use Gmail where email works immediately inside a browser after signing in."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the user already understands email server settings and wants to combine several email accounts into a single desktop inbox, Thunderbird may become the better choice."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick Gmail if you want to start sending email immediately in a browser.",
-"Pick Gmail if you do not want to install software or configure mail servers.",
-"Pick Thunderbird if you want to manage multiple email accounts in a desktop application."
-]
-}
-],
-"faqs": [
-{
-"q": "Why is Gmail easier for beginners?",
-"a": "Gmail runs in a browser and automatically connects the inbox, so beginners do not need to install software or configure email server settings."
-},
-{
-"q": "Does Thunderbird require setup before using email?",
-"a": "Yes. Thunderbird must be installed and connected to an email account using settings such as IMAP or SMTP before messages can be sent or received."
-},
-{
-"q": "Can Gmail be used without installing anything?",
-"a": "Yes. Gmail works directly in any web browser, which means no email software installation is required."
-},
-{
-"q": "When might Thunderbird be better than Gmail?",
-"a": "Thunderbird can be better for users who want a desktop email client that manages multiple accounts and supports extensions."
-}
-],
-"related_pages": [
-{ "x_name": "Gmail", "y_name": "Outlook", "persona": "Beginner" },
-{ "x_name": "Gmail", "y_name": "Apple Mail", "persona": "Beginner" },
-{ "x_name": "Gmail", "y_name": "Proton Mail", "persona": "Beginner" },
-{ "x_name": "Gmail", "y_name": "HEY", "persona": "Beginner" },
-{ "x_name": "Gmail", "y_name": "Fastmail", "persona": "Beginner" },
-{ "x_name": "Gmail", "y_name": "Zoho Mail", "persona": "Beginner" }
-]
+  "category": "Email / Inbox tools",
+  "categorySlug": "email-inbox-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Gmail vs Thunderbird for Beginners",
+  "slug": "gmail-vs-thunderbird-for-beginner",
+  "meta_description": "Gmail vs Thunderbird for beginners who want email working instantly. See why Gmail wins when you want to open a browser and start sending messages.",
+  "persona": "Beginner",
+  "constraint_lens": "Beginners prefer tools that work immediately without installing software or entering technical server settings.",
+  "one_second_verdict": {
+    "winner_label": "Gmail",
+    "summary": "Best for beginners who want to open a browser and start sending email immediately.",
+    "reason": "Thunderbird fails first because it requires installing a desktop app and configuring IMAP or SMTP accounts before email can be sent."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Gmail is the better choice for beginners who want email working right away. It runs entirely in a web browser and automatically connects your inbox as soon as you sign in. Thunderbird is a desktop email client that must be installed and then configured with account settings before messages can be sent or received. That extra setup step slows beginners down when their goal is simply sending email quickly.",
+    "decision_rule": "If email requires configuring IMAP or SMTP accounts before messages can be sent, Thunderbird fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Gmail fits beginners",
+      "content": "The user wants to open a browser and start sending email without configuring mail servers or installing software. Gmail runs entirely in a web page and activates the inbox automatically once the account is created. There are no server settings to enter and no software installation required. This makes the first email experience immediate and easy for beginners."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Gmail wins",
+      "bullets": [
+        {
+          "point": "Gmail works directly in a web browser with no software installation.",
+          "why_it_matters": "Beginners can sign in and start sending messages instantly instead of downloading and setting up a separate email program."
+        },
+        {
+          "point": "Gmail automatically connects the inbox without requiring server settings.",
+          "why_it_matters": "The user never has to enter technical fields like IMAP or SMTP server details, which are confusing for new email users."
+        },
+        {
+          "point": "Gmail includes built in categories like Primary and Promotions that automatically organize incoming messages.",
+          "why_it_matters": "Beginners avoid creating folders or rules because the inbox sorts common message types automatically."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Thunderbird wins",
+      "bullets": [
+        {
+          "point": "Thunderbird can manage multiple email accounts from different providers inside one desktop client.",
+          "why_it_matters": "Users who later manage several inboxes can read and reply to all messages from one application."
+        },
+        {
+          "point": "Thunderbird stores email locally on the computer instead of only in a web account.",
+          "why_it_matters": "Users can keep offline copies of messages that remain accessible even without an internet connection."
+        },
+        {
+          "point": "Thunderbird supports extensions that add new features or change the interface behavior.",
+          "why_it_matters": "More advanced users can expand the email client with additional tools once their needs grow."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The user wants to manage several different email providers in one desktop workspace or customize the email client with extensions.",
+          "what_to_do_instead": "Use Thunderbird where multiple accounts and extensions can be managed inside a local client."
+        },
+        {
+          "tool": "y",
+          "fails_when": "The user expects email to work instantly because Thunderbird requires installing the application and configuring account settings before messages appear.",
+          "what_to_do_instead": "Use Gmail where email works immediately inside a browser after signing in."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user already understands email server settings and wants to combine several email accounts into a single desktop inbox, Thunderbird may become the better choice."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Gmail if you want to start sending email immediately in a browser.",
+        "Pick Gmail if you do not want to install software or configure mail servers.",
+        "Pick Thunderbird if you want to manage multiple email accounts in a desktop application."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Gmail easier for beginners?",
+      "a": "Gmail runs in a browser and automatically connects the inbox, so beginners do not need to install software or configure email server settings."
+    },
+    {
+      "q": "Does Thunderbird require setup before using email?",
+      "a": "Yes. Thunderbird must be installed and connected to an email account using settings such as IMAP or SMTP before messages can be sent or received."
+    },
+    {
+      "q": "Can Gmail be used without installing anything?",
+      "a": "Yes. Gmail works directly in any web browser, which means no email software installation is required."
+    },
+    {
+      "q": "When might Thunderbird be better than Gmail?",
+      "a": "Thunderbird can be better for users who want a desktop email client that manages multiple accounts and supports extensions."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Gmail",
+      "y_name": "Outlook",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Apple Mail",
+      "y_name": "Gmail",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Proton Mail",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "HEY",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Fastmail",
+      "y_name": "Gmail",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Gmail",
+      "y_name": "Zoho Mail",
+      "persona": "Beginner"
+    }
+  ]
 }

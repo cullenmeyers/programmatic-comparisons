@@ -1,0 +1,144 @@
+{
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Things 3 vs Todoist for Power users",
+  "slug": "things-3-vs-todoist-for-power-user",
+  "meta_description": "Things 3 vs Todoist for power users who manage hundreds of tasks using advanced filters and rule-based queries.",
+  "persona": "Power user",
+  "constraint_lens": "You need task filters and query rules that can organize large task lists automatically.",
+  "one_second_verdict": {
+    "winner_label": "Todoist",
+    "summary": "Best for power users managing large task lists with complex filtering needs.",
+    "reason": "Things 3 fails first because advanced filters and rule-based queries are constrained."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist wins for power users managing large task lists with complex filtering needs. It supports advanced filters that combine attributes such as labels, priorities, and due dates into rule-based queries. Things 3 focuses on a clean project structure but offers limited rule-based filtering. If advanced filters and rule-based queries are constrained, Things 3 fails first.",
+    "decision_rule": "If advanced filters and rule-based queries are constrained, Things 3 fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for rule-based task filtering",
+      "content": "You manage hundreds of tasks and expect to filter them using structured rules. Todoist allows tasks to be searched and filtered using combinations of labels, priorities, dates, and projects. Things 3 organizes tasks through areas and projects but does not support advanced query-style filters."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Advanced filter queries combining multiple task attributes",
+          "why_it_matters": "You generate dynamic views such as tasks due soon with specific labels or priorities."
+        },
+        {
+          "point": "Labels and priority fields attached to tasks",
+          "why_it_matters": "Large task lists can be segmented and filtered automatically."
+        },
+        {
+          "point": "Saved filter views that update automatically",
+          "why_it_matters": "Custom task dashboards appear without manually reorganizing lists."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Things 3 wins",
+      "bullets": [
+        {
+          "point": "Area and project structure organizing tasks visually",
+          "why_it_matters": "Tasks are grouped clearly without managing complex filtering rules."
+        },
+        {
+          "point": "Clean interface focused on upcoming and today lists",
+          "why_it_matters": "Daily planning happens without configuring advanced queries."
+        },
+        {
+          "point": "Natural language scheduling during task entry",
+          "why_it_matters": "Tasks receive due dates quickly while typing."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "Your workflow only requires simple project lists without advanced filtering rules.",
+          "what_to_do_instead": "Use Things 3 when a clean project structure matters more than query filters."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Large task lists require rule-based queries to isolate tasks dynamically.",
+          "what_to_do_instead": "Switch to Todoist for advanced filter views."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your workflow centers on a smaller number of projects and daily task lists rather than large filter-driven systems, Things 3 may feel simpler."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If tasks must be filtered with rule-based queries, choose Todoist.",
+        "If your task list behaves like a database, Todoist fits better.",
+        "If you prefer a clean project list without complex filtering, choose Things 3."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Todoist support advanced task filters?",
+      "a": "Yes. Filters can combine labels, priorities, projects, and due dates into query rules."
+    },
+    {
+      "q": "Does Things 3 allow rule-based task queries?",
+      "a": "No. Tasks are mainly organized through projects, areas, and simple lists."
+    },
+    {
+      "q": "Which tool works better for managing hundreds of tasks?",
+      "a": "Todoist works better because advanced filters organize large task sets."
+    },
+    {
+      "q": "When would Things 3 be the better option?",
+      "a": "It works well when managing smaller project lists without advanced filtering."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "OmniFocus",
+      "y_name": "Things 3",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Pagico",
+      "y_name": "Todoist",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Google Tasks",
+      "y_name": "Remember The Milk",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Google Tasks",
+      "y_name": "TickTick",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Microsoft To Do",
+      "y_name": "Toodledo",
+      "persona": "Power user"
+    },
+    {
+      "x_name": "Jira",
+      "y_name": "Trello",
+      "persona": "Power user"
+    }
+  ]
+}

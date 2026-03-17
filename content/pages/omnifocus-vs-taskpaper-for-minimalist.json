@@ -1,0 +1,144 @@
+{
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "OmniFocus vs TaskPaper for Minimalists",
+  "slug": "omnifocus-vs-taskpaper-for-minimalist",
+  "meta_description": "OmniFocus vs TaskPaper for minimalists who want plain text task lists without perspectives, review modes, or layered systems.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want plain text task lists without layered systems like perspectives, review modes, or complex project views.",
+  "one_second_verdict": {
+    "winner_label": "TaskPaper",
+    "summary": "Best for minimalists who prefer plain text task lists.",
+    "reason": "OmniFocus fails first because advanced perspectives and review modes introduce extra conceptual layers."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "TaskPaper wins for minimalists who prefer plain text task lists. It uses a simple outline format with projects and indented tasks. OmniFocus includes perspectives, review modes, and context filters that add conceptual layers. If advanced perspectives and review modes introduce extra conceptual layers, OmniFocus fails first.",
+    "decision_rule": "If advanced perspectives and review modes introduce extra conceptual layers, OmniFocus fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for text-first task management",
+      "content": "You want simple hierarchical tasks without learning a system. TaskPaper works as a plain text outline where indentation defines structure. OmniFocus organizes tasks through projects, tags, perspectives, and review workflows that require understanding multiple views."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where TaskPaper wins",
+      "bullets": [
+        {
+          "point": "Plain text outline format",
+          "why_it_matters": "You write tasks as indented lines without switching between views or dashboards."
+        },
+        {
+          "point": "Minimal interface with no forced perspectives",
+          "why_it_matters": "You see your list as written rather than navigating filtered task views."
+        },
+        {
+          "point": "Tag syntax directly in text",
+          "why_it_matters": "You add simple tags inline instead of configuring separate property panels."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where OmniFocus wins",
+      "bullets": [
+        {
+          "point": "Custom perspectives built from filters",
+          "why_it_matters": "You create tailored task views, though this requires understanding filtering rules."
+        },
+        {
+          "point": "Built-in review mode for projects",
+          "why_it_matters": "You systematically revisit projects, adding structure beyond a simple list."
+        },
+        {
+          "point": "Forecast view combining due dates and calendar events",
+          "why_it_matters": "You see tasks and calendar items together, but must manage more moving parts."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You need filtered dashboards and structured review cycles across many projects.",
+          "what_to_do_instead": "Use OmniFocus if advanced filtering and review workflows become necessary."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You feel overwhelmed by perspectives, review prompts, or multiple task views.",
+          "what_to_do_instead": "Switch to TaskPaper for a single plain text list."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your workload grows large and you need filtered views to focus on specific contexts, OmniFocus may become helpful despite its complexity."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If you want plain text hierarchical lists, choose TaskPaper.",
+        "If layered perspectives feel like overkill, avoid OmniFocus.",
+        "If advanced filtering becomes essential, consider OmniFocus."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does TaskPaper support complex filtering?",
+      "a": "It supports basic tag-based searches, but not layered perspective systems."
+    },
+    {
+      "q": "Is OmniFocus complicated?",
+      "a": "It includes perspectives, review modes, and forecast views that add conceptual layers."
+    },
+    {
+      "q": "Which is better for minimal task tracking?",
+      "a": "TaskPaper is better for a simple text-first workflow."
+    },
+    {
+      "q": "Which has the higher ceiling for structured task management?",
+      "a": "OmniFocus has a higher ceiling due to advanced filtering and review features."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "OmniFocus",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Amazing Marvin",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Any.do",
+      "y_name": "Apple Reminders",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "ClickUp",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "Apple Reminders",
+      "y_name": "ClickUp",
+      "persona": "Minimalist"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Trello",
+      "persona": "Minimalist"
+    }
+  ]
+}

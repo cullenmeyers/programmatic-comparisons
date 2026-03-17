@@ -1,120 +1,144 @@
 {
-"category": "Email / Inbox tools",
-"categorySlug": "email-inbox-tools",
-"constraintSlug": "time-scarcity",
-"constraintUiName": "Fast to use daily",
-"title": "Front vs Zoho Mail for Busy professionals",
-"slug": "front-vs-zoho-mail-for-busy-professional",
-"meta_description": "Front vs Zoho Mail for busy professionals managing shared inboxes. See why Front wins when team email assignment and tracking matter.",
-"persona": "Busy professional",
-"constraint_lens": "Busy professionals prefer tools that reduce coordination work so teams can respond to emails quickly without confusion.",
-"one_second_verdict": {
-"winner_label": "Front",
-"summary": "Best for busy professionals who need to assign and track team email replies in a shared inbox.",
-"reason": "Zoho Mail fails first because emails cannot be assigned to teammates with clear visibility into who is handling the conversation."
-},
-"verdict": {
-"winner": "x",
-"summary": "Front is the better choice for busy professionals managing team inboxes. It allows incoming emails to be assigned to specific teammates and displays who is responsible for each conversation. Zoho Mail focuses on individual inbox management and does not provide native conversation assignment inside a shared workflow. When multiple teammates respond to customer emails, the lack of assignment makes coordination slower and increases the risk of overlapping replies.",
-"decision_rule": "If incoming emails cannot be assigned to teammates with shared conversation visibility, Zoho Mail fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Front fits busy professionals",
-"content": "The user works in a support team where incoming emails must be assigned to teammates and tracked through shared conversations. Front provides a shared inbox where each email thread can be assigned to a specific person. Team members can see who is handling the conversation and track progress without asking for updates. This prevents duplicate replies and reduces coordination overhead."
-},
-{
-"type": "x_wins",
-"heading": "Where Front wins",
-"bullets": [
-{
-"point": "Front allows emails to be assigned to specific teammates directly inside the conversation thread.",
-"why_it_matters": "Everyone in the team can see who is responsible for replying to each message."
-},
-{
-"point": "Front displays assignment status and activity inside the shared inbox.",
-"why_it_matters": "Teammates avoid responding to the same message because responsibility is clearly visible."
-},
-{
-"point": "Front supports internal comments within email conversations.",
-"why_it_matters": "Team members can coordinate replies before sending a response to the customer."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Zoho Mail wins",
-"bullets": [
-{
-"point": "Zoho Mail runs entirely in a browser without installing additional collaboration tools.",
-"why_it_matters": "Users can access their inbox quickly from any device."
-},
-{
-"point": "Zoho Mail includes built-in email hosting with domain support.",
-"why_it_matters": "Organizations can manage their email accounts and domains in one platform."
-},
-{
-"point": "Zoho Mail provides folder rules and automated email filtering.",
-"why_it_matters": "Users can automatically organize incoming messages into different folders."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The user only manages a personal inbox and does not need team collaboration features.",
-"what_to_do_instead": "Use Zoho Mail where email works as a standard individual inbox."
-},
-{
-"tool": "y",
-"fails_when": "Multiple teammates manage incoming messages because Zoho Mail does not provide shared conversation assignment inside the inbox.",
-"what_to_do_instead": "Use Front where emails can be assigned and tracked inside a shared inbox."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the user manages only their own inbox and does not coordinate replies with a team, Zoho Mail may become the better option."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick Front if your team needs to assign incoming emails to specific people.",
-"Pick Front if multiple teammates reply from the same inbox.",
-"Pick Zoho Mail if you only need a standard personal inbox."
-]
-}
-],
-"faqs": [
-{
-"q": "Why is Front better for team inbox workflows?",
-"a": "Front allows emails to be assigned to teammates and shows who is responsible for each conversation."
-},
-{
-"q": "Can Zoho Mail assign emails to teammates?",
-"a": "No. Zoho Mail mainly manages individual inboxes and does not provide built-in conversation assignment."
-},
-{
-"q": "Does Front support internal discussion inside email threads?",
-"a": "Yes. Team members can leave internal comments before replying to customers."
-},
-{
-"q": "Who should choose Zoho Mail instead?",
-"a": "Users who only need a personal email inbox with domain hosting may prefer Zoho Mail."
-}
-],
-"related_pages": [
-{ "x_name": "Front", "y_name": "Gmail", "persona": "Busy professional" },
-{ "x_name": "Front", "y_name": "Spark Mail", "persona": "Busy professional" },
-{ "x_name": "Missive", "y_name": "Apple Mail", "persona": "Busy professional" },
-{ "x_name": "Front", "y_name": "Apple Mail", "persona": "Busy professional" },
-{ "x_name": "Missive", "y_name": "Fastmail", "persona": "Busy professional" },
-{ "x_name": "Hiver", "y_name": "Apple Mail", "persona": "Busy professional" }
-]
+  "category": "Email / Inbox tools",
+  "categorySlug": "email-inbox-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Front vs Zoho Mail for Busy professionals",
+  "slug": "front-vs-zoho-mail-for-busy-professional",
+  "meta_description": "Front vs Zoho Mail for busy professionals managing shared inboxes. See why Front wins when team email assignment and tracking matter.",
+  "persona": "Busy professional",
+  "constraint_lens": "Busy professionals prefer tools that reduce coordination work so teams can respond to emails quickly without confusion.",
+  "one_second_verdict": {
+    "winner_label": "Front",
+    "summary": "Best for busy professionals who need to assign and track team email replies in a shared inbox.",
+    "reason": "Zoho Mail fails first because emails cannot be assigned to teammates with clear visibility into who is handling the conversation."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Front is the better choice for busy professionals managing team inboxes. It allows incoming emails to be assigned to specific teammates and displays who is responsible for each conversation. Zoho Mail focuses on individual inbox management and does not provide native conversation assignment inside a shared workflow. When multiple teammates respond to customer emails, the lack of assignment makes coordination slower and increases the risk of overlapping replies.",
+    "decision_rule": "If incoming emails cannot be assigned to teammates with shared conversation visibility, Zoho Mail fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Front fits busy professionals",
+      "content": "The user works in a support team where incoming emails must be assigned to teammates and tracked through shared conversations. Front provides a shared inbox where each email thread can be assigned to a specific person. Team members can see who is handling the conversation and track progress without asking for updates. This prevents duplicate replies and reduces coordination overhead."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Front wins",
+      "bullets": [
+        {
+          "point": "Front allows emails to be assigned to specific teammates directly inside the conversation thread.",
+          "why_it_matters": "Everyone in the team can see who is responsible for replying to each message."
+        },
+        {
+          "point": "Front displays assignment status and activity inside the shared inbox.",
+          "why_it_matters": "Teammates avoid responding to the same message because responsibility is clearly visible."
+        },
+        {
+          "point": "Front supports internal comments within email conversations.",
+          "why_it_matters": "Team members can coordinate replies before sending a response to the customer."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Zoho Mail wins",
+      "bullets": [
+        {
+          "point": "Zoho Mail runs entirely in a browser without installing additional collaboration tools.",
+          "why_it_matters": "Users can access their inbox quickly from any device."
+        },
+        {
+          "point": "Zoho Mail includes built-in email hosting with domain support.",
+          "why_it_matters": "Organizations can manage their email accounts and domains in one platform."
+        },
+        {
+          "point": "Zoho Mail provides folder rules and automated email filtering.",
+          "why_it_matters": "Users can automatically organize incoming messages into different folders."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The user only manages a personal inbox and does not need team collaboration features.",
+          "what_to_do_instead": "Use Zoho Mail where email works as a standard individual inbox."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Multiple teammates manage incoming messages because Zoho Mail does not provide shared conversation assignment inside the inbox.",
+          "what_to_do_instead": "Use Front where emails can be assigned and tracked inside a shared inbox."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user manages only their own inbox and does not coordinate replies with a team, Zoho Mail may become the better option."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Front if your team needs to assign incoming emails to specific people.",
+        "Pick Front if multiple teammates reply from the same inbox.",
+        "Pick Zoho Mail if you only need a standard personal inbox."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Front better for team inbox workflows?",
+      "a": "Front allows emails to be assigned to teammates and shows who is responsible for each conversation."
+    },
+    {
+      "q": "Can Zoho Mail assign emails to teammates?",
+      "a": "No. Zoho Mail mainly manages individual inboxes and does not provide built-in conversation assignment."
+    },
+    {
+      "q": "Does Front support internal discussion inside email threads?",
+      "a": "Yes. Team members can leave internal comments before replying to customers."
+    },
+    {
+      "q": "Who should choose Zoho Mail instead?",
+      "a": "Users who only need a personal email inbox with domain hosting may prefer Zoho Mail."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Front",
+      "y_name": "Gmail",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Front",
+      "y_name": "Spark Mail",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Apple Mail",
+      "y_name": "Missive",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Apple Mail",
+      "y_name": "Front",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Fastmail",
+      "y_name": "Missive",
+      "persona": "Busy professional"
+    },
+    {
+      "x_name": "Apple Mail",
+      "y_name": "Hiver",
+      "persona": "Busy professional"
+    }
+  ]
 }

@@ -1,0 +1,144 @@
+{
+  "category": "Note-taking apps",
+  "categorySlug": "note-taking-apps",
+  "constraintSlug": "switching-cost",
+  "constraintUiName": "Easy to quit later",
+  "title": "Google Docs vs Roam Research for Students",
+  "slug": "google-docs-vs-roam-research-for-student",
+  "meta_description": "Google Docs vs Roam Research for students who need academic notes and easy assignment submission without learning a complex system first.",
+  "persona": "Student",
+  "constraint_lens": "You need a tool that works for one semester and is easy to leave later without losing access or retraining yourself.",
+  "one_second_verdict": {
+    "winner_label": "Google Docs",
+    "summary": "Best for students who need straightforward academic notes and easy submission.",
+    "reason": "Roam Research fails first because learning the tool outweighs the academic payoff."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Google Docs wins for students who need straightforward academic notes and easy submission. It matches common classroom workflows and requires no special concepts to start writing. Roam Research introduces backlinks, blocks, and graph thinking that take time to learn. If learning the tool outweighs the academic payoff, Roam fails first.",
+    "decision_rule": "If learning the tool outweighs the academic payoff, Roam fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Best fit for short-term academic use",
+      "content": "You need notes mainly to study and submit assignments, not to build a lifelong knowledge system. Google Docs fits typical school expectations because teachers accept shared links or standard document files. Roam focuses on networked note-taking, which may be more than you need for one semester."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Roam Research wins",
+      "bullets": [
+        {
+          "point": "Automatic backlinks between concepts",
+          "why_it_matters": "Typing double brackets creates links between topics across notes. This helps connect ideas during studying, but requires learning how linking works."
+        },
+        {
+          "point": "Block-based outline structure",
+          "why_it_matters": "Each line can be nested and rearranged as a block. This supports structured thinking, yet differs from traditional document formatting."
+        },
+        {
+          "point": "Graph view of topic relationships",
+          "why_it_matters": "You can visualize how subjects connect. This can deepen understanding, though it adds features unrelated to assignment submission."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Google Docs wins",
+      "bullets": [
+        {
+          "point": "Standard document layout with headings and paragraphs",
+          "why_it_matters": "You write in a familiar format that matches essay and report requirements. There is no need to translate notes into another structure before submission."
+        },
+        {
+          "point": "Direct sharing through links and common file downloads",
+          "why_it_matters": "You can share with classmates or export as common formats accepted by school portals. This keeps switching costs low."
+        },
+        {
+          "point": "Commenting and suggestion tools built into the editor",
+          "why_it_matters": "Teachers and peers can leave feedback directly in the document. This matches how assignments are reviewed."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You spend time learning backlinks and block behavior instead of focusing on course material.",
+          "what_to_do_instead": "Use Google Docs for the semester so effort goes toward studying rather than mastering the tool."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You want deeply interconnected notes that span multiple subjects over several years.",
+          "what_to_do_instead": "Adopt Roam later if long-term knowledge linking becomes your priority."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you are studying a subject that benefits from linking many ideas together, such as philosophy or research-heavy fields, Roam may provide deeper insight despite the learning curve."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "If your main goal is assignment submission, choose Google Docs.",
+        "If you do not want to learn a new workflow this semester, avoid Roam.",
+        "If long-term connected thinking matters more than quick submission, consider Roam."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can Roam be used for essays?",
+      "a": "Yes, but you may need to adapt its block structure when preparing final documents."
+    },
+    {
+      "q": "Is Google Docs easier for short-term school use?",
+      "a": "Yes. It matches standard academic formats and sharing expectations."
+    },
+    {
+      "q": "Will Roam help me study better?",
+      "a": "It can help connect ideas, but it requires learning its linking and block system first."
+    },
+    {
+      "q": "Which is easier to leave after a semester?",
+      "a": "Google Docs is easier to export and share in common formats, making it simpler to switch later."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Craft",
+      "y_name": "Google Docs",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Google Docs",
+      "y_name": "Notion",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Google Docs",
+      "y_name": "Obsidian",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Dropbox Paper",
+      "y_name": "Notion",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Apple Notes",
+      "y_name": "Joplin",
+      "persona": "Student"
+    },
+    {
+      "x_name": "Apple Notes",
+      "y_name": "Logseq",
+      "persona": "Student"
+    }
+  ]
+}

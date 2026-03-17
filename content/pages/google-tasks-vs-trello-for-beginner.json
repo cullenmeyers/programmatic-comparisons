@@ -1,0 +1,144 @@
+{
+  "category": "Task Managers",
+  "categorySlug": "task-managers",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Google Tasks vs Trello for Beginners",
+  "slug": "google-tasks-vs-trello-for-beginner",
+  "meta_description": "Google Tasks vs Trello for beginners who want to remember to dos immediately without learning boards, cards, or project layouts first.",
+  "persona": "Beginner",
+  "constraint_lens": "You want to start adding tasks right away without learning boards, cards, or project layouts first.",
+  "one_second_verdict": {
+    "winner_label": "Google Tasks",
+    "summary": "Best for beginners who need something immediately understandable.",
+    "reason": "Trello fails first because the user must learn boards or cards before adding tasks."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Google Tasks wins for beginners who want something immediately understandable. You can open a list and start typing tasks without setting up boards. Trello is built around boards, lists, and cards that require basic layout understanding before use. If the user must learn boards or cards before adding tasks, Trello fails first.",
+    "decision_rule": "If the user must learn boards or cards before adding tasks, Trello fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why this matters for Beginners",
+      "content": "You said you are new to task apps and want something immediately understandable. When you open an app and see boards and columns, you must first understand how they work. A simple checklist reduces hesitation and confusion."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Trello wins",
+      "bullets": [
+        {
+          "point": "Board layout with columns representing stages such as To do and Done",
+          "why_it_matters": "You can visualize progress across stages, but you must understand how boards and columns work before adding tasks."
+        },
+        {
+          "point": "Card system with checklists, labels, and attachments",
+          "why_it_matters": "Tasks can hold detailed information, yet creating and opening cards adds extra interaction steps."
+        },
+        {
+          "point": "Multiple boards for different projects",
+          "why_it_matters": "You can separate areas of life clearly, but deciding where to place a card adds setup overhead."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Google Tasks wins",
+      "bullets": [
+        {
+          "point": "Single list view with immediate add field",
+          "why_it_matters": "You can start typing tasks instantly without creating boards or learning new layouts."
+        },
+        {
+          "point": "Minimal interface inside Gmail and Google Calendar",
+          "why_it_matters": "You add tasks from tools you already use without navigating separate project screens."
+        },
+        {
+          "point": "Optional subtasks that do not require structural setup",
+          "why_it_matters": "You can ignore hierarchy and still use it effectively as a basic checklist."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "You feel confused about boards, columns, and cards before even adding your first task.",
+          "what_to_do_instead": "Use Google Tasks if you want a flat list that feels instantly clear."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You need visual workflow stages to track task progress.",
+          "what_to_do_instead": "Use Trello if seeing tasks move across columns becomes important."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you later prefer seeing tasks move across visual columns like To do and Done, Trello may feel more intuitive despite the initial learning curve."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "If you want a simple checklist right away, choose Google Tasks.",
+        "If boards and cards feel confusing at first, avoid Trello.",
+        "If visual task stages help you stay organized, Trello may fit better."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Trello difficult for beginners?",
+      "a": "It is intuitive once understood, but you must learn boards and cards before using it effectively."
+    },
+    {
+      "q": "Can Google Tasks handle recurring reminders?",
+      "a": "Yes, you can set tasks to repeat without setting up projects or boards."
+    },
+    {
+      "q": "Which tool is faster to start with?",
+      "a": "Google Tasks is typically faster because it opens to a simple list view."
+    },
+    {
+      "q": "Does Trello require creating a board first?",
+      "a": "Yes, tasks are created inside boards, which adds a setup step before use."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Notion",
+      "y_name": "Trello",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Google Tasks",
+      "y_name": "Quire",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Any.do",
+      "y_name": "Apple Reminders",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "Asana",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    },
+    {
+      "x_name": "ClickUp",
+      "y_name": "Microsoft To Do",
+      "persona": "Beginner"
+    }
+  ]
+}

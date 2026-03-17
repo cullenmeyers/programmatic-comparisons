@@ -1,120 +1,144 @@
 {
-"category": "Password Managers",
-"categorySlug": "password-managers",
-"constraintSlug": "fear-of-breaking",
-"constraintUiName": "Hard to mess up",
-"title": "Bitwarden vs KeePassXC for Non-technical users",
-"slug": "bitwarden-vs-keepassxc-for-non-technical-user",
-"meta_description": "Bitwarden vs KeePassXC for non-technical users who want automatic password syncing. See why Bitwarden wins when devices must stay in sync.",
-"persona": "Non-technical user",
-"constraint_lens": "Non-technical users prefer tools that handle syncing and setup automatically so there is less risk of breaking something.",
-"one_second_verdict": {
-"winner_label": "Bitwarden",
-"summary": "Best for non-technical users who want passwords to sync automatically between phone and laptop.",
-"reason": "KeePassXC fails first because syncing requires manually copying or syncing encrypted database files between devices."
-},
-"verdict": {
-"winner": "x",
-"summary": "Bitwarden is the better choice for non-technical users who want passwords to appear automatically across their devices. It stores the vault in a hosted service that keeps credentials synchronized between phones, laptops, and browsers after login. KeePassXC stores passwords in a local encrypted database file that must be transferred or synced manually between devices. For users who want syncing handled automatically, that file management step creates confusion and risk of mistakes.",
-"decision_rule": "If syncing passwords requires manually copying or syncing encrypted database files between devices, KeePassXC fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Bitwarden fits non-technical users",
-"content": "The user wants passwords synced between phone and laptop automatically without touching database files or configuration settings. Bitwarden connects the password vault to the user account and synchronizes credentials automatically through the service. Once the user signs in on a new device, the vault appears immediately. This removes the need to manage files or understand how databases sync."
-},
-{
-"type": "x_wins",
-"heading": "Where Bitwarden wins",
-"bullets": [
-{
-"point": "Bitwarden automatically synchronizes the password vault across devices through the user account.",
-"why_it_matters": "Passwords appear on phones and laptops without copying database files manually."
-},
-{
-"point": "Bitwarden browser extensions detect login forms and autofill credentials.",
-"why_it_matters": "Users can sign into websites without copying and pasting passwords."
-},
-{
-"point": "Bitwarden restores the vault automatically after signing into the account on a new device.",
-"why_it_matters": "Credentials appear instantly after login instead of importing a database file."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where KeePassXC wins",
-"bullets": [
-{
-"point": "KeePassXC stores passwords in a local encrypted database file.",
-"why_it_matters": "Users keep full control over where the password database is stored."
-},
-{
-"point": "KeePassXC works without requiring a hosted account or cloud service.",
-"why_it_matters": "Passwords remain accessible even without internet access."
-},
-{
-"point": "KeePassXC allows the database file to be stored anywhere the user chooses.",
-"why_it_matters": "Advanced users can integrate the vault with their own storage or backup system."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The user refuses to store passwords in a hosted vault service.",
-"what_to_do_instead": "Use KeePassXC where passwords remain inside a local encrypted database file."
-},
-{
-"tool": "y",
-"fails_when": "The user wants passwords to automatically appear on multiple devices because KeePassXC requires manually transferring the database file.",
-"what_to_do_instead": "Use Bitwarden where the vault synchronizes automatically through the account."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "If the user prefers storing passwords only in a local encrypted file and is comfortable moving or syncing database files manually, KeePassXC may become the better option."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick Bitwarden if you want passwords to sync automatically between devices.",
-"Pick Bitwarden if you do not want to manage database files.",
-"Pick KeePassXC if you prefer storing passwords only in a local encrypted database."
-]
-}
-],
-"faqs": [
-{
-"q": "Why is Bitwarden easier for non-technical users?",
-"a": "Bitwarden synchronizes passwords automatically through the account so users do not manage database files."
-},
-{
-"q": "Does KeePassXC sync passwords automatically?",
-"a": "No. KeePassXC stores passwords in a local database file that must be copied or synced manually."
-},
-{
-"q": "Can Bitwarden sync passwords between phone and laptop?",
-"a": "Yes. After signing into the account, the password vault synchronizes automatically across devices."
-},
-{
-"q": "Who should choose KeePassXC instead?",
-"a": "Users who prefer keeping passwords in a local encrypted database rather than a hosted vault may choose KeePassXC."
-}
-],
-"related_pages": [
-{ "x_name": "Dashlane", "y_name": "KeePass", "persona": "Non-technical user" },
-{ "x_name": "NordPass", "y_name": "KeePassXC", "persona": "Non-technical user" },
-{ "x_name": "Dashlane", "y_name": "Bitwarden", "persona": "Non-technical user" },
-{ "x_name": "NordPass", "y_name": "Bitwarden", "persona": "Non-technical user" },
-{ "x_name": "Proton Pass", "y_name": "KeePassXC", "persona": "Non-technical user" },
-{ "x_name": "1Password", "y_name": "KeePass", "persona": "Non-technical user" }
-]
+  "category": "Password Managers",
+  "categorySlug": "password-managers",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Bitwarden vs KeePassXC for Non-technical users",
+  "slug": "bitwarden-vs-keepassxc-for-non-technical-user",
+  "meta_description": "Bitwarden vs KeePassXC for non-technical users who want automatic password syncing. See why Bitwarden wins when devices must stay in sync.",
+  "persona": "Non-technical user",
+  "constraint_lens": "Non-technical users prefer tools that handle syncing and setup automatically so there is less risk of breaking something.",
+  "one_second_verdict": {
+    "winner_label": "Bitwarden",
+    "summary": "Best for non-technical users who want passwords to sync automatically between phone and laptop.",
+    "reason": "KeePassXC fails first because syncing requires manually copying or syncing encrypted database files between devices."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Bitwarden is the better choice for non-technical users who want passwords to appear automatically across their devices. It stores the vault in a hosted service that keeps credentials synchronized between phones, laptops, and browsers after login. KeePassXC stores passwords in a local encrypted database file that must be transferred or synced manually between devices. For users who want syncing handled automatically, that file management step creates confusion and risk of mistakes.",
+    "decision_rule": "If syncing passwords requires manually copying or syncing encrypted database files between devices, KeePassXC fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Bitwarden fits non-technical users",
+      "content": "The user wants passwords synced between phone and laptop automatically without touching database files or configuration settings. Bitwarden connects the password vault to the user account and synchronizes credentials automatically through the service. Once the user signs in on a new device, the vault appears immediately. This removes the need to manage files or understand how databases sync."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Bitwarden wins",
+      "bullets": [
+        {
+          "point": "Bitwarden automatically synchronizes the password vault across devices through the user account.",
+          "why_it_matters": "Passwords appear on phones and laptops without copying database files manually."
+        },
+        {
+          "point": "Bitwarden browser extensions detect login forms and autofill credentials.",
+          "why_it_matters": "Users can sign into websites without copying and pasting passwords."
+        },
+        {
+          "point": "Bitwarden restores the vault automatically after signing into the account on a new device.",
+          "why_it_matters": "Credentials appear instantly after login instead of importing a database file."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where KeePassXC wins",
+      "bullets": [
+        {
+          "point": "KeePassXC stores passwords in a local encrypted database file.",
+          "why_it_matters": "Users keep full control over where the password database is stored."
+        },
+        {
+          "point": "KeePassXC works without requiring a hosted account or cloud service.",
+          "why_it_matters": "Passwords remain accessible even without internet access."
+        },
+        {
+          "point": "KeePassXC allows the database file to be stored anywhere the user chooses.",
+          "why_it_matters": "Advanced users can integrate the vault with their own storage or backup system."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The user refuses to store passwords in a hosted vault service.",
+          "what_to_do_instead": "Use KeePassXC where passwords remain inside a local encrypted database file."
+        },
+        {
+          "tool": "y",
+          "fails_when": "The user wants passwords to automatically appear on multiple devices because KeePassXC requires manually transferring the database file.",
+          "what_to_do_instead": "Use Bitwarden where the vault synchronizes automatically through the account."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If the user prefers storing passwords only in a local encrypted file and is comfortable moving or syncing database files manually, KeePassXC may become the better option."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Bitwarden if you want passwords to sync automatically between devices.",
+        "Pick Bitwarden if you do not want to manage database files.",
+        "Pick KeePassXC if you prefer storing passwords only in a local encrypted database."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Bitwarden easier for non-technical users?",
+      "a": "Bitwarden synchronizes passwords automatically through the account so users do not manage database files."
+    },
+    {
+      "q": "Does KeePassXC sync passwords automatically?",
+      "a": "No. KeePassXC stores passwords in a local database file that must be copied or synced manually."
+    },
+    {
+      "q": "Can Bitwarden sync passwords between phone and laptop?",
+      "a": "Yes. After signing into the account, the password vault synchronizes automatically across devices."
+    },
+    {
+      "q": "Who should choose KeePassXC instead?",
+      "a": "Users who prefer keeping passwords in a local encrypted database rather than a hosted vault may choose KeePassXC."
+    }
+  ],
+  "related_pages": [
+    {
+      "x_name": "Dashlane",
+      "y_name": "KeePass",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "KeePassXC",
+      "y_name": "NordPass",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Bitwarden",
+      "y_name": "Dashlane",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "Bitwarden",
+      "y_name": "NordPass",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "KeePassXC",
+      "y_name": "Proton Pass",
+      "persona": "Non-technical user"
+    },
+    {
+      "x_name": "1Password",
+      "y_name": "KeePass",
+      "persona": "Non-technical user"
+    }
+  ]
 }
