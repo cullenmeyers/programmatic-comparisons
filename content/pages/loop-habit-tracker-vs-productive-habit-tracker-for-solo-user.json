@@ -1,0 +1,162 @@
+{
+  "category": "Habit Trackers",
+  "categorySlug": "habit-trackers",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Loop Habit Tracker vs Productive (Habit Tracker) for Solo users",
+  "slug": "loop-habit-tracker-vs-productive-habit-tracker-for-solo-user",
+  "meta_description": "Compare Loop Habit Tracker vs Productive for Solo users. Loop wins when you want local habit tracking without accounts or syncing.",
+  "persona": "Solo user",
+  "constraint_lens": "You want a habit tracker that works on your device without requiring accounts, syncing, or ongoing maintenance.",
+  "one_second_verdict": {
+    "winner_label": "Loop Habit Tracker",
+    "summary": "Best for tracking habits locally on one device without accounts or cloud syncing.",
+    "reason": "Productive (Habit Tracker) fails first because it requires a cloud account to sync and manage habit data."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Loop Habit Tracker is the better choice when you want a private, self-contained habit tracker. It stores all data locally on your device and works without accounts or syncing. Productive depends on a cloud account to manage and sync your data, which introduces ongoing maintenance that solo users trying to stay independent want to avoid.",
+    "decision_rule": "If maintaining habits requires creating and maintaining a cloud account or syncing service, Productive fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Loop Habit Tracker fits local, no-account tracking",
+      "content": "You want to track habits on a single device without managing accounts or syncing services. Loop Habit Tracker keeps everything stored locally, so there is nothing to set up or maintain beyond the app itself. Productive requires a cloud account for syncing, which adds ongoing steps and dependencies you are trying to avoid."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Loop Habit Tracker wins",
+      "bullets": [
+        {
+          "point": "Habit data is stored locally on the device with no account required.",
+          "why_it_matters": "This removes the need to manage logins or external services."
+        },
+        {
+          "point": "The app works fully offline without cloud syncing or online services.",
+          "why_it_matters": "This keeps the system self-contained and avoids ongoing maintenance."
+        },
+        {
+          "point": "There are no syncing systems or cloud features to configure or monitor.",
+          "why_it_matters": "This reduces complexity and keeps habit tracking simple over time."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Productive (Habit Tracker) wins",
+      "bullets": [
+        {
+          "point": "Habit data syncs across devices using a cloud account.",
+          "why_it_matters": "This allows access from multiple devices, but requires maintaining an account."
+        },
+        {
+          "point": "The app provides cloud backup to preserve habit data.",
+          "why_it_matters": "This adds safety, but introduces reliance on external services."
+        },
+        {
+          "point": "Habits can be accessed across platforms through synced accounts.",
+          "why_it_matters": "This increases flexibility, but adds ongoing management and syncing requirements."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Loop Habit Tracker feels limiting when you want access to habits across multiple devices.",
+          "what_to_do_instead": "Use Productive if you need syncing and cross-device access."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Productive breaks when habit tracking requires maintaining a cloud account and syncing service.",
+          "what_to_do_instead": "Use Loop Habit Tracker when you want a local, no-account solution."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you want access to your habits across multiple devices and are willing to maintain a cloud account. In that case, Productive can be useful despite the added overhead."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Loop Habit Tracker if you want local, single-device habit tracking.",
+        "Choose Loop Habit Tracker if you want to avoid accounts and syncing.",
+        "Choose Productive only if you need multi-device syncing and cloud backup."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Loop Habit Tracker better for Solo users?",
+      "a": "Because it stores habit data locally and does not require accounts or syncing services."
+    },
+    {
+      "q": "Does Productive require an account?",
+      "a": "Yes, it uses a cloud account to sync and manage habit data."
+    },
+    {
+      "q": "Can Loop Habit Tracker sync across devices?",
+      "a": "No, it is designed for use on a single device."
+    },
+    {
+      "q": "When would a Solo user still choose Productive?",
+      "a": "A Solo user might choose Productive if they want access to habits across multiple devices."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Habitify vs Loop Habit Tracker for Solo users",
+      "slug": "habitify-vs-loop-habit-tracker-for-solo-user",
+      "exists": true,
+      "x_name": "Habitify",
+      "y_name": "Loop Habit Tracker",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Habitshare vs Loop Habit Tracker for Solo users",
+      "slug": "habitshare-vs-loop-habit-tracker-for-solo-user",
+      "exists": true,
+      "x_name": "Habitshare",
+      "y_name": "Loop Habit Tracker",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Coach.me vs Loop Habit Tracker for Solo users",
+      "slug": "coach-me-vs-loop-habit-tracker-for-solo-user",
+      "exists": true,
+      "x_name": "Coach.me",
+      "y_name": "Loop Habit Tracker",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Everyday (Habit Tracker) vs Habitify for Solo users",
+      "slug": "everyday-habit-tracker-vs-habitify-for-solo-user",
+      "exists": true,
+      "x_name": "Everyday (Habit Tracker)",
+      "y_name": "Habitify",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Habitify vs HabitKit for Solo users",
+      "slug": "habitify-vs-habitkit-for-solo-user",
+      "exists": true,
+      "x_name": "Habitify",
+      "y_name": "HabitKit",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Habitshare vs Streaks for Solo users",
+      "slug": "habitshare-vs-streaks-for-solo-user",
+      "exists": true,
+      "x_name": "Habitshare",
+      "y_name": "Streaks",
+      "persona": "Solo user"
+    }
+  ]
+}

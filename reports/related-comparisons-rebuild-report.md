@@ -1,17 +1,15 @@
 # Related Comparisons Rebuild Report
 
-Date: 2026-03-17T04:55:01.014Z
+Date: 2026-03-17T20:28:48.957Z
 
 ## Summary
 
-- Total pages scanned: 329
-- Total pages updated in the initial rebuild pass: 325
-- Total pages updated in the final verification rerun: 0
-- Average related_pages count: 5.70
+- Total pages scanned: 382
+- Total pages updated: 0
+- Average related_pages count: 5.73
 - Pages with 0 related pages: 4
 - Pages with 1 related page: 4
 - Pages with fewer than 3 related pages: 20
-- Determinism check: repeated rerun produced no further changes
 
 ## Sparse Pages
 

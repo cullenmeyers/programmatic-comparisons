@@ -1,0 +1,162 @@
+{
+  "category": "Habit Trackers",
+  "categorySlug": "habit-trackers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "DailyHabits vs Habitica for Minimalists",
+  "slug": "dailyhabits-vs-habitica-for-minimalist",
+  "meta_description": "Compare DailyHabits vs Habitica for Minimalists. DailyHabits wins when you want simple checklists without quests or reward systems.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a habit tracker that stays simple and avoids game layers like characters, quests, or reward systems.",
+  "one_second_verdict": {
+    "winner_label": "DailyHabits",
+    "summary": "Best for logging habits with a simple checklist and no characters, quests, or rewards.",
+    "reason": "Habitica fails first because logging habits requires interacting with quests, avatars, and reward systems."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "DailyHabits is the better choice when you want a straightforward checklist for tracking habits. It focuses on marking habits complete without adding extra systems. Habitica builds habit tracking around a game with characters, quests, and rewards, which introduces additional steps and interactions that minimalists want to avoid.",
+    "decision_rule": "If logging habits requires interacting with RPG-style quests, avatars, or rewards systems instead of simple checkmarks, Habitica fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why DailyHabits fits simple habit tracking",
+      "content": "You want to track a few routines without distractions. DailyHabits gives you a simple checklist where you can mark habits complete quickly. Habitica requires interacting with a game system, including quests and avatars, which adds layers that get in the way of simple tracking."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where DailyHabits wins",
+      "bullets": [
+        {
+          "point": "Habits are logged through a simple checklist where each item is marked complete with a tap.",
+          "why_it_matters": "This keeps the interaction fast and predictable without extra features or steps."
+        },
+        {
+          "point": "The app avoids characters, quests, and reward systems entirely.",
+          "why_it_matters": "This removes distractions and keeps the focus on whether the habit was completed."
+        },
+        {
+          "point": "There are no required systems beyond logging habits, such as progression or game mechanics.",
+          "why_it_matters": "This reduces decisions and keeps the experience aligned with a minimalist workflow."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Habitica wins",
+      "bullets": [
+        {
+          "point": "Habits are tied to a character system with experience points and rewards.",
+          "why_it_matters": "This can increase motivation for users who enjoy game-like progression tied to habits."
+        },
+        {
+          "point": "The app includes quests and challenges that require interacting with multiple systems.",
+          "why_it_matters": "This adds engagement, but introduces extra steps before and after logging habits."
+        },
+        {
+          "point": "Completing habits affects in-game outcomes like leveling up or earning items.",
+          "why_it_matters": "This creates a feedback loop, but adds complexity that minimalists often avoid."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "DailyHabits feels too basic when you want motivation from rewards or game-like progression.",
+          "what_to_do_instead": "Use Habitica if you want habit tracking combined with a game system."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Habitica breaks when logging habits requires interacting with quests, avatars, or reward systems instead of simple checkmarks.",
+          "what_to_do_instead": "Use DailyHabits when you want a simple checklist without extra layers."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you want additional motivation and are willing to use a game-like system. In that case, Habitica can be useful despite the added complexity."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose DailyHabits if you want a simple checklist for habits.",
+        "Choose DailyHabits if you want to avoid quests, avatars, and rewards.",
+        "Choose Habitica only if you want a game-based habit system."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is DailyHabits better for Minimalists?",
+      "a": "Because it focuses on simple checklist tracking without adding game mechanics or extra features."
+    },
+    {
+      "q": "Does Habitica require interacting with game systems?",
+      "a": "Yes, it includes quests, avatars, and rewards as part of the core experience."
+    },
+    {
+      "q": "Is Habitica more engaging?",
+      "a": "It can be, but that engagement comes from added complexity and extra steps."
+    },
+    {
+      "q": "When would a Minimalist still choose Habitica?",
+      "a": "A Minimalist might choose Habitica if they want motivation from a game-like system and are willing to accept extra features."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Habitica vs Loop Habit Tracker for Minimalists",
+      "slug": "habitica-vs-loop-habit-tracker-for-minimalist",
+      "exists": true,
+      "x_name": "Habitica",
+      "y_name": "Loop Habit Tracker",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Everyday (Habit Tracker) vs Habitica for Minimalists",
+      "slug": "everyday-habit-tracker-vs-habitica-for-minimalist",
+      "exists": true,
+      "x_name": "Everyday (Habit Tracker)",
+      "y_name": "Habitica",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Habitica vs HabitMinder for Minimalists",
+      "slug": "habitica-vs-habitminder-for-minimalist",
+      "exists": true,
+      "x_name": "Habitica",
+      "y_name": "HabitMinder",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Habitica vs Momentum (Habit Tracker) for Minimalists",
+      "slug": "habitica-vs-momentum-habit-tracker-for-minimalist",
+      "exists": true,
+      "x_name": "Habitica",
+      "y_name": "Momentum (Habit Tracker)",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Habitica vs Way of Life for Minimalists",
+      "slug": "habitica-vs-way-of-life-for-minimalist",
+      "exists": true,
+      "x_name": "Habitica",
+      "y_name": "Way of Life",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "HabitBull vs Loop Habit Tracker for Minimalists",
+      "slug": "habitbull-vs-loop-habit-tracker-for-minimalist",
+      "exists": true,
+      "x_name": "HabitBull",
+      "y_name": "Loop Habit Tracker",
+      "persona": "Minimalist"
+    }
+  ]
+}

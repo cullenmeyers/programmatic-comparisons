@@ -1,0 +1,154 @@
+{
+  "category": "Habit Trackers",
+  "categorySlug": "habit-trackers",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Beeminder vs HabitNow for Beginners",
+  "slug": "beeminder-vs-habitnow-for-beginner",
+  "meta_description": "Compare Beeminder vs HabitNow for Beginners. HabitNow wins when you want simple habit check-offs without setting up contracts or goal rules.",
+  "persona": "Beginner",
+  "constraint_lens": "You want a habit tracker that lets you start immediately without setting up rules, targets, or extra systems.",
+  "one_second_verdict": {
+    "winner_label": "HabitNow",
+    "summary": "Best for tracking habits with simple check-offs and no setup required before getting started.",
+    "reason": "Beeminder fails first because you must configure goal trajectories and commitment contracts before logging any progress."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "HabitNow is the better choice when you want to start tracking habits right away without learning a system. You can create a habit and mark it complete immediately with minimal setup. Beeminder requires defining goals, progress rates, and commitment rules before tracking, which adds complexity that beginners often abandon early.",
+    "decision_rule": "If habit tracking requires configuring commitment contracts and goal trajectories before logging progress, Beeminder fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why HabitNow fits first-time habit tracking",
+      "content": "You installed a habit tracker expecting to check off habits quickly. HabitNow lets you create a habit and start logging immediately with no setup beyond naming it. Beeminder requires you to define how much you will do, how fast you must progress, and how it is enforced, which adds steps that can stop you before you even begin."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where HabitNow wins",
+      "bullets": [
+        {
+          "point": "You can create a habit and start marking it complete immediately from a simple checklist interface.",
+          "why_it_matters": "This removes setup steps so you can begin tracking right away, which is critical for beginners."
+        },
+        {
+          "point": "The app uses straightforward habit lists with optional reminders instead of required goal setup.",
+          "why_it_matters": "This keeps the experience simple and avoids extra decisions that slow you down."
+        },
+        {
+          "point": "There is no requirement to define quantities, deadlines, or enforcement rules before using the app.",
+          "why_it_matters": "This lowers the barrier to entry, making it easier to stick with the habit of tracking itself."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Beeminder wins",
+      "bullets": [
+        {
+          "point": "Goals are defined with numeric targets and required progress rates over time.",
+          "why_it_matters": "This provides strong structure for users who want measurable outcomes, but it requires setup before tracking."
+        },
+        {
+          "point": "The system uses graphs to show whether you are on track or falling behind.",
+          "why_it_matters": "This gives detailed feedback, but adds complexity that beginners may not want to manage."
+        },
+        {
+          "point": "Commitment contracts can enforce goals with penalties if progress falls behind.",
+          "why_it_matters": "This creates accountability, but introduces extra setup and ongoing management."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "HabitNow feels too basic when you need strict goal enforcement or measurable targets.",
+          "what_to_do_instead": "Use Beeminder if you want detailed goal tracking with enforced progress and accountability."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Beeminder breaks when you must set up goals, progress rates, and commitment rules before logging a habit.",
+          "what_to_do_instead": "Use HabitNow when you want to start tracking immediately with minimal setup."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you are willing to spend time setting up detailed goals and want strict accountability from the start. In that case, Beeminder can work despite the extra setup required."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose HabitNow if you want to start tracking habits immediately.",
+        "Choose HabitNow if you want a simple check-off system with no setup.",
+        "Choose Beeminder only if you are ready to configure detailed goals and enforcement rules."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is HabitNow better for Beginners?",
+      "a": "Because it lets you start tracking habits immediately without setting up goals, rules, or complex systems."
+    },
+    {
+      "q": "Does Beeminder require setup before tracking?",
+      "a": "Yes, you need to define goals, progress rates, and sometimes commitment rules before logging progress."
+    },
+    {
+      "q": "Is Beeminder more powerful?",
+      "a": "It offers more control and accountability, but comes with added complexity that beginners may find overwhelming."
+    },
+    {
+      "q": "When would a Beginner still choose Beeminder?",
+      "a": "A Beginner might choose Beeminder if they are willing to learn the system and want strict goal enforcement."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Beeminder vs Habitify for Beginners",
+      "slug": "beeminder-vs-habitify-for-beginner",
+      "exists": true,
+      "x_name": "Beeminder",
+      "y_name": "Habitify",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Habitify vs Notion for Beginners",
+      "slug": "habitify-vs-notion-for-beginner",
+      "exists": true,
+      "x_name": "Habitify",
+      "y_name": "Notion",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Loop Habit Tracker vs Notion for Beginners",
+      "slug": "loop-habit-tracker-vs-notion-for-beginner",
+      "exists": true,
+      "x_name": "Loop Habit Tracker",
+      "y_name": "Notion",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Loop Habit Tracker vs Strides for Beginners",
+      "slug": "loop-habit-tracker-vs-strides-for-beginner",
+      "exists": true,
+      "x_name": "Loop Habit Tracker",
+      "y_name": "Strides",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Habitica vs Way of Life for Beginners",
+      "slug": "habitica-vs-way-of-life-for-beginner",
+      "exists": true,
+      "x_name": "Habitica",
+      "y_name": "Way of Life",
+      "persona": "Beginner"
+    }
+  ]
+}

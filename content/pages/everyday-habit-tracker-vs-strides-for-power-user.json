@@ -1,0 +1,162 @@
+{
+  "category": "Habit Trackers",
+  "categorySlug": "habit-trackers",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Everyday (Habit Tracker) vs Strides for Power users",
+  "slug": "everyday-habit-tracker-vs-strides-for-power-user",
+  "meta_description": "Compare Strides vs Everyday Habit Tracker for Power users. Strides wins when habits must track measurable progress and targets.",
+  "persona": "Power user",
+  "constraint_lens": "You need a habit tracker that can handle measurable goals and detailed progress tracking without hitting limits.",
+  "one_second_verdict": {
+    "winner_label": "Strides",
+    "summary": "Best for tracking habits with measurable targets like distance, money, or time.",
+    "reason": "Everyday fails first because it only supports simple completion grids without tracking numeric progress toward targets."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Strides is the better choice when your habits require measurable progress toward a defined target. It allows you to track quantities like miles run or money saved and shows progress toward goals over time. Everyday Habit Tracker focuses on marking days as complete or incomplete, which works for consistency but cannot track how much progress you have made toward a measurable outcome.",
+    "decision_rule": "If habits cannot follow measurable targets with progress tracking rather than simple daily completion logs, Everyday fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Strides fits measurable goal tracking",
+      "content": "You are tracking habits where the amount matters, not just whether something was done. Strides lets you define numeric targets and log progress toward them over time. Everyday Habit Tracker shows completion in a grid, which is useful for consistency but does not capture how much progress you are making."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Strides wins",
+      "bullets": [
+        {
+          "point": "Habits can be set with numeric targets such as total distance, money saved, or time spent.",
+          "why_it_matters": "This allows you to measure real progress toward a goal instead of just marking completion."
+        },
+        {
+          "point": "Progress is tracked with charts that show how close you are to reaching your goal.",
+          "why_it_matters": "This gives clear feedback on performance, helping you adjust effort over time."
+        },
+        {
+          "point": "You can log quantities for each entry instead of just marking a habit as done.",
+          "why_it_matters": "This supports detailed tracking for goals where output matters, not just consistency."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Everyday Habit Tracker wins",
+      "bullets": [
+        {
+          "point": "Habits are displayed in a simple grid where each day is marked complete or not.",
+          "why_it_matters": "This makes it easy to track consistency without dealing with numbers or targets."
+        },
+        {
+          "point": "The interface focuses on quick visual tracking without requiring goal setup.",
+          "why_it_matters": "This reduces setup time and keeps the experience simple."
+        },
+        {
+          "point": "There is no need to define numeric values or progress metrics.",
+          "why_it_matters": "This makes it easier to start, but limits how deeply you can track progress."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "Strides feels unnecessary when you only want to track whether habits were completed each day.",
+          "what_to_do_instead": "Use Everyday Habit Tracker if you only care about consistency and not measurable progress."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Everyday Habit Tracker breaks when you need to measure how much progress you have made toward a target.",
+          "what_to_do_instead": "Use Strides when you need numeric tracking and goal progress."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you decide that consistency matters more than measurable output and you do not need to track quantities. In that case, Everyday Habit Tracker can be enough despite its limitations."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Strides if your habits involve measurable targets like time, money, or distance.",
+        "Choose Strides if you need to track numeric progress over time.",
+        "Choose Everyday Habit Tracker only if you care about daily completion, not quantities."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Strides better for Power users?",
+      "a": "Because it allows tracking measurable goals with numeric progress instead of simple completion."
+    },
+    {
+      "q": "Can Everyday Habit Tracker track quantities like distance or money?",
+      "a": "No, it focuses on marking habits as complete rather than tracking numeric progress."
+    },
+    {
+      "q": "Is Strides harder to use?",
+      "a": "It requires setting targets and logging numbers, but it provides more detailed tracking."
+    },
+    {
+      "q": "When would a Power user still choose Everyday Habit Tracker?",
+      "a": "A Power user might choose it if they only need to track consistency and not measurable outcomes."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Loop Habit Tracker vs Notion for Power users",
+      "slug": "loop-habit-tracker-vs-notion-for-power-user",
+      "exists": true,
+      "x_name": "Loop Habit Tracker",
+      "y_name": "Notion",
+      "persona": "Power user"
+    },
+    {
+      "title": "Habitify vs Loop Habit Tracker for Power users",
+      "slug": "habitify-vs-loop-habit-tracker-for-power-user",
+      "exists": true,
+      "x_name": "Habitify",
+      "y_name": "Loop Habit Tracker",
+      "persona": "Power user"
+    },
+    {
+      "title": "Habitify vs Notion for Power users",
+      "slug": "habitify-vs-notion-for-power-user",
+      "exists": true,
+      "x_name": "Habitify",
+      "y_name": "Notion",
+      "persona": "Power user"
+    },
+    {
+      "title": "Notion vs Streaks for Power users",
+      "slug": "notion-vs-streaks-for-power-user",
+      "exists": true,
+      "x_name": "Notion",
+      "y_name": "Streaks",
+      "persona": "Power user"
+    },
+    {
+      "title": "HabitBull vs Loop Habit Tracker for Power users",
+      "slug": "habitbull-vs-loop-habit-tracker-for-power-user",
+      "exists": true,
+      "x_name": "HabitBull",
+      "y_name": "Loop Habit Tracker",
+      "persona": "Power user"
+    },
+    {
+      "title": "Beeminder vs Streaks for Power users",
+      "slug": "beeminder-vs-streaks-for-power-user",
+      "exists": true,
+      "x_name": "Beeminder",
+      "y_name": "Streaks",
+      "persona": "Power user"
+    }
+  ]
+}

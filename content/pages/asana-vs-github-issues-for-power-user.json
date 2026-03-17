@@ -1,0 +1,162 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Asana vs GitHub Issues for Power users",
+  "slug": "asana-vs-github-issues-for-power-user",
+  "meta_description": "Compare Asana vs GitHub Issues for Power users. GitHub Issues wins when tasks must link directly to commits and pull requests.",
+  "persona": "Power user",
+  "constraint_lens": "You need a tool that can stay tightly connected to development workflows and code changes as the project grows.",
+  "one_second_verdict": {
+    "winner_label": "GitHub Issues",
+    "summary": "Best for tracking development work that must link directly to commits, branches, and pull requests.",
+    "reason": "Asana fails first because tasks cannot natively attach to commits or automatically update from pull request activity inside a code repository."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "GitHub Issues is the better choice when development work must live alongside the codebase. Issues can be linked to branches, commits, and pull requests, allowing tasks to update as code changes happen. Asana works for general project tracking, but it sits outside the repository, so it cannot directly connect tasks to development workflows, which limits its usefulness for engineering teams.",
+    "decision_rule": "If project tasks cannot connect directly to code repositories and development workflows, Asana fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why GitHub Issues fits development workflow tracking",
+      "content": "This setup requires tasks to be part of the development process, not separate from it. You need issues that connect directly to code changes, pull requests, and repository activity. GitHub Issues fits this because it lives inside the code platform, while Asana operates as an external task manager without direct code linkage."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where GitHub Issues wins",
+      "bullets": [
+        {
+          "point": "Issues can be linked directly to pull requests using keywords like closes issue in commit messages.",
+          "why_it_matters": "This allows tasks to update automatically when code is merged, removing manual tracking and keeping work tied to actual development changes."
+        },
+        {
+          "point": "Issues live inside the same repository as the code, alongside branches, commits, and pull requests.",
+          "why_it_matters": "This keeps all development context in one place, so developers do not need to switch tools to understand or update work."
+        },
+        {
+          "point": "Each issue includes a full timeline of commits, comments, and code references tied to that task.",
+          "why_it_matters": "This creates a complete record of how the work was implemented, which becomes critical as projects grow and need traceability."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Asana wins",
+      "bullets": [
+        {
+          "point": "Asana provides structured task views like lists, boards, and timelines for organizing work.",
+          "why_it_matters": "This helps teams manage projects visually without needing to understand development workflows."
+        },
+        {
+          "point": "Tasks can include subtasks, due dates, and assignments in a clean interface.",
+          "why_it_matters": "This makes it easier to manage general project work outside of code-specific processes."
+        },
+        {
+          "point": "Built-in collaboration features like comments and notifications support team coordination.",
+          "why_it_matters": "This is useful for cross-functional teams, but it does not replace direct integration with code changes."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "GitHub Issues feels limiting when the project includes non-development work that needs broader planning views or cross-team coordination.",
+          "what_to_do_instead": "Use Asana if the project includes marketing, operations, or other work that does not live in a code repository."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Asana breaks when tasks must stay directly connected to commits, pull requests, and repository activity.",
+          "what_to_do_instead": "Use GitHub Issues when development work needs to be tracked inside the codebase."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if Asana is used as a high-level planning layer while GitHub Issues handles the actual development tasks. In that setup, Asana manages coordination, but it is not responsible for tracking code-level work."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose GitHub Issues if tasks must connect directly to code and pull requests.",
+        "Choose GitHub Issues if you want issues to update automatically when code is merged.",
+        "Choose Asana only if work is mostly outside the codebase or needs broader team coordination."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is GitHub Issues better for development teams?",
+      "a": "Because issues are directly connected to the code repository, allowing tasks to link to commits, branches, and pull requests."
+    },
+    {
+      "q": "Can Asana integrate with GitHub?",
+      "a": "Yes, but it relies on integrations and does not provide native issue tracking tied directly to repository activity."
+    },
+    {
+      "q": "Is Asana easier to use?",
+      "a": "Yes, it is more approachable for general project management, but it lacks deep connection to development workflows."
+    },
+    {
+      "q": "When would a Power user still choose Asana?",
+      "a": "A Power user might choose Asana for planning and coordination across teams while keeping development tasks in GitHub Issues."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Airtable vs Trello for Power users",
+      "slug": "airtable-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Bugzilla vs Trello for Power users",
+      "slug": "bugzilla-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Bugzilla",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Celoxis vs Trello for Power users",
+      "slug": "celoxis-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Celoxis",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Fibery vs Trello for Power users",
+      "slug": "fibery-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Fibery",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "GitHub Projects vs Trello for Power users",
+      "slug": "github-projects-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "GitHub Projects",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "GitLab vs Trello for Power users",
+      "slug": "gitlab-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "GitLab",
+      "y_name": "Trello",
+      "persona": "Power user"
+    }
+  ]
+}

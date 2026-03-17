@@ -1,0 +1,162 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "LiquidPlanner vs Trello for Power users",
+  "slug": "liquidplanner-vs-trello-for-power-user",
+  "meta_description": "Compare LiquidPlanner vs Trello for Power users. LiquidPlanner wins when schedules must auto-adjust based on changing priorities.",
+  "persona": "Power user",
+  "constraint_lens": "You need a tool that can handle changing priorities and automatically adjust timelines as conditions shift.",
+  "one_second_verdict": {
+    "winner_label": "LiquidPlanner",
+    "summary": "Best for projects where shifting priorities must automatically recalculate timelines across all tasks.",
+    "reason": "Trello fails first because moving cards does not recalculate schedules or adjust dependent timelines when priorities change."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "LiquidPlanner is the better choice when project schedules must adapt dynamically to changing priorities. Its priority-based scheduling engine recalculates timelines automatically as tasks move or estimates change. Trello works for visual task tracking, but it does not adjust timelines based on priority shifts, so schedules become manual and quickly outdated.",
+    "decision_rule": "If project schedules cannot automatically recalculate timelines when priorities change, Trello fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why LiquidPlanner fits dynamic scheduling workflows",
+      "content": "This setup requires a schedule that changes as priorities change. Tasks need to shift automatically, and the timeline must update without manual intervention. LiquidPlanner is designed for this with priority-based scheduling, while Trello only shows task movement without recalculating timelines."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where LiquidPlanner wins",
+      "bullets": [
+        {
+          "point": "Tasks are ordered in priority lists, and the system schedules work based on that order automatically.",
+          "why_it_matters": "This means changing task priority instantly reshapes the timeline, so the schedule always reflects what matters most right now."
+        },
+        {
+          "point": "Estimated effort ranges are used to calculate realistic completion timelines across all tasks.",
+          "why_it_matters": "This allows the system to adjust delivery dates as estimates change, reducing the need for manual rescheduling."
+        },
+        {
+          "point": "The schedule recalculates continuously when tasks move, priorities shift, or estimates are updated.",
+          "why_it_matters": "This keeps the project timeline accurate without constant manual edits, which is essential in fast-changing environments."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Trello wins",
+      "bullets": [
+        {
+          "point": "Trello uses boards with lists and cards that can be moved easily between stages.",
+          "why_it_matters": "This is faster for simple workflows where tracking progress visually is enough."
+        },
+        {
+          "point": "Cards can include checklists, attachments, and comments in one place.",
+          "why_it_matters": "This supports lightweight collaboration where tasks do not require timeline calculations."
+        },
+        {
+          "point": "The interface is easy to use without setting up scheduling rules or priority systems.",
+          "why_it_matters": "This reduces setup time, but it becomes limiting when timelines need to update automatically."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "LiquidPlanner feels too complex when the project only needs simple task tracking without dynamic scheduling or priority-based timelines.",
+          "what_to_do_instead": "Use Trello if you only need a visual board for tracking progress without automated scheduling."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Trello breaks when project timelines must adjust automatically as priorities change across tasks.",
+          "what_to_do_instead": "Use LiquidPlanner when schedules need to update dynamically without manual intervention."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if Trello is used only for high-level tracking while scheduling is handled in a separate system. In that case, Trello can still provide visibility, but it is not responsible for maintaining the timeline."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose LiquidPlanner if task priorities change frequently and timelines must adjust automatically.",
+        "Choose LiquidPlanner if you want scheduling based on priority order instead of fixed dates.",
+        "Choose Trello only if tasks can be tracked without automatic timeline updates."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is LiquidPlanner better for dynamic scheduling?",
+      "a": "Because it recalculates timelines automatically based on task priorities and estimates, keeping the schedule accurate as conditions change."
+    },
+    {
+      "q": "Can Trello handle changing priorities?",
+      "a": "You can reorder cards, but it does not update timelines or recalculate schedules based on those changes."
+    },
+    {
+      "q": "Is Trello easier to use?",
+      "a": "Yes, it is simpler to set up and use, but it lacks automated scheduling capabilities."
+    },
+    {
+      "q": "When would a Power user still choose Trello?",
+      "a": "A Power user might use Trello for simple tracking or as a visual layer while managing scheduling in another tool."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Airtable vs Trello for Power users",
+      "slug": "airtable-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Bugzilla vs Trello for Power users",
+      "slug": "bugzilla-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Bugzilla",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Celoxis vs Trello for Power users",
+      "slug": "celoxis-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Celoxis",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Fibery vs Trello for Power users",
+      "slug": "fibery-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Fibery",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "GitHub Projects vs Trello for Power users",
+      "slug": "github-projects-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "GitHub Projects",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "GitLab vs Trello for Power users",
+      "slug": "gitlab-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "GitLab",
+      "y_name": "Trello",
+      "persona": "Power user"
+    }
+  ]
+}

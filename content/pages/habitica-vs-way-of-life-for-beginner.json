@@ -1,0 +1,154 @@
+{
+  "category": "Habit Trackers",
+  "categorySlug": "habit-trackers",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Habitica vs Way of Life for Beginners",
+  "slug": "habitica-vs-way-of-life-for-beginner",
+  "meta_description": "Compare Habitica vs Way of Life for Beginners. Way of Life wins when you want quick habit check-offs without learning game systems.",
+  "persona": "Beginner",
+  "constraint_lens": "You want a habit tracker that works immediately without needing to learn a system before logging habits.",
+  "one_second_verdict": {
+    "winner_label": "Way of Life",
+    "summary": "Best for logging habits quickly with simple checkmarks and no need to learn a system first.",
+    "reason": "Habitica fails first because you must understand quests, characters, and reward mechanics before logging habits."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Way of Life is the better choice when you want to log habits quickly without setup or learning a system. You can create a habit and immediately mark it as done or not done. Habitica requires understanding how tasks connect to quests, characters, and rewards, which adds friction that beginners often drop off from early.",
+    "decision_rule": "If tracking habits requires understanding quests, characters, and reward mechanics before logging habits, Habitica fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Way of Life fits first-time habit tracking",
+      "content": "You installed a habit tracker expecting to check off habits quickly. Way of Life lets you mark habits done or not done right away without learning anything first. Habitica introduces a game system with quests, avatars, and rewards, which requires understanding how everything works before you can use it comfortably."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Habitica wins",
+      "bullets": [
+        {
+          "point": "Habits are tied to a character system with experience points and rewards.",
+          "why_it_matters": "This can make tracking more engaging for users who want motivation through progression, but it requires learning how the system works."
+        },
+        {
+          "point": "Tasks are connected to quests and challenges that involve multiple steps and interactions.",
+          "why_it_matters": "This adds structure and engagement, but introduces extra layers that slow down simple habit logging."
+        },
+        {
+          "point": "Completing habits affects in-game outcomes like leveling up or earning items.",
+          "why_it_matters": "This creates a feedback loop, but requires understanding game mechanics before using the app effectively."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Way of Life wins",
+      "bullets": [
+        {
+          "point": "Habits are logged using a simple grid where each day is marked as done or not done.",
+          "why_it_matters": "This allows you to start tracking immediately without learning any system."
+        },
+        {
+          "point": "The app avoids features like characters, quests, or reward systems entirely.",
+          "why_it_matters": "This removes setup and learning time, making it easier to use right away."
+        },
+        {
+          "point": "You can create a habit and log it in seconds with no required configuration.",
+          "why_it_matters": "This keeps the process fast and approachable for beginners who want instant usability."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Habitica breaks when you need to understand quests, characters, and reward systems before logging habits.",
+          "what_to_do_instead": "Use Way of Life when you want immediate, no-learning-required habit tracking."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Way of Life feels too basic when you want extra motivation from rewards or game-like progression.",
+          "what_to_do_instead": "Use Habitica if you want a more engaging, game-based system."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you enjoy game mechanics and are willing to spend time learning the system for added motivation. In that case, Habitica can be useful despite the extra complexity."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Way of Life if you want to log habits immediately with no learning curve.",
+        "Choose Way of Life if you want a simple check-off system.",
+        "Choose Habitica only if you are willing to learn a game-based habit system."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Way of Life better for Beginners?",
+      "a": "Because it lets you start logging habits immediately without learning any system or features."
+    },
+    {
+      "q": "Does Habitica require learning how it works?",
+      "a": "Yes, it includes quests, characters, and rewards that require some understanding before using it effectively."
+    },
+    {
+      "q": "Is Habitica more engaging?",
+      "a": "It can be, but that engagement comes with added complexity and setup."
+    },
+    {
+      "q": "When would a Beginner still choose Habitica?",
+      "a": "A Beginner might choose Habitica if they want a game-like system and are willing to learn how it works."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Beeminder vs Habitify for Beginners",
+      "slug": "beeminder-vs-habitify-for-beginner",
+      "exists": true,
+      "x_name": "Beeminder",
+      "y_name": "Habitify",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Habitify vs Notion for Beginners",
+      "slug": "habitify-vs-notion-for-beginner",
+      "exists": true,
+      "x_name": "Habitify",
+      "y_name": "Notion",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Loop Habit Tracker vs Notion for Beginners",
+      "slug": "loop-habit-tracker-vs-notion-for-beginner",
+      "exists": true,
+      "x_name": "Loop Habit Tracker",
+      "y_name": "Notion",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Beeminder vs HabitNow for Beginners",
+      "slug": "beeminder-vs-habitnow-for-beginner",
+      "exists": true,
+      "x_name": "Beeminder",
+      "y_name": "HabitNow",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Loop Habit Tracker vs Strides for Beginners",
+      "slug": "loop-habit-tracker-vs-strides-for-beginner",
+      "exists": true,
+      "x_name": "Loop Habit Tracker",
+      "y_name": "Strides",
+      "persona": "Beginner"
+    }
+  ]
+}

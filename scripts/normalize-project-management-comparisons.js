@@ -12,6 +12,9 @@ const REDIRECTS_PATH = path.join(
   "legacy-comparison-redirects.json"
 );
 const TARGET_CATEGORY = process.argv[2] || "project-management-tools";
+const FILTER_PATHS = new Set(
+  process.argv.slice(3).map((value) => value.replace(/\\/g, "/"))
+);
 const REPORT_BASENAME = `${TARGET_CATEGORY}-canonicalization-report.md`;
 const REPORT_PATH = path.join(REPORTS_DIR, REPORT_BASENAME);
 
@@ -95,8 +98,9 @@ function loadPageEntries() {
     .map((file) => {
       const filePath = path.join(PAGES_DIR, file);
       const doc = JSON.parse(fs.readFileSync(filePath, "utf8"));
+      const relativePath = path.relative(ROOT, filePath).replace(/\\/g, "/");
 
-      return { file, filePath, doc };
+      return { file, filePath, relativePath, doc };
     });
 }
 
@@ -188,7 +192,9 @@ function buildReport(report) {
 function main() {
   const entries = loadPageEntries();
   const targetEntries = entries.filter(
-    ({ doc }) => doc.categorySlug === TARGET_CATEGORY
+    ({ doc, relativePath }) =>
+      doc.categorySlug === TARGET_CATEGORY &&
+      (FILTER_PATHS.size === 0 || FILTER_PATHS.has(relativePath))
   );
   const activePageSlugs = new Set(entries.map(({ doc }) => `/compare/${doc.slug}`));
 

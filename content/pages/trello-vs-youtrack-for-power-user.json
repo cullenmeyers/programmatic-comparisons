@@ -1,0 +1,162 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Trello vs YouTrack for Power users",
+  "slug": "trello-vs-youtrack-for-power-user",
+  "meta_description": "Compare Trello vs YouTrack for Power users. YouTrack wins when tasks must be structured issues with workflow states and dev tracking.",
+  "persona": "Power user",
+  "constraint_lens": "You need a tool that can handle structured issue workflows without breaking as development processes become more complex.",
+  "one_second_verdict": {
+    "winner_label": "YouTrack",
+    "summary": "Best for managing development work where tasks must function as structured issues with defined workflow states.",
+    "reason": "Trello fails first because cards do not enforce issue fields or workflow states required for structured development tracking."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "YouTrack is the better choice when development work must be tracked as structured issues instead of simple task cards. Its issue-based model, workflow states, and development-focused tracking system allow teams to manage bugs and tasks with clear status transitions. Trello works for visual task boards, but it lacks built-in issue structure and workflow enforcement, so it breaks once development tracking becomes more complex.",
+    "decision_rule": "If project tasks cannot operate as structured development issues with workflow states, Trello fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why YouTrack fits development issue workflows",
+      "content": "This setup requires tasks to behave like development issues, not just checklist items. You need defined workflow states, issue fields, and a system that supports bug tracking and development processes. YouTrack is built for this, while Trello focuses on moving cards across boards without enforcing structured workflows."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where YouTrack wins",
+      "bullets": [
+        {
+          "point": "Each task is an issue with fields like type, priority, status, and assignee.",
+          "why_it_matters": "This allows tasks to behave as structured development records instead of generic cards, which supports scaling workflows as the project grows."
+        },
+        {
+          "point": "Custom workflows define how issues move through states such as open, in progress, and resolved.",
+          "why_it_matters": "This enforces consistent processes across the team, preventing confusion and keeping issue handling predictable."
+        },
+        {
+          "point": "Issues include history, comments, and updates tied to development activity.",
+          "why_it_matters": "This creates a reliable record of how work progressed, which is essential for debugging and tracking changes over time."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Trello wins",
+      "bullets": [
+        {
+          "point": "Trello uses boards with lists and cards that can be moved easily between stages.",
+          "why_it_matters": "This is faster for simple workflows where tasks do not need structured issue tracking."
+        },
+        {
+          "point": "Cards can include checklists, attachments, and comments in a single place.",
+          "why_it_matters": "This supports lightweight collaboration without requiring setup of issue fields or workflows."
+        },
+        {
+          "point": "The interface is easy to understand without configuring workflows or issue types.",
+          "why_it_matters": "This reduces setup time, but it becomes limiting when tasks need to follow defined development processes."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "YouTrack feels too complex when the project only needs simple task tracking without structured workflows or issue fields.",
+          "what_to_do_instead": "Use Trello if the team only needs a visual board for lightweight task management."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Trello breaks when tasks must follow defined issue workflows with structured fields and state transitions.",
+          "what_to_do_instead": "Use YouTrack when development work requires formal issue tracking and workflow enforcement."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if Trello is used only as a simple tracking layer while a separate tool handles structured issue workflows. In that setup, Trello supports visibility but does not manage the development process."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose YouTrack if tasks must behave as structured development issues.",
+        "Choose YouTrack if workflows require defined states and transitions.",
+        "Choose Trello only if tasks are simple and do not need formal issue tracking."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is YouTrack better for development tracking?",
+      "a": "Because it treats tasks as structured issues with workflow states and fields, matching how development work is managed."
+    },
+    {
+      "q": "Can Trello handle issue workflows?",
+      "a": "Not in a structured way. You can move cards between lists, but it does not enforce issue states or structured workflows."
+    },
+    {
+      "q": "Is Trello easier to use?",
+      "a": "Yes, it is simpler and faster to start with, but it lacks the depth needed for development workflows."
+    },
+    {
+      "q": "When would a Power user still choose Trello?",
+      "a": "A Power user might use Trello for lightweight tracking or as a visual layer alongside a dedicated issue tracking system."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Airtable vs Trello for Power users",
+      "slug": "airtable-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Bugzilla vs Trello for Power users",
+      "slug": "bugzilla-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Bugzilla",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Celoxis vs Trello for Power users",
+      "slug": "celoxis-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Celoxis",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Fibery vs Trello for Power users",
+      "slug": "fibery-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Fibery",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "GitHub Projects vs Trello for Power users",
+      "slug": "github-projects-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "GitHub Projects",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "GitLab vs Trello for Power users",
+      "slug": "gitlab-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "GitLab",
+      "y_name": "Trello",
+      "persona": "Power user"
+    }
+  ]
+}
