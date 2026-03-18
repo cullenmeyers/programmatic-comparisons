@@ -4,13 +4,17 @@ import ButtonLink from "@/components/ui/ButtonLink";
 import Card from "@/components/ui/Card";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { loadAllSystemDocs } from "@/lib/system";
+import { absoluteUrl } from "@/lib/site";
 
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "System Signals | Decision Clarities",
+  title: "System Signals",
   description:
     "Public architecture signals: invariants, boundaries, and structural deltas that govern the engine.",
+  alternates: {
+    canonical: absoluteUrl("/system"),
+  },
 };
 
 function formatDate(value?: string) {

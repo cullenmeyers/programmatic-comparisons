@@ -6,6 +6,7 @@ import Card from "@/components/ui/Card";
 import PillLink from "@/components/ui/PillLink";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { listAllCategoryGates } from "@/content/categoryGates/listAll";
+import { absoluteUrl } from "@/lib/site";
 
 type Params = { category: string };
 
@@ -36,8 +37,11 @@ export async function generateMetadata({
   if (!gates.length) return { title: "Category not found" };
 
   return {
-    title: `${gates[0].categoryLabel} | Tools | Decision Clarities`,
+    title: `${gates[0].categoryLabel} | Tools`,
     description: `Quick filters for ${gates[0].categoryLabel}.`,
+    alternates: {
+      canonical: absoluteUrl(`/tools/${category}`),
+    },
   };
 }
 

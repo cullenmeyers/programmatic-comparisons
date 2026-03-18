@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { PUBLIC_BRAND_NAME, absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "What Decision Clarities is, how to use it, and how the decision system works.",
+    "What ToolPicker is, how to use it, and how the decision system works.",
+  alternates: {
+    canonical: absoluteUrl("/about"),
+  },
 };
 
 export default function AboutPage() {
@@ -13,7 +17,7 @@ export default function AboutPage() {
       <header className="space-y-3">
         <h1 className="text-3xl font-bold tracking-tight">About</h1>
         <p className="text-base leading-7 text-black/75">
-          Decision Clarities is a decision-first library of software
+          {PUBLIC_BRAND_NAME} is a decision-first library of software
           comparisons built around one practical question:{" "}
           <span className="font-medium text-black/85">
             under a real constraint, which tool fails first?

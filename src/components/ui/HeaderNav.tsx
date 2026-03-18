@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { PUBLIC_BRAND_NAME } from "@/lib/site";
 import { cx } from "./classnames";
 
 const navItems = [
@@ -27,7 +28,7 @@ export default function HeaderNav() {
             href="/"
             className="text-base font-semibold tracking-tight text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/30"
           >
-            Decision Clarities
+            {PUBLIC_BRAND_NAME}
           </Link>
 
           <nav aria-label="Primary" className="flex flex-wrap items-center gap-2 text-sm">

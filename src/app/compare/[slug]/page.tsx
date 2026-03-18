@@ -12,6 +12,7 @@ import {
   loadPageBySlug,
   type PageDoc,
 } from "@/lib/pages";
+import { absoluteUrl } from "@/lib/site";
 
 type Params = { slug: string };
 
@@ -29,9 +30,12 @@ export async function generateMetadata({
 
   if (!doc) {
     return {
-      title: "Comparison | Decision Clarities",
+      title: "Comparison",
       description:
         "Constraint-based tool comparisons: X vs Y for a specific persona. Clear decision rules, not feature lists.",
+      alternates: {
+        canonical: absoluteUrl(`/compare/${slug}`),
+      },
     };
   }
 
@@ -40,8 +44,11 @@ export async function generateMetadata({
     `A constraint-based comparison of ${doc.title}. See which option fails first for the ${doc.persona.toLowerCase()} and why.`;
 
   return {
-    title: `${doc.title} | Decision Clarities`,
+    title: doc.title,
     description,
+    alternates: {
+      canonical: absoluteUrl(`/compare/${slug}`),
+    },
   };
 }
 

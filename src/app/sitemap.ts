@@ -1,9 +1,10 @@
 // src/app/sitemap.ts
 import type { MetadataRoute } from "next";
 import { listCategoryIndexes, listPageSlugs } from "@/lib/pages";
+import { getSiteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.decisionclarities.com";
+  const siteUrl = getSiteUrl();
   const now = new Date();
 
   const staticRoutes: MetadataRoute.Sitemap = [

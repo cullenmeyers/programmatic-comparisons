@@ -1,13 +1,18 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Card from "@/components/ui/Card";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { cx } from "@/components/ui/classnames";
 import { listAllCategoryGates } from "@/content/categoryGates/listAll";
+import { absoluteUrl } from "@/lib/site";
 
-export const metadata = {
-  title: "Tools | Decision Clarities",
+export const metadata: Metadata = {
+  title: "Tools",
   description:
     "Quick filters that eliminate the wrong option fast by category and what you care about.",
+  alternates: {
+    canonical: absoluteUrl("/tools"),
+  },
 };
 
 function cleanTitle(value: string) {

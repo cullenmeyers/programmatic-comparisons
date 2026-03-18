@@ -2,7 +2,9 @@ import ButtonLink from "@/components/ui/ButtonLink";
 import Card from "@/components/ui/Card";
 import PillLink from "@/components/ui/PillLink";
 import SectionHeading from "@/components/ui/SectionHeading";
+import { PUBLIC_BRAND_NAME, absoluteUrl } from "@/lib/site";
 import Link from "next/link";
+import type { Metadata } from "next";
 
 type CategoryLink = {
   label: string;
@@ -85,13 +87,19 @@ const examples: ExampleLink[] = [
   },
 ];
 
+export const metadata: Metadata = {
+  alternates: {
+    canonical: absoluteUrl("/"),
+  },
+};
+
 export default function HomePage() {
   return (
     <main className="site-container page-shell content-stack">
       <header className="max-w-3xl space-y-6">
         <div className="space-y-4">
           <h1 className="text-4xl font-semibold tracking-tight text-black sm:text-5xl">
-            Decision Clarities
+            {PUBLIC_BRAND_NAME}
           </h1>
           <p className="max-w-2xl text-lg leading-8 text-black/70">
             Clear tool choices for real people. We compare tools by what breaks

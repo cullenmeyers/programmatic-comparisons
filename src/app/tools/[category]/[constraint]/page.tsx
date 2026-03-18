@@ -6,6 +6,7 @@ import Card from "@/components/ui/Card";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { getCategoryGate, listCategoryGateParams } from "@/content/categoryGates";
 import { listComparisonsForGate } from "@/lib/pages";
+import { absoluteUrl } from "@/lib/site";
 import CategoryGateClient from "./CategoryGateClient";
 
 export const dynamicParams = true;
@@ -30,6 +31,9 @@ export async function generateMetadata({
   return {
     title: gate.title,
     description,
+    alternates: {
+      canonical: absoluteUrl(`/tools/${category}/${constraint}`),
+    },
   };
 }
 

@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import HeaderNav from "@/components/ui/HeaderNav";
 import SiteFooter from "@/components/ui/SiteFooter";
+import { PUBLIC_BRAND_NAME, getSiteUrl } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,25 +16,30 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// TODO: set this to your final domain once connected (keep https)
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "https://tool-compare.vercel.app";
+const SITE_URL = getSiteUrl();
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  applicationName: PUBLIC_BRAND_NAME,
   title: {
-    default: "Decision Clarities",
-    template: "%s | Decision Clarities",
+    default: PUBLIC_BRAND_NAME,
+    template: `%s | ${PUBLIC_BRAND_NAME}`,
   },
   description:
     "Constraint-based tool comparisons: X vs Y for a specific persona. Clear decision rules, not feature lists.",
   openGraph: {
-    title: "Decision Clarities",
+    title: PUBLIC_BRAND_NAME,
     description:
       "Constraint-based tool comparisons: X vs Y for a specific persona. Clear decision rules, not feature lists.",
+    siteName: PUBLIC_BRAND_NAME,
     type: "website",
     url: SITE_URL,
+  },
+  twitter: {
+    card: "summary",
+    title: PUBLIC_BRAND_NAME,
+    description:
+      "Constraint-based tool comparisons: X vs Y for a specific persona. Clear decision rules, not feature lists.",
   },
   robots: {
     index: true,

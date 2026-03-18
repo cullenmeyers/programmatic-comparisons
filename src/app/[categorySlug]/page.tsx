@@ -13,6 +13,7 @@ import {
   LOCKED_PERSONA_ORDER,
   type PageDoc,
 } from "@/lib/pages";
+import { absoluteUrl } from "@/lib/site";
 
 type Params = { categorySlug: string };
 
@@ -63,14 +64,20 @@ export async function generateMetadata({
 
   if (!category) {
     return {
-      title: "Category comparisons | Decision Clarities",
+      title: "Category Comparisons",
       description: "Persona-grouped tool comparisons by category.",
+      alternates: {
+        canonical: absoluteUrl(`/${categorySlug}`),
+      },
     };
   }
 
   return {
-    title: `${category.label} | Decision Clarities`,
+    title: category.label,
     description: buildIntro(category.label),
+    alternates: {
+      canonical: absoluteUrl(`/${categorySlug}`),
+    },
   };
 }
 

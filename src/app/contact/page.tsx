@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
+import { PUBLIC_BRAND_NAME, absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Decision Clarities for corrections, suggestions, or inquiries.",
+  description: `Contact ${PUBLIC_BRAND_NAME} for corrections, suggestions, or inquiries.`,
+  alternates: {
+    canonical: absoluteUrl("/contact"),
+  },
 };
 
 // TODO: replace this with your real email

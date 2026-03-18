@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import ButtonLink from "@/components/ui/ButtonLink";
 import Card from "@/components/ui/Card";
 import { listSystemSlugs, loadSystemDocBySlug } from "@/lib/system";
+import { absoluteUrl } from "@/lib/site";
 
 type Params = { slug: string };
 
@@ -22,14 +23,20 @@ export async function generateMetadata({
 
   if (!doc) {
     return {
-      title: "System Signal | Decision Clarities",
+      title: "System Signal",
       description: "Public system architecture and decision rules.",
+      alternates: {
+        canonical: absoluteUrl(`/system/${slug}`),
+      },
     };
   }
 
   return {
     title: `${doc.title} | System Signal`,
     description: doc.summary ?? "Public system architecture and decision rules.",
+    alternates: {
+      canonical: absoluteUrl(`/system/${slug}`),
+    },
   };
 }
 

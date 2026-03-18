@@ -1,7 +1,9 @@
+import type { Metadata } from "next";
 import ButtonLink from "@/components/ui/ButtonLink";
 import Card from "@/components/ui/Card";
 import PillLink from "@/components/ui/PillLink";
 import SectionHeading from "@/components/ui/SectionHeading";
+import { absoluteUrl } from "@/lib/site";
 import Link from "next/link";
 import ComparePageBehavior from "./ComparePageBehavior";
 import {
@@ -12,6 +14,15 @@ import {
 } from "@/lib/pages";
 
 export const dynamic = "force-static";
+
+export const metadata: Metadata = {
+  title: "Compare Tools",
+  description:
+    "Browse constraint-based tool comparisons by category and persona to find the option that fails last for your situation.",
+  alternates: {
+    canonical: absoluteUrl("/compare"),
+  },
+};
 
 function firstSentence(text: string) {
   if (!text) return "";
