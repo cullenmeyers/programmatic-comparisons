@@ -21,6 +21,11 @@ const SITE_URL = getSiteUrl();
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   applicationName: PUBLIC_BRAND_NAME,
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   title: {
     default: PUBLIC_BRAND_NAME,
     template: `%s | ${PUBLIC_BRAND_NAME}`,
