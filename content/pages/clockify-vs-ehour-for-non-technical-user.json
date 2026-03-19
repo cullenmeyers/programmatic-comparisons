@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Clockify vs eHour for Non-technical users",
+  "slug": "clockify-vs-ehour-for-non-technical-user",
+  "meta_description": "Clockify vs eHour for Non-technical users: Clockify wins since eHour requires installing and managing a server before tracking time.",
+  "persona": "Non-technical user",
+  "constraint_lens": "This person needs a tool that works without setup risks and avoids anything that could break during installation or maintenance.",
+  "one_second_verdict": {
+    "winner_label": "Clockify",
+    "summary": "Best for Non-technical users who want to start tracking time without installing anything.",
+    "reason": "eHour fails first because it requires setting up and maintaining a self-hosted server before you can even start tracking time."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Clockify is the better choice when you want to start tracking hours without worrying about setup or breaking something. It runs in the browser and handles hosting, updates, and storage for you. eHour requires installing and managing your own server, which adds setup steps and ongoing risk that this persona wants to avoid.",
+    "decision_rule": "If using the tool requires installing and maintaining a self-hosted server setup before tracking time, eHour fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Clockify fits Non-technical users better",
+      "content": "This non-technical user wants a tool that works right away without dealing with setup steps that could go wrong. Clockify fits because you sign in and start tracking in the browser without installing anything or managing servers. That removes the risk of breaking something during setup or needing to fix it later."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where eHour wins",
+      "bullets": [
+        {
+          "point": "eHour runs as a self-hosted application where you control the server, database, and deployment.",
+          "why_it_matters": "This gives full control over data and environment, but requires installing and managing infrastructure that can easily break if not handled correctly."
+        },
+        {
+          "point": "Its setup involves configuring a server environment, connecting a database, and deploying the app manually.",
+          "why_it_matters": "That process introduces multiple points where errors can happen, which is risky for someone who wants to avoid technical setup entirely."
+        },
+        {
+          "point": "All updates, backups, and uptime depend on how you maintain your own hosting setup.",
+          "why_it_matters": "This creates ongoing responsibility to keep the system running, which adds stress and maintenance tasks over time."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Clockify wins",
+      "bullets": [
+        {
+          "point": "Clockify runs entirely in the browser with no installation or server setup required.",
+          "why_it_matters": "You can start tracking immediately without worrying about breaking anything during setup."
+        },
+        {
+          "point": "Account creation and workspace setup happen through a guided web interface with preconfigured defaults.",
+          "why_it_matters": "This reduces the chance of making mistakes because you are not configuring technical components manually."
+        },
+        {
+          "point": "Hosting, updates, and data storage are handled automatically by the platform.",
+          "why_it_matters": "You do not need to maintain anything yourself, which removes ongoing risk and extra responsibility."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "eHour breaks down when you need to set up or maintain a server and are not comfortable managing databases, hosting, or deployments.",
+          "what_to_do_instead": "Use Clockify if you want a tool that works out of the box without any technical setup."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Clockify becomes limiting when you need full control over hosting, data storage, or running the tool without relying on an external service.",
+          "what_to_do_instead": "Use eHour if you are comfortable managing your own server and want complete control over the environment."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you have access to technical help or a managed server where someone else handles setup and maintenance. In that case, eHour becomes easier to use because the difficult parts are handled for you."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Clockify if you want to start tracking time without installing anything.",
+        "Pick eHour if you need full control and are comfortable managing a server.",
+        "Avoid eHour if you do not want to deal with setup or maintenance risks."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Clockify easier for non-technical users?",
+      "a": "Because it runs in the browser and handles hosting and setup automatically, so there is nothing to install or maintain."
+    },
+    {
+      "q": "What makes eHour harder to use?",
+      "a": "It requires setting up and managing a server, which includes installing the app, configuring a database, and maintaining the system."
+    },
+    {
+      "q": "Is eHour a bad tool overall?",
+      "a": "No. It is useful for people who want full control over their setup and are comfortable managing their own infrastructure."
+    },
+    {
+      "q": "When should I still choose eHour?",
+      "a": "Choose eHour if you need a self-hosted solution and are confident in handling server setup and maintenance."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Clockify vs Dovico for Non-technical users",
+      "slug": "clockify-vs-dovico-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Dovico",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs Tempo Timesheets for Non-technical users",
+      "slug": "clockify-vs-tempo-timesheets-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Tempo Timesheets",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs TimePanic for Non-technical users",
+      "slug": "clockify-vs-timepanic-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "TimePanic",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Fanurio vs Kimai for Non-technical users",
+      "slug": "fanurio-vs-kimai-for-non-technical-user",
+      "exists": true,
+      "x_name": "Fanurio",
+      "y_name": "Kimai",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Harvest vs Kimai for Non-technical users",
+      "slug": "harvest-vs-kimai-for-non-technical-user",
+      "exists": true,
+      "x_name": "Harvest",
+      "y_name": "Kimai",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "ClockShark vs Hubstaff for Non-technical users",
+      "slug": "clockshark-vs-hubstaff-for-non-technical-user",
+      "exists": true,
+      "x_name": "ClockShark",
+      "y_name": "Hubstaff",
+      "persona": "Non-technical user"
+    }
+  ]
+}

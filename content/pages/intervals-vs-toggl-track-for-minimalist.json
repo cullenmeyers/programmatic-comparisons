@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Intervals vs Toggl Track for Minimalists",
+  "slug": "intervals-vs-toggl-track-for-minimalist",
+  "meta_description": "Intervals vs Toggl Track for Minimalists: Toggl Track wins for simple timers, while Intervals includes reporting, budgeting, and tasks.",
+  "persona": "Minimalist",
+  "constraint_lens": "This person wants a tool that focuses only on time tracking and avoids extra features that add complexity.",
+  "one_second_verdict": {
+    "winner_label": "Toggl Track",
+    "summary": "Best for Minimalists who want a simple timer without extra features.",
+    "reason": "Intervals fails first because it requires navigating reporting, budgeting, and task modules before tracking time."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Toggl Track is the better choice when you want a clean, focused timer with no extra layers. It lets you start tracking immediately without dealing with reports, budgets, or tasks. Intervals bundles time tracking with reporting, budgeting, and task management, which adds unnecessary complexity for simple use.",
+    "decision_rule": "If tracking time requires navigating reporting, budgeting, or task management modules, Intervals fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Toggl Track fits Minimalists better",
+      "content": "This minimalist wants a tool that stays focused on time tracking without extra features. Toggl Track fits because you can start and stop a timer without interacting with other systems. That keeps the experience simple and avoids distractions."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Intervals wins",
+      "bullets": [
+        {
+          "point": "Intervals combines time tracking with reporting dashboards, budgeting tools, and task management features.",
+          "why_it_matters": "This creates an all-in-one system, but introduces extra layers that are unnecessary for simple tracking."
+        },
+        {
+          "point": "Time tracking is tied to projects, tasks, and budget structures within the app.",
+          "why_it_matters": "This helps with organization, but requires navigating through additional modules before tracking time."
+        },
+        {
+          "point": "The interface includes reports and budget tracking alongside timers.",
+          "why_it_matters": "This adds visual and workflow complexity, which can overwhelm users who want a simple timer."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Toggl Track wins",
+      "bullets": [
+        {
+          "point": "Toggl Track allows starting a timer directly from the main screen without entering other modules.",
+          "why_it_matters": "You can begin tracking immediately without navigating through reports or tasks."
+        },
+        {
+          "point": "Projects and tags are optional and not required to start tracking.",
+          "why_it_matters": "This keeps the setup minimal and avoids forcing structure on simple use cases."
+        },
+        {
+          "point": "The interface is focused on timers and time entries instead of combining multiple systems.",
+          "why_it_matters": "This reduces distractions and keeps the workflow straightforward."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Intervals breaks down when you want to track time quickly but must navigate reporting, budgeting, or task modules first.",
+          "what_to_do_instead": "Use Toggl Track if you want a simple timer without extra features."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Toggl Track becomes limiting when you need built-in reporting, budgeting, and task management in one system.",
+          "what_to_do_instead": "Use Intervals if you want an all-in-one solution for managing projects and time."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you want detailed reports, budgets, and task tracking built into the same tool. In that case, Intervals may be more useful despite the added complexity."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Toggl Track if you want a simple timer with no extra features.",
+        "Pick Intervals if you want reporting, budgeting, and task management in one tool.",
+        "Avoid Intervals if you do not want to navigate multiple modules just to track time."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Toggl Track better for minimalists?",
+      "a": "Because it focuses on simple time tracking without requiring interaction with other features."
+    },
+    {
+      "q": "What makes Intervals more complex?",
+      "a": "It bundles reporting, budgeting, and task management with time tracking, adding extra layers."
+    },
+    {
+      "q": "Is Intervals a bad tool?",
+      "a": "No. It is useful for users who want an all-in-one system for managing projects and time."
+    },
+    {
+      "q": "When should I choose Intervals instead?",
+      "a": "Choose Intervals when you need detailed reports, budgets, and task tracking alongside time tracking."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Ora vs Toggl Track for Minimalists",
+      "slug": "ora-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "Ora",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Accelo vs Toggl Track for Minimalists",
+      "slug": "accelo-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "Accelo",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "ActiveCollab vs Toggl Track for Minimalists",
+      "slug": "activecollab-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "ActiveCollab",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "BigTime vs Toggl Track for Minimalists",
+      "slug": "bigtime-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "BigTime",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Ora vs Scoro for Minimalists",
+      "slug": "ora-vs-scoro-for-minimalist",
+      "exists": true,
+      "x_name": "Ora",
+      "y_name": "Scoro",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Ora vs TimeCamp for Minimalists",
+      "slug": "ora-vs-timecamp-for-minimalist",
+      "exists": true,
+      "x_name": "Ora",
+      "y_name": "TimeCamp",
+      "persona": "Minimalist"
+    }
+  ]
+}

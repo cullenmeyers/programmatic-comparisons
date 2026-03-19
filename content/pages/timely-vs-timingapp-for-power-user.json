@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Timely vs TimingApp for Power users",
+  "slug": "timely-vs-timingapp-for-power-user",
+  "meta_description": "Timely vs TimingApp for Power users: TimingApp wins for private local tracking, while Timely syncs activity data to cloud services.",
+  "persona": "Power user",
+  "constraint_lens": "This person wants maximum control over their data and prefers tracking that stays local instead of being sent to external services.",
+  "one_second_verdict": {
+    "winner_label": "TimingApp",
+    "summary": "Best for Power users who want automatic tracking that stays fully on-device.",
+    "reason": "Timely fails first because it syncs activity data to external cloud services instead of keeping it local."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "TimingApp is the better choice when you want automatic tracking without sending your activity data to external servers. It records app usage and timelines directly on your device and keeps all data local. Timely uses cloud-based memory tracking, which requires syncing activity data to its servers, limiting control over where your data lives.",
+    "decision_rule": "If automatic tracking requires syncing activity data to external cloud services instead of staying local, Timely fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why TimingApp fits Power users better",
+      "content": "This power user wants detailed automatic tracking without giving up control of their data. TimingApp fits because it records activity directly on the device and keeps everything local. That allows full visibility into your work without relying on external systems or data syncing."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where TimingApp wins",
+      "bullets": [
+        {
+          "point": "TimingApp records app usage, documents, and activity timelines locally on the device without sending data to external servers.",
+          "why_it_matters": "This keeps all tracking private and under your control, avoiding reliance on third-party storage."
+        },
+        {
+          "point": "Automatic tracking runs entirely on-device without requiring cloud sync to function.",
+          "why_it_matters": "You can use the tool fully without depending on internet access or external services."
+        },
+        {
+          "point": "Data stays accessible within the local app rather than being tied to an online account or dashboard.",
+          "why_it_matters": "This reduces exposure of sensitive activity data and keeps the system self-contained."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Timely wins",
+      "bullets": [
+        {
+          "point": "Timely uses cloud-based memory tracking to store and process activity data.",
+          "why_it_matters": "This enables syncing across devices, but requires sending activity data to external servers."
+        },
+        {
+          "point": "It provides centralized access to tracked data through an online dashboard.",
+          "why_it_matters": "This makes it easier to view data from anywhere, but adds dependence on an external system."
+        },
+        {
+          "point": "Timely automatically organizes and categorizes tracked activity in the cloud.",
+          "why_it_matters": "This reduces manual work, but requires trusting the platform with your activity data."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "TimingApp becomes limiting when you need to access your tracking data across multiple devices or share it through a web interface.",
+          "what_to_do_instead": "Use Timely if you need cloud access and cross-device syncing."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Timely breaks down when you want to keep all activity data on your device instead of syncing it to external servers.",
+          "what_to_do_instead": "Use TimingApp if you want fully local and private tracking."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you need to access your tracking data from multiple devices or collaborate with others through a shared system. In that case, Timely may be more useful because of its cloud-based access."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick TimingApp if you want private tracking that stays on your device.",
+        "Pick Timely if you need access to your data across multiple devices.",
+        "Avoid Timely if you do not want your activity data stored in the cloud."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is TimingApp better for privacy?",
+      "a": "Because it keeps all tracking data on your device and does not require syncing to external servers."
+    },
+    {
+      "q": "What limits Timely for privacy-focused users?",
+      "a": "It stores and processes activity data in the cloud, which means your data leaves your device."
+    },
+    {
+      "q": "Is Timely a bad tool?",
+      "a": "No. It is useful for users who want cloud syncing and easy access across devices."
+    },
+    {
+      "q": "When should I choose Timely instead?",
+      "a": "Choose Timely when you need cloud-based access, automatic organization, and syncing across devices."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Timely vs Toggl Track for Power users",
+      "slug": "timely-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timely",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Chrometa vs Toggl Track for Power users",
+      "slug": "chrometa-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "ActivityWatch vs Toggl Track for Power users",
+      "slug": "activitywatch-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Memtime vs Toggl Track for Power users",
+      "slug": "memtime-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Memtime",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timing (Time Tracking App) vs Toggl Track for Power users",
+      "slug": "timing-time-tracking-app-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timing (Time Tracking App)",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Chrometa vs TimeTagger for Power users",
+      "slug": "chrometa-vs-timetagger-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "TimeTagger",
+      "persona": "Power user"
+    }
+  ]
+}

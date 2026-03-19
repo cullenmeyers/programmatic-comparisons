@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Clockify vs TimePanic for Non-technical users",
+  "slug": "clockify-vs-timepanic-for-non-technical-user",
+  "meta_description": "Clockify vs TimePanic for Non-technical users: TimePanic wins for desktop tracking, while Clockify requires accounts and web dashboards.",
+  "persona": "Non-technical user",
+  "constraint_lens": "This person wants a tool that works on their computer without needing accounts, web dashboards, or anything that could break during setup.",
+  "one_second_verdict": {
+    "winner_label": "TimePanic",
+    "summary": "Best for Non-technical users who want a simple desktop time tracker without accounts.",
+    "reason": "Clockify fails first because it requires managing an online account and using a web dashboard to track and review time."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "TimePanic is the better choice when you want a desktop time tracker that works without accounts or web interfaces. It runs locally and lets you track time directly in the app without logging in. Clockify depends on an online account and web dashboard, which adds extra steps and potential confusion that this persona wants to avoid.",
+    "decision_rule": "If tracking time requires managing an online account and web dashboard instead of a simple desktop application, Clockify fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why TimePanic fits Non-technical users better",
+      "content": "This non-technical user wants a tool that works directly on their computer without dealing with accounts or online systems. TimePanic fits because it installs as a desktop app and keeps everything local, so there is no need to log in or manage a web interface. That reduces the chance of running into setup issues or confusion."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where TimePanic wins",
+      "bullets": [
+        {
+          "point": "TimePanic runs as a desktop application that stores all time data locally on the machine.",
+          "why_it_matters": "You can track time without creating accounts or managing online systems, which keeps usage simple."
+        },
+        {
+          "point": "The workflow is built around starting and stopping timers directly in the app without using a browser.",
+          "why_it_matters": "This avoids switching between tools and reduces the chance of confusion when tracking time."
+        },
+        {
+          "point": "There is no requirement to log in or connect to a cloud service to access your data.",
+          "why_it_matters": "This removes account-related steps and reduces the risk of something breaking due to login or sync issues."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Clockify wins",
+      "bullets": [
+        {
+          "point": "Clockify provides a web-based dashboard that can be accessed from any device with an account.",
+          "why_it_matters": "This allows flexible access, but requires managing a login and relying on an online system."
+        },
+        {
+          "point": "It supports structured projects, reports, and team features within an online workspace.",
+          "why_it_matters": "This is useful for organization and collaboration, but adds complexity for simple personal tracking."
+        },
+        {
+          "point": "Clockify syncs time entries across devices through its cloud-based system.",
+          "why_it_matters": "This helps with multi-device use, but depends on maintaining an account and internet connection."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "TimePanic becomes limiting when you need access to your time data across multiple devices or want built-in cloud syncing.",
+          "what_to_do_instead": "Use Clockify if you need cross-device access and online reporting features."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Clockify breaks down when you want a simple desktop tool but must manage an account and navigate a web dashboard.",
+          "what_to_do_instead": "Use TimePanic if you want a local app without accounts or online dependencies."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you need to access your time data from multiple devices or share it with others. In that case, Clockify becomes more useful because its cloud system makes access easier."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick TimePanic if you want a simple desktop app with no accounts.",
+        "Pick Clockify if you need access to your data across devices.",
+        "Avoid Clockify if you do not want to manage logins or web dashboards."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is TimePanic better for non-technical users?",
+      "a": "Because it works as a desktop app without requiring accounts or web dashboards."
+    },
+    {
+      "q": "What makes Clockify harder to use?",
+      "a": "It requires managing an online account and using a web interface, which adds extra steps."
+    },
+    {
+      "q": "Is Clockify a bad tool?",
+      "a": "No. It is useful when you need cloud access, reporting, or collaboration features."
+    },
+    {
+      "q": "When should I choose Clockify instead?",
+      "a": "Choose Clockify when you need to access your time data across multiple devices or share it with others."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Clockify vs Dovico for Non-technical users",
+      "slug": "clockify-vs-dovico-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Dovico",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs eHour for Non-technical users",
+      "slug": "clockify-vs-ehour-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "eHour",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs Tempo Timesheets for Non-technical users",
+      "slug": "clockify-vs-tempo-timesheets-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Tempo Timesheets",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Fanurio vs Kimai for Non-technical users",
+      "slug": "fanurio-vs-kimai-for-non-technical-user",
+      "exists": true,
+      "x_name": "Fanurio",
+      "y_name": "Kimai",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Harvest vs Kimai for Non-technical users",
+      "slug": "harvest-vs-kimai-for-non-technical-user",
+      "exists": true,
+      "x_name": "Harvest",
+      "y_name": "Kimai",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "ClockShark vs Hubstaff for Non-technical users",
+      "slug": "clockshark-vs-hubstaff-for-non-technical-user",
+      "exists": true,
+      "x_name": "ClockShark",
+      "y_name": "Hubstaff",
+      "persona": "Non-technical user"
+    }
+  ]
+}

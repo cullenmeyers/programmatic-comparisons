@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Paymo vs Replicon for Non-technical users",
+  "slug": "paymo-vs-replicon-for-non-technical-user",
+  "meta_description": "Paymo vs Replicon for Non-technical users: Paymo wins for simple team tracking since Replicon requires setting up payroll and approval workflows.",
+  "persona": "Non-technical user",
+  "constraint_lens": "This person needs a tool that works simply for tracking team hours and avoids setup steps that could break or become confusing.",
+  "one_second_verdict": {
+    "winner_label": "Paymo",
+    "summary": "Best for Non-technical users who want simple team time tracking without setting up complex systems.",
+    "reason": "Replicon fails first because it requires configuring payroll, compliance rules, and approval workflows before tracking time smoothly."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Paymo is the better choice when you want to track team hours without dealing with complex setup. Its project and timer setup is straightforward and does not force you through payroll or compliance configuration. Replicon is built around enterprise workflows, which introduces extra steps and setup decisions that this persona wants to avoid.",
+    "decision_rule": "If tracking time requires configuring enterprise features like payroll, compliance, or approval workflows, Replicon fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Paymo fits Non-technical users better",
+      "content": "This non-technical user runs a small team and wants to track hours without worrying about complex systems. Paymo fits because you can create projects, assign tasks, and start tracking time without setting up payroll rules or approval chains. That keeps the process simple and avoids the risk of breaking something during setup."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Replicon wins",
+      "bullets": [
+        {
+          "point": "Replicon includes built-in payroll, compliance, and approval workflow systems tied directly to timesheets.",
+          "why_it_matters": "This supports detailed business processes, but forces you to configure multiple systems before tracking becomes straightforward."
+        },
+        {
+          "point": "Its setup requires defining rules for approvals, policies, and time classifications before full use.",
+          "why_it_matters": "That adds layers of decisions and setup steps, increasing the chance of confusion or mistakes for non-technical users."
+        },
+        {
+          "point": "Replicon organizes time tracking around structured workflows with validation and enforcement rules.",
+          "why_it_matters": "This ensures consistency for larger organizations, but creates extra friction when you just want to log team hours quickly."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Paymo wins",
+      "bullets": [
+        {
+          "point": "Paymo lets you create projects and start timers without requiring payroll or compliance setup first.",
+          "why_it_matters": "You can begin tracking team hours immediately without dealing with complex configuration steps."
+        },
+        {
+          "point": "Its interface focuses on tasks and timers instead of structured approval or policy systems.",
+          "why_it_matters": "This reduces the number of decisions needed during setup, making it easier to get started without errors."
+        },
+        {
+          "point": "Paymo keeps optional features like invoicing or reporting separate from basic time tracking.",
+          "why_it_matters": "You are not forced to configure extra systems upfront, which lowers the risk of breaking something during setup."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "Replicon breaks down when you need to track team hours quickly but must first configure payroll rules, approval flows, or compliance settings.",
+          "what_to_do_instead": "Use Paymo if you want to start tracking immediately without setting up enterprise workflows."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Paymo becomes limiting when you need strict payroll integration, enforced approval chains, or compliance-driven time tracking.",
+          "what_to_do_instead": "Use Replicon if your workflow depends on structured policies and enterprise-level controls."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if your team needs formal approvals, payroll processing, or strict compliance tracking built into timesheets. In that case, Replicon becomes more useful because those systems are already part of how it works."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Paymo if you want simple team time tracking with minimal setup.",
+        "Pick Replicon if you need payroll, compliance, or approval workflows built in.",
+        "Avoid Replicon if you do not want to configure complex systems before tracking time."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Paymo better for non-technical users?",
+      "a": "Because it lets you start tracking time without setting up complex systems like payroll or approval workflows."
+    },
+    {
+      "q": "What makes Replicon harder to use?",
+      "a": "It requires configuring enterprise features like compliance rules and approvals, which adds complexity and setup steps."
+    },
+    {
+      "q": "Is Replicon a bad tool?",
+      "a": "No. It is useful for organizations that need detailed workflows and compliance, but it is more complex to set up."
+    },
+    {
+      "q": "When should I choose Replicon instead?",
+      "a": "Choose Replicon when your team requires structured workflows like approvals, payroll integration, or compliance tracking."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Clockify vs Dovico for Non-technical users",
+      "slug": "clockify-vs-dovico-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Dovico",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs eHour for Non-technical users",
+      "slug": "clockify-vs-ehour-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "eHour",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs Tempo Timesheets for Non-technical users",
+      "slug": "clockify-vs-tempo-timesheets-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Tempo Timesheets",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs TimePanic for Non-technical users",
+      "slug": "clockify-vs-timepanic-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "TimePanic",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Fanurio vs Kimai for Non-technical users",
+      "slug": "fanurio-vs-kimai-for-non-technical-user",
+      "exists": true,
+      "x_name": "Fanurio",
+      "y_name": "Kimai",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Harvest vs Kimai for Non-technical users",
+      "slug": "harvest-vs-kimai-for-non-technical-user",
+      "exists": true,
+      "x_name": "Harvest",
+      "y_name": "Kimai",
+      "persona": "Non-technical user"
+    }
+  ]
+}

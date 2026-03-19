@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Chrometa vs TimeTagger for Power users",
+  "slug": "chrometa-vs-timetagger-for-power-user",
+  "meta_description": "Chrometa vs TimeTagger for Power users: Chrometa wins with automatic capture, while TimeTagger requires manual tagging of entries.",
+  "persona": "Power user",
+  "constraint_lens": "This person wants deep, automated tracking that captures everything without manual input.",
+  "one_second_verdict": {
+    "winner_label": "Chrometa",
+    "summary": "Best for Power users who want automatic capture of all work activity without manual tagging.",
+    "reason": "TimeTagger fails first because it requires manually tagging each time entry instead of capturing activity automatically."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Chrometa is the better choice when you want full automatic capture of your work activity. It records application usage, documents, and browsing activity in the background and turns that into time entries. TimeTagger requires manually tagging or assigning time to entries, which adds ongoing effort and limits how much data you can capture.",
+    "decision_rule": "If tracking time requires manually tagging each entry instead of automatic activity capture, TimeTagger fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Chrometa fits Power users better",
+      "content": "This power user wants a system that captures everything automatically without manual effort. Chrometa fits because it logs activity in the background and builds time entries from real usage. That removes the need to tag or remember what you worked on."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Chrometa wins",
+      "bullets": [
+        {
+          "point": "Chrometa automatically records application usage, document activity, and browsing in the background.",
+          "why_it_matters": "This captures all work without requiring manual input."
+        },
+        {
+          "point": "Time entries are generated from detected activity instead of manual tagging.",
+          "why_it_matters": "This reduces effort and ensures more complete data collection."
+        },
+        {
+          "point": "The system builds a continuous activity timeline across your work sessions.",
+          "why_it_matters": "This allows deeper analysis and eliminates gaps in tracking."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where TimeTagger wins",
+      "bullets": [
+        {
+          "point": "TimeTagger requires manually assigning tags to each time entry.",
+          "why_it_matters": "This gives control, but requires ongoing effort for every entry."
+        },
+        {
+          "point": "Time tracking is based on user input rather than automatic activity detection.",
+          "why_it_matters": "This limits how much data is captured and increases workload."
+        },
+        {
+          "point": "The interface focuses on tagging and categorizing time after it is entered.",
+          "why_it_matters": "This adds an extra step to maintain accurate records."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Chrometa becomes limiting when you want full manual control over every time entry and do not want automatic tracking.",
+          "what_to_do_instead": "Use TimeTagger if you prefer manual tagging and control."
+        },
+        {
+          "tool": "y",
+          "fails_when": "TimeTagger breaks down when you need complete automatic capture but must manually tag every entry.",
+          "what_to_do_instead": "Use Chrometa if you want automatic activity based tracking."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you prefer full manual control over how time is categorized and do not want automatic tracking of your activity. In that case, TimeTagger may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Chrometa if you want automatic activity based time tracking.",
+        "Pick TimeTagger if you prefer manual tagging and control.",
+        "Avoid TimeTagger if you do not want to tag every time entry yourself."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Chrometa better for power users?",
+      "a": "Because it automatically captures all activity without requiring manual tagging."
+    },
+    {
+      "q": "What limits TimeTagger?",
+      "a": "It requires manually tagging each time entry, which adds ongoing effort."
+    },
+    {
+      "q": "Is TimeTagger a bad tool?",
+      "a": "No. It is useful for users who want full control over categorizing time."
+    },
+    {
+      "q": "When should I choose TimeTagger instead?",
+      "a": "Choose TimeTagger when you prefer manual tagging and do not want automatic tracking."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Chrometa vs Toggl Track for Power users",
+      "slug": "chrometa-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timely vs Toggl Track for Power users",
+      "slug": "timely-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timely",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "ActivityWatch vs Toggl Track for Power users",
+      "slug": "activitywatch-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Memtime vs Toggl Track for Power users",
+      "slug": "memtime-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Memtime",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timing (Time Tracking App) vs Toggl Track for Power users",
+      "slug": "timing-time-tracking-app-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timing (Time Tracking App)",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timely vs TimingApp for Power users",
+      "slug": "timely-vs-timingapp-for-power-user",
+      "exists": true,
+      "x_name": "Timely",
+      "y_name": "TimingApp",
+      "persona": "Power user"
+    }
+  ]
+}

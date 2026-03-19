@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Clockify vs RescueTime for Busy professionals",
+  "slug": "clockify-vs-rescuetime-for-busy-professional",
+  "meta_description": "Compare Clockify vs RescueTime for Busy professionals. Clockify wins when you need fast timer-based logging between meetings.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need a time tracking tool that lets you log time quickly without reviewing or organizing extra data.",
+  "one_second_verdict": {
+    "winner_label": "Clockify",
+    "summary": "Best for quickly logging billable time blocks with a simple start and stop timer.",
+    "reason": "RescueTime fails first because it requires reviewing and categorizing automatic activity reports before logging time."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Clockify is the better choice when you need to log time quickly between meetings. It uses a simple timer that you can start and stop in seconds for each task. RescueTime runs in the background and generates activity reports, but turning that data into billable time requires reviewing and categorizing entries, which adds extra steps and slows you down.",
+    "decision_rule": "If logging time requires reviewing and categorizing automatic activity reports instead of quickly starting a timer, RescueTime fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Clockify fits fast time logging",
+      "content": "You need to capture billable time quickly without extra steps. Clockify lets you press start on a timer, label the task, and move on. RescueTime collects activity automatically, but you must later review and categorize that data, which interrupts your workflow and adds overhead."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Clockify wins",
+      "bullets": [
+        {
+          "point": "Time is logged using a start and stop timer that can be triggered instantly for each task.",
+          "why_it_matters": "This allows you to capture billable time quickly without reviewing past activity."
+        },
+        {
+          "point": "Tasks can be labeled at the moment you start tracking.",
+          "why_it_matters": "This avoids the need to organize or categorize time later."
+        },
+        {
+          "point": "The interface is focused on quick entry rather than reviewing detailed reports.",
+          "why_it_matters": "This reduces time spent managing data and keeps logging fast."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where RescueTime wins",
+      "bullets": [
+        {
+          "point": "The app runs in the background and tracks activity automatically without starting timers.",
+          "why_it_matters": "This captures all activity, but requires later review to make it usable."
+        },
+        {
+          "point": "Detailed reports show how time is spent across apps and websites.",
+          "why_it_matters": "This provides insight, but adds time when you need to interpret the data."
+        },
+        {
+          "point": "Activity must be categorized after tracking to assign meaning to the data.",
+          "why_it_matters": "This creates extra steps before the data can be used for billing."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Clockify feels limited when you want automatic tracking without manually starting timers.",
+          "what_to_do_instead": "Use RescueTime if you prefer passive background tracking and detailed reports."
+        },
+        {
+          "tool": "y",
+          "fails_when": "RescueTime breaks when logging time requires reviewing and categorizing activity reports before use.",
+          "what_to_do_instead": "Use Clockify when you want fast, direct time logging."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you want automatic tracking and are willing to spend time reviewing reports later. In that case, RescueTime can be useful despite the extra steps."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Clockify if you want fast, timer-based time logging.",
+        "Choose Clockify if you need to log billable time between meetings.",
+        "Choose RescueTime if you want automatic tracking and are okay reviewing reports later."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Clockify better for Busy professionals?",
+      "a": "Because it allows quick time logging with a simple timer without reviewing extra data."
+    },
+    {
+      "q": "Does RescueTime require reviewing reports?",
+      "a": "Yes, you need to review and categorize activity data to use it for tracking or billing."
+    },
+    {
+      "q": "Is RescueTime automatic?",
+      "a": "Yes, it tracks activity in the background but requires later interpretation."
+    },
+    {
+      "q": "When would a Busy professional still choose RescueTime?",
+      "a": "A Busy professional might choose RescueTime if they want automatic tracking and are willing to review reports later."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Clockify vs Zistemo for Busy professionals",
+      "slug": "clockify-vs-zistemo-for-busy-professional",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Zistemo",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Avaza vs Clockify for Busy professionals",
+      "slug": "avaza-vs-clockify-for-busy-professional",
+      "exists": true,
+      "x_name": "Avaza",
+      "y_name": "Clockify",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Paymo Track vs Toggl Track for Busy professionals",
+      "slug": "paymo-track-vs-toggl-track-for-busy-professional",
+      "exists": true,
+      "x_name": "Paymo Track",
+      "y_name": "Toggl Track",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Everhour vs Toggl Track for Busy professionals",
+      "slug": "everhour-vs-toggl-track-for-busy-professional",
+      "exists": true,
+      "x_name": "Everhour",
+      "y_name": "Toggl Track",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Toggl Track vs Zoho Projects for Busy professionals",
+      "slug": "toggl-track-vs-zoho-projects-for-busy-professional",
+      "exists": true,
+      "x_name": "Toggl Track",
+      "y_name": "Zoho Projects",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Beebole vs Toggl Track for Busy professionals",
+      "slug": "beebole-vs-toggl-track-for-busy-professional",
+      "exists": true,
+      "x_name": "Beebole",
+      "y_name": "Toggl Track",
+      "persona": "Busy professional"
+    }
+  ]
+}

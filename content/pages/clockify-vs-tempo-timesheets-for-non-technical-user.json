@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Clockify vs Tempo Timesheets for Non-technical users",
+  "slug": "clockify-vs-tempo-timesheets-for-non-technical-user",
+  "meta_description": "Clockify vs Tempo Timesheets for Non-technical users: Clockify wins since Tempo depends on Jira setup and integrations to track time.",
+  "persona": "Non-technical user",
+  "constraint_lens": "This person needs a tool that works on its own without setup risks or dependencies that could break during use.",
+  "one_second_verdict": {
+    "winner_label": "Clockify",
+    "summary": "Best for Non-technical users who want standalone time tracking without Jira setup.",
+    "reason": "Tempo Timesheets fails first because it depends on configuring and maintaining Jira integrations to track time."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Clockify is the better choice when you want time tracking to work independently without relying on another system. It runs as a standalone tool where you can create projects and log time directly. Tempo Timesheets is built around Jira and requires setting up and maintaining that integration, which adds complexity and risk for this persona.",
+    "decision_rule": "If tracking time depends on configuring and maintaining Jira integrations instead of working standalone, Tempo Timesheets fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Clockify fits Non-technical users better",
+      "content": "This non-technical user wants a tool that works on its own without needing to connect or manage other systems. Clockify fits because it lets you track time directly without setting up integrations. That keeps things simple and avoids the risk of breaking something during setup."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Tempo Timesheets wins",
+      "bullets": [
+        {
+          "point": "Tempo Timesheets is tightly integrated with Jira, allowing time to be logged directly on issues and tasks.",
+          "why_it_matters": "This keeps work tied to Jira workflows, but requires configuring and maintaining the integration first."
+        },
+        {
+          "point": "It uses Jira projects, permissions, and issue structures as the foundation for time tracking.",
+          "why_it_matters": "This provides consistency within Jira, but adds dependency on another system that must be set up correctly."
+        },
+        {
+          "point": "Time tracking is embedded within Jira screens rather than running as a standalone tool.",
+          "why_it_matters": "This can streamline work for heavy Jira users, but creates extra steps and setup for light users."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Clockify wins",
+      "bullets": [
+        {
+          "point": "Clockify works as a standalone tool where you can create projects and log time without connecting to other systems.",
+          "why_it_matters": "You can start tracking immediately without worrying about integration setup."
+        },
+        {
+          "point": "Time entries are created directly within the app instead of being tied to external tools like Jira.",
+          "why_it_matters": "This reduces complexity and avoids dependency on another system."
+        },
+        {
+          "point": "There is no requirement to configure integrations before using core features.",
+          "why_it_matters": "This lowers the chance of setup errors and keeps the tool easy to use."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "Tempo Timesheets breaks down when you need to track time without setting up or maintaining a Jira integration.",
+          "what_to_do_instead": "Use Clockify if you want a standalone tool that works immediately."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Clockify becomes limiting when you need time tracking fully integrated into Jira workflows and issue tracking.",
+          "what_to_do_instead": "Use Tempo Timesheets if your work depends heavily on Jira."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you rely heavily on Jira and want time tracking directly tied to issues and workflows. In that case, Tempo Timesheets may be more useful despite the setup."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Clockify if you want standalone time tracking with no integrations.",
+        "Pick Tempo Timesheets if you need time tracking inside Jira.",
+        "Avoid Tempo Timesheets if you do not want to configure or maintain integrations."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Clockify better for non-technical users?",
+      "a": "Because it works independently and does not require setting up or managing integrations."
+    },
+    {
+      "q": "What makes Tempo Timesheets harder to use?",
+      "a": "It depends on Jira integration, which requires setup and ongoing management."
+    },
+    {
+      "q": "Is Tempo Timesheets a bad tool?",
+      "a": "No. It is useful for teams that rely heavily on Jira and want integrated tracking."
+    },
+    {
+      "q": "When should I choose Tempo Timesheets instead?",
+      "a": "Choose Tempo Timesheets when you need time tracking directly tied to Jira issues and workflows."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Clockify vs Dovico for Non-technical users",
+      "slug": "clockify-vs-dovico-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Dovico",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs eHour for Non-technical users",
+      "slug": "clockify-vs-ehour-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "eHour",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs TimePanic for Non-technical users",
+      "slug": "clockify-vs-timepanic-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "TimePanic",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Fanurio vs Kimai for Non-technical users",
+      "slug": "fanurio-vs-kimai-for-non-technical-user",
+      "exists": true,
+      "x_name": "Fanurio",
+      "y_name": "Kimai",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Harvest vs Kimai for Non-technical users",
+      "slug": "harvest-vs-kimai-for-non-technical-user",
+      "exists": true,
+      "x_name": "Harvest",
+      "y_name": "Kimai",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "ClockShark vs Hubstaff for Non-technical users",
+      "slug": "clockshark-vs-hubstaff-for-non-technical-user",
+      "exists": true,
+      "x_name": "ClockShark",
+      "y_name": "Hubstaff",
+      "persona": "Non-technical user"
+    }
+  ]
+}

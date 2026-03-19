@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "ActivityWatch vs RescueTime for Solo users",
+  "slug": "activitywatch-vs-rescuetime-for-solo-user",
+  "meta_description": "Compare ActivityWatch vs RescueTime for Solo users. ActivityWatch wins when you want private local tracking without accounts.",
+  "persona": "Solo user",
+  "constraint_lens": "You want a time tracking tool that works locally without requiring accounts, syncing, or ongoing maintenance.",
+  "one_second_verdict": {
+    "winner_label": "ActivityWatch",
+    "summary": "Best for tracking time privately on your device without accounts or cloud syncing.",
+    "reason": "RescueTime fails first because it requires a cloud account and syncs activity data to external servers."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "ActivityWatch is the better choice when you want a private, self-contained time tracking tool. It runs locally and stores all activity data on your device without requiring an account. RescueTime depends on a cloud account and sends your activity data to external servers, which adds ongoing maintenance and breaks the goal of keeping data fully local.",
+    "decision_rule": "If tracking data requires syncing to cloud servers and maintaining an online account, RescueTime fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why ActivityWatch fits private local tracking",
+      "content": "You want to track your activity without relying on external services. ActivityWatch records data locally on your device and works without any account or syncing. RescueTime requires signing in and syncing your activity data to its servers, which adds ongoing dependencies you want to avoid."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where ActivityWatch wins",
+      "bullets": [
+        {
+          "point": "All activity data is stored locally on your device with no account required.",
+          "why_it_matters": "This keeps your data private and removes the need to manage logins or services."
+        },
+        {
+          "point": "The tool runs fully offline without sending data to external servers.",
+          "why_it_matters": "This avoids ongoing syncing and keeps the system self-contained."
+        },
+        {
+          "point": "There are no cloud features or syncing systems to configure or maintain.",
+          "why_it_matters": "This reduces overhead and keeps the tool simple to run over time."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where RescueTime wins",
+      "bullets": [
+        {
+          "point": "Activity data syncs across devices through a cloud account.",
+          "why_it_matters": "This allows multi-device access, but requires maintaining an account."
+        },
+        {
+          "point": "Reports and dashboards are generated from synced data on external servers.",
+          "why_it_matters": "This provides insights, but depends on continuous syncing."
+        },
+        {
+          "point": "You can access your data from different devices through the same account.",
+          "why_it_matters": "This increases flexibility, but adds reliance on cloud services."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "ActivityWatch feels limiting when you want access to your data across multiple devices.",
+          "what_to_do_instead": "Use RescueTime if you need syncing and cross-device access."
+        },
+        {
+          "tool": "y",
+          "fails_when": "RescueTime breaks when tracking data requires maintaining an account and syncing to external servers.",
+          "what_to_do_instead": "Use ActivityWatch when you want a fully local and private solution."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you want access to your tracking data across multiple devices and are willing to use a cloud account. In that case, RescueTime can be useful despite the added dependency."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose ActivityWatch if you want local, private time tracking.",
+        "Choose ActivityWatch if you want to avoid accounts and syncing.",
+        "Choose RescueTime only if you need multi-device access and cloud reports."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is ActivityWatch better for Solo users?",
+      "a": "Because it stores all tracking data locally without requiring accounts or syncing."
+    },
+    {
+      "q": "Does RescueTime require an account?",
+      "a": "Yes, it relies on a cloud account to sync and manage activity data."
+    },
+    {
+      "q": "Can ActivityWatch sync across devices?",
+      "a": "No, it is designed for local use on a single device."
+    },
+    {
+      "q": "When would a Solo user still choose RescueTime?",
+      "a": "A Solo user might choose RescueTime if they want access to their data across multiple devices."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "ActivityWatch vs Clockify for Solo users",
+      "slug": "activitywatch-vs-clockify-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Clockify",
+      "persona": "Solo user"
+    },
+    {
+      "title": "ActivityWatch vs Timely for Solo users",
+      "slug": "activitywatch-vs-timely-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Timely",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Clockify vs ManicTime for Solo users",
+      "slug": "clockify-vs-manictime-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "ManicTime",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Clockify vs Project Hamster for Solo users",
+      "slug": "clockify-vs-project-hamster-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Project Hamster",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Clockify vs Time Recording for Solo users",
+      "slug": "clockify-vs-time-recording-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Time Recording",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Everlance vs QuickBooks Time for Solo users",
+      "slug": "everlance-vs-quickbooks-time-for-solo-user",
+      "exists": true,
+      "x_name": "Everlance",
+      "y_name": "QuickBooks Time",
+      "persona": "Solo user"
+    }
+  ]
+}

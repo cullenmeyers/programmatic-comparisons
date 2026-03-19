@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Ora vs Toggl Track for Minimalists",
+  "slug": "ora-vs-toggl-track-for-minimalist",
+  "meta_description": "Ora vs Toggl Track for Minimalists: Toggl Track wins for simple timers, while Ora includes project boards, tasks, and workflows.",
+  "persona": "Minimalist",
+  "constraint_lens": "This person wants a tool that stays focused on time tracking and avoids extra features that add clutter or distraction.",
+  "one_second_verdict": {
+    "winner_label": "Toggl Track",
+    "summary": "Best for Minimalists who want a simple timer without project management features.",
+    "reason": "Ora fails first because it requires navigating tasks, boards, and workflows before tracking time."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Toggl Track is the better choice when you want a clean, focused timer without extra features. It lets you start tracking immediately without dealing with tasks or boards. Ora combines time tracking with full project management features, which adds extra layers that get in the way when your goal is simplicity.",
+    "decision_rule": "If tracking time requires navigating project management features like tasks, boards, or workflows, Ora fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Toggl Track fits Minimalists better",
+      "content": "This minimalist wants a tool that does one thing well without extra features. Toggl Track fits because it focuses on starting and stopping timers without requiring you to manage projects, tasks, or workflows. That keeps the experience clean and easy to use."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Ora wins",
+      "bullets": [
+        {
+          "point": "Ora combines time tracking with task management, kanban boards, and project workflows in one system.",
+          "why_it_matters": "This creates an all-in-one workspace, but introduces extra layers that are unnecessary for simple tracking."
+        },
+        {
+          "point": "Time tracking is tied to tasks and projects within its project management structure.",
+          "why_it_matters": "This helps organize work, but requires navigating through tasks before starting a timer."
+        },
+        {
+          "point": "The interface includes boards, lists, and workflow views alongside time tracking features.",
+          "why_it_matters": "This adds visual complexity and more decisions, which can feel overwhelming when you just want a timer."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Toggl Track wins",
+      "bullets": [
+        {
+          "point": "Toggl Track allows starting a timer directly from the main screen without setting up tasks or boards.",
+          "why_it_matters": "You can begin tracking immediately without navigating through extra features."
+        },
+        {
+          "point": "The interface is focused on simple time entry rather than combining multiple systems.",
+          "why_it_matters": "This keeps the tool easy to use and reduces distractions from unrelated features."
+        },
+        {
+          "point": "Projects and tags are optional and not required to start tracking.",
+          "why_it_matters": "This lets you keep the setup minimal and avoid unnecessary structure."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Ora breaks down when you want to track time quickly but must navigate tasks, boards, or workflows first.",
+          "what_to_do_instead": "Use Toggl Track if you want a simple timer without project management features."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Toggl Track becomes limiting when you need integrated task management and workflow tracking alongside time tracking.",
+          "what_to_do_instead": "Use Ora if you want an all-in-one system for managing tasks and time."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you want to manage tasks, projects, and time in one place instead of using separate tools. In that case, Ora may be a better fit because of its combined system."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Toggl Track if you want a simple timer with no extra features.",
+        "Pick Ora if you want time tracking combined with task and project management.",
+        "Avoid Ora if you do not want to deal with boards, tasks, or workflows."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Toggl Track better for minimalists?",
+      "a": "Because it focuses on simple time tracking without requiring tasks, boards, or workflows."
+    },
+    {
+      "q": "What makes Ora more complex?",
+      "a": "It combines time tracking with project management features like tasks and boards, adding extra layers."
+    },
+    {
+      "q": "Is Ora a bad tool?",
+      "a": "No. It is useful if you want an all-in-one system for managing projects and time."
+    },
+    {
+      "q": "When should I choose Ora instead?",
+      "a": "Choose Ora when you want to manage tasks, workflows, and time tracking in one tool."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Accelo vs Toggl Track for Minimalists",
+      "slug": "accelo-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "Accelo",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Ora vs Scoro for Minimalists",
+      "slug": "ora-vs-scoro-for-minimalist",
+      "exists": true,
+      "x_name": "Ora",
+      "y_name": "Scoro",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "ActiveCollab vs Toggl Track for Minimalists",
+      "slug": "activecollab-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "ActiveCollab",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Ora vs TimeCamp for Minimalists",
+      "slug": "ora-vs-timecamp-for-minimalist",
+      "exists": true,
+      "x_name": "Ora",
+      "y_name": "TimeCamp",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "BigTime vs Toggl Track for Minimalists",
+      "slug": "bigtime-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "BigTime",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Intervals vs Toggl Track for Minimalists",
+      "slug": "intervals-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "Intervals",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    }
+  ]
+}

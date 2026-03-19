@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Intervals vs TimeDoctor for Power users",
+  "slug": "intervals-vs-timedoctor-for-power-user",
+  "meta_description": "Intervals vs TimeDoctor for Power users: Intervals wins for reporting and budgets, while TimeDoctor focuses on monitoring workflows.",
+  "persona": "Power user",
+  "constraint_lens": "This person needs deeper analysis tools and structured reporting rather than surface level tracking or monitoring.",
+  "one_second_verdict": {
+    "winner_label": "Intervals",
+    "summary": "Best for Power users who need structured reporting and budget tracking instead of monitoring.",
+    "reason": "TimeDoctor fails first because it focuses on screenshots and activity monitoring instead of structured reporting and budgets."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Intervals is the better choice when your goal is to analyze time data with structured reports and budgets. It provides reporting dashboards and budget tracking tied to projects, allowing deeper insight into work patterns. TimeDoctor is built around monitoring workflows like screenshots and activity tracking, which does not support detailed analysis in the same way.",
+    "decision_rule": "If time tracking is centered on surveillance features like screenshots and activity monitoring instead of structured reporting, TimeDoctor fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Intervals fits Power users better",
+      "content": "This power user wants structured insight into how time is spent across projects. Intervals fits because it provides reporting dashboards and budget tracking tied directly to time entries. That enables deeper analysis instead of focusing on monitoring behavior."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Intervals wins",
+      "bullets": [
+        {
+          "point": "Intervals includes built in reporting dashboards that break down time by project, task, and team.",
+          "why_it_matters": "This allows detailed analysis of work patterns and supports decision making."
+        },
+        {
+          "point": "Time tracking is tied to project budgets and cost tracking features.",
+          "why_it_matters": "This enables tracking progress against budgets instead of just logging time."
+        },
+        {
+          "point": "The system focuses on structured data like tasks, projects, and reports rather than monitoring activity.",
+          "why_it_matters": "This supports deeper insights and scaling workflows for advanced users."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where TimeDoctor wins",
+      "bullets": [
+        {
+          "point": "TimeDoctor captures screenshots and activity levels during work sessions.",
+          "why_it_matters": "This provides monitoring data, but does not support structured reporting needs."
+        },
+        {
+          "point": "Time tracking is centered on monitoring user activity rather than project level analysis.",
+          "why_it_matters": "This limits its usefulness for analyzing project performance."
+        },
+        {
+          "point": "The interface includes monitoring dashboards focused on productivity metrics.",
+          "why_it_matters": "This adds oversight, but does not provide budget tracking or structured reporting."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Intervals becomes limiting when you need detailed monitoring of employee activity like screenshots or productivity scoring.",
+          "what_to_do_instead": "Use TimeDoctor if you need monitoring and surveillance features."
+        },
+        {
+          "tool": "y",
+          "fails_when": "TimeDoctor breaks down when you need structured reports and budget tracking tied to projects instead of monitoring data.",
+          "what_to_do_instead": "Use Intervals if you want deeper analysis of project time."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if your primary goal is monitoring employee activity and productivity instead of analyzing project level data. In that case, TimeDoctor may be more useful."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Intervals if you need structured reporting and budget tracking.",
+        "Pick TimeDoctor if you need monitoring and activity tracking.",
+        "Avoid TimeDoctor if you want project level analysis instead of surveillance."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Intervals better for power users?",
+      "a": "Because it provides structured reports and budget tracking for deeper analysis."
+    },
+    {
+      "q": "What limits TimeDoctor for this use case?",
+      "a": "It focuses on monitoring features like screenshots instead of structured reporting."
+    },
+    {
+      "q": "Is TimeDoctor a bad tool?",
+      "a": "No. It is useful for teams that need activity monitoring and productivity tracking."
+    },
+    {
+      "q": "When should I choose TimeDoctor instead?",
+      "a": "Choose TimeDoctor when you need monitoring features like screenshots and activity tracking."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Chrometa vs Toggl Track for Power users",
+      "slug": "chrometa-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timely vs Toggl Track for Power users",
+      "slug": "timely-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timely",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "ActivityWatch vs Toggl Track for Power users",
+      "slug": "activitywatch-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Memtime vs Toggl Track for Power users",
+      "slug": "memtime-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Memtime",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timing (Time Tracking App) vs Toggl Track for Power users",
+      "slug": "timing-time-tracking-app-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timing (Time Tracking App)",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Chrometa vs TimeTagger for Power users",
+      "slug": "chrometa-vs-timetagger-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "TimeTagger",
+      "persona": "Power user"
+    }
+  ]
+}

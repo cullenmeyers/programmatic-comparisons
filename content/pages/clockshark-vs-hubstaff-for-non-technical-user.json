@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "ClockShark vs Hubstaff for Non-technical users",
+  "slug": "clockshark-vs-hubstaff-for-non-technical-user",
+  "meta_description": "ClockShark vs Hubstaff for Non-technical users: ClockShark wins for simple job tracking, while Hubstaff requires monitoring setup.",
+  "persona": "Non-technical user",
+  "constraint_lens": "This person needs a tool that is easy to use without setting up complex features that could break or confuse them.",
+  "one_second_verdict": {
+    "winner_label": "ClockShark",
+    "summary": "Best for Non-technical users who want simple job-based time tracking without monitoring features.",
+    "reason": "Hubstaff fails first because it requires configuring screenshots and activity tracking before simple time tracking feels usable."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "ClockShark is the better choice when you want straightforward field time tracking without extra setup. It focuses on job-based tracking where workers clock in and out of jobs directly. Hubstaff includes monitoring features like screenshots and activity tracking, which introduce additional setup and complexity that can feel risky for this persona.",
+    "decision_rule": "If tracking time requires configuring monitoring features like screenshots or activity tracking instead of simple job-based tracking, Hubstaff fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why ClockShark fits Non-technical users better",
+      "content": "This non-technical user wants a tool that works without needing to configure advanced features. ClockShark fits because workers can clock in and out of jobs directly without dealing with monitoring settings. That keeps the system simple and reduces the chance of mistakes."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where ClockShark wins",
+      "bullets": [
+        {
+          "point": "ClockShark uses job-based clock in and clock out workflows tied to field tasks.",
+          "why_it_matters": "This allows workers to track time without configuring complex features."
+        },
+        {
+          "point": "The interface focuses on simple time entry instead of monitoring or activity tracking systems.",
+          "why_it_matters": "This reduces confusion and makes the tool easier to use for non-technical users."
+        },
+        {
+          "point": "No requirement to configure screenshots or productivity monitoring before tracking time.",
+          "why_it_matters": "This lowers the risk of setup errors and keeps the system straightforward."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Hubstaff wins",
+      "bullets": [
+        {
+          "point": "Hubstaff includes monitoring features like screenshots and activity tracking during work sessions.",
+          "why_it_matters": "This provides oversight, but requires setup and understanding of monitoring settings."
+        },
+        {
+          "point": "Time tracking is tied to productivity data and monitoring tools.",
+          "why_it_matters": "This adds insight, but introduces extra complexity before tracking time."
+        },
+        {
+          "point": "The system includes multiple configuration options for tracking behavior and monitoring.",
+          "why_it_matters": "This increases setup steps and can feel overwhelming for non-technical users."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "ClockShark becomes limiting when you need detailed monitoring, screenshots, or productivity tracking.",
+          "what_to_do_instead": "Use Hubstaff if you need monitoring and activity tracking features."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Hubstaff breaks down when you want simple job-based tracking but must configure monitoring features first.",
+          "what_to_do_instead": "Use ClockShark if you want straightforward field time tracking."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you need detailed monitoring of worker activity, including screenshots and productivity tracking. In that case, Hubstaff may be more useful despite the added complexity."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick ClockShark if you want simple job-based time tracking.",
+        "Pick Hubstaff if you need monitoring and productivity tracking features.",
+        "Avoid Hubstaff if you do not want to configure monitoring settings."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is ClockShark better for non-technical users?",
+      "a": "Because it focuses on simple job-based tracking without requiring monitoring setup."
+    },
+    {
+      "q": "What makes Hubstaff harder to use?",
+      "a": "It includes monitoring features like screenshots and activity tracking that require configuration."
+    },
+    {
+      "q": "Is Hubstaff a bad tool?",
+      "a": "No. It is useful for teams that need detailed monitoring and productivity tracking."
+    },
+    {
+      "q": "When should I choose Hubstaff instead?",
+      "a": "Choose Hubstaff when you need monitoring features like screenshots and activity tracking."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Clockify vs Dovico for Non-technical users",
+      "slug": "clockify-vs-dovico-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Dovico",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs eHour for Non-technical users",
+      "slug": "clockify-vs-ehour-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "eHour",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs Tempo Timesheets for Non-technical users",
+      "slug": "clockify-vs-tempo-timesheets-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Tempo Timesheets",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs TimePanic for Non-technical users",
+      "slug": "clockify-vs-timepanic-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "TimePanic",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Fanurio vs Kimai for Non-technical users",
+      "slug": "fanurio-vs-kimai-for-non-technical-user",
+      "exists": true,
+      "x_name": "Fanurio",
+      "y_name": "Kimai",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Harvest vs Kimai for Non-technical users",
+      "slug": "harvest-vs-kimai-for-non-technical-user",
+      "exists": true,
+      "x_name": "Harvest",
+      "y_name": "Kimai",
+      "persona": "Non-technical user"
+    }
+  ]
+}

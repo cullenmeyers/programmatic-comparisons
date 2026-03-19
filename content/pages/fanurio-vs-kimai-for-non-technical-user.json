@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Fanurio vs Kimai for Non-technical users",
+  "slug": "fanurio-vs-kimai-for-non-technical-user",
+  "meta_description": "Fanurio vs Kimai for Non-technical users: Fanurio wins with simple desktop install, while Kimai requires hosting and managing a web app.",
+  "persona": "Non-technical user",
+  "constraint_lens": "This person needs a tool that works right after installation and avoids any setup that could break or require technical fixes.",
+  "one_second_verdict": {
+    "winner_label": "Fanurio",
+    "summary": "Best for Non-technical users who want to install and start tracking without setup risk.",
+    "reason": "Kimai fails first because it requires setting up and managing a self-hosted web application with a server and database."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Fanurio is the better choice when you want to install a desktop app and start tracking time without dealing with technical setup. It runs locally and works immediately after installation. Kimai requires setting up a server and database for its web-based system, which adds complexity and risk for someone who wants a simple setup.",
+    "decision_rule": "If using the tool requires setting up and managing a self-hosted web application instead of installing a desktop app, Kimai fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Fanurio fits Non-technical users better",
+      "content": "This non-technical user wants a tool that works right after installing it without worrying about breaking something. Fanurio fits because it installs like a regular desktop app and lets you start tracking immediately. That removes the need to deal with servers, databases, or browser-based systems that can introduce setup issues."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Fanurio wins",
+      "bullets": [
+        {
+          "point": "Fanurio installs as a desktop application and runs locally without requiring any server setup.",
+          "why_it_matters": "You can start using it right away without risking errors from configuring hosting or backend systems."
+        },
+        {
+          "point": "All time tracking and data storage happen inside the app on your machine.",
+          "why_it_matters": "This avoids dealing with web interfaces or account systems that could add confusion or break during setup."
+        },
+        {
+          "point": "The setup process is limited to installing and opening the app without extra configuration steps.",
+          "why_it_matters": "This reduces the chance of making mistakes and keeps the first experience simple and predictable."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Kimai wins",
+      "bullets": [
+        {
+          "point": "Kimai runs as a self-hosted web application accessed through a browser after server setup.",
+          "why_it_matters": "This allows access from multiple devices, but requires configuring and maintaining a backend system."
+        },
+        {
+          "point": "It supports multi-user environments with centralized data through a web interface.",
+          "why_it_matters": "This is useful for teams, but adds complexity that is unnecessary for simple personal tracking."
+        },
+        {
+          "point": "Kimai relies on a database and server environment to store and manage time entries.",
+          "why_it_matters": "This introduces ongoing maintenance and potential issues that a non-technical user may struggle to fix."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Fanurio becomes limiting when you need access to your data from multiple devices or want a shared system for a team.",
+          "what_to_do_instead": "Use Kimai if you need a web-based system with centralized access and are comfortable managing it."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Kimai breaks down when you need to set up and maintain a server and database just to start tracking time.",
+          "what_to_do_instead": "Use Fanurio if you want a simple desktop app with no setup risk."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you need access to your time data from multiple devices or want a shared system for a team. In that case, Kimai may be worth the setup because the web interface becomes useful."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Fanurio if you want a simple desktop app with no setup.",
+        "Pick Kimai if you need a web-based system and can manage hosting.",
+        "Avoid Kimai if you do not want to deal with servers or databases."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Fanurio better for non-technical users?",
+      "a": "Because it installs as a desktop app and works immediately without requiring server setup or technical configuration."
+    },
+    {
+      "q": "What makes Kimai harder to use?",
+      "a": "It requires setting up and maintaining a server and database, which adds complexity and risk."
+    },
+    {
+      "q": "Is Kimai a bad tool?",
+      "a": "No. It is useful for users who need a self-hosted web-based system and are comfortable managing it."
+    },
+    {
+      "q": "When should I choose Kimai instead?",
+      "a": "Choose Kimai when you need multi-user access through a browser and are willing to handle the setup."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Harvest vs Kimai for Non-technical users",
+      "slug": "harvest-vs-kimai-for-non-technical-user",
+      "exists": true,
+      "x_name": "Harvest",
+      "y_name": "Kimai",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs Dovico for Non-technical users",
+      "slug": "clockify-vs-dovico-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Dovico",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs eHour for Non-technical users",
+      "slug": "clockify-vs-ehour-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "eHour",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs Tempo Timesheets for Non-technical users",
+      "slug": "clockify-vs-tempo-timesheets-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Tempo Timesheets",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs TimePanic for Non-technical users",
+      "slug": "clockify-vs-timepanic-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "TimePanic",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "ClockShark vs Hubstaff for Non-technical users",
+      "slug": "clockshark-vs-hubstaff-for-non-technical-user",
+      "exists": true,
+      "x_name": "ClockShark",
+      "y_name": "Hubstaff",
+      "persona": "Non-technical user"
+    }
+  ]
+}

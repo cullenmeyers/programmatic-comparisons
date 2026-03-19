@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Tick vs Toggl Track for Beginners",
+  "slug": "tick-vs-toggl-track-for-beginner",
+  "meta_description": "Compare Tick vs Toggl Track for Beginners. Toggl wins when you want simple time tracking without budget setup or allocations.",
+  "persona": "Beginner",
+  "constraint_lens": "You want a time tracking tool that works immediately without requiring setup or configuration.",
+  "one_second_verdict": {
+    "winner_label": "Toggl Track",
+    "summary": "Best for tracking task duration with a simple timer and no budget setup required.",
+    "reason": "Tick fails first because it requires setting up project budgets and allocations before logging time."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Toggl Track is the better choice when you want to track how long tasks take without extra setup. You can start a timer immediately and log time without defining budgets. Tick is built around project budgets and requires setting up allocations before tracking time, which adds steps that can confuse beginners and slow down basic usage.",
+    "decision_rule": "If tracking time requires setting up project budgets and allocations before logging hours, Tick fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Toggl Track fits simple time tracking",
+      "content": "You want to track how long tasks take without learning a system. Toggl Track lets you press start and begin tracking right away. Tick requires you to define project budgets and allocate time before logging hours, which introduces setup steps that can feel confusing if you just want to track duration."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Tick wins",
+      "bullets": [
+        {
+          "point": "Projects are built around budgets where time must be allocated before tracking begins.",
+          "why_it_matters": "This helps manage budgets, but adds setup steps before you can log time."
+        },
+        {
+          "point": "Time tracking is tied to budget limits and allocation structures.",
+          "why_it_matters": "This provides control, but introduces complexity for simple tracking needs."
+        },
+        {
+          "point": "The system requires defining projects and budgets before using timers.",
+          "why_it_matters": "This slows down getting started and can confuse beginners."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Toggl Track wins",
+      "bullets": [
+        {
+          "point": "You can start a timer immediately without setting up budgets or allocations.",
+          "why_it_matters": "This lets you begin tracking time right away with no setup."
+        },
+        {
+          "point": "Time entries can be logged with simple labels like task or project.",
+          "why_it_matters": "This keeps the process easy to understand and use."
+        },
+        {
+          "point": "The interface focuses on tracking duration rather than managing budgets.",
+          "why_it_matters": "This reduces confusion and keeps the tool aligned with basic needs."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Tick becomes confusing when you must set up budgets and allocations before tracking time.",
+          "what_to_do_instead": "Use Toggl Track if you want simple time tracking with no setup."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Toggl Track feels limited when you need budget-based tracking and allocation controls.",
+          "what_to_do_instead": "Use Tick if you need to manage project budgets alongside time tracking."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you need to track time against project budgets and are willing to set up allocations. In that case, Tick can be useful despite the added complexity."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Toggl Track if you want to track time immediately with no setup.",
+        "Choose Toggl Track if you only care about task duration.",
+        "Choose Tick only if you need budget-based time tracking."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Toggl Track better for Beginners?",
+      "a": "Because it allows you to start tracking time immediately without setting up budgets or allocations."
+    },
+    {
+      "q": "Does Tick require setup before tracking time?",
+      "a": "Yes, it requires defining project budgets and allocations before logging time."
+    },
+    {
+      "q": "Is Toggl Track easy to use?",
+      "a": "Yes, it focuses on simple timer-based tracking with minimal steps."
+    },
+    {
+      "q": "When would a Beginner still choose Tick?",
+      "a": "A Beginner might choose Tick if they need to track time against project budgets."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "BillQuick vs Toggl Track for Beginners",
+      "slug": "billquick-vs-toggl-track-for-beginner",
+      "exists": true,
+      "x_name": "BillQuick",
+      "y_name": "Toggl Track",
+      "persona": "Beginner"
+    },
+    {
+      "title": "SlimTimer vs Tick for Beginners",
+      "slug": "slimtimer-vs-tick-for-beginner",
+      "exists": true,
+      "x_name": "SlimTimer",
+      "y_name": "Tick",
+      "persona": "Beginner"
+    },
+    {
+      "title": "OfficeTime vs Toggl Track for Beginners",
+      "slug": "officetime-vs-toggl-track-for-beginner",
+      "exists": true,
+      "x_name": "OfficeTime",
+      "y_name": "Toggl Track",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Toggl Track vs Zoho Projects for Beginners",
+      "slug": "toggl-track-vs-zoho-projects-for-beginner",
+      "exists": true,
+      "x_name": "Toggl Track",
+      "y_name": "Zoho Projects",
+      "persona": "Beginner"
+    },
+    {
+      "title": "AccountSight vs Clockify for Beginners",
+      "slug": "accountsight-vs-clockify-for-beginner",
+      "exists": true,
+      "x_name": "AccountSight",
+      "y_name": "Clockify",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Bill4Time vs Clockify for Beginners",
+      "slug": "bill4time-vs-clockify-for-beginner",
+      "exists": true,
+      "x_name": "Bill4Time",
+      "y_name": "Clockify",
+      "persona": "Beginner"
+    }
+  ]
+}

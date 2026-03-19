@@ -1,20 +1,21 @@
 # Related Comparisons Rebuild Report
 
-Date: 2026-03-17T20:28:48.957Z
+Date: 2026-03-18T23:50:52.964Z
 
 ## Summary
 
-- Total pages scanned: 382
+- Total pages scanned: 455
 - Total pages updated: 0
-- Average related_pages count: 5.73
-- Pages with 0 related pages: 4
+- Average related_pages count: 5.76
+- Pages with 0 related pages: 5
 - Pages with 1 related page: 4
-- Pages with fewer than 3 related pages: 20
+- Pages with fewer than 3 related pages: 21
 
 ## Sparse Pages
 
 ### Pages with 0 related pages
 
+- /compare/atracker-vs-kimai-for-student
 - /compare/bonsai-vs-trello-for-busy-professional
 - /compare/jira-vs-todoist-for-beginner
 - /compare/mailfence-vs-yahoo-mail-for-non-technical-user
@@ -32,6 +33,7 @@ Date: 2026-03-17T20:28:48.957Z
 - /compare/apple-calendar-vs-notion-calendar-for-solo-user
 - /compare/apple-notes-vs-evernote-for-solo-user
 - /compare/apple-notes-vs-notion-for-solo-user
+- /compare/atracker-vs-kimai-for-student
 - /compare/bitwarden-vs-keepass-for-beginner
 - /compare/bitwarden-vs-passbolt-for-solo-user
 - /compare/bonsai-vs-trello-for-busy-professional

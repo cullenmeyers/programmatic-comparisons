@@ -1,0 +1,167 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "ActivityWatch vs Toggl Track for Power users",
+  "slug": "activitywatch-vs-toggl-track-for-power-user",
+  "meta_description": "Compare ActivityWatch vs Toggl Track for Power users. ActivityWatch wins when you want automatic background time tracking.",
+  "persona": "Power user",
+  "constraint_lens": "You need a time tracking tool that can capture all activity automatically without relying on manual input.",
+  "one_second_verdict": {
+    "winner_label": "ActivityWatch",
+    "summary": "Best for capturing time automatically in the background without starting timers.",
+    "reason": "Toggl Track fails first because it requires manually starting and stopping timers for each task."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "ActivityWatch is the better choice when you want full automatic time tracking. It runs in the background and logs your activity without requiring manual input. Toggl Track depends on starting and stopping timers for each task, which means you miss data or interrupt your workflow if you forget to track time manually.",
+    "decision_rule": "If tracking time requires manually starting and stopping timers for each task instead of automatic background logging, Toggl Track fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why ActivityWatch fits passive tracking",
+      "content": "You want your time tracking to run automatically without thinking about it. ActivityWatch records app usage and activity in the background as you work. Toggl Track requires you to start a timer each time you switch tasks, which adds friction and creates gaps when you forget."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where ActivityWatch wins",
+      "bullets": [
+        {
+          "point": "The app runs in the background and logs activity automatically without user input.",
+          "why_it_matters": "This ensures all time is captured without needing to remember to start tracking."
+        },
+        {
+          "point": "Time is recorded based on actual app usage and window focus.",
+          "why_it_matters": "This creates a complete timeline of your work without manual entry."
+        },
+        {
+          "point": "There is no need to switch tasks or press buttons to track time.",
+          "why_it_matters": "This removes interruptions and allows continuous tracking across your workflow."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Toggl Track wins",
+      "bullets": [
+        {
+          "point": "Timers can be assigned to specific tasks or projects before tracking begins.",
+          "why_it_matters": "This allows structured tracking, but requires manual setup for each session."
+        },
+        {
+          "point": "Users can control exactly when time tracking starts and stops.",
+          "why_it_matters": "This gives precision, but adds responsibility to manage timers."
+        },
+        {
+          "point": "Time entries are clearly labeled by user-defined tasks.",
+          "why_it_matters": "This creates organized data, but depends on consistent manual input."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "ActivityWatch feels unstructured when you need time entries tied to specific tasks or projects.",
+          "what_to_do_instead": "Use Toggl Track if you want manually labeled and organized time entries."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Toggl Track breaks when you forget to start or stop timers and miss tracking time.",
+          "what_to_do_instead": "Use ActivityWatch when you want automatic background tracking without gaps."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you prefer full control over how time is labeled and are willing to manage timers manually. In that case, Toggl Track can work better despite requiring more effort."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose ActivityWatch if you want automatic background time tracking.",
+        "Choose ActivityWatch if you do not want to manage timers.",
+        "Choose Toggl Track if you want manually labeled and structured time entries."
+      ]
+    },
+    {
+      "type": "faqs",
+      "heading": "",
+      "content": ""
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is ActivityWatch better for Power users?",
+      "a": "Because it tracks time automatically in the background without requiring manual timers."
+    },
+    {
+      "q": "Does Toggl Track require manual input?",
+      "a": "Yes, you must start and stop timers to track time."
+    },
+    {
+      "q": "Is ActivityWatch fully automatic?",
+      "a": "Yes, it records activity based on app usage without user interaction."
+    },
+    {
+      "q": "When would a Power user still choose Toggl Track?",
+      "a": "A Power user might choose Toggl Track if they want structured, manually labeled time entries."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Chrometa vs Toggl Track for Power users",
+      "slug": "chrometa-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timely vs Toggl Track for Power users",
+      "slug": "timely-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timely",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Memtime vs Toggl Track for Power users",
+      "slug": "memtime-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Memtime",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timing (Time Tracking App) vs Toggl Track for Power users",
+      "slug": "timing-time-tracking-app-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timing (Time Tracking App)",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Chrometa vs TimeTagger for Power users",
+      "slug": "chrometa-vs-timetagger-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "TimeTagger",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timely vs TimingApp for Power users",
+      "slug": "timely-vs-timingapp-for-power-user",
+      "exists": true,
+      "x_name": "Timely",
+      "y_name": "TimingApp",
+      "persona": "Power user"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Harvest vs Kimai for Non-technical users",
+  "slug": "harvest-vs-kimai-for-non-technical-user",
+  "meta_description": "Compare Harvest vs Kimai for Non-technical users. Harvest wins when you want time tracking without server setup or installation.",
+  "persona": "Non-technical user",
+  "constraint_lens": "You want a time tracking tool that works without setup steps that feel risky or easy to break.",
+  "one_second_verdict": {
+    "winner_label": "Harvest",
+    "summary": "Best for tracking billable hours without installing or managing servers.",
+    "reason": "Kimai fails first because it requires setting up hosting and configuring a server before you can start tracking time."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Harvest is the better choice when you want a tool that works immediately without technical setup. It runs as a hosted service, so you can sign in and start tracking time right away. Kimai requires installing the software on a server or hosting environment, which involves setup steps that can feel risky and confusing if you are not technical.",
+    "decision_rule": "If using the tool requires self-hosting setup or server configuration before tracking time, Kimai fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Harvest fits simple, no-setup tracking",
+      "content": "You want to track billable hours without dealing with installations or servers. Harvest works as a ready-to-use web app where you can start a timer immediately. Kimai requires setting up hosting, installing the software, and managing the environment, which introduces steps that feel easy to break."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Harvest wins",
+      "bullets": [
+        {
+          "point": "The tool runs as a hosted service with no installation or server setup required.",
+          "why_it_matters": "This lets you start tracking time immediately without technical steps."
+        },
+        {
+          "point": "You can create projects and start timers directly after signing in.",
+          "why_it_matters": "This keeps the workflow simple and avoids setup errors."
+        },
+        {
+          "point": "All updates and maintenance are handled automatically by the service.",
+          "why_it_matters": "This removes the risk of breaking the system through manual changes."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Kimai wins",
+      "bullets": [
+        {
+          "point": "The software can be self-hosted on your own server or hosting environment.",
+          "why_it_matters": "This gives full control, but requires setup and ongoing management."
+        },
+        {
+          "point": "You can configure the system to match specific business needs through server-level control.",
+          "why_it_matters": "This allows customization, but adds complexity and risk."
+        },
+        {
+          "point": "Data is fully controlled by you rather than stored on an external service.",
+          "why_it_matters": "This increases ownership, but requires managing infrastructure."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Harvest feels limiting when you want full control over hosting or custom server setup.",
+          "what_to_do_instead": "Use Kimai if you are comfortable managing your own hosting environment."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Kimai breaks when using the tool requires setting up and maintaining a server before tracking time.",
+          "what_to_do_instead": "Use Harvest when you want a ready-to-use tool with no setup."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you are comfortable with server setup or have someone to manage it for you. In that case, Kimai can be useful despite the extra setup steps."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Harvest if you want a tool that works immediately without setup.",
+        "Choose Harvest if you want to avoid servers and installations.",
+        "Choose Kimai only if you are comfortable managing hosting and setup."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Harvest better for Non-technical users?",
+      "a": "Because it works as a hosted service without requiring installation or server setup."
+    },
+    {
+      "q": "Does Kimai require setup?",
+      "a": "Yes, it requires installing and hosting the software on a server."
+    },
+    {
+      "q": "Is Harvest ready to use immediately?",
+      "a": "Yes, you can sign in and start tracking time without any setup."
+    },
+    {
+      "q": "When would a Non-technical user still choose Kimai?",
+      "a": "They might choose Kimai if someone else handles the setup and server management for them."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Fanurio vs Kimai for Non-technical users",
+      "slug": "fanurio-vs-kimai-for-non-technical-user",
+      "exists": true,
+      "x_name": "Fanurio",
+      "y_name": "Kimai",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs Dovico for Non-technical users",
+      "slug": "clockify-vs-dovico-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Dovico",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs eHour for Non-technical users",
+      "slug": "clockify-vs-ehour-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "eHour",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs Tempo Timesheets for Non-technical users",
+      "slug": "clockify-vs-tempo-timesheets-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Tempo Timesheets",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs TimePanic for Non-technical users",
+      "slug": "clockify-vs-timepanic-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "TimePanic",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "ClockShark vs Hubstaff for Non-technical users",
+      "slug": "clockshark-vs-hubstaff-for-non-technical-user",
+      "exists": true,
+      "x_name": "ClockShark",
+      "y_name": "Hubstaff",
+      "persona": "Non-technical user"
+    }
+  ]
+}

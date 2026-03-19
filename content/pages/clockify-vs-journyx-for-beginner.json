@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Clockify vs Journyx for Beginners",
+  "slug": "clockify-vs-journyx-for-beginner",
+  "meta_description": "Clockify vs Journyx for Beginners: Clockify wins for quick logging, while Journyx requires compliance and expense system setup.",
+  "persona": "Beginner",
+  "constraint_lens": "This person wants to start tracking hours immediately without dealing with setup steps or extra systems.",
+  "one_second_verdict": {
+    "winner_label": "Clockify",
+    "summary": "Best for Beginners who want to log hours quickly without setup.",
+    "reason": "Journyx fails first because it requires configuring compliance and expense tracking systems before logging time."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Clockify is the better choice when you want to log hours with minimal setup. It lets you start a timer or enter time without configuring additional systems. Journyx is built around compliance and expense tracking workflows, which introduces setup steps that slow down getting started.",
+    "decision_rule": "If logging time requires configuring enterprise compliance or expense tracking systems before use, Journyx fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Clockify fits Beginners better",
+      "content": "This beginner wants to log hours quickly without dealing with complex setup. Clockify fits because you can create a workspace and start tracking immediately. That avoids the need to configure compliance or expense systems before using the tool."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Journyx wins",
+      "bullets": [
+        {
+          "point": "Journyx includes compliance tracking and expense management features tied to time entries.",
+          "why_it_matters": "This supports business processes, but requires setting up those systems before time tracking feels simple."
+        },
+        {
+          "point": "Its workflow involves configuring policies, expense categories, and reporting rules.",
+          "why_it_matters": "This adds multiple setup steps that slow down first use for beginners."
+        },
+        {
+          "point": "Time tracking is integrated with broader enterprise systems rather than being standalone.",
+          "why_it_matters": "This creates a more complex environment, which can be overwhelming for simple use cases."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Clockify wins",
+      "bullets": [
+        {
+          "point": "Clockify allows starting a timer immediately without configuring compliance or expense systems.",
+          "why_it_matters": "You can log hours right away without setup delays."
+        },
+        {
+          "point": "Projects and tasks can be created quickly without requiring additional systems.",
+          "why_it_matters": "This keeps setup minimal and reduces the number of decisions before tracking time."
+        },
+        {
+          "point": "The interface focuses on simple timers and time entries instead of enterprise workflows.",
+          "why_it_matters": "This makes it easier for beginners to understand and use the tool."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "Journyx breaks down when you want to log hours quickly but must configure compliance or expense systems first.",
+          "what_to_do_instead": "Use Clockify if you want to start tracking immediately without setup."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Clockify becomes limiting when you need integrated compliance and expense tracking tied to time entries.",
+          "what_to_do_instead": "Use Journyx if your workflow requires those systems."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you need compliance tracking and expense management built into your time tracking system. In that case, Journyx may be more useful despite the extra setup."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Clockify if you want to log hours immediately with minimal setup.",
+        "Pick Journyx if you need compliance and expense tracking features.",
+        "Avoid Journyx if you do not want to configure additional systems before tracking time."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Clockify better for beginners?",
+      "a": "Because it lets you start tracking time immediately without configuring additional systems."
+    },
+    {
+      "q": "What makes Journyx harder to use?",
+      "a": "It requires setting up compliance and expense tracking systems before time tracking becomes simple."
+    },
+    {
+      "q": "Is Journyx a bad tool?",
+      "a": "No. It is useful for organizations that need compliance and expense tracking integrated with time tracking."
+    },
+    {
+      "q": "When should I choose Journyx instead?",
+      "a": "Choose Journyx when you need built-in compliance and expense tracking alongside time tracking."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "AccountSight vs Clockify for Beginners",
+      "slug": "accountsight-vs-clockify-for-beginner",
+      "exists": true,
+      "x_name": "AccountSight",
+      "y_name": "Clockify",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Bill4Time vs Clockify for Beginners",
+      "slug": "bill4time-vs-clockify-for-beginner",
+      "exists": true,
+      "x_name": "Bill4Time",
+      "y_name": "Clockify",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Clockify vs Replicon for Beginners",
+      "slug": "clockify-vs-replicon-for-beginner",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Replicon",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Clockify vs TSheets (QuickBooks Time) for Beginners",
+      "slug": "clockify-vs-tsheets-quickbooks-time-for-beginner",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "TSheets (QuickBooks Time)",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Tick vs Toggl Track for Beginners",
+      "slug": "tick-vs-toggl-track-for-beginner",
+      "exists": true,
+      "x_name": "Tick",
+      "y_name": "Toggl Track",
+      "persona": "Beginner"
+    },
+    {
+      "title": "BillQuick vs Toggl Track for Beginners",
+      "slug": "billquick-vs-toggl-track-for-beginner",
+      "exists": true,
+      "x_name": "BillQuick",
+      "y_name": "Toggl Track",
+      "persona": "Beginner"
+    }
+  ]
+}

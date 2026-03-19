@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Kimai vs ManicTime for Solo users",
+  "slug": "kimai-vs-manictime-for-solo-user",
+  "meta_description": "Kimai vs ManicTime for Solo users: ManicTime wins for local tracking since Kimai requires running and maintaining a web server and database.",
+  "persona": "Solo user",
+  "constraint_lens": "This person wants time tracking to keep working without needing to manage servers, databases, or ongoing setup tasks.",
+  "one_second_verdict": {
+    "winner_label": "ManicTime",
+    "summary": "Best for Solo users who want local time tracking without running or maintaining a server.",
+    "reason": "Kimai fails first because it requires running a self-hosted web server and database to keep the tool working."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "ManicTime is the better choice when you want a local time tracking system that runs without ongoing upkeep. It installs as a desktop app and records activity directly on your machine with no server to manage. Kimai requires running a web server and database, which introduces setup work and ongoing maintenance that this persona wants to avoid.",
+    "decision_rule": "If using the tool requires maintaining a self-hosted web server and database instead of running locally with minimal setup, Kimai fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why ManicTime fits Solo users better",
+      "content": "This solo user wants a system that just runs on their machine without needing to think about servers or databases. ManicTime fits because it installs like a regular desktop app and handles tracking locally without extra infrastructure. That removes the need to monitor uptime, manage updates, or fix backend issues."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Kimai wins",
+      "bullets": [
+        {
+          "point": "Kimai runs as a self-hosted web app that you access through a browser after setting up a server and database.",
+          "why_it_matters": "This allows access from multiple devices, but requires maintaining a backend system that can break or require fixes over time."
+        },
+        {
+          "point": "It supports multi-user environments with shared access through a centralized web interface.",
+          "why_it_matters": "This is useful for teams, but adds complexity and overhead that a solo user does not need."
+        },
+        {
+          "point": "Kimai relies on server-side storage and configuration for managing projects, users, and time entries.",
+          "why_it_matters": "This creates ongoing responsibility to keep the system running, which increases maintenance load."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where ManicTime wins",
+      "bullets": [
+        {
+          "point": "ManicTime installs as a desktop application and stores all tracking data locally on the machine.",
+          "why_it_matters": "You do not need to set up or maintain any backend systems, which keeps the tool simple to run long term."
+        },
+        {
+          "point": "Tracking runs automatically in the background without requiring a server or web interface.",
+          "why_it_matters": "This removes the need to manage uptime or access a hosted dashboard just to use the tool."
+        },
+        {
+          "point": "There is no requirement to configure databases, hosting, or deployment before using the tool.",
+          "why_it_matters": "You can start tracking immediately and avoid setup steps that could break or require troubleshooting."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Kimai breaks down when you need to maintain a server and database to keep time tracking working reliably.",
+          "what_to_do_instead": "Use ManicTime if you want a local tool that runs without backend setup or maintenance."
+        },
+        {
+          "tool": "y",
+          "fails_when": "ManicTime becomes limiting when you need shared access across multiple users or devices through a web interface.",
+          "what_to_do_instead": "Use Kimai if you are comfortable managing a server and need centralized access."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you start working with others or need access to your time data from multiple devices through a browser. In that case, Kimai may be worth the setup because the shared web interface becomes useful."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick ManicTime if you want local tracking with no server or database to manage.",
+        "Pick Kimai if you need a web-based system with shared access.",
+        "Avoid Kimai if you do not want to deal with backend setup or maintenance."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is ManicTime better for solo users?",
+      "a": "Because it runs locally as a desktop app and does not require managing a server or database."
+    },
+    {
+      "q": "What makes Kimai harder to maintain?",
+      "a": "It requires setting up and running a web server and database, which adds ongoing maintenance work."
+    },
+    {
+      "q": "Is Kimai a bad tool?",
+      "a": "No. It is useful for users who need a self-hosted web-based system and are comfortable managing it."
+    },
+    {
+      "q": "When should I choose Kimai instead?",
+      "a": "Choose Kimai when you need multi-user access through a browser and are willing to maintain a server."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Clockify vs ManicTime for Solo users",
+      "slug": "clockify-vs-manictime-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "ManicTime",
+      "persona": "Solo user"
+    },
+    {
+      "title": "ActivityWatch vs Clockify for Solo users",
+      "slug": "activitywatch-vs-clockify-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Clockify",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Clockify vs Project Hamster for Solo users",
+      "slug": "clockify-vs-project-hamster-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Project Hamster",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Clockify vs Time Recording for Solo users",
+      "slug": "clockify-vs-time-recording-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Time Recording",
+      "persona": "Solo user"
+    },
+    {
+      "title": "ActivityWatch vs RescueTime for Solo users",
+      "slug": "activitywatch-vs-rescuetime-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "RescueTime",
+      "persona": "Solo user"
+    },
+    {
+      "title": "ActivityWatch vs Timely for Solo users",
+      "slug": "activitywatch-vs-timely-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Timely",
+      "persona": "Solo user"
+    }
+  ]
+}

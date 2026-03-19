@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "MyHours vs Tick for Power users",
+  "slug": "myhours-vs-tick-for-power-user",
+  "meta_description": "MyHours vs Tick for Power users: MyHours wins for flexible tracking, while Tick requires pre-set budgets before logging time.",
+  "persona": "Power user",
+  "constraint_lens": "This person needs a tool that does not limit how they track work and can adapt to different project structures without forced setup.",
+  "one_second_verdict": {
+    "winner_label": "MyHours",
+    "summary": "Best for Power users who want flexible time tracking without being locked into budgets.",
+    "reason": "Tick fails first because it requires setting project budgets before logging time, limiting how freely you can track work."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "MyHours is the better choice when you want flexible time tracking across multiple client projects. It lets you log time without being forced to define budgets upfront, so you can adapt as projects evolve. Tick is built around budget-first tracking, which requires setting limits before logging time and restricts flexibility for changing workflows.",
+    "decision_rule": "If time tracking is constrained by pre-set budgets that must be configured before logging time, Tick fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why MyHours fits Power users better",
+      "content": "This power user manages multiple clients and needs a system that adapts to changing project needs. MyHours fits because you can start tracking time immediately and organize it later without being forced into a budget structure. That allows more flexible workflows without upfront decisions."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where MyHours wins",
+      "bullets": [
+        {
+          "point": "MyHours allows time entries without requiring a predefined budget for each project.",
+          "why_it_matters": "You can start tracking immediately without setting limits, which keeps workflows flexible as projects change."
+        },
+        {
+          "point": "Projects and tasks can be adjusted after time is logged without strict budget constraints.",
+          "why_it_matters": "This lets you refine structure over time instead of being locked into early decisions."
+        },
+        {
+          "point": "The system separates time tracking from budgeting instead of tying them together.",
+          "why_it_matters": "This avoids blocking time entry when budgets are missing or unclear, which is important for flexible tracking."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Tick wins",
+      "bullets": [
+        {
+          "point": "Tick requires setting a budget for each project before logging time.",
+          "why_it_matters": "This enforces financial tracking, but adds setup steps before you can even begin tracking work."
+        },
+        {
+          "point": "Time tracking is directly tied to budget consumption within each project.",
+          "why_it_matters": "This helps monitor spending, but limits flexibility when projects do not follow fixed budgets."
+        },
+        {
+          "point": "The interface is built around budget tracking dashboards rather than open-ended time logging.",
+          "why_it_matters": "This makes budgeting central, but can slow down workflows when you just want to log time freely."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "MyHours becomes less effective when you need strict budget enforcement tied directly to time tracking.",
+          "what_to_do_instead": "Use Tick if you want to track time against fixed budgets with clear limits."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Tick breaks down when you need to log time quickly but must first define budgets for each project.",
+          "what_to_do_instead": "Use MyHours if you want flexible tracking without upfront constraints."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if your work depends on strict budget control where every project must stay within predefined limits. In that case, Tick becomes more useful because budgeting is built into how tracking works."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick MyHours if you want flexible time tracking without setting budgets first.",
+        "Pick Tick if you need to track time against strict project budgets.",
+        "Avoid Tick if you do not want to configure budgets before logging time."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is MyHours better for flexible tracking?",
+      "a": "Because it allows you to log time without requiring predefined budgets, making it easier to adapt to changing projects."
+    },
+    {
+      "q": "What limits Tick for power users?",
+      "a": "It requires setting budgets before tracking time, which restricts flexibility and adds setup steps."
+    },
+    {
+      "q": "Is Tick a bad tool?",
+      "a": "No. It is useful when budget tracking is a priority and projects have fixed limits."
+    },
+    {
+      "q": "When should I choose Tick instead?",
+      "a": "Choose Tick when you need strict budget control and want time tracking tied directly to project limits."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Chrometa vs Toggl Track for Power users",
+      "slug": "chrometa-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timely vs Toggl Track for Power users",
+      "slug": "timely-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timely",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "ActivityWatch vs Toggl Track for Power users",
+      "slug": "activitywatch-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Memtime vs Toggl Track for Power users",
+      "slug": "memtime-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Memtime",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timing (Time Tracking App) vs Toggl Track for Power users",
+      "slug": "timing-time-tracking-app-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timing (Time Tracking App)",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Chrometa vs TimeTagger for Power users",
+      "slug": "chrometa-vs-timetagger-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "TimeTagger",
+      "persona": "Power user"
+    }
+  ]
+}

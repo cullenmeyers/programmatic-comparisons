@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "BigTime vs Toggl Track for Minimalists",
+  "slug": "bigtime-vs-toggl-track-for-minimalist",
+  "meta_description": "BigTime vs Toggl Track for Minimalists: Toggl Track wins for simple timers, while BigTime requires navigating planning and billing features.",
+  "persona": "Minimalist",
+  "constraint_lens": "This person wants a simple timer without navigating extra systems like planning or billing tools.",
+  "one_second_verdict": {
+    "winner_label": "Toggl Track",
+    "summary": "Best for Minimalists who want a simple timer without planning or billing features.",
+    "reason": "BigTime fails first because it requires navigating resource planning and billing modules before tracking time."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Toggl Track is the better choice when you want straightforward time tracking with minimal steps. It lets you start a timer immediately without interacting with other systems. BigTime includes PSA features like resource planning and billing, which adds layers that make simple tracking slower and more complex.",
+    "decision_rule": "If tracking time requires navigating PSA features like resource planning and billing instead of a simple timer, BigTime fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Toggl Track fits Minimalists better",
+      "content": "This minimalist wants a clean and simple way to track time without extra features. Toggl Track fits because you can start a timer directly from the main screen without dealing with planning or billing systems. That keeps the experience focused and easy to use."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where BigTime wins",
+      "bullets": [
+        {
+          "point": "BigTime includes resource planning tools that assign time across team schedules and workloads.",
+          "why_it_matters": "This helps with planning, but adds steps before you can track time."
+        },
+        {
+          "point": "Time tracking is tied to billing systems and invoicing workflows.",
+          "why_it_matters": "This supports billing accuracy, but introduces extra layers for simple tracking."
+        },
+        {
+          "point": "The interface includes dashboards for planning, billing, and project management alongside tracking.",
+          "why_it_matters": "This increases complexity and slows down quick time entry."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Toggl Track wins",
+      "bullets": [
+        {
+          "point": "Toggl Track allows starting a timer directly from the main interface with a single action.",
+          "why_it_matters": "This enables instant tracking without extra steps."
+        },
+        {
+          "point": "Time tracking is not tied to planning or billing modules.",
+          "why_it_matters": "This keeps the workflow simple and focused on tracking time only."
+        },
+        {
+          "point": "The interface is centered around timers and basic project labels instead of full systems.",
+          "why_it_matters": "This reduces clutter and makes the tool easier to use."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "BigTime breaks down when you want to track time quickly but must navigate planning or billing features first.",
+          "what_to_do_instead": "Use Toggl Track if you want a simple timer based workflow."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Toggl Track becomes limiting when you need resource planning and billing tied to time tracking.",
+          "what_to_do_instead": "Use BigTime if you need PSA features integrated with tracking."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you need resource planning and billing tightly integrated with time tracking. In that case, BigTime may be more useful despite the added complexity."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Toggl Track if you want a simple timer with minimal steps.",
+        "Pick BigTime if you need planning and billing features.",
+        "Avoid BigTime if you want to keep time tracking simple."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Toggl Track better for minimalists?",
+      "a": "Because it allows simple timer based tracking without planning or billing systems."
+    },
+    {
+      "q": "What makes BigTime more complex?",
+      "a": "It includes resource planning and billing features that add extra steps before tracking time."
+    },
+    {
+      "q": "Is BigTime a bad tool?",
+      "a": "No. It is useful for teams that need planning and billing integrated with time tracking."
+    },
+    {
+      "q": "When should I choose BigTime instead?",
+      "a": "Choose BigTime when you need resource planning and billing features alongside time tracking."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Ora vs Toggl Track for Minimalists",
+      "slug": "ora-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "Ora",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Accelo vs Toggl Track for Minimalists",
+      "slug": "accelo-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "Accelo",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "ActiveCollab vs Toggl Track for Minimalists",
+      "slug": "activecollab-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "ActiveCollab",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Intervals vs Toggl Track for Minimalists",
+      "slug": "intervals-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "Intervals",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Ora vs Scoro for Minimalists",
+      "slug": "ora-vs-scoro-for-minimalist",
+      "exists": true,
+      "x_name": "Ora",
+      "y_name": "Scoro",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Ora vs TimeCamp for Minimalists",
+      "slug": "ora-vs-timecamp-for-minimalist",
+      "exists": true,
+      "x_name": "Ora",
+      "y_name": "TimeCamp",
+      "persona": "Minimalist"
+    }
+  ]
+}

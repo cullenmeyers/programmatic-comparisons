@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Desklog vs Timeular for Solo users",
+  "slug": "desklog-vs-timeular-for-solo-user",
+  "meta_description": "Desklog vs Timeular for Solo users: Desklog wins for single-device tracking, while Timeular requires a physical tracking device.",
+  "persona": "Solo user",
+  "constraint_lens": "This person wants a tool that runs on one device without needing extra hardware or ongoing upkeep.",
+  "one_second_verdict": {
+    "winner_label": "Desklog",
+    "summary": "Best for Solo users who want to track time on one device without maintaining extra hardware.",
+    "reason": "Timeular fails first because it requires maintaining and interacting with a physical device to switch tasks."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Desklog is the better choice when you want time tracking to run entirely on one device with no extra components. It tracks activity directly on your computer without requiring external hardware. Timeular depends on a physical device that must be paired, maintained, and used for task switching, adding ongoing effort.",
+    "decision_rule": "If tracking time requires maintaining and interacting with a physical device for task switching, Timeular fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Desklog fits Solo users better",
+      "content": "This solo user wants a tool that works independently without extra hardware. Desklog fits because it runs entirely on your computer and tracks activity without requiring a separate device. That removes the need to maintain or interact with additional equipment."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Desklog wins",
+      "bullets": [
+        {
+          "point": "Desklog runs entirely on your computer and tracks activity without requiring external devices.",
+          "why_it_matters": "This eliminates the need to manage or maintain additional hardware."
+        },
+        {
+          "point": "Time tracking and task switching are handled through on screen controls.",
+          "why_it_matters": "This keeps everything in one place and avoids switching between tools or devices."
+        },
+        {
+          "point": "The system does not require pairing or syncing with physical hardware.",
+          "why_it_matters": "This reduces setup steps and ongoing maintenance effort."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Timeular wins",
+      "bullets": [
+        {
+          "point": "Timeular uses a physical device that you flip to switch between tasks.",
+          "why_it_matters": "This provides a tangible tracking method, but requires ongoing interaction."
+        },
+        {
+          "point": "Each side of the device represents a task, requiring setup and mapping.",
+          "why_it_matters": "This adds configuration steps and limits flexibility for task changes."
+        },
+        {
+          "point": "The device must be paired and maintained alongside the tracking software.",
+          "why_it_matters": "This introduces ongoing maintenance and dependency on hardware."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Desklog becomes limiting when you prefer a physical interaction method instead of on screen controls.",
+          "what_to_do_instead": "Use Timeular if you want a device based tracking experience."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Timeular breaks down when you want to track time on one device without maintaining or interacting with hardware.",
+          "what_to_do_instead": "Use Desklog if you want a fully software based solution."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you prefer a physical tracking method and are willing to manage a device for task switching. In that case, Timeular may feel more intuitive."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Desklog if you want single device tracking with no hardware.",
+        "Pick Timeular if you prefer a physical device for tracking.",
+        "Avoid Timeular if you do not want to maintain or interact with extra hardware."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Desklog better for solo users?",
+      "a": "Because it runs entirely on one device without requiring extra hardware or maintenance."
+    },
+    {
+      "q": "What makes Timeular harder to maintain?",
+      "a": "It requires pairing, managing, and interacting with a physical device for tracking."
+    },
+    {
+      "q": "Is Timeular a bad tool?",
+      "a": "No. It is useful for users who prefer a physical way to track time."
+    },
+    {
+      "q": "When should I choose Timeular instead?",
+      "a": "Choose Timeular when you want a device based tracking method and are comfortable maintaining it."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "ActivityWatch vs Clockify for Solo users",
+      "slug": "activitywatch-vs-clockify-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Clockify",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Clockify vs ManicTime for Solo users",
+      "slug": "clockify-vs-manictime-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "ManicTime",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Clockify vs Project Hamster for Solo users",
+      "slug": "clockify-vs-project-hamster-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Project Hamster",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Clockify vs Time Recording for Solo users",
+      "slug": "clockify-vs-time-recording-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Time Recording",
+      "persona": "Solo user"
+    },
+    {
+      "title": "ActivityWatch vs RescueTime for Solo users",
+      "slug": "activitywatch-vs-rescuetime-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "RescueTime",
+      "persona": "Solo user"
+    },
+    {
+      "title": "ActivityWatch vs Timely for Solo users",
+      "slug": "activitywatch-vs-timely-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Timely",
+      "persona": "Solo user"
+    }
+  ]
+}

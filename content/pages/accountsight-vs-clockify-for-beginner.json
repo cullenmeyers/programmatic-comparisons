@@ -1,0 +1,167 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "AccountSight vs Clockify for Beginners",
+  "slug": "accountsight-vs-clockify-for-beginner",
+  "meta_description": "AccountSight vs Clockify for Beginners: Clockify wins for instant logging, while AccountSight requires billing and rate setup first.",
+  "persona": "Beginner",
+  "constraint_lens": "This person needs to start logging hours immediately without setting up billing or rate structures.",
+  "one_second_verdict": {
+    "winner_label": "Clockify",
+    "summary": "Best for Beginners who want to log hours immediately without setting up billing rules.",
+    "reason": "AccountSight fails first because it requires configuring billing rules and rate structures before logging time."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Clockify is the better choice when you want to log hours right away with no setup. It allows you to start a timer or add time entries immediately without configuring anything. AccountSight is built around billing and rate structures, which introduces setup steps before time tracking becomes usable.",
+    "decision_rule": "If logging time requires configuring billing rules and rate structures before entry, AccountSight fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Clockify fits Beginners better",
+      "content": "This beginner just wants to start logging hours without dealing with setup. Clockify fits because you can open the app and start tracking time instantly without configuring billing or rates. That makes it easy to get started with freelancing."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where AccountSight wins",
+      "bullets": [
+        {
+          "point": "AccountSight ties time tracking to billing rules and rate structures for each project or client.",
+          "why_it_matters": "This supports invoicing accuracy, but requires setup before tracking time."
+        },
+        {
+          "point": "Time entries are linked to billing configurations like hourly rates and client contracts.",
+          "why_it_matters": "This improves financial tracking, but adds steps before logging time."
+        },
+        {
+          "point": "The interface includes billing and rate setup screens alongside time tracking.",
+          "why_it_matters": "This increases complexity and slows down first use."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Clockify wins",
+      "bullets": [
+        {
+          "point": "Clockify allows starting a timer immediately from the main interface without setup.",
+          "why_it_matters": "This lets beginners log time right away without extra steps."
+        },
+        {
+          "point": "Time tracking is independent from billing rules or rate structures.",
+          "why_it_matters": "This keeps the workflow simple and easy to understand."
+        },
+        {
+          "point": "The interface focuses on a timer and basic project labels instead of financial setup screens.",
+          "why_it_matters": "This reduces confusion and speeds up getting started."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "AccountSight breaks down when you want to log time immediately but must configure billing rules and rate structures first.",
+          "what_to_do_instead": "Use Clockify if you want instant time tracking."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Clockify becomes limiting when you need billing rules and rate structures tied to time tracking.",
+          "what_to_do_instead": "Use AccountSight if you need structured billing workflows."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you need billing rules and rate structures set up from the start for invoicing. In that case, AccountSight may be more useful despite the setup."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Clockify if you want to log hours immediately with no setup.",
+        "Pick AccountSight if you need billing rules and rate structures.",
+        "Avoid AccountSight if you do not want to configure billing before tracking time."
+      ]
+    },
+    {
+      "type": "faqs",
+      "heading": "",
+      "content": ""
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Clockify better for beginners?",
+      "a": "Because it allows immediate time tracking without requiring setup."
+    },
+    {
+      "q": "What makes AccountSight harder to start with?",
+      "a": "It requires configuring billing rules and rate structures before logging time."
+    },
+    {
+      "q": "Is AccountSight a bad tool?",
+      "a": "No. It is useful for freelancers who need structured billing workflows."
+    },
+    {
+      "q": "When should I choose AccountSight instead?",
+      "a": "Choose AccountSight when you need billing rules and rate structures tied to time tracking."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Bill4Time vs Clockify for Beginners",
+      "slug": "bill4time-vs-clockify-for-beginner",
+      "exists": true,
+      "x_name": "Bill4Time",
+      "y_name": "Clockify",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Clockify vs Journyx for Beginners",
+      "slug": "clockify-vs-journyx-for-beginner",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Journyx",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Clockify vs Replicon for Beginners",
+      "slug": "clockify-vs-replicon-for-beginner",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Replicon",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Clockify vs TSheets (QuickBooks Time) for Beginners",
+      "slug": "clockify-vs-tsheets-quickbooks-time-for-beginner",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "TSheets (QuickBooks Time)",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Tick vs Toggl Track for Beginners",
+      "slug": "tick-vs-toggl-track-for-beginner",
+      "exists": true,
+      "x_name": "Tick",
+      "y_name": "Toggl Track",
+      "persona": "Beginner"
+    },
+    {
+      "title": "BillQuick vs Toggl Track for Beginners",
+      "slug": "billquick-vs-toggl-track-for-beginner",
+      "exists": true,
+      "x_name": "BillQuick",
+      "y_name": "Toggl Track",
+      "persona": "Beginner"
+    }
+  ]
+}

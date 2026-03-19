@@ -1,0 +1,167 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "ActivityWatch vs Clockify for Solo users",
+  "slug": "activitywatch-vs-clockify-for-solo-user",
+  "meta_description": "ActivityWatch vs Clockify for Solo users: ActivityWatch wins for local offline tracking, while Clockify requires accounts and syncing.",
+  "persona": "Solo user",
+  "constraint_lens": "This person wants time tracking that works locally without accounts, syncing, or ongoing setup.",
+  "one_second_verdict": {
+    "winner_label": "ActivityWatch",
+    "summary": "Best for Solo users who want fully local time tracking without accounts or syncing.",
+    "reason": "Clockify fails first because it requires creating and maintaining a cloud account with ongoing sync."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "ActivityWatch is the better choice when you want time tracking that runs entirely on your device. It works offline and stores all data locally without requiring any account. Clockify depends on a cloud account and syncing, which adds ongoing setup and maintenance.",
+    "decision_rule": "If tracking time requires creating and maintaining a cloud account with ongoing sync, Clockify fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why ActivityWatch fits Solo users better",
+      "content": "This solo user wants a tool that works without relying on accounts or internet access. ActivityWatch fits because it runs locally and stores all data on your device. That removes the need to manage accounts or maintain syncing."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where ActivityWatch wins",
+      "bullets": [
+        {
+          "point": "ActivityWatch stores all tracking data locally on your device without cloud syncing.",
+          "why_it_matters": "This keeps everything private and eliminates account maintenance."
+        },
+        {
+          "point": "The tool works fully offline without requiring login or internet connection.",
+          "why_it_matters": "This ensures tracking works anytime without dependency on external services."
+        },
+        {
+          "point": "Activity tracking runs automatically on device without sending data externally.",
+          "why_it_matters": "This reduces complexity and avoids ongoing syncing issues."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Clockify wins",
+      "bullets": [
+        {
+          "point": "Clockify stores time entries in a cloud account accessible across devices.",
+          "why_it_matters": "This allows syncing, but requires account setup and maintenance."
+        },
+        {
+          "point": "Time tracking depends on logging into an account and syncing data online.",
+          "why_it_matters": "This adds dependency on internet and account management."
+        },
+        {
+          "point": "The interface is built around a web dashboard that manages projects and entries online.",
+          "why_it_matters": "This centralizes data, but introduces ongoing overhead."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "ActivityWatch becomes limiting when you need to sync data across devices or collaborate with others.",
+          "what_to_do_instead": "Use Clockify if you need cloud based access and sharing."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Clockify breaks down when you want fully local tracking but must create and maintain an account with syncing.",
+          "what_to_do_instead": "Use ActivityWatch if you want offline local tracking."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you need to access your time tracking across multiple devices or share it with others. In that case, Clockify may be more useful despite the account requirement."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick ActivityWatch if you want local offline tracking with no accounts.",
+        "Pick Clockify if you need cloud syncing across devices.",
+        "Avoid Clockify if you do not want to maintain an account or rely on internet access."
+      ]
+    },
+    {
+      "type": "faqs",
+      "heading": "",
+      "content": ""
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is ActivityWatch better for solo users?",
+      "a": "Because it runs locally without requiring accounts or syncing."
+    },
+    {
+      "q": "What makes Clockify less suitable here?",
+      "a": "It requires creating and maintaining a cloud account with ongoing syncing."
+    },
+    {
+      "q": "Is Clockify a bad tool?",
+      "a": "No. It is useful for users who need cloud access and collaboration."
+    },
+    {
+      "q": "When should I choose Clockify instead?",
+      "a": "Choose Clockify when you need to sync data across devices or share it with others."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "ActivityWatch vs RescueTime for Solo users",
+      "slug": "activitywatch-vs-rescuetime-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "RescueTime",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Clockify vs ManicTime for Solo users",
+      "slug": "clockify-vs-manictime-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "ManicTime",
+      "persona": "Solo user"
+    },
+    {
+      "title": "ActivityWatch vs Timely for Solo users",
+      "slug": "activitywatch-vs-timely-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Timely",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Clockify vs Project Hamster for Solo users",
+      "slug": "clockify-vs-project-hamster-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Project Hamster",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Clockify vs Time Recording for Solo users",
+      "slug": "clockify-vs-time-recording-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Time Recording",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Everlance vs QuickBooks Time for Solo users",
+      "slug": "everlance-vs-quickbooks-time-for-solo-user",
+      "exists": true,
+      "x_name": "Everlance",
+      "y_name": "QuickBooks Time",
+      "persona": "Solo user"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Grindstone vs RescueTime for Power users",
+  "slug": "grindstone-vs-rescuetime-for-power-user",
+  "meta_description": "Grindstone vs RescueTime for Power users: Grindstone wins for explicit session control, while RescueTime relies on passive activity detection.",
+  "persona": "Power user",
+  "constraint_lens": "This person wants full control over how time is tracked and does not want the system deciding or guessing activity for them.",
+  "one_second_verdict": {
+    "winner_label": "Grindstone",
+    "summary": "Best for Power users who want full control by starting and stopping sessions manually.",
+    "reason": "RescueTime fails first because it relies on passive activity detection that guesses what you are doing instead of explicit session tracking."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Grindstone is the better choice when you want full control over how your time is tracked. It uses explicit start and stop sessions so every entry is intentional and clearly defined. RescueTime relies on passive tracking that infers activity based on app usage, which can feel limiting when you want precise control instead of automated guesses.",
+    "decision_rule": "If tracking relies on passive activity detection instead of explicit start/stop sessions, RescueTime fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Grindstone fits Power users better",
+      "content": "This power user wants to control exactly when tracking starts and stops rather than relying on automation. Grindstone fits because you manually start and stop sessions for each task, ensuring that every tracked entry is intentional. That avoids relying on a system that tries to guess what you are doing."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Grindstone wins",
+      "bullets": [
+        {
+          "point": "Grindstone requires you to explicitly start and stop timers for each task.",
+          "why_it_matters": "This gives full control over what gets tracked, ensuring no time is logged without your intention."
+        },
+        {
+          "point": "Each session is tied to a manually selected task rather than inferred activity.",
+          "why_it_matters": "This keeps records clean and precise because they are based on deliberate input instead of guesses."
+        },
+        {
+          "point": "The workflow is built around active session management instead of background monitoring.",
+          "why_it_matters": "This avoids unwanted tracking and ensures that only meaningful work sessions are recorded."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where RescueTime wins",
+      "bullets": [
+        {
+          "point": "RescueTime runs in the background and tracks activity automatically based on app and website usage.",
+          "why_it_matters": "This captures everything without effort, but relies on inferred activity rather than explicit sessions."
+        },
+        {
+          "point": "It categorizes time automatically based on predefined rules and activity patterns.",
+          "why_it_matters": "This reduces manual input, but can misclassify work when the system guesses incorrectly."
+        },
+        {
+          "point": "RescueTime provides automatic reports and insights without requiring manual tracking.",
+          "why_it_matters": "This is useful for passive analysis, but removes direct control over how time is recorded."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Grindstone becomes limiting when you forget to start or stop sessions, leading to missing or incomplete data.",
+          "what_to_do_instead": "Use RescueTime if you want automatic tracking that captures activity without manual input."
+        },
+        {
+          "tool": "y",
+          "fails_when": "RescueTime breaks down when you need precise control but it guesses activity based on background usage instead of explicit sessions.",
+          "what_to_do_instead": "Use Grindstone if you want full control over when tracking starts and stops."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you do not want to manage timers and prefer automatic tracking of everything you do. In that case, RescueTime may be better because it requires no manual input."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Grindstone if you want full control with manual start and stop tracking.",
+        "Pick RescueTime if you prefer automatic tracking without manual input.",
+        "Avoid RescueTime if you do not want the system guessing your activity."
+      ]
+    },
+    {
+      "type": "faqs",
+      "heading": "",
+      "content": ""
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Grindstone better for control?",
+      "a": "Because it requires you to manually start and stop sessions, ensuring every tracked entry is intentional."
+    },
+    {
+      "q": "What limits RescueTime for power users?",
+      "a": "It relies on passive tracking and guesses activity, which can reduce control and accuracy."
+    },
+    {
+      "q": "Is RescueTime a bad tool?",
+      "a": "No. It is useful for automatic tracking and insights when you do not want to manage timers."
+    },
+    {
+      "q": "When should I choose RescueTime instead?",
+      "a": "Choose RescueTime when you prefer automatic tracking and do not need precise control over sessions."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Chrometa vs Toggl Track for Power users",
+      "slug": "chrometa-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timely vs Toggl Track for Power users",
+      "slug": "timely-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timely",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "ActivityWatch vs Toggl Track for Power users",
+      "slug": "activitywatch-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Memtime vs Toggl Track for Power users",
+      "slug": "memtime-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Memtime",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timing (Time Tracking App) vs Toggl Track for Power users",
+      "slug": "timing-time-tracking-app-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timing (Time Tracking App)",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Chrometa vs TimeTagger for Power users",
+      "slug": "chrometa-vs-timetagger-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "TimeTagger",
+      "persona": "Power user"
+    }
+  ]
+}

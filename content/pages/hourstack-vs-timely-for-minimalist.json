@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "HourStack vs Timely for Minimalists",
+  "slug": "hourstack-vs-timely-for-minimalist",
+  "meta_description": "HourStack vs Timely for Minimalists: HourStack wins for visual planning, while Timely relies on automatic background tracking.",
+  "persona": "Minimalist",
+  "constraint_lens": "This person wants a simple, visual way to plan and track time without background tracking systems.",
+  "one_second_verdict": {
+    "winner_label": "HourStack",
+    "summary": "Best for Minimalists who want visual time planning instead of automatic background tracking.",
+    "reason": "Timely fails first because it relies on automatic background tracking instead of scheduled visual time blocks."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "HourStack is the better choice when you want to plan and track time using a visual calendar style layout. It lets you drag and schedule time blocks directly, keeping tracking simple and intentional. Timely relies on automatic background tracking, which adds an extra system that may feel unnecessary and harder to control.",
+    "decision_rule": "If tracking time depends on automatic background tracking instead of scheduled visual time blocks, Timely fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why HourStack fits Minimalists better",
+      "content": "This minimalist wants a clear and simple way to plan time visually. HourStack fits because it uses a calendar style interface where you drag and place time blocks without relying on background tracking. That keeps everything visible and easy to control."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where HourStack wins",
+      "bullets": [
+        {
+          "point": "HourStack uses a drag and drop calendar interface to schedule and track time blocks.",
+          "why_it_matters": "This keeps tracking visual and easy to understand without extra systems."
+        },
+        {
+          "point": "Time tracking is based on planned blocks instead of automatic background detection.",
+          "why_it_matters": "This gives clear control over how time is recorded."
+        },
+        {
+          "point": "The interface focuses on visual timelines instead of hidden tracking processes.",
+          "why_it_matters": "This reduces complexity and keeps everything visible."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Timely wins",
+      "bullets": [
+        {
+          "point": "Timely automatically records activity in the background without manual input.",
+          "why_it_matters": "This captures time automatically, but introduces a system running behind the scenes."
+        },
+        {
+          "point": "Time entries are generated from detected app and work activity.",
+          "why_it_matters": "This reduces manual work, but removes direct control over tracking."
+        },
+        {
+          "point": "The interface focuses on reviewing automatically captured time instead of planning it visually.",
+          "why_it_matters": "This shifts the workflow away from visual planning."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "HourStack becomes limiting when you want automatic capture of all activity without planning time blocks.",
+          "what_to_do_instead": "Use Timely if you want automatic background tracking."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Timely breaks down when you prefer visual planning but must rely on automatic background tracking instead.",
+          "what_to_do_instead": "Use HourStack if you want visual time blocks."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you want time tracking to happen automatically without planning blocks in advance. In that case, Timely may be more useful."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick HourStack if you want visual time planning and tracking.",
+        "Pick Timely if you want automatic background tracking.",
+        "Avoid Timely if you do not want tracking running in the background."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is HourStack better for minimalists?",
+      "a": "Because it uses visual time blocks instead of background tracking systems."
+    },
+    {
+      "q": "What makes Timely different?",
+      "a": "It relies on automatic background tracking instead of visual planning."
+    },
+    {
+      "q": "Is Timely a bad tool?",
+      "a": "No. It is useful for users who want automatic time capture."
+    },
+    {
+      "q": "When should I choose Timely instead?",
+      "a": "Choose Timely when you want automatic tracking without planning time blocks."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Clockify vs Timely for Minimalists",
+      "slug": "clockify-vs-timely-for-minimalist",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Timely",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Ora vs Toggl Track for Minimalists",
+      "slug": "ora-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "Ora",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Accelo vs Toggl Track for Minimalists",
+      "slug": "accelo-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "Accelo",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "ActiveCollab vs Toggl Track for Minimalists",
+      "slug": "activecollab-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "ActiveCollab",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "BigTime vs Toggl Track for Minimalists",
+      "slug": "bigtime-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "BigTime",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Intervals vs Toggl Track for Minimalists",
+      "slug": "intervals-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "Intervals",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    }
+  ]
+}

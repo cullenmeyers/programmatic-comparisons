@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Clockify vs Kimai for Power users",
+  "slug": "clockify-vs-kimai-for-power-user",
+  "meta_description": "Compare Clockify vs Kimai for Power users. Kimai wins when you need self-hosting and deep customization of your tracking system.",
+  "persona": "Power user",
+  "constraint_lens": "You need a time tracking tool that you can fully control and customize without hitting limits.",
+  "one_second_verdict": {
+    "winner_label": "Kimai",
+    "summary": "Best for building a fully customizable time tracking system with self-hosting and full data control.",
+    "reason": "Clockify fails first because it runs as a hosted service without self-hosting or deep system-level customization."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Kimai is the better choice when you want full control over your time tracking system. It can be self-hosted and customized at the system level, including how data is stored and managed. Clockify runs as a hosted service with fixed structure and limited customization, which means you cannot extend or control the system beyond its built-in features.",
+    "decision_rule": "If the tool does not allow self-hosting or deep customization of the tracking system, Clockify fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Kimai fits full system control",
+      "content": "You want to control how your time tracking system works, including hosting and customization. Kimai can be installed on your own server and modified to fit your workflow. Clockify is a hosted tool, which means you use the system as provided and cannot change its structure or hosting environment."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Kimai wins",
+      "bullets": [
+        {
+          "point": "The tool can be self-hosted on your own server or infrastructure.",
+          "why_it_matters": "This gives you full control over your data and how the system is run."
+        },
+        {
+          "point": "The system can be customized at the server and application level.",
+          "why_it_matters": "This allows you to adjust workflows and features beyond standard limits."
+        },
+        {
+          "point": "Data storage and access are fully controlled by your own environment.",
+          "why_it_matters": "This removes dependency on external services and allows deeper customization."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Clockify wins",
+      "bullets": [
+        {
+          "point": "The tool is ready to use as a hosted service with no setup required.",
+          "why_it_matters": "This makes it easy to start, but limits control over the system."
+        },
+        {
+          "point": "Time tracking features are available immediately after signing in.",
+          "why_it_matters": "This removes setup effort, but prevents deep customization."
+        },
+        {
+          "point": "All infrastructure and maintenance are handled automatically.",
+          "why_it_matters": "This reduces effort, but removes the ability to control or modify the system."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "Kimai becomes difficult to manage if you do not want to handle server setup or maintenance.",
+          "what_to_do_instead": "Use Clockify if you want a ready-to-use tool with no hosting responsibilities."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Clockify breaks when you need self-hosting or deeper customization beyond built-in features.",
+          "what_to_do_instead": "Use Kimai when you want full control over your system."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you prefer a tool that works immediately without managing servers or customization. In that case, Clockify can be better despite its limitations."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Kimai if you want self-hosting and full system control.",
+        "Choose Kimai if you need deep customization beyond standard features.",
+        "Choose Clockify if you want a ready-to-use tool with no setup."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Kimai better for Power users?",
+      "a": "Because it allows self-hosting and deep customization of the time tracking system."
+    },
+    {
+      "q": "Can Clockify be self-hosted?",
+      "a": "No, it runs as a hosted service without self-hosting options."
+    },
+    {
+      "q": "Does Kimai require setup?",
+      "a": "Yes, it requires installing and managing the system on your own server."
+    },
+    {
+      "q": "When would a Power user still choose Clockify?",
+      "a": "A Power user might choose Clockify if they want a simple tool without managing hosting or customization."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Chrometa vs Toggl Track for Power users",
+      "slug": "chrometa-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timely vs Toggl Track for Power users",
+      "slug": "timely-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timely",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "ActivityWatch vs Toggl Track for Power users",
+      "slug": "activitywatch-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Memtime vs Toggl Track for Power users",
+      "slug": "memtime-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Memtime",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timing (Time Tracking App) vs Toggl Track for Power users",
+      "slug": "timing-time-tracking-app-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timing (Time Tracking App)",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Chrometa vs TimeTagger for Power users",
+      "slug": "chrometa-vs-timetagger-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "TimeTagger",
+      "persona": "Power user"
+    }
+  ]
+}

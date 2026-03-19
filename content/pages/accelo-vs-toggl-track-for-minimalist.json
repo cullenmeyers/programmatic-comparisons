@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Accelo vs Toggl Track for Minimalists",
+  "slug": "accelo-vs-toggl-track-for-minimalist",
+  "meta_description": "Accelo vs Toggl Track for Minimalists: Toggl Track wins for simple timers, while Accelo requires navigating CRM and billing modules.",
+  "persona": "Minimalist",
+  "constraint_lens": "This person wants a tool that focuses only on time tracking and avoids extra systems or layers.",
+  "one_second_verdict": {
+    "winner_label": "Toggl Track",
+    "summary": "Best for Minimalists who want a simple timer without CRM, project, or billing features.",
+    "reason": "Accelo fails first because it requires navigating CRM, project, and billing modules before starting a timer."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Toggl Track is the better choice when you want a clean, focused timer with no extra layers. It lets you start tracking immediately without interacting with other systems. Accelo combines CRM, project management, and billing, which introduces additional steps that get in the way of simple time tracking.",
+    "decision_rule": "If tracking time requires navigating CRM, project, or billing modules instead of a simple timer workflow, Accelo fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Toggl Track fits Minimalists better",
+      "content": "This minimalist wants a tool that stays focused on time tracking without extra features. Toggl Track fits because you can start a timer directly without dealing with CRM, projects, or billing systems. That keeps the experience simple and distraction free."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Accelo wins",
+      "bullets": [
+        {
+          "point": "Accelo combines time tracking with CRM, project management, and billing in a single platform.",
+          "why_it_matters": "This centralizes operations, but adds multiple layers that must be navigated before tracking time."
+        },
+        {
+          "point": "Time tracking is tied to client records, projects, and billing workflows.",
+          "why_it_matters": "This helps with business processes, but requires selecting or managing these elements before starting a timer."
+        },
+        {
+          "point": "The interface includes client pipelines, project views, and billing dashboards alongside time tracking.",
+          "why_it_matters": "This adds complexity and increases the number of decisions before logging time."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Toggl Track wins",
+      "bullets": [
+        {
+          "point": "Toggl Track allows starting a timer directly from the main screen without navigating other modules.",
+          "why_it_matters": "You can begin tracking instantly without extra steps."
+        },
+        {
+          "point": "Projects and tags are optional and not required to start tracking.",
+          "why_it_matters": "This keeps setup minimal and avoids unnecessary structure."
+        },
+        {
+          "point": "The interface is focused on timers and time entries instead of combining multiple systems.",
+          "why_it_matters": "This reduces distractions and keeps the workflow simple."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Accelo breaks down when you want to track time quickly but must navigate CRM, project, or billing modules first.",
+          "what_to_do_instead": "Use Toggl Track if you want a simple timer workflow."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Toggl Track becomes limiting when you need CRM, project management, and billing integrated with time tracking.",
+          "what_to_do_instead": "Use Accelo if you want an all-in-one business system."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you want to manage clients, projects, and billing in the same tool as time tracking. In that case, Accelo may be more useful despite the added complexity."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Toggl Track if you want a simple timer with no extra features.",
+        "Pick Accelo if you want CRM, projects, and billing in one tool.",
+        "Avoid Accelo if you do not want to navigate multiple systems to track time."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Toggl Track better for minimalists?",
+      "a": "Because it focuses on simple time tracking without requiring interaction with other systems."
+    },
+    {
+      "q": "What makes Accelo more complex?",
+      "a": "It combines CRM, project management, and billing with time tracking, adding extra layers."
+    },
+    {
+      "q": "Is Accelo a bad tool?",
+      "a": "No. It is useful for businesses that want an all-in-one system for managing operations."
+    },
+    {
+      "q": "When should I choose Accelo instead?",
+      "a": "Choose Accelo when you need CRM, project management, and billing alongside time tracking."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Ora vs Toggl Track for Minimalists",
+      "slug": "ora-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "Ora",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "ActiveCollab vs Toggl Track for Minimalists",
+      "slug": "activecollab-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "ActiveCollab",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "BigTime vs Toggl Track for Minimalists",
+      "slug": "bigtime-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "BigTime",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Intervals vs Toggl Track for Minimalists",
+      "slug": "intervals-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "Intervals",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Ora vs Scoro for Minimalists",
+      "slug": "ora-vs-scoro-for-minimalist",
+      "exists": true,
+      "x_name": "Ora",
+      "y_name": "Scoro",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Ora vs TimeCamp for Minimalists",
+      "slug": "ora-vs-timecamp-for-minimalist",
+      "exists": true,
+      "x_name": "Ora",
+      "y_name": "TimeCamp",
+      "persona": "Minimalist"
+    }
+  ]
+}

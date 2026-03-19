@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Clockify vs Dovico for Non-technical users",
+  "slug": "clockify-vs-dovico-for-non-technical-user",
+  "meta_description": "Clockify vs Dovico for Non-technical users: Clockify wins for simple team tracking, while Dovico requires approval chains and permissions setup.",
+  "persona": "Non-technical user",
+  "constraint_lens": "This person needs a tool that works without complex setup and avoids systems that could break during configuration.",
+  "one_second_verdict": {
+    "winner_label": "Clockify",
+    "summary": "Best for Non-technical users who want simple team time tracking without setup complexity.",
+    "reason": "Dovico fails first because it requires configuring multi-level approval workflows and permissions before tracking time."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Clockify is the better choice when you want to track team time without dealing with complex setup. It lets you create projects and start logging hours without configuring approval chains or permission systems first. Dovico is built around enterprise workflows, which require setting up approvals and roles before the tool works smoothly, adding risk and extra steps.",
+    "decision_rule": "If tracking time requires configuring multi-level approval workflows and permissions before use, Dovico fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Clockify fits Non-technical users better",
+      "content": "This non-technical user wants to track team hours without dealing with complex systems. Clockify fits because you can set up a workspace and start logging time without configuring approval chains or permissions. That keeps things simple and reduces the chance of making mistakes during setup."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Dovico wins",
+      "bullets": [
+        {
+          "point": "Dovico includes multi-level approval workflows that require defining managers, roles, and approval steps for timesheets.",
+          "why_it_matters": "This supports structured oversight, but forces setup decisions before time tracking can run smoothly."
+        },
+        {
+          "point": "Its system relies on permission controls that define who can view, edit, or approve time entries.",
+          "why_it_matters": "This improves control, but adds complexity that can be confusing to configure correctly."
+        },
+        {
+          "point": "Dovico organizes time tracking around enterprise workflows with enforced processes and validations.",
+          "why_it_matters": "This ensures consistency, but increases the number of steps required to get started."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Clockify wins",
+      "bullets": [
+        {
+          "point": "Clockify allows creating a workspace and adding team members without requiring approval workflows upfront.",
+          "why_it_matters": "You can start tracking time immediately without configuring complex systems."
+        },
+        {
+          "point": "Time entries can be logged directly without needing permissions or approval chains set first.",
+          "why_it_matters": "This keeps the process simple and reduces the risk of setup errors."
+        },
+        {
+          "point": "The interface focuses on basic projects and timers instead of enforced workflow structures.",
+          "why_it_matters": "This minimizes decisions during setup, making it easier for non-technical users to get started."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "Dovico breaks down when you need to track team hours quickly but must first configure approval chains and permissions.",
+          "what_to_do_instead": "Use Clockify if you want to start tracking without setting up complex workflows."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Clockify becomes limiting when you need strict approval processes and detailed permission control for time tracking.",
+          "what_to_do_instead": "Use Dovico if your workflow requires structured approvals and role-based access."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if your team needs formal approval processes and strict permission controls for timesheets. In that case, Dovico may be more suitable because those features are built into how it works."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Clockify if you want simple team time tracking with minimal setup.",
+        "Pick Dovico if you need approval workflows and permission controls.",
+        "Avoid Dovico if you do not want to configure complex systems before tracking time."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Clockify better for non-technical users?",
+      "a": "Because it allows you to start tracking time without setting up approval workflows or permissions."
+    },
+    {
+      "q": "What makes Dovico harder to use?",
+      "a": "It requires configuring approval chains and permissions, which adds complexity and setup steps."
+    },
+    {
+      "q": "Is Dovico a bad tool?",
+      "a": "No. It is useful for teams that need structured approval processes and detailed control."
+    },
+    {
+      "q": "When should I choose Dovico instead?",
+      "a": "Choose Dovico when your team requires formal approvals and role-based access for time tracking."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Clockify vs eHour for Non-technical users",
+      "slug": "clockify-vs-ehour-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "eHour",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs Tempo Timesheets for Non-technical users",
+      "slug": "clockify-vs-tempo-timesheets-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Tempo Timesheets",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs TimePanic for Non-technical users",
+      "slug": "clockify-vs-timepanic-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "TimePanic",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Fanurio vs Kimai for Non-technical users",
+      "slug": "fanurio-vs-kimai-for-non-technical-user",
+      "exists": true,
+      "x_name": "Fanurio",
+      "y_name": "Kimai",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Harvest vs Kimai for Non-technical users",
+      "slug": "harvest-vs-kimai-for-non-technical-user",
+      "exists": true,
+      "x_name": "Harvest",
+      "y_name": "Kimai",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "ClockShark vs Hubstaff for Non-technical users",
+      "slug": "clockshark-vs-hubstaff-for-non-technical-user",
+      "exists": true,
+      "x_name": "ClockShark",
+      "y_name": "Hubstaff",
+      "persona": "Non-technical user"
+    }
+  ]
+}

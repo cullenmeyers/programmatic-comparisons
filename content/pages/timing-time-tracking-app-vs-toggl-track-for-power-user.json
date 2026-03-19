@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Timing (Time Tracking App) vs Toggl Track for Power users",
+  "slug": "timing-time-tracking-app-vs-toggl-track-for-power-user",
+  "meta_description": "Timing vs Toggl Track for Power users: Timing wins with automatic macOS app-based tracking, while Toggl Track depends on manual timers.",
+  "persona": "Power user",
+  "constraint_lens": "This person wants tracking to run automatically based on real activity and not be limited by manual input or missed actions.",
+  "one_second_verdict": {
+    "winner_label": "Timing (Time Tracking App)",
+    "summary": "Best for Power users on macOS who want automatic time tracking based on app usage.",
+    "reason": "Toggl Track fails first because it relies on manually starting and stopping timers instead of capturing activity automatically."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Timing is the better choice when you want fully automatic time tracking tied to what you do on your Mac. It records app usage, documents, and browsing activity without requiring manual timers. Toggl Track depends on starting and stopping timers, which limits how much detail you capture and creates gaps when you forget.",
+    "decision_rule": "If tracking time requires manually starting and stopping timers instead of automatic app-based tracking, Toggl Track fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Timing (Time Tracking App) fits Power users better",
+      "content": "This power user works entirely on macOS and wants tracking to happen automatically without interruptions. Timing fits because it monitors app usage and activity in the background and builds a detailed timeline without manual input. That allows you to capture everything without relying on memory or timers."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Timing (Time Tracking App) wins",
+      "bullets": [
+        {
+          "point": "Timing automatically records time based on active apps, documents, and websites on macOS.",
+          "why_it_matters": "This creates a continuous activity log without requiring manual timers, so no time is missed when switching tasks."
+        },
+        {
+          "point": "It uses rules to categorize activities based on app or URL patterns.",
+          "why_it_matters": "This lets you organize tracked time automatically, reducing the need to manually assign entries after the fact."
+        },
+        {
+          "point": "All tracking runs in the background without user interaction.",
+          "why_it_matters": "This removes reliance on remembering to start or stop tracking, which is critical for capturing complete data."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Toggl Track wins",
+      "bullets": [
+        {
+          "point": "Toggl Track uses a simple manual timer that you start and stop for each task.",
+          "why_it_matters": "This gives control over what gets tracked, but depends on remembering to use the timer every time."
+        },
+        {
+          "point": "It allows manual entry and editing of time logs after the fact.",
+          "why_it_matters": "This helps correct mistakes, but adds extra steps when you want tracking to be automatic."
+        },
+        {
+          "point": "Toggl Track works across multiple platforms with a consistent timer-based workflow.",
+          "why_it_matters": "This is useful for cross-device tracking, but does not match the depth of automatic tracking on a single machine."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Timing becomes limiting when you need tracking across non-macOS devices or want a unified system outside the Mac environment.",
+          "what_to_do_instead": "Use Toggl Track if you need cross-platform tracking with a consistent workflow."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Toggl Track breaks down when you forget to start or stop timers, leading to missing or incomplete time data.",
+          "what_to_do_instead": "Use Timing if you want automatic tracking that captures activity without manual input."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you work across multiple devices or operating systems and need one consistent tracking system everywhere. In that case, Toggl Track may be better because it is not tied to macOS."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Timing if you want automatic tracking based on app usage on macOS.",
+        "Pick Toggl Track if you need cross-platform tracking with manual control.",
+        "Avoid Toggl Track if you want to eliminate manual timers completely."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Timing better for automation?",
+      "a": "Because it tracks activity automatically based on app and system usage without requiring manual timers."
+    },
+    {
+      "q": "What limits Toggl Track for power users?",
+      "a": "It depends on manually starting and stopping timers, which can lead to missing or incomplete data."
+    },
+    {
+      "q": "Is Toggl Track still useful?",
+      "a": "Yes. It is useful when you want manual control or need tracking across multiple platforms."
+    },
+    {
+      "q": "When should I choose Toggl Track instead?",
+      "a": "Choose Toggl Track when you need a cross-platform tool or prefer manually controlling what gets tracked."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Chrometa vs Toggl Track for Power users",
+      "slug": "chrometa-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timely vs Toggl Track for Power users",
+      "slug": "timely-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timely",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "ActivityWatch vs Toggl Track for Power users",
+      "slug": "activitywatch-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Memtime vs Toggl Track for Power users",
+      "slug": "memtime-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Memtime",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Chrometa vs TimeTagger for Power users",
+      "slug": "chrometa-vs-timetagger-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "TimeTagger",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timely vs TimingApp for Power users",
+      "slug": "timely-vs-timingapp-for-power-user",
+      "exists": true,
+      "x_name": "Timely",
+      "y_name": "TimingApp",
+      "persona": "Power user"
+    }
+  ]
+}
