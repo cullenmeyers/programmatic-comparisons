@@ -1,0 +1,138 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Instapaper vs Matter (Read It Later App) for Minimalists",
+  "slug": "instapaper-vs-matter-read-it-later-app-for-minimalist",
+  "meta_description": "Instapaper vs Matter for Minimalists: Instapaper wins for distraction-free reading, while Matter adds highlighting and social layers.",
+  "persona": "Minimalist",
+  "constraint_lens": "This person wants a clean reading experience without extra layers like highlights or social features.",
+  "one_second_verdict": {
+    "winner_label": "Instapaper",
+    "summary": "Best for Minimalists who want to read saved articles without extra features.",
+    "reason": "Matter (Read It Later App) fails first because it adds highlighting layers and social features before you can just read."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Instapaper is the better choice when you want a clean, distraction-free reading experience. It opens articles directly into a simplified reader view with minimal UI. Matter adds highlighting systems and social reading layers, which introduce extra steps and decisions before reading.",
+    "decision_rule": "If reading saved content requires interacting with highlighting layers or social features before just reading, Matter (Read It Later App) fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Instapaper fits Minimalists better",
+      "content": "This minimalist wants to open an article and start reading immediately. Instapaper fits because it strips away clutter and presents a clean reader view with minimal controls. That keeps the focus entirely on reading without distractions."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Instapaper wins",
+      "bullets": [
+        {
+          "point": "Instapaper loads articles into a clean reader view with only text and basic formatting.",
+          "why_it_matters": "This removes distractions and lets you start reading immediately."
+        },
+        {
+          "point": "The interface minimizes controls and hides features like highlighting unless you actively use them.",
+          "why_it_matters": "This keeps the reading experience simple and focused."
+        },
+        {
+          "point": "Saved articles open directly into reading mode instead of a layered interface.",
+          "why_it_matters": "This reduces friction and avoids extra decisions before reading."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Matter (Read It Later App) wins",
+      "bullets": [
+        {
+          "point": "Matter includes built-in highlighting and note taking tools layered on top of articles.",
+          "why_it_matters": "This supports deeper reading, but adds interaction before or during reading."
+        },
+        {
+          "point": "The app surfaces highlighted passages and reading insights across content.",
+          "why_it_matters": "This can be useful, but introduces extra visual elements and decisions."
+        },
+        {
+          "point": "Matter includes social and discovery features tied to reading activity.",
+          "why_it_matters": "This adds engagement, but pulls attention away from simple reading."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Instapaper becomes limiting when you want to actively highlight, annotate, and engage with reading content in more depth.",
+          "what_to_do_instead": "Use Matter (Read It Later App) if you want integrated highlighting and reading features."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Matter breaks down when you want to just read but are presented with highlighting layers and social features.",
+          "what_to_do_instead": "Use Instapaper if you want a clean reading experience."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you want to actively highlight, take notes, and revisit key ideas while reading. In that case, Matter may be more useful despite the added layers."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Instapaper if you want distraction-free reading.",
+        "Pick Matter if you want highlighting and social reading features.",
+        "Avoid Matter if you do not want extra layers before reading."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Instapaper better for minimalists?",
+      "a": "Because it provides a clean reader view without extra features or distractions."
+    },
+    {
+      "q": "What makes Matter more complex?",
+      "a": "It adds highlighting tools and social features on top of the reading experience."
+    },
+    {
+      "q": "Is Matter a bad app?",
+      "a": "No. It is useful for readers who want to highlight and engage more deeply with content."
+    },
+    {
+      "q": "When should I choose Matter instead?",
+      "a": "Choose Matter when you want to highlight, annotate, and revisit key ideas from your reading."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Instapaper vs Pinboard for Minimalists",
+      "slug": "instapaper-vs-pinboard-for-minimalist",
+      "exists": true,
+      "x_name": "Instapaper",
+      "y_name": "Pinboard",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Instapaper vs Raindrop.io for Minimalists",
+      "slug": "instapaper-vs-raindropio-for-minimalist",
+      "exists": true,
+      "x_name": "Instapaper",
+      "y_name": "Raindrop.io",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "GoodLinks vs Pocket for Minimalists",
+      "slug": "goodlinks-vs-pocket-for-minimalist",
+      "exists": true,
+      "x_name": "GoodLinks",
+      "y_name": "Pocket",
+      "persona": "Minimalist"
+    }
+  ]
+}

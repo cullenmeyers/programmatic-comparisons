@@ -1,0 +1,162 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Pocket vs Wallabag for Power users",
+  "slug": "pocket-vs-wallabag-for-power-user",
+  "meta_description": "Pocket vs Wallabag for Power users: Wallabag wins if you want full control and self-hosting, while Pocket limits you with a fully hosted system.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need tools that let them control data, customize behavior, and extend the system without hitting built-in limits.",
+  "one_second_verdict": {
+    "winner_label": "Wallabag",
+    "summary": "Best for owning your reading system and customizing how it runs and stores data.",
+    "reason": "Pocket fails first because all data is locked inside its hosted service with no way to control storage or backend behavior."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Wallabag is the better fit for Power users who want full control over their reading system. It can be self-hosted, which means you control where data lives and how the system is configured. Pocket works well as a simple hosted reader, but its fixed backend and closed data model limit how far you can extend it. For someone who cares about ownership and customization, that ceiling shows up quickly.",
+    "decision_rule": "If controlling data storage and customizing the backend is not possible due to a fully hosted system, Pocket fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Wallabag fits this power user better",
+      "content": "This Power user wants control over data, storage, and how the system behaves. Wallabag matches that because it can run on your own server, giving you direct control over files, database, and configuration. Pocket removes those decisions by design, which is convenient early but limiting once you want to change how things work. For this persona, control is the main goal, not convenience."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Pocket wins",
+      "bullets": [
+        {
+          "point": "Pocket handles storage, syncing, and updates entirely through its hosted service.",
+          "why_it_matters": "You do not need to manage servers or maintenance, which removes setup work but also removes control over how the system runs."
+        },
+        {
+          "point": "The app and browser extension provide a consistent save and read flow across devices.",
+          "why_it_matters": "This makes daily use smooth, but you are locked into the way Pocket structures and processes saved articles."
+        },
+        {
+          "point": "Pocket includes built-in recommendations and discovery features tied to its platform.",
+          "why_it_matters": "This adds extra content inside the app, which can be helpful or distracting, but cannot be removed at the backend level."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Wallabag wins",
+      "bullets": [
+        {
+          "point": "Wallabag can be self-hosted, letting you run it on your own server or hosting provider.",
+          "why_it_matters": "You control where your data is stored, which removes dependency on a third-party service and allows full ownership."
+        },
+        {
+          "point": "The system uses an open backend with access to the database and configuration files.",
+          "why_it_matters": "You can modify how articles are stored, processed, or backed up, which removes the limits of a fixed platform."
+        },
+        {
+          "point": "You can customize deployment, updates, and integrations at the server level.",
+          "why_it_matters": "This allows you to extend or adapt the tool to your workflow instead of adapting your workflow to the tool."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want to control how and where your saved articles are stored or need access to backend data and settings.",
+          "what_to_do_instead": "Use Wallabag so you can host the system yourself and directly manage storage and configuration."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You do not want to manage hosting, updates, or server maintenance and just want a ready-to-use app.",
+          "what_to_do_instead": "Use Pocket if you prefer a fully managed service that works without setup."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if the Power user decides they do not want to deal with server maintenance at all. In that case, Pocket becomes more appealing because it removes all backend responsibility."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Wallabag if you want full control over data and how the system runs.",
+        "Pick Pocket if you do not want to manage servers or backend setup.",
+        "If you expect to customize or extend the system later, Wallabag is the safer choice."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Wallabag better for Power users?",
+      "a": "Because it can be self-hosted and gives access to backend storage and configuration, allowing full control over how the system works."
+    },
+    {
+      "q": "What limits Pocket for advanced use?",
+      "a": "Pocket is fully hosted, so you cannot control storage, access backend data directly, or change how the system is structured."
+    },
+    {
+      "q": "Is self-hosting required for Wallabag?",
+      "a": "It is optional, but self-hosting is what unlocks the control and customization that Power users care about."
+    },
+    {
+      "q": "What is the main tradeoff here?",
+      "a": "The tradeoff is between control and convenience, where Wallabag offers ownership and customization, while Pocket offers ease of use but limited flexibility."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Omnivore vs Pocket for Power users",
+      "slug": "omnivore-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Omnivore",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    },
+    {
+      "title": "Hypothes.is vs Pocket for Power users",
+      "slug": "hypothesis-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Hypothes.is",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    },
+    {
+      "title": "Logseq (Web Clipper) vs Pocket for Power users",
+      "slug": "logseq-web-clipper-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Logseq (Web Clipper)",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    },
+    {
+      "title": "Obsidian Web Clipper vs Pocket for Power users",
+      "slug": "obsidian-web-clipper-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Obsidian Web Clipper",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    },
+    {
+      "title": "Diigo vs Instapaper for Power users",
+      "slug": "diigo-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Diigo",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "Anybox vs Instapaper for Power users",
+      "slug": "anybox-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Anybox",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    }
+  ]
+}

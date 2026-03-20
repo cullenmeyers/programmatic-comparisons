@@ -1,0 +1,167 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Hypothes.is vs Pocket for Power users",
+  "slug": "hypothesis-vs-pocket-for-power-user",
+  "meta_description": "Hypothes.is vs Pocket for Power users: Hypothes.is adds shared annotations on webpages, while Pocket keeps highlights inside a private reader view.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need tools that let them work directly on content and share or extend that work without being limited to closed views.",
+  "one_second_verdict": {
+    "winner_label": "Hypothes.is",
+    "summary": "Best for adding public or private annotations directly on webpages with sharing built in.",
+    "reason": "Pocket fails first because highlights live inside a private reader view and do not appear as overlays on the original webpage."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Hypothes.is is the better fit for Power users who want to annotate web content collaboratively. It layers highlights and comments directly on the live webpage and supports public or group sharing. Pocket stores articles in a private reader view where highlights stay isolated and cannot be overlaid on the original page. For workflows that depend on shared, persistent annotations, Pocket quickly becomes limiting.",
+    "decision_rule": "If annotations are restricted to a private reader view without persistent webpage overlays or sharing, Pocket fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Hypothes.is fits this power user better",
+      "content": "This Power user wants annotations that live on the web itself and can be shared with others. Hypothes.is fits because it attaches highlights and comments directly to the page and keeps them visible through an overlay. Pocket separates reading into its own view, which isolates highlights and removes them from the original context. That makes it harder to collaborate or revisit annotations in place."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Hypothes.is wins",
+      "bullets": [
+        {
+          "point": "Hypothes.is overlays highlights and annotations directly on the original webpage in the browser.",
+          "why_it_matters": "You can see notes in context on the live page instead of inside a separate reading interface."
+        },
+        {
+          "point": "Annotations can be shared publicly or within groups.",
+          "why_it_matters": "This enables collaboration and discussion on specific passages instead of keeping notes private."
+        },
+        {
+          "point": "Highlights and comments remain attached to the page across sessions.",
+          "why_it_matters": "You can revisit the same page later and see your annotations without re-importing or reprocessing content."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Pocket wins",
+      "bullets": [
+        {
+          "point": "Pocket converts articles into a clean reader view with simplified formatting.",
+          "why_it_matters": "This improves reading comfort, but removes the connection to the original page layout."
+        },
+        {
+          "point": "Highlights are stored privately within the Pocket app.",
+          "why_it_matters": "This keeps notes personal, but prevents sharing or collaboration on annotations."
+        },
+        {
+          "point": "The app focuses on saving and reading articles without adding collaboration layers.",
+          "why_it_matters": "This keeps the experience simple, but limits how annotations can be used beyond personal reading."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want a distraction-free reading experience without visible annotation layers on the page.",
+          "what_to_do_instead": "Use Pocket if your focus is clean reading rather than annotating and sharing."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need annotations to appear on the original webpage or want to share them with others.",
+          "what_to_do_instead": "Use Hypothes.is to annotate content directly on the page with sharing support."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if the Power user only wants private highlights for personal reading and does not need annotations on the original page or sharing. In that case, Pocket may feel simpler."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Hypothes.is if you want annotations directly on webpages with sharing.",
+        "Pick Pocket if you only need private highlights in a clean reading view.",
+        "If collaboration or in-page context matters, Hypothes.is is the better choice."
+      ]
+    },
+    {
+      "type": "faqs",
+      "heading": "",
+      "content": ""
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Hypothes.is better for Power users?",
+      "a": "Because it allows annotations directly on webpages with options for sharing and collaboration."
+    },
+    {
+      "q": "What limits Pocket for annotation workflows?",
+      "a": "Highlights are stored in a private reader view and do not appear on the original webpage or support sharing."
+    },
+    {
+      "q": "Can Pocket annotations be shared?",
+      "a": "No, they are mainly designed for personal use within the app."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Hypothes.is annotates webpages directly with sharing, while Pocket focuses on private reading and highlights."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Omnivore vs Pocket for Power users",
+      "slug": "omnivore-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Omnivore",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    },
+    {
+      "title": "Logseq (Web Clipper) vs Pocket for Power users",
+      "slug": "logseq-web-clipper-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Logseq (Web Clipper)",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    },
+    {
+      "title": "Obsidian Web Clipper vs Pocket for Power users",
+      "slug": "obsidian-web-clipper-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Obsidian Web Clipper",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    },
+    {
+      "title": "Pocket vs Wallabag for Power users",
+      "slug": "pocket-vs-wallabag-for-power-user",
+      "exists": true,
+      "x_name": "Pocket",
+      "y_name": "Wallabag",
+      "persona": "Power user"
+    },
+    {
+      "title": "Diigo vs Instapaper for Power users",
+      "slug": "diigo-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Diigo",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "Anybox vs Instapaper for Power users",
+      "slug": "anybox-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Anybox",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    }
+  ]
+}

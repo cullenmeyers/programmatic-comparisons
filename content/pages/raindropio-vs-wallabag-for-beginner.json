@@ -1,0 +1,122 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Raindrop.io vs Wallabag for Beginners",
+  "slug": "raindropio-vs-wallabag-for-beginner",
+  "meta_description": "Raindrop.io vs Wallabag for Beginners: Raindrop.io is easier when you want to save articles fast, while Wallabag slows you down with server setup first.",
+  "persona": "Beginner",
+  "constraint_lens": "Beginners do best when they can start saving links right away without extra setup steps or technical choices.",
+  "one_second_verdict": {
+    "winner_label": "Raindrop.io",
+    "summary": "Best for saving articles quickly when you want to start with almost no setup.",
+    "reason": "Wallabag fails first because self-hosting and server setup can block you before you save your first article."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Raindrop.io is the better fit for Beginners who just want to save articles easily. It lets you create an account, install the browser extension, and start saving links right away. Wallabag can work well later, but its self-hosted path adds server decisions and setup work before the core job even starts. That extra front-loaded work is exactly where a Beginner gets stuck.",
+    "decision_rule": "If saving articles requires setting up or hosting your own server before use, Wallabag fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Raindrop.io fits this beginner better",
+      "content": "This Beginner wants to save links quickly and tends to stall when the first steps feel technical. Raindrop.io matches that because the basic flow is account, extension, save. Wallabag asks for more early decisions if you go the self-hosted route, which turns a simple reading tool into a setup project. For someone trying to build the habit of saving articles, that extra work gets in the way."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Raindrop.io wins",
+      "bullets": [
+        {
+          "point": "You can sign up in the app or browser and start saving with the extension immediately.",
+          "why_it_matters": "The first save can happen in minutes, so a Beginner does not lose momentum before the tool proves useful."
+        },
+        {
+          "point": "Raindrop.io stores your saved links in a hosted account instead of asking you to run your own server.",
+          "why_it_matters": "That removes the need to think about hosting, installs, or maintenance before doing the basic job of saving articles."
+        },
+        {
+          "point": "The save flow is built around visible folders, tags, and a direct bookmark action from the browser.",
+          "why_it_matters": "A Beginner can understand where articles go without learning a technical setup process or fixing missing backend pieces first."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Wallabag wins",
+      "bullets": [
+        {
+          "point": "Wallabag can be self-hosted, which means your reading archive can live on your own server.",
+          "why_it_matters": "That matters if you eventually care more about ownership and control than getting started quickly."
+        },
+        {
+          "point": "Wallabag is built around saving full articles for a cleaner reading view instead of acting like a broad bookmark manager.",
+          "why_it_matters": "That narrower structure can feel more focused once someone already knows they want a dedicated read-later setup."
+        },
+        {
+          "point": "Its self-hosted design lets you decide how the service is deployed and maintained.",
+          "why_it_matters": "That becomes useful only after a user is comfortable with server tools, because those choices add extra steps at the start."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You mainly want a self-hosted reading archive and do not want your saved links tied to a hosted service account.",
+          "what_to_do_instead": "Use Wallabag if control over hosting matters more to you than getting started fast."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need to save articles right away but first have to deal with server hosting, installation steps, or technical setup choices.",
+          "what_to_do_instead": "Use Raindrop.io so you can install the extension and start saving links immediately."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if the Beginner is using a Wallabag instance that someone else already set up for them. In that case, the hardest part is removed, and Wallabag becomes much easier to try."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Raindrop.io if you want to save links today without dealing with hosting first.",
+        "Pick Wallabag only if you already have the server side handled or want to learn that setup on purpose.",
+        "If the first step feels technical, Raindrop.io is the safer pick."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Raindrop.io easier for first-time users?",
+      "a": "Yes. Its hosted account and direct browser saving flow let a first-time user start fast without turning link saving into a setup task."
+    },
+    {
+      "q": "Why is Wallabag harder for a Beginner?",
+      "a": "The main problem is not reading itself. It is that Wallabag often asks for hosting and server-related setup before the tool feels ready to use."
+    },
+    {
+      "q": "Does this mean Wallabag is bad?",
+      "a": "No. Wallabag makes more sense for someone who specifically wants a self-hosted read-later system and is comfortable handling the setup side."
+    },
+    {
+      "q": "What is the deciding factor here?",
+      "a": "The deciding factor is whether you can start saving articles immediately or whether you must handle server setup before the core workflow begins."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "GoodLinks vs Pinboard for Beginners",
+      "slug": "goodlinks-vs-pinboard-for-beginner",
+      "exists": true,
+      "x_name": "GoodLinks",
+      "y_name": "Pinboard",
+      "persona": "Beginner"
+    }
+  ]
+}

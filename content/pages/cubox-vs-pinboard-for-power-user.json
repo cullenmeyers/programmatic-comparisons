@@ -1,0 +1,162 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Cubox vs Pinboard for Power users",
+  "slug": "cubox-vs-pinboard-for-power-user",
+  "meta_description": "Cubox vs Pinboard for Power users: Cubox captures full articles with structured tags, while Pinboard mainly stores links.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need tools that support full content capture, tagging, and structured organization without hitting limits.",
+  "one_second_verdict": {
+    "winner_label": "Cubox",
+    "summary": "Best for building a structured reading archive with full-text capture and tagging.",
+    "reason": "Pinboard fails first because it stores links without extracting full article text or supporting deep content interaction."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Cubox is the better fit for Power users who want to build a structured reading archive. It captures full article text and supports tagging and organization directly on the content. Pinboard focuses on saving links with optional tags, which limits how much you can work with the material itself. For workflows that require both structure and content interaction, Pinboard reaches its limit quickly.",
+    "decision_rule": "If saving content only stores links without full-text extraction and structured organization, Pinboard fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Cubox fits this power user better",
+      "content": "This Power user wants to build a system around actual content, not just links. Cubox fits because it pulls in full articles and lets you organize them with tags and structure. Pinboard stores links and relies on external pages for reading, which limits how much you can do inside the system. For someone building a long-term archive, that difference matters early."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Cubox wins",
+      "bullets": [
+        {
+          "point": "Cubox extracts full article text into a readable format instead of storing only the link.",
+          "why_it_matters": "You can read and work with content directly inside the app without depending on the original site."
+        },
+        {
+          "point": "It combines tagging with structured organization applied to the saved content itself.",
+          "why_it_matters": "You can build a layered system where articles are both readable and categorized in one place."
+        },
+        {
+          "point": "Saved items remain consistent even if the original webpage changes or disappears.",
+          "why_it_matters": "Your archive stays reliable over time because the content is stored, not just referenced."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Pinboard wins",
+      "bullets": [
+        {
+          "point": "Pinboard stores links in a simple list with optional tags for organization.",
+          "why_it_matters": "This makes saving lightweight, but limits interaction to link management rather than content work."
+        },
+        {
+          "point": "The system avoids content processing and keeps everything tied to the original source page.",
+          "why_it_matters": "You always see the original version, but lose the ability to read or structure content inside the tool."
+        },
+        {
+          "point": "Pinboard focuses on long-term link archiving with minimal overhead.",
+          "why_it_matters": "This is efficient for storing references, but does not support deeper workflows like content analysis or annotation."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only need to store and organize links without caring about reading or interacting with the content inside the tool.",
+          "what_to_do_instead": "Use Pinboard if lightweight link storage is more important than content capture."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need to read, organize, and build a structured archive of articles but only have access to saved links.",
+          "what_to_do_instead": "Use Cubox to capture full articles and organize them within the same system."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if the Power user mainly collects quick reference links and rarely reads long-form articles. In that case, Pinboard can be sufficient."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Cubox if you want full articles with tagging and structured organization.",
+        "Pick Pinboard if you only need to store and manage links.",
+        "If your workflow depends on working with content, Cubox is the better choice."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Cubox better for Power users?",
+      "a": "Because it captures full article text and supports structured organization, allowing deeper interaction with content."
+    },
+    {
+      "q": "What limits Pinboard for advanced workflows?",
+      "a": "It stores links instead of full content, which prevents direct reading and structured work inside the tool."
+    },
+    {
+      "q": "Is Pinboard still useful?",
+      "a": "Yes. It is effective for storing and organizing links, especially when simplicity is the goal."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Cubox captures and organizes full content, while Pinboard focuses on storing and managing links."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Diigo vs Instapaper for Power users",
+      "slug": "diigo-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Diigo",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "Omnivore vs Pocket for Power users",
+      "slug": "omnivore-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Omnivore",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    },
+    {
+      "title": "Anybox vs Instapaper for Power users",
+      "slug": "anybox-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Anybox",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "ArchiveBox vs Instapaper for Power users",
+      "slug": "archivebox-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "ArchiveBox",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "DEVONthink vs Instapaper for Power users",
+      "slug": "devonthink-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "DEVONthink",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "Eagle (Asset Manager) vs Instapaper for Power users",
+      "slug": "eagle-asset-manager-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Eagle (Asset Manager)",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    }
+  ]
+}

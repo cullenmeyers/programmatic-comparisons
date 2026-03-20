@@ -1,0 +1,162 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Obsidian Web Clipper vs Pocket for Power users",
+  "slug": "obsidian-web-clipper-vs-pocket-for-power-user",
+  "meta_description": "Obsidian Web Clipper vs Pocket for Power users: Obsidian saves articles directly to your notes, while Pocket stores them in a separate app.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need tools that connect directly into their systems and avoid limits from separate apps or closed workflows.",
+  "one_second_verdict": {
+    "winner_label": "Obsidian Web Clipper",
+    "summary": "Best for sending articles directly into your local knowledge base instead of a separate reading app.",
+    "reason": "Pocket fails first because it stores articles in its own hosted app rather than saving them directly into your local notes."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Obsidian Web Clipper is the better fit for Power users who want reading integrated into their note system. It saves content directly into local files inside your knowledge base, making articles part of your workflow immediately. Pocket stores content in a separate hosted app, which creates a gap between reading and note-taking. For someone building a unified system, that separation becomes a limitation.",
+    "decision_rule": "If saving articles requires storing them in a separate hosted app instead of directly into a local knowledge base, Pocket fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Obsidian Web Clipper fits this power user better",
+      "content": "This Power user wants everything inside one system where reading and notes connect directly. Obsidian Web Clipper fits because it saves articles as local files inside the knowledge base, ready to link, edit, and organize. Pocket keeps articles inside its own app, which means switching between tools. That separation breaks the goal of building a unified workflow."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Obsidian Web Clipper wins",
+      "bullets": [
+        {
+          "point": "Articles are saved directly as local markdown files inside your Obsidian vault.",
+          "why_it_matters": "Content becomes part of your notes immediately, allowing linking, editing, and reuse without moving between apps."
+        },
+        {
+          "point": "You can customize how content is clipped using templates and frontmatter fields.",
+          "why_it_matters": "This lets you structure saved articles to match your system instead of adapting to a fixed format."
+        },
+        {
+          "point": "Saved content lives in your local file system rather than a hosted service.",
+          "why_it_matters": "You control storage and access, avoiding limits or lock-in from external platforms."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Pocket wins",
+      "bullets": [
+        {
+          "point": "Pocket stores articles in a hosted reading app with a built-in clean reading view.",
+          "why_it_matters": "This makes reading easy, but separates it from your note-taking system."
+        },
+        {
+          "point": "The app syncs saved content across devices automatically.",
+          "why_it_matters": "Access is convenient, but you rely on Pocket's platform rather than your own system."
+        },
+        {
+          "point": "Pocket provides a simple save and read workflow without setup.",
+          "why_it_matters": "This reduces friction at the start, but limits how deeply you can integrate content into other tools."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want a simple reading app without dealing with file structure, templates, or note organization.",
+          "what_to_do_instead": "Use Pocket if you prefer a ready-to-use reading experience with no setup."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want articles to live inside your note system but must switch to a separate app to access them.",
+          "what_to_do_instead": "Use Obsidian Web Clipper to save content directly into your knowledge base."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if the Power user only wants to read articles casually and does not plan to integrate them into a note system. In that case, Pocket becomes easier to use."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Obsidian Web Clipper if you want articles inside your note system.",
+        "Pick Pocket if you want a standalone reading app with no setup.",
+        "If integration with your knowledge base matters, Obsidian Web Clipper is the better choice."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Obsidian Web Clipper better for Power users?",
+      "a": "Because it saves articles directly into local markdown files, allowing full control and integration with a note system."
+    },
+    {
+      "q": "What limits Pocket for this workflow?",
+      "a": "It stores articles in its own hosted app, which separates reading from note-taking and limits integration."
+    },
+    {
+      "q": "Does Obsidian Web Clipper require more setup?",
+      "a": "Yes, but that setup enables deeper control and integration with your existing system."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Obsidian Web Clipper integrates articles into a local knowledge base, while Pocket keeps them in a separate reading app."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Omnivore vs Pocket for Power users",
+      "slug": "omnivore-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Omnivore",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    },
+    {
+      "title": "Hypothes.is vs Pocket for Power users",
+      "slug": "hypothesis-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Hypothes.is",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    },
+    {
+      "title": "Logseq (Web Clipper) vs Pocket for Power users",
+      "slug": "logseq-web-clipper-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Logseq (Web Clipper)",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    },
+    {
+      "title": "Pocket vs Wallabag for Power users",
+      "slug": "pocket-vs-wallabag-for-power-user",
+      "exists": true,
+      "x_name": "Pocket",
+      "y_name": "Wallabag",
+      "persona": "Power user"
+    },
+    {
+      "title": "Diigo vs Instapaper for Power users",
+      "slug": "diigo-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Diigo",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "Anybox vs Instapaper for Power users",
+      "slug": "anybox-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Anybox",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    }
+  ]
+}

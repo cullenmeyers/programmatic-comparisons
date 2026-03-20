@@ -1,0 +1,162 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Logseq (Web Clipper) vs Pocket for Power users",
+  "slug": "logseq-web-clipper-vs-pocket-for-power-user",
+  "meta_description": "Logseq Web Clipper vs Pocket for Power users: Logseq saves articles as local notes, while Pocket stores them in a separate reading app.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need tools that integrate directly into their systems and avoid limits from separate apps or closed workflows.",
+  "one_second_verdict": {
+    "winner_label": "Logseq (Web Clipper)",
+    "summary": "Best for turning saved articles into editable notes inside a local knowledge graph.",
+    "reason": "Pocket fails first because it stores articles in a separate hosted reader instead of saving them directly into your note system."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Logseq Web Clipper is the better fit for Power users who want reading integrated into their note system. It saves content directly into local files that become part of a knowledge graph, where you can edit, link, and expand on them. Pocket keeps articles inside a separate hosted app, which creates a gap between reading and note-taking. For building a connected system, that separation quickly becomes limiting.",
+    "decision_rule": "If saving articles requires storing them in a separate hosted reader instead of directly into a local note system, Pocket fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Logseq (Web Clipper) fits this power user better",
+      "content": "This Power user wants every article to become part of a larger note system. Logseq Web Clipper fits because it saves content as editable blocks inside a local knowledge graph. Pocket separates reading into its own app, which means you have to move or rewrite content to use it elsewhere. That extra step breaks the goal of a unified system."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Logseq (Web Clipper) wins",
+      "bullets": [
+        {
+          "point": "Articles are saved directly as local notes made of editable blocks inside Logseq.",
+          "why_it_matters": "You can immediately modify, link, and build on the content without leaving your note system."
+        },
+        {
+          "point": "Saved content becomes part of a knowledge graph with backlinks and connections.",
+          "why_it_matters": "Articles are not isolated, which allows ideas to connect and grow over time."
+        },
+        {
+          "point": "All data is stored locally in your file system instead of a hosted service.",
+          "why_it_matters": "You control access and structure, avoiding limits from external platforms."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Pocket wins",
+      "bullets": [
+        {
+          "point": "Pocket provides a clean reader view that simplifies articles for easy reading.",
+          "why_it_matters": "This improves readability, but keeps content separate from your notes."
+        },
+        {
+          "point": "The app syncs articles across devices automatically through its hosted service.",
+          "why_it_matters": "This makes access convenient, but ties your content to a separate platform."
+        },
+        {
+          "point": "Pocket offers a simple save and read workflow with minimal setup.",
+          "why_it_matters": "This lowers the barrier to entry, but limits deeper integration with other systems."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only want a simple reading experience without managing notes, blocks, or a knowledge graph.",
+          "what_to_do_instead": "Use Pocket if you prefer a straightforward reading app with no note system."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want articles to become editable notes but must keep them inside a separate reader app.",
+          "what_to_do_instead": "Use Logseq Web Clipper to integrate content directly into your note system."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if the Power user only wants to read articles and does not plan to edit or connect them inside a note system. In that case, Pocket may feel simpler."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Logseq Web Clipper if you want articles inside your note system.",
+        "Pick Pocket if you want a separate reading app with no setup.",
+        "If you want to connect ideas across notes, Logseq Web Clipper is the better choice."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Logseq Web Clipper better for Power users?",
+      "a": "Because it saves articles as editable notes inside a local knowledge graph, allowing deep integration and linking."
+    },
+    {
+      "q": "What limits Pocket for this workflow?",
+      "a": "It stores articles in a separate hosted reader, which prevents direct integration into a note system."
+    },
+    {
+      "q": "Does Logseq require more setup?",
+      "a": "Yes, but that setup enables full control and integration with your knowledge system."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Logseq Web Clipper integrates articles into a local note graph, while Pocket keeps them in a separate reading app."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Omnivore vs Pocket for Power users",
+      "slug": "omnivore-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Omnivore",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    },
+    {
+      "title": "Hypothes.is vs Pocket for Power users",
+      "slug": "hypothesis-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Hypothes.is",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    },
+    {
+      "title": "Obsidian Web Clipper vs Pocket for Power users",
+      "slug": "obsidian-web-clipper-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Obsidian Web Clipper",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    },
+    {
+      "title": "Pocket vs Wallabag for Power users",
+      "slug": "pocket-vs-wallabag-for-power-user",
+      "exists": true,
+      "x_name": "Pocket",
+      "y_name": "Wallabag",
+      "persona": "Power user"
+    },
+    {
+      "title": "Diigo vs Instapaper for Power users",
+      "slug": "diigo-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Diigo",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "Anybox vs Instapaper for Power users",
+      "slug": "anybox-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Anybox",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    }
+  ]
+}

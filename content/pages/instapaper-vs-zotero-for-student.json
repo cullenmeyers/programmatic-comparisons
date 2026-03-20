@@ -1,0 +1,113 @@
+{
+"category": "Read-It-Later Apps",
+"categorySlug": "read-it-later-apps",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
+"title": "Instapaper vs Zotero for Students",
+"slug": "instapaper-vs-zotero-for-student",
+"meta_description": "Instapaper vs Zotero for Students: Instapaper is fast for reading articles, while Zotero adds citation and library management overhead.",
+"persona": "Student",
+"constraint_lens": "Students need tools that are quick to start, easy to use short-term, and do not require committing to complex systems.",
+"one_second_verdict": {
+"winner_label": "Instapaper",
+"summary": "Best for quickly reading saved articles without dealing with academic tools or setup.",
+"reason": "Zotero fails first because it requires managing citation metadata and library structure before reading feels simple."
+},
+"verdict": {
+"winner": "x",
+"summary": "Instapaper is the better fit for Students who just want to read articles quickly. It provides a simple save and read flow with a clean reading view and no extra structure. Zotero is designed as a research library, which means dealing with citation fields, collections, and metadata before the system feels useful. For short-term use and quick reading, that added structure slows things down.",
+"decision_rule": "If saving and reading articles requires managing citation metadata or academic library structures, Zotero fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Instapaper fits this student better",
+"content": "This Student needs to save articles and read them for assignments without getting pulled into complex tools. Instapaper fits because it focuses on a simple reading queue with no required setup. Zotero expects you to manage items inside a structured library with metadata and collections. That makes sense for research workflows, but adds extra steps when the goal is just reading."
+},
+{
+"type": "x_wins",
+"heading": "Where Instapaper wins",
+"bullets": [
+{
+"point": "Articles are saved into a simple reading list with a built in reader view.",
+"why_it_matters": "You can open and read immediately without filling in fields or organizing items."
+},
+{
+"point": "The workflow is limited to save, read, and archive without structured library management.",
+"why_it_matters": "This keeps the tool easy to start and easy to stop using after the assignment is done."
+},
+{
+"point": "No citation fields or metadata are required when saving content.",
+"why_it_matters": "You avoid extra steps that slow down the process of getting to the actual reading."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Zotero wins",
+"bullets": [
+{
+"point": "Zotero stores articles inside a structured library with citation metadata like author, title, and publication.",
+"why_it_matters": "This supports academic work, but requires managing details before the system feels organized."
+},
+{
+"point": "Collections and folders allow grouping sources by topic or assignment.",
+"why_it_matters": "This helps with long term research, but adds setup work for short term reading tasks."
+},
+{
+"point": "Zotero integrates with citation tools for generating references in documents.",
+"why_it_matters": "This is valuable for writing papers, but not necessary when the goal is just reading articles."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You need to manage sources, generate citations, and organize research for long term academic work.",
+"what_to_do_instead": "Use Zotero if citation management and structured research organization become important."
+},
+{
+"tool": "y",
+"fails_when": "You just want to read saved articles quickly but get slowed down by citation fields and library structure.",
+"what_to_do_instead": "Use Instapaper to keep the process focused on reading."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "This could flip if the Student is working on a research-heavy project that requires managing sources and citations. In that case, Zotero becomes more useful despite the extra setup."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"Pick Instapaper if you just need to read articles quickly.",
+"Pick Zotero if you need to manage citations and research sources.",
+"If you do not want to deal with academic tools, Instapaper is the better choice."
+]
+}
+],
+"faqs": [
+{
+"q": "Why is Instapaper better for Students?",
+"a": "Because it allows quick saving and reading without requiring citation management or structured libraries."
+},
+{
+"q": "What makes Zotero harder to use for simple reading?",
+"a": "It requires managing metadata, collections, and citations, which adds extra steps before reading."
+},
+{
+"q": "Is Zotero unnecessary for basic use?",
+"a": "For simple reading tasks, yes. It is more useful for research and writing workflows."
+},
+{
+"q": "What is the main difference between these tools?",
+"a": "Instapaper focuses on reading articles quickly, while Zotero focuses on managing academic sources and citations."
+}
+],
+"related_pages": []
+}

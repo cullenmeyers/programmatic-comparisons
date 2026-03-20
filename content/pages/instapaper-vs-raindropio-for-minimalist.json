@@ -1,0 +1,138 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Instapaper vs Raindrop.io for Minimalists",
+  "slug": "instapaper-vs-raindropio-for-minimalist",
+  "meta_description": "Instapaper vs Raindrop.io for Minimalists: Instapaper offers a clean reading queue, while Raindrop.io adds folders and visual bookmarks.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists need tools that remove extra features and decisions so they can focus on the core task without distraction.",
+  "one_second_verdict": {
+    "winner_label": "Instapaper",
+    "summary": "Best for reading articles in a clean, distraction-free list without extra organization features.",
+    "reason": "Raindrop.io fails first because its folder hierarchy and visual bookmark grid turn reading into managing collections."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Instapaper is the better fit for Minimalists who want a clean reading experience. Its interface centers on a simple list of articles with a built-in reader view, keeping attention on reading only. Raindrop.io introduces folders, tags, and visual bookmark layouts that shift the experience toward organizing instead of reading. For someone avoiding extra features, that added structure becomes unnecessary overhead.",
+    "decision_rule": "If saving articles introduces folder hierarchies and visual bookmark management instead of a clean reading queue, Raindrop.io fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Instapaper fits this minimalist better",
+      "content": "This Minimalist wants a tool that disappears and lets them read. Instapaper delivers that by focusing on a simple reading queue and a stripped-down article view. Raindrop.io is designed more like a bookmark manager, which introduces decisions about folders and organization. Those extra elements break the clean, focused experience this persona is looking for."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Instapaper wins",
+      "bullets": [
+        {
+          "point": "Articles are saved into a single reading list with a built-in text-focused reader view.",
+          "why_it_matters": "You open an article and read immediately without choosing folders or organizing items first."
+        },
+        {
+          "point": "The interface removes visual clutter like thumbnails, grids, and collection views.",
+          "why_it_matters": "This keeps attention on the content itself instead of managing how saved items look."
+        },
+        {
+          "point": "The workflow is limited to save, read, and archive without layered organization systems.",
+          "why_it_matters": "Fewer actions means fewer decisions, which keeps the experience lightweight and distraction-free."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Raindrop.io wins",
+      "bullets": [
+        {
+          "point": "Raindrop.io organizes saved items into folders and nested collections.",
+          "why_it_matters": "This makes it easier to structure large libraries, but adds steps before or after saving articles."
+        },
+        {
+          "point": "It offers a visual bookmark grid with previews and thumbnails.",
+          "why_it_matters": "This helps browsing saved content visually, but introduces extra visual elements that compete with reading focus."
+        },
+        {
+          "point": "The tool supports tagging and detailed organization across saved links.",
+          "why_it_matters": "This adds flexibility for managing many links, but creates ongoing decisions that a Minimalist is trying to avoid."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want to organize a large collection of links using folders, tags, and structured groupings.",
+          "what_to_do_instead": "Use Raindrop.io if managing and organizing saved links is as important as reading them."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want a simple reading queue but get pulled into creating folders or managing visual bookmarks.",
+          "what_to_do_instead": "Use Instapaper to keep the experience focused on reading without extra organization layers."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if the Minimalist also needs to store many non-article links like tools, resources, or references. In that case, Raindrop.io can replace multiple tools even if it adds more structure."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Instapaper if you want a clean reading list with no extra organization.",
+        "Pick Raindrop.io if you need folders and visual browsing for saved links.",
+        "If organizing links feels like extra work, Instapaper is the better choice."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Instapaper better for Minimalists?",
+      "a": "Because it focuses on a simple reading list and removes extra features like folders and visual bookmark layouts."
+    },
+    {
+      "q": "What makes Raindrop.io feel more complex?",
+      "a": "Its folder system, tagging, and visual bookmark grid add more decisions and structure beyond just reading articles."
+    },
+    {
+      "q": "Is Raindrop.io bad for reading?",
+      "a": "No. It still supports reading, but its design centers more on organizing and browsing saved links than keeping the experience minimal."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Instapaper is built for clean reading with minimal features, while Raindrop.io is built for organizing and managing collections of links."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Instapaper vs Matter (Read It Later App) for Minimalists",
+      "slug": "instapaper-vs-matter-read-it-later-app-for-minimalist",
+      "exists": true,
+      "x_name": "Instapaper",
+      "y_name": "Matter (Read It Later App)",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Instapaper vs Pinboard for Minimalists",
+      "slug": "instapaper-vs-pinboard-for-minimalist",
+      "exists": true,
+      "x_name": "Instapaper",
+      "y_name": "Pinboard",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "GoodLinks vs Pocket for Minimalists",
+      "slug": "goodlinks-vs-pocket-for-minimalist",
+      "exists": true,
+      "x_name": "GoodLinks",
+      "y_name": "Pocket",
+      "persona": "Minimalist"
+    }
+  ]
+}

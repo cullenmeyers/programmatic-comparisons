@@ -1,0 +1,162 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Diigo vs Raindrop.io for Power users",
+  "slug": "diigo-vs-raindropio-for-power-user",
+  "meta_description": "Diigo vs Raindrop.io for Power users: Diigo enables inline webpage annotations, while Raindrop.io focuses on organizing bookmarks.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need tools that let them interact directly with content and extend workflows without hitting feature limits.",
+  "one_second_verdict": {
+    "winner_label": "Diigo",
+    "summary": "Best for annotating webpages directly with highlights and notes instead of just organizing links.",
+    "reason": "Raindrop.io fails first because it only organizes bookmarks and lacks inline webpage annotation tools."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Diigo is the better fit for Power users who need to annotate content directly on webpages. It adds an in-browser layer for highlights and sticky notes that attach to specific parts of a page. Raindrop.io focuses on saving and organizing links into collections, but does not support interacting with the content itself. For annotation-driven workflows, Raindrop.io reaches its limit quickly.",
+    "decision_rule": "If annotating content is limited to organizing bookmarks without inline webpage annotation capabilities, Raindrop.io fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Diigo fits this power user better",
+      "content": "This Power user wants to work directly on webpages, not just store them. Diigo fits because it overlays annotation tools on the live page, letting you highlight text and add notes in place. Raindrop.io treats saved items as bookmarks inside collections, which means interaction stops at organizing. That gap makes a big difference when annotation is the main goal."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Diigo wins",
+      "bullets": [
+        {
+          "point": "Diigo adds inline highlighting directly on the original webpage inside the browser.",
+          "why_it_matters": "You can mark important text in context without switching tools or losing the page structure."
+        },
+        {
+          "point": "It supports sticky notes anchored to specific sections of a page.",
+          "why_it_matters": "You can attach thoughts exactly where they matter instead of keeping notes separately."
+        },
+        {
+          "point": "Annotations are saved together with the bookmarked page inside Diigo.",
+          "why_it_matters": "Your highlights and notes stay tied to the source, making it easy to revisit and build on them later."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Raindrop.io wins",
+      "bullets": [
+        {
+          "point": "Raindrop.io organizes saved links into collections and nested folders.",
+          "why_it_matters": "This helps manage large sets of bookmarks, but does not allow interaction with the content itself."
+        },
+        {
+          "point": "It provides a visual grid with previews and thumbnails for saved links.",
+          "why_it_matters": "This improves browsing, but keeps the focus on link management instead of content work."
+        },
+        {
+          "point": "Tagging and filtering systems help categorize and retrieve saved items.",
+          "why_it_matters": "This adds structure for organization, but does not support direct annotation of webpages."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You mainly want to collect and organize links without adding annotations or interacting with page content.",
+          "what_to_do_instead": "Use Raindrop.io if link organization and browsing matter more than annotation."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need to highlight or annotate specific parts of a webpage but can only store and organize the link.",
+          "what_to_do_instead": "Use Diigo to annotate content directly within the page."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if the Power user only needs to collect and organize links for later reference without interacting with the content. In that case, Raindrop.io becomes more useful."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Diigo if you need to highlight and add notes directly on webpages.",
+        "Pick Raindrop.io if you mainly want to organize and browse saved links.",
+        "If your workflow depends on interacting with content, Diigo is the better choice."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Diigo better for annotation?",
+      "a": "Because it allows inline highlighting and sticky notes directly on webpages, making it easy to work with content in place."
+    },
+    {
+      "q": "What limits Raindrop.io for this use case?",
+      "a": "It focuses on organizing bookmarks and does not provide tools for annotating content inside webpages."
+    },
+    {
+      "q": "Can Raindrop.io annotate webpages?",
+      "a": "No, it does not support inline annotations, only saving and organizing links."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Diigo is built for annotating webpages, while Raindrop.io is built for organizing saved links."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Diigo vs Instapaper for Power users",
+      "slug": "diigo-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Diigo",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "Omnivore vs Raindrop.io for Power users",
+      "slug": "omnivore-vs-raindropio-for-power-user",
+      "exists": true,
+      "x_name": "Omnivore",
+      "y_name": "Raindrop.io",
+      "persona": "Power user"
+    },
+    {
+      "title": "Omnivore vs Pocket for Power users",
+      "slug": "omnivore-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Omnivore",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    },
+    {
+      "title": "Anybox vs Instapaper for Power users",
+      "slug": "anybox-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Anybox",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "ArchiveBox vs Instapaper for Power users",
+      "slug": "archivebox-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "ArchiveBox",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "DEVONthink vs Instapaper for Power users",
+      "slug": "devonthink-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "DEVONthink",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    }
+  ]
+}

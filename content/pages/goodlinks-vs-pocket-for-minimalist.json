@@ -1,0 +1,138 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "GoodLinks vs Pocket for Minimalists",
+  "slug": "goodlinks-vs-pocket-for-minimalist",
+  "meta_description": "GoodLinks vs Pocket for Minimalists: GoodLinks wins for offline reading without accounts, while Pocket requires login and shows feeds.",
+  "persona": "Minimalist",
+  "constraint_lens": "This person wants a clean offline reading app without accounts, feeds, or extra features.",
+  "one_second_verdict": {
+    "winner_label": "GoodLinks",
+    "summary": "Best for Minimalists who want offline reading without accounts or content feeds.",
+    "reason": "Pocket fails first because it requires account creation and shows recommended content feeds alongside saved articles."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "GoodLinks is the better choice when you want a simple offline reading experience with no extra layers. It stores articles locally on your device and does not require an account to use. Pocket requires signing in and includes recommendation feeds, which adds distractions and extra steps before reading.",
+    "decision_rule": "If saving and reading articles requires account creation and exposure to recommended content feeds, Pocket fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why GoodLinks fits Minimalists better",
+      "content": "This minimalist wants to save articles and read them offline without dealing with accounts or feeds. GoodLinks fits because it stores content locally and opens directly into a clean reading view. That keeps the experience focused and distraction free."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where GoodLinks wins",
+      "bullets": [
+        {
+          "point": "GoodLinks stores saved articles locally on the device for offline reading.",
+          "why_it_matters": "This allows instant access without relying on accounts or syncing."
+        },
+        {
+          "point": "The app works without requiring account creation or login.",
+          "why_it_matters": "This removes setup steps and ongoing account management."
+        },
+        {
+          "point": "The interface focuses only on saved articles without showing recommendation feeds.",
+          "why_it_matters": "This avoids distractions and keeps reading simple."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Pocket wins",
+      "bullets": [
+        {
+          "point": "Pocket syncs saved articles across devices through a cloud account.",
+          "why_it_matters": "This enables access anywhere, but requires account management."
+        },
+        {
+          "point": "The app includes recommendation feeds alongside saved content.",
+          "why_it_matters": "This adds discovery, but introduces distractions before reading."
+        },
+        {
+          "point": "Articles are stored and managed through an online account system.",
+          "why_it_matters": "This adds dependency on login and syncing."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "GoodLinks becomes limiting when you want syncing across multiple devices or discovery features.",
+          "what_to_do_instead": "Use Pocket if you need cross device syncing and recommendations."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Pocket breaks down when you want offline reading without accounts but must log in and navigate recommendation feeds.",
+          "what_to_do_instead": "Use GoodLinks if you want a simple offline reading app."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if you want to access your saved articles across multiple devices and discover new content through recommendations. In that case, Pocket may be more useful despite the added layers."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick GoodLinks if you want offline reading with no account.",
+        "Pick Pocket if you need syncing and content discovery.",
+        "Avoid Pocket if you do not want feeds or account setup."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is GoodLinks better for minimalists?",
+      "a": "Because it works offline without requiring accounts or showing recommendation feeds."
+    },
+    {
+      "q": "What makes Pocket less suitable here?",
+      "a": "It requires account creation and includes content feeds that add distraction."
+    },
+    {
+      "q": "Is Pocket a bad app?",
+      "a": "No. It is useful for syncing and discovering new content."
+    },
+    {
+      "q": "When should I choose Pocket instead?",
+      "a": "Choose Pocket when you want syncing across devices and content recommendations."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Instapaper vs Matter (Read It Later App) for Minimalists",
+      "slug": "instapaper-vs-matter-read-it-later-app-for-minimalist",
+      "exists": true,
+      "x_name": "Instapaper",
+      "y_name": "Matter (Read It Later App)",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Instapaper vs Pinboard for Minimalists",
+      "slug": "instapaper-vs-pinboard-for-minimalist",
+      "exists": true,
+      "x_name": "Instapaper",
+      "y_name": "Pinboard",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Instapaper vs Raindrop.io for Minimalists",
+      "slug": "instapaper-vs-raindropio-for-minimalist",
+      "exists": true,
+      "x_name": "Instapaper",
+      "y_name": "Raindrop.io",
+      "persona": "Minimalist"
+    }
+  ]
+}

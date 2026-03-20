@@ -1,0 +1,138 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Instapaper vs Pinboard for Minimalists",
+  "slug": "instapaper-vs-pinboard-for-minimalist",
+  "meta_description": "Instapaper vs Pinboard for Minimalists: Instapaper offers a clean reading view, while Pinboard presents saved content as raw links.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists need tools that remove clutter and focus only on the core task without extra structure or noise.",
+  "one_second_verdict": {
+    "winner_label": "Instapaper",
+    "summary": "Best for reading articles in a clean, distraction-free view without dealing with raw links.",
+    "reason": "Pinboard fails first because it presents saved content as bare links without a built-in reading view."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Instapaper is the better fit for Minimalists who want a clean reading experience. It converts articles into a stripped-down reading view and keeps the interface focused on reading. Pinboard stores links as a simple list without transforming them into readable content. For someone avoiding clutter and structure, Pinboard feels like managing links instead of reading.",
+    "decision_rule": "If saved content is presented as bare links without a clean reading view, Pinboard fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Instapaper fits this minimalist better",
+      "content": "This Minimalist wants a tool that removes distractions and lets them read. Instapaper fits because it turns saved articles into a clean, text-focused view with no extra elements. Pinboard keeps everything as raw links, which means you must open pages in their original form with ads and layout clutter. That makes the experience feel heavier and less focused."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Instapaper wins",
+      "bullets": [
+        {
+          "point": "Instapaper converts webpages into a simplified reading view with only text and basic formatting.",
+          "why_it_matters": "You can read without ads or layout noise, which keeps attention on the content."
+        },
+        {
+          "point": "Articles are presented in a clean reading list rather than a raw link archive.",
+          "why_it_matters": "You move through content as readable items instead of managing links."
+        },
+        {
+          "point": "The interface removes extra structure like tags or complex organization systems.",
+          "why_it_matters": "This reduces decisions and keeps the experience minimal and focused."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Pinboard wins",
+      "bullets": [
+        {
+          "point": "Pinboard stores links exactly as they are without modifying the original page.",
+          "why_it_matters": "You always access the original source, but must deal with ads and layout distractions."
+        },
+        {
+          "point": "The tool uses a simple list of links with optional tags for organization.",
+          "why_it_matters": "This gives control over link storage, but does not simplify the reading experience."
+        },
+        {
+          "point": "Pinboard focuses on long-term link archiving rather than reading workflows.",
+          "why_it_matters": "This is useful for saving references, but shifts the experience away from reading and toward storage."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want to store and organize links as references without converting them into a reading format.",
+          "what_to_do_instead": "Use Pinboard if your focus is archiving links rather than reading them."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want to read articles without distractions but must open raw webpages with ads and clutter.",
+          "what_to_do_instead": "Use Instapaper to get a clean reading view for each article."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if the Minimalist only needs to store links for later reference and does not care about reading inside the tool. In that case, Pinboard becomes sufficient."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Instapaper if you want a clean reading experience with no distractions.",
+        "Pick Pinboard if you only need to store and revisit links.",
+        "If raw webpages feel cluttered, Instapaper is the better choice."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Instapaper better for Minimalists?",
+      "a": "Because it removes distractions and presents articles in a clean reading format."
+    },
+    {
+      "q": "What makes Pinboard feel less minimal?",
+      "a": "It presents saved content as raw links, requiring you to deal with full webpages and their clutter."
+    },
+    {
+      "q": "Is Pinboard bad for reading?",
+      "a": "Not necessarily, but it does not simplify the reading experience, which makes it less suited for focused reading."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Instapaper focuses on clean reading, while Pinboard focuses on storing and organizing links."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Instapaper vs Matter (Read It Later App) for Minimalists",
+      "slug": "instapaper-vs-matter-read-it-later-app-for-minimalist",
+      "exists": true,
+      "x_name": "Instapaper",
+      "y_name": "Matter (Read It Later App)",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Instapaper vs Raindrop.io for Minimalists",
+      "slug": "instapaper-vs-raindropio-for-minimalist",
+      "exists": true,
+      "x_name": "Instapaper",
+      "y_name": "Raindrop.io",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "GoodLinks vs Pocket for Minimalists",
+      "slug": "goodlinks-vs-pocket-for-minimalist",
+      "exists": true,
+      "x_name": "GoodLinks",
+      "y_name": "Pocket",
+      "persona": "Minimalist"
+    }
+  ]
+}

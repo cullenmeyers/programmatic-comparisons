@@ -1,0 +1,122 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "GoodLinks vs Pinboard for Beginners",
+  "slug": "goodlinks-vs-pinboard-for-beginner",
+  "meta_description": "GoodLinks vs Pinboard for Beginners: GoodLinks saves articles in one tap, while Pinboard relies on tagging systems that slow setup.",
+  "persona": "Beginner",
+  "constraint_lens": "Beginners need tools that work immediately without learning systems or making setup decisions before the first use.",
+  "one_second_verdict": {
+    "winner_label": "GoodLinks",
+    "summary": "Best for saving articles instantly with one tap and no setup learning.",
+    "reason": "Pinboard fails first because it relies on tagging for organization, which requires upfront understanding before retrieval works well."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "GoodLinks is the better fit for Beginners who want to save articles instantly. It works as a tap-to-save app where links go straight into a reading list without requiring structure. Pinboard depends on a tagging system for organizing and retrieving saved links, which adds a learning step before it feels useful. For a Beginner, that extra step slows down the core action of saving articles.",
+    "decision_rule": "If saving articles requires understanding or entering tags before retrieval works well, Pinboard fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why GoodLinks fits this beginner better",
+      "content": "This Beginner wants to save articles quickly without learning how the tool works first. GoodLinks fits because it uses a simple save flow where articles are immediately available to read. Pinboard expects you to understand tagging in order to organize and find links later. That extra step turns a simple action into something that feels harder to start."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where GoodLinks wins",
+      "bullets": [
+        {
+          "point": "Saving an article is a single tap action that adds it directly to a reading list.",
+          "why_it_matters": "You can start using the tool immediately without learning any system before saving your first link."
+        },
+        {
+          "point": "Articles are stored in a simple list without requiring tags or categories.",
+          "why_it_matters": "You do not need to decide how to organize content upfront, which removes early friction."
+        },
+        {
+          "point": "The app focuses on reading saved articles rather than managing a bookmarking system.",
+          "why_it_matters": "This keeps the experience focused and avoids overwhelming the user with extra features."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Pinboard wins",
+      "bullets": [
+        {
+          "point": "Pinboard uses a tag-based system to organize and retrieve saved links.",
+          "why_it_matters": "This allows flexible organization, but requires understanding how tags work before it becomes useful."
+        },
+        {
+          "point": "Saved links can be searched and filtered through custom tag combinations.",
+          "why_it_matters": "This makes large collections easier to navigate later, but adds complexity during the saving process."
+        },
+        {
+          "point": "The system is designed for long-term link storage rather than just reading.",
+          "why_it_matters": "This is helpful for building a reference library, but introduces structure that a Beginner may not need."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want to build a structured library of links with detailed organization and tagging.",
+          "what_to_do_instead": "Use Pinboard if organizing and retrieving links through tags becomes important."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want to save articles quickly but feel slowed down by needing to think about tags or organization.",
+          "what_to_do_instead": "Use GoodLinks to keep saving simple and immediate."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if the Beginner becomes comfortable with tagging and wants to build a structured archive of links over time. In that case, Pinboard becomes more useful."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick GoodLinks if you want to save articles instantly with no setup.",
+        "Pick Pinboard if you are ready to use tags to organize links.",
+        "If tagging feels confusing or slows you down, GoodLinks is the better choice."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is GoodLinks easier for Beginners?",
+      "a": "Because it lets you save articles with one tap and does not require learning a tagging system first."
+    },
+    {
+      "q": "What makes Pinboard harder to start with?",
+      "a": "Its reliance on tags means you need to understand how to organize links before retrieval works smoothly."
+    },
+    {
+      "q": "Is Pinboard bad for simple use?",
+      "a": "No, but its structure is built for organization, which adds extra steps that a Beginner may not want."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "GoodLinks focuses on quick saving and reading, while Pinboard focuses on organizing links through tags."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Raindrop.io vs Wallabag for Beginners",
+      "slug": "raindropio-vs-wallabag-for-beginner",
+      "exists": true,
+      "x_name": "Raindrop.io",
+      "y_name": "Wallabag",
+      "persona": "Beginner"
+    }
+  ]
+}

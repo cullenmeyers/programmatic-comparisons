@@ -1,0 +1,162 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Diigo vs Instapaper for Power users",
+  "slug": "diigo-vs-instapaper-for-power-user",
+  "meta_description": "Diigo vs Instapaper for Power users: Diigo enables in-browser highlights and sticky notes, while Instapaper focuses on simple reading.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need tools that let them work directly on content with built-in features, without relying on external steps.",
+  "one_second_verdict": {
+    "winner_label": "Diigo",
+    "summary": "Best for annotating webpages directly with highlights and notes inside the browser.",
+    "reason": "Instapaper fails first because it lacks in-page annotation and requires exporting or external tools to add notes."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Diigo is the better fit for Power users who want to annotate web content directly. It adds an in-browser layer for highlights and sticky notes on live webpages. Instapaper focuses on clean reading and saving articles, but does not support direct annotation inside the page. For workflows built around marking up content, Instapaper reaches its limit quickly.",
+    "decision_rule": "If annotating webpages requires exporting or external tools instead of built-in annotation layers, Instapaper fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Diigo fits this power user better",
+      "content": "This Power user wants to actively work on webpages by highlighting and adding notes. Diigo fits because it overlays annotation tools directly on the page in the browser. Instapaper changes the page into a simplified reading view and removes that layer of interaction. That makes it good for reading, but not for annotation-heavy workflows."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Diigo wins",
+      "bullets": [
+        {
+          "point": "Diigo provides in-browser highlighting that works directly on the original webpage.",
+          "why_it_matters": "You can mark text without leaving the page, making annotation immediate and integrated with reading."
+        },
+        {
+          "point": "It supports sticky notes placed on specific parts of the webpage.",
+          "why_it_matters": "You can attach thoughts and context directly to sections of content instead of storing notes separately."
+        },
+        {
+          "point": "Annotations are saved as part of the bookmarked page inside Diigo.",
+          "why_it_matters": "Your highlights and notes stay connected to the source, avoiding the need to manage separate tools."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Instapaper wins",
+      "bullets": [
+        {
+          "point": "Instapaper converts articles into a clean reading view without ads or layout distractions.",
+          "why_it_matters": "This makes reading easier, but removes the ability to interact with the original page structure."
+        },
+        {
+          "point": "The app focuses on a simple save and read workflow with minimal features.",
+          "why_it_matters": "This keeps the experience lightweight, but limits deeper interaction like annotation."
+        },
+        {
+          "point": "Instapaper stores articles in a centralized reading list with offline access.",
+          "why_it_matters": "This improves accessibility, but does not add tools for working directly with the content."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You mainly want a distraction-free reading experience without extra annotation tools on the page.",
+          "what_to_do_instead": "Use Instapaper if your priority is clean reading instead of marking up content."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need to highlight and annotate webpages directly but cannot do so inside the reading interface.",
+          "what_to_do_instead": "Use Diigo to annotate content directly in the browser with built-in tools."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if the Power user decides they only need to read and not annotate. In that case, Instapaper becomes more appealing due to its simpler reading experience."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Diigo if you want to highlight and add notes directly on webpages.",
+        "Pick Instapaper if you only need a clean reading experience.",
+        "If annotation is part of your workflow, Diigo is the better choice."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Diigo better for annotation?",
+      "a": "Because it adds highlighting and sticky notes directly on webpages, allowing you to interact with content in place."
+    },
+    {
+      "q": "What limits Instapaper for this use case?",
+      "a": "It focuses on reading and does not provide built-in tools for annotating content inside the page."
+    },
+    {
+      "q": "Can Instapaper handle annotations at all?",
+      "a": "Not directly on webpages. Any deeper annotation requires external tools or exporting content."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Diigo is built for annotating webpages, while Instapaper is built for clean reading without annotation layers."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Diigo vs Raindrop.io for Power users",
+      "slug": "diigo-vs-raindropio-for-power-user",
+      "exists": true,
+      "x_name": "Diigo",
+      "y_name": "Raindrop.io",
+      "persona": "Power user"
+    },
+    {
+      "title": "Anybox vs Instapaper for Power users",
+      "slug": "anybox-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Anybox",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "ArchiveBox vs Instapaper for Power users",
+      "slug": "archivebox-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "ArchiveBox",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "DEVONthink vs Instapaper for Power users",
+      "slug": "devonthink-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "DEVONthink",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "Eagle (Asset Manager) vs Instapaper for Power users",
+      "slug": "eagle-asset-manager-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Eagle (Asset Manager)",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "Omnivore vs Pocket for Power users",
+      "slug": "omnivore-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Omnivore",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    }
+  ]
+}

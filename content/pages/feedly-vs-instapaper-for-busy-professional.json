@@ -1,0 +1,138 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Feedly vs Instapaper for Busy professionals",
+  "slug": "feedly-vs-instapaper-for-busy-professional",
+  "meta_description": "Feedly vs Instapaper for Busy professionals: Feedly delivers content automatically via feeds, while Instapaper relies on manual saving.",
+  "persona": "Busy professional",
+  "constraint_lens": "Busy professionals need tools that reduce manual steps and bring content to them automatically.",
+  "one_second_verdict": {
+    "winner_label": "Feedly",
+    "summary": "Best for staying updated automatically through feeds without manually saving articles.",
+    "reason": "Instapaper fails first because it requires manually saving articles instead of receiving automatic updates from subscriptions."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Feedly is the better fit for Busy professionals who want content to come to them automatically. It pulls in articles from subscribed sources and lets you scan and read them in one place. Instapaper requires manually saving articles before you can read them, which adds extra steps. When staying updated across many sources, that manual step slows everything down.",
+    "decision_rule": "If discovering content requires manually saving articles instead of receiving automatic feed updates, Instapaper fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Feedly fits this busy professional better",
+      "content": "This Busy professional follows many publications and wants updates without extra effort. Feedly fits because it automatically pulls in new articles through subscriptions. Instapaper depends on you finding and saving each article yourself. That difference makes Feedly much easier to use when content volume is high."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Feedly wins",
+      "bullets": [
+        {
+          "point": "Feedly automatically collects new articles from RSS subscriptions.",
+          "why_it_matters": "You do not need to manually find and save content, which saves time every day."
+        },
+        {
+          "point": "The feed view shows a continuous stream of new content from all sources.",
+          "why_it_matters": "You can quickly scan headlines and choose what to read without switching tools."
+        },
+        {
+          "point": "Articles can be opened directly from the feed without moving them to another queue.",
+          "why_it_matters": "This keeps reading fast and reduces extra steps between discovery and consumption."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Instapaper wins",
+      "bullets": [
+        {
+          "point": "Instapaper converts articles into a clean reading view for distraction-free reading.",
+          "why_it_matters": "This improves reading quality, but only after articles have been manually saved."
+        },
+        {
+          "point": "The app focuses on a simple save and read workflow without feed management.",
+          "why_it_matters": "This keeps it straightforward, but separates discovery from reading."
+        },
+        {
+          "point": "Saved articles are stored in a reading queue that can be accessed offline.",
+          "why_it_matters": "This helps with accessibility, but does not solve the problem of discovering content efficiently."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only want to read a few saved articles and do not need ongoing feed subscriptions.",
+          "what_to_do_instead": "Use Instapaper if you prefer manually curating a small reading list."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You follow many sources and cannot keep up because you must manually save each article before reading.",
+          "what_to_do_instead": "Use Feedly to receive and scan content automatically."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if the Busy professional only reads a few curated articles and prefers a clean reading experience over automatic updates. In that case, Instapaper may feel simpler."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Feedly if you want content delivered automatically through feeds.",
+        "Pick Instapaper if you prefer saving and reading a small number of articles manually.",
+        "If manual saving feels slow, Feedly is the better choice."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Feedly better for Busy professionals?",
+      "a": "Because it automatically delivers content from subscriptions, reducing the need for manual saving."
+    },
+    {
+      "q": "What limits Instapaper for staying updated?",
+      "a": "It requires you to manually find and save articles, which slows down content discovery."
+    },
+    {
+      "q": "Does Feedly replace a read later app?",
+      "a": "For many users, yes, since it allows both discovering and reading content in one place."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Feedly delivers content automatically through feeds, while Instapaper relies on manually saved articles."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Feedbin vs Instapaper for Busy professionals",
+      "slug": "feedbin-vs-instapaper-for-busy-professional",
+      "exists": true,
+      "x_name": "Feedbin",
+      "y_name": "Instapaper",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Instapaper vs Readwise Reader for Busy professionals",
+      "slug": "instapaper-vs-readwise-reader-for-busy-professional",
+      "exists": true,
+      "x_name": "Instapaper",
+      "y_name": "Readwise Reader",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Inoreader vs Pocket for Busy professionals",
+      "slug": "inoreader-vs-pocket-for-busy-professional",
+      "exists": true,
+      "x_name": "Inoreader",
+      "y_name": "Pocket",
+      "persona": "Busy professional"
+    }
+  ]
+}

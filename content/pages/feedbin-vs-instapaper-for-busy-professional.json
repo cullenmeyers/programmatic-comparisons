@@ -1,0 +1,138 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Feedbin vs Instapaper for Busy professionals",
+  "slug": "feedbin-vs-instapaper-for-busy-professional",
+  "meta_description": "Feedbin vs Instapaper for Busy professionals: Feedbin combines RSS feeds and reading, while Instapaper requires switching between apps.",
+  "persona": "Busy professional",
+  "constraint_lens": "Busy professionals need tools that reduce app switching and keep everything in one place to move faster through content.",
+  "one_second_verdict": {
+    "winner_label": "Feedbin",
+    "summary": "Best for reading and managing subscriptions in one place without switching between apps.",
+    "reason": "Instapaper fails first because it requires switching from an RSS reader into a separate read later queue to finish articles."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Feedbin is the better fit for Busy professionals who follow multiple sources daily. It combines RSS subscriptions and reading into a single interface, so you can scan, open, and finish articles without switching tools. Instapaper works as a separate read later queue, which means you first discover content in one app and then read it in another. That extra step slows down the daily flow when handling many articles.",
+    "decision_rule": "If reading articles requires switching between an RSS reader and a separate read-later queue, Instapaper fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Feedbin fits this busy professional better",
+      "content": "This Busy professional follows many blogs and wants everything in one place. Feedbin fits because it lets you subscribe, scan headlines, and read full articles in the same app. Instapaper separates saving from discovery, which means jumping between tools. That break in flow adds extra steps and slows down daily reading."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Feedbin wins",
+      "bullets": [
+        {
+          "point": "Feedbin combines RSS subscriptions and article reading in a single interface.",
+          "why_it_matters": "You can go from headline scanning to full reading without switching apps, saving time on every article."
+        },
+        {
+          "point": "Unread feeds, folders, and articles are managed in one continuous workflow.",
+          "why_it_matters": "This reduces context switching because everything from discovery to reading happens in one place."
+        },
+        {
+          "point": "Articles can be opened in a built in reader view directly from the feed list.",
+          "why_it_matters": "You can quickly read content without sending it to another queue, keeping the process fast and uninterrupted."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Instapaper wins",
+      "bullets": [
+        {
+          "point": "Instapaper provides a clean reading view that strips ads and layout clutter from articles.",
+          "why_it_matters": "This makes reading more comfortable, but requires sending articles from another source first."
+        },
+        {
+          "point": "The app focuses on a simple save and read queue without subscription management.",
+          "why_it_matters": "This keeps the reading experience focused, but separates it from where content is discovered."
+        },
+        {
+          "point": "Articles are stored in a dedicated reading list that can be accessed offline.",
+          "why_it_matters": "This improves accessibility, but adds an extra step of moving content into the queue."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You prefer separating discovery from reading and want a dedicated queue for saved articles.",
+          "what_to_do_instead": "Use Instapaper if you want a focused reading list independent of your subscriptions."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You follow many feeds and lose time switching between an RSS reader and a separate reading app.",
+          "what_to_do_instead": "Use Feedbin to keep subscriptions and reading in one place."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if the Busy professional only saves a few articles per day and values a cleaner reading experience more than consolidating tools. In that case, Instapaper may feel simpler."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Feedbin if you want feeds and reading in one app.",
+        "Pick Instapaper if you prefer a separate clean reading queue.",
+        "If switching between apps slows you down, Feedbin is the better choice."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Feedbin better for Busy professionals?",
+      "a": "Because it combines subscriptions and reading, reducing the need to switch between apps."
+    },
+    {
+      "q": "What slows down Instapaper in this use case?",
+      "a": "You must move articles from another app into Instapaper, which adds extra steps to your workflow."
+    },
+    {
+      "q": "Does Feedbin replace a read later app?",
+      "a": "Yes for many users, since it allows both discovering and reading articles in one place."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Feedbin combines RSS feeds and reading, while Instapaper focuses only on saving and reading articles."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Feedly vs Instapaper for Busy professionals",
+      "slug": "feedly-vs-instapaper-for-busy-professional",
+      "exists": true,
+      "x_name": "Feedly",
+      "y_name": "Instapaper",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Instapaper vs Readwise Reader for Busy professionals",
+      "slug": "instapaper-vs-readwise-reader-for-busy-professional",
+      "exists": true,
+      "x_name": "Instapaper",
+      "y_name": "Readwise Reader",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Inoreader vs Pocket for Busy professionals",
+      "slug": "inoreader-vs-pocket-for-busy-professional",
+      "exists": true,
+      "x_name": "Inoreader",
+      "y_name": "Pocket",
+      "persona": "Busy professional"
+    }
+  ]
+}

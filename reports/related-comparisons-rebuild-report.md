@@ -1,15 +1,15 @@
 # Related Comparisons Rebuild Report
 
-Date: 2026-03-18T23:50:52.964Z
+Date: 2026-03-20T01:43:15.245Z
 
 ## Summary
 
-- Total pages scanned: 455
+- Total pages scanned: 481
 - Total pages updated: 0
-- Average related_pages count: 5.76
-- Pages with 0 related pages: 5
-- Pages with 1 related page: 4
-- Pages with fewer than 3 related pages: 21
+- Average related_pages count: 5.66
+- Pages with 0 related pages: 8
+- Pages with 1 related page: 6
+- Pages with fewer than 3 related pages: 26
 
 ## Sparse Pages
 
@@ -17,8 +17,11 @@ Date: 2026-03-18T23:50:52.964Z
 
 - /compare/atracker-vs-kimai-for-student
 - /compare/bonsai-vs-trello-for-busy-professional
+- /compare/goodlinks-vs-wallabag-for-solo-user
+- /compare/instapaper-vs-zotero-for-student
 - /compare/jira-vs-todoist-for-beginner
 - /compare/mailfence-vs-yahoo-mail-for-non-technical-user
+- /compare/matter-read-it-later-app-vs-raindropio-for-non-technical-user
 - /compare/notion-vs-project-co-for-non-technical-user
 
 ### Pages with 1 related page
@@ -27,6 +30,8 @@ Date: 2026-03-18T23:50:52.964Z
 - /compare/enpass-vs-keeper-for-solo-user
 - /compare/gmail-vs-hey-for-student
 - /compare/gmail-vs-superhuman-for-student
+- /compare/goodlinks-vs-pinboard-for-beginner
+- /compare/raindropio-vs-wallabag-for-beginner
 
 ### Pages with fewer than 3 related pages
 
@@ -43,14 +48,19 @@ Date: 2026-03-18T23:50:52.964Z
 - /compare/gmail-vs-postbox-for-beginner
 - /compare/gmail-vs-superhuman-for-student
 - /compare/gmail-vs-thunderbird-for-beginner
+- /compare/goodlinks-vs-pinboard-for-beginner
+- /compare/goodlinks-vs-wallabag-for-solo-user
 - /compare/google-calendar-vs-reclaim-ai-for-solo-user
 - /compare/google-calendar-vs-skedda-for-solo-user
+- /compare/instapaper-vs-zotero-for-student
 - /compare/jira-vs-todoist-for-beginner
 - /compare/joplin-vs-notion-for-solo-user
 - /compare/keepass-vs-password-boss-for-beginner
 - /compare/keepass-vs-pcloud-pass-for-beginner
 - /compare/mailfence-vs-yahoo-mail-for-non-technical-user
+- /compare/matter-read-it-later-app-vs-raindropio-for-non-technical-user
 - /compare/notion-vs-project-co-for-non-technical-user
+- /compare/raindropio-vs-wallabag-for-beginner
 
 ## Sample Debug Output
 

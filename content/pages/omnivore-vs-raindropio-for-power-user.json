@@ -1,0 +1,162 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Omnivore vs Raindrop.io for Power users",
+  "slug": "omnivore-vs-raindropio-for-power-user",
+  "meta_description": "Omnivore vs Raindrop.io for Power users: Omnivore captures full text with highlights, while Raindrop.io mainly saves links as bookmarks.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need tools that support deeper workflows like capturing full content, annotating it, and building on top of it.",
+  "one_second_verdict": {
+    "winner_label": "Omnivore",
+    "summary": "Best for capturing full articles with highlighting and annotations instead of just saving links.",
+    "reason": "Raindrop.io fails first because it stores links with previews rather than extracting full text for highlighting and annotation."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Omnivore is the better fit for Power users who want to capture and work with content, not just store it. It pulls in full article text and allows highlighting directly inside the reading view. Raindrop.io focuses on saving links and organizing them into collections, which limits how much you can interact with the content itself. For deeper workflows like annotation and reuse, Raindrop.io hits its limit quickly.",
+    "decision_rule": "If saving content only stores links without full-text extraction and annotation capabilities, Raindrop.io fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Omnivore fits this power user better",
+      "content": "This Power user wants to capture full articles and actively work with them through highlights and annotations. Omnivore is built for that, turning saved links into readable text with tools for marking and revisiting key ideas. Raindrop.io is structured more like a bookmark manager, where the main action is saving and organizing links. That limits how deeply you can engage with the content after saving it."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Omnivore wins",
+      "bullets": [
+        {
+          "point": "Omnivore extracts full article text into a clean reading view instead of just storing the original link.",
+          "why_it_matters": "You can read and interact with content directly inside the app without relying on the original webpage."
+        },
+        {
+          "point": "The built-in highlighting system lets you select text and save key passages within the article.",
+          "why_it_matters": "You can capture insights while reading, which turns passive saving into active knowledge building."
+        },
+        {
+          "point": "Annotations and highlights are stored alongside the article content in the same system.",
+          "why_it_matters": "This keeps your notes tied to the source material, making it easier to revisit and reuse information later."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Raindrop.io wins",
+      "bullets": [
+        {
+          "point": "Raindrop.io saves links with previews and organizes them into collections and folders.",
+          "why_it_matters": "This makes it easier to manage large sets of links, but does not support working with the content itself."
+        },
+        {
+          "point": "The visual bookmark grid allows browsing saved links with thumbnails and titles.",
+          "why_it_matters": "This helps with navigation, but keeps the interaction at the link level rather than the content level."
+        },
+        {
+          "point": "Tagging and folder systems provide flexible organization across many saved items.",
+          "why_it_matters": "This is useful for categorizing links, but adds structure without adding deeper content interaction."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You mainly want to collect and organize a wide range of links without focusing on reading or annotating them.",
+          "what_to_do_instead": "Use Raindrop.io if link organization and browsing matter more than interacting with article content."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need to highlight, annotate, and work with article text but only have access to saved links.",
+          "what_to_do_instead": "Use Omnivore so you can capture full content and interact with it directly."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if the Power user is primarily collecting resources like tools, videos, or reference links rather than reading long-form articles. In that case, Raindrop.io becomes more useful."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Omnivore if you want to read, highlight, and annotate full articles.",
+        "Pick Raindrop.io if you mainly want to organize and browse saved links.",
+        "If you need to work with content, not just store it, Omnivore is the better choice."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Omnivore better for Power users?",
+      "a": "Because it captures full article text and allows highlighting and annotations, enabling deeper interaction with content."
+    },
+    {
+      "q": "What limits Raindrop.io for advanced workflows?",
+      "a": "It focuses on saving and organizing links, which means you cannot directly highlight or annotate full article text inside the tool."
+    },
+    {
+      "q": "Is Raindrop.io still useful?",
+      "a": "Yes. It is strong for organizing and browsing large collections of links, especially across different types of content."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Omnivore is built for reading and annotating full articles, while Raindrop.io is built for saving and organizing links."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Omnivore vs Pocket for Power users",
+      "slug": "omnivore-vs-pocket-for-power-user",
+      "exists": true,
+      "x_name": "Omnivore",
+      "y_name": "Pocket",
+      "persona": "Power user"
+    },
+    {
+      "title": "Diigo vs Raindrop.io for Power users",
+      "slug": "diigo-vs-raindropio-for-power-user",
+      "exists": true,
+      "x_name": "Diigo",
+      "y_name": "Raindrop.io",
+      "persona": "Power user"
+    },
+    {
+      "title": "Diigo vs Instapaper for Power users",
+      "slug": "diigo-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Diigo",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "Anybox vs Instapaper for Power users",
+      "slug": "anybox-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "Anybox",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "ArchiveBox vs Instapaper for Power users",
+      "slug": "archivebox-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "ArchiveBox",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    },
+    {
+      "title": "DEVONthink vs Instapaper for Power users",
+      "slug": "devonthink-vs-instapaper-for-power-user",
+      "exists": true,
+      "x_name": "DEVONthink",
+      "y_name": "Instapaper",
+      "persona": "Power user"
+    }
+  ]
+}

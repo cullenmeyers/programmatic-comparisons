@@ -1,0 +1,138 @@
+{
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Inoreader vs Pocket for Busy professionals",
+  "slug": "inoreader-vs-pocket-for-busy-professional",
+  "meta_description": "Inoreader vs Pocket for Busy professionals: Inoreader filters feeds at scale, while Pocket relies on manual saving.",
+  "persona": "Busy professional",
+  "constraint_lens": "Busy professionals need tools that reduce manual work and help process large volumes of content quickly.",
+  "one_second_verdict": {
+    "winner_label": "Inoreader",
+    "summary": "Best for scanning and filtering large volumes of content without manually saving each article.",
+    "reason": "Pocket fails first because it depends on manually saving articles instead of filtering content through feeds."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Inoreader is the better fit for Busy professionals dealing with high content volume. It pulls in articles through RSS feeds and lets you scan, filter, and prioritize them in one place. Pocket requires you to manually save articles before reading them, which does not scale when content volume increases. For processing large streams of information quickly, Pocket becomes a bottleneck.",
+    "decision_rule": "If finding relevant content depends on manually saving articles instead of filtering through feeds, Pocket fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Inoreader fits this busy professional better",
+      "content": "This Busy professional needs to handle a large flow of content without spending time saving each item. Inoreader fits because it aggregates feeds and lets you scan headlines, filter content, and open only what matters. Pocket requires you to find and save each article manually before reading. That extra step slows things down when dealing with many sources."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Inoreader wins",
+      "bullets": [
+        {
+          "point": "Inoreader pulls content automatically through RSS subscriptions instead of requiring manual saves.",
+          "why_it_matters": "You can review large amounts of content quickly without collecting each article yourself."
+        },
+        {
+          "point": "Feed views allow fast scanning of headlines, summaries, and unread items in one stream.",
+          "why_it_matters": "This lets you skip irrelevant content immediately instead of opening each article one by one."
+        },
+        {
+          "point": "Built-in filtering and sorting tools help prioritize important articles across feeds.",
+          "why_it_matters": "You can reduce noise and focus on high-value content without extra effort."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Pocket wins",
+      "bullets": [
+        {
+          "point": "Pocket stores articles in a clean reading queue with a simplified reader view.",
+          "why_it_matters": "This improves reading comfort, but only after articles have been manually saved."
+        },
+        {
+          "point": "The app focuses on saving and reading individual articles without feed management.",
+          "why_it_matters": "This keeps the experience simple, but does not help with discovering or filtering content at scale."
+        },
+        {
+          "point": "Saved items can be accessed offline and across devices through the hosted service.",
+          "why_it_matters": "This improves accessibility, but does not solve the problem of collecting content efficiently."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only save a small number of articles manually and do not need feed subscriptions or filtering.",
+          "what_to_do_instead": "Use Pocket if you prefer a simple save and read workflow without managing feeds."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need to process large volumes of content but must manually find and save each article before reading.",
+          "what_to_do_instead": "Use Inoreader to automatically collect and filter content through feeds."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if the Busy professional only saves a few curated articles and does not follow multiple feeds. In that case, Pocket can feel simpler and more focused."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Inoreader if you need to scan and filter large amounts of content.",
+        "Pick Pocket if you only save individual articles occasionally.",
+        "If manual saving feels like too much work, Inoreader is the better choice."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Inoreader better for high-volume reading?",
+      "a": "Because it automatically pulls in content from feeds and lets you filter and scan it quickly."
+    },
+    {
+      "q": "What limits Pocket for this use case?",
+      "a": "It requires manually saving each article, which does not scale when dealing with large amounts of content."
+    },
+    {
+      "q": "Can Pocket handle feeds?",
+      "a": "No, it focuses on saving individual articles rather than aggregating content through subscriptions."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Inoreader aggregates and filters content through feeds, while Pocket stores manually saved articles for later reading."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Feedbin vs Instapaper for Busy professionals",
+      "slug": "feedbin-vs-instapaper-for-busy-professional",
+      "exists": true,
+      "x_name": "Feedbin",
+      "y_name": "Instapaper",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Feedly vs Instapaper for Busy professionals",
+      "slug": "feedly-vs-instapaper-for-busy-professional",
+      "exists": true,
+      "x_name": "Feedly",
+      "y_name": "Instapaper",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Instapaper vs Readwise Reader for Busy professionals",
+      "slug": "instapaper-vs-readwise-reader-for-busy-professional",
+      "exists": true,
+      "x_name": "Instapaper",
+      "y_name": "Readwise Reader",
+      "persona": "Busy professional"
+    }
+  ]
+}
