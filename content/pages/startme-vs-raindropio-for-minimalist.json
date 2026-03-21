@@ -1,0 +1,122 @@
+{
+  "category": "Bookmark Managers",
+  "categorySlug": "bookmark-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Start.me vs Raindrop.io for Minimalists",
+  "slug": "startme-vs-raindropio-for-minimalist",
+  "meta_description": "Start.me vs Raindrop.io for Minimalists: Raindrop.io keeps bookmarks simple, while Start.me adds dashboard widgets and layouts.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists need tools that avoid extra layers like layouts or widgets and keep the experience focused on the core task.",
+  "one_second_verdict": {
+    "winner_label": "Raindrop.io",
+    "summary": "Best for keeping bookmarks in a simple list without managing dashboards or widgets.",
+    "reason": "Start.me fails first because it requires maintaining dashboard layouts and widgets instead of just saving links."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Raindrop.io is the better fit for Minimalists who want a clean bookmark list. It focuses on saving and viewing links in simple collections without requiring layout setup. Start.me is built as a customizable dashboard with widgets, which introduces extra elements like arranging blocks and maintaining layouts. For someone avoiding complexity, that added layer gets in the way of simple bookmarking.",
+    "decision_rule": "If managing bookmarks requires maintaining dashboard widgets and layouts, Start.me fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Raindrop.io fits this minimalist better",
+      "content": "This Minimalist wants bookmarks to stay simple and uncluttered. Raindrop.io fits because it presents links in straightforward lists or collections without turning them into a dashboard. Start.me treats bookmarks as part of a larger page with widgets and layout blocks. That adds visual and structural overhead that this user is trying to avoid."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Start.me wins",
+      "bullets": [
+        {
+          "point": "Start.me allows you to build a custom dashboard with widgets like notes, RSS feeds, and bookmarks.",
+          "why_it_matters": "You can centralize many tools in one page, but this adds setup and layout management."
+        },
+        {
+          "point": "Bookmarks are placed into draggable blocks within a page layout.",
+          "why_it_matters": "This gives flexibility in arrangement, but requires maintaining structure instead of just saving links."
+        },
+        {
+          "point": "Multiple pages and widgets can be combined into a personalized start screen.",
+          "why_it_matters": "This creates a rich workspace, but introduces more elements than a Minimalist needs."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Raindrop.io wins",
+      "bullets": [
+        {
+          "point": "Raindrop.io stores bookmarks in simple collections and list views without dashboard layouts.",
+          "why_it_matters": "You can save and find links without managing page structure or widgets."
+        },
+        {
+          "point": "The interface focuses on link storage with optional tags and folders rather than multi-widget pages.",
+          "why_it_matters": "This keeps the experience centered on bookmarks instead of adding extra features."
+        },
+        {
+          "point": "Saving a bookmark does not involve placing it into a visual layout or arranging elements.",
+          "why_it_matters": "This reduces decisions and keeps the process fast and uncluttered."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want to quickly save and access links but feel slowed down by arranging widgets or managing page layouts.",
+          "what_to_do_instead": "Use Raindrop.io to keep bookmarks simple and avoid layout management."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want a customizable dashboard that combines bookmarks with other tools and widgets.",
+          "what_to_do_instead": "Use Start.me if you want a full start page with multiple elements."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This could flip if the Minimalist wants a single homepage that combines bookmarks with other tools like notes or feeds. In that case, Start.me becomes more useful."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Pick Raindrop.io if you want a simple bookmark list.",
+        "Pick Start.me if you want a customizable dashboard with widgets.",
+        "If layouts and widgets feel like extra work, Raindrop.io is the better choice."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Raindrop.io better for Minimalists?",
+      "a": "Because it keeps bookmarks in simple lists without requiring dashboard layouts or widgets."
+    },
+    {
+      "q": "What makes Start.me more complex?",
+      "a": "It uses widgets and page layouts, which require setup and ongoing arrangement."
+    },
+    {
+      "q": "Is Start.me bad for simple use?",
+      "a": "Not necessarily, but its design includes more features than a Minimalist may want."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Raindrop.io focuses on simple bookmark storage, while Start.me builds a customizable dashboard with multiple elements."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Anybox vs Raindrop.io for Minimalists",
+      "slug": "anybox-vs-raindropio-for-minimalist",
+      "exists": true,
+      "x_name": "Anybox",
+      "y_name": "Raindrop.io",
+      "persona": "Minimalist"
+    }
+  ]
+}

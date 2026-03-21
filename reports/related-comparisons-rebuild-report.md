@@ -1,15 +1,15 @@
 # Related Comparisons Rebuild Report
 
-Date: 2026-03-20T01:43:15.245Z
+Date: 2026-03-21T06:30:01.572Z
 
 ## Summary
 
-- Total pages scanned: 481
+- Total pages scanned: 497
 - Total pages updated: 0
-- Average related_pages count: 5.66
-- Pages with 0 related pages: 8
-- Pages with 1 related page: 6
-- Pages with fewer than 3 related pages: 26
+- Average related_pages count: 5.57
+- Pages with 0 related pages: 10
+- Pages with 1 related page: 10
+- Pages with fewer than 3 related pages: 32
 
 ## Sparse Pages
 
@@ -23,18 +23,25 @@ Date: 2026-03-20T01:43:15.245Z
 - /compare/mailfence-vs-yahoo-mail-for-non-technical-user
 - /compare/matter-read-it-later-app-vs-raindropio-for-non-technical-user
 - /compare/notion-vs-project-co-for-non-technical-user
+- /compare/pinboard-vs-raindropio-for-beginner
+- /compare/pocket-vs-wallabag-for-student
 
 ### Pages with 1 related page
 
+- /compare/anybox-vs-raindropio-for-minimalist
 - /compare/bitwarden-vs-passbolt-for-solo-user
 - /compare/enpass-vs-keeper-for-solo-user
 - /compare/gmail-vs-hey-for-student
 - /compare/gmail-vs-superhuman-for-student
+- /compare/goodlinks-vs-linkace-for-non-technical-user
 - /compare/goodlinks-vs-pinboard-for-beginner
+- /compare/goodlinks-vs-raindropio-for-non-technical-user
 - /compare/raindropio-vs-wallabag-for-beginner
+- /compare/startme-vs-raindropio-for-minimalist
 
 ### Pages with fewer than 3 related pages
 
+- /compare/anybox-vs-raindropio-for-minimalist
 - /compare/apple-calendar-vs-notion-calendar-for-solo-user
 - /compare/apple-notes-vs-evernote-for-solo-user
 - /compare/apple-notes-vs-notion-for-solo-user
@@ -48,7 +55,9 @@ Date: 2026-03-20T01:43:15.245Z
 - /compare/gmail-vs-postbox-for-beginner
 - /compare/gmail-vs-superhuman-for-student
 - /compare/gmail-vs-thunderbird-for-beginner
+- /compare/goodlinks-vs-linkace-for-non-technical-user
 - /compare/goodlinks-vs-pinboard-for-beginner
+- /compare/goodlinks-vs-raindropio-for-non-technical-user
 - /compare/goodlinks-vs-wallabag-for-solo-user
 - /compare/google-calendar-vs-reclaim-ai-for-solo-user
 - /compare/google-calendar-vs-skedda-for-solo-user
@@ -60,7 +69,10 @@ Date: 2026-03-20T01:43:15.245Z
 - /compare/mailfence-vs-yahoo-mail-for-non-technical-user
 - /compare/matter-read-it-later-app-vs-raindropio-for-non-technical-user
 - /compare/notion-vs-project-co-for-non-technical-user
+- /compare/pinboard-vs-raindropio-for-beginner
+- /compare/pocket-vs-wallabag-for-student
 - /compare/raindropio-vs-wallabag-for-beginner
+- /compare/startme-vs-raindropio-for-minimalist
 
 ## Sample Debug Output
 

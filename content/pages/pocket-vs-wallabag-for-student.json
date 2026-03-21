@@ -1,0 +1,113 @@
+{
+"category": "Bookmark Managers",
+"categorySlug": "bookmark-managers",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
+"title": "Pocket vs Wallabag for Students",
+"slug": "pocket-vs-wallabag-for-student",
+"meta_description": "Pocket vs Wallabag for Students: Pocket works instantly with no setup, while Wallabag requires hosting and maintenance to get started.",
+"persona": "Student",
+"constraint_lens": "Students need tools that are quick to start and easy to stop using without committing to setup or ongoing maintenance.",
+"one_second_verdict": {
+"winner_label": "Pocket",
+"summary": "Best for quickly saving and reading articles during a course without setup.",
+"reason": "Wallabag fails first because it requires setting up and maintaining a self-hosted instance before you can use it."
+},
+"verdict": {
+"winner": "x",
+"summary": "Pocket is the better fit for Students who need a simple reading tool for a semester. It works immediately with an account and lets you save and read articles without setup. Wallabag often requires hosting and installation before it is usable, which adds effort upfront. For short-term use, that extra setup makes it harder to start and easier to abandon.",
+"decision_rule": "If saving and accessing articles requires setting up and maintaining a self-hosted instance, Wallabag fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Pocket fits this student better",
+"content": "This Student wants to save and read articles quickly without committing to a complex system. Pocket fits because it works right away and does not require technical setup. Wallabag introduces hosting and installation steps that take time and effort before reading even begins. For a short-term use case, that extra work is unnecessary."
+},
+{
+"type": "x_wins",
+"heading": "Where Pocket wins",
+"bullets": [
+{
+"point": "Pocket lets you create an account and start saving articles immediately through its app or browser extension.",
+"why_it_matters": "You can begin using it right away without setting up infrastructure."
+},
+{
+"point": "Articles are stored in a hosted reading queue with a built in reader view.",
+"why_it_matters": "You can read content easily without dealing with technical setup or maintenance."
+},
+{
+"point": "No installation or server management is required to use the core features.",
+"why_it_matters": "This keeps the tool easy to start and easy to stop using after the course ends."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Wallabag wins",
+"bullets": [
+{
+"point": "Wallabag can be self-hosted, giving you control over your data and storage.",
+"why_it_matters": "This allows ownership, but requires setup and ongoing maintenance."
+},
+{
+"point": "The system stores articles on your own server instead of a hosted service.",
+"why_it_matters": "You control access, but must ensure the system stays running."
+},
+{
+"point": "Wallabag supports a clean reading interface once it is set up.",
+"why_it_matters": "Reading is comfortable, but only after completing the setup process."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool breaks down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You want full control over storage and do not want to rely on a hosted service.",
+"what_to_do_instead": "Use Wallabag if you are willing to manage hosting for more control."
+},
+{
+"tool": "y",
+"fails_when": "You need to start reading quickly but are blocked by installation and server setup steps.",
+"what_to_do_instead": "Use Pocket to begin saving and reading immediately."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "This could flip if the Student already has a hosted Wallabag instance set up or is comfortable managing servers. In that case, the setup barrier is reduced."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"Pick Pocket if you want to start saving and reading articles immediately.",
+"Pick Wallabag if you want control over your data and can manage hosting.",
+"If setup feels like extra work, Pocket is the better choice."
+]
+}
+],
+"faqs": [
+{
+"q": "Why is Pocket better for Students?",
+"a": "Because it works instantly without requiring setup, making it easy to use for short-term needs."
+},
+{
+"q": "What makes Wallabag harder to use?",
+"a": "It often requires hosting and installation before you can start saving and reading articles."
+},
+{
+"q": "Is Wallabag unnecessary for students?",
+"a": "For short-term reading, yes. It is more useful if you want long-term control and are willing to manage setup."
+},
+{
+"q": "What is the main difference between these tools?",
+"a": "Pocket is a ready-to-use reading app, while Wallabag offers control through self-hosting but requires setup."
+}
+],
+"related_pages": []
+}
