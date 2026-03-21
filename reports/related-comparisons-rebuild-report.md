@@ -1,15 +1,15 @@
 # Related Comparisons Rebuild Report
 
-Date: 2026-03-21T06:30:01.572Z
+Date: 2026-03-21T22:01:19.768Z
 
 ## Summary
 
-- Total pages scanned: 497
+- Total pages scanned: 507
 - Total pages updated: 0
-- Average related_pages count: 5.57
-- Pages with 0 related pages: 10
-- Pages with 1 related page: 10
-- Pages with fewer than 3 related pages: 32
+- Average related_pages count: 5.49
+- Pages with 0 related pages: 12
+- Pages with 1 related page: 14
+- Pages with fewer than 3 related pages: 38
 
 ## Sparse Pages
 
@@ -17,6 +17,8 @@ Date: 2026-03-21T06:30:01.572Z
 
 - /compare/atracker-vs-kimai-for-student
 - /compare/bonsai-vs-trello-for-busy-professional
+- /compare/gitmind-vs-freemind-for-beginner
+- /compare/gitmind-vs-obsidian-canvas-for-non-technical-user
 - /compare/goodlinks-vs-wallabag-for-solo-user
 - /compare/instapaper-vs-zotero-for-student
 - /compare/jira-vs-todoist-for-beginner
@@ -30,14 +32,18 @@ Date: 2026-03-21T06:30:01.572Z
 
 - /compare/anybox-vs-raindropio-for-minimalist
 - /compare/bitwarden-vs-passbolt-for-solo-user
+- /compare/coggle-vs-thebrain-for-minimalist
 - /compare/enpass-vs-keeper-for-solo-user
 - /compare/gmail-vs-hey-for-student
 - /compare/gmail-vs-superhuman-for-student
 - /compare/goodlinks-vs-linkace-for-non-technical-user
 - /compare/goodlinks-vs-pinboard-for-beginner
 - /compare/goodlinks-vs-raindropio-for-non-technical-user
+- /compare/milanote-vs-mindnode-for-power-user
+- /compare/mindomo-vs-milanote-for-minimalist
 - /compare/raindropio-vs-wallabag-for-beginner
 - /compare/startme-vs-raindropio-for-minimalist
+- /compare/thebrain-vs-xmind-for-power-user
 
 ### Pages with fewer than 3 related pages
 
@@ -49,7 +55,10 @@ Date: 2026-03-21T06:30:01.572Z
 - /compare/bitwarden-vs-keepass-for-beginner
 - /compare/bitwarden-vs-passbolt-for-solo-user
 - /compare/bonsai-vs-trello-for-busy-professional
+- /compare/coggle-vs-thebrain-for-minimalist
 - /compare/enpass-vs-keeper-for-solo-user
+- /compare/gitmind-vs-freemind-for-beginner
+- /compare/gitmind-vs-obsidian-canvas-for-non-technical-user
 - /compare/gmail-vs-hey-for-student
 - /compare/gmail-vs-mailbird-for-beginner
 - /compare/gmail-vs-postbox-for-beginner
@@ -68,11 +77,14 @@ Date: 2026-03-21T06:30:01.572Z
 - /compare/keepass-vs-pcloud-pass-for-beginner
 - /compare/mailfence-vs-yahoo-mail-for-non-technical-user
 - /compare/matter-read-it-later-app-vs-raindropio-for-non-technical-user
+- /compare/milanote-vs-mindnode-for-power-user
+- /compare/mindomo-vs-milanote-for-minimalist
 - /compare/notion-vs-project-co-for-non-technical-user
 - /compare/pinboard-vs-raindropio-for-beginner
 - /compare/pocket-vs-wallabag-for-student
 - /compare/raindropio-vs-wallabag-for-beginner
 - /compare/startme-vs-raindropio-for-minimalist
+- /compare/thebrain-vs-xmind-for-power-user
 
 ## Sample Debug Output
 
