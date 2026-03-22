@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Best fit for instant task capture",
-      "content": "You need to record tasks quickly during a busy day and will not maintain database structures. Todoist opens with a task list where new items can be typed immediately. Notion commonly uses database tables where each task is a row with properties that must be filled or configured."
+      "heading": "Why Todoist fits Busy professionals better",
+      "content": "Todoist fits this busy professional because the same database-first mechanism creates several costs at once. It slows the first capture, adds more structure to think through during daily use, and makes a simple task list feel like something that has to be designed before it can help. The better fit here wins by reducing those layers, not by pretending structure never matters."
     },
     {
       "type": "y_wins",
       "heading": "Where Todoist wins",
       "bullets": [
         {
-          "point": "Direct task entry field at the top of each list",
-          "why_it_matters": "You type a task immediately without creating a database row or configuring fields."
+          "point": "Todoist lets you capture the task before designing the system",
+          "why_it_matters": "The user can start with the work itself instead of deciding on fields, properties, or table logic first."
         },
         {
-          "point": "Natural language scheduling during task entry",
-          "why_it_matters": "Typing phrases such as tomorrow or every Friday automatically sets the schedule."
+          "point": "Todoist keeps daily task handling lighter",
+          "why_it_matters": "Routine updates take less interpretation because the task is not wrapped in a heavier data model than the workflow needs."
         },
         {
-          "point": "Recurring task rules built into each task",
-          "why_it_matters": "Repeated responsibilities regenerate automatically without manual rewriting."
+          "point": "Todoist reduces structural thinking while organizing work",
+          "why_it_matters": "You spend less time deciding how the system should represent a task and more time deciding what to do about it."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where Notion wins",
       "bullets": [
         {
-          "point": "Database tables storing tasks with multiple properties",
-          "why_it_matters": "Teams track attributes such as status, priority, or owner directly on each task row."
+          "point": "Notion gives richer structure once the workflow really needs it",
+          "why_it_matters": "Fields, properties, or stronger data shape can be worth the setup cost after the list outgrows a simpler model."
         },
         {
-          "point": "Multiple database views such as board, calendar, and table",
-          "why_it_matters": "Projects can be visualized in different layouts using the same data."
+          "point": "Notion can support more precise organization later",
+          "why_it_matters": "The extra structure may help once task handling depends on more than titles and a few lightweight markers."
         },
         {
-          "point": "Workspace pages linking tasks with notes and documents",
-          "why_it_matters": "Tasks can live alongside detailed documentation and project information."
+          "point": "Notion can scale further for users who want to build a system",
+          "why_it_matters": "The same depth that feels heavy early can become useful when the task manager needs to behave more like an operating model."
         }
       ]
     },
@@ -66,47 +66,47 @@
       "items": [
         {
           "tool": "y",
-          "fails_when": "Your workflow requires structured project databases with many task properties.",
-          "what_to_do_instead": "Use Notion when tasks must include many structured attributes."
+          "fails_when": "Todoist becomes too shallow when the task system genuinely needs richer fields, stronger structure, or multiple ways to organize the same work.",
+          "what_to_do_instead": "Choose Notion if simple lists are no longer enough to carry the workflow."
         },
         {
           "tool": "x",
-          "fails_when": "You must fill property fields or navigate database tables before capturing a quick task.",
-          "what_to_do_instead": "Switch to Todoist for fast task entry."
+          "fails_when": "Notion breaks down when the user keeps paying setup and thinking cost before they can even enjoy a simple task list.",
+          "what_to_do_instead": "Choose Todoist when direct capture matters more than database-style structure."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If your workflow relies on managing project information and documentation alongside tasks inside one workspace, Notion may become the better option."
+      "content": "This can flip if the task system quickly grows into something that really does need richer structure, stronger fields, or multiple views. Then Notion may justify the extra setup."
     },
     {
       "type": "quick_rules",
-      "heading": "Quick rules",
+      "heading": "Quick decision rules",
       "rules": [
-        "If you want instant task capture, choose Todoist.",
-        "If database tables slow down everyday task entry, avoid Notion.",
-        "If tasks must live inside structured project databases, consider Notion."
+        "Choose Todoist if direct task capture matters more than richer task structure.",
+        "Choose Notion if the workflow truly needs fields, properties, or stronger organization.",
+        "Avoid Notion when system design is arriving before useful task entry."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Todoist faster for capturing tasks?",
-      "a": "Tasks can be typed directly into the list without filling out database properties."
+      "q": "Why does Todoist win on more than setup?",
+      "a": "Todoist also reduces the daily thinking and navigation burden that comes from carrying a heavier task structure than the workflow actually needs."
     },
     {
-      "q": "Does Notion store tasks in database tables?",
-      "a": "Yes. Tasks are commonly stored as rows with multiple property fields."
+      "q": "When is Notion still the better choice?",
+      "a": "Notion is the better choice when the task system truly needs richer structure and a simple list has become too limiting."
     },
     {
-      "q": "Which tool works better for quick daily task capture?",
-      "a": "Todoist works better because tasks can be entered instantly."
+      "q": "What usually makes Notion the wrong fit?",
+      "a": "The user keeps paying the cost of fields, properties, or structure before those things are delivering meaningful value."
     },
     {
-      "q": "When would Notion be the better option?",
-      "a": "It works well when tasks are part of structured project databases with detailed attributes."
+      "q": "Is this only about beginner friendliness?",
+      "a": "No. Even experienced users can lose time when the tool asks for more structure than the task actually needs."
     }
   ],
   "related_pages": [

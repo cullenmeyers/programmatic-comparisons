@@ -22,23 +22,23 @@
     {
       "type": "persona_fit",
       "heading": "Why Project Hamster fits Solo users better",
-      "content": "This solo user works on Linux and wants a tool that runs locally without accounts or syncing. Project Hamster fits because it is a native desktop app that stores time entries on the machine and does not require logging into a service. That removes the need to manage accounts or depend on a web interface to keep tracking usable."
+      "content": "Project Hamster fits this solo user because the same local-first mechanism removes friction in several places at once. It lowers setup by removing account creation, keeps daily tracking available even without a connection, and reduces the background worry that sync or login state will interrupt normal use. The win is not only privacy; it is steadier day-to-day operation with less upkeep."
     },
     {
       "type": "y_wins",
       "heading": "Where Project Hamster wins",
       "bullets": [
         {
-          "point": "Project Hamster runs as a local Linux application with no account or server required.",
-          "why_it_matters": "You can track time immediately without setting up or maintaining any external system, which keeps usage simple over time."
+          "point": "Project Hamster starts without asking you to maintain an online account",
+          "why_it_matters": "That removes an entire layer of setup and ongoing credential management before tracking can even feel routine."
         },
         {
-          "point": "Time entries are stored locally on the device instead of being synced to a cloud workspace.",
-          "why_it_matters": "This avoids needing to manage logins, internet access, or sync issues just to access your data."
+          "point": "Project Hamster keeps day-to-day tracking usable even when you are offline",
+          "why_it_matters": "The timer or activity log still works when your connection drops instead of turning basic capture into a sync problem."
         },
         {
-          "point": "The interface is built around quick local activity logging without complex project or workspace setup.",
-          "why_it_matters": "This reduces the number of steps needed to start using the tool, making it easier to maintain long term."
+          "point": "Project Hamster keeps the tool mentally lighter over time",
+          "why_it_matters": "There is less to monitor because local capture does not keep surfacing account status, sync state, or browser dependency."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where Clockify wins",
       "bullets": [
         {
-          "point": "Clockify provides a web-based workspace that can be accessed from any device with an account.",
-          "why_it_matters": "This is useful for accessing time data across devices, but requires maintaining a login and relying on an online system."
+          "point": "Clockify is easier when you need the same data on multiple devices",
+          "why_it_matters": "Cloud access can be genuinely helpful if your tracking does not live on one machine."
         },
         {
-          "point": "It includes structured project, client, and reporting features within a central dashboard.",
-          "why_it_matters": "This helps with organization, but adds complexity compared to a simple local tracker."
+          "point": "Clockify is simpler for sharing or checking time from a browser",
+          "why_it_matters": "Hosted access helps when the value comes from availability rather than from local control."
         },
         {
-          "point": "Clockify supports team collaboration through shared workspaces and synced time entries.",
-          "why_it_matters": "This is valuable for teams, but unnecessary overhead for a solo Linux user who just wants local tracking."
+          "point": "Clockify shifts storage and sync mechanics out of your hands",
+          "why_it_matters": "That can feel lighter if you prefer convenience over owning the environment yourself."
         }
       ]
     },
@@ -66,47 +66,47 @@
       "items": [
         {
           "tool": "y",
-          "fails_when": "Project Hamster becomes limiting when you need access to your time data across multiple devices or want built-in reporting dashboards.",
-          "what_to_do_instead": "Use Clockify if you need cloud access and structured reporting across devices."
+          "fails_when": "Project Hamster becomes limiting when the same time data has to stay visible across several devices or be checked from anywhere with no local machine involved.",
+          "what_to_do_instead": "Choose Clockify if cross-device access matters more than local-only simplicity."
         },
         {
           "tool": "x",
-          "fails_when": "Clockify breaks down when you want to track time without logging into a web app or managing an account.",
-          "what_to_do_instead": "Use Project Hamster if you want a local Linux app that works without accounts or web access."
+          "fails_when": "Clockify breaks down when account maintenance, sync state, or online dependency keeps getting in the way of a tool that should feel invisible.",
+          "what_to_do_instead": "Choose Project Hamster when local capture and lower upkeep matter more than hosted availability."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This could flip if you start working across multiple devices or need to share time data with others. In that case, Clockify becomes more useful because its cloud workspace makes access and sharing easier."
+      "content": "This can flip if the user regularly moves between devices or needs browser access from anywhere more than they need local-only simplicity. In that case, Clockify can justify the extra account layer."
     },
     {
       "type": "quick_rules",
       "heading": "Quick rules",
       "rules": [
-        "Pick Project Hamster if you want a simple local tracker on Linux with no accounts.",
-        "Pick Clockify if you need access to your time data from multiple devices.",
-        "Avoid Clockify if you do not want to rely on a web app or account login."
+        "Choose Project Hamster if you want local capture without account upkeep.",
+        "Choose Clockify if browser access or multi-device visibility matters more.",
+        "Avoid Clockify when sync and login state are becoming the real maintenance burden."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Project Hamster better for Linux users?",
-      "a": "Because it runs locally on Linux without requiring a web app or account, making it simple to use and maintain."
+      "q": "Why does local first help beyond privacy?",
+      "a": "It also reduces account upkeep, lowers dependence on sync, and keeps basic tracking available when connectivity is not the thing you want to think about."
     },
     {
-      "q": "What makes Clockify less suitable here?",
-      "a": "It depends on a web-based workspace and account login, which adds ongoing management and reliance on an online system."
+      "q": "What do you give up with Project Hamster?",
+      "a": "Usually some convenience around browser access, easier device switching, or hosted sharing."
     },
     {
-      "q": "Is Clockify still a good tool?",
-      "a": "Yes. It is useful when you need cloud access, reporting, or collaboration across devices."
+      "q": "When is Clockify still worth choosing?",
+      "a": "Clockify is still worth choosing when availability across devices matters more than keeping the tracker self-contained."
     },
     {
-      "q": "When should I choose Clockify instead?",
-      "a": "Choose Clockify if you need cross-device access, team collaboration, or structured reporting features."
+      "q": "What is the warning sign that Clockify is the wrong fit?",
+      "a": "It is when the account and sync layer keeps creating more maintenance than the actual time tracking itself."
     }
   ],
   "related_pages": [

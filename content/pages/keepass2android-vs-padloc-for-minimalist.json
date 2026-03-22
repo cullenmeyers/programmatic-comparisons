@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why KeePass2Android fits minimalists",
-      "content": "The user keeps an encrypted password vault file in personal cloud storage and wants to open it directly. KeePass2Android loads standard KDBX database files from device storage or cloud providers such as Google Drive. The vault remains a file that the user can move, copy, or back up independently. This avoids creating or maintaining service accounts just to access stored passwords."
+      "heading": "Why KeePass2Android fits Minimalists better",
+      "content": "KeePass2Android fits this minimalist because the winning mechanism reduces friction across setup, daily password use, and long-term vault management instead of solving only one narrow problem."
     },
     {
       "type": "x_wins",
       "heading": "Where KeePass2Android wins",
       "bullets": [
         {
-          "point": "KeePass2Android opens KDBX encrypted vault files directly from device storage or personal cloud drives.",
-          "why_it_matters": "Users access their passwords without creating vendor service accounts."
+          "point": "KeePass2Android handles the winning mechanism more directly",
+          "why_it_matters": "The user spends less time compensating for the exact friction named in the decision rule."
         },
         {
-          "point": "The vault remains a portable encrypted database file stored in personal storage.",
-          "why_it_matters": "Users control where the vault lives and how it is backed up."
+          "point": "KeePass2Android keeps daily password use smoother",
+          "why_it_matters": "The practical workflow stays shorter and easier to repeat."
         },
         {
-          "point": "KeePass2Android reads the database file directly instead of syncing through a hosted vault service.",
-          "why_it_matters": "Minimalists avoid depending on vendor hosted infrastructure."
+          "point": "KeePass2Android reduces the hidden cost of managing credentials over time",
+          "why_it_matters": "That matters when the password manager is supposed to remove friction, not create a second system to babysit."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Padloc wins",
       "bullets": [
         {
-          "point": "Padloc stores credentials in a hosted vault connected to a user account.",
-          "why_it_matters": "Passwords sync automatically across devices without managing vault files."
+          "point": "Padloc can still win in a narrower workflow",
+          "why_it_matters": "The losing tool may be better when the deeper or smoother mechanism is not doing much real work yet."
         },
         {
-          "point": "Padloc provides browser extensions that detect login forms and autofill credentials.",
-          "why_it_matters": "Users sign into websites quickly without opening a vault file manually."
+          "point": "Padloc often asks for a different tradeoff rather than offering nothing",
+          "why_it_matters": "That matters when the user values control and convenience differently than this verdict assumes."
         },
         {
-          "point": "Padloc restores the password vault automatically when signing into a new device.",
-          "why_it_matters": "Users regain access to passwords without importing database files."
+          "point": "Padloc can be the better fit when complexity is intentional",
+          "why_it_matters": "The friction is only a dealbreaker when it gets in the way of the job this persona actually has."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The user wants passwords synchronized automatically across devices without handling vault files.",
-          "what_to_do_instead": "Use Padloc where the vault syncs automatically through the hosted account."
+          "fails_when": "KeePass2Android becomes heavier than necessary when the winning mechanism is not doing enough real work yet.",
+          "what_to_do_instead": "Choose Padloc if the simpler tradeoff still fits."
         },
         {
           "tool": "y",
-          "fails_when": "The user refuses vendor service accounts because Padloc requires creating a hosted account to access the vault.",
-          "what_to_do_instead": "Use KeePass2Android where the encrypted database file opens directly from personal storage."
+          "fails_when": "Padloc breaks down when the exact friction named in the rule keeps recurring during normal password use.",
+          "what_to_do_instead": "Choose KeePass2Android once that mechanism matters daily."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user prefers automatic vault synchronization across devices and does not want to manage encrypted vault files manually, Padloc may become the better option."
+      "content": "This can flip if the tradeoff on the losing side starts doing more real work than the mechanism that currently wins. Then Padloc may be worth the switch."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick KeePass2Android if your password vault is stored as an encrypted file you control.",
-        "Pick KeePass2Android if you refuse vendor hosted password accounts.",
-        "Pick Padloc if you want passwords synchronized automatically across devices."
+        "Choose KeePass2Android when the winning mechanism is already affecting daily password use.",
+        "Choose Padloc when its tradeoff still better matches the job you actually have.",
+        "Avoid Padloc once the same friction keeps showing up in setup and routine use."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do minimalists choose KeePass2Android?",
-      "a": "It opens encrypted vault files directly without requiring a hosted account service."
+      "q": "Why does KeePass2Android fit the rule better?",
+      "a": "KeePass2Android turns the mechanism in the decision rule into gains across setup, daily use, and long-term vault management instead of only one isolated feature."
     },
     {
-      "q": "Does Padloc require a service account?",
-      "a": "Yes. Padloc stores credentials inside a hosted vault connected to a user account."
+      "q": "When is Padloc still reasonable?",
+      "a": "Padloc is still reasonable when its tradeoff better matches the real password workflow."
     },
     {
-      "q": "Can KeePass2Android open standard KeePass vault files?",
-      "a": "Yes. It supports encrypted KDBX database files used by KeePass compatible managers."
+      "q": "What usually signals it is time to switch?",
+      "a": "The same friction starts appearing during ordinary sign-ins and vault maintenance instead of only in edge cases."
     },
     {
-      "q": "Who should choose Padloc instead?",
-      "a": "Users who want automatic password synchronization across devices may prefer Padloc."
+      "q": "Is this verdict only about simplicity?",
+      "a": "No. It is about where the ongoing operating cost of the password manager really lands."
     }
   ],
   "related_pages": [

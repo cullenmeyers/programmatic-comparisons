@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why GoodLinks fits this non-technical user better",
-      "content": "This Non-technical user wants a tool that works right away without worrying about setup. GoodLinks fits because it runs locally on the device and lets you save and read links instantly. LinkAce requires installing software and managing a server, which can feel confusing and risky. That added complexity makes it harder to trust and use."
+      "heading": "Why GoodLinks fits Non-technical users better",
+      "content": "GoodLinks fits this non-technical user because LinkAce is the tool asking for self-hosting or backend setup before the bookmark system feels ready, not GoodLinks. That front-loads technical decisions, keeps maintenance attached to normal use, and turns a simple link-saving tool into an infrastructure task. GoodLinks wins by making bookmarking useful before server work takes over."
     },
     {
       "type": "x_wins",
       "heading": "Where GoodLinks wins",
       "bullets": [
         {
-          "point": "GoodLinks stores articles locally on the device for offline reading.",
-          "why_it_matters": "You can access saved content anytime without needing internet or setup."
+          "point": "GoodLinks gets bookmarking usable before hosting becomes a project",
+          "why_it_matters": "The user can start saving links without dealing with servers, installs, or backend upkeep first."
         },
         {
-          "point": "No account, server, or installation process is required to start using the app.",
-          "why_it_matters": "You can begin saving links immediately without technical steps."
+          "point": "GoodLinks keeps daily use separate from infrastructure maintenance",
+          "why_it_matters": "Routine bookmarking stays focused on links instead of on keeping a service running."
         },
         {
-          "point": "The app provides a simple save and read interface focused on ease of use.",
-          "why_it_matters": "Fewer options and settings reduce the chance of confusion or mistakes."
+          "point": "GoodLinks lowers the technical overhead of adopting the tool",
+          "why_it_matters": "That matters when self-hosting is exactly what is blocking a non-technical or beginner workflow."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where LinkAce wins",
       "bullets": [
         {
-          "point": "LinkAce can be self-hosted, giving full control over stored bookmarks.",
-          "why_it_matters": "This allows ownership, but requires setup and ongoing maintenance."
+          "point": "LinkAce can still be better when the user wants hosting control and backend ownership",
+          "why_it_matters": "The setup cost may be worth it once self-hosting is part of the reason for choosing the tool."
         },
         {
-          "point": "It organizes bookmarks using tags, lists, and metadata fields.",
-          "why_it_matters": "This supports structured organization, but adds complexity."
+          "point": "LinkAce supports a more self-managed bookmark system later",
+          "why_it_matters": "That matters when backend control becomes a real requirement instead of a blocker."
         },
         {
-          "point": "The system runs on a server that you manage yourself.",
-          "why_it_matters": "This provides flexibility, but introduces technical responsibilities."
+          "point": "LinkAce may fit when infrastructure decisions are intentional",
+          "why_it_matters": "The extra setup only pays back when that backend control is part of the job."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "You want access to bookmarks across devices with syncing and centralized storage.",
-          "what_to_do_instead": "Use LinkAce if you are comfortable managing a self-hosted system for multi-device access."
+          "fails_when": "GoodLinks becomes too limited when the user now wants backend control and self-hosted ownership badly enough to justify setup.",
+          "what_to_do_instead": "Choose LinkAce if infrastructure control has become part of the requirement."
         },
         {
           "tool": "y",
-          "fails_when": "You want to save and read links easily but are blocked by installation and server setup steps.",
-          "what_to_do_instead": "Use GoodLinks for a simple offline experience with no setup."
+          "fails_when": "LinkAce breaks down when hosting and maintenance keep standing between the user and ordinary bookmarking.",
+          "what_to_do_instead": "Choose GoodLinks when the tool has to work before server setup does."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This could flip if the Non-technical user gets help setting up LinkAce or wants full control over bookmarks across devices. In that case, LinkAce may become useful."
+      "content": "This can flip if the user now wants self-hosted ownership badly enough to justify setup and maintenance. Then LinkAce may be worth the heavier start."
     },
     {
       "type": "quick_rules",
-      "heading": "Quick rules",
+      "heading": "Quick decision rules",
       "rules": [
-        "Pick GoodLinks if you want a simple app with no setup.",
-        "Pick LinkAce if you want full control and can manage hosting.",
-        "If setup feels risky or confusing, GoodLinks is the better choice."
+        "Choose GoodLinks if the bookmark system should work before hosting becomes a project.",
+        "Choose LinkAce if self-hosted control is now worth the setup.",
+        "Avoid LinkAce when server maintenance is the actual blocker."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is GoodLinks better for Non-technical users?",
-      "a": "Because it works immediately without requiring setup, accounts, or server management."
+      "q": "Why does self-hosting change the recommendation?",
+      "a": "Because it affects first use, daily maintenance, and whether a simple bookmarking tool turns into a backend project."
     },
     {
-      "q": "What makes LinkAce harder to use?",
-      "a": "It requires installation and self-hosting, which adds technical steps and maintenance."
+      "q": "When is LinkAce still the better fit?",
+      "a": "LinkAce is still the better fit when self-hosted ownership is part of the reason for using it."
     },
     {
-      "q": "Does GoodLinks work offline?",
-      "a": "Yes, it stores content locally so you can read without an internet connection."
+      "q": "What usually makes LinkAce fail first?",
+      "a": "Hosting and maintenance arrive before the user can simply save and retrieve bookmarks."
     },
     {
-      "q": "What is the main difference between these tools?",
-      "a": "GoodLinks is a simple offline app, while LinkAce is a self-hosted bookmark manager with more setup."
+      "q": "Is this only for beginners?",
+      "a": "No. Any user can lose momentum when backend work is larger than the bookmarking job."
     }
   ],
   "related_pages": [

@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Keeper fits busy professionals",
-      "content": "The user shares credentials with coworkers and needs controlled access to each login. Keeper provides a shared vault where administrators can assign access permissions to specific credentials. Team members log into their accounts and see only the passwords they are allowed to access. This allows teams to collaborate without manually distributing encrypted vault files."
+      "heading": "Why Keeper fits Busy professionals better",
+      "content": "Keeper fits this busy professional because shared access changes setup, daily operations, and admin overhead together. It affects how credentials are handed off, how permissions change over time, and whether collaboration feels native or improvised. Keeper wins by making sharing a system capability instead of a manual workaround."
     },
     {
       "type": "y_wins",
       "heading": "Where Keeper wins",
       "bullets": [
         {
-          "point": "Keeper allows administrators to assign access permissions to individual credentials inside a shared vault.",
-          "why_it_matters": "Teammates can open shared passwords instantly without exchanging vault files."
+          "point": "Keeper makes credential sharing native instead of improvised",
+          "why_it_matters": "Permissions and shared vault access can be managed inside the system rather than by passing encrypted files around."
         },
         {
-          "point": "Keeper updates shared credentials centrally inside the hosted vault workspace.",
-          "why_it_matters": "When a password changes, every authorized teammate sees the new version automatically."
+          "point": "Keeper keeps day-to-day access changes faster",
+          "why_it_matters": "Teams can add, remove, or limit access without redistributing the whole vault."
         },
         {
-          "point": "Keeper organizes credentials inside team vault folders with controlled access.",
-          "why_it_matters": "Large sets of credentials can be shared across departments without exposing everything to everyone."
+          "point": "Keeper gives the organization a cleaner admin model",
+          "why_it_matters": "That matters when password sharing needs to scale beyond a handful of manual handoffs."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Buttercup wins",
       "bullets": [
         {
-          "point": "Buttercup stores passwords inside a local encrypted vault file.",
-          "why_it_matters": "Users maintain full control over where the vault file is stored."
+          "point": "Buttercup can still be simpler for purely personal vaults",
+          "why_it_matters": "Manual file handling is less of a problem when sharing and role changes rarely happen."
         },
         {
-          "point": "Buttercup works completely offline once the vault file exists.",
-          "why_it_matters": "Passwords remain accessible even without internet connectivity."
+          "point": "Buttercup avoids a larger admin layer for small setups",
+          "why_it_matters": "That may be fine when the team model would mostly sit unused."
         },
         {
-          "point": "Buttercup allows vault files to be stored in user controlled storage locations.",
-          "why_it_matters": "Advanced users can manage backups and storage independently."
+          "point": "Buttercup leaves storage and transfer fully in the user's hands",
+          "why_it_matters": "Some users still prefer that even though it scales worse for collaboration."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "The user refuses to store credentials inside a hosted vault service.",
-          "what_to_do_instead": "Use Buttercup where passwords are stored inside a local encrypted vault file."
+          "fails_when": "Keeper becomes heavier than necessary when credential sharing is rare and a full permission model would mostly sit unused.",
+          "what_to_do_instead": "Choose Buttercup if the vault is basically personal or static."
         },
         {
           "tool": "x",
-          "fails_when": "Multiple teammates must access shared credentials because Buttercup requires manually distributing encrypted vault files.",
-          "what_to_do_instead": "Use Keeper where credential access can be assigned inside a shared vault workspace."
+          "fails_when": "Buttercup breaks down when access changes require manually redistributing files instead of updating shared permissions inside the system.",
+          "what_to_do_instead": "Choose Keeper when collaboration is part of normal password management."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user manages passwords alone and prefers storing the vault locally instead of inside a hosted service, Buttercup may become the better option."
+      "content": "This can flip if the password workflow stays personal enough that a full shared-vault permission model never really pays back. Then Buttercup may be sufficient."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Keeper if your team needs permission based access to shared credentials.",
-        "Pick Keeper if coworkers must see updated passwords automatically.",
-        "Pick Buttercup if you want to keep the password vault entirely local."
+        "Choose Keeper if credential sharing and permissions change often.",
+        "Choose Buttercup if the vault is mostly personal and does not need a team admin layer.",
+        "Avoid Buttercup when access changes require manual file handoffs."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do teams prefer Keeper?",
-      "a": "Keeper provides shared vault workspaces where administrators can assign credential access permissions."
+      "q": "Why does sharing method change the recommendation?",
+      "a": "Because it affects how access is granted, changed, and audited instead of treating password sharing as a manual file problem."
     },
     {
-      "q": "Can Buttercup share credentials with teams easily?",
-      "a": "No. Buttercup stores passwords in encrypted vault files that must be distributed manually."
+      "q": "When is Buttercup still enough?",
+      "a": "Buttercup is still enough when the vault is mostly personal and sharing needs are rare."
     },
     {
-      "q": "Does Keeper update shared passwords automatically?",
-      "a": "Yes. When a password changes in the shared vault, all authorized teammates see the updated version."
+      "q": "What usually makes Buttercup break down?",
+      "a": "Credential access changes often enough that redistributing files becomes messy and slow."
     },
     {
-      "q": "Who should choose Buttercup instead?",
-      "a": "Users who want to keep passwords inside a local encrypted vault file may prefer Buttercup."
+      "q": "Is Keeper only for large organizations?",
+      "a": "No. Any team that changes access regularly can benefit from a native sharing model."
     }
   ],
   "related_pages": [

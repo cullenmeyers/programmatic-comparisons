@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Calendly fits beginners",
-      "content": "The user wants to send a link where people can immediately book a meeting. Calendly creates a scheduling page that shows open time slots based on the host calendar. Guests simply choose a time and the meeting is scheduled instantly. This removes the need to manage responses or coordinate multiple options."
+      "heading": "Why Calendly fits Beginners better",
+      "content": "Calendly fits this beginner because direct booking changes several parts of the workflow at once. It reduces the setup needed to share availability, shortens the path from invitation to confirmed slot, and avoids the extra response loop that poll-based scheduling creates. Calendly wins by turning availability into an immediate action."
     },
     {
       "type": "x_wins",
       "heading": "Where Calendly wins",
       "bullets": [
         {
-          "point": "Calendly generates a booking page that shows available time slots from the host calendar.",
-          "why_it_matters": "Guests can immediately choose a time without sending responses or waiting for confirmation."
+          "point": "Calendly lets invitees act on availability immediately",
+          "why_it_matters": "A booking page turns scheduling into one direct step instead of waiting for poll responses to settle."
         },
         {
-          "point": "Calendly automatically adds the meeting to both calendars after a slot is selected.",
-          "why_it_matters": "Beginners do not need to manually confirm or coordinate meeting times."
+          "point": "Calendly keeps the daily scheduling path shorter",
+          "why_it_matters": "The host can share one link and move on instead of managing a response-collection loop."
         },
         {
-          "point": "Calendly scheduling links work by sharing one simple URL.",
-          "why_it_matters": "Users can schedule meetings by sending a single link instead of managing polls."
+          "point": "Calendly fits repeated one-to-one scheduling better",
+          "why_it_matters": "The workflow scales when the main job is confirming slots quickly rather than comparing groups."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Doodle wins",
       "bullets": [
         {
-          "point": "Doodle allows the host to create a poll with multiple possible meeting times.",
-          "why_it_matters": "Groups can vote on options when a shared time is difficult to find."
+          "point": "Doodle can still be better when many people's availability has to be compared before choosing a time",
+          "why_it_matters": "A poll is often the clearer model when the meeting is fundamentally about collecting responses."
         },
         {
-          "point": "Doodle collects availability from multiple participants before confirming a meeting.",
-          "why_it_matters": "Large groups can identify the time that works best for everyone."
+          "point": "Doodle avoids overbuilding the scheduling flow for one-off group coordination",
+          "why_it_matters": "That matters when a booking page would mostly add structure the meeting does not need."
         },
         {
-          "point": "Doodle supports scheduling where the final meeting time is chosen after responses are collected.",
-          "why_it_matters": "Hosts can review responses and select the most popular option."
+          "point": "Doodle keeps temporary group scheduling easier to explain",
+          "why_it_matters": "The lighter poll model can be better when recurring self-booking is not the real job."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The meeting involves many participants who need to vote on possible time options.",
-          "what_to_do_instead": "Use Doodle where participants respond to a poll to determine the best time."
+          "fails_when": "Calendly becomes the wrong fit when the meeting really depends on comparing many people's responses before a time can be chosen.",
+          "what_to_do_instead": "Choose Doodle if a poll is now the cleaner coordination model."
         },
         {
           "tool": "y",
-          "fails_when": "The user wants people to immediately book a meeting because Doodle requires creating a poll first.",
-          "what_to_do_instead": "Use Calendly where invitees can select a fixed time slot instantly."
+          "fails_when": "Doodle breaks down when the user wants scheduling to end with an immediate confirmed slot instead of waiting for poll responses.",
+          "what_to_do_instead": "Choose Calendly when direct booking is the real need."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the meeting involves a large group where the host must collect availability from many people before choosing a time, Doodle may become the better option."
+      "content": "This can flip if the meeting becomes more about comparing a group's availability than letting one person book a slot immediately. Then Doodle may be the better model."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Calendly if you want a link where people can immediately book a meeting.",
-        "Pick Calendly if you want meetings scheduled automatically when a slot is chosen.",
-        "Pick Doodle if you need participants to vote on possible meeting times."
+        "Choose Calendly if people should be able to book a time immediately.",
+        "Choose Doodle if the meeting needs group availability comparison first.",
+        "Avoid Doodle when waiting on poll responses is the main friction."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Calendly easier for beginners?",
-      "a": "Calendly lets people book a meeting directly by choosing an available time slot from a shared link."
+      "q": "Why does direct booking win in some cases?",
+      "a": "Because some meetings should move straight from shared availability to a confirmed slot without waiting for poll responses."
     },
     {
-      "q": "Does Doodle use a booking page like Calendly?",
-      "a": "No. Doodle typically starts with a poll where participants vote on possible meeting times."
+      "q": "When is Doodle still the better model?",
+      "a": "Doodle is still the better model when the meeting depends on comparing many people's availability before choosing a time."
     },
     {
-      "q": "When is Doodle useful?",
-      "a": "Doodle works well when multiple participants need to vote on the best meeting time."
+      "q": "What usually makes Doodle fail first?",
+      "a": "The user wants an immediate booking path, not a response-collection loop."
     },
     {
-      "q": "Can Calendly schedule meetings automatically?",
-      "a": "Yes. Once a guest selects a time slot, the meeting is automatically added to calendars."
+      "q": "Is Calendly only for one-to-one meetings?",
+      "a": "Mostly for cases where fast confirmed booking matters more than group comparison."
     }
   ],
   "related_pages": [

@@ -22,23 +22,23 @@
     {
       "type": "persona_fit",
       "heading": "Why ManicTime fits Solo users better",
-      "content": "This solo user wants a system that just runs on their machine without needing to think about servers or databases. ManicTime fits because it installs like a regular desktop app and handles tracking locally without extra infrastructure. That removes the need to monitor uptime, manage updates, or fix backend issues."
+      "content": "ManicTime fits this solo user because the real decision is not only about logging hours. It is also about who controls the tracker after installation, how far the system can be bent to match internal process, and whether admin access stays in your own hands. That turns the same self-hosting mechanism into setup control, long-run flexibility, and data ownership rather than just one hosting preference."
     },
     {
       "type": "x_wins",
       "heading": "Where Kimai wins",
       "bullets": [
         {
-          "point": "Kimai runs as a self-hosted web app that you access through a browser after setting up a server and database.",
-          "why_it_matters": "This allows access from multiple devices, but requires maintaining a backend system that can break or require fixes over time."
+          "point": "Kimai is faster to start because the platform is already managed",
+          "why_it_matters": "You can begin tracking without planning hosting, deployment, or upgrades first."
         },
         {
-          "point": "It supports multi-user environments with shared access through a centralized web interface.",
-          "why_it_matters": "This is useful for teams, but adds complexity and overhead that a solo user does not need."
+          "point": "Kimai asks for less operational maintenance after signup",
+          "why_it_matters": "That is useful when you want the tracker to stay someone else's infrastructure problem."
         },
         {
-          "point": "Kimai relies on server-side storage and configuration for managing projects, users, and time entries.",
-          "why_it_matters": "This creates ongoing responsibility to keep the system running, which increases maintenance load."
+          "point": "Kimai keeps the interface closer to a fixed product path",
+          "why_it_matters": "Some teams prefer fewer customization decisions if the default workflow is already good enough."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where ManicTime wins",
       "bullets": [
         {
-          "point": "ManicTime installs as a desktop application and stores all tracking data locally on the machine.",
-          "why_it_matters": "You do not need to set up or maintain any backend systems, which keeps the tool simple to run long term."
+          "point": "ManicTime gives you control over where the tracker runs",
+          "why_it_matters": "ManicTime lets you choose the server, environment, and upgrade timing instead of accepting a fixed hosted setup."
         },
         {
-          "point": "Tracking runs automatically in the background without requiring a server or web interface.",
-          "why_it_matters": "This removes the need to manage uptime or access a hosted dashboard just to use the tool."
+          "point": "ManicTime can be shaped around your own workflow rules",
+          "why_it_matters": "That matters when a power user wants to change fields, permissions, or extensions instead of working around product limits."
         },
         {
-          "point": "There is no requirement to configure databases, hosting, or deployment before using the tool.",
-          "why_it_matters": "You can start tracking immediately and avoid setup steps that could break or require troubleshooting."
+          "point": "ManicTime keeps data ownership and admin access in the same hands",
+          "why_it_matters": "You do not have to separate daily time tracking from the operational decisions about backups, retention, or internal access."
         }
       ]
     },
@@ -65,48 +65,48 @@
       "heading": "Where each tool breaks down",
       "items": [
         {
-          "tool": "x",
-          "fails_when": "Kimai breaks down when you need to maintain a server and database to keep time tracking working reliably.",
-          "what_to_do_instead": "Use ManicTime if you want a local tool that runs without backend setup or maintenance."
+          "tool": "y",
+          "fails_when": "ManicTime becomes the wrong fit when nobody wants server ownership, upgrades, or internal admin responsibility to become part of the tracking tool.",
+          "what_to_do_instead": "Choose Kimai if managed convenience matters more than infrastructure control."
         },
         {
-          "tool": "y",
-          "fails_when": "ManicTime becomes limiting when you need shared access across multiple users or devices through a web interface.",
-          "what_to_do_instead": "Use Kimai if you are comfortable managing a server and need centralized access."
+          "tool": "x",
+          "fails_when": "Kimai breaks down when the team needs to decide where the tracker runs, how it is customized, or how the data is governed beyond vendor defaults.",
+          "what_to_do_instead": "Choose ManicTime when deployment control and deeper system ownership are real requirements."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This could flip if you start working with others or need access to your time data from multiple devices through a browser. In that case, Kimai may be worth the setup because the shared web interface becomes useful."
+      "content": "This can flip if the tracker is not part of your internal infrastructure strategy and nobody wants to own deployment or maintenance. In that narrower case, Kimai can be the better fit because managed convenience is the real constraint."
     },
     {
       "type": "quick_rules",
       "heading": "Quick rules",
       "rules": [
-        "Pick ManicTime if you want local tracking with no server or database to manage.",
-        "Pick Kimai if you need a web-based system with shared access.",
-        "Avoid Kimai if you do not want to deal with backend setup or maintenance."
+        "Choose ManicTime if hosting control is part of the requirement.",
+        "Choose Kimai if you want the tracker ready without owning deployment.",
+        "Avoid Kimai when vendor defaults are the exact limit you are trying to escape."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is ManicTime better for solo users?",
-      "a": "Because it runs locally as a desktop app and does not require managing a server or database."
+      "q": "Why does ManicTime win on more than hosting?",
+      "a": "ManicTime changes not only where the tracker runs, but also how much control you keep over customization, upgrades, and data handling."
     },
     {
-      "q": "What makes Kimai harder to maintain?",
-      "a": "It requires setting up and running a web server and database, which adds ongoing maintenance work."
+      "q": "What is the real cost of choosing ManicTime?",
+      "a": "You are taking on more operational responsibility, so the tradeoff is control versus convenience rather than features versus no features."
     },
     {
-      "q": "Is Kimai a bad tool?",
-      "a": "No. It is useful for users who need a self-hosted web-based system and are comfortable managing it."
+      "q": "When is Kimai still the better choice?",
+      "a": "Kimai is still better when nobody wants to own the environment and managed simplicity is genuinely the safer option."
     },
     {
-      "q": "When should I choose Kimai instead?",
-      "a": "Choose Kimai when you need multi-user access through a browser and are willing to maintain a server."
+      "q": "What usually forces the move away from Kimai?",
+      "a": "It is usually when fixed vendor boundaries start blocking deployment, admin, or customization decisions that the team actually needs to make."
     }
   ],
   "related_pages": [

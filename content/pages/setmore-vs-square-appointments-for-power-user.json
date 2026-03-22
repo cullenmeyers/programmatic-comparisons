@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Square Appointments fits power users running paid services",
-      "content": "This power user runs a service business where customers book appointments and pay for the service. Square Appointments connects booking pages directly to the Square payment system so the customer can schedule and pay in the same flow. The appointment automatically appears in the calendar while the payment is recorded in the same system. Setmore focuses primarily on scheduling and requires additional payment integrations to complete checkout."
+      "heading": "Why Square Appointments fits Power users better",
+      "content": "Square Appointments fits this power user because scheduling is part of a paid service flow, not just a calendar event. That affects setup, the day-to-day booking handoff, and whether payment and confirmation stay connected instead of becoming separate chores. Square Appointments wins by keeping that operational flow together."
     },
     {
       "type": "y_wins",
       "heading": "Where Square Appointments wins",
       "bullets": [
         {
-          "point": "Built in payment processing with Square checkout",
-          "why_it_matters": "When a customer books a service, the system can immediately collect payment through the Square payment processor. This connects scheduling and checkout in one step."
+          "point": "Square Appointments keeps appointment booking tied to the service transaction",
+          "why_it_matters": "Scheduling and checkout happen in one flow instead of requiring separate confirmation steps."
         },
         {
-          "point": "Unified booking and payment workflow",
-          "why_it_matters": "Appointments, payments, and service records are stored in the same system. This reduces the need to reconcile bookings with separate payment tools."
+          "point": "Square Appointments reduces manual handoff between booking and payment",
+          "why_it_matters": "The user spends less time stitching together service setup after the slot is chosen."
         },
         {
-          "point": "Direct connection to Square point of sale system",
-          "why_it_matters": "Businesses using Square POS can link appointments with in store transactions and customer records. This creates a single workflow for retail and service scheduling."
+          "point": "Square Appointments fits businesses where appointments are part of a paid workflow",
+          "why_it_matters": "The calendar works more like an operations tool instead of only an availability page."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Setmore wins",
       "bullets": [
         {
-          "point": "Simple appointment booking interface",
-          "why_it_matters": "Setmore focuses on displaying available time slots and booking services quickly without requiring a full commerce system."
+          "point": "Setmore can still be better when the calendar should stay separate from commerce",
+          "why_it_matters": "A simpler booking tool may be enough if payment happens elsewhere or not at all."
         },
         {
-          "point": "Multiple calendar views for appointment management",
-          "why_it_matters": "Users can manage staff schedules and service bookings across daily or weekly views, helping teams track appointments visually."
+          "point": "Setmore reduces setup tied to services and checkout",
+          "why_it_matters": "That matters when the user only needs meeting booking."
         },
         {
-          "point": "Flexible integrations with external tools",
-          "why_it_matters": "Setmore connects with various external apps so scheduling can plug into existing business systems."
+          "point": "Setmore keeps the scheduling flow lighter for non-paid appointments",
+          "why_it_matters": "The added service stack is not always worth carrying."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "You only need a simple appointment calendar and do not want to run payments through the Square ecosystem.",
-          "what_to_do_instead": "Use Setmore for a simpler scheduling focused system."
+          "fails_when": "Square Appointments becomes heavier than necessary when appointments are not tied to paid services or checkout flows.",
+          "what_to_do_instead": "Choose Setmore if a simpler scheduling tool is enough."
         },
         {
           "tool": "x",
-          "fails_when": "You expect customers to pay during the booking process without switching to a separate checkout tool.",
-          "what_to_do_instead": "Use Square Appointments so booking and payment happen in the same workflow."
+          "fails_when": "Setmore breaks down when booking and payment keep requiring manual handoff between separate systems.",
+          "what_to_do_instead": "Choose Square Appointments when service and scheduling need to stay linked."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If your business only needs a booking calendar and payment happens in person or through a separate billing system, Setmore may be the better choice because it focuses purely on appointment scheduling."
+      "content": "This can flip if payment and service configuration are no longer part of the appointment workflow. Then Setmore may be the cleaner option."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Choose Square Appointments if clients must pay during the booking process.",
-        "Choose Square Appointments if your business already uses Square payments or POS.",
-        "Choose Setmore if you only need a scheduling calendar without integrated checkout."
+        "Choose Square Appointments if booking and payment need to stay in one flow.",
+        "Choose Setmore if you only need scheduling without service checkout.",
+        "Avoid Setmore when booking keeps requiring manual payment handoff."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Does Square Appointments process payments?",
-      "a": "Yes. Square Appointments connects directly to the Square payment system so customers can pay while booking their appointment."
+      "q": "Why does payment integration change the recommendation?",
+      "a": "Because it ties scheduling to checkout, reducing manual handoff and making appointments easier to confirm in one flow."
     },
     {
-      "q": "Can Setmore collect payments during booking?",
-      "a": "Setmore can support payments through integrations, but the payment workflow is typically handled through connected services rather than built directly into the scheduling system."
+      "q": "When is Setmore still the better fit?",
+      "a": "Setmore is still the better fit when the calendar does not need to handle payment or service configuration."
     },
     {
-      "q": "Why do service businesses prefer Square Appointments?",
-      "a": "Because the booking calendar and payment checkout are connected, making it easier to manage paid appointments in one system."
+      "q": "What usually makes Setmore fail first?",
+      "a": "Booking keeps breaking away from the service transaction and creating follow-up work."
     },
     {
-      "q": "When is Setmore a better option?",
-      "a": "Setmore works well for businesses that only need appointment scheduling and handle payments separately."
+      "q": "Is Square Appointments only for businesses?",
+      "a": "Mostly for workflows where the appointment is part of an operational service exchange."
     }
   ],
   "related_pages": [

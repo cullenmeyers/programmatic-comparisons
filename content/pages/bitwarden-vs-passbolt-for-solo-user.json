@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Bitwarden fits solo users",
-      "content": "The user manages passwords only for personal accounts and does not want to run servers or manage hosting. Bitwarden provides a hosted vault that opens immediately after account creation. Passwords can be saved through browser extensions without setting up infrastructure. This allows a solo user to manage credentials without ongoing system maintenance."
+      "heading": "Why Bitwarden fits Solo users better",
+      "content": "Bitwarden fits this solo user because the same infrastructure choice affects several layers at once. It changes where the vault is deployed, how daily admin work connects to internal systems, and how much long-term control the user keeps over backups and policy. The real issue is not one hosting checkbox but who owns the operating environment."
     },
     {
       "type": "x_wins",
       "heading": "Where Bitwarden wins",
       "bullets": [
         {
-          "point": "Bitwarden runs as a hosted password manager where the vault is created automatically after signup.",
-          "why_it_matters": "Solo users can start storing passwords immediately without deploying server software."
+          "point": "Bitwarden puts the password server inside infrastructure you control",
+          "why_it_matters": "That changes the trust boundary at setup time instead of forcing the vault into a vendor-managed environment."
         },
         {
-          "point": "Bitwarden browser extensions capture and autofill login credentials during website sign in.",
-          "why_it_matters": "Users can save passwords quickly without opening a separate application."
+          "point": "Bitwarden gives administrators more direct control over daily operations",
+          "why_it_matters": "Integrations, policies, and access flow can be tied to internal systems instead of waiting on an external service model."
         },
         {
-          "point": "Bitwarden synchronizes the password vault across devices automatically through the account.",
-          "why_it_matters": "Passwords remain accessible on multiple devices without maintaining infrastructure."
+          "point": "Bitwarden makes long-term security and backup policy more adaptable",
+          "why_it_matters": "Power users can shape where data lives and how it is recovered as the environment grows."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Passbolt wins",
       "bullets": [
         {
-          "point": "Passbolt allows organizations to host the password manager on their own servers.",
-          "why_it_matters": "Companies can keep password infrastructure inside their own environment."
+          "point": "Passbolt can still be better for teams that do not want to run password infrastructure",
+          "why_it_matters": "A hosted model can remove server work when admin control is not the main requirement."
         },
         {
-          "point": "Passbolt includes team permission controls for sharing credentials securely.",
-          "why_it_matters": "Teams can control which members can access or modify shared passwords."
+          "point": "Passbolt often feels lighter for routine rollout",
+          "why_it_matters": "The user can start faster when deployment and upgrades are handled by the vendor."
         },
         {
-          "point": "Passbolt integrates with self managed infrastructure and internal authentication systems.",
-          "why_it_matters": "Organizations can connect password management with existing internal tools."
+          "point": "Passbolt reduces operational upkeep outside the vault itself",
+          "why_it_matters": "That tradeoff can be worth it when convenience matters more than self-hosting."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The user needs a password manager hosted entirely inside their own server environment.",
-          "what_to_do_instead": "Use Passbolt where the password system can run on a self managed server."
+          "fails_when": "Bitwarden becomes too heavy when the user wants passwords to work immediately and has no reason to run password infrastructure themselves.",
+          "what_to_do_instead": "Choose Passbolt if a hosted service is the better operational tradeoff."
         },
         {
           "tool": "y",
-          "fails_when": "The user expects a personal password manager to work immediately because Passbolt requires deploying and maintaining a server instance.",
-          "what_to_do_instead": "Use Bitwarden where the vault works instantly without infrastructure."
+          "fails_when": "Passbolt breaks down when policy, deployment location, or system integration must stay under internal administrative control.",
+          "what_to_do_instead": "Choose Bitwarden when self-hosted control is a real requirement."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user already runs their own server environment and wants to host the password manager themselves, Passbolt may become the better option."
+      "content": "This can flip if the user no longer needs administrative control over deployment and would rather offload hosting and upgrades entirely. Then Passbolt may be the better fit."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Bitwarden if you want a password manager that works immediately without hosting servers.",
-        "Pick Bitwarden if you manage passwords only for personal accounts.",
-        "Pick Passbolt if you want to host the password manager on your own server."
+        "Choose Bitwarden if the password system must run inside infrastructure you control.",
+        "Choose Passbolt if a hosted service is preferable to running password servers yourself.",
+        "Avoid Passbolt when deployment location and admin control are part of the requirement."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Bitwarden easier for solo users?",
-      "a": "Bitwarden provides a hosted vault that works immediately without running server software."
+      "q": "Why does Bitwarden win on more than hosting?",
+      "a": "Bitwarden also changes how the vault integrates with internal systems, how backups are handled, and how much administrative control the user keeps over the whole environment."
     },
     {
-      "q": "Does Passbolt require running a server?",
-      "a": "Yes. Passbolt typically requires deploying and maintaining a self hosted server instance."
+      "q": "When is Passbolt still the better choice?",
+      "a": "Passbolt is still the better choice when the user wants a hosted password manager that works without running server infrastructure."
     },
     {
-      "q": "Can Bitwarden sync passwords across devices?",
-      "a": "Yes. Bitwarden synchronizes the password vault automatically through the account."
+      "q": "What usually makes Passbolt fail first?",
+      "a": "The need for deployment control and internal integration becomes real rather than theoretical."
     },
     {
-      "q": "Who should use Passbolt instead of Bitwarden?",
-      "a": "Organizations that want to host the password manager inside their own infrastructure may prefer Passbolt."
+      "q": "Is this only for large teams?",
+      "a": "No. Even a solo power user can care about where the password server runs and who controls it."
     }
   ],
   "related_pages": [

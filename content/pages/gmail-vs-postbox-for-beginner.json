@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Gmail fits beginners",
-      "content": "The user just created their first email account and wants to access it immediately in a browser. Gmail works entirely online and opens the inbox as soon as the user signs in. There are no programs to install and no mail server settings to enter. This makes Gmail easy for beginners who simply want to start sending and receiving messages."
+      "heading": "Why Gmail fits Beginners better",
+      "content": "Gmail fits this beginner because Postbox is the tool asking for installation and account configuration before the inbox is even ready, not Gmail. Those steps slow first use, add more setup points to maintain later, and make basic email feel more technical than it needs to be. Gmail wins by reaching useful email faster."
     },
     {
       "type": "x_wins",
       "heading": "Where Gmail wins",
       "bullets": [
         {
-          "point": "Gmail runs directly inside a web browser without installing any software.",
-          "why_it_matters": "Beginners can open their inbox immediately on any computer instead of downloading and setting up an email program first."
+          "point": "Gmail gets the inbox usable without client installation and account configuration first",
+          "why_it_matters": "The user can log in and start reading mail before setup turns into a separate project."
         },
         {
-          "point": "Gmail automatically connects the inbox after the account is created.",
-          "why_it_matters": "The user does not need to enter server details such as IMAP or SMTP settings, which can be confusing for new email users."
+          "point": "Gmail keeps routine email access on a shorter path",
+          "why_it_matters": "Daily use stays closer to opening the inbox instead of maintaining a client or account settings."
         },
         {
-          "point": "Gmail includes built in message categories like Primary and Promotions.",
-          "why_it_matters": "Incoming messages are automatically separated into common groups, reducing the need for beginners to create folders or sorting rules."
+          "point": "Gmail lowers the technical overhead of basic email use",
+          "why_it_matters": "That matters when configuration steps are exactly what make the tool harder to adopt."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Postbox wins",
       "bullets": [
         {
-          "point": "Postbox allows several email accounts from different providers to be managed inside one desktop client.",
-          "why_it_matters": "Users who handle multiple inboxes can read and reply to all messages without switching between different web pages."
+          "point": "Postbox can still be better when the user wants a dedicated desktop workflow",
+          "why_it_matters": "Installation and setup may be worth it once local-client behavior is part of the value."
         },
         {
-          "point": "Postbox stores messages locally on the computer once they sync.",
-          "why_it_matters": "Users can access previously downloaded emails even when the internet connection is unavailable."
+          "point": "Postbox often gives more control after the client is already in place",
+          "why_it_matters": "That matters when the problem is onboarding friction, not that the desktop client has no upside."
         },
         {
-          "point": "Postbox includes detailed email organization tools such as folders and message tagging.",
-          "why_it_matters": "Users who later manage larger inboxes can sort messages into structured categories."
+          "point": "Postbox may suit users who prefer a traditional mail-client model",
+          "why_it_matters": "The extra setup only pays back when that client workflow is doing real work."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The user wants to manage several email accounts from different providers in one desktop workspace with local message storage.",
-          "what_to_do_instead": "Use Postbox where multiple accounts can be synced and managed inside one desktop application."
+          "fails_when": "Gmail becomes too limited when the user really wants a dedicated desktop workflow with the benefits of a local client.",
+          "what_to_do_instead": "Choose Postbox if the client model is now doing real work."
         },
         {
           "tool": "y",
-          "fails_when": "The user expects email to work instantly because Postbox requires installing the application and connecting the account before messages sync.",
-          "what_to_do_instead": "Use Gmail where email works immediately after signing in through a browser."
+          "fails_when": "Postbox breaks down when installation and account setup keep delaying basic email access.",
+          "what_to_do_instead": "Choose Gmail when getting to a usable inbox quickly matters more."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user later wants a desktop email client that manages several accounts in one place and stores messages locally, Postbox may become the better choice."
+      "content": "This can flip if the user decides a dedicated desktop client is worth the setup cost because the local workflow now matters more. Then Postbox may be the better fit."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Gmail if you want to start sending email immediately in a browser.",
-        "Pick Gmail if you do not want to install or configure an email program.",
-        "Pick Postbox if you want a desktop client that manages several inboxes together."
+        "Choose Gmail if you want useful email before installing and configuring a client.",
+        "Choose Postbox if the desktop client workflow is now worth the setup.",
+        "Avoid Postbox when configuration is the actual friction."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Gmail easier for beginners?",
-      "a": "Gmail runs entirely in a web browser and connects the inbox automatically, so beginners can send email without installing software or entering server settings."
+      "q": "Why does client setup change the recommendation?",
+      "a": "Because it affects first use, routine maintenance, and how technical basic email feels before the inbox is even ready."
     },
     {
-      "q": "Does Postbox require installation before using email?",
-      "a": "Yes. Postbox must be downloaded and connected to an email account before it can sync messages."
+      "q": "When is Postbox still worth it?",
+      "a": "Postbox is still worth it when the dedicated desktop workflow is now part of the value."
     },
     {
-      "q": "Can Gmail be accessed from any computer?",
-      "a": "Yes. Gmail works in a web browser, so users can sign in and check email from almost any device with internet access."
+      "q": "What usually makes Postbox feel too heavy?",
+      "a": "Installation and account configuration arrive before the user can simply check mail."
     },
     {
-      "q": "When might Postbox be better than Gmail?",
-      "a": "Postbox can be better for users who want a desktop email program that manages several accounts and stores messages locally."
+      "q": "Is this only for beginners?",
+      "a": "No. Any user can lose time when setup is larger than the actual email job."
     }
   ],
   "related_pages": [

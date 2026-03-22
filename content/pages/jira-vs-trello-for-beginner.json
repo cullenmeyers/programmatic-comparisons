@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Best fit for simple visual task boards",
-      "content": "You join a small team and just need to move cards between columns. Trello boards start with simple lists where tasks are added as cards and dragged across stages. Jira organizes work using issue types and workflow states, which introduces more structure before tasks appear on a board."
+      "heading": "Why Trello fits Beginners better",
+      "content": "Trello fits this beginner because formal issue structure changes more than the screen layout. It adds workflow concepts to learn, more decisions during entry, and more process between a thought and a saved task. Trello wins by keeping task handling closer to direct use."
     },
     {
       "type": "y_wins",
       "heading": "Where Trello wins",
       "bullets": [
         {
-          "point": "Board opens with lists and draggable task cards",
-          "why_it_matters": "You begin adding tasks and moving them between columns without setup steps."
+          "point": "Trello removes process learning from the first task",
+          "why_it_matters": "The user can add and move work before understanding issue types, backlog rules, or workflow schemes."
         },
         {
-          "point": "Card creation directly inside a list",
-          "why_it_matters": "Tasks appear instantly without selecting issue categories."
+          "point": "Trello keeps the day focused on execution instead of process maintenance",
+          "why_it_matters": "Fewer formal workflow decisions means less friction during ordinary task handling."
         },
         {
-          "point": "Visual workflow built from simple column lists",
-          "why_it_matters": "You understand the board immediately without learning system concepts."
+          "point": "Trello makes the system easier to hold in your head",
+          "why_it_matters": "The task model stays closer to direct work instead of requiring process concepts to interpret it."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where Jira wins",
       "bullets": [
         {
-          "point": "Issue types such as bug, story, and task",
-          "why_it_matters": "Teams categorize engineering work with structured data."
+          "point": "Jira provides more formal workflow depth when it becomes necessary",
+          "why_it_matters": "Issue types and backlog structure help once the work truly needs repeatable routing instead of loose lists."
         },
         {
-          "point": "Custom workflow states controlling task progress",
-          "why_it_matters": "Teams define stages such as development, testing, and release."
+          "point": "Jira organizes day-to-day team handoffs more clearly",
+          "why_it_matters": "The extra workflow states can reduce ambiguity when many people are moving work between stages."
         },
         {
-          "point": "Sprint boards connected to backlog planning",
-          "why_it_matters": "Engineering teams plan and track work through structured sprint cycles."
+          "point": "Jira gives leadership a stronger tracking model",
+          "why_it_matters": "That added process pays off when planning, execution, and review all need to use the same delivery structure."
         }
       ]
     },
@@ -66,47 +66,47 @@
       "items": [
         {
           "tool": "y",
-          "fails_when": "Your team later needs structured issue tracking, sprint planning, or workflow automation.",
-          "what_to_do_instead": "Switch to Jira when engineering processes require structured tracking."
+          "fails_when": "Trello becomes too light when the workflow has matured enough to require real issue process and repeatable planning structure.",
+          "what_to_do_instead": "Choose Jira if formal workflow is now part of the job."
         },
         {
           "tool": "x",
-          "fails_when": "Users must understand issue types, workflows, or configuration screens before moving tasks on a board.",
-          "what_to_do_instead": "Use Trello to track tasks visually with minimal setup."
+          "fails_when": "Jira breaks down when process overhead arrives before useful task entry.",
+          "what_to_do_instead": "Choose Trello when the user needs to act before learning the workflow system."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If your team begins running formal sprint cycles with issue tracking and structured workflows, Jira may become the better tool."
+      "content": "This can flip if the work becomes formal enough that issue process, planning structure, or workflow depth stops feeling optional. Then Jira may be worth the extra overhead."
     },
     {
       "type": "quick_rules",
-      "heading": "Quick rules",
+      "heading": "Quick decision rules",
       "rules": [
-        "If you just want a board with cards and columns, choose Trello.",
-        "If learning issue types or workflow schemes feels heavy, avoid Jira.",
-        "If your team later adopts structured engineering workflows, consider Jira."
+        "Choose Trello if task entry should happen before process education.",
+        "Choose Jira if formal issue workflow is truly part of the job.",
+        "Avoid Jira when structure keeps arriving before the task itself."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Trello easier for beginners?",
-      "a": "Boards open with simple lists and cards that can be moved immediately."
+      "q": "Why does Trello fit better for simpler entry?",
+      "a": "Trello removes process education from the first interaction, so the user can add and handle tasks before learning a formal workflow system."
     },
     {
-      "q": "Does Jira require learning issue types?",
-      "a": "Yes. Tasks are usually created as structured issue types with workflow states."
+      "q": "When is Jira still the better option?",
+      "a": "Jira becomes the better option once issue depth and formal planning are truly part of the work."
     },
     {
-      "q": "Which tool is better for visual task boards?",
-      "a": "Trello is easier because the board structure is simple and immediately usable."
+      "q": "What usually makes Jira fail first?",
+      "a": "The tool keeps asking for issue-structure thinking before the user is even ready to capture normal tasks."
     },
     {
-      "q": "When would Jira be the better option?",
-      "a": "It works better when teams need structured issue tracking and sprint planning."
+      "q": "Is this verdict anti-process?",
+      "a": "No. It is about timing and fit, not whether process can ever be valuable."
     }
   ],
   "related_pages": [

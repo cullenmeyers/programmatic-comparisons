@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Google Calendar fits beginners starting with a new Gmail account",
-      "content": "This beginner has just created a Gmail account and wants to start tracking appointments immediately. Google Calendar is already included with the account and opens directly in the browser. Events can be created by clicking a time slot and entering the meeting details. Cron requires installing a separate client application before using its interface, which adds a step that beginners may not want to handle."
+      "heading": "Why Google Calendar fits Beginners better",
+      "content": "Google Calendar fits this beginner because Cron is the tool asking the user to adopt a separate calendar client, not Google Calendar. That adds another install step, another interface to learn, and another software surface to maintain before the calendar is even useful. Google Calendar wins by keeping scheduling in the environment the user already knows."
     },
     {
       "type": "y_wins",
       "heading": "Where Google Calendar wins",
       "bullets": [
         {
-          "point": "Built directly into every Gmail account",
-          "why_it_matters": "A new Gmail user can open the calendar from the account menu and start creating events immediately. No additional setup steps are required."
+          "point": "Google Calendar starts scheduling without asking the user to adopt another app",
+          "why_it_matters": "The first useful event can be created before a separate client workflow has to be installed and learned."
         },
         {
-          "point": "Works fully inside a web browser",
-          "why_it_matters": "Events can be added and managed without installing software. Beginners can access their calendar from any device with a browser."
+          "point": "Google Calendar keeps routine calendar work in the environment the user already knows",
+          "why_it_matters": "That shortens the path for everyday event handling and reduces switching cost."
         },
         {
-          "point": "Simple event creation by clicking the timeline",
-          "why_it_matters": "Users click a time slot, enter the event title and time, and the event appears on the calendar instantly."
+          "point": "Google Calendar avoids the upkeep of another calendar surface",
+          "why_it_matters": "The simpler setup matters when the extra client is more effort than benefit."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Cron wins",
       "bullets": [
         {
-          "point": "Keyboard driven event creation",
-          "why_it_matters": "Cron allows events to be created using keyboard commands instead of navigating menus. This speeds up scheduling for experienced users."
+          "point": "Cron can still be better when its dedicated client workflow is doing real work",
+          "why_it_matters": "The separate app may pay back once the user wants a more opinionated calendar experience."
         },
         {
-          "point": "Desktop focused calendar interface",
-          "why_it_matters": "Cron runs as a dedicated application with a layout optimized for fast navigation between days and events."
+          "point": "Cron can improve speed after the client is already in place",
+          "why_it_matters": "The problem is onboarding cost, not that the client lacks value."
         },
         {
-          "point": "Advanced scheduling shortcuts",
-          "why_it_matters": "Power users can manage events using quick commands and keyboard shortcuts rather than relying on mouse navigation."
+          "point": "Cron may suit users who want the calendar to behave differently from the default app",
+          "why_it_matters": "That tradeoff can be worth it once the new client is clearly helping."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "You want a keyboard driven calendar interface designed for fast navigation through shortcuts.",
-          "what_to_do_instead": "Use Cron for a desktop style calendar focused on keyboard control."
+          "fails_when": "Google Calendar becomes too basic when the separate client's workflow gains are now clearly worth adopting.",
+          "what_to_do_instead": "Choose Cron if the dedicated client is doing real work."
         },
         {
           "tool": "x",
-          "fails_when": "You want to start adding events immediately without installing another calendar application.",
-          "what_to_do_instead": "Use Google Calendar so events can be created directly in the browser."
+          "fails_when": "Cron breaks down when another app layer is more effort than the calendar benefit is worth.",
+          "what_to_do_instead": "Choose Google Calendar when staying in the default environment matters more."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user already installs productivity apps and prefers managing their schedule through keyboard shortcuts instead of browser navigation, Cron may become the better choice because it is designed around fast desktop scheduling workflows."
+      "content": "This can flip if the dedicated client workflow is now clearly worth adopting despite the extra app layer. Then Cron may be the better choice."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Choose Google Calendar if you want to start scheduling immediately from a Gmail account.",
-        "Choose Google Calendar if you prefer using a calendar directly in a web browser.",
-        "Choose Cron if you want a dedicated calendar application with keyboard shortcuts."
+        "Choose Google Calendar if you do not want another calendar app layer first.",
+        "Choose Cron if the dedicated client workflow is now worth adopting.",
+        "Avoid Cron when extra client setup is the actual friction."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Do you need to install Google Calendar to use it?",
-      "a": "No. Google Calendar works directly in the browser through a Gmail account, so events can be created without installing software."
+      "q": "Why does another client matter so much?",
+      "a": "Because it adds onboarding cost, another interface, and another piece of software to maintain before the calendar is useful."
     },
     {
-      "q": "Does Cron require installation?",
-      "a": "Yes. Cron runs as a separate calendar application that must be installed before using its interface."
+      "q": "When is Cron still worth it?",
+      "a": "Cron is still worth it when its dedicated client workflow is now clearly earning that extra setup."
     },
     {
-      "q": "Why is Google Calendar easier for beginners?",
-      "a": "Because it is already included with Gmail and works immediately without requiring additional setup steps."
+      "q": "What usually makes Cron the wrong fit?",
+      "a": "Another app layer becomes more effort than the scheduling benefit is worth."
     },
     {
-      "q": "When is Cron a better option?",
-      "a": "Cron can be better for experienced users who prefer keyboard shortcuts and a dedicated desktop calendar interface."
+      "q": "Does Google Calendar only win by staying familiar?",
+      "a": "It also wins by reducing setup and orientation cost."
     }
   ],
   "related_pages": [

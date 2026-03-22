@@ -1,113 +1,113 @@
 {
-"category": "Read-It-Later Apps",
-"categorySlug": "read-it-later-apps",
-"constraintSlug": "maintenance-load",
-"constraintUiName": "Works without upkeep",
-"title": "GoodLinks vs Wallabag for Solo users",
-"slug": "goodlinks-vs-wallabag-for-solo-user",
-"meta_description": "GoodLinks vs Wallabag for Solo users: GoodLinks works instantly with no upkeep, while Wallabag requires server maintenance to keep access working.",
-"persona": "Solo user",
-"constraint_lens": "Solo users need tools that keep working without requiring ongoing setup, updates, or backend maintenance.",
-"one_second_verdict": {
-"winner_label": "GoodLinks",
-"summary": "Best for a personal reading system that works immediately without ongoing upkeep.",
-"reason": "Wallabag fails first because running your own instance requires server updates and maintenance to keep access working."
-},
-"verdict": {
-"winner": "x",
-"summary": "GoodLinks is the better fit for Solo users who want a reading system that just works. It runs locally on your device and syncs through built-in services without requiring server management. Wallabag gives you control through self-hosting, but that comes with ongoing responsibilities like updates and uptime. For someone who does not want to maintain anything, that extra burden becomes a constant problem.",
-"decision_rule": "If maintaining access to saved articles requires server upkeep or backend management, Wallabag fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why GoodLinks fits this solo user better",
-"content": "This Solo user wants a system they can rely on without thinking about maintenance. GoodLinks fits because it works as a local app with built-in sync, so there is nothing to manage in the background. Wallabag shifts responsibility to the user if self-hosted, which means dealing with servers, updates, and uptime. That kind of ongoing responsibility breaks the expectation of a tool that just works."
-},
-{
-"type": "x_wins",
-"heading": "Where GoodLinks wins",
-"bullets": [
-{
-"point": "GoodLinks runs as a local app with offline storage of saved articles.",
-"why_it_matters": "Your reading system keeps working even without internet or external services, removing dependency on server uptime."
-},
-{
-"point": "Syncing is handled through built-in device services like iCloud instead of custom backend infrastructure.",
-"why_it_matters": "You do not need to manage servers or troubleshoot syncing issues beyond standard device settings."
-},
-{
-"point": "The save and read flow works immediately after installing the app with no backend setup.",
-"why_it_matters": "You can start saving and reading articles right away without creating or maintaining any infrastructure."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Wallabag wins",
-"bullets": [
-{
-"point": "Wallabag can be self-hosted, giving you control over storage and access to your reading data.",
-"why_it_matters": "You own the system, but you are also responsible for keeping it running."
-},
-{
-"point": "The backend can be customized through server configuration and database access.",
-"why_it_matters": "You can change how the system behaves, but that requires ongoing involvement with backend management."
-},
-{
-"point": "Wallabag supports access from multiple devices through your own hosted instance.",
-"why_it_matters": "Cross-device access is flexible, but depends on maintaining a working server at all times."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool breaks down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You want full control over hosting and backend behavior instead of relying on a local app and built-in sync.",
-"what_to_do_instead": "Use Wallabag if you are willing to manage your own server to gain that level of control."
-},
-{
-"tool": "y",
-"fails_when": "You need your reading system to always be available but do not want to handle server updates, downtime, or backend fixes.",
-"what_to_do_instead": "Use GoodLinks so your reading system works without ongoing maintenance responsibilities."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "This could flip if the Solo user uses a managed Wallabag hosting service where server maintenance is handled for them. In that case, the upkeep burden is reduced and Wallabag becomes easier to rely on."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"Pick GoodLinks if you want a system that works without maintaining anything.",
-"Pick Wallabag only if you are willing to manage a server for full control.",
-"If uptime and reliability matter more than customization, GoodLinks is the better choice."
-]
-}
-],
-"faqs": [
-{
-"q": "Why is GoodLinks better for Solo users?",
-"a": "Because it runs locally and uses built-in sync, so there is no server or backend to maintain over time."
-},
-{
-"q": "What makes Wallabag harder to maintain?",
-"a": "If self-hosted, you must handle server updates, uptime, and fixes, which adds ongoing responsibility."
-},
-{
-"q": "Does Wallabag require maintenance?",
-"a": "Yes, if you host it yourself. You are responsible for keeping the server running and updated."
-},
-{
-"q": "What is the key difference between these tools?",
-"a": "GoodLinks works as a local app with no upkeep, while Wallabag offers control but requires ongoing backend management."
-}
-],
-"related_pages": []
+  "category": "Read-It-Later Apps",
+  "categorySlug": "read-it-later-apps",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "GoodLinks vs Wallabag for Solo users",
+  "slug": "goodlinks-vs-wallabag-for-solo-user",
+  "meta_description": "GoodLinks vs Wallabag for Solo users: GoodLinks works instantly with no upkeep, while Wallabag requires server maintenance to keep access working.",
+  "persona": "Solo user",
+  "constraint_lens": "Solo users need tools that keep working without requiring ongoing setup, updates, or backend maintenance.",
+  "one_second_verdict": {
+    "winner_label": "GoodLinks",
+    "summary": "Best for a personal reading system that works immediately without ongoing upkeep.",
+    "reason": "Wallabag fails first because running your own instance requires server updates and maintenance to keep access working."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "GoodLinks is the better fit for Solo users who want a reading system that just works. It runs locally on your device and syncs through built-in services without requiring server management. Wallabag gives you control through self-hosting, but that comes with ongoing responsibilities like updates and uptime. For someone who does not want to maintain anything, that extra burden becomes a constant problem.",
+    "decision_rule": "If maintaining access to saved articles requires server upkeep or backend management, Wallabag fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why GoodLinks fits Solo users better",
+      "content": "GoodLinks fits this solo user because Wallabag is the tool asking for hosting and backend setup before the system feels ready, not GoodLinks. That extra work slows the first save, keeps maintenance attached to everyday use, and turns a reading tool into an infrastructure task. GoodLinks wins by letting the reading workflow start before server decisions take over."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where GoodLinks wins",
+      "bullets": [
+        {
+          "point": "GoodLinks lets the user start saving before server setup becomes a project",
+          "why_it_matters": "The first saved article can happen immediately instead of after hosting, installs, or backend choices."
+        },
+        {
+          "point": "GoodLinks keeps daily use separate from infrastructure maintenance",
+          "why_it_matters": "Routine reading stays focused on content instead of on keeping a service running."
+        },
+        {
+          "point": "GoodLinks lowers the technical overhead of adopting the tool",
+          "why_it_matters": "That matters when server management is exactly what is blocking the reading workflow."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Wallabag wins",
+      "bullets": [
+        {
+          "point": "Wallabag can still be better when the user wants hosting and backend control",
+          "why_it_matters": "The setup cost may be worth it once ownership of the system is part of the value."
+        },
+        {
+          "point": "Wallabag supports a more self-managed archive model later",
+          "why_it_matters": "That matters when server control becomes a real requirement instead of an obstacle."
+        },
+        {
+          "point": "Wallabag may fit when infrastructure decisions are intentional",
+          "why_it_matters": "The extra setup only pays back when backend control is actually part of the job."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "GoodLinks becomes too limited when the user really wants hosting control and a self-managed backend.",
+          "what_to_do_instead": "Choose Wallabag if backend ownership is now part of the requirement."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Wallabag breaks down when server setup keeps standing between the user and actually saving articles.",
+          "what_to_do_instead": "Choose GoodLinks when getting started quickly matters more."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user now wants backend control badly enough to justify server setup and maintenance. Then Wallabag may be worth the heavier start."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose GoodLinks if you want to start saving before hosting becomes a project.",
+        "Choose Wallabag if backend control is now worth the setup.",
+        "Avoid Wallabag when server work is the actual blocker."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does server setup change the recommendation?",
+      "a": "Because it affects first use, daily maintenance, and whether a simple saving tool turns into a backend project."
+    },
+    {
+      "q": "When is Wallabag still worth it?",
+      "a": "Wallabag is still worth it when backend control is part of the reason for using the app."
+    },
+    {
+      "q": "What usually makes Wallabag feel too heavy?",
+      "a": "Hosting and maintenance arrive before the user can simply start saving articles."
+    },
+    {
+      "q": "Is this only for beginners?",
+      "a": "No. Any user can lose momentum when infrastructure work is larger than the reading job."
+    }
+  ],
+  "related_pages": []
 }

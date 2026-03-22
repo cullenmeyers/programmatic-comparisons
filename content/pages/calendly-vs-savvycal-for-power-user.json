@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why SavvyCal fits power users",
-      "content": "The user runs consulting calls and wants scheduling to feel effortless for guests. SavvyCal lets invitees connect or overlay their own calendar on the scheduling page. The guest can visually compare the host's availability against their own events before choosing a time. This reduces the chance of selecting a slot that later conflicts with another meeting."
+      "heading": "Why SavvyCal fits Power users better",
+      "content": "SavvyCal fits this power user because invitee-side visibility changes more than one click. It affects how quickly a time is chosen, how much calendar translation the other person has to do, and how well the tool handles crowded schedules with narrow openings. SavvyCal wins by making the comparison easier before the choice is made."
     },
     {
       "type": "y_wins",
       "heading": "Where SavvyCal wins",
       "bullets": [
         {
-          "point": "SavvyCal allows invitees to overlay their own calendar directly on the scheduling page.",
-          "why_it_matters": "Guests can compare their schedule against available slots before booking, reducing back and forth."
+          "point": "SavvyCal lets invitees compare calendars before committing",
+          "why_it_matters": "That removes guesswork during selection instead of asking people to translate availability mentally."
         },
         {
-          "point": "SavvyCal lets guests choose how availability appears by adjusting the visible time range.",
-          "why_it_matters": "Invitees can quickly focus on the part of the schedule that fits their day."
+          "point": "SavvyCal shortens the decision path for the other person",
+          "why_it_matters": "Scheduling feels faster when invitees can evaluate fit without jumping back and forth between tools."
         },
         {
-          "point": "SavvyCal scheduling links display the host's calendar with real time availability updates.",
-          "why_it_matters": "Guests see open times immediately without asking for updated availability."
+          "point": "SavvyCal reduces coordination friction in denser calendars",
+          "why_it_matters": "Overlay behavior matters more when small gaps and edge conflicts determine whether a meeting works."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Calendly wins",
       "bullets": [
         {
-          "point": "Calendly offers widely supported scheduling links that integrate with many calendar platforms.",
-          "why_it_matters": "Users can connect multiple calendar systems and avoid double booking."
+          "point": "Calendly can still be better when a normal booking page is enough",
+          "why_it_matters": "Overlay comparison matters less if invitees do not need that extra visibility."
         },
         {
-          "point": "Calendly provides structured meeting templates with predefined durations and buffers.",
-          "why_it_matters": "Hosts can create consistent meeting rules across different scheduling links."
+          "point": "Calendly keeps the scheduling surface simpler",
+          "why_it_matters": "That can help when the added comparison layer would mostly be extra interface."
         },
         {
-          "point": "Calendly supports automated reminders and follow up emails for scheduled meetings.",
-          "why_it_matters": "Attendees receive notifications without manual communication from the host."
+          "point": "Calendly reduces feature surface for straightforward bookings",
+          "why_it_matters": "The lighter tool may be enough when small availability nuances are not the problem."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "The user wants a widely adopted scheduling tool that clients already recognize and use frequently.",
-          "what_to_do_instead": "Use Calendly where scheduling links are commonly accepted by many organizations."
+          "fails_when": "SavvyCal becomes unnecessary when invitees do not need a richer comparison step to choose a workable time.",
+          "what_to_do_instead": "Choose Calendly if a normal booking page is enough."
         },
         {
           "tool": "x",
-          "fails_when": "Invitees want to compare their schedule visually before booking because Calendly does not allow calendar overlay.",
-          "what_to_do_instead": "Use SavvyCal where guests can overlay their calendar directly on the booking page."
+          "fails_when": "Calendly breaks down when crowded schedules keep forcing invitees to guess which slot actually fits their own calendar.",
+          "what_to_do_instead": "Choose SavvyCal when overlay comparison matters."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the host prioritizes broad platform familiarity and standard scheduling links used by many organizations, Calendly may become the better option."
+      "content": "This can flip if invitees do not need richer calendar comparison and a standard booking page is sufficient. Then Calendly may be the better fit."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick SavvyCal if you want invitees to overlay their calendar when booking.",
-        "Pick SavvyCal if reducing scheduling friction for guests is critical.",
-        "Pick Calendly if you want a widely recognized scheduling link system."
+        "Choose SavvyCal if invitees should compare their own calendar before choosing.",
+        "Choose Calendly if a standard booking page is enough.",
+        "Avoid Calendly when crowded schedules keep making slot choice harder than it should be."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "What makes SavvyCal different from Calendly?",
-      "a": "SavvyCal allows invitees to overlay their own calendar when selecting a meeting time."
+      "q": "Why does invitee-side overlay change the verdict?",
+      "a": "Because it affects how easily someone can compare their real calendar before picking a slot instead of guessing from memory."
     },
     {
-      "q": "Does Calendly show the invitee calendar on the booking page?",
-      "a": "No. Calendly shows only the host availability and does not allow calendar overlay."
+      "q": "When is Calendly still enough?",
+      "a": "Calendly is still enough when a standard booking page gives invitees all the context they need."
     },
     {
-      "q": "Why does calendar overlay help scheduling?",
-      "a": "It lets invitees compare their schedule against available meeting times before booking."
+      "q": "What usually makes Calendly feel limiting?",
+      "a": "Crowded calendars make it too hard to judge a workable time from a normal availability list alone."
     },
     {
-      "q": "Who should still choose Calendly?",
-      "a": "Users who want a widely adopted scheduling tool with familiar booking links may prefer Calendly."
+      "q": "Is this a niche feature?",
+      "a": "It becomes more important whenever small schedule gaps and edge conflicts matter."
     }
   ],
   "related_pages": [

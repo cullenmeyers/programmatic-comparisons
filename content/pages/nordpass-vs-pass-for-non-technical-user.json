@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why NordPass fits non-technical users",
-      "content": "The user wants to see passwords inside a simple app and avoid command line tools entirely. NordPass provides a graphical vault that lists saved logins and allows them to be opened with a click. Browser extensions can fill credentials directly into website login forms. This means the user does not need to retrieve passwords through terminal commands."
+      "heading": "Why NordPass fits Non-technical users better",
+      "content": "NordPass fits this non-technical user because the winning mechanism reduces friction across setup, daily password use, and long-term vault management instead of solving only one narrow problem."
     },
     {
       "type": "x_wins",
       "heading": "Where NordPass wins",
       "bullets": [
         {
-          "point": "NordPass displays stored credentials inside a graphical vault application.",
-          "why_it_matters": "Users can view and manage passwords without navigating file structures or commands."
+          "point": "NordPass handles the winning mechanism more directly",
+          "why_it_matters": "The user spends less time compensating for the exact friction named in the decision rule."
         },
         {
-          "point": "NordPass browser extensions detect login fields and autofill saved credentials.",
-          "why_it_matters": "Users sign into websites without copying or retrieving passwords manually."
+          "point": "NordPass keeps daily password use smoother",
+          "why_it_matters": "The practical workflow stays shorter and easier to repeat."
         },
         {
-          "point": "NordPass synchronizes vault entries across devices through the account service.",
-          "why_it_matters": "Passwords remain available on phone and laptop without manual file transfers."
+          "point": "NordPass reduces the hidden cost of managing credentials over time",
+          "why_it_matters": "That matters when the password manager is supposed to remove friction, not create a second system to babysit."
         }
       ]
     },
@@ -62,51 +62,51 @@
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The user wants to manage passwords through terminal driven workflows and encrypted file structures.",
-          "what_to_do_instead": "Use Pass where credentials are stored as encrypted files accessed through command line tools."
+          "fails_when": "NordPass becomes heavier than necessary when the winning mechanism is not doing enough real work yet.",
+          "what_to_do_instead": "Choose Pass if the simpler tradeoff still fits."
         },
         {
           "tool": "y",
-          "fails_when": "The user avoids terminal tools because Pass often requires retrieving credentials through command line commands.",
-          "what_to_do_instead": "Use NordPass where passwords are accessed through a graphical vault interface."
+          "fails_when": "Pass breaks down when the exact friction named in the rule keeps recurring during normal password use.",
+          "what_to_do_instead": "Choose NordPass once that mechanism matters daily."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user prefers managing credentials through encrypted files and command line workflows rather than a graphical vault application, Pass may become the better option."
+      "content": "This can flip if the tradeoff on the losing side starts doing more real work than the mechanism that currently wins. Then Pass may be worth the switch."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick NordPass if you want a graphical vault where passwords are easy to view.",
-        "Pick NordPass if you want browser autofill without using terminal commands.",
-        "Pick Pass if you prefer managing passwords through command line tools."
+        "Choose NordPass when the winning mechanism is already affecting daily password use.",
+        "Choose Pass when its tradeoff still better matches the job you actually have.",
+        "Avoid Pass once the same friction keeps showing up in setup and routine use."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is NordPass easier for non-technical users?",
-      "a": "NordPass provides a graphical vault interface and browser autofill so users do not need to use command line tools."
+      "q": "Why does NordPass fit the rule better?",
+      "a": "NordPass turns the mechanism in the decision rule into gains across setup, daily use, and long-term vault management instead of only one isolated feature."
     },
     {
-      "q": "How does Pass store passwords?",
-      "a": "Pass stores credentials as encrypted files that are usually accessed through command line commands."
+      "q": "When is Pass still reasonable?",
+      "a": "Pass is still reasonable when its tradeoff better matches the real password workflow."
     },
     {
-      "q": "Can NordPass autofill website logins?",
-      "a": "Yes. NordPass browser extensions detect login fields and fill saved credentials automatically."
+      "q": "What usually signals it is time to switch?",
+      "a": "The same friction starts appearing during ordinary sign-ins and vault maintenance instead of only in edge cases."
     },
     {
-      "q": "Who should choose Pass instead?",
-      "a": "Users who prefer terminal based workflows and encrypted password files may prefer Pass."
+      "q": "Is this verdict only about simplicity?",
+      "a": "No. It is about where the ongoing operating cost of the password manager really lands."
     }
   ],
   "related_pages": [

@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why KeePassXC fits power users",
-      "content": "The user wants full control over password database files and refuses to depend on a proprietary cloud vault. KeePassXC stores passwords inside a single encrypted database file that lives on the user's device. That file can be copied, backed up, or integrated with custom systems. This design gives power users full control over how and where password data is stored."
+      "heading": "Why KeePassXC fits Power users better",
+      "content": "KeePassXC fits this power user because the winning mechanism reduces friction across setup, daily password use, and long-term vault management instead of solving only one narrow problem."
     },
     {
       "type": "x_wins",
       "heading": "Where KeePassXC wins",
       "bullets": [
         {
-          "point": "KeePassXC stores passwords in a local encrypted database file on the user's device.",
-          "why_it_matters": "Power users maintain full control over how the vault file is stored, backed up, and transferred."
+          "point": "KeePassXC handles the winning mechanism more directly",
+          "why_it_matters": "The user spends less time compensating for the exact friction named in the decision rule."
         },
         {
-          "point": "KeePassXC allows the database file to be stored in any location the user chooses.",
-          "why_it_matters": "Users can integrate the vault with their own storage systems or backup workflows."
+          "point": "KeePassXC keeps daily password use smoother",
+          "why_it_matters": "The practical workflow stays shorter and easier to repeat."
         },
         {
-          "point": "KeePassXC works entirely without a hosted account or vendor cloud service.",
-          "why_it_matters": "Passwords remain accessible without depending on a proprietary online vault."
+          "point": "KeePassXC reduces the hidden cost of managing credentials over time",
+          "why_it_matters": "That matters when the password manager is supposed to remove friction, not create a second system to babysit."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where NordPass wins",
       "bullets": [
         {
-          "point": "NordPass automatically synchronizes the password vault across devices through the user account.",
-          "why_it_matters": "Users can access passwords on multiple devices without manually moving vault files."
+          "point": "NordPass can still win in a narrower workflow",
+          "why_it_matters": "The losing tool may be better when the deeper or smoother mechanism is not doing much real work yet."
         },
         {
-          "point": "NordPass browser extensions detect login forms and autofill credentials automatically.",
-          "why_it_matters": "Signing into websites becomes faster without copying passwords manually."
+          "point": "NordPass often asks for a different tradeoff rather than offering nothing",
+          "why_it_matters": "That matters when the user values control and convenience differently than this verdict assumes."
         },
         {
-          "point": "NordPass restores the password vault when the user signs into a new device.",
-          "why_it_matters": "Credentials reappear automatically after logging into the account."
+          "point": "NordPass can be the better fit when complexity is intentional",
+          "why_it_matters": "The friction is only a dealbreaker when it gets in the way of the job this persona actually has."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The user wants passwords to synchronize automatically across devices without managing vault files manually.",
-          "what_to_do_instead": "Use NordPass where the vault syncs automatically through the account."
+          "fails_when": "KeePassXC becomes heavier than necessary when the winning mechanism is not doing enough real work yet.",
+          "what_to_do_instead": "Choose NordPass if the simpler tradeoff still fits."
         },
         {
           "tool": "y",
-          "fails_when": "The user wants full ownership of password data because NordPass stores credentials inside a vendor controlled vault.",
-          "what_to_do_instead": "Use KeePassXC where passwords live inside a local database file."
+          "fails_when": "NordPass breaks down when the exact friction named in the rule keeps recurring during normal password use.",
+          "what_to_do_instead": "Choose KeePassXC once that mechanism matters daily."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user prioritizes automatic synchronization across multiple devices instead of controlling a local database file, NordPass may become the better option."
+      "content": "This can flip if the tradeoff on the losing side starts doing more real work than the mechanism that currently wins. Then NordPass may be worth the switch."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick KeePassXC if you want full control over a local password database file.",
-        "Pick KeePassXC if you refuse to depend on a proprietary hosted vault.",
-        "Pick NordPass if you want passwords to sync automatically across devices."
+        "Choose KeePassXC when the winning mechanism is already affecting daily password use.",
+        "Choose NordPass when its tradeoff still better matches the job you actually have.",
+        "Avoid NordPass once the same friction keeps showing up in setup and routine use."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do power users prefer KeePassXC?",
-      "a": "KeePassXC stores passwords in a local encrypted database file that users fully control."
+      "q": "Why does KeePassXC fit the rule better?",
+      "a": "KeePassXC turns the mechanism in the decision rule into gains across setup, daily use, and long-term vault management instead of only one isolated feature."
     },
     {
-      "q": "Does NordPass store passwords locally?",
-      "a": "No. NordPass stores credentials inside a hosted vault tied to the user account."
+      "q": "When is NordPass still reasonable?",
+      "a": "NordPass is still reasonable when its tradeoff better matches the real password workflow."
     },
     {
-      "q": "Can KeePassXC work without internet access?",
-      "a": "Yes. KeePassXC runs locally and does not require an online service."
+      "q": "What usually signals it is time to switch?",
+      "a": "The same friction starts appearing during ordinary sign-ins and vault maintenance instead of only in edge cases."
     },
     {
-      "q": "Who should choose NordPass instead?",
-      "a": "Users who want automatic syncing and account based password access across devices may prefer NordPass."
+      "q": "Is this verdict only about simplicity?",
+      "a": "No. It is about where the ongoing operating cost of the password manager really lands."
     }
   ],
   "related_pages": [

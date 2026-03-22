@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Passbolt fits power users",
-      "content": "The user manages credentials for internal systems and wants password management integrated into a self hosted server environment. Passbolt installs on a server controlled by the organization and allows administrators to manage credentials directly inside their infrastructure. Teams can integrate it with internal authentication systems and network controls. This design gives power users full ownership of the password management environment."
+      "heading": "Why Passbolt fits Power users better",
+      "content": "Passbolt fits this power user because the same infrastructure choice affects several layers at once. It changes where the vault is deployed, how daily admin work connects to internal systems, and how much long-term control the user keeps over backups and policy. The real issue is not one hosting checkbox but who owns the operating environment."
     },
     {
       "type": "x_wins",
       "heading": "Where Passbolt wins",
       "bullets": [
         {
-          "point": "Passbolt can be installed on a self hosted server controlled by the organization.",
-          "why_it_matters": "Power users can run password management inside their own infrastructure instead of relying on a hosted vendor service."
+          "point": "Passbolt puts the password server inside infrastructure you control",
+          "why_it_matters": "That changes the trust boundary at setup time instead of forcing the vault into a vendor-managed environment."
         },
         {
-          "point": "Passbolt provides administrative control over credential storage and server configuration.",
-          "why_it_matters": "Organizations can define how passwords are stored, secured, and backed up."
+          "point": "Passbolt gives administrators more direct control over daily operations",
+          "why_it_matters": "Integrations, policies, and access flow can be tied to internal systems instead of waiting on an external service model."
         },
         {
-          "point": "Passbolt integrates with internal authentication and system infrastructure.",
-          "why_it_matters": "Credentials can be managed alongside existing internal services and workflows."
+          "point": "Passbolt makes long-term security and backup policy more adaptable",
+          "why_it_matters": "Power users can shape where data lives and how it is recovered as the environment grows."
         }
       ]
     },
@@ -62,51 +62,51 @@
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The user wants a password manager that works immediately without deploying or maintaining a server environment.",
-          "what_to_do_instead": "Use RoboForm where the service runs through a hosted account."
+          "fails_when": "Passbolt becomes too heavy when the user wants passwords to work immediately and has no reason to run password infrastructure themselves.",
+          "what_to_do_instead": "Choose RoboForm if a hosted service is the better operational tradeoff."
         },
         {
           "tool": "y",
-          "fails_when": "The user needs password management integrated into a self hosted infrastructure because RoboForm cannot run on a private server.",
-          "what_to_do_instead": "Use Passbolt where the password manager can be deployed on a server controlled by the user."
+          "fails_when": "RoboForm breaks down when policy, deployment location, or system integration must stay under internal administrative control.",
+          "what_to_do_instead": "Choose Passbolt when self-hosted control is a real requirement."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user prefers a password manager that works immediately without deploying or maintaining server infrastructure, RoboForm may become the better option."
+      "content": "This can flip if the user no longer needs administrative control over deployment and would rather offload hosting and upgrades entirely. Then RoboForm may be the better fit."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Passbolt if you want to deploy the password manager on your own server.",
-        "Pick Passbolt if you need full administrative control over credential infrastructure.",
-        "Pick RoboForm if you want a hosted password manager with no server maintenance."
+        "Choose Passbolt if the password system must run inside infrastructure you control.",
+        "Choose RoboForm if a hosted service is preferable to running password servers yourself.",
+        "Avoid RoboForm when deployment location and admin control are part of the requirement."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do power users prefer Passbolt?",
-      "a": "Passbolt can run on a self hosted server where administrators control the infrastructure."
+      "q": "Why does Passbolt win on more than hosting?",
+      "a": "Passbolt also changes how the vault integrates with internal systems, how backups are handled, and how much administrative control the user keeps over the whole environment."
     },
     {
-      "q": "Can RoboForm be deployed on a private server?",
-      "a": "No. RoboForm operates as a hosted password manager and does not support self hosted deployment."
+      "q": "When is RoboForm still the better choice?",
+      "a": "RoboForm is still the better choice when the user wants a hosted password manager that works without running server infrastructure."
     },
     {
-      "q": "Does Passbolt require server infrastructure?",
-      "a": "Yes. Passbolt typically runs on a server environment controlled by the organization."
+      "q": "What usually makes RoboForm fail first?",
+      "a": "The need for deployment control and internal integration becomes real rather than theoretical."
     },
     {
-      "q": "Who should choose RoboForm instead?",
-      "a": "Users who want a password manager that works immediately without maintaining server infrastructure may prefer RoboForm."
+      "q": "Is this only for large teams?",
+      "a": "No. Even a solo power user can care about where the password server runs and who controls it."
     }
   ],
   "related_pages": [

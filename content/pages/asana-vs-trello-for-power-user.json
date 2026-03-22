@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Best fit for coordinating complex team projects",
-      "content": "You manage cross-team projects and expect timeline planning with dependency tracking. Asana includes timeline views where tasks are scheduled across dates and linked to other tasks. Trello organizes work through boards and cards that move between columns without built-in dependency scheduling."
+      "heading": "Why Asana fits Power users better",
+      "content": "Asana fits this power user because the same dependency mechanism influences setup, planning, and daily judgment. It changes whether order can be modeled clearly, whether updates ripple through the plan coherently, and whether the task system reflects the real work instead of a flat list."
     },
     {
       "type": "x_wins",
       "heading": "Where Asana wins",
       "bullets": [
         {
-          "point": "Timeline view that schedules tasks across a calendar",
-          "why_it_matters": "You visualize how projects unfold over time rather than only seeing cards on a board."
+          "point": "Asana makes task order visible before work starts",
+          "why_it_matters": "Dependencies or connected flows expose sequencing problems during setup instead of after tasks begin colliding."
         },
         {
-          "point": "Task dependencies linking work steps together",
-          "why_it_matters": "You block tasks until earlier steps finish, preventing teams from starting work too early."
+          "point": "Asana keeps daily planning realistic when one task affects another",
+          "why_it_matters": "You can see what must move next without manually rethinking the whole chain every time something slips."
         },
         {
-          "point": "Multi-project task assignment",
-          "why_it_matters": "You track the same task across multiple teams or project spaces without duplication."
+          "point": "Asana gives the task system a truer map of the work",
+          "why_it_matters": "The structure reflects relationships between tasks rather than pretending every item is independent."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where Trello wins",
       "bullets": [
         {
-          "point": "Kanban board with drag-and-drop task cards",
-          "why_it_matters": "You move tasks visually between stages without configuring project timelines."
+          "point": "Trello is simpler when tasks are mostly independent",
+          "why_it_matters": "A flatter model can be easier to maintain if the user does not actually need to map a chain of work."
         },
         {
-          "point": "Card-based task details with checklists and attachments",
-          "why_it_matters": "You capture task information directly inside each card."
+          "point": "Trello speeds up entry when sequencing is obvious",
+          "why_it_matters": "You do not have to define relationships for tasks that can safely be handled one by one."
         },
         {
-          "point": "Lightweight board setup",
-          "why_it_matters": "You start tracking tasks quickly without defining timeline structures."
+          "point": "Trello avoids the upkeep of a more explicit planning structure",
+          "why_it_matters": "That is helpful when the overhead of modeling dependencies would exceed the value."
         }
       ]
     },
@@ -66,47 +66,47 @@
       "items": [
         {
           "tool": "x",
-          "fails_when": "Your workflow only needs a simple board with visual task movement rather than timeline scheduling.",
-          "what_to_do_instead": "Use Trello if you prefer a lightweight kanban board."
+          "fails_when": "Asana becomes unnecessary when tasks are mostly independent and the user would spend more effort modeling links than benefiting from them.",
+          "what_to_do_instead": "Choose Trello if a flatter task model is enough."
         },
         {
           "tool": "y",
-          "fails_when": "Projects require scheduling dependencies where one task must wait for another to finish.",
-          "what_to_do_instead": "Switch to Asana for timeline planning and dependency tracking."
+          "fails_when": "Trello breaks down when the order between tasks keeps mattering and the user has to remember the chain mentally instead of seeing it in the system.",
+          "what_to_do_instead": "Choose Asana when relationships between tasks need to stay visible."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If your teams only track tasks through simple stage columns and never require timeline coordination, Trello may feel faster."
+      "content": "This can flip if tasks remain mostly independent and the user does not need to model order explicitly. Then Trello may stay lighter without becoming limiting."
     },
     {
       "type": "quick_rules",
-      "heading": "Quick rules",
+      "heading": "Quick decision rules",
       "rules": [
-        "If projects depend on task scheduling and dependencies, choose Asana.",
-        "If you only need visual boards for task stages, Trello can work.",
-        "If projects involve multiple teams and timelines, avoid board-only tools."
+        "Choose Asana if task order and relationships need to stay visible.",
+        "Choose Trello if tasks are mostly independent and flatter planning is enough.",
+        "Avoid Trello when sequencing keeps living only in the user's head."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Does Trello support task dependencies?",
-      "a": "Trello boards do not natively enforce task dependencies between cards."
+      "q": "Why are dependencies more than a planning feature?",
+      "a": "Because they also reduce mental tracking during daily use by making task order explicit in the system."
     },
     {
-      "q": "What makes Asana better for complex projects?",
-      "a": "Its timeline view and dependency linking help coordinate multi-step work."
+      "q": "When is Trello still the better option?",
+      "a": "Trello is still better when tasks are simple enough that explicit relationships would mostly be overhead."
     },
     {
-      "q": "Which tool is easier for simple boards?",
-      "a": "Trello is easier if you only want kanban-style task movement."
+      "q": "What pushes users toward Asana?",
+      "a": "Usually the point where sequencing matters often enough that remembering it informally becomes unreliable."
     },
     {
-      "q": "When is Asana the better choice?",
-      "a": "It works best when coordinating large projects with scheduled tasks."
+      "q": "Does Asana always mean more setup?",
+      "a": "Yes, some, but the payoff is that the work structure reflects reality instead of asking the user to hold the chain in memory."
     }
   ],
   "related_pages": [

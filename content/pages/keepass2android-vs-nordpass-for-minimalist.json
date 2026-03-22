@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why KeePass2Android fits minimalists",
-      "content": "The user keeps their password vault as an encrypted database file stored in personal storage. KeePass2Android opens KDBX vault files directly from device storage or cloud drives such as Google Drive or Dropbox. The password vault remains a portable file that can be moved, backed up, or copied without relying on a service account. This approach avoids storing credentials inside vendor infrastructure."
+      "heading": "Why KeePass2Android fits Minimalists better",
+      "content": "KeePass2Android fits this minimalist because storage control changes more than where the encrypted vault sits. It affects whether the user needs a provider account, how much trust they place in a hosted service during daily use, and how flexibly they can shape backup and portability decisions later. KeePass2Android wins by keeping that control closer to the user."
     },
     {
       "type": "x_wins",
       "heading": "Where KeePass2Android wins",
       "bullets": [
         {
-          "point": "KeePass2Android opens standard KDBX encrypted database files directly from device storage or cloud drives.",
-          "why_it_matters": "Users access their vault without creating or maintaining vendor accounts."
+          "point": "KeePass2Android keeps the vault under local or user-chosen control",
+          "why_it_matters": "Passwords are not forced into a vendor-hosted account model before the user has decided they want that tradeoff."
         },
         {
-          "point": "The password vault remains a portable encrypted file stored in personal storage.",
-          "why_it_matters": "Users control how the vault is backed up, moved, or synchronized."
+          "point": "KeePass2Android reduces dependency on a provider account during daily use",
+          "why_it_matters": "The password workflow stays closer to the device or storage path the user already trusts."
         },
         {
-          "point": "KeePass2Android reads the vault file directly instead of syncing credentials through a service.",
-          "why_it_matters": "Minimalists avoid relying on vendor hosted password infrastructure."
+          "point": "KeePass2Android leaves more room to shape backup and storage choices",
+          "why_it_matters": "That matters when portability and control are part of the reason for choosing the tool."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where NordPass wins",
       "bullets": [
         {
-          "point": "NordPass stores credentials inside a hosted vault tied to a user account.",
-          "why_it_matters": "Passwords automatically appear across devices without managing vault files."
+          "point": "NordPass can still be easier when automatic sync matters more than storage sovereignty",
+          "why_it_matters": "A vendor account can reduce setup and daily handling for users who do not want to manage location or backup strategy."
         },
         {
-          "point": "NordPass browser extensions detect login forms and autofill saved credentials.",
-          "why_it_matters": "Users sign into websites quickly without copying passwords from a vault file."
+          "point": "NordPass often gives a smoother login experience out of the box",
+          "why_it_matters": "Hosted accounts usually pair naturally with browser extensions and cross-device access."
         },
         {
-          "point": "NordPass restores the vault automatically when signing into a new device.",
-          "why_it_matters": "Users regain access to passwords instantly without importing database files."
+          "point": "NordPass asks for less manual thinking about where the vault lives",
+          "why_it_matters": "That can be the better tradeoff when convenience beats local control."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The user wants passwords synchronized automatically across devices without managing a vault file.",
-          "what_to_do_instead": "Use NordPass where credentials sync automatically through the hosted vault."
+          "fails_when": "KeePass2Android becomes the wrong fit when the user would rather offload storage and sync decisions to a hosted account model.",
+          "what_to_do_instead": "Choose NordPass if convenience now matters more than vault ownership."
         },
         {
           "tool": "y",
-          "fails_when": "The user refuses to store passwords inside vendor infrastructure because NordPass requires a hosted vault account.",
-          "what_to_do_instead": "Use KeePass2Android where the vault opens directly from a local encrypted database file."
+          "fails_when": "NordPass breaks down when the user does not want credentials forced into a vendor-hosted account or cloud vault.",
+          "what_to_do_instead": "Choose KeePass2Android when local control is the non-negotiable boundary."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user prefers automatic password syncing across devices and does not want to manage encrypted vault files manually, NordPass may become the better option."
+      "content": "This can flip if the user decides automatic hosted sync is worth more than direct control over vault location and storage choices. Then NordPass may make more sense."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick KeePass2Android if your password vault is stored as an encrypted file in personal storage.",
-        "Pick KeePass2Android if you refuse vendor hosted password vault services.",
-        "Pick NordPass if you want passwords synchronized automatically across devices."
+        "Choose KeePass2Android if vault ownership matters more than hosted convenience.",
+        "Choose NordPass if you want sync and account management handled for you.",
+        "Avoid NordPass when provider-controlled vault storage is the exact dealbreaker."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do minimalists choose KeePass2Android?",
-      "a": "It opens encrypted KDBX vault files stored in personal storage without requiring a vendor hosted account."
+      "q": "Why does local control matter so much here?",
+      "a": "Because it affects trust boundary, daily dependence on a provider account, and how flexibly the vault can be backed up or moved later."
     },
     {
-      "q": "Does NordPass store passwords in a hosted vault?",
-      "a": "Yes. NordPass keeps credentials inside a vendor hosted vault tied to a user account."
+      "q": "When is NordPass still worth choosing?",
+      "a": "NordPass is still worth choosing when automatic hosted sync is more valuable than storage sovereignty."
     },
     {
-      "q": "Can KeePass2Android open vault files from cloud drives?",
-      "a": "Yes. The app can open encrypted KDBX files stored in locations such as device storage or cloud drives."
+      "q": "What usually makes NordPass the wrong fit?",
+      "a": "The user does not want the vault tied to a vendor-hosted account or cloud model in the first place."
     },
     {
-      "q": "Who should choose NordPass instead?",
-      "a": "Users who want passwords synced automatically across devices without managing vault files may prefer NordPass."
+      "q": "Does KeePass2Android always mean more work?",
+      "a": "Often some, but that tradeoff can be the point when local control is the priority."
     }
   ],
   "related_pages": [

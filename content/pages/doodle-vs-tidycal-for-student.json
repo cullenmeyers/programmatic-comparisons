@@ -21,42 +21,42 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Which tool fits a short group project?",
-      "content": "You need to quickly find a meeting time for a short group project. As a student, you do not want to build a long-term booking system. The right tool should solve the coordination problem in minutes. Anything that requires defining event types or availability rules adds unnecessary setup."
+      "heading": "Why Doodle fits Students better",
+      "content": "Doodle fits this student because the winning mechanism reduces friction across setup, daily scheduling, and ongoing coordination instead of solving only one narrow problem."
     },
     {
       "type": "x_wins",
-      "heading": "Where Doodle works better for students",
+      "heading": "Where Doodle wins",
       "bullets": [
         {
-          "point": "Poll-based scheduling with multiple date and time options.",
-          "why_it_matters": "You list possible times and let group members vote without configuring a booking page."
+          "point": "Doodle handles the scheduling boundary more directly",
+          "why_it_matters": "The user spends less time working around the exact friction named in the decision rule."
         },
         {
-          "point": "No requirement to connect personal calendar availability.",
-          "why_it_matters": "Participants simply select times that work instead of syncing accounts."
+          "point": "Doodle keeps day-to-day scheduling smoother",
+          "why_it_matters": "The workflow stays shorter and easier to repeat."
         },
         {
-          "point": "Single-purpose link focused only on availability voting.",
-          "why_it_matters": "You solve the meeting problem directly without building a reusable system."
+          "point": "Doodle reduces hidden overhead in the calendar system",
+          "why_it_matters": "That matters when the scheduling tool is supposed to remove steps, not add another layer to manage."
         }
       ]
     },
     {
       "type": "y_wins",
-      "heading": "Where TidyCal works better",
+      "heading": "Where TidyCal wins",
       "bullets": [
         {
-          "point": "Personal booking page with defined meeting types.",
-          "why_it_matters": "You can reuse the same link for future bookings. Defining event types takes initial setup time."
+          "point": "TidyCal can still be better in a narrower scheduling workflow",
+          "why_it_matters": "The losing tool may fit when the winner's mechanism is not doing much real work yet."
         },
         {
-          "point": "Calendar integration to prevent double booking.",
-          "why_it_matters": "Availability updates automatically. For one short project, connecting calendars may be more than needed."
+          "point": "TidyCal often offers a lighter or more direct tradeoff",
+          "why_it_matters": "That can matter when the richer scheduling layer would mostly sit unused."
         },
         {
-          "point": "Customizable time slots and buffers.",
-          "why_it_matters": "You can control meeting length and spacing. Configuring these options adds setup decisions."
+          "point": "TidyCal may be the better fit once complexity is intentional",
+          "why_it_matters": "The friction only matters when it is getting in the way of the real calendar job."
         }
       ]
     },
@@ -66,47 +66,47 @@
       "items": [
         {
           "tool": "x",
-          "fails_when": "You need automated scheduling that blocks time on your personal calendar.",
-          "what_to_do_instead": "Use TidyCal if you want a reusable booking link tied to your calendar."
+          "fails_when": "Doodle becomes heavier than necessary when the winning mechanism is not doing enough work yet.",
+          "what_to_do_instead": "Choose TidyCal if the simpler tradeoff still fits."
         },
         {
           "tool": "y",
-          "fails_when": "You spend time defining meeting types and availability just to schedule one group discussion.",
-          "what_to_do_instead": "Use Doodle if you only need a quick availability poll."
+          "fails_when": "TidyCal breaks down when the friction named in the rule keeps recurring during normal scheduling.",
+          "what_to_do_instead": "Choose Doodle when that mechanism now matters daily."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If you expect ongoing one-on-one meetings beyond the short project, TidyCal may be more efficient than repeatedly creating polls."
+      "content": "This can flip if the tradeoff on the losing side starts doing more real work than the mechanism that currently wins. Then TidyCal may be worth the switch."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "If you just need a fast group poll, choose Doodle.",
-        "If you want a reusable personal booking link, choose TidyCal.",
-        "If setup takes longer than the project itself, keep it simple."
+        "Choose Doodle when the mechanism in the rule is already affecting daily scheduling.",
+        "Choose TidyCal when its tradeoff better matches the actual calendar job.",
+        "Avoid TidyCal once the same friction keeps repeating in setup and routine use."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Is Doodle better for one-time group meetings?",
-      "a": "Yes. It focuses on quick availability polls without long-term setup."
+      "q": "Why does Doodle fit the rule better?",
+      "a": "Doodle turns the mechanism in the decision rule into gains across setup, daily scheduling, and ongoing coordination instead of only one narrow feature win."
     },
     {
-      "q": "Does TidyCal require event setup?",
-      "a": "Yes. You typically define meeting types and connect your calendar."
+      "q": "When is TidyCal still reasonable?",
+      "a": "TidyCal is still reasonable when its tradeoff better matches the actual scheduling workflow."
     },
     {
-      "q": "Which tool is easier to stop using after a semester?",
-      "a": "Doodle is easier because it does not require maintaining a booking page."
+      "q": "What usually signals it is time to switch?",
+      "a": "The same friction starts repeating in normal scheduling instead of only appearing in edge cases."
     },
     {
-      "q": "Can TidyCal work for group scheduling?",
-      "a": "It can, but it is designed more for individual booking links than group voting."
+      "q": "Is this only about simplicity?",
+      "a": "No. It is about where the real operating cost of the scheduling tool lands."
     }
   ],
   "related_pages": [

@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why HabitKit fits local, no-account tracking",
-      "content": "You want to track habits on a single device without dealing with accounts or syncing. HabitKit keeps your data stored locally so there is nothing to manage beyond the app itself. Habitify requires a cloud account to sync and manage your habits, which adds ongoing steps and dependencies you are trying to avoid."
+      "heading": "Why HabitKit fits Solo users better",
+      "content": "HabitKit fits this solo user because Habitify is the tool introducing the account and sync layer, not HabitKit. That extra requirement adds sign-up friction, more service maintenance, and another dependency to carry before habit logging even feels settled. HabitKit wins by keeping the routine usable without that account burden."
     },
     {
       "type": "y_wins",
       "heading": "Where HabitKit wins",
       "bullets": [
         {
-          "point": "Habit data is stored locally on the device without requiring an account.",
-          "why_it_matters": "This removes the need to manage logins or external services."
+          "point": "HabitKit lets the user track habits without creating a cloud account first",
+          "why_it_matters": "The app can be used immediately without tying the routine to another service login."
         },
         {
-          "point": "The app works without cloud syncing or online services.",
-          "why_it_matters": "This keeps the system self-contained and avoids ongoing maintenance."
+          "point": "HabitKit keeps daily tracking available without maintaining sync infrastructure",
+          "why_it_matters": "Routine use stays focused on the habit instead of on account upkeep."
         },
         {
-          "point": "There is no syncing system to configure or monitor.",
-          "why_it_matters": "This reduces effort and keeps habit tracking simple over time."
+          "point": "HabitKit lowers the ongoing burden of account-based maintenance",
+          "why_it_matters": "That matters when online sync is the exact layer the user wants to avoid."
         }
       ]
     },
@@ -47,47 +47,47 @@
       "heading": "Where Habitify wins",
       "bullets": [
         {
-          "point": "Habit data syncs across devices through a cloud account.",
-          "why_it_matters": "This allows access from multiple devices, but requires maintaining an account."
+          "point": "Habitify can still be better when the user wants the habit available across devices",
+          "why_it_matters": "An account layer may be worth it once the routine really depends on cloud access."
         },
         {
-          "point": "The app provides cloud backup to preserve habit data.",
-          "why_it_matters": "This adds data safety, but introduces reliance on external services."
+          "point": "Habitify reduces the risk of habit data staying trapped on one device",
+          "why_it_matters": "That matters when the user moves between devices as part of normal life."
         },
         {
-          "point": "You can access habits from different platforms using the same account.",
-          "why_it_matters": "This increases flexibility, but adds ongoing management and syncing requirements."
+          "point": "Habitify can be easier to recover and continue later",
+          "why_it_matters": "The extra account burden only makes sense once sync convenience is a real need."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "HabitKit feels limiting when you want access to habits across multiple devices.",
-          "what_to_do_instead": "Use Habitify if you need syncing and multi-device access."
+          "fails_when": "HabitKit becomes too isolated when the routine genuinely depends on cloud access across devices.",
+          "what_to_do_instead": "Choose Habitify if account-based sync has become necessary."
         },
         {
           "tool": "x",
-          "fails_when": "Habitify breaks when habit tracking requires maintaining a cloud account and syncing service.",
-          "what_to_do_instead": "Use HabitKit when you want a local, no-account solution."
+          "fails_when": "Habitify breaks down when account maintenance and online sync keep feeling larger than the habit itself.",
+          "what_to_do_instead": "Choose HabitKit when using the tracker without that extra layer is the real advantage."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This verdict might flip if you want to access your habits across multiple devices and are willing to maintain a cloud account. In that case, Habitify can be useful despite the added overhead."
+      "content": "This can flip if the user now needs cloud access across devices more than freedom from account maintenance. Then Habitify may make more sense."
     },
     {
       "type": "quick_rules",
-      "heading": "Quick rules",
+      "heading": "Quick decision rules",
       "rules": [
-        "Choose HabitKit if you want local, single-device habit tracking.",
-        "Choose HabitKit if you want to avoid accounts and syncing.",
-        "Choose Habitify only if you need multi-device syncing and cloud backup."
+        "Choose HabitKit if you do not want habit tracking tied to a cloud account first.",
+        "Choose Habitify if cross-device sync now matters more than avoiding account upkeep.",
+        "Avoid Habitify when account maintenance is the real drag."
       ]
     },
     {
@@ -98,20 +98,20 @@
   ],
   "faqs": [
     {
-      "q": "Why is HabitKit better for Solo users?",
-      "a": "Because it stores habit data locally and does not require accounts or syncing services."
+      "q": "Why can avoiding an account matter so much?",
+      "a": "Because account setup and sync maintenance affect first use, daily access, and the amount of service overhead attached to the habit routine."
     },
     {
-      "q": "Does Habitify require an account?",
-      "a": "Yes, it relies on a cloud account to sync and manage habit data."
+      "q": "When is Habitify still worth choosing?",
+      "a": "Habitify is still worth choosing when cross-device sync is now a real requirement."
     },
     {
-      "q": "Can HabitKit sync across devices?",
-      "a": "No, it is designed for use on a single device without syncing."
+      "q": "What usually makes Habitify the wrong fit?",
+      "a": "The account and sync layer feels larger than the habit itself."
     },
     {
-      "q": "When would a Solo user still choose Habitify?",
-      "a": "A Solo user might choose Habitify if they want access to habits across multiple devices."
+      "q": "Is HabitKit only for offline use?",
+      "a": "Mostly for users who want the tracker usable without another service dependency."
     }
   ],
   "related_pages": [

@@ -22,23 +22,23 @@
     {
       "type": "persona_fit",
       "heading": "Why Clockify fits Non-technical users better",
-      "content": "This non-technical user wants a tool that works right away without dealing with setup steps that could go wrong. Clockify fits because you sign in and start tracking in the browser without installing anything or managing servers. That removes the risk of breaking something during setup or needing to fix it later."
+      "content": "Clockify fits this non-technical user because the real decision is not only about logging hours. It is also about who controls the tracker after installation, how far the system can be bent to match internal process, and whether admin access stays in your own hands. That turns the same self-hosting mechanism into setup control, long-run flexibility, and data ownership rather than just one hosting preference."
     },
     {
       "type": "y_wins",
       "heading": "Where eHour wins",
       "bullets": [
         {
-          "point": "eHour runs as a self-hosted application where you control the server, database, and deployment.",
-          "why_it_matters": "This gives full control over data and environment, but requires installing and managing infrastructure that can easily break if not handled correctly."
+          "point": "eHour is faster to start because the platform is already managed",
+          "why_it_matters": "You can begin tracking without planning hosting, deployment, or upgrades first."
         },
         {
-          "point": "Its setup involves configuring a server environment, connecting a database, and deploying the app manually.",
-          "why_it_matters": "That process introduces multiple points where errors can happen, which is risky for someone who wants to avoid technical setup entirely."
+          "point": "eHour asks for less operational maintenance after signup",
+          "why_it_matters": "That is useful when you want the tracker to stay someone else's infrastructure problem."
         },
         {
-          "point": "All updates, backups, and uptime depend on how you maintain your own hosting setup.",
-          "why_it_matters": "This creates ongoing responsibility to keep the system running, which adds stress and maintenance tasks over time."
+          "point": "eHour keeps the interface closer to a fixed product path",
+          "why_it_matters": "Some teams prefer fewer customization decisions if the default workflow is already good enough."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where Clockify wins",
       "bullets": [
         {
-          "point": "Clockify runs entirely in the browser with no installation or server setup required.",
-          "why_it_matters": "You can start tracking immediately without worrying about breaking anything during setup."
+          "point": "Clockify gives you control over where the tracker runs",
+          "why_it_matters": "Clockify lets you choose the server, environment, and upgrade timing instead of accepting a fixed hosted setup."
         },
         {
-          "point": "Account creation and workspace setup happen through a guided web interface with preconfigured defaults.",
-          "why_it_matters": "This reduces the chance of making mistakes because you are not configuring technical components manually."
+          "point": "Clockify can be shaped around your own workflow rules",
+          "why_it_matters": "That matters when a power user wants to change fields, permissions, or extensions instead of working around product limits."
         },
         {
-          "point": "Hosting, updates, and data storage are handled automatically by the platform.",
-          "why_it_matters": "You do not need to maintain anything yourself, which removes ongoing risk and extra responsibility."
+          "point": "Clockify keeps data ownership and admin access in the same hands",
+          "why_it_matters": "You do not have to separate daily time tracking from the operational decisions about backups, retention, or internal access."
         }
       ]
     },
@@ -65,48 +65,48 @@
       "heading": "Where each tool breaks down",
       "items": [
         {
-          "tool": "y",
-          "fails_when": "eHour breaks down when you need to set up or maintain a server and are not comfortable managing databases, hosting, or deployments.",
-          "what_to_do_instead": "Use Clockify if you want a tool that works out of the box without any technical setup."
+          "tool": "x",
+          "fails_when": "Clockify becomes the wrong fit when nobody wants server ownership, upgrades, or internal admin responsibility to become part of the tracking tool.",
+          "what_to_do_instead": "Choose eHour if managed convenience matters more than infrastructure control."
         },
         {
-          "tool": "x",
-          "fails_when": "Clockify becomes limiting when you need full control over hosting, data storage, or running the tool without relying on an external service.",
-          "what_to_do_instead": "Use eHour if you are comfortable managing your own server and want complete control over the environment."
+          "tool": "y",
+          "fails_when": "eHour breaks down when the team needs to decide where the tracker runs, how it is customized, or how the data is governed beyond vendor defaults.",
+          "what_to_do_instead": "Choose Clockify when deployment control and deeper system ownership are real requirements."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This could flip if you have access to technical help or a managed server where someone else handles setup and maintenance. In that case, eHour becomes easier to use because the difficult parts are handled for you."
+      "content": "This can flip if the tracker is not part of your internal infrastructure strategy and nobody wants to own deployment or maintenance. In that narrower case, eHour can be the better fit because managed convenience is the real constraint."
     },
     {
       "type": "quick_rules",
       "heading": "Quick rules",
       "rules": [
-        "Pick Clockify if you want to start tracking time without installing anything.",
-        "Pick eHour if you need full control and are comfortable managing a server.",
-        "Avoid eHour if you do not want to deal with setup or maintenance risks."
+        "Choose Clockify if hosting control is part of the requirement.",
+        "Choose eHour if you want the tracker ready without owning deployment.",
+        "Avoid eHour when vendor defaults are the exact limit you are trying to escape."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Clockify easier for non-technical users?",
-      "a": "Because it runs in the browser and handles hosting and setup automatically, so there is nothing to install or maintain."
+      "q": "Why does Clockify win on more than hosting?",
+      "a": "Clockify changes not only where the tracker runs, but also how much control you keep over customization, upgrades, and data handling."
     },
     {
-      "q": "What makes eHour harder to use?",
-      "a": "It requires setting up and managing a server, which includes installing the app, configuring a database, and maintaining the system."
+      "q": "What is the real cost of choosing Clockify?",
+      "a": "You are taking on more operational responsibility, so the tradeoff is control versus convenience rather than features versus no features."
     },
     {
-      "q": "Is eHour a bad tool overall?",
-      "a": "No. It is useful for people who want full control over their setup and are comfortable managing their own infrastructure."
+      "q": "When is eHour still the better choice?",
+      "a": "eHour is still better when nobody wants to own the environment and managed simplicity is genuinely the safer option."
     },
     {
-      "q": "When should I still choose eHour?",
-      "a": "Choose eHour if you need a self-hosted solution and are confident in handling server setup and maintenance."
+      "q": "What usually forces the move away from eHour?",
+      "a": "It is usually when fixed vendor boundaries start blocking deployment, admin, or customization decisions that the team actually needs to make."
     }
   ],
   "related_pages": [

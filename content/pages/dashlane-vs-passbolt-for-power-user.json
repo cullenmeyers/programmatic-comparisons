@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Passbolt fits power users",
-      "content": "The user manages credentials for internal systems and wants to deploy the password manager inside their own infrastructure. Passbolt runs on a server controlled by the organization and integrates with internal authentication and network systems. Administrators manage the environment directly instead of relying on an external service. This allows full control over how credentials are stored and shared."
+      "heading": "Why Passbolt fits Power users better",
+      "content": "Passbolt fits this power user because the same infrastructure choice affects several layers at once. It changes where the vault is deployed, how daily admin work connects to internal systems, and how much long-term control the user keeps over backups and policy. The real issue is not one hosting checkbox but who owns the operating environment."
     },
     {
       "type": "y_wins",
       "heading": "Where Passbolt wins",
       "bullets": [
         {
-          "point": "Passbolt can be installed on a self hosted server environment.",
-          "why_it_matters": "Power users can run the password manager inside their own infrastructure instead of relying on a hosted service."
+          "point": "Passbolt puts the password server inside infrastructure you control",
+          "why_it_matters": "That changes the trust boundary at setup time instead of forcing the vault into a vendor-managed environment."
         },
         {
-          "point": "Passbolt provides administrative control over the server and credential storage.",
-          "why_it_matters": "Organizations can control how passwords are stored, backed up, and secured."
+          "point": "Passbolt gives administrators more direct control over daily operations",
+          "why_it_matters": "Integrations, policies, and access flow can be tied to internal systems instead of waiting on an external service model."
         },
         {
-          "point": "Passbolt integrates with internal systems and authentication infrastructure.",
-          "why_it_matters": "Teams can connect password management to their existing internal tools and workflows."
+          "point": "Passbolt makes long-term security and backup policy more adaptable",
+          "why_it_matters": "Power users can shape where data lives and how it is recovered as the environment grows."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Dashlane wins",
       "bullets": [
         {
-          "point": "Dashlane automatically synchronizes the password vault across devices through the user account.",
-          "why_it_matters": "Users can access credentials quickly without managing server infrastructure."
+          "point": "Dashlane can still be better for teams that do not want to run password infrastructure",
+          "why_it_matters": "A hosted model can remove server work when admin control is not the main requirement."
         },
         {
-          "point": "Dashlane browser extensions detect login forms and autofill credentials.",
-          "why_it_matters": "Signing into websites becomes faster without copying passwords manually."
+          "point": "Dashlane often feels lighter for routine rollout",
+          "why_it_matters": "The user can start faster when deployment and upgrades are handled by the vendor."
         },
         {
-          "point": "Dashlane manages infrastructure and updates as part of the hosted service.",
-          "why_it_matters": "Users do not need to maintain server software or handle system updates."
+          "point": "Dashlane reduces operational upkeep outside the vault itself",
+          "why_it_matters": "That tradeoff can be worth it when convenience matters more than self-hosting."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "The user wants a password manager that works instantly without maintaining server infrastructure.",
-          "what_to_do_instead": "Use Dashlane where the service is hosted and managed automatically."
+          "fails_when": "Passbolt becomes too heavy when the user wants passwords to work immediately and has no reason to run password infrastructure themselves.",
+          "what_to_do_instead": "Choose Dashlane if a hosted service is the better operational tradeoff."
         },
         {
           "tool": "x",
-          "fails_when": "The user needs to deploy the password manager inside their own infrastructure because Dashlane cannot run as a self hosted server.",
-          "what_to_do_instead": "Use Passbolt where the password system can be deployed inside a private server environment."
+          "fails_when": "Dashlane breaks down when policy, deployment location, or system integration must stay under internal administrative control.",
+          "what_to_do_instead": "Choose Passbolt when self-hosted control is a real requirement."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user prefers a hosted password manager that works immediately without running server infrastructure, Dashlane may become the better option."
+      "content": "This can flip if the user no longer needs administrative control over deployment and would rather offload hosting and upgrades entirely. Then Dashlane may be the better fit."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Passbolt if you want to deploy the password manager on your own server.",
-        "Pick Passbolt if you need full administrative control over credential infrastructure.",
-        "Pick Dashlane if you want a hosted password manager with no server maintenance."
+        "Choose Passbolt if the password system must run inside infrastructure you control.",
+        "Choose Dashlane if a hosted service is preferable to running password servers yourself.",
+        "Avoid Dashlane when deployment location and admin control are part of the requirement."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do power users prefer Passbolt?",
-      "a": "Passbolt can be deployed on a self hosted server where administrators control the infrastructure."
+      "q": "Why does Passbolt win on more than hosting?",
+      "a": "Passbolt also changes how the vault integrates with internal systems, how backups are handled, and how much administrative control the user keeps over the whole environment."
     },
     {
-      "q": "Can Dashlane run on a private server?",
-      "a": "No. Dashlane operates as a hosted password manager and does not support self hosted deployment."
+      "q": "When is Dashlane still the better choice?",
+      "a": "Dashlane is still the better choice when the user wants a hosted password manager that works without running server infrastructure."
     },
     {
-      "q": "Does Passbolt require server infrastructure?",
-      "a": "Yes. Passbolt is typically installed on a server environment controlled by the organization."
+      "q": "What usually makes Dashlane fail first?",
+      "a": "The need for deployment control and internal integration becomes real rather than theoretical."
     },
     {
-      "q": "Who should choose Dashlane instead?",
-      "a": "Users who want a password manager that works immediately without running server infrastructure may prefer Dashlane."
+      "q": "Is this only for large teams?",
+      "a": "No. Even a solo power user can care about where the password server runs and who controls it."
     }
   ],
   "related_pages": [

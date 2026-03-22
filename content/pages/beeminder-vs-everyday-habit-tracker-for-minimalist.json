@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Everyday fits casual habit tracking",
-      "content": "You are tracking a small number of habits without wanting pressure or consequences attached. Everyday Habit Tracker keeps the experience focused on marking completion on a grid. Beeminder requires setting goals, defining progress rates, and dealing with penalties, which adds pressure and complexity you are trying to avoid."
+      "heading": "Why Everyday (Habit Tracker) fits Minimalists better",
+      "content": "Everyday (Habit Tracker) fits this minimalist because Beeminder is the tool introducing contracts, penalties, and paced goal rules, not Everyday (Habit Tracker). Those mechanics can help in the right case, but first they add setup friction, make daily tracking feel heavier, and turn a simple habit into something harder to start. Everyday (Habit Tracker) wins by letting the tracking habit form before enforcement becomes necessary."
     },
     {
       "type": "y_wins",
-      "heading": "Where Everyday Habit Tracker wins",
+      "heading": "Where Everyday (Habit Tracker) wins",
       "bullets": [
         {
-          "point": "Habits are tracked on a calendar-style grid where each day is marked complete or incomplete.",
-          "why_it_matters": "This keeps the interaction simple and visual, so you can track habits without configuring rules or targets."
+          "point": "Everyday (Habit Tracker) lets the user log a habit before defining contracts or penalties",
+          "why_it_matters": "The first interaction is habit tracking itself rather than configuring enforcement."
         },
         {
-          "point": "There are no required goal trajectories or enforced progress rates tied to habits.",
-          "why_it_matters": "This removes pressure, allowing you to track habits casually without needing to maintain strict schedules."
+          "point": "Everyday (Habit Tracker) keeps daily tracking closer to simple completion",
+          "why_it_matters": "Routine use stays focused on showing up instead of managing goal trajectories."
         },
         {
-          "point": "The app does not include contracts, penalties, or external enforcement systems.",
-          "why_it_matters": "This avoids stress and extra setup, making it easier to maintain habits without feeling locked into a system."
+          "point": "Everyday (Habit Tracker) reduces the pressure created by a commitment system",
+          "why_it_matters": "That helps when hard pacing and penalties are more likely to stop the habit than support it."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Beeminder wins",
       "bullets": [
         {
-          "point": "Goals are defined with numeric targets and required progress rates over time.",
-          "why_it_matters": "This enforces discipline for users who want strict accountability and measurable outcomes."
+          "point": "Beeminder can still be better when the user needs hard accountability",
+          "why_it_matters": "Commitment rules may be worth the overhead once gentle tracking has stopped working."
         },
         {
-          "point": "Commitment contracts can be set up with financial penalties for falling behind.",
-          "why_it_matters": "This creates strong motivation, but it introduces pressure and requires ongoing management."
+          "point": "Beeminder gives stronger pacing around measurable habits",
+          "why_it_matters": "That matters when the habit needs deadlines and a visible rate of progress, not just a checkmark."
         },
         {
-          "point": "Progress is tracked on graphs that show whether you are staying on track or at risk of failure.",
-          "why_it_matters": "This provides detailed feedback, but it adds complexity and attention demands that minimalists often avoid."
+          "point": "Beeminder can create more pressure to follow through",
+          "why_it_matters": "The extra system only pays back when enforcement is the point."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "Everyday Habit Tracker feels too loose when you need strict accountability or measurable targets to stay consistent.",
-          "what_to_do_instead": "Use Beeminder if you want enforced goals with clear consequences for missing progress."
+          "fails_when": "Everyday (Habit Tracker) becomes too light when the user needs hard accountability, measurable pacing, or consequences to stay on track.",
+          "what_to_do_instead": "Choose Beeminder if enforcement has become the actual need."
         },
         {
           "tool": "x",
-          "fails_when": "Beeminder breaks when tracking habits requires setting up contracts, monitoring progress graphs, or dealing with penalties.",
-          "what_to_do_instead": "Use Everyday Habit Tracker when you want simple, pressure-free habit tracking."
+          "fails_when": "Beeminder breaks down when contracts and pacing rules arrive before the user has even built a basic logging routine.",
+          "what_to_do_instead": "Choose Everyday (Habit Tracker) when starting and sustaining the habit matters more than enforcement."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This verdict might flip if you decide you need strong external accountability and are willing to accept penalties or strict goals to stay consistent. In that case, Beeminder can provide the structure you need despite the added pressure."
+      "content": "This can flip if the user now needs hard accountability and measurable pacing more than a low-friction check-off routine. Then Beeminder may be worth the heavier setup."
     },
     {
       "type": "quick_rules",
-      "heading": "Quick rules",
+      "heading": "Quick decision rules",
       "rules": [
-        "Choose Everyday Habit Tracker if you want simple, no-pressure habit tracking.",
-        "Choose Everyday Habit Tracker if you want to avoid contracts or penalties.",
-        "Choose Beeminder only if you want strict goal enforcement with consequences."
+        "Choose Everyday (Habit Tracker) if you need to start logging before setting penalties or pacing rules.",
+        "Choose Beeminder if hard accountability is now part of the job.",
+        "Avoid Beeminder when commitment mechanics are what make the tracker hard to use."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Everyday Habit Tracker better for Minimalists?",
-      "a": "Because it keeps habit tracking simple and avoids adding contracts, penalties, or enforced goals."
+      "q": "Why can less pressure be better here?",
+      "a": "Because contracts, penalties, and pacing rules only help once accountability is truly the missing ingredient instead of just making the tracker harder to start."
     },
     {
-      "q": "Does Beeminder require commitment contracts?",
-      "a": "Yes, it is built around goal tracking with optional contracts and penalties that enforce progress."
+      "q": "When is Beeminder still the better fit?",
+      "a": "Beeminder is still the better fit when the habit needs real enforcement and measurable pacing."
     },
     {
-      "q": "Is Beeminder more effective for discipline?",
-      "a": "It can be for users who want strict accountability, but it adds pressure and complexity."
+      "q": "What usually makes Beeminder fail first?",
+      "a": "The commitment layer arrives before the user has even built a consistent logging routine."
     },
     {
-      "q": "When would a Minimalist still choose Beeminder?",
-      "a": "A Minimalist might choose Beeminder if they decide they need strong external pressure to stay consistent."
+      "q": "Is this anti-accountability?",
+      "a": "No. It is about timing and fit."
     }
   ],
   "related_pages": [

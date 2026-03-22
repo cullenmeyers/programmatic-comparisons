@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Best fit for maximum control and portability",
-      "content": "You want one portable file that contains your entire system. TiddlyWiki stores notes, layout, and custom logic inside a single HTML file you can move anywhere. Standard Notes separates notes from extensions and depends on its app framework for behavior."
+      "heading": "Why TiddlyWiki fits Power users better",
+      "content": "TiddlyWiki fits this power user because retrieval depth changes setup, daily work, and long-term organization together. It affects how much structure has to be rebuilt by hand, how fast the right note can be found under pressure, and whether a growing archive remains usable without repeated cleanup. The better tool wins by making search and grouping carry more of the load."
     },
     {
       "type": "y_wins",
       "heading": "Where TiddlyWiki wins",
       "bullets": [
         {
-          "point": "Single self-contained HTML file",
-          "why_it_matters": "All notes and customizations live in one portable file. You can copy or back it up without exporting multiple folders."
+          "point": "TiddlyWiki finds the right note with more precision",
+          "why_it_matters": "Better queries, smart groups, or search logic reduce the amount of archive scanning you have to do by hand."
         },
         {
-          "point": "Built-in scripting and macro system",
-          "why_it_matters": "You can create custom views, templates, and behaviors directly inside the wiki. This allows structural changes beyond simple editor extensions."
+          "point": "TiddlyWiki keeps large note libraries usable in daily work",
+          "why_it_matters": "The system can surface slices of information instead of making you browse folder by folder."
         },
         {
-          "point": "Tag-based linking and transclusion",
-          "why_it_matters": "You can embed one note inside another and build dynamic pages. This supports complex knowledge structures."
+          "point": "TiddlyWiki supports a more deliberate long-term structure",
+          "why_it_matters": "Advanced retrieval lets the archive keep growing without forcing a full reorganization every time it gets larger."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where Standard Notes wins",
       "bullets": [
         {
-          "point": "End-to-end encrypted notes by default",
-          "why_it_matters": "Your archive is protected without building custom security layers."
+          "point": "Standard Notes stays easier when the archive is still small enough to browse directly",
+          "why_it_matters": "A simpler search model can be enough before advanced queries become a real time saver."
         },
         {
-          "point": "Extension system for editors and features",
-          "why_it_matters": "You can add editors like rich text or markdown, but the system remains inside defined extension boundaries."
+          "point": "Standard Notes keeps daily writing less technical",
+          "why_it_matters": "You can work without carrying smart groups, query syntax, or retrieval rules in your head."
         },
         {
-          "point": "Cross-device sync through an account",
-          "why_it_matters": "Notes sync automatically without managing files manually."
+          "point": "Standard Notes favors a lighter note structure over a more query-driven one",
+          "why_it_matters": "That tradeoff can be fine when the archive is not yet large enough to justify extra search depth."
         }
       ]
     },
@@ -66,47 +66,47 @@
       "items": [
         {
           "tool": "y",
-          "fails_when": "You prefer a polished app with automatic syncing and minimal manual file handling.",
-          "what_to_do_instead": "Use Standard Notes if you want encryption and account-based sync without managing a file."
+          "fails_when": "TiddlyWiki becomes more system than the archive requires when direct browsing is still faster than advanced search logic.",
+          "what_to_do_instead": "Choose Standard Notes if the library is still small enough to navigate simply."
         },
         {
           "tool": "x",
-          "fails_when": "You want to redesign the system itself or embed custom logic beyond available extensions.",
-          "what_to_do_instead": "Switch to TiddlyWiki for full structural control."
+          "fails_when": "Standard Notes breaks down when the archive grows and the user keeps doing manual retrieval work that search and smart grouping should absorb.",
+          "what_to_do_instead": "Choose TiddlyWiki when advanced retrieval has become a real operating need."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If security and automatic sync matter more than structural freedom, Standard Notes may feel more practical despite its limits."
+      "content": "This can flip if direct browsing stays faster than advanced search and smart grouping because the archive never grows large enough to need them. Then Standard Notes may be enough."
     },
     {
       "type": "quick_rules",
-      "heading": "Quick rules",
+      "heading": "Quick decision rules",
       "rules": [
-        "If you want one portable file with deep customization, choose TiddlyWiki.",
-        "If you prefer encrypted notes with built-in sync, consider Standard Notes.",
-        "If structural limits frustrate you, avoid extension-bound systems."
+        "Choose TiddlyWiki if advanced search or smart grouping now saves real time.",
+        "Choose Standard Notes if the archive is still small enough to browse directly.",
+        "Avoid Standard Notes when manual retrieval is becoming a daily tax."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Is TiddlyWiki really portable?",
-      "a": "Yes. It can run as a single HTML file containing notes and custom logic."
+      "q": "Why does stronger search change the recommendation?",
+      "a": "Because the same retrieval mechanism affects daily speed, archive scale, and how much manual reorganization the user has to keep doing."
     },
     {
-      "q": "Can Standard Notes be customized?",
-      "a": "Yes, through extensions, but changes remain within the extension framework."
+      "q": "When is Standard Notes still the better choice?",
+      "a": "Standard Notes is still better when the archive is small enough that direct browsing is faster than advanced queries."
     },
     {
-      "q": "Which has the higher ceiling for customization?",
-      "a": "TiddlyWiki generally has the higher ceiling because you can modify its structure directly."
+      "q": "What usually makes Standard Notes feel too shallow?",
+      "a": "The user keeps losing time to repeated manual searching that a better retrieval layer should absorb."
     },
     {
-      "q": "Which is easier to sync across devices?",
-      "a": "Standard Notes is easier because it handles sync through its account system."
+      "q": "Is this only about power features?",
+      "a": "No. It is about whether a growing note library remains usable."
     }
   ],
   "related_pages": [

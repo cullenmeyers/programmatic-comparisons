@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Outlook fits power users",
-      "content": "The user manages multiple email folders, rules, and enterprise accounts across several organizations. Outlook supports rule based automation that moves messages to folders, forwards messages, and triggers actions when certain conditions are met. Users can connect multiple work accounts and manage them from one interface. This allows power users to build structured inbox systems that handle large volumes of email."
+      "heading": "Why Outlook fits Power users better",
+      "content": "Outlook fits this power user because folder rules and account automation change the whole operating model of the inbox. They affect how messages are routed before review, how several accounts stay organized in one place, and how much manual triage remains once volume grows. Outlook wins by giving large inbox systems more structure to work with."
     },
     {
       "type": "y_wins",
       "heading": "Where Outlook wins",
       "bullets": [
         {
-          "point": "Outlook allows rule based automation that moves messages to folders based on sender, subject, or keywords.",
-          "why_it_matters": "Power users can automatically organize incoming messages into detailed folder structures without manually sorting each email."
+          "point": "Outlook supports inbox structures that go beyond a simple flat stream",
+          "why_it_matters": "Folders, account separation, and routing rules let the system scale with heavier mail volume."
         },
         {
-          "point": "Outlook supports multiple enterprise accounts inside one application.",
-          "why_it_matters": "Users managing email across different organizations can switch between accounts without logging into separate inbox systems."
+          "point": "Outlook reduces daily sorting work through rule-driven automation",
+          "why_it_matters": "Messages can be moved or categorized before the user manually triages them."
         },
         {
-          "point": "Outlook allows nested folders and structured mailbox hierarchies.",
-          "why_it_matters": "Large inbox systems can be organized into layered categories that help power users handle thousands of messages."
+          "point": "Outlook handles multi-account complexity more deliberately",
+          "why_it_matters": "That matters when the inbox is really a larger operating system for several work contexts."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where HEY wins",
       "bullets": [
         {
-          "point": "HEY includes a sender screening system that asks users to approve or reject first time senders.",
-          "why_it_matters": "Unwanted senders can be blocked permanently before their messages appear in the inbox."
+          "point": "HEY can still be better when the user wants a simpler inbox model",
+          "why_it_matters": "A flatter design may feel cleaner if complex rules and folder trees would mostly add maintenance."
         },
         {
-          "point": "HEY replaces traditional folders with simplified inbox areas such as Imbox and The Feed.",
-          "why_it_matters": "This structure reduces manual sorting because the product organizes common message types automatically."
+          "point": "HEY reduces the amount of system tuning required to keep email usable",
+          "why_it_matters": "That matters when the inbox should stay opinionated instead of deeply configurable."
         },
         {
-          "point": "HEY bundles newsletters and promotional messages into a separate reading stream.",
-          "why_it_matters": "Users who receive many newsletters can read them later without cluttering the main inbox."
+          "point": "HEY can be the better fit when heavy automation is not the real job",
+          "why_it_matters": "The lighter structure only loses once multi-account complexity truly needs formal rules."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "The user wants strict sender approval before messages reach the inbox because Outlook accepts all messages first and relies on later filtering.",
-          "what_to_do_instead": "Use HEY where new senders must be approved before they can appear in the inbox."
+          "fails_when": "Outlook becomes too much when the user would rather have a simpler inbox than manage folders, automation logic, and account structure.",
+          "what_to_do_instead": "Choose HEY if a lighter inbox model fits better."
         },
         {
           "tool": "x",
-          "fails_when": "The user needs large rule based inbox systems with folders and automated sorting because HEY avoids folder structures and detailed automation rules.",
-          "what_to_do_instead": "Use Outlook where rules and folders can organize complex email systems."
+          "fails_when": "HEY breaks down when large inbox volume needs rules, folder logic, or multi-account organization that a simpler structure cannot carry.",
+          "what_to_do_instead": "Choose Outlook when automation depth is now part of the job."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user values strict control over who can send them email and prefers a simplified inbox without folders or rule management, HEY may feel easier despite fewer automation options."
+      "content": "This can flip if the inbox no longer needs complex rules, folder hierarchies, or multi-account automation and a simpler structure is enough. Then HEY may be the better fit."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Outlook if you manage complex folder systems and rule based inbox automation.",
-        "Pick Outlook if you manage several work accounts across organizations.",
-        "Pick HEY if you want a simplified inbox with sender approval instead of folders."
+        "Choose Outlook if the inbox needs deep folder rules and multi-account automation.",
+        "Choose HEY if you want a simpler inbox structure with less system tuning.",
+        "Avoid HEY when message volume has outgrown a lighter model."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do power users choose Outlook?",
-      "a": "Outlook supports rule based automation, folder hierarchies, and multi account management that help organize large email systems."
+      "q": "Why do rules and folders matter so much here?",
+      "a": "Because they change how incoming mail is routed, how multiple accounts stay organized, and how much manual triage remains once inbox volume grows."
     },
     {
-      "q": "Does HEY support complex email rules?",
-      "a": "No. HEY focuses on a simplified inbox structure and does not support advanced folder rules or large automation systems."
+      "q": "When is HEY still reasonable?",
+      "a": "HEY is still reasonable when the user wants a simpler inbox model instead of a deeply structured one."
     },
     {
-      "q": "Can Outlook manage several email accounts?",
-      "a": "Yes. Outlook allows users to connect multiple accounts and manage them inside one interface."
+      "q": "What usually makes HEY fail first?",
+      "a": "Large inbox systems outgrow a lighter structure once formal routing and folder automation become necessary."
     },
     {
-      "q": "What makes HEY different from traditional email systems?",
-      "a": "HEY replaces folders and rule based sorting with a screening system that controls who can send you email."
+      "q": "Is Outlook only for enterprise users?",
+      "a": "Mostly for users whose inbox has become complex enough that rules and hierarchy are doing real work."
     }
   ],
   "related_pages": [

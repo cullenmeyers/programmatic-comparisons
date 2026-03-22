@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Roundcube fits power users",
-      "content": "The user runs personal hosting infrastructure and wants email deployed inside their own server environment. Roundcube installs directly on a mail server and provides a web interface for managing messages through a browser. Administrators control how the interface connects to the mail system and can customize how the environment operates. This allows the email interface to run entirely within the user's infrastructure."
+      "heading": "Why Roundcube fits Power users better",
+      "content": "Roundcube fits this power user because infrastructure control changes setup, daily operations, and long-term flexibility together. It affects where the mail system runs, how it connects to other systems, and whether the environment can be shaped around internal requirements. Roundcube wins by keeping that control under the user's own administration."
     },
     {
       "type": "x_wins",
       "heading": "Where Roundcube wins",
       "bullets": [
         {
-          "point": "Roundcube can be installed on a self hosted mail server.",
-          "why_it_matters": "Power users can run the webmail interface inside infrastructure they control."
+          "point": "Roundcube can run inside infrastructure the user controls",
+          "why_it_matters": "Deployment stays on private servers instead of depending on a vendor-hosted mail environment."
         },
         {
-          "point": "Roundcube connects to mail servers using standard protocols such as IMAP.",
-          "why_it_matters": "Administrators can integrate the interface with their existing mail infrastructure."
+          "point": "Roundcube gives administrators more control over day-to-day mail operations",
+          "why_it_matters": "Updates, integration points, and server-side behavior can be tied to the environment they already manage."
         },
         {
-          "point": "Roundcube allows customization through server configuration and plugins.",
-          "why_it_matters": "Users can modify how the webmail interface behaves within their environment."
+          "point": "Roundcube leaves more room to adapt the mail system over time",
+          "why_it_matters": "That matters when ownership of the environment is part of the reason for choosing the tool."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Yahoo Mail wins",
       "bullets": [
         {
-          "point": "Yahoo Mail runs as a fully hosted email service accessible from any browser.",
-          "why_it_matters": "Users can access their inbox without deploying or maintaining servers."
+          "point": "Yahoo Mail can still be better when the user does not want to run mail infrastructure",
+          "why_it_matters": "A hosted service can remove server setup and maintenance when control is not the main requirement."
         },
         {
-          "point": "Yahoo Mail automatically handles spam filtering and system maintenance.",
-          "why_it_matters": "Users do not need to manage server updates or infrastructure."
+          "point": "Yahoo Mail gets email working faster for users who want immediate access",
+          "why_it_matters": "That matters when deployment and server upkeep would mostly be extra work."
         },
         {
-          "point": "Yahoo Mail provides built in account creation and mailbox hosting.",
-          "why_it_matters": "Users can create and start using email without setting up a mail server."
+          "point": "Yahoo Mail reduces the admin burden outside the inbox itself",
+          "why_it_matters": "The hosted model can be the better tradeoff when convenience matters more than infrastructure ownership."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The user wants an email system that works immediately without deploying or maintaining a mail server.",
-          "what_to_do_instead": "Use Yahoo Mail where the entire email service is hosted and ready to use."
+          "fails_when": "Roundcube becomes too heavy when the user wants email working immediately without deploying or maintaining mail infrastructure.",
+          "what_to_do_instead": "Choose Yahoo Mail if a hosted service is the better operational tradeoff."
         },
         {
           "tool": "y",
-          "fails_when": "The user needs the webmail interface deployed inside their own infrastructure because Yahoo Mail cannot run on a private server.",
-          "what_to_do_instead": "Use Roundcube where the email interface can be installed on a self hosted mail server."
+          "fails_when": "Yahoo Mail breaks down when the mail system has to run inside infrastructure the user controls instead of on a vendor platform.",
+          "what_to_do_instead": "Choose Roundcube when self-hosted control is a real requirement."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user prefers a hosted email service that works immediately without managing server infrastructure, Yahoo Mail may become the better option."
+      "content": "This can flip if the user no longer wants to run or control mail infrastructure and would rather offload the whole environment to a hosted service. Then Yahoo Mail may make more sense."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Roundcube if you want to run the webmail interface on your own server.",
-        "Pick Roundcube if you manage your own mail infrastructure.",
-        "Pick Yahoo Mail if you want a hosted email service with no server setup."
+        "Choose Roundcube if the email system must run inside infrastructure you control.",
+        "Choose Yahoo Mail if you want a hosted service instead of running mail infrastructure.",
+        "Avoid Yahoo Mail when deployment control is part of the requirement."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do power users prefer Roundcube?",
-      "a": "Roundcube can run on a self hosted mail server where administrators control the mailbox environment."
+      "q": "Why does self-hosting change the verdict?",
+      "a": "Because it affects deployment control, integration freedom, and whether the whole mail environment can run inside infrastructure the user manages."
     },
     {
-      "q": "Can Yahoo Mail run on a private server?",
-      "a": "No. Yahoo Mail operates as a hosted email service and cannot be installed on a self hosted server."
+      "q": "When is Yahoo Mail still enough?",
+      "a": "Yahoo Mail is still enough when the user would rather offload server operation to a hosted provider."
     },
     {
-      "q": "Does Roundcube require a mail server?",
-      "a": "Yes. Roundcube typically connects to an existing mail server through protocols such as IMAP."
+      "q": "What usually makes Yahoo Mail the wrong fit?",
+      "a": "The mail system has to live inside infrastructure under the user's own control."
     },
     {
-      "q": "Who should choose Yahoo Mail instead?",
-      "a": "Users who want a hosted email service that works immediately without server management may prefer Yahoo Mail."
+      "q": "Is this only for admins?",
+      "a": "Mostly for people whose requirements include owning the environment rather than only using a mailbox."
     }
   ],
   "related_pages": [

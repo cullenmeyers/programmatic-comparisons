@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Harvest fits simple, no-setup tracking",
-      "content": "You want to track billable hours without dealing with installations or servers. Harvest works as a ready-to-use web app where you can start a timer immediately. Kimai requires setting up hosting, installing the software, and managing the environment, which introduces steps that feel easy to break."
+      "heading": "Why Harvest fits Non-technical users better",
+      "content": "Harvest fits this non-technical user because the real decision is not only about logging hours. It is also about who controls the tracker after installation, how far the system can be bent to match internal process, and whether admin access stays in your own hands. That turns the same self-hosting mechanism into setup control, long-run flexibility, and data ownership rather than just one hosting preference."
     },
     {
       "type": "x_wins",
       "heading": "Where Harvest wins",
       "bullets": [
         {
-          "point": "The tool runs as a hosted service with no installation or server setup required.",
-          "why_it_matters": "This lets you start tracking time immediately without technical steps."
+          "point": "Harvest gives you control over where the tracker runs",
+          "why_it_matters": "Harvest lets you choose the server, environment, and upgrade timing instead of accepting a fixed hosted setup."
         },
         {
-          "point": "You can create projects and start timers directly after signing in.",
-          "why_it_matters": "This keeps the workflow simple and avoids setup errors."
+          "point": "Harvest can be shaped around your own workflow rules",
+          "why_it_matters": "That matters when a power user wants to change fields, permissions, or extensions instead of working around product limits."
         },
         {
-          "point": "All updates and maintenance are handled automatically by the service.",
-          "why_it_matters": "This removes the risk of breaking the system through manual changes."
+          "point": "Harvest keeps data ownership and admin access in the same hands",
+          "why_it_matters": "You do not have to separate daily time tracking from the operational decisions about backups, retention, or internal access."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where Kimai wins",
       "bullets": [
         {
-          "point": "The software can be self-hosted on your own server or hosting environment.",
-          "why_it_matters": "This gives full control, but requires setup and ongoing management."
+          "point": "Kimai is faster to start because the platform is already managed",
+          "why_it_matters": "You can begin tracking without planning hosting, deployment, or upgrades first."
         },
         {
-          "point": "You can configure the system to match specific business needs through server-level control.",
-          "why_it_matters": "This allows customization, but adds complexity and risk."
+          "point": "Kimai asks for less operational maintenance after signup",
+          "why_it_matters": "That is useful when you want the tracker to stay someone else's infrastructure problem."
         },
         {
-          "point": "Data is fully controlled by you rather than stored on an external service.",
-          "why_it_matters": "This increases ownership, but requires managing infrastructure."
+          "point": "Kimai keeps the interface closer to a fixed product path",
+          "why_it_matters": "Some teams prefer fewer customization decisions if the default workflow is already good enough."
         }
       ]
     },
@@ -66,47 +66,47 @@
       "items": [
         {
           "tool": "x",
-          "fails_when": "Harvest feels limiting when you want full control over hosting or custom server setup.",
-          "what_to_do_instead": "Use Kimai if you are comfortable managing your own hosting environment."
+          "fails_when": "Harvest becomes the wrong fit when nobody wants server ownership, upgrades, or internal admin responsibility to become part of the tracking tool.",
+          "what_to_do_instead": "Choose Kimai if managed convenience matters more than infrastructure control."
         },
         {
           "tool": "y",
-          "fails_when": "Kimai breaks when using the tool requires setting up and maintaining a server before tracking time.",
-          "what_to_do_instead": "Use Harvest when you want a ready-to-use tool with no setup."
+          "fails_when": "Kimai breaks down when the team needs to decide where the tracker runs, how it is customized, or how the data is governed beyond vendor defaults.",
+          "what_to_do_instead": "Choose Harvest when deployment control and deeper system ownership are real requirements."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This verdict might flip if you are comfortable with server setup or have someone to manage it for you. In that case, Kimai can be useful despite the extra setup steps."
+      "content": "This can flip if the tracker is not part of your internal infrastructure strategy and nobody wants to own deployment or maintenance. In that narrower case, Kimai can be the better fit because managed convenience is the real constraint."
     },
     {
       "type": "quick_rules",
       "heading": "Quick rules",
       "rules": [
-        "Choose Harvest if you want a tool that works immediately without setup.",
-        "Choose Harvest if you want to avoid servers and installations.",
-        "Choose Kimai only if you are comfortable managing hosting and setup."
+        "Choose Harvest if hosting control is part of the requirement.",
+        "Choose Kimai if you want the tracker ready without owning deployment.",
+        "Avoid Kimai when vendor defaults are the exact limit you are trying to escape."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Harvest better for Non-technical users?",
-      "a": "Because it works as a hosted service without requiring installation or server setup."
+      "q": "Why does Harvest win on more than hosting?",
+      "a": "Harvest changes not only where the tracker runs, but also how much control you keep over customization, upgrades, and data handling."
     },
     {
-      "q": "Does Kimai require setup?",
-      "a": "Yes, it requires installing and hosting the software on a server."
+      "q": "What is the real cost of choosing Harvest?",
+      "a": "You are taking on more operational responsibility, so the tradeoff is control versus convenience rather than features versus no features."
     },
     {
-      "q": "Is Harvest ready to use immediately?",
-      "a": "Yes, you can sign in and start tracking time without any setup."
+      "q": "When is Kimai still the better choice?",
+      "a": "Kimai is still better when nobody wants to own the environment and managed simplicity is genuinely the safer option."
     },
     {
-      "q": "When would a Non-technical user still choose Kimai?",
-      "a": "They might choose Kimai if someone else handles the setup and server management for them."
+      "q": "What usually forces the move away from Kimai?",
+      "a": "It is usually when fixed vendor boundaries start blocking deployment, admin, or customization decisions that the team actually needs to make."
     }
   ],
   "related_pages": [

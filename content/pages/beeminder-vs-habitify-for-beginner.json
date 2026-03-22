@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Habitify fits first-time habit tracking",
-      "content": "You installed a habit tracker expecting to check off habits quickly without learning a system. Habitify lets you create a habit and start logging immediately. Beeminder asks you to define how much you will do, how fast you must progress, and how it is enforced, which adds setup steps that can stop you before you even begin."
+      "heading": "Why Habitify fits Beginners better",
+      "content": "Habitify fits this beginner because Beeminder is the tool introducing contracts, penalties, and paced goal rules, not Habitify. Those mechanics can help in the right case, but first they add setup friction, make daily tracking feel heavier, and turn a simple habit into something harder to start. Habitify wins by letting the tracking habit form before enforcement becomes necessary."
     },
     {
       "type": "y_wins",
       "heading": "Where Habitify wins",
       "bullets": [
         {
-          "point": "You can create a habit and start logging it right away with a simple check-off interface.",
-          "why_it_matters": "This removes setup steps so you can begin tracking immediately, which is critical for beginners who want a quick start."
+          "point": "Habitify lets the user log a habit before defining contracts or penalties",
+          "why_it_matters": "The first interaction is habit tracking itself rather than configuring enforcement."
         },
         {
-          "point": "The app uses straightforward habit lists with optional reminders instead of required goal definitions.",
-          "why_it_matters": "This keeps the experience simple, avoiding extra decisions that could slow you down or cause drop-off."
+          "point": "Habitify keeps daily tracking closer to simple completion",
+          "why_it_matters": "Routine use stays focused on showing up instead of managing goal trajectories."
         },
         {
-          "point": "There is no requirement to define quantities, timelines, or enforcement rules before using the app.",
-          "why_it_matters": "This lowers the barrier to entry, making it easier to build the habit of tracking itself."
+          "point": "Habitify reduces the pressure created by a commitment system",
+          "why_it_matters": "That helps when hard pacing and penalties are more likely to stop the habit than support it."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Beeminder wins",
       "bullets": [
         {
-          "point": "Goals are defined with numeric targets and required progress rates over time.",
-          "why_it_matters": "This provides strict structure for users who want measurable outcomes, but it requires setup before tracking."
+          "point": "Beeminder can still be better when the user needs hard accountability",
+          "why_it_matters": "Commitment rules may be worth the overhead once gentle tracking has stopped working."
         },
         {
-          "point": "The system uses graphs to show whether you are on track or falling behind.",
-          "why_it_matters": "This gives detailed feedback, but it adds complexity that beginners may not be ready to manage."
+          "point": "Beeminder gives stronger pacing around measurable habits",
+          "why_it_matters": "That matters when the habit needs deadlines and a visible rate of progress, not just a checkmark."
         },
         {
-          "point": "Commitment contracts can enforce goals with penalties if progress falls behind.",
-          "why_it_matters": "This creates strong accountability, but it introduces extra decisions and setup steps that can overwhelm new users."
+          "point": "Beeminder can create more pressure to follow through",
+          "why_it_matters": "The extra system only pays back when enforcement is the point."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "Habitify feels too basic when you need strict goal enforcement or measurable targets to stay consistent.",
-          "what_to_do_instead": "Use Beeminder if you want detailed goal tracking with enforced progress and accountability."
+          "fails_when": "Habitify becomes too light when the user needs hard accountability, measurable pacing, or consequences to stay on track.",
+          "what_to_do_instead": "Choose Beeminder if enforcement has become the actual need."
         },
         {
           "tool": "x",
-          "fails_when": "Beeminder breaks when you must define goals, progress rates, and commitment settings before logging a single habit.",
-          "what_to_do_instead": "Use Habitify when you want to start tracking immediately with minimal setup."
+          "fails_when": "Beeminder breaks down when contracts and pacing rules arrive before the user has even built a basic logging routine.",
+          "what_to_do_instead": "Choose Habitify when starting and sustaining the habit matters more than enforcement."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This verdict might flip if you are willing to invest time upfront to set up detailed goals and want strong accountability from the start. In that case, Beeminder can work despite the extra setup required."
+      "content": "This can flip if the user now needs hard accountability and measurable pacing more than a low-friction check-off routine. Then Beeminder may be worth the heavier setup."
     },
     {
       "type": "quick_rules",
-      "heading": "Quick rules",
+      "heading": "Quick decision rules",
       "rules": [
-        "Choose Habitify if you want to start tracking habits immediately.",
-        "Choose Habitify if you want a simple check-off system with minimal setup.",
-        "Choose Beeminder only if you are ready to configure detailed goals and enforcement rules."
+        "Choose Habitify if you need to start logging before setting penalties or pacing rules.",
+        "Choose Beeminder if hard accountability is now part of the job.",
+        "Avoid Beeminder when commitment mechanics are what make the tracker hard to use."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Habitify better for Beginners?",
-      "a": "Because you can start tracking habits immediately without setting up goals, rules, or complex configurations."
+      "q": "Why can less pressure be better here?",
+      "a": "Because contracts, penalties, and pacing rules only help once accountability is truly the missing ingredient instead of just making the tracker harder to start."
     },
     {
-      "q": "Does Beeminder require setup before tracking?",
-      "a": "Yes, you need to define goals, progress rates, and sometimes commitment rules before logging progress."
+      "q": "When is Beeminder still the better fit?",
+      "a": "Beeminder is still the better fit when the habit needs real enforcement and measurable pacing."
     },
     {
-      "q": "Is Beeminder more powerful?",
-      "a": "It offers more control and accountability, but that comes with added complexity that beginners may find overwhelming."
+      "q": "What usually makes Beeminder fail first?",
+      "a": "The commitment layer arrives before the user has even built a consistent logging routine."
     },
     {
-      "q": "When would a Beginner still choose Beeminder?",
-      "a": "A Beginner might choose Beeminder if they are willing to learn the system and want strict goal enforcement from the start."
+      "q": "Is this anti-accountability?",
+      "a": "No. It is about timing and fit."
     }
   ],
   "related_pages": [

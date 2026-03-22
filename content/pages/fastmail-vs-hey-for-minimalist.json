@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why HEY fits minimalists",
-      "content": "The user wants strict control over who can reach their inbox and refuses to manually unsubscribe from newsletters. HEY places all first time senders into a screening queue where the user must approve or reject them before any message appears in the inbox. Once rejected, the sender cannot contact the inbox again. This removes the need for filters or repeated unsubscribe actions."
+      "heading": "Why HEY fits Minimalists better",
+      "content": "HEY fits this minimalist because sender screening changes more than one inbox decision. It affects what reaches the inbox in the first place, how much cleanup arrives during daily triage, and whether inbox simplicity depends on later filtering or earlier control. HEY wins by moving the decision to the front of the workflow."
     },
     {
       "type": "y_wins",
       "heading": "Where HEY wins",
       "bullets": [
         {
-          "point": "HEY forces first time senders through a screening step before their message reaches the inbox.",
-          "why_it_matters": "The user decides once whether a sender is allowed, preventing unwanted emails from ever entering the inbox."
+          "point": "HEY stops unknown senders before they become inbox cleanup work",
+          "why_it_matters": "The user decides once whether a sender belongs instead of filtering messages after they have already landed."
         },
         {
-          "point": "HEY blocks rejected senders permanently after the screening decision.",
-          "why_it_matters": "This mechanism stops repeat newsletters or promotional senders without requiring manual unsubscribe actions."
+          "point": "HEY keeps daily inbox review faster by reducing manual sorting after delivery",
+          "why_it_matters": "Routine reading stays focused on approved senders instead of cleanup decisions."
         },
         {
-          "point": "HEY separates newsletters into a dedicated reading stream instead of the main inbox.",
-          "why_it_matters": "Marketing emails can be reviewed later without interrupting personal conversations."
+          "point": "HEY changes the structure of the inbox from open admission to controlled entry",
+          "why_it_matters": "That matters when simplicity depends on limiting what reaches the main inbox in the first place."
         }
       ]
     },
@@ -47,71 +47,66 @@
       "heading": "Where Fastmail wins",
       "bullets": [
         {
-          "point": "Fastmail provides detailed filtering rules that move messages into folders based on sender or keywords.",
-          "why_it_matters": "Users can automatically sort incoming mail into organized folders when managing larger inboxes."
+          "point": "Fastmail can still be better when the user prefers conventional inbox behavior",
+          "why_it_matters": "Some people would rather accept delivery first and organize email with filters after arrival."
         },
         {
-          "point": "Fastmail supports custom domains for personal or business email addresses.",
-          "why_it_matters": "Users can host email under their own domain rather than using a shared provider address."
+          "point": "Fastmail often integrates more naturally with larger productivity ecosystems",
+          "why_it_matters": "That matters when sender control is less important than the surrounding toolset."
         },
         {
-          "point": "Fastmail offers a clean web interface without advertising panels.",
-          "why_it_matters": "Users who want a simple email layout can read messages without promotional distractions."
+          "point": "Fastmail may feel more flexible for users who want their own sorting model",
+          "why_it_matters": "The tradeoff can make sense when built-in screening is not the actual priority."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "The user wants advanced rule based filtering and detailed folder automation for organizing complex inbox systems.",
-          "what_to_do_instead": "Use Fastmail where filtering rules can automatically move messages into folders."
+          "fails_when": "HEY becomes the wrong fit when the user prefers a more conventional inbox and wants to rely on filters or categories after delivery.",
+          "what_to_do_instead": "Choose Fastmail if built-in screening is not the real gain."
         },
         {
           "tool": "x",
-          "fails_when": "The user wants to block unwanted senders before messages arrive because Fastmail delivers emails immediately and relies on filters afterward.",
-          "what_to_do_instead": "Use HEY where new senders must be approved before messages reach the inbox."
+          "fails_when": "Fastmail breaks down when unknown senders keep reaching the inbox and creating cleanup work after the message has already landed.",
+          "what_to_do_instead": "Choose HEY when pre-inbox screening matters more."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user prefers organizing incoming email using detailed filters and folders instead of screening senders individually, Fastmail may become the better option."
+      "content": "This can flip if the user prefers a more conventional inbox and is comfortable relying on filters after messages arrive. Then Fastmail may feel easier."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick HEY if you want to approve every sender before emails reach your inbox.",
-        "Pick HEY if you refuse to manually unsubscribe from newsletters.",
-        "Pick Fastmail if you prefer organizing email with filtering rules and folders."
+        "Choose HEY if unknown senders should be decided before they hit the inbox.",
+        "Choose Fastmail if you prefer traditional delivery and post-arrival filtering.",
+        "Avoid Fastmail when inbox cleanup after delivery is the real drag."
       ]
-    },
-    {
-      "type": "faqs_placeholder",
-      "heading": "",
-      "rules": []
     }
   ],
   "faqs": [
     {
-      "q": "Why do minimalists prefer HEY?",
-      "a": "HEY allows users to approve or block senders before their messages reach the inbox, preventing ongoing inbox cleanup."
+      "q": "Why does sender screening matter so much here?",
+      "a": "Because it changes whether inbox simplicity comes from controlling entry before delivery or from cleaning things up after messages arrive."
     },
     {
-      "q": "Does Fastmail screen senders before email arrives?",
-      "a": "No. Fastmail delivers messages immediately and relies on filters or manual actions afterward."
+      "q": "When is Fastmail still better?",
+      "a": "Fastmail is still better when the user prefers a conventional inbox and is comfortable filtering after delivery."
     },
     {
-      "q": "What is the HEY screening feature?",
-      "a": "HEY places first time senders in a screening queue where users must approve or reject them before their messages reach the inbox."
+      "q": "What usually pushes someone toward HEY?",
+      "a": "Too much inbox energy keeps disappearing into cleanup that could have been prevented earlier."
     },
     {
-      "q": "When might Fastmail be a better choice?",
-      "a": "Fastmail can be better for users who prefer organizing email with filters and folders rather than screening each sender."
+      "q": "Is HEY only for minimalists?",
+      "a": "Mostly for users who want stricter control over what reaches the inbox in the first place."
     }
   ],
   "related_pages": [

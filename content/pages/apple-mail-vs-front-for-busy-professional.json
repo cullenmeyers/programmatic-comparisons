@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Front fits busy professionals",
-      "content": "The user works with a support team and needs multiple people to coordinate responses inside shared inbox threads. Front structures email as a shared workspace where teammates see the same conversation. A message can be assigned to a specific teammate and discussed using internal comments directly inside the thread. This keeps team coordination inside the inbox instead of spreading it across chat tools and forwarded emails."
+      "heading": "Why Front fits Busy professionals better",
+      "content": "Front fits this busy professional because collaboration inside the thread changes several parts of the email workflow at once. It affects who owns the reply, whether internal discussion stays near the message, and how much coordination leaks into other tools when the inbox gets busy. Front wins by making shared email a native team workflow instead of an improvised one."
     },
     {
       "type": "y_wins",
       "heading": "Where Front wins",
       "bullets": [
         {
-          "point": "Front allows assigning an email conversation to a specific teammate directly inside the thread.",
-          "why_it_matters": "This mechanism makes ownership clear and prevents two people from replying to the same customer message."
+          "point": "Front keeps multiple teammates inside the same conversation instead of splitting work across separate inboxes",
+          "why_it_matters": "Ownership and visibility stay clear without forwarding threads or asking who is replying."
         },
         {
-          "point": "Front supports internal comments inside the email thread that are invisible to the recipient.",
-          "why_it_matters": "Teammates can discuss the best response without leaving the inbox or switching to another communication tool."
+          "point": "Front speeds up daily coordination by keeping assignments and internal notes in the thread itself",
+          "why_it_matters": "The team can decide who handles the message without switching to chat or a ticketing side channel."
         },
         {
-          "point": "Front provides shared inboxes where multiple teammates can read and respond to the same conversation.",
-          "why_it_matters": "The entire team works from one conversation view instead of forwarding emails between personal inboxes."
+          "point": "Front gives shared email a clearer operating structure",
+          "why_it_matters": "That matters when customer conversations belong to a team workflow instead of one personal mailbox."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Apple Mail wins",
       "bullets": [
         {
-          "point": "Apple Mail integrates directly with macOS and iOS as the built in email application.",
-          "why_it_matters": "Users can start reading and sending messages immediately on Apple devices without installing another email client."
+          "point": "Apple Mail can still be better when email belongs to one person instead of a team queue",
+          "why_it_matters": "A personal inbox may feel lighter when shared ownership is not part of the workflow."
         },
         {
-          "point": "Apple Mail can connect multiple email accounts from different providers.",
-          "why_it_matters": "Individuals managing several personal or work accounts can read all messages from one application."
+          "point": "Apple Mail often keeps solo email use simpler than a collaboration layer",
+          "why_it_matters": "That matters when assignment and internal notes would mostly be extra structure."
         },
         {
-          "point": "Apple Mail stores synced messages locally on the device.",
-          "why_it_matters": "Previously downloaded emails remain readable even when the device is offline."
+          "point": "Apple Mail asks for less commitment to a shared-inbox model",
+          "why_it_matters": "The lighter setup can be better when team coordination inside threads is not doing much real work."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "The user manages email alone and does not need teammates collaborating inside inbox threads.",
-          "what_to_do_instead": "Use Apple Mail where a single person can manage messages in a simple personal inbox."
+          "fails_when": "Front becomes heavier than necessary when email is mostly personal and a team collaboration layer would mostly sit unused.",
+          "what_to_do_instead": "Choose Apple Mail if one-person inbox handling is the real workflow."
         },
         {
           "tool": "x",
-          "fails_when": "Several teammates must coordinate responses to the same email because Apple Mail cannot assign conversations or add internal comments within the thread.",
-          "what_to_do_instead": "Use Front where shared inbox threads allow team assignments and internal discussion."
+          "fails_when": "Apple Mail breaks down when several people need to own, discuss, and respond to the same thread without coordination happening elsewhere.",
+          "what_to_do_instead": "Choose Front when shared thread collaboration matters daily."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user manages email individually on Apple devices and rarely collaborates with teammates on responses, Apple Mail may feel simpler than maintaining a shared inbox system."
+      "content": "This can flip if email belongs mostly to one person and shared thread coordination rarely matters. Then Apple Mail may fit better."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Front if multiple teammates need to respond from the same inbox.",
-        "Pick Front if you want assignments and internal comments inside email threads.",
-        "Pick Apple Mail if you manage email alone on Apple devices."
+        "Choose Front if several teammates need to work inside the same email thread.",
+        "Choose Apple Mail if inbox work is mostly personal rather than shared.",
+        "Avoid Apple Mail when coordination keeps leaking into forwarding or side chat."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Front better for team inboxes?",
-      "a": "Front allows teams to assign conversations, add internal comments, and reply from the same email thread."
+      "q": "Why does Front matter beyond one feature?",
+      "a": "Front changes who owns the reply, where internal discussion happens, and whether shared email can be handled inside the thread instead of around it."
     },
     {
-      "q": "Does Apple Mail support shared team comments?",
-      "a": "No. Apple Mail does not provide internal comments or shared thread collaboration features."
+      "q": "When is Apple Mail still the better fit?",
+      "a": "Apple Mail is still the better fit when most email belongs to one person instead of a team queue."
     },
     {
-      "q": "Can Front work with existing email accounts?",
-      "a": "Yes. Front connects to existing email providers and adds collaboration features on top of those inboxes."
+      "q": "What usually makes Apple Mail fail first?",
+      "a": "The team keeps forwarding messages or coordinating replies outside the inbox because the thread itself is not collaborative enough."
     },
     {
-      "q": "Who should use Apple Mail instead?",
-      "a": "Individuals who manage their own inbox and primarily use Apple devices may prefer Apple Mail for its built in simplicity."
+      "q": "Is this only about support teams?",
+      "a": "No. It applies anywhere several people need to work inside the same conversation."
     }
   ],
   "related_pages": [

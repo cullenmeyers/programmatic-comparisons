@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Kimai fits full system control",
-      "content": "You want to control how your time tracking system works, including hosting and customization. Kimai can be installed on your own server and modified to fit your workflow. Clockify is a hosted tool, which means you use the system as provided and cannot change its structure or hosting environment."
+      "heading": "Why Kimai fits Power users better",
+      "content": "Kimai fits this power user because the real decision is not only about logging hours. It is also about who controls the tracker after installation, how far the system can be bent to match internal process, and whether admin access stays in your own hands. That turns the same self-hosting mechanism into setup control, long-run flexibility, and data ownership rather than just one hosting preference."
     },
     {
       "type": "y_wins",
       "heading": "Where Kimai wins",
       "bullets": [
         {
-          "point": "The tool can be self-hosted on your own server or infrastructure.",
-          "why_it_matters": "This gives you full control over your data and how the system is run."
+          "point": "Kimai gives you control over where the tracker runs",
+          "why_it_matters": "Kimai lets you choose the server, environment, and upgrade timing instead of accepting a fixed hosted setup."
         },
         {
-          "point": "The system can be customized at the server and application level.",
-          "why_it_matters": "This allows you to adjust workflows and features beyond standard limits."
+          "point": "Kimai can be shaped around your own workflow rules",
+          "why_it_matters": "That matters when a power user wants to change fields, permissions, or extensions instead of working around product limits."
         },
         {
-          "point": "Data storage and access are fully controlled by your own environment.",
-          "why_it_matters": "This removes dependency on external services and allows deeper customization."
+          "point": "Kimai keeps data ownership and admin access in the same hands",
+          "why_it_matters": "You do not have to separate daily time tracking from the operational decisions about backups, retention, or internal access."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where Clockify wins",
       "bullets": [
         {
-          "point": "The tool is ready to use as a hosted service with no setup required.",
-          "why_it_matters": "This makes it easy to start, but limits control over the system."
+          "point": "Clockify is faster to start because the platform is already managed",
+          "why_it_matters": "You can begin tracking without planning hosting, deployment, or upgrades first."
         },
         {
-          "point": "Time tracking features are available immediately after signing in.",
-          "why_it_matters": "This removes setup effort, but prevents deep customization."
+          "point": "Clockify asks for less operational maintenance after signup",
+          "why_it_matters": "That is useful when you want the tracker to stay someone else's infrastructure problem."
         },
         {
-          "point": "All infrastructure and maintenance are handled automatically.",
-          "why_it_matters": "This reduces effort, but removes the ability to control or modify the system."
+          "point": "Clockify keeps the interface closer to a fixed product path",
+          "why_it_matters": "Some teams prefer fewer customization decisions if the default workflow is already good enough."
         }
       ]
     },
@@ -66,47 +66,47 @@
       "items": [
         {
           "tool": "y",
-          "fails_when": "Kimai becomes difficult to manage if you do not want to handle server setup or maintenance.",
-          "what_to_do_instead": "Use Clockify if you want a ready-to-use tool with no hosting responsibilities."
+          "fails_when": "Kimai becomes the wrong fit when nobody wants server ownership, upgrades, or internal admin responsibility to become part of the tracking tool.",
+          "what_to_do_instead": "Choose Clockify if managed convenience matters more than infrastructure control."
         },
         {
           "tool": "x",
-          "fails_when": "Clockify breaks when you need self-hosting or deeper customization beyond built-in features.",
-          "what_to_do_instead": "Use Kimai when you want full control over your system."
+          "fails_when": "Clockify breaks down when the team needs to decide where the tracker runs, how it is customized, or how the data is governed beyond vendor defaults.",
+          "what_to_do_instead": "Choose Kimai when deployment control and deeper system ownership are real requirements."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This verdict might flip if you prefer a tool that works immediately without managing servers or customization. In that case, Clockify can be better despite its limitations."
+      "content": "This can flip if the tracker is not part of your internal infrastructure strategy and nobody wants to own deployment or maintenance. In that narrower case, Clockify can be the better fit because managed convenience is the real constraint."
     },
     {
       "type": "quick_rules",
       "heading": "Quick rules",
       "rules": [
-        "Choose Kimai if you want self-hosting and full system control.",
-        "Choose Kimai if you need deep customization beyond standard features.",
-        "Choose Clockify if you want a ready-to-use tool with no setup."
+        "Choose Kimai if hosting control is part of the requirement.",
+        "Choose Clockify if you want the tracker ready without owning deployment.",
+        "Avoid Clockify when vendor defaults are the exact limit you are trying to escape."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Kimai better for Power users?",
-      "a": "Because it allows self-hosting and deep customization of the time tracking system."
+      "q": "Why does Kimai win on more than hosting?",
+      "a": "Kimai changes not only where the tracker runs, but also how much control you keep over customization, upgrades, and data handling."
     },
     {
-      "q": "Can Clockify be self-hosted?",
-      "a": "No, it runs as a hosted service without self-hosting options."
+      "q": "What is the real cost of choosing Kimai?",
+      "a": "You are taking on more operational responsibility, so the tradeoff is control versus convenience rather than features versus no features."
     },
     {
-      "q": "Does Kimai require setup?",
-      "a": "Yes, it requires installing and managing the system on your own server."
+      "q": "When is Clockify still the better choice?",
+      "a": "Clockify is still better when nobody wants to own the environment and managed simplicity is genuinely the safer option."
     },
     {
-      "q": "When would a Power user still choose Clockify?",
-      "a": "A Power user might choose Clockify if they want a simple tool without managing hosting or customization."
+      "q": "What usually forces the move away from Clockify?",
+      "a": "It is usually when fixed vendor boundaries start blocking deployment, admin, or customization decisions that the team actually needs to make."
     }
   ],
   "related_pages": [

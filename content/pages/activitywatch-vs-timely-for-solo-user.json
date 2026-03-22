@@ -22,23 +22,23 @@
     {
       "type": "persona_fit",
       "heading": "Why ActivityWatch fits Solo users better",
-      "content": "This solo user wants full control over their data without relying on external services. ActivityWatch fits because it runs locally and stores all tracking data on your device. That removes the need to manage accounts or depend on cloud syncing."
+      "content": "ActivityWatch fits this solo user because the same local-first mechanism removes friction in several places at once. It lowers setup by removing account creation, keeps daily tracking available even without a connection, and reduces the background worry that sync or login state will interrupt normal use. The win is not only privacy; it is steadier day-to-day operation with less upkeep."
     },
     {
       "type": "x_wins",
       "heading": "Where ActivityWatch wins",
       "bullets": [
         {
-          "point": "ActivityWatch stores all tracking data locally on your device without cloud syncing.",
-          "why_it_matters": "This keeps your data private and removes reliance on external services."
+          "point": "ActivityWatch starts without asking you to maintain an online account",
+          "why_it_matters": "That removes an entire layer of setup and ongoing credential management before tracking can even feel routine."
         },
         {
-          "point": "The tool runs without requiring account creation or login.",
-          "why_it_matters": "This eliminates setup steps and ongoing account management."
+          "point": "ActivityWatch keeps day-to-day tracking usable even when you are offline",
+          "why_it_matters": "The timer or activity log still works when your connection drops instead of turning basic capture into a sync problem."
         },
         {
-          "point": "Activity tracking happens continuously on device without sending data externally.",
-          "why_it_matters": "This ensures full control over your tracking data."
+          "point": "ActivityWatch keeps the tool mentally lighter over time",
+          "why_it_matters": "There is less to monitor because local capture does not keep surfacing account status, sync state, or browser dependency."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where Timely wins",
       "bullets": [
         {
-          "point": "Timely stores and syncs time tracking data through cloud based accounts.",
-          "why_it_matters": "This enables access across devices, but requires ongoing account use."
+          "point": "Timely is easier when you need the same data on multiple devices",
+          "why_it_matters": "Cloud access can be genuinely helpful if your tracking does not live on one machine."
         },
         {
-          "point": "Time entries and activity data are managed through an online dashboard.",
-          "why_it_matters": "This centralizes data, but depends on internet connectivity."
+          "point": "Timely is simpler for sharing or checking time from a browser",
+          "why_it_matters": "Hosted access helps when the value comes from availability rather than from local control."
         },
         {
-          "point": "Automatic tracking relies on cloud processing and syncing of activity data.",
-          "why_it_matters": "This adds convenience, but introduces external dependency."
+          "point": "Timely shifts storage and sync mechanics out of your hands",
+          "why_it_matters": "That can feel lighter if you prefer convenience over owning the environment yourself."
         }
       ]
     },
@@ -66,47 +66,47 @@
       "items": [
         {
           "tool": "x",
-          "fails_when": "ActivityWatch becomes limiting when you need multi device syncing or shared access across teams.",
-          "what_to_do_instead": "Use Timely if you need cloud based syncing and collaboration."
+          "fails_when": "ActivityWatch becomes limiting when the same time data has to stay visible across several devices or be checked from anywhere with no local machine involved.",
+          "what_to_do_instead": "Choose Timely if cross-device access matters more than local-only simplicity."
         },
         {
           "tool": "y",
-          "fails_when": "Timely breaks down when you want fully local tracking but must rely on cloud syncing and account access.",
-          "what_to_do_instead": "Use ActivityWatch if you want private on device tracking."
+          "fails_when": "Timely breaks down when account maintenance, sync state, or online dependency keeps getting in the way of a tool that should feel invisible.",
+          "what_to_do_instead": "Choose ActivityWatch when local capture and lower upkeep matter more than hosted availability."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This could flip if you need to access your time tracking data across multiple devices or share it with others. In that case, Timely may be more useful despite the cloud dependency."
+      "content": "This can flip if the user regularly moves between devices or needs browser access from anywhere more than they need local-only simplicity. In that case, Timely can justify the extra account layer."
     },
     {
       "type": "quick_rules",
       "heading": "Quick rules",
       "rules": [
-        "Pick ActivityWatch if you want local only time tracking.",
-        "Pick Timely if you need cloud syncing and access across devices.",
-        "Avoid Timely if you do not want to rely on accounts or internet connectivity."
+        "Choose ActivityWatch if you want local capture without account upkeep.",
+        "Choose Timely if browser access or multi-device visibility matters more.",
+        "Avoid Timely when sync and login state are becoming the real maintenance burden."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is ActivityWatch better for solo users?",
-      "a": "Because it stores all tracking data locally without requiring accounts or cloud syncing."
+      "q": "Why does local first help beyond privacy?",
+      "a": "It also reduces account upkeep, lowers dependence on sync, and keeps basic tracking available when connectivity is not the thing you want to think about."
     },
     {
-      "q": "What makes Timely less suitable here?",
-      "a": "It depends on cloud syncing and account access for tracking data."
+      "q": "What do you give up with ActivityWatch?",
+      "a": "Usually some convenience around browser access, easier device switching, or hosted sharing."
     },
     {
-      "q": "Is Timely a bad tool?",
-      "a": "No. It is useful for users who want cloud based access and syncing."
+      "q": "When is Timely still worth choosing?",
+      "a": "Timely is still worth choosing when availability across devices matters more than keeping the tracker self-contained."
     },
     {
-      "q": "When should I choose Timely instead?",
-      "a": "Choose Timely when you need to access your data across devices or share it with others."
+      "q": "What is the warning sign that Timely is the wrong fit?",
+      "a": "It is when the account and sync layer keeps creating more maintenance than the actual time tracking itself."
     }
   ],
   "related_pages": [

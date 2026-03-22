@@ -22,23 +22,23 @@
     {
       "type": "persona_fit",
       "heading": "Why Grindstone fits Power users better",
-      "content": "This power user wants to control exactly when tracking starts and stops rather than relying on automation. Grindstone fits because you manually start and stop sessions for each task, ensuring that every tracked entry is intentional. That avoids relying on a system that tries to guess what you are doing."
+      "content": "Grindstone fits this power user because the capture model changes more than one part of the workflow. It affects how often you have to interrupt yourself, how much reconstruction happens later, and how much trust you can place in the recorded timeline. That is why the choice here is not just auto versus manual in theory, but what kind of attention the tracker demands every day."
     },
     {
       "type": "x_wins",
       "heading": "Where Grindstone wins",
       "bullets": [
         {
-          "point": "Grindstone requires you to explicitly start and stop timers for each task.",
-          "why_it_matters": "This gives full control over what gets tracked, ensuring no time is logged without your intention."
+          "point": "Grindstone makes the capture model predictable",
+          "why_it_matters": "You decide when tracking starts, stops, or gets categorized instead of reverse-engineering activity after the fact."
         },
         {
-          "point": "Each session is tied to a manually selected task rather than inferred activity.",
-          "why_it_matters": "This keeps records clean and precise because they are based on deliberate input instead of guesses."
+          "point": "Grindstone keeps review work cleaner at the end of the day",
+          "why_it_matters": "You spend less time sorting noisy auto-detected sessions and more time looking at entries you actually meant to create."
         },
         {
-          "point": "The workflow is built around active session management instead of background monitoring.",
-          "why_it_matters": "This avoids unwanted tracking and ensures that only meaningful work sessions are recorded."
+          "point": "Grindstone reduces cognitive drift while working",
+          "why_it_matters": "The tool stays aligned with deliberate sessions or structured entries instead of constantly inferring what counted as work."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where RescueTime wins",
       "bullets": [
         {
-          "point": "RescueTime runs in the background and tracks activity automatically based on app and website usage.",
-          "why_it_matters": "This captures everything without effort, but relies on inferred activity rather than explicit sessions."
+          "point": "RescueTime can reduce manual start-stop effort",
+          "why_it_matters": "Automatic collection helps if you would otherwise forget to log anything at all."
         },
         {
-          "point": "It categorizes time automatically based on predefined rules and activity patterns.",
-          "why_it_matters": "This reduces manual input, but can misclassify work when the system guesses incorrectly."
+          "point": "RescueTime gives you a fuller trail to review later",
+          "why_it_matters": "Some users value broad activity history even if they still need to clean it up afterward."
         },
         {
-          "point": "RescueTime provides automatic reports and insights without requiring manual tracking.",
-          "why_it_matters": "This is useful for passive analysis, but removes direct control over how time is recorded."
+          "point": "RescueTime can surface patterns you would not capture intentionally",
+          "why_it_matters": "That can be useful when the goal is observation first and precision second."
         }
       ]
     },
@@ -66,28 +66,28 @@
       "items": [
         {
           "tool": "x",
-          "fails_when": "Grindstone becomes limiting when you forget to start or stop sessions, leading to missing or incomplete data.",
-          "what_to_do_instead": "Use RescueTime if you want automatic tracking that captures activity without manual input."
+          "fails_when": "Grindstone becomes the wrong fit when the user constantly forgets to start tracking and needs the system to collect a broad trail automatically before any review happens.",
+          "what_to_do_instead": "Choose RescueTime if capture coverage matters more than deliberate control."
         },
         {
           "tool": "y",
-          "fails_when": "RescueTime breaks down when you need precise control but it guesses activity based on background usage instead of explicit sessions.",
-          "what_to_do_instead": "Use Grindstone if you want full control over when tracking starts and stops."
+          "fails_when": "RescueTime breaks down when noisy automatic data creates more review work than the user wanted and the tracker starts demanding interpretation instead of recording intent.",
+          "what_to_do_instead": "Choose Grindstone when cleaner, more deliberate entries are the real priority."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This could flip if you do not want to manage timers and prefer automatic tracking of everything you do. In that case, RescueTime may be better because it requires no manual input."
+      "content": "This can flip if the biggest problem is forgetting to log anything at all and broad automatic collection is the only way to recover the day afterward. Then RescueTime may be worth the extra cleanup."
     },
     {
       "type": "quick_rules",
       "heading": "Quick rules",
       "rules": [
-        "Pick Grindstone if you want full control with manual start and stop tracking.",
-        "Pick RescueTime if you prefer automatic tracking without manual input.",
-        "Avoid RescueTime if you do not want the system guessing your activity."
+        "Choose Grindstone if you want cleaner intentional entries instead of broad automatic collection.",
+        "Choose RescueTime if passive capture is the only way you will get a usable record at all.",
+        "Avoid RescueTime when reviewing auto-collected activity takes more effort than the logging itself."
       ]
     },
     {
@@ -98,20 +98,20 @@
   ],
   "faqs": [
     {
-      "q": "Why is Grindstone better for control?",
-      "a": "Because it requires you to manually start and stop sessions, ensuring every tracked entry is intentional."
+      "q": "Why is Grindstone better if RescueTime captures more automatically?",
+      "a": "Because more raw data is not always better if the user then has to interpret, clean, or defend that data every day."
     },
     {
-      "q": "What limits RescueTime for power users?",
-      "a": "It relies on passive tracking and guesses activity, which can reduce control and accuracy."
+      "q": "What does RescueTime still do well?",
+      "a": "RescueTime can still help when the real problem is forgetting to record anything and broad collection is more valuable than precision."
     },
     {
-      "q": "Is RescueTime a bad tool?",
-      "a": "No. It is useful for automatic tracking and insights when you do not want to manage timers."
+      "q": "What usually makes people outgrow RescueTime?",
+      "a": "It is often the moment when reviewing passive activity becomes its own chore instead of saving time."
     },
     {
-      "q": "When should I choose RescueTime instead?",
-      "a": "Choose RescueTime when you prefer automatic tracking and do not need precise control over sessions."
+      "q": "Who should still prefer RescueTime?",
+      "a": "Users who value exhaustive capture first and are willing to spend time sorting it afterward."
     }
   ],
   "related_pages": [

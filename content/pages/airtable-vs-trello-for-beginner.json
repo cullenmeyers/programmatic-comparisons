@@ -21,42 +21,42 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Which tool lets you move tasks immediately?",
-      "content": "You want to organize tasks visually without learning database logic. As a beginner, setting up field types and table views feels technical. The right tool should behave like a simple board with cards. Anything that asks you to define columns and properties before using it adds hesitation."
+      "heading": "Why Trello fits Beginners better",
+      "content": "Trello fits this beginner because the same database-first mechanism creates several costs at once. It slows the first capture, adds more structure to think through during daily use, and makes a simple task list feel like something that has to be designed before it can help. The better fit here wins by reducing those layers, not by pretending structure never matters."
     },
     {
       "type": "x_wins",
-      "heading": "Where Airtable works better",
+      "heading": "Where Airtable wins",
       "bullets": [
         {
-          "point": "Custom table fields such as text, select, date, and checkbox.",
-          "why_it_matters": "You can design structured task records with detailed properties. For beginners, choosing field types before adding tasks adds setup work."
+          "point": "Airtable gives richer structure once the workflow really needs it",
+          "why_it_matters": "Fields, properties, or stronger data shape can be worth the setup cost after the list outgrows a simpler model."
         },
         {
-          "point": "Multiple views including grid, calendar, and Kanban.",
-          "why_it_matters": "You can switch between structured layouts for the same data. Creating and configuring views requires understanding how the table is built."
+          "point": "Airtable can support more precise organization later",
+          "why_it_matters": "The extra structure may help once task handling depends on more than titles and a few lightweight markers."
         },
         {
-          "point": "Relational links between tables.",
-          "why_it_matters": "You can connect tasks to other datasets like projects or clients. Defining linked records introduces database concepts beyond simple boards."
+          "point": "Airtable can scale further for users who want to build a system",
+          "why_it_matters": "The same depth that feels heavy early can become useful when the task manager needs to behave more like an operating model."
         }
       ]
     },
     {
       "type": "y_wins",
-      "heading": "Where Trello works better for beginners",
+      "heading": "Where Trello wins",
       "bullets": [
         {
-          "point": "Kanban board with columns ready by default.",
-          "why_it_matters": "You create a board and start adding cards without defining data types."
+          "point": "Trello lets you capture the task before designing the system",
+          "why_it_matters": "The user can start with the work itself instead of deciding on fields, properties, or table logic first."
         },
         {
-          "point": "Drag and drop cards between lists.",
-          "why_it_matters": "Moving tasks is immediate and visual. There are no database fields to configure."
+          "point": "Trello keeps daily task handling lighter",
+          "why_it_matters": "Routine updates take less interpretation because the task is not wrapped in a heavier data model than the workflow needs."
         },
         {
-          "point": "Optional labels and due dates that stay secondary.",
-          "why_it_matters": "You can ignore extra settings and still use the board fully."
+          "point": "Trello reduces structural thinking while organizing work",
+          "why_it_matters": "You spend less time deciding how the system should represent a task and more time deciding what to do about it."
         }
       ]
     },
@@ -65,48 +65,48 @@
       "heading": "Where each tool can break down",
       "items": [
         {
-          "tool": "x",
-          "fails_when": "You must choose field types and configure table columns before comfortably adding tasks.",
-          "what_to_do_instead": "Use Trello if you want a visual board without database setup."
+          "tool": "y",
+          "fails_when": "Trello becomes too shallow when the task system genuinely needs richer fields, stronger structure, or multiple ways to organize the same work.",
+          "what_to_do_instead": "Choose Airtable if simple lists are no longer enough to carry the workflow."
         },
         {
-          "tool": "y",
-          "fails_when": "You need structured data with custom fields and linked records.",
-          "what_to_do_instead": "Use Airtable if you want database-level control over task information."
+          "tool": "x",
+          "fails_when": "Airtable breaks down when the user keeps paying setup and thinking cost before they can even enjoy a simple task list.",
+          "what_to_do_instead": "Choose Trello when direct capture matters more than database-style structure."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If you quickly realize you need structured data like priority levels, client links, and filtered views across projects, Airtable may justify the initial setup."
+      "content": "This can flip if the task system quickly grows into something that really does need richer structure, stronger fields, or multiple views. Then Airtable may justify the extra setup."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "If you want a board you can use instantly, choose Trello.",
-        "If you want structured tables with custom fields, choose Airtable.",
-        "If database concepts feel confusing, avoid table-first tools."
+        "Choose Trello if direct task capture matters more than richer task structure.",
+        "Choose Airtable if the workflow truly needs fields, properties, or stronger organization.",
+        "Avoid Airtable when system design is arriving before useful task entry."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Is Airtable a task manager or a database?",
-      "a": "It functions like a flexible database with task views, which can feel complex for beginners."
+      "q": "Why does Trello win on more than setup?",
+      "a": "Trello also reduces the daily thinking and navigation burden that comes from carrying a heavier task structure than the workflow actually needs."
     },
     {
-      "q": "Is Trello easier for visual task movement?",
-      "a": "Yes. You can drag cards across columns without configuring fields."
+      "q": "When is Airtable still the better choice?",
+      "a": "Airtable is the better choice when the task system truly needs richer structure and a simple list has become too limiting."
     },
     {
-      "q": "Which tool requires less setup?",
-      "a": "Trello requires less setup because boards and lists are ready to use."
+      "q": "What usually makes Airtable the wrong fit?",
+      "a": "The user keeps paying the cost of fields, properties, or structure before those things are delivering meaningful value."
     },
     {
-      "q": "Can Airtable be used visually?",
-      "a": "Yes, through Kanban view, but it still depends on an underlying table structure."
+      "q": "Is this only about beginner friendliness?",
+      "a": "No. Even experienced users can lose time when the tool asks for more structure than the task actually needs."
     }
   ],
   "related_pages": [

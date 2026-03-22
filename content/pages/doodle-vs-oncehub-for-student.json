@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Doodle fits students coordinating group meetings",
-      "content": "This student is trying to find a time when several people can meet and wants the process to be quick. Doodle allows the organizer to create a poll listing several time options and send a link to the group. Each person selects the times they are available and the organizer picks the best option. OnceHub focuses on structured booking pages where participants choose from predefined availability, which requires more setup before sharing."
+      "heading": "Why Doodle fits Students better",
+      "content": "Doodle fits this student because the real question is whether the scheduling job is group comparison or direct booking. That choice affects how much setup is needed, how quickly people can respond, and whether the coordination flow matches the actual meeting type. Doodle wins by fitting the simpler path this use case needs."
     },
     {
       "type": "x_wins",
       "heading": "Where Doodle wins",
       "bullets": [
         {
-          "point": "Quick meeting polls with multiple time options",
-          "why_it_matters": "The organizer enters several possible time slots and sends a poll link. Participants simply mark which times they can attend."
+          "point": "Doodle matches group coordination more directly",
+          "why_it_matters": "Polls fit situations where many people's availability has to be compared before a final time is chosen."
         },
         {
-          "point": "No booking page configuration required",
-          "why_it_matters": "Creating a poll only requires entering the proposed meeting times. There is no need to design availability rules or scheduling workflows."
+          "point": "Doodle reduces up-front scheduling setup",
+          "why_it_matters": "The user can gather availability quickly instead of building a fuller booking workflow first."
         },
         {
-          "point": "Works well for one time group coordination",
-          "why_it_matters": "Because the poll exists only for the specific meeting, the organizer can coordinate the group without setting up a long term scheduling system."
+          "point": "Doodle keeps the process easier to understand for temporary coordination",
+          "why_it_matters": "That helps when the meeting is a one-off decision rather than part of a recurring scheduling pipeline."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where OnceHub wins",
       "bullets": [
         {
-          "point": "Dedicated booking pages with defined availability",
-          "why_it_matters": "OnceHub creates scheduling pages where participants choose from available time slots based on the organizer's calendar."
+          "point": "OnceHub can still be better when scheduling should end in direct self-booking",
+          "why_it_matters": "A booking flow is faster once individual appointment selection matters more than group comparison."
         },
         {
-          "point": "Automated meeting confirmations and calendar events",
-          "why_it_matters": "When someone books a slot through the scheduling page, the system creates a calendar event and sends confirmation automatically."
+          "point": "OnceHub reduces follow-up after availability is shown",
+          "why_it_matters": "That matters when the process should end with a confirmed slot, not a collected poll."
         },
         {
-          "point": "Structured workflows for repeated scheduling",
-          "why_it_matters": "OnceHub supports recurring booking scenarios where people regularly schedule meetings with the same organizer."
+          "point": "OnceHub scales better for repeated one-to-one scheduling",
+          "why_it_matters": "The poll model is not always the right fit for ongoing booking."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "You want a scheduling page where individuals can book meetings directly based on your calendar availability.",
-          "what_to_do_instead": "Use OnceHub so participants can reserve available time slots automatically."
+          "fails_when": "Doodle becomes the wrong fit when people should simply choose a time directly instead of comparing a group poll.",
+          "what_to_do_instead": "Choose OnceHub if direct booking is now the better model."
         },
         {
           "tool": "y",
-          "fails_when": "You need a quick way to collect availability from multiple people before deciding on a meeting time.",
-          "what_to_do_instead": "Use Doodle so the group can vote on proposed meeting times."
+          "fails_when": "OnceHub breaks down when the meeting really requires gathering and comparing multiple people's availability first.",
+          "what_to_do_instead": "Choose Doodle when polling is the cleaner path."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If one person hosts meetings regularly and others need to book time individually, OnceHub may be the better choice because it creates a persistent booking page connected to the organizer's calendar."
+      "content": "This can flip if the scheduling job becomes direct individual booking rather than comparing group availability. Then OnceHub may be the better model."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Choose Doodle if you want a poll where everyone votes on meeting times.",
-        "Choose Doodle if you only need to coordinate a one time group meeting.",
-        "Choose OnceHub if people should book time from your calendar availability."
+        "Choose Doodle if the meeting needs group availability comparison first.",
+        "Choose OnceHub if people should just book a time directly.",
+        "Avoid OnceHub when a poll is the cleaner coordination model."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "What is Doodle mainly used for?",
-      "a": "Doodle is commonly used to create polls where participants vote on which meeting times work for them."
+      "q": "Why does polling win in some cases?",
+      "a": "Because some meetings are mainly about comparing many people's availability rather than letting one invitee self-book immediately."
     },
     {
-      "q": "Does OnceHub use booking pages instead of polls?",
-      "a": "Yes. OnceHub allows people to schedule meetings by selecting available time slots from a booking page connected to a calendar."
+      "q": "When is OnceHub still the better model?",
+      "a": "OnceHub is the better model when people should choose a time directly and the process ends there."
     },
     {
-      "q": "Why might students prefer Doodle?",
-      "a": "Because it lets groups quickly vote on meeting times without setting up a scheduling system."
+      "q": "What usually makes OnceHub fail first?",
+      "a": "The coordination problem is group comparison, not individual booking."
     },
     {
-      "q": "When is OnceHub a better option?",
-      "a": "OnceHub is better when one person hosts meetings and others need to book time directly from their availability."
+      "q": "Is Doodle only for informal use?",
+      "a": "No. It is for any schedule where quick group alignment is the real job."
     }
   ],
   "related_pages": [

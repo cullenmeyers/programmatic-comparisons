@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why pCloud Pass fits non-technical users",
-      "content": "The user wants passwords synced automatically between phone and laptop without managing vault files. pCloud Pass stores credentials inside an account based vault that synchronizes whenever passwords change. Once logged in on a new device, the vault appears automatically. This removes the need to copy database files or configure external synchronization tools."
+      "heading": "Why pCloud Pass fits Non-technical users better",
+      "content": "pCloud Pass fits this non-technical user because the winning mechanism reduces friction across setup, daily password use, and long-term vault management instead of solving only one narrow problem."
     },
     {
       "type": "y_wins",
       "heading": "Where pCloud Pass wins",
       "bullets": [
         {
-          "point": "pCloud Pass automatically synchronizes passwords through the account vault.",
-          "why_it_matters": "Users do not need to move vault files between devices."
+          "point": "pCloud Pass handles the winning mechanism more directly",
+          "why_it_matters": "The user spends less time compensating for the exact friction named in the decision rule."
         },
         {
-          "point": "pCloud Pass restores the vault automatically after logging into the account on a new device.",
-          "why_it_matters": "Passwords appear immediately without importing database files."
+          "point": "pCloud Pass keeps daily password use smoother",
+          "why_it_matters": "The practical workflow stays shorter and easier to repeat."
         },
         {
-          "point": "pCloud Pass manages encryption and storage inside the service automatically.",
-          "why_it_matters": "Users avoid handling database files or synchronization tools."
+          "point": "pCloud Pass reduces the hidden cost of managing credentials over time",
+          "why_it_matters": "That matters when the password manager is supposed to remove friction, not create a second system to babysit."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where KeePassXC wins",
       "bullets": [
         {
-          "point": "KeePassXC stores passwords inside a local encrypted KDBX database file.",
-          "why_it_matters": "Users maintain full control over where the vault file is stored."
+          "point": "KeePassXC can still win in a narrower workflow",
+          "why_it_matters": "The losing tool may be better when the deeper or smoother mechanism is not doing much real work yet."
         },
         {
-          "point": "KeePassXC works completely offline once the vault file exists.",
-          "why_it_matters": "Passwords remain accessible without internet connectivity."
+          "point": "KeePassXC often asks for a different tradeoff rather than offering nothing",
+          "why_it_matters": "That matters when the user values control and convenience differently than this verdict assumes."
         },
         {
-          "point": "KeePassXC allows users to place the database file in any storage location.",
-          "why_it_matters": "Advanced users can integrate the vault into custom backup systems."
+          "point": "KeePassXC can be the better fit when complexity is intentional",
+          "why_it_matters": "The friction is only a dealbreaker when it gets in the way of the job this persona actually has."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "The user refuses to store passwords in a hosted vault service.",
-          "what_to_do_instead": "Use KeePassXC where the vault exists as a local encrypted database file."
+          "fails_when": "pCloud Pass becomes heavier than necessary when the winning mechanism is not doing enough real work yet.",
+          "what_to_do_instead": "Choose KeePassXC if the simpler tradeoff still fits."
         },
         {
           "tool": "x",
-          "fails_when": "Passwords must sync across devices automatically because KeePassXC requires manually copying or synchronizing the encrypted vault file.",
-          "what_to_do_instead": "Use pCloud Pass where the vault syncs automatically through the account."
+          "fails_when": "KeePassXC breaks down when the exact friction named in the rule keeps recurring during normal password use.",
+          "what_to_do_instead": "Choose pCloud Pass once that mechanism matters daily."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user wants the vault stored only as a local encrypted database file instead of inside a hosted service, KeePassXC may become the better option."
+      "content": "This can flip if the tradeoff on the losing side starts doing more real work than the mechanism that currently wins. Then KeePassXC may be worth the switch."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick pCloud Pass if you want passwords to sync automatically between devices.",
-        "Pick pCloud Pass if you do not want to handle vault files manually.",
-        "Pick KeePassXC if you want full control of a local encrypted database file."
+        "Choose pCloud Pass when the winning mechanism is already affecting daily password use.",
+        "Choose KeePassXC when its tradeoff still better matches the job you actually have.",
+        "Avoid KeePassXC once the same friction keeps showing up in setup and routine use."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is pCloud Pass easier for non-technical users?",
-      "a": "pCloud Pass automatically syncs passwords through an account so users do not need to move vault files."
+      "q": "Why does pCloud Pass fit the rule better?",
+      "a": "pCloud Pass turns the mechanism in the decision rule into gains across setup, daily use, and long-term vault management instead of only one isolated feature."
     },
     {
-      "q": "Does KeePassXC sync passwords automatically?",
-      "a": "No. KeePassXC stores passwords in a local encrypted database file that must be synchronized manually."
+      "q": "When is KeePassXC still reasonable?",
+      "a": "KeePassXC is still reasonable when its tradeoff better matches the real password workflow."
     },
     {
-      "q": "Can KeePassXC work offline?",
-      "a": "Yes. KeePassXC opens the encrypted vault file locally and does not require internet access."
+      "q": "What usually signals it is time to switch?",
+      "a": "The same friction starts appearing during ordinary sign-ins and vault maintenance instead of only in edge cases."
     },
     {
-      "q": "Who should choose KeePassXC instead?",
-      "a": "Users who want full control over a portable encrypted database file may prefer KeePassXC."
+      "q": "Is this verdict only about simplicity?",
+      "a": "No. It is about where the ongoing operating cost of the password manager really lands."
     }
   ],
   "related_pages": [

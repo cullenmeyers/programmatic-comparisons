@@ -21,8 +21,8 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Best fit for executable research workflows",
-      "content": "You write research notes that require running code and inspecting results immediately. Jupyter Notebook connects each code cell to a live kernel so you can execute, rerun, and inspect variables. Quiver allows mixing Markdown and code blocks, but execution is not built into the notebook environment."
+      "heading": "Why Jupyter Notebook fits Power users better",
+      "content": "Jupyter Notebook fits this power user because the execution model changes how the notes behave day to day. It affects how quickly experiments can be run, whether code and explanation stay connected, and whether the notebook remains an active workspace instead of static reference text. That is a workflow boundary, not just one extra feature."
     },
     {
       "type": "x_wins",
@@ -47,16 +47,16 @@
       "heading": "Where Quiver wins",
       "bullets": [
         {
-          "point": "Mixed Markdown and code cells in a single note",
-          "why_it_matters": "You organize explanations and code together in a structured format."
+          "point": "Quiver can still be better for plain narrative notes",
+          "why_it_matters": "A simpler editor may feel cleaner when code execution is not central to the job."
         },
         {
-          "point": "Library-style notebook organization",
-          "why_it_matters": "You store notes in folders with a clear hierarchy."
+          "point": "Quiver reduces setup around the writing surface",
+          "why_it_matters": "The user is not choosing a heavier technical environment just to capture text and ideas."
         },
         {
-          "point": "Offline desktop app with simple interface",
-          "why_it_matters": "You write notes without setting up a running server, though execution must happen elsewhere."
+          "point": "Quiver keeps the note format easier to share as static content",
+          "why_it_matters": "That matters when the goal is readable notes rather than an interactive notebook."
         }
       ]
     },
@@ -66,47 +66,47 @@
       "items": [
         {
           "tool": "x",
-          "fails_when": "You only need static code documentation without running it.",
-          "what_to_do_instead": "Use Quiver if execution is not required and you prefer a lightweight desktop note app."
+          "fails_when": "Jupyter Notebook becomes unnecessary overhead when the work no longer needs executable notes and would be better served by a simpler writing surface.",
+          "what_to_do_instead": "Choose Quiver if static narrative notes are enough."
         },
         {
           "tool": "y",
-          "fails_when": "You must run code, inspect variables, and iterate on results directly inside the note.",
-          "what_to_do_instead": "Switch to Jupyter Notebook for native execution."
+          "fails_when": "Quiver breaks down when code and explanation have to stay together in one live environment.",
+          "what_to_do_instead": "Choose Jupyter Notebook when native execution is part of the note job."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If you mainly document code snippets and rarely need to execute them inline, Quiver may feel simpler and more focused."
+      "content": "This can flip if the work turns back into mostly prose and code execution is no longer part of the note-taking job. Then Quiver may be sufficient."
     },
     {
       "type": "quick_rules",
-      "heading": "Quick rules",
+      "heading": "Quick decision rules",
       "rules": [
-        "If you need live code execution inside notes, choose Jupyter Notebook.",
-        "If code blocks are only for reference, Quiver may be enough.",
-        "If execution environments are required, avoid static code note tools."
+        "Choose Jupyter Notebook if code execution belongs inside the note.",
+        "Choose Quiver if a simpler writing surface is enough.",
+        "Avoid Quiver when static notes keep splitting code from explanation."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Does Quiver execute code natively?",
-      "a": "It supports code cells, but execution is not built into the app environment."
+      "q": "Why do native code cells matter here?",
+      "a": "Because they keep explanation and execution in one workflow instead of splitting notes from experiments."
     },
     {
-      "q": "Can Jupyter display plots inline?",
-      "a": "Yes. Outputs such as charts and tables appear directly under the executed cell."
+      "q": "When is Quiver still sufficient?",
+      "a": "Quiver is still sufficient when the notes are mainly static explanation rather than live technical work."
     },
     {
-      "q": "Is Jupyter limited to one programming language?",
-      "a": "No. It supports multiple language kernels such as Python and R."
+      "q": "What usually pushes someone toward Jupyter Notebook?",
+      "a": "The user needs to test ideas in place instead of only describing them."
     },
     {
-      "q": "Which has the higher ceiling for computational research?",
-      "a": "Jupyter Notebook has the higher ceiling because it integrates execution with documentation."
+      "q": "Does Jupyter Notebook only help programmers?",
+      "a": "It mainly helps anyone whose notes need to behave like an executable workspace."
     }
   ],
   "related_pages": [

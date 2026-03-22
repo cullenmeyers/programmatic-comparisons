@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Enpass fits minimalists",
-      "content": "The user wants a password manager that works without relying on a vendor account system. Enpass stores passwords in a local encrypted vault that runs directly on the device. If the user wants synchronization, they can connect the vault to storage services they already use. This design avoids creating and maintaining a separate vendor account."
+      "heading": "Why Enpass fits Minimalists better",
+      "content": "Enpass fits this minimalist because storage control changes more than where the encrypted vault sits. It affects whether the user needs a provider account, how much trust they place in a hosted service during daily use, and how flexibly they can shape backup and portability decisions later. Enpass wins by keeping that control closer to the user."
     },
     {
       "type": "x_wins",
       "heading": "Where Enpass wins",
       "bullets": [
         {
-          "point": "Enpass stores passwords in a local encrypted vault on the user's device.",
-          "why_it_matters": "Minimalists can manage credentials without storing them inside a hosted vendor service."
+          "point": "Enpass keeps the vault under local or user-chosen control",
+          "why_it_matters": "Passwords are not forced into a vendor-hosted account model before the user has decided they want that tradeoff."
         },
         {
-          "point": "Enpass works without requiring a vendor account.",
-          "why_it_matters": "Users avoid creating another login just to access their password vault."
+          "point": "Enpass reduces dependency on a provider account during daily use",
+          "why_it_matters": "The password workflow stays closer to the device or storage path the user already trusts."
         },
         {
-          "point": "Enpass allows syncing the vault through external storage services chosen by the user.",
-          "why_it_matters": "The user controls where the password database is stored instead of relying on a proprietary system."
+          "point": "Enpass leaves more room to shape backup and storage choices",
+          "why_it_matters": "That matters when portability and control are part of the reason for choosing the tool."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where NordPass wins",
       "bullets": [
         {
-          "point": "NordPass automatically synchronizes passwords across devices through the account.",
-          "why_it_matters": "Credentials appear instantly on phones, laptops, and browser extensions."
+          "point": "NordPass can still be easier when automatic sync matters more than storage sovereignty",
+          "why_it_matters": "A vendor account can reduce setup and daily handling for users who do not want to manage location or backup strategy."
         },
         {
-          "point": "NordPass browser extensions detect login forms and autofill saved passwords.",
-          "why_it_matters": "Users can sign into websites quickly without copying credentials manually."
+          "point": "NordPass often gives a smoother login experience out of the box",
+          "why_it_matters": "Hosted accounts usually pair naturally with browser extensions and cross-device access."
         },
         {
-          "point": "NordPass restores the vault automatically when signing into a new device.",
-          "why_it_matters": "Passwords reappear instantly after logging into the account."
+          "point": "NordPass asks for less manual thinking about where the vault lives",
+          "why_it_matters": "That can be the better tradeoff when convenience beats local control."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The user wants passwords to synchronize automatically across devices without configuring external storage.",
-          "what_to_do_instead": "Use NordPass where the vault syncs automatically through the account."
+          "fails_when": "Enpass becomes the wrong fit when the user would rather offload storage and sync decisions to a hosted account model.",
+          "what_to_do_instead": "Choose NordPass if convenience now matters more than vault ownership."
         },
         {
           "tool": "y",
-          "fails_when": "The user refuses to create a vendor account because NordPass requires an account to access the vault.",
-          "what_to_do_instead": "Use Enpass where passwords can be stored locally without an account."
+          "fails_when": "NordPass breaks down when the user does not want credentials forced into a vendor-hosted account or cloud vault.",
+          "what_to_do_instead": "Choose Enpass when local control is the non-negotiable boundary."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user wants passwords to appear instantly across multiple devices without configuring storage connections, NordPass may become the better option."
+      "content": "This can flip if the user decides automatic hosted sync is worth more than direct control over vault location and storage choices. Then NordPass may make more sense."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Enpass if you want a password manager that works without a vendor account.",
-        "Pick Enpass if you want control over where the password vault is stored.",
-        "Pick NordPass if you want passwords to sync automatically across devices."
+        "Choose Enpass if vault ownership matters more than hosted convenience.",
+        "Choose NordPass if you want sync and account management handled for you.",
+        "Avoid NordPass when provider-controlled vault storage is the exact dealbreaker."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do minimalists prefer Enpass?",
-      "a": "Enpass allows password storage locally without requiring a vendor hosted account."
+      "q": "Why does local control matter so much here?",
+      "a": "Because it affects trust boundary, daily dependence on a provider account, and how flexibly the vault can be backed up or moved later."
     },
     {
-      "q": "Does NordPass require an account?",
-      "a": "Yes. NordPass requires creating an account to access and synchronize the password vault."
+      "q": "When is NordPass still worth choosing?",
+      "a": "NordPass is still worth choosing when automatic hosted sync is more valuable than storage sovereignty."
     },
     {
-      "q": "Can Enpass work without internet access?",
-      "a": "Yes. Enpass stores passwords locally and does not require an online service."
+      "q": "What usually makes NordPass the wrong fit?",
+      "a": "The user does not want the vault tied to a vendor-hosted account or cloud model in the first place."
     },
     {
-      "q": "Who should choose NordPass instead?",
-      "a": "Users who want automatic password synchronization across devices may prefer NordPass."
+      "q": "Does Enpass always mean more work?",
+      "a": "Often some, but that tradeoff can be the point when local control is the priority."
     }
   ],
   "related_pages": [

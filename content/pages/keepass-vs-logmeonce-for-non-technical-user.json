@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why LogMeOnce fits non-technical users",
-      "content": "The user is worried about forgetting their master password and losing access to all saved credentials. LogMeOnce ties the vault to an account system that can provide recovery options through identity verification and account access procedures. This means users can regain entry to the vault even if the original master password is forgotten. That safety net reduces the risk of permanent lockout."
+      "heading": "Why LogMeOnce fits Non-technical users better",
+      "content": "LogMeOnce fits this non-technical user because recovery risk is not only an edge case. It affects how safe the vault feels on day one, how much anxiety surrounds the master password in daily use, and what happens when a normal human mistake becomes irreversible. LogMeOnce wins by making lockout less final."
     },
     {
       "type": "y_wins",
       "heading": "Where LogMeOnce wins",
       "bullets": [
         {
-          "point": "LogMeOnce provides account based recovery methods for vault access.",
-          "why_it_matters": "Users can regain entry to their passwords if the master password is forgotten."
+          "point": "LogMeOnce gives the user a recovery path before lockout becomes catastrophic",
+          "why_it_matters": "The tool does not make one forgotten secret the end of the entire credential archive."
         },
         {
-          "point": "LogMeOnce ties the password vault to a service account with recovery verification.",
-          "why_it_matters": "Users avoid permanent lockout from losing a single password."
+          "point": "LogMeOnce keeps account loss less disruptive in daily life",
+          "why_it_matters": "Recovery and restore options matter when the user is more afraid of being locked out than of carrying a hosted account."
         },
         {
-          "point": "LogMeOnce stores credentials inside a hosted vault that can be restored after account login.",
-          "why_it_matters": "Passwords remain accessible after device loss or forgotten credentials."
+          "point": "LogMeOnce lowers the long-term risk of irreversible mistakes",
+          "why_it_matters": "That makes the password manager easier to trust for someone who worries about doing something they cannot undo."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where KeePass wins",
       "bullets": [
         {
-          "point": "KeePass stores credentials inside an encrypted KDBX vault file controlled by the user.",
-          "why_it_matters": "Users maintain full control over where the password database is stored."
+          "point": "KeePass can still be better when full local control matters more than recovery",
+          "why_it_matters": "Some users accept the lockout risk because they do not want the vault tied to an account system."
         },
         {
-          "point": "KeePass works entirely offline without relying on hosted vault services.",
-          "why_it_matters": "Users can manage passwords without creating service accounts."
+          "point": "KeePass works without depending on hosted recovery flows",
+          "why_it_matters": "That can matter if the user prefers an entirely self-managed security model."
         },
         {
-          "point": "KeePass allows the encrypted vault file to be copied or backed up anywhere.",
-          "why_it_matters": "Users control how vault backups are stored and transferred."
+          "point": "KeePass gives more direct ownership of the encrypted vault file",
+          "why_it_matters": "The tradeoff is harsher, but some users still prefer it."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "The user refuses to store passwords inside hosted services and wants full control of a vault file.",
-          "what_to_do_instead": "Use KeePass where credentials are stored in a local encrypted database file."
+          "fails_when": "LogMeOnce becomes the wrong fit when the user rejects hosted recovery paths and prefers full local custody even with harsher lockout risk.",
+          "what_to_do_instead": "Choose KeePass if absolute local control is worth the tradeoff."
         },
         {
           "tool": "x",
-          "fails_when": "The user forgets the master password because KeePass has no built in recovery mechanism to unlock the encrypted vault.",
-          "what_to_do_instead": "Use LogMeOnce where account based recovery options can restore access."
+          "fails_when": "KeePass breaks down when one forgotten master password can permanently end access to the entire vault.",
+          "what_to_do_instead": "Choose LogMeOnce when recoverability matters more than a purely self-managed model."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user prefers full local control over the password vault and is comfortable managing secure backups of the master password, KeePass may become the better option."
+      "content": "This can flip if the user is comfortable accepting permanent lockout risk in exchange for a more fully self-managed vault. Then KeePass may fit better."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick LogMeOnce if you want recovery options when the master password is forgotten.",
-        "Pick LogMeOnce if you want a vault tied to an account that can restore access.",
-        "Pick KeePass if you want full control of an encrypted vault file without hosted services."
+        "Choose LogMeOnce if recovery options matter more than absolute local custody.",
+        "Choose KeePass if you accept harsher lockout risk for a fully self-managed vault.",
+        "Avoid KeePass when one forgotten master password cannot be an irreversible failure."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is LogMeOnce safer for people afraid of losing access?",
-      "a": "LogMeOnce includes account based recovery options that can restore access to the vault."
+      "q": "Why is recovery such a big deal for this persona?",
+      "a": "Because the fear is not only security but permanent lockout from all saved credentials after one forgotten password."
     },
     {
-      "q": "What happens if you forget the KeePass master password?",
-      "a": "The encrypted vault cannot be unlocked because KeePass does not include recovery mechanisms."
+      "q": "When is KeePass still worth choosing?",
+      "a": "KeePass is still worth choosing when full local custody matters more than recoverability."
     },
     {
-      "q": "Does LogMeOnce store passwords online?",
-      "a": "Yes. LogMeOnce stores credentials inside a hosted vault connected to a service account."
+      "q": "What usually makes KeePass fail first?",
+      "a": "The user cannot accept a model where one mistake can permanently close the vault."
     },
     {
-      "q": "Who should choose KeePass instead?",
-      "a": "Users who want complete control over an encrypted vault file without relying on hosted services may prefer KeePass."
+      "q": "Does LogMeOnce trade away control?",
+      "a": "Usually some, but that tradeoff can be worth it for people who need a recovery path."
     }
   ],
   "related_pages": [

@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Square Appointments fits power users running paid services",
-      "content": "This power user operates a service business where appointments represent paid services. Square Appointments connects scheduling directly with the Square payment system so customers can book and pay in a single workflow. The booking page displays services, available times, and payment options during checkout. Calendly allows clients to schedule meetings but does not provide a built in payment system designed for service transactions."
+      "heading": "Why Square Appointments fits Power users better",
+      "content": "Square Appointments fits this power user because scheduling is part of a paid service flow, not just a calendar event. That affects setup, the day-to-day booking handoff, and whether payment and confirmation stay connected instead of becoming separate chores. Square Appointments wins by keeping that operational flow together."
     },
     {
       "type": "y_wins",
       "heading": "Where Square Appointments wins",
       "bullets": [
         {
-          "point": "Built in payment processing through Square checkout",
-          "why_it_matters": "When a client books a service, the system can collect payment immediately using Square payments. This allows booking and payment to happen in the same flow."
+          "point": "Square Appointments keeps appointment booking tied to the service transaction",
+          "why_it_matters": "Scheduling and checkout happen in one flow instead of requiring separate confirmation steps."
         },
         {
-          "point": "Service based booking pages",
-          "why_it_matters": "The booking page lists services with prices and durations. Clients choose the service first and then select an available appointment slot."
+          "point": "Square Appointments reduces manual handoff between booking and payment",
+          "why_it_matters": "The user spends less time stitching together service setup after the slot is chosen."
         },
         {
-          "point": "Direct connection to Square point of sale tools",
-          "why_it_matters": "Appointments, payments, and customer records appear inside the same Square system. This keeps scheduling and transactions organized together."
+          "point": "Square Appointments fits businesses where appointments are part of a paid workflow",
+          "why_it_matters": "The calendar works more like an operations tool instead of only an availability page."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Calendly wins",
       "bullets": [
         {
-          "point": "Fast meeting scheduling with booking links",
-          "why_it_matters": "Calendly generates a link showing available time slots pulled from a connected calendar. Clients simply pick a time."
+          "point": "Calendly can still be better when the calendar should stay separate from commerce",
+          "why_it_matters": "A simpler booking tool may be enough if payment happens elsewhere or not at all."
         },
         {
-          "point": "Availability rules based on calendar events",
-          "why_it_matters": "Calendly checks the host calendar and hides busy times so scheduled meetings do not overlap with existing events."
+          "point": "Calendly reduces setup tied to services and checkout",
+          "why_it_matters": "That matters when the user only needs meeting booking."
         },
         {
-          "point": "Simple setup for appointment scheduling",
-          "why_it_matters": "Users create meeting types and share a booking link without configuring a full service checkout system."
+          "point": "Calendly keeps the scheduling flow lighter for non-paid appointments",
+          "why_it_matters": "The added service stack is not always worth carrying."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "You only need a meeting booking link and do not want to run scheduling through the Square payment ecosystem.",
-          "what_to_do_instead": "Use Calendly for simple meeting scheduling without service checkout."
+          "fails_when": "Square Appointments becomes heavier than necessary when appointments are not tied to paid services or checkout flows.",
+          "what_to_do_instead": "Choose Calendly if a simpler scheduling tool is enough."
         },
         {
           "tool": "x",
-          "fails_when": "Clients must pay during the booking process instead of scheduling first and paying later.",
-          "what_to_do_instead": "Use Square Appointments so booking and payment happen in the same workflow."
+          "fails_when": "Calendly breaks down when booking and payment keep requiring manual handoff between separate systems.",
+          "what_to_do_instead": "Choose Square Appointments when service and scheduling need to stay linked."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the goal is simply to schedule meetings or consultations without collecting payment during booking, Calendly may be the better choice because it focuses purely on calendar based scheduling."
+      "content": "This can flip if payment and service configuration are no longer part of the appointment workflow. Then Calendly may be the cleaner option."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Choose Square Appointments if clients must pay while booking.",
-        "Choose Square Appointments if services and pricing appear on the booking page.",
-        "Choose Calendly if you only need meeting scheduling without checkout."
+        "Choose Square Appointments if booking and payment need to stay in one flow.",
+        "Choose Calendly if you only need scheduling without service checkout.",
+        "Avoid Calendly when booking keeps requiring manual payment handoff."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Does Square Appointments process payments during booking?",
-      "a": "Yes. Square Appointments connects directly with Square payments so clients can pay during the booking process."
+      "q": "Why does payment integration change the recommendation?",
+      "a": "Because it ties scheduling to checkout, reducing manual handoff and making appointments easier to confirm in one flow."
     },
     {
-      "q": "Can Calendly handle payments for appointments?",
-      "a": "Calendly focuses on scheduling meetings and typically requires separate tools if payment processing is needed."
+      "q": "When is Calendly still the better fit?",
+      "a": "Calendly is still the better fit when the calendar does not need to handle payment or service configuration."
     },
     {
-      "q": "Why do service businesses prefer Square Appointments?",
-      "a": "Because the booking page allows clients to choose a service, select a time, and complete payment in one workflow."
+      "q": "What usually makes Calendly fail first?",
+      "a": "Booking keeps breaking away from the service transaction and creating follow-up work."
     },
     {
-      "q": "When is Calendly the better option?",
-      "a": "Calendly works best for scheduling meetings where payment is not required during the booking process."
+      "q": "Is Square Appointments only for businesses?",
+      "a": "Mostly for workflows where the appointment is part of an operational service exchange."
     }
   ],
   "related_pages": [

@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Best fit for hands-off storage",
-      "content": "You want reliable note storage without thinking about files or syncing. Apple Notes keeps everything inside your Apple account and syncs automatically in the background. Logseq works directly with folders on your device, which means you see and manage where notes are saved."
+      "heading": "Why Apple Notes fits Non-technical users better",
+      "content": "Apple Notes fits this non-technical user because uncertainty around sync, security, or storage is a real operating cost. It slows first adoption, creates hesitation during daily use, and makes the archive feel less dependable than it should. Apple Notes wins by making normal note behavior easier to trust."
     },
     {
       "type": "y_wins",
       "heading": "Where Logseq wins",
       "bullets": [
         {
-          "point": "Local Markdown files stored in a chosen folder",
-          "why_it_matters": "Your notes exist as plain text files you can see in your file system. This gives transparency and control, but it also means you must understand where that folder lives."
+          "point": "Logseq can still be the better choice once its security model is understood",
+          "why_it_matters": "The extra concepts may be worth it when stronger privacy or control is the real priority."
         },
         {
-          "point": "Graph view showing links between notes",
-          "why_it_matters": "You can connect ideas and see relationships visually. This is helpful for research, yet the visible structure can feel complex for simple storage needs."
+          "point": "Logseq may offer more deliberate protection or flexibility",
+          "why_it_matters": "That tradeoff can matter when the user is willing to carry a little more complexity for stronger control."
         },
         {
-          "point": "User-managed syncing through third-party tools or built-in sync service",
-          "why_it_matters": "You choose how notes sync between devices, such as using cloud folders. This flexibility requires you to trust and manage the sync method yourself."
+          "point": "Logseq can feel safer after the learning curve is paid",
+          "why_it_matters": "The issue here is the upfront interpretive burden, not that the tool has no security value."
         }
       ]
     },
@@ -65,48 +65,48 @@
       "heading": "Where each tool can break down",
       "items": [
         {
-          "tool": "y",
-          "fails_when": "You are unsure which folder holds your notes or how to sync that folder between devices.",
-          "what_to_do_instead": "Use Apple Notes so syncing and storage happen automatically without file management."
+          "tool": "x",
+          "fails_when": "Apple Notes becomes the wrong fit when the user genuinely needs the stronger privacy or control model that the losing tool provides.",
+          "what_to_do_instead": "Choose Logseq if the extra concepts are now worth carrying."
         },
         {
-          "tool": "x",
-          "fails_when": "You want direct access to raw files or full control over where data is stored.",
-          "what_to_do_instead": "Choose Logseq and manage a dedicated notes folder with a clear backup routine."
+          "tool": "y",
+          "fails_when": "Logseq breaks down when uncertainty about sync, storage, or security keeps surfacing during normal use.",
+          "what_to_do_instead": "Choose Apple Notes when predictable note behavior matters more."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If you become comfortable managing folders and want notes saved as plain files that you can move between apps, Logseq may feel safer because you see exactly where everything lives."
+      "content": "This can flip if the user is willing to learn the more complex trust model because stronger privacy or control is now the main goal. Then Logseq may be worth it."
     },
     {
       "type": "quick_rules",
-      "heading": "Quick rules",
+      "heading": "Quick decision rules",
       "rules": [
-        "If you do not want to think about files or syncing, choose Apple Notes.",
-        "If seeing and controlling your note files matters to you, Logseq fits better.",
-        "If folder paths and cloud sync settings cause stress, avoid tools that expose them."
+        "Choose Apple Notes if note behavior should feel predictable from the start.",
+        "Choose Logseq if stronger privacy or control is worth more complexity.",
+        "Avoid Logseq when sync or security concepts keep creating hesitation."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Does Logseq store notes online by default?",
-      "a": "No. It stores notes locally as files, and you choose how they sync between devices."
+      "q": "Why does trust matter so much in this comparison?",
+      "a": "Because uncertainty around sync, privacy, or storage becomes part of the writing experience if the user does not feel confident about what the tool is doing."
     },
     {
-      "q": "Is Apple Notes fully automatic?",
-      "a": "For most users inside the Apple ecosystem, syncing and backups happen through iCloud without extra setup."
+      "q": "When is Logseq still worth the complexity?",
+      "a": "Logseq is still worth it when the user specifically wants the stronger privacy or control model it provides."
     },
     {
-      "q": "Can I access Logseq files outside the app?",
-      "a": "Yes. They are standard Markdown files in a folder you select."
+      "q": "What usually makes Logseq fail first?",
+      "a": "The user keeps hesitating because note safety or sync behavior never feels fully clear."
     },
     {
-      "q": "Which feels more reliable for a non-technical user?",
-      "a": "Apple Notes usually feels more reliable because storage and syncing stay hidden behind your device account."
+      "q": "Is this only about features?",
+      "a": "No. It is also about how safe the archive feels to operate day to day."
     }
   ],
   "related_pages": [

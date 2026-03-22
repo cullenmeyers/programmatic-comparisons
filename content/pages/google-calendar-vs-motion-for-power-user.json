@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Motion fits power users who want automatic planning",
-      "content": "This power user wants tasks to appear directly in open calendar time without manually choosing slots. Motion includes a scheduling engine that converts tasks into real calendar blocks based on deadlines and available time. Google Calendar acts as a visual timeline where events must be created manually. For users who want the system to handle scheduling logic, Motion provides the missing layer."
+      "heading": "Why Motion fits Power users better",
+      "content": "Motion fits this power user because the same task-layer decision affects setup, daily scheduling speed, and interface clarity together. It changes whether work has to be translated between tools, whether scheduling stays close to execution, and how much extra structure the user has to carry in the calendar. Motion wins by making that layer help rather than interrupt."
     },
     {
       "type": "y_wins",
       "heading": "Where Motion wins",
       "bullets": [
         {
-          "point": "Automatic task scheduling engine",
-          "why_it_matters": "When a task is created with a deadline or priority, Motion scans open calendar time and inserts a scheduled work block. This removes the need to manually decide when tasks will be completed."
+          "point": "Motion keeps scheduling closer to the actual work item",
+          "why_it_matters": "Tasks and calendar blocks connect without forcing the user to bounce between separate planning surfaces."
         },
         {
-          "point": "Tasks appear as real calendar blocks",
-          "why_it_matters": "Motion places tasks directly on the calendar timeline as time blocks. This means the schedule shows both meetings and work sessions in the same view."
+          "point": "Motion shortens the daily path from deciding to doing",
+          "why_it_matters": "The user can turn planned work into time on the calendar with fewer manual translation steps."
         },
         {
-          "point": "Automatic rescheduling when meetings change",
-          "why_it_matters": "If a meeting is added or moved, Motion automatically shifts task blocks to new open slots. This prevents manual re planning every time the calendar changes."
+          "point": "Motion reduces the amount of interface structure you have to carry",
+          "why_it_matters": "The scheduling model stays easier to navigate when task layers are helping instead of crowding the screen."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Google Calendar wins",
       "bullets": [
         {
-          "point": "Direct manual control over event placement",
-          "why_it_matters": "Users can create events by clicking a time slot or dragging across the timeline. This keeps scheduling decisions entirely manual."
+          "point": "Google Calendar can still be better when the user wants a simpler calendar surface",
+          "why_it_matters": "Less integrated structure can feel calmer when task layers would mostly add interface overhead."
         },
         {
-          "point": "Simple timeline focused calendar interface",
-          "why_it_matters": "Google Calendar shows meetings on a clear time grid without an automated scheduling engine modifying events in the background."
+          "point": "Google Calendar keeps the schedule easier to scan as a plain calendar",
+          "why_it_matters": "That matters when tasks do not need to sit directly inside the time-blocking workflow."
         },
         {
-          "point": "Wide compatibility with external apps",
-          "why_it_matters": "Many scheduling tools and productivity apps integrate directly with Google Calendar, allowing it to act as a central timeline for multiple services."
+          "point": "Google Calendar asks for less commitment to a combined task-calendar model",
+          "why_it_matters": "The lighter calendar can be better if the richer layer is not doing much work yet."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "You want to manually choose the exact time for every task instead of letting software place work sessions automatically.",
-          "what_to_do_instead": "Use Google Calendar so events stay exactly where you schedule them."
+          "fails_when": "Motion becomes too heavy when the user only wants a plain calendar and the extra task layer is not doing enough real work.",
+          "what_to_do_instead": "Choose Google Calendar if a simpler scheduling surface now fits better."
         },
         {
           "tool": "x",
-          "fails_when": "You expect tasks to automatically appear in open calendar slots without manually creating work blocks.",
-          "what_to_do_instead": "Use Motion so tasks automatically generate scheduled time blocks."
+          "fails_when": "Google Calendar breaks down when scheduling keeps requiring separate manual translation between tasks and calendar time.",
+          "what_to_do_instead": "Choose Motion when integrated planning has become a real need."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If your workflow focuses mainly on scheduling meetings rather than planning work sessions, Google Calendar may be the better choice because it provides a straightforward timeline without automated scheduling behavior."
+      "content": "This can flip if the user decides a plain calendar is better than carrying an integrated task layer that is no longer earning its space. Then Google Calendar may fit better."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Choose Motion if you want tasks automatically placed into open calendar time.",
-        "Choose Motion if you want the system to move work sessions when meetings change.",
-        "Choose Google Calendar if you prefer manually placing events on a simple timeline."
+        "Choose Motion if tasks should turn into scheduled work with fewer translation steps.",
+        "Choose Google Calendar if a plain calendar is enough and extra task layers feel noisy.",
+        "Avoid Google Calendar when planning keeps getting split across separate tools."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Can Google Calendar automatically schedule tasks?",
-      "a": "No. Google Calendar shows events on a timeline but does not automatically place tasks into open time slots."
+      "q": "Why does Motion win on more than one feature?",
+      "a": "Motion also changes how quickly work moves from task planning into calendar time and how much extra interface structure the user has to carry each day."
     },
     {
-      "q": "What makes Motion different from a normal calendar?",
-      "a": "Motion includes a scheduling engine that converts tasks into real calendar blocks and places them in available time automatically."
+      "q": "When is Google Calendar still the better fit?",
+      "a": "Google Calendar is still the better fit when a plain calendar surface is enough and integrated task layers would mostly add overhead."
     },
     {
-      "q": "Does Motion move tasks if meetings change?",
-      "a": "Yes. Motion automatically shifts scheduled task blocks to other available time if meetings move or new events are added."
+      "q": "What usually makes Google Calendar fail first?",
+      "a": "The user keeps translating work manually between tasks and scheduled time."
     },
     {
-      "q": "Why might someone still choose Google Calendar?",
-      "a": "People who want complete manual control over event placement may prefer a simple timeline without automated scheduling behavior."
+      "q": "Is this only about complexity?",
+      "a": "No. It is also about how directly the calendar supports execution."
     }
   ],
   "related_pages": [

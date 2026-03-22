@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Passbolt fits power users",
-      "content": "The user runs internal infrastructure for a small team and wants password management integrated directly into their server environment. Passbolt installs on a self hosted server and allows administrators to control the credential system inside their own network. Teams can integrate it with internal authentication and infrastructure tools. This design gives power users full ownership over how credentials are stored and shared."
+      "heading": "Why Passbolt fits Power users better",
+      "content": "Passbolt fits this power user because the same infrastructure choice affects several layers at once. It changes where the vault is deployed, how daily admin work connects to internal systems, and how much long-term control the user keeps over backups and policy. The real issue is not one hosting checkbox but who owns the operating environment."
     },
     {
       "type": "x_wins",
       "heading": "Where Passbolt wins",
       "bullets": [
         {
-          "point": "Passbolt can be deployed on a self hosted server controlled by the organization.",
-          "why_it_matters": "Power users can run password management inside their own infrastructure rather than relying on a hosted service."
+          "point": "Passbolt puts the password server inside infrastructure you control",
+          "why_it_matters": "That changes the trust boundary at setup time instead of forcing the vault into a vendor-managed environment."
         },
         {
-          "point": "Passbolt provides administrative control over server configuration and credential storage.",
-          "why_it_matters": "Administrators can define how passwords are stored, secured, and backed up."
+          "point": "Passbolt gives administrators more direct control over daily operations",
+          "why_it_matters": "Integrations, policies, and access flow can be tied to internal systems instead of waiting on an external service model."
         },
         {
-          "point": "Passbolt integrates with internal authentication systems and network infrastructure.",
-          "why_it_matters": "Teams can connect password management directly to existing internal services."
+          "point": "Passbolt makes long-term security and backup policy more adaptable",
+          "why_it_matters": "Power users can shape where data lives and how it is recovered as the environment grows."
         }
       ]
     },
@@ -62,51 +62,51 @@
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The user wants a password manager that works instantly without deploying or maintaining server infrastructure.",
-          "what_to_do_instead": "Use Proton Pass where the service runs through a hosted account."
+          "fails_when": "Passbolt becomes too heavy when the user wants passwords to work immediately and has no reason to run password infrastructure themselves.",
+          "what_to_do_instead": "Choose Proton Pass if a hosted service is the better operational tradeoff."
         },
         {
           "tool": "y",
-          "fails_when": "The user needs password management inside a private server environment because Proton Pass cannot run on a self hosted server.",
-          "what_to_do_instead": "Use Passbolt where the password system can be deployed inside your own infrastructure."
+          "fails_when": "Proton Pass breaks down when policy, deployment location, or system integration must stay under internal administrative control.",
+          "what_to_do_instead": "Choose Passbolt when self-hosted control is a real requirement."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user prefers a password manager that works immediately without deploying or maintaining server infrastructure, Proton Pass may become the better option."
+      "content": "This can flip if the user no longer needs administrative control over deployment and would rather offload hosting and upgrades entirely. Then Proton Pass may be the better fit."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Passbolt if you want password management deployed on your own server.",
-        "Pick Passbolt if you need full administrative control over credential infrastructure.",
-        "Pick Proton Pass if you want a hosted password manager with no server maintenance."
+        "Choose Passbolt if the password system must run inside infrastructure you control.",
+        "Choose Proton Pass if a hosted service is preferable to running password servers yourself.",
+        "Avoid Proton Pass when deployment location and admin control are part of the requirement."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do power users prefer Passbolt?",
-      "a": "Passbolt can run on a self hosted server where administrators control the infrastructure."
+      "q": "Why does Passbolt win on more than hosting?",
+      "a": "Passbolt also changes how the vault integrates with internal systems, how backups are handled, and how much administrative control the user keeps over the whole environment."
     },
     {
-      "q": "Can Proton Pass run on a private server?",
-      "a": "No. Proton Pass operates as a hosted password manager and does not support self hosted deployment."
+      "q": "When is Proton Pass still the better choice?",
+      "a": "Proton Pass is still the better choice when the user wants a hosted password manager that works without running server infrastructure."
     },
     {
-      "q": "Does Passbolt require server infrastructure?",
-      "a": "Yes. Passbolt typically runs on a server environment controlled by the organization."
+      "q": "What usually makes Proton Pass fail first?",
+      "a": "The need for deployment control and internal integration becomes real rather than theoretical."
     },
     {
-      "q": "Who should choose Proton Pass instead?",
-      "a": "Users who want a password manager that works immediately without maintaining server infrastructure may prefer Proton Pass."
+      "q": "Is this only for large teams?",
+      "a": "No. Even a solo power user can care about where the password server runs and who controls it."
     }
   ],
   "related_pages": [

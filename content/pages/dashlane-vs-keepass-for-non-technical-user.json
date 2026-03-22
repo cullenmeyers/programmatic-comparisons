@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Dashlane fits non-technical users",
-      "content": "The user is afraid of losing their passwords if something breaks and wants automatic backup and recovery. Dashlane stores the vault inside an account that syncs securely across devices. When the user logs in on a new device, the password vault automatically appears again. This removes the risk of forgetting to back up important password files."
+      "heading": "Why Dashlane fits Non-technical users better",
+      "content": "Dashlane fits this non-technical user because the winning mechanism reduces friction across setup, daily password use, and long-term vault management instead of solving only one narrow problem."
     },
     {
       "type": "x_wins",
       "heading": "Where Dashlane wins",
       "bullets": [
         {
-          "point": "Dashlane automatically syncs the password vault through the user account.",
-          "why_it_matters": "Passwords remain accessible on new devices without manually copying backup files."
+          "point": "Dashlane handles the winning mechanism more directly",
+          "why_it_matters": "The user spends less time compensating for the exact friction named in the decision rule."
         },
         {
-          "point": "Dashlane stores encrypted vault backups through its cloud synchronization system.",
-          "why_it_matters": "If a device fails or is replaced, the vault can be restored simply by signing into the account."
+          "point": "Dashlane keeps daily password use smoother",
+          "why_it_matters": "The practical workflow stays shorter and easier to repeat."
         },
         {
-          "point": "Dashlane browser extensions automatically save new passwords during website logins.",
-          "why_it_matters": "Users do not need to manually add credentials into a separate application."
+          "point": "Dashlane reduces the hidden cost of managing credentials over time",
+          "why_it_matters": "That matters when the password manager is supposed to remove friction, not create a second system to babysit."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where KeePass wins",
       "bullets": [
         {
-          "point": "KeePass stores passwords in a local encrypted database file on the device.",
-          "why_it_matters": "Users maintain full control over where the password vault is stored."
+          "point": "KeePass can still win in a narrower workflow",
+          "why_it_matters": "The losing tool may be better when the deeper or smoother mechanism is not doing much real work yet."
         },
         {
-          "point": "KeePass works completely offline without requiring an account.",
-          "why_it_matters": "Passwords remain accessible without depending on a hosted service."
+          "point": "KeePass often asks for a different tradeoff rather than offering nothing",
+          "why_it_matters": "That matters when the user values control and convenience differently than this verdict assumes."
         },
         {
-          "point": "KeePass allows users to copy or move the vault database file manually.",
-          "why_it_matters": "Advanced users can store the file wherever they prefer."
+          "point": "KeePass can be the better fit when complexity is intentional",
+          "why_it_matters": "The friction is only a dealbreaker when it gets in the way of the job this persona actually has."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The user wants password storage that never relies on a hosted account or online service.",
-          "what_to_do_instead": "Use KeePass where the vault exists only as a local encrypted file."
+          "fails_when": "Dashlane becomes heavier than necessary when the winning mechanism is not doing enough real work yet.",
+          "what_to_do_instead": "Choose KeePass if the simpler tradeoff still fits."
         },
         {
           "tool": "y",
-          "fails_when": "The user forgets to manually back up the vault file because KeePass stores passwords in a single database file that must be copied manually.",
-          "what_to_do_instead": "Use Dashlane where encrypted vault backups are automatically synchronized."
+          "fails_when": "KeePass breaks down when the exact friction named in the rule keeps recurring during normal password use.",
+          "what_to_do_instead": "Choose Dashlane once that mechanism matters daily."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user is comfortable manually managing backups and prefers keeping the password vault entirely offline, KeePass may become the better option."
+      "content": "This can flip if the tradeoff on the losing side starts doing more real work than the mechanism that currently wins. Then KeePass may be worth the switch."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Dashlane if you want passwords automatically backed up and synced.",
-        "Pick Dashlane if you worry about losing your password vault after device failure.",
-        "Pick KeePass if you prefer storing passwords in a local encrypted file."
+        "Choose Dashlane when the winning mechanism is already affecting daily password use.",
+        "Choose KeePass when its tradeoff still better matches the job you actually have.",
+        "Avoid KeePass once the same friction keeps showing up in setup and routine use."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Dashlane safer for non-technical users?",
-      "a": "Dashlane automatically backs up and syncs the password vault through the account so passwords remain recoverable."
+      "q": "Why does Dashlane fit the rule better?",
+      "a": "Dashlane turns the mechanism in the decision rule into gains across setup, daily use, and long-term vault management instead of only one isolated feature."
     },
     {
-      "q": "Does KeePass automatically back up passwords?",
-      "a": "No. KeePass stores passwords in a database file that must be backed up manually."
+      "q": "When is KeePass still reasonable?",
+      "a": "KeePass is still reasonable when its tradeoff better matches the real password workflow."
     },
     {
-      "q": "What happens if a Dashlane user gets a new device?",
-      "a": "The user signs into their account and the encrypted password vault automatically syncs to the new device."
+      "q": "What usually signals it is time to switch?",
+      "a": "The same friction starts appearing during ordinary sign-ins and vault maintenance instead of only in edge cases."
     },
     {
-      "q": "Who might still prefer KeePass?",
-      "a": "Users who want complete control over a local password database and are comfortable managing backups may prefer KeePass."
+      "q": "Is this verdict only about simplicity?",
+      "a": "No. It is about where the ongoing operating cost of the password manager really lands."
     }
   ],
   "related_pages": [

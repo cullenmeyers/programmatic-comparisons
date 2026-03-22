@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Keeper fits solo users",
-      "content": "The user works across multiple devices but does not want to configure extra services just to keep passwords synchronized. Keeper automatically syncs the vault through the account whenever credentials change. Once logged in on another device, the same passwords appear without connecting storage services or moving files. This removes maintenance steps that solo users want to avoid."
+      "heading": "Why Keeper fits Solo users better",
+      "content": "Keeper fits this solo user because the same convenience mechanism shows up all day long. It changes how fast logins happen, how often the user has to think about sync or retrieval steps, and how much vault maintenance leaks into normal work. Keeper wins by keeping password use closer to the moment of login."
     },
     {
       "type": "y_wins",
       "heading": "Where Keeper wins",
       "bullets": [
         {
-          "point": "Keeper synchronizes the password vault automatically through the account.",
-          "why_it_matters": "Passwords stay updated across devices without configuring external storage services."
+          "point": "Keeper shortens the path from opening a site to logging in",
+          "why_it_matters": "Automatic sync and autofill remove the extra steps that slow sign-ins across devices and browsers."
         },
         {
-          "point": "Keeper restores the vault immediately after signing into the account on a new device.",
-          "why_it_matters": "Users do not need to import or transfer database files."
+          "point": "Keeper keeps daily password use more predictable",
+          "why_it_matters": "The user does not have to remember file locations, sync routines, or separate retrieval workflows just to access an account."
         },
         {
-          "point": "Keeper manages encryption and vault storage inside the service automatically.",
-          "why_it_matters": "Users avoid maintaining synchronization systems themselves."
+          "point": "Keeper lowers the maintenance burden around the vault",
+          "why_it_matters": "The system stays usable without constant copying, storage setup, or manual credential handling."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Enpass wins",
       "bullets": [
         {
-          "point": "Enpass stores passwords inside a local encrypted vault database file.",
-          "why_it_matters": "Users maintain full control over where the vault file is stored."
+          "point": "Enpass can still appeal to users who want tighter local control",
+          "why_it_matters": "Manual files, offline storage, or custom sync paths may be worth the extra steps for people who care more about control than speed."
         },
         {
-          "point": "Enpass can operate entirely offline once the vault exists on the device.",
-          "why_it_matters": "Passwords remain accessible even without internet connectivity."
+          "point": "Enpass can fit workflows that avoid hosted accounts",
+          "why_it_matters": "The extra friction is less painful when the user intentionally wants a more self-managed setup."
         },
         {
-          "point": "Enpass allows the vault file to be stored in any compatible cloud storage provider.",
-          "why_it_matters": "Advanced users can integrate the vault into custom synchronization workflows."
+          "point": "Enpass leaves more room for custom storage choices",
+          "why_it_matters": "That matters when flexibility of location matters more than instant autofill everywhere."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "The user refuses to store passwords inside a hosted vault service.",
-          "what_to_do_instead": "Use Enpass where the encrypted vault can remain stored locally."
+          "fails_when": "Keeper becomes the wrong fit when the user intentionally wants a more self-managed vault even if that costs time at login.",
+          "what_to_do_instead": "Choose Enpass if local control matters more than speed."
         },
         {
           "tool": "x",
-          "fails_when": "The user wants automatic syncing because Enpass requires configuring external storage services like Dropbox or Google Drive.",
-          "what_to_do_instead": "Use Keeper where syncing works automatically through the account."
+          "fails_when": "Enpass breaks down when manual files, sync steps, or non-autofill workflows keep showing up during ordinary sign-ins.",
+          "what_to_do_instead": "Choose Keeper when fast retrieval and lower maintenance matter more."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user prefers storing the password vault locally instead of inside a hosted service, Enpass may become the better option."
+      "content": "This can flip if the user is willing to accept slower sign-ins in exchange for a more self-managed or local-first vault model. Then Enpass may be worth it."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Keeper if you want passwords to sync automatically across devices.",
-        "Pick Keeper if you do not want to configure external cloud storage services.",
-        "Pick Enpass if you prefer storing the vault locally and managing syncing yourself."
+        "Choose Keeper if passwords need to sync and autofill with fewer manual steps.",
+        "Choose Enpass if you are willing to trade speed for more local control.",
+        "Avoid Enpass when vault-file handling or manual retrieval keeps slowing sign-ins."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do solo users prefer Keeper?",
-      "a": "Keeper synchronizes the password vault automatically across devices without requiring external storage setup."
+      "q": "Why does convenience change the verdict so much?",
+      "a": "Because the same sync and autofill mechanism affects login speed, device switching, and how much vault maintenance leaks into normal work."
     },
     {
-      "q": "Does Enpass sync passwords automatically?",
-      "a": "No. Enpass requires connecting external storage services such as Dropbox or Google Drive to synchronize the vault."
+      "q": "When is Enpass still reasonable?",
+      "a": "Enpass is still reasonable when the user intentionally prefers a more self-managed or local-first model."
     },
     {
-      "q": "Can Enpass store the vault locally?",
-      "a": "Yes. Enpass stores passwords in a local encrypted vault file controlled by the user."
+      "q": "What usually makes Enpass feel too heavy?",
+      "a": "Manual files, sync steps, or slower retrieval keep showing up in ordinary sign-ins."
     },
     {
-      "q": "Who should choose Enpass instead?",
-      "a": "Users who prefer keeping the vault locally and managing synchronization manually may prefer Enpass."
+      "q": "Is this only about speed?",
+      "a": "No. It is also about reducing repeated maintenance and friction."
     }
   ],
   "related_pages": [

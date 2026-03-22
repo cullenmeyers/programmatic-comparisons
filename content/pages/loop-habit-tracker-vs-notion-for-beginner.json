@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Loop Habit Tracker fits instant habit tracking",
-      "content": "You installed a habit tracker expecting a ready-made system. Loop Habit Tracker gives you a simple checklist where you can add a habit and start logging immediately. Notion starts as a blank workspace, which means you need to create a database, define properties, and decide how tracking works before logging anything."
+      "heading": "Why Loop Habit Tracker fits Beginners better",
+      "content": "Loop Habit Tracker fits this beginner because Notion is the tool introducing the database-building layer, not Loop Habit Tracker. That means setup decisions arrive before the first useful log, daily use keeps one eye on system maintenance, and the tracker asks for more structure than this persona actually needs. Loop Habit Tracker wins by making the habit routine usable before system design becomes the job."
     },
     {
       "type": "x_wins",
       "heading": "Where Loop Habit Tracker wins",
       "bullets": [
         {
-          "point": "Habits can be created and logged immediately using a built-in checklist interface.",
-          "why_it_matters": "This removes setup steps so you can start tracking right away."
+          "point": "Loop Habit Tracker lets the user start tracking before building a database system",
+          "why_it_matters": "The first useful action is logging a habit, not deciding how the workspace should be modeled."
         },
         {
-          "point": "The app works out of the box without requiring databases, properties, or custom structures.",
-          "why_it_matters": "This keeps the experience simple and avoids early drop-off from setup friction."
+          "point": "Loop Habit Tracker keeps daily check-offs separate from workspace maintenance",
+          "why_it_matters": "Routine use is faster when custom fields, relations, and dashboards are not part of every habit decision."
         },
         {
-          "point": "Habit completion is tracked through simple checkmarks instead of structured data models.",
-          "why_it_matters": "This makes it easy to use without needing to learn or maintain a system."
+          "point": "Loop Habit Tracker reduces the thinking required to keep the tracker usable",
+          "why_it_matters": "That matters when the database layer is exactly what makes the habit system feel too heavy."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Notion wins",
       "bullets": [
         {
-          "point": "Habits can be tracked as rows in a database with custom properties like dates, tags, and progress fields.",
-          "why_it_matters": "This allows flexible tracking, but requires building the system before use."
+          "point": "Notion can still be better when habits must connect to a larger system",
+          "why_it_matters": "The database layer may be worth the overhead once dashboards and relations are doing real work."
         },
         {
-          "point": "Databases can be connected to other workflows such as goals or projects.",
-          "why_it_matters": "This creates a unified system, but adds setup and ongoing maintenance."
+          "point": "Notion supports more structured habit records and workflows",
+          "why_it_matters": "That matters when fixed lists have become the real limitation."
         },
         {
-          "point": "Custom dashboards can display habits alongside other data using different views.",
-          "why_it_matters": "This provides control, but requires effort to build and maintain."
+          "point": "Notion leaves more room for the habit system to evolve later",
+          "why_it_matters": "The added setup only makes sense once customization is part of the goal."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "Loop Habit Tracker feels too basic when you want to customize tracking or connect habits to other workflows.",
-          "what_to_do_instead": "Use Notion if you want full control and are willing to build a system."
+          "fails_when": "Loop Habit Tracker becomes too rigid when the user truly needs habits to function as structured records inside a larger system.",
+          "what_to_do_instead": "Choose Notion if database-level customization is now doing real work."
         },
         {
           "tool": "y",
-          "fails_when": "Notion breaks when you must build and maintain a database system before logging a single habit.",
-          "what_to_do_instead": "Use Loop Habit Tracker when you want immediate, no-setup habit tracking."
+          "fails_when": "Notion breaks down when building and maintaining the database keeps standing between the user and consistent habit logging.",
+          "what_to_do_instead": "Choose Loop Habit Tracker when a ready-to-use tracker fits better."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This verdict might flip if you are willing to invest time in building a custom system and want habits integrated into a larger workflow. In that case, Notion can be useful despite the extra setup."
+      "content": "This can flip if habits now need to operate as structured records inside a broader system instead of a ready-made tracker. Then Notion may be worth the setup."
     },
     {
       "type": "quick_rules",
-      "heading": "Quick rules",
+      "heading": "Quick decision rules",
       "rules": [
-        "Choose Loop Habit Tracker if you want to start tracking habits immediately.",
-        "Choose Loop Habit Tracker if you want a ready-to-use checklist.",
-        "Choose Notion only if you are willing to build and maintain a custom system."
+        "Choose Loop Habit Tracker if you want to log habits before building a database system.",
+        "Choose Notion if habits really need custom records and dashboards.",
+        "Avoid Notion when workspace maintenance is larger than the habit itself."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Loop Habit Tracker better for Beginners?",
-      "a": "Because it lets you start tracking habits immediately without building a system."
+      "q": "Why can a fixed tracker beat a database system?",
+      "a": "Because custom fields, relations, and dashboards only help once that flexibility is truly being used instead of standing in front of habit logging."
     },
     {
-      "q": "Does Notion require setup before tracking habits?",
-      "a": "Yes, you need to create and manage a database before logging habits."
+      "q": "When is Notion still the better fit?",
+      "a": "Notion is still the better fit when habits need to work as structured records inside a larger system."
     },
     {
-      "q": "Is Notion more flexible?",
-      "a": "Yes, but that flexibility comes with setup time and ongoing maintenance."
+      "q": "What usually makes Notion fail first?",
+      "a": "Building and maintaining the database keeps delaying actual habit tracking."
     },
     {
-      "q": "When would a Beginner still choose Notion?",
-      "a": "A Beginner might choose Notion if they want a fully customizable system and are willing to build it."
+      "q": "Is this anti-customization?",
+      "a": "No. It is about whether customization is helping or only adding setup."
     }
   ],
   "related_pages": [

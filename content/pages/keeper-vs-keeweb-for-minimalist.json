@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why KeeWeb fits minimalists",
-      "content": "The user wants to open a password vault directly without creating accounts. KeeWeb loads a KDBX encrypted database file directly inside the browser interface. Users simply open the vault file and unlock it with the master password. This avoids signing into hosted services or maintaining additional accounts."
+      "heading": "Why KeeWeb fits Minimalists better",
+      "content": "KeeWeb fits this minimalist because storage control changes more than where the encrypted vault sits. It affects whether the user needs a provider account, how much trust they place in a hosted service during daily use, and how flexibly they can shape backup and portability decisions later. KeeWeb wins by keeping that control closer to the user."
     },
     {
       "type": "y_wins",
       "heading": "Where KeeWeb wins",
       "bullets": [
         {
-          "point": "KeeWeb opens KDBX encrypted vault files directly in the browser interface.",
-          "why_it_matters": "Users can access their password database without creating or logging into an account."
+          "point": "KeeWeb keeps the vault under local or user-chosen control",
+          "why_it_matters": "Passwords are not forced into a vendor-hosted account model before the user has decided they want that tradeoff."
         },
         {
-          "point": "KeeWeb allows users to load a vault file from local storage or a file picker.",
-          "why_it_matters": "Passwords remain stored in a file the user controls rather than inside a hosted service."
+          "point": "KeeWeb reduces dependency on a provider account during daily use",
+          "why_it_matters": "The password workflow stays closer to the device or storage path the user already trusts."
         },
         {
-          "point": "KeeWeb runs entirely as a client side web interface that reads the vault file locally.",
-          "why_it_matters": "Minimalists avoid maintaining service accounts or external infrastructure."
+          "point": "KeeWeb leaves more room to shape backup and storage choices",
+          "why_it_matters": "That matters when portability and control are part of the reason for choosing the tool."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Keeper wins",
       "bullets": [
         {
-          "point": "Keeper synchronizes the password vault automatically through the account service.",
-          "why_it_matters": "Passwords appear on multiple devices without manually moving vault files."
+          "point": "Keeper can still be easier when automatic sync matters more than storage sovereignty",
+          "why_it_matters": "A vendor account can reduce setup and daily handling for users who do not want to manage location or backup strategy."
         },
         {
-          "point": "Keeper restores the vault automatically after signing into the account on a new device.",
-          "why_it_matters": "Users regain access to credentials without importing database files."
+          "point": "Keeper often gives a smoother login experience out of the box",
+          "why_it_matters": "Hosted accounts usually pair naturally with browser extensions and cross-device access."
         },
         {
-          "point": "Keeper provides shared vault permissions for teams.",
-          "why_it_matters": "Organizations can control who can view or edit specific credentials."
+          "point": "Keeper asks for less manual thinking about where the vault lives",
+          "why_it_matters": "That can be the better tradeoff when convenience beats local control."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "The user wants passwords to sync automatically across devices without managing a vault file.",
-          "what_to_do_instead": "Use Keeper where the vault synchronizes automatically through the account."
+          "fails_when": "KeeWeb becomes the wrong fit when the user would rather offload storage and sync decisions to a hosted account model.",
+          "what_to_do_instead": "Choose Keeper if convenience now matters more than vault ownership."
         },
         {
           "tool": "x",
-          "fails_when": "The user refuses account based services because Keeper requires signing into a hosted vault account.",
-          "what_to_do_instead": "Use KeeWeb where a local encrypted vault file can be opened directly."
+          "fails_when": "Keeper breaks down when the user does not want credentials forced into a vendor-hosted account or cloud vault.",
+          "what_to_do_instead": "Choose KeeWeb when local control is the non-negotiable boundary."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user wants passwords to synchronize automatically across multiple devices and does not mind using a hosted account service, Keeper may become the better option."
+      "content": "This can flip if the user decides automatic hosted sync is worth more than direct control over vault location and storage choices. Then Keeper may make more sense."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick KeeWeb if you want to open a local password vault file directly in the browser.",
-        "Pick KeeWeb if you refuse to create accounts for password storage.",
-        "Pick Keeper if you want automatic password syncing across devices."
+        "Choose KeeWeb if vault ownership matters more than hosted convenience.",
+        "Choose Keeper if you want sync and account management handled for you.",
+        "Avoid Keeper when provider-controlled vault storage is the exact dealbreaker."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do minimalists prefer KeeWeb?",
-      "a": "KeeWeb opens a local encrypted vault file directly without requiring a service account."
+      "q": "Why does local control matter so much here?",
+      "a": "Because it affects trust boundary, daily dependence on a provider account, and how flexibly the vault can be backed up or moved later."
     },
     {
-      "q": "Does Keeper require an account to access passwords?",
-      "a": "Yes. Keeper stores credentials in a hosted vault that requires signing into an account."
+      "q": "When is Keeper still worth choosing?",
+      "a": "Keeper is still worth choosing when automatic hosted sync is more valuable than storage sovereignty."
     },
     {
-      "q": "Can KeeWeb open standard KeePass vault files?",
-      "a": "Yes. KeeWeb can open KDBX encrypted vault files used by KeePass compatible managers."
+      "q": "What usually makes Keeper the wrong fit?",
+      "a": "The user does not want the vault tied to a vendor-hosted account or cloud model in the first place."
     },
     {
-      "q": "Who should choose Keeper instead?",
-      "a": "Users who want passwords synchronized automatically across devices may prefer Keeper."
+      "q": "Does KeeWeb always mean more work?",
+      "a": "Often some, but that tradeoff can be the point when local control is the priority."
     }
   ],
   "related_pages": [

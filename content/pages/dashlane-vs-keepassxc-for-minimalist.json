@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why KeePassXC fits minimalists",
-      "content": "The user refuses to store passwords inside a vendor hosted vault and prefers keeping them entirely in a local encrypted database. KeePassXC stores credentials inside a local database file that remains on the device. The vault can be backed up or moved manually without connecting to an external service. This approach keeps password storage independent from hosted platforms."
+      "heading": "Why KeePassXC fits Minimalists better",
+      "content": "KeePassXC fits this minimalist because the winning mechanism reduces friction across setup, daily password use, and long-term vault management instead of solving only one narrow problem."
     },
     {
       "type": "y_wins",
       "heading": "Where KeePassXC wins",
       "bullets": [
         {
-          "point": "KeePassXC stores passwords in a local encrypted database file on the device.",
-          "why_it_matters": "Minimalists can keep credentials fully under their own control without relying on a hosted vault."
+          "point": "KeePassXC handles the winning mechanism more directly",
+          "why_it_matters": "The user spends less time compensating for the exact friction named in the decision rule."
         },
         {
-          "point": "KeePassXC works without creating an online account.",
-          "why_it_matters": "Users avoid linking their password database to a vendor account system."
+          "point": "KeePassXC keeps daily password use smoother",
+          "why_it_matters": "The practical workflow stays shorter and easier to repeat."
         },
         {
-          "point": "KeePassXC allows the vault file to be stored anywhere the user chooses.",
-          "why_it_matters": "The password database can remain on personal storage instead of being locked inside a service."
+          "point": "KeePassXC reduces the hidden cost of managing credentials over time",
+          "why_it_matters": "That matters when the password manager is supposed to remove friction, not create a second system to babysit."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Dashlane wins",
       "bullets": [
         {
-          "point": "Dashlane automatically synchronizes the password vault across devices through the account.",
-          "why_it_matters": "Users can access passwords on phones, laptops, and browsers without transferring files."
+          "point": "Dashlane can still win in a narrower workflow",
+          "why_it_matters": "The losing tool may be better when the deeper or smoother mechanism is not doing much real work yet."
         },
         {
-          "point": "Dashlane browser extensions detect login forms and autofill credentials.",
-          "why_it_matters": "Signing into websites becomes faster without copying passwords manually."
+          "point": "Dashlane often asks for a different tradeoff rather than offering nothing",
+          "why_it_matters": "That matters when the user values control and convenience differently than this verdict assumes."
         },
         {
-          "point": "Dashlane restores the vault automatically when signing into a new device.",
-          "why_it_matters": "Passwords become available immediately after logging into the account."
+          "point": "Dashlane can be the better fit when complexity is intentional",
+          "why_it_matters": "The friction is only a dealbreaker when it gets in the way of the job this persona actually has."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "The user wants passwords to synchronize automatically across multiple devices without managing vault files.",
-          "what_to_do_instead": "Use Dashlane where the vault syncs automatically through the account."
+          "fails_when": "KeePassXC becomes heavier than necessary when the winning mechanism is not doing enough real work yet.",
+          "what_to_do_instead": "Choose Dashlane if the simpler tradeoff still fits."
         },
         {
           "tool": "x",
-          "fails_when": "The user refuses to store credentials in a hosted vault because Dashlane stores passwords inside the vendor service.",
-          "what_to_do_instead": "Use KeePassXC where the database remains a local encrypted file."
+          "fails_when": "Dashlane breaks down when the exact friction named in the rule keeps recurring during normal password use.",
+          "what_to_do_instead": "Choose KeePassXC once that mechanism matters daily."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user wants passwords to appear automatically across multiple devices without manually managing vault files, Dashlane may become the better option."
+      "content": "This can flip if the tradeoff on the losing side starts doing more real work than the mechanism that currently wins. Then Dashlane may be worth the switch."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick KeePassXC if you want passwords stored locally in an encrypted database.",
-        "Pick KeePassXC if you refuse to store credentials in a vendor hosted vault.",
-        "Pick Dashlane if you want automatic syncing and autofill across devices."
+        "Choose KeePassXC when the winning mechanism is already affecting daily password use.",
+        "Choose Dashlane when its tradeoff still better matches the job you actually have.",
+        "Avoid Dashlane once the same friction keeps showing up in setup and routine use."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do minimalists prefer KeePassXC?",
-      "a": "KeePassXC stores passwords in a local encrypted database and does not require a hosted vault service."
+      "q": "Why does KeePassXC fit the rule better?",
+      "a": "KeePassXC turns the mechanism in the decision rule into gains across setup, daily use, and long-term vault management instead of only one isolated feature."
     },
     {
-      "q": "Does Dashlane store passwords locally?",
-      "a": "No. Dashlane stores credentials inside a hosted vault connected to the user account."
+      "q": "When is Dashlane still reasonable?",
+      "a": "Dashlane is still reasonable when its tradeoff better matches the real password workflow."
     },
     {
-      "q": "Can KeePassXC work without internet access?",
-      "a": "Yes. KeePassXC runs locally and does not require an online service."
+      "q": "What usually signals it is time to switch?",
+      "a": "The same friction starts appearing during ordinary sign-ins and vault maintenance instead of only in edge cases."
     },
     {
-      "q": "Who should choose Dashlane instead?",
-      "a": "Users who want passwords to synchronize automatically across devices may prefer Dashlane."
+      "q": "Is this verdict only about simplicity?",
+      "a": "No. It is about where the ongoing operating cost of the password manager really lands."
     }
   ],
   "related_pages": [

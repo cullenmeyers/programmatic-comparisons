@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why KeeWeb fits minimalists",
-      "content": "The user wants to open an encrypted password vault file locally and avoid service accounts. KeeWeb loads standard KDBX database files directly in the browser or desktop interface. The vault remains a file that the user controls and stores in their own location such as local storage or personal cloud storage. This avoids creating accounts or relying on hosted password services."
+      "heading": "Why KeeWeb fits Minimalists better",
+      "content": "KeeWeb fits this minimalist because storage control changes more than where the encrypted vault sits. It affects whether the user needs a provider account, how much trust they place in a hosted service during daily use, and how flexibly they can shape backup and portability decisions later. KeeWeb wins by keeping that control closer to the user."
     },
     {
       "type": "x_wins",
       "heading": "Where KeeWeb wins",
       "bullets": [
         {
-          "point": "KeeWeb opens standard KDBX encrypted database files directly in the browser interface.",
-          "why_it_matters": "Users access passwords without signing into a service account."
+          "point": "KeeWeb keeps the vault under local or user-chosen control",
+          "why_it_matters": "Passwords are not forced into a vendor-hosted account model before the user has decided they want that tradeoff."
         },
         {
-          "point": "KeeWeb reads vault files stored locally or in personal storage locations.",
-          "why_it_matters": "The password vault remains a portable file controlled by the user."
+          "point": "KeeWeb reduces dependency on a provider account during daily use",
+          "why_it_matters": "The password workflow stays closer to the device or storage path the user already trusts."
         },
         {
-          "point": "KeeWeb operates without a hosted password service or account system.",
-          "why_it_matters": "Minimalists avoid maintaining vendor accounts just to open a vault."
+          "point": "KeeWeb leaves more room to shape backup and storage choices",
+          "why_it_matters": "That matters when portability and control are part of the reason for choosing the tool."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Proton Pass wins",
       "bullets": [
         {
-          "point": "Proton Pass stores credentials in a hosted vault linked to a Proton account.",
-          "why_it_matters": "Passwords sync automatically across devices after signing into the account."
+          "point": "Proton Pass can still be easier when automatic sync matters more than storage sovereignty",
+          "why_it_matters": "A vendor account can reduce setup and daily handling for users who do not want to manage location or backup strategy."
         },
         {
-          "point": "Proton Pass browser extensions detect login forms and autofill credentials.",
-          "why_it_matters": "Users can sign into websites quickly without opening a vault file manually."
+          "point": "Proton Pass often gives a smoother login experience out of the box",
+          "why_it_matters": "Hosted accounts usually pair naturally with browser extensions and cross-device access."
         },
         {
-          "point": "Proton Pass restores the vault automatically when logging into a new device.",
-          "why_it_matters": "Users regain access to credentials without importing database files."
+          "point": "Proton Pass asks for less manual thinking about where the vault lives",
+          "why_it_matters": "That can be the better tradeoff when convenience beats local control."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The user wants passwords synchronized automatically across devices without managing vault files.",
-          "what_to_do_instead": "Use Proton Pass where credentials sync through a hosted vault account."
+          "fails_when": "KeeWeb becomes the wrong fit when the user would rather offload storage and sync decisions to a hosted account model.",
+          "what_to_do_instead": "Choose Proton Pass if convenience now matters more than vault ownership."
         },
         {
           "tool": "y",
-          "fails_when": "The user refuses service accounts because Proton Pass requires signing into a hosted vault.",
-          "what_to_do_instead": "Use KeeWeb where the encrypted vault file opens locally without account login."
+          "fails_when": "Proton Pass breaks down when the user does not want credentials forced into a vendor-hosted account or cloud vault.",
+          "what_to_do_instead": "Choose KeeWeb when local control is the non-negotiable boundary."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user prefers automatic syncing across devices and does not mind signing into an account service, Proton Pass may become the better option."
+      "content": "This can flip if the user decides automatic hosted sync is worth more than direct control over vault location and storage choices. Then Proton Pass may make more sense."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick KeeWeb if you want to open an encrypted vault file without service accounts.",
-        "Pick KeeWeb if you keep your password database as a local KDBX file.",
-        "Pick Proton Pass if you want passwords synced automatically through a hosted vault."
+        "Choose KeeWeb if vault ownership matters more than hosted convenience.",
+        "Choose Proton Pass if you want sync and account management handled for you.",
+        "Avoid Proton Pass when provider-controlled vault storage is the exact dealbreaker."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do minimalists choose KeeWeb?",
-      "a": "KeeWeb opens encrypted vault files directly without requiring a service account."
+      "q": "Why does local control matter so much here?",
+      "a": "Because it affects trust boundary, daily dependence on a provider account, and how flexibly the vault can be backed up or moved later."
     },
     {
-      "q": "Does Proton Pass require an account?",
-      "a": "Yes. Proton Pass stores credentials in a hosted vault linked to a Proton account."
+      "q": "When is Proton Pass still worth choosing?",
+      "a": "Proton Pass is still worth choosing when automatic hosted sync is more valuable than storage sovereignty."
     },
     {
-      "q": "Can KeeWeb open standard KeePass vault files?",
-      "a": "Yes. KeeWeb supports KDBX encrypted vault files used by KeePass compatible managers."
+      "q": "What usually makes Proton Pass the wrong fit?",
+      "a": "The user does not want the vault tied to a vendor-hosted account or cloud model in the first place."
     },
     {
-      "q": "Who should choose Proton Pass instead?",
-      "a": "Users who want automatic password syncing across devices may prefer Proton Pass."
+      "q": "Does KeeWeb always mean more work?",
+      "a": "Often some, but that tradeoff can be the point when local control is the priority."
     }
   ],
   "related_pages": [

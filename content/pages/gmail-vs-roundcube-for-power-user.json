@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Roundcube fits power users",
-      "content": "The user runs their own server and wants full control over how the webmail interface behaves. Roundcube installs directly on a self hosted mail server and provides a browser based interface for managing email. Administrators control how the interface connects to their mail infrastructure and can modify the environment as needed. This allows the mailbox system to operate entirely inside the user's server environment."
+      "heading": "Why Roundcube fits Power users better",
+      "content": "Roundcube fits this power user because infrastructure control changes setup, daily operations, and long-term flexibility together. It affects where the mail system runs, how it connects to other systems, and whether the environment can be shaped around internal requirements. Roundcube wins by keeping that control under the user's own administration."
     },
     {
       "type": "y_wins",
       "heading": "Where Roundcube wins",
       "bullets": [
         {
-          "point": "Roundcube can be installed on a self hosted mail server.",
-          "why_it_matters": "Power users can run the entire webmail interface inside infrastructure they control."
+          "point": "Roundcube can run inside infrastructure the user controls",
+          "why_it_matters": "Deployment stays on private servers instead of depending on a vendor-hosted mail environment."
         },
         {
-          "point": "Roundcube integrates directly with mail servers using standard protocols such as IMAP.",
-          "why_it_matters": "Administrators can connect the webmail interface to existing mail infrastructure."
+          "point": "Roundcube gives administrators more control over day-to-day mail operations",
+          "why_it_matters": "Updates, integration points, and server-side behavior can be tied to the environment they already manage."
         },
         {
-          "point": "Roundcube allows customization of the interface through server configuration and plugins.",
-          "why_it_matters": "Users can modify how the mailbox environment behaves within their system."
+          "point": "Roundcube leaves more room to adapt the mail system over time",
+          "why_it_matters": "That matters when ownership of the environment is part of the reason for choosing the tool."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Gmail wins",
       "bullets": [
         {
-          "point": "Gmail runs as a fully hosted email service with no server setup required.",
-          "why_it_matters": "Users can access their inbox immediately without managing infrastructure."
+          "point": "Gmail can still be better when the user does not want to run mail infrastructure",
+          "why_it_matters": "A hosted service can remove server setup and maintenance when control is not the main requirement."
         },
         {
-          "point": "Gmail automatically handles spam filtering and server maintenance.",
-          "why_it_matters": "Users do not need to maintain mail servers or apply updates."
+          "point": "Gmail gets email working faster for users who want immediate access",
+          "why_it_matters": "That matters when deployment and server upkeep would mostly be extra work."
         },
         {
-          "point": "Gmail integrates with many productivity tools and services.",
-          "why_it_matters": "Users can connect email workflows with other applications."
+          "point": "Gmail reduces the admin burden outside the inbox itself",
+          "why_it_matters": "The hosted model can be the better tradeoff when convenience matters more than infrastructure ownership."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "The user wants an email system that works immediately without deploying or maintaining a server.",
-          "what_to_do_instead": "Use Gmail where the entire email system runs as a hosted service."
+          "fails_when": "Roundcube becomes too heavy when the user wants email working immediately without deploying or maintaining mail infrastructure.",
+          "what_to_do_instead": "Choose Gmail if a hosted service is the better operational tradeoff."
         },
         {
           "tool": "x",
-          "fails_when": "The user needs to run the webmail interface inside their own infrastructure because Gmail cannot be deployed on a private server.",
-          "what_to_do_instead": "Use Roundcube where the interface runs on a self hosted mail server."
+          "fails_when": "Gmail breaks down when the mail system has to run inside infrastructure the user controls instead of on a vendor platform.",
+          "what_to_do_instead": "Choose Roundcube when self-hosted control is a real requirement."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user prefers a hosted email service that works immediately without managing mail servers, Gmail may become the better option."
+      "content": "This can flip if the user no longer wants to run or control mail infrastructure and would rather offload the whole environment to a hosted service. Then Gmail may make more sense."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Roundcube if you want to run webmail on your own server.",
-        "Pick Roundcube if you manage your own mail infrastructure.",
-        "Pick Gmail if you want a hosted email service with no server maintenance."
+        "Choose Roundcube if the email system must run inside infrastructure you control.",
+        "Choose Gmail if you want a hosted service instead of running mail infrastructure.",
+        "Avoid Gmail when deployment control is part of the requirement."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do power users choose Roundcube?",
-      "a": "Roundcube can run on a self hosted mail server, giving administrators full control over the mailbox environment."
+      "q": "Why does self-hosting change the verdict?",
+      "a": "Because it affects deployment control, integration freedom, and whether the whole mail environment can run inside infrastructure the user manages."
     },
     {
-      "q": "Can Gmail be deployed on a private server?",
-      "a": "No. Gmail operates as a hosted email service and cannot be installed on a self hosted server."
+      "q": "When is Gmail still enough?",
+      "a": "Gmail is still enough when the user would rather offload server operation to a hosted provider."
     },
     {
-      "q": "Does Roundcube require a mail server?",
-      "a": "Yes. Roundcube typically connects to a mail server through protocols such as IMAP."
+      "q": "What usually makes Gmail the wrong fit?",
+      "a": "The mail system has to live inside infrastructure under the user's own control."
     },
     {
-      "q": "Who should choose Gmail instead?",
-      "a": "Users who want a fully hosted email service without managing server infrastructure may prefer Gmail."
+      "q": "Is this only for admins?",
+      "a": "Mostly for people whose requirements include owning the environment rather than only using a mailbox."
     }
   ],
   "related_pages": [

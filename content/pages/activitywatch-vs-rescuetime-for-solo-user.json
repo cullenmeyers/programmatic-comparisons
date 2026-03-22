@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why ActivityWatch fits private local tracking",
-      "content": "You want to track your activity without relying on external services. ActivityWatch records data locally on your device and works without any account or syncing. RescueTime requires signing in and syncing your activity data to its servers, which adds ongoing dependencies you want to avoid."
+      "heading": "Why ActivityWatch fits Solo users better",
+      "content": "ActivityWatch fits this solo user because the real decision is not only about logging hours. It is also about who controls the tracker after installation, how far the system can be bent to match internal process, and whether admin access stays in your own hands. That turns the same self-hosting mechanism into setup control, long-run flexibility, and data ownership rather than just one hosting preference."
     },
     {
       "type": "x_wins",
       "heading": "Where ActivityWatch wins",
       "bullets": [
         {
-          "point": "All activity data is stored locally on your device with no account required.",
-          "why_it_matters": "This keeps your data private and removes the need to manage logins or services."
+          "point": "ActivityWatch gives you control over where the tracker runs",
+          "why_it_matters": "ActivityWatch lets you choose the server, environment, and upgrade timing instead of accepting a fixed hosted setup."
         },
         {
-          "point": "The tool runs fully offline without sending data to external servers.",
-          "why_it_matters": "This avoids ongoing syncing and keeps the system self-contained."
+          "point": "ActivityWatch can be shaped around your own workflow rules",
+          "why_it_matters": "That matters when a power user wants to change fields, permissions, or extensions instead of working around product limits."
         },
         {
-          "point": "There are no cloud features or syncing systems to configure or maintain.",
-          "why_it_matters": "This reduces overhead and keeps the tool simple to run over time."
+          "point": "ActivityWatch keeps data ownership and admin access in the same hands",
+          "why_it_matters": "You do not have to separate daily time tracking from the operational decisions about backups, retention, or internal access."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where RescueTime wins",
       "bullets": [
         {
-          "point": "Activity data syncs across devices through a cloud account.",
-          "why_it_matters": "This allows multi-device access, but requires maintaining an account."
+          "point": "RescueTime is faster to start because the platform is already managed",
+          "why_it_matters": "You can begin tracking without planning hosting, deployment, or upgrades first."
         },
         {
-          "point": "Reports and dashboards are generated from synced data on external servers.",
-          "why_it_matters": "This provides insights, but depends on continuous syncing."
+          "point": "RescueTime asks for less operational maintenance after signup",
+          "why_it_matters": "That is useful when you want the tracker to stay someone else's infrastructure problem."
         },
         {
-          "point": "You can access your data from different devices through the same account.",
-          "why_it_matters": "This increases flexibility, but adds reliance on cloud services."
+          "point": "RescueTime keeps the interface closer to a fixed product path",
+          "why_it_matters": "Some teams prefer fewer customization decisions if the default workflow is already good enough."
         }
       ]
     },
@@ -66,47 +66,47 @@
       "items": [
         {
           "tool": "x",
-          "fails_when": "ActivityWatch feels limiting when you want access to your data across multiple devices.",
-          "what_to_do_instead": "Use RescueTime if you need syncing and cross-device access."
+          "fails_when": "ActivityWatch becomes the wrong fit when nobody wants server ownership, upgrades, or internal admin responsibility to become part of the tracking tool.",
+          "what_to_do_instead": "Choose RescueTime if managed convenience matters more than infrastructure control."
         },
         {
           "tool": "y",
-          "fails_when": "RescueTime breaks when tracking data requires maintaining an account and syncing to external servers.",
-          "what_to_do_instead": "Use ActivityWatch when you want a fully local and private solution."
+          "fails_when": "RescueTime breaks down when the team needs to decide where the tracker runs, how it is customized, or how the data is governed beyond vendor defaults.",
+          "what_to_do_instead": "Choose ActivityWatch when deployment control and deeper system ownership are real requirements."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This verdict might flip if you want access to your tracking data across multiple devices and are willing to use a cloud account. In that case, RescueTime can be useful despite the added dependency."
+      "content": "This can flip if the tracker is not part of your internal infrastructure strategy and nobody wants to own deployment or maintenance. In that narrower case, RescueTime can be the better fit because managed convenience is the real constraint."
     },
     {
       "type": "quick_rules",
       "heading": "Quick rules",
       "rules": [
-        "Choose ActivityWatch if you want local, private time tracking.",
-        "Choose ActivityWatch if you want to avoid accounts and syncing.",
-        "Choose RescueTime only if you need multi-device access and cloud reports."
+        "Choose ActivityWatch if hosting control is part of the requirement.",
+        "Choose RescueTime if you want the tracker ready without owning deployment.",
+        "Avoid RescueTime when vendor defaults are the exact limit you are trying to escape."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is ActivityWatch better for Solo users?",
-      "a": "Because it stores all tracking data locally without requiring accounts or syncing."
+      "q": "Why does ActivityWatch win on more than hosting?",
+      "a": "ActivityWatch changes not only where the tracker runs, but also how much control you keep over customization, upgrades, and data handling."
     },
     {
-      "q": "Does RescueTime require an account?",
-      "a": "Yes, it relies on a cloud account to sync and manage activity data."
+      "q": "What is the real cost of choosing ActivityWatch?",
+      "a": "You are taking on more operational responsibility, so the tradeoff is control versus convenience rather than features versus no features."
     },
     {
-      "q": "Can ActivityWatch sync across devices?",
-      "a": "No, it is designed for local use on a single device."
+      "q": "When is RescueTime still the better choice?",
+      "a": "RescueTime is still better when nobody wants to own the environment and managed simplicity is genuinely the safer option."
     },
     {
-      "q": "When would a Solo user still choose RescueTime?",
-      "a": "A Solo user might choose RescueTime if they want access to their data across multiple devices."
+      "q": "What usually forces the move away from RescueTime?",
+      "a": "It is usually when fixed vendor boundaries start blocking deployment, admin, or customization decisions that the team actually needs to make."
     }
   ],
   "related_pages": [

@@ -22,23 +22,23 @@
     {
       "type": "persona_fit",
       "heading": "Why Clockify fits Minimalists better",
-      "content": "This minimalist wants direct control over how time is tracked. Clockify fits because it uses manual timers and simple entries without background tracking. That keeps the workflow predictable and easy to manage."
+      "content": "Clockify fits this minimalist because the capture model changes more than one part of the workflow. It affects how often you have to interrupt yourself, how much reconstruction happens later, and how much trust you can place in the recorded timeline. That is why the choice here is not just auto versus manual in theory, but what kind of attention the tracker demands every day."
     },
     {
       "type": "x_wins",
       "heading": "Where Clockify wins",
       "bullets": [
         {
-          "point": "Clockify uses manual timers and allows direct time entry without automatic tracking.",
-          "why_it_matters": "This gives full control over when and how time is logged."
+          "point": "Clockify makes the capture model predictable",
+          "why_it_matters": "You decide when tracking starts, stops, or gets categorized instead of reverse-engineering activity after the fact."
         },
         {
-          "point": "Time entries are created only when you start a timer or add them manually.",
-          "why_it_matters": "This avoids background systems and keeps tracking simple."
+          "point": "Clockify keeps review work cleaner at the end of the day",
+          "why_it_matters": "You spend less time sorting noisy auto-detected sessions and more time looking at entries you actually meant to create."
         },
         {
-          "point": "The interface focuses on timers and basic entries instead of activity timelines.",
-          "why_it_matters": "This reduces complexity and keeps the experience straightforward."
+          "point": "Clockify reduces cognitive drift while working",
+          "why_it_matters": "The tool stays aligned with deliberate sessions or structured entries instead of constantly inferring what counted as work."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where Timely wins",
       "bullets": [
         {
-          "point": "Timely automatically captures activity and builds a timeline of work in the background.",
-          "why_it_matters": "This reduces manual input, but introduces a system running behind the scenes."
+          "point": "Timely can reduce manual start-stop effort",
+          "why_it_matters": "Automatic collection helps if you would otherwise forget to log anything at all."
         },
         {
-          "point": "Time entries are reconstructed from detected app and activity usage.",
-          "why_it_matters": "This removes manual work, but reduces direct control."
+          "point": "Timely gives you a fuller trail to review later",
+          "why_it_matters": "Some users value broad activity history even if they still need to clean it up afterward."
         },
         {
-          "point": "The interface centers on reviewing and editing automatically generated timelines.",
-          "why_it_matters": "This shifts the workflow away from simple manual tracking."
+          "point": "Timely can surface patterns you would not capture intentionally",
+          "why_it_matters": "That can be useful when the goal is observation first and precision second."
         }
       ]
     },
@@ -66,47 +66,47 @@
       "items": [
         {
           "tool": "x",
-          "fails_when": "Clockify becomes limiting when you want all activity captured automatically without manually starting timers.",
-          "what_to_do_instead": "Use Timely if you want automatic timeline tracking."
+          "fails_when": "Clockify becomes the wrong fit when the user constantly forgets to start tracking and needs the system to collect a broad trail automatically before any review happens.",
+          "what_to_do_instead": "Choose Timely if capture coverage matters more than deliberate control."
         },
         {
           "tool": "y",
-          "fails_when": "Timely breaks down when you want manual control but must rely on automatically generated timelines.",
-          "what_to_do_instead": "Use Clockify if you want simple manual tracking."
+          "fails_when": "Timely breaks down when noisy automatic data creates more review work than the user wanted and the tracker starts demanding interpretation instead of recording intent.",
+          "what_to_do_instead": "Choose Clockify when cleaner, more deliberate entries are the real priority."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This could flip if you want tracking to happen automatically without manual input. In that case, Timely may be more useful despite the added complexity."
+      "content": "This can flip if the biggest problem is forgetting to log anything at all and broad automatic collection is the only way to recover the day afterward. Then Timely may be worth the extra cleanup."
     },
     {
       "type": "quick_rules",
       "heading": "Quick rules",
       "rules": [
-        "Pick Clockify if you want manual control over time tracking.",
-        "Pick Timely if you want automatic activity tracking.",
-        "Avoid Timely if you do not want background tracking systems."
+        "Choose Clockify if you want cleaner intentional entries instead of broad automatic collection.",
+        "Choose Timely if passive capture is the only way you will get a usable record at all.",
+        "Avoid Timely when reviewing auto-collected activity takes more effort than the logging itself."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Clockify better for minimalists?",
-      "a": "Because it uses manual timers and avoids automatic background tracking."
+      "q": "Why is Clockify better if Timely captures more automatically?",
+      "a": "Because more raw data is not always better if the user then has to interpret, clean, or defend that data every day."
     },
     {
-      "q": "What makes Timely more complex?",
-      "a": "It relies on automatic timeline reconstruction from captured activity."
+      "q": "What does Timely still do well?",
+      "a": "Timely can still help when the real problem is forgetting to record anything and broad collection is more valuable than precision."
     },
     {
-      "q": "Is Timely a bad tool?",
-      "a": "No. It is useful for users who want automatic time tracking."
+      "q": "What usually makes people outgrow Timely?",
+      "a": "It is often the moment when reviewing passive activity becomes its own chore instead of saving time."
     },
     {
-      "q": "When should I choose Timely instead?",
-      "a": "Choose Timely when you want tracking to happen automatically without manual input."
+      "q": "Who should still prefer Timely?",
+      "a": "Users who value exhaustive capture first and are willing to spend time sorting it afterward."
     }
   ],
   "related_pages": [

@@ -22,23 +22,23 @@
     {
       "type": "persona_fit",
       "heading": "Why ATracker fits Students better",
-      "content": "This student wants to track study sessions without dealing with setup or long-term commitment. ATracker fits because it is a ready-to-use app where you can create a task and start a timer immediately. That makes it easy to use for a short period and just as easy to stop using later without cleanup."
+      "content": "ATracker fits this student because the real decision is not only about logging hours. It is also about who controls the tracker after installation, how far the system can be bent to match internal process, and whether admin access stays in your own hands. That turns the same self-hosting mechanism into setup control, long-run flexibility, and data ownership rather than just one hosting preference."
     },
     {
       "type": "y_wins",
       "heading": "Where Kimai wins",
       "bullets": [
         {
-          "point": "Kimai runs as a self-hosted web app that requires setting up a server and database.",
-          "why_it_matters": "This gives full control over the system, but adds significant setup steps that are unnecessary for short-term use."
+          "point": "Kimai is faster to start because the platform is already managed",
+          "why_it_matters": "You can begin tracking without planning hosting, deployment, or upgrades first."
         },
         {
-          "point": "It supports structured projects, users, and reporting through a web-based interface.",
-          "why_it_matters": "This is useful for long-term or team workflows, but adds complexity when you only need simple session tracking."
+          "point": "Kimai asks for less operational maintenance after signup",
+          "why_it_matters": "That is useful when you want the tracker to stay someone else's infrastructure problem."
         },
         {
-          "point": "Kimai relies on maintaining the hosting environment to keep the app running.",
-          "why_it_matters": "This creates ongoing responsibility, which increases the effort required to keep using the tool."
+          "point": "Kimai keeps the interface closer to a fixed product path",
+          "why_it_matters": "Some teams prefer fewer customization decisions if the default workflow is already good enough."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where ATracker wins",
       "bullets": [
         {
-          "point": "ATracker works as a mobile app where you can create tasks and start tracking immediately.",
-          "why_it_matters": "You can begin tracking study sessions in seconds without setup, which fits short-term use."
+          "point": "ATracker gives you control over where the tracker runs",
+          "why_it_matters": "ATracker lets you choose the server, environment, and upgrade timing instead of accepting a fixed hosted setup."
         },
         {
-          "point": "The app uses simple start and stop timers tied to named activities.",
-          "why_it_matters": "This keeps tracking easy and reduces the number of steps needed each time you log a session."
+          "point": "ATracker can be shaped around your own workflow rules",
+          "why_it_matters": "That matters when a power user wants to change fields, permissions, or extensions instead of working around product limits."
         },
         {
-          "point": "There is no requirement to manage servers, databases, or hosting environments.",
-          "why_it_matters": "You can stop using the app at any time without cleanup or maintenance, keeping switching costs low."
+          "point": "ATracker keeps data ownership and admin access in the same hands",
+          "why_it_matters": "You do not have to separate daily time tracking from the operational decisions about backups, retention, or internal access."
         }
       ]
     },
@@ -65,48 +65,48 @@
       "heading": "Where each tool breaks down",
       "items": [
         {
-          "tool": "y",
-          "fails_when": "Kimai breaks down when you need to quickly track study sessions but must first set up and maintain a server and database.",
-          "what_to_do_instead": "Use ATracker if you want a simple app that works immediately without setup."
+          "tool": "x",
+          "fails_when": "ATracker becomes the wrong fit when nobody wants server ownership, upgrades, or internal admin responsibility to become part of the tracking tool.",
+          "what_to_do_instead": "Choose Kimai if managed convenience matters more than infrastructure control."
         },
         {
-          "tool": "x",
-          "fails_when": "ATracker becomes limiting when you need advanced reporting, multi-user access, or a self-hosted system.",
-          "what_to_do_instead": "Use Kimai if you need a more structured and customizable tracking setup for long-term use."
+          "tool": "y",
+          "fails_when": "Kimai breaks down when the team needs to decide where the tracker runs, how it is customized, or how the data is governed beyond vendor defaults.",
+          "what_to_do_instead": "Choose ATracker when deployment control and deeper system ownership are real requirements."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This could flip if you are running a long-term project or managing a group where you need structured reporting and full control over the system. In that case, Kimai may be worth the setup effort."
+      "content": "This can flip if the tracker is not part of your internal infrastructure strategy and nobody wants to own deployment or maintenance. In that narrower case, Kimai can be the better fit because managed convenience is the real constraint."
     },
     {
       "type": "quick_rules",
       "heading": "Quick rules",
       "rules": [
-        "Pick ATracker if you want a quick and simple way to track study sessions.",
-        "Pick Kimai if you need a self-hosted system with more control.",
-        "Avoid Kimai if you do not want to set up or maintain a server."
+        "Choose ATracker if hosting control is part of the requirement.",
+        "Choose Kimai if you want the tracker ready without owning deployment.",
+        "Avoid Kimai when vendor defaults are the exact limit you are trying to escape."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is ATracker better for students?",
-      "a": "Because it lets you start tracking immediately without setup, making it ideal for short-term use."
+      "q": "Why does ATracker win on more than hosting?",
+      "a": "ATracker changes not only where the tracker runs, but also how much control you keep over customization, upgrades, and data handling."
     },
     {
-      "q": "What makes Kimai harder to use?",
-      "a": "It requires setting up and maintaining a server and database, which adds complexity and effort."
+      "q": "What is the real cost of choosing ATracker?",
+      "a": "You are taking on more operational responsibility, so the tradeoff is control versus convenience rather than features versus no features."
     },
     {
-      "q": "Is Kimai a bad option?",
-      "a": "No. It is useful for long-term or team use cases where you need more control and structure."
+      "q": "When is Kimai still the better choice?",
+      "a": "Kimai is still better when nobody wants to own the environment and managed simplicity is genuinely the safer option."
     },
     {
-      "q": "When should I choose Kimai instead?",
-      "a": "Choose Kimai when you need advanced features and are willing to manage a self-hosted setup."
+      "q": "What usually forces the move away from Kimai?",
+      "a": "It is usually when fixed vendor boundaries start blocking deployment, admin, or customization decisions that the team actually needs to make."
     }
   ],
   "related_pages": []

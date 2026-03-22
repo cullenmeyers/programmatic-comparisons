@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Keeper fits non-technical users",
-      "content": "The user wants passwords to sync automatically across phone and laptop without touching vault files. Keeper stores the vault inside the account and synchronizes credentials through the service whenever they change. Signing into Keeper on another device automatically restores the same password vault. This removes the need to copy encrypted database files or configure storage services."
+      "heading": "Why Keeper fits Non-technical users better",
+      "content": "Keeper fits this non-technical user because the winning mechanism reduces friction across setup, daily password use, and long-term vault management instead of solving only one narrow problem."
     },
     {
       "type": "y_wins",
       "heading": "Where Keeper wins",
       "bullets": [
         {
-          "point": "Keeper synchronizes passwords automatically through the account vault.",
-          "why_it_matters": "Passwords appear on all devices without transferring encrypted files."
+          "point": "Keeper handles the winning mechanism more directly",
+          "why_it_matters": "The user spends less time compensating for the exact friction named in the decision rule."
         },
         {
-          "point": "Keeper restores the vault automatically after signing into the account on a new device.",
-          "why_it_matters": "Users recover their entire password collection without importing files."
+          "point": "Keeper keeps daily password use smoother",
+          "why_it_matters": "The practical workflow stays shorter and easier to repeat."
         },
         {
-          "point": "Keeper manages encryption and storage inside the service automatically.",
-          "why_it_matters": "Users avoid handling vault files or configuring synchronization tools."
+          "point": "Keeper reduces the hidden cost of managing credentials over time",
+          "why_it_matters": "That matters when the password manager is supposed to remove friction, not create a second system to babysit."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Buttercup wins",
       "bullets": [
         {
-          "point": "Buttercup stores passwords inside a local encrypted vault file.",
-          "why_it_matters": "Users keep full control over where the password database is stored."
+          "point": "Buttercup can still win in a narrower workflow",
+          "why_it_matters": "The losing tool may be better when the deeper or smoother mechanism is not doing much real work yet."
         },
         {
-          "point": "Buttercup works offline once the vault file exists on the device.",
-          "why_it_matters": "Passwords remain accessible without internet connectivity."
+          "point": "Buttercup often asks for a different tradeoff rather than offering nothing",
+          "why_it_matters": "That matters when the user values control and convenience differently than this verdict assumes."
         },
         {
-          "point": "Buttercup allows the vault file to be stored in user controlled storage locations.",
-          "why_it_matters": "Advanced users can integrate the vault into custom backup systems."
+          "point": "Buttercup can be the better fit when complexity is intentional",
+          "why_it_matters": "The friction is only a dealbreaker when it gets in the way of the job this persona actually has."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "The user refuses to store passwords inside a hosted vault service.",
-          "what_to_do_instead": "Use Buttercup where passwords are stored in a local encrypted vault file."
+          "fails_when": "Keeper becomes heavier than necessary when the winning mechanism is not doing enough real work yet.",
+          "what_to_do_instead": "Choose Buttercup if the simpler tradeoff still fits."
         },
         {
           "tool": "x",
-          "fails_when": "The user wants automatic syncing across devices because Buttercup requires manually syncing encrypted vault files.",
-          "what_to_do_instead": "Use Keeper where the vault synchronizes automatically through the account."
+          "fails_when": "Buttercup breaks down when the exact friction named in the rule keeps recurring during normal password use.",
+          "what_to_do_instead": "Choose Keeper once that mechanism matters daily."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user prefers storing the vault locally and is comfortable managing encrypted database files, Buttercup may become the better option."
+      "content": "This can flip if the tradeoff on the losing side starts doing more real work than the mechanism that currently wins. Then Buttercup may be worth the switch."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Keeper if you want passwords to sync automatically across phone and laptop.",
-        "Pick Keeper if you do not want to manage encrypted vault files.",
-        "Pick Buttercup if you prefer storing the password vault locally."
+        "Choose Keeper when the winning mechanism is already affecting daily password use.",
+        "Choose Buttercup when its tradeoff still better matches the job you actually have.",
+        "Avoid Buttercup once the same friction keeps showing up in setup and routine use."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Keeper easier for non-technical users?",
-      "a": "Keeper automatically synchronizes passwords across devices through the account vault."
+      "q": "Why does Keeper fit the rule better?",
+      "a": "Keeper turns the mechanism in the decision rule into gains across setup, daily use, and long-term vault management instead of only one isolated feature."
     },
     {
-      "q": "Does Buttercup sync passwords automatically?",
-      "a": "No. Buttercup stores passwords in encrypted vault files that must be synchronized manually."
+      "q": "When is Buttercup still reasonable?",
+      "a": "Buttercup is still reasonable when its tradeoff better matches the real password workflow."
     },
     {
-      "q": "Can Buttercup work offline?",
-      "a": "Yes. Buttercup opens the encrypted vault file locally and does not require internet access."
+      "q": "What usually signals it is time to switch?",
+      "a": "The same friction starts appearing during ordinary sign-ins and vault maintenance instead of only in edge cases."
     },
     {
-      "q": "Who should choose Buttercup instead?",
-      "a": "Users who prefer storing passwords locally and managing vault files themselves may prefer Buttercup."
+      "q": "Is this verdict only about simplicity?",
+      "a": "No. It is about where the ongoing operating cost of the password manager really lands."
     }
   ],
   "related_pages": [

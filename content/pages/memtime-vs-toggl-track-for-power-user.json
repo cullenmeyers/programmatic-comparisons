@@ -22,23 +22,23 @@
     {
       "type": "persona_fit",
       "heading": "Why Memtime fits Power users better",
-      "content": "This power user wants tracking to happen automatically without relying on memory or timers. Memtime fits because it records all activity in the background and builds a timeline you can review later. That ensures nothing is missed and removes the need for manual input."
+      "content": "Memtime fits this power user because the capture model changes more than one part of the workflow. It affects how often you have to interrupt yourself, how much reconstruction happens later, and how much trust you can place in the recorded timeline. That is why the choice here is not just auto versus manual in theory, but what kind of attention the tracker demands every day."
     },
     {
       "type": "x_wins",
       "heading": "Where Memtime wins",
       "bullets": [
         {
-          "point": "Memtime automatically records app usage, documents, and activity without requiring manual timers.",
-          "why_it_matters": "This captures all work continuously, eliminating gaps caused by forgetting to start or stop tracking."
+          "point": "Memtime reduces missed time during fast context switching",
+          "why_it_matters": "Automatic or lower-friction capture helps when work moves too quickly for repeated start-stop decisions."
         },
         {
-          "point": "It builds a timeline of activity that you can review and assign to tasks after the fact.",
-          "why_it_matters": "This lets you organize time later without interrupting your workflow in real time."
+          "point": "Memtime keeps logging from interrupting the task itself",
+          "why_it_matters": "Less timer babysitting means fewer detours through controls before you can get back to the actual work."
         },
         {
-          "point": "Tracking runs entirely in the background without user-triggered actions.",
-          "why_it_matters": "This removes reliance on manual input, which is critical for complete and accurate tracking."
+          "point": "Memtime makes review easier after the work is done",
+          "why_it_matters": "Captured context gives you something concrete to confirm later instead of rebuilding the day from memory."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where Toggl Track wins",
       "bullets": [
         {
-          "point": "Toggl Track uses manual start and stop timers for each task.",
-          "why_it_matters": "This gives control over what is tracked, but depends on remembering to use the timer."
+          "point": "Toggl Track gives you tighter manual control over what counts",
+          "why_it_matters": "Some users prefer intentional timers because every entry is explicit from the start."
         },
         {
-          "point": "Time entries are created in real time as you track tasks.",
-          "why_it_matters": "This keeps records simple, but interrupts workflow when switching tasks frequently."
+          "point": "Toggl Track can feel cleaner when the work is already well-defined",
+          "why_it_matters": "If task boundaries are obvious, a simple manual timer may be enough without extra memory layers."
         },
         {
-          "point": "Toggl Track works across multiple platforms with a consistent timer-based system.",
-          "why_it_matters": "This is useful for cross-device use, but does not provide automatic activity capture."
+          "point": "Toggl Track keeps the record easier to explain to someone else",
+          "why_it_matters": "Manually started entries can be simpler to audit when the team wants a clear statement of intent for each block."
         }
       ]
     },
@@ -66,47 +66,47 @@
       "items": [
         {
           "tool": "x",
-          "fails_when": "Memtime becomes limiting when you want strict real-time control over exactly what gets tracked instead of reviewing activity later.",
-          "what_to_do_instead": "Use Toggl Track if you prefer manual control with immediate time entry."
+          "fails_when": "Memtime becomes less compelling when the work is already neatly bounded and the user genuinely prefers to declare every start and stop by hand.",
+          "what_to_do_instead": "Choose Toggl Track if explicit timer control is more important than reducing capture friction."
         },
         {
           "tool": "y",
-          "fails_when": "Toggl Track breaks down when you forget to start or stop timers, leading to missing or incomplete time data.",
-          "what_to_do_instead": "Use Memtime if you want automatic tracking that captures everything without manual input."
+          "fails_when": "Toggl Track breaks down when repeated timer starts, missed switches, or manual reconstruction keep eating attention during a fast day.",
+          "what_to_do_instead": "Choose Memtime when lower-friction capture is the only way the record will stay complete."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This could flip if you want full control over exactly what gets tracked in real time and prefer not to review activity afterward. In that case, Toggl Track may be a better fit."
+      "content": "This can flip if the work is highly structured and the user actually prefers to declare each session manually. Then Toggl Track may feel clearer without becoming burdensome."
     },
     {
       "type": "quick_rules",
       "heading": "Quick rules",
       "rules": [
-        "Pick Memtime if you want fully automatic tracking with no manual timers.",
-        "Pick Toggl Track if you prefer manual control over time entries.",
-        "Avoid Toggl Track if you want to eliminate timer management completely."
+        "Choose Memtime if manual timers are causing missed or incomplete records.",
+        "Choose Toggl Track if explicit start-stop control is genuinely part of the appeal.",
+        "Avoid Toggl Track when timer babysitting keeps interrupting the work."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Memtime better for automation?",
-      "a": "Because it records activity automatically in the background without requiring manual timers."
+      "q": "Why does Memtime beat manual timers here?",
+      "a": "Because the benefit is not only automation. It also reduces interruptions, recovers missed time, and makes later review less dependent on memory."
     },
     {
-      "q": "What limits Toggl Track for power users?",
-      "a": "It depends on manually starting and stopping timers, which can lead to missing or incomplete data."
+      "q": "When is Toggl Track still the right choice?",
+      "a": "Toggl Track is still right when the work is clearly bounded and the user genuinely prefers explicit control over every entry."
     },
     {
-      "q": "Is Toggl Track still useful?",
-      "a": "Yes. It is useful when you want control over what gets tracked in real time."
+      "q": "What usually pushes people away from Toggl Track?",
+      "a": "Repeated missed starts, forgotten switches, and the feeling that logging time is interrupting the very work being tracked."
     },
     {
-      "q": "When should I choose Toggl Track instead?",
-      "a": "Choose Toggl Track when you prefer manually controlling your time entries and do not need automatic tracking."
+      "q": "Is Memtime only about speed?",
+      "a": "No. It also changes data completeness and how much mental effort the tracker demands during a busy day."
     }
   ],
   "related_pages": [

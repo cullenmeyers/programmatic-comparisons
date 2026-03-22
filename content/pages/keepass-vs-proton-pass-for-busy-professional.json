@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Proton Pass fits busy professionals",
-      "content": "The user logs into dozens of websites daily and wants passwords to autofill instantly across devices. Proton Pass connects the vault to the user account and automatically synchronizes credentials between browsers and devices. When logging into a site, the browser extension fills the password immediately. This removes the need to move vault files or manually copy credentials between machines."
+      "heading": "Why Proton Pass fits Busy professionals better",
+      "content": "Proton Pass fits this busy professional because the same convenience mechanism shows up all day long. It changes how fast logins happen, how often the user has to think about sync or retrieval steps, and how much vault maintenance leaks into normal work. Proton Pass wins by keeping password use closer to the moment of login."
     },
     {
       "type": "y_wins",
       "heading": "Where Proton Pass wins",
       "bullets": [
         {
-          "point": "Proton Pass automatically synchronizes the password vault across devices through the account.",
-          "why_it_matters": "Busy professionals can open a laptop or phone and log in immediately without transferring vault files."
+          "point": "Proton Pass shortens the path from opening a site to logging in",
+          "why_it_matters": "Automatic sync and autofill remove the extra steps that slow sign-ins across devices and browsers."
         },
         {
-          "point": "Proton Pass browser extensions autofill login forms when visiting saved websites.",
-          "why_it_matters": "Users can sign in with a single click instead of copying and pasting passwords."
+          "point": "Proton Pass keeps daily password use more predictable",
+          "why_it_matters": "The user does not have to remember file locations, sync routines, or separate retrieval workflows just to access an account."
         },
         {
-          "point": "Proton Pass updates credentials instantly when a password is changed.",
-          "why_it_matters": "The new password becomes available across all devices without manual synchronization."
+          "point": "Proton Pass lowers the maintenance burden around the vault",
+          "why_it_matters": "The system stays usable without constant copying, storage setup, or manual credential handling."
         }
       ]
     },
@@ -62,51 +62,51 @@
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "The user wants to keep passwords completely offline without using an online account for synchronization.",
-          "what_to_do_instead": "Use KeePass where the vault exists as a local encrypted file."
+          "fails_when": "Proton Pass becomes the wrong fit when the user intentionally wants a more self-managed vault even if that costs time at login.",
+          "what_to_do_instead": "Choose KeePass if local control matters more than speed."
         },
         {
           "tool": "x",
-          "fails_when": "The user switches between devices frequently because KeePass requires manually syncing the database file before passwords appear on another device.",
-          "what_to_do_instead": "Use Proton Pass where credentials sync automatically across devices."
+          "fails_when": "KeePass breaks down when manual files, sync steps, or non-autofill workflows keep showing up during ordinary sign-ins.",
+          "what_to_do_instead": "Choose Proton Pass when fast retrieval and lower maintenance matter more."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user prefers keeping all passwords in a local encrypted file and is comfortable managing vault synchronization manually, KeePass may become the better option."
+      "content": "This can flip if the user is willing to accept slower sign-ins in exchange for a more self-managed or local-first vault model. Then KeePass may be worth it."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Proton Pass if you want passwords to autofill instantly across multiple devices.",
-        "Pick Proton Pass if you log into many accounts throughout the day.",
-        "Pick KeePass if you prefer storing passwords only in a local encrypted file."
+        "Choose Proton Pass if passwords need to sync and autofill with fewer manual steps.",
+        "Choose KeePass if you are willing to trade speed for more local control.",
+        "Avoid KeePass when vault-file handling or manual retrieval keeps slowing sign-ins."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Proton Pass faster for daily logins?",
-      "a": "Proton Pass automatically synchronizes the vault and autofills login forms through browser extensions."
+      "q": "Why does convenience change the verdict so much?",
+      "a": "Because the same sync and autofill mechanism affects login speed, device switching, and how much vault maintenance leaks into normal work."
     },
     {
-      "q": "Does KeePass automatically sync passwords across devices?",
-      "a": "No. KeePass stores passwords in a local database file that must be synchronized manually."
+      "q": "When is KeePass still reasonable?",
+      "a": "KeePass is still reasonable when the user intentionally prefers a more self-managed or local-first model."
     },
     {
-      "q": "Can Proton Pass autofill passwords in a browser?",
-      "a": "Yes. The browser extension detects login forms and fills saved credentials automatically."
+      "q": "What usually makes KeePass feel too heavy?",
+      "a": "Manual files, sync steps, or slower retrieval keep showing up in ordinary sign-ins."
     },
     {
-      "q": "Who should choose KeePass instead of Proton Pass?",
-      "a": "Users who want to store passwords locally and manage synchronization themselves may prefer KeePass."
+      "q": "Is this only about speed?",
+      "a": "No. It is also about reducing repeated maintenance and friction."
     }
   ],
   "related_pages": [

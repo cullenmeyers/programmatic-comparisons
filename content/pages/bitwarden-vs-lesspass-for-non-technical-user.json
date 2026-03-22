@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Bitwarden fits non-technical users",
-      "content": "The user wants passwords saved automatically and filled when logging into websites. Bitwarden provides a browser extension that detects login forms and prompts the user to save the credential as a vault entry. On future visits, the extension can fill the saved username and password automatically. This removes the need to remember site inputs or regenerate passwords manually."
+      "heading": "Why Bitwarden fits Non-technical users better",
+      "content": "Bitwarden fits this non-technical user because the core issue is whether passwords are reconstructed or simply retrieved. That changes the first-time setup, how familiar daily sign-ins feel, and how much credential context can stay attached to each account over time. Bitwarden wins by keeping login behavior closer to saved entries and autofill."
     },
     {
       "type": "x_wins",
       "heading": "Where Bitwarden wins",
       "bullets": [
         {
-          "point": "Bitwarden browser extensions capture login credentials when a user signs into a website.",
-          "why_it_matters": "Passwords are saved automatically without manual recreation."
+          "point": "Bitwarden turns logins into retrieval instead of reconstruction",
+          "why_it_matters": "Saved entries and autofill remove the need to rebuild passwords from site inputs every time."
         },
         {
-          "point": "Bitwarden fills login forms directly from saved vault entries.",
-          "why_it_matters": "Users sign into websites quickly without typing or regenerating credentials."
+          "point": "Bitwarden keeps everyday sign-ins more familiar",
+          "why_it_matters": "The workflow matches what most users expect from a password manager across browsers and devices."
         },
         {
-          "point": "Bitwarden stores credentials in encrypted vault entries that remain accessible later.",
-          "why_it_matters": "Users retrieve saved logins instantly instead of recalculating passwords."
+          "point": "Bitwarden stores more context with each credential",
+          "why_it_matters": "Notes, usernames, and updated entries can live with the login instead of being recreated from memory."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where LessPass wins",
       "bullets": [
         {
-          "point": "LessPass generates passwords deterministically from a master secret and site name.",
-          "why_it_matters": "Users do not need to maintain a stored password database."
+          "point": "LessPass can still be better when the user wants to avoid a stored vault database entirely",
+          "why_it_matters": "A generated model removes storage and sync responsibilities for people who specifically dislike maintaining a vault."
         },
         {
-          "point": "LessPass recreates the same password each time the same inputs are used.",
-          "why_it_matters": "Credentials can be derived without retrieving entries from a vault."
+          "point": "LessPass reduces the amount of saved credential material",
+          "why_it_matters": "That can appeal when the user prefers deriving passwords over storing a larger database."
         },
         {
-          "point": "LessPass avoids storing encrypted password collections on disk.",
-          "why_it_matters": "Users do not need to maintain vault backups or synchronization."
+          "point": "LessPass can travel more lightly between environments",
+          "why_it_matters": "The tradeoff may be worth it when portability of the model matters more than familiar autofill behavior."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The user refuses to store any password database and prefers deterministic password generation.",
-          "what_to_do_instead": "Use LessPass where passwords are generated from inputs instead of stored."
+          "fails_when": "Bitwarden becomes the wrong fit when the user specifically wants to avoid storing a vault database and is comfortable generating passwords from a repeatable formula instead.",
+          "what_to_do_instead": "Choose LessPass if a generated model is the actual goal."
         },
         {
           "tool": "y",
-          "fails_when": "The user expects passwords to be saved and filled automatically because LessPass requires regenerating passwords from site inputs.",
-          "what_to_do_instead": "Use Bitwarden where credentials are stored and autofilled from vault entries."
+          "fails_when": "LessPass breaks down when daily sign-ins keep depending on reconstructing inputs instead of retrieving a saved login entry.",
+          "what_to_do_instead": "Choose Bitwarden when saved credentials and autofill matter more."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user refuses to store any password database and prefers deriving passwords from a master secret instead of saving them, LessPass may become the better option."
+      "content": "This can flip if the user decides avoiding a stored vault database matters more than familiar saved-entry behavior. Then LessPass may be the better choice."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Bitwarden if you want passwords automatically saved and autofilled.",
-        "Pick Bitwarden if you prefer retrieving saved logins instead of regenerating them.",
-        "Pick LessPass if you want passwords generated deterministically without a vault."
+        "Choose Bitwarden if passwords should be saved and retrieved instead of regenerated.",
+        "Choose LessPass if avoiding a stored vault matters more than familiar autofill behavior.",
+        "Avoid LessPass when reconstructing credentials keeps slowing or confusing sign-ins."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Bitwarden easier for non-technical users?",
-      "a": "Bitwarden automatically saves and fills login credentials through its browser extensions."
+      "q": "Why does Bitwarden fit better for everyday sign-ins?",
+      "a": "Bitwarden saves and retrieves credentials directly, which is easier to repeat than rebuilding passwords from remembered inputs each time."
     },
     {
-      "q": "Does LessPass store passwords in a vault?",
-      "a": "No. LessPass generates passwords from inputs instead of storing them."
+      "q": "When is LessPass still the better fit?",
+      "a": "LessPass is still the better fit when the user specifically wants to avoid maintaining any stored vault database."
     },
     {
-      "q": "Can Bitwarden autofill login forms?",
-      "a": "Yes. Bitwarden browser extensions can fill login forms using saved vault entries."
+      "q": "What usually makes LessPass fail first?",
+      "a": "The user expects a conventional password manager that remembers and fills logins instead of regenerating them."
     },
     {
-      "q": "Who should choose LessPass instead?",
-      "a": "Users who prefer generating passwords deterministically without maintaining a vault may prefer LessPass."
+      "q": "Is Bitwarden only about convenience?",
+      "a": "No. It also keeps more login context attached to each credential over time."
     }
   ],
   "related_pages": [

@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why KeePassDX fits power users",
-      "content": "The user maintains sensitive credentials on an Android device that may not always be connected to the internet. KeePassDX stores passwords inside a local encrypted database file that opens directly on the device. The vault can be backed up or transferred manually if needed. This allows full access to credentials even when the device remains offline."
+      "heading": "Why KeePassDX fits Power users better",
+      "content": "KeePassDX fits this power user because storage control changes more than where the encrypted vault sits. It affects whether the user needs a provider account, how much trust they place in a hosted service during daily use, and how flexibly they can shape backup and portability decisions later. KeePassDX wins by keeping that control closer to the user."
     },
     {
       "type": "x_wins",
       "heading": "Where KeePassDX wins",
       "bullets": [
         {
-          "point": "KeePassDX opens the encrypted KDBX vault file directly from local device storage.",
-          "why_it_matters": "Users can access passwords even when the device has no internet connection."
+          "point": "KeePassDX keeps the vault under local or user-chosen control",
+          "why_it_matters": "Passwords are not forced into a vendor-hosted account model before the user has decided they want that tradeoff."
         },
         {
-          "point": "KeePassDX stores credentials entirely inside a local encrypted database file.",
-          "why_it_matters": "Sensitive credentials remain accessible without logging into external services."
+          "point": "KeePassDX reduces dependency on a provider account during daily use",
+          "why_it_matters": "The password workflow stays closer to the device or storage path the user already trusts."
         },
         {
-          "point": "KeePassDX allows the vault file to be copied or stored anywhere the user chooses.",
-          "why_it_matters": "Power users can manage backups or secure storage independently."
+          "point": "KeePassDX leaves more room to shape backup and storage choices",
+          "why_it_matters": "That matters when portability and control are part of the reason for choosing the tool."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where pCloud Pass wins",
       "bullets": [
         {
-          "point": "pCloud Pass synchronizes passwords automatically across devices through the account vault.",
-          "why_it_matters": "Users can access the same credentials on multiple devices without transferring files."
+          "point": "pCloud Pass can still be easier when automatic sync matters more than storage sovereignty",
+          "why_it_matters": "A vendor account can reduce setup and daily handling for users who do not want to manage location or backup strategy."
         },
         {
-          "point": "pCloud Pass restores the vault automatically after signing into the account on a new device.",
-          "why_it_matters": "Passwords appear immediately without importing database files."
+          "point": "pCloud Pass often gives a smoother login experience out of the box",
+          "why_it_matters": "Hosted accounts usually pair naturally with browser extensions and cross-device access."
         },
         {
-          "point": "pCloud Pass manages encryption and vault storage inside the hosted service.",
-          "why_it_matters": "Users avoid managing encrypted vault files themselves."
+          "point": "pCloud Pass asks for less manual thinking about where the vault lives",
+          "why_it_matters": "That can be the better tradeoff when convenience beats local control."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The user wants passwords automatically synchronized across devices without managing vault files.",
-          "what_to_do_instead": "Use pCloud Pass where the vault synchronizes automatically through the account."
+          "fails_when": "KeePassDX becomes the wrong fit when the user would rather offload storage and sync decisions to a hosted account model.",
+          "what_to_do_instead": "Choose pCloud Pass if convenience now matters more than vault ownership."
         },
         {
           "tool": "y",
-          "fails_when": "The device operates offline because pCloud Pass requires logging into an online account to access the vault.",
-          "what_to_do_instead": "Use KeePassDX where the encrypted vault file opens locally without internet access."
+          "fails_when": "pCloud Pass breaks down when the user does not want credentials forced into a vendor-hosted account or cloud vault.",
+          "what_to_do_instead": "Choose KeePassDX when local control is the non-negotiable boundary."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user wants passwords automatically synchronized across multiple devices and does not require offline access, pCloud Pass may become the better option."
+      "content": "This can flip if the user decides automatic hosted sync is worth more than direct control over vault location and storage choices. Then pCloud Pass may make more sense."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick KeePassDX if you need a password vault that works completely offline.",
-        "Pick KeePassDX if you want the vault stored locally as an encrypted database file.",
-        "Pick pCloud Pass if you want passwords automatically synchronized across devices."
+        "Choose KeePassDX if vault ownership matters more than hosted convenience.",
+        "Choose pCloud Pass if you want sync and account management handled for you.",
+        "Avoid pCloud Pass when provider-controlled vault storage is the exact dealbreaker."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do power users choose KeePassDX for offline vaults?",
-      "a": "KeePassDX opens the encrypted vault file locally without requiring internet access."
+      "q": "Why does local control matter so much here?",
+      "a": "Because it affects trust boundary, daily dependence on a provider account, and how flexibly the vault can be backed up or moved later."
     },
     {
-      "q": "Does pCloud Pass work offline?",
-      "a": "Accessing the vault requires logging into an account service, so internet connectivity is typically needed."
+      "q": "When is pCloud Pass still worth choosing?",
+      "a": "pCloud Pass is still worth choosing when automatic hosted sync is more valuable than storage sovereignty."
     },
     {
-      "q": "Can KeePassDX store passwords locally?",
-      "a": "Yes. KeePassDX stores credentials inside a local encrypted database file on the device."
+      "q": "What usually makes pCloud Pass the wrong fit?",
+      "a": "The user does not want the vault tied to a vendor-hosted account or cloud model in the first place."
     },
     {
-      "q": "Who should choose pCloud Pass instead?",
-      "a": "Users who want passwords synchronized automatically across devices may prefer pCloud Pass."
+      "q": "Does KeePassDX always mean more work?",
+      "a": "Often some, but that tradeoff can be the point when local control is the priority."
     }
   ],
   "related_pages": [

@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why pCloud Pass fits beginners",
-      "content": "The user installed a password manager for the first time and expects passwords to appear automatically on both phone and laptop. pCloud Pass stores the vault inside the account and synchronizes it whenever passwords are added or changed. Signing into the account on another device immediately loads the same vault. This removes the need to move database files or configure synchronization tools."
+      "heading": "Why pCloud Pass fits Beginners better",
+      "content": "pCloud Pass fits this beginner because the same convenience mechanism shows up all day long. It changes how fast logins happen, how often the user has to think about sync or retrieval steps, and how much vault maintenance leaks into normal work. pCloud Pass wins by keeping password use closer to the moment of login."
     },
     {
       "type": "y_wins",
       "heading": "Where pCloud Pass wins",
       "bullets": [
         {
-          "point": "pCloud Pass synchronizes passwords automatically through the account vault.",
-          "why_it_matters": "Passwords appear on every device without copying database files."
+          "point": "pCloud Pass shortens the path from opening a site to logging in",
+          "why_it_matters": "Automatic sync and autofill remove the extra steps that slow sign-ins across devices and browsers."
         },
         {
-          "point": "pCloud Pass restores the vault immediately after signing into the account on another device.",
-          "why_it_matters": "Beginners can access the same credentials without importing or transferring files."
+          "point": "pCloud Pass keeps daily password use more predictable",
+          "why_it_matters": "The user does not have to remember file locations, sync routines, or separate retrieval workflows just to access an account."
         },
         {
-          "point": "pCloud Pass manages vault storage and synchronization inside the service.",
-          "why_it_matters": "Users avoid extra setup steps that often cause confusion."
+          "point": "pCloud Pass lowers the maintenance burden around the vault",
+          "why_it_matters": "The system stays usable without constant copying, storage setup, or manual credential handling."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where KeePass wins",
       "bullets": [
         {
-          "point": "KeePass stores passwords inside a local encrypted database file.",
-          "why_it_matters": "Users maintain full control over where the vault file is stored."
+          "point": "KeePass can still appeal to users who want tighter local control",
+          "why_it_matters": "Manual files, offline storage, or custom sync paths may be worth the extra steps for people who care more about control than speed."
         },
         {
-          "point": "KeePass works completely offline once the database file exists.",
-          "why_it_matters": "Passwords remain accessible without an internet connection."
+          "point": "KeePass can fit workflows that avoid hosted accounts",
+          "why_it_matters": "The extra friction is less painful when the user intentionally wants a more self-managed setup."
         },
         {
-          "point": "KeePass allows the encrypted vault file to be moved between devices manually.",
-          "why_it_matters": "Advanced users can integrate the vault into custom backup workflows."
+          "point": "KeePass leaves more room for custom storage choices",
+          "why_it_matters": "That matters when flexibility of location matters more than instant autofill everywhere."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "y",
-          "fails_when": "The user refuses to store passwords inside a hosted vault service.",
-          "what_to_do_instead": "Use KeePass where passwords remain inside a local encrypted database file."
+          "fails_when": "pCloud Pass becomes the wrong fit when the user intentionally wants a more self-managed vault even if that costs time at login.",
+          "what_to_do_instead": "Choose KeePass if local control matters more than speed."
         },
         {
           "tool": "x",
-          "fails_when": "The user expects passwords to sync automatically because KeePass requires copying the encrypted vault database file between devices.",
-          "what_to_do_instead": "Use pCloud Pass where the vault synchronizes automatically through the account."
+          "fails_when": "KeePass breaks down when manual files, sync steps, or non-autofill workflows keep showing up during ordinary sign-ins.",
+          "what_to_do_instead": "Choose pCloud Pass when fast retrieval and lower maintenance matter more."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user prefers keeping passwords only in a local encrypted database file and is comfortable moving that file between devices, KeePass may become the better option."
+      "content": "This can flip if the user is willing to accept slower sign-ins in exchange for a more self-managed or local-first vault model. Then KeePass may be worth it."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick pCloud Pass if you want passwords to sync automatically across devices.",
-        "Pick pCloud Pass if you do not want to move vault files between phone and laptop.",
-        "Pick KeePass if you want full control over a local encrypted password database."
+        "Choose pCloud Pass if passwords need to sync and autofill with fewer manual steps.",
+        "Choose KeePass if you are willing to trade speed for more local control.",
+        "Avoid KeePass when vault-file handling or manual retrieval keeps slowing sign-ins."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is pCloud Pass easier for beginners?",
-      "a": "pCloud Pass automatically synchronizes the vault across devices without requiring file transfers."
+      "q": "Why does convenience change the verdict so much?",
+      "a": "Because the same sync and autofill mechanism affects login speed, device switching, and how much vault maintenance leaks into normal work."
     },
     {
-      "q": "Does KeePass sync passwords automatically?",
-      "a": "No. KeePass stores passwords in a local encrypted database file that must be copied between devices."
+      "q": "When is KeePass still reasonable?",
+      "a": "KeePass is still reasonable when the user intentionally prefers a more self-managed or local-first model."
     },
     {
-      "q": "Can KeePass work without internet access?",
-      "a": "Yes. KeePass opens the encrypted database file locally and does not require an internet connection."
+      "q": "What usually makes KeePass feel too heavy?",
+      "a": "Manual files, sync steps, or slower retrieval keep showing up in ordinary sign-ins."
     },
     {
-      "q": "Who should choose KeePass instead?",
-      "a": "Users who prefer managing their own encrypted database file locally may prefer KeePass."
+      "q": "Is this only about speed?",
+      "a": "No. It is also about reducing repeated maintenance and friction."
     }
   ],
   "related_pages": [

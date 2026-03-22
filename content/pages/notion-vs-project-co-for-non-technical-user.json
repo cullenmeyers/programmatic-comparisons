@@ -5,108 +5,108 @@
   "constraintUiName": "Hard to mess up",
   "title": "Notion vs Project.co for Non-technical users",
   "slug": "notion-vs-project-co-for-non-technical-user",
-  "meta_description": "Compare Notion vs Project.co for non technical users managing client projects. See which tool avoids building task systems from blank pages.",
+  "meta_description": "Compare Notion vs Project.co for non technical users managing client projects. See which tool avoids building task systems from blank pages with safer defaults.",
   "persona": "Non-technical user",
-  "constraint_lens": "Non-technical users need tools with ready project structures so they can manage work without designing systems or worrying about breaking setups.",
+  "constraint_lens": "You need project space to be ready when you open it, not something you have to design correctly before real work can begin.",
   "one_second_verdict": {
     "winner_label": "Project.co",
-    "summary": "Best for non-technical users who want ready project spaces for client work without building systems from scratch.",
-    "reason": "Notion fails first because projects often require creating custom databases and page structures before tasks can be tracked."
+    "summary": "Best for non-technical users who want client project space to be ready on day one.",
+    "reason": "Notion fails first because the user has to design the workspace before the project can safely start."
   },
   "verdict": {
     "winner": "y",
-    "summary": "Project.co is the safer choice for non-technical users coordinating projects with clients. Each project starts with structured areas for tasks, files, notes, and discussions so work can begin immediately. Notion often starts from blank pages where users must build task databases, properties, and views before tracking projects. If managing projects requires building task systems from blank pages and custom databases before tracking work, Notion fails first.",
+    "summary": "Project.co is safer because the workspace starts in a usable state instead of asking the user to design the system first. The real boundary is whether the team needs a ready-made place for client tasks, files, and discussion or wants full freedom to build its own structure. Notion becomes better only when someone is comfortable owning that setup work.",
     "decision_rule": "If managing projects requires building task systems from blank pages and custom databases before tracking work, Notion fails first."
   },
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why this comparison matters for Non-technical users",
-      "content": "This comparison matters for someone coordinating projects with clients who wants the system to already be structured. They do not want to design databases, configure properties, or decide how the project workspace should work. If the tool starts with empty pages and requires building a task system manually, it becomes easy to make mistakes or create confusing setups. Non-technical users need a project tool where the structure already exists."
-    },
-    {
-      "type": "y_wins",
-      "heading": "Where Project.co wins",
-      "bullets": [
-        {
-          "point": "Prebuilt project areas for tasks, files, and discussions",
-          "why_it_matters": "Each project workspace already includes dedicated sections for tasks, notes, and file sharing so users can start tracking work without designing the system first."
-        },
-        {
-          "point": "Task tracking designed specifically for client projects",
-          "why_it_matters": "Tasks can be added directly into the built in task area with statuses and assignments instead of creating custom databases or properties."
-        },
-        {
-          "point": "Client collaboration built into the project structure",
-          "why_it_matters": "Clients can access the project space and interact with tasks and files without needing custom page structures or shared database setups."
-        }
-      ]
+      "heading": "When the workspace needs to feel safe on day one",
+      "content": "This user wants to open a client project and feel guided, not exposed. Blank pages, custom properties, and build-it-yourself databases create too many ways to set up the space badly before any real work starts. Project.co fits because the default project shape already matches the job they are trying to do."
     },
     {
       "type": "x_wins",
       "heading": "Where Notion wins",
       "bullets": [
         {
-          "point": "Flexible page and database system",
-          "why_it_matters": "Users can create custom databases with fields, filters, and views that adapt to different project workflows."
+          "point": "Tasks can hold real project data, not just card text",
+          "why_it_matters": "Notion can store status, dates, owners, and other fields in a way that still works when the workflow gets more detailed."
         },
         {
-          "point": "Custom workspace design",
-          "why_it_matters": "Pages can be arranged and linked in many ways, allowing teams to design their own project systems."
+          "point": "The same project can be viewed differently without rebuilding it",
+          "why_it_matters": "Notion lets planners, executors, and reviewers look at the same underlying work in the format they need without maintaining parallel systems."
         },
         {
-          "point": "Multiple views for database records",
-          "why_it_matters": "Tasks stored in a database can appear as tables, boards, or calendars depending on how the workspace is configured."
+          "point": "Tasks can stay connected to related work without copy-paste",
+          "why_it_matters": "Notion links each task to the client, milestone, feature, or bug it belongs to, so context does not have to be duplicated across the workspace."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Project.co wins",
+      "bullets": [
+        {
+          "point": "Projects start with ready-made client space",
+          "why_it_matters": "Project.co gives tasks, files, and discussion a sensible default home, so the user can start safely without inventing the structure first."
+        },
+        {
+          "point": "The first task can be added without setup",
+          "why_it_matters": "Project.co lets someone capture work immediately instead of asking for workflow decisions before anything useful is saved."
+        },
+        {
+          "point": "Comments and files stay attached to the task",
+          "why_it_matters": "Project.co keeps lightweight collaboration on the work item itself, which is helpful when the team mainly needs a shared task surface."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where the fit breaks",
       "items": [
         {
           "tool": "y",
-          "fails_when": "The team wants to design a highly customized project system with unique database structures and workflow layouts.",
-          "what_to_do_instead": "Use Notion where project systems can be built from customizable pages and databases."
+          "fails_when": "Someone on the team actually wants to design the workspace and is comfortable maintaining custom structure over time.",
+          "what_to_do_instead": "Choose Notion if someone is comfortable designing the workspace and wants that flexibility more than a safer default."
         },
         {
           "tool": "x",
-          "fails_when": "A user opens the workspace and must design task databases and page structures before starting project work.",
-          "what_to_do_instead": "Use Project.co where project spaces already include built in task tracking and collaboration areas."
+          "fails_when": "The user opens a blank or highly flexible workspace and has to invent the project structure before they can safely track the first client task.",
+          "what_to_do_instead": "Choose Project.co when ready-made structure matters more than total workspace freedom."
         }
       ]
     },
     {
       "type": "edge_case",
-      "heading": "When this verdict might flip",
-      "content": "If the user is comfortable designing custom databases and wants full control over how project systems are structured, Notion may become the better option because it allows fully customizable project workspaces."
+      "heading": "When the loser can still make sense",
+      "content": "This can flip if someone on the team is comfortable building and maintaining the workspace and actually wants that flexibility. Then Notion can be the better long-term fit."
     },
     {
       "type": "quick_rules",
-      "heading": "Quick decision rules",
+      "heading": "Quick rules",
       "rules": [
-        "Choose Project.co if you want ready project spaces without building systems from scratch.",
-        "Choose Project.co if client projects should start with built in task tracking and collaboration areas.",
-        "Choose Notion if you want to design a fully customized project system using databases and pages."
+        "Choose Project.co if the workspace needs to feel ready on day one.",
+        "Choose Notion if someone wants to design and maintain the project structure.",
+        "Avoid Notion when blank setup is more likely to confuse than to help."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "What is Project.co mainly used for?",
-      "a": "Project.co is used to manage client projects with built in areas for tasks, discussions, files, and collaboration."
+      "q": "Why is Project.co safer for this persona?",
+      "a": "Project.co starts with a project shape that already makes sense, so the user does not have to design a workspace before real work begins."
     },
     {
-      "q": "Why can Notion be difficult for non-technical users?",
-      "a": "Notion often starts with blank pages where users must build task databases and workspace structure before tracking projects."
+      "q": "Can Notion get close with templates?",
+      "a": "Sometimes, but templates still assume someone is comfortable judging and maintaining the structure behind the project setup."
     },
     {
-      "q": "Can Notion manage projects?",
-      "a": "Yes. Notion can manage projects through custom databases and pages, but the system often needs to be designed first."
+      "q": "When would Notion still be worth choosing?",
+      "a": "Notion becomes attractive when someone on the team wants full control over the workspace and is willing to own that design work."
     },
     {
-      "q": "When is Notion better than Project.co?",
-      "a": "Notion is better when teams want full control to design custom project systems rather than using prebuilt project structures."
+      "q": "What is the biggest risk with Notion here?",
+      "a": "The user can end up building the project system before they understand it, which is exactly what this persona is trying to avoid."
     }
   ],
   "related_pages": []

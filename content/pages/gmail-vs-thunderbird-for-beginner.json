@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Gmail fits beginners",
-      "content": "The user wants to open a browser and start sending email without configuring mail servers or installing software. Gmail runs entirely in a web page and activates the inbox automatically once the account is created. There are no server settings to enter and no software installation required. This makes the first email experience immediate and easy for beginners."
+      "heading": "Why Gmail fits Beginners better",
+      "content": "Gmail fits this beginner because Thunderbird is the tool asking for installation and account configuration before the inbox is even ready, not Gmail. Those steps slow first use, add more setup points to maintain later, and make basic email feel more technical than it needs to be. Gmail wins by reaching useful email faster."
     },
     {
       "type": "x_wins",
       "heading": "Where Gmail wins",
       "bullets": [
         {
-          "point": "Gmail works directly in a web browser with no software installation.",
-          "why_it_matters": "Beginners can sign in and start sending messages instantly instead of downloading and setting up a separate email program."
+          "point": "Gmail gets the inbox usable without client installation and account configuration first",
+          "why_it_matters": "The user can log in and start reading mail before setup turns into a separate project."
         },
         {
-          "point": "Gmail automatically connects the inbox without requiring server settings.",
-          "why_it_matters": "The user never has to enter technical fields like IMAP or SMTP server details, which are confusing for new email users."
+          "point": "Gmail keeps routine email access on a shorter path",
+          "why_it_matters": "Daily use stays closer to opening the inbox instead of maintaining a client or account settings."
         },
         {
-          "point": "Gmail includes built in categories like Primary and Promotions that automatically organize incoming messages.",
-          "why_it_matters": "Beginners avoid creating folders or rules because the inbox sorts common message types automatically."
+          "point": "Gmail lowers the technical overhead of basic email use",
+          "why_it_matters": "That matters when configuration steps are exactly what make the tool harder to adopt."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Thunderbird wins",
       "bullets": [
         {
-          "point": "Thunderbird can manage multiple email accounts from different providers inside one desktop client.",
-          "why_it_matters": "Users who later manage several inboxes can read and reply to all messages from one application."
+          "point": "Thunderbird can still be better when the user wants a dedicated desktop workflow",
+          "why_it_matters": "Installation and setup may be worth it once local-client behavior is part of the value."
         },
         {
-          "point": "Thunderbird stores email locally on the computer instead of only in a web account.",
-          "why_it_matters": "Users can keep offline copies of messages that remain accessible even without an internet connection."
+          "point": "Thunderbird often gives more control after the client is already in place",
+          "why_it_matters": "That matters when the problem is onboarding friction, not that the desktop client has no upside."
         },
         {
-          "point": "Thunderbird supports extensions that add new features or change the interface behavior.",
-          "why_it_matters": "More advanced users can expand the email client with additional tools once their needs grow."
+          "point": "Thunderbird may suit users who prefer a traditional mail-client model",
+          "why_it_matters": "The extra setup only pays back when that client workflow is doing real work."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The user wants to manage several different email providers in one desktop workspace or customize the email client with extensions.",
-          "what_to_do_instead": "Use Thunderbird where multiple accounts and extensions can be managed inside a local client."
+          "fails_when": "Gmail becomes too limited when the user really wants a dedicated desktop workflow with the benefits of a local client.",
+          "what_to_do_instead": "Choose Thunderbird if the client model is now doing real work."
         },
         {
           "tool": "y",
-          "fails_when": "The user expects email to work instantly because Thunderbird requires installing the application and configuring account settings before messages appear.",
-          "what_to_do_instead": "Use Gmail where email works immediately inside a browser after signing in."
+          "fails_when": "Thunderbird breaks down when installation and account setup keep delaying basic email access.",
+          "what_to_do_instead": "Choose Gmail when getting to a usable inbox quickly matters more."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user already understands email server settings and wants to combine several email accounts into a single desktop inbox, Thunderbird may become the better choice."
+      "content": "This can flip if the user decides a dedicated desktop client is worth the setup cost because the local workflow now matters more. Then Thunderbird may be the better fit."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick Gmail if you want to start sending email immediately in a browser.",
-        "Pick Gmail if you do not want to install software or configure mail servers.",
-        "Pick Thunderbird if you want to manage multiple email accounts in a desktop application."
+        "Choose Gmail if you want useful email before installing and configuring a client.",
+        "Choose Thunderbird if the desktop client workflow is now worth the setup.",
+        "Avoid Thunderbird when configuration is the actual friction."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Gmail easier for beginners?",
-      "a": "Gmail runs in a browser and automatically connects the inbox, so beginners do not need to install software or configure email server settings."
+      "q": "Why does client setup change the recommendation?",
+      "a": "Because it affects first use, routine maintenance, and how technical basic email feels before the inbox is even ready."
     },
     {
-      "q": "Does Thunderbird require setup before using email?",
-      "a": "Yes. Thunderbird must be installed and connected to an email account using settings such as IMAP or SMTP before messages can be sent or received."
+      "q": "When is Thunderbird still worth it?",
+      "a": "Thunderbird is still worth it when the dedicated desktop workflow is now part of the value."
     },
     {
-      "q": "Can Gmail be used without installing anything?",
-      "a": "Yes. Gmail works directly in any web browser, which means no email software installation is required."
+      "q": "What usually makes Thunderbird feel too heavy?",
+      "a": "Installation and account configuration arrive before the user can simply check mail."
     },
     {
-      "q": "When might Thunderbird be better than Gmail?",
-      "a": "Thunderbird can be better for users who want a desktop email client that manages multiple accounts and supports extensions."
+      "q": "Is this only for beginners?",
+      "a": "No. Any user can lose time when setup is larger than the actual email job."
     }
   ],
   "related_pages": [

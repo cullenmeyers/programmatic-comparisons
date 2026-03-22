@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why ActivityWatch fits passive tracking",
-      "content": "You want your time tracking to run automatically without thinking about it. ActivityWatch records app usage and activity in the background as you work. Toggl Track requires you to start a timer each time you switch tasks, which adds friction and creates gaps when you forget."
+      "heading": "Why ActivityWatch fits Power users better",
+      "content": "ActivityWatch fits this power user because the capture model changes more than one part of the workflow. It affects how often you have to interrupt yourself, how much reconstruction happens later, and how much trust you can place in the recorded timeline. That is why the choice here is not just auto versus manual in theory, but what kind of attention the tracker demands every day."
     },
     {
       "type": "x_wins",
       "heading": "Where ActivityWatch wins",
       "bullets": [
         {
-          "point": "The app runs in the background and logs activity automatically without user input.",
-          "why_it_matters": "This ensures all time is captured without needing to remember to start tracking."
+          "point": "ActivityWatch reduces missed time during fast context switching",
+          "why_it_matters": "Automatic or lower-friction capture helps when work moves too quickly for repeated start-stop decisions."
         },
         {
-          "point": "Time is recorded based on actual app usage and window focus.",
-          "why_it_matters": "This creates a complete timeline of your work without manual entry."
+          "point": "ActivityWatch keeps logging from interrupting the task itself",
+          "why_it_matters": "Less timer babysitting means fewer detours through controls before you can get back to the actual work."
         },
         {
-          "point": "There is no need to switch tasks or press buttons to track time.",
-          "why_it_matters": "This removes interruptions and allows continuous tracking across your workflow."
+          "point": "ActivityWatch makes review easier after the work is done",
+          "why_it_matters": "Captured context gives you something concrete to confirm later instead of rebuilding the day from memory."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where Toggl Track wins",
       "bullets": [
         {
-          "point": "Timers can be assigned to specific tasks or projects before tracking begins.",
-          "why_it_matters": "This allows structured tracking, but requires manual setup for each session."
+          "point": "Toggl Track gives you tighter manual control over what counts",
+          "why_it_matters": "Some users prefer intentional timers because every entry is explicit from the start."
         },
         {
-          "point": "Users can control exactly when time tracking starts and stops.",
-          "why_it_matters": "This gives precision, but adds responsibility to manage timers."
+          "point": "Toggl Track can feel cleaner when the work is already well-defined",
+          "why_it_matters": "If task boundaries are obvious, a simple manual timer may be enough without extra memory layers."
         },
         {
-          "point": "Time entries are clearly labeled by user-defined tasks.",
-          "why_it_matters": "This creates organized data, but depends on consistent manual input."
+          "point": "Toggl Track keeps the record easier to explain to someone else",
+          "why_it_matters": "Manually started entries can be simpler to audit when the team wants a clear statement of intent for each block."
         }
       ]
     },
@@ -66,28 +66,28 @@
       "items": [
         {
           "tool": "x",
-          "fails_when": "ActivityWatch feels unstructured when you need time entries tied to specific tasks or projects.",
-          "what_to_do_instead": "Use Toggl Track if you want manually labeled and organized time entries."
+          "fails_when": "ActivityWatch becomes less compelling when the work is already neatly bounded and the user genuinely prefers to declare every start and stop by hand.",
+          "what_to_do_instead": "Choose Toggl Track if explicit timer control is more important than reducing capture friction."
         },
         {
           "tool": "y",
-          "fails_when": "Toggl Track breaks when you forget to start or stop timers and miss tracking time.",
-          "what_to_do_instead": "Use ActivityWatch when you want automatic background tracking without gaps."
+          "fails_when": "Toggl Track breaks down when repeated timer starts, missed switches, or manual reconstruction keep eating attention during a fast day.",
+          "what_to_do_instead": "Choose ActivityWatch when lower-friction capture is the only way the record will stay complete."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This verdict might flip if you prefer full control over how time is labeled and are willing to manage timers manually. In that case, Toggl Track can work better despite requiring more effort."
+      "content": "This can flip if the work is highly structured and the user actually prefers to declare each session manually. Then Toggl Track may feel clearer without becoming burdensome."
     },
     {
       "type": "quick_rules",
       "heading": "Quick rules",
       "rules": [
-        "Choose ActivityWatch if you want automatic background time tracking.",
-        "Choose ActivityWatch if you do not want to manage timers.",
-        "Choose Toggl Track if you want manually labeled and structured time entries."
+        "Choose ActivityWatch if manual timers are causing missed or incomplete records.",
+        "Choose Toggl Track if explicit start-stop control is genuinely part of the appeal.",
+        "Avoid Toggl Track when timer babysitting keeps interrupting the work."
       ]
     },
     {
@@ -98,20 +98,20 @@
   ],
   "faqs": [
     {
-      "q": "Why is ActivityWatch better for Power users?",
-      "a": "Because it tracks time automatically in the background without requiring manual timers."
+      "q": "Why does ActivityWatch beat manual timers here?",
+      "a": "Because the benefit is not only automation. It also reduces interruptions, recovers missed time, and makes later review less dependent on memory."
     },
     {
-      "q": "Does Toggl Track require manual input?",
-      "a": "Yes, you must start and stop timers to track time."
+      "q": "When is Toggl Track still the right choice?",
+      "a": "Toggl Track is still right when the work is clearly bounded and the user genuinely prefers explicit control over every entry."
     },
     {
-      "q": "Is ActivityWatch fully automatic?",
-      "a": "Yes, it records activity based on app usage without user interaction."
+      "q": "What usually pushes people away from Toggl Track?",
+      "a": "Repeated missed starts, forgotten switches, and the feeling that logging time is interrupting the very work being tracked."
     },
     {
-      "q": "When would a Power user still choose Toggl Track?",
-      "a": "A Power user might choose Toggl Track if they want structured, manually labeled time entries."
+      "q": "Is ActivityWatch only about speed?",
+      "a": "No. It also changes data completeness and how much mental effort the tracker demands during a busy day."
     }
   ],
   "related_pages": [

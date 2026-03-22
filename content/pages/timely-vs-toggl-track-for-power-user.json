@@ -22,23 +22,23 @@
     {
       "type": "persona_fit",
       "heading": "Why Timely fits Power users better",
-      "content": "This power user wants tracking to run automatically without relying on remembering to start timers. Timely fits because it records activity in the background and builds a timeline that you can review later. That ensures all work is captured without interruption."
+      "content": "Timely fits this power user because the capture model changes more than one part of the workflow. It affects how often you have to interrupt yourself, how much reconstruction happens later, and how much trust you can place in the recorded timeline. That is why the choice here is not just auto versus manual in theory, but what kind of attention the tracker demands every day."
     },
     {
       "type": "x_wins",
       "heading": "Where Timely wins",
       "bullets": [
         {
-          "point": "Timely uses memory tracking to automatically record apps, documents, and work activity in the background.",
-          "why_it_matters": "This captures everything without requiring manual timers, so no time is missed when switching tasks."
+          "point": "Timely reduces missed time during fast context switching",
+          "why_it_matters": "Automatic or lower-friction capture helps when work moves too quickly for repeated start-stop decisions."
         },
         {
-          "point": "You review and assign tracked activity after it has been recorded instead of logging it in real time.",
-          "why_it_matters": "This shifts effort to later, allowing uninterrupted work without stopping to manage timers."
+          "point": "Timely keeps logging from interrupting the task itself",
+          "why_it_matters": "Less timer babysitting means fewer detours through controls before you can get back to the actual work."
         },
         {
-          "point": "Tracking runs continuously without requiring user-triggered start or stop actions.",
-          "why_it_matters": "This removes reliance on memory and reduces gaps caused by forgetting to log time."
+          "point": "Timely makes review easier after the work is done",
+          "why_it_matters": "Captured context gives you something concrete to confirm later instead of rebuilding the day from memory."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where Toggl Track wins",
       "bullets": [
         {
-          "point": "Toggl Track uses manual start and stop timers for each task.",
-          "why_it_matters": "This gives control over what is tracked, but depends on remembering to use the timer."
+          "point": "Toggl Track gives you tighter manual control over what counts",
+          "why_it_matters": "Some users prefer intentional timers because every entry is explicit from the start."
         },
         {
-          "point": "Time entries are created in real time as you start and stop tasks.",
-          "why_it_matters": "This keeps logs simple and direct, but interrupts workflow when switching tasks frequently."
+          "point": "Toggl Track can feel cleaner when the work is already well-defined",
+          "why_it_matters": "If task boundaries are obvious, a simple manual timer may be enough without extra memory layers."
         },
         {
-          "point": "It works consistently across devices with the same timer-based workflow.",
-          "why_it_matters": "This is useful for cross-platform use, but does not provide automatic activity capture."
+          "point": "Toggl Track keeps the record easier to explain to someone else",
+          "why_it_matters": "Manually started entries can be simpler to audit when the team wants a clear statement of intent for each block."
         }
       ]
     },
@@ -66,47 +66,47 @@
       "items": [
         {
           "tool": "x",
-          "fails_when": "Timely becomes limiting when you want strict real-time control over exactly what gets tracked instead of reviewing activity later.",
-          "what_to_do_instead": "Use Toggl Track if you prefer manual control with immediate time entry."
+          "fails_when": "Timely becomes less compelling when the work is already neatly bounded and the user genuinely prefers to declare every start and stop by hand.",
+          "what_to_do_instead": "Choose Toggl Track if explicit timer control is more important than reducing capture friction."
         },
         {
           "tool": "y",
-          "fails_when": "Toggl Track breaks down when you forget to start or stop timers, leading to missing or incomplete time records.",
-          "what_to_do_instead": "Use Timely if you want automatic tracking that captures all activity."
+          "fails_when": "Toggl Track breaks down when repeated timer starts, missed switches, or manual reconstruction keep eating attention during a fast day.",
+          "what_to_do_instead": "Choose Timely when lower-friction capture is the only way the record will stay complete."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This could flip if you prefer controlling exactly what gets tracked in real time and do not want to review activity afterward. In that case, Toggl Track may be a better fit."
+      "content": "This can flip if the work is highly structured and the user actually prefers to declare each session manually. Then Toggl Track may feel clearer without becoming burdensome."
     },
     {
       "type": "quick_rules",
       "heading": "Quick rules",
       "rules": [
-        "Pick Timely if you want automatic tracking without manual timers.",
-        "Pick Toggl Track if you prefer manual control over time entries.",
-        "Avoid Toggl Track if you want to eliminate timer management completely."
+        "Choose Timely if manual timers are causing missed or incomplete records.",
+        "Choose Toggl Track if explicit start-stop control is genuinely part of the appeal.",
+        "Avoid Toggl Track when timer babysitting keeps interrupting the work."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Timely better for automation?",
-      "a": "Because it records activity automatically in the background and lets you review it later."
+      "q": "Why does Timely beat manual timers here?",
+      "a": "Because the benefit is not only automation. It also reduces interruptions, recovers missed time, and makes later review less dependent on memory."
     },
     {
-      "q": "What limits Toggl Track for power users?",
-      "a": "It requires manually starting and stopping timers, which can lead to missing or incomplete data."
+      "q": "When is Toggl Track still the right choice?",
+      "a": "Toggl Track is still right when the work is clearly bounded and the user genuinely prefers explicit control over every entry."
     },
     {
-      "q": "Is Toggl Track still useful?",
-      "a": "Yes. It is useful when you want manual control over what gets tracked."
+      "q": "What usually pushes people away from Toggl Track?",
+      "a": "Repeated missed starts, forgotten switches, and the feeling that logging time is interrupting the very work being tracked."
     },
     {
-      "q": "When should I choose Toggl Track instead?",
-      "a": "Choose Toggl Track when you want to control tracking in real time and do not mind using timers."
+      "q": "Is Timely only about speed?",
+      "a": "No. It also changes data completeness and how much mental effort the tracker demands during a busy day."
     }
   ],
   "related_pages": [

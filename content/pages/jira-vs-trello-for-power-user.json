@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Best fit for structured engineering workflows",
-      "content": "You run large software teams and expect structured issue tracking. Jira organizes work through issue types, backlog queues, and sprint boards designed for engineering teams. Trello provides flexible card boards but does not include built-in sprint or backlog systems."
+      "heading": "Why Jira fits Power users better",
+      "content": "Jira fits this power user because the workflow mechanism affects planning, execution, and review together. It changes whether tasks move through a defined system, whether backlog management feels native, and whether the team can keep work organized without inventing process by hand."
     },
     {
       "type": "x_wins",
       "heading": "Where Jira wins",
       "bullets": [
         {
-          "point": "Custom issue workflows defining task states",
-          "why_it_matters": "Teams map engineering processes such as backlog, development, testing, and release."
+          "point": "Jira gives the team a clearer operating structure from the start",
+          "why_it_matters": "Issue types, workflow states, and backlog rules make work easier to route instead of leaving every task to ad hoc handling."
         },
         {
-          "point": "Sprint planning boards with backlog prioritization",
-          "why_it_matters": "Teams select tasks from a prioritized backlog for each sprint cycle."
+          "point": "Jira keeps daily execution aligned with delivery flow",
+          "why_it_matters": "Sprint and backlog mechanics help the team move work forward without constantly renegotiating what stage it is in."
         },
         {
-          "point": "Issue types with structured fields such as bug, task, and story",
-          "why_it_matters": "Engineering work is categorized and tracked with consistent data."
+          "point": "Jira makes planning and tracking speak the same language",
+          "why_it_matters": "The structure used to plan work is also the structure used to execute and review it."
         }
       ]
     },
@@ -47,16 +47,16 @@
       "heading": "Where Trello wins",
       "bullets": [
         {
-          "point": "Simple kanban boards with draggable task cards",
-          "why_it_matters": "Teams move tasks across stages without configuring workflows."
+          "point": "Trello stays lighter when formal workflow depth is unnecessary",
+          "why_it_matters": "If the work does not truly need backlog and sprint machinery, less structure can be a real advantage."
         },
         {
-          "point": "Quick board creation without defining issue types",
-          "why_it_matters": "Users start tracking tasks immediately with minimal setup."
+          "point": "Trello makes task capture faster for less formal work",
+          "why_it_matters": "The user can add items without immediately deciding how they fit into a delivery process."
         },
         {
-          "point": "Flexible lists that adapt to many workflows",
-          "why_it_matters": "Boards can represent simple projects without formal process structures."
+          "point": "Trello lowers the cost of staying flexible",
+          "why_it_matters": "The app leaves more room for informal work patterns when rigid issue workflow would feel heavy."
         }
       ]
     },
@@ -66,47 +66,47 @@
       "items": [
         {
           "tool": "x",
-          "fails_when": "Your team only needs a lightweight task board without structured engineering processes.",
-          "what_to_do_instead": "Use Trello if a simple board is enough for tracking tasks."
+          "fails_when": "Jira becomes the wrong fit when the work is informal enough that backlog rules, issue states, or sprint logic would mostly create overhead.",
+          "what_to_do_instead": "Choose Trello if lighter task handling is the real need."
         },
         {
           "tool": "y",
-          "fails_when": "Projects require sprint planning, backlog prioritization, or custom workflow states.",
-          "what_to_do_instead": "Switch to Jira to manage structured engineering workflows."
+          "fails_when": "Trello breaks down when the team starts needing structured workflow, backlog control, or a repeatable system for moving work across stages.",
+          "what_to_do_instead": "Choose Jira when process depth is no longer optional."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If your team runs small projects without formal sprint planning or issue tracking workflows, Trello may feel simpler and faster."
+      "content": "This can flip if the work never really becomes formal enough to need backlog depth, workflow states, or sprint-like structure. Then Trello can be the better fit."
     },
     {
       "type": "quick_rules",
-      "heading": "Quick rules",
+      "heading": "Quick decision rules",
       "rules": [
-        "If you run software sprints with a backlog, choose Jira.",
-        "If you need custom issue workflows, choose Jira.",
-        "If you only track tasks on a simple board, Trello can work."
+        "Choose Jira if backlog depth and workflow structure are part of the job.",
+        "Choose Trello if the work is still informal enough for lighter task handling.",
+        "Avoid Trello when the team is inventing issue workflow by hand."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Is Jira designed for software development teams?",
-      "a": "Yes. It includes sprint planning boards, backlog queues, and structured issue tracking."
+      "q": "Why does workflow depth change the verdict?",
+      "a": "Because it changes how tasks are planned, moved, and reviewed rather than merely adding more screens."
     },
     {
-      "q": "Does Trello support sprint planning natively?",
-      "a": "No. Trello mainly provides kanban boards without built-in sprint systems."
+      "q": "When is Trello still preferable?",
+      "a": "Trello is preferable when the work does not really need backlog structure or a formal issue process."
     },
     {
-      "q": "Which tool works better for engineering teams?",
-      "a": "Jira works better because it includes issue tracking and sprint management."
+      "q": "What usually makes Trello fail first?",
+      "a": "The team starts needing repeatable stages or backlog control and ends up faking that structure manually."
     },
     {
-      "q": "When would Trello be the better option?",
-      "a": "It works well when teams only need a lightweight task board without structured workflows."
+      "q": "Is Jira only for large teams?",
+      "a": "No. It is for any workflow where issue depth has become a real operating need rather than a theoretical future possibility."
     }
   ],
   "related_pages": [

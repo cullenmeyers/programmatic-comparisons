@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why KeePass fits minimalists",
-      "content": "The user refuses to store passwords inside any hosted cloud vault and prefers keeping them entirely on local devices. KeePass stores credentials inside a local encrypted database file created by the user. The file remains on the device and can be backed up or moved manually if needed. This approach avoids connecting the password vault to any vendor hosted service."
+      "heading": "Why KeePass fits Minimalists better",
+      "content": "KeePass fits this minimalist because storage control changes more than where the encrypted vault sits. It affects whether the user needs a provider account, how much trust they place in a hosted service during daily use, and how flexibly they can shape backup and portability decisions later. KeePass wins by keeping that control closer to the user."
     },
     {
       "type": "x_wins",
       "heading": "Where KeePass wins",
       "bullets": [
         {
-          "point": "KeePass stores passwords inside a local encrypted database file.",
-          "why_it_matters": "Minimalists can keep credentials entirely on their own device without relying on a hosted vault."
+          "point": "KeePass keeps the vault under local or user-chosen control",
+          "why_it_matters": "Passwords are not forced into a vendor-hosted account model before the user has decided they want that tradeoff."
         },
         {
-          "point": "KeePass runs without creating an online account.",
-          "why_it_matters": "Users avoid linking their password database to a vendor account or cloud service."
+          "point": "KeePass reduces dependency on a provider account during daily use",
+          "why_it_matters": "The password workflow stays closer to the device or storage path the user already trusts."
         },
         {
-          "point": "KeePass allows the vault file to be stored in any location chosen by the user.",
-          "why_it_matters": "The password database remains under the user's control instead of being locked into a service."
+          "point": "KeePass leaves more room to shape backup and storage choices",
+          "why_it_matters": "That matters when portability and control are part of the reason for choosing the tool."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where Proton Pass wins",
       "bullets": [
         {
-          "point": "Proton Pass automatically synchronizes passwords across devices through the user account.",
-          "why_it_matters": "Credentials appear instantly on laptops, phones, and browsers without moving files."
+          "point": "Proton Pass can still be easier when automatic sync matters more than storage sovereignty",
+          "why_it_matters": "A vendor account can reduce setup and daily handling for users who do not want to manage location or backup strategy."
         },
         {
-          "point": "Proton Pass browser extensions detect login forms and autofill credentials.",
-          "why_it_matters": "Users can sign into websites quickly without copying passwords manually."
+          "point": "Proton Pass often gives a smoother login experience out of the box",
+          "why_it_matters": "Hosted accounts usually pair naturally with browser extensions and cross-device access."
         },
         {
-          "point": "Proton Pass restores the vault automatically when signing into a new device.",
-          "why_it_matters": "Passwords become available immediately after logging into the account."
+          "point": "Proton Pass asks for less manual thinking about where the vault lives",
+          "why_it_matters": "That can be the better tradeoff when convenience beats local control."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "The user wants passwords to synchronize automatically across multiple devices without manually copying vault files.",
-          "what_to_do_instead": "Use Proton Pass where the vault synchronizes automatically through the account."
+          "fails_when": "KeePass becomes the wrong fit when the user would rather offload storage and sync decisions to a hosted account model.",
+          "what_to_do_instead": "Choose Proton Pass if convenience now matters more than vault ownership."
         },
         {
           "tool": "y",
-          "fails_when": "The user refuses to store passwords in a hosted vault because Proton Pass stores credentials inside the cloud service.",
-          "what_to_do_instead": "Use KeePass where the password database remains local."
+          "fails_when": "Proton Pass breaks down when the user does not want credentials forced into a vendor-hosted account or cloud vault.",
+          "what_to_do_instead": "Choose KeePass when local control is the non-negotiable boundary."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "If the user wants passwords to appear automatically across phones, browsers, and laptops without managing vault files manually, Proton Pass may become the better option."
+      "content": "This can flip if the user decides automatic hosted sync is worth more than direct control over vault location and storage choices. Then Proton Pass may make more sense."
     },
     {
       "type": "quick_rules",
       "heading": "Quick decision rules",
       "rules": [
-        "Pick KeePass if you want passwords stored entirely in a local encrypted database.",
-        "Pick KeePass if you refuse to store credentials in a hosted vault.",
-        "Pick Proton Pass if you want automatic password syncing across devices."
+        "Choose KeePass if vault ownership matters more than hosted convenience.",
+        "Choose Proton Pass if you want sync and account management handled for you.",
+        "Avoid Proton Pass when provider-controlled vault storage is the exact dealbreaker."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why do minimalists prefer KeePass?",
-      "a": "KeePass stores passwords locally in an encrypted database file without using a hosted cloud vault."
+      "q": "Why does local control matter so much here?",
+      "a": "Because it affects trust boundary, daily dependence on a provider account, and how flexibly the vault can be backed up or moved later."
     },
     {
-      "q": "Does Proton Pass store passwords locally?",
-      "a": "No. Proton Pass stores credentials inside a hosted vault connected to the user account."
+      "q": "When is Proton Pass still worth choosing?",
+      "a": "Proton Pass is still worth choosing when automatic hosted sync is more valuable than storage sovereignty."
     },
     {
-      "q": "Can KeePass work without internet access?",
-      "a": "Yes. KeePass runs locally and does not require an online service."
+      "q": "What usually makes Proton Pass the wrong fit?",
+      "a": "The user does not want the vault tied to a vendor-hosted account or cloud model in the first place."
     },
     {
-      "q": "Who should choose Proton Pass instead?",
-      "a": "Users who want automatic synchronization and browser autofill across devices may prefer Proton Pass."
+      "q": "Does KeePass always mean more work?",
+      "a": "Often some, but that tradeoff can be the point when local control is the priority."
     }
   ],
   "related_pages": [

@@ -21,24 +21,24 @@
   "sections": [
     {
       "type": "persona_fit",
-      "heading": "Why Beeminder fits strict measurable tracking",
-      "content": "You are tracking habits where the amount matters, not just whether something was done. Beeminder lets you define numeric goals with required progress over time. HabitHub tracks habits as completed or not completed, which works for consistency but not for enforcing measurable targets."
+      "heading": "Why Beeminder fits Power users better",
+      "content": "Beeminder fits this power user because quantitative commitment changes more than one setting. It affects how the habit is defined up front, how progress is interpreted each day, and how much pressure the system can apply when consistency slips. Beeminder wins by turning the habit into something enforceable instead of merely recorded."
     },
     {
       "type": "x_wins",
       "heading": "Where Beeminder wins",
       "bullets": [
         {
-          "point": "Goals are defined with numeric targets and a required rate of progress shown on a graph.",
-          "why_it_matters": "This ensures habits follow a strict trajectory, so you know exactly how much you need to do and by when."
+          "point": "Beeminder turns habits into measurable commitments instead of loose checklists",
+          "why_it_matters": "Targets, rates, and deadlines create a system that pushes the habit forward even when motivation drops."
         },
         {
-          "point": "The system enforces deadlines by showing when you will fall behind if you do not log enough progress.",
-          "why_it_matters": "This creates accountability and prevents drifting away from targets."
+          "point": "Beeminder makes daily slippage visible before the habit quietly drifts",
+          "why_it_matters": "The user gets a live signal about whether they are still on pace instead of only seeing isolated completions."
         },
         {
-          "point": "Data points can be logged as quantities such as minutes or hours instead of simple completion.",
-          "why_it_matters": "This allows precise tracking of output, which is necessary for measurable goals."
+          "point": "Beeminder adds accountability that keeps long-range goals from becoming optional",
+          "why_it_matters": "That matters when the point of tracking is not just logging but staying bound to a quantitative standard."
         }
       ]
     },
@@ -47,66 +47,66 @@
       "heading": "Where HabitHub wins",
       "bullets": [
         {
-          "point": "Habits are tracked as daily completions with streak counts and calendar views.",
-          "why_it_matters": "This is easier for building consistency when you only need to know whether something was done."
+          "point": "HabitHub can still be better when the user wants habits to stay low-pressure",
+          "why_it_matters": "A simple tracker may support consistency better if penalties and hard pacing would cause resistance."
         },
         {
-          "point": "The app provides reminders and visual streak tracking without requiring goal setup.",
-          "why_it_matters": "This reduces setup time and keeps the experience simple."
+          "point": "HabitHub keeps daily logging easier to start",
+          "why_it_matters": "That matters when the user needs a fast check-off routine more than a quantified enforcement system."
         },
         {
-          "point": "There is no requirement to define numeric targets or progress rates.",
-          "why_it_matters": "This makes it easier to start, but it limits how strictly habits can be enforced."
+          "point": "HabitHub reduces the risk of overengineering the habit",
+          "why_it_matters": "The lighter model can be better when strict targets would mostly create avoidance."
         }
       ]
     },
     {
       "type": "failure_modes",
-      "heading": "Where each tool breaks down",
+      "heading": "Where each tool can break down",
       "items": [
         {
           "tool": "x",
-          "fails_when": "Beeminder feels too strict or complex when you only want to track consistency without defining numeric goals.",
-          "what_to_do_instead": "Use HabitHub if you only need simple streak tracking without enforced targets."
+          "fails_when": "Beeminder becomes too intense when the user wants low-pressure consistency rather than enforced pacing and consequences.",
+          "what_to_do_instead": "Choose HabitHub if gentle tracking fits better."
         },
         {
           "tool": "y",
-          "fails_when": "HabitHub breaks when habits must be measured in quantities and follow a strict progress trajectory with deadlines.",
-          "what_to_do_instead": "Use Beeminder when you need enforced measurable goals."
+          "fails_when": "HabitHub breaks down when habits need real quantitative pacing, deadlines, or accountability to hold.",
+          "what_to_do_instead": "Choose Beeminder when simple logging is no longer enough."
         }
       ]
     },
     {
       "type": "edge_case",
       "heading": "When this verdict might flip",
-      "content": "This verdict might flip if you decide that consistency matters more than measurable output and you no longer need strict numeric targets. In that case, HabitHub can be enough even though it does not enforce progress trajectories."
+      "content": "This can flip if the user decides hard pacing and commitment pressure are more draining than helpful. Then HabitHub may be the better fit."
     },
     {
       "type": "quick_rules",
-      "heading": "Quick rules",
+      "heading": "Quick decision rules",
       "rules": [
-        "Choose Beeminder if habits must follow numeric targets and deadlines.",
-        "Choose Beeminder if you need to track measurable output like time or distance.",
-        "Choose HabitHub only if you care about consistency, not strict quantities."
+        "Choose Beeminder if habits need quantified pacing and hard accountability.",
+        "Choose HabitHub if a lower-pressure habit routine works better for you.",
+        "Avoid HabitHub when simple check-offs are not enough to keep the habit on track."
       ]
     }
   ],
   "faqs": [
     {
-      "q": "Why is Beeminder better for measurable habits?",
-      "a": "Because it enforces numeric goals with required progress rates, keeping you on track over time."
+      "q": "Why do commitment mechanics matter so much here?",
+      "a": "Because they change setup, the meaning of daily progress, and how much pressure the tracker applies when consistency slips."
     },
     {
-      "q": "Can HabitHub track quantities like hours or minutes?",
-      "a": "Not in a strict enforced way. It focuses on completion and streaks rather than measurable output."
+      "q": "When is HabitHub still better?",
+      "a": "HabitHub is still better when the user wants habits to stay simple and low pressure."
     },
     {
-      "q": "Is Beeminder harder to use?",
-      "a": "Yes, it requires setting goals and tracking numbers, but it provides much stronger enforcement."
+      "q": "What usually pushes someone toward Beeminder?",
+      "a": "Simple check-offs stop being enough and the habit needs real quantitative accountability."
     },
     {
-      "q": "When would a Power user still choose HabitHub?",
-      "a": "A Power user might choose HabitHub if they only need to track consistency and do not require strict measurable targets."
+      "q": "Is Beeminder only for extreme users?",
+      "a": "No. It helps whenever the habit needs enforceable pacing instead of only a log."
     }
   ],
   "related_pages": [
