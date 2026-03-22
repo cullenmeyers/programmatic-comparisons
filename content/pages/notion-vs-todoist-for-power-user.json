@@ -1,0 +1,162 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Notion vs Todoist for Power users",
+  "slug": "notion-vs-todoist-for-power-user",
+  "meta_description": "Compare Notion vs Todoist for power users. Notion wins when tasks need properties, relations, and database views for structured workflows.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need a tool that can model complex systems with structured data and flexible relationships.",
+  "one_second_verdict": {
+    "winner_label": "Notion",
+    "summary": "Best for power users who need tasks with properties, relations, and structured database views.",
+    "reason": "Todoist fails first because tasks are limited to fixed fields and cannot support relational data or custom properties."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Notion is the better choice when you need to model projects as structured data rather than simple task lists. It allows tasks to live inside databases with custom properties, relations between items, and filtered views that reshape how work is seen. Todoist is optimized for fast task capture, but its fixed fields limit how deeply you can structure and connect work.",
+    "decision_rule": "If tasks cannot include properties, relations, and structured database fields, Todoist fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Notion fits this power user better",
+      "content": "This user builds custom project systems where tasks are more than just checkboxes. Notion supports that by turning tasks into database items with properties and relationships. That allows the user to design workflows that match how their system actually works, instead of fitting into a fixed task model."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Notion wins",
+      "bullets": [
+        {
+          "point": "Notion stores tasks as database entries with customizable properties like status, priority, or owner.",
+          "why_it_matters": "You can shape tasks to match your workflow instead of being limited to a fixed set of fields."
+        },
+        {
+          "point": "Notion supports relations between databases, allowing tasks to link to projects, notes, or other data.",
+          "why_it_matters": "This creates connected systems where tasks are part of a larger structure, not isolated items."
+        },
+        {
+          "point": "Views like tables, boards, and filtered lists can be created from the same database.",
+          "why_it_matters": "You can see the same tasks in different ways without duplicating data, which supports complex workflows."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Todoist focuses on fast task entry with a simple input and minimal required fields.",
+          "why_it_matters": "This makes it quicker to capture tasks, but it limits how much structure you can add later."
+        },
+        {
+          "point": "Tasks in Todoist use fixed fields like due dates, labels, and priorities instead of customizable properties.",
+          "why_it_matters": "This keeps the system simple, but prevents building detailed workflows with custom data."
+        },
+        {
+          "point": "Todoist organizes tasks in lists and projects without relational links between items.",
+          "why_it_matters": "This works for basic tracking, but tasks remain isolated instead of forming a connected system."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need to quickly capture tasks without setting up databases, properties, or views first.",
+          "what_to_do_instead": "Switch to Todoist for faster task entry when structure is not required."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You try to build a system where tasks must include custom fields or link to other data, but the task model cannot support it.",
+          "what_to_do_instead": "Use Notion to create structured databases with properties and relationships."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the power user prioritizes speed over structure and does not need relational data. In that case, Todoist may feel more efficient for daily use."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Notion if your tasks need properties and relationships.",
+        "Choose Todoist if you only need fast task capture.",
+        "If you are building a system, use Notion."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can Todoist handle complex project systems?",
+      "a": "It handles tasks well, but it cannot support custom properties or relational data between items."
+    },
+    {
+      "q": "Why is Notion better for structured workflows?",
+      "a": "Because it uses databases with properties and relations, allowing tasks to behave like structured data."
+    },
+    {
+      "q": "Is Notion slower to use than Todoist?",
+      "a": "It can be slower for quick entry because it often requires setting up structure first."
+    },
+    {
+      "q": "What is the main difference between Notion and Todoist?",
+      "a": "Notion models tasks as data with relationships, while Todoist focuses on simple task lists."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Linear vs Trello for Power users",
+      "slug": "linear-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Linear",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Airtable vs Trello for Power users",
+      "slug": "airtable-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Bugzilla vs Trello for Power users",
+      "slug": "bugzilla-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Bugzilla",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Celoxis vs Trello for Power users",
+      "slug": "celoxis-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Celoxis",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Fibery vs Trello for Power users",
+      "slug": "fibery-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Fibery",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "GitHub Projects vs Trello for Power users",
+      "slug": "github-projects-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "GitHub Projects",
+      "y_name": "Trello",
+      "persona": "Power user"
+    }
+  ]
+}

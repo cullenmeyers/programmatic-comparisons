@@ -1,0 +1,162 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Linear vs Trello for Power users",
+  "slug": "linear-vs-trello-for-power-user",
+  "meta_description": "Compare Linear vs Trello for power users. Linear wins when you need enforced workflow states and structured issue tracking for development teams.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need a tool that can enforce structure and handle complex workflows without breaking down.",
+  "one_second_verdict": {
+    "winner_label": "Linear",
+    "summary": "Best for power users who need enforced workflow states like backlog, in progress, and done.",
+    "reason": "Trello fails first because cards can move freely between columns without enforced status rules or required transitions."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Linear is the better choice when your workflow depends on strict stages and controlled issue states. It enforces how work moves through statuses, ensuring consistency across a development team. Trello allows flexible board movement, but that lack of enforced structure breaks down when workflows must follow defined steps.",
+    "decision_rule": "If project workflows cannot enforce required status transitions and structured issue states, Trello fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Linear fits this power user better",
+      "content": "This user runs a development team where work must move through defined stages without exceptions. Linear supports that by locking tasks into structured states and controlled transitions. That ensures every issue follows the same path, which is critical when scaling a team and maintaining consistency."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Linear wins",
+      "bullets": [
+        {
+          "point": "Linear uses defined issue states like 'Backlog', 'In Progress', and 'Done' that are built into the workflow.",
+          "why_it_matters": "Every task must exist in a valid state, so the team always knows where work stands without ambiguity."
+        },
+        {
+          "point": "State transitions in Linear follow controlled paths instead of allowing free movement between any status.",
+          "why_it_matters": "This prevents tasks from skipping steps, which keeps the workflow consistent across the team."
+        },
+        {
+          "point": "Linear structures work as issues with consistent fields and lifecycle rules rather than loose cards.",
+          "why_it_matters": "That creates a reliable system where every task behaves the same way, which is important for scaling development workflows."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Trello wins",
+      "bullets": [
+        {
+          "point": "Trello uses a board with columns and draggable cards that can be moved freely between lists.",
+          "why_it_matters": "This makes it easy to visualize work, but there are no built-in rules to enforce how tasks move."
+        },
+        {
+          "point": "Boards in Trello can be customized with any column names without predefined workflow structure.",
+          "why_it_matters": "You can shape the board however you want, but it relies on manual discipline instead of enforced rules."
+        },
+        {
+          "point": "Trello focuses on visual flexibility rather than strict issue states or lifecycle constraints.",
+          "why_it_matters": "This works for simple workflows, but it breaks down when consistency across a team is required."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The team needs a highly flexible board where tasks can move freely or represent non-linear workflows without strict stages.",
+          "what_to_do_instead": "Use Trello if the workflow is informal and does not require enforced structure."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Team members move cards between columns inconsistently or skip steps because there are no enforced transition rules.",
+          "what_to_do_instead": "Switch to Linear to enforce required states and keep workflows consistent."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the workflow is intentionally flexible, such as brainstorming or early-stage planning where strict stages would slow things down. In that case, Trello may be a better fit."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Linear if your workflow must follow strict stages.",
+        "Choose Trello if tasks can move freely without rules.",
+        "If consistency across a team matters, use Linear."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can Trello enforce workflow stages?",
+      "a": "Not by default. Cards can be moved freely between columns without required rules or transitions."
+    },
+    {
+      "q": "Why is Linear better for development teams?",
+      "a": "Because it enforces structured issue states and controlled transitions, which keeps workflows consistent."
+    },
+    {
+      "q": "Is Linear too rigid for some teams?",
+      "a": "It can feel strict if the team does not need enforced workflows or prefers flexibility."
+    },
+    {
+      "q": "What is the main difference between Linear and Trello?",
+      "a": "Linear enforces workflow structure, while Trello allows flexible movement without built-in rules."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Basecamp vs Linear for Power users",
+      "slug": "basecamp-vs-linear-for-power-user",
+      "exists": true,
+      "x_name": "Basecamp",
+      "y_name": "Linear",
+      "persona": "Power user"
+    },
+    {
+      "title": "Airtable vs Trello for Power users",
+      "slug": "airtable-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Bugzilla vs Trello for Power users",
+      "slug": "bugzilla-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Bugzilla",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Celoxis vs Trello for Power users",
+      "slug": "celoxis-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Celoxis",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Fibery vs Trello for Power users",
+      "slug": "fibery-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Fibery",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "GitHub Projects vs Trello for Power users",
+      "slug": "github-projects-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "GitHub Projects",
+      "y_name": "Trello",
+      "persona": "Power user"
+    }
+  ]
+}

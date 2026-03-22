@@ -1,28 +1,25 @@
 # Related Comparisons Rebuild Report
 
-Date: 2026-03-22T03:37:40.741Z
+Date: 2026-03-22T23:04:19.788Z
 
 ## Summary
 
-- Total pages scanned: 497
+- Total pages scanned: 505
 - Total pages updated: 0
-- Average related_pages count: 5.57
-- Pages with 0 related pages: 10
-- Pages with 1 related page: 10
-- Pages with fewer than 3 related pages: 32
+- Average related_pages count: 5.53
+- Pages with 0 related pages: 7
+- Pages with 1 related page: 14
+- Pages with fewer than 3 related pages: 39
 
 ## Sparse Pages
 
 ### Pages with 0 related pages
 
 - /compare/atracker-vs-kimai-for-student
-- /compare/bonsai-vs-trello-for-busy-professional
 - /compare/goodlinks-vs-wallabag-for-solo-user
 - /compare/instapaper-vs-zotero-for-student
-- /compare/jira-vs-todoist-for-beginner
 - /compare/mailfence-vs-yahoo-mail-for-non-technical-user
 - /compare/matter-read-it-later-app-vs-raindropio-for-non-technical-user
-- /compare/notion-vs-project-co-for-non-technical-user
 - /compare/pinboard-vs-raindropio-for-beginner
 - /compare/pocket-vs-wallabag-for-student
 
@@ -36,8 +33,12 @@ Date: 2026-03-22T03:37:40.741Z
 - /compare/goodlinks-vs-linkace-for-non-technical-user
 - /compare/goodlinks-vs-pinboard-for-beginner
 - /compare/goodlinks-vs-raindropio-for-non-technical-user
+- /compare/notion-vs-project-co-for-non-technical-user
 - /compare/raindropio-vs-wallabag-for-beginner
 - /compare/startme-vs-raindropio-for-minimalist
+- /compare/things-vs-clickup-for-minimalist
+- /compare/ticktick-vs-mondaycom-for-non-technical-user
+- /compare/trello-vs-jira-for-minimalist
 
 ### Pages with fewer than 3 related pages
 
@@ -45,6 +46,7 @@ Date: 2026-03-22T03:37:40.741Z
 - /compare/apple-calendar-vs-notion-calendar-for-solo-user
 - /compare/apple-notes-vs-evernote-for-solo-user
 - /compare/apple-notes-vs-notion-for-solo-user
+- /compare/asana-vs-todoist-for-busy-professional
 - /compare/atracker-vs-kimai-for-student
 - /compare/bitwarden-vs-keepass-for-beginner
 - /compare/bitwarden-vs-passbolt-for-solo-user
@@ -68,11 +70,17 @@ Date: 2026-03-22T03:37:40.741Z
 - /compare/keepass-vs-pcloud-pass-for-beginner
 - /compare/mailfence-vs-yahoo-mail-for-non-technical-user
 - /compare/matter-read-it-later-app-vs-raindropio-for-non-technical-user
+- /compare/microsoft-to-do-vs-smartsheet-for-beginner
 - /compare/notion-vs-project-co-for-non-technical-user
 - /compare/pinboard-vs-raindropio-for-beginner
 - /compare/pocket-vs-wallabag-for-student
 - /compare/raindropio-vs-wallabag-for-beginner
 - /compare/startme-vs-raindropio-for-minimalist
+- /compare/things-vs-clickup-for-minimalist
+- /compare/ticktick-vs-mondaycom-for-non-technical-user
+- /compare/todoist-vs-asana-for-beginner
+- /compare/trello-vs-jira-for-minimalist
+- /compare/trello-vs-microsoft-project-for-busy-professional
 
 ## Sample Debug Output
 

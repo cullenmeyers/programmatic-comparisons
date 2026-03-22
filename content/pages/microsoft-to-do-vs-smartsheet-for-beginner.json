@@ -1,0 +1,130 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Microsoft To Do vs Smartsheet for Beginners",
+  "slug": "microsoft-to-do-vs-smartsheet-for-beginner",
+  "meta_description": "Compare Microsoft To Do vs Smartsheet for Beginners. Microsoft To Do wins when you want to add tasks instantly without setting up sheets, columns, or formulas.",
+  "persona": "Beginner",
+  "constraint_lens": "Beginners need a tool that lets them start immediately without setting up structure or making early decisions.",
+  "one_second_verdict": {
+    "winner_label": "Microsoft To Do",
+    "summary": "Best for beginners who want to start adding tasks immediately without setting up sheets or columns.",
+    "reason": "Smartsheet fails first because it requires setting up columns, sheet structure, or formulas before the task system feels usable."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Microsoft To Do is the better choice when you want to start using a project tool right away. It opens into a simple task list where you can immediately begin adding items without setting up any structure. Smartsheet is built around configurable sheets with columns and formulas, which introduces setup steps that slow down a first-time user.",
+    "decision_rule": "If adding tasks requires configuring sheet structures with columns or formulas before use, Smartsheet fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Microsoft To Do fits this beginner better",
+      "content": "This user is opening a project tool for the first time and needs instant progress to stay engaged. Microsoft To Do provides that by centering everything around a ready-to-use list where tasks can be added immediately. That removes the need to understand how the system works before using it."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Microsoft To Do wins",
+      "bullets": [
+        {
+          "point": "Microsoft To Do opens directly into a task list with a visible input to add tasks right away.",
+          "why_it_matters": "The user can start typing tasks immediately instead of being asked to define structure first."
+        },
+        {
+          "point": "Lists are pre-structured with minimal fields like task name, due date, and notes, without editable columns.",
+          "why_it_matters": "There are fewer decisions to make, which lowers the chance of getting stuck before starting."
+        },
+        {
+          "point": "The interface stays focused on a single list view without requiring setup of layouts or data structure.",
+          "why_it_matters": "This keeps the experience predictable and reduces confusion for a first-time user."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Smartsheet wins",
+      "bullets": [
+        {
+          "point": "Smartsheet uses spreadsheet-style sheets with customizable columns for tracking different types of data.",
+          "why_it_matters": "This allows detailed tracking, but requires deciding what each column should represent before starting."
+        },
+        {
+          "point": "Sheets can include formulas and dependencies to calculate values or link tasks together.",
+          "why_it_matters": "This adds power for complex workflows, but introduces setup that a beginner may not understand."
+        },
+        {
+          "point": "Smartsheet supports multiple views like grid, card, and calendar based on the same data.",
+          "why_it_matters": "These views are useful later, but they add more options and complexity upfront."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The project requires tracking structured data, dependencies, or calculations across tasks.",
+          "what_to_do_instead": "Switch to Smartsheet when the work needs spreadsheet-like tracking and formulas."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You open the tool to add tasks but must first define columns, adjust the sheet, or understand formulas before anything feels usable.",
+          "what_to_do_instead": "Use Microsoft To Do to start with simple task lists and avoid setup overhead."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the beginner is given a pre-built Smartsheet template where the columns and structure are already set. In that case, Smartsheet may feel easier because the setup work is removed."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Microsoft To Do if you want to start adding tasks immediately.",
+        "Choose Smartsheet if you need structured tracking with columns and formulas.",
+        "If setup feels overwhelming, stick with Microsoft To Do."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Microsoft To Do enough for project management?",
+      "a": "It works for simple task tracking, but it does not support complex data structures or formulas."
+    },
+    {
+      "q": "Why does Smartsheet feel harder to start?",
+      "a": "Because it requires setting up sheet structure, columns, and sometimes formulas before tasks are fully usable."
+    },
+    {
+      "q": "Can beginners use Smartsheet?",
+      "a": "Yes, especially with templates, but it still introduces more setup than simpler tools."
+    },
+    {
+      "q": "What is the easiest tool to start with?",
+      "a": "Microsoft To Do is easier because it lets you add tasks immediately without setup."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Jira vs Todoist for Beginners",
+      "slug": "jira-vs-todoist-for-beginner",
+      "exists": true,
+      "x_name": "Jira",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Todoist vs Asana for Beginners",
+      "slug": "todoist-vs-asana-for-beginner",
+      "exists": true,
+      "x_name": "Asana",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    }
+  ]
+}

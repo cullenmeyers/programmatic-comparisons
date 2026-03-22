@@ -1,0 +1,122 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Things vs ClickUp for Minimalists",
+  "slug": "things-vs-clickup-for-minimalist",
+  "meta_description": "Compare Things vs ClickUp for Minimalists. Things wins when you want simple task tracking without setting up statuses, views, or custom fields.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists need a tool that avoids extra features, setup steps, and decisions that are not required to track tasks.",
+  "one_second_verdict": {
+    "winner_label": "Things",
+    "summary": "Best for minimalists who want to track tasks without setting up extra layers like statuses or views.",
+    "reason": "ClickUp fails first because it pushes you to configure statuses, views, and custom fields before the task system feels complete."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Things is the better choice when you want to keep task tracking as simple as possible. It focuses on a clean list-based system where tasks, projects, and areas are already defined without extra setup. ClickUp introduces more layers like statuses, views, and fields that are useful later, but they add decisions that slow down a minimalist user.",
+    "decision_rule": "If managing tasks requires configuring statuses, views, or custom fields before use, ClickUp fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Things fits this minimalist better",
+      "content": "This user wants to manage personal projects without dealing with extra features or setup steps. Things removes those decisions by giving you a ready-to-use structure where you can just add tasks and move on. That matters when every extra option feels like unnecessary effort instead of value."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Things wins",
+      "bullets": [
+        {
+          "point": "Things uses a fixed structure of areas, projects, and tasks without requiring you to define statuses or workflows.",
+          "why_it_matters": "You can start organizing tasks immediately without deciding how work should move or be labeled first."
+        },
+        {
+          "point": "The interface focuses on a single list view with optional dates and simple grouping instead of multiple view types.",
+          "why_it_matters": "There are fewer places to click or switch, so tracking tasks stays fast and predictable."
+        },
+        {
+          "point": "Task entry stays lightweight with minimal fields and no requirement to fill in properties beyond the task name.",
+          "why_it_matters": "You avoid the pressure to add extra details, which keeps the system from becoming heavy over time."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where ClickUp wins",
+      "bullets": [
+        {
+          "point": "ClickUp allows custom statuses for each list or project, letting you define stages like 'To do' or 'In progress'.",
+          "why_it_matters": "This helps when tasks need to move through clear steps, but it requires upfront decisions about how work is structured."
+        },
+        {
+          "point": "ClickUp supports multiple views such as list, board, and calendar within the same workspace.",
+          "why_it_matters": "Switching views can improve visibility later, but it adds more options to manage from the start."
+        },
+        {
+          "point": "ClickUp includes custom fields for adding extra data like priority, effort, or tags to each task.",
+          "why_it_matters": "That adds depth for complex workflows, but it creates more inputs that a minimalist user does not want to maintain."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The project requires tracking multiple stages, assigning detailed properties, or switching between different views like boards and calendars.",
+          "what_to_do_instead": "Use ClickUp when tasks need structured workflows and richer context beyond a simple list."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You open ClickUp to track simple tasks but get pulled into setting statuses, choosing views, or adding fields before the system feels usable.",
+          "what_to_do_instead": "Switch to Things to keep task tracking focused on quick entry without setup overhead."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the minimalist user still needs to manage structured workflows, such as tracking tasks through clear stages or viewing work on a board. In that case, ClickUp may be worth the extra setup."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Things if you want a clean list with no setup decisions.",
+        "Choose ClickUp if your tasks need stages, views, or extra data.",
+        "If extra options feel like overhead, stick with Things."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Things too limited for real projects?",
+      "a": "It handles personal projects well, but it avoids advanced features like custom workflows or multiple views."
+    },
+    {
+      "q": "Why does ClickUp feel overwhelming at first?",
+      "a": "Because it includes features like statuses, views, and fields that require decisions before the system feels complete."
+    },
+    {
+      "q": "Can I ignore ClickUp features and use it simply?",
+      "a": "You can, but the interface still exposes those options, which can add mental overhead for a minimalist user."
+    },
+    {
+      "q": "What is the safest choice for simple task tracking?",
+      "a": "Things is the safer choice because it removes extra setup and keeps everything focused on tasks."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Trello vs Jira for Minimalists",
+      "slug": "trello-vs-jira-for-minimalist",
+      "exists": true,
+      "x_name": "Jira",
+      "y_name": "Trello",
+      "persona": "Minimalist"
+    }
+  ]
+}

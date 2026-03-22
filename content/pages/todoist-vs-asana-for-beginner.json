@@ -1,0 +1,130 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Publish fast",
+  "title": "Todoist vs Asana for Beginners",
+  "slug": "todoist-vs-asana-for-beginner",
+  "meta_description": "Compare Todoist vs Asana for Beginners. Todoist wins when you need to start adding tasks right away without building projects or extra structure.",
+  "persona": "Beginner",
+  "constraint_lens": "Beginners need a tool that lets them start without extra setup or too many early decisions.",
+  "one_second_verdict": {
+    "winner_label": "Todoist",
+    "summary": "Best for beginners who want to start tracking tasks right away without setting up a workspace first.",
+    "reason": "Asana fails first because it pushes you into project setup, sections, and extra layout choices before task entry feels natural."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Todoist is the better fit when your main goal is to start tracking work immediately. It lets you land on a simple task entry flow and begin typing tasks without first shaping the project into boards, sections, or custom layouts. Asana makes more sense once you are ready to organize work across projects, but that extra structure slows down a first-time user.",
+    "decision_rule": "If adding tasks requires creating a project structure with sections and fields before entry, Asana fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Todoist fits this beginner better",
+      "content": "This beginner is trying to track a first project and is likely to quit if the tool asks for too much setup before any progress is visible. Todoist gets to the first useful step faster because the task box is the center of the product, not something buried under workspace planning. That matters when early momentum is more important than detailed project design."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Todoist wins",
+      "bullets": [
+        {
+          "point": "Todoist opens into a task-first flow where you can hit 'Add task' and start entering work right away.",
+          "why_it_matters": "A beginner sees progress immediately instead of being asked to decide how the whole project should be organized first."
+        },
+        {
+          "point": "Project setup in Todoist is optional and lightweight, so tasks can exist before you decide on folders, labels, or deeper organization.",
+          "why_it_matters": "That lowers the chance of getting stuck on structure decisions before the real work has even been captured."
+        },
+        {
+          "point": "The main data model stays close to a list, with tasks and simple dates instead of multiple layers of views and team-oriented setup.",
+          "why_it_matters": "A first-time user has fewer moving parts to interpret, so it is easier to trust that they are using the tool correctly."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Asana wins",
+      "bullets": [
+        {
+          "point": "Asana gives you project-level structure with lists, boards, sections, and fields built into the workspace.",
+          "why_it_matters": "That becomes useful when the project needs a clear layout from the start and you already know how you want work grouped."
+        },
+        {
+          "point": "Asana is built around assigning, organizing, and viewing work inside named projects rather than keeping everything in one personal task stream.",
+          "why_it_matters": "That helps once the project involves shared ownership or distinct stages that need to be visible in one place."
+        },
+        {
+          "point": "Asana supports richer project views and more detailed task context inside each project item.",
+          "why_it_matters": "That pays off later when a simple list stops being enough and the work needs a fuller project home."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The project grows into multiple stages, owners, and grouped work that needs to be seen in boards or structured project views instead of one running task list.",
+          "what_to_do_instead": "Move to Asana when the work needs a clearer project container with more visible structure."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You open Asana just trying to write down a few tasks, but the project creation flow, section planning, and layout choices add extra steps before anything feels captured.",
+          "what_to_do_instead": "Use Todoist first to collect tasks quickly, then switch later if the work becomes more structured."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict can flip if the beginner is starting with a team project that already has clear stages, owners, and a need for everyone to look at the same project board from day one. In that case, Asana's extra structure may save a later rebuild."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Todoist if you want to type tasks first and organize later.",
+        "Choose Asana if the project already needs stages, owners, and a shared workspace.",
+        "If setup choices make you hesitate, Todoist is the safer starting point."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Todoist only for personal task lists?",
+      "a": "No. It can handle projects too, but it starts from quick task capture instead of making project structure the first step."
+    },
+    {
+      "q": "Why does Asana feel slower for a beginner?",
+      "a": "Because its workflow is centered on creating and shaping projects, which adds more early decisions before a first task feels settled."
+    },
+    {
+      "q": "Can a beginner still use Asana successfully?",
+      "a": "Yes, especially if they already know they need sections, shared ownership, or a project board. It is just a harder starting point for someone who wants instant entry."
+    },
+    {
+      "q": "What is the safest tool to start with if I am unsure?",
+      "a": "Todoist is the safer starting point because it lets you begin with task entry instead of project planning."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Jira vs Todoist for Beginners",
+      "slug": "jira-vs-todoist-for-beginner",
+      "exists": true,
+      "x_name": "Jira",
+      "y_name": "Todoist",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Microsoft To Do vs Smartsheet for Beginners",
+      "slug": "microsoft-to-do-vs-smartsheet-for-beginner",
+      "exists": true,
+      "x_name": "Microsoft To Do",
+      "y_name": "Smartsheet",
+      "persona": "Beginner"
+    }
+  ]
+}
