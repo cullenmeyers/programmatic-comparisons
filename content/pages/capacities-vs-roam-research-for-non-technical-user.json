@@ -1,0 +1,127 @@
+{
+  "category": "Knowledge Management Tools",
+  "categorySlug": "knowledge-management-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Capacities vs Roam Research for Non-technical users",
+  "slug": "capacities-vs-roam-research-for-non-technical-user",
+  "meta_description": "Compare Capacities vs Roam Research for non-technical users. Capacities wins when you want predictable writing without block-based behavior changing structure.",
+  "persona": "Non-technical user",
+  "constraint_lens": "Non-technical users need a tool that behaves predictably without hidden structure changing how content works.",
+  "one_second_verdict": {
+    "winner_label": "Capacities",
+    "summary": "Best for non-technical users who want writing to behave predictably without hidden structure.",
+    "reason": "Roam Research fails first because block-level editing and references change how text behaves in ways that are not always visible."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Capacities is the better choice when you want writing to feel stable and predictable. It treats notes more like standard documents, so typing and editing behave as expected. Roam Research is built around blocks and references, which introduce hidden structure that can change how content behaves and make editing feel uncertain.",
+    "decision_rule": "If editing text involves block-level behavior that changes how content is structured implicitly, Roam Research fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Capacities fits this non-technical user better",
+      "content": "This user wants to write notes without worrying about unexpected behavior. Capacities supports that by keeping text editing close to a normal document experience, where content stays where it is written. That removes the feeling that the system is doing something behind the scenes."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Capacities wins",
+      "bullets": [
+        {
+          "point": "Capacities uses document-style editing where text flows naturally without being broken into independent blocks.",
+          "why_it_matters": "Typing and editing behave as expected, so the user does not worry about hidden structure affecting their notes."
+        },
+        {
+          "point": "Content is organized through visible objects and pages rather than invisible references between blocks.",
+          "why_it_matters": "The structure is easier to understand, which reduces the chance of feeling like something was changed unintentionally."
+        },
+        {
+          "point": "Editing actions like deleting or moving text only affect what is visible on the page.",
+          "why_it_matters": "This keeps the system predictable and avoids unexpected changes elsewhere in the notes."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Roam Research wins",
+      "bullets": [
+        {
+          "point": "Roam Research breaks content into blocks that can be referenced and reused across pages.",
+          "why_it_matters": "This enables powerful linking, but it means each line behaves as its own unit instead of normal text."
+        },
+        {
+          "point": "Blocks can be embedded or referenced in multiple places at once.",
+          "why_it_matters": "Changes in one place can affect other locations, which can feel unpredictable to new users."
+        },
+        {
+          "point": "The editor treats indentation and block movement as structural changes rather than simple formatting.",
+          "why_it_matters": "Moving or editing content can change its meaning or relationships, adding complexity to basic writing."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need advanced linking where the same piece of content must appear and update across multiple notes.",
+          "what_to_do_instead": "Use Roam Research when you want block-level reuse and deep linking between ideas."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You edit or move text and do not realize it is part of a block or reference, causing unexpected changes in other parts of your notes.",
+          "what_to_do_instead": "Switch to Capacities to keep writing predictable and avoid hidden structure."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user learns and relies on block references to connect ideas across notes. In that case, Roam Research becomes valuable despite the added complexity."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Capacities if you want writing to behave like a normal document.",
+        "Choose Roam Research if you need block-level linking between notes.",
+        "If hidden structure feels risky, stick with Capacities."
+      ]
+    },
+    {
+      "type": "faqs",
+      "heading": "",
+      "content": ""
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Roam Research feel unpredictable?",
+      "a": "Because content is made of blocks that can be referenced and reused, so changes can affect multiple places."
+    },
+    {
+      "q": "Is Capacities less powerful than Roam Research?",
+      "a": "It is simpler, but that simplicity makes it easier to use without worrying about hidden structure."
+    },
+    {
+      "q": "What is block-level editing?",
+      "a": "It means each line or section is treated as its own unit that can be moved, linked, or reused independently."
+    },
+    {
+      "q": "Which tool is safer for writing notes?",
+      "a": "Capacities is safer because it keeps editing predictable and avoids hidden relationships between content."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Capacities vs Obsidian for Non-technical users",
+      "slug": "capacities-vs-obsidian-for-non-technical-user",
+      "exists": true,
+      "x_name": "Capacities",
+      "y_name": "Obsidian",
+      "persona": "Non-technical user"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "category": "Knowledge Management Tools",
+  "categorySlug": "knowledge-management-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Reflect vs Roam Research for Minimalists",
+  "slug": "reflect-vs-roam-research-for-minimalist",
+  "meta_description": "Compare Reflect vs Roam Research for Minimalists. Reflect wins when you want simple writing without block references or nested structures.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists need a tool that avoids extra layers, structure, and decisions when capturing ideas.",
+  "one_second_verdict": {
+    "winner_label": "Reflect",
+    "summary": "Best for minimalists who want to capture ideas without dealing with blocks or nested structures.",
+    "reason": "Roam Research fails first because writing is built around blocks and nested references that add extra layers by default."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Reflect is the better choice when your goal is to capture ideas quickly without extra layers. It keeps writing close to a simple document flow where notes behave as expected. Roam Research introduces block-based editing and nested structures, which add complexity that slows down a minimalist user.",
+    "decision_rule": "If writing requires navigating block references and nested structures by default, Roam Research fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Reflect fits this minimalist better",
+      "content": "This user wants to write quick thoughts without interacting with complex structure. Reflect supports that by keeping the writing experience clean and predictable, so each note feels like a simple document. That removes the need to think about how content is structured while writing."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Reflect wins",
+      "bullets": [
+        {
+          "point": "Reflect uses a document-style editor where text flows naturally instead of being split into independent blocks.",
+          "why_it_matters": "You can write continuously without thinking about how each line is structured or connected."
+        },
+        {
+          "point": "Notes are created as simple pages without exposing nested hierarchies by default.",
+          "why_it_matters": "There are fewer layers to navigate, which keeps idea capture fast and straightforward."
+        },
+        {
+          "point": "Linking between notes is optional and does not change how the core writing experience behaves.",
+          "why_it_matters": "You can ignore advanced features and still use the tool effectively without added complexity."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Roam Research wins",
+      "bullets": [
+        {
+          "point": "Roam Research structures content as blocks that can be nested and indented to create hierarchies.",
+          "why_it_matters": "This allows deep organization, but adds extra layers to even simple notes."
+        },
+        {
+          "point": "Each block can be referenced and reused across multiple notes.",
+          "why_it_matters": "This enables powerful connections, but requires understanding how references behave."
+        },
+        {
+          "point": "The default editor encourages outlining and nested structures rather than flat documents.",
+          "why_it_matters": "This changes how writing feels, making simple idea capture more complex."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need to reuse specific pieces of content across notes or build deeply nested knowledge structures.",
+          "what_to_do_instead": "Use Roam Research when block-level linking and hierarchy are required."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You just want to write quick thoughts but are slowed down by block nesting, references, and structure decisions.",
+          "what_to_do_instead": "Switch to Reflect to keep writing simple and direct."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user wants to build a highly connected system where ideas are reused and nested across many notes. In that case, Roam Research becomes more valuable despite the added complexity."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Reflect if you want simple, document-style writing.",
+        "Choose Roam Research if you need nested blocks and references.",
+        "If extra structure feels unnecessary, stick with Reflect."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Roam Research feel more complex?",
+      "a": "Because it uses blocks and nested structures that add layers to how content is organized and edited."
+    },
+    {
+      "q": "Is Reflect limited compared to Roam Research?",
+      "a": "It is simpler by design, focusing on writing without exposing complex structure."
+    },
+    {
+      "q": "What are block references?",
+      "a": "They allow pieces of content to be reused across notes, which adds power but also complexity."
+    },
+    {
+      "q": "What is the easiest tool for capturing quick thoughts?",
+      "a": "Reflect is easier because it keeps the writing experience simple and predictable."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Capacities vs Reflect for Minimalists",
+      "slug": "capacities-vs-reflect-for-minimalist",
+      "exists": true,
+      "x_name": "Capacities",
+      "y_name": "Reflect",
+      "persona": "Minimalist"
+    }
+  ]
+}

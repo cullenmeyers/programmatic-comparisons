@@ -1,0 +1,138 @@
+{
+  "category": "Team Collaboration Tools",
+  "categorySlug": "team-collaboration-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Discord vs Microsoft Teams for Minimalists",
+  "slug": "discord-vs-microsoft-teams-for-minimalist",
+  "meta_description": "Compare Discord vs Microsoft Teams for Minimalists. Discord wins when you want simple communication without managing permissions or enterprise setup.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists need a tool that avoids extra layers like permissions, org structures, and complex setup.",
+  "one_second_verdict": {
+    "winner_label": "Discord",
+    "summary": "Best for minimalists who want simple communication without managing roles, permissions, or enterprise setup.",
+    "reason": "Microsoft Teams fails first because it requires navigating org structures, permissions, and workspace layers before communication feels simple."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Discord is the better choice when you want lightweight communication without extra layers. It lets you create a server and start chatting without setting up departments, roles, or permissions in detail. Microsoft Teams is built for organizations, so it introduces structure like teams, channels, and permissions that add complexity for a minimalist user.",
+    "decision_rule": "If communication requires managing formal org structures, permissions, and enterprise layers instead of a simple server setup, Microsoft Teams fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Discord fits this minimalist better",
+      "content": "This user wants communication to feel simple and easy to manage. Discord supports that by letting you create a server and start chatting immediately without defining roles or structures. That keeps the experience lightweight and avoids unnecessary setup."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Discord wins",
+      "bullets": [
+        {
+          "point": "Discord allows you to create a server and start channels without defining departments or organizational hierarchy.",
+          "why_it_matters": "You can begin communicating immediately without setting up structure first."
+        },
+        {
+          "point": "Channels are simple and flexible, with optional roles rather than required permission systems.",
+          "why_it_matters": "You can ignore advanced settings and still use the tool effectively."
+        },
+        {
+          "point": "The interface focuses on chat and voice without layers like teams, apps, or enterprise integrations by default.",
+          "why_it_matters": "There are fewer elements to manage, which keeps communication straightforward."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Microsoft Teams wins",
+      "bullets": [
+        {
+          "point": "Microsoft Teams organizes communication into teams, channels, and roles tied to an organization.",
+          "why_it_matters": "This supports structured environments, but requires understanding how the organization is set up."
+        },
+        {
+          "point": "Permissions and access are managed through roles and admin controls across the workspace.",
+          "why_it_matters": "This ensures control, but adds layers that a minimalist user may not want to manage."
+        },
+        {
+          "point": "Teams integrates with enterprise tools like calendars, files, and meetings inside the same system.",
+          "why_it_matters": "This adds capability, but introduces more features and decisions than needed for simple communication."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need strict control over permissions, roles, and structured communication inside an organization.",
+          "what_to_do_instead": "Use Microsoft Teams when formal structure and control are required."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You just want to chat with a group but are slowed down by managing teams, permissions, or workspace setup.",
+          "what_to_do_instead": "Switch to Discord to keep communication simple and lightweight."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the communication happens inside a company that requires structured access, roles, and integrations. In that case, Microsoft Teams may be necessary despite the added complexity."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Discord if you want simple, lightweight communication.",
+        "Choose Microsoft Teams if you need structured roles and permissions.",
+        "If setup feels heavy, use Discord."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Discord simpler to use?",
+      "a": "Because it allows you to start communicating without setting up organizational structure or permissions."
+    },
+    {
+      "q": "What makes Microsoft Teams more complex?",
+      "a": "It includes teams, roles, permissions, and integrations that require setup and management."
+    },
+    {
+      "q": "Can I ignore features in Microsoft Teams?",
+      "a": "Some can be ignored, but the structure is still present and adds complexity."
+    },
+    {
+      "q": "What is the best tool for simple communication?",
+      "a": "Discord is better because it keeps the experience lightweight and easy to start."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Twist vs Discord for Minimalists",
+      "slug": "twist-vs-discord-for-minimalist",
+      "exists": true,
+      "x_name": "Discord",
+      "y_name": "Twist",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Slack vs Microsoft Teams for Minimalists",
+      "slug": "slack-vs-microsoft-teams-for-minimalist",
+      "exists": true,
+      "x_name": "Microsoft Teams",
+      "y_name": "Slack",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Twist vs Slack for Minimalists",
+      "slug": "twist-vs-slack-for-minimalist",
+      "exists": true,
+      "x_name": "Slack",
+      "y_name": "Twist",
+      "persona": "Minimalist"
+    }
+  ]
+}

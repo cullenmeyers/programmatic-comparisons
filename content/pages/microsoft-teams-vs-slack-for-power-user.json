@@ -1,0 +1,122 @@
+{
+  "category": "Team Collaboration Tools",
+  "categorySlug": "team-collaboration-tools",
+  "constraintSlug": "ceiling-matters",
+  "constraintUiName": "Full control and flexibility",
+  "title": "Microsoft Teams vs Slack for Power users",
+  "slug": "microsoft-teams-vs-slack-for-power-user",
+  "meta_description": "Compare Microsoft Teams vs Slack for power users. Microsoft Teams wins when you need deep integration with Outlook, SharePoint, and Office tools.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need tools that integrate deeply with their existing systems and allow complex workflows without external stitching.",
+  "one_second_verdict": {
+    "winner_label": "Microsoft Teams",
+    "summary": "Best for power users working inside the Microsoft ecosystem who need fully integrated collaboration.",
+    "reason": "Slack fails first because it relies on external integrations instead of native connections to documents, meetings, and permissions."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Microsoft Teams is the better choice when your work depends on the Microsoft ecosystem. It integrates natively with Outlook, SharePoint, and Office, so communication, files, and meetings live in one system. Slack can connect to these tools, but requires external integrations, which adds friction and breaks the unified workflow.",
+    "decision_rule": "If collaboration requires stitching together external tools instead of being natively integrated with documents, meetings, and permissions, Slack fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Microsoft Teams fits this power user better",
+      "content": "This user works inside Microsoft tools and needs everything connected. Microsoft Teams supports that by embedding communication directly into the same system as documents, meetings, and permissions. That removes the need to switch tools or manage integrations."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Microsoft Teams wins",
+      "bullets": [
+        {
+          "point": "Microsoft Teams integrates directly with Outlook, SharePoint, and Office apps.",
+          "why_it_matters": "Files, emails, and meetings are accessible inside the same environment without extra setup."
+        },
+        {
+          "point": "Permissions and access control are managed across the Microsoft ecosystem.",
+          "why_it_matters": "You do not need to configure separate systems for file access and communication."
+        },
+        {
+          "point": "Meetings, chat, and document collaboration are all built into one platform.",
+          "why_it_matters": "This centralizes work and reduces the need to switch between tools."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Slack wins",
+      "bullets": [
+        {
+          "point": "Slack supports integrations with many external tools across different ecosystems.",
+          "why_it_matters": "This allows flexibility, but requires connecting and managing multiple services."
+        },
+        {
+          "point": "The interface is focused on communication rather than full system integration.",
+          "why_it_matters": "This keeps chat simple, but separates it from documents and workflows."
+        },
+        {
+          "point": "Slack can connect to Microsoft tools through integrations instead of native embedding.",
+          "why_it_matters": "This adds capability, but introduces friction compared to built-in connections."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You are not using the Microsoft ecosystem and do not need deep integration with its tools.",
+          "what_to_do_instead": "Use Slack if your workflow spans multiple ecosystems or tools."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need tight integration between communication, documents, meetings, and permissions without relying on external connections.",
+          "what_to_do_instead": "Switch to Microsoft Teams to keep everything inside one system."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user works across multiple ecosystems and values flexibility over deep integration with a single system. In that case, Slack may be more practical."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Microsoft Teams if you use Outlook, SharePoint, and Office heavily.",
+        "Choose Slack if you need flexibility across different tools.",
+        "If integration requires extra setup, use Microsoft Teams."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Microsoft Teams better for Microsoft users?",
+      "a": "Because it integrates directly with Outlook, SharePoint, and Office without needing external setup."
+    },
+    {
+      "q": "Can Slack integrate with Microsoft tools?",
+      "a": "Yes, but it relies on integrations rather than native connections."
+    },
+    {
+      "q": "Is Microsoft Teams harder to use?",
+      "a": "It can be more complex, but that complexity comes from deeper integration and functionality."
+    },
+    {
+      "q": "What is the best tool for centralized collaboration?",
+      "a": "Microsoft Teams is better when you need everything in one integrated system."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Mattermost vs Slack for Power users",
+      "slug": "mattermost-vs-slack-for-power-user",
+      "exists": true,
+      "x_name": "Mattermost",
+      "y_name": "Slack",
+      "persona": "Power user"
+    }
+  ]
+}

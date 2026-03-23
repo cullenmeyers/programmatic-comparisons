@@ -1,0 +1,130 @@
+{
+  "category": "Team Collaboration Tools",
+  "categorySlug": "team-collaboration-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Slack vs Google Chat for Busy professionals",
+  "slug": "slack-vs-google-chat-for-busy-professional",
+  "meta_description": "Compare Slack vs Google Chat for busy professionals. Slack wins when you need fast, keyboard-driven navigation and quick access to conversations.",
+  "persona": "Busy professional",
+  "constraint_lens": "Busy professionals need tools that allow fast navigation and quick responses without slowing down interaction.",
+  "one_second_verdict": {
+    "winner_label": "Slack",
+    "summary": "Best for busy professionals who rely on fast keyboard navigation and quick switching between conversations.",
+    "reason": "Google Chat fails first because navigation depends more on slower UI interactions instead of command-driven workflows."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Slack is the better choice when speed of navigation matters. It provides strong keyboard shortcuts and command-based search, allowing you to jump between conversations instantly. Google Chat relies more on clicking through the interface, which adds friction when managing many conversations.",
+    "decision_rule": "If navigating conversations relies on slower UI interactions instead of fast command/search-driven workflows, Google Chat fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Slack fits this busy professional better",
+      "content": "This user moves quickly between conversations and needs minimal friction. Slack supports that with keyboard shortcuts and fast search, so switching contexts takes seconds without relying on the mouse."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Slack wins",
+      "bullets": [
+        {
+          "point": "Slack supports extensive keyboard shortcuts for navigation, messaging, and search.",
+          "why_it_matters": "You can move between conversations quickly without slowing down to click through the interface."
+        },
+        {
+          "point": "Search and command features allow jumping directly to channels or messages.",
+          "why_it_matters": "This reduces time spent finding conversations across many threads."
+        },
+        {
+          "point": "The interface is optimized for fast switching between multiple active conversations.",
+          "why_it_matters": "You can respond quickly without losing context."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Google Chat wins",
+      "bullets": [
+        {
+          "point": "Google Chat uses a simple interface with conversations organized into spaces and direct messages.",
+          "why_it_matters": "This keeps the UI clean, but relies more on clicking than command-driven navigation."
+        },
+        {
+          "point": "Navigation is primarily done through the interface rather than keyboard shortcuts.",
+          "why_it_matters": "This can slow down users who need to move quickly between conversations."
+        },
+        {
+          "point": "Integration with Google Workspace keeps communication tied to documents and meetings.",
+          "why_it_matters": "This adds context, but does not improve navigation speed."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You do not use keyboard shortcuts and prefer a simple, click-based interface.",
+          "what_to_do_instead": "Use Google Chat if simplicity matters more than speed."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need to switch between many conversations quickly but are slowed down by UI navigation.",
+          "what_to_do_instead": "Switch to Slack to use fast keyboard and search-based workflows."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user prefers a simple interface and does not rely on keyboard shortcuts for navigation. In that case, Google Chat may feel easier despite being slower."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Slack if you rely on keyboard shortcuts and fast navigation.",
+        "Choose Google Chat if you prefer a simple click-based interface.",
+        "If speed matters, use Slack."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Slack faster to navigate?",
+      "a": "Because it supports keyboard shortcuts and command-based search for quick access to conversations."
+    },
+    {
+      "q": "Does Google Chat support keyboard shortcuts?",
+      "a": "It has some shortcuts, but navigation relies more on the UI compared to Slack."
+    },
+    {
+      "q": "Is Slack harder to learn?",
+      "a": "It can take time to learn shortcuts, but they significantly improve speed once adopted."
+    },
+    {
+      "q": "What is the best tool for fast communication workflows?",
+      "a": "Slack is better because it enables quick navigation and response through keyboard and search."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Basecamp vs Slack for Busy professionals",
+      "slug": "basecamp-vs-slack-for-busy-professional",
+      "exists": true,
+      "x_name": "Basecamp",
+      "y_name": "Slack",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Slack vs Microsoft Teams for Busy professionals",
+      "slug": "slack-vs-microsoft-teams-for-busy-professional",
+      "exists": true,
+      "x_name": "Microsoft Teams",
+      "y_name": "Slack",
+      "persona": "Busy professional"
+    }
+  ]
+}

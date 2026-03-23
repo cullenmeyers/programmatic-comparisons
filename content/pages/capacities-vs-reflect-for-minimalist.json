@@ -1,0 +1,122 @@
+{
+  "category": "Knowledge Management Tools",
+  "categorySlug": "knowledge-management-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Capacities vs Reflect for Minimalists",
+  "slug": "capacities-vs-reflect-for-minimalist",
+  "meta_description": "Compare Capacities vs Reflect for Minimalists. Reflect wins when you want a single writing flow without switching between multiple content types.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists need a tool that avoids extra layers and keeps writing in one simple, unified flow.",
+  "one_second_verdict": {
+    "winner_label": "Reflect",
+    "summary": "Best for minimalists who want a single writing flow without switching between different content types.",
+    "reason": "Capacities fails first because it separates notes into objects and types, forcing you to choose how to structure content while writing."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Reflect is the better choice when you want writing to stay simple and unified. It keeps everything inside a single note flow where you just write without deciding how content should be categorized. Capacities introduces multiple object types, which adds decisions about structure that slow down a minimalist user.",
+    "decision_rule": "If writing requires interacting with multiple object types instead of a single note flow, Capacities fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Reflect fits this minimalist better",
+      "content": "This user wants to write without thinking about structure or content types. Reflect supports that by keeping everything inside a single note flow, where writing behaves consistently. That removes the need to decide how each piece of content should be classified."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Capacities wins",
+      "bullets": [
+        {
+          "point": "Capacities organizes content into objects like notes, images, and other types with distinct structures.",
+          "why_it_matters": "This allows more control, but requires choosing how to structure content before or during writing."
+        },
+        {
+          "point": "Different object types can have their own properties and behaviors.",
+          "why_it_matters": "This adds flexibility, but introduces extra layers that a minimalist user may not want to manage."
+        },
+        {
+          "point": "Content can be broken into structured pieces instead of staying in a single continuous note.",
+          "why_it_matters": "This helps with organization, but interrupts a simple writing flow."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Reflect wins",
+      "bullets": [
+        {
+          "point": "Reflect keeps all writing inside a single note format without requiring different content types.",
+          "why_it_matters": "You can focus on writing without deciding how content should be structured."
+        },
+        {
+          "point": "The editor behaves like a continuous document rather than splitting content into objects.",
+          "why_it_matters": "This keeps the experience consistent and reduces mental overhead while writing."
+        },
+        {
+          "point": "There are no required distinctions between types of content when capturing ideas.",
+          "why_it_matters": "This removes extra decisions, making it easier to stay in a simple writing flow."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You try to capture ideas quickly but are slowed down by deciding which object type to use or how to structure content.",
+          "what_to_do_instead": "Switch to Reflect to keep everything in a single, simple note flow."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need structured content with different types, properties, or behaviors beyond plain notes.",
+          "what_to_do_instead": "Use Capacities when you want to organize content into structured objects."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user wants to organize different types of content like media or structured entries in a more defined system. In that case, Capacities may be worth the added complexity."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Reflect if you want one simple writing flow.",
+        "Choose Capacities if you need structured content types.",
+        "If extra structure slows you down, use Reflect."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Capacities feel more complex?",
+      "a": "Because it separates content into different object types, which adds decisions while writing."
+    },
+    {
+      "q": "Is Reflect too simple for advanced use?",
+      "a": "It focuses on simplicity, so it may lack structured features found in more complex tools."
+    },
+    {
+      "q": "What does a single writing flow mean?",
+      "a": "It means all content is written in the same format without switching between types or structures."
+    },
+    {
+      "q": "What is the best tool for simple writing?",
+      "a": "Reflect is better because it keeps everything in one consistent note format."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Reflect vs Roam Research for Minimalists",
+      "slug": "reflect-vs-roam-research-for-minimalist",
+      "exists": true,
+      "x_name": "Reflect",
+      "y_name": "Roam Research",
+      "persona": "Minimalist"
+    }
+  ]
+}

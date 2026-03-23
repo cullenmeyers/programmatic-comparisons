@@ -1,0 +1,122 @@
+{
+  "category": "Knowledge Management Tools",
+  "categorySlug": "knowledge-management-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Capacities vs Obsidian for Non-technical users",
+  "slug": "capacities-vs-obsidian-for-non-technical-user",
+  "meta_description": "Compare Capacities vs Obsidian for non-technical users. Capacities wins when you want a safe system without installing plugins or configuring settings.",
+  "persona": "Non-technical user",
+  "constraint_lens": "Non-technical users need a tool that feels safe to use without risking breaking it through setup or changes.",
+  "one_second_verdict": {
+    "winner_label": "Capacities",
+    "summary": "Best for non-technical users who want a knowledge system that works without setup or plugins.",
+    "reason": "Obsidian fails first because many features depend on installing and configuring plugins that can change how the system behaves."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Capacities is the better choice when you want a system that feels safe and ready to use. It includes its core features without requiring setup, so you can write and organize notes without changing how the tool works. Obsidian is more customizable, but many workflows depend on plugins and settings, which can feel risky for someone who does not want to break anything.",
+    "decision_rule": "If unlocking core functionality requires installing and configuring plugins, Obsidian fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Capacities fits this non-technical user better",
+      "content": "This user wants to feel confident that using the tool will not break anything. Capacities supports that by providing a complete system out of the box, so there is no need to install or configure extra parts. That keeps the experience stable and predictable."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Capacities wins",
+      "bullets": [
+        {
+          "point": "Capacities includes core features like linking, organization, and structure without requiring plugins.",
+          "why_it_matters": "The user can rely on built-in behavior instead of modifying the system, which feels safer."
+        },
+        {
+          "point": "Settings are limited and do not expose complex configuration options that change how the system works.",
+          "why_it_matters": "There is less risk of accidentally changing something that affects how notes behave."
+        },
+        {
+          "point": "The system is designed around fixed objects and pages rather than customizable extensions.",
+          "why_it_matters": "This keeps the structure consistent, so the user does not worry about breaking the setup."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Obsidian wins",
+      "bullets": [
+        {
+          "point": "Obsidian supports a plugin system that allows adding new features and behaviors to the app.",
+          "why_it_matters": "This enables customization, but requires installing and managing extensions."
+        },
+        {
+          "point": "Many advanced workflows rely on community plugins for features like databases or task management.",
+          "why_it_matters": "This adds power, but increases the chance of misconfiguration or unexpected behavior."
+        },
+        {
+          "point": "Settings and plugins can change how notes are displayed, linked, and organized.",
+          "why_it_matters": "This flexibility can feel risky, as changes may affect how the system works."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need highly customized workflows or features that are not built into the core system.",
+          "what_to_do_instead": "Switch to Obsidian if you want to extend the tool with plugins and custom setups."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You install or configure plugins and settings without understanding them, causing confusion or unexpected behavior.",
+          "what_to_do_instead": "Use Capacities to keep the system stable and avoid setup risks."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user avoids plugins entirely and sticks to Obsidian's default setup. In that case, it can feel safe enough without extra configuration."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Capacities if you want a system that works out of the box.",
+        "Choose Obsidian if you want to customize with plugins.",
+        "If setup feels risky, stick with Capacities."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Obsidian feel risky to use?",
+      "a": "Because many features rely on plugins and settings that can change how the system behaves."
+    },
+    {
+      "q": "Does Capacities support plugins?",
+      "a": "No, it focuses on built-in features to keep the system stable and simple."
+    },
+    {
+      "q": "Can I use Obsidian without plugins?",
+      "a": "Yes, but many advanced workflows depend on them, which can add complexity later."
+    },
+    {
+      "q": "What is the safest knowledge tool to use?",
+      "a": "Capacities is safer because it avoids plugin setup and keeps everything built in."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Capacities vs Roam Research for Non-technical users",
+      "slug": "capacities-vs-roam-research-for-non-technical-user",
+      "exists": true,
+      "x_name": "Capacities",
+      "y_name": "Roam Research",
+      "persona": "Non-technical user"
+    }
+  ]
+}
