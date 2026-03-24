@@ -5,7 +5,7 @@ import ButtonLink from "@/components/ui/ButtonLink";
 import Card from "@/components/ui/Card";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { getCategoryGate, listCategoryGateParams } from "@/content/categoryGates";
-import { listComparisonsForGate } from "@/lib/pages";
+import { getComparisonTitleBySlug, listComparisonsForGate } from "@/lib/pages";
 import { absoluteUrl } from "@/lib/site";
 import CategoryGateClient from "./CategoryGateClient";
 
@@ -45,24 +45,124 @@ function prettyFromSlug(slug: string) {
     .join(" ");
 }
 
-function lensOneLiner(constraintSlug: string) {
+type FilterCopy = {
+  intro: string;
+  whatItDoes: string;
+  eliminates: string;
+  failingTools: string;
+  survivingTools: string;
+  failureMeaning: string;
+};
+
+function getFilterCopy(
+  constraintSlug: string,
+  categoryLabel: string,
+  lensName: string
+): FilterCopy {
   switch (constraintSlug) {
     case "setup-tolerance":
-      return "Eliminate tools that require too much setup before you can do the basic job.";
+      return {
+        intro: `Use this filter when you want to get started with ${categoryLabel.toLowerCase()} quickly and avoid front-loaded setup before the basic job is even live.`,
+        whatItDoes: `This filter keeps the page grounded in ${lensName.toLowerCase()}: fast starts, low setup drag, and a shorter path from signup to useful output.`,
+        eliminates:
+          "It is trying to eliminate tools that make you build the system before you can use the tool.",
+        failingTools:
+          "Tools usually fail here when they demand configuration, structure, or account setup that delays the first real result.",
+        survivingTools:
+          "Tools usually survive when they let you start quickly, prove value early, and postpone heavier setup until later.",
+        failureMeaning:
+          "A tool is flagged as fails here when the setup burden shows up before the payoff does.",
+      };
     case "maintenance-load":
-      return "Eliminate tools that require ongoing admin upkeep to keep working smoothly.";
+      return {
+        intro: `Use this filter when you want ${categoryLabel.toLowerCase()} that stays useful without regular tending, cleanup, or admin upkeep.`,
+        whatItDoes: `This filter focuses on ${lensName.toLowerCase()}: choosing options that do the job without turning into something you have to babysit.`,
+        eliminates:
+          "It is trying to eliminate tools that keep asking for ongoing upkeep after the initial setup is done.",
+        failingTools:
+          "Tools usually fail here when they create recurring cleanup, adjustment, monitoring, or workflow maintenance just to stay usable.",
+        survivingTools:
+          "Tools usually survive when they stay stable with light touch ownership and do not depend on constant attention.",
+        failureMeaning:
+          "A fails label here means the tool is more likely to become regular maintenance work than a set-and-forget option.",
+      };
     case "switching-cost":
-      return "Eliminate tools that lock you in when your use is short-term or changing.";
+      return {
+        intro: `Use this filter when your use is short-term, tentative, or likely to change and you do not want heavy setup that only pays back after a long commitment.`,
+        whatItDoes: `This filter focuses on ${lensName.toLowerCase()}: low commitment, easy exits, and getting value now without building around a tool you may not keep.`,
+        eliminates:
+          "It is trying to eliminate tools that are expensive to unwind once you have configured them or moved your workflow into them.",
+        failingTools:
+          "Tools usually fail here when they ask for deep setup, migration effort, or habit changes that only make sense if you plan to stay.",
+        survivingTools:
+          "Tools usually survive when they are easy to start, easy to leave, and still useful without a long ramp or lock-in.",
+        failureMeaning:
+          "A fails label here means the tool creates more commitment than this short-term or low-commitment situation can justify.",
+      };
     case "time-scarcity":
-      return "Eliminate tools that add extra steps, layers, or decisions when time is tight.";
+      return {
+        intro: `Use this filter when daily speed matters and you need ${categoryLabel.toLowerCase()} that works fast without adding workflow overhead.`,
+        whatItDoes: `This filter is about ${lensName.toLowerCase()}: fast operation, fewer decisions, and less drag in repeated day-to-day use.`,
+        eliminates:
+          "It is trying to eliminate tools that slow you down with extra steps, extra clicks, or too much workflow ceremony.",
+        failingTools:
+          "Tools usually fail here when the interface is slower than the job, when routine actions take too many steps, or when cognitive overhead piles up.",
+        survivingTools:
+          "Tools usually survive when common actions are quick, the path is obvious, and the tool does not make simple work feel long.",
+        failureMeaning:
+          "A fails label here means the tool predictably costs too much time or attention in normal use.",
+      };
     case "ceiling-check":
-      return "Eliminate tools that cap out once your workflows get advanced.";
+      return {
+        intro: `Use this filter when you expect your needs to grow and want ${categoryLabel.toLowerCase()} that will not cap out too early.`,
+        whatItDoes: `This filter centers ${lensName.toLowerCase()}: headroom, flexibility, and avoiding tools that feel fine now but become the bottleneck later.`,
+        eliminates:
+          "It is trying to eliminate tools whose limits arrive before your workflow is done growing.",
+        failingTools:
+          "Tools usually fail here when they top out on automation, depth, scale, or control once your usage becomes more demanding.",
+        survivingTools:
+          "Tools usually survive when they leave room to expand without forcing an early migration to something stronger.",
+        failureMeaning:
+          "A fails label here means the tool is more likely to become the limiting factor as your use matures.",
+      };
     case "fear-of-breaking":
-      return "Eliminate tools that feel risky to configure or easy to accidentally mis-set.";
+      return {
+        intro: `Use this filter when fragility is the real risk and you want ${categoryLabel.toLowerCase()} that does not feel easy to misconfigure or accidentally break.`,
+        whatItDoes: `This filter focuses on ${lensName.toLowerCase()}: reducing fragility, lowering misconfiguration risk, and making the tool feel harder to mess up.`,
+        eliminates:
+          "It is trying to eliminate tools that punish small mistakes or make the correct setup feel easy to mis-set.",
+        failingTools:
+          "Tools usually fail here when settings are brittle, the workflow is easy to misconfigure, or a wrong choice can quietly break the result.",
+        survivingTools:
+          "Tools usually survive when defaults are safe, the setup is forgiving, and normal use does not feel like one wrong click away from problems.",
+        failureMeaning:
+          "A fails label here means the tool is more likely to create avoidable breakage, misconfiguration, or configuration anxiety.",
+      };
     case "feature-aversion":
-      return "Eliminate tools that add unnecessary features or automation beyond the basic job.";
+      return {
+        intro: `Use this filter when you want ${categoryLabel.toLowerCase()} to stay simple and do not want extra layers, extra automation, or unnecessary complexity.`,
+        whatItDoes: `This filter emphasizes ${lensName.toLowerCase()}: simpler tools, fewer moving parts, and less feature weight between you and the basic job.`,
+        eliminates:
+          "It is trying to eliminate tools that over-expand the workflow with features you did not ask for.",
+        failingTools:
+          "Tools usually fail here when they add extra layers, too many controls, or bundled capabilities that make basic use feel more complicated than it needs to be.",
+        survivingTools:
+          "Tools usually survive when they keep the surface area small and let you do the core job without navigating a larger system.",
+        failureMeaning:
+          "A fails label here means the tool adds more complexity than this simplicity-first situation wants.",
+      };
     default:
-      return "Eliminate tools that fail first under this constraint.";
+      return {
+        intro: `Use this filter to narrow ${categoryLabel.toLowerCase()} around the specific pressure represented by ${lensName.toLowerCase()}.`,
+        whatItDoes: `This filter keeps the page focused on ${lensName.toLowerCase()} rather than generic feature comparison.`,
+        eliminates: "It is trying to eliminate options that predictably break first under this constraint.",
+        failingTools:
+          "Tools usually fail here when they create the kind of friction this filter is meant to avoid.",
+        survivingTools:
+          "Tools usually survive when they stay workable under this exact constraint.",
+        failureMeaning:
+          "A fails label here means the tool is more likely to create friction under this focus than the alternatives that pass.",
+      };
   }
 }
 
@@ -76,13 +176,21 @@ export default async function CategoryGatePage({
   if (!gate) return notFound();
 
   const lensName = gate.uiConstraintName ?? gate.constraintLabel;
+  const filterCopy = getFilterCopy(gate.constraintSlug, gate.categoryLabel, lensName);
   const allParams = listCategoryGateParams();
   const otherGatesSameCategory = allParams
     .filter((value) => value.category === category && value.constraint !== constraint)
-    .map((value) => ({
-      href: `/tools/${value.category}/${value.constraint}`,
-      label: prettyFromSlug(value.constraint),
-    }));
+    .map((value) => {
+      const otherGate = getCategoryGate(value.category, value.constraint);
+
+      return {
+        href: `/tools/${value.category}/${value.constraint}`,
+        label:
+          otherGate?.uiConstraintName ??
+          otherGate?.constraintLabel ??
+          prettyFromSlug(value.constraint),
+      };
+    });
 
   const failing = gate.tools.filter((tool) => tool.fails).map((tool) => tool.name);
   const safe = gate.tools.filter((tool) => !tool.fails).map((tool) => tool.name);
@@ -91,7 +199,12 @@ export default async function CategoryGatePage({
 
   const computedRelated = listComparisonsForGate(gate.categorySlug, gate.constraintSlug);
   const manualRelated = gate.relatedComparisons ?? [];
-  const related = Array.from(new Set([...computedRelated, ...manualRelated]));
+  const related = Array.from(new Set([...computedRelated, ...manualRelated])).map(
+    (compareSlug) => ({
+      slug: compareSlug,
+      title: getComparisonTitleBySlug(compareSlug),
+    })
+  );
 
   return (
     <main className="site-container page-shell content-stack">
@@ -111,6 +224,7 @@ export default async function CategoryGatePage({
         </h1>
 
         <div className="space-y-2 text-sm leading-7 text-black/70">
+          <p>{filterCopy.intro}</p>
           {gate.description.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
@@ -132,18 +246,37 @@ export default async function CategoryGatePage({
             This is a deterministic filter for{" "}
             <span className="font-medium">{gate.categoryLabel}</span> under the
             focus <span className="font-medium">{lensName}</span>.{" "}
-            {lensOneLiner(gate.constraintSlug)}
+            {filterCopy.whatItDoes}
           </p>
+          <div className="grid gap-4 sm:grid-cols-3">
+            <div className="space-y-2">
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
+                Trying to eliminate
+              </h3>
+              <p className="text-sm leading-6 text-black/75">{filterCopy.eliminates}</p>
+            </div>
+            <div className="space-y-2">
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
+                Usually fails here
+              </h3>
+              <p className="text-sm leading-6 text-black/75">
+                {filterCopy.failingTools}
+              </p>
+            </div>
+            <div className="space-y-2">
+              <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
+                Usually survives here
+              </h3>
+              <p className="text-sm leading-6 text-black/75">
+                {filterCopy.survivingTools}
+              </p>
+            </div>
+          </div>
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
               What &quot;fails&quot; means here
             </h3>
-            <p className="mt-2 text-sm leading-6 text-black/75">
-              A tool is flagged as &quot;fails&quot; if it predictably creates friction
-              under this focus, meaning it tends to break first for people who care
-              about{" "}
-              <span className="font-medium">{lensName}</span>.
-            </p>
+            <p className="mt-2 text-sm leading-6 text-black/75">{filterCopy.failureMeaning}</p>
           </div>
         </Card>
 
@@ -222,13 +355,13 @@ export default async function CategoryGatePage({
           ) : (
             <Card>
               <ul className="space-y-2 text-sm">
-                {related.map((compareSlug) => (
-                  <li key={compareSlug}>
+                {related.map((compare) => (
+                  <li key={compare.slug}>
                     <Link
-                      href={`/compare/${compareSlug}`}
+                      href={`/compare/${compare.slug}`}
                       className="text-black/80 hover:text-black hover:underline"
                     >
-                      {compareSlug.replace(/-/g, " ")}
+                      {compare.title}
                     </Link>
                   </li>
                 ))}

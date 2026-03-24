@@ -40,12 +40,86 @@ const PERSONA_JUMP_LABELS: Record<(typeof LOCKED_PERSONA_ORDER)[number], string>
   Minimalist: "Minimalists",
 };
 
+const START_HERE_PERSONA_PRIORITY: Array<(typeof LOCKED_PERSONA_ORDER)[number]> = [
+  "Beginner",
+  "Busy professional",
+  "Non-technical user",
+  "Minimalist",
+  "Power user",
+  "Student",
+  "Solo user",
+];
+
+const PERSONA_SHORTCUT_COPY: Record<(typeof LOCKED_PERSONA_ORDER)[number], string> = {
+  Beginner: "If you want something easy to start",
+  "Solo user": "If you want something that works without upkeep",
+  Student: "If you want something easy to quit later",
+  "Busy professional": "If you need something fast to use daily",
+  "Power user": "If you need something that grows with you",
+  "Non-technical user": "If you want something hard to mess up",
+  Minimalist: "If you want something simple",
+};
+
+const CATEGORY_CHOICE_HINTS: Record<string, string> = {
+  "ceiling-check": "How well it keeps up as your needs get more advanced",
+  "feature-aversion": "Whether you want fewer moving parts or more built-in help",
+  "fear-of-breaking": "How forgiving it feels when you do not want to tinker",
+  "maintenance-load": "How much ongoing cleanup or upkeep it asks from you",
+  "setup-tolerance": "How much setup work you are willing to do upfront",
+  "switching-cost": "How easy it is to move over without rebuilding your whole workflow",
+  "time-scarcity": "How quickly it fits into your day once everything is set up",
+};
+
 function getPersonaSectionId(persona: (typeof LOCKED_PERSONA_ORDER)[number]) {
   return `persona-${persona.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
 }
 
 function buildIntro(categoryLabel: string) {
   return `Browse comparison pages for ${categoryLabel.toLowerCase()}. Each page explains which tool fails first under a specific constraint.`;
+}
+
+function getStartHereItems(personas: Array<(typeof LOCKED_PERSONA_ORDER)[number]>) {
+  const available = new Set(personas);
+
+  return START_HERE_PERSONA_PRIORITY.filter((persona) => available.has(persona))
+    .slice(0, 4)
+    .map((persona) => ({
+    href: `#${getPersonaSectionId(persona)}`,
+    label: PERSONA_JUMP_LABELS[persona],
+    copy: PERSONA_SHORTCUT_COPY[persona],
+  }));
+}
+
+function getHowToChooseItems(pages: PageDoc[]) {
+  const items: string[] = [];
+  const seen = new Set<string>();
+
+  for (const page of pages) {
+    const hint = page.constraintSlug
+      ? CATEGORY_CHOICE_HINTS[page.constraintSlug]
+      : undefined;
+
+    if (hint && !seen.has(hint)) {
+      seen.add(hint);
+      items.push(hint);
+    }
+
+    if (items.length === 4) break;
+  }
+
+  if (items.length >= 2) {
+    return items;
+  }
+
+  return [
+    "How simple or flexible you want the tool to feel",
+    "How much setup you are willing to do at the start",
+    "How easy it is to keep using over time",
+  ];
+}
+
+function getPopularComparisons(pages: PageDoc[]) {
+  return pages.slice(0, 5);
 }
 
 export function generateStaticParams() {
@@ -104,6 +178,9 @@ export default async function CategoryIndexPage({
   const visiblePersonas = LOCKED_PERSONA_ORDER.filter(
     (persona) => (groups.get(persona)?.length ?? 0) > 0
   );
+  const startHereItems = getStartHereItems(visiblePersonas);
+  const howToChooseItems = getHowToChooseItems(category.pages);
+  const popularComparisons = getPopularComparisons(category.pages);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -121,6 +198,53 @@ export default async function CategoryIndexPage({
           {buildIntro(category.label)}
         </p>
       </header>
+
+      <div className="grid gap-4 lg:grid-cols-3 lg:items-start">
+        {startHereItems.length > 0 ? (
+          <Card className="space-y-3">
+            <SectionHeading
+              title="Start here"
+              subtitle="Choose the path that sounds most like your situation."
+            />
+            <div className="space-y-2 text-sm leading-6 text-black/75">
+              {startHereItems.map((item) => (
+                <p key={item.label}>
+                  {item.copy}{" "}
+                  <a href={item.href} className="font-medium text-black underline-offset-4 hover:underline">
+                    {item.label}
+                  </a>
+                </p>
+              ))}
+            </div>
+          </Card>
+        ) : null}
+
+        <Card className="space-y-3">
+          <SectionHeading title="How to choose" />
+          <ul className="space-y-2 pl-5 text-sm leading-6 text-black/75 list-disc">
+            {howToChooseItems.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </Card>
+
+        {popularComparisons.length > 0 ? (
+          <Card className="space-y-3">
+            <SectionHeading title="Popular comparisons" />
+            <div className="space-y-2 text-sm leading-6">
+              {popularComparisons.map((page) => (
+                <Link
+                  key={page.slug}
+                  href={`/compare/${page.slug}`}
+                  className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
+                >
+                  {page.title}
+                </Link>
+              ))}
+            </div>
+          </Card>
+        ) : null}
+      </div>
 
       {visiblePersonas.length === 0 ? (
         <Card>

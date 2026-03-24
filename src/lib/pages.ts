@@ -382,6 +382,31 @@ export function listComparisonsForGate(
     .sort((a, b) => a.localeCompare(b));
 }
 
+function titleCaseWords(text: string) {
+  return text
+    .split("-")
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+}
+
+export function getComparisonTitleBySlug(slug: string): string {
+  const doc = loadPageBySlug(slug);
+  if (doc?.title?.trim()) {
+    return doc.title.trim();
+  }
+
+  const [pairPart, ...personaParts] = slug.split("-for-");
+  const persona = titleCaseWords(personaParts.join("-for-"));
+  const [xSlug = "", ySlug = ""] = pairPart.split("-vs-");
+
+  if (xSlug && ySlug && persona) {
+    return `${titleCaseWords(xSlug)} vs ${titleCaseWords(ySlug)} for ${persona}`;
+  }
+
+  return titleCaseSlug(slug);
+}
+
 export function slugifyCompare(xName: string, yName: string, persona: string) {
   const toSlug = (s: string) =>
     s
