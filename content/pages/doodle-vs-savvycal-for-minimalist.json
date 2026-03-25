@@ -1,0 +1,113 @@
+{
+"category": "Scheduling / Booking Tools",
+"categorySlug": "scheduling-booking-tools",
+"constraintSlug": "feature-aversion",
+"constraintUiName": "Keeps it simple",
+"title": "Doodle vs SavvyCal for Minimalists",
+"slug": "doodle-vs-savvycal-for-minimalist",
+"meta_description": "Compare Doodle vs SavvyCal for Minimalists. Doodle wins when you want quick time proposals without managing booking links or availability settings.",
+"persona": "Minimalist",
+"constraint_lens": "Minimalists need scheduling tools that avoid setup, links, and configuration, and keep coordination simple.",
+"one_second_verdict": {
+"winner_label": "Doodle",
+"summary": "Best for minimalists who want to propose times quickly without creating booking pages.",
+"reason": "SavvyCal fails first because it requires managing booking links and availability settings instead of quick time proposals."
+},
+"verdict": {
+"winner": "x",
+"summary": "Doodle is the better choice when you want to keep scheduling simple. It lets you propose a few time options and collect responses without setting up a booking system. SavvyCal is built around booking links and availability settings, which adds setup and structure that a minimalist user does not want.",
+"decision_rule": "If scheduling requires creating booking links and managing availability settings instead of quick time proposals, SavvyCal fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Doodle fits this minimalist better",
+"content": "This user just wants to suggest a few times and get a response. Doodle supports that by allowing quick polls without creating booking pages or configuring availability, keeping the process simple and fast."
+},
+{
+"type": "x_wins",
+"heading": "Where Doodle wins",
+"bullets": [
+{
+"point": "Doodle lets you propose a set of times in a poll without creating a booking page.",
+"why_it_matters": "You can coordinate quickly without setting up a system or sharing your calendar."
+},
+{
+"point": "Participants vote on times instead of selecting from your availability.",
+"why_it_matters": "This keeps the interaction simple and avoids exposing detailed schedules."
+},
+{
+"point": "No ongoing scheduling setup is required to use the tool.",
+"why_it_matters": "You can use it once and move on without maintaining anything."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where SavvyCal wins",
+"bullets": [
+{
+"point": "SavvyCal uses booking links that reflect your availability and allow others to pick a time.",
+"why_it_matters": "This automates scheduling, but requires setup and configuration."
+},
+{
+"point": "Availability settings and calendar integrations control which times are offered.",
+"why_it_matters": "This adds precision, but introduces extra steps before use."
+},
+{
+"point": "Scheduling is managed through a persistent booking system rather than one-off coordination.",
+"why_it_matters": "This is efficient long-term, but unnecessary for simple use cases."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You want automated scheduling where others can directly book time based on your availability.",
+"what_to_do_instead": "Use SavvyCal when you need booking links and automated coordination."
+},
+{
+"tool": "y",
+"fails_when": "You just want to propose a few times but are slowed down by setting up availability and managing booking links.",
+"what_to_do_instead": "Switch to Doodle for quick, one-off scheduling."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "This can flip if the user schedules frequently and benefits from automation. In that case, SavvyCal may be more efficient despite the added setup."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"Choose Doodle if you want quick time proposals.",
+"Choose SavvyCal if you want automated booking links.",
+"If setup feels unnecessary, use Doodle."
+]
+}
+],
+"faqs": [
+{
+"q": "Why is Doodle simpler than SavvyCal?",
+"a": "Because it lets you propose times directly without creating booking pages or configuring availability."
+},
+{
+"q": "What makes SavvyCal more complex?",
+"a": "It requires setting up booking links and managing availability through calendar integrations."
+},
+{
+"q": "Is SavvyCal better for frequent scheduling?",
+"a": "Yes, it is designed for ongoing scheduling with automation."
+},
+{
+"q": "What is the best tool for quick scheduling?",
+"a": "Doodle is better because it keeps scheduling simple and immediate."
+}
+],
+"related_pages": []
+}
