@@ -1,15 +1,15 @@
 # Related Comparisons Rebuild Report
 
-Date: 2026-03-23T21:43:01.456Z
+Date: 2026-03-25T00:16:44.265Z
 
 ## Summary
 
 - Total pages scanned: 522
 - Total pages updated: 0
-- Average related_pages count: 5.39
-- Pages with 0 related pages: 11
-- Pages with 1 related page: 20
-- Pages with fewer than 3 related pages: 52
+- Average related_pages count: 5.23
+- Pages with 0 related pages: 12
+- Pages with 1 related page: 22
+- Pages with fewer than 3 related pages: 64
 
 ## Sparse Pages
 
@@ -17,6 +17,7 @@ Date: 2026-03-23T21:43:01.456Z
 
 - /compare/atracker-vs-kimai-for-student
 - /compare/basecamp-vs-discord-for-non-technical-user
+- /compare/calendly-vs-google-calendar-for-busy-professional
 - /compare/capacities-vs-logseq-for-beginner
 - /compare/discord-vs-google-chat-for-student
 - /compare/goodlinks-vs-wallabag-for-solo-user
@@ -31,6 +32,8 @@ Date: 2026-03-23T21:43:01.456Z
 
 - /compare/anybox-vs-raindropio-for-minimalist
 - /compare/bitwarden-vs-passbolt-for-solo-user
+- /compare/cal-com-vs-calendly-for-busy-professional
+- /compare/calendly-vs-chili-piper-for-busy-professional
 - /compare/capacities-vs-obsidian-for-non-technical-user
 - /compare/capacities-vs-reflect-for-minimalist
 - /compare/capacities-vs-roam-research-for-non-technical-user
@@ -54,6 +57,7 @@ Date: 2026-03-23T21:43:01.456Z
 
 - /compare/anybox-vs-raindropio-for-minimalist
 - /compare/apple-calendar-vs-notion-calendar-for-solo-user
+- /compare/apple-calendar-vs-outlook-calendar-for-beginner
 - /compare/apple-notes-vs-evernote-for-solo-user
 - /compare/apple-notes-vs-notion-for-solo-user
 - /compare/asana-vs-todoist-for-busy-professional
@@ -63,12 +67,18 @@ Date: 2026-03-23T21:43:01.456Z
 - /compare/bitwarden-vs-keepass-for-beginner
 - /compare/bitwarden-vs-passbolt-for-solo-user
 - /compare/bonsai-vs-trello-for-busy-professional
+- /compare/cal-com-vs-calendly-for-busy-professional
+- /compare/calendly-vs-chili-piper-for-busy-professional
+- /compare/calendly-vs-google-calendar-for-beginner
+- /compare/calendly-vs-google-calendar-for-busy-professional
 - /compare/capacities-vs-logseq-for-beginner
 - /compare/capacities-vs-obsidian-for-non-technical-user
 - /compare/capacities-vs-reflect-for-minimalist
 - /compare/capacities-vs-roam-research-for-non-technical-user
+- /compare/cron-vs-google-calendar-for-beginner
 - /compare/discord-vs-google-chat-for-student
 - /compare/enpass-vs-keeper-for-solo-user
+- /compare/fantastical-vs-motion-for-power-user
 - /compare/gmail-vs-hey-for-student
 - /compare/gmail-vs-mailbird-for-beginner
 - /compare/gmail-vs-postbox-for-beginner
@@ -78,8 +88,12 @@ Date: 2026-03-23T21:43:01.456Z
 - /compare/goodlinks-vs-pinboard-for-beginner
 - /compare/goodlinks-vs-raindropio-for-non-technical-user
 - /compare/goodlinks-vs-wallabag-for-solo-user
+- /compare/google-calendar-vs-microsoft-bookings-for-beginner
+- /compare/google-calendar-vs-motion-for-power-user
 - /compare/google-calendar-vs-reclaim-ai-for-solo-user
 - /compare/google-calendar-vs-skedda-for-solo-user
+- /compare/google-calendar-vs-teamup-calendar-for-beginner
+- /compare/google-calendar-vs-tidycal-for-beginner
 - /compare/instapaper-vs-zotero-for-student
 - /compare/jira-vs-todoist-for-beginner
 - /compare/joplin-vs-notion-for-solo-user
@@ -96,6 +110,7 @@ Date: 2026-03-23T21:43:01.456Z
 - /compare/pocket-vs-wallabag-for-student
 - /compare/raindropio-vs-wallabag-for-beginner
 - /compare/reflect-vs-roam-research-for-minimalist
+- /compare/skedda-vs-teamup-calendar-for-power-user
 - /compare/slack-vs-google-chat-for-busy-professional
 - /compare/slack-vs-microsoft-teams-for-busy-professional
 - /compare/startme-vs-raindropio-for-minimalist

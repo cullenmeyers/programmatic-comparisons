@@ -1,12 +1,12 @@
 {
-  "categoryLabel": "Calendar / Scheduling tools",
-  "categorySlug": "calendar-scheduling-tools",
+  "categoryLabel": "Calendar Tools",
+  "categorySlug": "calendar-tools",
   "constraintLabel": "zero tolerance for ongoing maintenance",
   "constraintSlug": "maintenance-load",
   "uiConstraintName": "Works without upkeep",
-  "title": "Works without upkeep - Calendar / Scheduling tools",
+  "title": "Works without upkeep - Calendar Tools",
   "description": [
-    "Use this when you want calendar / scheduling tools that are works without upkeep.",
+    "Use this when you want calendar tools that are works without upkeep.",
     "Tools flagged here tend to feel risky or confusing to use.",
     "Pick the option that stays obvious and dependable in daily use."
   ],
@@ -23,32 +23,22 @@
       "note": ""
     },
     {
-      "name": "Cal.com",
-      "fails": false,
-      "note": ""
-    },
-    {
-      "name": "Calendly",
-      "fails": false,
-      "note": ""
-    },
-    {
       "name": "Clockwise",
       "fails": false,
       "note": ""
     },
     {
-      "name": "Doodle",
+      "name": "Cron",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Fantastical",
       "fails": false,
       "note": ""
     },
     {
       "name": "Google Calendar",
-      "fails": false,
-      "note": ""
-    },
-    {
-      "name": "Microsoft Bookings",
       "fails": false,
       "note": ""
     },
@@ -60,7 +50,7 @@
     {
       "name": "Notion Calendar",
       "fails": true,
-      "note": "Needs constant tweaks"
+      "note": "Needs ongoing upkeep"
     },
     {
       "name": "Outlook Calendar",
@@ -68,44 +58,24 @@
       "note": ""
     },
     {
-      "name": "Reclaim.ai",
+      "name": "Reclaim",
       "fails": true,
-      "note": "Needs constant tweaks"
-    },
-    {
-      "name": "SavvyCal",
-      "fails": false,
-      "note": ""
+      "note": "Needs ongoing upkeep"
     },
     {
       "name": "Skedda",
       "fails": true,
-      "note": "Needs frequent attention"
-    },
-    {
-      "name": "Square Appointments",
-      "fails": false,
-      "note": ""
+      "note": "Needs ongoing upkeep"
     },
     {
       "name": "Teamup Calendar",
       "fails": false,
       "note": ""
-    },
-    {
-      "name": "TidyCal",
-      "fails": false,
-      "note": ""
-    },
-    {
-      "name": "Zoho Bookings",
-      "fails": false,
-      "note": ""
     }
   ],
   "relatedComparisons": [
-    "notion-calendar-vs-apple-calendar-for-solo-user",
-    "reclaim.ai-vs-google-calendar-for-solo-user",
-    "skedda-vs-google-calendar-for-solo-user"
+    "apple-calendar-vs-notion-calendar-for-solo-user",
+    "google-calendar-vs-reclaim-ai-for-solo-user",
+    "google-calendar-vs-skedda-for-solo-user"
   ]
 }

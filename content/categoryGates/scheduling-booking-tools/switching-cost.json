@@ -1,39 +1,29 @@
 {
-  "categoryLabel": "Calendar / Scheduling tools",
-  "categorySlug": "calendar-scheduling-tools",
+  "categoryLabel": "Scheduling / Booking Tools",
+  "categorySlug": "scheduling-booking-tools",
   "constraintLabel": "short-term use + low switching cost",
   "constraintSlug": "switching-cost",
   "uiConstraintName": "Easy to quit later",
-  "title": "Easy to quit later - Calendar / Scheduling tools",
+  "title": "Easy to quit later - Scheduling / Booking Tools",
   "description": [
-    "Use this when you want calendar / scheduling tools that are easy to quit later.",
+    "Use this when you want scheduling / booking tools that are easy to quit later.",
     "Tools flagged here tend to feel risky or confusing to use.",
     "Pick the option that stays obvious and dependable in daily use."
   ],
   "embedBlockTitle": "Quick Gate: Easy to quit later",
   "tools": [
     {
-      "name": "Akiflow",
-      "fails": false,
-      "note": ""
-    },
-    {
-      "name": "Apple Calendar",
-      "fails": false,
-      "note": ""
-    },
-    {
       "name": "Cal.com",
       "fails": true,
-      "note": "Hard to exit cleanly"
+      "note": "Hard to unwind later"
     },
     {
       "name": "Calendly",
       "fails": true,
-      "note": "Hard to exit cleanly"
+      "note": "Hard to unwind later"
     },
     {
-      "name": "Clockwise",
+      "name": "Chili Piper",
       "fails": false,
       "note": ""
     },
@@ -43,34 +33,14 @@
       "note": ""
     },
     {
-      "name": "Google Calendar",
-      "fails": false,
-      "note": ""
-    },
-    {
       "name": "Microsoft Bookings",
       "fails": true,
-      "note": "Exit is messy"
+      "note": "Hard to unwind later"
     },
     {
-      "name": "Motion",
-      "fails": false,
-      "note": ""
-    },
-    {
-      "name": "Notion Calendar",
-      "fails": false,
-      "note": ""
-    },
-    {
-      "name": "Outlook Calendar",
-      "fails": false,
-      "note": ""
-    },
-    {
-      "name": "Reclaim.ai",
-      "fails": false,
-      "note": ""
+      "name": "OnceHub",
+      "fails": true,
+      "note": "Hard to unwind later"
     },
     {
       "name": "SavvyCal",
@@ -78,24 +48,19 @@
       "note": ""
     },
     {
-      "name": "Skedda",
+      "name": "Setmore",
       "fails": false,
       "note": ""
     },
     {
       "name": "Square Appointments",
       "fails": true,
-      "note": "Hard to switch away"
-    },
-    {
-      "name": "Teamup Calendar",
-      "fails": false,
-      "note": ""
+      "note": "Hard to unwind later"
     },
     {
       "name": "TidyCal",
       "fails": true,
-      "note": "Hard to switch away"
+      "note": "Hard to unwind later"
     },
     {
       "name": "Zoho Bookings",
@@ -104,9 +69,10 @@
     }
   ],
   "relatedComparisons": [
-    "cal.com-vs-savvycal-for-student",
+    "cal-com-vs-savvycal-for-student",
+    "calendly-vs-doodle-for-student",
     "calendly-vs-microsoft-bookings-for-student",
-    "doodle-vs-calendly-for-student",
+    "doodle-vs-oncehub-for-student",
     "doodle-vs-square-appointments-for-student",
     "doodle-vs-tidycal-for-student",
     "microsoft-bookings-vs-calendly-for-student"

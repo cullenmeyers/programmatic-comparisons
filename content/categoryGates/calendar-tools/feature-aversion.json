@@ -1,12 +1,12 @@
 {
-  "categoryLabel": "Calendar / Scheduling tools",
-  "categorySlug": "calendar-scheduling-tools",
+  "categoryLabel": "Calendar Tools",
+  "categorySlug": "calendar-tools",
   "constraintLabel": "feature aversion",
   "constraintSlug": "feature-aversion",
   "uiConstraintName": "Keeps it simple",
-  "title": "Keeps it simple - Calendar / Scheduling tools",
+  "title": "Keeps it simple - Calendar Tools",
   "description": [
-    "Use this when you want calendar / scheduling tools that are keeps it simple.",
+    "Use this when you want calendar tools that are keeps it simple.",
     "Tools flagged here tend to feel risky or confusing to use.",
     "Pick the option that stays obvious and dependable in daily use."
   ],
@@ -15,7 +15,7 @@
     {
       "name": "Akiflow",
       "fails": true,
-      "note": "Too many features"
+      "note": "Adds extra layers"
     },
     {
       "name": "Apple Calendar",
@@ -23,22 +23,17 @@
       "note": ""
     },
     {
-      "name": "Cal.com",
-      "fails": false,
-      "note": ""
-    },
-    {
-      "name": "Calendly",
-      "fails": false,
-      "note": ""
-    },
-    {
       "name": "Clockwise",
       "fails": true,
-      "note": "Too many features"
+      "note": "Adds extra layers"
     },
     {
-      "name": "Doodle",
+      "name": "Cron",
+      "fails": false,
+      "note": ""
+    },
+    {
+      "name": "Fantastical",
       "fails": false,
       "note": ""
     },
@@ -48,19 +43,14 @@
       "note": ""
     },
     {
-      "name": "Microsoft Bookings",
-      "fails": false,
-      "note": ""
-    },
-    {
       "name": "Motion",
       "fails": true,
-      "note": "Feels overbuilt"
+      "note": "Adds extra layers"
     },
     {
       "name": "Notion Calendar",
       "fails": true,
-      "note": "Feels overbuilt"
+      "note": "Adds extra layers"
     },
     {
       "name": "Outlook Calendar",
@@ -68,12 +58,7 @@
       "note": ""
     },
     {
-      "name": "Reclaim.ai",
-      "fails": false,
-      "note": ""
-    },
-    {
-      "name": "SavvyCal",
+      "name": "Reclaim",
       "fails": false,
       "note": ""
     },
@@ -83,22 +68,7 @@
       "note": ""
     },
     {
-      "name": "Square Appointments",
-      "fails": false,
-      "note": ""
-    },
-    {
       "name": "Teamup Calendar",
-      "fails": false,
-      "note": ""
-    },
-    {
-      "name": "TidyCal",
-      "fails": false,
-      "note": ""
-    },
-    {
-      "name": "Zoho Bookings",
       "fails": false,
       "note": ""
     }
@@ -106,9 +76,10 @@
   "relatedComparisons": [
     "akiflow-vs-apple-calendar-for-minimalist",
     "akiflow-vs-google-calendar-for-minimalist",
+    "apple-calendar-vs-motion-for-minimalist",
+    "apple-calendar-vs-notion-calendar-for-minimalist",
     "clockwise-vs-google-calendar-for-minimalist",
-    "motion-vs-apple-calendar-for-minimalist",
-    "motion-vs-outlook-calendar-for-minimalist",
-    "notion-calendar-vs-google-calendar-for-minimalist"
+    "google-calendar-vs-notion-calendar-for-minimalist",
+    "motion-vs-outlook-calendar-for-minimalist"
   ]
 }

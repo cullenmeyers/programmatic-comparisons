@@ -52,21 +52,40 @@ const categories: CategoryLink[] = [
     ],
   },
   {
-    label: "Calendar and scheduling tools",
-    href: "/tools/calendar-scheduling-tools",
-    description: "Find the scheduling tool that will not add friction.",
+    label: "Calendar Tools",
+    href: "/tools/calendar-tools",
+    description: "Find the calendar tool that stays easy to live with.",
     sublinks: [
       {
         label: "Publish fast",
-        href: "/tools/calendar-scheduling-tools/setup-tolerance",
+        href: "/tools/calendar-tools/setup-tolerance",
       },
       {
         label: "Works without upkeep",
-        href: "/tools/calendar-scheduling-tools/maintenance-load",
+        href: "/tools/calendar-tools/maintenance-load",
       },
       {
         label: "Keeps it simple",
-        href: "/tools/calendar-scheduling-tools/feature-aversion",
+        href: "/tools/calendar-tools/feature-aversion",
+      },
+    ],
+  },
+  {
+    label: "Scheduling / Booking Tools",
+    href: "/tools/scheduling-booking-tools",
+    description: "Choose a booking tool that fits how you coordinate time.",
+    sublinks: [
+      {
+        label: "Publish fast",
+        href: "/tools/scheduling-booking-tools/setup-tolerance",
+      },
+      {
+        label: "Easy to quit later",
+        href: "/tools/scheduling-booking-tools/switching-cost",
+      },
+      {
+        label: "Doesn't cap you",
+        href: "/tools/scheduling-booking-tools/ceiling-check",
       },
     ],
   },

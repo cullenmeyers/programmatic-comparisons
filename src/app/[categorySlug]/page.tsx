@@ -18,7 +18,7 @@ import { absoluteUrl } from "@/lib/site";
 type Params = { categorySlug: string };
 
 export const dynamic = "force-static";
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 const PERSONA_SECTION_TITLES: Record<(typeof LOCKED_PERSONA_ORDER)[number], string> = {
   Beginner: "For Beginners",
