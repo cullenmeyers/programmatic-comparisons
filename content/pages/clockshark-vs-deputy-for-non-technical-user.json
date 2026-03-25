@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "ClockShark vs Deputy for Non-technical users",
+  "slug": "clockshark-vs-deputy-for-non-technical-user",
+  "meta_description": "Compare ClockShark vs Deputy for non-technical users. ClockShark wins when you need simple job-based tracking without shift scheduling systems.",
+  "persona": "Non-technical user",
+  "constraint_lens": "Non-technical users need tools that are simple to use and avoid complex systems that can be misconfigured.",
+  "one_second_verdict": {
+    "winner_label": "ClockShark",
+    "summary": "Best for non-technical users who need simple job-based tracking for field crews.",
+    "reason": "Deputy fails first because it requires managing shift scheduling systems instead of simple job-based tracking."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "ClockShark is the better choice when you need straightforward job-based tracking for field crews. It focuses on tracking time against jobs without requiring complex scheduling systems. Deputy is built around shift scheduling, which introduces additional setup and configuration that can be confusing and easy to misconfigure.",
+    "decision_rule": "If tracking time requires managing shift scheduling systems instead of simple job-based tracking, Deputy fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why ClockShark fits this non-technical user better",
+      "content": "This user wants a system that is hard to mess up. ClockShark supports this by focusing on simple job-based tracking without requiring configuration of shift schedules or complex workflows."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where ClockShark wins",
+      "bullets": [
+        {
+          "point": "ClockShark tracks time directly against jobs and tasks.",
+          "why_it_matters": "You can assign work without setting up scheduling systems."
+        },
+        {
+          "point": "The interface avoids complex shift planning workflows.",
+          "why_it_matters": "This reduces the risk of misconfiguration."
+        },
+        {
+          "point": "Tracking is designed for field crews with simple job selection.",
+          "why_it_matters": "This makes it easy to use in real-world work scenarios."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Deputy wins",
+      "bullets": [
+        {
+          "point": "Deputy is built around shift scheduling and workforce planning.",
+          "why_it_matters": "This supports structured scheduling, but adds complexity."
+        },
+        {
+          "point": "Time tracking is tied to scheduled shifts and rosters.",
+          "why_it_matters": "This ensures alignment with schedules, but requires setup."
+        },
+        {
+          "point": "The system includes workforce management features beyond tracking.",
+          "why_it_matters": "This increases capability, but introduces more ways to misconfigure."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need advanced shift scheduling and workforce planning features.",
+          "what_to_do_instead": "Use Deputy if you need structured scheduling systems."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You just need to track field work but are forced to manage shift schedules and configurations.",
+          "what_to_do_instead": "Switch to ClockShark for simple job-based tracking."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user needs structured shift scheduling and workforce planning alongside time tracking. In that case, Deputy may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose ClockShark if you want job-based tracking.",
+        "Choose Deputy if you need shift scheduling.",
+        "If you want simplicity, use ClockShark."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is ClockShark better for field crews?",
+      "a": "Because it focuses on simple job-based tracking without requiring scheduling systems."
+    },
+    {
+      "q": "What makes Deputy harder to use?",
+      "a": "It requires managing shift schedules and workforce planning systems."
+    },
+    {
+      "q": "Is Deputy more powerful?",
+      "a": "Yes, but that power comes with added complexity."
+    },
+    {
+      "q": "What is the best tool for simple field work tracking?",
+      "a": "ClockShark is better because it keeps tracking straightforward and easy to manage."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "ClockShark vs Hubstaff for Non-technical users",
+      "slug": "clockshark-vs-hubstaff-for-non-technical-user",
+      "exists": true,
+      "x_name": "ClockShark",
+      "y_name": "Hubstaff",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs Dovico for Non-technical users",
+      "slug": "clockify-vs-dovico-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Dovico",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs eHour for Non-technical users",
+      "slug": "clockify-vs-ehour-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "eHour",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs Tempo Timesheets for Non-technical users",
+      "slug": "clockify-vs-tempo-timesheets-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Tempo Timesheets",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Clockify vs TimePanic for Non-technical users",
+      "slug": "clockify-vs-timepanic-for-non-technical-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "TimePanic",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Fanurio vs Kimai for Non-technical users",
+      "slug": "fanurio-vs-kimai-for-non-technical-user",
+      "exists": true,
+      "x_name": "Fanurio",
+      "y_name": "Kimai",
+      "persona": "Non-technical user"
+    }
+  ]
+}

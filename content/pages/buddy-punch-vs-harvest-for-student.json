@@ -1,0 +1,122 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "switching-cost",
+  "constraintUiName": "Easy to quit later",
+  "title": "Buddy Punch vs Harvest for Students",
+  "slug": "buddy-punch-vs-harvest-for-student",
+  "meta_description": "Compare Buddy Punch vs Harvest for students. Buddy Punch wins when you need simple clock-in/out tracking without projects or invoicing.",
+  "persona": "Student",
+  "constraint_lens": "Students need tools that are simple to start and easy to leave without setup overhead.",
+  "one_second_verdict": {
+    "winner_label": "Buddy Punch",
+    "summary": "Best for students who need simple clock-in/out tracking without extra setup.",
+    "reason": "Harvest fails first because it requires setting up projects and invoicing workflows instead of simple shift tracking."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Buddy Punch is the better choice when you just need to clock in and out for shifts. It focuses on simple time tracking without requiring project setup or billing workflows. Harvest is built around projects and invoicing, which adds unnecessary setup and makes it harder to use for short-term, simple needs.",
+    "decision_rule": "If tracking time requires setting up projects or invoicing workflows instead of simple clock-in/out, Harvest fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Buddy Punch fits this student better",
+      "content": "This user needs something quick and simple with no setup overhead. Buddy Punch supports this by allowing straightforward clock-in and clock-out tracking without requiring projects or billing configuration."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Buddy Punch wins",
+      "bullets": [
+        {
+          "point": "Buddy Punch allows simple clock-in and clock-out tracking.",
+          "why_it_matters": "You can start tracking shifts immediately without setup."
+        },
+        {
+          "point": "No project or invoicing configuration is required.",
+          "why_it_matters": "This reduces friction and makes it easy to use short-term."
+        },
+        {
+          "point": "The system is focused on shift tracking rather than business workflows.",
+          "why_it_matters": "This keeps the tool simple and easy to adopt."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Harvest wins",
+      "bullets": [
+        {
+          "point": "Harvest connects time tracking to projects and invoicing.",
+          "why_it_matters": "This supports billing workflows, but adds complexity."
+        },
+        {
+          "point": "Time entries are structured around clients and billable work.",
+          "why_it_matters": "This is useful for freelancers, but unnecessary for shift tracking."
+        },
+        {
+          "point": "The tool includes reporting and billing features.",
+          "why_it_matters": "This increases capability, but requires setup and maintenance."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need project-based tracking with invoicing and billing workflows.",
+          "what_to_do_instead": "Use Harvest if you need structured project tracking and billing."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You just need to clock in and out but are slowed down by project and invoicing setup.",
+          "what_to_do_instead": "Switch to Buddy Punch for simple shift tracking."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user transitions into freelance work and needs invoicing and project-based tracking. In that case, Harvest may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Buddy Punch if you want simple clock-in/out tracking.",
+        "Choose Harvest if you need invoicing and project tracking.",
+        "If you want minimal setup, use Buddy Punch."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Buddy Punch better for students?",
+      "a": "Because it allows simple clock-in/out tracking without setup or extra workflows."
+    },
+    {
+      "q": "What makes Harvest less suitable here?",
+      "a": "It requires projects and invoicing workflows, which add complexity."
+    },
+    {
+      "q": "Is Harvest more powerful?",
+      "a": "Yes, but that power is unnecessary for simple shift tracking."
+    },
+    {
+      "q": "What is the best tool for basic work shift tracking?",
+      "a": "Buddy Punch is better because it keeps tracking simple and immediate."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "ATracker vs Kimai for Students",
+      "slug": "atracker-vs-kimai-for-student",
+      "exists": true,
+      "x_name": "ATracker",
+      "y_name": "Kimai",
+      "persona": "Student"
+    }
+  ]
+}

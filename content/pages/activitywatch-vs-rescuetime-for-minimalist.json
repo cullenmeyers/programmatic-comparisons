@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "ActivityWatch vs RescueTime for Minimalists",
+  "slug": "activitywatch-vs-rescuetime-for-minimalist",
+  "meta_description": "Compare ActivityWatch vs RescueTime for Minimalists. ActivityWatch wins when you want fully local, private time tracking without cloud uploads.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists need tools that avoid unnecessary systems like cloud syncing and keep tracking simple and private.",
+  "one_second_verdict": {
+    "winner_label": "ActivityWatch",
+    "summary": "Best for minimalists who want private, fully local time tracking.",
+    "reason": "RescueTime fails first because it uploads activity data to cloud servers instead of keeping it local."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "ActivityWatch is the better choice when you want time tracking to stay private and local. It runs on your device and stores data without sending it to external servers. RescueTime relies on cloud-based tracking, which means your activity data is uploaded and processed externally, adding complexity and reducing privacy.",
+    "decision_rule": "If tracking time requires uploading activity data to cloud servers instead of staying fully local, RescueTime fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why ActivityWatch fits this minimalist better",
+      "content": "This user wants tracking to be simple and private without relying on external systems. ActivityWatch supports this by keeping all data local and avoiding cloud-based workflows."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where ActivityWatch wins",
+      "bullets": [
+        {
+          "point": "ActivityWatch stores all tracking data locally on your device.",
+          "why_it_matters": "Your data stays private and under your control."
+        },
+        {
+          "point": "No cloud account or syncing is required.",
+          "why_it_matters": "This removes extra setup and dependency on external systems."
+        },
+        {
+          "point": "Tracking runs automatically without sending data externally.",
+          "why_it_matters": "This keeps the system simple and privacy-focused."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where RescueTime wins",
+      "bullets": [
+        {
+          "point": "RescueTime processes tracking data through cloud-based systems.",
+          "why_it_matters": "This enables insights, but requires uploading data."
+        },
+        {
+          "point": "Activity is categorized and analyzed using online services.",
+          "why_it_matters": "This adds features, but increases complexity and reduces privacy."
+        },
+        {
+          "point": "The system syncs data across devices automatically.",
+          "why_it_matters": "This improves accessibility, but depends on external servers."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want cloud syncing, cross-device access, or advanced automated insights.",
+          "what_to_do_instead": "Use RescueTime if you need cloud-based features and analytics."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want to keep all tracking data private and avoid uploading activity to external servers.",
+          "what_to_do_instead": "Switch to ActivityWatch for fully local tracking."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user prioritizes cloud syncing and automated insights over privacy. In that case, RescueTime may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose ActivityWatch if you want fully local tracking.",
+        "Choose RescueTime if you want cloud-based insights.",
+        "If privacy matters, use ActivityWatch."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is ActivityWatch better for privacy?",
+      "a": "Because it stores all tracking data locally without uploading it to cloud servers."
+    },
+    {
+      "q": "What makes RescueTime less private?",
+      "a": "It uploads activity data to cloud servers for processing."
+    },
+    {
+      "q": "Does RescueTime offer more features?",
+      "a": "Yes, but those features rely on cloud-based data processing."
+    },
+    {
+      "q": "What is the best tool for local time tracking?",
+      "a": "ActivityWatch is better because it keeps everything on your device."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "ActivityWatch vs Timeular for Minimalists",
+      "slug": "activitywatch-vs-timeular-for-minimalist",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Timeular",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Ora vs Toggl Track for Minimalists",
+      "slug": "ora-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "Ora",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Accelo vs Toggl Track for Minimalists",
+      "slug": "accelo-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "Accelo",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "ActiveCollab vs Toggl Track for Minimalists",
+      "slug": "activecollab-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "ActiveCollab",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "BigTime vs Toggl Track for Minimalists",
+      "slug": "bigtime-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "BigTime",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Intervals vs Toggl Track for Minimalists",
+      "slug": "intervals-vs-toggl-track-for-minimalist",
+      "exists": true,
+      "x_name": "Intervals",
+      "y_name": "Toggl Track",
+      "persona": "Minimalist"
+    }
+  ]
+}

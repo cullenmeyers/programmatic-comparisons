@@ -1,21 +1,20 @@
 # Related Comparisons Rebuild Report
 
-Date: 2026-03-25T03:10:26.475Z
+Date: 2026-03-25T04:43:22.181Z
 
 ## Summary
 
-- Total pages scanned: 526
-- Total pages updated: 1
-- Average related_pages count: 5.23
-- Pages with 0 related pages: 13
-- Pages with 1 related page: 20
-- Pages with fewer than 3 related pages: 63
+- Total pages scanned: 543
+- Total pages updated: 0
+- Average related_pages count: 5.24
+- Pages with 0 related pages: 12
+- Pages with 1 related page: 22
+- Pages with fewer than 3 related pages: 64
 
 ## Sparse Pages
 
 ### Pages with 0 related pages
 
-- /compare/atracker-vs-kimai-for-student
 - /compare/basecamp-vs-discord-for-non-technical-user
 - /compare/calendly-vs-google-calendar-for-busy-professional
 - /compare/capacities-vs-logseq-for-beginner
@@ -32,7 +31,9 @@ Date: 2026-03-25T03:10:26.475Z
 ### Pages with 1 related page
 
 - /compare/anybox-vs-raindropio-for-minimalist
+- /compare/atracker-vs-kimai-for-student
 - /compare/bitwarden-vs-passbolt-for-solo-user
+- /compare/buddy-punch-vs-harvest-for-student
 - /compare/capacities-vs-obsidian-for-non-technical-user
 - /compare/capacities-vs-reflect-for-minimalist
 - /compare/capacities-vs-roam-research-for-non-technical-user
@@ -66,6 +67,7 @@ Date: 2026-03-25T03:10:26.475Z
 - /compare/bitwarden-vs-keepass-for-beginner
 - /compare/bitwarden-vs-passbolt-for-solo-user
 - /compare/bonsai-vs-trello-for-busy-professional
+- /compare/buddy-punch-vs-harvest-for-student
 - /compare/calendly-vs-google-calendar-for-beginner
 - /compare/calendly-vs-google-calendar-for-busy-professional
 - /compare/capacities-vs-logseq-for-beginner

@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Kimai vs TrackingTime for Power users",
+  "slug": "kimai-vs-trackingtime-for-power-user",
+  "meta_description": "Compare Kimai vs TrackingTime for power users. Kimai wins when you need self-hosted control over your time tracking infrastructure.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need tools that offer maximum control and flexibility over their data and infrastructure.",
+  "one_second_verdict": {
+    "winner_label": "Kimai",
+    "summary": "Best for power users who need full control over their time tracking infrastructure.",
+    "reason": "TrackingTime fails first because it is limited to a hosted SaaS system without self-hosting control."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Kimai is the better choice when you need full ownership and control over your tracking system. It can be self-hosted, allowing customization, data control, and infrastructure flexibility. TrackingTime is a hosted SaaS tool, which limits control over deployment, data, and customization.",
+    "decision_rule": "If tracking time is limited to a hosted SaaS system without self-hosting control, TrackingTime fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Kimai fits this power user better",
+      "content": "This user needs control over how the system is hosted and managed. Kimai supports that by allowing self-hosting, giving full ownership of data, customization, and infrastructure."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Kimai wins",
+      "bullets": [
+        {
+          "point": "Kimai can be self-hosted on your own infrastructure.",
+          "why_it_matters": "You have full control over deployment, data, and system configuration."
+        },
+        {
+          "point": "The system can be customized and extended beyond standard SaaS limitations.",
+          "why_it_matters": "This allows deeper flexibility and long-term scalability."
+        },
+        {
+          "point": "Data is fully owned and controlled by the user.",
+          "why_it_matters": "This is critical for users who need control over privacy and infrastructure."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where TrackingTime wins",
+      "bullets": [
+        {
+          "point": "TrackingTime is a hosted SaaS tool that requires no setup or infrastructure management.",
+          "why_it_matters": "This reduces effort, but limits control."
+        },
+        {
+          "point": "The system is ready to use without deployment or maintenance.",
+          "why_it_matters": "This simplifies onboarding, but sacrifices flexibility."
+        },
+        {
+          "point": "Updates and hosting are managed by the provider.",
+          "why_it_matters": "This removes responsibility, but restricts customization."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You do not want to manage hosting, deployment, or system maintenance.",
+          "what_to_do_instead": "Use TrackingTime if you prefer a fully managed SaaS solution."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need full control over hosting, data, and system customization.",
+          "what_to_do_instead": "Switch to Kimai to self-host and control your tracking infrastructure."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user prioritizes convenience and does not need control over hosting or infrastructure. In that case, TrackingTime may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Kimai if you need self-hosting and control.",
+        "Choose TrackingTime if you want a managed SaaS tool.",
+        "If control matters, use Kimai."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Kimai better for control?",
+      "a": "Because it can be self-hosted, giving full ownership over data and infrastructure."
+    },
+    {
+      "q": "What makes TrackingTime limiting?",
+      "a": "It is a hosted SaaS tool without self-hosting options."
+    },
+    {
+      "q": "Is TrackingTime easier to use?",
+      "a": "Yes, because it does not require setup or maintenance."
+    },
+    {
+      "q": "What is the best tool for self-hosted time tracking?",
+      "a": "Kimai is better because it provides full control over the system."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Clockify vs Kimai for Power users",
+      "slug": "clockify-vs-kimai-for-power-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Kimai",
+      "persona": "Power user"
+    },
+    {
+      "title": "TimeSolv vs TrackingTime for Power users",
+      "slug": "timesolv-vs-trackingtime-for-power-user",
+      "exists": true,
+      "x_name": "TimeSolv",
+      "y_name": "TrackingTime",
+      "persona": "Power user"
+    },
+    {
+      "title": "Chrometa vs Toggl Track for Power users",
+      "slug": "chrometa-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timely vs Toggl Track for Power users",
+      "slug": "timely-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timely",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "ActivityWatch vs Toggl Track for Power users",
+      "slug": "activitywatch-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Apploye vs Toggl Track for Power users",
+      "slug": "apploye-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Apploye",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    }
+  ]
+}

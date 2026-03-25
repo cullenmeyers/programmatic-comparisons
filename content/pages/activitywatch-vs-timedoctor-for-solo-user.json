@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "ActivityWatch vs TimeDoctor for Solo users",
+  "slug": "activitywatch-vs-timedoctor-for-solo-user",
+  "meta_description": "Compare ActivityWatch vs TimeDoctor for solo users. ActivityWatch wins when you need fully offline time tracking without cloud sync.",
+  "persona": "Solo user",
+  "constraint_lens": "Solo users need tools that run independently without requiring ongoing syncing or external systems.",
+  "one_second_verdict": {
+    "winner_label": "ActivityWatch",
+    "summary": "Best for solo users who want fully offline time tracking.",
+    "reason": "TimeDoctor fails first because it requires cloud sync and online dashboards instead of running locally."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "ActivityWatch is the better choice when you want time tracking to run fully offline. It operates locally on your device without requiring cloud sync or online dashboards. TimeDoctor relies on cloud-based systems and online dashboards, which introduces ongoing maintenance and dependency on external services.",
+    "decision_rule": "If tracking time requires cloud sync and online dashboards instead of running fully offline, TimeDoctor fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why ActivityWatch fits this solo user better",
+      "content": "This user wants a system that works independently without maintenance. ActivityWatch supports this by running locally and avoiding reliance on cloud syncing or external dashboards."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where ActivityWatch wins",
+      "bullets": [
+        {
+          "point": "ActivityWatch runs entirely locally without requiring internet connectivity.",
+          "why_it_matters": "You can track time without relying on external systems."
+        },
+        {
+          "point": "No cloud sync or online dashboard is required.",
+          "why_it_matters": "This removes ongoing maintenance and dependency."
+        },
+        {
+          "point": "Tracking continues independently on your device.",
+          "why_it_matters": "This ensures consistent tracking without interruptions."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where TimeDoctor wins",
+      "bullets": [
+        {
+          "point": "TimeDoctor provides cloud-based dashboards and reporting.",
+          "why_it_matters": "This enables remote access, but requires syncing."
+        },
+        {
+          "point": "Tracking data is stored and managed online.",
+          "why_it_matters": "This adds convenience, but introduces dependency."
+        },
+        {
+          "point": "The system includes monitoring and team management features.",
+          "why_it_matters": "This increases capability, but adds complexity."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need cloud access, team collaboration, or centralized reporting across devices.",
+          "what_to_do_instead": "Use TimeDoctor if you need cloud-based features."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want tracking to work offline without syncing or relying on online dashboards.",
+          "what_to_do_instead": "Switch to ActivityWatch for fully local tracking."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user needs remote access, team monitoring, or centralized reporting. In that case, TimeDoctor may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose ActivityWatch if you want offline tracking.",
+        "Choose TimeDoctor if you need cloud dashboards.",
+        "If you want zero maintenance, use ActivityWatch."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is ActivityWatch better for offline tracking?",
+      "a": "Because it runs locally without requiring cloud sync or internet access."
+    },
+    {
+      "q": "What makes TimeDoctor less suitable here?",
+      "a": "It depends on cloud sync and online dashboards."
+    },
+    {
+      "q": "Does TimeDoctor offer more features?",
+      "a": "Yes, but those features rely on cloud-based systems."
+    },
+    {
+      "q": "What is the best tool for fully local time tracking?",
+      "a": "ActivityWatch is better because it operates entirely offline."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "ActivityWatch vs Clockify for Solo users",
+      "slug": "activitywatch-vs-clockify-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Clockify",
+      "persona": "Solo user"
+    },
+    {
+      "title": "ActivityWatch vs RescueTime for Solo users",
+      "slug": "activitywatch-vs-rescuetime-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "RescueTime",
+      "persona": "Solo user"
+    },
+    {
+      "title": "ActivityWatch vs Timely for Solo users",
+      "slug": "activitywatch-vs-timely-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Timely",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Clockify vs ManicTime for Solo users",
+      "slug": "clockify-vs-manictime-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "ManicTime",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Clockify vs Project Hamster for Solo users",
+      "slug": "clockify-vs-project-hamster-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Project Hamster",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Clockify vs Time Recording for Solo users",
+      "slug": "clockify-vs-time-recording-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Time Recording",
+      "persona": "Solo user"
+    }
+  ]
+}

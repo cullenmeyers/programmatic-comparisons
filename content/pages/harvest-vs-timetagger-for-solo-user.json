@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Harvest vs TimeTagger for Solo users",
+  "slug": "harvest-vs-timetagger-for-solo-user",
+  "meta_description": "Compare Harvest vs TimeTagger for solo users. Harvest wins when you need built-in invoicing without manual tagging or extra steps.",
+  "persona": "Solo user",
+  "constraint_lens": "Solo users need tools that minimize ongoing maintenance and avoid manual workflows.",
+  "one_second_verdict": {
+    "winner_label": "Harvest",
+    "summary": "Best for solo users who want seamless tracking and invoicing without extra work.",
+    "reason": "TimeTagger fails first because it requires manual tagging and lacks built-in invoicing workflows."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Harvest is the better choice when you want time tracking to flow directly into invoicing. It connects tracked time to billable work and generates invoices without extra steps. TimeTagger requires manual tagging and does not provide built-in invoicing, which creates ongoing maintenance work for a solo user.",
+    "decision_rule": "If tracking time requires manually tagging entries without built-in invoicing workflows, TimeTagger fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Harvest fits this solo user better",
+      "content": "This user needs everything to work together without extra effort. Harvest supports that by linking time tracking directly to invoicing, so there is no need to manage separate systems or manually prepare data."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Harvest wins",
+      "bullets": [
+        {
+          "point": "Harvest connects tracked time directly to invoices with built-in billing workflows.",
+          "why_it_matters": "You can generate invoices without exporting or reformatting data."
+        },
+        {
+          "point": "Time entries are structured around projects and billable rates.",
+          "why_it_matters": "This reduces the need for manual tagging or categorization later."
+        },
+        {
+          "point": "Invoicing and payments are handled inside the same system as tracking.",
+          "why_it_matters": "This eliminates ongoing maintenance across multiple tools."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where TimeTagger wins",
+      "bullets": [
+        {
+          "point": "TimeTagger offers flexible tagging for organizing time entries.",
+          "why_it_matters": "This allows customization, but requires manual effort."
+        },
+        {
+          "point": "Tracking is lightweight and focused on capturing time without structure.",
+          "why_it_matters": "This keeps it simple, but does not support automated billing workflows."
+        },
+        {
+          "point": "The system avoids rigid project structures in favor of flexible categorization.",
+          "why_it_matters": "This increases flexibility, but adds maintenance when generating invoices."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want a highly flexible tagging system without structured projects or billing workflows.",
+          "what_to_do_instead": "Use TimeTagger if you prefer flexible tagging over built-in invoicing."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need to generate invoices from tracked time but must manually tag and organize entries first.",
+          "what_to_do_instead": "Switch to Harvest to automate invoicing directly from tracked time."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user does not need invoicing and prefers flexible tagging for organizing time. In that case, TimeTagger may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Harvest if you want built-in invoicing.",
+        "Choose TimeTagger if you prefer flexible tagging.",
+        "If you want zero maintenance, use Harvest."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Harvest better for freelancers?",
+      "a": "Because it connects time tracking directly to invoicing, reducing manual work."
+    },
+    {
+      "q": "What makes TimeTagger less suitable for invoicing?",
+      "a": "It requires manual tagging and does not include built-in invoicing workflows."
+    },
+    {
+      "q": "Is TimeTagger simpler to use?",
+      "a": "It is simpler for tracking, but requires more effort for billing tasks."
+    },
+    {
+      "q": "What is the best tool for tracking and invoicing together?",
+      "a": "Harvest is better because it combines both in one system."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "ActivityWatch vs Clockify for Solo users",
+      "slug": "activitywatch-vs-clockify-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Clockify",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Clockify vs ManicTime for Solo users",
+      "slug": "clockify-vs-manictime-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "ManicTime",
+      "persona": "Solo user"
+    },
+    {
+      "title": "ActivityWatch vs RescueTime for Solo users",
+      "slug": "activitywatch-vs-rescuetime-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "RescueTime",
+      "persona": "Solo user"
+    },
+    {
+      "title": "ActivityWatch vs TimeDoctor for Solo users",
+      "slug": "activitywatch-vs-timedoctor-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "TimeDoctor",
+      "persona": "Solo user"
+    },
+    {
+      "title": "ActivityWatch vs Timely for Solo users",
+      "slug": "activitywatch-vs-timely-for-solo-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Timely",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Clockify vs Project Hamster for Solo users",
+      "slug": "clockify-vs-project-hamster-for-solo-user",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "Project Hamster",
+      "persona": "Solo user"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "TimeSolv vs TrackingTime for Power users",
+  "slug": "timesolv-vs-trackingtime-for-power-user",
+  "meta_description": "Compare TimeSolv vs TrackingTime for power users. TimeSolv wins when you need legal billing workflows tied to time tracking.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need tools that support specialized workflows like legal billing and structured time entry requirements.",
+  "one_second_verdict": {
+    "winner_label": "TimeSolv",
+    "summary": "Best for power users who need legal billing workflows tied to time tracking.",
+    "reason": "TrackingTime fails first because it is limited to general project workflows instead of legal billing systems."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "TimeSolv is the better choice when time tracking must align with legal billing workflows. It supports billable hours, matter-based tracking, and invoicing structures designed for legal work. TrackingTime focuses on general project tracking, which lacks the structure and features required for legal billing.",
+    "decision_rule": "If tracking time is limited to general project workflows instead of legal billing workflows, TrackingTime fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why TimeSolv fits this power user better",
+      "content": "This user needs time tracking to connect directly to legal billing requirements. TimeSolv supports this by structuring time entries around matters, billable hours, and legal invoicing workflows."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where TimeSolv wins",
+      "bullets": [
+        {
+          "point": "TimeSolv supports matter-based tracking and legal billing structures.",
+          "why_it_matters": "This aligns time tracking with how legal work is billed."
+        },
+        {
+          "point": "Time entries connect directly to invoices designed for legal workflows.",
+          "why_it_matters": "This reduces manual work and ensures compliance with billing standards."
+        },
+        {
+          "point": "The system includes features tailored to billable hours and legal reporting.",
+          "why_it_matters": "This enables accurate and professional billing processes."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where TrackingTime wins",
+      "bullets": [
+        {
+          "point": "TrackingTime focuses on general project-based time tracking.",
+          "why_it_matters": "This works for standard workflows, but lacks legal-specific structure."
+        },
+        {
+          "point": "The tool is simpler and does not enforce specialized billing systems.",
+          "why_it_matters": "This reduces complexity, but limits advanced use cases."
+        },
+        {
+          "point": "Tracking is tied to projects rather than legal matters or billing formats.",
+          "why_it_matters": "This makes it less suitable for legal professionals."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You do not need legal billing workflows and prefer simple project-based tracking.",
+          "what_to_do_instead": "Use TrackingTime if your needs are general and not legal-specific."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need to track billable legal hours but cannot structure entries around matters and legal billing.",
+          "what_to_do_instead": "Switch to TimeSolv for legal-focused workflows."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user does not work in a legal context and only needs general project tracking. In that case, TrackingTime may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose TimeSolv if you need legal billing workflows.",
+        "Choose TrackingTime if you need general project tracking.",
+        "If you bill legal hours, use TimeSolv."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is TimeSolv better for legal work?",
+      "a": "Because it supports matter-based tracking and legal billing workflows."
+    },
+    {
+      "q": "What makes TrackingTime less suitable here?",
+      "a": "It is designed for general project tracking, not legal billing."
+    },
+    {
+      "q": "Is TrackingTime easier to use?",
+      "a": "Yes, but it lacks specialized features for legal workflows."
+    },
+    {
+      "q": "What is the best tool for tracking legal billable time?",
+      "a": "TimeSolv is better because it is built for legal billing."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Kimai vs TrackingTime for Power users",
+      "slug": "kimai-vs-trackingtime-for-power-user",
+      "exists": true,
+      "x_name": "Kimai",
+      "y_name": "TrackingTime",
+      "persona": "Power user"
+    },
+    {
+      "title": "Chrometa vs Toggl Track for Power users",
+      "slug": "chrometa-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timely vs Toggl Track for Power users",
+      "slug": "timely-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timely",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "ActivityWatch vs Toggl Track for Power users",
+      "slug": "activitywatch-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Apploye vs Toggl Track for Power users",
+      "slug": "apploye-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Apploye",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "ClickTime vs Toggl Track for Power users",
+      "slug": "clicktime-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "ClickTime",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    }
+  ]
+}

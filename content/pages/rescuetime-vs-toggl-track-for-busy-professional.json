@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "RescueTime vs Toggl Track for Busy professionals",
+  "slug": "rescuetime-vs-toggl-track-for-busy-professional",
+  "meta_description": "Compare RescueTime vs Toggl Track for busy professionals. RescueTime wins when you need automatic tracking without starting timers.",
+  "persona": "Busy professional",
+  "constraint_lens": "Busy professionals need tools that reduce effort and avoid manual actions throughout the day.",
+  "one_second_verdict": {
+    "winner_label": "RescueTime",
+    "summary": "Best for busy professionals who want automatic time tracking without manual timers.",
+    "reason": "Toggl Track fails first because it requires manually starting and stopping timers instead of tracking automatically."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "RescueTime is the better choice when you want time tracking to happen automatically. It runs in the background and captures activity without requiring input. Toggl Track depends on manually starting and stopping timers, which adds friction and is easy to forget during a busy day.",
+    "decision_rule": "If tracking time requires manually starting and stopping timers instead of automatic background tracking, Toggl Track fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why RescueTime fits this busy professional better",
+      "content": "This user cannot rely on remembering to start or stop timers. RescueTime supports this by automatically tracking activity in the background, removing the need for manual interaction."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where RescueTime wins",
+      "bullets": [
+        {
+          "point": "RescueTime automatically tracks time in the background without requiring manual timers.",
+          "why_it_matters": "You do not need to remember to start or stop tracking."
+        },
+        {
+          "point": "Activity is captured continuously across apps and websites.",
+          "why_it_matters": "This ensures complete tracking even during busy or fragmented work sessions."
+        },
+        {
+          "point": "No interaction is required to maintain accurate tracking.",
+          "why_it_matters": "This reduces cognitive load and prevents missed entries."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Toggl Track wins",
+      "bullets": [
+        {
+          "point": "Toggl Track allows precise control over when and how time is logged.",
+          "why_it_matters": "This enables intentional tracking, but requires manual effort."
+        },
+        {
+          "point": "Timers can be assigned to specific projects and tasks.",
+          "why_it_matters": "This provides structured data, but depends on user input."
+        },
+        {
+          "point": "The system avoids automatic categorization in favor of user-defined entries.",
+          "why_it_matters": "This increases accuracy, but adds friction during use."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need precise, intentional tracking tied to specific projects or tasks.",
+          "what_to_do_instead": "Use Toggl Track if you prefer manual control over entries."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You forget to start or stop timers and end up with incomplete tracking.",
+          "what_to_do_instead": "Switch to RescueTime for automatic tracking."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user prioritizes precise, project-based tracking over automation. In that case, Toggl Track may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose RescueTime if you want automatic tracking.",
+        "Choose Toggl Track if you want manual control.",
+        "If you forget timers, use RescueTime."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is RescueTime better for busy professionals?",
+      "a": "Because it tracks time automatically without requiring manual timers."
+    },
+    {
+      "q": "What makes Toggl Track less suitable for this use case?",
+      "a": "It requires manually starting and stopping timers."
+    },
+    {
+      "q": "Is Toggl Track more accurate?",
+      "a": "It can be more precise, but depends on consistent manual input."
+    },
+    {
+      "q": "What is the best tool for automatic time tracking?",
+      "a": "RescueTime is better because it runs in the background without user input."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Clockify vs RescueTime for Busy professionals",
+      "slug": "clockify-vs-rescuetime-for-busy-professional",
+      "exists": true,
+      "x_name": "Clockify",
+      "y_name": "RescueTime",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Everhour vs Toggl Track for Busy professionals",
+      "slug": "everhour-vs-toggl-track-for-busy-professional",
+      "exists": true,
+      "x_name": "Everhour",
+      "y_name": "Toggl Track",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Paymo Track vs Toggl Track for Busy professionals",
+      "slug": "paymo-track-vs-toggl-track-for-busy-professional",
+      "exists": true,
+      "x_name": "Paymo Track",
+      "y_name": "Toggl Track",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Toggl Track vs Zoho Projects for Busy professionals",
+      "slug": "toggl-track-vs-zoho-projects-for-busy-professional",
+      "exists": true,
+      "x_name": "Toggl Track",
+      "y_name": "Zoho Projects",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Beebole vs Toggl Track for Busy professionals",
+      "slug": "beebole-vs-toggl-track-for-busy-professional",
+      "exists": true,
+      "x_name": "Beebole",
+      "y_name": "Toggl Track",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "ClickTime vs Toggl Track for Busy professionals",
+      "slug": "clicktime-vs-toggl-track-for-busy-professional",
+      "exists": true,
+      "x_name": "ClickTime",
+      "y_name": "Toggl Track",
+      "persona": "Busy professional"
+    }
+  ]
+}

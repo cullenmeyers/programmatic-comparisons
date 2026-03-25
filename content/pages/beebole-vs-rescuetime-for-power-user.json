@@ -1,0 +1,162 @@
+{
+  "category": "Time Tracking Tools",
+  "categorySlug": "time-tracking-tools",
+  "constraintSlug": "ceiling-matters",
+  "constraintUiName": "Full control and flexibility",
+  "title": "Beebole vs RescueTime for Power users",
+  "slug": "beebole-vs-rescuetime-for-power-user",
+  "meta_description": "Compare Beebole vs RescueTime for power users. Beebole wins when you need structured, client-based reporting instead of automatic activity tracking.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need time tracking tools that support structured reporting and flexible data organization.",
+  "one_second_verdict": {
+    "winner_label": "Beebole",
+    "summary": "Best for power users who need structured, client-based reporting.",
+    "reason": "RescueTime fails first because it relies on automatic activity categorization instead of structured reporting."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Beebole is the better choice when you need structured reports tied to clients and projects. It allows you to organize time entries with clear categories and generate detailed reports. RescueTime focuses on automatic tracking and categorization, which limits how precisely you can structure and report your data.",
+    "decision_rule": "If tracking time relies on automatic activity categorization instead of structured client-based reporting, RescueTime fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Beebole fits this power user better",
+      "content": "This user needs control over how time is categorized and reported. Beebole supports that by allowing structured entries tied to clients and projects, making it easier to generate meaningful reports."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Beebole wins",
+      "bullets": [
+        {
+          "point": "Beebole allows time to be logged against clients, projects, and tasks with structured categories.",
+          "why_it_matters": "This enables precise reporting and organization of work."
+        },
+        {
+          "point": "Reports can be generated based on structured data rather than inferred activity.",
+          "why_it_matters": "You get accurate insights aligned with how work is actually organized."
+        },
+        {
+          "point": "The system supports flexible reporting across different dimensions like client, project, or time period.",
+          "why_it_matters": "This provides the control needed for advanced analysis and billing."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where RescueTime wins",
+      "bullets": [
+        {
+          "point": "RescueTime automatically tracks app and website usage without manual input.",
+          "why_it_matters": "This reduces effort, but limits structured categorization."
+        },
+        {
+          "point": "Time is categorized based on activity rather than user-defined structure.",
+          "why_it_matters": "This provides quick insights, but may not align with reporting needs."
+        },
+        {
+          "point": "The system focuses on productivity tracking rather than client-based reporting.",
+          "why_it_matters": "This makes it less suitable for structured workflows."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want fully automatic tracking without manually assigning time to clients or projects.",
+          "what_to_do_instead": "Use RescueTime if you prefer automatic activity tracking."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need structured reports tied to clients or projects but cannot organize time beyond automatic categories.",
+          "what_to_do_instead": "Switch to Beebole for structured reporting and control."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user prioritizes automatic tracking and general productivity insights over structured reporting. In that case, RescueTime may be more useful."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Beebole if you need structured, client-based reports.",
+        "Choose RescueTime if you want automatic activity tracking.",
+        "If reporting structure matters, use Beebole."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Beebole better for reporting?",
+      "a": "Because it allows structured time entries tied to clients and projects."
+    },
+    {
+      "q": "What makes RescueTime less suitable for reporting?",
+      "a": "It relies on automatic categorization instead of structured data."
+    },
+    {
+      "q": "Is RescueTime easier to use?",
+      "a": "Yes, because it tracks activity automatically without manual input."
+    },
+    {
+      "q": "What is the best tool for client-based time tracking?",
+      "a": "Beebole is better because it supports structured reporting."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Grindstone vs RescueTime for Power users",
+      "slug": "grindstone-vs-rescuetime-for-power-user",
+      "exists": true,
+      "x_name": "Grindstone",
+      "y_name": "RescueTime",
+      "persona": "Power user"
+    },
+    {
+      "title": "Chrometa vs Toggl Track for Power users",
+      "slug": "chrometa-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Chrometa",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Timely vs Toggl Track for Power users",
+      "slug": "timely-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Timely",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "ActivityWatch vs Toggl Track for Power users",
+      "slug": "activitywatch-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "ActivityWatch",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "Apploye vs Toggl Track for Power users",
+      "slug": "apploye-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "Apploye",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    },
+    {
+      "title": "ClickTime vs Toggl Track for Power users",
+      "slug": "clicktime-vs-toggl-track-for-power-user",
+      "exists": true,
+      "x_name": "ClickTime",
+      "y_name": "Toggl Track",
+      "persona": "Power user"
+    }
+  ]
+}
