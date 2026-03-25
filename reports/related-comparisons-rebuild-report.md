@@ -1,15 +1,15 @@
 # Related Comparisons Rebuild Report
 
-Date: 2026-03-25T00:16:44.265Z
+Date: 2026-03-25T02:55:08.123Z
 
 ## Summary
 
-- Total pages scanned: 522
-- Total pages updated: 0
+- Total pages scanned: 526
+- Total pages updated: 10
 - Average related_pages count: 5.23
-- Pages with 0 related pages: 12
-- Pages with 1 related page: 22
-- Pages with fewer than 3 related pages: 64
+- Pages with 0 related pages: 13
+- Pages with 1 related page: 20
+- Pages with fewer than 3 related pages: 63
 
 ## Sparse Pages
 
@@ -20,6 +20,7 @@ Date: 2026-03-25T00:16:44.265Z
 - /compare/calendly-vs-google-calendar-for-busy-professional
 - /compare/capacities-vs-logseq-for-beginner
 - /compare/discord-vs-google-chat-for-student
+- /compare/doodle-vs-savvycal-for-minimalist
 - /compare/goodlinks-vs-wallabag-for-solo-user
 - /compare/instapaper-vs-zotero-for-student
 - /compare/logseq-vs-tana-for-busy-professional
@@ -32,8 +33,6 @@ Date: 2026-03-25T00:16:44.265Z
 
 - /compare/anybox-vs-raindropio-for-minimalist
 - /compare/bitwarden-vs-passbolt-for-solo-user
-- /compare/cal-com-vs-calendly-for-busy-professional
-- /compare/calendly-vs-chili-piper-for-busy-professional
 - /compare/capacities-vs-obsidian-for-non-technical-user
 - /compare/capacities-vs-reflect-for-minimalist
 - /compare/capacities-vs-roam-research-for-non-technical-user
@@ -67,8 +66,6 @@ Date: 2026-03-25T00:16:44.265Z
 - /compare/bitwarden-vs-keepass-for-beginner
 - /compare/bitwarden-vs-passbolt-for-solo-user
 - /compare/bonsai-vs-trello-for-busy-professional
-- /compare/cal-com-vs-calendly-for-busy-professional
-- /compare/calendly-vs-chili-piper-for-busy-professional
 - /compare/calendly-vs-google-calendar-for-beginner
 - /compare/calendly-vs-google-calendar-for-busy-professional
 - /compare/capacities-vs-logseq-for-beginner
@@ -77,6 +74,7 @@ Date: 2026-03-25T00:16:44.265Z
 - /compare/capacities-vs-roam-research-for-non-technical-user
 - /compare/cron-vs-google-calendar-for-beginner
 - /compare/discord-vs-google-chat-for-student
+- /compare/doodle-vs-savvycal-for-minimalist
 - /compare/enpass-vs-keeper-for-solo-user
 - /compare/fantastical-vs-motion-for-power-user
 - /compare/gmail-vs-hey-for-student
