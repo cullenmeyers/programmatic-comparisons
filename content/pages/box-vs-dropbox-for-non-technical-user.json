@@ -5,40 +5,40 @@
 "constraintUiName": "Hard to mess up",
 "title": "Box vs Dropbox for Non-technical users",
 "slug": "box-vs-dropbox-for-non-technical-user",
-"meta_description": "Compare Box vs Dropbox for non-technical users. Box wins when you need reliable link expiration and secure file sharing control.",
+"meta_description": "Compare Box vs Dropbox for non-technical users. Box wins when you need reliable link expiration and control over shared file access.",
 "persona": "Non-technical user",
-"constraint_lens": "Non-technical users need file sharing tools that prevent mistakes and ensure access can be controlled and revoked reliably.",
+"constraint_lens": "Non-technical users need tools that prevent mistakes and ensure shared files do not remain accessible longer than intended.",
 "one_second_verdict": {
 "winner_label": "Box",
-"summary": "Best for non-technical users who need secure, controlled file sharing.",
-"reason": "Dropbox fails first because shared links are harder to reliably expire or centrally revoke."
+"summary": "Best for secure file sharing with reliable link control.",
+"reason": "Dropbox fails first because shared links are harder to centrally expire and control after being sent."
 },
 "verdict": {
 "winner": "x",
-"summary": "Box is the better choice when you need to share sensitive files without worrying about lingering access. It provides stronger control over link expiration and centralized permission management. Dropbox allows easy link sharing, but links can remain accessible longer than intended and require manual tracking, which increases the risk of mistakes.",
+"summary": "Box is the better choice when sharing sensitive files that must not stay accessible longer than intended. It provides stronger controls for link expiration and centralized permission management, reducing the risk of accidental exposure. Dropbox allows easy sharing but makes it easier for links to remain active unless manually tracked and revoked, which creates risk for non-technical users.",
 "decision_rule": "If shared file links cannot be reliably expired or centrally revoked after being sent, Dropbox fails first."
 },
 "sections": [
 {
 "type": "persona_fit",
 "heading": "Why Box fits this non-technical user better",
-"content": "This user is afraid of making mistakes with file access. Box supports this by making link expiration and permission control more reliable and easier to manage centrally."
+"content": "This user wants to avoid mistakes when sharing files. Box provides stronger control over access and link expiration, reducing the chance of files staying exposed."
 },
 {
 "type": "x_wins",
 "heading": "Where Box wins",
 "bullets": [
 {
-"point": "Box allows setting expiration dates and access controls on shared links.",
-"why_it_matters": "This prevents files from staying accessible longer than intended."
+"point": "Box provides enforced link expiration controls.",
+"why_it_matters": "This ensures files do not stay accessible longer than intended."
 },
 {
-"point": "Permissions can be managed centrally across shared content.",
-"why_it_matters": "This reduces the risk of forgetting to revoke access."
+"point": "Permissions can be centrally managed and updated.",
+"why_it_matters": "This reduces the risk of forgotten or outdated access."
 },
 {
-"point": "Sharing workflows are designed for controlled access.",
-"why_it_matters": "This makes it harder to accidentally expose files."
+"point": "Access control is designed for secure sharing workflows.",
+"why_it_matters": "This prevents accidental exposure of sensitive files."
 }
 ]
 },
@@ -47,16 +47,16 @@
 "heading": "Where Dropbox wins",
 "bullets": [
 {
-"point": "Dropbox enables quick link-based sharing with minimal setup.",
-"why_it_matters": "This makes sharing fast, but easier to overlook access control."
+"point": "Dropbox makes file sharing quick and simple.",
+"why_it_matters": "This is easy to use but can lead to overlooked access control."
 },
 {
-"point": "Links can be created and sent instantly.",
-"why_it_matters": "This reduces friction, but increases risk of lingering access."
+"point": "Links can be created and shared instantly.",
+"why_it_matters": "This speeds up sharing but increases risk if not managed."
 },
 {
-"point": "The system prioritizes ease of sharing over strict control.",
-"why_it_matters": "This simplifies usage, but makes mistakes more likely."
+"point": "Less structured permission management by default.",
+"why_it_matters": "This reduces friction but can allow links to stay active unintentionally."
 }
 ]
 },
@@ -66,50 +66,47 @@
 "items": [
 {
 "tool": "x",
-"fails_when": "You prioritize speed and simplicity over strict control of file access.",
-"what_to_do_instead": "Use Dropbox if you want faster, more flexible sharing."
+"fails_when": "You only need quick, low-friction sharing without strict access control.",
+"what_to_do_instead": "Use Dropbox for simple, fast file sharing."
 },
 {
 "tool": "y",
-"fails_when": "You need to reliably expire or revoke access to shared files after sending them.",
-"what_to_do_instead": "Switch to Box for stronger access control."
+"fails_when": "Shared links remain active longer than intended and are not centrally revoked.",
+"what_to_do_instead": "Switch to Box for stronger link control and expiration."
 }
 ]
 },
 {
 "type": "edge_case",
 "heading": "When this verdict might flip",
-"content": "This can flip if the user values speed and simplicity over strict access control. In that case, Dropbox may be more suitable."
+"content": "This can flip if the user prioritizes speed and simplicity over strict access control. In that case, Dropbox may be more suitable."
 },
 {
 "type": "quick_rules",
 "heading": "Quick rules",
 "rules": [
-"Choose Box if you need secure sharing control.",
-"Choose Dropbox if you want fast sharing.",
-"If you worry about access, use Box."
+"Choose Box for secure sharing.",
+"Choose Dropbox for speed.",
+"If you want control over access, use Box."
 ]
-},
-{
-"type": "faqs",
-"items": [
-{
-"q": "Why is Box better for secure sharing?",
-"a": "Because it allows reliable link expiration and centralized permission control."
-},
-{
-"q": "What makes Dropbox riskier for sensitive files?",
-"a": "Shared links can remain accessible and require manual tracking to revoke."
-},
-{
-"q": "Is Dropbox easier to use?",
-"a": "Yes, but it sacrifices some control over access."
-},
-{
-"q": "What is the best tool for sharing sensitive files safely?",
-"a": "Box is better because it gives stronger control over access and expiration."
 }
-]
+],
+"faqs": [
+{
+"question": "Why is Box better for secure file sharing?",
+"answer": "Because it provides stronger link expiration and centralized permission controls."
+},
+{
+"question": "What risk exists with Dropbox links?",
+"answer": "Shared links can remain active unless manually tracked and revoked."
+},
+{
+"question": "Is Dropbox easier to use?",
+"answer": "Yes, but that simplicity can lead to weaker control over shared access."
+},
+{
+"question": "What is the safest option for sharing sensitive files?",
+"answer": "Box is safer because it enforces access control and expiration."
 }
 ],
 "related_pages": []
