@@ -1,0 +1,113 @@
+{
+"category": "Spreadsheet / Database Tools",
+"categorySlug": "spreadsheet-database-tools",
+"constraintSlug": "switching-cost",
+"constraintUiName": "Easy to quit later",
+"title": "Google Sheets vs Grist for Students",
+"slug": "google-sheets-vs-grist-for-student",
+"meta_description": "Compare Google Sheets vs Grist for students. Google Sheets wins when you need quick, low-setup data tracking without learning schemas.",
+"persona": "Student",
+"constraint_lens": "Students need tools that work immediately without learning overhead and can be easily abandoned after short-term use.",
+"one_second_verdict": {
+"winner_label": "Google Sheets",
+"summary": "Best for students who need quick, no-setup data tracking.",
+"reason": "Grist fails first because it requires understanding schema-based tables instead of immediate grid editing."
+},
+"verdict": {
+"winner": "x",
+"summary": "Google Sheets is the better choice when you need to start tracking data immediately for short-term assignments. It provides a familiar grid interface that requires no setup or schema understanding. Grist introduces structured tables and schema concepts, which add learning overhead and slow down quick, disposable use cases.",
+"decision_rule": "If using the tool requires understanding schema-based tables instead of immediate grid editing, Grist fails first."
+},
+"sections": [
+{
+"type": "persona_fit",
+"heading": "Why Google Sheets fits this student better",
+"content": "This user needs something they can open and use instantly without learning. Google Sheets supports this with a simple grid interface and no required setup."
+},
+{
+"type": "x_wins",
+"heading": "Where Google Sheets wins",
+"bullets": [
+{
+"point": "Google Sheets allows immediate grid-based editing with no setup.",
+"why_it_matters": "You can start tracking data right away."
+},
+{
+"point": "The interface is widely familiar and easy to use.",
+"why_it_matters": "This reduces learning time for short-term tasks."
+},
+{
+"point": "No schema or structure needs to be defined upfront.",
+"why_it_matters": "This keeps the tool lightweight and disposable."
+}
+]
+},
+{
+"type": "y_wins",
+"heading": "Where Grist wins",
+"bullets": [
+{
+"point": "Grist uses structured tables with defined schemas.",
+"why_it_matters": "This improves data integrity, but adds complexity."
+},
+{
+"point": "Relationships and structured data models are built in.",
+"why_it_matters": "This supports advanced use cases, but slows quick start."
+},
+{
+"point": "The system is designed for long-term structured workflows.",
+"why_it_matters": "This exceeds short-term assignment needs."
+}
+]
+},
+{
+"type": "failure_modes",
+"heading": "Where each tool can break down",
+"items": [
+{
+"tool": "x",
+"fails_when": "You need structured data models and long-term system organization.",
+"what_to_do_instead": "Use Grist if you need schema-based data management."
+},
+{
+"tool": "y",
+"fails_when": "You need to quickly track data but must learn schemas before using the tool.",
+"what_to_do_instead": "Switch to Google Sheets for immediate use."
+}
+]
+},
+{
+"type": "edge_case",
+"heading": "When this verdict might flip",
+"content": "This can flip if the user needs structured data and plans to use the tool long-term. In that case, Grist may be more suitable."
+},
+{
+"type": "quick_rules",
+"heading": "Quick rules",
+"rules": [
+"Choose Google Sheets for quick assignments.",
+"Choose Grist for structured data.",
+"If you want no learning curve, use Google Sheets."
+]
+}
+],
+"faqs": [
+{
+"q": "Why is Google Sheets better for students?",
+"a": "Because it requires no setup and can be used immediately."
+},
+{
+"q": "What makes Grist harder to start?",
+"a": "It requires understanding schema-based tables before use."
+},
+{
+"q": "Is Grist more powerful?",
+"a": "Yes, but it introduces complexity that is unnecessary for short-term tasks."
+},
+{
+"q": "What is the best tool for quick data tracking?",
+"a": "Google Sheets is better because it is fast and easy to start."
+}
+],
+"related_pages": []
+}

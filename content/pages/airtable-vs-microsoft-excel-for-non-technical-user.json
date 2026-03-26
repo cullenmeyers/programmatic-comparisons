@@ -1,0 +1,130 @@
+{
+  "category": "Spreadsheet / Database Tools",
+  "categorySlug": "spreadsheet-database-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Airtable vs Microsoft Excel for Non-technical users",
+  "slug": "airtable-vs-microsoft-excel-for-non-technical-user",
+  "meta_description": "Compare Airtable vs Microsoft Excel for non-technical users. Airtable wins when you need structured data without fragile formulas.",
+  "persona": "Non-technical user",
+  "constraint_lens": "Non-technical users need tools that prevent accidental breakage and enforce structure without relying on fragile logic.",
+  "one_second_verdict": {
+    "winner_label": "Airtable",
+    "summary": "Best for non-technical users who want structured data without breaking formulas.",
+    "reason": "Microsoft Excel fails first because it relies on fragile cell formulas instead of enforced field types."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Airtable is the better choice when you want to organize structured data without worrying about breaking things. It enforces field types and relationships, reducing the risk of accidental errors. Microsoft Excel relies heavily on cell-based formulas, which can be easily broken or misconfigured, especially for non-technical users.",
+    "decision_rule": "If managing data requires maintaining fragile cell formulas instead of enforced field types, Microsoft Excel fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Airtable fits this non-technical user better",
+      "content": "This user wants a system that is hard to break. Airtable supports this by enforcing structure through field types instead of relying on fragile formulas."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Airtable wins",
+      "bullets": [
+        {
+          "point": "Airtable enforces field types like text, number, and select options.",
+          "why_it_matters": "This prevents invalid data and reduces errors."
+        },
+        {
+          "point": "Data structure is separated from logic.",
+          "why_it_matters": "This makes it harder to accidentally break the system."
+        },
+        {
+          "point": "Relationships and views are built into the system.",
+          "why_it_matters": "This avoids complex formula dependencies."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Microsoft Excel wins",
+      "bullets": [
+        {
+          "point": "Excel allows flexible formulas and calculations.",
+          "why_it_matters": "This enables advanced analysis, but increases risk."
+        },
+        {
+          "point": "Data and logic are combined in cells.",
+          "why_it_matters": "This provides flexibility, but makes errors easier."
+        },
+        {
+          "point": "The tool supports a wide range of use cases.",
+          "why_it_matters": "This increases power, but adds complexity."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need complex calculations and formula-driven analysis.",
+          "what_to_do_instead": "Use Microsoft Excel if you need advanced formulas."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You accidentally break formulas or logic while managing data.",
+          "what_to_do_instead": "Switch to Airtable for safer structured data management."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user needs advanced calculations and is comfortable managing formulas. In that case, Microsoft Excel may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Airtable if you want safe structure.",
+        "Choose Excel if you need formulas.",
+        "If you fear breaking things, use Airtable."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Airtable better for non-technical users?",
+      "a": "Because it enforces structure and avoids fragile formulas."
+    },
+    {
+      "q": "What makes Excel easier to break?",
+      "a": "Its reliance on cell formulas that can be accidentally modified."
+    },
+    {
+      "q": "Is Excel more powerful?",
+      "a": "Yes, but that power comes with increased complexity and risk."
+    },
+    {
+      "q": "What is the best tool for safe data organization?",
+      "a": "Airtable is better because it prevents accidental errors."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "AppSheet vs Google Sheets for Non-technical users",
+      "slug": "appsheet-vs-google-sheets-for-non-technical-user",
+      "exists": true,
+      "x_name": "AppSheet",
+      "y_name": "Google Sheets",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Fibery vs Google Sheets for Non-technical users",
+      "slug": "fibery-vs-google-sheets-for-non-technical-user",
+      "exists": true,
+      "x_name": "Fibery",
+      "y_name": "Google Sheets",
+      "persona": "Non-technical user"
+    }
+  ]
+}

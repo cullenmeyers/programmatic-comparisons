@@ -1,0 +1,130 @@
+{
+  "category": "File Storage / Cloud Storage Tools",
+  "categorySlug": "file-storage-cloud-storage-tools",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Dropbox vs Nextcloud for Solo users",
+  "slug": "dropbox-vs-nextcloud-for-solo-user",
+  "meta_description": "Compare Dropbox vs Nextcloud for solo users. Dropbox wins when you need reliable file sync without managing servers or updates.",
+  "persona": "Solo user",
+  "constraint_lens": "Solo users need file storage tools that run reliably without requiring ongoing maintenance or infrastructure management.",
+  "one_second_verdict": {
+    "winner_label": "Dropbox",
+    "summary": "Best for solo users who want file sync without maintaining servers.",
+    "reason": "Nextcloud fails first because it requires managing servers, updates, and integrations."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Dropbox is the better choice when you want file syncing to work reliably without ongoing effort. It is fully managed, so files stay available without needing to maintain infrastructure. Nextcloud requires running and maintaining your own server, handling updates, and managing integrations, which creates ongoing maintenance that solo users typically cannot tolerate.",
+    "decision_rule": "If keeping files available depends on maintaining your own server, updates, and app stack, Nextcloud fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Dropbox fits this solo user better",
+      "content": "This user wants a system that works quietly without upkeep. Dropbox supports this by handling hosting, updates, and reliability automatically."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Dropbox wins",
+      "bullets": [
+        {
+          "point": "Dropbox is fully managed with no infrastructure to maintain.",
+          "why_it_matters": "You do not need to manage servers or updates."
+        },
+        {
+          "point": "File syncing runs automatically without intervention.",
+          "why_it_matters": "This ensures consistent reliability with no upkeep."
+        },
+        {
+          "point": "Integrations and access work out of the box.",
+          "why_it_matters": "This avoids ongoing troubleshooting and maintenance."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Nextcloud wins",
+      "bullets": [
+        {
+          "point": "Nextcloud allows full control through self-hosting.",
+          "why_it_matters": "This increases flexibility, but requires maintenance."
+        },
+        {
+          "point": "You can customize storage, apps, and integrations.",
+          "why_it_matters": "This expands capability, but adds complexity."
+        },
+        {
+          "point": "Data is fully controlled within your own infrastructure.",
+          "why_it_matters": "This improves control, but requires ongoing management."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need full control over data hosting and custom integrations.",
+          "what_to_do_instead": "Use Nextcloud if you are willing to manage your own infrastructure."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want file syncing to work reliably without maintaining servers or fixing issues.",
+          "what_to_do_instead": "Switch to Dropbox for a fully managed solution."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user values full control over data and is willing to maintain their own infrastructure. In that case, Nextcloud may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Dropbox if you want zero maintenance.",
+        "Choose Nextcloud if you want full control.",
+        "If you do not want to manage servers, use Dropbox."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Dropbox better for solo users?",
+      "a": "Because it requires no maintenance and runs automatically."
+    },
+    {
+      "q": "What makes Nextcloud harder to maintain?",
+      "a": "It requires managing servers, updates, and integrations."
+    },
+    {
+      "q": "Is Nextcloud more flexible?",
+      "a": "Yes, but that flexibility comes with ongoing maintenance."
+    },
+    {
+      "q": "What is the best tool for low-maintenance file syncing?",
+      "a": "Dropbox is better because it is fully managed."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Backblaze vs Dropbox for Solo users",
+      "slug": "backblaze-vs-dropbox-for-solo-user",
+      "exists": true,
+      "x_name": "Backblaze",
+      "y_name": "Dropbox",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Dropbox vs iCloud Drive for Solo users",
+      "slug": "dropbox-vs-icloud-drive-for-solo-user",
+      "exists": true,
+      "x_name": "Dropbox",
+      "y_name": "iCloud Drive",
+      "persona": "Solo user"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "category": "Spreadsheet / Database Tools",
+  "categorySlug": "spreadsheet-database-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "AppSheet vs Google Sheets for Non-technical users",
+  "slug": "appsheet-vs-google-sheets-for-non-technical-user",
+  "meta_description": "Compare AppSheet vs Google Sheets for non-technical users. AppSheet wins when you need structured workflows that prevent dependency breakage.",
+  "persona": "Non-technical user",
+  "constraint_lens": "Non-technical users need tools that prevent fragile dependencies and reduce the risk of breaking workflows through hidden errors.",
+  "one_second_verdict": {
+    "winner_label": "AppSheet",
+    "summary": "Best for preventing workflow breakage from fragile dependencies.",
+    "reason": "Google Sheets fails first because workflows rely on manually maintained cell references instead of structured relationships."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "AppSheet is the better choice when workflows depend on reliable relationships between data. It uses structured data models and defined relationships, reducing the risk of breakage. Google Sheets relies on manually maintained cell references and formulas, which can silently break when data changes, leading to corrupted downstream workflows.",
+    "decision_rule": "If workflows depend on manually maintained cell references instead of structured data relationships, Google Sheets fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why AppSheet fits this non-technical user better",
+      "content": "This user wants to avoid breaking workflows. AppSheet enforces structured relationships between data, reducing reliance on fragile references."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where AppSheet wins",
+      "bullets": [
+        {
+          "point": "AppSheet uses structured data relationships instead of cell references.",
+          "why_it_matters": "This reduces dependency breakage."
+        },
+        {
+          "point": "Workflows are built on defined data models.",
+          "why_it_matters": "This keeps systems stable and predictable."
+        },
+        {
+          "point": "Changes to data do not silently break downstream logic.",
+          "why_it_matters": "This prevents hidden workflow failures."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Google Sheets wins",
+      "bullets": [
+        {
+          "point": "Google Sheets allows flexible formulas and references.",
+          "why_it_matters": "This enables quick setup but increases fragility."
+        },
+        {
+          "point": "Data can be edited freely in a grid.",
+          "why_it_matters": "This is easy to use but lacks structure."
+        },
+        {
+          "point": "No enforced relationships between data.",
+          "why_it_matters": "This allows flexibility but risks breakage."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only need simple, flexible spreadsheets without structured workflows.",
+          "what_to_do_instead": "Use Google Sheets for lightweight data tracking."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Changing data breaks formulas or references and corrupts downstream workflows.",
+          "what_to_do_instead": "Switch to AppSheet for structured relationships."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user prioritizes quick, flexible editing over structured workflows. In that case, Google Sheets may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose AppSheet for stable workflows.",
+        "Choose Google Sheets for flexibility.",
+        "If you want to avoid breakage, use AppSheet."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is AppSheet better for workflows?",
+      "a": "Because it uses structured relationships instead of fragile cell references."
+    },
+    {
+      "q": "What causes breakage in Google Sheets?",
+      "a": "Manually maintained formulas and references that can silently break."
+    },
+    {
+      "q": "Is Google Sheets easier to use?",
+      "a": "Yes, but it increases the risk of workflow errors."
+    },
+    {
+      "q": "What is the safest tool for shared workflows?",
+      "a": "AppSheet is better because it prevents dependency breakage."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Fibery vs Google Sheets for Non-technical users",
+      "slug": "fibery-vs-google-sheets-for-non-technical-user",
+      "exists": true,
+      "x_name": "Fibery",
+      "y_name": "Google Sheets",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Airtable vs Microsoft Excel for Non-technical users",
+      "slug": "airtable-vs-microsoft-excel-for-non-technical-user",
+      "exists": true,
+      "x_name": "Airtable",
+      "y_name": "Microsoft Excel",
+      "persona": "Non-technical user"
+    }
+  ]
+}

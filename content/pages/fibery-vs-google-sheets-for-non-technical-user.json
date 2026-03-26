@@ -1,0 +1,130 @@
+{
+  "category": "Spreadsheet / Database Tools",
+  "categorySlug": "spreadsheet-database-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Fibery vs Google Sheets for Non-technical users",
+  "slug": "fibery-vs-google-sheets-for-non-technical-user",
+  "meta_description": "Compare Fibery vs Google Sheets for non-technical users. Fibery wins when you need enforced data validation to prevent silent errors.",
+  "persona": "Non-technical user",
+  "constraint_lens": "Non-technical users need tools that prevent mistakes by enforcing structure and avoiding silent errors that can break workflows.",
+  "one_second_verdict": {
+    "winner_label": "Fibery",
+    "summary": "Best for preventing silent data errors in shared workflows.",
+    "reason": "Google Sheets fails first because errors can silently propagate without enforced validation or constraints."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Fibery is the better choice when you need to maintain data integrity in shared workflows without worrying about silent errors. It enforces field types and constraints, preventing invalid data from being entered or propagated. Google Sheets allows flexible input across cells, which can lead to unnoticed errors spreading through formulas and shared data, increasing the risk of breaking workflows.",
+    "decision_rule": "If data errors can silently propagate through shared inputs without enforced validation instead of controlled field constraints, Google Sheets fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Fibery fits this non-technical user better",
+      "content": "This user wants to avoid breaking things. Fibery enforces structure and validation, reducing the chance of silent errors that can disrupt workflows."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Fibery wins",
+      "bullets": [
+        {
+          "point": "Fibery enforces field types and data constraints.",
+          "why_it_matters": "This prevents invalid data from being entered."
+        },
+        {
+          "point": "Data is structured and validated across workflows.",
+          "why_it_matters": "This reduces the risk of silent errors spreading."
+        },
+        {
+          "point": "Relationships and dependencies are controlled.",
+          "why_it_matters": "This maintains consistency across shared data."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Google Sheets wins",
+      "bullets": [
+        {
+          "point": "Google Sheets allows flexible, freeform data entry.",
+          "why_it_matters": "This is easy to use, but increases risk of errors."
+        },
+        {
+          "point": "Formulas can dynamically calculate values.",
+          "why_it_matters": "This is powerful, but errors can propagate silently."
+        },
+        {
+          "point": "No strict validation is required by default.",
+          "why_it_matters": "This allows flexibility, but reduces data integrity."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need quick, flexible data entry without enforced structure.",
+          "what_to_do_instead": "Use Google Sheets for lightweight and flexible workflows."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Errors in shared data go unnoticed and propagate through formulas or inputs.",
+          "what_to_do_instead": "Switch to Fibery for enforced validation and structure."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user prioritizes flexibility and simplicity over strict data validation. In that case, Google Sheets may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Fibery for data integrity.",
+        "Choose Google Sheets for flexibility.",
+        "If you want to avoid silent errors, use Fibery."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Fibery better for data integrity?",
+      "a": "Because it enforces field types and validation across data."
+    },
+    {
+      "q": "What causes silent errors in Google Sheets?",
+      "a": "Flexible input and formulas that allow incorrect data to propagate."
+    },
+    {
+      "q": "Is Google Sheets easier to use?",
+      "a": "Yes, but it increases the risk of unnoticed errors."
+    },
+    {
+      "q": "What is the safest tool for shared data?",
+      "a": "Fibery is better because it prevents invalid data from entering the system."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "AppSheet vs Google Sheets for Non-technical users",
+      "slug": "appsheet-vs-google-sheets-for-non-technical-user",
+      "exists": true,
+      "x_name": "AppSheet",
+      "y_name": "Google Sheets",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Airtable vs Microsoft Excel for Non-technical users",
+      "slug": "airtable-vs-microsoft-excel-for-non-technical-user",
+      "exists": true,
+      "x_name": "Airtable",
+      "y_name": "Microsoft Excel",
+      "persona": "Non-technical user"
+    }
+  ]
+}

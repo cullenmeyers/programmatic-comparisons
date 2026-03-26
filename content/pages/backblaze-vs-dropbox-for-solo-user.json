@@ -1,0 +1,130 @@
+{
+  "category": "File Storage / Cloud Storage Tools",
+  "categorySlug": "file-storage-cloud-storage-tools",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Backblaze vs Dropbox for Solo users",
+  "slug": "backblaze-vs-dropbox-for-solo-user",
+  "meta_description": "Compare Backblaze vs Dropbox for solo users. Backblaze wins when you need automatic full-system backup without managing files.",
+  "persona": "Solo user",
+  "constraint_lens": "Solo users need file protection systems that run automatically without requiring ongoing organization or manual syncing.",
+  "one_second_verdict": {
+    "winner_label": "Backblaze",
+    "summary": "Best for solo users who want automatic file protection without managing files.",
+    "reason": "Dropbox fails first because it requires actively organizing and syncing files instead of automatic full-system backup."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Backblaze is the better choice when your goal is to protect files automatically without ongoing effort. It backs up your entire system in the background, ensuring recoverability without manual organization. Dropbox focuses on syncing selected folders across devices, which requires you to manage what gets synced and where, creating ongoing maintenance.",
+    "decision_rule": "If file safety depends on actively organizing and syncing files instead of automatic full-system backup, Dropbox fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Backblaze fits this solo user better",
+      "content": "This user wants protection without effort. Backblaze supports this by automatically backing up files without requiring manual organization or syncing decisions."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Backblaze wins",
+      "bullets": [
+        {
+          "point": "Backblaze automatically backs up your entire system.",
+          "why_it_matters": "You do not need to decide what to protect."
+        },
+        {
+          "point": "Backup runs continuously in the background.",
+          "why_it_matters": "This ensures files are always recoverable without effort."
+        },
+        {
+          "point": "No folder management or syncing setup is required.",
+          "why_it_matters": "This eliminates ongoing maintenance."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Dropbox wins",
+      "bullets": [
+        {
+          "point": "Dropbox syncs selected folders across devices.",
+          "why_it_matters": "This enables access, but requires organization."
+        },
+        {
+          "point": "Files can be actively managed and shared.",
+          "why_it_matters": "This adds flexibility, but increases responsibility."
+        },
+        {
+          "point": "The system focuses on syncing rather than backup.",
+          "why_it_matters": "This supports collaboration, but not full protection."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need to actively sync, share, and access files across devices.",
+          "what_to_do_instead": "Use Dropbox if you need file syncing and collaboration."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want full-system backup but must manually manage which files are protected.",
+          "what_to_do_instead": "Switch to Backblaze for automatic backup."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user needs active file syncing and collaboration instead of passive backup. In that case, Dropbox may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Backblaze if you want automatic backup.",
+        "Choose Dropbox if you want file syncing.",
+        "If you want zero maintenance protection, use Backblaze."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Backblaze better for file protection?",
+      "a": "Because it automatically backs up your entire system without manual setup."
+    },
+    {
+      "q": "What makes Dropbox less suitable for backup?",
+      "a": "It requires manually organizing and syncing files instead of backing up everything."
+    },
+    {
+      "q": "Is Dropbox better for accessing files?",
+      "a": "Yes, it is designed for syncing and sharing files across devices."
+    },
+    {
+      "q": "What is the best tool for automatic file backup?",
+      "a": "Backblaze is better because it runs in the background and protects all files."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Dropbox vs iCloud Drive for Solo users",
+      "slug": "dropbox-vs-icloud-drive-for-solo-user",
+      "exists": true,
+      "x_name": "Dropbox",
+      "y_name": "iCloud Drive",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Dropbox vs Nextcloud for Solo users",
+      "slug": "dropbox-vs-nextcloud-for-solo-user",
+      "exists": true,
+      "x_name": "Dropbox",
+      "y_name": "Nextcloud",
+      "persona": "Solo user"
+    }
+  ]
+}

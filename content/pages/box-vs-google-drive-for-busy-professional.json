@@ -1,0 +1,146 @@
+{
+  "category": "File Storage / Cloud Storage Tools",
+  "categorySlug": "file-storage-cloud-storage-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Box vs Google Drive for Busy professionals",
+  "slug": "box-vs-google-drive-for-busy-professional",
+  "meta_description": "Compare Box vs Google Drive for busy professionals. Box wins when you need enforceable link expiration and controlled file access.",
+  "persona": "Busy professional",
+  "constraint_lens": "Busy professionals need file sharing systems that automatically control access without requiring manual follow-up.",
+  "one_second_verdict": {
+    "winner_label": "Box",
+    "summary": "Best for busy professionals who need controlled file access after sharing.",
+    "reason": "Google Drive fails first because links remain active unless manually tracked and revoked."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Box is the better choice when you need file access to be controlled automatically after sharing. It allows enforceable expiration settings and structured access controls that reduce the need for manual follow-up. Google Drive enables fast sharing, but links often remain active unless manually revoked, which creates risk and additional cognitive load for time-sensitive workflows.",
+    "decision_rule": "If shared links remain active unless manually tracked and revoked instead of having enforceable expiration controls, Google Drive fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Box fits this busy professional better",
+      "content": "This user cannot afford to track and clean up file access manually. Box supports this by enforcing expiration controls and structured permissions upfront."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Box wins",
+      "bullets": [
+        {
+          "point": "Box supports enforceable link expiration controls.",
+          "why_it_matters": "Access can automatically end without manual intervention."
+        },
+        {
+          "point": "Permissions are structured and centrally managed.",
+          "why_it_matters": "This reduces the need to track shared links individually."
+        },
+        {
+          "point": "Sharing workflows prioritize controlled access over speed.",
+          "why_it_matters": "This prevents lingering access after deadlines."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Google Drive wins",
+      "bullets": [
+        {
+          "point": "Google Drive allows fast and simple link sharing.",
+          "why_it_matters": "This speeds up sharing, but reduces control."
+        },
+        {
+          "point": "Links can be created instantly with minimal setup.",
+          "why_it_matters": "This lowers friction, but requires manual tracking."
+        },
+        {
+          "point": "The system prioritizes ease of collaboration.",
+          "why_it_matters": "This is useful for teamwork, but can leave access open."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You prioritize fast, ad hoc sharing over strict access control.",
+          "what_to_do_instead": "Use Google Drive if speed matters more than control."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need file access to expire automatically but must manually track and revoke links.",
+          "what_to_do_instead": "Switch to Box for enforceable access control."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user values speed and ease of collaboration over strict access control. In that case, Google Drive may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Box if you need controlled access.",
+        "Choose Google Drive if you want fast sharing.",
+        "If you want automatic expiration, use Box."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Box better for controlling file access?",
+      "a": "Because it supports enforceable link expiration and structured permissions."
+    },
+    {
+      "q": "What makes Google Drive riskier for time-sensitive files?",
+      "a": "Shared links often remain active unless manually revoked."
+    },
+    {
+      "q": "Is Google Drive easier to use?",
+      "a": "Yes, but it requires more manual control of access."
+    },
+    {
+      "q": "What is the best tool for expiring file access automatically?",
+      "a": "Box is better because it enforces expiration controls."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Box vs OneDrive for Busy professionals",
+      "slug": "box-vs-onedrive-for-busy-professional",
+      "exists": true,
+      "x_name": "Box",
+      "y_name": "OneDrive",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Box vs Dropbox for Busy professionals",
+      "slug": "box-vs-dropbox-for-busy-professional",
+      "exists": true,
+      "x_name": "Box",
+      "y_name": "Dropbox",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "OneDrive vs Sync.com for Busy professionals",
+      "slug": "onedrive-vs-sync-com-for-busy-professional",
+      "exists": true,
+      "x_name": "OneDrive",
+      "y_name": "Sync.com",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Egnyte vs Sync.com for Busy professionals",
+      "slug": "egnyte-vs-sync-com-for-busy-professional",
+      "exists": true,
+      "x_name": "Egnyte",
+      "y_name": "Sync.com",
+      "persona": "Busy professional"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "category": "Spreadsheet / Database Tools",
+  "categorySlug": "spreadsheet-database-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Coda vs Microsoft Excel for Power users",
+  "slug": "coda-vs-microsoft-excel-for-power-user",
+  "meta_description": "Compare Coda vs Microsoft Excel for power users. Coda wins when you need relational, modular workflows beyond cell-based formulas.",
+  "persona": "Power user",
+  "constraint_lens": "Power users need tools that support complex systems with relational data, logic, and workflows that scale beyond basic structures.",
+  "one_second_verdict": {
+    "winner_label": "Coda",
+    "summary": "Best for power users building advanced data workflows.",
+    "reason": "Microsoft Excel fails first because it is limited to cell-based formulas instead of relational and modular logic."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Coda is the better choice when you want to build complex systems that combine data, logic, and workflows. It supports relational tables, modular components, and automation within a single system. Microsoft Excel is built around cell-based formulas, which become limiting when trying to create interconnected workflows and scalable systems.",
+    "decision_rule": "If building systems is limited to cell-based formulas instead of relational and modular logic, Microsoft Excel fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Coda fits this power user better",
+      "content": "This user needs a tool that can scale into a system. Coda supports this by combining relational data, logic, and workflows into a single modular environment."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Coda wins",
+      "bullets": [
+        {
+          "point": "Coda supports relational tables and linked data across pages.",
+          "why_it_matters": "This enables building interconnected systems."
+        },
+        {
+          "point": "Logic can be applied at the system level, not just individual cells.",
+          "why_it_matters": "This allows workflows to scale and remain maintainable."
+        },
+        {
+          "point": "Automation and workflows are built into the platform.",
+          "why_it_matters": "This reduces reliance on manual processes."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Microsoft Excel wins",
+      "bullets": [
+        {
+          "point": "Excel offers powerful cell-based formulas and calculations.",
+          "why_it_matters": "This is ideal for numerical analysis, but less for systems."
+        },
+        {
+          "point": "The tool is widely used and highly flexible.",
+          "why_it_matters": "This makes it accessible, but not always scalable."
+        },
+        {
+          "point": "Data and logic are contained within individual cells.",
+          "why_it_matters": "This works for spreadsheets, but limits system design."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only need simple calculations and do not require relational workflows.",
+          "what_to_do_instead": "Use Microsoft Excel for straightforward spreadsheet tasks."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You try to build interconnected workflows but are constrained by cell-based formulas.",
+          "what_to_do_instead": "Switch to Coda for modular, system-level workflows."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user primarily needs advanced calculations and not system-level workflows. In that case, Microsoft Excel may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Coda if you are building systems.",
+        "Choose Excel if you need calculations.",
+        "If you need workflows, use Coda."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Coda better for workflows?",
+      "a": "Because it supports relational data and modular logic across a system."
+    },
+    {
+      "q": "What limits Excel for system building?",
+      "a": "Its reliance on cell-based formulas instead of relational structures."
+    },
+    {
+      "q": "Is Excel more powerful for calculations?",
+      "a": "Yes, but it is less suited for building interconnected systems."
+    },
+    {
+      "q": "What is the best tool for advanced data workflows?",
+      "a": "Coda is better because it supports scalable, modular systems."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Directus vs Notion for Power users",
+      "slug": "directus-vs-notion-for-power-user",
+      "exists": true,
+      "x_name": "Directus",
+      "y_name": "Notion",
+      "persona": "Power user"
+    },
+    {
+      "title": "Fibery vs Notion for Power users",
+      "slug": "fibery-vs-notion-for-power-user",
+      "exists": true,
+      "x_name": "Fibery",
+      "y_name": "Notion",
+      "persona": "Power user"
+    }
+  ]
+}
