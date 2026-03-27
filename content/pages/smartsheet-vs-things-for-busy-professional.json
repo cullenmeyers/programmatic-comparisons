@@ -1,0 +1,162 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Smartsheet vs Things for Busy professionals",
+  "slug": "smartsheet-vs-things-for-busy-professional",
+  "meta_description": "Smartsheet vs Things for busy professionals. See why multi-level task hierarchies in Smartsheet handle complex projects better than Things.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need a tool that lets you understand and manage complex work structures quickly without piecing things together manually.",
+  "one_second_verdict": {
+    "winner_label": "Smartsheet",
+    "summary": "Best for organizing complex projects with multiple layers of tasks, subtasks, and phases.",
+    "reason": "Things fails first because it only supports simple lists and cannot represent multi-level task hierarchies needed for structured projects."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Smartsheet lets you build multi-level hierarchies with parent rows, nested subtasks, and grouped phases, so you can structure complex projects in one place. Things is designed around flat lists with limited grouping, which works for simple task tracking but not layered project planning. For busy professionals managing complex work, this means more time trying to mentally map structure that is not represented in the tool. Smartsheet reduces that effort by making the hierarchy visible and organized.",
+    "decision_rule": "If organizing work requires multi-level project hierarchies beyond simple task lists, Things fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Smartsheet fits busy professionals",
+      "content": "You are organizing projects with multiple layers like phases, tasks, and subtasks, and need to see that structure clearly. Tools that flatten everything into simple lists force you to reconstruct the hierarchy in your head. Smartsheet fits this by letting you nest and group work visually, while Things keeps tasks in simpler structures that do not scale to complex project layouts."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Smartsheet works better",
+      "bullets": [
+        {
+          "point": "Indented row hierarchy with parent and child relationships",
+          "why_it_matters": "You can nest tasks under phases and break work into multiple levels, making complex structures visible at a glance."
+        },
+        {
+          "point": "Expandable and collapsible task groups within sheets",
+          "why_it_matters": "You can hide or show levels of detail quickly, which helps you focus without losing the overall structure."
+        },
+        {
+          "point": "Grid-based layout that aligns tasks, subtasks, and phases in one view",
+          "why_it_matters": "You can see all levels of a project in a single table, reducing the need to switch views or mentally track structure."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Things works better",
+      "bullets": [
+        {
+          "point": "Simple project and list structure with minimal nesting",
+          "why_it_matters": "You can manage tasks quickly without dealing with complex hierarchies, which keeps daily use fast for simpler work."
+        },
+        {
+          "point": "Quick task entry with minimal required fields",
+          "why_it_matters": "You can add tasks instantly without structuring them into multiple levels, reducing setup time."
+        },
+        {
+          "point": "Clean interface focused on individual task completion",
+          "why_it_matters": "There are fewer elements to manage on screen, which makes it easier to focus when your work does not require deep structure."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only need to track simple tasks and do not need multiple levels of hierarchy or structured planning.",
+          "what_to_do_instead": "Switch to Things to manage tasks quickly without building or maintaining a layered structure."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need to organize work into phases, tasks, and subtasks but cannot represent that structure clearly in the tool.",
+          "what_to_do_instead": "Use Smartsheet to create multi-level hierarchies and view the full structure in one place."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your projects stay simple and do not require multiple levels of structure, Things becomes the better choice because it is faster to use without managing hierarchies."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Use Smartsheet if your projects require multiple levels like phases and subtasks.",
+        "Use Things if your tasks can stay in simple lists without deep structure.",
+        "Avoid Things if you need to represent complex project hierarchies clearly."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Things support subtasks and hierarchy?",
+      "a": "It supports basic grouping, but it does not provide deep multi-level hierarchies like parent and child task structures."
+    },
+    {
+      "q": "What makes Smartsheet better for complex projects?",
+      "a": "It allows you to nest tasks and organize them into multiple levels, making the full project structure visible in one place."
+    },
+    {
+      "q": "Is Smartsheet too complex for simple use?",
+      "a": "It can be, since its hierarchy and structure features are designed for more detailed project planning."
+    },
+    {
+      "q": "Can Things handle large projects?",
+      "a": "It can handle many tasks, but it becomes harder to organize them when you need multiple layers of structure."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Asana vs Things for Busy professionals",
+      "slug": "asana-vs-things-for-busy-professional",
+      "exists": true,
+      "x_name": "Asana",
+      "y_name": "Things",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Trello vs Microsoft Project for Busy professionals",
+      "slug": "trello-vs-microsoft-project-for-busy-professional",
+      "exists": true,
+      "x_name": "Microsoft Project",
+      "y_name": "Trello",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Asana vs Todoist for Busy professionals",
+      "slug": "asana-vs-todoist-for-busy-professional",
+      "exists": true,
+      "x_name": "Asana",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Microsoft Project vs Todoist for Busy professionals",
+      "slug": "microsoft-project-vs-todoist-for-busy-professional",
+      "exists": true,
+      "x_name": "Microsoft Project",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Process Street vs Trello for Busy professionals",
+      "slug": "process-street-vs-trello-for-busy-professional",
+      "exists": true,
+      "x_name": "Process Street",
+      "y_name": "Trello",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Asana vs Google Tasks for Busy professionals",
+      "slug": "asana-vs-google-tasks-for-busy-professional",
+      "exists": true,
+      "x_name": "Asana",
+      "y_name": "Google Tasks",
+      "persona": "Busy professional"
+    }
+  ]
+}

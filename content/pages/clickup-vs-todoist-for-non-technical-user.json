@@ -1,0 +1,138 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "ClickUp vs Todoist for Non-technical users",
+  "slug": "clickup-vs-todoist-for-non-technical-user",
+  "meta_description": "ClickUp vs Todoist for non-technical users. See why configurable workflows and automations in ClickUp create risk compared to Todoist's safer task system.",
+  "persona": "Non-technical user",
+  "constraint_lens": "You need a tool where it is hard to mess things up or create problems by changing the wrong setting.",
+  "one_second_verdict": {
+    "winner_label": "Todoist",
+    "summary": "Best for tracking tasks safely without worrying about breaking your setup.",
+    "reason": "ClickUp fails first because its customizable workflows, statuses, and automations can be changed in ways that disrupt how tasks behave."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist keeps task management simple and predictable, so you always know what will happen when you add or complete a task. ClickUp introduces customizable workflows, statuses, and automation rules that can change how tasks move and behave. For non-technical users, this creates risk because a small change can break how work is organized or tracked. Over time, this makes ClickUp harder to trust for basic task tracking.",
+    "decision_rule": "If managing tasks requires configuring workflow rules, automations, or statuses that can be misconfigured, ClickUp fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Todoist fits non-technical users",
+      "content": "You want a task system that just works without worrying about settings or breaking anything by accident. Tools that let you change how tasks behave can quickly become confusing or risky. Todoist fits this by keeping tasks consistent and predictable, while ClickUp introduces workflow rules and automations that can be changed in ways that are hard to understand or fix."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where ClickUp works better",
+      "bullets": [
+        {
+          "point": "Custom status workflows with multiple stages like 'To do', 'In progress', and 'Review'",
+          "why_it_matters": "You can define how tasks move through different stages, which is useful for structured workflows but adds complexity that must be managed correctly."
+        },
+        {
+          "point": "Automation rules that trigger actions based on task changes",
+          "why_it_matters": "Tasks can automatically update, move, or notify others, which saves time in advanced setups but can cause unexpected behavior if rules are set incorrectly."
+        },
+        {
+          "point": "Multiple views like lists, boards, and timelines tied to the same data",
+          "why_it_matters": "You can switch how work is displayed, but each view depends on underlying settings that can become confusing if changed without understanding."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist works better",
+      "bullets": [
+        {
+          "point": "Fixed task flow with no custom status configuration",
+          "why_it_matters": "Tasks are either incomplete or complete, so there is no risk of misconfiguring stages that change how work is tracked."
+        },
+        {
+          "point": "No built-in automation rules that alter task behavior",
+          "why_it_matters": "What you see is what happens, so tasks do not move or change automatically in ways you did not expect."
+        },
+        {
+          "point": "Simple project and task structure with minimal settings",
+          "why_it_matters": "You can organize tasks without adjusting system behavior, which makes it easier to trust that nothing will break over time."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You change a workflow status or automation rule and tasks start moving, updating, or behaving in ways you did not expect.",
+          "what_to_do_instead": "Switch to Todoist so tasks follow a fixed and predictable structure without hidden rules or automatic changes."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need tasks to move through multiple stages or require automatic updates based on conditions.",
+          "what_to_do_instead": "Use ClickUp to define custom workflows and automations that handle more complex processes."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you learn how ClickUp workflows and automations work and only use a simple setup without changing many settings, it can handle more structured processes without causing issues."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Use Todoist if you want a task system that is hard to mess up.",
+        "Use ClickUp if you need custom workflows or automated task behavior.",
+        "Avoid ClickUp if you do not want to manage settings that change how tasks work."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is ClickUp too complicated for non-technical users?",
+      "a": "It can be, especially if you use custom workflows or automations, since small changes can affect how tasks behave in ways that are not obvious."
+    },
+    {
+      "q": "Does Todoist have automation features?",
+      "a": "Todoist keeps automation minimal, so tasks behave consistently without hidden rules or complex setup."
+    },
+    {
+      "q": "What makes a tool feel like it can break?",
+      "a": "When settings like workflows or automations change how tasks move or update, it becomes harder to predict what will happen, which creates a sense of risk."
+    },
+    {
+      "q": "Can I simplify ClickUp to make it safer?",
+      "a": "Yes, but you need to avoid changing workflows and automations, which removes much of what makes ClickUp different from simpler tools."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Microsoft Project vs Todoist for Non-technical users",
+      "slug": "microsoft-project-vs-todoist-for-non-technical-user",
+      "exists": true,
+      "x_name": "Microsoft Project",
+      "y_name": "Todoist",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Notion vs Project.co for Non-technical users",
+      "slug": "notion-vs-project-co-for-non-technical-user",
+      "exists": true,
+      "x_name": "Notion",
+      "y_name": "Project.co",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "TickTick vs Monday.com for Non-technical users",
+      "slug": "ticktick-vs-mondaycom-for-non-technical-user",
+      "exists": true,
+      "x_name": "Monday.com",
+      "y_name": "TickTick",
+      "persona": "Non-technical user"
+    }
+  ]
+}

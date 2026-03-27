@@ -1,0 +1,138 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Microsoft Project vs Todoist for Non-technical users",
+  "slug": "microsoft-project-vs-todoist-for-non-technical-user",
+  "meta_description": "Microsoft Project vs Todoist for non-technical users. See why task dependencies in Microsoft Project create fragile schedules compared to Todoist.",
+  "persona": "Non-technical user",
+  "constraint_lens": "You need a tool where it is hard to mess things up or break your setup by changing the wrong thing.",
+  "one_second_verdict": {
+    "winner_label": "Todoist",
+    "summary": "Best for tracking tasks safely without worrying about breaking schedules.",
+    "reason": "Microsoft Project fails first because its dependency chains can break or shift entire schedules when one task is edited."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist keeps task tracking simple and predictable, so editing one task does not affect anything else. Microsoft Project is built around linked task dependencies, where tasks are connected in chains that determine the schedule. For non-technical users, this creates risk because changing one task can shift or break multiple others. This makes the system harder to trust for everyday task tracking.",
+    "decision_rule": "If managing tasks requires maintaining dependency chains that can break schedules when edited, Microsoft Project fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Todoist fits non-technical users",
+      "content": "You want a tool where each task stands on its own and nothing unexpected happens when you edit something. Tools that link tasks together can feel fragile because one change affects many things. Todoist fits this by keeping tasks independent, while Microsoft Project connects tasks through dependencies that can change schedules in ways that are hard to predict."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Microsoft Project works better",
+      "bullets": [
+        {
+          "point": "Task dependency links that connect tasks in sequences like finish-to-start",
+          "why_it_matters": "You can define how tasks depend on each other, which is useful for structured planning but requires careful maintenance to avoid breaking the schedule."
+        },
+        {
+          "point": "Automatic schedule shifting based on dependency changes",
+          "why_it_matters": "When one task changes, related tasks update automatically, which helps with complex planning but can create unexpected changes if not understood."
+        },
+        {
+          "point": "Gantt chart timeline tied to task relationships",
+          "why_it_matters": "You can visualize project timelines and dependencies, but the accuracy depends on correctly maintaining all linked tasks."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist works better",
+      "bullets": [
+        {
+          "point": "Independent tasks with no dependency linking between them",
+          "why_it_matters": "Each task stands alone, so editing or completing one does not affect others, reducing the risk of breaking anything."
+        },
+        {
+          "point": "Simple due dates without automatic schedule recalculation",
+          "why_it_matters": "Dates stay exactly as you set them, so there are no hidden changes or shifts caused by other tasks."
+        },
+        {
+          "point": "Minimal task structure with no timeline dependencies to manage",
+          "why_it_matters": "You can focus on completing tasks without maintaining relationships between them, making the system easier to trust."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You change one task and it causes multiple dependent tasks to shift or break in ways you did not expect.",
+          "what_to_do_instead": "Switch to Todoist so tasks remain independent and changes do not affect the rest of your system."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Your work requires planning tasks that depend on each other and must follow a strict sequence.",
+          "what_to_do_instead": "Use Microsoft Project to link tasks and manage timelines based on dependencies."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your work depends on precise scheduling where tasks must follow each other in sequence, Microsoft Project becomes the better choice because its dependency system keeps timelines aligned."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Use Todoist if you want tasks that do not affect each other.",
+        "Use Microsoft Project if your tasks must follow a strict sequence with dependencies.",
+        "Avoid Microsoft Project if you do not want schedule changes caused by linked tasks."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What are task dependencies in Microsoft Project?",
+      "a": "They are links between tasks that define how one task affects another, which can automatically change schedules when tasks are edited."
+    },
+    {
+      "q": "Does Todoist support task dependencies?",
+      "a": "No, Todoist keeps tasks independent so changes to one task do not affect others."
+    },
+    {
+      "q": "Why do dependencies feel risky for non-technical users?",
+      "a": "Because changing one task can unexpectedly shift or break other tasks, making it harder to predict what will happen."
+    },
+    {
+      "q": "Can Microsoft Project be used safely without dependencies?",
+      "a": "It can, but much of its design is built around linked tasks, so avoiding dependencies removes many of its core features."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "ClickUp vs Todoist for Non-technical users",
+      "slug": "clickup-vs-todoist-for-non-technical-user",
+      "exists": true,
+      "x_name": "ClickUp",
+      "y_name": "Todoist",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "Notion vs Project.co for Non-technical users",
+      "slug": "notion-vs-project-co-for-non-technical-user",
+      "exists": true,
+      "x_name": "Notion",
+      "y_name": "Project.co",
+      "persona": "Non-technical user"
+    },
+    {
+      "title": "TickTick vs Monday.com for Non-technical users",
+      "slug": "ticktick-vs-mondaycom-for-non-technical-user",
+      "exists": true,
+      "x_name": "Monday.com",
+      "y_name": "TickTick",
+      "persona": "Non-technical user"
+    }
+  ]
+}

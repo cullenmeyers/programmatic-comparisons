@@ -1,0 +1,162 @@
+{
+  "category": "Email / Inbox tools",
+  "categorySlug": "email-inbox-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Missive vs Thunderbird for Busy professionals",
+  "slug": "missive-vs-thunderbird-for-busy-professional",
+  "meta_description": "Compare Missive vs Thunderbird for busy professionals. Missive wins when you need unified shared inboxes with team context.",
+  "persona": "Busy professional",
+  "constraint_lens": "Busy professionals need tools that reduce context switching and unify communication across accounts and teams into a single view.",
+  "one_second_verdict": {
+    "winner_label": "Missive",
+    "summary": "Best for managing shared inboxes in one unified view.",
+    "reason": "Thunderbird fails first because it cannot unify multiple accounts into a single collaborative inbox with team context."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Missive is the better choice when managing multiple shared inboxes across a team. It unifies conversations from different accounts into a single collaborative view, allowing assignment, internal chat, and shared context. Thunderbird organizes emails by account and folder, which requires switching contexts and does not support true shared inbox workflows, increasing cognitive load.",
+    "decision_rule": "If emails from multiple accounts cannot be unified into a single collaborative inbox view, Thunderbird fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Missive fits this busy professional better",
+      "content": "This user needs everything in one place. Missive consolidates multiple inboxes into a shared, collaborative view, reducing context switching and mental overhead."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Missive wins",
+      "bullets": [
+        {
+          "point": "Multiple inboxes are unified into a single shared view.",
+          "why_it_matters": "This reduces context switching across accounts."
+        },
+        {
+          "point": "Team collaboration is built directly into conversations.",
+          "why_it_matters": "This enables shared context and faster decisions."
+        },
+        {
+          "point": "Emails can be assigned and managed collectively.",
+          "why_it_matters": "This prevents overlap and confusion in teams."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Thunderbird wins",
+      "bullets": [
+        {
+          "point": "Emails are organized by account and folder structure.",
+          "why_it_matters": "This is simple, but fragments workflows."
+        },
+        {
+          "point": "It supports multiple accounts in one client.",
+          "why_it_matters": "But does not unify them into a shared workflow."
+        },
+        {
+          "point": "It is a standalone email client with flexibility.",
+          "why_it_matters": "But lacks collaborative inbox features."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only need a personal email client without team collaboration.",
+          "what_to_do_instead": "Use Thunderbird for simple, individual email use."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need a unified, shared inbox but must switch between accounts and lack team context.",
+          "what_to_do_instead": "Switch to Missive for collaborative inbox management."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user is managing email individually and does not need shared inbox collaboration. In that case, Thunderbird may be sufficient."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Missive for shared inboxes.",
+        "Choose Thunderbird for personal email.",
+        "If you need team context, use Missive."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Why is Missive better for teams?",
+      "answer": "Because it unifies inboxes and adds collaboration directly into email workflows."
+    },
+    {
+      "question": "What limits Thunderbird for shared inboxes?",
+      "answer": "It organizes emails by account and lacks unified collaborative views."
+    },
+    {
+      "question": "Can Thunderbird handle multiple accounts?",
+      "answer": "Yes, but it does not combine them into a single shared workflow."
+    },
+    {
+      "question": "What is the best tool for managing shared inboxes?",
+      "answer": "Missive is better because it centralizes conversations and team context."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Apple Mail vs Missive for Busy professionals",
+      "slug": "apple-mail-vs-missive-for-busy-professional",
+      "exists": true,
+      "x_name": "Apple Mail",
+      "y_name": "Missive",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Front vs Thunderbird for Busy professionals",
+      "slug": "front-vs-thunderbird-for-busy-professional",
+      "exists": true,
+      "x_name": "Front",
+      "y_name": "Thunderbird",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Fastmail vs Missive for Busy professionals",
+      "slug": "fastmail-vs-missive-for-busy-professional",
+      "exists": true,
+      "x_name": "Fastmail",
+      "y_name": "Missive",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "SaneBox vs Thunderbird for Busy professionals",
+      "slug": "sanebox-vs-thunderbird-for-busy-professional",
+      "exists": true,
+      "x_name": "SaneBox",
+      "y_name": "Thunderbird",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Apple Mail vs Front for Busy professionals",
+      "slug": "apple-mail-vs-front-for-busy-professional",
+      "exists": true,
+      "x_name": "Apple Mail",
+      "y_name": "Front",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Fastmail vs Front for Busy professionals",
+      "slug": "fastmail-vs-front-for-busy-professional",
+      "exists": true,
+      "x_name": "Fastmail",
+      "y_name": "Front",
+      "persona": "Busy professional"
+    }
+  ]
+}

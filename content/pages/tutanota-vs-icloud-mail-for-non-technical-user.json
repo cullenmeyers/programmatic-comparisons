@@ -1,0 +1,122 @@
+{
+  "category": "Email / Inbox tools",
+  "categorySlug": "email-inbox-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Tutanota vs iCloud Mail for Non-technical users",
+  "slug": "tutanota-vs-icloud-mail-for-non-technical-user",
+  "meta_description": "Compare Tutanota vs iCloud Mail for non-technical users. Tutanota wins when you need automatic encrypted email without setup.",
+  "persona": "Non-technical user",
+  "constraint_lens": "Non-technical users need tools that handle security automatically without requiring setup, configuration, or risk of breaking something.",
+  "one_second_verdict": {
+    "winner_label": "Tutanota",
+    "summary": "Best for automatic encrypted email without setup.",
+    "reason": "iCloud Mail fails first because encryption is not automatic and requires additional setup or is not fully handled by the provider."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Tutanota is the better choice when you want secure email without needing to configure anything. It provides built-in end-to-end encryption that works automatically, removing the risk of misconfiguration. iCloud Mail does not offer the same level of automatic encryption for all emails, and achieving similar security requires additional steps or external tools, which introduces friction and risk for non-technical users.",
+    "decision_rule": "If encrypted email requires additional setup or is not handled automatically by the provider, iCloud Mail fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Tutanota fits this non-technical user better",
+      "content": "This user wants security without complexity. Tutanota handles encryption automatically, so there is nothing to configure or break."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Tutanota wins",
+      "bullets": [
+        {
+          "point": "Encryption is built-in and automatic.",
+          "why_it_matters": "You do not need to configure keys or settings."
+        },
+        {
+          "point": "No external tools or plugins are required.",
+          "why_it_matters": "This reduces risk of misconfiguration."
+        },
+        {
+          "point": "Secure email works out of the box.",
+          "why_it_matters": "This makes it safe and easy to use."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where iCloud Mail wins",
+      "bullets": [
+        {
+          "point": "Seamlessly integrated with Apple ecosystem.",
+          "why_it_matters": "This makes it convenient for Apple users."
+        },
+        {
+          "point": "Simple and familiar email experience.",
+          "why_it_matters": "This lowers the learning curve."
+        },
+        {
+          "point": "No additional complexity for standard email use.",
+          "why_it_matters": "This works well for non-secure workflows."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You prioritize ecosystem integration over built-in encryption.",
+          "what_to_do_instead": "Use iCloud Mail for seamless Apple integration."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need secure email but must configure additional tools or rely on non-automatic encryption.",
+          "what_to_do_instead": "Switch to Tutanota for automatic encryption."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user prioritizes ecosystem convenience over built-in encryption. In that case, iCloud Mail may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Tutanota for automatic encryption.",
+        "Choose iCloud Mail for Apple integration.",
+        "If you want no setup security, use Tutanota."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Why is Tutanota better for secure email?",
+      "answer": "Because it provides automatic encryption without requiring setup."
+    },
+    {
+      "question": "What is missing in iCloud Mail security?",
+      "answer": "It does not provide fully automatic end-to-end encryption for all emails."
+    },
+    {
+      "question": "Is iCloud Mail easier to use?",
+      "answer": "Yes, but it lacks built-in automatic encryption."
+    },
+    {
+      "question": "What is the safest email option with no setup?",
+      "answer": "Tutanota is safer because it handles encryption automatically."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Mailfence vs Yahoo Mail for Non-technical users",
+      "slug": "mailfence-vs-yahoo-mail-for-non-technical-user",
+      "exists": true,
+      "x_name": "Mailfence",
+      "y_name": "Yahoo Mail",
+      "persona": "Non-technical user"
+    }
+  ]
+}

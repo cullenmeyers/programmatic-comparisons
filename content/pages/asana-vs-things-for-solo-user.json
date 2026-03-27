@@ -1,0 +1,122 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Asana vs Things for Solo users",
+  "slug": "asana-vs-things-for-solo-user",
+  "meta_description": "Asana vs Things for solo users who want to track personal work only. See why assignment-based workflows slow you down compared to a personal task system.",
+  "persona": "Solo user",
+  "constraint_lens": "You need a tool that does not require ongoing upkeep or managing unnecessary structure just to keep things working.",
+  "one_second_verdict": {
+    "winner_label": "Things",
+    "summary": "Best for tracking personal work without extra steps or managing unnecessary structure.",
+    "reason": "Asana fails first because its task assignment and ownership system forces you to manage roles and responsibilities even when working alone."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Things is built for individual task management, so you can capture and complete work without managing extra layers like ownership or collaborators. Asana, on the other hand, is designed around assigning tasks and tracking responsibility across people. When you are working alone, this creates unnecessary steps that you must maintain just to keep your system organized. Over time, this added structure becomes overhead instead of support.",
+    "decision_rule": "If managing tasks requires assigning ownership and tracking other people’s responsibilities, Asana fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Things fits solo users",
+      "content": "You are managing your own projects and do not want to think about who owns what or track responsibilities across people. Tools that assume multiple collaborators quickly become extra work instead of help. Things fits this by letting you focus only on your tasks, while Asana introduces assignment and ownership layers that do not match how you work alone."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Asana works better",
+      "bullets": [
+        {
+          "point": "Built-in task assignment system with owners and collaborators",
+          "why_it_matters": "Each task can be assigned to a person with clear ownership, which is useful when multiple people are involved and responsibilities must be tracked."
+        },
+        {
+          "point": "Multi-user project views with shared timelines and status tracking",
+          "why_it_matters": "Projects update across all collaborators in real time, helping teams stay aligned without manual updates."
+        },
+        {
+          "point": "Notification system tied to task ownership and updates",
+          "why_it_matters": "You get alerts when tasks are assigned, completed, or changed, which helps coordinate work across people but adds noise when working alone."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Things works better",
+      "bullets": [
+        {
+          "point": "Single-user task model with no assignment or ownership fields",
+          "why_it_matters": "Every task is implicitly yours, so you do not have to manage roles or assign responsibility, reducing ongoing upkeep."
+        },
+        {
+          "point": "Flat project and area structure focused on personal organization",
+          "why_it_matters": "You can group tasks without setting up shared spaces or managing collaborators, keeping your system lightweight and easy to maintain."
+        },
+        {
+          "point": "Minimal task creation flow with quick entry and no required fields",
+          "why_it_matters": "You can add tasks instantly without filling in extra details, which keeps daily use fast and avoids buildup of maintenance work."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You are working alone but still need to assign tasks or manage ownership fields just to organize your work.",
+          "what_to_do_instead": "Switch to Things so tasks are automatically yours and you can track work without maintaining assignment structures."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Your work starts involving other people and you need to track who is responsible for each task or coordinate shared projects.",
+          "what_to_do_instead": "Move to Asana so you can assign tasks, track ownership, and manage collaboration across people."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your personal projects frequently turn into shared work with others, and you need to track who is doing what, Asana becomes the better choice because its assignment system handles that transition without needing a new tool."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Use Things if you only manage your own tasks and want zero extra steps.",
+        "Use Asana if you need to assign tasks or track responsibilities across people.",
+        "Avoid Asana if you find yourself maintaining ownership fields for work that is only yours."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can I use Asana as a solo user?",
+      "a": "Yes, but you will still deal with assignment and ownership features that are designed for teams, which adds unnecessary steps when working alone."
+    },
+    {
+      "q": "Does Things support collaboration?",
+      "a": "No, Things is designed for individual use only and does not include shared projects or task assignments."
+    },
+    {
+      "q": "Why does assignment matter for solo users?",
+      "a": "Because it introduces extra fields and decisions you must manage, even when every task is already yours, which creates ongoing maintenance."
+    },
+    {
+      "q": "Is Things too limited for complex projects?",
+      "a": "It can handle complex personal work, but once you need shared ownership or team coordination, it does not provide the necessary structure."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Todoist vs Asana for Solo users",
+      "slug": "todoist-vs-asana-for-solo-user",
+      "exists": true,
+      "x_name": "Asana",
+      "y_name": "Todoist",
+      "persona": "Solo user"
+    }
+  ]
+}

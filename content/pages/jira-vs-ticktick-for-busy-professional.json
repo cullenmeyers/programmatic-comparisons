@@ -1,0 +1,162 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Jira vs TickTick for Busy professionals",
+  "slug": "jira-vs-ticktick-for-busy-professional",
+  "meta_description": "Jira vs TickTick for busy professionals. See why shared status workflows in Jira track progress better than TickTick task lists.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need a tool that clearly shows task progress across stages without requiring manual tracking or guesswork.",
+  "one_second_verdict": {
+    "winner_label": "Jira",
+    "summary": "Best for tracking tasks through shared status stages with clear visibility.",
+    "reason": "TickTick fails first because it does not support shared status workflows where tasks move through visible stages across users."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Jira is built around status-based workflows where tasks move through stages like backlog, in progress, and done, with visibility across all users. This makes it easy to track progress without manually checking each task. TickTick is designed for personal task tracking and does not support shared status progression across a team. For busy professionals, this means more effort to understand where work stands and who is doing what.",
+    "decision_rule": "If tasks cannot move through visible status states shared across users, TickTick fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Jira fits busy professionals",
+      "content": "You work in a system where tasks must move through defined stages and be visible to others at each step. Tools that do not show this progression clearly require extra checking and coordination. Jira fits this by enforcing visible status states across users, while TickTick lacks shared workflows and keeps tasks in simpler personal lists."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Jira works better",
+      "bullets": [
+        {
+          "point": "Workflow statuses like backlog, in progress, and done applied to every task",
+          "why_it_matters": "You can see exactly where each task is in the process without needing to open or check it manually."
+        },
+        {
+          "point": "Shared boards that display tasks across status columns for all users",
+          "why_it_matters": "Everyone can view progress in real time, reducing the need for updates or status checks."
+        },
+        {
+          "point": "Enforced status transitions that control how tasks move between stages",
+          "why_it_matters": "Tasks follow a clear path, preventing confusion about progress and ensuring consistency across the team."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where TickTick works better",
+      "bullets": [
+        {
+          "point": "Simple task lists focused on individual task tracking",
+          "why_it_matters": "You can manage tasks quickly without dealing with workflow stages, which is useful for personal use."
+        },
+        {
+          "point": "Lightweight interface with minimal setup required",
+          "why_it_matters": "You can start using it immediately, but it does not support structured team workflows."
+        },
+        {
+          "point": "Flexible task management without enforced progression rules",
+          "why_it_matters": "You can organize tasks freely, but this means there is no consistent way to track shared progress."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only need to track personal tasks and do not require shared workflows or status tracking.",
+          "what_to_do_instead": "Switch to TickTick to manage tasks quickly without workflow overhead."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need to track tasks through defined stages with visibility across users but cannot see or enforce status progression.",
+          "what_to_do_instead": "Use Jira to manage tasks with shared status workflows and clear progression."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your work does not require shared status tracking and you only need a simple personal task list, TickTick becomes the better choice because it is faster to use without workflow structure."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Use Jira if tasks must move through visible stages shared across users.",
+        "Use TickTick if you only need simple personal task tracking.",
+        "Avoid TickTick if you need to track task progress across a team."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does TickTick support workflow stages like Jira?",
+      "a": "No, TickTick focuses on personal task lists and does not provide shared workflow stages across users."
+    },
+    {
+      "q": "What makes Jira better for tracking progress?",
+      "a": "It uses status workflows and shared boards to show exactly where each task is in the process."
+    },
+    {
+      "q": "Is Jira too complex for simple tasks?",
+      "a": "It can be, since its workflow system is designed for structured team processes rather than simple task lists."
+    },
+    {
+      "q": "Can TickTick be used for team workflows?",
+      "a": "It is not designed for that, as it lacks shared status progression and structured workflow features."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Trello vs Microsoft Project for Busy professionals",
+      "slug": "trello-vs-microsoft-project-for-busy-professional",
+      "exists": true,
+      "x_name": "Microsoft Project",
+      "y_name": "Trello",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Asana vs Things for Busy professionals",
+      "slug": "asana-vs-things-for-busy-professional",
+      "exists": true,
+      "x_name": "Asana",
+      "y_name": "Things",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Asana vs Todoist for Busy professionals",
+      "slug": "asana-vs-todoist-for-busy-professional",
+      "exists": true,
+      "x_name": "Asana",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Microsoft Project vs Todoist for Busy professionals",
+      "slug": "microsoft-project-vs-todoist-for-busy-professional",
+      "exists": true,
+      "x_name": "Microsoft Project",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Process Street vs Trello for Busy professionals",
+      "slug": "process-street-vs-trello-for-busy-professional",
+      "exists": true,
+      "x_name": "Process Street",
+      "y_name": "Trello",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Asana vs Google Tasks for Busy professionals",
+      "slug": "asana-vs-google-tasks-for-busy-professional",
+      "exists": true,
+      "x_name": "Asana",
+      "y_name": "Google Tasks",
+      "persona": "Busy professional"
+    }
+  ]
+}

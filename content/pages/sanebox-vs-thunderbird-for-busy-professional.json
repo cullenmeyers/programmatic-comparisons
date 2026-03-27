@@ -1,0 +1,162 @@
+{
+  "category": "Email / Inbox tools",
+  "categorySlug": "email-inbox-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "SaneBox vs Thunderbird for Busy professionals",
+  "slug": "sanebox-vs-thunderbird-for-busy-professional",
+  "meta_description": "Compare SaneBox vs Thunderbird for busy professionals. SaneBox wins when you need automatic email prioritization without manual rules.",
+  "persona": "Busy professional",
+  "constraint_lens": "Busy professionals need tools that reduce cognitive load by automatically prioritizing important emails without manual sorting or setup.",
+  "one_second_verdict": {
+    "winner_label": "SaneBox",
+    "summary": "Best for automatic email prioritization at scale.",
+    "reason": "Thunderbird fails first because prioritization depends on manual rules and filters instead of automatic classification."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "SaneBox is the better choice when you receive high volumes of email and need automatic prioritization. It uses automated classification to sort important messages without requiring manual setup. Thunderbird relies on user-created rules and filters, which require ongoing maintenance and cognitive effort, making it harder to manage large inboxes efficiently.",
+    "decision_rule": "If email prioritization depends on manually creating rules and filters instead of automatic classification, Thunderbird fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why SaneBox fits this busy professional better",
+      "content": "This user cannot manually manage their inbox. SaneBox automatically prioritizes emails, reducing the need for constant sorting and decision-making."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where SaneBox wins",
+      "bullets": [
+        {
+          "point": "Emails are automatically classified and prioritized.",
+          "why_it_matters": "This removes the need for manual sorting."
+        },
+        {
+          "point": "No rules or filters need to be created or maintained.",
+          "why_it_matters": "This reduces cognitive load over time."
+        },
+        {
+          "point": "Inbox management adapts dynamically to email patterns.",
+          "why_it_matters": "This keeps prioritization effective without effort."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Thunderbird wins",
+      "bullets": [
+        {
+          "point": "Users can create custom rules and filters.",
+          "why_it_matters": "This allows control, but requires effort."
+        },
+        {
+          "point": "Emails can be organized into folders manually.",
+          "why_it_matters": "This works for low volume, but not at scale."
+        },
+        {
+          "point": "It offers flexibility in how emails are handled.",
+          "why_it_matters": "This increases control, but adds complexity."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You want full manual control over email organization instead of automatic prioritization.",
+          "what_to_do_instead": "Use Thunderbird for custom rules and filters."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Managing email requires constant rule creation and manual sorting to keep up with volume.",
+          "what_to_do_instead": "Switch to SaneBox for automatic prioritization."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user prefers full control over email organization and is willing to manage rules manually. In that case, Thunderbird may be suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose SaneBox for automatic prioritization.",
+        "Choose Thunderbird for manual control.",
+        "If you want less inbox effort, use SaneBox."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Why is SaneBox better for busy professionals?",
+      "answer": "Because it automatically prioritizes emails without requiring manual rules."
+    },
+    {
+      "question": "What makes Thunderbird harder at scale?",
+      "answer": "It relies on manually created rules and filters that require ongoing maintenance."
+    },
+    {
+      "question": "Does Thunderbird support automation?",
+      "answer": "Only through manual rules, not automatic classification."
+    },
+    {
+      "question": "What is the best tool for handling large email volume?",
+      "answer": "SaneBox is better because it reduces the need for manual sorting."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Front vs Thunderbird for Busy professionals",
+      "slug": "front-vs-thunderbird-for-busy-professional",
+      "exists": true,
+      "x_name": "Front",
+      "y_name": "Thunderbird",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Missive vs Thunderbird for Busy professionals",
+      "slug": "missive-vs-thunderbird-for-busy-professional",
+      "exists": true,
+      "x_name": "Missive",
+      "y_name": "Thunderbird",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Apple Mail vs Front for Busy professionals",
+      "slug": "apple-mail-vs-front-for-busy-professional",
+      "exists": true,
+      "x_name": "Apple Mail",
+      "y_name": "Front",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Fastmail vs Front for Busy professionals",
+      "slug": "fastmail-vs-front-for-busy-professional",
+      "exists": true,
+      "x_name": "Fastmail",
+      "y_name": "Front",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Front vs Gmail for Busy professionals",
+      "slug": "front-vs-gmail-for-busy-professional",
+      "exists": true,
+      "x_name": "Front",
+      "y_name": "Gmail",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Front vs Spark Mail for Busy professionals",
+      "slug": "front-vs-spark-mail-for-busy-professional",
+      "exists": true,
+      "x_name": "Front",
+      "y_name": "Spark Mail",
+      "persona": "Busy professional"
+    }
+  ]
+}

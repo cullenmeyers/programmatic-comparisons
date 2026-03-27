@@ -1,15 +1,15 @@
 # Related Comparisons Rebuild Report
 
-Date: 2026-03-26T01:48:51.691Z
+Date: 2026-03-27T00:06:21.200Z
 
 ## Summary
 
-- Total pages scanned: 564
+- Total pages scanned: 584
 - Total pages updated: 0
-- Average related_pages count: 5.12
-- Pages with 0 related pages: 19
+- Average related_pages count: 5.14
+- Pages with 0 related pages: 18
 - Pages with 1 related page: 22
-- Pages with fewer than 3 related pages: 80
+- Pages with fewer than 3 related pages: 76
 
 ## Sparse Pages
 
@@ -29,7 +29,6 @@ Date: 2026-03-26T01:48:51.691Z
 - /compare/google-sheets-vs-grist-for-student
 - /compare/instapaper-vs-zotero-for-student
 - /compare/logseq-vs-tana-for-busy-professional
-- /compare/mailfence-vs-yahoo-mail-for-non-technical-user
 - /compare/matter-read-it-later-app-vs-raindropio-for-non-technical-user
 - /compare/microsoft-excel-vs-airtable-for-minimalist
 - /compare/pinboard-vs-raindropio-for-beginner
@@ -38,6 +37,7 @@ Date: 2026-03-26T01:48:51.691Z
 ### Pages with 1 related page
 
 - /compare/anybox-vs-raindropio-for-minimalist
+- /compare/asana-vs-things-for-solo-user
 - /compare/atracker-vs-kimai-for-student
 - /compare/bitwarden-vs-passbolt-for-solo-user
 - /compare/buddy-punch-vs-harvest-for-student
@@ -50,15 +50,14 @@ Date: 2026-03-26T01:48:51.691Z
 - /compare/goodlinks-vs-linkace-for-non-technical-user
 - /compare/goodlinks-vs-pinboard-for-beginner
 - /compare/goodlinks-vs-raindropio-for-non-technical-user
+- /compare/mailfence-vs-yahoo-mail-for-non-technical-user
 - /compare/mattermost-vs-slack-for-power-user
 - /compare/microsoft-teams-vs-slack-for-power-user
-- /compare/notion-vs-project-co-for-non-technical-user
 - /compare/raindropio-vs-wallabag-for-beginner
 - /compare/reflect-vs-roam-research-for-minimalist
 - /compare/startme-vs-raindropio-for-minimalist
-- /compare/things-vs-clickup-for-minimalist
-- /compare/ticktick-vs-mondaycom-for-non-technical-user
-- /compare/trello-vs-jira-for-minimalist
+- /compare/todoist-vs-asana-for-solo-user
+- /compare/tutanota-vs-icloud-mail-for-non-technical-user
 
 ### Pages with fewer than 3 related pages
 
@@ -70,14 +69,13 @@ Date: 2026-03-26T01:48:51.691Z
 - /compare/apple-notes-vs-evernote-for-solo-user
 - /compare/apple-notes-vs-notion-for-solo-user
 - /compare/appsheet-vs-google-sheets-for-non-technical-user
-- /compare/asana-vs-todoist-for-busy-professional
+- /compare/asana-vs-things-for-solo-user
 - /compare/atracker-vs-kimai-for-student
 - /compare/backblaze-vs-dropbox-for-solo-user
 - /compare/basecamp-vs-discord-for-non-technical-user
 - /compare/basecamp-vs-slack-for-busy-professional
 - /compare/bitwarden-vs-keepass-for-beginner
 - /compare/bitwarden-vs-passbolt-for-solo-user
-- /compare/bonsai-vs-trello-for-busy-professional
 - /compare/box-vs-dropbox-for-non-technical-user
 - /compare/buddy-punch-vs-harvest-for-student
 - /compare/calendly-vs-google-calendar-for-beginner
@@ -128,7 +126,6 @@ Date: 2026-03-26T01:48:51.691Z
 - /compare/microsoft-excel-vs-airtable-for-minimalist
 - /compare/microsoft-teams-vs-slack-for-power-user
 - /compare/microsoft-to-do-vs-smartsheet-for-beginner
-- /compare/notion-vs-project-co-for-non-technical-user
 - /compare/pinboard-vs-raindropio-for-beginner
 - /compare/pocket-vs-wallabag-for-student
 - /compare/raindropio-vs-wallabag-for-beginner
@@ -137,11 +134,9 @@ Date: 2026-03-26T01:48:51.691Z
 - /compare/slack-vs-google-chat-for-busy-professional
 - /compare/slack-vs-microsoft-teams-for-busy-professional
 - /compare/startme-vs-raindropio-for-minimalist
-- /compare/things-vs-clickup-for-minimalist
-- /compare/ticktick-vs-mondaycom-for-non-technical-user
 - /compare/todoist-vs-asana-for-beginner
-- /compare/trello-vs-jira-for-minimalist
-- /compare/trello-vs-microsoft-project-for-busy-professional
+- /compare/todoist-vs-asana-for-solo-user
+- /compare/tutanota-vs-icloud-mail-for-non-technical-user
 
 ## Sample Debug Output
 

@@ -1,0 +1,146 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Jira vs Things for Minimalists",
+  "slug": "jira-vs-things-for-minimalist",
+  "meta_description": "Jira vs Things for minimalists who want simple task tracking. See why enforced workflow states in Jira slow you down compared to Things.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a tool that keeps things simple and avoids extra steps or built-in structure you do not need.",
+  "one_second_verdict": {
+    "winner_label": "Things",
+    "summary": "Best for completing tasks quickly without extra steps or required workflow stages.",
+    "reason": "Jira fails first because its issue workflow system forces tasks through required states and transitions before completion."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Things lets you capture and complete tasks without any required steps beyond marking them done. Jira is built around issue workflows where tasks move through predefined states like 'To do' and 'In progress'. For minimalists, this creates unnecessary steps that slow down simple task completion. Over time, Jira feels like overhead instead of help when you only need to track a few tasks.",
+    "decision_rule": "If completing tasks requires following enforced workflow states and issue transitions, Jira fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Things fits minimalists",
+      "content": "You want to write down a task and finish it without thinking about stages or process. Tools that require steps before completion feel like extra work instead of support. Things fits this by letting you move directly from adding a task to completing it, while Jira introduces workflow stages that you must follow even for simple work."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Jira works better",
+      "bullets": [
+        {
+          "point": "Enforced issue workflow with required states like 'To do', 'In progress', and 'Done'",
+          "why_it_matters": "Tasks must move through defined stages, which helps track structured processes but adds steps that must be followed."
+        },
+        {
+          "point": "Transition rules that control how issues move between states",
+          "why_it_matters": "You can restrict or guide how tasks progress, which is useful for controlled workflows but creates friction when you just want to finish something quickly."
+        },
+        {
+          "point": "Custom fields and issue types attached to each task",
+          "why_it_matters": "You can capture detailed information about work, but filling in or managing these fields adds overhead for simple task tracking."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Things works better",
+      "bullets": [
+        {
+          "point": "Direct task completion without required intermediate states",
+          "why_it_matters": "You can mark a task done immediately without moving it through stages, keeping the process fast and simple."
+        },
+        {
+          "point": "Minimal task structure with optional tags and lists only",
+          "why_it_matters": "You organize tasks without dealing with issue types or extra fields, reducing mental load and setup effort."
+        },
+        {
+          "point": "Clean interface focused only on adding and completing tasks",
+          "why_it_matters": "There are fewer options on screen, so you spend less time deciding how to manage tasks and more time completing them."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need to complete a simple task but must move it through multiple workflow states or follow transition rules first.",
+          "what_to_do_instead": "Switch to Things so you can add and complete tasks directly without required steps or stages."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Your work requires tracking progress across defined stages or enforcing a process for how tasks move.",
+          "what_to_do_instead": "Use Jira to set up workflows and ensure tasks follow the required process from start to finish."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your tasks must follow a strict process with defined stages, such as tracking progress across multiple steps, Jira becomes the better choice because its workflow system enforces that structure."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Use Things if you want to add and complete tasks with no extra steps.",
+        "Use Jira if your work requires tasks to move through defined stages.",
+        "Avoid Jira if you find yourself clicking through states just to finish simple tasks."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can Jira be used for simple task tracking?",
+      "a": "It can, but you will still deal with workflow states and transitions that add extra steps compared to simpler tools."
+    },
+    {
+      "q": "Does Things support workflows or stages?",
+      "a": "No, Things focuses on direct task management without enforcing stages or structured workflows."
+    },
+    {
+      "q": "Why do workflow states matter for minimalists?",
+      "a": "Because they introduce extra steps before completing tasks, which slows down simple work and adds unnecessary complexity."
+    },
+    {
+      "q": "Is Things too limited for structured work?",
+      "a": "It can be if you need to enforce processes or track progress through multiple stages, which is where Jira performs better."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Things vs ClickUp for Minimalists",
+      "slug": "things-vs-clickup-for-minimalist",
+      "exists": true,
+      "x_name": "ClickUp",
+      "y_name": "Things",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Trello vs Jira for Minimalists",
+      "slug": "trello-vs-jira-for-minimalist",
+      "exists": true,
+      "x_name": "Jira",
+      "y_name": "Trello",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Todoist vs ClickUp for Minimalists",
+      "slug": "todoist-vs-clickup-for-minimalist",
+      "exists": true,
+      "x_name": "ClickUp",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Todoist vs Microsoft Project for Minimalists",
+      "slug": "todoist-vs-microsoft-project-for-minimalist",
+      "exists": true,
+      "x_name": "Microsoft Project",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Airtable vs Asana for Power users",
+  "slug": "airtable-vs-asana-for-power-user",
+  "meta_description": "Airtable vs Asana for power users. See why Airtable enables cross-project task views in one dataset while Asana limits aggregation.",
+  "persona": "Power user",
+  "constraint_lens": "You need a tool that can scale with more complex setups and does not block how you structure or analyze your work.",
+  "one_second_verdict": {
+    "winner_label": "Airtable",
+    "summary": "Best for viewing tasks across multiple projects in one unified dataset with flexible filtering.",
+    "reason": "Asana fails first because tasks are tied to separate projects and cannot be fully aggregated into a single dataset for analysis."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Airtable lets you store tasks in one table and view them across projects using filters, linked records, and custom views. This means you can analyze all work in one place without duplicating or syncing data. Asana keeps tasks inside individual projects, which makes it harder to combine and analyze work across them. For power users, this limits how far you can push cross-project visibility and system design.",
+    "decision_rule": "If tasks cannot be aggregated into a single dataset across projects for unified filtering and analysis, Asana fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Airtable fits power users",
+      "content": "You are building a system where tasks from multiple projects need to live in one place and be filtered or analyzed together. Tools that separate tasks by project create limits as your system grows. Airtable fits this by letting you treat all tasks as one dataset, while Asana keeps them divided across projects, which restricts how you combine and analyze work."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Airtable works better",
+      "bullets": [
+        {
+          "point": "Single table structure where all tasks can exist in one dataset",
+          "why_it_matters": "You can store every task across projects in one place, making it possible to filter, sort, and analyze everything without switching contexts."
+        },
+        {
+          "point": "Views with filters, groupings, and sorts applied across the entire dataset",
+          "why_it_matters": "You can create custom views like 'all tasks due this week across projects' without duplicating data, enabling flexible analysis."
+        },
+        {
+          "point": "Linked records that connect tasks to projects without separating the data",
+          "why_it_matters": "Projects become attributes of tasks rather than containers, which allows you to slice and analyze work across projects without structural limits."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Asana works better",
+      "bullets": [
+        {
+          "point": "Project-based task containers with built-in workflows",
+          "why_it_matters": "Tasks are organized within projects with predefined structure, which makes setup easier but limits cross-project flexibility."
+        },
+        {
+          "point": "Shared project views with status tracking and timelines",
+          "why_it_matters": "You can manage and visualize work within each project effectively, but these views do not combine into one unified dataset."
+        },
+        {
+          "point": "Simplified task management without needing to design a data structure",
+          "why_it_matters": "You can start quickly without building a system, but this comes at the cost of flexibility when your needs grow."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You do not want to design your own structure and prefer a ready-made system for managing tasks within projects.",
+          "what_to_do_instead": "Use Asana to get built-in project organization without setting up tables, fields, or relationships."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need to filter, sort, or analyze tasks across multiple projects in one place but must switch between projects or duplicate data.",
+          "what_to_do_instead": "Switch to Airtable so all tasks live in one dataset and can be viewed and analyzed together."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your work is mostly contained within separate projects and you rarely need to analyze tasks across them, Asana becomes the better choice because its built-in project structure is faster to use without designing a system."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Use Airtable if you need one unified dataset for all tasks across projects.",
+        "Use Asana if you mainly manage work within separate projects.",
+        "Avoid Asana if you need to filter or analyze tasks across projects without switching views."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can Asana show tasks across multiple projects?",
+      "a": "It can show tasks in limited ways, but they are still tied to individual projects and not part of a single unified dataset."
+    },
+    {
+      "q": "Why does a unified dataset matter for power users?",
+      "a": "It allows you to filter, sort, and analyze all tasks together without duplication or switching contexts."
+    },
+    {
+      "q": "Is Airtable harder to set up than Asana?",
+      "a": "Yes, because you need to define your own tables and structure, but it gives you more flexibility as your system grows."
+    },
+    {
+      "q": "Can Airtable replace project management tools completely?",
+      "a": "It can for many workflows, especially when you need custom structures and cross-project visibility, but it requires more setup."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Airtable vs Trello for Power users",
+      "slug": "airtable-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Airtable",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Asana vs GitHub Issues for Power users",
+      "slug": "asana-vs-github-issues-for-power-user",
+      "exists": true,
+      "x_name": "Asana",
+      "y_name": "GitHub Issues",
+      "persona": "Power user"
+    },
+    {
+      "title": "Linear vs Trello for Power users",
+      "slug": "linear-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Linear",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Bugzilla vs Trello for Power users",
+      "slug": "bugzilla-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Bugzilla",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Celoxis vs Trello for Power users",
+      "slug": "celoxis-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Celoxis",
+      "y_name": "Trello",
+      "persona": "Power user"
+    },
+    {
+      "title": "Fibery vs Trello for Power users",
+      "slug": "fibery-vs-trello-for-power-user",
+      "exists": true,
+      "x_name": "Fibery",
+      "y_name": "Trello",
+      "persona": "Power user"
+    }
+  ]
+}

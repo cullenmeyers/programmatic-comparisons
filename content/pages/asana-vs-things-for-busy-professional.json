@@ -1,0 +1,162 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Asana vs Things for Busy professionals",
+  "slug": "asana-vs-things-for-busy-professional",
+  "meta_description": "Asana vs Things for busy professionals. See why automatic task assignment visibility in Asana keeps you on top of incoming work.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need a tool that surfaces incoming work automatically so you do not have to check or track tasks manually.",
+  "one_second_verdict": {
+    "winner_label": "Asana",
+    "summary": "Best for automatically seeing assigned tasks without needing to check manually.",
+    "reason": "Things fails first because it does not support automatic task assignment from others, requiring manual tracking of incoming work."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Asana automatically surfaces tasks assigned to you in a dedicated inbox and updates them in real time as others assign work. This means you do not need to check multiple places or track incoming tasks manually. Things is built for personal task management and does not support incoming assignments from others. For busy professionals handling work from multiple people, this creates extra effort and risk of missing tasks.",
+    "decision_rule": "If tasks do not appear automatically when assigned and must be manually tracked or checked, Things fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Asana fits busy professionals",
+      "content": "You receive work from multiple people and need it to show up automatically without checking different sources. Tools that require you to track tasks yourself add extra work and increase the chance of missing something. Asana fits this by collecting assigned tasks in one place, while Things requires you to manually add or track incoming work."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Asana works better",
+      "bullets": [
+        {
+          "point": "Automatic task assignment that places tasks into your 'My tasks' view",
+          "why_it_matters": "When someone assigns you work, it appears instantly without manual entry, reducing the need to check for updates."
+        },
+        {
+          "point": "Inbox and notification system tied to task assignments",
+          "why_it_matters": "You are alerted when tasks are assigned or updated, helping you stay on top of incoming work without constant checking."
+        },
+        {
+          "point": "Real-time updates across shared projects",
+          "why_it_matters": "Assigned tasks reflect changes immediately, so you always see the latest work without refreshing or tracking manually."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Things works better",
+      "bullets": [
+        {
+          "point": "Single-user task system with no external assignments",
+          "why_it_matters": "You control all tasks yourself, which keeps things simple but does not support incoming work from others."
+        },
+        {
+          "point": "Manual task entry with full control over what gets added",
+          "why_it_matters": "You decide exactly what enters your task list, but this requires extra effort when tasks come from other people."
+        },
+        {
+          "point": "Minimal interface without notifications from collaborators",
+          "why_it_matters": "There is less noise, but you must rely on external communication to track assigned work."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You only manage your own tasks and do not need to receive or track assignments from others.",
+          "what_to_do_instead": "Switch to Things to keep task management simple without notifications or assignment systems."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You receive tasks from multiple people but must manually add or track them instead of having them appear automatically.",
+          "what_to_do_instead": "Use Asana to receive assigned tasks automatically and keep everything in one place."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If you do not receive tasks from others and only manage your own work, Things becomes the better choice because it removes assignment and notification overhead."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Use Asana if you need tasks to appear automatically when assigned.",
+        "Use Things if you only manage your own tasks.",
+        "Avoid Things if you rely on incoming work from other people."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does Things support task assignments from others?",
+      "a": "No, Things is designed for personal use and does not include features for assigning or receiving tasks from other people."
+    },
+    {
+      "q": "How does Asana show assigned tasks?",
+      "a": "Tasks assigned to you appear automatically in your 'My tasks' view and are updated in real time."
+    },
+    {
+      "q": "Why is automatic task visibility important?",
+      "a": "It reduces the need to check for new work manually and helps prevent missed tasks."
+    },
+    {
+      "q": "Can I manually track tasks in Things from others?",
+      "a": "Yes, but you must add them yourself, which takes extra time and increases the chance of missing something."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Asana vs Todoist for Busy professionals",
+      "slug": "asana-vs-todoist-for-busy-professional",
+      "exists": true,
+      "x_name": "Asana",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Smartsheet vs Things for Busy professionals",
+      "slug": "smartsheet-vs-things-for-busy-professional",
+      "exists": true,
+      "x_name": "Smartsheet",
+      "y_name": "Things",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Asana vs Google Tasks for Busy professionals",
+      "slug": "asana-vs-google-tasks-for-busy-professional",
+      "exists": true,
+      "x_name": "Asana",
+      "y_name": "Google Tasks",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Trello vs Microsoft Project for Busy professionals",
+      "slug": "trello-vs-microsoft-project-for-busy-professional",
+      "exists": true,
+      "x_name": "Microsoft Project",
+      "y_name": "Trello",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Microsoft Project vs Todoist for Busy professionals",
+      "slug": "microsoft-project-vs-todoist-for-busy-professional",
+      "exists": true,
+      "x_name": "Microsoft Project",
+      "y_name": "Todoist",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Process Street vs Trello for Busy professionals",
+      "slug": "process-street-vs-trello-for-busy-professional",
+      "exists": true,
+      "x_name": "Process Street",
+      "y_name": "Trello",
+      "persona": "Busy professional"
+    }
+  ]
+}
