@@ -1,11 +1,11 @@
 # Related Comparisons Rebuild Report
 
-Date: 2026-03-28T01:25:39.977Z
+Date: 2026-03-28T01:37:08.351Z
 
 ## Summary
 
 - Total pages scanned: 607
-- Total pages updated: 0
+- Total pages updated: 1
 - Average related_pages count: 5.14
 - Pages with 0 related pages: 21
 - Pages with 1 related page: 22
