@@ -1,25 +1,27 @@
 # Related Comparisons Rebuild Report
 
-Date: 2026-03-27T00:06:21.200Z
+Date: 2026-03-28T01:25:39.977Z
 
 ## Summary
 
-- Total pages scanned: 584
+- Total pages scanned: 607
 - Total pages updated: 0
 - Average related_pages count: 5.14
-- Pages with 0 related pages: 18
+- Pages with 0 related pages: 21
 - Pages with 1 related page: 22
-- Pages with fewer than 3 related pages: 76
+- Pages with fewer than 3 related pages: 79
 
 ## Sparse Pages
 
 ### Pages with 0 related pages
 
 - /compare/airtable-vs-baserow-for-beginner
+- /compare/airtable-vs-microsoft-excel-for-minimalist
 - /compare/basecamp-vs-discord-for-non-technical-user
 - /compare/box-vs-dropbox-for-non-technical-user
 - /compare/calendly-vs-google-calendar-for-busy-professional
 - /compare/capacities-vs-logseq-for-beginner
+- /compare/chatwoot-vs-intercom-for-solo-user
 - /compare/clickup-vs-google-sheets-for-busy-professional
 - /compare/discord-vs-google-chat-for-student
 - /compare/doodle-vs-savvycal-for-minimalist
@@ -27,10 +29,11 @@ Date: 2026-03-27T00:06:21.200Z
 - /compare/goodlinks-vs-wallabag-for-solo-user
 - /compare/google-drive-vs-mega-for-student
 - /compare/google-sheets-vs-grist-for-student
+- /compare/groove-vs-salesforce-service-cloud-for-non-technical-user
+- /compare/hiver-vs-zendesk-for-minimalist
 - /compare/instapaper-vs-zotero-for-student
 - /compare/logseq-vs-tana-for-busy-professional
 - /compare/matter-read-it-later-app-vs-raindropio-for-non-technical-user
-- /compare/microsoft-excel-vs-airtable-for-minimalist
 - /compare/pinboard-vs-raindropio-for-beginner
 - /compare/pocket-vs-wallabag-for-student
 
@@ -38,6 +41,7 @@ Date: 2026-03-27T00:06:21.200Z
 
 - /compare/anybox-vs-raindropio-for-minimalist
 - /compare/asana-vs-things-for-solo-user
+- /compare/asana-vs-todoist-for-solo-user
 - /compare/atracker-vs-kimai-for-student
 - /compare/bitwarden-vs-passbolt-for-solo-user
 - /compare/buddy-punch-vs-harvest-for-student
@@ -50,18 +54,18 @@ Date: 2026-03-27T00:06:21.200Z
 - /compare/goodlinks-vs-linkace-for-non-technical-user
 - /compare/goodlinks-vs-pinboard-for-beginner
 - /compare/goodlinks-vs-raindropio-for-non-technical-user
+- /compare/icloud-mail-vs-tutanota-for-non-technical-user
 - /compare/mailfence-vs-yahoo-mail-for-non-technical-user
 - /compare/mattermost-vs-slack-for-power-user
 - /compare/microsoft-teams-vs-slack-for-power-user
+- /compare/raindropio-vs-startme-for-minimalist
 - /compare/raindropio-vs-wallabag-for-beginner
 - /compare/reflect-vs-roam-research-for-minimalist
-- /compare/startme-vs-raindropio-for-minimalist
-- /compare/todoist-vs-asana-for-solo-user
-- /compare/tutanota-vs-icloud-mail-for-non-technical-user
 
 ### Pages with fewer than 3 related pages
 
 - /compare/airtable-vs-baserow-for-beginner
+- /compare/airtable-vs-microsoft-excel-for-minimalist
 - /compare/airtable-vs-microsoft-excel-for-non-technical-user
 - /compare/anybox-vs-raindropio-for-minimalist
 - /compare/apple-calendar-vs-notion-calendar-for-solo-user
@@ -70,6 +74,8 @@ Date: 2026-03-27T00:06:21.200Z
 - /compare/apple-notes-vs-notion-for-solo-user
 - /compare/appsheet-vs-google-sheets-for-non-technical-user
 - /compare/asana-vs-things-for-solo-user
+- /compare/asana-vs-todoist-for-beginner
+- /compare/asana-vs-todoist-for-solo-user
 - /compare/atracker-vs-kimai-for-student
 - /compare/backblaze-vs-dropbox-for-solo-user
 - /compare/basecamp-vs-discord-for-non-technical-user
@@ -84,6 +90,7 @@ Date: 2026-03-27T00:06:21.200Z
 - /compare/capacities-vs-obsidian-for-non-technical-user
 - /compare/capacities-vs-reflect-for-minimalist
 - /compare/capacities-vs-roam-research-for-non-technical-user
+- /compare/chatwoot-vs-intercom-for-solo-user
 - /compare/clickup-vs-google-sheets-for-busy-professional
 - /compare/coda-vs-microsoft-excel-for-power-user
 - /compare/cron-vs-google-calendar-for-beginner
@@ -112,8 +119,12 @@ Date: 2026-03-27T00:06:21.200Z
 - /compare/google-calendar-vs-skedda-for-solo-user
 - /compare/google-calendar-vs-teamup-calendar-for-beginner
 - /compare/google-calendar-vs-tidycal-for-beginner
+- /compare/google-chat-vs-slack-for-busy-professional
 - /compare/google-drive-vs-mega-for-student
 - /compare/google-sheets-vs-grist-for-student
+- /compare/groove-vs-salesforce-service-cloud-for-non-technical-user
+- /compare/hiver-vs-zendesk-for-minimalist
+- /compare/icloud-mail-vs-tutanota-for-non-technical-user
 - /compare/instapaper-vs-zotero-for-student
 - /compare/jira-vs-todoist-for-beginner
 - /compare/joplin-vs-notion-for-solo-user
@@ -123,20 +134,15 @@ Date: 2026-03-27T00:06:21.200Z
 - /compare/mailfence-vs-yahoo-mail-for-non-technical-user
 - /compare/matter-read-it-later-app-vs-raindropio-for-non-technical-user
 - /compare/mattermost-vs-slack-for-power-user
-- /compare/microsoft-excel-vs-airtable-for-minimalist
+- /compare/microsoft-teams-vs-slack-for-busy-professional
 - /compare/microsoft-teams-vs-slack-for-power-user
 - /compare/microsoft-to-do-vs-smartsheet-for-beginner
 - /compare/pinboard-vs-raindropio-for-beginner
 - /compare/pocket-vs-wallabag-for-student
+- /compare/raindropio-vs-startme-for-minimalist
 - /compare/raindropio-vs-wallabag-for-beginner
 - /compare/reflect-vs-roam-research-for-minimalist
 - /compare/skedda-vs-teamup-calendar-for-power-user
-- /compare/slack-vs-google-chat-for-busy-professional
-- /compare/slack-vs-microsoft-teams-for-busy-professional
-- /compare/startme-vs-raindropio-for-minimalist
-- /compare/todoist-vs-asana-for-beginner
-- /compare/todoist-vs-asana-for-solo-user
-- /compare/tutanota-vs-icloud-mail-for-non-technical-user
 
 ## Sample Debug Output
 

@@ -1,0 +1,113 @@
+{
+  "category": "Customer Support / Helpdesk Tools",
+  "categorySlug": "customer-support-helpdesk-tools",
+  "constraintSlug": "maintenance-load",
+  "constraintUiName": "Works without upkeep",
+  "title": "Chatwoot vs Intercom for Solo users",
+  "slug": "chatwoot-vs-intercom-for-solo-user",
+  "meta_description": "Chatwoot vs Intercom for solo users: Intercom avoids self-hosting upkeep, while Chatwoot requires ongoing maintenance and infrastructure management.",
+  "persona": "Solo user",
+  "constraint_lens": "You need a support tool that runs without ongoing upkeep, because you cannot spend time maintaining infrastructure or fixing issues.",
+  "one_second_verdict": {
+    "winner_label": "Intercom",
+    "summary": "Best for solo users who want a support system that runs without ongoing maintenance or infrastructure work.",
+    "reason": "Chatwoot fails first because it requires continuous self-hosting maintenance and infrastructure management."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Intercom is the better choice when you cannot afford to maintain your own system. It runs as a fully managed service, so updates, uptime, and infrastructure are handled for you. Chatwoot gives you ownership through self-hosting, but that control comes with ongoing maintenance tasks that quickly become a burden for a solo user.",
+    "decision_rule": "If running the system requires ongoing self-hosting maintenance and infrastructure management, Chatwoot fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Intercom fits this situation",
+      "content": "This setup fits a solo user who wants control over their support system but cannot spend time managing servers or fixing issues. Self-hosting sounds appealing, but it creates ongoing responsibilities. Intercom removes that burden by handling everything behind the scenes so you can focus on support instead of infrastructure."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Chatwoot wins",
+      "bullets": [
+        {
+          "point": "Chatwoot can be self-hosted on your own server or infrastructure.",
+          "why_it_matters": "You fully control your data and environment, but this requires setting up and maintaining the system yourself."
+        },
+        {
+          "point": "You manage updates, backups, and server performance directly.",
+          "why_it_matters": "This gives flexibility, but creates ongoing work that a solo user must handle alone."
+        },
+        {
+          "point": "No dependency on a third-party service for hosting or uptime.",
+          "why_it_matters": "This reduces reliance on external vendors, but shifts all responsibility onto you."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Intercom wins",
+      "bullets": [
+        {
+          "point": "Intercom is fully hosted, with infrastructure, updates, and uptime managed automatically.",
+          "why_it_matters": "You do not need to spend time maintaining servers or fixing issues, which keeps your workload low."
+        },
+        {
+          "point": "New features and fixes are deployed without manual intervention.",
+          "why_it_matters": "This ensures the system stays up to date without requiring your attention."
+        },
+        {
+          "point": "System reliability is handled by the provider instead of the user.",
+          "why_it_matters": "You avoid unexpected downtime or technical problems that would interrupt your support workflow."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Chatwoot starts to break when you must handle server setup, updates, or downtime yourself while also managing support work.",
+          "what_to_do_instead": "Use Intercom when you want a system that runs without requiring ongoing maintenance."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Intercom starts to break when you require full control over hosting and cannot rely on a third-party service.",
+          "what_to_do_instead": "Use Chatwoot when ownership of infrastructure is more important than reducing maintenance."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you have technical expertise or a managed hosting setup that removes most of the maintenance burden. In that case, Chatwoot can provide control without becoming a constant upkeep task."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Intercom if you want zero maintenance and no infrastructure work.",
+        "Pick Chatwoot if you are willing to manage your own hosting.",
+        "If ongoing upkeep is a problem, choose Intercom."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Intercom win for solo users?",
+      "a": "Because it removes the need to manage servers, updates, and infrastructure, which a solo user cannot maintain easily."
+    },
+    {
+      "q": "Is Chatwoot harder to use?",
+      "a": "It is not harder to use day-to-day, but maintaining the system requires technical work that adds ongoing effort."
+    },
+    {
+      "q": "When should I choose Chatwoot instead?",
+      "a": "Choose it when you need full control over hosting and are comfortable managing infrastructure."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Chatwoot is self-hosted and requires maintenance, while Intercom is fully managed and runs without upkeep."
+    }
+  ],
+  "related_pages": []
+}

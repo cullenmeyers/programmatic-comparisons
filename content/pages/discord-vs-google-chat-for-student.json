@@ -1,113 +1,113 @@
 {
-"category": "Team Collaboration Tools",
-"categorySlug": "team-collaboration-tools",
-"constraintSlug": "switching-cost",
-"constraintUiName": "Easy to quit later",
-"title": "Discord vs Google Chat for Students",
-"slug": "discord-vs-google-chat-for-student",
-"meta_description": "Compare Discord vs Google Chat for Students. Discord wins when you need to join and leave groups freely without admin-controlled access or setup.",
-"persona": "Student",
-"constraint_lens": "Students need a tool they can join and leave easily without setup, permission barriers, or long-term commitment.",
-"one_second_verdict": {
-"winner_label": "Discord",
-"summary": "Best for students who want to join and leave groups freely without needing permission or setup.",
-"reason": "Google Chat fails first because access depends on being added to controlled workspaces rather than freely joining spaces."
-},
-"verdict": {
-"winner": "x",
-"summary": "Discord is the better choice when you need flexible participation across temporary groups. It allows you to join servers through invite links and leave at any time without affecting access to other spaces. Google Chat is tied to managed workspaces, where access depends on being added, which increases friction for short-term use.",
-"decision_rule": "If participation depends on being added into controlled workspaces instead of freely joining spaces, Google Chat fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Discord fits this student better",
-"content": "This student joins temporary groups and needs to move in and out without friction. Discord supports that by letting users join via invite links and leave instantly without admin involvement. That makes it easy to participate without commitment or setup."
-},
-{
-"type": "x_wins",
-"heading": "Where Discord wins",
-"bullets": [
-{
-"point": "Discord allows joining servers through simple invite links without requiring admin approval in most cases.",
-"why_it_matters": "You can enter a group instantly without waiting to be added or configured."
-},
-{
-"point": "Leaving a server is immediate and does not affect access to other servers or spaces.",
-"why_it_matters": "This keeps switching between groups fast and low commitment."
-},
-{
-"point": "Each server is independent, so you can join multiple groups without being tied to a single workspace.",
-"why_it_matters": "You can participate in different communities without managing a central account structure."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Google Chat wins",
-"bullets": [
-{
-"point": "Google Chat is tied to a Google Workspace where users are added to spaces by admins or team members.",
-"why_it_matters": "This creates controlled environments, but requires someone else to grant access."
-},
-{
-"point": "Spaces and conversations are managed within an organization rather than as independent groups.",
-"why_it_matters": "This keeps communication structured, but reduces flexibility for temporary participation."
-},
-{
-"point": "User identity and access are linked to organizational accounts rather than standalone participation.",
-"why_it_matters": "This makes it harder to join or leave casually without affecting your broader setup."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You need a controlled environment where access is managed and restricted by an organization.",
-"what_to_do_instead": "Use Google Chat when communication must stay within a defined group or institution."
-},
-{
-"tool": "y",
-"fails_when": "You want to join a group quickly but cannot access it without being added or approved by someone.",
-"what_to_do_instead": "Switch to Discord to join and leave groups freely using invite links."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "This can flip if the student is part of a class or organization where all communication is managed inside a shared workspace. In that case, Google Chat may be required and feel easier within that environment."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"Choose Discord if you want to join and leave groups freely.",
-"Choose Google Chat if communication is controlled by an organization.",
-"If access depends on invites from others, avoid Google Chat."
-]
-}
-],
-"faqs": [
-{
-"q": "Why is Discord easier to join?",
-"a": "Because most servers can be accessed through invite links without needing approval or setup."
-},
-{
-"q": "Can I leave Discord groups easily?",
-"a": "Yes, you can leave any server instantly without affecting other groups."
-},
-{
-"q": "Why is Google Chat harder for temporary groups?",
-"a": "Because access depends on being added to a workspace or space, which requires admin or member action."
-},
-{
-"q": "What is the best tool for short-term group participation?",
-"a": "Discord is better because it allows flexible entry and exit without restrictions."
-}
-],
-"related_pages": []
+  "category": "Team Collaboration Tools",
+  "categorySlug": "team-collaboration-tools",
+  "constraintSlug": "switching-cost",
+  "constraintUiName": "Easy to quit later",
+  "title": "Discord vs Google Chat for Students",
+  "slug": "discord-vs-google-chat-for-student",
+  "meta_description": "Compare Discord vs Google Chat for Students. Discord wins when you need to join and leave groups freely without admin-controlled access or setup.",
+  "persona": "Student",
+  "constraint_lens": "Students need a tool they can join and leave easily without setup, permission barriers, or long-term commitment.",
+  "one_second_verdict": {
+    "winner_label": "Discord",
+    "summary": "Best for students who want to join and leave groups freely without needing permission or setup.",
+    "reason": "Google Chat fails first because access depends on being added to controlled workspaces rather than freely joining spaces."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Discord is the better choice when you need flexible participation across temporary groups. It allows you to join servers through invite links and leave at any time without affecting access to other spaces. Google Chat is tied to managed workspaces, where access depends on being added, which increases friction for short-term use.",
+    "decision_rule": "If participation depends on being added into controlled workspaces instead of freely joining spaces, Google Chat fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Discord fits this student better",
+      "content": "This student joins temporary groups and needs to move in and out without friction. Discord supports that by letting users join via invite links and leave instantly without admin involvement. That makes it easy to participate without commitment or setup."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Discord wins",
+      "bullets": [
+        {
+          "point": "Discord allows joining servers through simple invite links without requiring admin approval in most cases.",
+          "why_it_matters": "You can enter a group instantly without waiting to be added or configured."
+        },
+        {
+          "point": "Leaving a server is immediate and does not affect access to other servers or spaces.",
+          "why_it_matters": "This keeps switching between groups fast and low commitment."
+        },
+        {
+          "point": "Each server is independent, so you can join multiple groups without being tied to a single workspace.",
+          "why_it_matters": "You can participate in different communities without managing a central account structure."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Google Chat wins",
+      "bullets": [
+        {
+          "point": "Google Chat is tied to a Google Workspace where users are added to spaces by admins or team members.",
+          "why_it_matters": "This creates controlled environments, but requires someone else to grant access."
+        },
+        {
+          "point": "Spaces and conversations are managed within an organization rather than as independent groups.",
+          "why_it_matters": "This keeps communication structured, but reduces flexibility for temporary participation."
+        },
+        {
+          "point": "User identity and access are linked to organizational accounts rather than standalone participation.",
+          "why_it_matters": "This makes it harder to join or leave casually without affecting your broader setup."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need a controlled environment where access is managed and restricted by an organization.",
+          "what_to_do_instead": "Use Google Chat when communication must stay within a defined group or institution."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You want to join a group quickly but cannot access it without being added or approved by someone.",
+          "what_to_do_instead": "Switch to Discord to join and leave groups freely using invite links."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the student is part of a class or organization where all communication is managed inside a shared workspace. In that case, Google Chat may be required and feel easier within that environment."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Discord if you want to join and leave groups freely.",
+        "Choose Google Chat if communication is controlled by an organization.",
+        "If access depends on invites from others, avoid Google Chat."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Discord easier to join?",
+      "a": "Because most servers can be accessed through invite links without needing approval or setup."
+    },
+    {
+      "q": "Can I leave Discord groups easily?",
+      "a": "Yes, you can leave any server instantly without affecting other groups."
+    },
+    {
+      "q": "Why is Google Chat harder for temporary groups?",
+      "a": "Because access depends on being added to a workspace or space, which requires admin or member action."
+    },
+    {
+      "q": "What is the best tool for short-term group participation?",
+      "a": "Discord is better because it allows flexible entry and exit without restrictions."
+    }
+  ],
+  "related_pages": []
 }

@@ -1,0 +1,162 @@
+{
+  "category": "Customer Support / Helpdesk Tools",
+  "categorySlug": "customer-support-helpdesk-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Groove vs Kustomer for Busy professionals",
+  "slug": "groove-vs-kustomer-for-busy-professional",
+  "meta_description": "Groove vs Kustomer for busy professionals: Kustomer shows full customer timelines, while Groove fragments context across conversations and slows replies.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need a support tool that shows full customer context instantly so you do not waste time piecing together past interactions.",
+  "one_second_verdict": {
+    "winner_label": "Kustomer",
+    "summary": "Best for busy professionals who need to see a complete customer history instantly in one timeline.",
+    "reason": "Groove fails first because customer context is spread across separate conversations instead of unified into a single timeline view."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Kustomer is the better choice when your priority is seeing the full customer story without searching across multiple threads. It builds a unified timeline that combines messages, actions, and history into one view. Groove keeps conversations in separate threads, which works for simple inbox workflows but slows you down when you need full context quickly.",
+    "decision_rule": "If customer data is fragmented across conversations instead of unified into a timeline, Groove fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Kustomer fits this situation",
+      "content": "This scenario fits a busy professional handling many interactions and needing instant context before replying. When information is scattered, you spend time searching instead of responding. Kustomer reduces that delay by showing the full customer timeline in one place."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Kustomer wins",
+      "bullets": [
+        {
+          "point": "All interactions, including messages and actions, are combined into a single customer timeline view.",
+          "why_it_matters": "You can understand the full situation instantly instead of opening multiple threads to piece together context."
+        },
+        {
+          "point": "Customer data is attached to the profile rather than isolated inside individual conversations.",
+          "why_it_matters": "This keeps history connected across channels, reducing the need to search or guess what happened before."
+        },
+        {
+          "point": "Timeline updates happen in real time as new interactions occur.",
+          "why_it_matters": "You always see the latest context without refreshing or navigating between separate records."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Groove wins",
+      "bullets": [
+        {
+          "point": "Groove uses a simple shared inbox where conversations are handled as individual email threads.",
+          "why_it_matters": "This is easy to understand and quick to start, even though it does not combine context across threads."
+        },
+        {
+          "point": "Setup is minimal with a straightforward inbox-based workflow.",
+          "why_it_matters": "You can begin handling support quickly without configuring deeper data structures."
+        },
+        {
+          "point": "Each conversation stays isolated with its own message history.",
+          "why_it_matters": "This keeps things simple for basic support, but makes it harder to see the full customer story."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "Kustomer starts to break when the team only needs simple email-based support and does not benefit from a full customer timeline system.",
+          "what_to_do_instead": "Use Groove if your workflow is straightforward and does not require unified customer context."
+        },
+        {
+          "tool": "x",
+          "fails_when": "Groove starts to break when a customer has multiple past interactions and you must open separate conversations to understand the full history.",
+          "what_to_do_instead": "Use Kustomer when you need a single timeline that shows all interactions together."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if your support work is mostly simple, one-off email conversations where full customer history is rarely needed. In that case, Groove’s simpler inbox approach may be enough and faster to manage."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Kustomer if you need to see full customer history in one place.",
+        "Pick Groove if your support is simple and thread-based.",
+        "If you are piecing together context manually, choose Kustomer."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Kustomer win for this persona?",
+      "a": "Because it shows a complete customer timeline, removing the need to search across multiple conversations."
+    },
+    {
+      "q": "Is Groove bad for support?",
+      "a": "No, it works well for simple inbox-based support, but struggles when full customer context is needed quickly."
+    },
+    {
+      "q": "When should I choose Groove instead?",
+      "a": "Choose it when your support interactions are simple and do not require combining history across conversations."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Kustomer uses a unified timeline for customer history, while Groove keeps interactions in separate conversation threads."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Groove vs LiveAgent for Busy professionals",
+      "slug": "groove-vs-liveagent-for-busy-professional",
+      "exists": true,
+      "x_name": "Groove",
+      "y_name": "LiveAgent",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Gorgias vs Zendesk for Busy professionals",
+      "slug": "gorgias-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Gorgias",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Acquire vs Zendesk for Busy professionals",
+      "slug": "acquire-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Acquire",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Crisp vs Zendesk for Busy professionals",
+      "slug": "crisp-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Crisp",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Dixa vs Zendesk for Busy professionals",
+      "slug": "dixa-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Dixa",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Richpanel vs Zendesk for Busy professionals",
+      "slug": "richpanel-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Richpanel",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    }
+  ]
+}

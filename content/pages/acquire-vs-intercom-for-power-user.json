@@ -1,0 +1,162 @@
+{
+  "category": "Customer Support / Helpdesk Tools",
+  "categorySlug": "customer-support-helpdesk-tools",
+  "constraintSlug": "ceiling-check",
+  "constraintUiName": "Grows with you",
+  "title": "Acquire vs Intercom for Power users",
+  "slug": "acquire-vs-intercom-for-power-user",
+  "meta_description": "Acquire vs Intercom for power users: Acquire enables video chat and co-browsing, while Intercom focuses on messaging-based support.",
+  "persona": "Power user",
+  "constraint_lens": "You need a support tool that supports advanced, real-time interaction methods like video and co-browsing without hitting capability limits.",
+  "one_second_verdict": {
+    "winner_label": "Acquire",
+    "summary": "Best for power users who need video chat and co-browsing as core support channels.",
+    "reason": "Intercom fails first because it relies primarily on messaging and lacks built-in video and co-browsing as core interaction modes."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Acquire is the better choice when your support process depends on live interaction rather than messaging. It includes built-in video chat and co-browsing, allowing agents to directly guide customers in real time. Intercom is centered around messaging workflows, which work well for many cases but become limiting when deeper, real-time interaction is required.",
+    "decision_rule": "If support is primarily messaging-based without built-in video and co-browsing capabilities, Intercom fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Acquire fits this situation",
+      "content": "This setup fits a power user who needs to go beyond text-based support and interact with customers directly. Messaging introduces delays and misunderstandings when issues are complex. Acquire removes those limits by enabling real-time visual and verbal communication."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Acquire wins",
+      "bullets": [
+        {
+          "point": "Built-in video chat allows agents to communicate with customers face-to-face during support sessions.",
+          "why_it_matters": "This enables faster resolution of complex issues that are difficult to explain through text."
+        },
+        {
+          "point": "Co-browsing lets agents see and guide the customer’s screen in real time.",
+          "why_it_matters": "You can solve problems directly instead of relying on step-by-step instructions that may be misunderstood."
+        },
+        {
+          "point": "Live interaction replaces asynchronous messaging for faster and clearer communication.",
+          "why_it_matters": "This reduces delays and improves the quality of support as workflows become more advanced."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Intercom wins",
+      "bullets": [
+        {
+          "point": "Intercom is optimized for messaging-based support with structured conversations and automation.",
+          "why_it_matters": "This works well for scalable support, but lacks deeper real-time interaction capabilities."
+        },
+        {
+          "point": "Workflows include routing, automation, and message-based engagement tools.",
+          "why_it_matters": "These features support efficiency, but do not replace live interaction for complex issues."
+        },
+        {
+          "point": "Conversations are managed through chat and asynchronous communication channels.",
+          "why_it_matters": "This keeps processes consistent, but introduces delays when immediate guidance is needed."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Acquire starts to break when most support interactions are simple and do not require video or co-browsing.",
+          "what_to_do_instead": "Use Intercom if messaging-based workflows are sufficient and simpler to manage."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Intercom starts to break when complex issues require real-time interaction, visual guidance, or direct communication beyond messaging.",
+          "what_to_do_instead": "Use Acquire when support depends on live interaction through video and co-browsing."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if your support workload is mostly simple conversations that can be handled through messaging without needing real-time interaction. In that case, Intercom’s messaging system may be more efficient."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Acquire if you need video chat and co-browsing for support.",
+        "Pick Intercom if your support is primarily messaging-based.",
+        "If real-time interaction is required, choose Acquire."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Acquire win for power users?",
+      "a": "Because it supports advanced real-time interaction through video chat and co-browsing, which messaging tools cannot fully replace."
+    },
+    {
+      "q": "Does Intercom support video or co-browsing?",
+      "a": "It focuses primarily on messaging and does not provide these as core built-in capabilities."
+    },
+    {
+      "q": "When should I choose Intercom instead?",
+      "a": "Choose it when your support is mostly message-based and does not require live interaction."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Acquire enables live video and co-browsing support, while Intercom focuses on messaging-based workflows."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Helpshift vs Intercom for Power users",
+      "slug": "helpshift-vs-intercom-for-power-user",
+      "exists": true,
+      "x_name": "Helpshift",
+      "y_name": "Intercom",
+      "persona": "Power user"
+    },
+    {
+      "title": "Helpshift vs Zendesk for Power users",
+      "slug": "helpshift-vs-zendesk-for-power-user",
+      "exists": true,
+      "x_name": "Helpshift",
+      "y_name": "Zendesk",
+      "persona": "Power user"
+    },
+    {
+      "title": "Deskpro vs Freshdesk for Power users",
+      "slug": "deskpro-vs-freshdesk-for-power-user",
+      "exists": true,
+      "x_name": "Deskpro",
+      "y_name": "Freshdesk",
+      "persona": "Power user"
+    },
+    {
+      "title": "Freshdesk vs Groove for Power users",
+      "slug": "freshdesk-vs-groove-for-power-user",
+      "exists": true,
+      "x_name": "Freshdesk",
+      "y_name": "Groove",
+      "persona": "Power user"
+    },
+    {
+      "title": "Freshdesk vs SolarWinds Service Desk for Power users",
+      "slug": "freshdesk-vs-solarwinds-service-desk-for-power-user",
+      "exists": true,
+      "x_name": "Freshdesk",
+      "y_name": "SolarWinds Service Desk",
+      "persona": "Power user"
+    },
+    {
+      "title": "Freshdesk vs Tawk.to for Power users",
+      "slug": "freshdesk-vs-tawkto-for-power-user",
+      "exists": true,
+      "x_name": "Freshdesk",
+      "y_name": "Tawk.to",
+      "persona": "Power user"
+    }
+  ]
+}

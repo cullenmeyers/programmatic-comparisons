@@ -1,0 +1,162 @@
+{
+  "category": "Customer Support / Helpdesk Tools",
+  "categorySlug": "customer-support-helpdesk-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Front vs Zoho Desk for Busy professionals",
+  "slug": "front-vs-zoho-desk-for-busy-professional",
+  "meta_description": "Front vs Zoho Desk for busy professionals: Front unifies all messages in one inbox, while Zoho Desk splits conversations into modules, slowing response time.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need a support tool that keeps all conversations in one place so you do not lose time switching between screens or systems.",
+  "one_second_verdict": {
+    "winner_label": "Front",
+    "summary": "Best for busy professionals who need to manage all conversations from one unified inbox without switching tools.",
+    "reason": "Zoho Desk fails first because messages are split across separate modules instead of appearing in a single unified inbox."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Front is the better choice when your main job is handling conversations across multiple channels without losing speed. Its unified inbox brings email, chat, and other messages into one stream so you can process everything in one place. Zoho Desk separates communication into different modules, which works for structured support workflows but slows down someone trying to move quickly between conversations.",
+    "decision_rule": "If messages are separated into system-specific modules instead of a unified inbox, Zoho Desk fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Front fits this situation",
+      "content": "This setup fits a busy professional managing conversations across email, chat, and other channels at the same time. When messages are scattered, you spend more time switching than replying. Front reduces that switching by putting everything into a single inbox, which matches the need to stay fast and focused."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Front wins",
+      "bullets": [
+        {
+          "point": "All channels flow into one shared inbox, so email, chat, and other messages appear in a single list.",
+          "why_it_matters": "This removes the need to jump between tools or tabs, helping you process conversations faster under heavy workload."
+        },
+        {
+          "point": "Conversations stay in one thread view even as they move across channels.",
+          "why_it_matters": "You do not have to mentally reconnect context from different places, which reduces mistakes and saves time when replying."
+        },
+        {
+          "point": "Team collaboration happens inside the same message thread with comments and assignments.",
+          "why_it_matters": "You can coordinate without leaving the conversation, avoiding extra steps that slow down responses."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Zoho Desk wins",
+      "bullets": [
+        {
+          "point": "Zoho Desk organizes work into modules like tickets, contacts, and departments.",
+          "why_it_matters": "This structure helps teams manage complex support operations, even though it adds navigation before replying."
+        },
+        {
+          "point": "Support workflows can be routed through department-based views and ticket categories.",
+          "why_it_matters": "That is useful for larger teams, but it requires more steps compared to a single inbox flow."
+        },
+        {
+          "point": "Detailed ticket records allow tracking of longer customer issues over time.",
+          "why_it_matters": "This supports deep case management, but it is heavier than needed for fast conversation handling."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Front starts to break when support work requires strict ticket categorization, department routing, and formal case tracking beyond simple conversation handling.",
+          "what_to_do_instead": "Use Zoho Desk when your workflow depends on structured ticket systems rather than a unified inbox."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Zoho Desk starts to break when you need to handle conversations quickly across channels and must switch between separate modules to see different messages.",
+          "what_to_do_instead": "Use Front when speed comes from keeping everything in one inbox view."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if your role shifts from quick conversation handling to managing structured support operations with clear departments, routing, and long-term case tracking. In that situation, Zoho Desk’s module-based setup becomes necessary rather than a slowdown."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Front if you want all conversations in one inbox with no switching.",
+        "Pick Zoho Desk if your team needs structured ticket modules and routing.",
+        "If switching between screens slows you down, choose Front."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Front win for this persona?",
+      "a": "Because it keeps all messages in one inbox, reducing the need to switch between different systems when responding."
+    },
+    {
+      "q": "Is Zoho Desk harder to use?",
+      "a": "It is not harder overall, but its module-based structure adds extra steps for someone focused on quick responses."
+    },
+    {
+      "q": "When should I choose Zoho Desk instead?",
+      "a": "Choose it when your work depends on structured ticket handling, departments, and longer case tracking."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Front uses a unified inbox, while Zoho Desk separates conversations into system-specific modules."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Front vs Help Scout for Busy professionals",
+      "slug": "front-vs-help-scout-for-busy-professional",
+      "exists": true,
+      "x_name": "Front",
+      "y_name": "Help Scout",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Front vs Intercom for Busy professionals",
+      "slug": "front-vs-intercom-for-busy-professional",
+      "exists": true,
+      "x_name": "Front",
+      "y_name": "Intercom",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Gorgias vs Zendesk for Busy professionals",
+      "slug": "gorgias-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Gorgias",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Acquire vs Zendesk for Busy professionals",
+      "slug": "acquire-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Acquire",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Crisp vs Zendesk for Busy professionals",
+      "slug": "crisp-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Crisp",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Dixa vs Zendesk for Busy professionals",
+      "slug": "dixa-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Dixa",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    }
+  ]
+}

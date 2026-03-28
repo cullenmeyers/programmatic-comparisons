@@ -1,0 +1,146 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Jira vs Trello for Minimalists",
+  "slug": "jira-vs-trello-for-minimalist",
+  "meta_description": "Compare Jira vs Trello for Minimalists. Trello wins when you need simple boards without configuring issue types, statuses, or workflows first.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists need a tool that avoids extra setup, rules, and features that are not required to manage tasks.",
+  "one_second_verdict": {
+    "winner_label": "Trello",
+    "summary": "Best for minimalists who want simple project boards without setting up issue types or workflows.",
+    "reason": "Jira fails first because it requires defining issue types, statuses, and workflows before the board feels usable."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Trello is the better choice when your goal is to manage simple projects without extra setup. It lets you create a board and start adding cards immediately, with no requirement to define how work is structured first. Jira is built for structured tracking, but its need for issue types, statuses, and workflows introduces setup steps that slow down a minimalist user.",
+    "decision_rule": "If managing tasks requires configuring issue types, statuses, and workflows before use, Jira fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Trello fits this minimalist better",
+      "content": "This user wants to track simple projects without dealing with extra rules or setup decisions. Trello supports that by giving you a ready-to-use board where you can create lists and cards without defining how the system should behave. That keeps the focus on tasks instead of setup."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Trello wins",
+      "bullets": [
+        {
+          "point": "Trello lets you create a board and start adding cards into lists without defining issue types or workflows.",
+          "why_it_matters": "You can begin tracking work immediately instead of setting up how tasks should behave first."
+        },
+        {
+          "point": "Cards can be moved freely between lists using drag and drop without enforced status rules.",
+          "why_it_matters": "This removes the need to think about workflow logic, keeping the system easy to use."
+        },
+        {
+          "point": "The interface is centered around a single board view without multiple required configurations or layers.",
+          "why_it_matters": "There are fewer options to manage, which helps the user stay focused on tasks instead of setup."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Jira wins",
+      "bullets": [
+        {
+          "point": "Jira requires defining issue types like task, bug, or story as part of its structure.",
+          "why_it_matters": "This adds clarity for complex projects, but it introduces decisions before tasks can be added."
+        },
+        {
+          "point": "Workflows in Jira are built around statuses and transitions that define how tasks move.",
+          "why_it_matters": "This ensures consistency, but it requires configuration that a minimalist user may not want."
+        },
+        {
+          "point": "Jira includes multiple views and detailed fields tied to each issue.",
+          "why_it_matters": "This supports advanced tracking, but it adds more elements to manage than a simple board."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "The project requires strict workflows, issue categorization, or detailed tracking beyond simple boards.",
+          "what_to_do_instead": "Switch to Jira when the work needs structured issue types and controlled workflows."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You need to quickly track simple tasks but get slowed down by setting issue types, statuses, and workflow rules before starting.",
+          "what_to_do_instead": "Use Trello to keep task tracking simple and avoid setup overhead."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the project requires strict tracking, such as development work with defined issue types and workflow stages. In that case, Jira may be worth the extra setup."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Trello if you want to start with a simple board immediately.",
+        "Choose Jira if your project needs structured issue types and workflows.",
+        "If setup feels like overhead, stick with Trello."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is Trello too simple for project management?",
+      "a": "It works well for simple projects, but it does not enforce structured workflows or issue types."
+    },
+    {
+      "q": "Why does Jira feel complex at the start?",
+      "a": "Because it requires setting up issue types, statuses, and workflows before the system is fully usable."
+    },
+    {
+      "q": "Can I use Jira without configuring everything?",
+      "a": "Some defaults exist, but the structure is still present and can feel heavy for simple use cases."
+    },
+    {
+      "q": "What is the easiest tool for simple boards?",
+      "a": "Trello is easier because it lets you start adding tasks without setup steps."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Jira vs Things for Minimalists",
+      "slug": "jira-vs-things-for-minimalist",
+      "exists": true,
+      "x_name": "Jira",
+      "y_name": "Things",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "ClickUp vs Things for Minimalists",
+      "slug": "clickup-vs-things-for-minimalist",
+      "exists": true,
+      "x_name": "ClickUp",
+      "y_name": "Things",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "ClickUp vs Todoist for Minimalists",
+      "slug": "clickup-vs-todoist-for-minimalist",
+      "exists": true,
+      "x_name": "ClickUp",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Microsoft Project vs Todoist for Minimalists",
+      "slug": "microsoft-project-vs-todoist-for-minimalist",
+      "exists": true,
+      "x_name": "Microsoft Project",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "category": "Customer Support / Helpdesk Tools",
+  "categorySlug": "customer-support-helpdesk-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Gorgias vs Zendesk for Busy professionals",
+  "slug": "gorgias-vs-zendesk-for-busy-professional",
+  "meta_description": "Gorgias vs Zendesk for busy professionals: Gorgias embeds order data in tickets, while Zendesk requires switching systems to access customer order details.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need a support tool that lets you resolve issues fast without switching between systems or piecing together customer data.",
+  "one_second_verdict": {
+    "winner_label": "Gorgias",
+    "summary": "Best for busy professionals who need order data directly inside support tickets to resolve issues quickly.",
+    "reason": "Zendesk fails first because order details are not embedded in tickets and often require switching to external systems."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Gorgias is the better choice when your support work depends on seeing order data instantly inside each conversation. It embeds customer orders, shipping status, and actions directly into the ticket view. Zendesk can integrate with e-commerce systems, but accessing that data often requires switching tools or relying on separate views, which slows down fast-paced support work.",
+    "decision_rule": "If accessing order data requires switching systems instead of being embedded in support tickets, Zendesk fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Gorgias fits this situation",
+      "content": "This setup fits a busy professional running an e-commerce store where most support questions are about orders. When you have to leave the support tool to check order details, it slows down every reply. Gorgias keeps that data inside the ticket, making it easier to act quickly without breaking your workflow."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Gorgias wins",
+      "bullets": [
+        {
+          "point": "Order data like purchases, shipping status, and customer details are embedded directly inside the support ticket view.",
+          "why_it_matters": "You can answer questions and take action without opening another system, which saves time on every interaction."
+        },
+        {
+          "point": "Actions like refunds or order edits can be triggered from within the ticket interface.",
+          "why_it_matters": "This removes extra steps and lets you resolve issues in one place instead of switching between tools."
+        },
+        {
+          "point": "Customer context is automatically pulled from connected e-commerce platforms into each conversation.",
+          "why_it_matters": "You do not need to manually search for order history, reducing delays when handling high volumes."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Zendesk wins",
+      "bullets": [
+        {
+          "point": "Zendesk supports integrations with many systems through apps and external connectors.",
+          "why_it_matters": "This allows flexibility, but often requires navigating outside the main ticket view to access full data."
+        },
+        {
+          "point": "Support workflows can be customized with routing, automation, and ticket views.",
+          "why_it_matters": "This helps manage complex operations, even though it adds steps for quick order-based support."
+        },
+        {
+          "point": "It provides a general-purpose helpdesk structure that works across many industries.",
+          "why_it_matters": "This makes it adaptable, but not specifically optimized for e-commerce workflows."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Gorgias starts to break when the business needs a more general support system not centered on e-commerce or requires complex multi-system workflows beyond order handling.",
+          "what_to_do_instead": "Use Zendesk when your support needs extend beyond order-based interactions into broader service processes."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Zendesk starts to break when agents must repeatedly switch to external systems to view or act on order data during customer conversations.",
+          "what_to_do_instead": "Use Gorgias when fast resolution depends on having order context embedded directly in tickets."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if your support work involves multiple types of requests beyond orders and requires deep customization, routing, and cross-team workflows. In that case, Zendesk’s flexibility becomes more valuable than Gorgias’s e-commerce focus."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Gorgias if you need order data directly inside support tickets.",
+        "Pick Zendesk if your support spans many systems beyond e-commerce.",
+        "If switching between tools slows you down, choose Gorgias."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Gorgias win for this persona?",
+      "a": "Because it embeds order data directly into support tickets, removing the need to switch systems."
+    },
+    {
+      "q": "Can Zendesk still work for e-commerce?",
+      "a": "Yes, but it often requires integrations and switching between systems to access full order details."
+    },
+    {
+      "q": "When should I choose Zendesk instead?",
+      "a": "Choose it when your support needs go beyond orders and require more flexible workflows across different systems."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Gorgias embeds order data inside tickets, while Zendesk typically requires accessing that data through separate systems or views."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Gorgias vs Help Scout for Busy professionals",
+      "slug": "gorgias-vs-help-scout-for-busy-professional",
+      "exists": true,
+      "x_name": "Gorgias",
+      "y_name": "Help Scout",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Acquire vs Zendesk for Busy professionals",
+      "slug": "acquire-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Acquire",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Crisp vs Zendesk for Busy professionals",
+      "slug": "crisp-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Crisp",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Dixa vs Zendesk for Busy professionals",
+      "slug": "dixa-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Dixa",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Richpanel vs Zendesk for Busy professionals",
+      "slug": "richpanel-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Richpanel",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Front vs Help Scout for Busy professionals",
+      "slug": "front-vs-help-scout-for-busy-professional",
+      "exists": true,
+      "x_name": "Front",
+      "y_name": "Help Scout",
+      "persona": "Busy professional"
+    }
+  ]
+}

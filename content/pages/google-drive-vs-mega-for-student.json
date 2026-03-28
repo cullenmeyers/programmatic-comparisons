@@ -1,113 +1,113 @@
 {
-"category": "File Storage / Cloud Storage Tools",
-"categorySlug": "file-storage-cloud-storage-tools",
-"constraintSlug": "switching-cost",
-"constraintUiName": "Easy to quit later",
-"title": "Google Drive vs MEGA for Students",
-"slug": "google-drive-vs-mega-for-student",
-"meta_description": "Compare Google Drive vs MEGA for students. Google Drive wins when you need instant collaboration with classmates and low switching cost.",
-"persona": "Student",
-"constraint_lens": "Students need tools that work instantly with others and are easy to adopt and abandon without friction.",
-"one_second_verdict": {
-"winner_label": "Google Drive",
-"summary": "Best for students who need instant collaboration with classmates.",
-"reason": "MEGA fails first because it does not provide familiar, browser-based collaboration and editing that works immediately."
-},
-"verdict": {
-"winner": "x",
-"summary": "Google Drive is the better choice when you need collaboration to work immediately with classmates. It provides browser-based editing, sharing, and real-time collaboration that most students already use. MEGA focuses on storage and secure file sharing, but lacks the same level of built-in collaboration and familiarity, which slows down group work and increases friction.",
-"decision_rule": "If file storage must work instantly for class collaboration through familiar browser-based sharing and editing, MEGA fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Google Drive fits this student better",
-"content": "This user needs something that works immediately with others and can be dropped later without friction. Google Drive supports this by offering familiar, browser-based collaboration that most classmates already use."
-},
-{
-"type": "x_wins",
-"heading": "Where Google Drive wins",
-"bullets": [
-{
-"point": "Google Drive enables real-time editing in Docs, Sheets, and Slides.",
-"why_it_matters": "Group projects can be completed collaboratively without switching tools."
-},
-{
-"point": "Sharing works instantly through links and common Google accounts.",
-"why_it_matters": "Classmates can access files without setup or friction."
-},
-{
-"point": "The interface is widely familiar among students.",
-"why_it_matters": "This reduces onboarding time and coordination effort."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where MEGA wins",
-"bullets": [
-{
-"point": "MEGA focuses on secure file storage and encrypted sharing.",
-"why_it_matters": "This improves privacy, but does not help with collaboration."
-},
-{
-"point": "Files can be shared with strong security controls.",
-"why_it_matters": "This is useful for storage, but adds friction for group work."
-},
-{
-"point": "The platform is optimized for storage rather than editing.",
-"why_it_matters": "This limits its usefulness for collaborative projects."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "You need secure storage with strong encryption rather than collaboration tools.",
-"what_to_do_instead": "Use MEGA if privacy and secure storage are your priority."
-},
-{
-"tool": "y",
-"fails_when": "You need to collaborate quickly with classmates using shared editing and familiar tools.",
-"what_to_do_instead": "Switch to Google Drive for instant collaboration."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "This can flip if the user prioritizes secure file storage over collaboration and does not need real-time editing. In that case, MEGA may be more suitable."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"Choose Google Drive if you need collaboration.",
-"Choose MEGA if you need secure storage.",
-"If working with classmates, use Google Drive."
-]
-}
-],
-"faqs": [
-{
-"q": "Why is Google Drive better for students?",
-"a": "Because it enables instant collaboration and real-time editing with classmates."
-},
-{
-"q": "What makes MEGA less suitable for school work?",
-"a": "It focuses on storage and security rather than collaboration and editing."
-},
-{
-"q": "Is MEGA more secure?",
-"a": "Yes, but that security comes at the cost of collaboration features."
-},
-{
-"q": "What is the best tool for group projects?",
-"a": "Google Drive is better because it supports real-time collaboration."
-}
-],
-"related_pages": []
+  "category": "File Storage / Cloud Storage Tools",
+  "categorySlug": "file-storage-cloud-storage-tools",
+  "constraintSlug": "switching-cost",
+  "constraintUiName": "Easy to quit later",
+  "title": "Google Drive vs MEGA for Students",
+  "slug": "google-drive-vs-mega-for-student",
+  "meta_description": "Compare Google Drive vs MEGA for students. Google Drive wins when you need instant collaboration with classmates and low switching cost.",
+  "persona": "Student",
+  "constraint_lens": "Students need tools that work instantly with others and are easy to adopt and abandon without friction.",
+  "one_second_verdict": {
+    "winner_label": "Google Drive",
+    "summary": "Best for students who need instant collaboration with classmates.",
+    "reason": "MEGA fails first because it does not provide familiar, browser-based collaboration and editing that works immediately."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Google Drive is the better choice when you need collaboration to work immediately with classmates. It provides browser-based editing, sharing, and real-time collaboration that most students already use. MEGA focuses on storage and secure file sharing, but lacks the same level of built-in collaboration and familiarity, which slows down group work and increases friction.",
+    "decision_rule": "If file storage must work instantly for class collaboration through familiar browser-based sharing and editing, MEGA fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Google Drive fits this student better",
+      "content": "This user needs something that works immediately with others and can be dropped later without friction. Google Drive supports this by offering familiar, browser-based collaboration that most classmates already use."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Google Drive wins",
+      "bullets": [
+        {
+          "point": "Google Drive enables real-time editing in Docs, Sheets, and Slides.",
+          "why_it_matters": "Group projects can be completed collaboratively without switching tools."
+        },
+        {
+          "point": "Sharing works instantly through links and common Google accounts.",
+          "why_it_matters": "Classmates can access files without setup or friction."
+        },
+        {
+          "point": "The interface is widely familiar among students.",
+          "why_it_matters": "This reduces onboarding time and coordination effort."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where MEGA wins",
+      "bullets": [
+        {
+          "point": "MEGA focuses on secure file storage and encrypted sharing.",
+          "why_it_matters": "This improves privacy, but does not help with collaboration."
+        },
+        {
+          "point": "Files can be shared with strong security controls.",
+          "why_it_matters": "This is useful for storage, but adds friction for group work."
+        },
+        {
+          "point": "The platform is optimized for storage rather than editing.",
+          "why_it_matters": "This limits its usefulness for collaborative projects."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "You need secure storage with strong encryption rather than collaboration tools.",
+          "what_to_do_instead": "Use MEGA if privacy and secure storage are your priority."
+        },
+        {
+          "tool": "y",
+          "fails_when": "You need to collaborate quickly with classmates using shared editing and familiar tools.",
+          "what_to_do_instead": "Switch to Google Drive for instant collaboration."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the user prioritizes secure file storage over collaboration and does not need real-time editing. In that case, MEGA may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Google Drive if you need collaboration.",
+        "Choose MEGA if you need secure storage.",
+        "If working with classmates, use Google Drive."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Google Drive better for students?",
+      "a": "Because it enables instant collaboration and real-time editing with classmates."
+    },
+    {
+      "q": "What makes MEGA less suitable for school work?",
+      "a": "It focuses on storage and security rather than collaboration and editing."
+    },
+    {
+      "q": "Is MEGA more secure?",
+      "a": "Yes, but that security comes at the cost of collaboration features."
+    },
+    {
+      "q": "What is the best tool for group projects?",
+      "a": "Google Drive is better because it supports real-time collaboration."
+    }
+  ],
+  "related_pages": []
 }

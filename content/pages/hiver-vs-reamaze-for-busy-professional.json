@@ -1,0 +1,162 @@
+{
+  "category": "Customer Support / Helpdesk Tools",
+  "categorySlug": "customer-support-helpdesk-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Fast to use daily",
+  "title": "Hiver vs Re:amaze for Busy professionals",
+  "slug": "hiver-vs-reamaze-for-busy-professional",
+  "meta_description": "Hiver vs Re:amaze for busy professionals: Re:amaze enables self-service with a knowledge base, while Hiver relies on email-based support.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need a support tool that reduces incoming workload by enabling customers to solve issues themselves.",
+  "one_second_verdict": {
+    "winner_label": "Re:amaze",
+    "summary": "Best for busy professionals who want to reduce tickets through self-service support.",
+    "reason": "Hiver fails first because it relies on email responses instead of enabling self-service through a knowledge base."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Re:amaze is the better choice when your goal is to reduce incoming support volume. It includes an integrated knowledge base that allows customers to find answers without contacting support. Hiver operates within Gmail and relies on handling incoming emails, which means issues must be resolved manually instead of being deflected through self-service.",
+    "decision_rule": "If customers cannot self-serve through an integrated knowledge base and must rely on email responses, Hiver fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Re:amaze fits this situation",
+      "content": "This setup fits a busy professional who wants to reduce the number of incoming requests. Handling every issue manually through email creates unnecessary workload. Re:amaze lowers that burden by allowing customers to find answers on their own."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Hiver wins",
+      "bullets": [
+        {
+          "point": "Hiver works directly inside Gmail for handling support via email.",
+          "why_it_matters": "This keeps workflows simple, but requires manual responses for each issue."
+        },
+        {
+          "point": "No separate system is needed outside of email.",
+          "why_it_matters": "This reduces setup, but limits scalability for handling volume."
+        },
+        {
+          "point": "Focuses on managing incoming conversations rather than reducing them.",
+          "why_it_matters": "This increases workload as support requests grow."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Re:amaze wins",
+      "bullets": [
+        {
+          "point": "Integrated knowledge base allows customers to find answers without contacting support.",
+          "why_it_matters": "This reduces incoming ticket volume and saves time."
+        },
+        {
+          "point": "Self-service options deflect repetitive questions before they reach your inbox.",
+          "why_it_matters": "You spend less time answering the same questions repeatedly."
+        },
+        {
+          "point": "Support system is designed to reduce workload, not just process it.",
+          "why_it_matters": "This keeps cognitive load lower as support volume grows."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Hiver starts to break when support volume increases and customers repeatedly ask the same questions without self-service options.",
+          "what_to_do_instead": "Use Re:amaze when you need to reduce incoming requests through a knowledge base."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Re:amaze starts to break when support volume is low and a knowledge base is unnecessary overhead.",
+          "what_to_do_instead": "Use Hiver if your workflow is simple and based entirely on email communication."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if your support volume is very low and you prefer handling everything through email without setting up a knowledge base. In that case, Hiver may be sufficient."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Re:amaze if you want customers to self-serve through a knowledge base.",
+        "Pick Hiver if your support is simple and email-based.",
+        "If reducing tickets matters, choose Re:amaze."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Re:amaze win for busy professionals?",
+      "a": "Because it reduces incoming support requests through self-service options like a knowledge base."
+    },
+    {
+      "q": "Does Hiver support self-service?",
+      "a": "It focuses on email-based support and does not provide a strong integrated knowledge base for self-service."
+    },
+    {
+      "q": "When should I choose Hiver instead?",
+      "a": "Choose it when your support workflow is simple and fully handled through email."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Re:amaze enables self-service through a knowledge base, while Hiver relies on handling support manually via email."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Gorgias vs Zendesk for Busy professionals",
+      "slug": "gorgias-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Gorgias",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Acquire vs Zendesk for Busy professionals",
+      "slug": "acquire-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Acquire",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Crisp vs Zendesk for Busy professionals",
+      "slug": "crisp-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Crisp",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Dixa vs Zendesk for Busy professionals",
+      "slug": "dixa-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Dixa",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Richpanel vs Zendesk for Busy professionals",
+      "slug": "richpanel-vs-zendesk-for-busy-professional",
+      "exists": true,
+      "x_name": "Richpanel",
+      "y_name": "Zendesk",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Front vs Help Scout for Busy professionals",
+      "slug": "front-vs-help-scout-for-busy-professional",
+      "exists": true,
+      "x_name": "Front",
+      "y_name": "Help Scout",
+      "persona": "Busy professional"
+    }
+  ]
+}

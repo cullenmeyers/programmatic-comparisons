@@ -1,0 +1,122 @@
+{
+  "category": "Bookmark Managers",
+  "categorySlug": "bookmark-managers",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Raindrop.io vs Start.me for Minimalists",
+  "slug": "raindropio-vs-startme-for-minimalist",
+  "meta_description": "Raindrop.io vs Start.me for Minimalists: Raindrop.io keeps bookmarks simple, while Start.me adds dashboard widgets and layouts.",
+  "persona": "Minimalist",
+  "constraint_lens": "Minimalists need tools that avoid extra layers like layouts or widgets and keep the experience focused on the core task.",
+  "one_second_verdict": {
+    "winner_label": "Raindrop.io",
+    "summary": "Best for keeping bookmarks in a simple list without managing dashboards or widgets.",
+    "reason": "Start.me fails first because it requires maintaining dashboard layouts and widgets instead of just saving links."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Raindrop.io is the better fit for Minimalists who want a clean bookmark list. It focuses on saving and viewing links in simple collections without requiring layout setup. Start.me is built as a customizable dashboard with widgets, which introduces extra elements like arranging blocks and maintaining layouts. For someone avoiding complexity, that added layer gets in the way of simple bookmarking.",
+    "decision_rule": "If managing bookmarks requires maintaining dashboard widgets and layouts, Start.me fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Raindrop.io fits Minimalists better",
+      "content": "Raindrop.io fits this minimalist because the winning mechanism improves setup, daily bookmarking, and longer-term organization instead of solving only one narrow problem."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Start.me wins",
+      "bullets": [
+        {
+          "point": "Start.me can still be better in a narrower bookmarking workflow",
+          "why_it_matters": "The losing tool may fit when the winning mechanism is not doing much real work yet."
+        },
+        {
+          "point": "Start.me often offers a lighter tradeoff",
+          "why_it_matters": "That can matter when the richer mechanism would mostly add overhead."
+        },
+        {
+          "point": "Start.me becomes more reasonable when complexity is not needed",
+          "why_it_matters": "The friction only matters when it gets in the way of the actual bookmark job."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Raindrop.io wins",
+      "bullets": [
+        {
+          "point": "Raindrop.io handles the winning bookmarking mechanism more directly",
+          "why_it_matters": "The user spends less time compensating for the exact friction named in the decision rule."
+        },
+        {
+          "point": "Raindrop.io keeps daily use smoother",
+          "why_it_matters": "The workflow stays shorter and easier to repeat."
+        },
+        {
+          "point": "Raindrop.io scales better once the bookmark system becomes more serious",
+          "why_it_matters": "That matters when the mechanism in the rule affects setup, daily use, and long-term organization together."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Raindrop.io becomes heavier than necessary when the winning mechanism is not doing enough real work yet.",
+          "what_to_do_instead": "Choose Start.me if the simpler tradeoff still fits."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Start.me breaks down when the exact friction named in the rule keeps recurring during normal bookmarking.",
+          "what_to_do_instead": "Choose Raindrop.io once that mechanism matters daily."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the tradeoff on the losing side starts doing more real work than the mechanism that currently wins. Then Start.me may be worth the switch."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Choose Raindrop.io when the mechanism in the rule affects daily bookmarking in practice.",
+        "Choose Start.me when its lighter tradeoff better matches the real job.",
+        "Avoid Start.me once the same friction keeps repeating in setup and routine use."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Raindrop.io fit the rule better?",
+      "a": "Raindrop.io turns the mechanism in the decision rule into gains across setup, daily bookmarking, and longer-term organization instead of only one narrow feature win."
+    },
+    {
+      "q": "When is Start.me still reasonable?",
+      "a": "Start.me is still reasonable when its tradeoff better matches the actual bookmarking workflow."
+    },
+    {
+      "q": "What usually signals it is time to switch?",
+      "a": "The same friction starts repeating in normal bookmarking instead of only appearing in edge cases."
+    },
+    {
+      "q": "Is this only about simplicity?",
+      "a": "No. It is about where the real operating cost of the bookmark workflow lands."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Anybox vs Raindrop.io for Minimalists",
+      "slug": "anybox-vs-raindropio-for-minimalist",
+      "exists": true,
+      "x_name": "Anybox",
+      "y_name": "Raindrop.io",
+      "persona": "Minimalist"
+    }
+  ]
+}

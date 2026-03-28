@@ -1,113 +1,113 @@
 {
-"category": "Team Collaboration Tools",
-"categorySlug": "team-collaboration-tools",
-"constraintSlug": "fear-of-breaking",
-"constraintUiName": "Hard to mess up",
-"title": "Basecamp vs Discord for Non-technical users",
-"slug": "basecamp-vs-discord-for-non-technical-user",
-"meta_description": "Compare Basecamp vs Discord for non-technical users. Basecamp wins when you need structured, project-based communication instead of open chat channels.",
-"persona": "Non-technical user",
-"constraint_lens": "Non-technical users need a tool that keeps communication structured and predictable without confusion or risk.",
-"one_second_verdict": {
-"winner_label": "Basecamp",
-"summary": "Best for non-technical users who need structured team communication tied to projects.",
-"reason": "Discord fails first because conversations happen in open channels that mix topics instead of staying organized by project."
-},
-"verdict": {
-"winner": "x",
-"summary": "Basecamp is the better choice when you need communication to stay organized and easy to follow. It groups discussions, tasks, and files inside clear project spaces, so everything has a defined place. Discord is built for open-ended channels, which can mix conversations and make it harder to keep work structured.",
-"decision_rule": "If communication happens inside open-ended community-style channels instead of project-centered team spaces, Discord fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Basecamp fits this non-technical user better",
-"content": "This user needs communication to stay organized without confusion. Basecamp supports that by anchoring everything to projects, with clear sections for messages, tasks, and files. That makes it easy to understand where things belong and reduces the chance of mistakes."
-},
-{
-"type": "x_wins",
-"heading": "Where Basecamp wins",
-"bullets": [
-{
-"point": "Basecamp organizes communication inside project spaces with separate sections like message boards and to-dos.",
-"why_it_matters": "Each type of information has a clear place, so the user does not have to guess where things go."
-},
-{
-"point": "Discussions are structured as threads on message boards rather than continuous chat streams.",
-"why_it_matters": "This keeps conversations focused and prevents messages from getting lost in fast-moving chats."
-},
-{
-"point": "Tasks, files, and communication are all tied to the same project instead of scattered across channels.",
-"why_it_matters": "Everything related to a project is in one place, making it easier to follow and manage."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Discord wins",
-"bullets": [
-{
-"point": "Discord uses channels where messages flow in real time without strict separation by project.",
-"why_it_matters": "This makes communication fast, but topics can mix together and become hard to track."
-},
-{
-"point": "Servers can include many channels for different topics without a fixed project structure.",
-"why_it_matters": "This adds flexibility, but requires users to manage and interpret where conversations belong."
-},
-{
-"point": "Communication is primarily chat-based rather than organized into distinct content types.",
-"why_it_matters": "This can feel informal and harder to navigate for structured team work."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "Where each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "The team prefers fast, informal chat and does not need structured project organization.",
-"what_to_do_instead": "Use Discord if quick, real-time conversation matters more than structure."
-},
-{
-"tool": "y",
-"fails_when": "Conversations spread across channels without clear organization, making it hard to track project-related work.",
-"what_to_do_instead": "Switch to Basecamp to keep communication tied to projects and clearly organized."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "This can flip if the team is comfortable managing multiple chat channels and prefers fast, informal communication over structured organization. In that case, Discord may feel more natural."
-},
-{
-"type": "quick_rules",
-"heading": "Quick rules",
-"rules": [
-"Choose Basecamp if you want communication organized by project.",
-"Choose Discord if your team prefers real-time chat.",
-"If conversations feel messy, switch to Basecamp."
-]
-}
-],
-"faqs": [
-{
-"q": "Why is Basecamp easier for structured teams?",
-"a": "Because it organizes communication, tasks, and files inside clear project spaces."
-},
-{
-"q": "Why can Discord feel confusing for work?",
-"a": "Because messages flow in open channels where topics can mix together."
-},
-{
-"q": "Can Discord be used for team collaboration?",
-"a": "Yes, but it requires more effort to keep communication organized."
-},
-{
-"q": "What is the best tool for organized team communication?",
-"a": "Basecamp is better because it keeps everything tied to projects."
-}
-],
-"related_pages": []
+  "category": "Team Collaboration Tools",
+  "categorySlug": "team-collaboration-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Hard to mess up",
+  "title": "Basecamp vs Discord for Non-technical users",
+  "slug": "basecamp-vs-discord-for-non-technical-user",
+  "meta_description": "Compare Basecamp vs Discord for non-technical users. Basecamp wins when you need structured, project-based communication instead of open chat channels.",
+  "persona": "Non-technical user",
+  "constraint_lens": "Non-technical users need a tool that keeps communication structured and predictable without confusion or risk.",
+  "one_second_verdict": {
+    "winner_label": "Basecamp",
+    "summary": "Best for non-technical users who need structured team communication tied to projects.",
+    "reason": "Discord fails first because conversations happen in open channels that mix topics instead of staying organized by project."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Basecamp is the better choice when you need communication to stay organized and easy to follow. It groups discussions, tasks, and files inside clear project spaces, so everything has a defined place. Discord is built for open-ended channels, which can mix conversations and make it harder to keep work structured.",
+    "decision_rule": "If communication happens inside open-ended community-style channels instead of project-centered team spaces, Discord fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Basecamp fits this non-technical user better",
+      "content": "This user needs communication to stay organized without confusion. Basecamp supports that by anchoring everything to projects, with clear sections for messages, tasks, and files. That makes it easy to understand where things belong and reduces the chance of mistakes."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Basecamp wins",
+      "bullets": [
+        {
+          "point": "Basecamp organizes communication inside project spaces with separate sections like message boards and to-dos.",
+          "why_it_matters": "Each type of information has a clear place, so the user does not have to guess where things go."
+        },
+        {
+          "point": "Discussions are structured as threads on message boards rather than continuous chat streams.",
+          "why_it_matters": "This keeps conversations focused and prevents messages from getting lost in fast-moving chats."
+        },
+        {
+          "point": "Tasks, files, and communication are all tied to the same project instead of scattered across channels.",
+          "why_it_matters": "Everything related to a project is in one place, making it easier to follow and manage."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Discord wins",
+      "bullets": [
+        {
+          "point": "Discord uses channels where messages flow in real time without strict separation by project.",
+          "why_it_matters": "This makes communication fast, but topics can mix together and become hard to track."
+        },
+        {
+          "point": "Servers can include many channels for different topics without a fixed project structure.",
+          "why_it_matters": "This adds flexibility, but requires users to manage and interpret where conversations belong."
+        },
+        {
+          "point": "Communication is primarily chat-based rather than organized into distinct content types.",
+          "why_it_matters": "This can feel informal and harder to navigate for structured team work."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "The team prefers fast, informal chat and does not need structured project organization.",
+          "what_to_do_instead": "Use Discord if quick, real-time conversation matters more than structure."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Conversations spread across channels without clear organization, making it hard to track project-related work.",
+          "what_to_do_instead": "Switch to Basecamp to keep communication tied to projects and clearly organized."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This can flip if the team is comfortable managing multiple chat channels and prefers fast, informal communication over structured organization. In that case, Discord may feel more natural."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick rules",
+      "rules": [
+        "Choose Basecamp if you want communication organized by project.",
+        "Choose Discord if your team prefers real-time chat.",
+        "If conversations feel messy, switch to Basecamp."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is Basecamp easier for structured teams?",
+      "a": "Because it organizes communication, tasks, and files inside clear project spaces."
+    },
+    {
+      "q": "Why can Discord feel confusing for work?",
+      "a": "Because messages flow in open channels where topics can mix together."
+    },
+    {
+      "q": "Can Discord be used for team collaboration?",
+      "a": "Yes, but it requires more effort to keep communication organized."
+    },
+    {
+      "q": "What is the best tool for organized team communication?",
+      "a": "Basecamp is better because it keeps everything tied to projects."
+    }
+  ],
+  "related_pages": []
 }

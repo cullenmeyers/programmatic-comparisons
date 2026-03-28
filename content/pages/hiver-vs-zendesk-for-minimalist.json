@@ -1,0 +1,113 @@
+{
+  "category": "Customer Support / Helpdesk Tools",
+  "categorySlug": "customer-support-helpdesk-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Hiver vs Zendesk for Minimalists",
+  "slug": "hiver-vs-zendesk-for-minimalist",
+  "meta_description": "Hiver vs Zendesk for minimalists: Hiver keeps support inside Gmail, while Zendesk adds external systems and features that complicate simple workflows.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a support tool that adds as little as possible and lets you work in a familiar place without extra layers.",
+  "one_second_verdict": {
+    "winner_label": "Hiver",
+    "summary": "Best for minimalists who want to manage support directly inside Gmail without extra tools or layers.",
+    "reason": "Zendesk fails first because it requires leaving email and working inside a separate system with added features and workflows."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Hiver is the better choice when your goal is to keep support simple and stay inside Gmail. It turns your inbox into a shared support workspace without forcing you to learn a new system. Zendesk introduces a full external helpdesk with its own interface, features, and workflows, which adds complexity that a minimalist does not want.",
+    "decision_rule": "If handling support requires leaving email and managing external systems with added features, Zendesk fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Hiver fits this situation",
+      "content": "This setup fits someone who prefers to keep everything inside Gmail and avoid new tools. Switching to a separate system creates extra steps and extra features to manage. Hiver keeps support where you already work, which matches the goal of staying simple and avoiding unnecessary layers."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Hiver wins",
+      "bullets": [
+        {
+          "point": "Support runs directly inside Gmail with shared inbox labels and assignment built into the email interface.",
+          "why_it_matters": "You do not need to learn a new tool or switch tabs, which keeps your workflow simple and familiar."
+        },
+        {
+          "point": "Conversations stay as normal email threads instead of turning into separate ticket objects.",
+          "why_it_matters": "This avoids extra structure and lets you manage support the same way you already handle email."
+        },
+        {
+          "point": "Basic team features like notes and assignments appear within Gmail instead of a separate dashboard.",
+          "why_it_matters": "You get just enough coordination without adding a new system layer that increases complexity."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Zendesk wins",
+      "bullets": [
+        {
+          "point": "Zendesk uses a dedicated helpdesk interface with tickets, views, and dashboards separate from email.",
+          "why_it_matters": "This helps organize larger support operations, even though it adds a new environment to manage."
+        },
+        {
+          "point": "Advanced workflows like automation, routing, and macros are built into the system.",
+          "why_it_matters": "These features support scale, but introduce more controls and settings than a minimalist needs."
+        },
+        {
+          "point": "Reporting and analytics are available through dedicated dashboards and data tracking.",
+          "why_it_matters": "This provides deeper insights, but adds another layer of features to learn and maintain."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Hiver starts to break when the team needs advanced workflows, automation, or detailed reporting beyond what Gmail-based tools can handle.",
+          "what_to_do_instead": "Use Zendesk when your support process requires deeper system features and structured management."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Zendesk starts to break when a user wants to keep support inside Gmail but must switch to a separate system with its own interface and features.",
+          "what_to_do_instead": "Use Hiver when staying in email and avoiding extra layers is more important than advanced features."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if your support needs grow to require automation, reporting, and structured workflows that cannot be handled inside Gmail alone. In that case, Zendesk’s added system becomes necessary rather than excessive."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Hiver if you want to handle support entirely inside Gmail.",
+        "Pick Zendesk if you need advanced workflows and do not mind a separate system.",
+        "If extra features feel like overhead, choose Hiver."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Hiver win for minimalists?",
+      "a": "Because it keeps everything inside Gmail and avoids introducing a new system or extra features."
+    },
+    {
+      "q": "Is Zendesk too complex?",
+      "a": "It is not too complex for larger teams, but it adds features and structure that minimalists may find unnecessary."
+    },
+    {
+      "q": "When should I choose Zendesk instead?",
+      "a": "Choose it when you need automation, reporting, and structured workflows that go beyond simple email-based support."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Hiver works inside Gmail, while Zendesk requires using a separate helpdesk system with additional features."
+    }
+  ],
+  "related_pages": []
+}

@@ -1,0 +1,151 @@
+{
+  "category": "Project Management Tools",
+  "categorySlug": "project-management-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keeps it simple",
+  "title": "Microsoft Project vs Todoist for Minimalists",
+  "slug": "microsoft-project-vs-todoist-for-minimalist",
+  "meta_description": "Microsoft Project vs Todoist for minimalists. See why Todoist enables immediate task execution while Microsoft Project requires upfront planning.",
+  "persona": "Minimalist",
+  "constraint_lens": "You want a tool that avoids extra steps and lets you start working without building unnecessary structure first.",
+  "one_second_verdict": {
+    "winner_label": "Todoist",
+    "summary": "Best for starting and completing tasks immediately without upfront planning.",
+    "reason": "Microsoft Project fails first because it requires building timelines and structured plans before tasks can be executed."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Todoist lets you capture a task and complete it right away without setting up timelines or planning structures. Microsoft Project is designed around building full project plans with timelines, dependencies, and scheduling before execution. For minimalists, this creates extra steps that delay getting started. Over time, the planning layer becomes unnecessary overhead when you just want to take action.",
+    "decision_rule": "If completing tasks requires building full project plans and timelines before execution, Microsoft Project fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Todoist fits minimalists",
+      "content": "You want to move from idea to action without setting up a system first. Tools that require planning steps before you can start feel like unnecessary work. Todoist fits this by letting you add and complete tasks immediately, while Microsoft Project pushes you to build timelines and structured plans before doing anything."
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Todoist works better",
+      "bullets": [
+        {
+          "point": "Instant task entry with no required fields or setup",
+          "why_it_matters": "You can write a task and act on it immediately without defining timelines, dependencies, or structure."
+        },
+        {
+          "point": "Flat task lists without enforced planning layers",
+          "why_it_matters": "Tasks exist independently, so you do not need to organize them into phases or plans before starting work."
+        },
+        {
+          "point": "Simple completion flow where tasks can be marked done at any time",
+          "why_it_matters": "You can finish tasks without moving through steps or planning stages, keeping execution fast and direct."
+        }
+      ]
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Microsoft Project works better",
+      "bullets": [
+        {
+          "point": "Timeline-based planning with Gantt charts before execution",
+          "why_it_matters": "You can map out full project schedules, but this requires setting up structure before starting tasks."
+        },
+        {
+          "point": "Task dependencies that define execution order",
+          "why_it_matters": "Tasks are linked in sequences, which helps structured planning but adds steps before you can act."
+        },
+        {
+          "point": "Resource and schedule planning tied to project structure",
+          "why_it_matters": "You can plan workloads and timing in detail, but this increases setup time before any work begins."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "Where each tool breaks down",
+      "items": [
+        {
+          "tool": "y",
+          "fails_when": "Your work requires detailed planning with timelines and dependencies before execution.",
+          "what_to_do_instead": "Switch to Microsoft Project to build structured plans that guide how tasks should be completed."
+        },
+        {
+          "tool": "x",
+          "fails_when": "You need to act on tasks immediately but must first create timelines, dependencies, or project plans.",
+          "what_to_do_instead": "Use Todoist to capture and complete tasks without any upfront planning steps."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "If your work depends on detailed scheduling and tasks must follow a planned sequence, Microsoft Project becomes the better choice because its planning system ensures everything is organized before execution."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Use Todoist if you want to start tasks immediately with no setup.",
+        "Use Microsoft Project if your work requires full project planning before execution.",
+        "Avoid Microsoft Project if you do not want to build timelines before taking action."
+      ]
+    },
+    {
+      "type": "faqs_placeholder",
+      "heading": "",
+      "content": ""
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can Microsoft Project be used without planning first?",
+      "a": "Not effectively, since its core design is built around creating timelines and structured plans before execution."
+    },
+    {
+      "q": "Is Todoist too simple for project work?",
+      "a": "It works well for direct task execution, but it does not support detailed planning with timelines or dependencies."
+    },
+    {
+      "q": "Why do minimalists avoid planning tools?",
+      "a": "Because they introduce extra steps before action, which slows down execution and adds unnecessary complexity."
+    },
+    {
+      "q": "Does Todoist support project timelines?",
+      "a": "No, it focuses on simple task tracking without timeline-based planning features."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "ClickUp vs Todoist for Minimalists",
+      "slug": "clickup-vs-todoist-for-minimalist",
+      "exists": true,
+      "x_name": "ClickUp",
+      "y_name": "Todoist",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "ClickUp vs Things for Minimalists",
+      "slug": "clickup-vs-things-for-minimalist",
+      "exists": true,
+      "x_name": "ClickUp",
+      "y_name": "Things",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Jira vs Things for Minimalists",
+      "slug": "jira-vs-things-for-minimalist",
+      "exists": true,
+      "x_name": "Jira",
+      "y_name": "Things",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Jira vs Trello for Minimalists",
+      "slug": "jira-vs-trello-for-minimalist",
+      "exists": true,
+      "x_name": "Jira",
+      "y_name": "Trello",
+      "persona": "Minimalist"
+    }
+  ]
+}
