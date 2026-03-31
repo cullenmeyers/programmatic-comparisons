@@ -1,0 +1,154 @@
+{
+  "category": "Scheduling / Booking Tools",
+  "categorySlug": "scheduling-booking-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Start fast",
+  "title": "Cal.com vs SavvyCal for Beginners",
+  "slug": "calcom-vs-savvycal-for-beginner",
+  "meta_description": "Cal.com vs SavvyCal for beginners: SavvyCal lets you publish a booking page quickly, while Cal.com can require setup decisions before use.",
+  "persona": "Beginner",
+  "constraint_lens": "You need a scheduling tool that works immediately without requiring setup or infrastructure decisions.",
+  "one_second_verdict": {
+    "winner_label": "SavvyCal",
+    "summary": "Best for beginners who want to publish a booking page instantly.",
+    "reason": "Cal.com fails first because it can require infrastructure-level setup before basic booking works."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "SavvyCal is the better choice when you want to get a booking page live without dealing with setup complexity. It allows you to publish quickly and start booking immediately. Cal.com can require infrastructure-level decisions or configuration before basic scheduling works, which creates friction for beginners who just want to get started.",
+    "decision_rule": "If scheduling requires infrastructure-level configuration or self-managed setup decisions before basic booking works, Cal.com fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why SavvyCal fits this situation",
+      "content": "This setup fits a beginner who needs to start immediately. Setup complexity creates friction and causes drop-off. SavvyCal removes barriers by letting you publish a booking page without infrastructure decisions."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Cal.com wins",
+      "bullets": [
+        {
+          "point": "Supports full control over scheduling infrastructure.",
+          "why_it_matters": "This enables customization, but adds setup complexity."
+        },
+        {
+          "point": "Allows deeper configuration and system control.",
+          "why_it_matters": "This is powerful, but requires decisions before use."
+        },
+        {
+          "point": "Flexible for advanced use cases.",
+          "why_it_matters": "This benefits power users, but slows beginners."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where SavvyCal wins",
+      "bullets": [
+        {
+          "point": "Lets you publish a booking page quickly.",
+          "why_it_matters": "You can start scheduling without setup delays."
+        },
+        {
+          "point": "Does not require infrastructure or system decisions upfront.",
+          "why_it_matters": "This reduces friction for first-time users."
+        },
+        {
+          "point": "Simple onboarding focused on immediate use.",
+          "why_it_matters": "This helps beginners get started without confusion."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Cal.com starts to break when setup requires infrastructure decisions before basic booking can work.",
+          "what_to_do_instead": "Use SavvyCal when you need to get a booking page live immediately."
+        },
+        {
+          "tool": "y",
+          "fails_when": "SavvyCal starts to break when you need deep control over scheduling infrastructure and customization.",
+          "what_to_do_instead": "Use Cal.com if you require advanced configuration and flexibility."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you are comfortable with setup and want full control over scheduling infrastructure. In that case, Cal.com may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick SavvyCal if you want to start immediately.",
+        "Pick Cal.com if you need full control and customization.",
+        "If setup slows you down, choose SavvyCal."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does SavvyCal win for beginners?",
+      "a": "Because it allows you to publish a booking page without setup complexity."
+    },
+    {
+      "q": "Does Cal.com require setup before use?",
+      "a": "Yes, it can require infrastructure-level configuration before basic booking works."
+    },
+    {
+      "q": "When should I choose Cal.com instead?",
+      "a": "Choose it when you want full control and are comfortable with setup decisions."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "SavvyCal focuses on instant usability, while Cal.com prioritizes flexibility and control with added setup."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Calendly vs Square Appointments for Beginners",
+      "slug": "calendly-vs-square-appointments-for-beginner",
+      "exists": true,
+      "x_name": "Calendly",
+      "y_name": "Square Appointments",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Calendly vs Zoho Bookings for Beginners",
+      "slug": "calendly-vs-zoho-bookings-for-beginner",
+      "exists": true,
+      "x_name": "Calendly",
+      "y_name": "Zoho Bookings",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Calendly vs Doodle for Beginners",
+      "slug": "calendly-vs-doodle-for-beginner",
+      "exists": true,
+      "x_name": "Calendly",
+      "y_name": "Doodle",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Setmore vs Square Appointments for Beginners",
+      "slug": "setmore-vs-square-appointments-for-beginner",
+      "exists": true,
+      "x_name": "Setmore",
+      "y_name": "Square Appointments",
+      "persona": "Beginner"
+    },
+    {
+      "title": "TidyCal vs Zoho Bookings for Beginners",
+      "slug": "tidycal-vs-zoho-bookings-for-beginner",
+      "exists": true,
+      "x_name": "TidyCal",
+      "y_name": "Zoho Bookings",
+      "persona": "Beginner"
+    }
+  ]
+}

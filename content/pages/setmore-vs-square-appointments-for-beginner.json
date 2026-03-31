@@ -1,0 +1,154 @@
+{
+  "category": "Scheduling / Booking Tools",
+  "categorySlug": "scheduling-booking-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Start fast",
+  "title": "Setmore vs Square Appointments for Beginners",
+  "slug": "setmore-vs-square-appointments-for-beginner",
+  "meta_description": "Setmore vs Square Appointments for beginners: Setmore enables simple booking without payments, while Square Appointments involves payment and checkout setup.",
+  "persona": "Beginner",
+  "constraint_lens": "You need a scheduling tool that lets you accept bookings without setting up payments or pricing.",
+  "one_second_verdict": {
+    "winner_label": "Setmore",
+    "summary": "Best for beginners who want to start accepting bookings without payment setup.",
+    "reason": "Square Appointments fails first because it requires configuring payments, checkout, or pricing before booking."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Setmore is the better choice when you want to start accepting bookings without dealing with payments or pricing setup. It allows you to focus on scheduling without configuring checkout systems. Square Appointments introduces payment flows, pricing structures, and checkout setup, which adds complexity and slows down beginners.",
+    "decision_rule": "If scheduling requires configuring payment systems, checkout, or pricing structures before accepting bookings, Square Appointments fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Setmore fits this situation",
+      "content": "This setup fits a beginner who wants to start quickly without setup friction. Payment configuration adds complexity and delays getting started. Setmore allows immediate booking without dealing with monetization systems."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Setmore wins",
+      "bullets": [
+        {
+          "point": "Allows booking without payment or pricing setup.",
+          "why_it_matters": "You can start accepting bookings immediately."
+        },
+        {
+          "point": "Simple setup focused on scheduling only.",
+          "why_it_matters": "This reduces friction for beginners."
+        },
+        {
+          "point": "Avoids checkout and monetization complexity.",
+          "why_it_matters": "This keeps the process straightforward."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Square Appointments wins",
+      "bullets": [
+        {
+          "point": "Supports payments and checkout within scheduling.",
+          "why_it_matters": "This enables monetized booking workflows."
+        },
+        {
+          "point": "Handles pricing and service monetization.",
+          "why_it_matters": "This is useful for businesses, but adds setup."
+        },
+        {
+          "point": "Designed for paid service scheduling.",
+          "why_it_matters": "This increases capability, but slows beginners."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Setmore starts to break when you need integrated payments and monetized booking workflows.",
+          "what_to_do_instead": "Use Square Appointments if you require payment and checkout integration."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Square Appointments starts to break when configuring payments and pricing slows down initial setup.",
+          "what_to_do_instead": "Use Setmore when you want simple, payment-free booking."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you need to accept payments and manage pricing as part of scheduling. In that case, Square Appointments may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Setmore if you want to start booking without payments.",
+        "Pick Square Appointments if you need payment integration.",
+        "If setup simplicity matters, choose Setmore."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Setmore win for beginners?",
+      "a": "Because it allows booking without setting up payments or pricing."
+    },
+    {
+      "q": "Does Square Appointments require payment setup?",
+      "a": "Yes, it often involves configuring payments, checkout, or pricing structures."
+    },
+    {
+      "q": "When should I choose Square Appointments instead?",
+      "a": "Choose it when you need to accept payments as part of scheduling."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Setmore focuses on simple booking, while Square Appointments includes payment and checkout systems."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Calendly vs Square Appointments for Beginners",
+      "slug": "calendly-vs-square-appointments-for-beginner",
+      "exists": true,
+      "x_name": "Calendly",
+      "y_name": "Square Appointments",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Calendly vs Zoho Bookings for Beginners",
+      "slug": "calendly-vs-zoho-bookings-for-beginner",
+      "exists": true,
+      "x_name": "Calendly",
+      "y_name": "Zoho Bookings",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Calendly vs Doodle for Beginners",
+      "slug": "calendly-vs-doodle-for-beginner",
+      "exists": true,
+      "x_name": "Calendly",
+      "y_name": "Doodle",
+      "persona": "Beginner"
+    },
+    {
+      "title": "TidyCal vs Zoho Bookings for Beginners",
+      "slug": "tidycal-vs-zoho-bookings-for-beginner",
+      "exists": true,
+      "x_name": "TidyCal",
+      "y_name": "Zoho Bookings",
+      "persona": "Beginner"
+    },
+    {
+      "title": "Cal.com vs SavvyCal for Beginners",
+      "slug": "calcom-vs-savvycal-for-beginner",
+      "exists": true,
+      "x_name": "Cal.com",
+      "y_name": "SavvyCal",
+      "persona": "Beginner"
+    }
+  ]
+}

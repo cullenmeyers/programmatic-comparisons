@@ -1,0 +1,162 @@
+{
+  "category": "Scheduling / Booking Tools",
+  "categorySlug": "scheduling-booking-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Move fast",
+  "title": "Calendly vs SavvyCal for Busy professionals",
+  "slug": "calendly-vs-savvycal-for-busy-professional",
+  "meta_description": "Calendly vs SavvyCal for busy professionals: Calendly sends booking links instantly, while SavvyCal can require per-recipient customization.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need a scheduling tool that lets you send booking links instantly without extra steps.",
+  "one_second_verdict": {
+    "winner_label": "Calendly",
+    "summary": "Best for busy professionals who need to send scheduling links with zero extra steps.",
+    "reason": "SavvyCal fails first because it can require customizing availability per recipient before sending."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Calendly is the better choice when you send scheduling links at high volume and cannot afford extra steps. It allows you to share a link instantly without adjusting availability or presentation. SavvyCal introduces per-recipient customization like availability overlays, which adds friction and slows down sending.",
+    "decision_rule": "If scheduling requires customizing availability overlays or per-recipient presentation before sending, SavvyCal fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Calendly fits this situation",
+      "content": "This setup fits a busy professional sending many scheduling links daily. Any extra step slows down workflow and increases cognitive load. Calendly removes friction by allowing immediate link sharing."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Calendly wins",
+      "bullets": [
+        {
+          "point": "Allows instant link sharing without customization.",
+          "why_it_matters": "You can send links quickly with zero extra steps."
+        },
+        {
+          "point": "Requires no per-recipient adjustments.",
+          "why_it_matters": "This reduces cognitive load when sending at scale."
+        },
+        {
+          "point": "Designed for fast, repeatable scheduling workflows.",
+          "why_it_matters": "This supports high-volume usage."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where SavvyCal wins",
+      "bullets": [
+        {
+          "point": "Allows customizing availability overlays for recipients.",
+          "why_it_matters": "This creates a tailored experience, but adds steps."
+        },
+        {
+          "point": "Supports per-recipient scheduling presentation.",
+          "why_it_matters": "This improves flexibility, but slows down sending."
+        },
+        {
+          "point": "Provides more control over how availability is shown.",
+          "why_it_matters": "This is useful for customization, but not speed."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Calendly starts to break when you need to customize availability or presentation for different recipients.",
+          "what_to_do_instead": "Use SavvyCal if you require per-recipient customization."
+        },
+        {
+          "tool": "y",
+          "fails_when": "SavvyCal starts to break when customizing availability per recipient slows down high-volume link sending.",
+          "what_to_do_instead": "Use Calendly when speed and simplicity matter."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you need to tailor scheduling links for each recipient and are willing to spend extra time customizing availability. In that case, SavvyCal may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Calendly if you want zero-step link sending.",
+        "Pick SavvyCal if you need per-recipient customization.",
+        "If speed matters most, choose Calendly."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Calendly win for busy professionals?",
+      "a": "Because it allows instant link sharing without extra steps or customization."
+    },
+    {
+      "q": "Does SavvyCal require extra steps before sending?",
+      "a": "It can require customizing availability overlays or presentation for each recipient."
+    },
+    {
+      "q": "When should I choose SavvyCal instead?",
+      "a": "Choose it when you need to customize scheduling links for different recipients."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Calendly prioritizes speed and simplicity, while SavvyCal offers customization at the cost of extra steps."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Calendly vs Chili Piper for Busy professionals",
+      "slug": "calendly-vs-chili-piper-for-busy-professional",
+      "exists": true,
+      "x_name": "Calendly",
+      "y_name": "Chili Piper",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Microsoft Bookings vs SavvyCal for Busy professionals",
+      "slug": "microsoft-bookings-vs-savvycal-for-busy-professional",
+      "exists": true,
+      "x_name": "Microsoft Bookings",
+      "y_name": "SavvyCal",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Calendly vs Doodle for Busy professionals",
+      "slug": "calendly-vs-doodle-for-busy-professional",
+      "exists": true,
+      "x_name": "Calendly",
+      "y_name": "Doodle",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Cal.com vs Calendly for Busy professionals",
+      "slug": "cal-com-vs-calendly-for-busy-professional",
+      "exists": true,
+      "x_name": "Cal.com",
+      "y_name": "Calendly",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Chili Piper vs Doodle for Busy professionals",
+      "slug": "chili-piper-vs-doodle-for-busy-professional",
+      "exists": true,
+      "x_name": "Chili Piper",
+      "y_name": "Doodle",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Chili Piper vs Setmore for Busy professionals",
+      "slug": "chili-piper-vs-setmore-for-busy-professional",
+      "exists": true,
+      "x_name": "Chili Piper",
+      "y_name": "Setmore",
+      "persona": "Busy professional"
+    }
+  ]
+}

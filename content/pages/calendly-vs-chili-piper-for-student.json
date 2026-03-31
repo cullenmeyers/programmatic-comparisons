@@ -1,0 +1,162 @@
+{
+  "category": "Scheduling / Booking Tools",
+  "categorySlug": "scheduling-booking-tools",
+  "constraintSlug": "low-switching-cost",
+  "constraintUiName": "Use and move on",
+  "title": "Calendly vs Chili Piper for Students",
+  "slug": "calendly-vs-chili-piper-for-student",
+  "meta_description": "Calendly vs Chili Piper for students: Calendly offers simple booking links, while Chili Piper requires routing and team setup.",
+  "persona": "Student",
+  "constraint_lens": "You need a scheduling tool that works immediately and can be dropped without setup overhead.",
+  "one_second_verdict": {
+    "winner_label": "Calendly",
+    "summary": "Best for students who need simple, short-term scheduling.",
+    "reason": "Chili Piper fails first because it requires routing logic and team infrastructure instead of a simple booking link."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Calendly is the better choice when you need a scheduling tool for short-term use without committing to complex systems. It allows you to share a simple booking link and move on. Chili Piper requires setting up lead routing and team assignment logic, which creates unnecessary overhead for temporary scheduling needs.",
+    "decision_rule": "If scheduling requires standing up lead-routing and team assignment infrastructure instead of sharing a simple booking link, Chili Piper fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Calendly fits this situation",
+      "content": "This setup fits a student who needs scheduling temporarily. Complex systems create friction and are not worth setting up for short-term use. Calendly works instantly and can be dropped without cleanup."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Calendly wins",
+      "bullets": [
+        {
+          "point": "Provides a simple booking link for immediate use.",
+          "why_it_matters": "You can schedule without setup or long-term commitment."
+        },
+        {
+          "point": "Requires minimal configuration.",
+          "why_it_matters": "This makes it ideal for short-term use."
+        },
+        {
+          "point": "Easy to stop using without cleanup.",
+          "why_it_matters": "This reduces switching cost."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Chili Piper wins",
+      "bullets": [
+        {
+          "point": "Supports advanced routing and team assignment logic.",
+          "why_it_matters": "This enables complex scheduling workflows."
+        },
+        {
+          "point": "Designed for structured sales processes.",
+          "why_it_matters": "This works for teams, but adds overhead."
+        },
+        {
+          "point": "Handles dynamic meeting distribution.",
+          "why_it_matters": "This increases precision, but requires setup."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Calendly starts to break when you need dynamic routing and team-based scheduling logic.",
+          "what_to_do_instead": "Use Chili Piper if you require advanced routing and assignment."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Chili Piper starts to break when setting up routing and team infrastructure creates unnecessary overhead for short-term scheduling.",
+          "what_to_do_instead": "Use Calendly when you need simple, temporary scheduling."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if your scheduling becomes part of a structured team workflow requiring routing and assignment logic. In that case, Chili Piper may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Calendly if you need simple, temporary scheduling.",
+        "Pick Chili Piper if you need routing and team assignment.",
+        "If you want low switching cost, choose Calendly."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Calendly win for students?",
+      "a": "Because it provides simple scheduling without requiring setup or long-term commitment."
+    },
+    {
+      "q": "Does Chili Piper require setup?",
+      "a": "Yes, it requires routing logic and team infrastructure."
+    },
+    {
+      "q": "When should I choose Chili Piper instead?",
+      "a": "Choose it when you need structured scheduling with routing and team assignment."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Calendly is simple and temporary, while Chili Piper is designed for complex, structured scheduling workflows."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Calendly vs Doodle for Students",
+      "slug": "calendly-vs-doodle-for-student",
+      "exists": true,
+      "x_name": "Calendly",
+      "y_name": "Doodle",
+      "persona": "Student"
+    },
+    {
+      "title": "Calendly vs Microsoft Bookings for Students",
+      "slug": "calendly-vs-microsoft-bookings-for-student",
+      "exists": true,
+      "x_name": "Calendly",
+      "y_name": "Microsoft Bookings",
+      "persona": "Student"
+    },
+    {
+      "title": "Doodle vs OnceHub for Students",
+      "slug": "doodle-vs-oncehub-for-student",
+      "exists": true,
+      "x_name": "Doodle",
+      "y_name": "OnceHub",
+      "persona": "Student"
+    },
+    {
+      "title": "Doodle vs Square Appointments for Students",
+      "slug": "doodle-vs-square-appointments-for-student",
+      "exists": true,
+      "x_name": "Doodle",
+      "y_name": "Square Appointments",
+      "persona": "Student"
+    },
+    {
+      "title": "Doodle vs TidyCal for Students",
+      "slug": "doodle-vs-tidycal-for-student",
+      "exists": true,
+      "x_name": "Doodle",
+      "y_name": "TidyCal",
+      "persona": "Student"
+    },
+    {
+      "title": "Cal.com vs SavvyCal for Students",
+      "slug": "cal-com-vs-savvycal-for-student",
+      "exists": true,
+      "x_name": "Cal.com",
+      "y_name": "SavvyCal",
+      "persona": "Student"
+    }
+  ]
+}

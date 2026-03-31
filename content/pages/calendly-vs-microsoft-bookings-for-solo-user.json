@@ -1,0 +1,138 @@
+{
+  "category": "Scheduling / Booking Tools",
+  "categorySlug": "scheduling-booking-tools",
+  "constraintSlug": "zero-maintenance",
+  "constraintUiName": "Runs itself",
+  "title": "Calendly vs Microsoft Bookings for Solo users",
+  "slug": "calendly-vs-microsoft-bookings-for-solo-user",
+  "meta_description": "Calendly vs Microsoft Bookings for solo users: Calendly runs as a personal scheduling link, while Microsoft Bookings requires team-based setup and maintenance.",
+  "persona": "Solo user",
+  "constraint_lens": "You need a scheduling tool that works on its own without ongoing maintenance or team-based configuration.",
+  "one_second_verdict": {
+    "winner_label": "Calendly",
+    "summary": "Best for solo users who want scheduling to run without upkeep.",
+    "reason": "Microsoft Bookings fails first because it depends on maintaining staff, services, and organization-level structure."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Calendly is the better choice when you want scheduling to run without ongoing maintenance. It operates as a simple personal booking link that continues working without managing system structure. Microsoft Bookings requires maintaining staff, services, and organization-level configuration, which creates ongoing upkeep that solo users cannot afford.",
+    "decision_rule": "If scheduling depends on maintaining staff, services, or organization-level booking structure instead of a personal link, Microsoft Bookings fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Calendly fits this situation",
+      "content": "This setup fits a solo user who cannot maintain scheduling systems over time. Ongoing configuration creates friction and breaks consistency. Calendly keeps scheduling simple and self-running."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Calendly wins",
+      "bullets": [
+        {
+          "point": "Runs as a simple personal booking link.",
+          "why_it_matters": "You can schedule without maintaining system structure."
+        },
+        {
+          "point": "Requires minimal ongoing setup or adjustment.",
+          "why_it_matters": "This keeps scheduling maintenance-free."
+        },
+        {
+          "point": "Designed for individual use without team configuration.",
+          "why_it_matters": "This aligns with solo workflows."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Microsoft Bookings wins",
+      "bullets": [
+        {
+          "point": "Supports team-based scheduling with staff and services.",
+          "why_it_matters": "This enables structured booking across organizations."
+        },
+        {
+          "point": "Handles organization-level scheduling workflows.",
+          "why_it_matters": "This works for teams, but adds overhead for individuals."
+        },
+        {
+          "point": "Provides centralized booking management for groups.",
+          "why_it_matters": "This is useful for coordination, but requires upkeep."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Calendly starts to break when you need structured team scheduling with multiple staff and services.",
+          "what_to_do_instead": "Use Microsoft Bookings if you require organization-level scheduling."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Microsoft Bookings starts to break when maintaining staff, services, and booking structure becomes ongoing overhead.",
+          "what_to_do_instead": "Use Calendly when you want a maintenance-free personal scheduling link."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if your scheduling expands to include multiple people and requires structured coordination. In that case, Microsoft Bookings may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Calendly if you want maintenance-free scheduling.",
+        "Pick Microsoft Bookings if you need team-based scheduling.",
+        "If you want it to run itself, choose Calendly."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Calendly win for solo users?",
+      "a": "Because it runs as a personal scheduling link without requiring ongoing maintenance."
+    },
+    {
+      "q": "Does Microsoft Bookings require upkeep?",
+      "a": "Yes, it requires maintaining staff, services, and organization-level structure."
+    },
+    {
+      "q": "When should I choose Microsoft Bookings instead?",
+      "a": "Choose it when you need structured scheduling across multiple people or services."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Calendly is maintenance-free for individuals, while Microsoft Bookings requires managing team-based scheduling structure."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Microsoft Bookings vs Setmore for Solo users",
+      "slug": "microsoft-bookings-vs-setmore-for-solo-user",
+      "exists": true,
+      "x_name": "Microsoft Bookings",
+      "y_name": "Setmore",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Cal.com vs Chili Piper for Solo users",
+      "slug": "calcom-vs-chili-piper-for-solo-user",
+      "exists": true,
+      "x_name": "Cal.com",
+      "y_name": "Chili Piper",
+      "persona": "Solo user"
+    },
+    {
+      "title": "OnceHub vs Square Appointments for Solo users",
+      "slug": "oncehub-vs-square-appointments-for-solo-user",
+      "exists": true,
+      "x_name": "OnceHub",
+      "y_name": "Square Appointments",
+      "persona": "Solo user"
+    }
+  ]
+}

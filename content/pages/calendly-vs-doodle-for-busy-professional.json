@@ -1,0 +1,162 @@
+{
+  "category": "Scheduling / Booking Tools",
+  "categorySlug": "scheduling-booking-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Avoid errors",
+  "title": "Calendly vs Doodle for Busy professionals",
+  "slug": "calendly-vs-doodle-for-busy-professional",
+  "meta_description": "Calendly vs Doodle for busy professionals: Calendly localizes time zones automatically, while Doodle can require manual interpretation.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need a scheduling tool that prevents time zone errors automatically without requiring manual interpretation.",
+  "one_second_verdict": {
+    "winner_label": "Calendly",
+    "summary": "Best for busy professionals who cannot risk time zone confusion.",
+    "reason": "Doodle fails first because it can require participants to manually interpret or convert time zones."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Calendly is the better choice when you schedule across time zones and cannot afford mistakes. It automatically localizes meeting times for each participant, removing the need for manual conversion. Doodle relies on participants interpreting proposed times, which increases the risk of confusion and missed meetings.",
+    "decision_rule": "If scheduling requires participants to manually interpret or convert time zones instead of automatic localization, Doodle fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Calendly fits this situation",
+      "content": "This setup fits a busy professional scheduling across time zones. Manual interpretation introduces risk and cognitive load. Calendly removes that risk by handling time zone localization automatically."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Calendly wins",
+      "bullets": [
+        {
+          "point": "Automatically localizes time zones for each participant.",
+          "why_it_matters": "This prevents scheduling mistakes."
+        },
+        {
+          "point": "Removes need for manual time conversion.",
+          "why_it_matters": "This reduces cognitive load and saves time."
+        },
+        {
+          "point": "Ensures consistent meeting times globally.",
+          "why_it_matters": "This avoids missed or incorrect bookings."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Doodle wins",
+      "bullets": [
+        {
+          "point": "Allows proposing multiple time options for group voting.",
+          "why_it_matters": "This is useful for coordination, but adds interpretation risk."
+        },
+        {
+          "point": "Simple polling-based scheduling model.",
+          "why_it_matters": "This is flexible, but less precise across time zones."
+        },
+        {
+          "point": "Works without requiring full scheduling setup.",
+          "why_it_matters": "This lowers setup, but increases error risk."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Calendly starts to break when you need flexible group polling instead of fixed booking slots.",
+          "what_to_do_instead": "Use Doodle if you need participants to vote on multiple time options."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Doodle starts to break when participants must interpret or convert time zones manually, leading to errors.",
+          "what_to_do_instead": "Use Calendly when accuracy across time zones matters."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if your main need is coordinating group availability through polling rather than booking fixed time slots. In that case, Doodle may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Calendly if you need automatic time zone handling.",
+        "Pick Doodle if you need group voting on times.",
+        "If avoiding errors matters most, choose Calendly."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Calendly win for busy professionals?",
+      "a": "Because it automatically handles time zone localization, preventing scheduling errors."
+    },
+    {
+      "q": "Does Doodle require manual time zone interpretation?",
+      "a": "Yes, participants may need to interpret or convert times themselves."
+    },
+    {
+      "q": "When should I choose Doodle instead?",
+      "a": "Choose it when you need to coordinate availability through group polling."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Calendly focuses on precise booking with automatic time handling, while Doodle focuses on flexible polling."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Calendly vs Chili Piper for Busy professionals",
+      "slug": "calendly-vs-chili-piper-for-busy-professional",
+      "exists": true,
+      "x_name": "Calendly",
+      "y_name": "Chili Piper",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Chili Piper vs Doodle for Busy professionals",
+      "slug": "chili-piper-vs-doodle-for-busy-professional",
+      "exists": true,
+      "x_name": "Chili Piper",
+      "y_name": "Doodle",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Calendly vs SavvyCal for Busy professionals",
+      "slug": "calendly-vs-savvycal-for-busy-professional",
+      "exists": true,
+      "x_name": "Calendly",
+      "y_name": "SavvyCal",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Cal.com vs Calendly for Busy professionals",
+      "slug": "cal-com-vs-calendly-for-busy-professional",
+      "exists": true,
+      "x_name": "Cal.com",
+      "y_name": "Calendly",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Chili Piper vs Setmore for Busy professionals",
+      "slug": "chili-piper-vs-setmore-for-busy-professional",
+      "exists": true,
+      "x_name": "Chili Piper",
+      "y_name": "Setmore",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Microsoft Bookings vs SavvyCal for Busy professionals",
+      "slug": "microsoft-bookings-vs-savvycal-for-busy-professional",
+      "exists": true,
+      "x_name": "Microsoft Bookings",
+      "y_name": "SavvyCal",
+      "persona": "Busy professional"
+    }
+  ]
+}

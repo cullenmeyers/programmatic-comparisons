@@ -1,0 +1,138 @@
+{
+  "category": "Scheduling / Booking Tools",
+  "categorySlug": "scheduling-booking-tools",
+  "constraintSlug": "zero-maintenance",
+  "constraintUiName": "Runs itself",
+  "title": "Cal.com vs Chili Piper for Solo users",
+  "slug": "calcom-vs-chili-piper-for-solo-user",
+  "meta_description": "Cal.com vs Chili Piper for solo users: Cal.com keeps scheduling simple, while Chili Piper requires ongoing routing and team setup.",
+  "persona": "Solo user",
+  "constraint_lens": "You need a scheduling tool that stays simple over time without requiring ongoing system maintenance.",
+  "one_second_verdict": {
+    "winner_label": "Cal.com",
+    "summary": "Best for solo users who want simple scheduling without ongoing upkeep.",
+    "reason": "Chili Piper fails first because it requires maintaining routing rules and team-based assignment logic."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Cal.com is the better choice when you need a personal scheduling tool that stays simple over time. It avoids complex routing systems and team-based logic, allowing you to schedule without ongoing maintenance. Chili Piper is designed for dynamic routing and team assignment, which requires continuous upkeep and becomes a burden for solo users.",
+    "decision_rule": "If scheduling requires maintaining routing rules, ownership logic, or team infrastructure over time, Chili Piper fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Cal.com fits this situation",
+      "content": "This setup fits a solo user who cannot maintain complex systems over time. Routing logic and team infrastructure introduce ongoing work. Cal.com keeps scheduling simple and manageable long-term."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Cal.com wins",
+      "bullets": [
+        {
+          "point": "Simple personal scheduling without routing logic.",
+          "why_it_matters": "You can manage bookings without ongoing system maintenance."
+        },
+        {
+          "point": "Avoids team-based assignment and infrastructure.",
+          "why_it_matters": "This reduces long-term upkeep."
+        },
+        {
+          "point": "Designed for individual use and control.",
+          "why_it_matters": "This aligns with solo workflows."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Chili Piper wins",
+      "bullets": [
+        {
+          "point": "Supports dynamic routing and team-based assignment.",
+          "why_it_matters": "This enables complex scheduling workflows."
+        },
+        {
+          "point": "Handles ownership logic across teams.",
+          "why_it_matters": "This works for structured environments, but adds maintenance."
+        },
+        {
+          "point": "Designed for high-volume inbound scheduling.",
+          "why_it_matters": "This increases capability, but requires upkeep."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Cal.com starts to break when you need dynamic routing and team-based scheduling logic.",
+          "what_to_do_instead": "Use Chili Piper if you require advanced routing and assignment."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Chili Piper starts to break when maintaining routing rules and team infrastructure becomes ongoing overhead.",
+          "what_to_do_instead": "Use Cal.com when you need simple, low-maintenance scheduling."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if your scheduling evolves into a team-based system requiring routing and ownership logic. In that case, Chili Piper may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Cal.com if you want simple, low-maintenance scheduling.",
+        "Pick Chili Piper if you need routing and team assignment.",
+        "If maintenance is a burden, choose Cal.com."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Cal.com win for solo users?",
+      "a": "Because it keeps scheduling simple and avoids ongoing maintenance of routing systems."
+    },
+    {
+      "q": "Does Chili Piper require ongoing setup?",
+      "a": "Yes, it requires maintaining routing rules and team-based assignment logic."
+    },
+    {
+      "q": "When should I choose Chili Piper instead?",
+      "a": "Choose it when you need dynamic routing and team-based scheduling workflows."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Cal.com is simple and low-maintenance, while Chili Piper requires ongoing management of routing and assignment logic."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Calendly vs Microsoft Bookings for Solo users",
+      "slug": "calendly-vs-microsoft-bookings-for-solo-user",
+      "exists": true,
+      "x_name": "Calendly",
+      "y_name": "Microsoft Bookings",
+      "persona": "Solo user"
+    },
+    {
+      "title": "Microsoft Bookings vs Setmore for Solo users",
+      "slug": "microsoft-bookings-vs-setmore-for-solo-user",
+      "exists": true,
+      "x_name": "Microsoft Bookings",
+      "y_name": "Setmore",
+      "persona": "Solo user"
+    },
+    {
+      "title": "OnceHub vs Square Appointments for Solo users",
+      "slug": "oncehub-vs-square-appointments-for-solo-user",
+      "exists": true,
+      "x_name": "OnceHub",
+      "y_name": "Square Appointments",
+      "persona": "Solo user"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "category": "Scheduling / Booking Tools",
+  "categorySlug": "scheduling-booking-tools",
+  "constraintSlug": "time-scarcity",
+  "constraintUiName": "Move fast",
+  "title": "Setmore vs TidyCal for Busy professionals",
+  "slug": "setmore-vs-tidycal-for-busy-professional",
+  "meta_description": "Setmore vs TidyCal for busy professionals: Setmore supports recurring booking systems, while TidyCal requires more manual adjustments.",
+  "persona": "Busy professional",
+  "constraint_lens": "You need a scheduling tool that automates recurring bookings without ongoing manual adjustments.",
+  "one_second_verdict": {
+    "winner_label": "Setmore",
+    "summary": "Best for busy professionals who need recurring bookings to run automatically.",
+    "reason": "TidyCal fails first because it lacks structured recurring booking systems and requires manual adjustments."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Setmore is the better choice when you run recurring client sessions and cannot spend time managing bookings manually. It supports structured recurring booking systems that automate scheduling over time. TidyCal requires more manual adjustments to maintain recurring sessions, which creates ongoing friction and cognitive load.",
+    "decision_rule": "If scheduling lacks structured recurring booking systems and requires manual adjustments over time, TidyCal fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Setmore fits this situation",
+      "content": "This setup fits a busy professional who cannot repeatedly adjust bookings. Manual updates create cognitive load and waste time. Setmore automates recurring sessions so scheduling runs without intervention."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Setmore wins",
+      "bullets": [
+        {
+          "point": "Supports structured recurring booking systems.",
+          "why_it_matters": "You can automate repeat sessions without manual updates."
+        },
+        {
+          "point": "Reduces need for ongoing booking adjustments.",
+          "why_it_matters": "This saves time and lowers cognitive load."
+        },
+        {
+          "point": "Designed for consistent, repeat scheduling workflows.",
+          "why_it_matters": "This keeps client sessions predictable and efficient."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where TidyCal wins",
+      "bullets": [
+        {
+          "point": "Simple booking setup with minimal initial configuration.",
+          "why_it_matters": "This makes it easy to start, but limits automation."
+        },
+        {
+          "point": "Lightweight scheduling for basic use cases.",
+          "why_it_matters": "This works for simple bookings, but not recurring systems."
+        },
+        {
+          "point": "Lower complexity overall.",
+          "why_it_matters": "This reduces setup effort, but increases manual work later."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Setmore starts to break when your scheduling needs are simple and do not require recurring automation.",
+          "what_to_do_instead": "Use TidyCal if you prefer a lightweight, simple booking tool."
+        },
+        {
+          "tool": "y",
+          "fails_when": "TidyCal starts to break when recurring sessions require manual adjustments over time.",
+          "what_to_do_instead": "Use Setmore when you need automated recurring bookings."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if your scheduling is occasional and does not involve recurring sessions. In that case, TidyCal may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Setmore if you need recurring booking automation.",
+        "Pick TidyCal if your scheduling is simple and occasional.",
+        "If manual adjustments slow you down, choose Setmore."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Setmore win for busy professionals?",
+      "a": "Because it automates recurring bookings and reduces manual adjustments."
+    },
+    {
+      "q": "Does TidyCal support recurring booking systems?",
+      "a": "It lacks structured recurring systems and often requires manual adjustments."
+    },
+    {
+      "q": "When should I choose TidyCal instead?",
+      "a": "Choose it when your scheduling is simple and does not involve recurring sessions."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Setmore automates recurring bookings, while TidyCal requires more manual scheduling over time."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Chili Piper vs Setmore for Busy professionals",
+      "slug": "chili-piper-vs-setmore-for-busy-professional",
+      "exists": true,
+      "x_name": "Chili Piper",
+      "y_name": "Setmore",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Calendly vs Chili Piper for Busy professionals",
+      "slug": "calendly-vs-chili-piper-for-busy-professional",
+      "exists": true,
+      "x_name": "Calendly",
+      "y_name": "Chili Piper",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Calendly vs Doodle for Busy professionals",
+      "slug": "calendly-vs-doodle-for-busy-professional",
+      "exists": true,
+      "x_name": "Calendly",
+      "y_name": "Doodle",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Calendly vs SavvyCal for Busy professionals",
+      "slug": "calendly-vs-savvycal-for-busy-professional",
+      "exists": true,
+      "x_name": "Calendly",
+      "y_name": "SavvyCal",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Cal.com vs Calendly for Busy professionals",
+      "slug": "cal-com-vs-calendly-for-busy-professional",
+      "exists": true,
+      "x_name": "Cal.com",
+      "y_name": "Calendly",
+      "persona": "Busy professional"
+    },
+    {
+      "title": "Chili Piper vs Doodle for Busy professionals",
+      "slug": "chili-piper-vs-doodle-for-busy-professional",
+      "exists": true,
+      "x_name": "Chili Piper",
+      "y_name": "Doodle",
+      "persona": "Busy professional"
+    }
+  ]
+}

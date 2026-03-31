@@ -1,15 +1,15 @@
 # Related Comparisons Rebuild Report
 
-Date: 2026-03-31T04:12:01.533Z
+Date: 2026-03-31T20:24:56.218Z
 
 ## Summary
 
-- Total pages scanned: 624
+- Total pages scanned: 639
 - Total pages updated: 0
-- Average related_pages count: 5.17
-- Pages with 0 related pages: 20
+- Average related_pages count: 5.21
+- Pages with 0 related pages: 21
 - Pages with 1 related page: 26
-- Pages with fewer than 3 related pages: 79
+- Pages with fewer than 3 related pages: 80
 
 ## Sparse Pages
 
@@ -19,6 +19,7 @@ Date: 2026-03-31T04:12:01.533Z
 - /compare/airtable-vs-microsoft-excel-for-minimalist
 - /compare/basecamp-vs-microsoft-teams-for-solo-user
 - /compare/box-vs-dropbox-for-non-technical-user
+- /compare/calcom-vs-doodle-for-non-technical-user
 - /compare/calendly-vs-google-calendar-for-busy-professional
 - /compare/capacities-vs-logseq-for-beginner
 - /compare/chatwoot-vs-intercom-for-solo-user
@@ -88,6 +89,7 @@ Date: 2026-03-31T04:12:01.533Z
 - /compare/bitwarden-vs-passbolt-for-solo-user
 - /compare/box-vs-dropbox-for-non-technical-user
 - /compare/buddy-punch-vs-harvest-for-student
+- /compare/calcom-vs-doodle-for-non-technical-user
 - /compare/calendly-vs-google-calendar-for-beginner
 - /compare/calendly-vs-google-calendar-for-busy-professional
 - /compare/capacities-vs-logseq-for-beginner
