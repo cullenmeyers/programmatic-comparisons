@@ -1,0 +1,122 @@
+{
+  "category": "Team Collaboration Tools",
+  "categorySlug": "team-collaboration-tools",
+  "constraintSlug": "setup-tolerance",
+  "constraintUiName": "Start fast",
+  "title": "Discord vs Mattermost for Beginners",
+  "slug": "discord-vs-mattermost-for-beginner",
+  "meta_description": "Discord vs Mattermost for beginners: Discord offers instant access, while Mattermost requires server setup and configuration.",
+  "persona": "Beginner",
+  "constraint_lens": "You need a collaboration tool that works immediately without any setup or configuration.",
+  "one_second_verdict": {
+    "winner_label": "Discord",
+    "summary": "Best for beginners who want to start communicating instantly.",
+    "reason": "Mattermost fails first because it requires server deployment and configuration before use."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Discord is the better choice when you need to start communicating immediately without setup. It is ready to use out of the box with no infrastructure required. Mattermost often requires server deployment, configuration, and ongoing setup, which creates friction and delays for beginners.",
+    "decision_rule": "If using the system requires server deployment and configuration instead of instant access, Mattermost fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Discord fits this situation",
+      "content": "This setup fits a beginner who wants to start communicating right away. Any requirement to configure infrastructure or deploy systems creates immediate friction. Discord removes this barrier by being instantly accessible."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Discord wins",
+      "bullets": [
+        {
+          "point": "Instant access with no setup or infrastructure required.",
+          "why_it_matters": "You can start communicating immediately without technical steps."
+        },
+        {
+          "point": "No need to manage servers or configuration.",
+          "why_it_matters": "This eliminates complexity and reduces friction for beginners."
+        },
+        {
+          "point": "Simple onboarding with minimal technical requirements.",
+          "why_it_matters": "This makes it easy to adopt without prior experience."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Mattermost wins",
+      "bullets": [
+        {
+          "point": "Supports self-hosted deployments with full control over infrastructure.",
+          "why_it_matters": "This is powerful for advanced users, but requires setup and maintenance."
+        },
+        {
+          "point": "Allows deep customization through server configuration.",
+          "why_it_matters": "This increases flexibility, but adds complexity."
+        },
+        {
+          "point": "Designed for controlled environments rather than instant use.",
+          "why_it_matters": "This limits accessibility for beginners."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Discord starts to break when you need full control over infrastructure and self-hosted environments.",
+          "what_to_do_instead": "Use Mattermost if you require server control and customization."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Mattermost starts to break when setup and configuration prevent you from starting quickly.",
+          "what_to_do_instead": "Use Discord when you need instant access without setup."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you are comfortable managing infrastructure and need full control over deployment and customization. In that case, Mattermost may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Discord if you want to start immediately with no setup.",
+        "Pick Mattermost if you need self-hosted control and customization.",
+        "If setup is a blocker, choose Discord."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Discord win for beginners?",
+      "a": "Because it allows instant use without requiring any setup or infrastructure configuration."
+    },
+    {
+      "q": "Does Mattermost require setup?",
+      "a": "Yes, it often requires server deployment and configuration before it can be used."
+    },
+    {
+      "q": "When should I choose Mattermost instead?",
+      "a": "Choose it when you need full control over hosting and are comfortable managing setup and infrastructure."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Discord is ready to use instantly, while Mattermost requires setup and configuration."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Flock vs Twist for Beginners",
+      "slug": "flock-vs-twist-for-beginner",
+      "exists": true,
+      "x_name": "Flock",
+      "y_name": "Twist",
+      "persona": "Beginner"
+    }
+  ]
+}

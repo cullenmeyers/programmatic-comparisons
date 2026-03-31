@@ -1,0 +1,122 @@
+{
+  "category": "Team Collaboration Tools",
+  "categorySlug": "team-collaboration-tools",
+  "constraintSlug": "low-commitment",
+  "constraintUiName": "Easy to switch",
+  "title": "Discord vs Microsoft Teams for Students",
+  "slug": "discord-vs-microsoft-teams-for-student",
+  "meta_description": "Discord vs Microsoft Teams for students: Discord enables flexible participation, while Microsoft Teams requires structured membership and setup.",
+  "persona": "Student",
+  "constraint_lens": "You need a collaboration tool that allows people to join and leave easily without setup or friction.",
+  "one_second_verdict": {
+    "winner_label": "Discord",
+    "summary": "Best for students who need flexible participation in short-term group work.",
+    "reason": "Microsoft Teams fails first because it requires structured membership, roles, and setup."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Discord is the better choice when group membership is fluid and temporary. It allows people to join and leave easily without formal setup, making it ideal for short-term projects. Microsoft Teams requires structured membership, roles, and administrative setup, which creates friction for groups that frequently change.",
+    "decision_rule": "If participation requires formal membership, roles, and admin setup instead of flexible entry and exit, Microsoft Teams fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Discord fits this situation",
+      "content": "This setup fits a student working in short-term groups where participants change often. Any requirement for formal setup slows things down. Discord allows instant, flexible participation without overhead."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Discord wins",
+      "bullets": [
+        {
+          "point": "Easy join and leave without formal membership or admin setup.",
+          "why_it_matters": "This keeps group coordination fast and flexible."
+        },
+        {
+          "point": "Supports fluid participation for temporary groups.",
+          "why_it_matters": "You can adapt quickly as group members change."
+        },
+        {
+          "point": "Minimal friction to start or exit a workspace.",
+          "why_it_matters": "This lowers switching costs for short-term use."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Microsoft Teams wins",
+      "bullets": [
+        {
+          "point": "Provides structured membership and role-based access.",
+          "why_it_matters": "This is useful for stable teams, but adds friction for temporary groups."
+        },
+        {
+          "point": "Designed for organized, long-term collaboration environments.",
+          "why_it_matters": "This limits flexibility for short-term participation."
+        },
+        {
+          "point": "Requires administrative setup for team structure.",
+          "why_it_matters": "This increases effort for groups that frequently change."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Discord starts to break when you need structured roles and controlled access for long-term teams.",
+          "what_to_do_instead": "Use Microsoft Teams if your group becomes stable and requires structured management."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Microsoft Teams starts to break when frequent membership changes require repeated setup and admin overhead.",
+          "what_to_do_instead": "Use Discord when participation needs to stay flexible."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if your group becomes stable and requires structured roles and controlled access. In that case, Microsoft Teams may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Discord if your group is temporary and constantly changing.",
+        "Pick Microsoft Teams if your group is stable and needs structure.",
+        "If flexibility matters most, choose Discord."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Discord win for students?",
+      "a": "Because it allows flexible participation without requiring formal membership or setup."
+    },
+    {
+      "q": "Does Microsoft Teams support easy joining and leaving?",
+      "a": "It requires structured membership and setup, which adds friction for temporary groups."
+    },
+    {
+      "q": "When should I choose Microsoft Teams instead?",
+      "a": "Choose it when your group is stable and requires structured roles and permissions."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Discord allows flexible entry and exit, while Microsoft Teams requires structured membership and setup."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Discord vs Google Chat for Students",
+      "slug": "discord-vs-google-chat-for-student",
+      "exists": true,
+      "x_name": "Discord",
+      "y_name": "Google Chat",
+      "persona": "Student"
+    }
+  ]
+}

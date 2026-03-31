@@ -1,0 +1,162 @@
+{
+  "category": "Team Collaboration Tools",
+  "categorySlug": "team-collaboration-tools",
+  "constraintSlug": "feature-aversion",
+  "constraintUiName": "Keep it simple",
+  "title": "Flock vs Slack for Minimalists",
+  "slug": "flock-vs-slack-for-minimalist",
+  "meta_description": "Flock vs Slack for minimalists: Flock offers simpler notification control, while Slack can overwhelm with message notifications.",
+  "persona": "Minimalist",
+  "constraint_lens": "You need a communication tool that limits incoming information and avoids constant notification overload.",
+  "one_second_verdict": {
+    "winner_label": "Flock",
+    "summary": "Best for minimalists who want to control incoming information and avoid notification overload.",
+    "reason": "Slack fails first because it can trigger notifications across many conversations without simple filtering control."
+  },
+  "verdict": {
+    "winner": "x",
+    "summary": "Flock is the better choice when you want to minimize incoming noise and stay focused. It provides simpler notification control and avoids overwhelming you with constant alerts. Slack generates notifications across many channels and conversations, which can quickly become overwhelming and difficult to manage.",
+    "decision_rule": "If all messages trigger notifications instead of allowing granular routing and filtering, Slack fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Flock fits this situation",
+      "content": "This setup fits a minimalist who wants to limit distractions and control information flow. Excessive notifications create cognitive overload. Flock keeps communication simpler and easier to manage."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Flock wins",
+      "bullets": [
+        {
+          "point": "Simpler notification controls reduce incoming noise.",
+          "why_it_matters": "You are less likely to be overwhelmed by constant alerts."
+        },
+        {
+          "point": "Fewer layers of notification settings to manage.",
+          "why_it_matters": "This makes it easier to stay focused without configuring complex rules."
+        },
+        {
+          "point": "Designed for straightforward communication without excessive signals.",
+          "why_it_matters": "This aligns with a low-distraction workflow."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Slack wins",
+      "bullets": [
+        {
+          "point": "Highly active notification system across channels and threads.",
+          "why_it_matters": "This keeps you updated, but can create overload."
+        },
+        {
+          "point": "Supports granular notification routing and filtering options.",
+          "why_it_matters": "This is powerful, but adds complexity and requires setup."
+        },
+        {
+          "point": "Designed for high-volume communication environments.",
+          "why_it_matters": "This increases noise for users who want simplicity."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Flock starts to break when you need highly granular notification routing across many channels and teams.",
+          "what_to_do_instead": "Use Slack if you need advanced filtering and control over complex communication flows."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Slack starts to break when notifications from multiple conversations become overwhelming and hard to control.",
+          "what_to_do_instead": "Use Flock when you want simpler, lower-noise communication."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you are comfortable configuring advanced notification settings and need fine-grained control across many conversations. In that case, Slack may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Flock if you want simpler notification control and less noise.",
+        "Pick Slack if you need advanced notification routing and filtering.",
+        "If notifications overwhelm you, choose Flock."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Flock win for minimalists?",
+      "a": "Because it keeps notification control simple and reduces incoming noise."
+    },
+    {
+      "q": "Does Slack generate more notifications?",
+      "a": "Yes, it can trigger notifications across many conversations, which can become overwhelming."
+    },
+    {
+      "q": "When should I choose Slack instead?",
+      "a": "Choose it when you need advanced notification routing and are comfortable managing more complex settings."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Flock offers simpler notification control, while Slack provides more complex and potentially overwhelming notification systems."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Slack vs Twist for Minimalists",
+      "slug": "slack-vs-twist-for-minimalist",
+      "exists": true,
+      "x_name": "Slack",
+      "y_name": "Twist",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Microsoft Teams vs Slack for Minimalists",
+      "slug": "microsoft-teams-vs-slack-for-minimalist",
+      "exists": true,
+      "x_name": "Microsoft Teams",
+      "y_name": "Slack",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Discord vs Twist for Minimalists",
+      "slug": "discord-vs-twist-for-minimalist",
+      "exists": true,
+      "x_name": "Discord",
+      "y_name": "Twist",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Google Chat vs Twist for Minimalists",
+      "slug": "google-chat-vs-twist-for-minimalist",
+      "exists": true,
+      "x_name": "Google Chat",
+      "y_name": "Twist",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Discord vs Microsoft Teams for Minimalists",
+      "slug": "discord-vs-microsoft-teams-for-minimalist",
+      "exists": true,
+      "x_name": "Discord",
+      "y_name": "Microsoft Teams",
+      "persona": "Minimalist"
+    },
+    {
+      "title": "Basecamp vs Google Chat for Minimalists",
+      "slug": "basecamp-vs-google-chat-for-minimalist",
+      "exists": true,
+      "x_name": "Basecamp",
+      "y_name": "Google Chat",
+      "persona": "Minimalist"
+    }
+  ]
+}

@@ -1,14 +1,14 @@
 # Related Comparisons Rebuild Report
 
-Date: 2026-03-28T01:37:08.351Z
+Date: 2026-03-31T04:12:01.533Z
 
 ## Summary
 
-- Total pages scanned: 607
-- Total pages updated: 1
-- Average related_pages count: 5.14
-- Pages with 0 related pages: 21
-- Pages with 1 related page: 22
+- Total pages scanned: 624
+- Total pages updated: 0
+- Average related_pages count: 5.17
+- Pages with 0 related pages: 20
+- Pages with 1 related page: 26
 - Pages with fewer than 3 related pages: 79
 
 ## Sparse Pages
@@ -17,13 +17,12 @@ Date: 2026-03-28T01:37:08.351Z
 
 - /compare/airtable-vs-baserow-for-beginner
 - /compare/airtable-vs-microsoft-excel-for-minimalist
-- /compare/basecamp-vs-discord-for-non-technical-user
+- /compare/basecamp-vs-microsoft-teams-for-solo-user
 - /compare/box-vs-dropbox-for-non-technical-user
 - /compare/calendly-vs-google-calendar-for-busy-professional
 - /compare/capacities-vs-logseq-for-beginner
 - /compare/chatwoot-vs-intercom-for-solo-user
 - /compare/clickup-vs-google-sheets-for-busy-professional
-- /compare/discord-vs-google-chat-for-student
 - /compare/doodle-vs-savvycal-for-minimalist
 - /compare/dropbox-vs-google-drive-for-minimalist
 - /compare/goodlinks-vs-wallabag-for-solo-user
@@ -43,12 +42,18 @@ Date: 2026-03-28T01:37:08.351Z
 - /compare/asana-vs-things-for-solo-user
 - /compare/asana-vs-todoist-for-solo-user
 - /compare/atracker-vs-kimai-for-student
+- /compare/basecamp-vs-discord-for-non-technical-user
+- /compare/basecamp-vs-microsoft-teams-for-non-technical-user
 - /compare/bitwarden-vs-passbolt-for-solo-user
 - /compare/buddy-punch-vs-harvest-for-student
 - /compare/capacities-vs-obsidian-for-non-technical-user
 - /compare/capacities-vs-reflect-for-minimalist
 - /compare/capacities-vs-roam-research-for-non-technical-user
+- /compare/discord-vs-google-chat-for-student
+- /compare/discord-vs-mattermost-for-beginner
+- /compare/discord-vs-microsoft-teams-for-student
 - /compare/enpass-vs-keeper-for-solo-user
+- /compare/flock-vs-twist-for-beginner
 - /compare/gmail-vs-hey-for-student
 - /compare/gmail-vs-superhuman-for-student
 - /compare/goodlinks-vs-linkace-for-non-technical-user
@@ -56,8 +61,6 @@ Date: 2026-03-28T01:37:08.351Z
 - /compare/goodlinks-vs-raindropio-for-non-technical-user
 - /compare/icloud-mail-vs-tutanota-for-non-technical-user
 - /compare/mailfence-vs-yahoo-mail-for-non-technical-user
-- /compare/mattermost-vs-slack-for-power-user
-- /compare/microsoft-teams-vs-slack-for-power-user
 - /compare/raindropio-vs-startme-for-minimalist
 - /compare/raindropio-vs-wallabag-for-beginner
 - /compare/reflect-vs-roam-research-for-minimalist
@@ -79,7 +82,8 @@ Date: 2026-03-28T01:37:08.351Z
 - /compare/atracker-vs-kimai-for-student
 - /compare/backblaze-vs-dropbox-for-solo-user
 - /compare/basecamp-vs-discord-for-non-technical-user
-- /compare/basecamp-vs-slack-for-busy-professional
+- /compare/basecamp-vs-microsoft-teams-for-non-technical-user
+- /compare/basecamp-vs-microsoft-teams-for-solo-user
 - /compare/bitwarden-vs-keepass-for-beginner
 - /compare/bitwarden-vs-passbolt-for-solo-user
 - /compare/box-vs-dropbox-for-non-technical-user
@@ -96,6 +100,8 @@ Date: 2026-03-28T01:37:08.351Z
 - /compare/cron-vs-google-calendar-for-beginner
 - /compare/directus-vs-notion-for-power-user
 - /compare/discord-vs-google-chat-for-student
+- /compare/discord-vs-mattermost-for-beginner
+- /compare/discord-vs-microsoft-teams-for-student
 - /compare/doodle-vs-savvycal-for-minimalist
 - /compare/dropbox-vs-google-drive-for-minimalist
 - /compare/dropbox-vs-icloud-drive-for-solo-user
@@ -104,6 +110,7 @@ Date: 2026-03-28T01:37:08.351Z
 - /compare/fantastical-vs-motion-for-power-user
 - /compare/fibery-vs-google-sheets-for-non-technical-user
 - /compare/fibery-vs-notion-for-power-user
+- /compare/flock-vs-twist-for-beginner
 - /compare/gmail-vs-hey-for-student
 - /compare/gmail-vs-mailbird-for-beginner
 - /compare/gmail-vs-postbox-for-beginner
@@ -119,7 +126,6 @@ Date: 2026-03-28T01:37:08.351Z
 - /compare/google-calendar-vs-skedda-for-solo-user
 - /compare/google-calendar-vs-teamup-calendar-for-beginner
 - /compare/google-calendar-vs-tidycal-for-beginner
-- /compare/google-chat-vs-slack-for-busy-professional
 - /compare/google-drive-vs-mega-for-student
 - /compare/google-sheets-vs-grist-for-student
 - /compare/groove-vs-salesforce-service-cloud-for-non-technical-user
@@ -133,9 +139,6 @@ Date: 2026-03-28T01:37:08.351Z
 - /compare/logseq-vs-tana-for-busy-professional
 - /compare/mailfence-vs-yahoo-mail-for-non-technical-user
 - /compare/matter-read-it-later-app-vs-raindropio-for-non-technical-user
-- /compare/mattermost-vs-slack-for-power-user
-- /compare/microsoft-teams-vs-slack-for-busy-professional
-- /compare/microsoft-teams-vs-slack-for-power-user
 - /compare/microsoft-to-do-vs-smartsheet-for-beginner
 - /compare/pinboard-vs-raindropio-for-beginner
 - /compare/pocket-vs-wallabag-for-student
