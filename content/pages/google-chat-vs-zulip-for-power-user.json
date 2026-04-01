@@ -1,0 +1,162 @@
+{
+  "category": "Team Collaboration Tools",
+  "categorySlug": "team-collaboration-tools",
+  "constraintSlug": "ceiling",
+  "constraintUiName": "Handle scale",
+  "title": "Google Chat vs Zulip for Power users",
+  "slug": "google-chat-vs-zulip-for-power-user",
+  "meta_description": "Google Chat vs Zulip for power users: Zulip keeps important messages visible with topic-based threads, while Google Chat can bury updates as volume increases.",
+  "persona": "Power user",
+  "constraint_lens": "You need a communication system that keeps important messages visible even as volume increases.",
+  "one_second_verdict": {
+    "winner_label": "Zulip",
+    "summary": "Best for power users managing high-volume communication without losing critical updates.",
+    "reason": "Google Chat fails first because increasing message volume buries important updates."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Zulip is the better choice when message volume is high and important updates must remain visible. Its topic-based threading keeps conversations structured and prevents critical information from being buried. Google Chat relies on flatter message streams, where increasing volume makes it harder to distinguish and retrieve important updates.",
+    "decision_rule": "If increasing message volume causes important updates to be buried and indistinguishable, Google Chat fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Zulip fits this situation",
+      "content": "This setup fits a power user managing high communication volume. Visibility collapse becomes a risk as messages increase. Zulip prevents this by structuring conversations into clearly defined topics."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Google Chat wins",
+      "bullets": [
+        {
+          "point": "Provides simple, linear communication streams.",
+          "why_it_matters": "This is easy to use but does not scale well with volume."
+        },
+        {
+          "point": "Requires minimal structure to participate.",
+          "why_it_matters": "This lowers friction but reduces clarity at scale."
+        },
+        {
+          "point": "Works well for low-volume or informal communication.",
+          "why_it_matters": "This is sufficient until message volume increases."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Zulip wins",
+      "bullets": [
+        {
+          "point": "Uses topic-based threading to organize conversations.",
+          "why_it_matters": "This keeps discussions separated and visible."
+        },
+        {
+          "point": "Prevents important updates from being buried in message streams.",
+          "why_it_matters": "This maintains clarity as volume increases."
+        },
+        {
+          "point": "Supports scalable communication across many conversations.",
+          "why_it_matters": "This enables handling high message volume effectively."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Google Chat starts to break when message volume increases and important updates become buried in flat streams.",
+          "what_to_do_instead": "Use Zulip when structured visibility is required."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Zulip starts to break when users do not follow structured topic usage, reducing clarity benefits.",
+          "what_to_do_instead": "Use Google Chat if you prefer simpler, less structured communication."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if communication volume is low and you prefer a simpler, less structured chat experience. In that case, Google Chat may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Zulip if message volume is high.",
+        "Pick Google Chat if you want simple communication.",
+        "If visibility matters most, choose Zulip."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Zulip win for power users?",
+      "a": "Because it keeps important messages visible through structured topic-based threading."
+    },
+    {
+      "q": "Does Google Chat struggle with high message volume?",
+      "a": "Yes, important updates can become buried in flat message streams."
+    },
+    {
+      "q": "When should I choose Google Chat instead?",
+      "a": "Choose it when communication volume is low and you want simplicity."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Zulip organizes communication into topics, while Google Chat uses flatter message streams."
+    }
+  ],
+  "related_pages": [
+    {
+      "title": "Google Chat vs Microsoft Teams for Power users",
+      "slug": "google-chat-vs-microsoft-teams-for-power-user",
+      "exists": true,
+      "x_name": "Google Chat",
+      "y_name": "Microsoft Teams",
+      "persona": "Power user"
+    },
+    {
+      "title": "Mattermost vs Microsoft Teams for Power users",
+      "slug": "mattermost-vs-microsoft-teams-for-power-user",
+      "exists": true,
+      "x_name": "Mattermost",
+      "y_name": "Microsoft Teams",
+      "persona": "Power user"
+    },
+    {
+      "title": "Discord vs Microsoft Teams for Power users",
+      "slug": "discord-vs-microsoft-teams-for-power-user",
+      "exists": true,
+      "x_name": "Discord",
+      "y_name": "Microsoft Teams",
+      "persona": "Power user"
+    },
+    {
+      "title": "Microsoft Teams vs Slack for Power users",
+      "slug": "microsoft-teams-vs-slack-for-power-user",
+      "exists": true,
+      "x_name": "Microsoft Teams",
+      "y_name": "Slack",
+      "persona": "Power user"
+    },
+    {
+      "title": "Basecamp vs Microsoft Teams for Power users",
+      "slug": "basecamp-vs-microsoft-teams-for-power-user",
+      "exists": true,
+      "x_name": "Basecamp",
+      "y_name": "Microsoft Teams",
+      "persona": "Power user"
+    },
+    {
+      "title": "Microsoft Teams vs Twist for Power users",
+      "slug": "microsoft-teams-vs-twist-for-power-user",
+      "exists": true,
+      "x_name": "Microsoft Teams",
+      "y_name": "Twist",
+      "persona": "Power user"
+    }
+  ]
+}
