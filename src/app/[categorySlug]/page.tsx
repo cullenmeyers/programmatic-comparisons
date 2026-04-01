@@ -73,6 +73,7 @@ const CATEGORY_CHOICE_HINTS: Record<string, string> = {
 
 type DecisionPersona = {
   name: string;
+  explanation: string;
   comparisonSlugs: string[];
 };
 
@@ -84,42 +85,52 @@ type TopComparison = {
 const TASK_MANAGER_PERSONAS: DecisionPersona[] = [
   {
     name: "Beginner",
+    explanation:
+      "Setup breaks first here. If the tool makes you learn a system before adding a task, it already lost.",
     comparisonSlugs: [
       "apple-reminders-vs-omnifocus-for-beginner",
       "notion-vs-todoist-for-beginner",
-      "jira-vs-trello-for-beginner",
       "google-tasks-vs-trello-for-beginner",
+      "clickup-vs-microsoft-to-do-for-beginner",
     ],
   },
   {
     name: "Solo user",
+    explanation:
+      "Maintenance breaks first here. If the tool needs constant cleanup, redesign, or infrastructure care, it stops being useful.",
     comparisonSlugs: [
       "microsoft-to-do-vs-notion-for-solo-user",
       "apple-reminders-vs-sunsama-for-solo-user",
       "trello-vs-wekan-for-solo-user",
-      "taskboard-vs-trello-for-solo-user",
+      "asana-vs-microsoft-to-do-for-solo-user",
     ],
   },
   {
     name: "Student",
+    explanation:
+      "Switching cost breaks first here. If the setup takes longer than the semester benefit, the tool fails.",
     comparisonSlugs: [
       "todoist-vs-trello-for-student",
       "apple-reminders-vs-things-3-for-student",
       "sunsama-vs-todoist-for-student",
-      "microsoft-planner-vs-trello-for-student",
+      "google-tasks-vs-superlist-for-student",
     ],
   },
   {
     name: "Busy professional",
+    explanation:
+      "Daily friction breaks first here. If capture or execution takes extra steps, the tool loses under time pressure.",
     comparisonSlugs: [
       "apple-reminders-vs-asana-for-busy-professional",
       "apple-reminders-vs-sunsama-for-busy-professional",
       "clickup-vs-todoist-for-busy-professional",
-      "motion-vs-todoist-for-busy-professional",
+      "linear-vs-todoist-for-busy-professional",
     ],
   },
   {
     name: "Power user",
+    explanation:
+      "Ceiling breaks first here. If the structure caps out under filtering, dependencies, or workflow depth, it fails.",
     comparisonSlugs: [
       "asana-vs-trello-for-power-user",
       "microsoft-to-do-vs-omnifocus-for-power-user",
@@ -129,6 +140,8 @@ const TASK_MANAGER_PERSONAS: DecisionPersona[] = [
   },
   {
     name: "Non-technical user",
+    explanation:
+      "Fear of breaking things breaks first here. If the structure feels fragile or easy to misconfigure, trust disappears.",
     comparisonSlugs: [
       "microsoft-planner-vs-microsoft-to-do-for-non-technical-user",
       "apple-reminders-vs-trello-for-non-technical-user",
@@ -138,6 +151,8 @@ const TASK_MANAGER_PERSONAS: DecisionPersona[] = [
   },
   {
     name: "Minimalist",
+    explanation:
+      "Feature weight breaks first here. If the tool adds modes, views, or workflow layers before simple capture, it fails.",
     comparisonSlugs: [
       "any-do-vs-apple-reminders-for-minimalist",
       "apple-reminders-vs-clickup-for-minimalist",
@@ -150,31 +165,35 @@ const TASK_MANAGER_PERSONAS: DecisionPersona[] = [
 const TASK_MANAGER_TOP_COMPARISONS: TopComparison[] = [
   {
     slug: "apple-reminders-vs-omnifocus-for-beginner",
-    failureMechanism: "Framework overhead before capture.",
+    failureMechanism: "Too much system before simple capture.",
   },
   {
     slug: "apple-reminders-vs-sunsama-for-busy-professional",
-    failureMechanism: "Daily planning ritual before execution.",
+    failureMechanism: "Planning ritual before daily execution.",
   },
   {
     slug: "microsoft-to-do-vs-notion-for-solo-user",
-    failureMechanism: "System redesign and upkeep over time.",
+    failureMechanism: "Maintenance overhead over time.",
   },
   {
     slug: "todoist-vs-trello-for-student",
-    failureMechanism: "Board setup that outlasts the semester.",
+    failureMechanism: "Structure heavier than the time horizon.",
   },
   {
     slug: "microsoft-planner-vs-microsoft-to-do-for-non-technical-user",
-    failureMechanism: "Structure that feels easy to get wrong.",
+    failureMechanism: "Formal structure that feels easy to break.",
   },
   {
     slug: "asana-vs-trello-for-power-user",
-    failureMechanism: "Ceiling hit when dependencies matter.",
+    failureMechanism: "Coordination breaks when dependencies matter.",
   },
   {
     slug: "apple-reminders-vs-clickup-for-minimalist",
-    failureMechanism: "Feature weight and decision drag.",
+    failureMechanism: "Too much system before a basic checklist.",
+  },
+  {
+    slug: "taskwarrior-vs-todoist-for-power-user",
+    failureMechanism: "GUI ceiling when programmable control matters.",
   },
 ];
 
@@ -210,9 +229,9 @@ function renderTaskManagersHub() {
         <SectionHeading title="One-Second Verdict" />
         <Card className="space-y-3">
           <p className="text-base leading-7 text-black/80">
-            Task managers do not fail on features. They fail when setup blocks
-            capture, when daily use adds friction, when upkeep becomes its own
-            job, or when the system caps out under real complexity.
+            Most task managers fail when the system gets in the way of the
+            task. What breaks first is usually setup, daily friction, upkeep,
+            switching cost, fragility, or ceiling.
           </p>
           <p className="text-base leading-7 text-black/80">
             The winner is the tool that does not break first under your
@@ -225,12 +244,12 @@ function renderTaskManagersHub() {
         <SectionHeading title="Quick Decision" />
         <Card>
           <ul className="list-disc space-y-2 pl-5 text-sm leading-6 text-black/80">
-            <li>If setup must disappear -&gt; Apple Reminders</li>
-            <li>If daily speed matters more than system depth -&gt; Todoist</li>
-            <li>If you want a visual board without process overhead -&gt; Trello</li>
-            <li>If strict GTD depth is the constraint -&gt; OmniFocus</li>
-            <li>If engineering workflow structure is the constraint -&gt; Jira</li>
-            <li>If task dependencies must stay visible -&gt; Taskheat</li>
+            <li>If setup friction is the thing that will kill adoption -&gt; Apple Reminders</li>
+            <li>If daily speed is the thing that will kill consistency -&gt; Todoist</li>
+            <li>If you need board structure without enterprise drag -&gt; Trello</li>
+            <li>If GTD depth is the thing that will cap you -&gt; OmniFocus</li>
+            <li>If engineering workflow structure is the thing that matters -&gt; Jira</li>
+            <li>If dependency visibility is the thing that will break planning -&gt; Taskheat</li>
           </ul>
         </Card>
       </section>
@@ -240,9 +259,14 @@ function renderTaskManagersHub() {
         <div className="grid gap-4 lg:grid-cols-2">
           {personas.map((persona) => (
             <Card key={persona.name} className="space-y-3">
-              <h2 className="text-lg font-semibold tracking-tight text-black">
-                {persona.name}
-              </h2>
+              <div className="space-y-1">
+                <h2 className="text-lg font-semibold tracking-tight text-black">
+                  {persona.name}
+                </h2>
+                <p className="text-sm leading-6 text-black/65">
+                  {persona.explanation}
+                </p>
+              </div>
               <div className="space-y-2 text-sm leading-6">
                 {persona.comparisons.map((comparison) => (
                   <Link
@@ -285,13 +309,13 @@ function renderTaskManagersHub() {
             Pick the tool that does not break first under your constraint.
           </p>
           <p className="text-sm leading-6 text-black/80">
-            If setup is the failure point, pick the tool that works before
-            configuration. If upkeep is the failure point, pick the tool that
-            stays useful without maintenance.
+            Start with the constraint that will create friction fastest for you:
+            setup, upkeep, speed, switching cost, fragility, or ceiling.
           </p>
           <p className="text-sm leading-6 text-black/80">
-            If ceiling is the failure point, pick the tool that still holds when
-            work gets more complex.
+            Then open the comparison where that failure mechanism is tested most
+            directly. The right click is the one that gets you to the first real
+            break point fastest.
           </p>
         </Card>
       </section>
