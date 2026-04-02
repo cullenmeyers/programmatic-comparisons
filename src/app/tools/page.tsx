@@ -147,8 +147,7 @@ export default async function ToolsIndexPage({
           Find the right tool
         </h1>
         <p className="max-w-2xl text-sm leading-6 text-black/70">
-          Start with what matters most. Pick the path that is least likely to
-          break first.
+          Start with what breaks first for you.
         </p>
       </header>
 
