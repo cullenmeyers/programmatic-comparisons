@@ -52,6 +52,7 @@ type FilterCopy = {
   intro: string[];
   startHere: string[];
   skipThis: string[];
+  topFailureLine: string;
   failureExplanation: string[];
   failsHere: string;
   survivesHere: string;
@@ -80,6 +81,8 @@ function getFilterCopy(
             "You care more about advanced workflow depth than daily speed.",
             "You are willing to trade speed for more structure and control.",
           ],
+          topFailureLine:
+            "If the tool is slower than the task, it fails this filter.",
           failureExplanation: [
             "This filter removes task managers that slow down basic daily actions.",
             "They break when capture, planning, or checking off work takes more effort than the task itself.",
@@ -93,167 +96,175 @@ function getFilterCopy(
       return {
         intro: [
           `Use this filter when daily speed matters and you need ${categoryLabel.toLowerCase()} that works fast without adding workflow overhead.`,
-          `It narrows options around ${lensName.toLowerCase()}: fast operation, fewer decisions, and less drag in repeated use.`,
-          "Tools fail here when routine actions take too many steps or attention.",
+          `It narrows options around ${lensName.toLowerCase()}: fewer steps, fewer decisions, and less drag in repeated use.`,
         ],
         startHere: [
-          "You use this category often and want shorter routine workflows.",
-          "You care more about fast repeated use than extra flexibility.",
+          "You use this tool often and want the routine workflow to stay short.",
+          "You care more about speed in repeated use than extra flexibility.",
         ],
         skipThis: [
-          "You are okay with slower daily use in exchange for other strengths.",
+          "You are willing to accept slower daily use for other strengths.",
         ],
+        topFailureLine:
+          "If routine actions take too many steps, the tool fails this filter.",
         failureExplanation: [
           "This filter removes tools that slow down normal use.",
-          "They usually break when routine actions require too many steps or too much attention.",
+          "They break when routine actions require too many steps or too much attention.",
         ],
         failsHere:
-          "These tools break when repeated actions feel slower than the job itself.",
+          "More clicks, more steps, more attention for routine work.",
         survivesHere:
-          "These tools stay safe when common actions are quick and the path stays obvious.",
+          "Short paths, fast repeat actions, and obvious next steps.",
       };
     case "setup-tolerance":
       return {
         intro: [
           `Use this filter when you want to get started with ${categoryLabel.toLowerCase()} quickly and avoid front-loaded setup before the basic job is even live.`,
-          `It narrows options around ${lensName.toLowerCase()}: fast starts, low setup drag, and a shorter path from signup to useful output.`,
-          "Tools fail here when setup shows up before value does.",
+          `It narrows options around ${lensName.toLowerCase()}: fast starts and a shorter path to useful output.`,
         ],
         startHere: [
-          "You want to get to a working result quickly.",
-          "You do not want to configure a system before using it.",
+          "You want a working result quickly.",
+          "You do not want to configure a system before it proves useful.",
         ],
         skipThis: ["You are comfortable with heavier setup if it pays off later."],
+        topFailureLine:
+          "If setup shows up before value, the tool fails this filter.",
         failureExplanation: [
           "This filter removes tools that make you build the system before you can use it.",
-          "They usually break when configuration delays the first useful result.",
+          "They break when configuration delays the first useful result.",
         ],
         failsHere:
-          "These tools break when setup, structure, or account work blocks the first real result.",
+          "More setup, more structure, more work before the first result.",
         survivesHere:
-          "These tools stay safe when you can start quickly and postpone heavier setup until later.",
+          "Quick starts and useful output before heavy setup.",
       };
     case "maintenance-load":
       return {
         intro: [
           `Use this filter when you want ${categoryLabel.toLowerCase()} that stays useful without regular tending, cleanup, or admin upkeep.`,
-          `It narrows options around ${lensName.toLowerCase()}: tools that do the job without turning into something you have to babysit.`,
-          "Tools fail here when they keep asking for ongoing cleanup or adjustment.",
+          `It narrows options around ${lensName.toLowerCase()}: tools that do the job without becoming maintenance work.`,
         ],
         startHere: [
-          "You want a tool that stays usable with light-touch ownership.",
-          "You do not want recurring cleanup to keep things working.",
+          "You want the tool to stay usable without babysitting it.",
+          "You do not want recurring cleanup just to keep things working.",
         ],
         skipThis: ["You are fine managing and tuning the tool regularly."],
+        topFailureLine:
+          "If the tool creates recurring upkeep, it fails this filter.",
         failureExplanation: [
           "This filter removes tools that keep asking for upkeep after the initial setup.",
-          "They usually break when staying organized becomes a repeating chore.",
+          "They break when staying organized becomes a repeating chore.",
         ],
         failsHere:
-          "These tools break when cleanup, monitoring, or workflow maintenance becomes part of normal use.",
+          "Ongoing cleanup, adjustments, or maintenance as part of normal use.",
         survivesHere:
-          "These tools stay safe when they remain stable without constant attention.",
+          "Stable day-to-day use with little ongoing attention.",
       };
     case "switching-cost":
       return {
         intro: [
           `Use this filter when your use is short-term, tentative, or likely to change and you do not want heavy setup that only pays back after a long commitment.`,
-          `It narrows options around ${lensName.toLowerCase()}: low commitment, easy exits, and getting value now without building around a tool you may not keep.`,
-          "Tools fail here when they ask for too much commitment up front.",
+          `It narrows options around ${lensName.toLowerCase()}: low commitment and useful results without long lock-in.`,
         ],
         startHere: [
           "You may switch tools later.",
           "You want value now without deep lock-in.",
         ],
         skipThis: ["You are happy to invest heavily in a long-term system."],
+        topFailureLine:
+          "If the tool demands commitment before it proves itself, it fails this filter.",
         failureExplanation: [
           "This filter removes tools that are expensive to unwind once you have configured them.",
-          "They usually break when deep setup only makes sense if you plan to stay.",
+          "They break when deep setup only makes sense if you plan to stay.",
         ],
         failsHere:
-          "These tools break when setup, migration, or habit changes create too much commitment.",
+          "Too much setup, migration effort, or habit change for a tentative choice.",
         survivesHere:
-          "These tools stay safe when they are easy to start, easy to leave, and still useful right away.",
+          "Easy to start, easy to leave, and useful right away.",
       };
     case "ceiling-check":
       return {
         intro: [
           `Use this filter when you expect your needs to grow and want ${categoryLabel.toLowerCase()} that will not cap out too early.`,
-          `It narrows options around ${lensName.toLowerCase()}: headroom, flexibility, and avoiding tools that become the bottleneck later.`,
-          "Tools fail here when limits arrive before your workflow is done growing.",
+          `It narrows options around ${lensName.toLowerCase()}: more headroom before the tool becomes the bottleneck.`,
         ],
         startHere: [
           "You expect your workflow to get deeper or more demanding.",
           "You want to avoid outgrowing the tool too soon.",
         ],
         skipThis: ["You only need something small and lightweight for now."],
+        topFailureLine:
+          "If the limits arrive before your workflow is mature, the tool fails this filter.",
         failureExplanation: [
           "This filter removes tools whose limits arrive too early.",
-          "They usually break when scale, depth, or control matters more than it did at the start.",
+          "They break when scale, depth, or control matters more than it did at the start.",
         ],
         failsHere:
-          "These tools break when automation, scale, or control tops out too soon.",
+          "An early ceiling on scale, depth, automation, or control.",
         survivesHere:
-          "These tools stay safe when they leave room to grow without forcing an early migration.",
+          "More room to grow before a migration becomes necessary.",
       };
     case "fear-of-breaking":
       return {
         intro: [
           `Use this filter when fragility is the real risk and you want ${categoryLabel.toLowerCase()} that does not feel easy to misconfigure or accidentally break.`,
-          `It narrows options around ${lensName.toLowerCase()}: safer defaults, lower misconfiguration risk, and less fragility in normal use.`,
-          "Tools fail here when small mistakes quietly break the result.",
+          `It narrows options around ${lensName.toLowerCase()}: safer defaults and less fragility in normal use.`,
         ],
         startHere: [
           "You care more about safe defaults than maximum control.",
           "You want a tool that feels forgiving in normal use.",
         ],
         skipThis: ["You are comfortable managing brittle setup or advanced configuration."],
+        topFailureLine:
+          "If one wrong setting can quietly break things, the tool fails this filter.",
         failureExplanation: [
           "This filter removes tools that punish small mistakes or feel easy to mis-set.",
-          "They usually break when settings are brittle or a wrong choice quietly causes problems.",
+          "They break when settings are brittle or a wrong choice quietly causes problems.",
         ],
         failsHere:
-          "These tools break when the workflow is easy to misconfigure or accidentally break.",
+          "Brittle settings and an easy path to accidental breakage.",
         survivesHere:
-          "These tools stay safe when defaults are forgiving and normal use does not feel fragile.",
+          "Forgiving defaults and normal use that does not feel fragile.",
       };
     case "feature-aversion":
       return {
         intro: [
           `Use this filter when you want ${categoryLabel.toLowerCase()} to stay simple and do not want extra layers, extra automation, or unnecessary complexity.`,
-          `It narrows options around ${lensName.toLowerCase()}: fewer moving parts and less feature weight between you and the core job.`,
-          "Tools fail here when basic use feels more complicated than it should.",
+          `It narrows options around ${lensName.toLowerCase()}: less feature weight between you and the core job.`,
         ],
         startHere: [
-          "You want a smaller surface area and less feature weight.",
+          "You want a smaller surface area.",
           "You care more about simplicity than extra capabilities.",
         ],
         skipThis: ["You want bundled features and do not mind extra layers."],
+        topFailureLine:
+          "If basic use feels more complicated than the job requires, the tool fails this filter.",
         failureExplanation: [
           "This filter removes tools that over-expand the workflow with features you did not ask for.",
-          "They usually break when extra controls and layers get in the way of basic use.",
+          "They break when extra controls and layers get in the way of basic use.",
         ],
         failsHere:
-          "These tools break when the surface area becomes larger than the job requires.",
+          "Too many layers, controls, or bundled features for the basic job.",
         survivesHere:
-          "These tools stay safe when you can do the core job without navigating a larger system.",
+          "A smaller surface area and a direct path to the core job.",
       };
     default:
       return {
         intro: [
           `Use this filter to narrow ${categoryLabel.toLowerCase()} around the specific pressure represented by ${lensName.toLowerCase()}.`,
-          `It keeps the page focused on ${lensName.toLowerCase()} rather than generic feature comparison.`,
-          "Tools fail here when they create the kind of friction this filter is meant to avoid.",
+          `It keeps the page focused on ${lensName.toLowerCase()} instead of generic feature comparison.`,
         ],
         startHere: ["You want to filter around this specific constraint first."],
         skipThis: ["Another filter is a better match for your main risk."],
+        topFailureLine:
+          "If the tool creates the friction this filter is meant to avoid, it fails here.",
         failureExplanation: [
           "This filter removes options that predictably break first under this constraint.",
         ],
         failsHere:
-          "These tools break when they create the friction this filter is trying to avoid.",
+          "The failure pattern this filter is trying to avoid.",
         survivesHere:
-          "These tools stay safe when they remain workable under this exact constraint.",
+          "A workable fit under this exact constraint.",
       };
   }
 }
@@ -329,7 +340,7 @@ export default async function CategoryGatePage({
       <Card className="space-y-3">
         <SectionHeading title="Start here" />
         <p className="text-sm font-medium leading-6 text-black/80">
-          If the tool is slower than the task, it fails this filter.
+          {filterCopy.topFailureLine}
         </p>
         <div className="grid gap-5 sm:grid-cols-2">
           <div>
