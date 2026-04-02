@@ -89,23 +89,69 @@ function SelectField({
   onChange: (next: string) => void;
   options: string[];
 }) {
+  const [isOpen, setIsOpen] = React.useState(false);
+
   return (
     <label className="block space-y-2">
       <span className="text-xs font-semibold uppercase tracking-wide text-black/55">
         {label}
       </span>
-      <select
-        className="w-full rounded-lg border border-black/15 bg-white px-3 py-2.5 text-sm text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/30"
-        value={value}
-        onChange={(event) => onChange(event.target.value)}
-      >
-        <option value="">Select a tool...</option>
-        {options.map((option) => (
-          <option key={option} value={option}>
-            {option}
-          </option>
-        ))}
-      </select>
+      <div className="relative">
+        <button
+          type="button"
+          aria-haspopup="listbox"
+          aria-expanded={isOpen}
+          className="flex w-full items-center justify-between rounded-lg border border-black/15 bg-white px-3 py-2.5 text-left text-sm text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/30"
+          onClick={() => setIsOpen((open) => !open)}
+          onBlur={(event) => {
+            if (!event.currentTarget.parentElement?.contains(event.relatedTarget as Node)) {
+              setIsOpen(false);
+            }
+          }}
+        >
+          <span className={value ? "text-black" : "text-black/55"}>
+            {value || "Select a tool..."}
+          </span>
+          <span className="ml-3 text-black/45">{isOpen ? "▲" : "▼"}</span>
+        </button>
+
+        {isOpen && (
+          <div className="absolute left-0 right-0 top-[calc(100%+0.5rem)] z-20 overflow-hidden rounded-lg border border-black/10 bg-white shadow-lg">
+            <ul className="max-h-60 overflow-y-auto py-1" role="listbox" tabIndex={-1}>
+              <li>
+                <button
+                  type="button"
+                  className="block w-full px-3 py-2 text-left text-sm text-black/60 hover:bg-black/[0.04]"
+                  onMouseDown={(event) => event.preventDefault()}
+                  onClick={() => {
+                    onChange("");
+                    setIsOpen(false);
+                  }}
+                >
+                  Select a tool...
+                </button>
+              </li>
+              {options.map((option) => (
+                <li key={option}>
+                  <button
+                    type="button"
+                    className={`block w-full px-3 py-2 text-left text-sm hover:bg-black/[0.04] ${
+                      option === value ? "bg-black/[0.05] font-medium text-black" : "text-black/80"
+                    }`}
+                    onMouseDown={(event) => event.preventDefault()}
+                    onClick={() => {
+                      onChange(option);
+                      setIsOpen(false);
+                    }}
+                  >
+                    {option}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
     </label>
   );
 }
@@ -127,6 +173,19 @@ export default function CategoryGateClient({ gate }: { gate: CategoryGateSpec })
   const aEntry = aPick ? getToolEntry(gate, aPick) : undefined;
   const bEntry = bPick ? getToolEntry(gate, bPick) : undefined;
   const twoReady = !!aPick && !!bPick && aPick !== bPick;
+  const oneResultCardClassName = oneEntry
+    ? oneEntry.fails
+      ? "border-red-200 bg-red-50 text-red-950"
+      : "border-emerald-200 bg-emerald-50 text-emerald-950"
+    : "border-black/10 bg-black/[0.02] text-black/75";
+
+  const getCompareToolCardClassName = (entry?: { fails: boolean }) => {
+    if (!entry) return "border-black/10 bg-white text-black/75";
+
+    return entry.fails
+      ? "border-red-200 bg-red-50 text-red-950"
+      : "border-emerald-200 bg-emerald-50 text-emerald-950";
+  };
 
   let twoSummary: { headline: string; detail?: string } | null = null;
   if (twoReady && aEntry && bEntry) {
@@ -192,32 +251,31 @@ export default function CategoryGateClient({ gate }: { gate: CategoryGateSpec })
             options={toolNames}
           />
 
-          <div className="rounded-lg border border-black/10 bg-black/[0.02] p-4 text-sm text-black/75">
+          <div
+            className={`rounded-lg border p-4 text-sm ${oneResultCardClassName}`}
+          >
             {!onePick && <p>Make a selection to see whether it passes this filter.</p>}
 
             {onePick && oneEntry && (
               <div className="space-y-2">
-                <p className="font-medium text-black/90">
+                <p className="font-medium text-current">
                   {oneEntry.fails
                     ? "This tool fails first under this constraint."
-                    : "This tool is unlikely to fail early under this constraint."}
+                    : "This tool holds up well under this constraint."}
                 </p>
                 {oneEntry.fails ? (
                   <div className="space-y-1">
                     <p>{getFailureSummary(gate.constraintSlug, onePick)}</p>
                     {oneEntry.note && (
-                      <p className="text-black/70">
+                      <p className="text-current/80">
                         <span className="font-medium">Why:</span> {oneEntry.note}
                       </p>
                     )}
                   </div>
                 ) : (
-                  <div className="space-y-1 text-black/70">
+                  <div className="space-y-1 text-current/80">
                     <p>{getSurvivalSummary(gate.constraintSlug, onePick)}</p>
-                    <p>
-                      <span className="font-medium">Why:</span> It is not marked as a
-                      failure in this gate.
-                    </p>
+                    <p>It avoids the patterns that usually cause tools to break here.</p>
                   </div>
                 )}
               </div>
@@ -280,7 +338,7 @@ export default function CategoryGateClient({ gate }: { gate: CategoryGateSpec })
                   <p className="text-xs font-semibold uppercase tracking-wide text-black/55">
                     Verdict
                   </p>
-                  <p className="mt-2 font-medium text-black/90">{twoSummary.headline}</p>
+                  <p className="mt-2 font-medium text-current">{twoSummary.headline}</p>
                 </div>
 
                 {aEntry.fails !== bEntry.fails && twoSummary.detail && (
@@ -288,32 +346,36 @@ export default function CategoryGateClient({ gate }: { gate: CategoryGateSpec })
                     <p className="text-xs font-semibold uppercase tracking-wide text-black/55">
                       Why {aEntry.fails ? aPick : bPick} fails
                     </p>
-                    <p className="mt-2 text-black/70">{twoSummary.detail}</p>
+                    <p className="mt-2 text-current/80">{twoSummary.detail}</p>
                   </div>
                 )}
 
                 {aEntry.fails === bEntry.fails && twoSummary.detail && (
-                  <p className="text-black/70">{twoSummary.detail}</p>
+                  <p className="text-current/80">{twoSummary.detail}</p>
                 )}
 
                 <div className="grid gap-3 sm:grid-cols-2">
-                  <div className="rounded-lg border border-black/10 bg-white p-3">
+                  <div
+                    className={`rounded-lg border p-3 ${getCompareToolCardClassName(aEntry)}`}
+                  >
                     <p className="text-xs uppercase tracking-wide text-black/55">Tool A</p>
-                    <p className="mt-1 font-medium text-black/90">{aPick}</p>
+                    <p className="mt-1 font-medium text-current">{aPick}</p>
                     <p className="mt-2">{aEntry.fails ? "Fails first" : "Survives longer"}</p>
                     {aEntry.fails && aEntry.note && (
-                      <p className="mt-1 text-black/70">
+                      <p className="mt-1 text-current/80">
                         <span className="font-medium">Why:</span> {aEntry.note}
                       </p>
                     )}
                   </div>
 
-                  <div className="rounded-lg border border-black/10 bg-white p-3">
+                  <div
+                    className={`rounded-lg border p-3 ${getCompareToolCardClassName(bEntry)}`}
+                  >
                     <p className="text-xs uppercase tracking-wide text-black/55">Tool B</p>
-                    <p className="mt-1 font-medium text-black/90">{bPick}</p>
+                    <p className="mt-1 font-medium text-current">{bPick}</p>
                     <p className="mt-2">{bEntry.fails ? "Fails first" : "Survives longer"}</p>
                     {bEntry.fails && bEntry.note && (
-                      <p className="mt-1 text-black/70">
+                      <p className="mt-1 text-current/80">
                         <span className="font-medium">Why:</span> {bEntry.note}
                       </p>
                     )}
