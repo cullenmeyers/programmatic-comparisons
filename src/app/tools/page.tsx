@@ -63,6 +63,90 @@ const SECONDARY_CARDS: EntryCard[] = [
   },
 ];
 
+type EntryCardsSectionProps = {
+  title: string;
+  cards: EntryCard[];
+  categories: CategorySummary[];
+  selectedCategory: CategorySummary;
+  featured?: boolean;
+};
+
+function EntryCardsSection({
+  title,
+  cards,
+  categories,
+  selectedCategory,
+  featured = false,
+}: EntryCardsSectionProps) {
+  return (
+    <section className="content-stack gap-4">
+      <SectionHeading title={title} />
+      <div className="grid gap-4 md:grid-cols-2">
+        {cards.map((card) => {
+          const target = findTarget(categories, selectedCategory, card.slug);
+
+          return (
+            <Link
+              key={card.slug}
+              href={target.href}
+              className={cx(
+                "group rounded-2xl border p-5 transition-all",
+                featured
+                  ? "border-black/15 bg-black/[0.03] md:p-6"
+                  : "border-black/10 bg-white",
+                "hover:-translate-y-0.5 hover:border-black/25 hover:bg-black/[0.05]",
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/30"
+              )}
+            >
+              <div className="space-y-3">
+                <p
+                  className={cx(
+                    "font-semibold tracking-tight text-black",
+                    featured ? "text-lg sm:text-xl" : "text-base"
+                  )}
+                >
+                  {card.title}
+                </p>
+                <p className="text-sm leading-6 text-black/70">
+                  {card.description}
+                </p>
+              </div>
+            </Link>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
+type StartHereSectionProps = {
+  categories: CategorySummary[];
+  selectedCategory: CategorySummary;
+};
+
+function StartHereSection({
+  categories,
+  selectedCategory,
+}: StartHereSectionProps) {
+  return (
+    <div className="content-stack gap-8">
+      <EntryCardsSection
+        title="Start here"
+        cards={START_HERE_CARDS}
+        categories={categories}
+        selectedCategory={selectedCategory}
+        featured
+      />
+      <EntryCardsSection
+        title="Or choose what matters most"
+        cards={SECONDARY_CARDS}
+        categories={categories}
+        selectedCategory={selectedCategory}
+      />
+    </div>
+  );
+}
+
 function groupCategories(gates: CategoryGateSpec[]) {
   const byCategory = new Map<string, CategoryGateSpec[]>();
 
@@ -151,83 +235,13 @@ export default async function ToolsIndexPage({
         </p>
       </header>
 
-      <section className="content-stack gap-4">
-        <SectionHeading
-          title="Start Here"
-          subtitle="If you are not sure where to begin, start with one of these."
-        />
-        <div className="grid gap-4 md:grid-cols-2">
-          {START_HERE_CARDS.map((card) => {
-            const target = findTarget(categories, selectedCategory, card.slug);
-
-            return (
-              <Link
-                key={card.slug}
-                href={target.href}
-                className={cx(
-                  "group rounded-2xl border border-black/15 bg-black/[0.03] p-5 transition-all",
-                  "hover:-translate-y-0.5 hover:border-black/25 hover:bg-black/[0.05]",
-                  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/30"
-                )}
-              >
-                <div className="space-y-3">
-                  <p className="text-lg font-semibold tracking-tight text-black">
-                    {card.title}
-                  </p>
-                  <p className="text-sm leading-6 text-black/70">
-                    {card.description}
-                  </p>
-                  <span className="inline-flex text-sm font-semibold text-black">
-                    {target.cta}
-                  </span>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
-      </section>
-
-      <section className="content-stack gap-4">
-        <SectionHeading
-          title="Or Choose What Matters Most"
-          subtitle="Use one of these if your main risk is more specific."
-        />
-        <div className="grid gap-4 md:grid-cols-2">
-          {SECONDARY_CARDS.map((card) => {
-            const target = findTarget(categories, selectedCategory, card.slug);
-
-            return (
-              <Link
-                key={card.slug}
-                href={target.href}
-                className={cx(
-                  "group rounded-2xl border border-black/10 bg-white p-5 transition-all",
-                  "hover:-translate-y-0.5 hover:border-black/20 hover:bg-black/[0.02]",
-                  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/30"
-                )}
-              >
-                <div className="space-y-3">
-                  <p className="text-base font-semibold tracking-tight text-black">
-                    {card.title}
-                  </p>
-                  <p className="text-sm leading-6 text-black/70">
-                    {card.description}
-                  </p>
-                  <span className="inline-flex text-sm font-medium text-black/80">
-                    {target.cta}
-                  </span>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
-      </section>
+      <StartHereSection
+        categories={categories}
+        selectedCategory={selectedCategory}
+      />
 
       <section className="content-stack gap-3">
-        <SectionHeading
-          title="Already Know the Category?"
-          subtitle="Start there."
-        />
+        <SectionHeading title="Already know the category? Start there." />
         <div className="flex flex-wrap gap-2">
           {categories.map((category) => (
             <Link
