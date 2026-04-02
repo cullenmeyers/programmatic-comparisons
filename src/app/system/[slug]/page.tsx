@@ -28,6 +28,10 @@ export async function generateMetadata({
       alternates: {
         canonical: absoluteUrl(`/system/${slug}`),
       },
+      robots: {
+        index: false,
+        follow: false,
+      },
     };
   }
 
@@ -36,6 +40,10 @@ export async function generateMetadata({
     description: doc.summary ?? "Public system architecture and decision rules.",
     alternates: {
       canonical: absoluteUrl(`/system/${slug}`),
+    },
+    robots: {
+      index: false,
+      follow: false,
     },
   };
 }

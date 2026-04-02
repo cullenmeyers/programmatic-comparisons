@@ -15,6 +15,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: absoluteUrl("/system"),
   },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 function formatDate(value?: string) {
