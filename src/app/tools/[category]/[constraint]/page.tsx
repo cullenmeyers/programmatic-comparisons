@@ -67,28 +67,27 @@ function getFilterCopy(
       if (categoryLabel === "Task Managers") {
         return {
           intro: [
-            "Use this filter when task management has to stay quick in the middle of a busy day.",
-            "It narrows task managers that let you capture, review, and finish work without extra planning overhead.",
-            "Tools fail here when routine actions turn into setup, sorting, or too many decisions.",
+            "Use this filter when your task manager needs to stay fast under real daily pressure.",
+            "It narrows task managers that let you capture, review, and finish work without planning drag.",
+            "If basic task handling turns into sorting, setup, or extra decisions, the tool fails here.",
           ],
           startHere: [
-            "You add and check tasks in short bursts between meetings or other work.",
-            "You want a task manager you can trust without rebuilding your system every day.",
-            "Your current app feels slower than the task itself.",
+            "You manage tasks in short bursts and need to get in and out fast.",
+            "Your current system takes too long to capture, review, or check off simple work.",
+            "You want a tool that helps immediately without daily re-planning.",
           ],
           skipThis: [
-            "You are optimizing for complex workflows, team coordination, or deep project structure first.",
-            "You are willing to accept more daily overhead in exchange for more control.",
+            "You care more about advanced workflow depth than daily speed.",
+            "You are willing to trade speed for more structure and control.",
           ],
           failureExplanation: [
-            "This filter removes task managers that add friction to basic daily actions.",
-            "They usually break when capture, planning, and checking off work takes too many steps.",
-            "When that happens, the system starts competing with the work instead of supporting it.",
+            "This filter removes task managers that slow down basic daily actions.",
+            "They break when capture, planning, or checking off work takes more effort than the task itself.",
           ],
           failsHere:
-            "These tools break when simple task management turns into extra clicks, extra screens, or extra planning before you can act.",
+            "More setup, more screens, more decisions before you can act.",
           survivesHere:
-            "These tools stay safe when the next step is obvious, repeated actions are fast, and the app does not demand constant mental overhead.",
+            "Quick capture, obvious next steps, and fast repeat use.",
         };
       }
       return {
@@ -327,8 +326,11 @@ export default async function CategoryGatePage({
         </p>
       </header>
 
-      <Card className="space-y-4">
+      <Card className="space-y-3">
         <SectionHeading title="Start here" />
+        <p className="text-sm font-medium leading-6 text-black/80">
+          If the tool is slower than the task, it fails this filter.
+        </p>
         <div className="grid gap-5 sm:grid-cols-2">
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
@@ -371,13 +373,13 @@ export default async function CategoryGatePage({
         <Card className="space-y-4">
           <SectionHeading title="What survives vs fails" />
           <div className="grid gap-5 sm:grid-cols-2">
-            <div className="space-y-2">
+            <div className="space-y-2 rounded-lg border border-red-200 bg-red-50 p-4">
               <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
                 Fails here
               </h3>
               <p className="text-sm leading-6 text-black/75">{filterCopy.failsHere}</p>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 rounded-lg border border-emerald-200 bg-emerald-50 p-4">
               <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
                 Survives here
               </h3>
