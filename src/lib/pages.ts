@@ -7,6 +7,7 @@ export type PageDoc = {
   category?: string;
   categorySlug?: string;
   constraintSlug?: string;
+  meta_title_suffix?: string;
   oneSecondVerdict?: {
     winnerLabel: string;
     summary: string;
@@ -74,6 +75,8 @@ export type PublishedRelatedPage = {
 };
 
 const PAGES_DIR = path.join(process.cwd(), "content", "pages");
+const COMPARISON_TITLE_SUFFIX_REGEX =
+  /\s+(?:-|—)\s+(Clear Winner|Don't Pick Wrong|Which One Breaks First\?)$/i;
 
 export const LOCKED_PERSONA_ORDER = [
   "Beginner",
@@ -109,8 +112,36 @@ export function buildRelatedPageTitle(
   return `${xName} vs ${yName} for ${persona}`;
 }
 
+export function stripComparisonTitleSuffix(title: string) {
+  return String(title || "").trim().replace(COMPARISON_TITLE_SUFFIX_REGEX, "").trim();
+}
+
+export function getComparisonDisplayTitle(title: string) {
+  return stripComparisonTitleSuffix(title);
+}
+
+function getComparisonTitleSuffix(doc: PageDoc): string | null {
+  const suffix = String(doc.meta_title_suffix || "").trim();
+  if (!suffix || doc.verdict.winner === "depends") {
+    return null;
+  }
+
+  const decisionRule = String(doc.verdict?.decision_rule || "").trim();
+  const failureReason = String(doc.oneSecondVerdict?.reason || "").trim();
+  const hasClearFailureMechanism =
+    /fails first/i.test(decisionRule) && /fails first/i.test(failureReason);
+
+  return hasClearFailureMechanism ? suffix : null;
+}
+
+export function getComparisonSeoTitle(doc: PageDoc) {
+  const baseTitle = getComparisonDisplayTitle(doc.title);
+  const suffix = getComparisonTitleSuffix(doc);
+  return suffix ? `${baseTitle} - ${suffix}` : baseTitle;
+}
+
 function parseRelatedTitle(title: string) {
-  const [pairPart, ...rest] = String(title || "").split(" for ");
+  const [pairPart, ...rest] = getComparisonDisplayTitle(title).split(" for ");
   const [xName = "", yName = ""] = pairPart.split(" vs ");
 
   return {
@@ -263,7 +294,7 @@ export function getPublishedRelatedPages(doc: PageDoc): PublishedRelatedPage[] {
 
     return [
       {
-        title: relatedDoc.title,
+        title: getComparisonDisplayTitle(relatedDoc.title),
         slug: relatedDoc.slug,
       },
     ];
@@ -322,7 +353,7 @@ export function getToolNamesFromDoc(doc: PageDoc): { xName: string; yName: strin
     return { xName: maybe.x_name.trim(), yName: maybe.y_name.trim() };
   }
 
-  const title = doc.title || "";
+  const title = getComparisonDisplayTitle(doc.title || "");
   const beforeFor = title.split(" for ")[0] ?? title;
   const parts = beforeFor.split(" vs ");
 
@@ -393,7 +424,7 @@ function titleCaseWords(text: string) {
 export function getComparisonTitleBySlug(slug: string): string {
   const doc = loadPageBySlug(slug);
   if (doc?.title?.trim()) {
-    return doc.title.trim();
+    return getComparisonDisplayTitle(doc.title);
   }
 
   const [pairPart, ...personaParts] = slug.split("-for-");

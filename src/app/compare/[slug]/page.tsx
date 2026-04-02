@@ -4,7 +4,10 @@ import ButtonLink from "@/components/ui/ButtonLink";
 import Card from "@/components/ui/Card";
 import SectionHeading from "@/components/ui/SectionHeading";
 import PairGateFromCategoryGate from "@/components/gates/PairGateFromCategoryGate";
+import { getCategoryGate } from "@/content/categoryGates";
 import {
+  getComparisonDisplayTitle,
+  getComparisonSeoTitle,
   getPageCategoryLabel,
   getPublishedRelatedPages,
   getToolNamesFromDoc,
@@ -15,6 +18,42 @@ import {
 import { absoluteUrl } from "@/lib/site";
 
 type Params = { slug: string };
+
+const SITUATION_FILTERS = [
+  { label: "Publish fast", constraintSlug: "setup-tolerance" },
+  { label: "Works without upkeep", constraintSlug: "maintenance-load" },
+  { label: "Easy to quit later", constraintSlug: "switching-cost" },
+  { label: "Fast to use daily", constraintSlug: "time-scarcity" },
+  { label: "Grows with you", constraintSlug: "ceiling-check" },
+  { label: "Hard to mess up", constraintSlug: "fear-of-breaking" },
+  { label: "Keeps it simple", constraintSlug: "feature-aversion" },
+] as const;
+
+type SituationConstraintSlug = (typeof SITUATION_FILTERS)[number]["constraintSlug"];
+
+const PERSONA_DEFAULT_FILTER: Record<string, SituationConstraintSlug> = {
+  Beginner: "setup-tolerance",
+  "Solo user": "maintenance-load",
+  Student: "switching-cost",
+  "Busy professional": "time-scarcity",
+  "Power user": "ceiling-check",
+  "Non-technical user": "fear-of-breaking",
+  Minimalist: "feature-aversion",
+};
+
+const RELATED_FILTER_PREFERENCES: Record<SituationConstraintSlug, SituationConstraintSlug[]> = {
+  "setup-tolerance": ["fear-of-breaking", "switching-cost"],
+  "maintenance-load": ["feature-aversion", "switching-cost"],
+  "switching-cost": ["setup-tolerance", "feature-aversion"],
+  "time-scarcity": ["maintenance-load", "feature-aversion"],
+  "ceiling-check": ["time-scarcity", "maintenance-load"],
+  "fear-of-breaking": ["setup-tolerance", "feature-aversion"],
+  "feature-aversion": ["maintenance-load", "time-scarcity"],
+};
+
+function isSituationConstraintSlug(value: string): value is SituationConstraintSlug {
+  return SITUATION_FILTERS.some((filter) => filter.constraintSlug === value);
+}
 
 export async function generateStaticParams() {
   return listPageSlugs().map((slug) => ({ slug }));
@@ -41,10 +80,10 @@ export async function generateMetadata({
 
   const description =
     doc.meta_description?.trim() ||
-    `A constraint-based comparison of ${doc.title}. See which option fails first for the ${doc.persona.toLowerCase()} and why.`;
+    `See which option fails first under this constraint and which one is the better pick for ${doc.persona.toLowerCase()}.`;
 
   return {
-    title: doc.title,
+    title: getComparisonSeoTitle(doc),
     description,
     alternates: {
       canonical: absoluteUrl(`/compare/${slug}`),
@@ -279,6 +318,61 @@ function Section({
   }
 }
 
+function getRelevantSituationFilters(
+  categorySlug: string | null,
+  constraintSlug: string | undefined,
+  persona: string
+) {
+  if (!categorySlug) return [];
+
+  const normalizedConstraintSlug =
+    constraintSlug && isSituationConstraintSlug(constraintSlug)
+      ? constraintSlug
+      : undefined;
+
+  const preferredConstraintSlugs = [
+    normalizedConstraintSlug,
+    PERSONA_DEFAULT_FILTER[persona],
+    ...(normalizedConstraintSlug
+      ? RELATED_FILTER_PREFERENCES[normalizedConstraintSlug] ?? []
+      : []),
+  ].filter(
+    (value): value is SituationConstraintSlug => Boolean(value)
+  );
+
+  const picks: Array<{ href: string; label: string }> = [];
+  const seen = new Set<string>();
+
+  const pushFilter = (
+    filterConstraintSlug: SituationConstraintSlug
+  ) => {
+    if (seen.has(filterConstraintSlug)) return;
+
+    const filter = SITUATION_FILTERS.find(
+      (item) => item.constraintSlug === filterConstraintSlug
+    );
+
+    if (!filter || !getCategoryGate(categorySlug, filterConstraintSlug)) return;
+
+    seen.add(filterConstraintSlug);
+    picks.push({
+      href: `/tools/${categorySlug}/${filterConstraintSlug}`,
+      label: filter.label,
+    });
+  };
+
+  preferredConstraintSlugs.forEach(pushFilter);
+  SITUATION_FILTERS.forEach((filter) => pushFilter(filter.constraintSlug));
+
+  return picks.slice(0, 3);
+}
+
+function getExploreAllLabel(category: string) {
+  return /tools$|apps$/i.test(category)
+    ? `Explore all ${category}`
+    : `Explore all ${category} tools`;
+}
+
 export default async function ComparePage({
   params,
 }: {
@@ -310,6 +404,11 @@ export default async function ComparePage({
     categorySlug?: string;
     constraintSlug?: string;
   };
+  const relevantFilters = getRelevantSituationFilters(
+    categorySlug,
+    maybeGateFields.constraintSlug,
+    doc.persona
+  );
 
   return (
     <main className="site-container page-shell content-stack max-w-4xl">
@@ -342,7 +441,7 @@ export default async function ComparePage({
             )}
           </p>
           <h1 className="max-w-3xl text-3xl font-semibold tracking-tight text-black sm:text-4xl">
-            {doc.title}
+            {getComparisonDisplayTitle(doc.title)}
           </h1>
           <p className="text-sm text-black/60">
             Persona: <span className="font-medium text-black/75">{doc.persona}</span> | Focus:{" "}
@@ -422,6 +521,37 @@ export default async function ComparePage({
           </Card>
         )}
       </section>
+
+      {categorySlug ? (
+        <section className="content-stack gap-4 max-w-3xl">
+          <Card className="space-y-4">
+            <Link
+              href={`/${categorySlug}`}
+              className="text-base font-semibold text-black underline-offset-4 hover:underline"
+            >
+              {getExploreAllLabel(category)}
+            </Link>
+
+            {relevantFilters.length > 0 ? (
+              <div className="space-y-3">
+                <SectionHeading title="Pick based on your situation" />
+                <ul className="space-y-2 text-sm">
+                  {relevantFilters.map((filter) => (
+                    <li key={filter.href}>
+                      <Link
+                        href={filter.href}
+                        className="text-black/80 underline-offset-4 hover:text-black hover:underline"
+                      >
+                        {filter.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+          </Card>
+        </section>
+      ) : null}
     </main>
   );
 }

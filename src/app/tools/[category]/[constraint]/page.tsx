@@ -5,7 +5,11 @@ import ButtonLink from "@/components/ui/ButtonLink";
 import Card from "@/components/ui/Card";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { getCategoryGate, listCategoryGateParams } from "@/content/categoryGates";
-import { getComparisonTitleBySlug, listComparisonsForGate } from "@/lib/pages";
+import {
+  getComparisonDisplayTitle,
+  listComparisonsForGate,
+  loadPageBySlug,
+} from "@/lib/pages";
 import { absoluteUrl } from "@/lib/site";
 import CategoryGateClient from "./CategoryGateClient";
 
@@ -57,6 +61,55 @@ type FilterCopy = {
   failsHere: string;
   survivesHere: string;
 };
+
+function getTopComparisonsForSituation(
+  categorySlug: string,
+  constraintSlug: string,
+  manualRelated: string[]
+) {
+  const candidateSlugs = Array.from(
+    new Set([...manualRelated, ...listComparisonsForGate(categorySlug, constraintSlug)])
+  );
+
+  const candidates = candidateSlugs.flatMap((compareSlug) => {
+    const doc = loadPageBySlug(compareSlug);
+
+    if (
+      !doc ||
+      doc.categorySlug !== categorySlug ||
+      doc.constraintSlug !== constraintSlug ||
+      doc.verdict.winner === "depends"
+    ) {
+      return [];
+    }
+
+    return [
+      {
+        slug: compareSlug,
+        title: getComparisonDisplayTitle(doc.title),
+        persona: doc.persona,
+      },
+    ];
+  });
+
+  const topComparisons: typeof candidates = [];
+  const seenPersonas = new Set<string>();
+
+  for (const candidate of candidates) {
+    if (seenPersonas.has(candidate.persona)) continue;
+    seenPersonas.add(candidate.persona);
+    topComparisons.push(candidate);
+    if (topComparisons.length === 6) return topComparisons;
+  }
+
+  for (const candidate of candidates) {
+    if (topComparisons.some((item) => item.slug === candidate.slug)) continue;
+    topComparisons.push(candidate);
+    if (topComparisons.length === 6) break;
+  }
+
+  return topComparisons;
+}
 
 function getFilterCopy(
   constraintSlug: string,
@@ -300,13 +353,11 @@ export default async function CategoryGatePage({
   const failingTop = failing.slice(0, 8);
   const safeTop = safe.slice(0, 8);
 
-  const computedRelated = listComparisonsForGate(gate.categorySlug, gate.constraintSlug);
   const manualRelated = gate.relatedComparisons ?? [];
-  const related = Array.from(new Set([...computedRelated, ...manualRelated])).map(
-    (compareSlug) => ({
-      slug: compareSlug,
-      title: getComparisonTitleBySlug(compareSlug),
-    })
+  const topComparisons = getTopComparisonsForSituation(
+    gate.categorySlug,
+    gate.constraintSlug,
+    manualRelated
   );
 
   return (
@@ -463,18 +514,18 @@ export default async function CategoryGatePage({
 
         <section className="space-y-3">
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <SectionHeading title="Related comparisons" />
+            <SectionHeading title="Top comparisons for this situation" />
             <ButtonLink href="/compare" variant="ghost" className="px-0 py-0">
               View all comparisons
             </ButtonLink>
           </div>
 
-          {related.length === 0 ? (
+          {topComparisons.length === 0 ? (
             <p className="text-sm text-black/60">No comparisons mapped yet.</p>
           ) : (
             <Card>
               <ul className="space-y-2 text-sm">
-                {related.map((compare) => (
+                {topComparisons.map((compare) => (
                   <li key={compare.slug}>
                     <Link
                       href={`/compare/${compare.slug}`}

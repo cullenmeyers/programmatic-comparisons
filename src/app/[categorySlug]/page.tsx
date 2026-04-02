@@ -5,8 +5,10 @@ import ButtonLink from "@/components/ui/ButtonLink";
 import Card from "@/components/ui/Card";
 import PillLink from "@/components/ui/PillLink";
 import SectionHeading from "@/components/ui/SectionHeading";
+import { getCategoryGate } from "@/content/categoryGates";
 import {
   buildCategoryHubPreview,
+  getComparisonDisplayTitle,
   getComparisonTitleBySlug,
   getCategoryIndexBySlug,
   isLockedPersona,
@@ -71,6 +73,16 @@ const CATEGORY_CHOICE_HINTS: Record<string, string> = {
   "time-scarcity": "How quickly it fits into your day once everything is set up",
 };
 
+const SITUATION_FILTERS = [
+  { label: "Publish fast", constraintSlug: "setup-tolerance" },
+  { label: "Works without upkeep", constraintSlug: "maintenance-load" },
+  { label: "Easy to quit later", constraintSlug: "switching-cost" },
+  { label: "Fast to use daily", constraintSlug: "time-scarcity" },
+  { label: "Grows with you", constraintSlug: "ceiling-check" },
+  { label: "Hard to mess up", constraintSlug: "fear-of-breaking" },
+  { label: "Keeps it simple", constraintSlug: "feature-aversion" },
+] as const;
+
 type DecisionPersona = {
   name: string;
   explanation: string;
@@ -81,6 +93,83 @@ type TopComparison = {
   slug: string;
   failureMechanism: string;
 };
+
+type PersonaSituationItem = {
+  slug: string;
+  title: string;
+};
+
+type PersonaSituationCard = {
+  name: string;
+  explanation: string;
+  comparisons: PersonaSituationItem[];
+};
+
+function PersonaSituationGrid({ personas }: { personas: PersonaSituationCard[] }) {
+  return (
+    <div className="grid gap-4 lg:grid-cols-2">
+      {personas.map((persona) => (
+        <Card key={persona.name} className="space-y-4">
+          <div className="space-y-2">
+            <h2 className="text-lg font-semibold tracking-tight text-black">
+              {persona.name}
+            </h2>
+            <p className="max-w-[58ch] text-[0.9375rem] leading-6 text-black/55">
+              {persona.explanation}
+            </p>
+          </div>
+          <div className="space-y-2 border-t border-black/10 pt-3 text-sm leading-6">
+            {persona.comparisons.map((comparison) => (
+              <Link
+                key={comparison.slug}
+                href={`/compare/${comparison.slug}`}
+                className="block font-medium text-black/80 underline-offset-4 hover:text-black hover:underline"
+              >
+                {comparison.title}
+              </Link>
+            ))}
+          </div>
+        </Card>
+      ))}
+    </div>
+  );
+}
+
+function renderSituationFilterSection(categorySlug: string) {
+  const filters = SITUATION_FILTERS.flatMap((filter) => {
+    const gate = getCategoryGate(categorySlug, filter.constraintSlug);
+    if (!gate) return [];
+
+    return [
+      {
+        href: `/tools/${categorySlug}/${filter.constraintSlug}`,
+        label: filter.label,
+      },
+    ];
+  });
+
+  if (filters.length === 0) return null;
+
+  return (
+    <section className="content-stack gap-4">
+      <SectionHeading title="Pick based on your situation" />
+      <Card>
+        <ul className="grid gap-2 text-sm sm:grid-cols-2">
+          {filters.map((filter) => (
+            <li key={filter.href}>
+              <Link
+                href={filter.href}
+                className="text-black/80 underline-offset-4 hover:text-black hover:underline"
+              >
+                {filter.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </Card>
+    </section>
+  );
+}
 
 const TASK_MANAGER_PERSONAS: DecisionPersona[] = [
   {
@@ -1968,31 +2057,7 @@ function renderTaskManagersHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={comparison.slug}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -2013,6 +2078,8 @@ function renderTaskManagersHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("task-managers")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -2093,31 +2160,7 @@ function renderNoteTakingAppsHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={comparison.slug}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -2138,6 +2181,8 @@ function renderNoteTakingAppsHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("note-taking-apps")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -2216,31 +2261,7 @@ function renderBookmarkManagersHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={comparison.slug}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -2261,6 +2282,8 @@ function renderBookmarkManagersHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("bookmark-managers")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -2342,31 +2365,7 @@ function renderCalendarToolsHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={comparison.slug}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -2387,6 +2386,8 @@ function renderCalendarToolsHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("calendar-tools")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -2467,31 +2468,7 @@ function renderCalendarVsSchedulingToolsHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={`${persona.name}-${comparison.slug}`}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -2512,6 +2489,8 @@ function renderCalendarVsSchedulingToolsHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("calendar-vs-scheduling-tools")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -2594,31 +2573,7 @@ function renderHelpdeskToolsHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={`${persona.name}-${comparison.slug}`}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -2639,6 +2594,8 @@ function renderHelpdeskToolsHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("customer-support-helpdesk-tools")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -2721,31 +2678,7 @@ function renderEmailInboxToolsHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={`${persona.name}-${comparison.slug}`}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -2766,6 +2699,8 @@ function renderEmailInboxToolsHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("email-inbox-tools")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -2847,31 +2782,7 @@ function renderFileStorageToolsHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={`${persona.name}-${comparison.slug}`}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -2892,6 +2803,8 @@ function renderFileStorageToolsHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("file-storage-cloud-storage-tools")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -2974,31 +2887,7 @@ function renderHabitTrackersHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={`${persona.name}-${comparison.slug}`}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -3019,6 +2908,8 @@ function renderHabitTrackersHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("habit-trackers")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -3101,31 +2992,7 @@ function renderKnowledgeManagementToolsHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={`${persona.name}-${comparison.slug}`}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -3146,6 +3013,8 @@ function renderKnowledgeManagementToolsHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("knowledge-management-tools")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -3227,31 +3096,7 @@ function renderPasswordManagersHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={`${persona.name}-${comparison.slug}`}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -3272,6 +3117,8 @@ function renderPasswordManagersHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("password-managers")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -3355,31 +3202,7 @@ function renderProjectManagementToolsHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={`${persona.name}-${comparison.slug}`}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -3400,6 +3223,8 @@ function renderProjectManagementToolsHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("project-management-tools")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -3481,31 +3306,7 @@ function renderReadItLaterAppsHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={`${persona.name}-${comparison.slug}`}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -3526,6 +3327,8 @@ function renderReadItLaterAppsHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("read-it-later-apps")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -3609,31 +3412,7 @@ function renderSchedulingBookingToolsHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={`${persona.name}-${comparison.slug}`}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -3654,6 +3433,8 @@ function renderSchedulingBookingToolsHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("scheduling-booking-tools")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -3738,31 +3519,7 @@ function renderSpreadsheetDatabaseToolsHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={`${persona.name}-${comparison.slug}`}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -3783,6 +3540,8 @@ function renderSpreadsheetDatabaseToolsHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("spreadsheet-database-tools")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -3867,31 +3626,7 @@ function renderTeamCollaborationToolsHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={`${persona.name}-${comparison.slug}`}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -3912,6 +3647,8 @@ function renderTeamCollaborationToolsHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("team-collaboration-tools")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -3994,31 +3731,7 @@ function renderTimeTrackingToolsHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
-        <div className="grid gap-4 lg:grid-cols-2">
-          {personas.map((persona) => (
-            <Card key={persona.name} className="space-y-3">
-              <div className="space-y-1">
-                <h2 className="text-lg font-semibold tracking-tight text-black">
-                  {persona.name}
-                </h2>
-                <p className="text-sm leading-6 text-black/65">
-                  {persona.explanation}
-                </p>
-              </div>
-              <div className="space-y-2 text-sm leading-6">
-                {persona.comparisons.map((comparison) => (
-                  <Link
-                    key={`${persona.name}-${comparison.slug}`}
-                    href={`/compare/${comparison.slug}`}
-                    className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
-                  >
-                    {comparison.title}
-                  </Link>
-                ))}
-              </div>
-            </Card>
-          ))}
-        </div>
+        <PersonaSituationGrid personas={personas} />
       </section>
 
       <section className="content-stack gap-4">
@@ -4039,6 +3752,8 @@ function renderTimeTrackingToolsHub() {
           ))}
         </div>
       </section>
+
+      {renderSituationFilterSection("time-tracking-tools")}
 
       <section className="content-stack gap-4">
         <SectionHeading title="How To Choose" />
@@ -4484,13 +4199,15 @@ export default async function CategoryIndexPage({
                   href={`/compare/${page.slug}`}
                   className="block text-black/80 underline-offset-4 hover:text-black hover:underline"
                 >
-                  {page.title}
+                  {getComparisonDisplayTitle(page.title)}
                 </Link>
               ))}
             </div>
           </Card>
         ) : null}
       </div>
+
+      {renderSituationFilterSection(category.slug)}
 
       {visiblePersonas.length === 0 ? (
         <Card>
@@ -4538,7 +4255,7 @@ export default async function CategoryIndexPage({
                           href={`/compare/${page.slug}`}
                           className="text-base font-semibold text-black"
                         >
-                          {page.title}
+                          {getComparisonDisplayTitle(page.title)}
                         </Link>
                         {verdictPreview ? (
                           <p className="text-sm leading-6 text-black/75">{verdictPreview}</p>

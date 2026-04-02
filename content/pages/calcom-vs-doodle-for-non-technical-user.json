@@ -1,113 +1,113 @@
 {
-"category": "Scheduling / Booking Tools",
-"categorySlug": "scheduling-booking-tools",
-"constraintSlug": "fear-of-breaking",
-"constraintUiName": "Feels safe",
-"title": "Cal.com vs Doodle for Non-technical users",
-"slug": "calcom-vs-doodle-for-non-technical-user",
-"meta_description": "Cal.com vs Doodle for non-technical users: Doodle lets you collect votes on times, while Cal.com requires booking setup and configuration.",
-"persona": "Non-technical user",
-"constraint_lens": "You need a scheduling tool that feels safe to use without configuring rules, calendars, or availability settings.",
-"one_second_verdict": {
-"winner_label": "Doodle",
-"summary": "Best for non-technical users who want to propose times without setup.",
-"reason": "Cal.com fails first because it requires configuring booking pages, availability, and calendar logic."
-},
-"verdict": {
-"winner": "y",
-"summary": "Doodle is the better choice when you want to coordinate a meeting without touching any setup or configuration. It allows you to propose time options and collect votes, making scheduling feel simple and safe. Cal.com requires setting up booking pages, availability logic, and calendar integrations, which introduces complexity and risk for non-technical users.",
-"decision_rule": "If scheduling requires configuring booking pages, availability logic, or calendar-linked rules instead of collecting votes on options, Cal.com fails first."
-},
-"sections": [
-{
-"type": "persona_fit",
-"heading": "Why Doodle fits this situation",
-"content": "This setup fits a non-technical user who wants to avoid breaking anything. Configuration-heavy tools create hesitation and risk. Doodle removes setup by letting you simply propose times and collect responses."
-},
-{
-"type": "x_wins",
-"heading": "Where Cal.com wins",
-"bullets": [
-{
-"point": "Supports booking pages with automated scheduling.",
-"why_it_matters": "This allows structured scheduling once configured."
-},
-{
-"point": "Connects directly to calendars and availability rules.",
-"why_it_matters": "This prevents double booking but adds setup complexity."
-},
-{
-"point": "Handles advanced scheduling logic.",
-"why_it_matters": "This works for complex workflows, but not for simple coordination."
-}
-]
-},
-{
-"type": "y_wins",
-"heading": "Where Doodle wins",
-"bullets": [
-{
-"point": "Collects votes on proposed time options without setup.",
-"why_it_matters": "You can coordinate meetings without configuring anything."
-},
-{
-"point": "Does not require calendar connections or booking rules.",
-"why_it_matters": "This reduces risk and makes it feel safe to use."
-},
-{
-"point": "Simple flow for coordinating groups.",
-"why_it_matters": "This avoids complexity when working with committees."
-}
-]
-},
-{
-"type": "failure_modes",
-"heading": "How each tool can break down",
-"items": [
-{
-"tool": "x",
-"fails_when": "Cal.com starts to break when you need to schedule without configuring booking pages, availability, or integrations.",
-"what_to_do_instead": "Use Doodle when you want simple time voting without setup."
-},
-{
-"tool": "y",
-"fails_when": "Doodle starts to break when you need automated scheduling tied to calendar availability.",
-"what_to_do_instead": "Use Cal.com when you require structured booking workflows."
-}
-]
-},
-{
-"type": "edge_case",
-"heading": "When this verdict might flip",
-"content": "This verdict might flip if you are comfortable setting up booking rules and want automated scheduling based on availability. In that case, Cal.com may be more suitable."
-},
-{
-"type": "quick_rules",
-"heading": "Quick decision rules",
-"rules": [
-"Pick Doodle if you want to propose times without setup.",
-"Pick Cal.com if you need automated booking workflows.",
-"If simplicity and safety matter most, choose Doodle."
-]
-}
-],
-"faqs": [
-{
-"q": "Why does Doodle win for non-technical users?",
-"a": "Because it allows you to propose times and collect votes without any setup or configuration."
-},
-{
-"q": "Does Cal.com require setup?",
-"a": "Yes, it requires configuring booking pages, availability, and calendar connections."
-},
-{
-"q": "When should I choose Cal.com instead?",
-"a": "Choose it when you want automated scheduling based on availability and are comfortable with setup."
-},
-{
-"q": "What is the main difference between these tools?",
-"a": "Doodle uses simple time voting, while Cal.com relies on configured booking workflows."
-}
-],
-"related_pages": []
+  "category": "Scheduling / Booking Tools",
+  "categorySlug": "scheduling-booking-tools",
+  "constraintSlug": "fear-of-breaking",
+  "constraintUiName": "Feels safe",
+  "title": "Cal.com vs Doodle for Non-technical users",
+  "slug": "calcom-vs-doodle-for-non-technical-user",
+  "meta_description": "See why Cal.com fails first when scheduling requires configuring booking pages and why Doodle is the better pick for non-technical users.",
+  "persona": "Non-technical user",
+  "constraint_lens": "You need a scheduling tool that feels safe to use without configuring rules, calendars, or availability settings.",
+  "one_second_verdict": {
+    "winner_label": "Doodle",
+    "summary": "Best for non-technical users who want to propose times without setup.",
+    "reason": "Cal.com fails first because it requires configuring booking pages, availability, and calendar logic."
+  },
+  "verdict": {
+    "winner": "y",
+    "summary": "Doodle is the better choice when you want to coordinate a meeting without touching any setup or configuration. It allows you to propose time options and collect votes, making scheduling feel simple and safe. Cal.com requires setting up booking pages, availability logic, and calendar integrations, which introduces complexity and risk for non-technical users.",
+    "decision_rule": "If scheduling requires configuring booking pages, availability logic, or calendar-linked rules instead of collecting votes on options, Cal.com fails first."
+  },
+  "sections": [
+    {
+      "type": "persona_fit",
+      "heading": "Why Doodle fits this situation",
+      "content": "This setup fits a non-technical user who wants to avoid breaking anything. Configuration-heavy tools create hesitation and risk. Doodle removes setup by letting you simply propose times and collect responses."
+    },
+    {
+      "type": "x_wins",
+      "heading": "Where Cal.com wins",
+      "bullets": [
+        {
+          "point": "Supports booking pages with automated scheduling.",
+          "why_it_matters": "This allows structured scheduling once configured."
+        },
+        {
+          "point": "Connects directly to calendars and availability rules.",
+          "why_it_matters": "This prevents double booking but adds setup complexity."
+        },
+        {
+          "point": "Handles advanced scheduling logic.",
+          "why_it_matters": "This works for complex workflows, but not for simple coordination."
+        }
+      ]
+    },
+    {
+      "type": "y_wins",
+      "heading": "Where Doodle wins",
+      "bullets": [
+        {
+          "point": "Collects votes on proposed time options without setup.",
+          "why_it_matters": "You can coordinate meetings without configuring anything."
+        },
+        {
+          "point": "Does not require calendar connections or booking rules.",
+          "why_it_matters": "This reduces risk and makes it feel safe to use."
+        },
+        {
+          "point": "Simple flow for coordinating groups.",
+          "why_it_matters": "This avoids complexity when working with committees."
+        }
+      ]
+    },
+    {
+      "type": "failure_modes",
+      "heading": "How each tool can break down",
+      "items": [
+        {
+          "tool": "x",
+          "fails_when": "Cal.com starts to break when you need to schedule without configuring booking pages, availability, or integrations.",
+          "what_to_do_instead": "Use Doodle when you want simple time voting without setup."
+        },
+        {
+          "tool": "y",
+          "fails_when": "Doodle starts to break when you need automated scheduling tied to calendar availability.",
+          "what_to_do_instead": "Use Cal.com when you require structured booking workflows."
+        }
+      ]
+    },
+    {
+      "type": "edge_case",
+      "heading": "When this verdict might flip",
+      "content": "This verdict might flip if you are comfortable setting up booking rules and want automated scheduling based on availability. In that case, Cal.com may be more suitable."
+    },
+    {
+      "type": "quick_rules",
+      "heading": "Quick decision rules",
+      "rules": [
+        "Pick Doodle if you want to propose times without setup.",
+        "Pick Cal.com if you need automated booking workflows.",
+        "If simplicity and safety matter most, choose Doodle."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why does Doodle win for non-technical users?",
+      "a": "Because it allows you to propose times and collect votes without any setup or configuration."
+    },
+    {
+      "q": "Does Cal.com require setup?",
+      "a": "Yes, it requires configuring booking pages, availability, and calendar connections."
+    },
+    {
+      "q": "When should I choose Cal.com instead?",
+      "a": "Choose it when you want automated scheduling based on availability and are comfortable with setup."
+    },
+    {
+      "q": "What is the main difference between these tools?",
+      "a": "Doodle uses simple time voting, while Cal.com relies on configured booking workflows."
+    }
+  ],
+  "related_pages": []
 }

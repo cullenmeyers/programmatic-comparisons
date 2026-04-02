@@ -7,6 +7,7 @@ import { absoluteUrl } from "@/lib/site";
 import Link from "next/link";
 import ComparePageBehavior from "./ComparePageBehavior";
 import {
+  getComparisonDisplayTitle,
   getPageCategoryLabel,
   getPageCategorySlug,
   listPageDocs,
@@ -174,7 +175,7 @@ export default function CompareIndexPage() {
                               href={`/compare/${page.slug}`}
                               className="text-base font-semibold text-black"
                             >
-                              {page.title}
+                              {getComparisonDisplayTitle(page.title)}
                             </Link>
                             <p className="text-sm text-black/65">
                               Persona:{" "}

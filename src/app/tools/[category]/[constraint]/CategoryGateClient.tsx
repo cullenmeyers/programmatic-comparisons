@@ -260,15 +260,15 @@ export default function CategoryGateClient({ gate }: { gate: CategoryGateSpec })
               <div className="space-y-2">
                 <p className="font-medium text-current">
                   {oneEntry.fails
-                    ? "This tool fails first under this constraint."
-                    : "This tool holds up well under this constraint."}
+                    ? "This tool breaks here."
+                    : "This tool holds up here."}
                 </p>
                 {oneEntry.fails ? (
                   <div className="space-y-1">
                     <p>{getFailureSummary(gate.constraintSlug, onePick)}</p>
                     {oneEntry.note && (
                       <p className="text-current/80">
-                        <span className="font-medium">Why:</span> {oneEntry.note}
+                        That creates the kind of friction this filter is trying to avoid.
                       </p>
                     )}
                   </div>
@@ -362,9 +362,7 @@ export default function CategoryGateClient({ gate }: { gate: CategoryGateSpec })
                     <p className="mt-1 font-medium text-current">{aPick}</p>
                     <p className="mt-2">{aEntry.fails ? "Fails first" : "Survives longer"}</p>
                     {aEntry.fails && aEntry.note && (
-                      <p className="mt-1 text-current/80">
-                        <span className="font-medium">Why:</span> {aEntry.note}
-                      </p>
+                      <p className="mt-1 text-current/80">{aEntry.note}</p>
                     )}
                   </div>
 
@@ -375,9 +373,7 @@ export default function CategoryGateClient({ gate }: { gate: CategoryGateSpec })
                     <p className="mt-1 font-medium text-current">{bPick}</p>
                     <p className="mt-2">{bEntry.fails ? "Fails first" : "Survives longer"}</p>
                     {bEntry.fails && bEntry.note && (
-                      <p className="mt-1 text-current/80">
-                        <span className="font-medium">Why:</span> {bEntry.note}
-                      </p>
+                      <p className="mt-1 text-current/80">{bEntry.note}</p>
                     )}
                   </div>
                 </div>
