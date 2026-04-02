@@ -52,6 +52,51 @@ function prettyFromSlug(slug: string) {
     .join(" ");
 }
 
+const EXAMPLE_TOOL_NAME_ALIASES: Record<string, string> = {
+  "Reclaim.ai": "Reclaim",
+  "Microsoft OneNote": "OneNote",
+  "MS OneNote": "OneNote",
+  "Google Cal": "Google Calendar",
+  "GCal": "Google Calendar",
+  Outlook: "Outlook Calendar",
+  "Microsoft Outlook Calendar": "Outlook Calendar",
+  "iCloud Calendar": "Apple Calendar",
+};
+
+const EXAMPLE_TOOL_NAME_OVERRIDES: Record<string, string> = {
+  calcom: "Cal.com",
+  mondaycom: "Monday.com",
+  anydo: "Any.do",
+  tawkto: "Tawk.to",
+  raindropio: "Raindrop.io",
+  reclaimai: "Reclaim",
+};
+
+function normalizeExampleToolName(name: string) {
+  const trimmed = name.trim();
+  if (!trimmed) return "";
+
+  const aliasMatch = EXAMPLE_TOOL_NAME_ALIASES[trimmed];
+  if (aliasMatch) return aliasMatch;
+
+  const compactKey = trimmed.toLowerCase().replace(/[^a-z0-9]/g, "");
+  return EXAMPLE_TOOL_NAME_OVERRIDES[compactKey] ?? trimmed;
+}
+
+function uniqueExampleToolNames(names: string[]) {
+  const seen = new Set<string>();
+  const unique: string[] = [];
+
+  for (const name of names) {
+    const normalized = normalizeExampleToolName(name);
+    if (!normalized || seen.has(normalized)) continue;
+    seen.add(normalized);
+    unique.push(normalized);
+  }
+
+  return unique;
+}
+
 type FilterCopy = {
   intro: string[];
   startHere: string[];
@@ -121,9 +166,8 @@ function getFilterCopy(
       if (categoryLabel === "Task Managers") {
         return {
           intro: [
-            "Use this filter when your task manager needs to stay fast under real daily pressure.",
-            "It narrows task managers that let you capture, review, and finish work without planning drag.",
-            "If basic task handling turns into sorting, setup, or extra decisions, the tool fails here.",
+            "Use this filter when your task manager needs to stay quick under real daily pressure.",
+            "It narrows the field to task managers that let you capture, review, and finish work without friction.",
           ],
           startHere: [
             "You manage tasks in short bursts and need to get in and out fast.",
@@ -148,8 +192,8 @@ function getFilterCopy(
       }
       return {
         intro: [
-          `Use this filter when daily speed matters and you need ${categoryLabel.toLowerCase()} that works fast without adding workflow overhead.`,
-          `It narrows options around ${lensName.toLowerCase()}: fewer steps, fewer decisions, and less drag in repeated use.`,
+          `Use this filter when daily speed matters and you want ${categoryLabel.toLowerCase()} that stay quick in repeated use.`,
+          "It narrows the field to tools that keep routine actions short and obvious.",
         ],
         startHere: [
           "You use this tool often and want the routine workflow to stay short.",
@@ -173,7 +217,7 @@ function getFilterCopy(
       return {
         intro: [
           `Use this filter when you want to get started with ${categoryLabel.toLowerCase()} quickly and avoid front-loaded setup before the basic job is even live.`,
-          `It narrows options around ${lensName.toLowerCase()}: fast starts and a shorter path to useful output.`,
+          "It narrows the field to tools you can get working quickly.",
         ],
         startHere: [
           "You want a working result quickly.",
@@ -194,8 +238,8 @@ function getFilterCopy(
     case "maintenance-load":
       return {
         intro: [
-          `Use this filter when you want ${categoryLabel.toLowerCase()} that stays useful without regular tending, cleanup, or admin upkeep.`,
-          `It narrows options around ${lensName.toLowerCase()}: tools that do the job without becoming maintenance work.`,
+          `Use this filter when you want ${categoryLabel.toLowerCase()} that stay useful without regular tending, cleanup, or admin work.`,
+          "It narrows the field to tools that keep doing the job without turning into upkeep.",
         ],
         startHere: [
           "You want the tool to stay usable without babysitting it.",
@@ -216,8 +260,8 @@ function getFilterCopy(
     case "switching-cost":
       return {
         intro: [
-          `Use this filter when your use is short-term, tentative, or likely to change and you do not want heavy setup that only pays back after a long commitment.`,
-          `It narrows options around ${lensName.toLowerCase()}: low commitment and useful results without long lock-in.`,
+          "Use this filter when your use is short-term or tentative and you do not want heavy setup that only pays off with a long commitment.",
+          "It narrows the field to tools that are useful quickly and easy to leave later.",
         ],
         startHere: [
           "You may switch tools later.",
@@ -239,7 +283,7 @@ function getFilterCopy(
       return {
         intro: [
           `Use this filter when you expect your needs to grow and want ${categoryLabel.toLowerCase()} that will not cap out too early.`,
-          `It narrows options around ${lensName.toLowerCase()}: more headroom before the tool becomes the bottleneck.`,
+          "It narrows the field to tools with more room before the system becomes the bottleneck.",
         ],
         startHere: [
           "You expect your workflow to get deeper or more demanding.",
@@ -260,8 +304,8 @@ function getFilterCopy(
     case "fear-of-breaking":
       return {
         intro: [
-          `Use this filter when fragility is the real risk and you want ${categoryLabel.toLowerCase()} that does not feel easy to misconfigure or accidentally break.`,
-          `It narrows options around ${lensName.toLowerCase()}: safer defaults and less fragility in normal use.`,
+          `Use this filter when fragility is the real risk and you want ${categoryLabel.toLowerCase()} that do not feel easy to misconfigure or break.`,
+          "It narrows the field to tools with safer defaults and less day-to-day fragility.",
         ],
         startHere: [
           "You care more about safe defaults than maximum control.",
@@ -283,7 +327,7 @@ function getFilterCopy(
       return {
         intro: [
           `Use this filter when you want ${categoryLabel.toLowerCase()} to stay simple and do not want extra layers, extra automation, or unnecessary complexity.`,
-          `It narrows options around ${lensName.toLowerCase()}: less feature weight between you and the core job.`,
+          "It narrows the field to tools that stay focused on the core job.",
         ],
         startHere: [
           "You want a smaller surface area.",
@@ -304,8 +348,8 @@ function getFilterCopy(
     default:
       return {
         intro: [
-          `Use this filter to narrow ${categoryLabel.toLowerCase()} around the specific pressure represented by ${lensName.toLowerCase()}.`,
-          `It keeps the page focused on ${lensName.toLowerCase()} instead of generic feature comparison.`,
+          `Use this filter to narrow ${categoryLabel.toLowerCase()} around a specific pressure point.`,
+          `It keeps the page focused on ${lensName.toLowerCase()} instead of a generic feature comparison.`,
         ],
         startHere: ["You want to filter around this specific constraint first."],
         skipThis: ["Another filter is a better match for your main risk."],
@@ -348,8 +392,12 @@ export default async function CategoryGatePage({
       };
     });
 
-  const failing = gate.tools.filter((tool) => tool.fails).map((tool) => tool.name);
-  const safe = gate.tools.filter((tool) => !tool.fails).map((tool) => tool.name);
+  const failing = uniqueExampleToolNames(
+    gate.tools.filter((tool) => tool.fails).map((tool) => tool.name)
+  );
+  const safe = uniqueExampleToolNames(
+    gate.tools.filter((tool) => !tool.fails).map((tool) => tool.name)
+  );
   const failingTop = failing.slice(0, 8);
   const safeTop = safe.slice(0, 8);
 
