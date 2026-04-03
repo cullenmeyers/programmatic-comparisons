@@ -61,6 +61,8 @@ const EXAMPLE_TOOL_NAME_ALIASES: Record<string, string> = {
   Outlook: "Outlook Calendar",
   "Microsoft Outlook Calendar": "Outlook Calendar",
   "iCloud Calendar": "Apple Calendar",
+  "SortedÂ³": "Sorted 3",
+  "SortedÃ‚Â³": "Sorted 3",
 };
 
 const EXAMPLE_TOOL_NAME_OVERRIDES: Record<string, string> = {
@@ -79,7 +81,11 @@ function normalizeExampleToolName(name: string) {
   const aliasMatch = EXAMPLE_TOOL_NAME_ALIASES[trimmed];
   if (aliasMatch) return aliasMatch;
 
-  const compactKey = trimmed.toLowerCase().replace(/[^a-z0-9]/g, "");
+  const cleaned = trimmed
+    .normalize("NFKD")
+    .replace(/[^\x20-\x7E]/g, "")
+    .trim();
+  const compactKey = cleaned.toLowerCase().replace(/[^a-z0-9]/g, "");
   return EXAMPLE_TOOL_NAME_OVERRIDES[compactKey] ?? trimmed;
 }
 
@@ -192,8 +198,8 @@ function getFilterCopy(
       }
       return {
         intro: [
-          `Use this filter when daily speed matters and you want ${categoryLabel.toLowerCase()} that stay quick in repeated use.`,
-          "It narrows the field to tools that keep routine actions short and obvious.",
+          `Use this filter when daily speed matters and you want ${categoryLabel.toLowerCase()} that stay fast in regular use.`,
+          "It narrows the field to tools that keep routine actions short and clear.",
         ],
         startHere: [
           "You use this tool often and want the routine workflow to stay short.",
@@ -216,8 +222,8 @@ function getFilterCopy(
     case "setup-tolerance":
       return {
         intro: [
-          `Use this filter when you want to get started with ${categoryLabel.toLowerCase()} quickly and avoid front-loaded setup before the basic job is even live.`,
-          "It narrows the field to tools you can get working quickly.",
+          `Use this filter when you want to get started with ${categoryLabel.toLowerCase()} quickly.`,
+          "It narrows the field to tools that deliver value before heavy setup.",
         ],
         startHere: [
           "You want a working result quickly.",
@@ -238,8 +244,8 @@ function getFilterCopy(
     case "maintenance-load":
       return {
         intro: [
-          `Use this filter when you want ${categoryLabel.toLowerCase()} that stay useful without regular tending, cleanup, or admin work.`,
-          "It narrows the field to tools that keep doing the job without turning into upkeep.",
+          `Use this filter when you want ${categoryLabel.toLowerCase()} that keep working without regular cleanup or admin work.`,
+          "It narrows the field to tools that do the job without becoming upkeep.",
         ],
         startHere: [
           "You want the tool to stay usable without babysitting it.",
@@ -260,7 +266,7 @@ function getFilterCopy(
     case "switching-cost":
       return {
         intro: [
-          "Use this filter when your use is short-term or tentative and you do not want heavy setup that only pays off with a long commitment.",
+          "Use this filter when your use is short-term or tentative and you do not want heavy setup.",
           "It narrows the field to tools that are useful quickly and easy to leave later.",
         ],
         startHere: [
@@ -282,8 +288,8 @@ function getFilterCopy(
     case "ceiling-check":
       return {
         intro: [
-          `Use this filter when you expect your needs to grow and want ${categoryLabel.toLowerCase()} that will not cap out too early.`,
-          "It narrows the field to tools with more room before the system becomes the bottleneck.",
+          `Use this filter when you expect your needs to grow and want ${categoryLabel.toLowerCase()} with room to grow.`,
+          "It narrows the field to tools that will not become the bottleneck too early.",
         ],
         startHere: [
           "You expect your workflow to get deeper or more demanding.",
@@ -304,7 +310,7 @@ function getFilterCopy(
     case "fear-of-breaking":
       return {
         intro: [
-          `Use this filter when fragility is the real risk and you want ${categoryLabel.toLowerCase()} that do not feel easy to misconfigure or break.`,
+          `Use this filter when fragility is the real risk and you want ${categoryLabel.toLowerCase()} that do not feel easy to break.`,
           "It narrows the field to tools with safer defaults and less day-to-day fragility.",
         ],
         startHere: [
@@ -326,7 +332,7 @@ function getFilterCopy(
     case "feature-aversion":
       return {
         intro: [
-          `Use this filter when you want ${categoryLabel.toLowerCase()} to stay simple and do not want extra layers, extra automation, or unnecessary complexity.`,
+          `Use this filter when you want ${categoryLabel.toLowerCase()} to stay simple.`,
           "It narrows the field to tools that stay focused on the core job.",
         ],
         startHere: [
@@ -348,8 +354,8 @@ function getFilterCopy(
     default:
       return {
         intro: [
-          `Use this filter to narrow ${categoryLabel.toLowerCase()} around a specific pressure point.`,
-          `It keeps the page focused on ${lensName.toLowerCase()} instead of a generic feature comparison.`,
+          `Use this filter when ${lensName.toLowerCase()} is the main pressure point.`,
+          `It keeps the page focused on that constraint instead of a generic feature comparison.`,
         ],
         startHere: ["You want to filter around this specific constraint first."],
         skipThis: ["Another filter is a better match for your main risk."],
