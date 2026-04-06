@@ -14,6 +14,7 @@ import {
   isLockedPersona,
   listCategoryIndexes,
   LOCKED_PERSONA_ORDER,
+  loadPageBySlug,
   type PageDoc,
 } from "@/lib/pages";
 import { absoluteUrl } from "@/lib/site";
@@ -104,6 +105,49 @@ type PersonaSituationCard = {
   explanation: string;
   comparisons: PersonaSituationItem[];
 };
+
+function buildPersonaSituationCards(
+  personas: DecisionPersona[],
+  categorySlug: string
+): PersonaSituationCard[] {
+  const categoryPages = getCategoryIndexBySlug(categorySlug)?.pages ?? [];
+
+  return personas
+    .map((persona) => ({
+      ...persona,
+      comparisons: [
+        ...persona.comparisonSlugs.flatMap((slug) => {
+          const comparison = loadPageBySlug(slug);
+          if (!comparison || comparison.persona !== persona.name) {
+            return [];
+          }
+
+          return [
+            {
+              slug,
+              title: getComparisonDisplayTitle(comparison.title),
+            },
+          ];
+        }),
+        ...categoryPages
+          .filter((page) => page.persona === persona.name)
+          .filter((page) => !persona.comparisonSlugs.includes(page.slug))
+          .slice(0, Math.max(persona.comparisonSlugs.length, 4))
+          .map((page) => ({
+            slug: page.slug,
+            title: getComparisonDisplayTitle(page.title),
+          })),
+      ].slice(0, Math.max(persona.comparisonSlugs.length, 4)),
+    }))
+    .filter((persona) => persona.comparisons.length > 0);
+}
+
+function buildTopComparisonCards(topComparisons: TopComparison[]) {
+  return topComparisons.map((comparison) => ({
+    ...comparison,
+    title: getComparisonTitleBySlug(comparison.slug),
+  }));
+}
 
 function PersonaSituationGrid({ personas }: { personas: PersonaSituationCard[] }) {
   return (
@@ -1999,18 +2043,8 @@ const TIME_TRACKING_TOP_COMPARISONS: TopComparison[] = [
 ];
 
 function renderTaskManagersHub() {
-  const personas = TASK_MANAGER_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = TASK_MANAGER_TOP_COMPARISONS.map((comparison) => ({
-    ...comparison,
-    title: getComparisonTitleBySlug(comparison.slug),
-  }));
+  const personas = buildPersonaSituationCards(TASK_MANAGER_PERSONAS, "task-managers");
+  const topComparisons = buildTopComparisonCards(TASK_MANAGER_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -2103,18 +2137,8 @@ function renderTaskManagersHub() {
 }
 
 function renderNoteTakingAppsHub() {
-  const personas = NOTE_TAKING_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = NOTE_TAKING_TOP_COMPARISONS.map((comparison) => ({
-    ...comparison,
-    title: getComparisonTitleBySlug(comparison.slug),
-  }));
+  const personas = buildPersonaSituationCards(NOTE_TAKING_PERSONAS, "note-taking-apps");
+  const topComparisons = buildTopComparisonCards(NOTE_TAKING_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -2204,18 +2228,8 @@ function renderNoteTakingAppsHub() {
 }
 
 function renderBookmarkManagersHub() {
-  const personas = BOOKMARK_MANAGER_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = BOOKMARK_MANAGER_TOP_COMPARISONS.map((comparison) => ({
-    ...comparison,
-    title: getComparisonTitleBySlug(comparison.slug),
-  }));
+  const personas = buildPersonaSituationCards(BOOKMARK_MANAGER_PERSONAS, "bookmark-managers");
+  const topComparisons = buildTopComparisonCards(BOOKMARK_MANAGER_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -2307,18 +2321,8 @@ function renderBookmarkManagersHub() {
 }
 
 function renderCalendarToolsHub() {
-  const personas = CALENDAR_TOOL_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = CALENDAR_TOOL_TOP_COMPARISONS.map((comparison) => ({
-    ...comparison,
-    title: getComparisonTitleBySlug(comparison.slug),
-  }));
+  const personas = buildPersonaSituationCards(CALENDAR_TOOL_PERSONAS, "calendar-tools");
+  const topComparisons = buildTopComparisonCards(CALENDAR_TOOL_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -2410,20 +2414,11 @@ function renderCalendarToolsHub() {
 }
 
 function renderCalendarVsSchedulingToolsHub() {
-  const personas = CALENDAR_VS_SCHEDULING_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = CALENDAR_VS_SCHEDULING_TOP_COMPARISONS.map(
-    (comparison) => ({
-      ...comparison,
-      title: getComparisonTitleBySlug(comparison.slug),
-    })
+  const personas = buildPersonaSituationCards(
+    CALENDAR_VS_SCHEDULING_PERSONAS,
+    "calendar-vs-scheduling-tools"
   );
+  const topComparisons = buildTopComparisonCards(CALENDAR_VS_SCHEDULING_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -2515,18 +2510,11 @@ function renderCalendarVsSchedulingToolsHub() {
 }
 
 function renderHelpdeskToolsHub() {
-  const personas = HELPDESK_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = HELPDESK_TOP_COMPARISONS.map((comparison) => ({
-    ...comparison,
-    title: getComparisonTitleBySlug(comparison.slug),
-  }));
+  const personas = buildPersonaSituationCards(
+    HELPDESK_PERSONAS,
+    "customer-support-helpdesk-tools"
+  );
+  const topComparisons = buildTopComparisonCards(HELPDESK_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -2620,18 +2608,8 @@ function renderHelpdeskToolsHub() {
 }
 
 function renderEmailInboxToolsHub() {
-  const personas = EMAIL_INBOX_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = EMAIL_INBOX_TOP_COMPARISONS.map((comparison) => ({
-    ...comparison,
-    title: getComparisonTitleBySlug(comparison.slug),
-  }));
+  const personas = buildPersonaSituationCards(EMAIL_INBOX_PERSONAS, "email-inbox-tools");
+  const topComparisons = buildTopComparisonCards(EMAIL_INBOX_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -2723,18 +2701,11 @@ function renderEmailInboxToolsHub() {
 }
 
 function renderFileStorageToolsHub() {
-  const personas = FILE_STORAGE_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = FILE_STORAGE_TOP_COMPARISONS.map((comparison) => ({
-    ...comparison,
-    title: getComparisonTitleBySlug(comparison.slug),
-  }));
+  const personas = buildPersonaSituationCards(
+    FILE_STORAGE_PERSONAS,
+    "file-storage-cloud-storage-tools"
+  );
+  const topComparisons = buildTopComparisonCards(FILE_STORAGE_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -2829,18 +2800,8 @@ function renderFileStorageToolsHub() {
 }
 
 function renderHabitTrackersHub() {
-  const personas = HABIT_TRACKER_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = HABIT_TRACKER_TOP_COMPARISONS.map((comparison) => ({
-    ...comparison,
-    title: getComparisonTitleBySlug(comparison.slug),
-  }));
+  const personas = buildPersonaSituationCards(HABIT_TRACKER_PERSONAS, "habit-trackers");
+  const topComparisons = buildTopComparisonCards(HABIT_TRACKER_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -2933,20 +2894,11 @@ function renderHabitTrackersHub() {
 }
 
 function renderKnowledgeManagementToolsHub() {
-  const personas = KNOWLEDGE_MANAGEMENT_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = KNOWLEDGE_MANAGEMENT_TOP_COMPARISONS.map(
-    (comparison) => ({
-      ...comparison,
-      title: getComparisonTitleBySlug(comparison.slug),
-    })
+  const personas = buildPersonaSituationCards(
+    KNOWLEDGE_MANAGEMENT_PERSONAS,
+    "knowledge-management-tools"
   );
+  const topComparisons = buildTopComparisonCards(KNOWLEDGE_MANAGEMENT_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -3038,18 +2990,8 @@ function renderKnowledgeManagementToolsHub() {
 }
 
 function renderPasswordManagersHub() {
-  const personas = PASSWORD_MANAGER_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = PASSWORD_MANAGER_TOP_COMPARISONS.map((comparison) => ({
-    ...comparison,
-    title: getComparisonTitleBySlug(comparison.slug),
-  }));
+  const personas = buildPersonaSituationCards(PASSWORD_MANAGER_PERSONAS, "password-managers");
+  const topComparisons = buildTopComparisonCards(PASSWORD_MANAGER_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -3142,20 +3084,11 @@ function renderPasswordManagersHub() {
 }
 
 function renderProjectManagementToolsHub() {
-  const personas = PROJECT_MANAGEMENT_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = PROJECT_MANAGEMENT_TOP_COMPARISONS.map(
-    (comparison) => ({
-      ...comparison,
-      title: getComparisonTitleBySlug(comparison.slug),
-    })
+  const personas = buildPersonaSituationCards(
+    PROJECT_MANAGEMENT_PERSONAS,
+    "project-management-tools"
   );
+  const topComparisons = buildTopComparisonCards(PROJECT_MANAGEMENT_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -3249,18 +3182,8 @@ function renderProjectManagementToolsHub() {
 }
 
 function renderReadItLaterAppsHub() {
-  const personas = READ_IT_LATER_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = READ_IT_LATER_TOP_COMPARISONS.map((comparison) => ({
-    ...comparison,
-    title: getComparisonTitleBySlug(comparison.slug),
-  }));
+  const personas = buildPersonaSituationCards(READ_IT_LATER_PERSONAS, "read-it-later-apps");
+  const topComparisons = buildTopComparisonCards(READ_IT_LATER_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -3352,20 +3275,11 @@ function renderReadItLaterAppsHub() {
 }
 
 function renderSchedulingBookingToolsHub() {
-  const personas = SCHEDULING_BOOKING_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = SCHEDULING_BOOKING_TOP_COMPARISONS.map(
-    (comparison) => ({
-      ...comparison,
-      title: getComparisonTitleBySlug(comparison.slug),
-    })
+  const personas = buildPersonaSituationCards(
+    SCHEDULING_BOOKING_PERSONAS,
+    "scheduling-booking-tools"
   );
+  const topComparisons = buildTopComparisonCards(SCHEDULING_BOOKING_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -3458,20 +3372,11 @@ function renderSchedulingBookingToolsHub() {
 }
 
 function renderSpreadsheetDatabaseToolsHub() {
-  const personas = SPREADSHEET_DATABASE_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = SPREADSHEET_DATABASE_TOP_COMPARISONS.map(
-    (comparison) => ({
-      ...comparison,
-      title: getComparisonTitleBySlug(comparison.slug),
-    })
+  const personas = buildPersonaSituationCards(
+    SPREADSHEET_DATABASE_PERSONAS,
+    "spreadsheet-database-tools"
   );
+  const topComparisons = buildTopComparisonCards(SPREADSHEET_DATABASE_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -3565,20 +3470,11 @@ function renderSpreadsheetDatabaseToolsHub() {
 }
 
 function renderTeamCollaborationToolsHub() {
-  const personas = TEAM_COLLABORATION_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = TEAM_COLLABORATION_TOP_COMPARISONS.map(
-    (comparison) => ({
-      ...comparison,
-      title: getComparisonTitleBySlug(comparison.slug),
-    })
+  const personas = buildPersonaSituationCards(
+    TEAM_COLLABORATION_PERSONAS,
+    "team-collaboration-tools"
   );
+  const topComparisons = buildTopComparisonCards(TEAM_COLLABORATION_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
@@ -3672,18 +3568,8 @@ function renderTeamCollaborationToolsHub() {
 }
 
 function renderTimeTrackingToolsHub() {
-  const personas = TIME_TRACKING_PERSONAS.map((persona) => ({
-    ...persona,
-    comparisons: persona.comparisonSlugs.map((slug) => ({
-      slug,
-      title: getComparisonTitleBySlug(slug),
-    })),
-  }));
-
-  const topComparisons = TIME_TRACKING_TOP_COMPARISONS.map((comparison) => ({
-    ...comparison,
-    title: getComparisonTitleBySlug(comparison.slug),
-  }));
+  const personas = buildPersonaSituationCards(TIME_TRACKING_PERSONAS, "time-tracking-tools");
+  const topComparisons = buildTopComparisonCards(TIME_TRACKING_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
