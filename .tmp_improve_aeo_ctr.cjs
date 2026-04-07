@@ -17,18 +17,8 @@ function trimPunctuation(text) {
   return cleanText(text).replace(/[.?!;:,]+$/g, "").trim();
 }
 
-function lowercaseFirst(text) {
-  const cleaned = cleanText(text);
-  if (!cleaned) return "";
-  return cleaned.charAt(0).toLowerCase() + cleaned.slice(1);
-}
-
 function splitWords(text) {
   return cleanText(text).split(" ").filter(Boolean);
-}
-
-function titleCasePersona(persona) {
-  return String(persona || "").trim();
 }
 
 function personaLabel(persona) {
@@ -48,165 +38,224 @@ function extractPair(title) {
   const match = String(title || "")
     .trim()
     .match(/^(.*?)\s+vs\s+(.*?)\s+for\s+(.+)$/i);
-
-  if (!match) {
-    return { xName: "", yName: "" };
-  }
-
-  return {
-    xName: match[1].trim(),
-    yName: match[2].trim(),
-  };
+  return match ? { xName: match[1].trim(), yName: match[2].trim() } : { xName: "", yName: "" };
 }
 
-function extractFailure(doc, loserLabel) {
-  const decisionRule = cleanText(doc?.verdict?.decision_rule || "");
-  const match = decisionRule.match(/^If\s+(.+?),\s+(.+?)\s+fails first[.!?]?$/i);
+function displayName(name) {
+  return trimPunctuation(String(name || "").replace(/\s*\([^)]*\)/g, ""));
+}
 
-  if (match) {
-    return {
-      trigger: normalizeClause(match[1]),
-      loserFromRule: trimPunctuation(match[2]),
-    };
-  }
-
-  const fallback = (doc.sections || [])
+function getLosingSection(doc) {
+  const loserSymbol = doc.verdict?.winner === "x" ? "y" : "x";
+  return (doc.sections || [])
     .find((section) => section.type === "failure_modes")
-    ?.items?.find((item) => item.tool === (doc.verdict?.winner === "x" ? "y" : "x"));
-
-  const failsWhen = cleanText(fallback?.fails_when || "");
-  const losesWhen = failsWhen.match(/\bwhen\s+(.+?)[.?!]?$/i);
-
-  return {
-    trigger: normalizeClause(losesWhen ? losesWhen[1] : failsWhen || `the main tradeoff breaks against ${loserLabel}`),
-    loserFromRule: loserLabel,
-  };
+    ?.items?.find((item) => item.tool === loserSymbol);
 }
 
-function buildLensSituation(lens, persona) {
-  let text = trimPunctuation(lens);
-  const personaEscaped = String(persona || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-
-  text = text.replace(/^You\s+/i, "");
-  text = text.replace(/^This person\s+/i, "");
-  text = text.replace(new RegExp(`^${personaEscaped}s?\\s+`, "i"), "");
-  text = text.replace(/^wants\s+/i, "want ");
-  text = text.replace(/^needs\s+/i, "need ");
-  text = text.replace(/^prefers\s+/i, "prefer ");
-
-  return trimPunctuation(text);
-}
-
-function buildSituation(uiName, lens, persona) {
-  const mapped = {
-    "Avoid errors": "want fewer mistakes",
-    "Easy to quit later": "want something easy to leave later",
-    "Easy to switch": "want switching to stay easy",
-    "Fast to use daily": "need less daily friction",
-    "Feels safe": "need more confidence",
-    "Focus on what matters": "want fewer distractions",
-    "Full control and flexibility": "want more control",
-    "Grows with you": "need room to grow",
-    "Handle complex workflows": "need to handle complex workflows",
-    "Handle scale": "need it to handle scale",
-    "Hard to mess up": "want fewer setup mistakes",
-    "Keep it running": "want it easy to maintain",
-    "Keep it simple": "want it simple",
-    "Keeps it simple": "want it simple",
-    "Keep things moving": "need work to keep moving",
-    "Move fast": "need speed",
-    "Publish fast": "need to publish fast",
-    "Runs itself": "want it to run itself",
-    "Safe to use": "need it to feel safe",
-    "Start fast": "need a fast start",
-    "Use and move on": "want to use it and move on",
-    "Works without upkeep": "want less upkeep",
-  };
-
-  if (mapped[String(uiName || "").trim()]) {
-    return mapped[String(uiName || "").trim()];
-  }
-
-  return buildLensSituation(lens, persona);
-}
-
-function clampClause(text, maxWords) {
-  const words = splitWords(text);
-  const clipped = words.slice(0, maxWords).join(" ");
-  return trimPunctuation(clipped);
-}
-
-function fixTrailingJoiner(text) {
-  return trimPunctuation(text).replace(/\b(and|or|but|so|because|if|when|with|without|to|of|for|that|which|a|an|the|your|their|its|this|these)$/i, "").trim();
-}
-
-function normalizeClause(text) {
-  return trimPunctuation(text)
-    .replace(/^(?:using|running|tracking|managing|sharing|storing|viewing)\s+.+?\s+requires\s+/i, "")
-    .replace(/\binstead of automatic cloud syncing and autofill\b/gi, "over cloud sync and autofill")
-    .replace(/\binstead of\b/gi, "over")
-    .replace(/\bthe user\b/gi, "you")
-    .replace(/\s+/g, " ")
+function compressText(text, maxWords) {
+  return trimPunctuation(splitWords(text).slice(0, maxWords).join(" "))
+    .replace(/\b(a|an|the|and|or|but|to|for|of|with|before|after)$/i, "")
     .trim();
 }
 
-function compressRelativeClause(text) {
-  const cleaned = trimPunctuation(text);
-  return cleaned
-    .replace(/^want\s+/i, "wanting ")
-    .replace(/^need\s+/i, "needing ")
-    .replace(/^prefer\s+/i, "preferring ");
+function buildSituationOptions(doc) {
+  const mapped = {
+    "Avoid errors": ["you want fewer mistakes", "you need fewer mistakes"],
+    "Easy to quit later": ["you might switch again soon", "you want something easy to leave"],
+    "Easy to switch": ["you may need to switch later", "you want switching to stay easy"],
+    "Fast to use daily": ["you need less daily friction", "you need faster daily use"],
+    "Feels safe": ["you need to trust the setup", "you need it to feel safe"],
+    "Focus on what matters": ["you want fewer distractions", "you need less distraction"],
+    "Full control and flexibility": ["you want more control", "you need more flexibility"],
+    "Grows with you": ["you expect the setup to grow", "you need room to grow"],
+    "Handle complex workflows": ["your workflow is complex", "you need complex workflow support"],
+    "Handle scale": ["the workload has to scale", "you need it to handle scale"],
+    "Hard to mess up": ["you need something hard to mess up", "you want fewer setup mistakes"],
+    "Keep it running": ["you cannot babysit the setup", "you want it easy to maintain"],
+    "Keep it simple": ["you want it simple", "you want one clear workflow"],
+    "Keeps it simple": ["you want it simple", "you want one clear workflow"],
+    "Keep things moving": ["work cannot stall", "you need work to keep moving"],
+    "Move fast": ["you need to move fast", "speed matters right away"],
+    "Publish fast": ["you need to publish fast", "speed matters right away"],
+    "Runs itself": ["you want it to run itself", "you want less manual upkeep"],
+    "Safe to use": ["you need it to feel safe", "you need more confidence"],
+    "Start fast": ["you need a fast start", "you need to start quickly"],
+    "Use and move on": ["you want to use it and move on", "you do not want long-term setup"],
+    "Works without upkeep": ["you want less upkeep", "you cannot keep tuning the setup"],
+  };
+
+  const uiName = String(doc.constraintUiName || "").trim();
+  const lens = trimPunctuation(doc.constraint_lens || "");
+  const lensBase = lens
+    .replace(/^You\s+/i, "you ")
+    .replace(/^This person\s+/i, "you ")
+    .replace(/^Beginners?\s+/i, "you ")
+    .replace(/^Students?\s+/i, "you ")
+    .replace(/^Busy professionals?\s+/i, "you ")
+    .replace(/^Power users?\s+/i, "you ")
+    .replace(/^Solo users?\s+/i, "you ")
+    .replace(/^Minimalists?\s+/i, "you ")
+    .replace(/^Nontechnical users?\s+/i, "you ");
+  const options = new Set(mapped[uiName] || []);
+  options.add(compressText(lensBase, 10));
+  options.add(compressText(lensBase, 9));
+  options.add(compressText(lensBase, 8));
+  options.add(compressText(lensBase, 7));
+  return [...options].filter(Boolean);
 }
 
-function buildMetaDescription(persona, situationInput, winner, loser, trigger) {
-  const personaText = personaLabel(persona);
-  const triggerWords = splitWords(trigger);
-  const candidates = [];
-  const minTriggerWords = Math.min(5, triggerWords.length);
-  const suffixes = [" overall.", " here.", " in this matchup.", " for this decision.", " for this tradeoff."];
-  const situationOptions = Array.isArray(situationInput) ? situationInput : [situationInput];
+function normalizeMechanism(text) {
+  let value = trimPunctuation(text)
+    .replace(/^if\s+/i, "")
+    .replace(/\bthe user\b/gi, "you")
+    .replace(/\binstead of\b/gi, "before")
+    .replace(/\s+/g, " ")
+    .trim();
 
-  const templates = [
-    (s, t) => `For ${personaText} ${compressRelativeClause(s)}, pick ${winner} when ${t}; ${loser} fails first.`,
-    (s, t) => `For ${personaText} who ${s}, pick ${winner} when ${t}; ${loser} fails first.`,
-    (s, t) => `For ${personaText} who ${s}, choose ${winner} when ${t}; ${loser} fails first.`,
-    (s, t) => `For ${personaText} who ${s}, ${winner} wins when ${t}; ${loser} fails first.`,
-    (s, t) => `For ${personaText} who ${s}, pick ${winner}; ${loser} fails first when ${t}.`,
-    (s, t) => `For ${personaText} who ${s}, choose ${winner}; ${loser} fails first when ${t}.`,
+  const requiresMatch = value.match(/^(.+?)\s+requires\s+(.+)$/i);
+  if (requiresMatch) {
+    value = `it requires ${trimPunctuation(requiresMatch[2])} before ${trimPunctuation(requiresMatch[1])}`;
+  } else if (!/^it\s+/i.test(value)) {
+    value = `it breaks when ${value}`;
+  }
+
+  value = value
+    .replace(/\bmay require\b/gi, "requires")
+    .replace(/\badds complexity\b/gi, "breaks when complexity piles up")
+    .replace(/\bcan slow you down\b/gi, "fails when speed matters")
+    .replace(/\bbecome indistinguishable\b/gi, "blur together")
+    .replace(/\bautomatic cloud syncing and autofill\b/gi, "cloud sync and autofill")
+    .replace(/\bappear as the default writing model\b/gi, "show up by default")
+    .replace(/\bmust be configured before use\b/gi, "must be set up first")
+    .replace(/\bnavigating workforce scheduling and compliance workflows\b/gi, "workforce scheduling comes before tracking time")
+    .replace(/\brelying on a vendor-hosted vault before deploying\b/gi, "a vendor-hosted vault comes before self-hosting")
+    .replace(/\bopen-ended community-style channels\b/gi, "community-style channels")
+    .replace(/\bautomated optimization adds unnecessary background activity\b/gi, "automation adds background activity")
+    .replace(/\bmultiple views and configuration panels add extra decisions\b/gi, "multiple views force extra decisions")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  return value;
+}
+
+function mechanismOptions(mechanism) {
+  const options = new Set([mechanism]);
+
+  const requiresMatch = mechanism.match(/^it requires\s+(.+)$/i);
+  if (requiresMatch) {
+    const tail = trimPunctuation(requiresMatch[1]);
+    options.add(`it requires ${compressText(tail, 8)}`);
+    options.add(`it requires ${compressText(tail, 7)}`);
+    options.add(`it requires ${compressText(tail, 6)}`);
+    options.add(`it requires ${compressText(tail, 5)}`);
+    options.add(compressText(tail, 8));
+    options.add(compressText(tail, 7));
+  }
+
+  const breaksMatch = mechanism.match(/^it breaks when\s+(.+)$/i);
+  if (breaksMatch) {
+    const tail = trimPunctuation(breaksMatch[1]);
+    options.add(`it breaks when ${compressText(tail, 9)}`);
+    options.add(`it breaks when ${compressText(tail, 8)}`);
+    options.add(`it breaks when ${compressText(tail, 7)}`);
+    options.add(`it breaks when ${compressText(tail, 6)}`);
+    options.add(compressText(tail, 9));
+    options.add(compressText(tail, 8));
+    options.add(compressText(tail, 7));
+  }
+
+  const filtered = [...options].filter((option) => option && option.length >= 28);
+  return filtered.length ? filtered : [mechanism];
+}
+
+function extractMechanism(doc) {
+  const decisionRule = cleanText(doc?.verdict?.decision_rule || "");
+  const match = decisionRule.match(/^If\s+(.+?),\s+(.+?)\s+fails first[.!?]?$/i);
+  if (match) return normalizeMechanism(match[1]);
+
+  const loser = getLosingSection(doc);
+  const fallback = cleanText(loser?.fails_when || "");
+  const whenMatch = fallback.match(/\bwhen\s+(.+?)[.?!]?$/i);
+  return normalizeMechanism(whenMatch ? whenMatch[1] : fallback);
+}
+
+function buildSummary(doc) {
+  const persona = personaLabel(doc.persona);
+  const mapped = {
+    "Avoid errors": "Best for " + persona + " who want fewer mistakes.",
+    "Easy to quit later": "Best for " + persona + " who may switch again soon.",
+    "Easy to switch": "Best for " + persona + " who need switching to stay easy.",
+    "Fast to use daily": "Best for " + persona + " who need faster daily use.",
+    "Feels safe": "Best for " + persona + " who need a safer-feeling setup.",
+    "Focus on what matters": "Best for " + persona + " who want fewer distractions.",
+    "Full control and flexibility": "Best for " + persona + " who want more control.",
+    "Grows with you": "Best for " + persona + " who need room to grow.",
+    "Handle complex workflows": "Best for " + persona + " who run complex workflows.",
+    "Handle scale": "Best for " + persona + " who need the setup to scale.",
+    "Hard to mess up": "Best for " + persona + " who want fewer setup mistakes.",
+    "Keep it running": "Best for " + persona + " who cannot babysit the setup.",
+    "Keep it simple": "Best for " + persona + " who want one clear workflow.",
+    "Keeps it simple": "Best for " + persona + " who want one clear workflow.",
+    "Keep things moving": "Best for " + persona + " who cannot let work stall.",
+    "Move fast": "Best for " + persona + " who need speed right away.",
+    "Publish fast": "Best for " + persona + " who need to publish fast.",
+    "Runs itself": "Best for " + persona + " who want less manual upkeep.",
+    "Safe to use": "Best for " + persona + " who need more confidence.",
+    "Start fast": "Best for " + persona + " who need a fast start.",
+    "Use and move on": "Best for " + persona + " who want to use it and move on.",
+    "Works without upkeep": "Best for " + persona + " who want less upkeep.",
+  };
+
+  return cleanText(mapped[String(doc.constraintUiName || "").trim()] || `Best for ${persona} who need this to work with less friction.`);
+}
+
+function buildReason(loser, mechanism) {
+  return cleanText(`${loser} fails first because ${mechanism.replace(/^it\s+/i, "it ")}.`);
+}
+
+function buildMetaDescription(winner, loser, situations, mechanism) {
+  const candidates = [];
+  const mechanismChoices = mechanismOptions(mechanism);
+  const seeWhyOptions = [
+    `See why ${winner} holds up.`,
+    `See why ${winner} still holds up.`,
+    `See why ${winner} holds up better.`,
+    `See why ${winner} holds up under pressure.`,
+    `See why ${winner} holds up over time.`,
+    `See why ${winner} holds up under team pressure.`,
+    `See why ${winner} holds up for this kind of work.`,
+    `See why ${winner} holds up when the stakes stay real.`,
   ];
 
-  for (const template of templates) {
-    for (const [situationIndex, rawSituation] of situationOptions.entries()) {
-      const situation = trimPunctuation(rawSituation);
-      const situationWords = splitWords(situation);
-      const minSituationWords = Math.min(5, situationWords.length);
-      for (let sCount = Math.min(situationWords.length, 14); sCount >= minSituationWords; sCount -= 1) {
-        for (let tCount = Math.min(triggerWords.length, 18); tCount >= minTriggerWords; tCount -= 1) {
-          const s = fixTrailingJoiner(clampClause(situation, sCount));
-          const t = fixTrailingJoiner(clampClause(trigger, tCount));
-          if (!s || !t) continue;
-          const candidate = cleanText(template(s, t));
-          candidates.push({ text: candidate, penalty: situationIndex * 8 });
-          if (candidate.length < TARGET_MIN) {
-            for (const suffix of suffixes) {
-              const padded = candidate.replace(/\.$/, "") + suffix;
-              if (padded.length <= TARGET_MAX) {
-                candidates.push({ text: padded, penalty: situationIndex * 8 });
-              }
-            }
-          }
+  for (const situation of situations) {
+    const situationOptions = [
+      trimPunctuation(situation),
+      compressText(situation, 7),
+      compressText(situation, 6),
+      compressText(situation, 5),
+    ].filter(Boolean);
+
+    for (const [situationIndex, s] of situationOptions.entries()) {
+      for (const m of mechanismChoices) {
+        for (const ending of seeWhyOptions) {
+          const penalty = situationIndex * 3;
+          candidates.push({ text: cleanText(`If ${s}, ${loser} fails first because ${m}. ${ending}`), penalty });
+          candidates.push({ text: cleanText(`If ${s} long-term, ${loser} fails first because ${m}. ${ending}`), penalty });
+          candidates.push({ text: cleanText(`If ${s} every day, ${loser} fails first because ${m}. ${ending}`), penalty });
+          candidates.push({ text: cleanText(`If ${s} day to day, ${loser} fails first because ${m}. ${ending}`), penalty });
+          candidates.push({ text: cleanText(`If ${s} at work, ${loser} fails first because ${m}. ${ending}`), penalty });
         }
       }
     }
   }
 
-  let best = candidates[0]?.text || cleanText(`For ${personaText}, pick ${winner} when ${trigger}; ${loser} fails first.`);
+  let best = "";
   let bestScore = Number.POSITIVE_INFINITY;
 
   for (const candidate of candidates) {
     const length = candidate.text.length;
-    const inRangePenalty = length < TARGET_MIN || length > TARGET_MAX ? 1000 : 0;
-    const score = inRangePenalty + Math.abs(length - TARGET_IDEAL) + candidate.penalty;
+    const rangePenalty = length < TARGET_MIN || length > TARGET_MAX ? 1000 : 0;
+    const score = rangePenalty + Math.abs(length - TARGET_IDEAL) + candidate.penalty;
     if (score < bestScore) {
       best = candidate.text;
       bestScore = score;
@@ -214,96 +263,10 @@ function buildMetaDescription(persona, situationInput, winner, loser, trigger) {
   }
 
   if (best.length < TARGET_MIN || best.length > TARGET_MAX) {
-    throw new Error(`Unable to fit meta description in range: ${best.length} ${best}`);
+    throw new Error(`Meta description length ${best.length} out of range: ${best}`);
   }
 
   return best;
-}
-
-function buildVerdictSummary(persona, situation) {
-  const personaText = personaLabel(persona);
-  const words = splitWords(situation);
-  const clipped = fixTrailingJoiner(words.slice(0, Math.min(words.length, 9)).join(" "));
-  return cleanText(`Best for ${personaText} who ${clipped}.`);
-}
-
-function buildVerdictReason(loser, trigger) {
-  return cleanText(`${loser} fails first when ${trimPunctuation(trigger)}.`);
-}
-
-function getSection(doc, type) {
-  return (doc.sections || []).find((section) => section.type === type) || null;
-}
-
-function getBulletsText(section) {
-  const bullet = section?.bullets?.[0]?.point || "";
-  return trimPunctuation(bullet);
-}
-
-function stripLeadingLabel(text, label) {
-  const escaped = String(label || "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  return trimPunctuation(String(text || "").replace(new RegExp(`^${escaped}\\s+`, "i"), ""));
-}
-
-function getFailureMode(doc, symbol) {
-  return getSection(doc, "failure_modes")?.items?.find((item) => item.tool === symbol) || null;
-}
-
-function extractClauseAfterWhen(text) {
-  const cleaned = cleanText(text);
-  const match = cleaned.match(/\bwhen\s+(.+?)[.?!]?$/i);
-  if (match) {
-    return fixTrailingJoiner(match[1]);
-  }
-  return trimPunctuation(cleaned);
-}
-
-function extractChooseInsteadClause(item, label) {
-  const fromInstead = cleanText(item?.what_to_do_instead || "");
-  const chooseMatch = fromInstead.match(new RegExp(`^Choose\\s+${label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s+(?:if|when)\\s+(.+?)[.?!]?$`, "i"));
-  if (chooseMatch) {
-    return fixTrailingJoiner(chooseMatch[1]);
-  }
-
-  const failsWhen = cleanText(item?.fails_when || "");
-  const whenClause = extractClauseAfterWhen(failsWhen);
-  return whenClause || `the tradeoff shifts toward ${label}`;
-}
-
-function buildFaqs(doc, winner, loser, winnerSymbol, loserSymbol, trigger, persona, situation) {
-  const winnerMode = getFailureMode(doc, winnerSymbol);
-  const winnerWins = getBulletsText(getSection(doc, winnerSymbol === "x" ? "x_wins" : "y_wins"));
-  const loserChooseClause = extractChooseInsteadClause(winnerMode, loser);
-  const winnerReason = winnerWins
-    ? `${winner} ${lowercaseFirst(stripLeadingLabel(winnerWins, winner))}`
-    : `${winner} stays closer to what ${personaLabel(persona)} need`;
-  const canonical = [
-    {
-      q: `Which tool better matches this priority?`,
-      a: `${winner} fits this need better because ${winnerReason}. ${loser} fails first when ${trigger}.`,
-    },
-    {
-      q: `When should I choose ${loser} instead?`,
-      a: `Choose ${loser} over ${winner} when ${loserChooseClause}. Otherwise, ${winner} remains the better fit for this comparison.`,
-    },
-    {
-      q: `What makes ${loser} fail first here?`,
-      a: `${loser} fails first here when ${trigger}. That is the point where ${winner} becomes the stronger pick.`,
-    },
-    {
-      q: `Is this verdict only about one feature?`,
-      a: `No. ${winner} beats ${loser} because ${winnerReason}, while ${loser} loses once ${trigger}.`,
-    },
-  ];
-
-  return (doc.faqs || []).map((_, index) => canonical[index] || canonical[canonical.length - 1]);
-}
-
-function validateMetaDescription(text) {
-  const length = text.length;
-  if (length < TARGET_MIN || length > TARGET_MAX) {
-    throw new Error(`Meta description length ${length} is out of range: ${text}`);
-  }
 }
 
 let updated = 0;
@@ -312,26 +275,19 @@ for (const file of fs.readdirSync(PAGES_DIR).filter((name) => name.endsWith(".js
   const filePath = path.join(PAGES_DIR, file);
   const doc = JSON.parse(fs.readFileSync(filePath, "utf8"));
   const { xName, yName } = extractPair(doc.title);
-  const winnerSymbol = doc.verdict?.winner;
-  const winner = winnerSymbol === "x" ? xName : yName;
-  const loser = winnerSymbol === "x" ? yName : xName;
-  const { trigger } = extractFailure(doc, loser);
-  const situation = buildSituation(doc.constraintUiName, doc.constraint_lens, titleCasePersona(doc.persona));
-  const altSituation = buildLensSituation(doc.constraint_lens, titleCasePersona(doc.persona));
+  const winner = doc.verdict?.winner === "x" ? xName : yName;
+  const loser = doc.verdict?.winner === "x" ? yName : xName;
+  const winnerShort = displayName(winner);
+  const loserShort = displayName(loser);
+  const situations = buildSituationOptions(doc);
+  const mechanism = extractMechanism(doc);
 
-  const nextMeta = buildMetaDescription(doc.persona, [situation, altSituation], winner, loser, trigger);
-  const nextVerdict = {
+  doc.meta_description = buildMetaDescription(winnerShort, loserShort, situations, mechanism);
+  doc.one_second_verdict = {
     ...doc.one_second_verdict,
-    summary: buildVerdictSummary(doc.persona, situation),
-    reason: buildVerdictReason(loser, trigger),
+    summary: buildSummary(doc),
+    reason: buildReason(loserShort, mechanism),
   };
-  const nextFaqs = buildFaqs(doc, winner, loser, winnerSymbol, winnerSymbol === "x" ? "y" : "x", trigger, doc.persona, situation);
-
-  validateMetaDescription(nextMeta);
-
-  doc.meta_description = nextMeta;
-  doc.one_second_verdict = nextVerdict;
-  doc.faqs = nextFaqs;
 
   fs.writeFileSync(filePath, `${JSON.stringify(doc, null, 2)}\n`, "utf8");
   updated += 1;
