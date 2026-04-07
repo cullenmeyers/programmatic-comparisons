@@ -2,6 +2,11 @@ import fs from "node:fs";
 import path from "node:path";
 import type { NextConfig } from "next";
 
+const LEGACY_SITE_HOSTS = [
+  "decisionclarities.com",
+  "www.decisionclarities.com",
+] as const;
+
 const legacyComparisonRedirects = [
   {
     source: "/compare/forecast-vs-basecamp-for-power-user",
@@ -106,6 +111,14 @@ type RedirectRule = {
   destination: string;
 };
 
+type NextRedirectRule = RedirectRule & {
+  has?: Array<{
+    type: "host";
+    value: string;
+  }>;
+  permanent: true;
+};
+
 function loadGeneratedComparisonRedirects(): RedirectRule[] {
   const redirectsPath = path.join(
     process.cwd(),
@@ -121,6 +134,19 @@ function loadGeneratedComparisonRedirects(): RedirectRule[] {
   return JSON.parse(fs.readFileSync(redirectsPath, "utf8")) as RedirectRule[];
 }
 
+function buildDirectLegacyHostRedirects(
+  redirects: RedirectRule[]
+): NextRedirectRule[] {
+  return redirects.flatMap((redirect) =>
+    LEGACY_SITE_HOSTS.map((host) => ({
+      source: redirect.source,
+      destination: `https://gettoolpicker.com${redirect.destination}`,
+      has: [{ type: "host", value: host }],
+      permanent: true as const,
+    }))
+  );
+}
+
 const nextConfig: NextConfig = {
   async redirects() {
     const generatedRedirects = loadGeneratedComparisonRedirects();
@@ -134,10 +160,15 @@ const nextConfig: NextConfig = {
       redirectMap.set(redirect.source, redirect);
     }
 
-    return Array.from(redirectMap.values()).map((redirect) => ({
-      ...redirect,
-      permanent: true,
-    }));
+    const canonicalComparisonRedirects = Array.from(redirectMap.values());
+
+    return [
+      ...buildDirectLegacyHostRedirects(canonicalComparisonRedirects),
+      ...canonicalComparisonRedirects.map((redirect) => ({
+        ...redirect,
+        permanent: true as const,
+      })),
+    ];
   },
 };
 
