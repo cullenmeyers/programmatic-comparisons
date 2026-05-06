@@ -4,7 +4,8 @@ import DecisionSurface, {
   type DecisionEngineData,
 } from "@/components/decision-engine/DecisionSurface";
 import { absoluteUrl } from "@/lib/site";
-import decisionEngineData from "../../../content/decision-engine/core-constraints.json";
+import coreConstraintData from "../../../content/decision-engine/core-constraints.json";
+import decisionSurfaceData from "../../../content/decision-engine/decision-surfaces.json";
 
 export const metadata: Metadata = {
   title: "Find the right tool by constraint",
@@ -16,7 +17,10 @@ export const metadata: Metadata = {
 };
 
 export default function DecidePage() {
-  const data = decisionEngineData as DecisionEngineData;
+  const data = {
+    ...coreConstraintData,
+    decision_surfaces: decisionSurfaceData.decision_surfaces,
+  } as DecisionEngineData;
 
   return (
     <main className="site-container page-shell content-stack">
@@ -32,8 +36,8 @@ export default function DecidePage() {
 
       <Card className="border-black/10 p-4">
         <p className="text-sm leading-6 text-black/65">
-          Human intent → Core constraints → Mechanism / friction → Failure
-          pattern → Decision direction
+          Human intent → Core constraints → Decision surfaces → Mechanism /
+          friction / failure
         </p>
       </Card>
 

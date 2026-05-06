@@ -4,50 +4,28 @@ import { useState } from "react";
 import Card from "@/components/ui/Card";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { cx } from "@/components/ui/classnames";
+import {
+  deriveDecisionDirection,
+  findMatchingDecisionSurfaces,
+  formatOppositePull,
+  type CoreConstraint,
+  type DecisionEngineData,
+} from "./decisionEngine";
 
-type CoreConstraint = {
-  id: string;
-  name: string;
-  definition: string;
-  sensitivity: string;
-  mechanism_sensitivity: string;
-  friction_pattern: string;
-  failure_trigger: string;
-  opposite_pull: string | string[];
-  user_phrases: string[];
-  example_categories: string[];
-  example_pages: string[];
-};
-
-type DerivedPersona = {
-  persona: string;
-  primary_constraints: string[];
-  secondary_constraints: string[];
-  dominant_failure_fear: string;
-  typical_user_language: string[];
-};
-
-type IntentMapItem = {
-  phrase: string;
-  normalized_meaning: string;
-  mapped_constraints: string[];
-  failure_avoided: string;
-  decision_surface: string;
-};
-
-export type DecisionEngineData = {
-  version: string;
-  core_constraints: CoreConstraint[];
-  derived_personas: DerivedPersona[];
-  intent_map: IntentMapItem[];
-};
+export type { DecisionEngineData } from "./decisionEngine";
 
 type DecisionSurfaceProps = {
   data: DecisionEngineData;
 };
 
-function formatOppositePull(value: string | string[]) {
-  return Array.isArray(value) ? value.join(", ") : value;
+function renderList(items: string[]) {
+  return (
+    <ul className="space-y-2 text-sm leading-6 text-black/70">
+      {items.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
+  );
 }
 
 export default function DecisionSurface({ data }: DecisionSurfaceProps) {
@@ -73,6 +51,19 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
         )
       )
     : [];
+
+  const matchingDecisionSurfaces = selectedIntent
+    ? findMatchingDecisionSurfaces(data, selectedIntent.mapped_constraints)
+    : [];
+
+  const decisionDirection =
+    selectedIntent && matchingDecisionSurfaces.length > 0
+      ? deriveDecisionDirection(data, selectedConstraints, matchingDecisionSurfaces)
+      : null;
+
+  const constraintNames = new Map(
+    data.core_constraints.map((constraint) => [constraint.id, constraint.name])
+  );
 
   return (
     <div className="content-stack gap-8">
@@ -181,7 +172,7 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
                         Opposite pull
                       </p>
                       <p className="text-sm leading-6 text-black/70">
-                        {formatOppositePull(constraint.opposite_pull)}
+                        {formatOppositePull(constraint.opposite_pull, constraintNames)}
                       </p>
                     </div>
                   </div>
@@ -191,22 +182,90 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
           </section>
 
           <section className="content-stack gap-3">
-            <SectionHeading title="Decision direction" />
+            <SectionHeading title="Matching decision surfaces" />
             <div className="grid gap-4">
-              {selectedConstraints.map((constraint) => (
-                <Card key={`${constraint.id}-direction`} className="space-y-3">
-                  <p className="text-sm font-medium text-black">{constraint.name}</p>
-                  <div className="space-y-2 text-sm leading-6 text-black/70">
-                    <p>Favor tools that reduce: {constraint.friction_pattern}</p>
-                    <p>Avoid tools that fail when: {constraint.failure_trigger}</p>
-                    <p>
-                      Watch for tradeoff: {formatOppositePull(constraint.opposite_pull)}
+              {matchingDecisionSurfaces.map((surface) => (
+                <Card key={surface.id} className="space-y-4">
+                  <div className="space-y-1">
+                    <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                      Surface
                     </p>
+                    <h3 className="text-lg font-semibold text-black">{surface.name}</h3>
+                  </div>
+
+                  <div className="space-y-1">
+                    <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                      Core problem
+                    </p>
+                    <p className="text-sm leading-6 text-black/70">
+                      {surface.core_problem}
+                    </p>
+                  </div>
+
+                  <div className="grid gap-4 md:grid-cols-2">
+                    <div className="space-y-1">
+                      <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                        Decision question
+                      </p>
+                      <p className="text-sm leading-6 text-black/70">
+                        {surface.decision_question}
+                      </p>
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                        Dominant failure pattern
+                      </p>
+                      <p className="text-sm leading-6 text-black/70">
+                        {surface.dominant_failure_pattern}
+                      </p>
+                    </div>
                   </div>
                 </Card>
               ))}
             </div>
           </section>
+
+          {decisionDirection ? (
+            <section className="content-stack gap-3">
+              <SectionHeading title="Decision direction" />
+              <Card className="space-y-5">
+                <div className="space-y-2">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Tools tend to survive here when they:
+                  </p>
+                  {renderList(decisionDirection.survivingMechanisms)}
+                </div>
+
+                <div className="space-y-2">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Tools tend to fail here when they:
+                  </p>
+                  {renderList(decisionDirection.failureMechanisms)}
+                  <p className="text-sm leading-6 text-black/70">
+                    Failure pattern: {decisionDirection.failurePatterns.join(" ")}
+                  </p>
+                </div>
+
+                <div className="space-y-1">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Primary tradeoff
+                  </p>
+                  <p className="text-sm leading-6 text-black/70">
+                    {decisionDirection.primaryTradeoff}
+                  </p>
+                </div>
+
+                <div className="space-y-1">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Constraint pressure
+                  </p>
+                  <p className="text-sm leading-6 text-black/70">
+                    {decisionDirection.constraintPressure}
+                  </p>
+                </div>
+              </Card>
+            </section>
+          ) : null}
 
           <section className="content-stack gap-3">
             <SectionHeading title="Matching persona bundles" />
@@ -231,11 +290,7 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
                     <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
                       Typical user language
                     </p>
-                    <ul className="space-y-2 text-sm leading-6 text-black/70">
-                      {persona.typical_user_language.map((line) => (
-                        <li key={line}>{line}</li>
-                      ))}
-                    </ul>
+                    {renderList(persona.typical_user_language)}
                   </div>
                 </Card>
               ))}
