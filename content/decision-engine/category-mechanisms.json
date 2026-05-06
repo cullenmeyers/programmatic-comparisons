@@ -1,0 +1,471 @@
+{
+  "version": "1.0",
+  "categories": [
+    {
+      "category": "Task Managers",
+      "slug": "task-managers",
+      "sensitive_constraints": [
+        "daily_throughput",
+        "activation_friction",
+        "complexity_load",
+        "upkeep_burden",
+        "control_ceiling"
+      ],
+      "dominant_mechanisms": [
+        "capture-to-organize ratio determines whether the system helps or delays action",
+        "the visibility of next actions matters more than total feature depth",
+        "recurring task handling and review burden determine whether the list stays trustworthy",
+        "tools survive when they preserve fast entry while scaling structure only when needed"
+      ],
+      "common_friction_patterns": [
+        "the user must classify, project-tag, or prioritize before a task can be captured",
+        "daily use slows when list views require too much scanning before choosing the next action",
+        "the system creates maintenance work through recurring grooming, stale projects, and list cleanup",
+        "simple personal work is forced through a heavier planning model than the job requires"
+      ],
+      "common_failure_patterns": [
+        "capture stops first because entering work feels slower than remembering it",
+        "the backlog becomes untrusted because completed, deferred, and stale items accumulate",
+        "users abandon structured workflows when planning overhead exceeds execution value",
+        "lightweight tools fail later when multi-project coordination forces workarounds outside the tool"
+      ],
+      "constraint_interactions": [
+        {
+          "constraint": "activation_friction",
+          "mechanism_effect": "In task managers, startup friction is mainly the cost of deciding structure before any task is safely captured.",
+          "typical_failure": "The user delays adoption because first value depends on setting up projects, labels, or views."
+        },
+        {
+          "constraint": "daily_throughput",
+          "mechanism_effect": "Throughput is dominated by capture speed, rescheduling speed, and glanceability of the current list.",
+          "typical_failure": "Micro-friction in adding and triaging tasks compounds until the tool itself becomes the daily bottleneck."
+        },
+        {
+          "constraint": "complexity_load",
+          "mechanism_effect": "Extra workflow layers matter more here because the core job is often just remember, choose, and complete.",
+          "typical_failure": "The user feels they are managing the system instead of the work."
+        },
+        {
+          "constraint": "upkeep_burden",
+          "mechanism_effect": "Maintenance appears as recurring reviews, stale project cleanup, and reorganization rituals.",
+          "typical_failure": "The list loses trust because keeping it current requires a separate care routine."
+        },
+        {
+          "constraint": "control_ceiling",
+          "mechanism_effect": "Ceiling risk appears when a simple list tool cannot absorb dependencies, richer contexts, or deeper workflow segmentation.",
+          "typical_failure": "The user starts duplicating planning in notes, calendars, or spreadsheets because the task tool tops out."
+        }
+      ],
+      "representative_decision_surfaces": [
+        "repeated-action-efficiency",
+        "minimal-system-overhead",
+        "instant-value-under-urgency",
+        "flexibility-versus-operational-simplicity"
+      ],
+      "example_comparison_slugs": [
+        "asana-vs-todoist-for-busy-professional",
+        "apple-reminders-vs-sunsama-for-solo-user",
+        "trello-vs-workflowy-for-minimalist",
+        "monday-com-vs-trello-for-power-user"
+      ]
+    },
+    {
+      "category": "Note-taking apps",
+      "slug": "note-taking-apps",
+      "sensitive_constraints": [
+        "activation_friction",
+        "exit_reversibility",
+        "complexity_load",
+        "operational_safety",
+        "control_ceiling"
+      ],
+      "dominant_mechanisms": [
+        "the category turns on how much structure is required before notes become retrievable and reusable",
+        "capture speed competes directly with long-term knowledge organization ambitions",
+        "sync trust and retrieval legibility matter more than raw authoring capability",
+        "tools survive when they offer immediate capture while delaying deeper system commitment until value is proven"
+      ],
+      "common_friction_patterns": [
+        "the user must choose folders, links, tags, or workflow philosophy before capturing useful content",
+        "note systems become harder to trust when sync or storage behavior is not mentally legible",
+        "the knowledge model asks for more intentional organization than the actual note-taking need warrants",
+        "migration anxiety rises when note structure becomes tightly coupled to one tool's operating model"
+      ],
+      "common_failure_patterns": [
+        "capture collapses because the user hesitates at note placement and structure decisions",
+        "the vault or workspace becomes overbuilt before the real note habit stabilizes",
+        "trust drops when retrieval, sync, or editing state feels ambiguous",
+        "simple tools fail later when the user needs richer linking, structure, or durable reuse"
+      ],
+      "constraint_interactions": [
+        {
+          "constraint": "activation_friction",
+          "mechanism_effect": "In note-taking, activation friction is the cost of deciding an information architecture before writing the note.",
+          "typical_failure": "Users postpone the system because capture is blocked by taxonomy, workspace, or plugin decisions."
+        },
+        {
+          "constraint": "exit_reversibility",
+          "mechanism_effect": "Reversibility depends on how much the note habit becomes embedded in a tool-specific structure or workflow.",
+          "typical_failure": "The user avoids committing because the note base feels costly to unwind if needs change."
+        },
+        {
+          "constraint": "complexity_load",
+          "mechanism_effect": "Complexity appears as thinking about the note system more than thinking about the note itself.",
+          "typical_failure": "Writing slows because every capture implies an organizational decision."
+        },
+        {
+          "constraint": "operational_safety",
+          "mechanism_effect": "Safety is driven by sync clarity, storage confidence, and predictable retrieval behavior.",
+          "typical_failure": "Users stop trusting the system when they are unsure where notes live or whether edits are stable."
+        },
+        {
+          "constraint": "control_ceiling",
+          "mechanism_effect": "Ceiling risk matters when lightweight apps cannot evolve into richer knowledge workflows.",
+          "typical_failure": "The tool remains easy but becomes too shallow for linking, reuse, or long-horizon organization."
+        }
+      ],
+      "representative_decision_surfaces": [
+        "instant-value-under-urgency",
+        "short-horizon-reversibility",
+        "safe-everyday-operation",
+        "growth-headroom-without-rebuild"
+      ],
+      "example_comparison_slugs": [
+        "apple-notes-vs-logseq-for-beginner",
+        "apple-notes-vs-joplin-for-student",
+        "apple-notes-vs-obsidian-for-power-user",
+        "notion-vs-simplenote-for-minimalist"
+      ]
+    },
+    {
+      "category": "Time Tracking Tools",
+      "slug": "time-tracking-tools",
+      "sensitive_constraints": [
+        "activation_friction",
+        "daily_throughput",
+        "upkeep_burden",
+        "complexity_load",
+        "operational_safety"
+      ],
+      "dominant_mechanisms": [
+        "the category is dominated by initiation reliability because value disappears when tracking is not started or maintained",
+        "manual versus passive capture is a structural mechanism, not a feature preference",
+        "the correction burden after missed tracking sessions determines long-term trust",
+        "tools survive when they reduce memory dependence and keep logging legible under interruption"
+      ],
+      "common_friction_patterns": [
+        "the user must remember to start, stop, classify, or correct time repeatedly throughout the day",
+        "the interface slows frequent context switching between tasks, clients, or projects",
+        "review and cleanup overhead grows because raw logs need constant reconciliation",
+        "the system becomes too heavy when billing, project management, or team process surrounds a simple logging need"
+      ],
+      "common_failure_patterns": [
+        "tracking fails first at the initiation layer because the user forgets to start or switch timers",
+        "data becomes untrustworthy because reconstruction after missed intervals is too painful",
+        "users churn when upkeep to clean and categorize logs exceeds the value of the reports",
+        "lightweight trackers fail later when operational reporting or client structure outgrows the tool"
+      ],
+      "constraint_interactions": [
+        {
+          "constraint": "activation_friction",
+          "mechanism_effect": "Here activation friction is not just initial setup but repeated start friction at each logging moment.",
+          "typical_failure": "The workflow breaks because beginning a tracking session asks for too much effort or memory."
+        },
+        {
+          "constraint": "daily_throughput",
+          "mechanism_effect": "Throughput is determined by how fast users can start, switch, and annotate time under interruption.",
+          "typical_failure": "Repeated logging friction makes accurate tracking incompatible with a busy day."
+        },
+        {
+          "constraint": "upkeep_burden",
+          "mechanism_effect": "Maintenance appears as correcting missed time, cleaning logs, and resolving ambiguous activity records.",
+          "typical_failure": "The tracker becomes a reconciliation chore instead of a support system."
+        },
+        {
+          "constraint": "complexity_load",
+          "mechanism_effect": "Complexity rises sharply when simple time awareness is wrapped in billing, staffing, or workflow modules.",
+          "typical_failure": "Users abandon the tool because the surrounding system is heavier than the act of logging time."
+        },
+        {
+          "constraint": "operational_safety",
+          "mechanism_effect": "Safety means confidence that recorded time reflects reality and will not silently misclassify work.",
+          "typical_failure": "Trust collapses when users cannot tell whether logs are complete, duplicated, or wrongly assigned."
+        }
+      ],
+      "representative_decision_surfaces": [
+        "passive-capture-over-manual-initiation",
+        "repeated-action-efficiency",
+        "low-maintenance-continuity",
+        "instant-value-under-urgency"
+      ],
+      "example_comparison_slugs": [
+        "officetime-vs-toggl-track-for-beginner",
+        "rescuetime-vs-toggl-track-for-busy-professional",
+        "activitywatch-vs-clockify-for-solo-user",
+        "atracker-vs-kimai-for-student"
+      ]
+    },
+    {
+      "category": "Email / Inbox tools",
+      "slug": "email-inbox-tools",
+      "sensitive_constraints": [
+        "daily_throughput",
+        "operational_safety",
+        "coordination_clarity",
+        "complexity_load",
+        "activation_friction"
+      ],
+      "dominant_mechanisms": [
+        "the category is governed by triage speed under message volume rather than deep configuration breadth",
+        "signal extraction matters more than total capability because inbox work is throughput-sensitive",
+        "trust depends on whether users can reliably tell what has been handled, deferred, or delegated",
+        "tools survive when they keep message state legible while reducing scan cost and routing friction"
+      ],
+      "common_friction_patterns": [
+        "the inbox demands too much scanning before the next useful action becomes obvious",
+        "users must manually reconstruct whether a thread is actionable, done, or waiting on someone else",
+        "workflow add-ons create extra surfaces around the basic act of triage and response",
+        "setup or training steps delay first improvement even though the pain is immediate and daily"
+      ],
+      "common_failure_patterns": [
+        "the user falls behind because scan cost and state ambiguity compound across the day",
+        "important threads slip when ownership or follow-up state is not visible enough",
+        "automation-heavy workflows fail when the user stops trusting what the inbox is doing on their behalf",
+        "powerful clients lose adoption when the operational model is more complicated than ordinary email handling"
+      ],
+      "constraint_interactions": [
+        {
+          "constraint": "daily_throughput",
+          "mechanism_effect": "In inbox tools, throughput is driven by scan cost, shortcut depth, and how fast state changes can be applied to many messages.",
+          "typical_failure": "The inbox becomes a time sink because each message requires too much reading, routing, or clicking."
+        },
+        {
+          "constraint": "operational_safety",
+          "mechanism_effect": "Safety means confidence that archive, snooze, follow-up, and send actions leave the mailbox in an understandable state.",
+          "typical_failure": "Users slow down when they are unsure whether a message was handled, hidden, or deferred correctly."
+        },
+        {
+          "constraint": "coordination_clarity",
+          "mechanism_effect": "Coordination appears as clear waiting states, delegation visibility, and thread context for collaborative email work.",
+          "typical_failure": "Follow-up breaks because responsibility for replies and next actions is reconstructed from memory."
+        },
+        {
+          "constraint": "complexity_load",
+          "mechanism_effect": "Extra workflow concepts hurt more here because email is already an overloaded coordination channel.",
+          "typical_failure": "The tool adds so much process around email that triage becomes slower than the default inbox."
+        },
+        {
+          "constraint": "activation_friction",
+          "mechanism_effect": "Activation friction is the cost of rules, training, or migration before the inbox feels faster.",
+          "typical_failure": "Users churn before payoff because the first improvement comes after too much setup."
+        }
+      ],
+      "representative_decision_surfaces": [
+        "repeated-action-efficiency",
+        "safe-everyday-operation",
+        "ownership-clarity-in-shared-work",
+        "instant-value-under-urgency"
+      ],
+      "example_comparison_slugs": [
+        "apple-mail-vs-superhuman-for-busy-professional"
+      ]
+    },
+    {
+      "category": "Project Management Tools",
+      "slug": "project-management-tools",
+      "sensitive_constraints": [
+        "coordination_clarity",
+        "control_ceiling",
+        "daily_throughput",
+        "complexity_load",
+        "operational_safety"
+      ],
+      "dominant_mechanisms": [
+        "the central mechanism is whether shared work remains legible as ownership, status, and dependencies grow",
+        "workflow structure must be rich enough to coordinate teams without becoming a routing bureaucracy",
+        "project tools survive when process depth can scale with real coordination complexity instead of arriving all at once",
+        "structural headroom matters because teams outgrow simplistic boards faster than solo users outgrow personal lists"
+      ],
+      "common_friction_patterns": [
+        "teams spend too much time assigning fields, statuses, and workflows before work can move",
+        "status views become scan-heavy, making execution slower even though everything is technically tracked",
+        "ownership and discussion drift apart across boards, tasks, and side channels",
+        "the system asks for formal process even when the work does not justify it"
+      ],
+      "common_failure_patterns": [
+        "coordination slows first because the tool preserves data but not shared understanding",
+        "teams stop maintaining the system when updating it feels like project admin instead of progress",
+        "lightweight tools fail when dependencies, approvals, or cross-team visibility exceed their structural range",
+        "heavy tools fail when process ceremony outweighs the value of clearer coordination"
+      ],
+      "constraint_interactions": [
+        {
+          "constraint": "coordination_clarity",
+          "mechanism_effect": "This category is unusually sensitive to whether ownership, status, and related work stay visible without manual reconstruction.",
+          "typical_failure": "Execution slows because people cannot tell who owns the next step or what context applies."
+        },
+        {
+          "constraint": "control_ceiling",
+          "mechanism_effect": "Ceiling risk appears when the tool cannot absorb dependencies, custom workflows, or richer cross-project structure.",
+          "typical_failure": "Teams bolt on spreadsheets, chat rituals, or duplicate trackers because the project layer tops out."
+        },
+        {
+          "constraint": "daily_throughput",
+          "mechanism_effect": "Throughput matters in the speed of updating status, assigning ownership, and moving work between states all day.",
+          "typical_failure": "The project system becomes slow enough that people update it after the fact, degrading accuracy."
+        },
+        {
+          "constraint": "complexity_load",
+          "mechanism_effect": "Complexity shows up as process ceremony, field sprawl, and workflow formalism beyond the team's real coordination need.",
+          "typical_failure": "Small or fast-moving teams reject the tool because it feels like governance overhead."
+        },
+        {
+          "constraint": "operational_safety",
+          "mechanism_effect": "Safety depends on whether changing status, scope, or assignees feels predictable and socially legible.",
+          "typical_failure": "Trust falls when the visible system no longer matches the actual state of the project."
+        }
+      ],
+      "representative_decision_surfaces": [
+        "ownership-clarity-in-shared-work",
+        "communication-tied-to-execution",
+        "growth-headroom-without-rebuild",
+        "low-coordination-overhead"
+      ],
+      "example_comparison_slugs": [
+        "asana-vs-todoist-for-busy-professional",
+        "linear-vs-todoist-for-busy-professional",
+        "airtable-vs-trello-for-power-user",
+        "taiga-vs-zenhub-for-solo-user"
+      ]
+    },
+    {
+      "category": "Scheduling / Booking Tools",
+      "slug": "scheduling-booking-tools",
+      "sensitive_constraints": [
+        "coordination_clarity",
+        "activation_friction",
+        "operational_safety",
+        "upkeep_burden",
+        "control_ceiling"
+      ],
+      "dominant_mechanisms": [
+        "the category is governed by how availability rules are externalized without creating double-booking anxiety",
+        "value depends on translating personal or team constraints into trustworthy booking behavior",
+        "the maintenance burden sits in calendars, buffers, services, and exception handling rather than visible task lists",
+        "tools survive when they make scheduling legible to both the operator and the invitee while keeping ongoing rule care low"
+      ],
+      "common_friction_patterns": [
+        "first value requires configuring calendars, services, availability windows, and booking rules before any appointment can be trusted",
+        "users must keep rules and exceptions current or the booking surface drifts from real availability",
+        "it becomes unclear who owns follow-up, confirmation, or conflict resolution across the booking workflow",
+        "simple booking needs are wrapped in heavier business process than the operator actually needs"
+      ],
+      "common_failure_patterns": [
+        "adoption stalls because the initial setup burden is too high relative to the immediate scheduling need",
+        "trust collapses after scheduling mistakes such as double booking, wrong buffers, or hidden conflicts",
+        "the system decays when recurring exceptions and service changes create constant maintenance work",
+        "lightweight booking tools fail later when routing, staffing, or integration demands exceed their structural headroom"
+      ],
+      "constraint_interactions": [
+        {
+          "constraint": "activation_friction",
+          "mechanism_effect": "In booking tools, activation friction is the cost of encoding real-world availability before the system can safely automate scheduling.",
+          "typical_failure": "Users never fully launch because the booking page is not trustworthy until many rules are configured."
+        },
+        {
+          "constraint": "coordination_clarity",
+          "mechanism_effect": "Clarity depends on whether availability, ownership, and appointment state remain visible across calendars and booking flows.",
+          "typical_failure": "Hand-offs break when no one can clearly see who owns scheduling changes or follow-up."
+        },
+        {
+          "constraint": "operational_safety",
+          "mechanism_effect": "Safety is dominated by conflict prevention, understandable rules, and predictable booking outcomes.",
+          "typical_failure": "A few visible scheduling errors make the automation feel too risky to trust."
+        },
+        {
+          "constraint": "upkeep_burden",
+          "mechanism_effect": "Maintenance appears as updating hours, exceptions, services, and connected calendar behavior.",
+          "typical_failure": "The scheduling tool becomes another operational surface that constantly needs babysitting."
+        },
+        {
+          "constraint": "control_ceiling",
+          "mechanism_effect": "Ceiling risk emerges when a simple booking flow cannot support team routing, policies, or broader operational coupling.",
+          "typical_failure": "The operator keeps the scheduler but rebuilds the real workflow elsewhere."
+        }
+      ],
+      "representative_decision_surfaces": [
+        "ownership-clarity-in-shared-work",
+        "safe-everyday-operation",
+        "low-maintenance-continuity",
+        "growth-headroom-without-rebuild"
+      ],
+      "example_comparison_slugs": [
+        "setmore-vs-square-appointments-for-power-user",
+        "apple-calendar-vs-outlook-calendar-for-beginner"
+      ]
+    },
+    {
+      "category": "Password Managers",
+      "slug": "password-managers",
+      "sensitive_constraints": [
+        "operational_safety",
+        "activation_friction",
+        "control_ceiling",
+        "complexity_load",
+        "upkeep_burden"
+      ],
+      "dominant_mechanisms": [
+        "the category is dominated by trust transfer because users are centralizing high-consequence credentials into one system",
+        "first-use setup is unusually sensitive because migration, autofill, and recovery model choices determine long-term confidence",
+        "security concepts only help if they are operationally legible enough to use correctly every day",
+        "tools survive when they feel safe in routine use without forcing users to interpret too much security machinery"
+      ],
+      "common_friction_patterns": [
+        "adoption requires importing credentials, learning autofill behavior, and trusting a new recovery model before benefits are felt",
+        "users hesitate when security settings, vault structure, or device setup feel hard to interpret correctly",
+        "everyday use slows if autofill, unlock, or item retrieval adds repeated friction at login time",
+        "the system becomes heavier when advanced sharing or hosting options exceed the user's real need"
+      ],
+      "common_failure_patterns": [
+        "adoption fails first because users do not complete migration into the new password system",
+        "trust breaks when autofill, sync, or recovery behavior feels unpredictable in normal use",
+        "overly complex security models create misuse risk rather than confidence",
+        "simpler tools fail later when sharing, policy, or control needs exceed their structural boundary"
+      ],
+      "constraint_interactions": [
+        {
+          "constraint": "operational_safety",
+          "mechanism_effect": "Safety is the primary mechanism here because ordinary actions must feel trustworthy despite high consequence.",
+          "typical_failure": "Users retreat to old habits when they cannot confidently predict unlock, autofill, sync, or recovery behavior."
+        },
+        {
+          "constraint": "activation_friction",
+          "mechanism_effect": "Activation friction is the cost of migration, device setup, and mental trust-building before the vault becomes useful.",
+          "typical_failure": "Users never fully switch because the onboarding burden is too high for such a sensitive workflow."
+        },
+        {
+          "constraint": "control_ceiling",
+          "mechanism_effect": "Ceiling risk appears when the tool cannot support stronger sharing, policy, hosting, or organizational control requirements.",
+          "typical_failure": "The password manager works for personal use but tops out when governance or deeper control becomes necessary."
+        },
+        {
+          "constraint": "complexity_load",
+          "mechanism_effect": "Complexity is especially dangerous because users may face security concepts they cannot easily validate in practice.",
+          "typical_failure": "The system becomes intimidating enough that correct everyday use degrades."
+        },
+        {
+          "constraint": "upkeep_burden",
+          "mechanism_effect": "Maintenance appears as vault cleanup, device re-authorization, and ongoing sharing or recovery management.",
+          "typical_failure": "The tool stops disappearing into the workflow and instead becomes another system to administer."
+        }
+      ],
+      "representative_decision_surfaces": [
+        "safe-everyday-operation",
+        "conservative-choice-under-uncertainty",
+        "growth-headroom-without-rebuild",
+        "instant-value-under-urgency"
+      ],
+      "example_comparison_slugs": []
+    }
+  ]
+}
