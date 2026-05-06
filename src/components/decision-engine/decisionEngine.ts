@@ -47,18 +47,39 @@ export type DecisionEngineSurface = {
   supporting_comparison_slugs: string[];
 };
 
+export type CategoryConstraintInteraction = {
+  constraint: string;
+  mechanism_effect: string;
+  typical_failure: string;
+};
+
+export type CategoryMechanism = {
+  category: string;
+  slug: string;
+  sensitive_constraints: string[];
+  dominant_mechanisms: string[];
+  common_friction_patterns: string[];
+  common_failure_patterns: string[];
+  constraint_interactions: CategoryConstraintInteraction[];
+  representative_decision_surfaces: string[];
+  example_comparison_slugs: string[];
+};
+
 export type DecisionEngineData = {
   version: string;
   core_constraints: CoreConstraint[];
   derived_personas: DerivedPersona[];
   intent_map: IntentMapItem[];
   decision_surfaces: DecisionEngineSurface[];
+  categories: CategoryMechanism[];
 };
 
 export type DecisionDirection = {
   survivingMechanisms: string[];
   failureMechanisms: string[];
   failurePatterns: string[];
+  categoryMechanismEffects: string[];
+  categoryTypicalFailures: string[];
   primaryTradeoff: string;
   constraintPressure: string;
 };
@@ -155,7 +176,9 @@ export function formatOppositePull(
 export function deriveDecisionDirection(
   data: DecisionEngineData,
   selectedConstraints: CoreConstraint[],
-  matchedSurfaces: DecisionEngineSurface[]
+  matchedSurfaces: DecisionEngineSurface[],
+  mappedConstraintIds: string[],
+  selectedCategory?: CategoryMechanism | null
 ): DecisionDirection {
   const constraintNames = getConstraintNameMap(data);
   const survivingMechanisms = uniqueStrings(
@@ -167,6 +190,21 @@ export function deriveDecisionDirection(
   const failurePatterns = uniqueStrings(
     matchedSurfaces.map((surface) => surface.dominant_failure_pattern)
   ).slice(0, 3);
+  const matchedCategoryInteractions = selectedCategory
+    ? selectedCategory.constraint_interactions.filter((interaction) =>
+        mappedConstraintIds.includes(interaction.constraint)
+      )
+    : [];
+  const prioritizedCategoryInteractions = matchedCategoryInteractions.sort(
+    (left, right) =>
+      mappedConstraintIds.indexOf(left.constraint) - mappedConstraintIds.indexOf(right.constraint)
+  );
+  const categoryMechanismEffects = uniqueStrings(
+    prioritizedCategoryInteractions.map((interaction) => interaction.mechanism_effect)
+  ).slice(0, 4);
+  const categoryTypicalFailures = uniqueStrings(
+    prioritizedCategoryInteractions.map((interaction) => interaction.typical_failure)
+  ).slice(0, 4);
   const tradeoffTargets = uniqueStrings(
     matchedSurfaces.flatMap((surface) =>
       Array.isArray(surface.opposite_pull)
@@ -203,10 +241,18 @@ export function deriveDecisionDirection(
     )} and rewards ${joinList(favorSummary)}.`.trim();
   }
 
+  if (selectedCategory && categoryMechanismEffects.length > 0) {
+    constraintPressure = `${constraintPressure} In ${selectedCategory.category}, this pressure specifically shows up as ${joinList(
+      categoryMechanismEffects.map((effect) => lowerFirst(effect).replace(/\.+$/, ""))
+    )}.`.trim();
+  }
+
   return {
     survivingMechanisms,
     failureMechanisms,
     failurePatterns,
+    categoryMechanismEffects,
+    categoryTypicalFailures,
     primaryTradeoff,
     constraintPressure,
   };

@@ -30,9 +30,12 @@ function renderList(items: string[]) {
 
 export default function DecisionSurface({ data }: DecisionSurfaceProps) {
   const [selectedPhrase, setSelectedPhrase] = useState<string | null>(null);
+  const [selectedCategorySlug, setSelectedCategorySlug] = useState<string | null>(null);
 
   const selectedIntent =
     data.intent_map.find((item) => item.phrase === selectedPhrase) ?? null;
+  const selectedCategory =
+    data.categories.find((category) => category.slug === selectedCategorySlug) ?? null;
 
   const selectedConstraints = selectedIntent
     ? selectedIntent.mapped_constraints
@@ -58,7 +61,13 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
 
   const decisionDirection =
     selectedIntent && matchingDecisionSurfaces.length > 0
-      ? deriveDecisionDirection(data, selectedConstraints, matchingDecisionSurfaces)
+      ? deriveDecisionDirection(
+          data,
+          selectedConstraints,
+          matchingDecisionSurfaces,
+          selectedIntent.mapped_constraints,
+          selectedCategory
+        )
       : null;
 
   const constraintNames = new Map(
@@ -67,6 +76,109 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
 
   return (
     <div className="content-stack gap-8">
+      <section className="content-stack gap-4">
+        <SectionHeading
+          title="Category context"
+          subtitle="Optional: apply a category-specific mechanism layer before reading the direction."
+        />
+        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
+          <button
+            type="button"
+            onClick={() => setSelectedCategorySlug(null)}
+            className={cx(
+              "rounded-xl border bg-white p-4 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/30",
+              selectedCategorySlug === null
+                ? "border-black bg-black text-white"
+                : "border-black/10 text-black hover:border-black/20"
+            )}
+          >
+            <p
+              className={cx(
+                "text-sm font-medium",
+                selectedCategorySlug === null ? "text-white" : "text-black"
+              )}
+            >
+              No category filter
+            </p>
+          </button>
+
+          {data.categories.map((category) => {
+            const isSelected = category.slug === selectedCategorySlug;
+
+            return (
+              <button
+                key={category.slug}
+                type="button"
+                onClick={() => setSelectedCategorySlug(category.slug)}
+                className={cx(
+                  "rounded-xl border bg-white p-4 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/30",
+                  isSelected
+                    ? "border-black bg-black text-white"
+                    : "border-black/10 text-black hover:border-black/20"
+                )}
+              >
+                <p
+                  className={cx(
+                    "text-sm font-medium",
+                    isSelected ? "text-white" : "text-black"
+                  )}
+                >
+                  {category.category}
+                </p>
+              </button>
+            );
+          })}
+        </div>
+      </section>
+
+      {selectedCategory ? (
+        <section className="content-stack gap-3">
+          <SectionHeading title="Category mechanism profile" />
+          <Card className="space-y-5">
+            <div className="space-y-1">
+              <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                Category
+              </p>
+              <p className="text-base font-medium text-black">{selectedCategory.category}</p>
+            </div>
+
+            <div className="grid gap-5 md:grid-cols-2">
+              <div className="space-y-2">
+                <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                  Sensitive constraints
+                </p>
+                {renderList(
+                  selectedCategory.sensitive_constraints.map(
+                    (constraintId) => constraintNames.get(constraintId) ?? constraintId
+                  )
+                )}
+              </div>
+
+              <div className="space-y-2">
+                <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                  Dominant mechanisms
+                </p>
+                {renderList(selectedCategory.dominant_mechanisms)}
+              </div>
+
+              <div className="space-y-2">
+                <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                  Common friction patterns
+                </p>
+                {renderList(selectedCategory.common_friction_patterns)}
+              </div>
+
+              <div className="space-y-2">
+                <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                  Common failure patterns
+                </p>
+                {renderList(selectedCategory.common_failure_patterns)}
+              </div>
+            </div>
+          </Card>
+        </section>
+      ) : null}
+
       <section className="content-stack gap-4">
         <SectionHeading
           title="Intent signals"
@@ -105,7 +217,7 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
       {!selectedIntent ? (
         <Card className="border-dashed border-black/15">
           <p className="text-sm text-black/65">
-            Select a constraint to see the decision pattern.
+            Select an intent signal to see the decision pattern.
           </p>
         </Card>
       ) : (
@@ -245,6 +357,24 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
                     Failure pattern: {decisionDirection.failurePatterns.join(" ")}
                   </p>
                 </div>
+
+                {selectedCategory && decisionDirection.categoryMechanismEffects.length > 0 ? (
+                  <div className="space-y-2">
+                    <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                      Category-specific mechanism effects
+                    </p>
+                    {renderList(decisionDirection.categoryMechanismEffects)}
+                  </div>
+                ) : null}
+
+                {selectedCategory && decisionDirection.categoryTypicalFailures.length > 0 ? (
+                  <div className="space-y-2">
+                    <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                      Category-specific typical failures
+                    </p>
+                    {renderList(decisionDirection.categoryTypicalFailures)}
+                  </div>
+                ) : null}
 
                 <div className="space-y-1">
                   <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
