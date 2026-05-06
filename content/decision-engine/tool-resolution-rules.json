@@ -1,0 +1,553 @@
+{
+  "version": "1.0",
+  "resolution_rules": [
+    {
+      "id": "airtable_trello_beginner_activation_friction",
+      "source_comparison_slug": "airtable-vs-trello-for-beginner",
+      "category": "Task Managers",
+      "persona": "Beginner",
+      "mapped_constraints": [
+        "activation_friction",
+        "complexity_load"
+      ],
+      "eliminated_tool": "Airtable",
+      "surviving_tool": "Trello",
+      "failure_mechanism": "Airtable puts table design, field typing, and view structure in front of first useful capture.",
+      "failure_trigger": "Database fields and table structure must be configured before use.",
+      "survival_reason": "Trello lets the user create a board and move cards immediately without designing a data model first.",
+      "tradeoff_introduced": "Trello gives up richer fields, stronger structure, and multiple ways to organize the same work later.",
+      "related_evidence_patterns": [
+        "structure-before-capture-fails-under-immediate-payoff-pressure"
+      ]
+    },
+    {
+      "id": "asana_todoist_busy_professional_ownership_clarity",
+      "source_comparison_slug": "asana-vs-todoist-for-busy-professional",
+      "category": "Project Management Tools",
+      "persona": "Busy professional",
+      "mapped_constraints": [
+        "coordination_clarity",
+        "daily_throughput"
+      ],
+      "eliminated_tool": "Todoist",
+      "surviving_tool": "Asana",
+      "failure_mechanism": "Todoist keeps shared work in a lighter list model where assignee visibility is weaker in the main scan path.",
+      "failure_trigger": "Tracking tasks cannot clearly assign ownership and responsibility across team members.",
+      "survival_reason": "Asana keeps assignees visible inside shared project views so ownership can be scanned without opening items.",
+      "tradeoff_introduced": "Asana adds project structure and team-focused surfaces that can feel heavier for simple personal tracking.",
+      "related_evidence_patterns": [
+        "ownership-reconstruction-fails-when-responsibility-must-stay-visible"
+      ]
+    },
+    {
+      "id": "apple_reminders_sunsama_solo_user_upkeep",
+      "source_comparison_slug": "apple-reminders-vs-sunsama-for-solo-user",
+      "category": "Task Managers",
+      "persona": "Solo user",
+      "mapped_constraints": [
+        "upkeep_burden",
+        "complexity_load"
+      ],
+      "eliminated_tool": "Sunsama",
+      "surviving_tool": "Apple Reminders",
+      "failure_mechanism": "Sunsama makes daily usefulness depend on a recurring planning ritual instead of leaving lists stable between sessions.",
+      "failure_trigger": "Daily planning is required to function.",
+      "survival_reason": "Apple Reminders keeps tasks usable as simple persistent lists with no required daily setup cycle.",
+      "tradeoff_introduced": "Apple Reminders gives up the intentional daily scheduling layer that can help when planning itself is the point.",
+      "related_evidence_patterns": [
+        "care-routine-overhead-compounds-for-solo-users"
+      ]
+    },
+    {
+      "id": "apple_reminders_clickup_minimalist_complexity",
+      "source_comparison_slug": "apple-reminders-vs-clickup-for-minimalist",
+      "category": "Task Managers",
+      "persona": "Minimalist",
+      "mapped_constraints": [
+        "complexity_load",
+        "daily_throughput"
+      ],
+      "eliminated_tool": "ClickUp",
+      "surviving_tool": "Apple Reminders",
+      "failure_mechanism": "ClickUp surrounds a basic checklist job with multiple views, dashboards, and configuration panels that create extra decisions.",
+      "failure_trigger": "Multiple views and configuration panels add extra decisions.",
+      "survival_reason": "Apple Reminders keeps the task surface close to a plain checklist with minimal interface branching.",
+      "tradeoff_introduced": "Apple Reminders tops out sooner when the workflow genuinely needs dashboards, deeper views, or heavier task structure.",
+      "related_evidence_patterns": []
+    },
+    {
+      "id": "microsoft_to_do_omnifocus_power_user_control_ceiling",
+      "source_comparison_slug": "microsoft-to-do-vs-omnifocus-for-power-user",
+      "category": "Task Managers",
+      "persona": "Power user",
+      "mapped_constraints": [
+        "control_ceiling"
+      ],
+      "eliminated_tool": "Microsoft To Do",
+      "surviving_tool": "OmniFocus",
+      "failure_mechanism": "Microsoft To Do stays simple by omitting contexts, perspectives, and review automation that a strict GTD system depends on.",
+      "failure_trigger": "Contexts, perspectives, and review automation are structurally limited.",
+      "survival_reason": "OmniFocus survives by supporting the workflow layers that let a complex GTD system keep scaling without workarounds.",
+      "tradeoff_introduced": "OmniFocus introduces more setup depth and process than a simple list tool needs.",
+      "related_evidence_patterns": [
+        "lightweight-structures-survive-early-but-fail-under-ceiling-pressure"
+      ]
+    },
+    {
+      "id": "apple_notes_logseq_beginner_activation_friction",
+      "source_comparison_slug": "apple-notes-vs-logseq-for-beginner",
+      "category": "Note-taking apps",
+      "persona": "Beginner",
+      "mapped_constraints": [
+        "activation_friction",
+        "complexity_load"
+      ],
+      "eliminated_tool": "Logseq",
+      "surviving_tool": "Apple Notes",
+      "failure_mechanism": "Logseq exposes local folders, graph files, and plugin concepts before the note habit is established.",
+      "failure_trigger": "Local file setup and plugin concepts must be understood first.",
+      "survival_reason": "Apple Notes opens directly to a synced note list so capture happens before system-building decisions.",
+      "tradeoff_introduced": "Apple Notes gives up deeper linking, plugin extensibility, and custom knowledge-system behavior.",
+      "related_evidence_patterns": [
+        "structure-before-capture-fails-under-immediate-payoff-pressure"
+      ]
+    },
+    {
+      "id": "apple_notes_joplin_student_exit_reversibility",
+      "source_comparison_slug": "apple-notes-vs-joplin-for-student",
+      "category": "Note-taking apps",
+      "persona": "Student",
+      "mapped_constraints": [
+        "exit_reversibility",
+        "activation_friction"
+      ],
+      "eliminated_tool": "Joplin",
+      "surviving_tool": "Apple Notes",
+      "failure_mechanism": "Joplin asks for sync-method and markdown-system decisions that pay back over a longer horizon than a semester note need.",
+      "failure_trigger": "Setup effort outweighs semester value.",
+      "survival_reason": "Apple Notes delivers useful note capture immediately without asking the student to design or maintain a system first.",
+      "tradeoff_introduced": "Apple Notes gives up some longer-term sync and markdown control if the note base later needs to become more durable or portable.",
+      "related_evidence_patterns": [
+        "setup-investment-fails-under-short-horizon-use"
+      ]
+    },
+    {
+      "id": "apple_notes_obsidian_power_user_control_ceiling",
+      "source_comparison_slug": "apple-notes-vs-obsidian-for-power-user",
+      "category": "Note-taking apps",
+      "persona": "Power user",
+      "mapped_constraints": [
+        "control_ceiling"
+      ],
+      "eliminated_tool": "Apple Notes",
+      "surviving_tool": "Obsidian",
+      "failure_mechanism": "Apple Notes keeps note structure shallow and closed, so graph linking and plugin extension cannot absorb a true second-brain workflow.",
+      "failure_trigger": "Graph linking and plugin extensibility are constrained.",
+      "survival_reason": "Obsidian survives by giving local Markdown storage, bidirectional links, and a plugin path that expands with the system.",
+      "tradeoff_introduced": "Obsidian introduces more setup, customization, and system-maintenance overhead than a simpler notes app.",
+      "related_evidence_patterns": [
+        "lightweight-structures-survive-early-but-fail-under-ceiling-pressure"
+      ]
+    },
+    {
+      "id": "notion_simplenote_minimalist_complexity",
+      "source_comparison_slug": "notion-vs-simplenote-for-minimalist",
+      "category": "Note-taking apps",
+      "persona": "Minimalist",
+      "mapped_constraints": [
+        "complexity_load",
+        "daily_throughput"
+      ],
+      "eliminated_tool": "Notion",
+      "surviving_tool": "Simplenote",
+      "failure_mechanism": "Notion routes plain writing through workspace pages and a block editor that add interface layers before the note itself.",
+      "failure_trigger": "Writing a note requires interacting with block editors or workspace pages instead of a plain text field.",
+      "survival_reason": "Simplenote survives by opening directly to a plain text surface with almost no structural overhead.",
+      "tradeoff_introduced": "Simplenote gives up richer pages, databases, and structured workspace behavior once the note job becomes more than plain text capture.",
+      "related_evidence_patterns": [
+        "layered-navigation-fails-under-all-day-retrieval-pressure"
+      ]
+    },
+    {
+      "id": "obsidian_simplenote_nontechnical_operational_safety",
+      "source_comparison_slug": "obsidian-vs-simplenote-for-non-technical-user",
+      "category": "Note-taking apps",
+      "persona": "Non-technical user",
+      "mapped_constraints": [
+        "operational_safety",
+        "activation_friction"
+      ],
+      "eliminated_tool": "Obsidian",
+      "surviving_tool": "Simplenote",
+      "failure_mechanism": "Obsidian leaves note state dependent on folder setup and optional sync configuration that the user has to interpret correctly.",
+      "failure_trigger": "Syncing notes requires configuring folders or third-party sync services instead of working automatically.",
+      "survival_reason": "Simplenote survives because sync behavior is automatic and legible without storage or folder decisions.",
+      "tradeoff_introduced": "Simplenote gives up deeper local control and extensibility in exchange for safer default behavior.",
+      "related_evidence_patterns": [
+        "predictable-defaults-survive-when-user-managed-state-feels-fragile"
+      ]
+    },
+    {
+      "id": "officetime_toggl_track_beginner_activation_friction",
+      "source_comparison_slug": "officetime-vs-toggl-track-for-beginner",
+      "category": "Time Tracking Tools",
+      "persona": "Beginner",
+      "mapped_constraints": [
+        "activation_friction",
+        "upkeep_burden"
+      ],
+      "eliminated_tool": "Toggl Track",
+      "surviving_tool": "OfficeTime",
+      "failure_mechanism": "Toggl Track gates basic logging behind account creation and cloud workspace access before the timer can feel routine.",
+      "failure_trigger": "Tracking time requires creating an account or logging into a cloud service before use.",
+      "survival_reason": "OfficeTime survives by opening as a local desktop tracker that can be used immediately after install.",
+      "tradeoff_introduced": "OfficeTime gives up some browser access and multi-device convenience that a cloud workspace can provide.",
+      "related_evidence_patterns": [
+        "account-first-access-fails-when-the-tool-should-start-now"
+      ]
+    },
+    {
+      "id": "activitywatch_clockify_solo_user_upkeep",
+      "source_comparison_slug": "activitywatch-vs-clockify-for-solo-user",
+      "category": "Time Tracking Tools",
+      "persona": "Solo user",
+      "mapped_constraints": [
+        "upkeep_burden",
+        "activation_friction"
+      ],
+      "eliminated_tool": "Clockify",
+      "surviving_tool": "ActivityWatch",
+      "failure_mechanism": "Clockify makes a personal tracker depend on a maintained cloud account and sync state instead of disappearing into local use.",
+      "failure_trigger": "Tracking time requires creating and maintaining a cloud account with ongoing sync.",
+      "survival_reason": "ActivityWatch survives by running locally and offline without credentials or sync babysitting.",
+      "tradeoff_introduced": "ActivityWatch gives up easy browser access and multi-device visibility when the same records need to be reached elsewhere.",
+      "related_evidence_patterns": [
+        "account-first-access-fails-when-the-tool-should-start-now"
+      ]
+    },
+    {
+      "id": "clockify_rescuetime_busy_professional_daily_throughput",
+      "source_comparison_slug": "clockify-vs-rescuetime-for-busy-professional",
+      "category": "Time Tracking Tools",
+      "persona": "Busy professional",
+      "mapped_constraints": [
+        "daily_throughput",
+        "upkeep_burden"
+      ],
+      "eliminated_tool": "RescueTime",
+      "surviving_tool": "Clockify",
+      "failure_mechanism": "RescueTime converts time logging into a later review-and-categorize step, so billable records depend on cleanup after the work.",
+      "failure_trigger": "Logging time requires reviewing and categorizing automatic activity reports instead of quickly starting a timer.",
+      "survival_reason": "Clockify survives by letting the user record time in a direct start-stop path that fits fast meeting-to-meeting work.",
+      "tradeoff_introduced": "Clockify gives up passive background reconstruction and depends more on explicit user initiation.",
+      "related_evidence_patterns": []
+    },
+    {
+      "id": "accelo_toggl_track_minimalist_complexity",
+      "source_comparison_slug": "accelo-vs-toggl-track-for-minimalist",
+      "category": "Time Tracking Tools",
+      "persona": "Minimalist",
+      "mapped_constraints": [
+        "complexity_load",
+        "daily_throughput"
+      ],
+      "eliminated_tool": "Accelo",
+      "surviving_tool": "Toggl Track",
+      "failure_mechanism": "Accelo wraps simple tracking in CRM, project, and billing modules that have to be navigated before the timer job is done.",
+      "failure_trigger": "Tracking time requires navigating CRM, project, or billing modules instead of a simple timer workflow.",
+      "survival_reason": "Toggl Track survives by keeping the core action close to a clean timer without surrounding business-system layers.",
+      "tradeoff_introduced": "Toggl Track gives up the integrated CRM and billing depth that can matter once time tracking is part of a larger operations stack.",
+      "related_evidence_patterns": []
+    },
+    {
+      "id": "timing_toggl_track_power_user_control_ceiling",
+      "source_comparison_slug": "timing-time-tracking-app-vs-toggl-track-for-power-user",
+      "category": "Time Tracking Tools",
+      "persona": "Power user",
+      "mapped_constraints": [
+        "control_ceiling",
+        "daily_throughput"
+      ],
+      "eliminated_tool": "Toggl Track",
+      "surviving_tool": "Timing (Time Tracking App)",
+      "failure_mechanism": "Toggl Track leaves record completeness dependent on repeated timer starts and stops, so the capture model tops out under fast switching.",
+      "failure_trigger": "Tracking time requires manually starting and stopping timers instead of automatic app-based tracking.",
+      "survival_reason": "Timing survives by automatically capturing app, document, and browsing context so the timeline keeps detail without manual babysitting.",
+      "tradeoff_introduced": "Timing gives up some explicit timer control and is less compelling when the work is already neatly bounded and intentionally declared by hand.",
+      "related_evidence_patterns": [
+        "manual-initiation-fails-under-repeated-logging"
+      ]
+    },
+    {
+      "id": "kimai_manictime_solo_user_upkeep",
+      "source_comparison_slug": "kimai-vs-manictime-for-solo-user",
+      "category": "Time Tracking Tools",
+      "persona": "Solo user",
+      "mapped_constraints": [
+        "upkeep_burden",
+        "activation_friction"
+      ],
+      "eliminated_tool": "Kimai",
+      "surviving_tool": "ManicTime",
+      "failure_mechanism": "Kimai turns a personal tracker into a maintained web stack by requiring a server and database.",
+      "failure_trigger": "Using the tool requires maintaining a self-hosted web server and database instead of running locally with minimal setup.",
+      "survival_reason": "ManicTime survives by running locally as a desktop app with no server infrastructure to care for.",
+      "tradeoff_introduced": "ManicTime gives up the self-hosted web model when remote access or broader environment control becomes more important.",
+      "related_evidence_patterns": [
+        "care-routine-overhead-compounds-for-solo-users"
+      ]
+    },
+    {
+      "id": "apple_calendar_outlook_calendar_beginner_activation_friction",
+      "source_comparison_slug": "apple-calendar-vs-outlook-calendar-for-beginner",
+      "category": "Calendar Tools",
+      "persona": "Beginner",
+      "mapped_constraints": [
+        "activation_friction",
+        "complexity_load"
+      ],
+      "eliminated_tool": "Outlook Calendar",
+      "surviving_tool": "Apple Calendar",
+      "failure_mechanism": "Outlook Calendar exposes account lists and folder concepts before the user can treat the app as a plain event calendar.",
+      "failure_trigger": "Folder and account management must be understood before basic event entry.",
+      "survival_reason": "Apple Calendar survives by presenting a direct event-entry surface without requiring the user to reason about folder structure first.",
+      "tradeoff_introduced": "Apple Calendar gives up some of the heavier account and workflow structure that can matter in more complex enterprise scheduling contexts.",
+      "related_evidence_patterns": [
+        "structure-before-capture-fails-under-immediate-payoff-pressure"
+      ]
+    },
+    {
+      "id": "apple_calendar_notion_calendar_minimalist_complexity",
+      "source_comparison_slug": "apple-calendar-vs-notion-calendar-for-minimalist",
+      "category": "Calendar Tools",
+      "persona": "Minimalist",
+      "mapped_constraints": [
+        "complexity_load"
+      ],
+      "eliminated_tool": "Notion Calendar",
+      "surviving_tool": "Apple Calendar",
+      "failure_mechanism": "Notion Calendar pulls workspace databases and task layers into what this comparison treats as a basic event-viewing job.",
+      "failure_trigger": "Workspace databases and task layers introduce extra interface complexity.",
+      "survival_reason": "Apple Calendar survives by staying close to a straightforward event timeline with minimal surrounding structure.",
+      "tradeoff_introduced": "Apple Calendar gives up the tighter workspace coupling that can matter once calendar behavior needs to connect deeply to a broader system.",
+      "related_evidence_patterns": []
+    },
+    {
+      "id": "setmore_square_appointments_power_user_control_ceiling",
+      "source_comparison_slug": "setmore-vs-square-appointments-for-power-user",
+      "category": "Scheduling / Booking Tools",
+      "persona": "Power user",
+      "mapped_constraints": [
+        "control_ceiling",
+        "coordination_clarity"
+      ],
+      "eliminated_tool": "Setmore",
+      "surviving_tool": "Square Appointments",
+      "failure_mechanism": "Setmore separates booking from checkout, forcing payment to be handed off across systems after the slot is chosen.",
+      "failure_trigger": "Appointment scheduling cannot integrate directly with payment processing and checkout.",
+      "survival_reason": "Square Appointments survives by keeping booking and payment in one operational flow instead of splitting the transaction.",
+      "tradeoff_introduced": "Square Appointments becomes heavier than necessary when appointments are not tied to paid services or checkout flows.",
+      "related_evidence_patterns": [
+        "split-surfaces-fail-when-execution-must-stay-attached-to-context",
+        "lightweight-structures-survive-early-but-fail-under-ceiling-pressure"
+      ]
+    },
+    {
+      "id": "apple_mail_superhuman_busy_professional_operational_safety",
+      "source_comparison_slug": "apple-mail-vs-superhuman-for-busy-professional",
+      "category": "Email / Inbox tools",
+      "persona": "Busy professional",
+      "mapped_constraints": [
+        "operational_safety",
+        "daily_throughput"
+      ],
+      "eliminated_tool": "Superhuman",
+      "surviving_tool": "Apple Mail",
+      "failure_mechanism": "Superhuman keeps normal inbox use dependent on a live connection, so access reliability becomes part of the workflow cost.",
+      "failure_trigger": "Email access depends on a constant internet connection instead of local offline storage and syncing.",
+      "survival_reason": "Apple Mail survives by keeping messages locally available so reading, searching, and composing remain predictable offline.",
+      "tradeoff_introduced": "Apple Mail gives up some of the speed-optimized online workflow design that Superhuman prioritizes when connectivity is stable.",
+      "related_evidence_patterns": []
+    },
+    {
+      "id": "microsoft_teams_slack_busy_professional_daily_throughput",
+      "source_comparison_slug": "microsoft-teams-vs-slack-for-busy-professional",
+      "category": "Team Collaboration Tools",
+      "persona": "Busy professional",
+      "mapped_constraints": [
+        "daily_throughput",
+        "coordination_clarity"
+      ],
+      "eliminated_tool": "Microsoft Teams",
+      "surviving_tool": "Slack",
+      "failure_mechanism": "Microsoft Teams hides conversations behind layered teams, channels, and tabs that increase navigation before the next reply.",
+      "failure_trigger": "Finding the right conversation requires navigating layered teams, channels, and tabs instead of a fast searchable message flow.",
+      "survival_reason": "Slack survives by keeping communication in a faster searchable stream with lower path length between conversations.",
+      "tradeoff_introduced": "Slack gives up some of the heavier surrounding workspace structure that Teams can provide in more integrated enterprise environments.",
+      "related_evidence_patterns": [
+        "layered-navigation-fails-under-all-day-retrieval-pressure"
+      ]
+    },
+    {
+      "id": "mattermost_slack_power_user_control_ceiling",
+      "source_comparison_slug": "mattermost-vs-slack-for-power-user",
+      "category": "Team Collaboration Tools",
+      "persona": "Power user",
+      "mapped_constraints": [
+        "control_ceiling",
+        "upkeep_burden"
+      ],
+      "eliminated_tool": "Slack",
+      "surviving_tool": "Mattermost",
+      "failure_mechanism": "Slack keeps data location, system behavior, and environment control inside a hosted provider boundary.",
+      "failure_trigger": "Data cannot be self-hosted and fully controlled within your own infrastructure.",
+      "survival_reason": "Mattermost survives by allowing self-hosting so infrastructure, compliance, and integrations can be controlled internally.",
+      "tradeoff_introduced": "Mattermost requires the user to own infrastructure, maintenance, and operational responsibility.",
+      "related_evidence_patterns": [
+        "hosted-dependence-fails-when-control-over-data-or-environment-becomes-the-real-requirement"
+      ]
+    },
+    {
+      "id": "airtable_microsoft_excel_nontechnical_operational_safety",
+      "source_comparison_slug": "airtable-vs-microsoft-excel-for-non-technical-user",
+      "category": "Spreadsheet / Database Tools",
+      "persona": "Non-technical user",
+      "mapped_constraints": [
+        "operational_safety"
+      ],
+      "eliminated_tool": "Microsoft Excel",
+      "surviving_tool": "Airtable",
+      "failure_mechanism": "Microsoft Excel leaves structure correctness dependent on fragile cells and formulas that can be altered accidentally.",
+      "failure_trigger": "Managing data requires maintaining fragile cell formulas instead of enforced field types.",
+      "survival_reason": "Airtable survives by enforcing field types and keeping structure more legible during ordinary edits.",
+      "tradeoff_introduced": "Airtable gives up some spreadsheet freedom and formula-style flexibility in exchange for safer structured defaults.",
+      "related_evidence_patterns": [
+        "predictable-defaults-survive-when-user-managed-state-feels-fragile"
+      ]
+    },
+    {
+      "id": "airtable_baserow_beginner_activation_friction",
+      "source_comparison_slug": "airtable-vs-baserow-for-beginner",
+      "category": "Spreadsheet / Database Tools",
+      "persona": "Beginner",
+      "mapped_constraints": [
+        "activation_friction"
+      ],
+      "eliminated_tool": "Baserow",
+      "surviving_tool": "Airtable",
+      "failure_mechanism": "Baserow introduces environment and hosting decisions before the beginner can treat the database as an immediately usable cloud tool.",
+      "failure_trigger": "Using the tool requires self-hosting or server setup instead of instant cloud access.",
+      "survival_reason": "Airtable survives by being hosted and ready for immediate table creation without infrastructure decisions.",
+      "tradeoff_introduced": "Airtable gives up some open-source and self-managed flexibility that Baserow can offer once setup cost is acceptable.",
+      "related_evidence_patterns": []
+    },
+    {
+      "id": "onepassword_keepass_busy_professional_daily_throughput",
+      "source_comparison_slug": "1password-vs-keepass-for-busy-professional",
+      "category": "Password Managers",
+      "persona": "Busy professional",
+      "mapped_constraints": [
+        "daily_throughput",
+        "activation_friction"
+      ],
+      "eliminated_tool": "KeePass",
+      "surviving_tool": "1Password",
+      "failure_mechanism": "KeePass leaves vault availability tied to manually managed local files and sync arrangements across browsers and devices.",
+      "failure_trigger": "Using the password manager requires manually managing vault files instead of automatic cloud syncing and autofill.",
+      "survival_reason": "1Password survives by keeping sync and autofill automatic so repeated login work stays fast across contexts.",
+      "tradeoff_introduced": "1Password gives up the fully local file-based model and depends more on an account-backed managed service.",
+      "related_evidence_patterns": []
+    },
+    {
+      "id": "keepassxc_nordpass_nontechnical_operational_safety",
+      "source_comparison_slug": "keepassxc-vs-nordpass-for-non-technical-user",
+      "category": "Password Managers",
+      "persona": "Non-technical user",
+      "mapped_constraints": [
+        "operational_safety",
+        "activation_friction"
+      ],
+      "eliminated_tool": "KeePassXC",
+      "surviving_tool": "NordPass",
+      "failure_mechanism": "KeePassXC turns cross-device password availability into a user-managed file-sync problem that can be misconfigured or forgotten.",
+      "failure_trigger": "Syncing passwords requires configuring external cloud storage or manually transferring database files.",
+      "survival_reason": "NordPass survives by making multi-device vault sync automatic and predictable inside the account model.",
+      "tradeoff_introduced": "NordPass gives up the fully local database approach and some user-controlled storage flexibility.",
+      "related_evidence_patterns": [
+        "predictable-defaults-survive-when-user-managed-state-feels-fragile"
+      ]
+    },
+    {
+      "id": "basecamp_google_chat_minimalist_coordination_clarity",
+      "source_comparison_slug": "basecamp-vs-google-chat-for-minimalist",
+      "category": "Team Collaboration Tools",
+      "persona": "Minimalist",
+      "mapped_constraints": [
+        "coordination_clarity",
+        "complexity_load"
+      ],
+      "eliminated_tool": "Google Chat",
+      "surviving_tool": "Basecamp",
+      "failure_mechanism": "Google Chat lets discussion float as standalone threads, so users have to reconstruct how messages relate to the actual work.",
+      "failure_trigger": "Messages exist as standalone chat threads instead of being anchored to projects and work context.",
+      "survival_reason": "Basecamp survives by anchoring discussion inside project surfaces where the surrounding work context is already present.",
+      "tradeoff_introduced": "Basecamp gives up some of the lighter pure-chat feel when the user only wants fast standalone conversation.",
+      "related_evidence_patterns": [
+        "split-surfaces-fail-when-execution-must-stay-attached-to-context",
+        "ownership-reconstruction-fails-when-responsibility-must-stay-visible"
+      ]
+    },
+    {
+      "id": "mondaycom_trello_power_user_control_ceiling",
+      "source_comparison_slug": "monday-com-vs-trello-for-power-user",
+      "category": "Task Managers",
+      "persona": "Power user",
+      "mapped_constraints": [
+        "control_ceiling"
+      ],
+      "eliminated_tool": "Trello",
+      "surviving_tool": "Monday.com",
+      "failure_mechanism": "Trello's card model runs out of room when tasks need richer repeatable fields and more structured views of the same work.",
+      "failure_trigger": "Custom task fields and structured board data are constrained.",
+      "survival_reason": "Monday.com survives by attaching richer structured properties to each task so the same system can scale without manual rebuilds.",
+      "tradeoff_introduced": "Monday.com becomes the wrong fit when every extra field feels like unnecessary system design for a plain task list.",
+      "related_evidence_patterns": [
+        "lightweight-structures-survive-early-but-fail-under-ceiling-pressure"
+      ]
+    },
+    {
+      "id": "linear_todoist_busy_professional_daily_throughput",
+      "source_comparison_slug": "linear-vs-todoist-for-busy-professional",
+      "category": "Task Managers",
+      "persona": "Busy professional",
+      "mapped_constraints": [
+        "daily_throughput",
+        "complexity_load"
+      ],
+      "eliminated_tool": "Linear",
+      "surviving_tool": "Todoist",
+      "failure_mechanism": "Linear routes simple personal capture through issue-tracking concepts like issues and cycles that add context selection before entry.",
+      "failure_trigger": "Issue-tracking concepts slow simple task entry.",
+      "survival_reason": "Todoist survives by keeping personal task capture close to a simple list where entry can happen in seconds.",
+      "tradeoff_introduced": "Todoist gives up some of the richer issue-tracking structure that Linear provides when the work becomes more systematized.",
+      "related_evidence_patterns": []
+    },
+    {
+      "id": "basecamp_slack_busy_professional_daily_throughput",
+      "source_comparison_slug": "basecamp-vs-slack-for-busy-professional",
+      "category": "Team Collaboration Tools",
+      "persona": "Busy professional",
+      "mapped_constraints": [
+        "daily_throughput",
+        "complexity_load"
+      ],
+      "eliminated_tool": "Slack",
+      "surviving_tool": "Basecamp",
+      "failure_mechanism": "Slack turns communication into a continuous real-time stream that must be monitored instead of letting attention return to the work.",
+      "failure_trigger": "Communication requires continuous real-time monitoring instead of allowing structured check-ins.",
+      "survival_reason": "Basecamp survives by structuring updates and discussions for batch review rather than constant interruption.",
+      "tradeoff_introduced": "Basecamp gives up some real-time chat immediacy when fast live conversation is genuinely the priority.",
+      "related_evidence_patterns": []
+    }
+  ]
+}
