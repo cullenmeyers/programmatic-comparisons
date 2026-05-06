@@ -1,0 +1,440 @@
+{
+  "version": "1.0",
+  "core_constraints": [
+    {
+      "id": "activation_friction",
+      "name": "Activation Friction",
+      "definition": "How much setup, configuration, or conceptual preparation is required before a tool becomes useful.",
+      "sensitivity": "Delayed starts, onboarding burden, and pre-work before the core job can begin.",
+      "mechanism_sensitivity": "Account creation, schema setup, plugin setup, self-hosting, and framework learning.",
+      "friction_pattern": "The tool must be prepared before it can help.",
+      "failure_trigger": "The first-use effort takes longer than the immediate payoff window.",
+      "opposite_pull": "control_ceiling",
+      "user_phrases": [
+        "I need to start right now",
+        "I do not want to configure anything first",
+        "Just let me use it"
+      ],
+      "example_categories": [
+        "Task Managers",
+        "Note-taking apps",
+        "Calendar Tools",
+        "Time Tracking Tools",
+        "Spreadsheet / Database Tools"
+      ],
+      "example_pages": [
+        "officetime-vs-toggl-track-for-beginner",
+        "apple-notes-vs-logseq-for-beginner",
+        "airtable-vs-trello-for-beginner"
+      ]
+    },
+    {
+      "id": "daily_throughput",
+      "name": "Daily Throughput",
+      "definition": "How much repeated friction a tool adds to high-frequency daily actions.",
+      "sensitivity": "Extra clicks, scanning cost, slow entry, and repeated context switching.",
+      "mechanism_sensitivity": "Extra modules around the core task, weak shortcut paths, hidden ownership, manual timers, and online-only access.",
+      "friction_pattern": "The core action is possible, but too slow when repeated all day.",
+      "failure_trigger": "Micro-friction compounds until it becomes the real workflow bottleneck.",
+      "opposite_pull": "complexity_load",
+      "user_phrases": [
+        "I need this to be fast every day",
+        "I cannot keep clicking around",
+        "I need to see it at a glance"
+      ],
+      "example_categories": [
+        "Email / Inbox tools",
+        "Task Managers",
+        "Time Tracking Tools",
+        "Project Management Tools",
+        "Calendar Tools"
+      ],
+      "example_pages": [
+        "asana-vs-todoist-for-busy-professional",
+        "apple-mail-vs-superhuman-for-busy-professional",
+        "accelo-vs-clockify-for-busy-professional"
+      ]
+    },
+    {
+      "id": "operational_safety",
+      "name": "Operational Safety",
+      "definition": "How predictable and hard to mess up a tool feels during normal use.",
+      "sensitivity": "Fragile structure, unclear sync behavior, risky settings, and low trust in normal actions.",
+      "mechanism_sensitivity": "Formula fragility, sync ambiguity, too many knobs, rigid structures, and security concepts that users must interpret correctly.",
+      "friction_pattern": "The user slows down because they do not trust the system state.",
+      "failure_trigger": "Trust in normal operations collapses and routine actions start feeling risky.",
+      "opposite_pull": "control_ceiling",
+      "user_phrases": [
+        "I do not want to mess this up",
+        "I need something predictable",
+        "I do not want confusing syncing"
+      ],
+      "example_categories": [
+        "Spreadsheet / Database Tools",
+        "Task Managers",
+        "Note-taking apps",
+        "Project Management Tools",
+        "Password Managers"
+      ],
+      "example_pages": [
+        "any-do-vs-apple-reminders-for-non-technical-user",
+        "microsoft-planner-vs-microsoft-to-do-for-non-technical-user",
+        "airtable-vs-microsoft-excel-for-non-technical-user"
+      ]
+    },
+    {
+      "id": "upkeep_burden",
+      "name": "Upkeep Burden",
+      "definition": "How much recurring maintenance is required to keep the tool usable and trustworthy over time.",
+      "sensitivity": "Accounts to maintain, sync state to monitor, cleanup chores, planning rituals, and infrastructure care.",
+      "mechanism_sensitivity": "Cloud account dependence, self-hosting, recurring cleanup, daily planning requirements, and workspace maintenance.",
+      "friction_pattern": "The tool becomes a system that needs care instead of disappearing into the workflow.",
+      "failure_trigger": "Maintenance chores start competing with the work the tool is supposed to support.",
+      "opposite_pull": "control_ceiling",
+      "user_phrases": [
+        "I do not want another thing to maintain",
+        "It should just keep working",
+        "I do not want a care routine"
+      ],
+      "example_categories": [
+        "Time Tracking Tools",
+        "Task Managers",
+        "Note-taking apps",
+        "Scheduling / Booking Tools",
+        "Team Collaboration Tools"
+      ],
+      "example_pages": [
+        "activitywatch-vs-clockify-for-solo-user",
+        "taiga-vs-zenhub-for-solo-user",
+        "apple-reminders-vs-sunsama-for-solo-user"
+      ]
+    },
+    {
+      "id": "exit_reversibility",
+      "name": "Exit Reversibility",
+      "definition": "How costly it is to stop, switch, or abandon a tool when the need is temporary or uncertain.",
+      "sensitivity": "Long commitment, over-investment, migration pain, and delayed payoff.",
+      "mechanism_sensitivity": "Plugin or vault setup, self-hosting, heavy workflow design, and learning curves that only pay back over time.",
+      "friction_pattern": "The tool asks for a long commitment before the user knows they need it.",
+      "failure_trigger": "The investment horizon is longer than the real use window.",
+      "opposite_pull": "control_ceiling",
+      "user_phrases": [
+        "I might switch later",
+        "I only need this for one term",
+        "I do not want to commit to a whole system"
+      ],
+      "example_categories": [
+        "Note-taking apps",
+        "Scheduling / Booking Tools",
+        "Task Managers",
+        "Time Tracking Tools"
+      ],
+      "example_pages": [
+        "apple-notes-vs-joplin-for-student",
+        "apple-notes-vs-obsidian-for-student",
+        "atracker-vs-kimai-for-student"
+      ]
+    },
+    {
+      "id": "complexity_load",
+      "name": "Complexity Load",
+      "definition": "How much unnecessary structure, UI layering, or conceptual overhead a tool adds relative to the job being done.",
+      "sensitivity": "Too many layers, system heaviness, extra modules, and too many decisions before action.",
+      "mechanism_sensitivity": "Block editors, dashboards, CRM modules, billing modules, relational data models, and workspace-heavy app structures.",
+      "friction_pattern": "The tool demands more thought than the task itself.",
+      "failure_trigger": "Added capability never pays back its cognitive cost.",
+      "opposite_pull": "control_ceiling",
+      "user_phrases": [
+        "I want one clear workflow",
+        "This feels heavier than the job",
+        "Too much structure too early"
+      ],
+      "example_categories": [
+        "Note-taking apps",
+        "Task Managers",
+        "Time Tracking Tools",
+        "Team Collaboration Tools",
+        "Password Managers"
+      ],
+      "example_pages": [
+        "notion-vs-simplenote-for-minimalist",
+        "basecamp-vs-google-chat-for-minimalist",
+        "accelo-vs-toggl-track-for-minimalist"
+      ]
+    },
+    {
+      "id": "coordination_clarity",
+      "name": "Coordination Clarity",
+      "definition": "How visible ownership, context, and workflow relationships remain without manual reconstruction.",
+      "sensitivity": "Ambiguous ownership, disconnected conversations, manual handoffs, and floating context.",
+      "mechanism_sensitivity": "Weak assignee visibility, standalone chat threads, split systems, and integrations that force core workflow steps into separate tools.",
+      "friction_pattern": "The user must reconstruct what belongs to whom or what an action relates to.",
+      "failure_trigger": "Collaboration or operational flow becomes ambiguous and slows execution.",
+      "opposite_pull": "daily_throughput",
+      "user_phrases": [
+        "I need to know who owns what",
+        "Keep the conversation tied to the work",
+        "I do not want separate handoffs"
+      ],
+      "example_categories": [
+        "Project Management Tools",
+        "Team Collaboration Tools",
+        "Scheduling / Booking Tools",
+        "Customer Support / Helpdesk Tools"
+      ],
+      "example_pages": [
+        "asana-vs-todoist-for-busy-professional",
+        "basecamp-vs-google-chat-for-minimalist",
+        "setmore-vs-square-appointments-for-power-user",
+        "microsoft-teams-vs-slack-for-power-user"
+      ]
+    },
+    {
+      "id": "control_ceiling",
+      "name": "Control Ceiling",
+      "definition": "How likely a tool is to top out in structure, extensibility, integration depth, hosting control, or workflow sophistication.",
+      "sensitivity": "Top-out risk, closed limits, weak integration, vendor boundaries, and missing room to grow.",
+      "mechanism_sensitivity": "No relational model, no plugin path, hosted-only architecture, weak native integration, and no support for deeper workflow coupling.",
+      "friction_pattern": "The tool works early, then requires workarounds, duplication, or a rebuild later.",
+      "failure_trigger": "The workflow outgrows the tool's structural boundary.",
+      "opposite_pull": [
+        "activation_friction",
+        "complexity_load",
+        "upkeep_burden"
+      ],
+      "user_phrases": [
+        "I do not want to rebuild later",
+        "I need room to grow",
+        "I need deeper control",
+        "This has to fit into the rest of my system"
+      ],
+      "example_categories": [
+        "Project Management Tools",
+        "Note-taking apps",
+        "Team Collaboration Tools",
+        "Password Managers",
+        "Scheduling / Booking Tools"
+      ],
+      "example_pages": [
+        "airtable-vs-trello-for-power-user",
+        "apple-notes-vs-obsidian-for-power-user",
+        "mattermost-vs-slack-for-power-user",
+        "setmore-vs-square-appointments-for-power-user"
+      ]
+    }
+  ],
+  "derived_personas": [
+    {
+      "persona": "Beginner",
+      "primary_constraints": [
+        "activation_friction",
+        "operational_safety"
+      ],
+      "secondary_constraints": [
+        "complexity_load",
+        "daily_throughput"
+      ],
+      "dominant_failure_fear": "Getting blocked before the tool delivers first useful value.",
+      "typical_user_language": [
+        "I need something easy to start",
+        "I do not want setup",
+        "I just need the basic thing to work"
+      ]
+    },
+    {
+      "persona": "Solo user",
+      "primary_constraints": [
+        "upkeep_burden"
+      ],
+      "secondary_constraints": [
+        "daily_throughput",
+        "complexity_load",
+        "exit_reversibility"
+      ],
+      "dominant_failure_fear": "The tool becomes another system to maintain.",
+      "typical_user_language": [
+        "I want less overhead",
+        "I do not want to maintain this",
+        "It should work without a team"
+      ]
+    },
+    {
+      "persona": "Student",
+      "primary_constraints": [
+        "exit_reversibility"
+      ],
+      "secondary_constraints": [
+        "activation_friction",
+        "complexity_load",
+        "daily_throughput"
+      ],
+      "dominant_failure_fear": "The learning and setup cost will outlast the actual need.",
+      "typical_user_language": [
+        "I might switch later",
+        "I only need this for a semester",
+        "It has to pay back quickly"
+      ]
+    },
+    {
+      "persona": "Busy professional",
+      "primary_constraints": [
+        "daily_throughput",
+        "coordination_clarity"
+      ],
+      "secondary_constraints": [
+        "upkeep_burden",
+        "operational_safety"
+      ],
+      "dominant_failure_fear": "Small recurring frictions will accumulate into lost time.",
+      "typical_user_language": [
+        "I need this to be fast",
+        "I cannot waste time figuring it out",
+        "I need to see who owns what quickly"
+      ]
+    },
+    {
+      "persona": "Power user",
+      "primary_constraints": [
+        "control_ceiling"
+      ],
+      "secondary_constraints": [
+        "coordination_clarity",
+        "upkeep_burden"
+      ],
+      "dominant_failure_fear": "The tool will top out and force workarounds or migration.",
+      "typical_user_language": [
+        "I need room to grow",
+        "I need deeper control",
+        "I need stronger integration"
+      ]
+    },
+    {
+      "persona": "Non-technical user",
+      "primary_constraints": [
+        "operational_safety"
+      ],
+      "secondary_constraints": [
+        "activation_friction",
+        "complexity_load"
+      ],
+      "dominant_failure_fear": "The tool will feel unpredictable or easy to misuse.",
+      "typical_user_language": [
+        "I want something safe and predictable",
+        "I do not want confusing sync behavior",
+        "I do not want too many options"
+      ]
+    },
+    {
+      "persona": "Minimalist",
+      "primary_constraints": [
+        "complexity_load"
+      ],
+      "secondary_constraints": [
+        "daily_throughput",
+        "upkeep_burden",
+        "activation_friction"
+      ],
+      "dominant_failure_fear": "The tool becomes more system than job.",
+      "typical_user_language": [
+        "I want one clear workflow",
+        "No extra layers",
+        "Do not make me think about the tool"
+      ]
+    }
+  ],
+  "intent_map": [
+    {
+      "phrase": "I need something I can start using today",
+      "normalized_meaning": "Low tolerance for startup cost before first value.",
+      "mapped_constraints": [
+        "activation_friction"
+      ],
+      "failure_avoided": "Setup blocks the tool before it becomes useful.",
+      "decision_surface": "Account, configuration, schema, or plugin burden."
+    },
+    {
+      "phrase": "I cannot afford extra clicks every day",
+      "normalized_meaning": "Repeated friction matters more than extra capability.",
+      "mapped_constraints": [
+        "daily_throughput"
+      ],
+      "failure_avoided": "Micro-friction compounds into workflow drag.",
+      "decision_surface": "Core action path length and scan cost."
+    },
+    {
+      "phrase": "I do not want to break anything",
+      "normalized_meaning": "Predictability and low-risk operation matter.",
+      "mapped_constraints": [
+        "operational_safety"
+      ],
+      "failure_avoided": "Routine actions start feeling risky or untrustworthy.",
+      "decision_surface": "Sync risk, fragile structure, and settings density."
+    },
+    {
+      "phrase": "I want it to just keep working without upkeep",
+      "normalized_meaning": "Recurring maintenance needs to stay near zero.",
+      "mapped_constraints": [
+        "upkeep_burden"
+      ],
+      "failure_avoided": "Tool maintenance displaces the actual work.",
+      "decision_surface": "Hosting, sync, cleanup, and planning overhead."
+    },
+    {
+      "phrase": "I might only need this for a semester",
+      "normalized_meaning": "The payoff window is short and the decision should stay reversible.",
+      "mapped_constraints": [
+        "exit_reversibility",
+        "activation_friction"
+      ],
+      "failure_avoided": "The investment horizon exceeds the real use window.",
+      "decision_surface": "Setup and learning cost versus temporary value."
+    },
+    {
+      "phrase": "I want something simple, not a whole system",
+      "normalized_meaning": "Avoid unnecessary layers and structural overhead.",
+      "mapped_constraints": [
+        "complexity_load"
+      ],
+      "failure_avoided": "Tool complexity outweighs task complexity.",
+      "decision_surface": "Module count, UI layering, and conceptual overhead."
+    },
+    {
+      "phrase": "I need to see who owns what right away",
+      "normalized_meaning": "Ownership visibility matters to the workflow.",
+      "mapped_constraints": [
+        "coordination_clarity",
+        "daily_throughput"
+      ],
+      "failure_avoided": "Responsibility becomes ambiguous and slows execution.",
+      "decision_surface": "Assignee visibility and shared project context."
+    },
+    {
+      "phrase": "I need the conversation tied to the work",
+      "normalized_meaning": "Communication should stay anchored to execution context.",
+      "mapped_constraints": [
+        "coordination_clarity"
+      ],
+      "failure_avoided": "Conversations become disconnected from the work they relate to.",
+      "decision_surface": "Work-anchored communication versus standalone chat."
+    },
+    {
+      "phrase": "I do not want to rebuild this later",
+      "normalized_meaning": "Long-term structural headroom matters more than initial simplicity.",
+      "mapped_constraints": [
+        "control_ceiling"
+      ],
+      "failure_avoided": "The workflow outgrows the tool and forces migration.",
+      "decision_surface": "Extensibility, integration depth, and structural headroom."
+    },
+    {
+      "phrase": "I need more control over where data lives",
+      "normalized_meaning": "Hosting and architecture control matter, not just features.",
+      "mapped_constraints": [
+        "control_ceiling",
+        "upkeep_burden"
+      ],
+      "failure_avoided": "Vendor architecture becomes the limiting factor.",
+      "decision_surface": "Hosted versus self-hosted control model."
+    }
+  ]
+}

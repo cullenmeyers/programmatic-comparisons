@@ -96,12 +96,25 @@ export type CategoryIndex = {
   pages: PageDoc[];
 };
 
+let pageSlugCache: string[] | null = null;
+let pageDocCache: Map<string, PageDoc | null> | null = null;
+let pageDocsCache: PageDoc[] | null = null;
+let categoryIndexesCache: CategoryIndex[] | null = null;
+let comparisonsByGateCache: Map<string, string[]> | null = null;
+
 export function listPageSlugs(): string[] {
-  if (!fs.existsSync(PAGES_DIR)) return [];
-  return fs
+  if (pageSlugCache) return pageSlugCache;
+  if (!fs.existsSync(PAGES_DIR)) {
+    pageSlugCache = [];
+    return pageSlugCache;
+  }
+
+  pageSlugCache = fs
     .readdirSync(PAGES_DIR)
     .filter((f) => f.endsWith(".json"))
     .map((f) => f.replace(/\.json$/, ""));
+
+  return pageSlugCache;
 }
 
 export function buildRelatedPageTitle(
@@ -177,8 +190,18 @@ function normalizeRelatedPage(raw: unknown): RelatedPageDoc | null {
 }
 
 export function loadPageBySlug(slug: string): PageDoc | null {
+  if (!pageDocCache) {
+    pageDocCache = new Map<string, PageDoc | null>();
+  }
+  if (pageDocCache.has(slug)) {
+    return pageDocCache.get(slug) ?? null;
+  }
+
   const filePath = path.join(PAGES_DIR, `${slug}.json`);
-  if (!fs.existsSync(filePath)) return null;
+  if (!fs.existsSync(filePath)) {
+    pageDocCache.set(slug, null);
+    return null;
+  }
 
 const raw = fs.readFileSync(filePath, "utf8");
 let parsed: PageDoc;
@@ -239,13 +262,18 @@ try {
     parsed.related_pages = [];
   }
 
+  pageDocCache.set(slug, parsed);
   return parsed;
 }
 
 export function listPageDocs(): PageDoc[] {
-  return listPageSlugs()
+  if (pageDocsCache) return pageDocsCache;
+
+  pageDocsCache = listPageSlugs()
     .map((slug) => loadPageBySlug(slug))
     .filter((doc): doc is PageDoc => doc !== null);
+
+  return pageDocsCache;
 }
 
 function titleCaseSlug(slug: string) {
@@ -306,6 +334,8 @@ export function isLockedPersona(persona: string): persona is LockedPersona {
 }
 
 export function listCategoryIndexes(): CategoryIndex[] {
+  if (categoryIndexesCache) return categoryIndexesCache;
+
   const groups = new Map<string, CategoryIndex>();
 
   for (const doc of listPageDocs()) {
@@ -328,12 +358,14 @@ export function listCategoryIndexes(): CategoryIndex[] {
     });
   }
 
-  return Array.from(groups.values())
+  categoryIndexesCache = Array.from(groups.values())
     .map((group) => ({
       ...group,
       pages: group.pages.slice().sort((a, b) => a.title.localeCompare(b.title)),
     }))
     .sort((a, b) => a.label.localeCompare(b.label));
+
+  return categoryIndexesCache;
 }
 
 export function getCategoryIndexBySlug(categorySlug: string): CategoryIndex | null {
@@ -403,14 +435,27 @@ export function listComparisonsForGate(
   categorySlug: string,
   constraintSlug: string
 ): string[] {
-  return listPageDocs()
-    .filter(
-      (doc) =>
-        doc.categorySlug === categorySlug &&
-        doc.constraintSlug === constraintSlug
-    )
-    .map((doc) => doc.slug)
-    .sort((a, b) => a.localeCompare(b));
+  if (!comparisonsByGateCache) {
+    comparisonsByGateCache = new Map<string, string[]>();
+
+    for (const doc of listPageDocs()) {
+      if (!doc.categorySlug || !doc.constraintSlug) continue;
+      const key = `${doc.categorySlug}__${doc.constraintSlug}`;
+      const existing = comparisonsByGateCache.get(key);
+
+      if (existing) {
+        existing.push(doc.slug);
+      } else {
+        comparisonsByGateCache.set(key, [doc.slug]);
+      }
+    }
+
+    for (const [key, slugs] of comparisonsByGateCache) {
+      comparisonsByGateCache.set(key, slugs.sort((a, b) => a.localeCompare(b)));
+    }
+  }
+
+  return comparisonsByGateCache.get(`${categorySlug}__${constraintSlug}`) ?? [];
 }
 
 function titleCaseWords(text: string) {

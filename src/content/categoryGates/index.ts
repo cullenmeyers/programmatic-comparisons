@@ -67,6 +67,14 @@ function listAllGateFiles(): Array<{
 
 // Cache in-memory for build/runtime
 let _cache: Map<string, CategoryGateSpec> | null = null;
+let _paramsCache:
+  | Array<{
+      category: string;
+      constraint: string;
+    }>
+  | null = null;
+let _inferredCache: Map<string, CategoryGateSpec> | null = null;
+let _pageDocsByCategoryCache: Map<string, ReturnType<typeof listPageDocs>> | null = null;
 
 function loadGateCache(): Map<string, CategoryGateSpec> {
   if (_cache) return _cache;
@@ -104,13 +112,32 @@ function loadGateCache(): Map<string, CategoryGateSpec> {
 }
 
 function withInferredTools(gate: CategoryGateSpec): CategoryGateSpec {
+  const gateKey = getGateKey(gate.categorySlug, gate.constraintSlug);
+  if (_inferredCache?.has(gateKey)) {
+    return _inferredCache.get(gateKey)!;
+  }
+
   const byName = new Map(gate.tools.map((tool) => [tool.name, tool]));
   const manualNames = new Set(gate.tools.map((tool) => tool.name));
   const scoreByTool = new Map<string, { wins: number; losses: number }>();
 
-  const docsInCategory = listPageDocs().filter(
-    (doc) => doc.categorySlug === gate.categorySlug
-  );
+  if (!_pageDocsByCategoryCache) {
+    _pageDocsByCategoryCache = new Map();
+
+    for (const doc of listPageDocs()) {
+      const categorySlug = doc.categorySlug;
+      if (!categorySlug) continue;
+
+      const existing = _pageDocsByCategoryCache.get(categorySlug);
+      if (existing) {
+        existing.push(doc);
+      } else {
+        _pageDocsByCategoryCache.set(categorySlug, [doc]);
+      }
+    }
+  }
+
+  const docsInCategory = _pageDocsByCategoryCache.get(gate.categorySlug) ?? [];
   const docsForGate = docsInCategory.filter(
     (doc) => doc.constraintSlug === gate.constraintSlug
   );
@@ -151,20 +178,31 @@ function withInferredTools(gate: CategoryGateSpec): CategoryGateSpec {
     });
   }
 
-  return {
+  const inferredGate = {
     ...gate,
     tools: Array.from(byName.values()),
   };
+
+  if (!_inferredCache) {
+    _inferredCache = new Map();
+  }
+  _inferredCache.set(gateKey, inferredGate);
+
+  return inferredGate;
 }
 
 export function listCategoryGateParams(): Array<{
   category: string;
   constraint: string;
 }> {
-  return listAllGateFiles().map((f) => ({
+  if (_paramsCache) return _paramsCache;
+
+  _paramsCache = listAllGateFiles().map((f) => ({
     category: f.categorySlug,
     constraint: f.constraintSlug,
   }));
+
+  return _paramsCache;
 }
 
 export function getCategoryGate(categorySlug: string, constraintSlug: string) {
