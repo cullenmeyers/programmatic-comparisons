@@ -1,0 +1,677 @@
+{
+  "version": "1.0",
+  "decision_surfaces": [
+    {
+      "id": "instant-value-under-urgency",
+      "name": "Instant Value Under Urgency",
+      "slug": "instant-value-under-urgency",
+      "core_problem": "The user needs useful output immediately and cannot afford pre-work before the core job starts.",
+      "decision_question": "Which tools deliver first value fastest when the payoff window is immediate?",
+      "primary_constraints": [
+        "activation_friction"
+      ],
+      "secondary_constraints": [
+        "complexity_load",
+        "exit_reversibility"
+      ],
+      "human_intents": [
+        "I need to start right now",
+        "I do not want to configure anything first",
+        "I need useful output today"
+      ],
+      "dominant_failure_pattern": "Setup consumes the payoff window before the tool becomes helpful.",
+      "decision_direction": "Favor tools that expose the core action immediately with minimal setup or conceptual prep.",
+      "favor_mechanisms": [
+        "default-ready workflows",
+        "shallow onboarding",
+        "low schema dependence",
+        "single-purpose entry paths"
+      ],
+      "avoid_mechanisms": [
+        "required configuration before use",
+        "plugin-dependent first value",
+        "framework learning before action",
+        "multi-step workspace setup"
+      ],
+      "opposite_pull": "control_ceiling",
+      "useful_personas": [
+        "Beginner",
+        "Busy professional",
+        "Student"
+      ],
+      "example_categories": [
+        "Task Managers",
+        "Note-taking apps",
+        "Calendar Tools",
+        "Time Tracking Tools"
+      ],
+      "supporting_comparison_slugs": [
+        "officetime-vs-toggl-track-for-beginner",
+        "apple-notes-vs-logseq-for-beginner",
+        "airtable-vs-trello-for-beginner",
+        "apple-calendar-vs-outlook-calendar-for-beginner"
+      ]
+    },
+    {
+      "id": "repeated-action-efficiency",
+      "name": "Repeated Action Efficiency",
+      "slug": "repeated-action-efficiency",
+      "core_problem": "The job is simple in principle, but repeated all-day actions become expensive when the tool adds micro-friction.",
+      "decision_question": "Which tools stay fast when the same action is repeated constantly?",
+      "primary_constraints": [
+        "daily_throughput"
+      ],
+      "secondary_constraints": [
+        "coordination_clarity",
+        "complexity_load"
+      ],
+      "human_intents": [
+        "I cannot afford extra clicks every day",
+        "I need this to be fast all day",
+        "I need the core action to stay lightweight"
+      ],
+      "dominant_failure_pattern": "Micro-friction compounds into the real workflow bottleneck.",
+      "decision_direction": "Favor tools with short core-action paths, low scan cost, and fewer workflow detours.",
+      "favor_mechanisms": [
+        "fast entry paths",
+        "strong glanceability",
+        "shortcut-friendly workflows",
+        "low context-switch overhead"
+      ],
+      "avoid_mechanisms": [
+        "extra modules around the core task",
+        "slow scan-heavy interfaces",
+        "manual reconstruction before action",
+        "workflow splits for basic actions"
+      ],
+      "opposite_pull": "complexity_load",
+      "useful_personas": [
+        "Busy professional",
+        "Solo user",
+        "Minimalist"
+      ],
+      "example_categories": [
+        "Email / Inbox tools",
+        "Task Managers",
+        "Time Tracking Tools",
+        "Project Management Tools"
+      ],
+      "supporting_comparison_slugs": [
+        "asana-vs-todoist-for-busy-professional",
+        "apple-mail-vs-superhuman-for-busy-professional",
+        "rescuetime-vs-toggl-track-for-busy-professional",
+        "linear-vs-todoist-for-busy-professional"
+      ]
+    },
+    {
+      "id": "safe-everyday-operation",
+      "name": "Safe Everyday Operation",
+      "slug": "safe-everyday-operation",
+      "core_problem": "The user slows down because normal actions feel fragile, ambiguous, or easy to mess up.",
+      "decision_question": "Which tools feel predictable enough for confident day-to-day use?",
+      "primary_constraints": [
+        "operational_safety"
+      ],
+      "secondary_constraints": [
+        "activation_friction",
+        "complexity_load"
+      ],
+      "human_intents": [
+        "I do not want to break anything",
+        "I need something predictable",
+        "I do not want confusing sync or structure"
+      ],
+      "dominant_failure_pattern": "Trust in normal operations collapses and routine work starts feeling risky.",
+      "decision_direction": "Favor tools with understandable behavior, lower fragility, and fewer risky interpretation points.",
+      "favor_mechanisms": [
+        "predictable state changes",
+        "clear structure",
+        "low settings density",
+        "trustworthy sync behavior"
+      ],
+      "avoid_mechanisms": [
+        "fragile formulas or structures",
+        "ambiguous sync models",
+        "dense configuration surfaces",
+        "risky hidden behavior"
+      ],
+      "opposite_pull": "control_ceiling",
+      "useful_personas": [
+        "Non-technical user",
+        "Beginner",
+        "Busy professional"
+      ],
+      "example_categories": [
+        "Spreadsheet / Database Tools",
+        "Task Managers",
+        "Note-taking apps",
+        "Password Managers"
+      ],
+      "supporting_comparison_slugs": [
+        "any-do-vs-apple-reminders-for-non-technical-user",
+        "microsoft-planner-vs-microsoft-to-do-for-non-technical-user",
+        "airtable-vs-microsoft-excel-for-non-technical-user",
+        "obsidian-vs-simplenote-for-non-technical-user"
+      ]
+    },
+    {
+      "id": "low-maintenance-continuity",
+      "name": "Low-Maintenance Continuity",
+      "slug": "low-maintenance-continuity",
+      "core_problem": "The tool is supposed to support the workflow, but recurring care tasks start competing with the real work.",
+      "decision_question": "Which tools stay useful over time without demanding ongoing maintenance?",
+      "primary_constraints": [
+        "upkeep_burden"
+      ],
+      "secondary_constraints": [
+        "complexity_load",
+        "operational_safety"
+      ],
+      "human_intents": [
+        "I do not want another thing to maintain",
+        "It should just keep working",
+        "I do not want a care routine"
+      ],
+      "dominant_failure_pattern": "Maintenance chores become a parallel system the user has to manage.",
+      "decision_direction": "Favor tools that disappear into the workflow and minimize recurring cleanup, monitoring, or infrastructure care.",
+      "favor_mechanisms": [
+        "low recurring upkeep",
+        "stable default operation",
+        "minimal cleanup rituals",
+        "few accounts or moving parts"
+      ],
+      "avoid_mechanisms": [
+        "self-hosting obligations",
+        "constant grooming routines",
+        "workspace maintenance overhead",
+        "recurring sync babysitting"
+      ],
+      "opposite_pull": "control_ceiling",
+      "useful_personas": [
+        "Solo user",
+        "Minimalist",
+        "Busy professional"
+      ],
+      "example_categories": [
+        "Time Tracking Tools",
+        "Task Managers",
+        "Note-taking apps",
+        "Scheduling / Booking Tools"
+      ],
+      "supporting_comparison_slugs": [
+        "activitywatch-vs-clockify-for-solo-user",
+        "taiga-vs-zenhub-for-solo-user",
+        "apple-reminders-vs-sunsama-for-solo-user",
+        "apple-notes-vs-evernote-for-solo-user"
+      ]
+    },
+    {
+      "id": "short-horizon-reversibility",
+      "name": "Short-Horizon Reversibility",
+      "slug": "short-horizon-reversibility",
+      "core_problem": "The need may be temporary or uncertain, so a heavy commitment is structurally mismatched to the real use window.",
+      "decision_question": "Which tools make sense when the user may stop, switch, or abandon the workflow soon?",
+      "primary_constraints": [
+        "exit_reversibility"
+      ],
+      "secondary_constraints": [
+        "activation_friction",
+        "complexity_load"
+      ],
+      "human_intents": [
+        "I might switch later",
+        "I only need this for a term or project",
+        "I do not want to commit to a whole system"
+      ],
+      "dominant_failure_pattern": "The investment horizon outlasts the actual need.",
+      "decision_direction": "Favor tools with lower setup sunk cost and less structural over-commitment.",
+      "favor_mechanisms": [
+        "quick payoff windows",
+        "light workflow investment",
+        "easy abandonment",
+        "modest learning curves"
+      ],
+      "avoid_mechanisms": [
+        "deep system design upfront",
+        "vault or plugin commitment",
+        "migration-heavy setup",
+        "long payback requirements"
+      ],
+      "opposite_pull": "control_ceiling",
+      "useful_personas": [
+        "Student",
+        "Beginner",
+        "Solo user"
+      ],
+      "example_categories": [
+        "Note-taking apps",
+        "Task Managers",
+        "Time Tracking Tools",
+        "Scheduling / Booking Tools"
+      ],
+      "supporting_comparison_slugs": [
+        "apple-notes-vs-joplin-for-student",
+        "apple-notes-vs-obsidian-for-student",
+        "atracker-vs-kimai-for-student",
+        "pocket-vs-wallabag-for-student"
+      ]
+    },
+    {
+      "id": "minimal-system-overhead",
+      "name": "Minimal System Overhead",
+      "slug": "minimal-system-overhead",
+      "core_problem": "The tool adds more structure, interface layering, or conceptual weight than the task actually requires.",
+      "decision_question": "Which tools stay proportionate to the job instead of becoming a system around it?",
+      "primary_constraints": [
+        "complexity_load"
+      ],
+      "secondary_constraints": [
+        "daily_throughput",
+        "activation_friction"
+      ],
+      "human_intents": [
+        "I want something simple, not a whole system",
+        "This feels heavier than the job",
+        "I want one clear workflow"
+      ],
+      "dominant_failure_pattern": "Added capability never pays back its cognitive cost.",
+      "decision_direction": "Favor tools that keep structure shallow and the workflow legible relative to the real task.",
+      "favor_mechanisms": [
+        "single-purpose flows",
+        "low module count",
+        "light conceptual models",
+        "direct task paths"
+      ],
+      "avoid_mechanisms": [
+        "workspace-heavy abstractions",
+        "dashboard sprawl",
+        "relational modeling for simple jobs",
+        "layered feature stacks"
+      ],
+      "opposite_pull": "control_ceiling",
+      "useful_personas": [
+        "Minimalist",
+        "Solo user",
+        "Beginner"
+      ],
+      "example_categories": [
+        "Note-taking apps",
+        "Task Managers",
+        "Team Collaboration Tools",
+        "Time Tracking Tools"
+      ],
+      "supporting_comparison_slugs": [
+        "notion-vs-simplenote-for-minimalist",
+        "basecamp-vs-google-chat-for-minimalist",
+        "accelo-vs-toggl-track-for-minimalist",
+        "trello-vs-workflowy-for-minimalist"
+      ]
+    },
+    {
+      "id": "ownership-clarity-in-shared-work",
+      "name": "Ownership Clarity In Shared Work",
+      "slug": "ownership-clarity-in-shared-work",
+      "core_problem": "Collaboration slows down when people have to reconstruct who owns what or how work relates to execution context.",
+      "decision_question": "Which tools make responsibility and workflow relationships visible without manual reconstruction?",
+      "primary_constraints": [
+        "coordination_clarity"
+      ],
+      "secondary_constraints": [
+        "daily_throughput",
+        "operational_safety"
+      ],
+      "human_intents": [
+        "I need to know who owns what",
+        "I need shared work to stay clear",
+        "I do not want ambiguous handoffs"
+      ],
+      "dominant_failure_pattern": "Responsibility becomes ambiguous and execution slows while the team reconstructs context.",
+      "decision_direction": "Favor tools that keep ownership, status, and related work visible in the main workflow.",
+      "favor_mechanisms": [
+        "clear assignee visibility",
+        "work-linked context",
+        "shared status surfaces",
+        "visible workflow relationships"
+      ],
+      "avoid_mechanisms": [
+        "floating tasks without owners",
+        "split systems for core handoffs",
+        "standalone conversations detached from work",
+        "manual ownership tracking"
+      ],
+      "opposite_pull": "daily_throughput",
+      "useful_personas": [
+        "Busy professional",
+        "Power user",
+        "Non-technical user"
+      ],
+      "example_categories": [
+        "Project Management Tools",
+        "Team Collaboration Tools",
+        "Customer Support / Helpdesk Tools",
+        "Scheduling / Booking Tools"
+      ],
+      "supporting_comparison_slugs": [
+        "asana-vs-todoist-for-busy-professional",
+        "microsoft-teams-vs-slack-for-busy-professional",
+        "setmore-vs-square-appointments-for-power-user",
+        "acquire-vs-zendesk-for-busy-professional"
+      ]
+    },
+    {
+      "id": "communication-tied-to-execution",
+      "name": "Communication Tied To Execution",
+      "slug": "communication-tied-to-execution",
+      "core_problem": "Conversation and execution drift apart, forcing users to manually reconnect discussion to the work it affects.",
+      "decision_question": "Which tools keep communication anchored to the work instead of pushing coordination into separate channels?",
+      "primary_constraints": [
+        "coordination_clarity"
+      ],
+      "secondary_constraints": [
+        "complexity_load",
+        "daily_throughput"
+      ],
+      "human_intents": [
+        "I need the conversation tied to the work",
+        "I do not want separate handoff tools",
+        "I want context to stay attached"
+      ],
+      "dominant_failure_pattern": "Discussion becomes detached from execution context and follow-through depends on memory or manual routing.",
+      "decision_direction": "Favor tools that anchor communication inside the execution surface or preserve strong context links.",
+      "favor_mechanisms": [
+        "work-anchored discussion",
+        "context-preserving threads",
+        "fewer cross-tool handoffs",
+        "shared execution context"
+      ],
+      "avoid_mechanisms": [
+        "standalone chat for core workflow decisions",
+        "manual reposting between tools",
+        "contextless threads",
+        "integration-dependent basic coordination"
+      ],
+      "opposite_pull": "daily_throughput",
+      "useful_personas": [
+        "Busy professional",
+        "Power user",
+        "Minimalist"
+      ],
+      "example_categories": [
+        "Team Collaboration Tools",
+        "Project Management Tools",
+        "Customer Support / Helpdesk Tools"
+      ],
+      "supporting_comparison_slugs": [
+        "basecamp-vs-slack-for-busy-professional",
+        "basecamp-vs-google-chat-for-minimalist",
+        "microsoft-teams-vs-slack-for-power-user",
+        "notion-vs-nuclino-for-busy-professional"
+      ]
+    },
+    {
+      "id": "growth-headroom-without-rebuild",
+      "name": "Growth Headroom Without Rebuild",
+      "slug": "growth-headroom-without-rebuild",
+      "core_problem": "A tool works early, but later forces workarounds, duplication, or migration when the workflow becomes more demanding.",
+      "decision_question": "Which tools offer enough structural headroom to avoid rebuilding later?",
+      "primary_constraints": [
+        "control_ceiling"
+      ],
+      "secondary_constraints": [
+        "coordination_clarity",
+        "upkeep_burden"
+      ],
+      "human_intents": [
+        "I do not want to rebuild later",
+        "I need room to grow",
+        "This has to fit into the rest of my system"
+      ],
+      "dominant_failure_pattern": "The workflow outgrows the tool's structural boundary.",
+      "decision_direction": "Favor tools with deeper extensibility, integration paths, and structural range when growth risk matters.",
+      "favor_mechanisms": [
+        "extensible structure",
+        "integration depth",
+        "workflow composability",
+        "architectural headroom"
+      ],
+      "avoid_mechanisms": [
+        "closed structural limits",
+        "hosted-only boundaries that block needed control",
+        "weak workflow coupling",
+        "top-out-prone feature sets"
+      ],
+      "opposite_pull": [
+        "activation_friction",
+        "complexity_load",
+        "upkeep_burden"
+      ],
+      "useful_personas": [
+        "Power user",
+        "Busy professional",
+        "Solo user"
+      ],
+      "example_categories": [
+        "Project Management Tools",
+        "Note-taking apps",
+        "Team Collaboration Tools",
+        "Scheduling / Booking Tools"
+      ],
+      "supporting_comparison_slugs": [
+        "airtable-vs-trello-for-power-user",
+        "apple-notes-vs-obsidian-for-power-user",
+        "mattermost-vs-slack-for-power-user",
+        "setmore-vs-square-appointments-for-power-user"
+      ]
+    },
+    {
+      "id": "passive-capture-over-manual-initiation",
+      "name": "Passive Capture Over Manual Initiation",
+      "slug": "passive-capture-over-manual-initiation",
+      "core_problem": "The workflow fails when value depends on the user remembering to start, log, or route each action manually.",
+      "decision_question": "Which tools reduce failure caused by manual initiation and memory-dependent capture?",
+      "primary_constraints": [
+        "daily_throughput",
+        "activation_friction"
+      ],
+      "secondary_constraints": [
+        "upkeep_burden",
+        "operational_safety"
+      ],
+      "human_intents": [
+        "I do not want to remember to start it every time",
+        "I need capture to happen with less effort",
+        "Manual initiation keeps breaking the workflow"
+      ],
+      "dominant_failure_pattern": "The system fails not because the tool lacks capability, but because initiation depends on user memory and repeated effort.",
+      "decision_direction": "Favor tools that reduce initiation burden and preserve value even when the user is busy or distracted.",
+      "favor_mechanisms": [
+        "automatic capture",
+        "ambient logging",
+        "low-start workflows",
+        "reduced memory dependence"
+      ],
+      "avoid_mechanisms": [
+        "manual timer starts",
+        "repeated explicit logging",
+        "high-friction capture steps",
+        "workflows that punish missed initiation"
+      ],
+      "opposite_pull": "control_ceiling",
+      "useful_personas": [
+        "Busy professional",
+        "Solo user",
+        "Beginner"
+      ],
+      "example_categories": [
+        "Time Tracking Tools",
+        "Task Managers",
+        "Read-it-later apps",
+        "Habit Trackers"
+      ],
+      "supporting_comparison_slugs": [
+        "activitywatch-vs-timely-for-solo-user",
+        "rescuetime-vs-toggl-track-for-busy-professional",
+        "loop-habit-tracker-vs-ticktick-for-busy-professional",
+        "officetime-vs-toggl-track-for-beginner"
+      ]
+    },
+    {
+      "id": "flexibility-versus-operational-simplicity",
+      "name": "Flexibility Versus Operational Simplicity",
+      "slug": "flexibility-versus-operational-simplicity",
+      "core_problem": "The user wants room to shape the workflow, but every increase in flexibility can also raise maintenance and cognitive cost.",
+      "decision_question": "When is extra structural flexibility worth the operational complexity it introduces?",
+      "primary_constraints": [
+        "control_ceiling",
+        "complexity_load"
+      ],
+      "secondary_constraints": [
+        "upkeep_burden",
+        "activation_friction"
+      ],
+      "human_intents": [
+        "I want room to shape this without overbuilding it",
+        "I need flexibility but not a whole operating system",
+        "I am trying to avoid outgrowing the tool too fast"
+      ],
+      "dominant_failure_pattern": "The user either over-commits to a heavy system too early or under-buys and hits structural limits quickly.",
+      "decision_direction": "Favor flexible tools only when the workflow complexity is real enough to repay the overhead.",
+      "favor_mechanisms": [
+        "graduated structure",
+        "optional advanced depth",
+        "clear simple default paths",
+        "headroom without mandatory complexity"
+      ],
+      "avoid_mechanisms": [
+        "all-or-nothing system design",
+        "heavy abstraction before need is proven",
+        "rigid simplicity with no growth path",
+        "constant manual customization just to stay usable"
+      ],
+      "opposite_pull": [
+        "activation_friction",
+        "upkeep_burden"
+      ],
+      "useful_personas": [
+        "Power user",
+        "Minimalist",
+        "Solo user"
+      ],
+      "example_categories": [
+        "Task Managers",
+        "Note-taking apps",
+        "Project Management Tools",
+        "Spreadsheet / Database Tools"
+      ],
+      "supporting_comparison_slugs": [
+        "monday-com-vs-trello-for-power-user",
+        "notion-vs-workflowy-for-minimalist",
+        "apple-notes-vs-obsidian-for-power-user",
+        "airtable-vs-trello-for-power-user"
+      ]
+    },
+    {
+      "id": "low-coordination-overhead",
+      "name": "Low Coordination Overhead",
+      "slug": "low-coordination-overhead",
+      "core_problem": "The work is collaborative, but formal routing, handoff ceremony, or too much workflow infrastructure makes small jobs feel heavier than they are.",
+      "decision_question": "Which tools minimize coordination ceremony when the work needs collaboration but not heavy process?",
+      "primary_constraints": [
+        "coordination_clarity",
+        "complexity_load"
+      ],
+      "secondary_constraints": [
+        "daily_throughput",
+        "activation_friction"
+      ],
+      "human_intents": [
+        "I want collaboration without process overhead",
+        "I do not want to route everything through a formal system",
+        "Keep shared work clear but lightweight"
+      ],
+      "dominant_failure_pattern": "The team spends more effort routing and managing work than completing the work itself.",
+      "decision_direction": "Favor tools that preserve enough visibility for shared work without imposing heavy workflow ceremony.",
+      "favor_mechanisms": [
+        "lightweight shared context",
+        "clear but simple ownership",
+        "low ceremony workflows",
+        "small-team friendly coordination"
+      ],
+      "avoid_mechanisms": [
+        "process-heavy handoff models",
+        "overbuilt project scaffolding",
+        "formal routing for simple work",
+        "too many workflow states for low-stakes coordination"
+      ],
+      "opposite_pull": "control_ceiling",
+      "useful_personas": [
+        "Minimalist",
+        "Busy professional",
+        "Solo user"
+      ],
+      "example_categories": [
+        "Team Collaboration Tools",
+        "Project Management Tools",
+        "Task Managers"
+      ],
+      "supporting_comparison_slugs": [
+        "basecamp-vs-google-chat-for-minimalist",
+        "asana-vs-microsoft-to-do-for-solo-user",
+        "basecamp-vs-slack-for-busy-professional",
+        "taskboard-vs-trello-for-solo-user"
+      ]
+    },
+    {
+      "id": "conservative-choice-under-uncertainty",
+      "name": "Conservative Choice Under Uncertainty",
+      "slug": "conservative-choice-under-uncertainty",
+      "core_problem": "The user is unsure how deep the need really is and wants a tool choice that is safe, understandable, and easy to back out of if wrong.",
+      "decision_question": "Which tools are safest to adopt when the user fears both breakage and over-commitment?",
+      "primary_constraints": [
+        "operational_safety",
+        "exit_reversibility"
+      ],
+      "secondary_constraints": [
+        "activation_friction",
+        "complexity_load"
+      ],
+      "human_intents": [
+        "I do not want to make an expensive wrong choice",
+        "I need something safe to try",
+        "I want low downside if this does not fit"
+      ],
+      "dominant_failure_pattern": "Decision anxiety leads either to stalled adoption or to choosing a tool that feels risky to use and costly to unwind.",
+      "decision_direction": "Favor tools that combine predictability with low commitment when user certainty is low.",
+      "favor_mechanisms": [
+        "predictable defaults",
+        "modest workflow investment",
+        "easy abandonment",
+        "clear first-use behavior"
+      ],
+      "avoid_mechanisms": [
+        "fragile structures",
+        "long-horizon investment before trust is earned",
+        "opaque behavior",
+        "high-cost wrong turns"
+      ],
+      "opposite_pull": "control_ceiling",
+      "useful_personas": [
+        "Non-technical user",
+        "Beginner",
+        "Student"
+      ],
+      "example_categories": [
+        "Note-taking apps",
+        "Task Managers",
+        "Spreadsheet / Database Tools",
+        "Password Managers"
+      ],
+      "supporting_comparison_slugs": [
+        "any-do-vs-apple-reminders-for-non-technical-user",
+        "apple-notes-vs-joplin-for-student",
+        "setmore-vs-square-appointments-for-beginner",
+        "airtable-vs-microsoft-excel-for-non-technical-user"
+      ]
+    }
+  ]
+}
