@@ -1,0 +1,308 @@
+{
+  "version": "1.0",
+  "evidence_patterns": [
+    {
+      "id": "structure-before-capture-fails-under-immediate-payoff-pressure",
+      "pattern_name": "structure-before-capture fails under immediate payoff pressure",
+      "core_constraints": [
+        "activation_friction",
+        "complexity_load"
+      ],
+      "related_categories": [
+        "Task Managers",
+        "Note-taking apps",
+        "Time Tracking Tools"
+      ],
+      "repeated_mechanism": "The losing tool asks the user to decide structure, files, fields, or concepts before the first useful capture happens.",
+      "repeated_friction": "Early value is delayed by table design, vault concepts, plugin understanding, or account-first startup.",
+      "repeated_failure": "The tool burns the short payoff window before the core action feels routine.",
+      "survival_direction": "Favor tools that let capture happen before system design and keep first value close to the entry surface.",
+      "break_condition": "Breaks when useful output depends on configuration or conceptual preparation before the first task, note, or time entry.",
+      "representative_comparisons": [
+        "airtable-vs-trello-for-beginner",
+        "apple-notes-vs-logseq-for-beginner",
+        "officetime-vs-toggl-track-for-beginner"
+      ],
+      "related_decision_surfaces": [
+        "instant-value-under-urgency",
+        "minimal-system-overhead"
+      ]
+    },
+    {
+      "id": "account-first-access-fails-when-the-tool-should-start-now",
+      "pattern_name": "account-first access fails when the tool should start now",
+      "core_constraints": [
+        "activation_friction",
+        "upkeep_burden"
+      ],
+      "related_categories": [
+        "Time Tracking Tools",
+        "Note-taking apps",
+        "Task Managers"
+      ],
+      "repeated_mechanism": "The losing tool inserts account creation, login state, or cloud dependency before basic use is available.",
+      "repeated_friction": "Starting the tool depends on credentials, sync state, and a hosted workspace instead of opening directly into the job.",
+      "repeated_failure": "A tool that should feel immediate becomes gated by access mechanics that are unrelated to the work itself.",
+      "survival_direction": "Favor tools that become usable before account maintenance or hosted workspace logic enters the workflow.",
+      "break_condition": "Breaks when the user has to sign up, sign in, or maintain cloud access before basic capture can begin.",
+      "representative_comparisons": [
+        "officetime-vs-toggl-track-for-beginner",
+        "activitywatch-vs-clockify-for-solo-user",
+        "activitywatch-vs-timely-for-solo-user"
+      ],
+      "related_decision_surfaces": [
+        "instant-value-under-urgency",
+        "low-maintenance-continuity"
+      ]
+    },
+    {
+      "id": "manual-initiation-fails-under-repeated-logging",
+      "pattern_name": "manual initiation fails under repeated logging",
+      "core_constraints": [
+        "daily_throughput",
+        "activation_friction",
+        "upkeep_burden"
+      ],
+      "related_categories": [
+        "Time Tracking Tools"
+      ],
+      "repeated_mechanism": "The losing tool depends on explicit starts, stops, switches, or device interactions at every logging moment.",
+      "repeated_friction": "Repeated initiation interrupts the work and turns accuracy into a memory test.",
+      "repeated_failure": "Tracking completeness collapses first at the initiation layer because the user cannot keep re-starting the system all day.",
+      "survival_direction": "Favor passive or lower-interruption capture models that preserve a record even during fragmented work.",
+      "break_condition": "Breaks when accurate records depend on remembering each timer action or physical switch in the moment.",
+      "representative_comparisons": [
+        "rescuetime-vs-toggl-track-for-busy-professional",
+        "timing-time-tracking-app-vs-toggl-track-for-power-user",
+        "activitywatch-vs-timeular-for-minimalist"
+      ],
+      "related_decision_surfaces": [
+        "passive-capture-over-manual-initiation",
+        "repeated-action-efficiency"
+      ]
+    },
+    {
+      "id": "care-routine-overhead-compounds-for-solo-users",
+      "pattern_name": "care-routine overhead compounds for solo users",
+      "core_constraints": [
+        "upkeep_burden",
+        "complexity_load"
+      ],
+      "related_categories": [
+        "Task Managers",
+        "Time Tracking Tools"
+      ],
+      "repeated_mechanism": "The losing tool stays usable only if the user also maintains a routine around planning, hosting, syncing, or platform health.",
+      "repeated_friction": "Normal work is shadowed by daily planning sessions, sync babysitting, or infrastructure care.",
+      "repeated_failure": "The tool stops disappearing into the workflow and becomes another system that competes for attention.",
+      "survival_direction": "Favor tools that keep working without rituals and keep maintenance from becoming part of ordinary use.",
+      "break_condition": "Breaks when the user has to keep feeding the method or the infrastructure just to preserve baseline usefulness.",
+      "representative_comparisons": [
+        "apple-reminders-vs-sunsama-for-solo-user",
+        "activitywatch-vs-clockify-for-solo-user",
+        "taskboard-vs-trello-for-solo-user"
+      ],
+      "related_decision_surfaces": [
+        "low-maintenance-continuity",
+        "minimal-system-overhead"
+      ]
+    },
+    {
+      "id": "setup-investment-fails-under-short-horizon-use",
+      "pattern_name": "setup investment fails under short-horizon use",
+      "core_constraints": [
+        "exit_reversibility",
+        "activation_friction",
+        "upkeep_burden"
+      ],
+      "related_categories": [
+        "Note-taking apps",
+        "Time Tracking Tools",
+        "Bookmark Managers"
+      ],
+      "repeated_mechanism": "The losing tool expects a longer commitment curve than the actual use window can repay.",
+      "repeated_friction": "Students or temporary users must absorb sync setup, self-hosting, or system learning before getting semester-scale value.",
+      "repeated_failure": "The decision becomes wrong not because the tool is weak, but because the investment horizon outlasts the need.",
+      "survival_direction": "Favor tools whose payoff arrives inside the temporary window and whose abandonment cost stays low.",
+      "break_condition": "Breaks when setup, hosting, or learning effort lasts longer than the class, project, or trial period itself.",
+      "representative_comparisons": [
+        "apple-notes-vs-joplin-for-student",
+        "atracker-vs-kimai-for-student",
+        "pocket-vs-wallabag-for-student"
+      ],
+      "related_decision_surfaces": [
+        "short-horizon-reversibility",
+        "conservative-choice-under-uncertainty"
+      ]
+    },
+    {
+      "id": "hosted-dependence-fails-when-control-over-data-or-environment-becomes-the-real-requirement",
+      "pattern_name": "hosted dependence fails when control over data or environment becomes the real requirement",
+      "core_constraints": [
+        "control_ceiling",
+        "upkeep_burden"
+      ],
+      "related_categories": [
+        "Team Collaboration Tools",
+        "Note-taking apps",
+        "Time Tracking Tools"
+      ],
+      "repeated_mechanism": "The losing tool keeps the system inside a provider-controlled environment when the winning side survives by keeping data or operation closer to the user.",
+      "repeated_friction": "Hosted access feels convenient early, but becomes limiting when data location, environment behavior, or account dependence is itself the bottleneck.",
+      "repeated_failure": "The workflow outgrows managed convenience because the real constraint becomes who controls the environment.",
+      "survival_direction": "Favor local-first or self-managed models when infrastructure boundaries, not features, are what the user is trying to escape.",
+      "break_condition": "Breaks when the tool cannot keep data or operation inside the user's preferred environment without vendor dependence.",
+      "representative_comparisons": [
+        "mattermost-vs-slack-for-power-user",
+        "apple-notes-vs-obsidian-for-power-user",
+        "activitywatch-vs-timely-for-solo-user"
+      ],
+      "related_decision_surfaces": [
+        "growth-headroom-without-rebuild",
+        "flexibility-versus-operational-simplicity"
+      ]
+    },
+    {
+      "id": "split-surfaces-fail-when-execution-must-stay-attached-to-context",
+      "pattern_name": "split surfaces fail when execution must stay attached to context",
+      "core_constraints": [
+        "coordination_clarity",
+        "daily_throughput"
+      ],
+      "related_categories": [
+        "Team Collaboration Tools",
+        "Customer Support / Helpdesk Tools",
+        "Scheduling / Booking Tools"
+      ],
+      "repeated_mechanism": "The losing tool separates the main action from the context needed to complete it, forcing handoffs across surfaces.",
+      "repeated_friction": "Users have to reconnect chat to projects, tickets to live resolution, or booking to checkout after the core step is already underway.",
+      "repeated_failure": "Execution slows because the system preserves fragments of the workflow in different places instead of keeping the flow intact.",
+      "survival_direction": "Favor tools that keep discussion, resolution, booking, and transaction context inside the same operational path.",
+      "break_condition": "Breaks when completing the job requires manual stitching across detached communication, service, or transaction surfaces.",
+      "representative_comparisons": [
+        "basecamp-vs-google-chat-for-minimalist",
+        "acquire-vs-zendesk-for-busy-professional",
+        "setmore-vs-square-appointments-for-power-user"
+      ],
+      "related_decision_surfaces": [
+        "communication-tied-to-execution",
+        "low-coordination-overhead"
+      ]
+    },
+    {
+      "id": "ownership-reconstruction-fails-when-responsibility-must-stay-visible",
+      "pattern_name": "ownership reconstruction fails when responsibility must stay visible",
+      "core_constraints": [
+        "coordination_clarity",
+        "daily_throughput",
+        "operational_safety"
+      ],
+      "related_categories": [
+        "Project Management Tools",
+        "Team Collaboration Tools",
+        "Scheduling / Booking Tools"
+      ],
+      "repeated_mechanism": "The losing tool makes responsibility legible only after opening items, chasing details, or mentally reconstructing the next owner.",
+      "repeated_friction": "Assignees, follow-up responsibility, or downstream handoffs are not obvious in the main working view.",
+      "repeated_failure": "Coordination slows because shared understanding depends on extra lookup work instead of visible ownership.",
+      "survival_direction": "Favor tools that keep owners, status, and next-step responsibility visible where the work is scanned.",
+      "break_condition": "Breaks when users repeatedly ask who owns this, who responds next, or who handles the follow-through after the main action.",
+      "representative_comparisons": [
+        "asana-vs-todoist-for-busy-professional",
+        "basecamp-vs-google-chat-for-minimalist",
+        "setmore-vs-square-appointments-for-power-user"
+      ],
+      "related_decision_surfaces": [
+        "ownership-clarity-in-shared-work",
+        "repeated-action-efficiency"
+      ]
+    },
+    {
+      "id": "layered-navigation-fails-under-all-day-retrieval-pressure",
+      "pattern_name": "layered navigation fails under all-day retrieval pressure",
+      "core_constraints": [
+        "daily_throughput",
+        "complexity_load"
+      ],
+      "related_categories": [
+        "Team Collaboration Tools",
+        "Note-taking apps",
+        "Task Managers"
+      ],
+      "repeated_mechanism": "The losing tool hides the next useful surface behind pages, tabs, channels, or database layers that must be traversed repeatedly.",
+      "repeated_friction": "Finding the right conversation, note, or task takes navigation effort that compounds across the day.",
+      "repeated_failure": "The interface becomes the bottleneck because access cost overtakes the value of the extra structure it is exposing.",
+      "survival_direction": "Favor direct, searchable, or single-surface workflows when the job is dominated by repeated retrieval and quick switches.",
+      "break_condition": "Breaks when everyday work depends on crossing multiple navigation layers before reaching the next action.",
+      "representative_comparisons": [
+        "microsoft-teams-vs-slack-for-busy-professional",
+        "notion-vs-simplenote-for-minimalist",
+        "airtable-vs-trello-for-beginner"
+      ],
+      "related_decision_surfaces": [
+        "repeated-action-efficiency",
+        "minimal-system-overhead"
+      ]
+    },
+    {
+      "id": "predictable-defaults-survive-when-user-managed-state-feels-fragile",
+      "pattern_name": "predictable defaults survive when user-managed state feels fragile",
+      "core_constraints": [
+        "operational_safety",
+        "complexity_load",
+        "activation_friction"
+      ],
+      "related_categories": [
+        "Spreadsheet / Database Tools",
+        "Task Managers",
+        "Note-taking apps",
+        "Password Managers"
+      ],
+      "repeated_mechanism": "The losing tool asks the user to interpret or reconstruct system state through formulas, sync setup, regeneration logic, or cross-platform behavior.",
+      "repeated_friction": "Routine actions feel risky because correctness depends on remembering how the tool works internally rather than trusting obvious defaults.",
+      "repeated_failure": "Confidence collapses and normal use slows down once the user no longer trusts that ordinary actions will behave predictably.",
+      "survival_direction": "Favor tools that store, sync, and expose state in a way that feels automatic, legible, and hard to misuse.",
+      "break_condition": "Breaks when correct use depends on managing fragile formulas, custom sync layers, folder setup, or reconstructed credentials.",
+      "representative_comparisons": [
+        "airtable-vs-microsoft-excel-for-non-technical-user",
+        "any-do-vs-apple-reminders-for-non-technical-user",
+        "obsidian-vs-simplenote-for-non-technical-user",
+        "bitwarden-vs-lesspass-for-non-technical-user"
+      ],
+      "related_decision_surfaces": [
+        "safe-everyday-operation",
+        "conservative-choice-under-uncertainty"
+      ]
+    },
+    {
+      "id": "lightweight-structures-survive-early-but-fail-under-ceiling-pressure",
+      "pattern_name": "lightweight structures survive early but fail under ceiling pressure",
+      "core_constraints": [
+        "control_ceiling",
+        "complexity_load",
+        "coordination_clarity"
+      ],
+      "related_categories": [
+        "Task Managers",
+        "Note-taking apps",
+        "Team Collaboration Tools",
+        "Scheduling / Booking Tools"
+      ],
+      "repeated_mechanism": "The losing tool stays easy only by keeping structure shallow, but later cannot absorb the richer fields, links, integrations, or operational coupling the workflow requires.",
+      "repeated_friction": "Users start compensating with manual workarounds because the simple surface cannot hold the real structure any longer.",
+      "repeated_failure": "The tool works at first, then tops out and forces a rebuild once growth stops being theoretical.",
+      "survival_direction": "Favor deeper structure only when the workflow has clearly crossed from simple capture into durable system behavior.",
+      "break_condition": "Breaks when a lightweight model cannot represent the same work in richer ways without bolting on external process.",
+      "representative_comparisons": [
+        "monday-com-vs-trello-for-power-user",
+        "apple-notes-vs-obsidian-for-power-user",
+        "mattermost-vs-slack-for-power-user",
+        "setmore-vs-square-appointments-for-power-user"
+      ],
+      "related_decision_surfaces": [
+        "growth-headroom-without-rebuild",
+        "flexibility-versus-operational-simplicity"
+      ]
+    }
+  ]
+}
