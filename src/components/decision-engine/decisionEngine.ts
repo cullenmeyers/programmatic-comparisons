@@ -65,6 +65,21 @@ export type CategoryMechanism = {
   example_comparison_slugs: string[];
 };
 
+export type ToolResolutionRule = {
+  id: string;
+  source_comparison_slug: string;
+  category: string;
+  persona: string;
+  mapped_constraints: string[];
+  eliminated_tool: string;
+  surviving_tool: string;
+  failure_mechanism: string;
+  failure_trigger: string;
+  survival_reason: string;
+  tradeoff_introduced: string;
+  related_evidence_patterns: string[];
+};
+
 export type DecisionEngineData = {
   version: string;
   core_constraints: CoreConstraint[];
@@ -72,6 +87,7 @@ export type DecisionEngineData = {
   intent_map: IntentMapItem[];
   decision_surfaces: DecisionEngineSurface[];
   categories: CategoryMechanism[];
+  resolution_rules: ToolResolutionRule[];
 };
 
 export type DecisionDirection = {
@@ -82,6 +98,12 @@ export type DecisionDirection = {
   categoryTypicalFailures: string[];
   primaryTradeoff: string;
   constraintPressure: string;
+};
+
+export type MatchedPairwiseEvidence = {
+  rule: ToolResolutionRule;
+  overlapCount: number;
+  originalIndex: number;
 };
 
 function uniqueStrings(items: string[]) {
@@ -171,6 +193,50 @@ export function formatOppositePull(
   return values
     .map((entry) => constraintNames?.get(entry) ?? entry)
     .join(", ");
+}
+
+export function findMatchingPairwiseEvidence(
+  rules: ToolResolutionRule[],
+  mappedConstraintIds: string[],
+  selectedCategory?: string | null
+) {
+  return rules
+    .map((rule, originalIndex) => {
+      const overlapCount = getOverlapCount(mappedConstraintIds, rule.mapped_constraints);
+      const categoryMatches = selectedCategory
+        ? rule.category === selectedCategory
+        : true;
+
+      return {
+        rule,
+        overlapCount,
+        originalIndex,
+        categoryMatches,
+      };
+    })
+    .filter((entry) => entry.overlapCount > 0 && entry.categoryMatches)
+    .sort((left, right) => {
+      if (right.overlapCount !== left.overlapCount) {
+        return right.overlapCount - left.overlapCount;
+      }
+
+      if (selectedCategory) {
+        const leftSelectedCategoryMatch = left.rule.category === selectedCategory ? 1 : 0;
+        const rightSelectedCategoryMatch = right.rule.category === selectedCategory ? 1 : 0;
+
+        if (rightSelectedCategoryMatch !== leftSelectedCategoryMatch) {
+          return rightSelectedCategoryMatch - leftSelectedCategoryMatch;
+        }
+      }
+
+      return left.originalIndex - right.originalIndex;
+    })
+    .slice(0, 6)
+    .map(({ rule, overlapCount, originalIndex }) => ({
+      rule,
+      overlapCount,
+      originalIndex,
+    })) satisfies MatchedPairwiseEvidence[];
 }
 
 export function deriveDecisionDirection(

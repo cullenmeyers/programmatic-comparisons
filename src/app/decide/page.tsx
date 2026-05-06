@@ -7,6 +7,7 @@ import { absoluteUrl } from "@/lib/site";
 import coreConstraintData from "../../../content/decision-engine/core-constraints.json";
 import decisionSurfaceData from "../../../content/decision-engine/decision-surfaces.json";
 import categoryMechanismData from "../../../content/decision-engine/category-mechanisms.json";
+import toolResolutionRuleData from "../../../content/decision-engine/tool-resolution-rules.json";
 
 export const metadata: Metadata = {
   title: "Find the right tool by constraint",
@@ -22,6 +23,7 @@ export default function DecidePage() {
     ...coreConstraintData,
     decision_surfaces: decisionSurfaceData.decision_surfaces,
     categories: categoryMechanismData.categories,
+    resolution_rules: toolResolutionRuleData.resolution_rules,
   } as DecisionEngineData;
 
   return (

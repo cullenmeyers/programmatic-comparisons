@@ -1,11 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import Card from "@/components/ui/Card";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { cx } from "@/components/ui/classnames";
 import {
   deriveDecisionDirection,
+  findMatchingPairwiseEvidence,
   findMatchingDecisionSurfaces,
   formatOppositePull,
   type CoreConstraint,
@@ -57,6 +59,13 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
 
   const matchingDecisionSurfaces = selectedIntent
     ? findMatchingDecisionSurfaces(data, selectedIntent.mapped_constraints)
+    : [];
+  const matchingPairwiseEvidence = selectedIntent
+    ? findMatchingPairwiseEvidence(
+        data.resolution_rules,
+        selectedIntent.mapped_constraints,
+        selectedCategory?.category ?? null
+      )
     : [];
 
   const decisionDirection =
@@ -396,6 +405,106 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
               </Card>
             </section>
           ) : null}
+
+          <section className="content-stack gap-3">
+            <SectionHeading title="Pairwise evidence from existing comparisons" />
+            <Card className="space-y-5">
+              <p className="text-sm leading-6 text-black/70">
+                These are pairwise rules from existing ToolPicker comparisons. They are
+                evidence for the decision direction, not global rankings.
+              </p>
+
+              {matchingPairwiseEvidence.length === 0 ? (
+                <p className="text-sm leading-6 text-black/65">
+                  No pairwise evidence matches this intent and category filter yet.
+                </p>
+              ) : (
+                <div className="space-y-4">
+                  {matchingPairwiseEvidence.map(({ rule }) => (
+                    <div
+                      key={rule.id}
+                      className="rounded-xl border border-black/10 bg-black/[0.02] p-4"
+                    >
+                      <div className="grid gap-4 md:grid-cols-2">
+                        <div className="space-y-1">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            Comparison
+                          </p>
+                          <p className="text-sm font-medium text-black">
+                            {rule.surviving_tool} vs {rule.eliminated_tool}
+                          </p>
+                        </div>
+
+                        <div className="space-y-1">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            Category
+                          </p>
+                          <p className="text-sm leading-6 text-black/70">{rule.category}</p>
+                        </div>
+
+                        <div className="space-y-1">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            Persona
+                          </p>
+                          <p className="text-sm leading-6 text-black/70">{rule.persona}</p>
+                        </div>
+
+                        <div className="space-y-1">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            What fails first
+                          </p>
+                          <p className="text-sm leading-6 text-black/70">
+                            {rule.eliminated_tool}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="mt-4 grid gap-4 md:grid-cols-2">
+                        <div className="space-y-1">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            Why it fails
+                          </p>
+                          <p className="text-sm leading-6 text-black/70">
+                            {rule.failure_mechanism} {rule.failure_trigger}
+                          </p>
+                        </div>
+
+                        <div className="space-y-1">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            Why the other survives
+                          </p>
+                          <p className="text-sm leading-6 text-black/70">
+                            {rule.survival_reason}
+                          </p>
+                        </div>
+
+                        <div className="space-y-1 md:col-span-2">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            Tradeoff introduced
+                          </p>
+                          <p className="text-sm leading-6 text-black/70">
+                            {rule.tradeoff_introduced}
+                          </p>
+                        </div>
+
+                        <div className="space-y-1 md:col-span-2">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            Source comparison
+                          </p>
+                          <Link
+                            href={`/compare/${rule.source_comparison_slug}`}
+                            className="text-sm font-medium text-black underline underline-offset-4"
+                          >
+                            /compare/{rule.source_comparison_slug}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </Card>
+          </section>
 
           <section className="content-stack gap-3">
             <SectionHeading title="Matching persona bundles" />
