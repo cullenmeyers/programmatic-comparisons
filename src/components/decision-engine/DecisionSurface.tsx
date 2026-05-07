@@ -10,6 +10,7 @@ import {
   findMatchingPairwiseEvidence,
   findMatchingDecisionSurfaces,
   formatOppositePull,
+  getSupportedCategoryMechanisms,
   summarizeCurrentEvidenceSignal,
   type CoreConstraint,
   type DecisionEngineData,
@@ -50,11 +51,12 @@ function joinCompact(items: string[]) {
 export default function DecisionSurface({ data }: DecisionSurfaceProps) {
   const [selectedPhrase, setSelectedPhrase] = useState<string | null>(null);
   const [selectedCategorySlug, setSelectedCategorySlug] = useState<string | null>(null);
+  const supportedCategories = getSupportedCategoryMechanisms(data.categories);
 
   const selectedIntent =
     data.intent_map.find((item) => item.phrase === selectedPhrase) ?? null;
   const selectedCategory =
-    data.categories.find((category) => category.slug === selectedCategorySlug) ?? null;
+    supportedCategories.find((category) => category.slug === selectedCategorySlug) ?? null;
 
   const selectedConstraints = selectedIntent
     ? selectedIntent.mapped_constraints
@@ -147,7 +149,7 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
             </p>
           </button>
 
-          {data.categories.map((category) => {
+          {supportedCategories.map((category) => {
             const isSelected = category.slug === selectedCategorySlug;
 
             return (

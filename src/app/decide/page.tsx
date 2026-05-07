@@ -3,6 +3,7 @@ import Card from "@/components/ui/Card";
 import DecisionSurface, {
   type DecisionEngineData,
 } from "@/components/decision-engine/DecisionSurface";
+import { getSupportedCategoryMechanisms } from "@/components/decision-engine/decisionEngine";
 import { absoluteUrl } from "@/lib/site";
 import coreConstraintData from "../../../content/decision-engine/core-constraints.json";
 import decisionSurfaceData from "../../../content/decision-engine/decision-surfaces.json";
@@ -19,10 +20,13 @@ export const metadata: Metadata = {
 };
 
 export default function DecidePage() {
+  const supportedCategories = getSupportedCategoryMechanisms(
+    categoryMechanismData.categories
+  );
   const data = {
     ...coreConstraintData,
     decision_surfaces: decisionSurfaceData.decision_surfaces,
-    categories: categoryMechanismData.categories,
+    categories: supportedCategories,
     resolution_rules: toolResolutionRuleData.resolution_rules,
   } as DecisionEngineData;
 

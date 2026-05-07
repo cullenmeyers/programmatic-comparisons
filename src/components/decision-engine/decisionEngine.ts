@@ -118,6 +118,19 @@ export type CurrentEvidenceSignal = {
   eliminatedTools: EvidenceSignalGroup[];
 };
 
+export function getSupportedCategoryMechanisms(categories: CategoryMechanism[]) {
+  const seenSlugs = new Set<string>();
+
+  return categories.filter((category) => {
+    if (seenSlugs.has(category.slug)) {
+      return false;
+    }
+
+    seenSlugs.add(category.slug);
+    return true;
+  });
+}
+
 function uniqueStrings(items: string[]) {
   return items.filter((item, index) => items.indexOf(item) === index);
 }

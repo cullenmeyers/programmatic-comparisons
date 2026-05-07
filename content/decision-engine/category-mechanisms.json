@@ -339,6 +339,142 @@
       ]
     },
     {
+      "category": "Team Collaboration Tools",
+      "slug": "team-collaboration-tools",
+      "sensitive_constraints": [
+        "coordination_clarity",
+        "daily_throughput",
+        "complexity_load",
+        "control_ceiling",
+        "upkeep_burden"
+      ],
+      "dominant_mechanisms": [
+        "the category turns on whether conversation, ownership, and shared context remain visible without forcing manual reconstruction",
+        "navigation depth matters because collaboration tools are scanned and switched between continuously throughout the day",
+        "the boundary between chat and execution determines whether the system preserves context or creates handoff drift",
+        "tools survive when they keep shared communication legible at speed while still leaving room for stronger control when the environment requires it"
+      ],
+      "common_friction_patterns": [
+        "users must cross teams, channels, tabs, or separate work surfaces before reaching the next useful conversation",
+        "discussion floats away from the work, so people have to restitch context and responsibility from memory",
+        "the collaboration layer becomes heavier when enterprise structure or admin surfaces overwhelm the actual communication job",
+        "hosted convenience becomes limiting when data location, integrations, or infrastructure control become part of the requirement"
+      ],
+      "common_failure_patterns": [
+        "shared work slows first because people cannot quickly see what conversation or context the next action belongs to",
+        "teams stop trusting the system when ownership and work context have to be reconstructed from fragmented surfaces",
+        "lightweight chat tools fail later when the environment needs stronger control, self-hosting, or deeper operational coupling",
+        "heavier suites fail when collaboration overhead starts competing with the speed of ordinary communication"
+      ],
+      "constraint_interactions": [
+        {
+          "constraint": "coordination_clarity",
+          "mechanism_effect": "In team collaboration tools, clarity depends on whether ownership, work context, and conversation stay attached in the main working surface.",
+          "typical_failure": "Teams lose time because responsibility or surrounding context has to be reconstructed from detached threads."
+        },
+        {
+          "constraint": "daily_throughput",
+          "mechanism_effect": "Throughput is shaped by navigation depth, retrieval speed, and how fast users can move between active conversations.",
+          "typical_failure": "The tool becomes the bottleneck when reaching the right conversation takes too many layers or too much scanning."
+        },
+        {
+          "constraint": "complexity_load",
+          "mechanism_effect": "Complexity rises when communication is wrapped in surrounding workspace, admin, or workflow layers that exceed the real collaboration need.",
+          "typical_failure": "People avoid the tool because basic communication is buried inside a heavier operating model."
+        },
+        {
+          "constraint": "control_ceiling",
+          "mechanism_effect": "Ceiling risk appears when teams need stronger control over hosting, compliance, integrations, or environment behavior than a hosted chat layer allows.",
+          "typical_failure": "The team keeps communicating in the tool but has to move control-sensitive workflow elsewhere."
+        },
+        {
+          "constraint": "upkeep_burden",
+          "mechanism_effect": "Maintenance appears as channel sprawl, permission care, integration upkeep, and the overhead of keeping shared spaces navigable.",
+          "typical_failure": "The collaboration tool stops disappearing into the workflow and becomes another system to administer."
+        }
+      ],
+      "representative_decision_surfaces": [
+        "ownership-clarity-in-shared-work",
+        "communication-tied-to-execution",
+        "low-coordination-overhead",
+        "growth-headroom-without-rebuild"
+      ],
+      "example_comparison_slugs": [
+        "microsoft-teams-vs-slack-for-busy-professional",
+        "mattermost-vs-slack-for-power-user",
+        "basecamp-vs-google-chat-for-minimalist",
+        "basecamp-vs-slack-for-busy-professional"
+      ]
+    },
+    {
+      "category": "Spreadsheet / Database Tools",
+      "slug": "spreadsheet-database-tools",
+      "sensitive_constraints": [
+        "operational_safety",
+        "activation_friction",
+        "control_ceiling",
+        "complexity_load",
+        "daily_throughput"
+      ],
+      "dominant_mechanisms": [
+        "the category turns on how much structure the tool enforces versus how much state the user must manage manually",
+        "formula fragility versus field-enforced structure is a mechanism difference, not just a feature preference",
+        "setup cost matters because database-style tools often ask for schema thinking before the first useful record exists",
+        "tools survive when they balance safe everyday editing with enough structural headroom for the workflow to grow without a rebuild"
+      ],
+      "common_friction_patterns": [
+        "the user must design tables, field types, or relationships before the tool feels useful for the immediate job",
+        "routine edits feel risky because correctness depends on fragile formulas, cell ranges, or manually preserved structure",
+        "simple tracking jobs become heavier when the tool introduces relational modeling or app-building concepts too early",
+        "lightweight sheets turn into workaround systems when the workflow eventually needs stronger structure or governed data"
+      ],
+      "common_failure_patterns": [
+        "adoption stalls because early value is blocked by schema or environment setup before any real data work begins",
+        "trust drops when normal edits can silently damage formulas, structure, or downstream calculations",
+        "heavier database tools fail when the job is still simple enough that the modeling overhead never pays back",
+        "plain spreadsheets fail later when richer structure, validation, or repeatable workflows exceed what freeform cells can hold safely"
+      ],
+      "constraint_interactions": [
+        {
+          "constraint": "operational_safety",
+          "mechanism_effect": "In spreadsheet and database tools, safety depends on how much structure is enforced by the system versus preserved manually by the user.",
+          "typical_failure": "Users slow down because ordinary edits can break formulas, ranges, or expected structure."
+        },
+        {
+          "constraint": "activation_friction",
+          "mechanism_effect": "Activation friction is the cost of creating tables, choosing fields, or preparing an environment before the first useful row exists.",
+          "typical_failure": "The user abandons the tool because the modeling step arrives before the immediate data task is even underway."
+        },
+        {
+          "constraint": "control_ceiling",
+          "mechanism_effect": "Ceiling risk appears when the workflow needs richer validation, app logic, permissions, or relational structure than a flat sheet can absorb.",
+          "typical_failure": "The team keeps the spreadsheet but rebuilds the real system in side processes or a second tool."
+        },
+        {
+          "constraint": "complexity_load",
+          "mechanism_effect": "Complexity rises when database abstractions or app-builder layers surround a job that is still basically list or table maintenance.",
+          "typical_failure": "The tool asks the user to think like a system designer when they only needed to track or edit information."
+        },
+        {
+          "constraint": "daily_throughput",
+          "mechanism_effect": "Throughput is shaped by how quickly users can enter, scan, and update records without navigating extra modeling or view-management layers.",
+          "typical_failure": "Repeated data entry slows down because each edit depends on extra structure choices or interface traversal."
+        }
+      ],
+      "representative_decision_surfaces": [
+        "safe-everyday-operation",
+        "instant-value-under-urgency",
+        "flexibility-versus-operational-simplicity",
+        "conservative-choice-under-uncertainty"
+      ],
+      "example_comparison_slugs": [
+        "airtable-vs-microsoft-excel-for-non-technical-user",
+        "airtable-vs-baserow-for-beginner",
+        "appsheet-vs-google-sheets-for-non-technical-user",
+        "google-sheets-vs-grist-for-student"
+      ]
+    },
+    {
       "category": "Scheduling / Booking Tools",
       "slug": "scheduling-booking-tools",
       "sensitive_constraints": [
