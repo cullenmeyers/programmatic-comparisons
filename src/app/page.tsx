@@ -140,6 +140,23 @@ export default function HomePage() {
         </p>
       </header>
 
+      <section className="max-w-3xl">
+        <Card className="space-y-3">
+          <div className="space-y-2">
+            <p className="text-sm font-medium text-black">Try the decision prototype</p>
+            <p className="text-sm text-black/65">
+              Choose a constraint and category to see the failure pattern that usually
+              decides the tool.
+            </p>
+          </div>
+          <div>
+            <ButtonLink href="/decide" variant="ghost">
+              Open decision prototype
+            </ButtonLink>
+          </div>
+        </Card>
+      </section>
+
       <section className="content-stack gap-4">
         <SectionHeading title="How to use this site" />
         <div className="grid gap-4 md:grid-cols-3">
