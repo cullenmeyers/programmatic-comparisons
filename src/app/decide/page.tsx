@@ -8,6 +8,7 @@ import { absoluteUrl } from "@/lib/site";
 import coreConstraintData from "../../../content/decision-engine/core-constraints.json";
 import decisionSurfaceData from "../../../content/decision-engine/decision-surfaces.json";
 import categoryMechanismData from "../../../content/decision-engine/category-mechanisms.json";
+import evidencePatternData from "../../../content/decision-engine/evidence-patterns.json";
 import toolResolutionRuleData from "../../../content/decision-engine/tool-resolution-rules.json";
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function DecidePage() {
     ...coreConstraintData,
     decision_surfaces: decisionSurfaceData.decision_surfaces,
     categories: supportedCategories,
+    evidence_patterns: evidencePatternData.evidence_patterns,
     resolution_rules: toolResolutionRuleData.resolution_rules,
   } as DecisionEngineData;
 
@@ -44,8 +46,8 @@ export default function DecidePage() {
 
       <Card className="border-black/10 p-4">
         <p className="text-sm leading-6 text-black/65">
-          Human intent + optional category -&gt; Core constraints -&gt; Category
-          mechanism profile -&gt; Decision direction
+          Human intent -&gt; Constraints -&gt; Decision surfaces -&gt; Category
+          mechanisms -&gt; Evidence -&gt; Trace
         </p>
       </Card>
 

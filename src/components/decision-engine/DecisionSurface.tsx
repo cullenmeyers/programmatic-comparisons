@@ -7,6 +7,7 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import { cx } from "@/components/ui/classnames";
 import {
   deriveDecisionDirection,
+  findMatchingEvidencePatterns,
   findMatchingPairwiseEvidence,
   findMatchingDecisionSurfaces,
   formatOppositePull,
@@ -77,7 +78,14 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
     : [];
 
   const matchingDecisionSurfaces = selectedIntent
-    ? findMatchingDecisionSurfaces(data, selectedIntent.mapped_constraints)
+    ? findMatchingDecisionSurfaces(data, selectedIntent)
+    : [];
+  const matchingEvidencePatterns = selectedIntent
+    ? findMatchingEvidencePatterns(
+        data.evidence_patterns,
+        selectedIntent.mapped_constraints,
+        selectedCategory?.category ?? null
+      )
     : [];
   const matchingPairwiseEvidence = selectedIntent
     ? findMatchingPairwiseEvidence(
@@ -473,6 +481,94 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
             </div>
           </section>
 
+          <section className="content-stack gap-3">
+            <SectionHeading title="Evidence patterns" />
+            <Card className="space-y-5">
+              <p className="text-sm leading-6 text-black/70">
+                These patterns are derived from existing ToolPicker comparisons.
+              </p>
+
+              {matchingEvidencePatterns.length === 0 ? (
+                <p className="text-sm leading-6 text-black/65">
+                  No evidence patterns match this intent and category filter yet.
+                </p>
+              ) : (
+                <div className="space-y-4">
+                  {matchingEvidencePatterns.map(({ pattern }) => (
+                    <div
+                      key={pattern.id}
+                      className="rounded-xl border border-black/10 bg-black/[0.02] p-4"
+                    >
+                      <div className="space-y-1">
+                        <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                          Pattern
+                        </p>
+                        <p className="text-sm font-medium text-black">
+                          {pattern.pattern_name}
+                        </p>
+                      </div>
+
+                      <div className="mt-4 grid gap-4 md:grid-cols-2">
+                        <div className="space-y-1">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            Repeated mechanism
+                          </p>
+                          <p className="text-sm leading-6 text-black/70">
+                            {pattern.repeated_mechanism}
+                          </p>
+                        </div>
+
+                        <div className="space-y-1">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            Repeated friction
+                          </p>
+                          <p className="text-sm leading-6 text-black/70">
+                            {pattern.repeated_friction}
+                          </p>
+                        </div>
+
+                        <div className="space-y-1">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            Repeated failure
+                          </p>
+                          <p className="text-sm leading-6 text-black/70">
+                            {pattern.repeated_failure}
+                          </p>
+                        </div>
+
+                        <div className="space-y-1">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            Survival direction
+                          </p>
+                          <p className="text-sm leading-6 text-black/70">
+                            {pattern.survival_direction}
+                          </p>
+                        </div>
+
+                        <div className="space-y-1 md:col-span-2">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            Representative comparisons
+                          </p>
+                          <div className="flex flex-wrap gap-3">
+                            {pattern.representative_comparisons.map((slug) => (
+                              <Link
+                                key={`${pattern.id}-${slug}`}
+                                href={`/compare/${slug}`}
+                                className="text-sm font-medium text-black underline underline-offset-4"
+                              >
+                                /compare/{slug}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </Card>
+          </section>
+
           {decisionDirection ? (
             <section className="content-stack gap-3">
               <SectionHeading title="Decision direction" />
@@ -538,8 +634,8 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
               <SectionHeading title="Current evidence signal" />
               <Card className="space-y-5">
                 <p className="text-sm leading-6 text-black/70">
-                  This is not a global ranking. It only summarizes matched
-                  pairwise evidence from existing ToolPicker comparisons.
+                  This only summarizes matched pairwise evidence from existing
+                  ToolPicker comparisons.
                 </p>
 
                 <div className="space-y-3">
@@ -616,7 +712,7 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
             <Card className="space-y-5">
               <p className="text-sm leading-6 text-black/70">
                 These are pairwise rules from existing ToolPicker comparisons. They are
-                evidence for the decision direction, not global rankings.
+                evidence for the decision direction, not universal tool advice.
               </p>
 
               {matchingPairwiseEvidence.length === 0 ? (

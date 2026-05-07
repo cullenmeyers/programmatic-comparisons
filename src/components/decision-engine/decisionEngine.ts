@@ -65,6 +65,20 @@ export type CategoryMechanism = {
   example_comparison_slugs: string[];
 };
 
+export type EvidencePattern = {
+  id: string;
+  pattern_name: string;
+  core_constraints: string[];
+  related_categories: string[];
+  repeated_mechanism: string;
+  repeated_friction: string;
+  repeated_failure: string;
+  survival_direction: string;
+  break_condition: string;
+  representative_comparisons: string[];
+  related_decision_surfaces: string[];
+};
+
 export type ToolResolutionRule = {
   id: string;
   source_comparison_slug: string;
@@ -87,6 +101,7 @@ export type DecisionEngineData = {
   intent_map: IntentMapItem[];
   decision_surfaces: DecisionEngineSurface[];
   categories: CategoryMechanism[];
+  evidence_patterns: EvidencePattern[];
   resolution_rules: ToolResolutionRule[];
 };
 
@@ -116,6 +131,12 @@ export type EvidenceSignalGroup = {
 export type CurrentEvidenceSignal = {
   survivingTools: EvidenceSignalGroup[];
   eliminatedTools: EvidenceSignalGroup[];
+};
+
+export type MatchedEvidencePattern = {
+  pattern: EvidencePattern;
+  overlapCount: number;
+  originalIndex: number;
 };
 
 export function getSupportedCategoryMechanisms(categories: CategoryMechanism[]) {
@@ -173,16 +194,23 @@ function getOverlapCount(selectedIds: string[], candidateIds: string[]) {
 
 export function findMatchingDecisionSurfaces(
   data: DecisionEngineData,
-  mappedConstraintIds: string[]
+  intent: Pick<IntentMapItem, "mapped_constraints" | "decision_surface_ids">
 ) {
-  return data.decision_surfaces
+  const explicitSurfaceIds = intent.decision_surface_ids ?? [];
+  const explicitSurfaces = explicitSurfaceIds
+    .map((surfaceId) =>
+      data.decision_surfaces.find((surface) => surface.id === surfaceId) ?? null
+    )
+    .filter((surface): surface is DecisionEngineSurface => Boolean(surface));
+  const explicitSurfaceIdSet = new Set(explicitSurfaces.map((surface) => surface.id));
+  const overlapSurfaces = data.decision_surfaces
     .map((surface, index) => {
       const primaryMatches = getOverlapCount(
-        mappedConstraintIds,
+        intent.mapped_constraints,
         surface.primary_constraints
       );
       const secondaryMatches = getOverlapCount(
-        mappedConstraintIds,
+        intent.mapped_constraints,
         surface.secondary_constraints
       );
 
@@ -194,7 +222,9 @@ export function findMatchingDecisionSurfaces(
         totalMatches: primaryMatches + secondaryMatches,
       };
     })
-    .filter((entry) => entry.totalMatches > 0)
+    .filter(
+      (entry) => entry.totalMatches > 0 && !explicitSurfaceIdSet.has(entry.surface.id)
+    )
     .sort((left, right) => {
       if (right.primaryMatches !== left.primaryMatches) {
         return right.primaryMatches - left.primaryMatches;
@@ -207,6 +237,50 @@ export function findMatchingDecisionSurfaces(
       return left.index - right.index;
     })
     .map((entry) => entry.surface);
+
+  return [...explicitSurfaces, ...overlapSurfaces];
+}
+
+export function findMatchingEvidencePatterns(
+  patterns: EvidencePattern[],
+  mappedConstraintIds: string[],
+  selectedCategory?: string | null
+) {
+  return patterns
+    .map((pattern, originalIndex) => {
+      const overlapCount = getOverlapCount(
+        mappedConstraintIds,
+        pattern.core_constraints
+      );
+      const categoryMatches = selectedCategory
+        ? pattern.related_categories.includes(selectedCategory)
+        : false;
+
+      return {
+        pattern,
+        overlapCount,
+        originalIndex,
+        categoryMatches,
+      };
+    })
+    .filter((entry) => entry.overlapCount > 0)
+    .sort((left, right) => {
+      if (selectedCategory && left.categoryMatches !== right.categoryMatches) {
+        return Number(right.categoryMatches) - Number(left.categoryMatches);
+      }
+
+      if (right.overlapCount !== left.overlapCount) {
+        return right.overlapCount - left.overlapCount;
+      }
+
+      return left.originalIndex - right.originalIndex;
+    })
+    .slice(0, 3)
+    .map(({ pattern, overlapCount, originalIndex }) => ({
+      pattern,
+      overlapCount,
+      originalIndex,
+    })) satisfies MatchedEvidencePattern[];
 }
 
 export function formatOppositePull(
