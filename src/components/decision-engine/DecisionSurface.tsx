@@ -31,6 +31,22 @@ function renderList(items: string[]) {
   );
 }
 
+function joinCompact(items: string[]) {
+  if (items.length === 0) {
+    return "";
+  }
+
+  if (items.length === 1) {
+    return items[0];
+  }
+
+  if (items.length === 2) {
+    return `${items[0]} and ${items[1]}`;
+  }
+
+  return `${items.slice(0, -1).join(", ")}, and ${items[items.length - 1]}`;
+}
+
 export default function DecisionSurface({ data }: DecisionSurfaceProps) {
   const [selectedPhrase, setSelectedPhrase] = useState<string | null>(null);
   const [selectedCategorySlug, setSelectedCategorySlug] = useState<string | null>(null);
@@ -87,6 +103,21 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
   const constraintNames = new Map(
     data.core_constraints.map((constraint) => [constraint.id, constraint.name])
   );
+  const selectedConstraintNames = selectedConstraints.map((constraint) => constraint.name);
+  const evidenceSignalGroupCount = currentEvidenceSignal
+    ? currentEvidenceSignal.survivingTools.length +
+      currentEvidenceSignal.eliminatedTools.length
+    : null;
+  const decisionMeaning =
+    decisionDirection &&
+    decisionDirection.survivingMechanisms.length > 0 &&
+    decisionDirection.failureMechanisms.length > 0
+      ? `This points toward mechanisms that reduce ${joinCompact(
+          decisionDirection.survivingMechanisms
+        )} and away from mechanisms that create ${joinCompact(
+          decisionDirection.failureMechanisms
+        )}.`
+      : null;
 
   return (
     <div className="content-stack gap-8">
@@ -236,6 +267,95 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
         </Card>
       ) : (
         <div className="content-stack gap-6">
+          <section className="content-stack gap-3">
+            <SectionHeading title="Decision trace" />
+            <Card className="space-y-4">
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="space-y-1">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    You said
+                  </p>
+                  <p className="text-sm leading-6 text-black/70">{selectedIntent.phrase}</p>
+                </div>
+
+                <div className="space-y-1">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Mapped constraints
+                  </p>
+                  <p className="text-sm leading-6 text-black/70">
+                    {selectedConstraintNames.length > 0
+                      ? joinCompact(selectedConstraintNames)
+                      : "No mapped constraints."}
+                  </p>
+                </div>
+
+                <div className="space-y-1 md:col-span-2">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Category context
+                  </p>
+                  {selectedCategory ? (
+                    <div className="space-y-1 text-sm leading-6 text-black/70">
+                      <p>{selectedCategory.category}</p>
+                      {decisionDirection?.categoryMechanismEffects.length ? (
+                        <p>
+                          Mechanism effects:{" "}
+                          {joinCompact(decisionDirection.categoryMechanismEffects)}
+                        </p>
+                      ) : null}
+                      {decisionDirection?.categoryTypicalFailures.length ? (
+                        <p>
+                          Typical failures:{" "}
+                          {joinCompact(decisionDirection.categoryTypicalFailures)}
+                        </p>
+                      ) : null}
+                    </div>
+                  ) : (
+                    <p className="text-sm leading-6 text-black/70">
+                      No category selected, so the trace uses general constraint
+                      patterns.
+                    </p>
+                  )}
+                </div>
+
+                <div className="space-y-1 md:col-span-2">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Failure pressure
+                  </p>
+                  <p className="text-sm leading-6 text-black/70">
+                    {decisionDirection?.constraintPressure ??
+                      "No failure pressure summary is available yet."}
+                  </p>
+                </div>
+
+                <div className="space-y-1">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Evidence attached
+                  </p>
+                  <p className="text-sm leading-6 text-black/70">
+                    {matchingPairwiseEvidence.length} matched pairwise evidence rule
+                    {matchingPairwiseEvidence.length === 1 ? "" : "s"}
+                    {evidenceSignalGroupCount !== null
+                      ? `, ${evidenceSignalGroupCount} current evidence signal group${
+                          evidenceSignalGroupCount === 1 ? "" : "s"
+                        }`
+                      : ""}
+                    .
+                  </p>
+                </div>
+
+                <div className="space-y-1">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Decision meaning
+                  </p>
+                  <p className="text-sm leading-6 text-black/70">
+                    {decisionMeaning ??
+                      "This summarizes the current decision direction without introducing a new result."}
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </section>
+
           <section className="content-stack gap-3">
             <SectionHeading title="Selected intent" />
             <Card className="space-y-3">
