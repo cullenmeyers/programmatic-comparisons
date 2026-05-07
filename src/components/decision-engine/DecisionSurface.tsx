@@ -10,6 +10,7 @@ import {
   findMatchingPairwiseEvidence,
   findMatchingDecisionSurfaces,
   formatOppositePull,
+  summarizeCurrentEvidenceSignal,
   type CoreConstraint,
   type DecisionEngineData,
 } from "./decisionEngine";
@@ -77,6 +78,10 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
           selectedIntent.mapped_constraints,
           selectedCategory
         )
+      : null;
+  const currentEvidenceSignal =
+    matchingPairwiseEvidence.length >= 2
+      ? summarizeCurrentEvidenceSignal(matchingPairwiseEvidence)
       : null;
 
   const constraintNames = new Map(
@@ -405,6 +410,84 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
               </Card>
             </section>
           ) : null}
+
+          {currentEvidenceSignal ? (
+            <section className="content-stack gap-3">
+              <SectionHeading title="Current evidence signal" />
+              <Card className="space-y-5">
+                <p className="text-sm leading-6 text-black/70">
+                  This is not a global ranking. It only summarizes matched
+                  pairwise evidence from existing ToolPicker comparisons.
+                </p>
+
+                <div className="space-y-3">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Tools that survive in matched comparisons
+                  </p>
+                  <div className="grid gap-4">
+                    {currentEvidenceSignal.survivingTools.map((group) => (
+                      <div
+                        key={group.tool}
+                        className="rounded-xl border border-black/10 bg-black/[0.02] p-4"
+                      >
+                        <p className="text-sm font-medium text-black">{group.tool}</p>
+                        <p className="mt-1 text-sm leading-6 text-black/70">
+                          appears in {group.count} matched comparisons
+                        </p>
+                        <div className="mt-3 space-y-1">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            Source comparisons
+                          </p>
+                          <div className="flex flex-wrap gap-3">
+                            {group.sourceComparisonSlugs.map((slug) => (
+                              <Link
+                                key={`${group.tool}-${slug}`}
+                                href={`/compare/${slug}`}
+                                className="text-sm font-medium text-black underline underline-offset-4"
+                              >
+                                /compare/{slug}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Tools that fail first in matched comparisons
+                  </p>
+                  <div className="grid gap-4">
+                    {currentEvidenceSignal.eliminatedTools.map((group) => (
+                      <div
+                        key={group.tool}
+                        className="rounded-xl border border-black/10 bg-black/[0.02] p-4"
+                      >
+                        <p className="text-sm font-medium text-black">{group.tool}</p>
+                        <p className="mt-1 text-sm leading-6 text-black/70">
+                          fails first in {group.count} matched comparisons
+                        </p>
+                        <div className="mt-3 space-y-1">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            Failure triggers
+                          </p>
+                          {renderList(group.failureTriggers)}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </Card>
+            </section>
+          ) : (
+            <Card className="border-dashed border-black/15">
+              <p className="text-sm leading-6 text-black/65">
+                Not enough matched pairwise evidence yet.
+              </p>
+            </Card>
+          )}
 
           <section className="content-stack gap-3">
             <SectionHeading title="Pairwise evidence from existing comparisons" />

@@ -106,6 +106,18 @@ export type MatchedPairwiseEvidence = {
   originalIndex: number;
 };
 
+export type EvidenceSignalGroup = {
+  tool: string;
+  count: number;
+  sourceComparisonSlugs: string[];
+  failureTriggers: string[];
+};
+
+export type CurrentEvidenceSignal = {
+  survivingTools: EvidenceSignalGroup[];
+  eliminatedTools: EvidenceSignalGroup[];
+};
+
 function uniqueStrings(items: string[]) {
   return items.filter((item, index) => items.indexOf(item) === index);
 }
@@ -237,6 +249,51 @@ export function findMatchingPairwiseEvidence(
       overlapCount,
       originalIndex,
     })) satisfies MatchedPairwiseEvidence[];
+}
+
+export function summarizeCurrentEvidenceSignal(
+  matchedEvidence: MatchedPairwiseEvidence[]
+): CurrentEvidenceSignal {
+  const survivingToolMap = new Map<string, EvidenceSignalGroup>();
+  const eliminatedToolMap = new Map<string, EvidenceSignalGroup>();
+
+  for (const { rule } of matchedEvidence) {
+    const survivingGroup = survivingToolMap.get(rule.surviving_tool) ?? {
+      tool: rule.surviving_tool,
+      count: 0,
+      sourceComparisonSlugs: [],
+      failureTriggers: [],
+    };
+
+    survivingGroup.count += 1;
+    survivingGroup.sourceComparisonSlugs = uniqueStrings([
+      ...survivingGroup.sourceComparisonSlugs,
+      rule.source_comparison_slug,
+    ]).sort((left, right) => left.localeCompare(right));
+    survivingToolMap.set(rule.surviving_tool, survivingGroup);
+
+    const eliminatedGroup = eliminatedToolMap.get(rule.eliminated_tool) ?? {
+      tool: rule.eliminated_tool,
+      count: 0,
+      sourceComparisonSlugs: [],
+      failureTriggers: [],
+    };
+
+    eliminatedGroup.count += 1;
+    eliminatedGroup.failureTriggers = uniqueStrings([
+      ...eliminatedGroup.failureTriggers,
+      rule.failure_trigger,
+    ]).sort((left, right) => left.localeCompare(right));
+    eliminatedToolMap.set(rule.eliminated_tool, eliminatedGroup);
+  }
+
+  const sortGroupsAlphabetically = (groups: Iterable<EvidenceSignalGroup>) =>
+    Array.from(groups).sort((left, right) => left.tool.localeCompare(right.tool));
+
+  return {
+    survivingTools: sortGroupsAlphabetically(survivingToolMap.values()),
+    eliminatedTools: sortGroupsAlphabetically(eliminatedToolMap.values()),
+  };
 }
 
 export function deriveDecisionDirection(
