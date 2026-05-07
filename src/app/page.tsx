@@ -175,7 +175,7 @@ export default function HomePage() {
           <Card className="space-y-2">
             <p className="text-sm font-medium text-black">3) Make a clean pick</p>
             <p className="text-sm text-black/65">
-              You get a clear winner and quick rules you can reuse.
+              You get a constraint-based verdict and quick rules you can reuse.
             </p>
           </Card>
         </div>

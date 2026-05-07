@@ -25,7 +25,7 @@ export type IntentMapItem = {
   normalized_meaning: string;
   mapped_constraints: string[];
   failure_avoided: string;
-  decision_surface: string;
+  decision_surface_ids: string[];
 };
 
 export type DecisionEngineSurface = {

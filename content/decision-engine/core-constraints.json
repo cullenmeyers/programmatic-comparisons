@@ -350,7 +350,9 @@
         "activation_friction"
       ],
       "failure_avoided": "Setup blocks the tool before it becomes useful.",
-      "decision_surface": "Account, configuration, schema, or plugin burden."
+      "decision_surface_ids": [
+        "instant-value-under-urgency"
+      ]
     },
     {
       "phrase": "I cannot afford extra clicks every day",
@@ -359,7 +361,9 @@
         "daily_throughput"
       ],
       "failure_avoided": "Micro-friction compounds into workflow drag.",
-      "decision_surface": "Core action path length and scan cost."
+      "decision_surface_ids": [
+        "repeated-action-efficiency"
+      ]
     },
     {
       "phrase": "I do not want to break anything",
@@ -368,7 +372,9 @@
         "operational_safety"
       ],
       "failure_avoided": "Routine actions start feeling risky or untrustworthy.",
-      "decision_surface": "Sync risk, fragile structure, and settings density."
+      "decision_surface_ids": [
+        "safe-everyday-operation"
+      ]
     },
     {
       "phrase": "I want it to just keep working without upkeep",
@@ -377,7 +383,9 @@
         "upkeep_burden"
       ],
       "failure_avoided": "Tool maintenance displaces the actual work.",
-      "decision_surface": "Hosting, sync, cleanup, and planning overhead."
+      "decision_surface_ids": [
+        "low-maintenance-continuity"
+      ]
     },
     {
       "phrase": "I might only need this for a semester",
@@ -387,7 +395,10 @@
         "activation_friction"
       ],
       "failure_avoided": "The investment horizon exceeds the real use window.",
-      "decision_surface": "Setup and learning cost versus temporary value."
+      "decision_surface_ids": [
+        "short-horizon-reversibility",
+        "instant-value-under-urgency"
+      ]
     },
     {
       "phrase": "I want something simple, not a whole system",
@@ -396,7 +407,9 @@
         "complexity_load"
       ],
       "failure_avoided": "Tool complexity outweighs task complexity.",
-      "decision_surface": "Module count, UI layering, and conceptual overhead."
+      "decision_surface_ids": [
+        "minimal-system-overhead"
+      ]
     },
     {
       "phrase": "I need to see who owns what right away",
@@ -406,7 +419,10 @@
         "daily_throughput"
       ],
       "failure_avoided": "Responsibility becomes ambiguous and slows execution.",
-      "decision_surface": "Assignee visibility and shared project context."
+      "decision_surface_ids": [
+        "ownership-clarity-in-shared-work",
+        "repeated-action-efficiency"
+      ]
     },
     {
       "phrase": "I need the conversation tied to the work",
@@ -415,7 +431,9 @@
         "coordination_clarity"
       ],
       "failure_avoided": "Conversations become disconnected from the work they relate to.",
-      "decision_surface": "Work-anchored communication versus standalone chat."
+      "decision_surface_ids": [
+        "communication-tied-to-execution"
+      ]
     },
     {
       "phrase": "I do not want to rebuild this later",
@@ -424,7 +442,9 @@
         "control_ceiling"
       ],
       "failure_avoided": "The workflow outgrows the tool and forces migration.",
-      "decision_surface": "Extensibility, integration depth, and structural headroom."
+      "decision_surface_ids": [
+        "growth-headroom-without-rebuild"
+      ]
     },
     {
       "phrase": "I need more control over where data lives",
@@ -434,7 +454,10 @@
         "upkeep_burden"
       ],
       "failure_avoided": "Vendor architecture becomes the limiting factor.",
-      "decision_surface": "Hosted versus self-hosted control model."
+      "decision_surface_ids": [
+        "growth-headroom-without-rebuild",
+        "low-maintenance-continuity"
+      ]
     }
   ]
 }
