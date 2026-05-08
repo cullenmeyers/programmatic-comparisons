@@ -289,7 +289,11 @@ export default function TaskManagersForPeopleWhoHateSetupPage() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Evidence from existing comparisons" />
-        <Card>
+        <Card className="space-y-4">
+          <p className="text-sm leading-6 text-black/75">
+            These examples show the same failure pattern appearing across existing
+            ToolPicker comparisons.
+          </p>
           <ul className="space-y-4 text-sm leading-6">
             {evidenceLinks.map((item) => (
               <li key={item.slug} className="space-y-2">

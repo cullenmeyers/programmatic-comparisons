@@ -117,6 +117,11 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
       <section className="content-stack gap-4">
         <SectionHeading title="Tools that usually fit this constraint" />
         <Card className="space-y-5">
+          <p className="text-sm leading-6 text-black/65">
+            These are conditional signals: the tool changes when the failure trigger
+            changes.
+          </p>
+
           <div className="space-y-3">
             <h3 className="text-sm font-semibold text-black">
               Tools that survive when tracking has to happen in the background
@@ -179,10 +184,6 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
               Manual timers can make more sense when project billing precision
               matters, when you need intentional task-level tracking, or when manual
               control matters more than automatic completeness.
-            </p>
-            <p className="text-sm leading-6 text-black/65">
-              These are conditional signals: the tool changes when the failure
-              trigger changes.
             </p>
           </div>
         </Card>
@@ -304,7 +305,11 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
 
       <section className="content-stack gap-4">
         <SectionHeading title="Evidence from existing comparisons" />
-        <Card>
+        <Card className="space-y-4">
+          <p className="text-sm leading-6 text-black/75">
+            These examples show the same failure pattern appearing across existing
+            ToolPicker comparisons.
+          </p>
           <ul className="space-y-4 text-sm leading-6">
             {evidenceLinks.map((item) => (
               <li key={item.slug} className="space-y-2">
