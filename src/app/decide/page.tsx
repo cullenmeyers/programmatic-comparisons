@@ -40,14 +40,14 @@ export default function DecidePage() {
         </h1>
         <p className="max-w-2xl text-sm leading-6 text-black/70">
           Choose what usually makes tools fail for you. ToolPicker maps that
-          constraint to the failure pattern that should decide the tool.
+          constraint to the failure pattern that should guide your evaluation.
         </p>
       </header>
 
       <Card className="border-black/10 p-4">
         <p className="text-sm leading-6 text-black/65">
-          Human intent -&gt; Constraints -&gt; Decision surfaces -&gt; Category
-          mechanisms -&gt; Evidence -&gt; Trace
+          Pick the statement that sounds most like your situation. Optionally
+          narrow by tool category.
         </p>
       </Card>
 

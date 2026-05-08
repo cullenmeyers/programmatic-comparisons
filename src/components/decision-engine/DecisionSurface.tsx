@@ -133,8 +133,43 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
     <div className="content-stack gap-8">
       <section className="content-stack gap-4">
         <SectionHeading
-          title="Category context"
-          subtitle="Optional: apply a category-specific mechanism layer before reading the direction."
+          title="What are you choosing for?"
+          subtitle="Pick the statement that sounds most like your situation."
+        />
+        <div className="grid gap-3 md:grid-cols-2">
+          {data.intent_map.map((intent) => {
+            const isSelected = intent.phrase === selectedPhrase;
+
+            return (
+              <button
+                key={intent.phrase}
+                type="button"
+                onClick={() => setSelectedPhrase(intent.phrase)}
+                className={cx(
+                  "rounded-xl border bg-white p-4 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/30",
+                  isSelected
+                    ? "border-black bg-black text-white"
+                    : "border-black/10 text-black hover:border-black/20"
+                )}
+              >
+                <p
+                  className={cx(
+                    "text-sm font-medium",
+                    isSelected ? "text-white" : "text-black"
+                  )}
+                >
+                  {intent.phrase}
+                </p>
+              </button>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="content-stack gap-4">
+        <SectionHeading
+          title="Tool category (optional)"
+          subtitle="Optionally narrow the evaluation to a tool category."
         />
         <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
           <button
@@ -153,7 +188,7 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
                 selectedCategorySlug === null ? "text-white" : "text-black"
               )}
             >
-              No category filter
+              All categories
             </p>
           </button>
 
@@ -186,99 +221,163 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
         </div>
       </section>
 
-      {selectedCategory ? (
-        <section className="content-stack gap-3">
-          <SectionHeading title="Category mechanism profile" />
-          <Card className="space-y-5">
-            <div className="space-y-1">
-              <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                Category
-              </p>
-              <p className="text-base font-medium text-black">{selectedCategory.category}</p>
-            </div>
-
-            <div className="grid gap-5 md:grid-cols-2">
-              <div className="space-y-2">
-                <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                  Sensitive constraints
-                </p>
-                {renderList(
-                  selectedCategory.sensitive_constraints.map(
-                    (constraintId) => constraintNames.get(constraintId) ?? constraintId
-                  )
-                )}
-              </div>
-
-              <div className="space-y-2">
-                <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                  Dominant mechanisms
-                </p>
-                {renderList(selectedCategory.dominant_mechanisms)}
-              </div>
-
-              <div className="space-y-2">
-                <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                  Common friction patterns
-                </p>
-                {renderList(selectedCategory.common_friction_patterns)}
-              </div>
-
-              <div className="space-y-2">
-                <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                  Common failure patterns
-                </p>
-                {renderList(selectedCategory.common_failure_patterns)}
-              </div>
-            </div>
-          </Card>
-        </section>
-      ) : null}
-
-      <section className="content-stack gap-4">
-        <SectionHeading
-          title="Intent signals"
-          subtitle="Start with the constraint language users naturally reach for."
-        />
-        <div className="grid gap-3 md:grid-cols-2">
-          {data.intent_map.map((intent) => {
-            const isSelected = intent.phrase === selectedPhrase;
-
-            return (
-              <button
-                key={intent.phrase}
-                type="button"
-                onClick={() => setSelectedPhrase(intent.phrase)}
-                className={cx(
-                  "rounded-xl border bg-white p-4 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/30",
-                  isSelected
-                    ? "border-black bg-black text-white"
-                    : "border-black/10 text-black hover:border-black/20"
-                )}
-              >
-                <p
-                  className={cx(
-                    "text-sm font-medium",
-                    isSelected ? "text-white" : "text-black"
-                  )}
-                >
-                  {intent.phrase}
-                </p>
-              </button>
-            );
-          })}
-        </div>
-      </section>
-
       {!selectedIntent ? (
         <Card className="border-dashed border-black/15">
           <p className="text-sm text-black/65">
-            Select an intent signal to see the decision pattern.
+            Select a statement to see what to look for.
           </p>
         </Card>
       ) : (
         <div className="content-stack gap-6">
+          {decisionDirection ? (
+            <section className="content-stack gap-3">
+              <SectionHeading title="What to look for" />
+              <Card className="space-y-5">
+                <p className="text-sm leading-6 text-black/70">
+                  Use this as a filter: prefer tools that match these traits,
+                  and be cautious of tools that show this failure pattern.
+                </p>
+
+                <div className="space-y-2">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Tools tend to survive here when they:
+                  </p>
+                  {renderList(decisionDirection.survivingMechanisms)}
+                </div>
+
+                <div className="space-y-2">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Tools tend to fail here when they:
+                  </p>
+                  {renderList(decisionDirection.failureMechanisms)}
+                  <p className="text-sm leading-6 text-black/70">
+                    Failure pattern: {decisionDirection.failurePatterns.join(" ")}
+                  </p>
+                </div>
+
+                {selectedCategory && decisionDirection.categoryMechanismEffects.length > 0 ? (
+                  <div className="space-y-2">
+                    <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                      Category-specific mechanism effects
+                    </p>
+                    {renderList(decisionDirection.categoryMechanismEffects)}
+                  </div>
+                ) : null}
+
+                {selectedCategory && decisionDirection.categoryTypicalFailures.length > 0 ? (
+                  <div className="space-y-2">
+                    <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                      Category-specific typical failures
+                    </p>
+                    {renderList(decisionDirection.categoryTypicalFailures)}
+                  </div>
+                ) : null}
+
+                <div className="space-y-1">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Primary tradeoff
+                  </p>
+                  <p className="text-sm leading-6 text-black/70">
+                    {decisionDirection.primaryTradeoff}
+                  </p>
+                </div>
+
+                <div className="space-y-1">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    What matters most here
+                  </p>
+                  <p className="text-sm leading-6 text-black/70">
+                    {decisionDirection.constraintPressure}
+                  </p>
+                </div>
+              </Card>
+            </section>
+          ) : null}
+
+          {currentEvidenceSignal ? (
+            <section className="content-stack gap-3">
+              <SectionHeading title="What matched comparisons suggest" />
+              <Card className="space-y-5">
+                <p className="text-sm leading-6 text-black/70">
+                  This only summarizes matched pairwise evidence from existing
+                  ToolPicker comparisons.
+                </p>
+                <p className="text-sm leading-6 text-black/70">
+                  These are examples from matched comparisons, not a best-tools
+                  list.
+                </p>
+
+                <div className="space-y-3">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Tools that survive in matched comparisons
+                  </p>
+                  <div className="grid gap-4">
+                    {currentEvidenceSignal.survivingTools.map((group) => (
+                      <div
+                        key={group.tool}
+                        className="rounded-xl border border-black/10 bg-black/[0.02] p-4"
+                      >
+                        <p className="text-sm font-medium text-black">{group.tool}</p>
+                        <p className="mt-1 text-sm leading-6 text-black/70">
+                          appears in {group.count} matched comparisons
+                        </p>
+                        <div className="mt-3 space-y-1">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            Source comparisons
+                          </p>
+                          <div className="flex flex-wrap gap-3">
+                            {group.sourceComparisonSlugs.map((slug) => (
+                              <Link
+                                key={`${group.tool}-${slug}`}
+                                href={`/compare/${slug}`}
+                                className="text-sm font-medium text-black underline underline-offset-4"
+                              >
+                                /compare/{slug}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Tools that fail first in matched comparisons
+                  </p>
+                  <div className="grid gap-4">
+                    {currentEvidenceSignal.eliminatedTools.map((group) => (
+                      <div
+                        key={group.tool}
+                        className="rounded-xl border border-black/10 bg-black/[0.02] p-4"
+                      >
+                        <p className="text-sm font-medium text-black">{group.tool}</p>
+                        <p className="mt-1 text-sm leading-6 text-black/70">
+                          fails first in {group.count} matched comparisons
+                        </p>
+                        <div className="mt-3 space-y-1">
+                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                            Failure triggers
+                          </p>
+                          {renderList(group.failureTriggers)}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </Card>
+            </section>
+          ) : (
+            <Card className="border-dashed border-black/15">
+              <p className="text-sm leading-6 text-black/65">
+                Not enough matched pairwise evidence yet.
+              </p>
+            </Card>
+          )}
+
           <section className="content-stack gap-3">
-            <SectionHeading title="Decision trace" />
+            <SectionHeading title="Why this result" />
             <Card className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-1">
@@ -290,7 +389,7 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
 
                 <div className="space-y-1">
                   <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                    Mapped constraints
+                    What ToolPicker inferred
                   </p>
                   <p className="text-sm leading-6 text-black/70">
                     {selectedConstraintNames.length > 0
@@ -301,7 +400,7 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
 
                 <div className="space-y-1 md:col-span-2">
                   <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                    Category context
+                    Tool category
                   </p>
                   {selectedCategory ? (
                     <div className="space-y-1 text-sm leading-6 text-black/70">
@@ -329,7 +428,7 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
 
                 <div className="space-y-1 md:col-span-2">
                   <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                    Failure pressure
+                    Where tools usually break
                   </p>
                   <p className="text-sm leading-6 text-black/70">
                     {decisionDirection?.constraintPressure ??
@@ -386,6 +485,54 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
             </Card>
           </section>
 
+          {selectedCategory ? (
+            <section className="content-stack gap-3">
+              <SectionHeading title="How this category usually fails" />
+              <Card className="space-y-5">
+                <div className="space-y-1">
+                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                    Category
+                  </p>
+                  <p className="text-base font-medium text-black">{selectedCategory.category}</p>
+                </div>
+
+                <div className="grid gap-5 md:grid-cols-2">
+                  <div className="space-y-2">
+                    <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                      Sensitive constraints
+                    </p>
+                    {renderList(
+                      selectedCategory.sensitive_constraints.map(
+                        (constraintId) => constraintNames.get(constraintId) ?? constraintId
+                      )
+                    )}
+                  </div>
+
+                  <div className="space-y-2">
+                    <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                      Dominant mechanisms
+                    </p>
+                    {renderList(selectedCategory.dominant_mechanisms)}
+                  </div>
+
+                  <div className="space-y-2">
+                    <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                      Common friction patterns
+                    </p>
+                    {renderList(selectedCategory.common_friction_patterns)}
+                  </div>
+
+                  <div className="space-y-2">
+                    <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
+                      Common failure patterns
+                    </p>
+                    {renderList(selectedCategory.common_failure_patterns)}
+                  </div>
+                </div>
+              </Card>
+            </section>
+          ) : null}
+
           <section className="content-stack gap-3">
             <SectionHeading title="Core constraints" />
             <div className="grid gap-4">
@@ -438,7 +585,7 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
           </section>
 
           <section className="content-stack gap-3">
-            <SectionHeading title="Matching decision surfaces" />
+            <SectionHeading title="Decision lens" />
             <div className="grid gap-4">
               {matchingDecisionSurfaces.map((surface) => (
                 <Card key={surface.id} className="space-y-4">
@@ -482,7 +629,7 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
           </section>
 
           <section className="content-stack gap-3">
-            <SectionHeading title="Evidence patterns" />
+            <SectionHeading title="Repeated patterns in existing comparisons" />
             <Card className="space-y-5">
               <p className="text-sm leading-6 text-black/70">
                 These patterns are derived from existing ToolPicker comparisons.
@@ -569,146 +716,8 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
             </Card>
           </section>
 
-          {decisionDirection ? (
-            <section className="content-stack gap-3">
-              <SectionHeading title="Decision direction" />
-              <Card className="space-y-5">
-                <div className="space-y-2">
-                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                    Tools tend to survive here when they:
-                  </p>
-                  {renderList(decisionDirection.survivingMechanisms)}
-                </div>
-
-                <div className="space-y-2">
-                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                    Tools tend to fail here when they:
-                  </p>
-                  {renderList(decisionDirection.failureMechanisms)}
-                  <p className="text-sm leading-6 text-black/70">
-                    Failure pattern: {decisionDirection.failurePatterns.join(" ")}
-                  </p>
-                </div>
-
-                {selectedCategory && decisionDirection.categoryMechanismEffects.length > 0 ? (
-                  <div className="space-y-2">
-                    <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                      Category-specific mechanism effects
-                    </p>
-                    {renderList(decisionDirection.categoryMechanismEffects)}
-                  </div>
-                ) : null}
-
-                {selectedCategory && decisionDirection.categoryTypicalFailures.length > 0 ? (
-                  <div className="space-y-2">
-                    <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                      Category-specific typical failures
-                    </p>
-                    {renderList(decisionDirection.categoryTypicalFailures)}
-                  </div>
-                ) : null}
-
-                <div className="space-y-1">
-                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                    Primary tradeoff
-                  </p>
-                  <p className="text-sm leading-6 text-black/70">
-                    {decisionDirection.primaryTradeoff}
-                  </p>
-                </div>
-
-                <div className="space-y-1">
-                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                    Constraint pressure
-                  </p>
-                  <p className="text-sm leading-6 text-black/70">
-                    {decisionDirection.constraintPressure}
-                  </p>
-                </div>
-              </Card>
-            </section>
-          ) : null}
-
-          {currentEvidenceSignal ? (
-            <section className="content-stack gap-3">
-              <SectionHeading title="Current evidence signal" />
-              <Card className="space-y-5">
-                <p className="text-sm leading-6 text-black/70">
-                  This only summarizes matched pairwise evidence from existing
-                  ToolPicker comparisons.
-                </p>
-
-                <div className="space-y-3">
-                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                    Tools that survive in matched comparisons
-                  </p>
-                  <div className="grid gap-4">
-                    {currentEvidenceSignal.survivingTools.map((group) => (
-                      <div
-                        key={group.tool}
-                        className="rounded-xl border border-black/10 bg-black/[0.02] p-4"
-                      >
-                        <p className="text-sm font-medium text-black">{group.tool}</p>
-                        <p className="mt-1 text-sm leading-6 text-black/70">
-                          appears in {group.count} matched comparisons
-                        </p>
-                        <div className="mt-3 space-y-1">
-                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                            Source comparisons
-                          </p>
-                          <div className="flex flex-wrap gap-3">
-                            {group.sourceComparisonSlugs.map((slug) => (
-                              <Link
-                                key={`${group.tool}-${slug}`}
-                                href={`/compare/${slug}`}
-                                className="text-sm font-medium text-black underline underline-offset-4"
-                              >
-                                /compare/{slug}
-                              </Link>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                    Tools that fail first in matched comparisons
-                  </p>
-                  <div className="grid gap-4">
-                    {currentEvidenceSignal.eliminatedTools.map((group) => (
-                      <div
-                        key={group.tool}
-                        className="rounded-xl border border-black/10 bg-black/[0.02] p-4"
-                      >
-                        <p className="text-sm font-medium text-black">{group.tool}</p>
-                        <p className="mt-1 text-sm leading-6 text-black/70">
-                          fails first in {group.count} matched comparisons
-                        </p>
-                        <div className="mt-3 space-y-1">
-                          <p className="text-xs font-medium uppercase tracking-[0.16em] text-black/45">
-                            Failure triggers
-                          </p>
-                          {renderList(group.failureTriggers)}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </Card>
-            </section>
-          ) : (
-            <Card className="border-dashed border-black/15">
-              <p className="text-sm leading-6 text-black/65">
-                Not enough matched pairwise evidence yet.
-              </p>
-            </Card>
-          )}
-
           <section className="content-stack gap-3">
-            <SectionHeading title="Pairwise evidence from existing comparisons" />
+            <SectionHeading title="Matched comparison examples" />
             <Card className="space-y-5">
               <p className="text-sm leading-6 text-black/70">
                 These are pairwise rules from existing ToolPicker comparisons. They are
@@ -808,7 +817,7 @@ export default function DecisionSurface({ data }: DecisionSurfaceProps) {
           </section>
 
           <section className="content-stack gap-3">
-            <SectionHeading title="Matching persona bundles" />
+            <SectionHeading title="Similar user situations" />
             <div className="grid gap-4 lg:grid-cols-2">
               {matchingPersonas.map((persona) => (
                 <Card key={persona.persona} className="space-y-4">
