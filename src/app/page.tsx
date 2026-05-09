@@ -154,6 +154,19 @@ export default function HomePage() {
               Open decision prototype
             </ButtonLink>
           </div>
+          <div className="space-y-1 border-t border-black/10 pt-3">
+            <p className="text-sm font-medium text-black">Published decision guide</p>
+            <Link
+              href="/time-tracking-tools/without-manual-timers"
+              className="text-sm text-black underline-offset-4 hover:underline"
+            >
+              Time Tracking Tools Without Manual Timers
+            </Link>
+            <p className="text-sm text-black/65">
+              See what fails first when tracking depends on remembering every timer
+              start and stop.
+            </p>
+          </div>
         </Card>
       </section>
 
