@@ -35,7 +35,7 @@ const pageData = {
     {
       slug: "activitywatch-vs-toggl-track-for-power-user",
       whatFailsFirst:
-        "Toggl Track fails first when each task switch depends on another manual timer action and missed switches turn into reconstruction later.",
+        "Toggl Track can fail first when each task switch depends on another manual timer action and missed switches turn into reconstruction later.",
       whatHeldUpBetter:
         "ActivityWatch held up better by logging activity automatically and giving you something concrete to review after the work is done.",
     },
@@ -45,20 +45,6 @@ const pageData = {
         "Toggl Track fails first when fast context switching makes repeated start-stop decisions too easy to miss.",
       whatHeldUpBetter:
         "Timely held up better by capturing activity in the background and letting you confirm entries later instead of rebuilding them from memory.",
-    },
-    {
-      slug: "activitywatch-vs-timeular-for-minimalist",
-      whatFailsFirst:
-        "Timeular fails first when switching tasks still depends on a deliberate physical interaction and one missed switch creates a gap.",
-      whatHeldUpBetter:
-        "ActivityWatch held up better by running passively in the background without needing an extra action for each change in work.",
-    },
-    {
-      slug: "manictime-vs-timeular-for-power-user",
-      whatFailsFirst:
-        "Timeular fails first when manual switching becomes timer babysitting and the record gets weaker every time a task change is missed.",
-      whatHeldUpBetter:
-        "ManicTime held up better by generating automatic activity logs that preserve a usable timeline even on messy days.",
     },
   ] satisfies EvidenceItem[],
 } as const;
@@ -159,21 +145,6 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
                 <span className="font-medium text-black">Toggl Track:</span> Toggl
                 Track fails first here when accurate tracking still depends on
                 remembering to start, stop, and switch timers throughout the day.
-              </li>
-              <li>
-                <span className="font-medium text-black">Clockify:</span> Clockify
-                fails first here when the timer habit breaks under repeated logging
-                and missing one start weakens the rest of the record.
-              </li>
-              <li>
-                <span className="font-medium text-black">Paymo Track:</span> Paymo
-                Track fails first here when starting the timer already takes enough
-                navigation that the manual initiation step gets skipped.
-              </li>
-              <li>
-                <span className="font-medium text-black">Timeular:</span> Timeular
-                fails first here when task changes still depend on deliberate
-                switching and missed interactions leave holes in the timeline.
               </li>
             </ul>
           </div>
@@ -304,13 +275,32 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
       </section>
 
       <section className="content-stack gap-4">
-        <SectionHeading title="Evidence from existing comparisons" />
+        <SectionHeading title="Evidence behind this pattern" />
         <Card className="space-y-4">
           <p className="text-sm leading-6 text-black/75">
-            These examples show the same failure pattern appearing across existing
-            ToolPicker comparisons.
+            This pattern is strongest when current product behavior and comparison
+            evidence point to the same manual-initiation failure.
           </p>
-          <ul className="space-y-4 text-sm leading-6">
+          <div className="space-y-3">
+            <h3 className="text-sm font-semibold text-black">
+              Current product behavior behind the pattern
+            </h3>
+            <ul className="list-disc space-y-2 pl-5 text-sm leading-6 text-black/75">
+              <li>RescueTime captures activity in the background.</li>
+              <li>Timely supports automatic activity capture and later review.</li>
+              <li>ActivityWatch logs activity locally in the background.</li>
+              <li>ManicTime generates automatic activity timelines.</li>
+              <li>
+                Toggl Track is strongest here as the manual-timer contrast when
+                tracking still depends on remembered starts, stops, or switches.
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-3">
+            <h3 className="text-sm font-semibold text-black">
+              Existing comparison evidence
+            </h3>
+            <ul className="space-y-4 text-sm leading-6">
             {evidenceLinks.map((item) => (
               <li key={item.slug} className="space-y-2">
                 <Link
@@ -329,7 +319,12 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
                 </p>
               </li>
             ))}
-          </ul>
+            </ul>
+          </div>
+          <p className="text-sm leading-6 text-black/65">
+            More examples should only be added when they match this same
+            manual-initiation failure pattern.
+          </p>
         </Card>
       </section>
 

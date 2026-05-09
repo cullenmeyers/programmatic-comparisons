@@ -1,0 +1,774 @@
+{
+  "brief_name": "validate_existing_page_time_tracking_tools_without_manual_timers",
+  "brief_type": "validate_existing_page",
+  "page_identity": {
+    "category": "Time Tracking Tools",
+    "constraint": "without manual timers",
+    "route": "/time-tracking-tools/without-manual-timers",
+    "target_search_intent": [
+      "Find time tracking tools that still produce a usable record when the user forgets to start, stop, or switch timers in real time.",
+      "Avoid time tracking tools whose core workflow depends on repeated manual timer initiation throughout the day."
+    ],
+    "user_problem": "The user wants time tracking that stays trustworthy even on messy, interrupt-driven days when remembering every timer start, stop, or task switch is unrealistic.",
+    "dominant_failure_mechanism": "The tool fails when trustworthy time records depend on repeated deliberate timer starts, stops, or task switches in the moment, so one missed initiation creates gaps that must be reconstructed later.",
+    "brief_type": "validate_existing_page"
+  },
+  "mechanism_contract": {
+    "exact_failure_trigger": "Normal time capture depends on the user deliberately starting, stopping, or switching a timer for each work block, and missing one of those initiation actions weakens the timeline enough that the user must reconstruct what happened later.",
+    "what_must_be_true": [
+      "The claimed survivor must preserve a reconstructable timeline without requiring per-task timer initiation in normal use.",
+      "The claimed failure must break specifically because real-time initiation is easy to miss, not merely because the tool has extra features, reporting overhead, or setup friction.",
+      "A mixed-mode tool can only be named confidently if current evidence shows which mode is normal, primary, or outcome-dominant for this constraint."
+    ],
+    "what_does_not_count": [
+      "Manual timesheet entry after the fact, by itself, does not satisfy the survivor mechanism.",
+      "Idle reminders, timer reminders, or easier start buttons do not remove manual-timer dependence if the record still depends on remembering to initiate tracking.",
+      "A tool being fast, simple, or good for billing does not prove it works without manual timers.",
+      "Automatic activity capture that still requires the user to manually convert raw activity into project time may reduce pain, but it is not automatically equivalent to a full survivor unless the page states that narrower behavior precisely."
+    ],
+    "adjacent_mechanisms_to_exclude": [
+      "time_scarcity / daily_throughput",
+      "feature_aversion / simplicity",
+      "setup_tolerance",
+      "maintenance_load",
+      "ceiling_check unless the cited comparison explicitly turns on manual-vs-automatic capture"
+    ],
+    "subcategory_scope": "General time tracking tools, automatic trackers, local activity loggers, and timer-based time trackers evaluated specifically for initiation reliability rather than billing depth, reporting breadth, or team administration.",
+    "mechanism_drift_risks": [
+      "Treating any 'fast to use daily' comparison as if it proves no-manual-timer survival.",
+      "Confusing automatic background activity capture with complete project-ready timesheets.",
+      "Overstating mixed-mode tools such as Clockify, Paymo Track, or Timeular/EARLY as purely manual or purely automatic.",
+      "Using old Timeular hardware-only assumptions even though the current EARLY product also markets automated tracking.",
+      "Treating review-after-capture friction as the same thing as timer-initiation failure."
+    ]
+  },
+  "tool_eligibility_rules": {
+    "tools_that_can_be_named_if": [
+      "Current evidence shows the tool survives because it captures activity passively or preserves a usable timeline without per-task manual initiation.",
+      "Current evidence shows the tool fails because default or outcome-dominant use still depends on remembering timer starts, stops, or switches.",
+      "For mixed-mode tools, the page copy is narrow enough to describe the specific mode being judged."
+    ],
+    "tools_that_should_not_be_named_if": [
+      "The only support is the category page's editorial summary.",
+      "The evidence only proves general simplicity, daily speed, or billing precision rather than timer-initiation reliability.",
+      "Official product facts show both manual and automatic paths, but the page groups the tool absolutely without clarifying which mode is relevant."
+    ],
+    "required_evidence_for_survivor_group": [
+      "Proof that activity capture happens automatically, passively, or with much lower initiation dependence in normal use.",
+      "Proof that the resulting record can be reviewed later without relying on the user's memory to recreate the day."
+    ],
+    "required_evidence_for_failure_group": [
+      "Proof that normal use still depends on manual timer starts, stops, or deliberate switching interactions.",
+      "Proof that missing those initiation actions creates gaps or pushes the user into reconstruction later."
+    ],
+    "max_visible_survivor_tools": 5,
+    "max_visible_failure_tools": 5
+  },
+  "internal_evidence_requirements": {
+    "minimum_comparison_examples": 3,
+    "required_mechanism_match_count": 2,
+    "required_distinct_tools_count": 4,
+    "allowed_pairwise_evidence_sources": [
+      "Time-tracking comparison pages whose decision rule explicitly turns on manual timer dependence versus automatic or passive capture.",
+      "Current category-gate evidence only when the gate reason itself is specifically manual-initiation friction rather than an adjacent mechanism."
+    ],
+    "weak_evidence_warning_conditions": [
+      "The cited comparison belongs to time-scarcity, ceiling-check, or feature-aversion but only indirectly implies the manual-timer mechanism.",
+      "The tool has an automatic tracker mode in current product docs, but the page still groups it as a clean failure with no qualification.",
+      "The evidence item depends on physical-device interaction or general navigation friction rather than timer-initiation reliability specifically.",
+      "The gate verdict contradicts the category page claim."
+    ]
+  },
+  "tool_audit": [
+    {
+      "tool_name": "RescueTime",
+      "page_group": "survivor",
+      "evidence_classification": "comparison_backed",
+      "why_it_is_in_group": "RescueTime fits the survivor pattern because the cited comparison directly frames Toggl Track as failing on remembered timer starts while RescueTime preserves a day-level record through background activity capture.",
+      "evidence_support": [
+        "Internal comparison: rescuetime-vs-toggl-track-for-busy-professional explicitly says Toggl Track fails when manual starts and stops are missed and RescueTime holds up through background capture.",
+        "External product facts: RescueTime markets automatic background tracking and timesheet suggestions built from app, website, calendar, and integration activity."
+      ],
+      "external_verification_still_needed": [
+        "Verify how much manual review is still required before RescueTime activity becomes project- or client-ready timesheet data.",
+        "Verify whether automatic project filling is suggestion-based rather than fully passive in current product behavior."
+      ]
+    },
+    {
+      "tool_name": "Timely",
+      "page_group": "survivor",
+      "evidence_classification": "comparison_backed",
+      "why_it_is_in_group": "Timely belongs in the survivor group because both the internal comparison and current help docs support a capture-first, review-later model instead of remembered timer starts.",
+      "evidence_support": [
+        "Internal comparison: timely-vs-toggl-track-for-power-user says Timely captures activity in the background and lets the user confirm entries later.",
+        "External product facts: Timely help docs describe Memory running quietly in the background and organizing activities on a personal timeline."
+      ],
+      "external_verification_still_needed": [
+        "Verify whether all meaningful automatic capture requires the separate Memory desktop app on supported platforms.",
+        "Verify whether project assignment still requires user confirmation before timesheet export, and whether that matters for this page's survivor standard."
+      ]
+    },
+    {
+      "tool_name": "ActivityWatch",
+      "page_group": "survivor",
+      "evidence_classification": "externally_verified",
+      "why_it_is_in_group": "ActivityWatch is a defensible survivor because the product itself is explicitly positioned as automatic background activity tracking and the cited comparisons use that exact passive-logging behavior.",
+      "evidence_support": [
+        "Internal comparisons: activitywatch-vs-toggl-track-for-power-user and activitywatch-vs-timeular-for-minimalist both hinge on passive background logging versus deliberate timer or switching actions.",
+        "External product facts: ActivityWatch's official site says it automatically tracks how you spend time on your devices and tracks active application and window title out of the box."
+      ],
+      "external_verification_still_needed": [
+        "Verify whether any project- or client-level attribution requires substantial manual categorization that would narrow the survivor claim for billing-focused users."
+      ]
+    },
+    {
+      "tool_name": "ManicTime",
+      "page_group": "survivor",
+      "evidence_classification": "externally_verified",
+      "why_it_is_in_group": "ManicTime belongs in the survivor group because current official docs directly confirm automatic background tracking with no need to start or stop timers manually.",
+      "evidence_support": [
+        "Internal comparison: manictime-vs-timeular-for-power-user says ManicTime generates automatic activity logs that preserve a usable timeline.",
+        "External product facts: ManicTime documentation says it runs quietly in the background, records activity automatically, and does not require manually starting or stopping timers."
+      ],
+      "external_verification_still_needed": [
+        "Verify how much post-capture classification is required for precise billing or project reporting.",
+        "Verify whether platform differences materially change what is captured automatically."
+      ]
+    },
+    {
+      "tool_name": "Toggl Track",
+      "page_group": "failure",
+      "evidence_classification": "comparison_backed",
+      "why_it_is_in_group": "Toggl Track is a strong failure example for this mechanism because multiple internal comparisons and current support docs center the workflow on starting and stopping timers manually.",
+      "evidence_support": [
+        "Internal comparisons: rescuetime-vs-toggl-track-for-busy-professional, activitywatch-vs-toggl-track-for-power-user, and timely-vs-toggl-track-for-power-user all say Toggl Track fails first when manual start-stop actions are missed.",
+        "External product facts: Toggl's Timer Mode documentation describes starting and stopping a real-time timer manually, and Manual Mode exists specifically to enter time after the fact."
+      ],
+      "external_verification_still_needed": [
+        "Verify whether any newer passive capture feature materially changes the default product behavior for this route.",
+        "Confirm whether Toggl's current AI or suggested-entry features remain secondary to manual timer initiation rather than replacing it."
+      ]
+    },
+    {
+      "tool_name": "Clockify",
+      "page_group": "failure",
+      "evidence_classification": "insufficient",
+      "why_it_is_in_group": "Clockify is not publish-safe as a clean failure claim on this page because its current product offers both manual timers and an Auto tracker that records app, website, and document activity for later conversion into entries.",
+      "evidence_support": [
+        "The category page itself gives only editorial failure copy; there is no page-cited comparison proving Clockify fails specifically on the no-manual-timer mechanism.",
+        "Current Clockify docs show manual timer use as the main workflow, but also document Auto tracker as an optional activity recorder that can reduce timer dependence."
+      ],
+      "external_verification_still_needed": [
+        "Determine whether Clockify's auto tracker is strong enough to count as a survivor-adjacent path or whether manual conversion keeps it in failure territory.",
+        "Verify whether Auto tracker is default, optional, desktop-only, or paid in ways that materially affect this route.",
+        "Find mechanism-matching internal evidence before naming Clockify confidently in the failure group."
+      ]
+    },
+    {
+      "tool_name": "Paymo Track",
+      "page_group": "failure",
+      "evidence_classification": "insufficient",
+      "why_it_is_in_group": "Paymo Track is not defensible as a clean failure on this route because current official docs show an automatic background tracker, while the strongest internal comparison against Toggl is actually about navigation and suite friction, not timer-initiation dependence.",
+      "evidence_support": [
+        "Internal comparison: paymo-track-vs-toggl-track-for-busy-professional says Paymo Track fails because starting a timer may require navigating task lists or billing modules, not because it lacks automatic capture.",
+        "External product facts: Paymo Track's official product and help pages say it can run in the background automatically and later lets the user match tracked app entries to tasks and projects."
+      ],
+      "external_verification_still_needed": [
+        "Determine whether Paymo Track's automatic tracker is central enough to make the page's failure claim wrong, or whether the manual project-assignment step still keeps it on the failure side.",
+        "Verify plan limits and platform support for automatic tracking.",
+        "Replace the current editorial failure claim with mechanism-matching evidence or remove the tool from the failure group."
+      ]
+    },
+    {
+      "tool_name": "Timeular",
+      "page_group": "failure",
+      "evidence_classification": "insufficient",
+      "why_it_is_in_group": "Timeular is too mixed to publish as a generic failure without qualification because the cited comparisons focus on the physical tracker workflow, while the current EARLY product also markets automated time tracking from apps, docs, websites, and calendars.",
+      "evidence_support": [
+        "Internal comparisons: activitywatch-vs-timeular-for-minimalist and manictime-vs-timeular-for-power-user both frame Timeular as requiring deliberate physical switching.",
+        "External product facts: EARLY's tracker page still documents flip-to-track behavior, but the same product family also markets automated time tracking and automatic suggestions."
+      ],
+      "external_verification_still_needed": [
+        "Determine whether the category page should refer specifically to the physical tracker workflow instead of the product generically.",
+        "Verify whether current app-only automatic tracking is available on the same plans and platforms as the tracker workflow.",
+        "Do not keep the generic failure claim without clarifying which Timeular/EARLY mode is being judged."
+      ]
+    }
+  ],
+  "evidence_audit": [
+    {
+      "slug": "rescuetime-vs-toggl-track-for-busy-professional",
+      "claimed_mechanism": "Manual start-stop timer dependence breaks the record first; background capture holds up better.",
+      "actual_mechanism_supported": "manual timer initiation failure versus background activity capture",
+      "evidence_classification": "comparison_backed",
+      "decision": "keep",
+      "reason": "This is the cleanest evidence item on the page. The comparison explicitly says Toggl Track fails when manual timers are missed and RescueTime holds up through background capture."
+    },
+    {
+      "slug": "activitywatch-vs-toggl-track-for-power-user",
+      "claimed_mechanism": "Repeated manual timer actions and missed switches create reconstruction later; automatic logging survives.",
+      "actual_mechanism_supported": "manual task-switch initiation failure versus passive activity logging, despite being filed under ceiling-check",
+      "evidence_classification": "comparison_backed",
+      "decision": "keep",
+      "reason": "The route is adjacent, but the comparison's actual decision rule still directly matches the no-manual-timer mechanism."
+    },
+    {
+      "slug": "timely-vs-toggl-track-for-power-user",
+      "claimed_mechanism": "Fast context switching makes manual start-stop tracking too easy to miss; capture-first review-later survives.",
+      "actual_mechanism_supported": "manual timer initiation failure versus automatic memory tracking, despite being filed under ceiling-check",
+      "evidence_classification": "comparison_backed",
+      "decision": "keep",
+      "reason": "Like the ActivityWatch comparison, the comparison's mechanism is a good match even though the constraint slug is not route-pure."
+    },
+    {
+      "slug": "activitywatch-vs-timeular-for-minimalist",
+      "claimed_mechanism": "Deliberate physical switching creates gaps; passive background logging survives.",
+      "actual_mechanism_supported": "passive capture versus deliberate physical interaction, filed under feature-aversion rather than timer-initiation reliability",
+      "evidence_classification": "mismatched_mechanism",
+      "decision": "rewrite",
+      "reason": "Usable as adjacent support, but it proves low-interaction simplicity more cleanly than it proves the page's exact manual-timer contract. It should be reframed narrowly if kept."
+    },
+    {
+      "slug": "manictime-vs-timeular-for-power-user",
+      "claimed_mechanism": "Deliberate switching weakens the record; automatic logs preserve the timeline.",
+      "actual_mechanism_supported": "automatic activity logs versus physical-switch tracking, but with current mixed-mode product ambiguity for Timeular/EARLY",
+      "evidence_classification": "mismatched_mechanism",
+      "decision": "rewrite",
+      "reason": "The comparison is directionally useful, but current official product facts mean the evidence should name the tracker workflow explicitly instead of treating Timeular as purely manual."
+    }
+  ],
+  "external_research_requirements": {
+    "tools_considered": [
+      {
+        "tool_name": "RescueTime",
+        "current_product_behavior": {
+          "finding": "Runs in the background and tracks app, website, and document activity automatically; current Timesheets product uses that activity to suggest project time blocks.",
+          "source_urls": [
+            "https://www.rescuetime.com/features",
+            "https://help.rescuetime.com/article/400-rescuetime-timesheets"
+          ],
+          "needs_external_verification": false
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Requires installing the RescueTime app; tracking depends on RescueTime running on the computer.",
+          "source_urls": [
+            "https://www.rescuetime.com/about"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "The manual-timer failure trigger does not appear as the primary capture model; however, away time and project assignment still involve review or manual decisions.",
+          "source_urls": [
+            "https://help.rescuetime.com/article/54-what-does-rescuetime-do-when-i-am-away-from-my-computer",
+            "https://help.rescuetime.com/article/424-rescuetime-timesheets-settings"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Yes. Automatic background capture clearly exists.",
+          "source_urls": [
+            "https://www.rescuetime.com/features"
+          ],
+          "needs_external_verification": false
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Need to verify whether project-ready Timesheets behavior is available on all relevant plans or only paid tiers.",
+          "source_urls": [
+            "https://www.rescuetime.com/features"
+          ],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Calendar and task integrations contribute to timesheet suggestions, which matters for how complete the automatic record becomes.",
+          "source_urls": [
+            "https://help.rescuetime.com/article/400-rescuetime-timesheets"
+          ],
+          "needs_external_verification": false
+        },
+        "official_docs_source_urls_if_available": [
+          "https://www.rescuetime.com/features",
+          "https://help.rescuetime.com/article/400-rescuetime-timesheets",
+          "https://help.rescuetime.com/article/424-rescuetime-timesheets-settings",
+          "https://help.rescuetime.com/article/54-what-does-rescuetime-do-when-i-am-away-from-my-computer"
+        ],
+        "date_checked": "2026-05-08",
+        "evidence_confidence": "high",
+        "research_notes": "Strong support for survivor status, but the page should not imply zero review or zero correction."
+      },
+      {
+        "tool_name": "Timely",
+        "current_product_behavior": {
+          "finding": "Timely's Memory feature captures app, file, and website activity in the background and surfaces it on a timeline for later confirmation.",
+          "source_urls": [
+            "https://support.timely.com/en/articles/9917923-new-timeline-what-is-automatic-time-tracking",
+            "https://support.timely.com/en/articles/1540798-what-is-captured-by-memory"
+          ],
+          "needs_external_verification": false
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Automatic tracking requires installing Memory on a Windows or Mac computer.",
+          "source_urls": [
+            "https://support.timely.com/en/articles/1529774-what-is-automatic-time-tracking-classic-timeline-list-views"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "The core no-manual-timer failure trigger is avoided because capture happens before user confirmation.",
+          "source_urls": [
+            "https://support.timely.com/en/articles/9917923-new-timeline-what-is-automatic-time-tracking"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Yes. Background capture plus later confirmation clearly exists.",
+          "source_urls": [
+            "https://www.timely.com/feature/automatic-time-tracking",
+            "https://support.timely.com/en/articles/9917923-new-timeline-what-is-automatic-time-tracking"
+          ],
+          "needs_external_verification": false
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Need to verify which plans include Memory and automatic tracking because help docs reference plan tiers.",
+          "source_urls": [
+            "https://support.timely.com/en/articles/9917923-new-timeline-what-is-automatic-time-tracking"
+          ],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Integrations improve completeness but are not required for the base survivor mechanism.",
+          "source_urls": [
+            "https://www.timely.com/",
+            "https://www.timely.com/feature/automatic-time-tracking"
+          ],
+          "needs_external_verification": false
+        },
+        "official_docs_source_urls_if_available": [
+          "https://support.timely.com/en/articles/9917923-new-timeline-what-is-automatic-time-tracking",
+          "https://support.timely.com/en/articles/1540798-what-is-captured-by-memory",
+          "https://support.timely.com/en/articles/1529774-what-is-automatic-time-tracking-classic-timeline-list-views",
+          "https://www.timely.com/feature/automatic-time-tracking"
+        ],
+        "date_checked": "2026-05-08",
+        "evidence_confidence": "high",
+        "research_notes": "Strong survivor fit, with remaining plan-tier verification work."
+      },
+      {
+        "tool_name": "ActivityWatch",
+        "current_product_behavior": {
+          "finding": "Automatically tracks time spent on devices and captures active application and window title out of the box.",
+          "source_urls": [
+            "https://activitywatch.net/"
+          ],
+          "needs_external_verification": false
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Requires installing the local app; additional watchers or browser extensions expand capture depth.",
+          "source_urls": [
+            "https://activitywatch.net/"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "The manual-timer trigger is largely absent because tracking runs automatically once installed.",
+          "source_urls": [
+            "https://activitywatch.net/"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Yes. Background logging exists clearly and centrally.",
+          "source_urls": [
+            "https://activitywatch.net/"
+          ],
+          "needs_external_verification": false
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Not relevant; the product is positioned as free and open source.",
+          "source_urls": [
+            "https://activitywatch.net/"
+          ],
+          "needs_external_verification": false
+        },
+        "integrations_if_relevant": {
+          "finding": "Browser extensions matter if browser-tab detail is important to the survivor claim.",
+          "source_urls": [
+            "https://activitywatch.net/"
+          ],
+          "needs_external_verification": false
+        },
+        "official_docs_source_urls_if_available": [
+          "https://activitywatch.net/"
+        ],
+        "date_checked": "2026-05-08",
+        "evidence_confidence": "high",
+        "research_notes": "Strong current survivor fit for passive activity capture."
+      },
+      {
+        "tool_name": "ManicTime",
+        "current_product_behavior": {
+          "finding": "Tracks computer usage, applications, URLs, and documents automatically in the background with no need to manually start or stop timers.",
+          "source_urls": [
+            "https://docs.manictime.com/docs/win-client/tracking",
+            "https://www.manictime.com/features/automatic-time-tracking"
+          ],
+          "needs_external_verification": false
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Requires installing the client; additional integrations affect depth of document and browser tracking.",
+          "source_urls": [
+            "https://docs.manictime.com/docs/win-client/tracking"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "The core manual-timer trigger does not appear in the main capture workflow.",
+          "source_urls": [
+            "https://www.manictime.com/why/automatic-tracking"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Yes. Automatic background logging is explicit and central.",
+          "source_urls": [
+            "https://docs.manictime.com/docs/win-client/tracking",
+            "https://www.manictime.com/why/automatic-tracking"
+          ],
+          "needs_external_verification": false
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Need to verify whether the automatic survivor behavior is fully available in all relevant editions.",
+          "source_urls": [
+            "https://www.manictime.com/features/automatic-time-tracking"
+          ],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Plugin and integration support can affect how much contextual detail is available, but not whether passive capture exists.",
+          "source_urls": [
+            "https://docs.manictime.com/docs/win-client/tracking"
+          ],
+          "needs_external_verification": false
+        },
+        "official_docs_source_urls_if_available": [
+          "https://docs.manictime.com/docs/win-client/tracking",
+          "https://www.manictime.com/features/automatic-time-tracking",
+          "https://www.manictime.com/why/automatic-tracking"
+        ],
+        "date_checked": "2026-05-08",
+        "evidence_confidence": "high",
+        "research_notes": "Strong survivor fit; remaining work is mostly plan/edition specificity."
+      },
+      {
+        "tool_name": "Toggl Track",
+        "current_product_behavior": {
+          "finding": "Primary documentation still centers on starting and stopping a real-time timer manually; manual mode exists for after-the-fact entry.",
+          "source_urls": [
+            "https://support.toggl.com/timer-mode",
+            "https://support.toggl.com/en/articles/2527693-manual-mode"
+          ],
+          "needs_external_verification": false
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "No special setup is needed to see the mechanism: normal use exposes Timer Mode immediately.",
+          "source_urls": [
+            "https://support.toggl.com/timer-mode"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "Yes. Manual initiation is the normal documented behavior.",
+          "source_urls": [
+            "https://support.toggl.com/timer-mode"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Need to verify whether newer AI or passive capture features materially soften the manual-timer failure in current default use.",
+          "source_urls": [
+            "https://support.toggl.com/timer-mode"
+          ],
+          "needs_external_verification": true
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Only relevant if any passive or suggested-entry features are plan-limited.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Integrations matter only if they can start or generate entries without the timer, which still needs current verification.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [
+          "https://support.toggl.com/timer-mode",
+          "https://support.toggl.com/en/articles/2527693-manual-mode"
+        ],
+        "date_checked": "2026-05-08",
+        "evidence_confidence": "high",
+        "research_notes": "Strong failure fit today, but still worth checking for newer adjacent passive features before scaling the page type."
+      },
+      {
+        "tool_name": "Clockify",
+        "current_product_behavior": {
+          "finding": "Clockify supports a manual timer workflow and also offers an Auto tracker that records activities and later lets the user convert them into time entries.",
+          "source_urls": [
+            "https://clockify.me/help/getting-started/track-your-time-as-regular-user",
+            "https://clockify.me/help/track-time-and-expenses/auto-tracker",
+            "https://clockify.me/features/auto-tracker"
+          ],
+          "needs_external_verification": false
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Auto tracker requires the desktop app and explicit activation.",
+          "source_urls": [
+            "https://clockify.me/help/track-time-and-expenses/auto-tracker"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "Yes in the default timer workflow, but not universally because an activity recorder also exists.",
+          "source_urls": [
+            "https://clockify.me/help/getting-started/track-your-time-as-regular-user",
+            "https://clockify.me/help/track-time-and-expenses/auto-tracker"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Partly. Auto tracker captures activities passively, but the user must manually create time entries from them, so survivor status is not automatic.",
+          "source_urls": [
+            "https://clockify.me/help/track-time-and-expenses/auto-tracker"
+          ],
+          "needs_external_verification": false
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Need to verify whether Auto tracker and any reminder or auto-start behaviors differ materially by plan.",
+          "source_urls": [
+            "https://clockify.me/features/auto-tracker"
+          ],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Not central unless integrations can remove the need to convert auto-tracked activities manually.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [
+          "https://clockify.me/help/getting-started/track-your-time-as-regular-user",
+          "https://clockify.me/help/track-time-and-expenses/auto-tracker",
+          "https://clockify.me/features/auto-tracker"
+        ],
+        "date_checked": "2026-05-08",
+        "evidence_confidence": "medium",
+        "research_notes": "Mixed-mode product. Current page claim is too absolute."
+      },
+      {
+        "tool_name": "Paymo Track",
+        "current_product_behavior": {
+          "finding": "Paymo Track supports both a manual stopwatch and automatic background tracking that records desktop-app activity for later matching to projects and tasks.",
+          "source_urls": [
+            "https://www.paymoapp.com/paymo-track/",
+            "https://help.paymoapp.com/en/desktop-apps/how-to-record-your-time-using-paymo-track"
+          ],
+          "needs_external_verification": false
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Automatic tracking requires running the desktop app; project-ready logging still requires matching tracked app entries to tasks and projects.",
+          "source_urls": [
+            "https://www.paymoapp.com/paymo-track/",
+            "https://help.paymoapp.com/en/desktop-apps/how-to-record-your-time-using-paymo-track"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "Yes in stopwatch mode, but not universally because an automatic tracker also exists.",
+          "source_urls": [
+            "https://www.paymoapp.com/paymo-track/"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Partly. Automatic activity capture exists, but later task/project matching means the survivor claim would need narrower wording than the current page uses.",
+          "source_urls": [
+            "https://www.paymoapp.com/paymo-track/",
+            "https://help.paymoapp.com/en/desktop-apps/how-to-record-your-time-using-paymo-track"
+          ],
+          "needs_external_verification": false
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Need to verify whether automatic tracking is limited to specific plans, since help content references Paymo Plus in adjacent documentation.",
+          "source_urls": [
+            "https://help.paymoapp.com/en/timesheets/how-can-i-monitor-time"
+          ],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Not central unless integrations materially reduce the manual matching step.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [
+          "https://www.paymoapp.com/paymo-track/",
+          "https://help.paymoapp.com/en/desktop-apps/how-to-record-your-time-using-paymo-track",
+          "https://help.paymoapp.com/en/timesheets/how-can-i-monitor-time"
+        ],
+        "date_checked": "2026-05-08",
+        "evidence_confidence": "medium",
+        "research_notes": "Mixed-mode product; current failure claim is unsupported as written."
+      },
+      {
+        "tool_name": "Timeular",
+        "current_product_behavior": {
+          "finding": "Current EARLY product supports both a physical flip-to-track tracker workflow and automated time tracking from apps, docs, websites, and calendars.",
+          "source_urls": [
+            "https://early.app/tracker/",
+            "https://early.app/automated-time-tracking/"
+          ],
+          "needs_external_verification": false
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Tracker use requires an EARLY subscription and assigning activities to each side; automated tracking is also presented as a separate product capability.",
+          "source_urls": [
+            "https://early.app/tracker/",
+            "https://early.app/automated-time-tracking/"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "Yes for the physical tracker workflow, where changing tasks depends on flipping the tracker; no as a universal product claim because automated tracking also exists.",
+          "source_urls": [
+            "https://early.app/tracker/",
+            "https://early.app/automated-time-tracking/"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Yes. EARLY now explicitly markets automated time tracking and automatic suggestions.",
+          "source_urls": [
+            "https://early.app/automated-time-tracking/"
+          ],
+          "needs_external_verification": false
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Need to verify which plans include automated tracking versus tracker-specific workflows.",
+          "source_urls": [
+            "https://early.app/automated-time-tracking/",
+            "https://early.app/tracker/"
+          ],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Calendar integrations contribute to automatic suggestions and therefore matter to the current product's survivor story.",
+          "source_urls": [
+            "https://early.app/automated-time-tracking/"
+          ],
+          "needs_external_verification": false
+        },
+        "official_docs_source_urls_if_available": [
+          "https://early.app/tracker/",
+          "https://early.app/automated-time-tracking/"
+        ],
+        "date_checked": "2026-05-08",
+        "evidence_confidence": "medium",
+        "research_notes": "The page's generic Timeular failure claim is too broad for the current EARLY product."
+      }
+    ],
+    "missing_research": [
+      {
+        "fact_to_verify": "Whether Clockify's Auto tracker should count as a survivor-adjacent mechanism or still fail because entries must be created manually from recorded activities.",
+        "why_it_matters": "Clockify is currently named as a clean failure, but current docs show a mixed capture model.",
+        "official_docs_source_urls_needed_later": [
+          "https://clockify.me/help/track-time-and-expenses/auto-tracker",
+          "https://clockify.me/features/auto-tracker"
+        ],
+        "date_checked": "2026-05-08"
+      },
+      {
+        "fact_to_verify": "Whether Paymo Track's automatic tracker is included on relevant plans and whether its manual matching step still keeps it on the failure side for this route.",
+        "why_it_matters": "The current page claims Paymo Track fails on manual initiation, but official docs show automatic background tracking exists.",
+        "official_docs_source_urls_needed_later": [
+          "https://www.paymoapp.com/paymo-track/",
+          "https://help.paymoapp.com/en/desktop-apps/how-to-record-your-time-using-paymo-track"
+        ],
+        "date_checked": "2026-05-08"
+      },
+      {
+        "fact_to_verify": "Whether Timeular/EARLY should be evaluated as the physical tracker workflow only, or as a mixed product that now also includes automated tracking.",
+        "why_it_matters": "The current page groups Timeular as a generic failure, which may be stale or overly broad.",
+        "official_docs_source_urls_needed_later": [
+          "https://early.app/tracker/",
+          "https://early.app/automated-time-tracking/"
+        ],
+        "date_checked": "2026-05-08"
+      },
+      {
+        "fact_to_verify": "Whether plan tier, platform, or desktop-app requirements materially change which tools truly work without manual timers.",
+        "why_it_matters": "A route like this should not scale on product facts that only hold on specific plans or desktop installs without saying so.",
+        "official_docs_source_urls_needed_later": [
+          "https://support.timely.com/en/articles/9917923-new-timeline-what-is-automatic-time-tracking",
+          "https://www.manictime.com/features/automatic-time-tracking",
+          "https://clockify.me/help/track-time-and-expenses/auto-tracker",
+          "https://www.paymoapp.com/paymo-track/",
+          "https://early.app/automated-time-tracking/"
+        ],
+        "date_checked": "2026-05-08"
+      },
+      {
+        "fact_to_verify": "Whether the survivor standard for this page should require project-ready automatic attribution, or only a reconstructable passive activity timeline.",
+        "why_it_matters": "This determines whether tools like Clockify and Paymo Track belong as failures, mixed cases, or narrower survivors.",
+        "official_docs_source_urls_needed_later": [
+          "https://help.rescuetime.com/article/400-rescuetime-timesheets",
+          "https://support.timely.com/en/articles/9917923-new-timeline-what-is-automatic-time-tracking",
+          "https://clockify.me/help/track-time-and-expenses/auto-tracker",
+          "https://help.paymoapp.com/en/desktop-apps/how-to-record-your-time-using-paymo-track"
+        ],
+        "date_checked": "2026-05-08"
+      }
+    ]
+  },
+  "publish_readiness_assessment": {
+    "decision": "needs_more_research",
+    "reasoning": [
+      "The page's core mechanism is real and user-relevant: missed timer initiation is a distinct way time trackers break.",
+      "RescueTime, Timely, ActivityWatch, ManicTime, and Toggl Track have meaningful mechanism support through current comparisons and official product facts.",
+      "Clockify, Paymo Track, and Timeular are mixed-mode products in current documentation, so the page's absolute failure-group claims are not yet defensible.",
+      "Two evidence items involving Timeular rely on adjacent constraints and need narrower framing.",
+      "Important tool claims are still not cleanly externally resolved at the page level, so this route should not be treated as publish-ready proof yet."
+    ],
+    "blocking_gaps": [
+      "Clockify is named as a clean failure even though current official docs show Auto tracker exists.",
+      "Paymo Track is named as a clean failure even though current official docs show automatic background tracking exists.",
+      "Timeular is named generically as a failure even though current EARLY docs also market automated tracking.",
+      "The page currently mixes exact no-manual-timer evidence with adjacent time-scarcity, ceiling-check, and feature-aversion comparisons."
+    ],
+    "required_next_actions": [
+      "Externally resolve Clockify, Paymo Track, and Timeular mode ambiguity before scaling this page type.",
+      "Rewrite or replace the Timeular evidence items so they describe the physical tracker workflow explicitly if that is the intended claim.",
+      "Decide whether 'without manual timers' means fully passive project-ready tracking or merely a reconstructable passive activity timeline.",
+      "Keep the page out of index-first rollout until the mixed-mode tools are settled."
+    ]
+  },
+  "publish_readiness_summary": {
+    "should_index_now": false,
+    "recommended_state": "strengthened_first",
+    "strongest_evidence": [
+      "rescuetime-vs-toggl-track-for-busy-professional",
+      "timely-vs-toggl-track-for-power-user",
+      "Official product docs showing automatic background capture for RescueTime, Timely, ActivityWatch, and ManicTime"
+    ],
+    "weakest_evidence": [
+      "The generic Clockify failure claim",
+      "The generic Paymo Track failure claim",
+      "activitywatch-vs-timeular-for-minimalist and manictime-vs-timeular-for-power-user without product-mode clarification"
+    ],
+    "tool_claims_needing_external_verification": [
+      "Clockify",
+      "Paymo Track",
+      "Timeular",
+      "Toggl Track passive-feature check",
+      "RescueTime plan-tier check",
+      "Timely plan-tier check",
+      "ManicTime edition/plan check"
+    ]
+  },
+  "needs_external_verification": true
+}
