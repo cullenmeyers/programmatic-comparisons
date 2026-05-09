@@ -1,0 +1,536 @@
+{
+  "version": "1.0",
+  "brief_types": [
+    {
+      "brief_type": "validate_existing_page",
+      "purpose": [
+        "Verify the page's dominant failure mechanism.",
+        "Verify that named tools are grouped according to the mechanism contract.",
+        "Verify that evidence links actually support the claimed mechanism.",
+        "Identify weak claims, missing product facts, and publish blockers.",
+        "Decide whether the page is publishable without changing page structure."
+      ],
+      "required_sections": [
+        "page_identity",
+        "mechanism_contract",
+        "tool_eligibility_rules",
+        "internal_evidence_requirements",
+        "external_research_requirements",
+        "publish_readiness_assessment"
+      ]
+    },
+    {
+      "brief_type": "audit_existing_evidence",
+      "purpose": [
+        "Find stale, weak, or mismatched evidence in legacy comparison pages, pairwise rules, or evidence patterns.",
+        "Flag evidence that does not prove the claimed mechanism.",
+        "Separate strong support from editorial-only support.",
+        "Decide whether evidence should be kept, replaced, rewritten, downgraded, or removed."
+      ],
+      "required_sections": [
+        "page_identity",
+        "mechanism_contract",
+        "evidence_audit_fields",
+        "evidence_classification",
+        "publish_readiness_assessment"
+      ]
+    },
+    {
+      "brief_type": "discover_new_page_candidate",
+      "purpose": [
+        "Identify a potential Category + Constraint page when no page exists yet.",
+        "Define the likely dominant failure mechanism before page creation.",
+        "List categories, tools, and facts that must be researched.",
+        "Decide whether enough evidence exists to justify future page production."
+      ],
+      "required_sections": [
+        "page_identity",
+        "mechanism_contract",
+        "tool_eligibility_rules",
+        "internal_evidence_requirements",
+        "external_research_requirements",
+        "new_page_discovery_fields",
+        "publish_readiness_assessment"
+      ]
+    }
+  ],
+  "shared_fields": {
+    "page_identity": {
+      "category": "",
+      "constraint": "",
+      "route": "",
+      "target_search_intent": [],
+      "user_problem": "",
+      "dominant_failure_mechanism": "",
+      "brief_type": ""
+    },
+    "mechanism_contract": {
+      "exact_failure_trigger": "",
+      "what_must_be_true": [],
+      "what_does_not_count": [],
+      "adjacent_mechanisms_to_exclude": [],
+      "subcategory_scope": "",
+      "mechanism_drift_risks": []
+    },
+    "tool_eligibility_rules": {
+      "tools_that_can_be_named_if": [],
+      "tools_that_should_not_be_named_if": [],
+      "required_evidence_for_survivor_group": [],
+      "required_evidence_for_failure_group": [],
+      "max_visible_survivor_tools": 5,
+      "max_visible_failure_tools": 5
+    },
+    "internal_evidence_requirements": {
+      "minimum_comparison_examples": 0,
+      "required_mechanism_match_count": 0,
+      "required_distinct_tools_count": 0,
+      "allowed_pairwise_evidence_sources": [],
+      "weak_evidence_warning_conditions": []
+    },
+    "external_research_requirements": {
+      "per_tool_checks_required": [
+        {
+          "check_name": "current_product_behavior",
+          "required": true,
+          "notes": "Confirm the current product behavior relevant to the constraint."
+        },
+        {
+          "check_name": "onboarding_setup_flow_if_relevant",
+          "required": true,
+          "notes": "Check onboarding or setup flow only when the mechanism depends on setup, configuration, activation, or initial workflow design."
+        },
+        {
+          "check_name": "failure_trigger_presence",
+          "required": true,
+          "notes": "Verify whether the failure trigger actually appears in the product experience."
+        },
+        {
+          "check_name": "survival_mechanism_presence",
+          "required": true,
+          "notes": "Verify whether the survival mechanism actually exists and stays available in normal use."
+        },
+        {
+          "check_name": "pricing_or_free_plan_limitations_if_relevant",
+          "required": true,
+          "notes": "Check pricing or free-plan limitations only when they directly affect the constraint."
+        },
+        {
+          "check_name": "integrations_if_relevant",
+          "required": true,
+          "notes": "Check integrations only when the constraint depends on integration presence, absence, or setup cost."
+        },
+        {
+          "check_name": "official_docs_or_source_urls_if_available",
+          "required": true,
+          "notes": "Prefer official docs, help centers, or first-party product pages when available."
+        },
+        {
+          "check_name": "date_checked",
+          "required": true,
+          "notes": "Record the date each tool fact was checked."
+        },
+        {
+          "check_name": "evidence_confidence",
+          "required": true,
+          "notes": "Record confidence for each fact based on source quality and mechanism fit."
+        }
+      ],
+      "per_tool_research_entry_template": {
+        "tool_name": "",
+        "current_product_behavior": {
+          "finding": "",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [],
+        "date_checked": "",
+        "evidence_confidence": "",
+        "research_notes": ""
+      }
+    },
+    "evidence_audit_fields": {
+      "existing_source": "",
+      "source_type": "",
+      "claimed_mechanism": "",
+      "actual_mechanism_supported": "",
+      "mismatch_reason": "",
+      "stale_or_current": "",
+      "keep_replace_rewrite_or_remove": "",
+      "replacement_needed": false
+    },
+    "new_page_discovery_fields": {
+      "candidate_page_title": "",
+      "candidate_route": "",
+      "likely_search_intents": [],
+      "category": "",
+      "constraint": "",
+      "hypothesized_failure_mechanism": "",
+      "tools_to_research": [],
+      "evidence_needed_before_page_creation": [],
+      "publish_blockers": []
+    },
+    "publish_readiness_assessment": {
+      "decision": "",
+      "reasoning": [],
+      "blocking_gaps": [],
+      "required_next_actions": []
+    }
+  },
+  "evidence_classification": {
+    "decision_engine_backed": {
+      "definition": "Supported by current ToolPicker decision-engine evidence that directly matches the claimed failure mechanism.",
+      "minimum_standard": "The cited internal evidence must show the same trigger, the same mechanism, and relevant tool behavior."
+    },
+    "comparison_backed": {
+      "definition": "Supported by one or more comparison pages or pairwise rules that materially demonstrate the mechanism.",
+      "minimum_standard": "The comparison evidence must do more than mention a feature difference; it must show why the failure trigger changes the outcome."
+    },
+    "externally_verified": {
+      "definition": "Supported by current external product facts from official or high-confidence sources.",
+      "minimum_standard": "The source must be current enough to trust and specific enough to confirm the claimed mechanism."
+    },
+    "editorial_only": {
+      "definition": "An editorial interpretation or copy claim that has not yet been tied to mechanism-matching internal or external evidence.",
+      "minimum_standard": "Can be used as a hypothesis, not as publish-proof support."
+    },
+    "insufficient": {
+      "definition": "Evidence exists but does not yet meet the threshold to support naming, grouping, or mechanism claims.",
+      "minimum_standard": "Needs more examples, stronger sourcing, or clearer mechanism alignment."
+    },
+    "stale": {
+      "definition": "Evidence may once have been valid but is no longer trustworthy because the product, source, or context may have changed.",
+      "minimum_standard": "Requires current verification before it can support publishing."
+    },
+    "mismatched_mechanism": {
+      "definition": "The cited evidence supports a different problem than the page's dominant failure mechanism.",
+      "minimum_standard": "Must not be used as proof for the target mechanism without replacement or reframing."
+    }
+  },
+  "publish_readiness": {
+    "ready_to_publish": {
+      "definition": "Mechanism is clear, tool grouping is defensible, and evidence is sufficient and current."
+    },
+    "needs_more_research": {
+      "definition": "The page concept may be sound, but current internal or external fact gathering is incomplete."
+    },
+    "needs_evidence_replacement": {
+      "definition": "The mechanism may be valid, but some core evidence is stale, weak, or mismatched and must be replaced."
+    },
+    "needs_template_revision": {
+      "definition": "The issue is structural: the current brief or evaluation method cannot assess the mechanism cleanly enough."
+    },
+    "do_not_publish_yet": {
+      "definition": "Evidence is too weak, the mechanism is not stable enough, or the page concept is not currently defensible."
+    }
+  },
+  "example_briefs": [
+    {
+      "brief_name": "validate_existing_page_example_task_managers_for_people_who_hate_setup",
+      "brief_type": "validate_existing_page",
+      "page_identity": {
+        "category": "Task Managers",
+        "constraint": "for people who hate setup",
+        "route": "/task-managers/for-people-who-hate-setup",
+        "target_search_intent": [
+          "Find task managers that feel useful without initial configuration.",
+          "Avoid tools that require setup before day-one value appears."
+        ],
+        "user_problem": "The user wants a task manager that becomes useful immediately instead of demanding setup work before they can trust it.",
+        "dominant_failure_mechanism": "The tool fails when core usefulness depends on configuring structure, views, workflows, or custom fields before routine task capture feels workable.",
+        "brief_type": "validate_existing_page"
+      },
+      "mechanism_contract": {
+        "exact_failure_trigger": "A new user must configure meaningful structure before the product becomes clearly usable for ordinary task tracking.",
+        "what_must_be_true": [
+          "The claimed friction appears in ordinary first-use flow, not only advanced setup.",
+          "The failure is caused by setup dependency, not by pricing, learning curve alone, or lack of advanced features."
+        ],
+        "what_does_not_count": [
+          "Needing optional customization after basic use already works.",
+          "Having many features that can be ignored without reducing basic usefulness."
+        ],
+        "adjacent_mechanisms_to_exclude": [
+          "Feature overload without setup dependency.",
+          "Team coordination friction that appears after onboarding.",
+          "Pricing limitations unrelated to setup."
+        ],
+        "subcategory_scope": "General task managers and adjacent personal/team task tools only.",
+        "mechanism_drift_risks": [
+          "Confusing setup friction with visual complexity.",
+          "Treating optional templates as proof of required setup.",
+          "Using stale product onboarding assumptions."
+        ]
+      },
+      "tool_eligibility_rules": {
+        "tools_that_can_be_named_if": [
+          "Current evidence shows the tool either survives or fails specifically on setup dependency.",
+          "The tool is a meaningful option within the task manager category for this user problem."
+        ],
+        "tools_that_should_not_be_named_if": [
+          "The only support is editorial intuition.",
+          "The tool's friction is real but caused by a different mechanism."
+        ],
+        "required_evidence_for_survivor_group": [
+          "Evidence that ordinary task capture works without prior configuration.",
+          "Evidence that default flow provides usable structure immediately."
+        ],
+        "required_evidence_for_failure_group": [
+          "Evidence that useful operation depends on setup before routine use feels stable.",
+          "Evidence that the setup burden is not merely optional customization."
+        ],
+        "max_visible_survivor_tools": 5,
+        "max_visible_failure_tools": 5
+      },
+      "internal_evidence_requirements": {
+        "minimum_comparison_examples": 3,
+        "required_mechanism_match_count": 2,
+        "required_distinct_tools_count": 4,
+        "allowed_pairwise_evidence_sources": [
+          "Comparison pages where setup dependency is explicitly outcome-relevant.",
+          "Pairwise rules that show default usability differences."
+        ],
+        "weak_evidence_warning_conditions": [
+          "Comparison only says one tool is simpler without describing setup trigger.",
+          "Evidence depends on generalized 'beginner friendly' language.",
+          "Evidence references old onboarding flows."
+        ]
+      },
+      "external_research_requirements": {
+        "tools_considered": [
+          {
+            "tool_name": "Todoist",
+            "current_product_behavior": {
+              "finding": "Placeholder",
+              "source_urls": [],
+              "needs_external_verification": true
+            },
+            "onboarding_setup_flow_if_relevant": {
+              "finding": "Placeholder",
+              "source_urls": [],
+              "needs_external_verification": true
+            },
+            "whether_failure_trigger_actually_appears": {
+              "finding": "Placeholder",
+              "source_urls": [],
+              "needs_external_verification": true
+            },
+            "whether_survival_mechanism_actually_exists": {
+              "finding": "Placeholder",
+              "source_urls": [],
+              "needs_external_verification": true
+            },
+            "pricing_free_plan_limitations_if_relevant": {
+              "finding": "Check only if setup-saving defaults are paywalled.",
+              "source_urls": [],
+              "needs_external_verification": true
+            },
+            "integrations_if_relevant": {
+              "finding": "Only check if the page mechanism depends on integrations to remove setup work.",
+              "source_urls": [],
+              "needs_external_verification": true
+            },
+            "official_docs_source_urls_if_available": [],
+            "date_checked": "",
+            "evidence_confidence": "",
+            "research_notes": "Placeholder example only."
+          }
+        ]
+      },
+      "publish_readiness_assessment": {
+        "decision": "needs_more_research",
+        "reasoning": [
+          "Mechanism hypothesis is clear, but live product facts still need current verification."
+        ],
+        "blocking_gaps": [
+          "Need current onboarding verification for survivor and failure groups.",
+          "Need mechanism-matching support for each named tool."
+        ],
+        "required_next_actions": [
+          "Verify product flows externally before deciding publish readiness."
+        ]
+      },
+      "needs_external_verification": true
+    },
+    {
+      "brief_name": "audit_existing_evidence_example_setup_friction_claim",
+      "brief_type": "audit_existing_evidence",
+      "page_identity": {
+        "category": "Task Managers",
+        "constraint": "for people who hate setup",
+        "route": "/task-managers/for-people-who-hate-setup",
+        "target_search_intent": [
+          "Validate whether comparison evidence actually proves setup friction."
+        ],
+        "user_problem": "Legacy evidence may describe simplicity without proving setup dependency.",
+        "dominant_failure_mechanism": "The tool fails when useful operation depends on upfront configuration.",
+        "brief_type": "audit_existing_evidence"
+      },
+      "mechanism_contract": {
+        "exact_failure_trigger": "Useful task management is delayed until a user creates structure or configures the workspace.",
+        "what_must_be_true": [
+          "Evidence must point to setup dependency, not merely preference."
+        ],
+        "what_does_not_count": [
+          "Claims that one tool is cleaner or easier with no setup-specific proof."
+        ],
+        "adjacent_mechanisms_to_exclude": [
+          "General ease-of-use claims."
+        ],
+        "subcategory_scope": "Task managers implicated by the audited evidence item.",
+        "mechanism_drift_risks": [
+          "Editorial compression turning simplicity into setup proof."
+        ]
+      },
+      "evidence_audit_fields": {
+        "existing_source": "Placeholder comparison page or pairwise evidence item",
+        "source_type": "comparison_backed",
+        "claimed_mechanism": "Tool A causes setup friction.",
+        "actual_mechanism_supported": "Tool A may be more complex, but setup dependency is not yet proven.",
+        "mismatch_reason": "The source describes interface complexity and feature breadth, not a required setup trigger before usefulness.",
+        "stale_or_current": "unknown_pending_recheck",
+        "keep_replace_rewrite_or_remove": "rewrite",
+        "replacement_needed": true
+      },
+      "publish_readiness_assessment": {
+        "decision": "needs_evidence_replacement",
+        "reasoning": [
+          "The evidence item may still be directionally useful, but it does not prove the mechanism cleanly enough."
+        ],
+        "blocking_gaps": [
+          "Need mechanism-matching support from comparison evidence or external verification."
+        ],
+        "required_next_actions": [
+          "Replace or downgrade this evidence item unless setup dependency is directly demonstrated."
+        ]
+      },
+      "needs_external_verification": true
+    },
+    {
+      "brief_name": "discover_new_page_candidate_example_future_category_constraint_page",
+      "brief_type": "discover_new_page_candidate",
+      "page_identity": {
+        "category": "Team Collaboration Tools",
+        "constraint": "for teams that need handoffs without ambiguity",
+        "route": "",
+        "target_search_intent": [
+          "Find collaboration tools that make ownership and handoff status explicit.",
+          "Avoid collaboration tools where work falls through because responsibility stays vague."
+        ],
+        "user_problem": "The user wants collaboration tools that reduce ambiguity during ownership handoffs.",
+        "dominant_failure_mechanism": "Work gets dropped when the tool does not create visible ownership and status transitions that survive normal team use.",
+        "brief_type": "discover_new_page_candidate"
+      },
+      "mechanism_contract": {
+        "exact_failure_trigger": "A team cannot clearly tell who owns the next action or when ownership changes.",
+        "what_must_be_true": [
+          "The mechanism depends on ownership visibility or handoff clarity, not only chat speed or document quality."
+        ],
+        "what_does_not_count": [
+          "General collaboration quality with no explicit ownership mechanism."
+        ],
+        "adjacent_mechanisms_to_exclude": [
+          "Meeting overload.",
+          "Notification fatigue.",
+          "Documentation depth."
+        ],
+        "subcategory_scope": "Collaboration tools where tasks, conversations, or projects can carry ownership signals.",
+        "mechanism_drift_risks": [
+          "Sliding from ownership clarity into generic teamwork claims.",
+          "Confusing mention features with durable handoff mechanisms."
+        ]
+      },
+      "tool_eligibility_rules": {
+        "tools_that_can_be_named_if": [
+          "There is evidence the tool materially supports or fails ownership clarity under normal team use."
+        ],
+        "tools_that_should_not_be_named_if": [
+          "Only speculative category fit exists with no mechanism evidence."
+        ],
+        "required_evidence_for_survivor_group": [
+          "Proof of durable ownership assignment, visibility, or handoff workflow."
+        ],
+        "required_evidence_for_failure_group": [
+          "Proof that ownership becomes ambiguous, hidden, or non-durable during handoffs."
+        ],
+        "max_visible_survivor_tools": 5,
+        "max_visible_failure_tools": 5
+      },
+      "internal_evidence_requirements": {
+        "minimum_comparison_examples": 3,
+        "required_mechanism_match_count": 2,
+        "required_distinct_tools_count": 4,
+        "allowed_pairwise_evidence_sources": [
+          "Comparison pages where ownership clarity changes the outcome.",
+          "Pairwise rules tied to assignees, status transitions, or responsibility tracking."
+        ],
+        "weak_evidence_warning_conditions": [
+          "Evidence only says the tool is good for teams.",
+          "Evidence depends on messaging speed rather than ownership mechanics."
+        ]
+      },
+      "new_page_discovery_fields": {
+        "candidate_page_title": "Team Collaboration Tools for Teams That Need Clear Handoffs",
+        "candidate_route": "/team-collaboration-tools/for-teams-that-need-clear-handoffs",
+        "likely_search_intents": [
+          "Clear ownership in collaboration tools",
+          "Handoff-friendly team collaboration tools",
+          "Tools that prevent ambiguous task ownership"
+        ],
+        "category": "Team Collaboration Tools",
+        "constraint": "for teams that need clear handoffs",
+        "hypothesized_failure_mechanism": "Tools fail when ownership, next action, or handoff status is not durable or visible enough to survive normal collaboration.",
+        "tools_to_research": [
+          "Placeholder tool set needs external and internal evidence review"
+        ],
+        "evidence_needed_before_page_creation": [
+          "Mechanism-matching comparisons across distinct tools.",
+          "External verification of ownership or handoff behavior.",
+          "Proof that the mechanism is dominant enough to organize a page."
+        ],
+        "publish_blockers": [
+          "No route should be created until mechanism support is demonstrated.",
+          "Need enough evidence to separate survivor and failure groups defensibly."
+        ]
+      },
+      "publish_readiness_assessment": {
+        "decision": "needs_more_research",
+        "reasoning": [
+          "Candidate is plausible, but no current evidence set is attached yet."
+        ],
+        "blocking_gaps": [
+          "Need internal comparison support.",
+          "Need external product fact verification."
+        ],
+        "required_next_actions": [
+          "Research candidate tools and verify the hypothesized mechanism before page creation."
+        ]
+      },
+      "needs_external_verification": true
+    }
+  ]
+}
