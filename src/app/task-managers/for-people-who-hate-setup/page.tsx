@@ -35,21 +35,6 @@ const pageData = {
       whatFailsFirst: "ClickUp puts spaces, folders, and project planning in front of a plain checklist.",
       whatHeldUpBetter: "Microsoft To Do held up better because you can open a list and start typing right away.",
     },
-    {
-      slug: "linear-vs-todoist-for-busy-professional",
-      whatFailsFirst: "Linear routes simple personal tasks through issue-tracking concepts before entry feels natural.",
-      whatHeldUpBetter: "Todoist held up better by keeping capture close to a simple list.",
-    },
-    {
-      slug: "apple-reminders-vs-clickup-for-minimalist",
-      whatFailsFirst: "ClickUp adds views, dashboards, and configuration choices before the list can stay simple.",
-      whatHeldUpBetter: "Apple Reminders held up better by keeping the path back to a plain list short.",
-    },
-    {
-      slug: "apple-reminders-vs-sunsama-for-solo-user",
-      whatFailsFirst: "Sunsama expects a daily planning flow before ordinary task use feels complete.",
-      whatHeldUpBetter: "Apple Reminders held up better because tasks remain usable without extra ceremony.",
-    },
   ] satisfies EvidenceItem[],
 } as const;
 
@@ -129,8 +114,8 @@ export default function TaskManagersForPeopleWhoHateSetupPage() {
               </li>
               <li>
                 <span className="font-medium text-black">Apple Reminders:</span>{" "}
-                Apple Reminders survives this constraint when simple lists, quick
-                entry, and later organization are enough.
+                Apple Reminders can fit this constraint when a simple list and quick
+                entry matter more than building extra structure first.
               </li>
             </ul>
           </div>
@@ -149,21 +134,6 @@ export default function TaskManagersForPeopleWhoHateSetupPage() {
                 <span className="font-medium text-black">ClickUp:</span> ClickUp
                 fails first here when spaces, folders, views, or workspace routing
                 appear before a plain checklist.
-              </li>
-              <li>
-                <span className="font-medium text-black">Linear:</span> Linear fails
-                first here when issue-tracking structure turns a personal task into
-                a ticket.
-              </li>
-              <li>
-                <span className="font-medium text-black">Jira:</span> Jira fails
-                first here when project workflow fields appear before quick personal
-                capture.
-              </li>
-              <li>
-                <span className="font-medium text-black">Sunsama:</span> Sunsama
-                fails first here when a planning ritual appears before ordinary task
-                use feels complete.
               </li>
             </ul>
           </div>
@@ -293,6 +263,10 @@ export default function TaskManagersForPeopleWhoHateSetupPage() {
           <p className="text-sm leading-6 text-black/75">
             These examples show the same failure pattern appearing across existing
             ToolPicker comparisons.
+          </p>
+          <p className="text-sm leading-6 text-black/65">
+            This page only uses examples that match the setup-before-capture pattern
+            closely.
           </p>
           <ul className="space-y-4 text-sm leading-6">
             {evidenceLinks.map((item) => (
