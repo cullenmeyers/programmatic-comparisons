@@ -1,0 +1,287 @@
+{
+  "version": "1.0",
+  "purpose": "Define the production gate for Category + Constraint pages so pages are only created, patched, published, indexed, or scaled after mechanism quality, evidence quality, and current product validation are strong enough to support publication.",
+  "page_lifecycle_stages": [
+    {
+      "stage": "candidate",
+      "description": "A page idea exists, but no page should be created yet unless the mechanism is clear.",
+      "creation_policy": "Do not create the page unless one dominant failure mechanism and its exact trigger are clearly defined.",
+      "publish_policy": "Not publishable."
+    },
+    {
+      "stage": "template_proof",
+      "description": "A page can exist locally or as a proof page to test template fit.",
+      "creation_policy": "Creation is allowed only for template testing and structure validation.",
+      "publish_policy": "Not publish-ready and should not be intentionally indexed."
+    },
+    {
+      "stage": "research_brief_created",
+      "description": "A validation brief exists and claims are being tested.",
+      "creation_policy": "Page can be drafted or patched only if a research brief exists for the exact Category + Constraint thesis.",
+      "publish_policy": "Not publishable until evidence and validation gates pass."
+    },
+    {
+      "stage": "evidence_audited",
+      "description": "Old comparison evidence has been classified and weak, adjacent, or mismatched evidence is not allowed as proof.",
+      "creation_policy": "Page work may continue only when reused evidence has been classified.",
+      "publish_policy": "Still blocked until external validation is complete."
+    },
+    {
+      "stage": "externally_validated",
+      "description": "Key tool claims have current product verification and external facts are separated from internal comparison evidence.",
+      "creation_policy": "Patching is allowed to reconcile current product behavior with existing claims.",
+      "publish_policy": "Eligible for publish readiness review, but not automatically publish-ready."
+    },
+    {
+      "stage": "publish_ready",
+      "description": "The page passed all required gates and can be publicly linked and indexed.",
+      "creation_policy": "Creation, patching, publication, and indexing are allowed.",
+      "publish_policy": "Publishable and intentionally indexable."
+    },
+    {
+      "stage": "needs_revision",
+      "description": "A page exists but should not be indexed yet.",
+      "creation_policy": "Patching is allowed only to resolve failed gates.",
+      "publish_policy": "Should not be promoted or intentionally indexed."
+    },
+    {
+      "stage": "do_not_publish",
+      "description": "The mechanism is too weak, the category is too broad, or the evidence is too thin.",
+      "creation_policy": "Do not create or continue the page without narrowing or replacing the thesis.",
+      "publish_policy": "Not publishable."
+    }
+  ],
+  "required_gates": [
+    {
+      "gate": "mechanism_gate",
+      "requirements": [
+        "One dominant failure mechanism must anchor the page.",
+        "The exact failure trigger must be defined in precise user-facing terms.",
+        "Adjacent mechanisms must be explicitly excluded from the page thesis.",
+        "Subcategory scope must be clear enough that the page does not drift across neighboring product types."
+      ],
+      "failure_outcomes": [
+        "needs_revision",
+        "do_not_publish"
+      ]
+    },
+    {
+      "gate": "tool_eligibility_gate",
+      "requirements": [
+        "Every named tool must have a clear reason to be included for the exact mechanism.",
+        "Visible survivor and failure groups must remain tight around the mechanism.",
+        "No tool may be named only because it is popular or commonly searched.",
+        "No tool may appear without evidence classification."
+      ],
+      "failure_outcomes": [
+        "needs_revision",
+        "needs_more_research"
+      ]
+    },
+    {
+      "gate": "evidence_gate",
+      "requirements": [
+        "At least 3 total evidence supports must exist for preferred or survivor conclusions.",
+        "At least 2 evidence supports must match the exact mechanism rather than an adjacent one.",
+        "Comparison evidence must be classified in content/seo/comparison-evidence-audit.json before reuse.",
+        "Adjacent evidence cannot be used as proof.",
+        "Old comparison pages are legacy evidence only and cannot be treated as default truth."
+      ],
+      "failure_outcomes": [
+        "needs_evidence_replacement",
+        "needs_more_research",
+        "do_not_publish_yet"
+      ]
+    },
+    {
+      "gate": "external_validation_gate",
+      "requirements": [
+        "Current product behavior for named tools must be checked.",
+        "Current docs or official sources are preferred for verification.",
+        "Claims must be updated if product behavior changed.",
+        "External validation overrides old comparison claims when they conflict."
+      ],
+      "failure_outcomes": [
+        "needs_more_research",
+        "needs_revision"
+      ]
+    },
+    {
+      "gate": "template_gate",
+      "requirements": [
+        "The page must follow the Category + Constraint structure.",
+        "The page cannot read like a generic listicle.",
+        "No ranking or recommendation language is allowed.",
+        "A clear tradeoff or flip condition must be present."
+      ],
+      "failure_outcomes": [
+        "needs_template_revision",
+        "needs_revision"
+      ]
+    },
+    {
+      "gate": "indexing_gate",
+      "requirements": [
+        "Only publish_ready pages should be intentionally indexed.",
+        "template_proof and needs_revision pages must not be submitted to Google Search Console.",
+        "Mass index requests for unvalidated pages are not allowed."
+      ],
+      "failure_outcomes": [
+        "needs_revision",
+        "do_not_publish_yet"
+      ]
+    }
+  ],
+  "publish_readiness_levels": [
+    {
+      "level": "publish_ready",
+      "meaning": "All required gates passed and the page is safe to publish, promote, and intentionally index.",
+      "allowed_public_status": "May be public.",
+      "allowed_internal_links": "Can receive normal internal linking and intentional promotion.",
+      "allowed_sitemap_indexing_behavior": "Can be included in sitemap and intentionally indexed.",
+      "next_action": "Publish or continue normal distribution and monitoring."
+    },
+    {
+      "level": "usable_as_template_proof",
+      "meaning": "The page is structurally useful as a proof page but not ready for production claims.",
+      "allowed_public_status": "May exist locally or as a limited proof, but should not be treated as a publish-ready page.",
+      "allowed_internal_links": "Internal references allowed only for template evaluation, not broad promotion.",
+      "allowed_sitemap_indexing_behavior": "Do not submit to sitemap or intentional indexing workflows.",
+      "next_action": "Create or complete a research brief and start mechanism and evidence validation."
+    },
+    {
+      "level": "needs_more_research",
+      "meaning": "The thesis is plausible, but current support is incomplete or under-validated.",
+      "allowed_public_status": "May exist internally or live with limited exposure, but should not be promoted as validated.",
+      "allowed_internal_links": "Allow only restrained internal references needed for internal review.",
+      "allowed_sitemap_indexing_behavior": "Avoid intentional indexing and do not submit to Google Search Console.",
+      "next_action": "Expand research, tighten mechanism coverage, and complete external validation."
+    },
+    {
+      "level": "needs_evidence_replacement",
+      "meaning": "The page relies too heavily on weak, adjacent, or legacy evidence that cannot support the claims.",
+      "allowed_public_status": "Should not be treated as publish-ready.",
+      "allowed_internal_links": "Do not add new promotional internal links until evidence is replaced.",
+      "allowed_sitemap_indexing_behavior": "Do not intentionally index or resubmit.",
+      "next_action": "Replace weak or adjacent evidence with exact-mechanism support and re-audit evidence."
+    },
+    {
+      "level": "needs_template_revision",
+      "meaning": "The core thesis may be viable, but the page expression drifts away from the Category + Constraint template.",
+      "allowed_public_status": "May remain internal or minimally exposed during revision.",
+      "allowed_internal_links": "Avoid broad internal linking until the template fit is corrected.",
+      "allowed_sitemap_indexing_behavior": "Do not intentionally index while template violations remain.",
+      "next_action": "Revise the page to restore Category + Constraint structure, tradeoff clarity, and non-listicle framing."
+    },
+    {
+      "level": "do_not_publish_yet",
+      "meaning": "The mechanism, category scope, or evidence quality is too weak for creation or publication.",
+      "allowed_public_status": "Should not be published or promoted.",
+      "allowed_internal_links": "No intentional internal promotion beyond internal planning references.",
+      "allowed_sitemap_indexing_behavior": "Must not be submitted for indexing.",
+      "next_action": "Narrow the thesis or abandon the page until a stronger mechanism and evidence base exist."
+    }
+  ],
+  "evidence_rules": {
+    "minimum_total_supports": 3,
+    "minimum_exact_mechanism_supports": 2,
+    "classification_required_for_reuse": true,
+    "classification_source": "content/seo/comparison-evidence-audit.json",
+    "adjacent_evidence_allowed_as_proof": false,
+    "weak_or_mismatched_evidence_allowed_as_proof": false,
+    "legacy_comparison_pages_as_default_truth": false,
+    "notes": [
+      "Evidence must support the exact failure mechanism, not a nearby workflow benefit.",
+      "Evidence quality should be assessed separately from template quality.",
+      "Legacy comparison material can inform research, but cannot by itself prove publish readiness."
+    ]
+  },
+  "external_validation_rules": {
+    "current_product_behavior_check_required": true,
+    "preferred_sources": [
+      "Official product documentation",
+      "Official help centers",
+      "Official feature pages",
+      "Official release or changelog material when relevant"
+    ],
+    "source_separation_rule": "External product facts must remain distinguishable from internal comparison conclusions.",
+    "override_rule": "When current external validation conflicts with old comparison claims, the external validation wins.",
+    "revalidation_triggers": [
+      "A tool changed relevant product behavior",
+      "A core claim depends on an outdated comparison page",
+      "A survivor or failure claim cannot be matched to current official behavior"
+    ]
+  },
+  "legacy_comparison_policy": {
+    "old_comparison_pages_stay_public_for_now": true,
+    "mass_deletion_allowed": false,
+    "mass_noindex_allowed": false,
+    "policy": [
+      "Freeze old comparison pages as legacy evidence rather than default truth.",
+      "Classify comparison evidence before reusing it on Category + Constraint pages.",
+      "External validation wins over internal comparison logic when claims conflict.",
+      "Rewrite, noindex, or redirect decisions should happen only after audit."
+    ]
+  },
+  "template_rules": {
+    "required_structure": "Category + Constraint",
+    "generic_listicle_allowed": false,
+    "ranking_language_allowed": false,
+    "recommendation_language_allowed": false,
+    "tradeoff_or_flip_condition_required": true,
+    "consistency_rule": "Pages may share template structure, but each page must preserve mechanism integrity rather than forcing consistency across mixed failure modes."
+  },
+  "indexing_policy": {
+    "rules": [
+      "Do not submit proof pages until they are publish_ready.",
+      "Do not scale pages just because the template exists.",
+      "Index pages only after research brief, evidence audit, and external validation are complete.",
+      "If a page is live but not publish-ready, mark its status internally and avoid promoting it."
+    ],
+    "allowed_indexing_stage": "publish_ready",
+    "blocked_indexing_stages": [
+      "candidate",
+      "template_proof",
+      "research_brief_created",
+      "evidence_audited",
+      "externally_validated",
+      "needs_revision",
+      "do_not_publish"
+    ]
+  },
+  "scaling_policy": {
+    "minimum_publish_ready_pages_before_scaling": 2,
+    "rules": [
+      "Do not generate 5 to 10 pages until at least 2 pages pass publish_ready.",
+      "Future generated pages must come from structured data plus research brief status.",
+      "Pages with broad categories or mixed mechanisms require narrowing before creation.",
+      "Category-boundary audits are required when a page mixes subcategories."
+    ],
+    "scale_blockers": [
+      "Mechanism drift across adjacent failure modes",
+      "Broad categories that blur subcategory boundaries",
+      "Evidence sets inherited from comparison pages without audit",
+      "Template consistency masking weak claim validity"
+    ]
+  },
+  "example_page_statuses": [
+    {
+      "page": "Task Managers for People Who Hate Setup",
+      "slug": "/task-managers/for-people-who-hate-setup",
+      "provisional_status": "needs_evidence_replacement",
+      "reason": "Strong thesis and improved survivor claims, but exact comparison evidence remains limited and needs replacement with stronger mechanism-matched support."
+    },
+    {
+      "page": "Time Tracking Tools Without Manual Timers",
+      "slug": "/time-tracking-tools/without-manual-timers",
+      "provisional_status": "needs_more_research",
+      "reason": "The mechanism is strong, but some tool claims still need current external product validation."
+    },
+    {
+      "page": "Team Collaboration Tools for Clear Ownership",
+      "slug": "/team-collaboration-tools/for-clear-ownership",
+      "provisional_status": "needs_template_revision",
+      "reason": "Category boundaries may be too broad, and the mechanism can drift across chat, shared inbox, project management, and issue tracking."
+    }
+  ]
+}
