@@ -1,0 +1,439 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-05-09",
+  "artifact_type": "category_constraint_page_status",
+  "sources": {
+    "production_gate": "content/seo/category-constraint-production-gate.json",
+    "comparison_evidence_audit": "content/seo/comparison-evidence-audit.json",
+    "research_briefs": [
+      "content/seo/research-briefs/task-managers-for-people-who-hate-setup.json",
+      "content/seo/research-briefs/time-tracking-tools-without-manual-timers.json",
+      "content/seo/research-briefs/team-collaboration-tools-for-clear-ownership.json"
+    ],
+    "evaluated_pages": [
+      "src/app/task-managers/for-people-who-hate-setup/page.tsx",
+      "src/app/time-tracking-tools/without-manual-timers/page.tsx",
+      "src/app/team-collaboration-tools/for-clear-ownership/page.tsx"
+    ]
+  },
+  "summary": {
+    "closest_to_publish_ready": {
+      "route": "/time-tracking-tools/without-manual-timers",
+      "reason": "It passes mechanism, tool eligibility, evidence, and template gates, and is mainly blocked by remaining external validation and indexing restrictions."
+    },
+    "should_not_be_indexed_now": [
+      "/task-managers/for-people-who-hate-setup",
+      "/time-tracking-tools/without-manual-timers",
+      "/team-collaboration-tools/for-clear-ownership"
+    ],
+    "recommended_next_action": "Resolve the remaining external-validation gaps on the time-tracking page first, then replace weak setup evidence on the task-managers page, and finally narrow and rewrite the team-collaboration page around a tighter ownership boundary before treating it as more than template proof."
+  },
+  "pages": [
+    {
+      "route": "/task-managers/for-people-who-hate-setup",
+      "page_file": "src/app/task-managers/for-people-who-hate-setup/page.tsx",
+      "final_status": "needs_evidence_replacement",
+      "failed_gate_to_address_first": "evidence_gate",
+      "failure_type": "too_few_exact_mechanism_supports",
+      "next_repair_action": "replace_with_exact_evidence",
+      "next_artifact_to_create_or_update": "content/seo/comparison-evidence-audit.json",
+      "allowed_files_to_modify": [
+        "content/seo/comparison-evidence-audit.json",
+        "affected page only after exact support is replaced or expanded"
+      ],
+      "forbidden_actions": [
+        "modify comparison pages directly",
+        "publish",
+        "index"
+      ],
+      "default_next_status": "needs_evidence_replacement",
+      "rerun_required": "evidence_gate",
+      "publish_allowed": false,
+      "index_submission_allowed": false,
+      "gates": {
+        "mechanism_gate": {
+          "status": "pass",
+          "dominant_failure_mechanism": "Task capture fails when first-use usefulness depends on setting up structure before the first task is safely recorded.",
+          "exact_failure_trigger": "The page consistently defines the trigger as projects, views, statuses, pages, or databases appearing before normal task entry feels complete and stable.",
+          "mechanism_drift_risk": "medium",
+          "notes": [
+            "The page's failure/survivor framing matches the brief's setup-before-capture contract.",
+            "The current page is narrower than the brief's broader tool audit, which reduces drift."
+          ]
+        },
+        "tool_eligibility_gate": {
+          "status": "pass",
+          "named_tools": [
+            "Todoist",
+            "Microsoft To Do",
+            "Apple Reminders",
+            "Notion"
+          ],
+          "tools_needing_verification": [
+            "Todoist",
+            "Microsoft To Do",
+            "Apple Reminders",
+            "Notion"
+          ],
+          "tools_that_should_be_removed_or_narrowed": [],
+          "notes": [
+            "The page avoids the weakest brief candidates such as Linear, Jira, and Sunsama.",
+            "Apple Reminders remains plausible but still relies on adjacent support rather than exact setup proof."
+          ]
+        },
+        "evidence_gate": {
+          "status": "fail",
+          "comparison_evidence_used": [
+            {
+              "slug": "notion-vs-todoist-for-beginner",
+              "audit_status": "verified_evidence",
+              "mechanism_match": "exact"
+            }
+          ],
+          "evidence_status_from_audit": [
+            "verified_evidence"
+          ],
+          "exact_mechanism_matches": [
+            "notion-vs-todoist-for-beginner"
+          ],
+          "adjacent_or_mismatched_evidence": [
+            {
+              "slug": "clickup-vs-microsoft-to-do-for-beginner",
+              "audit_status": "stale_or_unverified",
+              "reason": "Former setup proof is no longer safe to reuse broadly."
+            },
+            {
+              "slug": "apple-reminders-vs-clickup-for-minimalist",
+              "audit_status": "mismatched_mechanism",
+              "reason": "Complexity-load evidence, not setup-before-capture proof."
+            },
+            {
+              "slug": "apple-reminders-vs-sunsama-for-solo-user",
+              "audit_status": "mismatched_mechanism",
+              "reason": "Maintenance-load evidence, not setup-before-capture proof."
+            },
+            {
+              "slug": "linear-vs-todoist-for-busy-professional",
+              "audit_status": "mismatched_mechanism",
+              "reason": "Daily-throughput evidence, not setup-before-capture proof."
+            }
+          ],
+          "failure_reason": "The page only uses one exact comparison and does not meet the gate minimum of 3 total supports and 2 exact-mechanism supports."
+        },
+        "external_validation_gate": {
+          "status": "fail",
+          "externally_verified_claims": [],
+          "claims_still_needing_verification": [
+            "Todoist still supports immediate capture before project setup.",
+            "Microsoft To Do still opens into usable list-first capture.",
+            "Apple Reminders still allows quick capture before meaningful structure decisions.",
+            "Notion still pushes new users toward page/database/layout setup before clean capture."
+          ],
+          "failure_reason": "The brief marks all named tool claims as still needing current first-party verification."
+        },
+        "template_gate": {
+          "status": "pass",
+          "follows_category_constraint_structure": true,
+          "avoids_listicle_or_ranking_language": true,
+          "notes": [
+            "The page follows the Category + Constraint pattern with one-second verdict, failure mechanism, survivor pattern, and tradeoff/flip condition.",
+            "It uses conditional language rather than ranking or best-of language."
+          ]
+        },
+        "indexing_gate": {
+          "status": "fail",
+          "should_be_submitted_or_indexed_now": false,
+          "should_remain_proof_or_internal_for_now": true,
+          "failure_reason": "Only publish_ready pages should be intentionally indexed, and this page fails evidence and external validation gates."
+        }
+      },
+      "failed_gates": [
+        "evidence_gate",
+        "external_validation_gate",
+        "indexing_gate"
+      ],
+      "recommended_next_action": "Replace the thin setup-evidence layer with at least two more exact setup-before-capture supports, then externally verify the survivor and failure claims now named on the page."
+    },
+    {
+      "route": "/time-tracking-tools/without-manual-timers",
+      "page_file": "src/app/time-tracking-tools/without-manual-timers/page.tsx",
+      "final_status": "needs_more_research",
+      "failed_gate_to_address_first": "external_validation_gate",
+      "failure_type": "plan_or_platform_limits_unclear",
+      "next_repair_action": "run_external_validation_brief",
+      "next_artifact_to_create_or_update": "content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "content/seo/research-briefs/[page-slug].json",
+        "affected page only after plan or platform scope is explicit"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "keep broad claims without scope"
+      ],
+      "default_next_status": "needs_more_research",
+      "rerun_required": "external_validation_gate",
+      "publish_allowed": false,
+      "index_submission_allowed": false,
+      "gates": {
+        "mechanism_gate": {
+          "status": "pass",
+          "dominant_failure_mechanism": "Time tracking fails when trustworthy records depend on remembered timer starts, stops, or switches in the moment.",
+          "exact_failure_trigger": "The page consistently frames the trigger as one missed manual initiation weakening the record enough that the user has to reconstruct the day later.",
+          "mechanism_drift_risk": "medium",
+          "notes": [
+            "The page stays on initiation reliability rather than drifting into generic simplicity or setup claims.",
+            "Its tradeoff section properly acknowledges that manual timers can still be better for billing precision."
+          ]
+        },
+        "tool_eligibility_gate": {
+          "status": "pass",
+          "named_tools": [
+            "RescueTime",
+            "Timely",
+            "ActivityWatch",
+            "ManicTime",
+            "Toggl Track"
+          ],
+          "tools_needing_verification": [
+            "RescueTime",
+            "Timely",
+            "ActivityWatch",
+            "ManicTime",
+            "Toggl Track"
+          ],
+          "tools_that_should_be_removed_or_narrowed": [],
+          "notes": [
+            "The page avoids the most ambiguous mixed-mode tools flagged in the brief, such as Clockify, Paymo Track, and Timeular.",
+            "Toggl Track remains a defensible contrast tool, though its newer passive or suggested-entry features still need one more check."
+          ]
+        },
+        "evidence_gate": {
+          "status": "pass",
+          "comparison_evidence_used": [
+            {
+              "slug": "rescuetime-vs-toggl-track-for-busy-professional",
+              "audit_status": "verified_evidence",
+              "mechanism_match": "exact"
+            },
+            {
+              "slug": "activitywatch-vs-toggl-track-for-power-user",
+              "audit_status": "usable_with_caution",
+              "mechanism_match": "exact"
+            },
+            {
+              "slug": "timely-vs-toggl-track-for-power-user",
+              "audit_status": "usable_with_caution",
+              "mechanism_match": "exact"
+            }
+          ],
+          "evidence_status_from_audit": [
+            "verified_evidence",
+            "usable_with_caution",
+            "usable_with_caution"
+          ],
+          "exact_mechanism_matches": [
+            "rescuetime-vs-toggl-track-for-busy-professional",
+            "activitywatch-vs-toggl-track-for-power-user",
+            "timely-vs-toggl-track-for-power-user"
+          ],
+          "adjacent_or_mismatched_evidence": [],
+          "notes": [
+            "The page satisfies the 3-support minimum and exceeds the 2 exact-match minimum.",
+            "Two supports are still legacy evidence reused with caution because they originated under power-user framing rather than a route-pure manual-timer page."
+          ]
+        },
+        "external_validation_gate": {
+          "status": "fail",
+          "externally_verified_claims": [
+            "RescueTime supports automatic background activity capture.",
+            "Timely supports background capture with later review.",
+            "ActivityWatch automatically tracks device activity in the background.",
+            "ManicTime automatically records activity without manually starting or stopping timers.",
+            "Toggl Track's documented primary flow still centers on manual timer initiation."
+          ],
+          "claims_still_needing_verification": [
+            "Whether Toggl Track now has newer passive or AI features strong enough to soften the page's manual-timer contrast.",
+            "Whether RescueTime, Timely, and ManicTime plan tiers or platform requirements materially narrow the survivor claim.",
+            "Whether the page's survivor standard should require project-ready automatic attribution or only a reconstructable passive timeline."
+          ],
+          "failure_reason": "The brief still marks the route as needing more research because survivor/failure standards and plan-tier implications are not fully settled at the page level."
+        },
+        "template_gate": {
+          "status": "pass",
+          "follows_category_constraint_structure": true,
+          "avoids_listicle_or_ranking_language": true,
+          "notes": [
+            "The page is a clean Category + Constraint proof page with explicit failure mechanism, survivor behavior, and flip condition.",
+            "The page avoids ranking language and stays conditional."
+          ]
+        },
+        "indexing_gate": {
+          "status": "fail",
+          "should_be_submitted_or_indexed_now": false,
+          "should_remain_proof_or_internal_for_now": true,
+          "failure_reason": "Despite strong structure and evidence, the page is not publish_ready because external validation is still incomplete."
+        }
+      },
+      "failed_gates": [
+        "external_validation_gate",
+        "indexing_gate"
+      ],
+      "recommended_next_action": "Close the remaining external-validation questions around route standards, plan-tier limits, and Toggl's newer passive features; this is the fastest path to a publish-ready example."
+    },
+    {
+      "route": "/team-collaboration-tools/for-clear-ownership",
+      "page_file": "src/app/team-collaboration-tools/for-clear-ownership/page.tsx",
+      "final_status": "needs_template_revision",
+      "failed_gate_to_address_first": "mechanism_gate",
+      "failure_type": "category_too_broad",
+      "next_repair_action": "run_category_boundary_audit",
+      "next_artifact_to_create_or_update": "content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "content/seo/research-briefs/[page-slug].json",
+        "affected page only after scope is narrowed"
+      ],
+      "forbidden_actions": [
+        "modify ontology JSON",
+        "publish",
+        "index"
+      ],
+      "default_next_status": "do_not_publish_yet",
+      "rerun_required": "mechanism_gate",
+      "publish_allowed": false,
+      "index_submission_allowed": false,
+      "gates": {
+        "mechanism_gate": {
+          "status": "fail",
+          "dominant_failure_mechanism": "Collaboration fails when ownership is not visibly attached to the work itself and must be reconstructed from chat history, forwarding, or side coordination.",
+          "exact_failure_trigger": "The trigger is defined, but the page drifts across chat tools, shared inboxes, project tools, and issue trackers without a stable category boundary for what counts as the work object.",
+          "mechanism_drift_risk": "high",
+          "notes": [
+            "The brief explicitly warns that this route can drift across chat, inbox, project-management, and issue-tracking products.",
+            "The page's own evidence set mixes those boundaries instead of controlling them."
+          ]
+        },
+        "tool_eligibility_gate": {
+          "status": "fail",
+          "named_tools": [
+            "Asana",
+            "Basecamp",
+            "Front",
+            "Linear",
+            "Slack",
+            "Gmail",
+            "Google Chat"
+          ],
+          "tools_needing_verification": [
+            "Asana",
+            "Basecamp",
+            "Front",
+            "Linear",
+            "Slack",
+            "Gmail",
+            "Google Chat"
+          ],
+          "tools_that_should_be_removed_or_narrowed": [
+            "Front should be narrowed or justified explicitly because it is shared-inbox evidence from a neighboring category.",
+            "Slack should be narrowed to chat-first channel workflows if it remains a failure case.",
+            "Gmail should be narrowed to plain Gmail thread coordination rather than broader Google collaborative inbox workflows.",
+            "Google Chat should be narrowed to message-first use if the page is not evaluating space tasks."
+          ],
+          "notes": [
+            "Several failure claims are too absolute because current docs show assignment-capable workflows.",
+            "Several survivor claims rest on adjacent workflow-rigor or cross-category evidence."
+          ]
+        },
+        "evidence_gate": {
+          "status": "fail",
+          "comparison_evidence_used": [
+            {
+              "slug": "basecamp-vs-slack-for-busy-professional",
+              "audit_status": "mismatched_mechanism",
+              "mechanism_match": "mismatched"
+            },
+            {
+              "slug": "basecamp-vs-google-chat-for-minimalist",
+              "audit_status": "usable_with_caution",
+              "mechanism_match": "adjacent"
+            },
+            {
+              "slug": "front-vs-gmail-for-busy-professional",
+              "audit_status": "adjacent_evidence",
+              "mechanism_match": "adjacent"
+            },
+            {
+              "slug": "asana-vs-trello-for-power-user",
+              "audit_status": "do_not_use_as_evidence",
+              "mechanism_match": "mismatched"
+            },
+            {
+              "slug": "linear-vs-trello-for-power-user",
+              "audit_status": "adjacent_evidence",
+              "mechanism_match": "adjacent"
+            }
+          ],
+          "evidence_status_from_audit": [
+            "mismatched_mechanism",
+            "usable_with_caution",
+            "adjacent_evidence",
+            "do_not_use_as_evidence",
+            "adjacent_evidence"
+          ],
+          "exact_mechanism_matches": [],
+          "adjacent_or_mismatched_evidence": [
+            "basecamp-vs-slack-for-busy-professional",
+            "basecamp-vs-google-chat-for-minimalist",
+            "front-vs-gmail-for-busy-professional",
+            "asana-vs-trello-for-power-user",
+            "linear-vs-trello-for-power-user"
+          ],
+          "failure_reason": "The page has no clean exact-mechanism support set, and most of its evidence is mismatched, adjacent, or category-misaligned."
+        },
+        "external_validation_gate": {
+          "status": "fail",
+          "externally_verified_claims": [
+            "Asana supports visible assignees on tasks.",
+            "Basecamp keeps work and discussion attached to project objects.",
+            "Front supports shared assignment and internal comments on conversations.",
+            "Linear supports single-person issue assignment and visible issue ownership.",
+            "Slack now has Lists with assignment workflows.",
+            "Google Chat spaces support assignable tasks.",
+            "Gmail and related Google-owned workflows include delegation or collaborative inbox paths."
+          ],
+          "claims_still_needing_verification": [
+            "Whether ownership is visible in the default workflow rather than only in optional add-ons, tabs, or adjacent products.",
+            "Whether Slack Lists, Google Chat space tasks, and Google mail collaborative workflows are normal enough to invalidate the page's generic failure claims.",
+            "Whether Front should count as direct route proof or remain adjacent category evidence.",
+            "Whether plan-gated features in Asana or Linear are doing too much of the ownership work being claimed."
+          ],
+          "failure_reason": "Current product facts complicate the page's generic failure/survivor framing instead of cleanly confirming it."
+        },
+        "template_gate": {
+          "status": "fail",
+          "follows_category_constraint_structure": false,
+          "avoids_listicle_or_ranking_language": true,
+          "notes": [
+            "The page uses the proof-page section layout, but the route expression drifts away from a stable Category + Constraint boundary.",
+            "The broad category mix makes the page read more like a stitched set of adjacent proof examples than one controlled mechanism page."
+          ]
+        },
+        "indexing_gate": {
+          "status": "fail",
+          "should_be_submitted_or_indexed_now": false,
+          "should_remain_proof_or_internal_for_now": true,
+          "failure_reason": "This page fails mechanism, tool-eligibility, evidence, external-validation, and template gates, so it should remain proof/internal only."
+        }
+      },
+      "failed_gates": [
+        "mechanism_gate",
+        "tool_eligibility_gate",
+        "evidence_gate",
+        "external_validation_gate",
+        "template_gate",
+        "indexing_gate"
+      ],
+      "recommended_next_action": "Rewrite the route around a tighter ownership boundary first, then rebuild the tool set and evidence set only after deciding whether the page is judging chat workflows, shared-inbox workflows, or assignment-native work objects."
+    }
+  ]
+}
