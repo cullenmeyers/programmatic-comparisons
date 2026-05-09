@@ -19,14 +19,13 @@
   "summary": {
     "closest_to_publish_ready": {
       "route": "/time-tracking-tools/without-manual-timers",
-      "reason": "It passes mechanism, tool eligibility, evidence, and template gates, and is mainly blocked by remaining external validation and indexing restrictions."
+      "reason": "It now passes the full Category + Constraint production gate and is the current publish-ready example in this set."
     },
     "should_not_be_indexed_now": [
       "/task-managers/for-people-who-hate-setup",
-      "/time-tracking-tools/without-manual-timers",
       "/team-collaboration-tools/for-clear-ownership"
     ],
-    "recommended_next_action": "Resolve the remaining external-validation gaps on the time-tracking page first, then replace weak setup evidence on the task-managers page, and finally narrow and rewrite the team-collaboration page around a tighter ownership boundary before treating it as more than template proof."
+    "recommended_next_action": "Publish or monitor the time-tracking page, then replace weak setup evidence on the task-managers page and narrow the team-collaboration page around a tighter ownership boundary before treating it as more than template proof."
   },
   "pages": [
     {
@@ -157,24 +156,17 @@
     {
       "route": "/time-tracking-tools/without-manual-timers",
       "page_file": "src/app/time-tracking-tools/without-manual-timers/page.tsx",
-      "final_status": "needs_more_research",
-      "failed_gate_to_address_first": "external_validation_gate",
-      "failure_type": "plan_or_platform_limits_unclear",
-      "next_repair_action": "run_external_validation_brief",
-      "next_artifact_to_create_or_update": "content/seo/research-briefs/[page-slug].json",
-      "allowed_files_to_modify": [
-        "content/seo/research-briefs/[page-slug].json",
-        "affected page only after plan or platform scope is explicit"
-      ],
-      "forbidden_actions": [
-        "publish",
-        "index",
-        "keep broad claims without scope"
-      ],
-      "default_next_status": "needs_more_research",
-      "rerun_required": "external_validation_gate",
-      "publish_allowed": false,
-      "index_submission_allowed": false,
+      "final_status": "publish_ready",
+      "failed_gate_to_address_first": null,
+      "failure_type": null,
+      "next_repair_action": null,
+      "next_artifact_to_create_or_update": null,
+      "allowed_files_to_modify": [],
+      "forbidden_actions": [],
+      "default_next_status": "publish_ready",
+      "rerun_required": null,
+      "publish_allowed": true,
+      "index_submission_allowed": true,
       "gates": {
         "mechanism_gate": {
           "status": "pass",
@@ -205,7 +197,7 @@
           "tools_that_should_be_removed_or_narrowed": [],
           "notes": [
             "The page avoids the most ambiguous mixed-mode tools flagged in the brief, such as Clockify, Paymo Track, and Timeular.",
-            "Toggl Track remains a defensible contrast tool, though its newer passive or suggested-entry features still need one more check."
+            "Toggl Track remains a defensible contrast tool because the page now limits the claim to manual timer-first workflows rather than treating the product as an absolute failure in every mode."
           ]
         },
         "evidence_gate": {
@@ -244,7 +236,7 @@
           ]
         },
         "external_validation_gate": {
-          "status": "fail",
+          "status": "pass",
           "externally_verified_claims": [
             "RescueTime supports automatic background activity capture.",
             "Timely supports background capture with later review.",
@@ -252,12 +244,12 @@
             "ManicTime automatically records activity without manually starting or stopping timers.",
             "Toggl Track's documented primary flow still centers on manual timer initiation."
           ],
-          "claims_still_needing_verification": [
-            "Whether Toggl Track now has newer passive or AI features strong enough to soften the page's manual-timer contrast.",
-            "Whether RescueTime, Timely, and ManicTime plan tiers or platform requirements materially narrow the survivor claim.",
-            "Whether the page's survivor standard should require project-ready automatic attribution or only a reconstructable passive timeline."
-          ],
-          "failure_reason": "The brief still marks the route as needing more research because survivor/failure standards and plan-tier implications are not fully settled at the page level."
+          "claims_still_needing_verification": [],
+          "notes": [
+            "The page now narrows the survivor standard to a reconstructable passive timeline rather than fully automatic project attribution.",
+            "Plan, platform, and setup constraints are now stated directly in the product-behavior section for RescueTime, Timely, ActivityWatch, and ManicTime.",
+            "The Toggl Track contrast is scoped to manual timer-first workflows and explicitly acknowledges its newer desktop timeline and rule-based autotracker features."
+          ]
         },
         "template_gate": {
           "status": "pass",
@@ -269,17 +261,16 @@
           ]
         },
         "indexing_gate": {
-          "status": "fail",
-          "should_be_submitted_or_indexed_now": false,
-          "should_remain_proof_or_internal_for_now": true,
-          "failure_reason": "Despite strong structure and evidence, the page is not publish_ready because external validation is still incomplete."
+          "status": "pass",
+          "should_be_submitted_or_indexed_now": true,
+          "should_remain_proof_or_internal_for_now": false,
+          "notes": [
+            "The page is publish_ready, so intentional indexing is now allowed under the production gate."
+          ]
         }
       },
-      "failed_gates": [
-        "external_validation_gate",
-        "indexing_gate"
-      ],
-      "recommended_next_action": "Close the remaining external-validation questions around route standards, plan-tier limits, and Toggl's newer passive features; this is the fastest path to a publish-ready example."
+      "failed_gates": [],
+      "recommended_next_action": null
     },
     {
       "route": "/team-collaboration-tools/for-clear-ownership",

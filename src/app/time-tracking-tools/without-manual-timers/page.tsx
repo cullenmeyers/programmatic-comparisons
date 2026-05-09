@@ -90,8 +90,9 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
         <SectionHeading title="One-second verdict" />
         <Card className="space-y-3 border-black/15 bg-black/[0.03]">
           <p className="text-base leading-7 text-black/85">
-            If manual timers break your tracking habit, prefer tools that capture
-            activity automatically or reduce start/stop dependence.
+            If manual timers break your tracking habit, prefer tools that preserve
+            a reviewable activity timeline in the background so missed starts do
+            not force you to rebuild the day from memory.
           </p>
           <p className="text-sm leading-6 text-black/65">
             Be careful with tools where missing one timer start means the day&apos;s
@@ -115,23 +116,27 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
             <ul className="list-disc space-y-2 pl-5 text-sm leading-6 text-black/75">
               <li>
                 <span className="font-medium text-black">RescueTime:</span>{" "}
-                RescueTime survives this constraint when the record has to keep
-                forming even while you are too busy to remember every timer start.
+                RescueTime survives this constraint when you use its Timesheets
+                workflow to turn background activity into suggested project time
+                that you review later, rather than starting every timer yourself.
               </li>
               <li>
                 <span className="font-medium text-black">Timely:</span> Timely
-                survives this constraint when you need activity captured first and
-                reviewed later instead of declared in real time.
+                survives this constraint when Memory is running on your computer
+                and you want activity captured first, then assigned to projects
+                and tasks later.
               </li>
               <li>
                 <span className="font-medium text-black">ActivityWatch:</span>{" "}
-                ActivityWatch survives this constraint when background logging needs
-                to preserve the day without repeated manual input.
+                ActivityWatch survives this constraint when you want a local
+                background timeline and are comfortable with a more setup-heavy,
+                self-managed workflow.
               </li>
               <li>
                 <span className="font-medium text-black">ManicTime:</span>{" "}
-                ManicTime survives this constraint when missed switches would
-                otherwise force too much cleanup and reconstruction.
+                ManicTime survives this constraint when you want automatic
+                activity timelines first and are willing to review or assign that
+                captured time afterward.
               </li>
             </ul>
           </div>
@@ -143,8 +148,9 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
             <ul className="list-disc space-y-2 pl-5 text-sm leading-6 text-black/75">
               <li>
                 <span className="font-medium text-black">Toggl Track:</span> Toggl
-                Track fails first here when accurate tracking still depends on
-                remembering to start, stop, and switch timers throughout the day.
+                Track fails first here in manual timer-first workflows, where
+                accurate tracking still depends on remembering to start, stop, or
+                switch entries throughout the day.
               </li>
             </ul>
           </div>
@@ -240,8 +246,9 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
           <SectionHeading title="What survives" />
           <Card className="space-y-3">
             <p className="text-sm leading-6 text-black/80">
-              The tools that hold up here preserve a usable timeline even when the
-              day is interrupted, messy, or only partly supervised.
+              The tools that hold up here preserve a usable passive timeline that
+              can be reviewed later, even if they do not fully auto-attribute
+              every block to the right project.
             </p>
             <ul className="list-disc space-y-2 pl-5 text-sm leading-6 text-black/75">
               <li>Activity capture happens in the background.</li>
@@ -286,13 +293,26 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
               Current product behavior behind the pattern
             </h3>
             <ul className="list-disc space-y-2 pl-5 text-sm leading-6 text-black/75">
-              <li>RescueTime captures activity in the background.</li>
-              <li>Timely supports automatic activity capture and later review.</li>
-              <li>ActivityWatch logs activity locally in the background.</li>
-              <li>ManicTime generates automatic activity timelines.</li>
               <li>
-                Toggl Track is strongest here as the manual-timer contrast when
-                tracking still depends on remembered starts, stops, or switches.
+                RescueTime captures activity in the background, but Timesheets
+                suggestions are reviewed later and live on Timesheets plans.
+              </li>
+              <li>
+                Timely supports automatic capture and later review through the
+                Memory desktop app on supported plans.
+              </li>
+              <li>
+                ActivityWatch logs activity locally in the background, with more
+                setup and self-management than hosted trackers.
+              </li>
+              <li>
+                ManicTime generates automatic activity timelines and supports
+                later assignment to projects.
+              </li>
+              <li>
+                Toggl Track still centers manual timer use in its main flow, even
+                though its desktop app now also offers timeline and rule-based
+                autotracker features.
               </li>
             </ul>
           </div>
