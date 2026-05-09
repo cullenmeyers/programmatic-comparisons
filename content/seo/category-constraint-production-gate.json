@@ -264,24 +264,784 @@
       "Template consistency masking weak claim validity"
     ]
   },
+  "repair_routing": {
+    "mechanism_gate": {
+      "failure_types": [
+        {
+          "failure_type": "mixed_mechanisms",
+          "repair_actions": [
+            "run_category_boundary_audit",
+            "rewrite_mechanism_contract",
+            "mark_do_not_publish_if_unresolved"
+          ]
+        },
+        {
+          "failure_type": "category_too_broad",
+          "repair_actions": [
+            "run_category_boundary_audit",
+            "narrow_page_scope",
+            "mark_do_not_publish_if_unresolved"
+          ]
+        },
+        {
+          "failure_type": "adjacent_constraint_drift",
+          "repair_actions": [
+            "run_category_boundary_audit",
+            "narrow_page_scope",
+            "rewrite_mechanism_contract"
+          ]
+        },
+        {
+          "failure_type": "unclear_failure_trigger",
+          "repair_actions": [
+            "rewrite_mechanism_contract",
+            "narrow_page_scope",
+            "mark_do_not_publish_if_unresolved"
+          ]
+        }
+      ],
+      "publish_block": "Block publishing, indexing, and intentional promotion until mechanism_gate passes after repair."
+    },
+    "tool_eligibility_gate": {
+      "failure_types": [
+        {
+          "failure_type": "unsupported_tool_claim",
+          "repair_actions": [
+            "remove_or_demote_tool",
+            "require_external_validation",
+            "require_comparison_evidence"
+          ]
+        },
+        {
+          "failure_type": "too_many_tools_named",
+          "repair_actions": [
+            "narrow_tool_group",
+            "remove_or_demote_tool",
+            "require_comparison_evidence"
+          ]
+        },
+        {
+          "failure_type": "tool_in_wrong_subcategory",
+          "repair_actions": [
+            "remove_or_demote_tool",
+            "narrow_tool_group",
+            "require_external_validation"
+          ]
+        },
+        {
+          "failure_type": "tool_claim_not_evidence_backed",
+          "repair_actions": [
+            "require_comparison_evidence",
+            "require_external_validation",
+            "remove_or_demote_tool"
+          ]
+        }
+      ],
+      "publish_block": "Block publishing, indexing, and intentional promotion until tool_eligibility_gate passes after repair."
+    },
+    "evidence_gate": {
+      "failure_types": [
+        {
+          "failure_type": "too_few_exact_mechanism_supports",
+          "repair_actions": [
+            "update_comparison_evidence_audit",
+            "replace_with_exact_evidence",
+            "mark_needs_evidence_replacement"
+          ]
+        },
+        {
+          "failure_type": "adjacent_evidence_used_as_proof",
+          "repair_actions": [
+            "update_comparison_evidence_audit",
+            "remove_weak_evidence",
+            "replace_with_exact_evidence"
+          ]
+        },
+        {
+          "failure_type": "stale_comparison_evidence",
+          "repair_actions": [
+            "update_comparison_evidence_audit",
+            "add_external_product_facts",
+            "mark_needs_evidence_replacement"
+          ]
+        },
+        {
+          "failure_type": "mismatched_comparison_evidence",
+          "repair_actions": [
+            "remove_weak_evidence",
+            "replace_with_exact_evidence",
+            "mark_needs_evidence_replacement"
+          ]
+        },
+        {
+          "failure_type": "old_comparison_conflicts_with_external_validation",
+          "repair_actions": [
+            "update_comparison_evidence_audit",
+            "add_external_product_facts",
+            "replace_with_exact_evidence"
+          ]
+        }
+      ],
+      "publish_block": "Block publishing, indexing, and intentional promotion until evidence_gate passes after repair."
+    },
+    "external_validation_gate": {
+      "failure_types": [
+        {
+          "failure_type": "named_tool_not_currently_verified",
+          "repair_actions": [
+            "run_external_validation_brief",
+            "update_publish_readiness",
+            "add_plan_or_platform_scope"
+          ]
+        },
+        {
+          "failure_type": "product_behavior_changed",
+          "repair_actions": [
+            "run_external_validation_brief",
+            "soften_claim",
+            "update_publish_readiness"
+          ]
+        },
+        {
+          "failure_type": "plan_or_platform_limits_unclear",
+          "repair_actions": [
+            "run_external_validation_brief",
+            "add_plan_or_platform_scope",
+            "soften_claim"
+          ]
+        },
+        {
+          "failure_type": "official_source_missing",
+          "repair_actions": [
+            "run_external_validation_brief",
+            "remove_claim",
+            "update_publish_readiness"
+          ]
+        },
+        {
+          "failure_type": "claim_too_broad_for_current_product",
+          "repair_actions": [
+            "soften_claim",
+            "remove_claim",
+            "add_plan_or_platform_scope"
+          ]
+        }
+      ],
+      "publish_block": "Block publishing, indexing, and intentional promotion until external_validation_gate passes after repair."
+    },
+    "template_gate": {
+      "failure_types": [
+        {
+          "failure_type": "page_reads_like_listicle",
+          "repair_actions": [
+            "run_template_patch",
+            "move_practical_answer_earlier",
+            "add_tradeoff_or_flip_point"
+          ]
+        },
+        {
+          "failure_type": "internal_language_too_visible",
+          "repair_actions": [
+            "run_template_patch",
+            "rename_sections",
+            "move_practical_answer_earlier"
+          ]
+        },
+        {
+          "failure_type": "section_order_inconsistent",
+          "repair_actions": [
+            "run_template_patch",
+            "rename_sections",
+            "move_practical_answer_earlier"
+          ]
+        },
+        {
+          "failure_type": "lacks_flip_condition",
+          "repair_actions": [
+            "run_template_patch",
+            "add_tradeoff_or_flip_point",
+            "move_practical_answer_earlier"
+          ]
+        },
+        {
+          "failure_type": "weak_user_facing_answer",
+          "repair_actions": [
+            "run_template_patch",
+            "move_practical_answer_earlier",
+            "add_tradeoff_or_flip_point"
+          ]
+        }
+      ],
+      "publish_block": "Block publishing, indexing, and intentional promotion until template_gate passes after repair."
+    },
+    "indexing_gate": {
+      "failure_types": [
+        {
+          "failure_type": "page_not_publish_ready",
+          "repair_actions": [
+            "block_gsc_submission",
+            "avoid_internal_promotion",
+            "rerun_gate_after_repairs"
+          ]
+        },
+        {
+          "failure_type": "proof_page_only",
+          "repair_actions": [
+            "block_gsc_submission",
+            "keep_out_of_sitemap_if_supported_by_current architecture",
+            "rerun_gate_after_repairs"
+          ]
+        },
+        {
+          "failure_type": "needs_revision",
+          "repair_actions": [
+            "block_gsc_submission",
+            "avoid_internal_promotion",
+            "rerun_gate_after_repairs"
+          ]
+        },
+        {
+          "failure_type": "do_not_publish",
+          "repair_actions": [
+            "block_gsc_submission",
+            "keep_out_of_sitemap_if_supported_by_current architecture",
+            "avoid_internal_promotion"
+          ]
+        }
+      ],
+      "publish_block": "Prevent publishing, Google Search Console submission, sitemap inclusion where supported by current architecture, and intentional promotion until indexing_gate passes after repair."
+    }
+  },
+  "repair_decision_matrix": [
+    {
+      "failed_gate": "mechanism_gate",
+      "failure_type": "mixed_mechanisms",
+      "next_artifact_to_create_or_update": "content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "content/seo/research-briefs/[page-slug].json",
+        "affected page only after mechanism contract is narrowed"
+      ],
+      "forbidden_actions": [
+        "modify comparison pages directly",
+        "publish",
+        "index"
+      ],
+      "default_next_status": "needs_revision",
+      "rerun_required": "mechanism_gate"
+    },
+    {
+      "failed_gate": "mechanism_gate",
+      "failure_type": "category_too_broad",
+      "next_artifact_to_create_or_update": "content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "content/seo/research-briefs/[page-slug].json",
+        "affected page only after scope is narrowed"
+      ],
+      "forbidden_actions": [
+        "modify ontology JSON",
+        "publish",
+        "index"
+      ],
+      "default_next_status": "do_not_publish_yet",
+      "rerun_required": "mechanism_gate"
+    },
+    {
+      "failed_gate": "mechanism_gate",
+      "failure_type": "adjacent_constraint_drift",
+      "next_artifact_to_create_or_update": "content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "content/seo/research-briefs/[page-slug].json",
+        "affected page only after boundary exclusions are rewritten"
+      ],
+      "forbidden_actions": [
+        "modify comparison pages directly",
+        "publish",
+        "index"
+      ],
+      "default_next_status": "needs_revision",
+      "rerun_required": "mechanism_gate"
+    },
+    {
+      "failed_gate": "mechanism_gate",
+      "failure_type": "unclear_failure_trigger",
+      "next_artifact_to_create_or_update": "content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "content/seo/research-briefs/[page-slug].json",
+        "affected page only after the trigger is rewritten in user-facing terms"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "scale page batches"
+      ],
+      "default_next_status": "needs_revision",
+      "rerun_required": "mechanism_gate"
+    },
+    {
+      "failed_gate": "tool_eligibility_gate",
+      "failure_type": "unsupported_tool_claim",
+      "next_artifact_to_create_or_update": "content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "content/seo/research-briefs/[page-slug].json",
+        "affected page only after tool eligibility is narrowed"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "add new unsupported tools"
+      ],
+      "default_next_status": "needs_more_research",
+      "rerun_required": "tool_eligibility_gate"
+    },
+    {
+      "failed_gate": "tool_eligibility_gate",
+      "failure_type": "too_many_tools_named",
+      "next_artifact_to_create_or_update": "content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "content/seo/research-briefs/[page-slug].json",
+        "affected page only after the visible tool group is narrowed"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "expand tool lists to cover adjacent categories"
+      ],
+      "default_next_status": "needs_revision",
+      "rerun_required": "tool_eligibility_gate"
+    },
+    {
+      "failed_gate": "tool_eligibility_gate",
+      "failure_type": "tool_in_wrong_subcategory",
+      "next_artifact_to_create_or_update": "content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "content/seo/research-briefs/[page-slug].json",
+        "affected page only after subcategory fit is corrected"
+      ],
+      "forbidden_actions": [
+        "modify ontology JSON",
+        "publish",
+        "index"
+      ],
+      "default_next_status": "needs_revision",
+      "rerun_required": "tool_eligibility_gate"
+    },
+    {
+      "failed_gate": "tool_eligibility_gate",
+      "failure_type": "tool_claim_not_evidence_backed",
+      "next_artifact_to_create_or_update": "content/seo/comparison-evidence-audit.json",
+      "allowed_files_to_modify": [
+        "content/seo/comparison-evidence-audit.json",
+        "affected page only after evidence classification is updated"
+      ],
+      "forbidden_actions": [
+        "modify comparison pages directly",
+        "publish",
+        "index"
+      ],
+      "default_next_status": "needs_more_research",
+      "rerun_required": "tool_eligibility_gate"
+    },
+    {
+      "failed_gate": "evidence_gate",
+      "failure_type": "too_few_exact_mechanism_supports",
+      "next_artifact_to_create_or_update": "content/seo/comparison-evidence-audit.json",
+      "allowed_files_to_modify": [
+        "content/seo/comparison-evidence-audit.json",
+        "affected page only after exact support is replaced or expanded"
+      ],
+      "forbidden_actions": [
+        "modify comparison pages directly",
+        "publish",
+        "index"
+      ],
+      "default_next_status": "needs_evidence_replacement",
+      "rerun_required": "evidence_gate"
+    },
+    {
+      "failed_gate": "evidence_gate",
+      "failure_type": "adjacent_evidence_used_as_proof",
+      "next_artifact_to_create_or_update": "content/seo/comparison-evidence-audit.json",
+      "allowed_files_to_modify": [
+        "content/seo/comparison-evidence-audit.json",
+        "affected page only after audit"
+      ],
+      "forbidden_actions": [
+        "modify comparison pages directly",
+        "publish",
+        "index"
+      ],
+      "default_next_status": "needs_evidence_replacement",
+      "rerun_required": "evidence_gate"
+    },
+    {
+      "failed_gate": "evidence_gate",
+      "failure_type": "stale_comparison_evidence",
+      "next_artifact_to_create_or_update": "content/seo/comparison-evidence-audit.json",
+      "allowed_files_to_modify": [
+        "content/seo/comparison-evidence-audit.json",
+        "content/seo/research-briefs/[page-slug].json",
+        "affected page only after freshness is revalidated"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "treat old comparison claims as default truth"
+      ],
+      "default_next_status": "needs_more_research",
+      "rerun_required": "evidence_gate"
+    },
+    {
+      "failed_gate": "evidence_gate",
+      "failure_type": "mismatched_comparison_evidence",
+      "next_artifact_to_create_or_update": "content/seo/comparison-evidence-audit.json",
+      "allowed_files_to_modify": [
+        "content/seo/comparison-evidence-audit.json",
+        "affected page only after mismatched supports are removed"
+      ],
+      "forbidden_actions": [
+        "modify comparison pages directly",
+        "publish",
+        "index"
+      ],
+      "default_next_status": "needs_evidence_replacement",
+      "rerun_required": "evidence_gate"
+    },
+    {
+      "failed_gate": "evidence_gate",
+      "failure_type": "old_comparison_conflicts_with_external_validation",
+      "next_artifact_to_create_or_update": "content/seo/comparison-evidence-audit.json",
+      "allowed_files_to_modify": [
+        "content/seo/comparison-evidence-audit.json",
+        "content/seo/research-briefs/[page-slug].json",
+        "affected page only after conflicting evidence is replaced"
+      ],
+      "forbidden_actions": [
+        "modify comparison pages directly",
+        "publish",
+        "index"
+      ],
+      "default_next_status": "needs_evidence_replacement",
+      "rerun_required": "evidence_gate"
+    },
+    {
+      "failed_gate": "external_validation_gate",
+      "failure_type": "named_tool_not_currently_verified",
+      "next_artifact_to_create_or_update": "content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "content/seo/research-briefs/[page-slug].json",
+        "affected page only after current product facts are added"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "treat unverified claims as current"
+      ],
+      "default_next_status": "needs_more_research",
+      "rerun_required": "external_validation_gate"
+    },
+    {
+      "failed_gate": "external_validation_gate",
+      "failure_type": "product_behavior_changed",
+      "next_artifact_to_create_or_update": "content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "content/seo/research-briefs/[page-slug].json",
+        "affected page only after claims are reconciled with current product behavior"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "preserve outdated claims for consistency"
+      ],
+      "default_next_status": "needs_revision",
+      "rerun_required": "external_validation_gate"
+    },
+    {
+      "failed_gate": "external_validation_gate",
+      "failure_type": "plan_or_platform_limits_unclear",
+      "next_artifact_to_create_or_update": "content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "content/seo/research-briefs/[page-slug].json",
+        "affected page only after plan or platform scope is explicit"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "keep broad claims without scope"
+      ],
+      "default_next_status": "needs_more_research",
+      "rerun_required": "external_validation_gate"
+    },
+    {
+      "failed_gate": "external_validation_gate",
+      "failure_type": "official_source_missing",
+      "next_artifact_to_create_or_update": "content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "content/seo/research-briefs/[page-slug].json",
+        "affected page only after an official source or narrower claim is added"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "cite unofficial sources as final proof"
+      ],
+      "default_next_status": "needs_more_research",
+      "rerun_required": "external_validation_gate"
+    },
+    {
+      "failed_gate": "external_validation_gate",
+      "failure_type": "claim_too_broad_for_current_product",
+      "next_artifact_to_create_or_update": "content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "content/seo/research-briefs/[page-slug].json",
+        "affected page only after the claim is softened or scoped"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "expand the claim to preserve stronger language"
+      ],
+      "default_next_status": "needs_revision",
+      "rerun_required": "external_validation_gate"
+    },
+    {
+      "failed_gate": "template_gate",
+      "failure_type": "page_reads_like_listicle",
+      "next_artifact_to_create_or_update": "affected page",
+      "allowed_files_to_modify": [
+        "affected page only"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "add ranking or recommendation language"
+      ],
+      "default_next_status": "needs_template_revision",
+      "rerun_required": "template_gate"
+    },
+    {
+      "failed_gate": "template_gate",
+      "failure_type": "internal_language_too_visible",
+      "next_artifact_to_create_or_update": "affected page",
+      "allowed_files_to_modify": [
+        "affected page only"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "expose internal evaluation vocabulary to readers"
+      ],
+      "default_next_status": "needs_template_revision",
+      "rerun_required": "template_gate"
+    },
+    {
+      "failed_gate": "template_gate",
+      "failure_type": "section_order_inconsistent",
+      "next_artifact_to_create_or_update": "affected page",
+      "allowed_files_to_modify": [
+        "affected page only"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "change metadata, slugs, sitemap, canonicals, schema, internal links, or redirects"
+      ],
+      "default_next_status": "needs_template_revision",
+      "rerun_required": "template_gate"
+    },
+    {
+      "failed_gate": "template_gate",
+      "failure_type": "lacks_flip_condition",
+      "next_artifact_to_create_or_update": "affected page",
+      "allowed_files_to_modify": [
+        "affected page only"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "add recommendation language instead of a tradeoff"
+      ],
+      "default_next_status": "needs_template_revision",
+      "rerun_required": "template_gate"
+    },
+    {
+      "failed_gate": "template_gate",
+      "failure_type": "weak_user_facing_answer",
+      "next_artifact_to_create_or_update": "affected page",
+      "allowed_files_to_modify": [
+        "affected page only"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "patch around the issue without strengthening the user-facing answer"
+      ],
+      "default_next_status": "needs_template_revision",
+      "rerun_required": "template_gate"
+    },
+    {
+      "failed_gate": "indexing_gate",
+      "failure_type": "page_not_publish_ready",
+      "next_artifact_to_create_or_update": "content/seo/category-constraint-page-status.json",
+      "allowed_files_to_modify": [
+        "content/seo/category-constraint-page-status.json"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "submit to Google Search Console"
+      ],
+      "default_next_status": "needs_revision",
+      "rerun_required": "indexing_gate"
+    },
+    {
+      "failed_gate": "indexing_gate",
+      "failure_type": "proof_page_only",
+      "next_artifact_to_create_or_update": "content/seo/category-constraint-page-status.json",
+      "allowed_files_to_modify": [
+        "content/seo/category-constraint-page-status.json"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "submit proof pages to Google Search Console"
+      ],
+      "default_next_status": "do_not_publish_yet",
+      "rerun_required": "indexing_gate"
+    },
+    {
+      "failed_gate": "indexing_gate",
+      "failure_type": "needs_revision",
+      "next_artifact_to_create_or_update": "content/seo/category-constraint-page-status.json",
+      "allowed_files_to_modify": [
+        "content/seo/category-constraint-page-status.json"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "promote internally as if validated"
+      ],
+      "default_next_status": "needs_revision",
+      "rerun_required": "indexing_gate"
+    },
+    {
+      "failed_gate": "indexing_gate",
+      "failure_type": "do_not_publish",
+      "next_artifact_to_create_or_update": "content/seo/category-constraint-page-status.json",
+      "allowed_files_to_modify": [
+        "content/seo/category-constraint-page-status.json"
+      ],
+      "forbidden_actions": [
+        "publish",
+        "index",
+        "submit to Google Search Console"
+      ],
+      "default_next_status": "do_not_publish_yet",
+      "rerun_required": "indexing_gate"
+    }
+  ],
+  "automation_boundaries": {
+    "automatic": [
+      "status detection",
+      "failure classification",
+      "repair-plan generation",
+      "evidence-status lookup"
+    ],
+    "codex_patch_allowed": [
+      "page copy patches",
+      "evidence section cleanup",
+      "research brief creation",
+      "audit artifact updates"
+    ],
+    "human_review_required": [
+      "publishing and indexing decision",
+      "deleting, noindexing, or redirecting old pages",
+      "scaling new page batches",
+      "changing ontology constraints"
+    ],
+    "never_automatic": [
+      "mass page generation",
+      "mass noindex",
+      "mass deletion",
+      "ranking or recommendation output",
+      "affiliate-driven ordering"
+    ]
+  },
+  "status_transition_rules": {
+    "needs_more_research": {
+      "can_move_to": [
+        "publish_ready",
+        "needs_revision",
+        "do_not_publish_yet"
+      ],
+      "conditions": [
+        "needs_more_research can move to publish_ready only after external_validation_gate passes and all other required gates also pass.",
+        "If research improves evidence but current product verification remains incomplete, keep the page out of publish_ready and retain a blocked indexing posture."
+      ]
+    },
+    "needs_evidence_replacement": {
+      "can_move_to": [
+        "needs_more_research",
+        "publish_ready",
+        "do_not_publish_yet"
+      ],
+      "conditions": [
+        "needs_evidence_replacement can move to needs_more_research after evidence_gate passes but external_validation_gate remains incomplete.",
+        "It can move to publish_ready only after evidence_gate and all remaining required gates pass.",
+        "If exact-mechanism support still cannot be restored after repair, move to do_not_publish_yet."
+      ]
+    },
+    "needs_template_revision": {
+      "can_move_to": [
+        "usable_as_template_proof",
+        "needs_revision",
+        "publish_ready"
+      ],
+      "conditions": [
+        "needs_template_revision can move to usable_as_template_proof after template_gate passes.",
+        "It can move to publish_ready only after template_gate passes and every other required gate also passes.",
+        "If template quality improves but mechanism, evidence, or validation gates still fail, move to needs_revision rather than publish_ready."
+      ]
+    },
+    "do_not_publish_yet": {
+      "can_move_to": [
+        "needs_revision",
+        "needs_more_research",
+        "publish_ready"
+      ],
+      "conditions": [
+        "do_not_publish_yet cannot move directly to publish_ready without all failed gates being repaired and rerun.",
+        "If narrowing or replacement work restores a viable thesis but more validation remains, move first to needs_revision or needs_more_research.",
+        "Indexing must remain blocked until publish_ready is reached."
+      ]
+    }
+  },
   "example_page_statuses": [
     {
       "page": "Task Managers for People Who Hate Setup",
       "slug": "/task-managers/for-people-who-hate-setup",
       "provisional_status": "needs_evidence_replacement",
-      "reason": "Strong thesis and improved survivor claims, but exact comparison evidence remains limited and needs replacement with stronger mechanism-matched support."
+      "reason": "Strong thesis and improved survivor claims, but exact comparison evidence remains limited and needs replacement with stronger mechanism-matched support.",
+      "failed_gate_to_address_first": "evidence_gate",
+      "next_repair_action": "replace_with_exact_evidence",
+      "rerun_after_repair": "evidence_gate"
     },
     {
       "page": "Time Tracking Tools Without Manual Timers",
       "slug": "/time-tracking-tools/without-manual-timers",
       "provisional_status": "needs_more_research",
-      "reason": "The mechanism is strong, but some tool claims still need current external product validation."
+      "reason": "The mechanism is strong, but some tool claims still need current external product validation.",
+      "failed_gate_to_address_first": "external_validation_gate",
+      "next_repair_action": "run_external_validation_brief",
+      "rerun_after_repair": "external_validation_gate"
     },
     {
       "page": "Team Collaboration Tools for Clear Ownership",
       "slug": "/team-collaboration-tools/for-clear-ownership",
       "provisional_status": "needs_template_revision",
-      "reason": "Category boundaries may be too broad, and the mechanism can drift across chat, shared inbox, project management, and issue tracking."
+      "reason": "Category boundaries may be too broad, and the mechanism can drift across chat, shared inbox, project management, and issue tracking.",
+      "failed_gate_to_address_first": "mechanism_gate",
+      "next_repair_action": "run_category_boundary_audit",
+      "rerun_after_repair": "mechanism_gate"
     }
   ]
 }
