@@ -1,0 +1,379 @@
+{
+  "version": "1.0",
+  "policy": {
+    "old_comparison_pages_public_status": "Keep legacy comparison pages public for now. Treat them as frozen legacy evidence, not as the primary SEO surface or default proof layer.",
+    "reuse_policy_for_new_seo_pages": "Reuse is allowed only when a legacy comparison demonstrates the exact failure mechanism needed by a new SEO page and remains category-aligned enough to support that page without mechanism drift. Adjacent, stale, mismatched, or category-misaligned comparisons may inform research, but they should not be reused as publish-proof.",
+    "noindex_policy": "Do not noindex legacy comparison pages as part of this audit. Leave current public/indexable status unchanged.",
+    "rewrite_policy": "Do not rewrite legacy comparison pages. Freeze them as-is and record reuse eligibility only in this audit artifact.",
+    "redirect_policy": "Do not redirect legacy comparison pages as part of this audit.",
+    "deletion_policy": "Do not delete legacy comparison pages as part of this audit."
+  },
+  "status_definitions": {
+    "verified_evidence": {
+      "meaning": "The comparison supports the exact mechanism needed by the new SEO page and is aligned closely enough in category and problem framing to be reused as evidence support.",
+      "allowed_use_in_new_seo_pages": "May support mechanism-matching new SEO pages now, but only as supporting evidence rather than default proof.",
+      "external_verification_required": true,
+      "long_term_action": "Keep reusable only while current product behavior remains externally verified and mechanism match stays exact."
+    },
+    "usable_with_caution": {
+      "meaning": "The comparison is close enough to the target mechanism to help, but persona, category, or original constraint framing introduces reuse risk.",
+      "allowed_use_in_new_seo_pages": "May be reused only as secondary support for an exact-mechanism page, with explicit caveats and current external verification.",
+      "external_verification_required": true,
+      "long_term_action": "Prefer replacing with category- and mechanism-exact evidence when available."
+    },
+    "adjacent_evidence": {
+      "meaning": "The comparison supports a nearby mechanism or sub-problem, but not the exact mechanism required by the new SEO page.",
+      "allowed_use_in_new_seo_pages": "Do not use as proof on new SEO pages. It may remain in research notes or hypothesis-building only.",
+      "external_verification_required": true,
+      "long_term_action": "Replace with exact-mechanism evidence before any reuse."
+    },
+    "stale_or_unverified": {
+      "meaning": "The comparison may once have been useful, but the behavior is not current enough or has not been externally verified recently enough to trust.",
+      "allowed_use_in_new_seo_pages": "Do not reuse until current behavior is reverified.",
+      "external_verification_required": true,
+      "long_term_action": "Reverify or retire from reuse consideration."
+    },
+    "mismatched_mechanism": {
+      "meaning": "The comparison clearly supports a different dominant failure mechanism than the one the new SEO page needs.",
+      "allowed_use_in_new_seo_pages": "Do not use as evidence for the target page.",
+      "external_verification_required": true,
+      "long_term_action": "Keep public as legacy content, but remove from future evidence reuse paths for that mechanism."
+    },
+    "do_not_use_as_evidence": {
+      "meaning": "The comparison is too far from the target mechanism or category to function as reliable evidence for new SEO pages.",
+      "allowed_use_in_new_seo_pages": "Must not be reused as evidence.",
+      "external_verification_required": false,
+      "long_term_action": "Leave public if needed as legacy content, but exclude from evidence systems and future proof logic."
+    }
+  },
+  "audited_comparisons": [
+    {
+      "slug": "notion-vs-todoist-for-beginner",
+      "category": "Task Managers",
+      "current_status": "verified_evidence",
+      "claimed_mechanism": "Notion requires building pages, databases, or layout structure before first-use task capture feels settled.",
+      "actual_mechanism_supported": "Exact setup-tolerance evidence for first-use capture before structure.",
+      "supported_constraints": [
+        "setup-tolerance",
+        "activation-friction before capture"
+      ],
+      "supports_exact_category_constraint_pages": [
+        "/task-managers/for-people-who-hate-setup"
+      ],
+      "should_not_support_pages": [
+        "/time-tracking-tools/without-manual-timers",
+        "/team-collaboration-tools/for-clear-ownership"
+      ],
+      "external_verification_needed": true,
+      "reuse_allowed": true,
+      "recommended_action": "Keep reusable for the task-manager setup page, but require current external verification before treating it as live support.",
+      "notes": "Directly matches the task-manager brief for setup-before-capture and is already called out there as keep-worthy evidence."
+    },
+    {
+      "slug": "clickup-vs-microsoft-to-do-for-beginner",
+      "category": "Task Managers",
+      "current_status": "stale_or_unverified",
+      "claimed_mechanism": "ClickUp puts spaces, folders, and project planning in front of plain checklist entry.",
+      "actual_mechanism_supported": "Legacy setup-tolerance claim is weakened by current product validation showing Personal List and direct task-creation paths that may let users capture tasks before broader structure setup.",
+      "supported_constraints": [
+        "setup-tolerance",
+        "activation-friction before capture"
+      ],
+      "supports_exact_category_constraint_pages": [],
+      "should_not_support_pages": [
+        "/task-managers/for-people-who-hate-setup",
+        "/time-tracking-tools/without-manual-timers",
+        "/team-collaboration-tools/for-clear-ownership"
+      ],
+      "external_verification_needed": true,
+      "reuse_allowed": false,
+      "recommended_action": "Do not reuse as broad proof for /task-managers/for-people-who-hate-setup. Narrow the claim to a specific setup-heavy ClickUp flow or rewrite with fresh current-product evidence before using it to support that page. With this slug no longer safe to reuse, the setup page needs replacement evidence or externally validated product facts before publish.",
+      "notes": "Current external validation overrides the older audit assumption: the task-manager setup brief found ClickUp Personal List and direct task-creation paths in current docs, which weakens the old broad claim that setup necessarily comes before capture."
+    },
+    {
+      "slug": "linear-vs-todoist-for-busy-professional",
+      "category": "Task Managers",
+      "current_status": "mismatched_mechanism",
+      "claimed_mechanism": "Linear slows simple task entry by routing personal tasks through issue-tracking concepts.",
+      "actual_mechanism_supported": "Time-scarcity and complexity-load evidence about daily throughput, not setup-before-capture.",
+      "supported_constraints": [
+        "daily-throughput",
+        "complexity-load"
+      ],
+      "supports_exact_category_constraint_pages": [],
+      "should_not_support_pages": [
+        "/task-managers/for-people-who-hate-setup",
+        "/time-tracking-tools/without-manual-timers",
+        "/team-collaboration-tools/for-clear-ownership"
+      ],
+      "external_verification_needed": true,
+      "reuse_allowed": false,
+      "recommended_action": "Do not reuse as setup evidence. Replace with exact setup-tolerance proof if Linear needs to appear on the setup route.",
+      "notes": "The existing task-manager brief already flags this slug as a time-scarcity mismatch for the setup-hatred page."
+    },
+    {
+      "slug": "apple-reminders-vs-clickup-for-minimalist",
+      "category": "Task Managers",
+      "current_status": "mismatched_mechanism",
+      "claimed_mechanism": "ClickUp adds views and configuration choices before the task surface stays simple.",
+      "actual_mechanism_supported": "Feature-aversion and complexity-load evidence, not required setup before first capture.",
+      "supported_constraints": [
+        "feature-aversion",
+        "complexity-load"
+      ],
+      "supports_exact_category_constraint_pages": [],
+      "should_not_support_pages": [
+        "/task-managers/for-people-who-hate-setup",
+        "/time-tracking-tools/without-manual-timers",
+        "/team-collaboration-tools/for-clear-ownership"
+      ],
+      "external_verification_needed": true,
+      "reuse_allowed": false,
+      "recommended_action": "Do not reuse as setup evidence. Keep only as adjacent minimalism context.",
+      "notes": "The task-manager brief explicitly says this comparison supports low-complexity behavior but not setup-tolerance."
+    },
+    {
+      "slug": "apple-reminders-vs-sunsama-for-solo-user",
+      "category": "Task Managers",
+      "current_status": "mismatched_mechanism",
+      "claimed_mechanism": "Sunsama requires daily planning before ordinary use feels complete.",
+      "actual_mechanism_supported": "Maintenance-load and upkeep-burden evidence, not setup-before-capture.",
+      "supported_constraints": [
+        "maintenance-load",
+        "upkeep-burden"
+      ],
+      "supports_exact_category_constraint_pages": [],
+      "should_not_support_pages": [
+        "/task-managers/for-people-who-hate-setup",
+        "/time-tracking-tools/without-manual-timers",
+        "/team-collaboration-tools/for-clear-ownership"
+      ],
+      "external_verification_needed": true,
+      "reuse_allowed": false,
+      "recommended_action": "Do not reuse as setup evidence. Keep only as upkeep-ritual evidence.",
+      "notes": "The task-manager brief already classifies this as maintenance-load evidence being stretched into setup proof."
+    },
+    {
+      "slug": "rescuetime-vs-toggl-track-for-busy-professional",
+      "category": "Time Tracking Tools",
+      "current_status": "verified_evidence",
+      "claimed_mechanism": "Toggl Track fails when time logging depends on manually starting and stopping timers instead of automatic background tracking.",
+      "actual_mechanism_supported": "Exact manual-timer avoidance evidence for automatic background capture versus manual timer starts.",
+      "supported_constraints": [
+        "without-manual-timers",
+        "time-scarcity",
+        "manual-initiation friction"
+      ],
+      "supports_exact_category_constraint_pages": [
+        "/time-tracking-tools/without-manual-timers"
+      ],
+      "should_not_support_pages": [
+        "/task-managers/for-people-who-hate-setup",
+        "/team-collaboration-tools/for-clear-ownership"
+      ],
+      "external_verification_needed": true,
+      "reuse_allowed": true,
+      "recommended_action": "Keep reusable for the manual-timer route, pending current external verification of auto-tracking versus manual timers.",
+      "notes": "This is the cleanest exact match in the audited time-tracking set."
+    },
+    {
+      "slug": "activitywatch-vs-toggl-track-for-power-user",
+      "category": "Time Tracking Tools",
+      "current_status": "usable_with_caution",
+      "claimed_mechanism": "Toggl Track fails when tracking depends on manually starting and stopping timers for each task instead of automatic background logging.",
+      "actual_mechanism_supported": "Mechanism matches manual-timer avoidance, but original page framing is ceiling-check for power users rather than a pure timer-aversion route.",
+      "supported_constraints": [
+        "without-manual-timers",
+        "control-ceiling",
+        "manual-initiation friction"
+      ],
+      "supports_exact_category_constraint_pages": [
+        "/time-tracking-tools/without-manual-timers"
+      ],
+      "should_not_support_pages": [
+        "/task-managers/for-people-who-hate-setup",
+        "/team-collaboration-tools/for-clear-ownership"
+      ],
+      "external_verification_needed": true,
+      "reuse_allowed": true,
+      "recommended_action": "Reuse only as secondary support for the manual-timer route, with a note that the original comparison was authored under ceiling-check pressure.",
+      "notes": "The decision rule is exact on manual timers, but the surrounding page is not a dedicated manual-timer route."
+    },
+    {
+      "slug": "timely-vs-toggl-track-for-power-user",
+      "category": "Time Tracking Tools",
+      "current_status": "usable_with_caution",
+      "claimed_mechanism": "Toggl Track fails when tracking requires manually starting and stopping timers instead of automatic memory tracking.",
+      "actual_mechanism_supported": "Mechanism matches manual-timer avoidance, but original page framing is ceiling-check for power users.",
+      "supported_constraints": [
+        "without-manual-timers",
+        "control-ceiling",
+        "manual-initiation friction"
+      ],
+      "supports_exact_category_constraint_pages": [
+        "/time-tracking-tools/without-manual-timers"
+      ],
+      "should_not_support_pages": [
+        "/task-managers/for-people-who-hate-setup",
+        "/team-collaboration-tools/for-clear-ownership"
+      ],
+      "external_verification_needed": true,
+      "reuse_allowed": true,
+      "recommended_action": "Reuse only as secondary support for the manual-timer route after current verification of Timely memory tracking and Toggl timer behavior.",
+      "notes": "Close mechanism match, but still legacy ceiling-check evidence rather than a purpose-built route proof."
+    },
+    {
+      "slug": "activitywatch-vs-timeular-for-minimalist",
+      "category": "Time Tracking Tools",
+      "current_status": "adjacent_evidence",
+      "claimed_mechanism": "Timeular fails when time tracking requires interacting with a physical device to switch tasks instead of running passively in the background.",
+      "actual_mechanism_supported": "Adjacent passive-tracking evidence about manual device switching, not exact timer-start avoidance.",
+      "supported_constraints": [
+        "passive-tracking preference",
+        "feature-aversion",
+        "manual interaction avoidance"
+      ],
+      "supports_exact_category_constraint_pages": [],
+      "should_not_support_pages": [
+        "/task-managers/for-people-who-hate-setup",
+        "/time-tracking-tools/without-manual-timers",
+        "/team-collaboration-tools/for-clear-ownership"
+      ],
+      "external_verification_needed": true,
+      "reuse_allowed": false,
+      "recommended_action": "Do not use as proof for the manual-timer route. Keep only as adjacent evidence for passive-versus-device-mediated tracking.",
+      "notes": "The page is directionally relevant, but the failure trigger is physical-device switching rather than timer starts."
+    },
+    {
+      "slug": "manictime-vs-timeular-for-power-user",
+      "category": "Time Tracking Tools",
+      "current_status": "adjacent_evidence",
+      "claimed_mechanism": "Timeular fails when tracking depends on manually switching tasks with a physical device instead of generating automatic activity logs.",
+      "actual_mechanism_supported": "Adjacent evidence about device-mediated switching and automatic activity logs, not exact manual timer starts.",
+      "supported_constraints": [
+        "passive-tracking preference",
+        "control-ceiling",
+        "manual interaction avoidance"
+      ],
+      "supports_exact_category_constraint_pages": [],
+      "should_not_support_pages": [
+        "/task-managers/for-people-who-hate-setup",
+        "/time-tracking-tools/without-manual-timers",
+        "/team-collaboration-tools/for-clear-ownership"
+      ],
+      "external_verification_needed": true,
+      "reuse_allowed": false,
+      "recommended_action": "Do not use as proof for the manual-timer route. Replace with exact timer-start evidence if Timeular needs to be named there.",
+      "notes": "Useful for a broader passive-tracking hypothesis, but still not exact to the route's manual-timer claim."
+    },
+    {
+      "slug": "basecamp-vs-slack-for-busy-professional",
+      "category": "Team Collaboration Tools",
+      "current_status": "mismatched_mechanism",
+      "claimed_mechanism": "Slack fails when communication requires continuous real-time monitoring instead of structured check-ins.",
+      "actual_mechanism_supported": "Time-scarcity and interruption-management evidence, not clear ownership or handoff visibility.",
+      "supported_constraints": [
+        "time-scarcity",
+        "interruption control"
+      ],
+      "supports_exact_category_constraint_pages": [],
+      "should_not_support_pages": [
+        "/task-managers/for-people-who-hate-setup",
+        "/time-tracking-tools/without-manual-timers",
+        "/team-collaboration-tools/for-clear-ownership"
+      ],
+      "external_verification_needed": true,
+      "reuse_allowed": false,
+      "recommended_action": "Do not reuse for clear-ownership pages. Keep only for batch-versus-realtime communication claims.",
+      "notes": "Same category, wrong mechanism. This is about attention management rather than ownership durability."
+    },
+    {
+      "slug": "basecamp-vs-google-chat-for-minimalist",
+      "category": "Team Collaboration Tools",
+      "current_status": "usable_with_caution",
+      "claimed_mechanism": "Google Chat fails when messages float as standalone threads instead of staying anchored to projects and work context.",
+      "actual_mechanism_supported": "Close ownership-clarity evidence because anchored work context reduces responsibility reconstruction, but the page originates from feature-aversion/minimalist framing rather than an explicit handoff route.",
+      "supported_constraints": [
+        "coordination-clarity",
+        "ownership reconstruction avoidance",
+        "feature-aversion"
+      ],
+      "supports_exact_category_constraint_pages": [
+        "/team-collaboration-tools/for-clear-ownership"
+      ],
+      "should_not_support_pages": [
+        "/task-managers/for-people-who-hate-setup",
+        "/time-tracking-tools/without-manual-timers"
+      ],
+      "external_verification_needed": true,
+      "reuse_allowed": true,
+      "recommended_action": "Reuse only as secondary support for clear-ownership pages, with explicit caveats that the proof is about anchored context rather than explicit assignee workflows.",
+      "notes": "Decision-engine mappings tie this slug to coordination clarity and ownership-reconstruction evidence patterns, which makes it the strongest team-collaboration candidate in this set."
+    },
+    {
+      "slug": "front-vs-gmail-for-busy-professional",
+      "category": "Email / Inbox tools",
+      "current_status": "adjacent_evidence",
+      "claimed_mechanism": "Gmail fails when multiple teammates cannot collaborate inside the same thread with shared assignment and internal comments.",
+      "actual_mechanism_supported": "Strong ownership-clarity mechanism, but in a shared-inbox category rather than team-collaboration-tools.",
+      "supported_constraints": [
+        "shared ownership visibility",
+        "handoff clarity in inbox workflows",
+        "time-scarcity"
+      ],
+      "supports_exact_category_constraint_pages": [],
+      "should_not_support_pages": [
+        "/task-managers/for-people-who-hate-setup",
+        "/time-tracking-tools/without-manual-timers",
+        "/team-collaboration-tools/for-clear-ownership"
+      ],
+      "external_verification_needed": true,
+      "reuse_allowed": false,
+      "recommended_action": "Do not use as publish-proof for the team-collaboration route. Keep as adjacent evidence that shared-assignment workflows matter in collaboration-adjacent surfaces.",
+      "notes": "Mechanism is close, but the category boundary is too different to treat it as direct proof for a collaboration-tools page."
+    },
+    {
+      "slug": "asana-vs-trello-for-power-user",
+      "category": "Task Managers",
+      "current_status": "do_not_use_as_evidence",
+      "claimed_mechanism": "Trello fails when task dependencies and timeline planning are constrained.",
+      "actual_mechanism_supported": "Control-ceiling evidence about dependencies and planning depth, not ownership clarity or setup friction.",
+      "supported_constraints": [
+        "control-ceiling",
+        "dependency planning"
+      ],
+      "supports_exact_category_constraint_pages": [],
+      "should_not_support_pages": [
+        "/task-managers/for-people-who-hate-setup",
+        "/time-tracking-tools/without-manual-timers",
+        "/team-collaboration-tools/for-clear-ownership"
+      ],
+      "external_verification_needed": false,
+      "reuse_allowed": false,
+      "recommended_action": "Exclude from new SEO evidence reuse for the audited routes.",
+      "notes": "Too far from the audited mechanisms. It should remain legacy content only."
+    },
+    {
+      "slug": "linear-vs-trello-for-power-user",
+      "category": "Project Management Tools",
+      "current_status": "adjacent_evidence",
+      "claimed_mechanism": "Trello fails when workflows cannot enforce required status transitions and structured issue states.",
+      "actual_mechanism_supported": "Adjacent handoff-structure evidence about enforced status transitions, but not direct proof of visible ownership or responsibility clarity; also category-misaligned.",
+      "supported_constraints": [
+        "status-transition rigor",
+        "control-ceiling",
+        "workflow consistency"
+      ],
+      "supports_exact_category_constraint_pages": [],
+      "should_not_support_pages": [
+        "/task-managers/for-people-who-hate-setup",
+        "/time-tracking-tools/without-manual-timers",
+        "/team-collaboration-tools/for-clear-ownership"
+      ],
+      "external_verification_needed": true,
+      "reuse_allowed": false,
+      "recommended_action": "Do not use as proof for the clear-ownership route unless replaced by evidence that explicitly shows ownership and handoff visibility.",
+      "notes": "Status transitions matter to handoffs, but this page proves workflow rigor more than ownership clarity."
+    }
+  ]
+}

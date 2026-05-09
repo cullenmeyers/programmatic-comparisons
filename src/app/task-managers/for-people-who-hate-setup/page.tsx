@@ -30,11 +30,6 @@ const pageData = {
       whatFailsFirst: "Notion asks the beginner to create pages, databases, or layout before the first task feels settled.",
       whatHeldUpBetter: "Todoist held up better by letting the list come first and the structure stay optional.",
     },
-    {
-      slug: "clickup-vs-microsoft-to-do-for-beginner",
-      whatFailsFirst: "ClickUp puts spaces, folders, and project planning in front of a plain checklist.",
-      whatHeldUpBetter: "Microsoft To Do held up better because you can open a list and start typing right away.",
-    },
   ] satisfies EvidenceItem[],
 } as const;
 
@@ -129,11 +124,6 @@ export default function TaskManagersForPeopleWhoHateSetupPage() {
                 <span className="font-medium text-black">Notion:</span> Notion fails
                 first here when databases, pages, or layout decisions appear before
                 the first task is recorded.
-              </li>
-              <li>
-                <span className="font-medium text-black">ClickUp:</span> ClickUp
-                fails first here when spaces, folders, views, or workspace routing
-                appear before a plain checklist.
               </li>
             </ul>
           </div>
@@ -258,36 +248,59 @@ export default function TaskManagersForPeopleWhoHateSetupPage() {
       </section>
 
       <section className="content-stack gap-4">
-        <SectionHeading title="Evidence from existing comparisons" />
-        <Card className="space-y-4">
+        <SectionHeading title="Evidence behind this pattern" />
+        <Card className="space-y-5">
           <p className="text-sm leading-6 text-black/75">
-            These examples show the same failure pattern appearing across existing
-            ToolPicker comparisons.
+            The pattern is based on current product behavior plus the clearest
+            matching ToolPicker comparison.
           </p>
-          <p className="text-sm leading-6 text-black/65">
-            This page only uses examples that match the setup-before-capture pattern
-            closely.
-          </p>
-          <ul className="space-y-4 text-sm leading-6">
-            {evidenceLinks.map((item) => (
-              <li key={item.slug} className="space-y-2">
-                <Link
-                  href={`/compare/${item.slug}`}
-                  className="font-medium text-black underline-offset-4 hover:underline"
-                >
-                  {item.title}
-                </Link>
-                <p className="text-black/75">
-                  <span className="font-medium text-black">What failed first:</span>{" "}
-                  {item.whatFailsFirst}
-                </p>
-                <p className="text-black/65">
-                  <span className="font-medium text-black">What held up better:</span>{" "}
-                  {item.whatHeldUpBetter}
-                </p>
+          <div className="space-y-3">
+            <h3 className="text-sm font-semibold text-black">
+              Current product behavior behind the pattern
+            </h3>
+            <ul className="list-disc space-y-2 pl-5 text-sm leading-6 text-black/75">
+              <li>Todoist supports quick task capture before structure.</li>
+              <li>Microsoft To Do supports plain list-based task entry.</li>
+              <li>Apple Reminders supports quick reminder entry and simple lists.</li>
+              <li>
+                Notion task workflows can push users toward databases, properties,
+                and task views.
               </li>
-            ))}
-          </ul>
+            </ul>
+          </div>
+          <div className="space-y-3">
+            <h3 className="text-sm font-semibold text-black">
+              Existing comparison evidence
+            </h3>
+            <p className="text-sm leading-6 text-black/65">
+              This section only includes comparison pages that match the
+              setup-before-capture pattern closely.
+            </p>
+            <ul className="space-y-4 text-sm leading-6">
+              {evidenceLinks.map((item) => (
+                <li key={item.slug} className="space-y-2">
+                  <Link
+                    href={`/compare/${item.slug}`}
+                    className="font-medium text-black underline-offset-4 hover:underline"
+                  >
+                    {item.title}
+                  </Link>
+                  <p className="text-black/75">
+                    <span className="font-medium text-black">What failed first:</span>{" "}
+                    {item.whatFailsFirst}
+                  </p>
+                  <p className="text-black/65">
+                    <span className="font-medium text-black">What held up better:</span>{" "}
+                    {item.whatHeldUpBetter}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <p className="text-sm leading-6 text-black/65">
+            More examples should only be added when they match this same
+            setup-before-capture pattern.
+          </p>
         </Card>
       </section>
 

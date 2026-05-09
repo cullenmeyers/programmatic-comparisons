@@ -1,0 +1,628 @@
+{
+  "brief_name": "validate_existing_page_task_managers_for_people_who_hate_setup",
+  "brief_type": "validate_existing_page",
+  "page_identity": {
+    "category": "Task Managers",
+    "constraint": "for people who hate setup",
+    "route": "/task-managers/for-people-who-hate-setup",
+    "target_search_intent": [
+      "Find task managers that become useful immediately without initial configuration.",
+      "Avoid task managers that require projects, workspaces, views, or planning structure before first-use capture feels safe."
+    ],
+    "user_problem": "The user wants to capture a task immediately and trust that the tool is already useful before they have to design a system around it.",
+    "dominant_failure_mechanism": "The tool fails when ordinary day-one task capture depends on configuring structure, workflow, or planning context before the first task is safely recorded.",
+    "brief_type": "validate_existing_page"
+  },
+  "mechanism_contract": {
+    "exact_failure_trigger": "A new user must create or choose meaningful structure such as projects, pages, databases, spaces, views, statuses, or planning workflow before simple task entry feels complete and stable.",
+    "what_must_be_true": [
+      "The setup burden appears in normal first-use task capture, not only in optional advanced customization.",
+      "The claim is specifically about setup appearing before capture, not just about the tool feeling broad, feature-rich, or opinionated.",
+      "The survivor tool must let a normal user record a task first and postpone structure until later without breaking the basic workflow."
+    ],
+    "what_does_not_count": [
+      "Optional templates, dashboards, or custom fields that can be ignored while plain task entry still works.",
+      "A tool being more powerful, team-oriented, or visually busy without proof that first-use capture is blocked by setup.",
+      "Daily planning rituals or repeated execution friction that happen after a task can already be captured normally."
+    ],
+    "adjacent_mechanisms_to_exclude": [
+      "daily_throughput",
+      "complexity_load",
+      "upkeep_burden",
+      "operational_safety",
+      "coordination_clarity"
+    ],
+    "subcategory_scope": "General task managers and adjacent task-tracking tools evaluated for personal or light team task capture, not full project-management setup in a different category.",
+    "mechanism_drift_risks": [
+      "Confusing feature overload with required setup.",
+      "Using busy-professional throughput evidence as proof of onboarding friction.",
+      "Using upkeep or daily-planning evidence as proof of setup dependency.",
+      "Importing project-management evidence for Jira or Linear into a task-manager page without category-specific support.",
+      "Assuming current onboarding behavior from stale product memory instead of current product verification."
+    ]
+  },
+  "tool_eligibility_rules": {
+    "tools_that_can_be_named_if": [
+      "Current task-manager evidence shows the tool survives or fails specifically on first-use setup dependency.",
+      "The tool is a realistic task-manager option for a user whose first concern is immediate task capture.",
+      "Any cross-category or cross-mechanism support is treated as secondary unless setup-tolerance evidence also exists."
+    ],
+    "tools_that_should_not_be_named_if": [
+      "The only support is editorial summary text on the page itself.",
+      "The evidence comes only from time-scarcity, maintenance-load, or feature-aversion comparisons and is being stretched into setup proof.",
+      "The tool's failure is only established in another category such as project management tools."
+    ],
+    "required_evidence_for_survivor_group": [
+      "Mechanism-matching proof that a task can be recorded before structural setup.",
+      "Mechanism-matching proof that default lists or inbox-style capture are usable without first configuring the workspace."
+    ],
+    "required_evidence_for_failure_group": [
+      "Mechanism-matching proof that task capture is delayed by required structure, workspace routing, or setup choices before normal use feels settled.",
+      "Support that the setup burden is part of normal first-use flow, not just optional organization depth."
+    ],
+    "max_visible_survivor_tools": 5,
+    "max_visible_failure_tools": 5
+  },
+  "internal_evidence_requirements": {
+    "minimum_comparison_examples": 3,
+    "required_mechanism_match_count": 2,
+    "required_distinct_tools_count": 4,
+    "allowed_pairwise_evidence_sources": [
+      "Task-manager comparison pages with constraintSlug setup-tolerance.",
+      "Task-manager category gate setup-tolerance entries.",
+      "Current decision-engine activation-friction definitions only when they align to first-use setup before capture."
+    ],
+    "weak_evidence_warning_conditions": [
+      "The comparison page belongs to time-scarcity instead of setup-tolerance.",
+      "The comparison page belongs to feature-aversion or maintenance-load instead of setup-tolerance.",
+      "The decision rule says 'too much structure too early' but does not show first-use setup blocking capture.",
+      "The named tool is unsupported by task-manager setup-tolerance gate data."
+    ]
+  },
+  "tool_audit": [
+    {
+      "tool_name": "Todoist",
+      "page_group": "survivor",
+      "evidence_classification": "decision_engine_backed",
+      "why_it_is_in_group": "Todoist is consistently positioned as the low-setup survivor for first-use capture in task-manager setup-tolerance evidence.",
+      "evidence_support": [
+        "Task-manager setup-tolerance gate marks Todoist as not failing.",
+        "notion-vs-todoist-for-beginner uses setup-tolerance and says Todoist allows typing tasks without designing a system first.",
+        "clickup-vs-microsoft-to-do-for-beginner and other related setup-tolerance comparisons reinforce Todoist-like simple-capture behavior as the survivor pattern."
+      ],
+      "external_verification_still_needed": [
+        "Confirm current inbox or quick-add behavior still works before project setup.",
+        "Confirm first-run onboarding does not now force workspace or template setup.",
+        "Verify any plan or platform limitations only if they affect immediate capture."
+      ]
+    },
+    {
+      "tool_name": "Microsoft To Do",
+      "page_group": "survivor",
+      "evidence_classification": "decision_engine_backed",
+      "why_it_is_in_group": "Microsoft To Do has direct setup-tolerance support as a simple checklist-first tool.",
+      "evidence_support": [
+        "Task-manager setup-tolerance gate marks Microsoft To Do as not failing.",
+        "clickup-vs-microsoft-to-do-for-beginner uses setup-tolerance and explicitly says a user can open a list and start typing immediately."
+      ],
+      "external_verification_still_needed": [
+        "Confirm current first-run flow still opens to usable list capture.",
+        "Confirm account onboarding does not now add blocking setup steps before first task entry.",
+        "Verify relevant platform differences if web, Windows, and mobile onboarding differ."
+      ]
+    },
+    {
+      "tool_name": "Apple Reminders",
+      "page_group": "survivor",
+      "evidence_classification": "decision_engine_backed",
+      "why_it_is_in_group": "Apple Reminders is supported by the task-manager setup-tolerance gate as a low-setup survivor, but the page's cited comparison evidence does not directly prove setup-tolerance on this route.",
+      "evidence_support": [
+        "Task-manager setup-tolerance gate marks Apple Reminders as not failing.",
+        "apple-reminders-vs-clickup-for-minimalist supports low-complexity list behavior, but it is not a setup-tolerance comparison.",
+        "apple-reminders-vs-sunsama-for-solo-user supports low-upkeep task use, but it is not a setup-tolerance comparison."
+      ],
+      "external_verification_still_needed": [
+        "Confirm current Apple Reminders onboarding still allows capture before list architecture choices.",
+        "Confirm platform-specific caveats, especially Apple ecosystem availability, only insofar as they affect setup friction.",
+        "Add a setup-specific first-party or current-product check because existing cited comparisons are adjacent, not exact."
+      ]
+    },
+    {
+      "tool_name": "Notion",
+      "page_group": "failure",
+      "evidence_classification": "decision_engine_backed",
+      "why_it_is_in_group": "Notion has direct task-manager setup-tolerance support showing system design pressure before simple task capture feels settled.",
+      "evidence_support": [
+        "Task-manager setup-tolerance gate marks Notion as failing with note 'Takes setup before useful'.",
+        "notion-vs-todoist-for-beginner uses setup-tolerance and states Notion requires creating a page, choosing a database, or designing layout before tasks feel organized."
+      ],
+      "external_verification_still_needed": [
+        "Confirm current Notion task setup still requires page, database, or workspace decisions before clean first-task capture.",
+        "Confirm any new starter templates or default task experiences have not materially reduced setup friction.",
+        "Verify with current first-party product or help-center sources."
+      ]
+    },
+    {
+      "tool_name": "ClickUp",
+      "page_group": "failure",
+      "evidence_classification": "decision_engine_backed",
+      "why_it_is_in_group": "ClickUp has direct task-manager setup-tolerance support showing project-planning structure appears before plain task entry.",
+      "evidence_support": [
+        "Task-manager setup-tolerance gate marks ClickUp as failing with note 'Takes setup before useful'.",
+        "clickup-vs-microsoft-to-do-for-beginner uses setup-tolerance and states spaces, folders, and project views assume planning before simple entry."
+      ],
+      "external_verification_still_needed": [
+        "Confirm current ClickUp onboarding still routes new users through workspace structure before checklist-style capture.",
+        "Confirm any new quick-capture or personal-mode flow has not changed the setup threshold.",
+        "Verify free-plan or workspace defaults only if they directly affect first-use capture."
+      ]
+    },
+    {
+      "tool_name": "Linear",
+      "page_group": "failure",
+      "evidence_classification": "insufficient",
+      "why_it_is_in_group": "The page claims setup-first failure, but current task-manager setup-tolerance evidence does not support Linear as a failure tool for this mechanism.",
+      "evidence_support": [
+        "Task-manager setup-tolerance gate marks Linear as not failing.",
+        "linear-vs-todoist-for-busy-professional is a time-scarcity comparison about issue-tracking concepts slowing entry, not a setup-tolerance comparison."
+      ],
+      "external_verification_still_needed": [
+        "Verify current first-run Linear behavior for personal task capture before any team or issue setup.",
+        "Determine whether Linear actually blocks first-use capture on setup, or only adds daily throughput friction.",
+        "If the behavior is real, find or create mechanism-matching evidence before naming it on this page."
+      ]
+    },
+    {
+      "tool_name": "Jira",
+      "page_group": "failure",
+      "evidence_classification": "insufficient",
+      "why_it_is_in_group": "Jira has editorial plausibility and cross-category support, but current task-manager setup-tolerance evidence does not back it as a failure tool on this route.",
+      "evidence_support": [
+        "Task-manager setup-tolerance gate marks Jira as not failing.",
+        "jira-vs-todoist-for-beginner exists only in project-management-tools, not task-managers.",
+        "jira-vs-todoist-for-busy-professional is a time-scarcity comparison about issue-tracking slowing entry, not setup-tolerance."
+      ],
+      "external_verification_still_needed": [
+        "Confirm whether current Jira personal task capture still requires issue-type or project configuration in task-manager-like use.",
+        "Determine whether this should be excluded because the proof belongs to a different category.",
+        "Add task-manager-specific setup evidence or remove Jira from this page."
+      ]
+    },
+    {
+      "tool_name": "Sunsama",
+      "page_group": "failure",
+      "evidence_classification": "insufficient",
+      "why_it_is_in_group": "The page's Sunsama claim is about planning ritual before ordinary use, but the cited internal evidence supports upkeep and daily-flow friction more than setup-before-capture.",
+      "evidence_support": [
+        "Task-manager setup-tolerance gate marks Sunsama as not failing.",
+        "apple-reminders-vs-sunsama-for-solo-user is maintenance-load evidence about daily planning being required to function.",
+        "sunsama-vs-todoist-for-minimalist and apple-reminders-vs-sunsama-for-busy-professional are adjacent internal pages, but they support ritual and complexity friction, not first-use setup dependency."
+      ],
+      "external_verification_still_needed": [
+        "Confirm whether current Sunsama onboarding requires planning setup before a task can simply be captured.",
+        "Separate daily planning ritual evidence from actual setup-tolerance evidence.",
+        "Add mechanism-matching support or remove Sunsama from the failure group for this page."
+      ]
+    }
+  ],
+  "evidence_audit": [
+    {
+      "slug": "notion-vs-todoist-for-beginner",
+      "claimed_mechanism": "Notion requires pages, databases, or layout before the first task feels settled.",
+      "actual_mechanism_supported": "setup_tolerance / activation_friction",
+      "evidence_classification": "decision_engine_backed",
+      "decision": "keep",
+      "reason": "Direct mechanism match. This is a task-manager setup-tolerance comparison for a beginner persona and cleanly supports setup before capture."
+    },
+    {
+      "slug": "clickup-vs-microsoft-to-do-for-beginner",
+      "claimed_mechanism": "ClickUp puts spaces, folders, and project planning in front of a plain checklist.",
+      "actual_mechanism_supported": "setup_tolerance / activation_friction",
+      "evidence_classification": "decision_engine_backed",
+      "decision": "keep",
+      "reason": "Direct mechanism match. The comparison explicitly ties outcome to planning structure appearing before task entry."
+    },
+    {
+      "slug": "linear-vs-todoist-for-busy-professional",
+      "claimed_mechanism": "Linear routes simple personal tasks through issue-tracking concepts before entry feels natural.",
+      "actual_mechanism_supported": "time_scarcity / daily_throughput with adjacent complexity-load signals",
+      "evidence_classification": "mismatched_mechanism",
+      "decision": "replace",
+      "reason": "The comparison is about daily speed for busy professionals, not whether setup is required before day-one capture. It should not be used as publish-proof for a setup-hatred page."
+    },
+    {
+      "slug": "apple-reminders-vs-clickup-for-minimalist",
+      "claimed_mechanism": "ClickUp adds views, dashboards, and configuration choices before the list can stay simple.",
+      "actual_mechanism_supported": "complexity_load / feature_aversion",
+      "evidence_classification": "mismatched_mechanism",
+      "decision": "replace",
+      "reason": "This is a minimalism page about extra decisions and layered interface complexity. It does not cleanly prove required setup before first-use capture."
+    },
+    {
+      "slug": "apple-reminders-vs-sunsama-for-solo-user",
+      "claimed_mechanism": "Sunsama expects a daily planning flow before ordinary task use feels complete.",
+      "actual_mechanism_supported": "upkeep_burden / maintenance_load",
+      "evidence_classification": "mismatched_mechanism",
+      "decision": "replace",
+      "reason": "This supports ritual and maintenance burden, not setup-tolerance. The page is using upkeep evidence as if it proved onboarding friction."
+    }
+  ],
+  "external_research_requirements": {
+    "tools_considered": [
+      {
+        "tool_name": "Todoist",
+        "current_product_behavior": {
+          "finding": "Pending external verification of current quick-capture and default list behavior.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Need to verify whether a new user can capture tasks before project setup or template decisions.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "No internal sign of setup-first failure; confirm externally that onboarding still stays lightweight.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Need first-party confirmation that immediate task capture remains available in normal use.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Only relevant if quick capture or default list flow differs materially by plan.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Not relevant unless integration setup is required to remove onboarding friction.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [],
+        "date_checked": "",
+        "evidence_confidence": "medium_pending_external_check",
+        "research_notes": "Strong internal support; still not externally verified."
+      },
+      {
+        "tool_name": "Microsoft To Do",
+        "current_product_behavior": {
+          "finding": "Pending external verification of current first-run checklist behavior.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Need to confirm whether account sign-in still leads directly to usable list capture.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "No internal sign of setup-first failure; verify externally.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Need confirmation that immediate list entry remains the default experience.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Check only if free account state affects immediate capture.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Not relevant to this mechanism unless integration setup is required before use.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [],
+        "date_checked": "",
+        "evidence_confidence": "medium_pending_external_check",
+        "research_notes": "Good internal support plus one exact comparison."
+      },
+      {
+        "tool_name": "Apple Reminders",
+        "current_product_behavior": {
+          "finding": "Pending external verification of current list-first behavior across Apple platforms.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Need current verification that first-use capture is available without meaningful list architecture setup.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "Internal setup gate suggests no failure, but page-cited comparisons are adjacent rather than exact.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Need first-party confirmation that plain task entry remains available before setup.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Check only insofar as platform access creates setup friction for non-Apple users.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Not central unless account sync setup changes first-use behavior.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [],
+        "date_checked": "",
+        "evidence_confidence": "medium_pending_external_check",
+        "research_notes": "Internally plausible survivor, but page evidence should be strengthened with exact setup proof."
+      },
+      {
+        "tool_name": "Notion",
+        "current_product_behavior": {
+          "finding": "Pending external verification of current task setup flows, templates, and database defaults.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Need current proof that pages, databases, or layout choices still appear before clean task capture for normal first use.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "Internal evidence says yes; external current-product verification still required.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Need to check whether Notion now offers a simpler default task experience that weakens the claim.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Only relevant if simpler task workflows are gated by plan.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Not central to this page unless integrations are needed to remove setup burden.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [],
+        "date_checked": "",
+        "evidence_confidence": "medium_pending_external_check",
+        "research_notes": "Best-supported failure claim internally."
+      },
+      {
+        "tool_name": "ClickUp",
+        "current_product_behavior": {
+          "finding": "Pending external verification of current workspace, space, folder, and personal setup flow.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Need current proof that structure selection still comes before a stable plain-task workflow.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "Internal evidence says yes; external verification still required.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Need to verify whether a new personal mode or inbox flow now bypasses setup.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Check only if lower-friction setup paths differ by plan.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Not relevant unless setup friction depends on integration requirements.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [],
+        "date_checked": "",
+        "evidence_confidence": "medium_pending_external_check",
+        "research_notes": "Strong internal failure support, but still unverified externally."
+      },
+      {
+        "tool_name": "Linear",
+        "current_product_behavior": {
+          "finding": "Pending external verification; current internal evidence only supports throughput friction.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Need to determine whether first-use task capture is blocked by setup or only shaped by issue-tracking workflow.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "Unproven for setup-tolerance in current task-manager evidence.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Need to verify whether ordinary entry is possible without meaningful setup once a user is inside Linear.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Only relevant if personal or starter flows alter setup burden.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Not relevant unless account or workspace setup is integration-dependent.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [],
+        "date_checked": "",
+        "evidence_confidence": "low",
+        "research_notes": "Current page claim should not be trusted without new setup-specific proof."
+      },
+      {
+        "tool_name": "Jira",
+        "current_product_behavior": {
+          "finding": "Pending external verification; current task-manager evidence does not support the setup-failure claim.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Need to separate project-management onboarding from task-manager page relevance.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "Unproven for this category and mechanism despite plausible editorial intuition.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Need to know whether existing configured workspaces invalidate the generic setup-first claim.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Check only if account tier changes first-use setup path.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Not relevant unless integration or admin setup is the actual failure trigger.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [],
+        "date_checked": "",
+        "evidence_confidence": "low",
+        "research_notes": "Cross-category support is not enough to publish this claim on a task-manager page."
+      },
+      {
+        "tool_name": "Sunsama",
+        "current_product_behavior": {
+          "finding": "Pending external verification; current internal support points to maintenance and ritual burden, not setup dependency.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Need to verify whether the planning ritual is required before first use or simply central to repeated use.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "Unproven for setup-tolerance in task-manager evidence.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Need to know whether normal task capture can happen before the planning workflow begins.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Check only if the setup-light path depends on plan level.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Relevant only if integrations are required to make the workflow usable from day one.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [],
+        "date_checked": "",
+        "evidence_confidence": "low",
+        "research_notes": "Current claim is adjacent-mechanism drift."
+      }
+    ],
+    "missing_research": [
+      {
+        "fact_to_verify": "Current onboarding and first-run setup behavior for each named tool",
+        "why_it_matters": "This page depends on first-use activation friction, so stale onboarding assumptions are a publish blocker.",
+        "official_docs_source_urls_needed_later": [],
+        "date_checked": ""
+      },
+      {
+        "fact_to_verify": "Whether task capture is available before project, workspace, board, database, or planning setup",
+        "why_it_matters": "This is the exact page mechanism and must be verified tool by tool.",
+        "official_docs_source_urls_needed_later": [],
+        "date_checked": ""
+      },
+      {
+        "fact_to_verify": "Whether Notion, ClickUp, Linear, Jira, and Sunsama still behave as the page claims in current products",
+        "why_it_matters": "Three of the five failure-group tools are not currently supported by exact internal setup evidence.",
+        "official_docs_source_urls_needed_later": [],
+        "date_checked": ""
+      },
+      {
+        "fact_to_verify": "Current free-plan, platform, or account limitations only when they change setup friction",
+        "why_it_matters": "Plan gating or platform gating matters only if it changes immediate capture or onboarding burden.",
+        "official_docs_source_urls_needed_later": [],
+        "date_checked": ""
+      },
+      {
+        "fact_to_verify": "First-party documentation, help-center URLs, or current product pages for later citation",
+        "why_it_matters": "This brief can identify missing verification, but publish readiness needs attributable first-party sources.",
+        "official_docs_source_urls_needed_later": [],
+        "date_checked": ""
+      }
+    ]
+  },
+  "publish_readiness_assessment": {
+    "decision": "needs_more_research",
+    "reasoning": [
+      "The mechanism itself is clear and defensible: setup before capture is a valid activation-friction frame.",
+      "Notion, ClickUp, Todoist, and Microsoft To Do have strong internal support for this mechanism through task-manager setup-tolerance evidence.",
+      "Apple Reminders is plausible as a survivor, but the page's cited comparisons for it are adjacent rather than exact setup-tolerance proof.",
+      "Linear, Jira, and Sunsama are currently unsupported or mismatched for this exact mechanism on this page.",
+      "No named tool claim has current external product verification attached yet."
+    ],
+    "blocking_gaps": [
+      "Failure-group evidence for Linear, Jira, and Sunsama does not match setup-tolerance cleanly enough to publish as proof.",
+      "Three cited evidence items are mismatched to adjacent mechanisms and should not be trusted as setup evidence.",
+      "Current product behavior for all named tools remains externally unverified."
+    ],
+    "required_next_actions": [
+      "Externally verify all named tools with first-party or high-confidence current sources.",
+      "Replace mismatched evidence items for Linear, Apple Reminders vs ClickUp, and Apple Reminders vs Sunsama with setup-specific comparisons or remove those claims from the page.",
+      "Re-evaluate whether Jira, Linear, and Sunsama belong on this route at all if setup-specific proof cannot be found.",
+      "Treat this page as validation work in progress, not publish-ready SEO evidence."
+    ]
+  },
+  "publish_readiness_summary": {
+    "should_index_now": false,
+    "recommended_state": "strengthened_first",
+    "strongest_evidence": [
+      "notion-vs-todoist-for-beginner",
+      "clickup-vs-microsoft-to-do-for-beginner",
+      "task-managers/setup-tolerance gate entries for Todoist, Microsoft To Do, Notion, and ClickUp"
+    ],
+    "weakest_evidence": [
+      "linear-vs-todoist-for-busy-professional",
+      "apple-reminders-vs-clickup-for-minimalist",
+      "apple-reminders-vs-sunsama-for-solo-user"
+    ],
+    "tool_claims_needing_external_verification": [
+      "Todoist",
+      "Microsoft To Do",
+      "Apple Reminders",
+      "Notion",
+      "ClickUp",
+      "Linear",
+      "Jira",
+      "Sunsama"
+    ]
+  },
+  "needs_external_verification": true
+}
