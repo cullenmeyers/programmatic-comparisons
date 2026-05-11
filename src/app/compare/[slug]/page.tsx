@@ -4,6 +4,7 @@ import ButtonLink from "@/components/ui/ButtonLink";
 import Card from "@/components/ui/Card";
 import SectionHeading from "@/components/ui/SectionHeading";
 import PairGateFromCategoryGate from "@/components/gates/PairGateFromCategoryGate";
+import comparisonEvidenceAudit from "../../../../content/seo/comparison-evidence-audit.json";
 import { getCategoryGate } from "@/content/categoryGates";
 import {
   getComparisonDisplayTitle,
@@ -18,6 +19,15 @@ import {
 import { absoluteUrl } from "@/lib/site";
 
 type Params = { slug: string };
+type ComparisonEvidenceAuditEntry = {
+  slug: string;
+  current_status?: string;
+  reuse_allowed?: boolean;
+};
+
+type ComparisonEvidenceAuditFile = {
+  audited_comparisons?: ComparisonEvidenceAuditEntry[];
+};
 
 const SITUATION_FILTERS = [
   { label: "Publish fast", constraintSlug: "setup-tolerance" },
@@ -55,6 +65,21 @@ function isSituationConstraintSlug(value: string): value is SituationConstraintS
   return SITUATION_FILTERS.some((filter) => filter.constraintSlug === value);
 }
 
+const comparisonEvidenceAuditBySlug = new Map(
+  ((comparisonEvidenceAudit as ComparisonEvidenceAuditFile).audited_comparisons ?? []).map(
+    (entry) => [entry.slug, entry]
+  )
+);
+
+function isIndexableLegacyComparison(slug: string) {
+  const auditEntry = comparisonEvidenceAuditBySlug.get(slug);
+
+  return (
+    auditEntry?.current_status === "verified_evidence" &&
+    auditEntry.reuse_allowed === true
+  );
+}
+
 export async function generateStaticParams() {
   return listPageSlugs().map((slug) => ({ slug }));
 }
@@ -81,12 +106,19 @@ export async function generateMetadata({
   const description =
     doc.meta_description?.trim() ||
     `See which option fails first under this constraint and which one is the better pick for ${doc.persona.toLowerCase()}.`;
+  const isIndexable = isIndexableLegacyComparison(slug);
 
   return {
     title: getComparisonSeoTitle(doc),
     description,
     alternates: {
       canonical: absoluteUrl(`/compare/${slug}`),
+    },
+    // Legacy comparison pages stay live and crawlable, but only audited
+    // verified evidence pages remain indexable search inventory.
+    robots: {
+      index: isIndexable,
+      follow: true,
     },
   };
 }
