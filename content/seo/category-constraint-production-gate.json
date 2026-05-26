@@ -34,9 +34,15 @@
     },
     {
       "stage": "publish_ready",
-      "description": "The page passed all required gates and can be publicly linked and indexed.",
+      "description": "The page passed all required gates, including public search intent completeness, and can be publicly linked and indexed.",
       "creation_policy": "Creation, patching, publication, and indexing are allowed.",
       "publish_policy": "Publishable and intentionally indexable."
+    },
+    {
+      "stage": "needs_search_intent_strengthening",
+      "description": "A page is technically valid and evidence-safe, but it is not yet strong enough as a public search result for the target query class.",
+      "creation_policy": "Patching is allowed only to strengthen public search intent satisfaction, visible product proof, and practical tool-level usefulness.",
+      "publish_policy": "May stay live if already live, but should not be submitted or requested again in Google Search Console until strengthened."
     },
     {
       "stage": "needs_revision",
@@ -120,10 +126,29 @@
       ]
     },
     {
+      "gate": "search_intent_gate",
+      "requirements": [
+        "Target queries must be defined for the page's query class.",
+        "The title, H1, and subtitle must align with the target query class.",
+        "The one-second verdict must answer the searcher's problem quickly.",
+        "The page must give enough practical tool-level direction for a public visitor to act.",
+        "The page must include visible product proof or source-backed product behavior for material tool claims.",
+        "Platform, setup, or plan caveats must be included when they affect the decision.",
+        "Similar tool types must be distinguished clearly enough to avoid confusing automatic, passive, manual, mixed-mode, and review-later tools.",
+        "The page must not read only as an internal proof of the mechanism.",
+        "The page must provide enough depth to compete with existing SERP results for the target query class."
+      ],
+      "failure_outcomes": [
+        "needs_search_intent_strengthening",
+        "needs_revision"
+      ]
+    },
+    {
       "gate": "indexing_gate",
       "requirements": [
-        "Only publish_ready pages should be intentionally indexed.",
+        "Only publish_ready pages that have passed search_intent_gate should be intentionally indexed.",
         "template_proof and needs_revision pages must not be submitted to Google Search Console.",
+        "needs_search_intent_strengthening pages must not be submitted or requested again in Google Search Console until the search_intent_gate passes.",
         "Mass index requests for unvalidated pages are not allowed."
       ],
       "failure_outcomes": [
@@ -135,11 +160,19 @@
   "publish_readiness_levels": [
     {
       "level": "publish_ready",
-      "meaning": "All required gates passed and the page is safe to publish, promote, and intentionally index.",
+      "meaning": "All required gates passed, including search_intent_gate, and the page is safe to publish, promote, and intentionally index.",
       "allowed_public_status": "May be public.",
       "allowed_internal_links": "Can receive normal internal linking and intentional promotion.",
       "allowed_sitemap_indexing_behavior": "Can be included in sitemap and intentionally indexed.",
       "next_action": "Publish or continue normal distribution and monitoring."
+    },
+    {
+      "level": "needs_search_intent_strengthening",
+      "meaning": "The page is technically valid and evidence-safe, but not yet strong enough as a public search result.",
+      "allowed_public_status": "Can stay live if already live.",
+      "allowed_internal_links": "Avoid adding new promotional internal links until the public search answer is strengthened.",
+      "allowed_sitemap_indexing_behavior": "Should not be submitted or requested again in Google Search Console until strengthened; should not be used as a template for scaling yet.",
+      "next_action": "Strengthen the public search answer, visible product proof, tool-level depth, and query fit, then rerun search_intent_gate."
     },
     {
       "level": "usable_as_template_proof",
@@ -245,6 +278,7 @@
       "research_brief_created",
       "evidence_audited",
       "externally_validated",
+      "needs_search_intent_strengthening",
       "needs_revision",
       "do_not_publish"
     ]
@@ -473,6 +507,67 @@
         }
       ],
       "publish_block": "Block publishing, indexing, and intentional promotion until template_gate passes after repair."
+    },
+    "search_intent_gate": {
+      "failure_types": [
+        {
+          "failure_type": "query_intent_not_direct_enough",
+          "repair_actions": [
+            "strengthen_search_intent_copy",
+            "add_conditional_use_case_section",
+            "rerun_search_intent_audit"
+          ]
+        },
+        {
+          "failure_type": "page_too_thin_for_serp",
+          "repair_actions": [
+            "add_comparison_table",
+            "expand_tool_coverage_with_verification",
+            "rerun_search_intent_audit"
+          ]
+        },
+        {
+          "failure_type": "missing_visible_product_proof",
+          "repair_actions": [
+            "add_visible_product_proof",
+            "expand_tool_coverage_with_verification",
+            "rerun_search_intent_audit"
+          ]
+        },
+        {
+          "failure_type": "missing_platform_or_setup_caveats",
+          "repair_actions": [
+            "add_platform_setup_caveats",
+            "add_conditional_use_case_section",
+            "rerun_search_intent_audit"
+          ]
+        },
+        {
+          "failure_type": "tool_depth_too_light",
+          "repair_actions": [
+            "add_comparison_table",
+            "expand_tool_coverage_with_verification",
+            "add_conditional_use_case_section"
+          ]
+        },
+        {
+          "failure_type": "page_reads_like_internal_proof",
+          "repair_actions": [
+            "strengthen_search_intent_copy",
+            "add_visible_product_proof",
+            "add_comparison_table"
+          ]
+        },
+        {
+          "failure_type": "serp_competitors_answer_more_completely",
+          "repair_actions": [
+            "expand_tool_coverage_with_verification",
+            "add_platform_setup_caveats",
+            "rerun_search_intent_audit"
+          ]
+        }
+      ],
+      "publish_block": "Block publish_ready status, Google Search Console requests, scaling, and intentional promotion until search_intent_gate passes after repair."
     },
     "indexing_gate": {
       "failure_types": [
@@ -879,6 +974,116 @@
       "rerun_required": "template_gate"
     },
     {
+      "failed_gate": "search_intent_gate",
+      "failure_type": "query_intent_not_direct_enough",
+      "next_artifact_to_create_or_update": "affected page and content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "affected page only",
+        "content/seo/research-briefs/[page-slug].json"
+      ],
+      "forbidden_actions": [
+        "modify ontology JSON",
+        "submit to Google Search Console",
+        "scale page batches"
+      ],
+      "default_next_status": "needs_search_intent_strengthening",
+      "rerun_required": "search_intent_gate"
+    },
+    {
+      "failed_gate": "search_intent_gate",
+      "failure_type": "page_too_thin_for_serp",
+      "next_artifact_to_create_or_update": "affected page",
+      "allowed_files_to_modify": [
+        "affected page only"
+      ],
+      "forbidden_actions": [
+        "generate new pages",
+        "submit to Google Search Console",
+        "pad content with unsupported tool claims"
+      ],
+      "default_next_status": "needs_search_intent_strengthening",
+      "rerun_required": "search_intent_gate"
+    },
+    {
+      "failed_gate": "search_intent_gate",
+      "failure_type": "missing_visible_product_proof",
+      "next_artifact_to_create_or_update": "affected page and content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "affected page only",
+        "content/seo/research-briefs/[page-slug].json"
+      ],
+      "forbidden_actions": [
+        "modify comparison pages directly",
+        "submit to Google Search Console",
+        "cite unsourced product claims as final proof"
+      ],
+      "default_next_status": "needs_search_intent_strengthening",
+      "rerun_required": "search_intent_gate"
+    },
+    {
+      "failed_gate": "search_intent_gate",
+      "failure_type": "missing_platform_or_setup_caveats",
+      "next_artifact_to_create_or_update": "affected page and content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "affected page only",
+        "content/seo/research-briefs/[page-slug].json"
+      ],
+      "forbidden_actions": [
+        "modify ontology JSON",
+        "submit to Google Search Console",
+        "keep broad product claims without scope"
+      ],
+      "default_next_status": "needs_search_intent_strengthening",
+      "rerun_required": "search_intent_gate"
+    },
+    {
+      "failed_gate": "search_intent_gate",
+      "failure_type": "tool_depth_too_light",
+      "next_artifact_to_create_or_update": "affected page and content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "affected page only",
+        "content/seo/research-briefs/[page-slug].json"
+      ],
+      "forbidden_actions": [
+        "generate new pages",
+        "submit to Google Search Console",
+        "expand tool coverage without verification"
+      ],
+      "default_next_status": "needs_search_intent_strengthening",
+      "rerun_required": "search_intent_gate"
+    },
+    {
+      "failed_gate": "search_intent_gate",
+      "failure_type": "page_reads_like_internal_proof",
+      "next_artifact_to_create_or_update": "affected page",
+      "allowed_files_to_modify": [
+        "affected page only"
+      ],
+      "forbidden_actions": [
+        "modify comparison pages directly",
+        "submit to Google Search Console",
+        "leave internal evaluation language as the primary reader answer"
+      ],
+      "default_next_status": "needs_search_intent_strengthening",
+      "rerun_required": "search_intent_gate"
+    },
+    {
+      "failed_gate": "search_intent_gate",
+      "failure_type": "serp_competitors_answer_more_completely",
+      "next_artifact_to_create_or_update": "affected page and content/seo/research-briefs/[page-slug].json",
+      "allowed_files_to_modify": [
+        "affected page only",
+        "content/seo/research-briefs/[page-slug].json"
+      ],
+      "forbidden_actions": [
+        "create a thin hub as a substitute for page depth",
+        "submit to Google Search Console",
+        "scale page batches"
+      ],
+      "default_next_status": "needs_search_intent_strengthening",
+      "rerun_required": "search_intent_gate"
+    },
+    {
       "failed_gate": "indexing_gate",
       "failure_type": "page_not_publish_ready",
       "next_artifact_to_create_or_update": "content/seo/category-constraint-page-status.json",
@@ -967,49 +1172,79 @@
     ]
   },
   "status_transition_rules": {
-    "needs_more_research": {
+    "externally_validated": {
       "can_move_to": [
         "publish_ready",
+        "needs_search_intent_strengthening",
         "needs_revision",
         "do_not_publish_yet"
       ],
       "conditions": [
-        "needs_more_research can move to publish_ready only after external_validation_gate passes and all other required gates also pass.",
+        "externally_validated can move to publish_ready only after search_intent_gate passes and all other required gates also pass.",
+        "externally_validated must move to needs_search_intent_strengthening if search_intent_gate fails, even when technical indexing and evidence gates are clean.",
+        "Pages marked publish_ready before search_intent_gate was added should be rechecked before further Google Search Console requests or use as a scaling template."
+      ]
+    },
+    "needs_more_research": {
+      "can_move_to": [
+        "publish_ready",
+        "needs_search_intent_strengthening",
+        "needs_revision",
+        "do_not_publish_yet"
+      ],
+      "conditions": [
+        "needs_more_research can move to publish_ready only after external_validation_gate, search_intent_gate, and all other required gates also pass.",
         "If research improves evidence but current product verification remains incomplete, keep the page out of publish_ready and retain a blocked indexing posture."
       ]
     },
     "needs_evidence_replacement": {
       "can_move_to": [
         "needs_more_research",
+        "needs_search_intent_strengthening",
         "publish_ready",
         "do_not_publish_yet"
       ],
       "conditions": [
         "needs_evidence_replacement can move to needs_more_research after evidence_gate passes but external_validation_gate remains incomplete.",
-        "It can move to publish_ready only after evidence_gate and all remaining required gates pass.",
+        "It can move to publish_ready only after evidence_gate, search_intent_gate, and all remaining required gates pass.",
         "If exact-mechanism support still cannot be restored after repair, move to do_not_publish_yet."
       ]
     },
     "needs_template_revision": {
       "can_move_to": [
         "usable_as_template_proof",
+        "needs_search_intent_strengthening",
         "needs_revision",
         "publish_ready"
       ],
       "conditions": [
         "needs_template_revision can move to usable_as_template_proof after template_gate passes.",
-        "It can move to publish_ready only after template_gate passes and every other required gate also passes.",
+        "It can move to publish_ready only after template_gate, search_intent_gate, and every other required gate also passes.",
         "If template quality improves but mechanism, evidence, or validation gates still fail, move to needs_revision rather than publish_ready."
+      ]
+    },
+    "needs_search_intent_strengthening": {
+      "can_move_to": [
+        "publish_ready",
+        "needs_revision",
+        "needs_more_research",
+        "do_not_publish_yet"
+      ],
+      "conditions": [
+        "needs_search_intent_strengthening can move to publish_ready only after search_intent_gate reruns and passes.",
+        "If the search-intent repair uncovers evidence, tool eligibility, or external validation gaps, move to the more specific failed-gate status instead of publish_ready.",
+        "Do not request indexing again or use the page as a scaling template while this status is active."
       ]
     },
     "do_not_publish_yet": {
       "can_move_to": [
         "needs_revision",
         "needs_more_research",
+        "needs_search_intent_strengthening",
         "publish_ready"
       ],
       "conditions": [
-        "do_not_publish_yet cannot move directly to publish_ready without all failed gates being repaired and rerun.",
+        "do_not_publish_yet cannot move directly to publish_ready without all failed gates, including search_intent_gate, being repaired and rerun.",
         "If narrowing or replacement work restores a viable thesis but more validation remains, move first to needs_revision or needs_more_research.",
         "Indexing must remain blocked until publish_ready is reached."
       ]
@@ -1028,11 +1263,12 @@
     {
       "page": "Time Tracking Tools Without Manual Timers",
       "slug": "/time-tracking-tools/without-manual-timers",
-      "provisional_status": "needs_more_research",
-      "reason": "The mechanism is strong, but some tool claims still need current external product validation.",
-      "failed_gate_to_address_first": "external_validation_gate",
-      "next_repair_action": "run_external_validation_brief",
-      "rerun_after_repair": "external_validation_gate"
+      "previous_status": "publish_ready",
+      "provisional_status": "needs_search_intent_strengthening",
+      "reason": "Technically clean and evidence-safe, but the content/indexability audit found that the page needs a more complete public search-intent answer with stronger tool depth, visible product proof, platform/setup caveats, and clearer automatic/manual distinctions.",
+      "failed_gate_to_address_first": "search_intent_gate",
+      "next_repair_action": "strengthen_search_intent_copy",
+      "rerun_after_repair": "search_intent_gate"
     },
     {
       "page": "Team Collaboration Tools for Clear Ownership",

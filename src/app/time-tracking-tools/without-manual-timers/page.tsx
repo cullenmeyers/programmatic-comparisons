@@ -12,8 +12,25 @@ type EvidenceItem = {
   whatHeldUpBetter: string;
 };
 
+type QuickComparisonItem = {
+  tool: string;
+  captureStyle: string;
+  reviewNeeded: string;
+  caveat: string;
+  whereItFits: string;
+};
+
+type ProductProofItem = {
+  tool: string;
+  statement: string;
+  sources: {
+    label: string;
+    href: string;
+  }[];
+};
+
 const metaDescription =
-  "Find time tracking tools that reduce manual timer friction. See what fails first when starting, stopping, or switching timers breaks tracking.";
+  "Compare time tracking tools that reduce manual timer dependence. See which tools preserve a reviewable background timeline and when manual timers still make sense.";
 
 export const metadata: Metadata = {
   title: "Time Tracking Tools Without Manual Timers | ToolPicker",
@@ -24,6 +41,112 @@ export const metadata: Metadata = {
 };
 
 const pageData = {
+  quickComparison: [
+    {
+      tool: "RescueTime",
+      captureStyle: "Background activity capture + Timesheets suggestions",
+      reviewNeeded: "Yes",
+      caveat: "Desktop app / Timesheets plan",
+      whereItFits: "Reviewable activity records without starting every timer",
+    },
+    {
+      tool: "Timely",
+      captureStyle: "Memory captures activity for later assignment",
+      reviewNeeded: "Yes",
+      caveat: "Memory app / supported plans",
+      whereItFits: "Capture-first, assign-later workflows",
+    },
+    {
+      tool: "ActivityWatch",
+      captureStyle: "Local background tracking",
+      reviewNeeded: "Yes",
+      caveat: "More setup / self-managed",
+      whereItFits: "Local or private activity history",
+    },
+    {
+      tool: "ManicTime",
+      captureStyle: "Automatic activity timeline",
+      reviewNeeded: "Yes",
+      caveat: "App install / later assignment",
+      whereItFits: "Passive timeline before project labeling",
+    },
+    {
+      tool: "Toggl Track",
+      captureStyle: "Manual timer-first, with desktop timeline/autotracker features",
+      reviewNeeded: "Often",
+      caveat: "Manual starts/switches still matter in many workflows",
+      whereItFits: "Intentional timer control",
+    },
+  ] satisfies QuickComparisonItem[],
+  productProof: [
+    {
+      tool: "RescueTime",
+      statement:
+        "RescueTime Timesheets uses background activity to create suggested project time for later review.",
+      sources: [
+        {
+          label: "Timesheets overview",
+          href: "https://help.rescuetime.com/article/400-rescuetime-timesheets",
+        },
+      ],
+    },
+    {
+      tool: "Timely",
+      statement:
+        "Timely Memory captures activity in the background for later review and assignment.",
+      sources: [
+        {
+          label: "Memory timeline help",
+          href: "https://hub.timely.com/help-center/new-timeline-what-is-automatic-time-tracking-timely-help-center-1",
+        },
+      ],
+    },
+    {
+      tool: "ActivityWatch",
+      statement:
+        "ActivityWatch is local automatic activity tracking, with privacy-first local history as the core fit.",
+      sources: [
+        {
+          label: "ActivityWatch downloads",
+          href: "https://activitywatch.net/downloads/",
+        },
+      ],
+    },
+    {
+      tool: "ManicTime",
+      statement:
+        "ManicTime records automatic activity timelines in the background before later review or assignment.",
+      sources: [
+        {
+          label: "Automatic time tracking",
+          href: "https://www.manictime.com/features/automatic-time-tracking",
+        },
+        {
+          label: "Tracking docs",
+          href: "https://docs.manictime.com/win-client/tracking",
+        },
+      ],
+    },
+    {
+      tool: "Toggl Track",
+      statement:
+        "Toggl Track documents Timer Mode and Manual Mode, while its desktop app also offers timeline and autotracker features.",
+      sources: [
+        {
+          label: "Timer Mode",
+          href: "https://support.toggl.com/timer-mode",
+        },
+        {
+          label: "Manual Mode",
+          href: "https://support.toggl.com/manual-mode",
+        },
+        {
+          label: "Desktop app",
+          href: "https://support.toggl.com/en/articles/6176883-toggl-track-desktop-app-for-windows",
+        },
+      ],
+    },
+  ] satisfies ProductProofItem[],
   evidence: [
     {
       slug: "rescuetime-vs-toggl-track-for-busy-professional",
@@ -82,7 +205,8 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
           Time Tracking Tools Without Manual Timers
         </h1>
         <p className="max-w-2xl text-base leading-7 text-black/70">
-          Choose a time tracker that still works when you forget to start the timer.
+          Choose a time tracker that can preserve a reviewable background record
+          when you forget to start, stop, or switch a manual timer.
         </p>
       </header>
 
@@ -90,13 +214,13 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
         <SectionHeading title="One-second verdict" />
         <Card className="space-y-3 border-black/15 bg-black/[0.03]">
           <p className="text-base leading-7 text-black/85">
-            If manual timers break your tracking habit, prefer tools that preserve
-            a reviewable activity timeline in the background so missed starts do
-            not force you to rebuild the day from memory.
+            If you need automatic time tracking without manual timer dependence,
+            look for tools that preserve a reviewable background timeline before
+            they ask you to assign projects or clean up details.
           </p>
           <p className="text-sm leading-6 text-black/65">
-            Be careful with tools where missing one timer start means the day&apos;s
-            record becomes incomplete.
+            Be careful with timer-first workflows where missing one start, stop,
+            or task switch makes the day&apos;s record unreliable.
           </p>
         </Card>
       </section>
@@ -105,8 +229,9 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
         <SectionHeading title="Tools that usually fit this constraint" />
         <Card className="space-y-5">
           <p className="text-sm leading-6 text-black/65">
-            These are conditional signals: the tool changes when the failure trigger
-            changes.
+            These are conditional signals. The useful split is not automatic
+            versus manual in the abstract; it is whether the tool preserves a
+            usable record when real-time timer habits break.
           </p>
 
           <div className="space-y-3">
@@ -167,6 +292,58 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
       </section>
 
       <section className="content-stack gap-4">
+        <SectionHeading title="Quick comparison" />
+        <Card className="overflow-x-auto">
+          <table className="w-full min-w-[760px] border-collapse text-left text-sm">
+            <thead className="border-b border-black/10 text-xs uppercase text-black/55">
+              <tr>
+                <th className="py-3 pr-4 font-medium">Tool</th>
+                <th className="py-3 pr-4 font-medium">Capture style</th>
+                <th className="py-3 pr-4 font-medium">Review needed?</th>
+                <th className="py-3 pr-4 font-medium">Platform/setup caveat</th>
+                <th className="py-3 font-medium">Where it fits</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-black/10 text-black/75">
+              {pageData.quickComparison.map((item) => (
+                <tr key={item.tool}>
+                  <td className="py-3 pr-4 font-medium text-black">{item.tool}</td>
+                  <td className="py-3 pr-4">{item.captureStyle}</td>
+                  <td className="py-3 pr-4">{item.reviewNeeded}</td>
+                  <td className="py-3 pr-4">{item.caveat}</td>
+                  <td className="py-3">{item.whereItFits}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </Card>
+      </section>
+
+      <section className="content-stack gap-4">
+        <SectionHeading title="Which direction fits your situation?" />
+        <Card>
+          <ul className="list-disc space-y-2 pl-5 text-sm leading-6 text-black/75">
+            <li>
+              Use a background timeline tool when you mainly need a record of the
+              day without remembering timers.
+            </li>
+            <li>
+              Use a review-later workflow when you can assign captured activity
+              after the fact.
+            </li>
+            <li>
+              Use manual timer-first tracking when client billing precision and
+              intentional task labels matter more than automatic completeness.
+            </li>
+            <li>
+              Avoid purely manual timer habits if one missed start makes the entire
+              day unreliable.
+            </li>
+          </ul>
+        </Card>
+      </section>
+
+      <section className="content-stack gap-4">
         <SectionHeading title="How manual timers break time tracking" />
         <Card className="space-y-4">
           <p className="text-sm font-medium uppercase tracking-wide text-black/60">
@@ -214,8 +391,8 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
           </div>
           <p className="text-sm leading-6 text-black/65">
             In time tracking tools, the category breaks first at initiation
-            reliability. Once the record depends on perfect recall, daily throughput
-            turns against the tool.
+            reliability. Once the record depends on perfect recall, the tracker
+            starts creating cleanup work.
           </p>
         </Card>
       </section>
@@ -314,6 +491,35 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
                 though its desktop app now also offers timeline and rule-based
                 autotracker features.
               </li>
+            </ul>
+          </div>
+          <div className="space-y-3">
+            <h3 className="text-sm font-semibold text-black">
+              Product proof checked
+            </h3>
+            <ul className="space-y-3 text-sm leading-6 text-black/75">
+              {pageData.productProof.map((item) => (
+                <li key={item.tool}>
+                  <span className="font-medium text-black">{item.tool}:</span>{" "}
+                  {item.statement}{" "}
+                  <span className="text-black/60">
+                    Sources:{" "}
+                    {item.sources.map((source, index) => (
+                      <span key={source.href}>
+                        <a
+                          href={source.href}
+                          className="underline-offset-4 hover:underline"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {source.label}
+                        </a>
+                        {index < item.sources.length - 1 ? ", " : "."}
+                      </span>
+                    ))}
+                  </span>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="space-y-3">

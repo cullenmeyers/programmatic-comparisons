@@ -19,13 +19,16 @@
   "summary": {
     "closest_to_publish_ready": {
       "route": "/time-tracking-tools/without-manual-timers",
-      "reason": "It now passes the full Category + Constraint production gate and is the current publish-ready example in this set."
+      "reason": "It passes the required gates again after the search-intent strengthening patch and is the current publish-ready Category + Constraint page."
     },
     "should_not_be_indexed_now": [
       "/task-managers/for-people-who-hate-setup",
       "/team-collaboration-tools/for-clear-ownership"
     ],
-    "recommended_next_action": "Publish or monitor the time-tracking page, then replace weak setup evidence on the task-managers page and narrow the team-collaboration page around a tighter ownership boundary before treating it as more than template proof."
+    "publish_ready_pages": [
+      "/time-tracking-tools/without-manual-timers"
+    ],
+    "recommended_next_action": "Deploy the strengthened Time Tracking page, run seo:check against the deployed state, then request indexing again after the production deploy is live."
   },
   "pages": [
     {
@@ -138,6 +141,10 @@
             "The page follows the Category + Constraint pattern with one-second verdict, failure mechanism, survivor pattern, and tradeoff/flip condition.",
             "It uses conditional language rather than ranking or best-of language."
           ]
+        },
+        "search_intent_gate": {
+          "status": "not_evaluated",
+          "reason": "Earlier evidence and external validation gates block search-intent evaluation."
         },
         "indexing_gate": {
           "status": "fail",
@@ -260,17 +267,34 @@
             "The page avoids ranking language and stays conditional."
           ]
         },
+        "search_intent_gate": {
+          "status": "pass",
+          "target_queries": [
+            "time tracking tools without manual timers",
+            "time tracker without starting timer",
+            "automatic time tracking without manual timer",
+            "time tracker that runs in background",
+            "alternatives to manual time tracking"
+          ],
+          "notes": [
+            "The subtitle, meta description, and one-second verdict now directly address automatic time tracking, background timelines, and time tracking without starting every timer.",
+            "The page now includes compact tool-level direction for RescueTime, Timely, ActivityWatch, ManicTime, and Toggl Track.",
+            "The Quick comparison table covers capture style, review requirements, platform/setup caveats, and where each tool direction fits.",
+            "The Product proof checked section provides visible source links for material product behavior claims.",
+            "The page distinguishes background timeline tools, review-later workflows, and manual timer-first tracking without using rankings or generic listicle framing."
+          ]
+        },
         "indexing_gate": {
           "status": "pass",
           "should_be_submitted_or_indexed_now": true,
           "should_remain_proof_or_internal_for_now": false,
           "notes": [
-            "The page is publish_ready, so intentional indexing is now allowed under the production gate."
+            "The page is publish_ready again after search_intent_gate passed, so intentional indexing is allowed after deployment."
           ]
         }
       },
       "failed_gates": [],
-      "recommended_next_action": null
+      "recommended_next_action": "Deploy the strengthened page, run seo:check against the deployed state, then request indexing again after production is live."
     },
     {
       "route": "/team-collaboration-tools/for-clear-ownership",
@@ -408,6 +432,10 @@
             "The page uses the proof-page section layout, but the route expression drifts away from a stable Category + Constraint boundary.",
             "The broad category mix makes the page read more like a stitched set of adjacent proof examples than one controlled mechanism page."
           ]
+        },
+        "search_intent_gate": {
+          "status": "not_evaluated",
+          "reason": "Earlier mechanism, tool eligibility, evidence, external validation, and template gates block search-intent evaluation."
         },
         "indexing_gate": {
           "status": "fail",
