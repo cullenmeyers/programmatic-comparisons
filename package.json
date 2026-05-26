@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "seo:live": "node scripts/seo-live-check.mjs",
+    "seo:compare-policy": "node scripts/seo-compare-index-policy.mjs",
     "seo:status": "node scripts/seo-status.mjs",
     "rebuild:related": "node scripts/rebuild-related-comparisons.js",
     "verify:legacy-redirects": "node scripts/verify-legacy-comparison-redirects.mjs"
