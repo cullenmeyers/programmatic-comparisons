@@ -1,0 +1,784 @@
+{
+  "brief_name": "validate_existing_page_team_collaboration_tools_for_clear_ownership",
+  "brief_type": "validate_existing_page",
+  "page_identity": {
+    "category": "Team Collaboration Tools",
+    "constraint": "for clear ownership",
+    "route": "/team-collaboration-tools/for-clear-ownership",
+    "target_search_intent": [
+      "Find collaboration tools that keep responsibility, context, and next action visible after conversation moves on.",
+      "Avoid collaboration tools where teams have to reconstruct ownership from channels, threads, side chat, or scattered updates."
+    ],
+    "user_problem": "The user wants a team collaboration tool that makes it obvious who owns the next action without replaying conversations or checking parallel systems.",
+    "dominant_failure_mechanism": "The tool fails when responsibility is not attached clearly enough to the work itself, so ownership becomes ambiguous once work moves across people, threads, channels, or projects.",
+    "brief_type": "validate_existing_page"
+  },
+  "mechanism_contract": {
+    "exact_failure_trigger": "A team cannot see who owns the next action, decision, reply, or task from the work object itself and must instead infer ownership from message history, mentions, forwarding, labels, or side-channel coordination.",
+    "what_must_be_true": [
+      "The survivor must keep ownership visible inside the normal workflow, not only through optional admin setup or a separate tool the team may never open.",
+      "The page claim must turn on durable accountability after conversation moves on, not merely on faster communication or cleaner interface design.",
+      "If a tool survives, responsibility must stay attached to a task, issue, project, conversation, or inbox item in a way teammates can review later without reconstructing context."
+    ],
+    "what_does_not_count": [
+      "Real-time chat speed, channels, or threads by themselves do not prove clear ownership.",
+      "General project structure, timeline depth, or workflow rigor do not count unless they also make responsibility visibly attributable.",
+      "Optional task features hidden behind add-ons, tabs, or adjacent products do not automatically prove the base collaboration workflow keeps ownership clear.",
+      "Anchored discussion helps, but it is not enough unless the page is careful not to overstate it as explicit assignee-level accountability."
+    ],
+    "adjacent_mechanisms_to_exclude": [
+      "time_scarcity / interruption_management",
+      "feature_aversion / simplicity",
+      "control_ceiling / workflow_rigor",
+      "dependency_planning",
+      "general_context_cohesion without ownership visibility"
+    ],
+    "subcategory_scope": "Team collaboration tools where communication, tasks, issues, projects, or shared inbox workflows may carry ownership signals. Shared-inbox and project-management evidence can inform the route, but they do not automatically count as direct publish-proof for a team-collaboration page.",
+    "mechanism_drift_risks": [
+      "Confusing anchored conversations with explicit ownership.",
+      "Reusing busy-professional or minimalist evidence as if it proved handoff clarity.",
+      "Importing task-manager or project-management structure claims without proof that ownership is visible.",
+      "Ignoring mixed-mode products like Slack, Google Chat, Gmail, or Teams that now have assignment-capable add-ons or tabs.",
+      "Letting category boundaries blur so adjacent tools become proof instead of supporting context."
+    ]
+  },
+  "tool_eligibility_rules": {
+    "tools_that_can_be_named_if": [
+      "Current evidence shows the tool survives or fails specifically on visible ownership, assignment durability, or handoff clarity.",
+      "The tool is a realistic team-collaboration option for users solving ambiguous ownership, not a purely adjacent product with no route-level justification.",
+      "If the tool is mixed-mode, the page copy must be narrow about which workflow is being judged."
+    ],
+    "tools_that_should_not_be_named_if": [
+      "The only support is the category page's editorial summary.",
+      "The evidence proves speed, simplicity, or planning depth instead of ownership clarity.",
+      "The product has current assignment or task ownership features that materially weaken a generic failure claim, but the page still speaks absolutely."
+    ],
+    "required_evidence_for_survivor_group": [
+      "Proof that ownership is attached to the work object itself and remains visible after conversation moves on.",
+      "Proof that assignment, state, or next action can be reviewed later without replaying chat history."
+    ],
+    "required_evidence_for_failure_group": [
+      "Proof that normal use leaves responsibility scattered across messages, forwarding, mentions, or memory.",
+      "Proof that the tool's available ownership features are absent, too weak, too hidden, or too non-default to solve the page's constraint cleanly."
+    ],
+    "max_visible_survivor_tools": 5,
+    "max_visible_failure_tools": 5
+  },
+  "internal_evidence_requirements": {
+    "minimum_comparison_examples": 3,
+    "required_mechanism_match_count": 2,
+    "required_distinct_tools_count": 4,
+    "allowed_pairwise_evidence_sources": [
+      "Team-collaboration comparisons whose decision rule explicitly turns on ownership reconstruction, attached work context, or assignment visibility.",
+      "Current decision-engine mappings only when they point to coordination clarity or ownership reconstruction rather than adjacent throughput or simplicity claims.",
+      "Adjacent-category evidence only as secondary context, never as sole publish-proof."
+    ],
+    "weak_evidence_warning_conditions": [
+      "The cited comparison belongs to time-scarcity and is mainly about interruptions or batch communication.",
+      "The cited comparison belongs to minimalism and only proves simpler context, not explicit ownership.",
+      "The cited comparison belongs to task managers or project management and mainly proves dependencies, timeline planning, or workflow rigor.",
+      "The product now has built-in assignment features that the page's failure claim ignores."
+    ]
+  },
+  "tool_audit": [
+    {
+      "tool_name": "Asana",
+      "page_group": "survivor",
+      "evidence_classification": "externally_verified",
+      "why_it_is_in_group": "Asana is defensible as a survivor because current first-party docs explicitly support visible task ownership and connected task relationships, even though the page's cited internal comparison is the wrong mechanism.",
+      "evidence_support": [
+        "Official docs say tasks have clear owners and only one assignee, which is directly relevant to ownership clarity.",
+        "Official docs also describe dependencies that notify assignees when blocked work is cleared, which supports visible next-action handoffs.",
+        "The current page's Asana evidence item does not prove this cleanly, so the survivor claim rests more on external product facts than on route-pure internal evidence."
+      ],
+      "external_verification_still_needed": [
+        "Confirm which ownership-relevant features are available in normal plans versus gated plans, especially dependencies.",
+        "Find or create a team-collaboration comparison that proves clear ownership directly instead of borrowing from task-manager planning evidence."
+      ]
+    },
+    {
+      "tool_name": "Basecamp",
+      "page_group": "survivor",
+      "evidence_classification": "externally_verified",
+      "why_it_is_in_group": "Basecamp is a plausible survivor because current first-party materials show projects organizing discussions and assignments together, which supports ownership staying attached to project work rather than floating in standalone chat.",
+      "evidence_support": [
+        "Basecamp's official feature pages say projects keep tasks, discussions, deliverables, and decisions together in one structured place.",
+        "Basecamp also surfaces assignments on personal home screens and keeps discussion on to-dos attached to the to-do itself.",
+        "Of the page's cited comparisons, Basecamp vs Google Chat is the closest support; Basecamp vs Slack is a mechanism mismatch."
+      ],
+      "external_verification_still_needed": [
+        "Verify current to-do assignment behavior and whether comment context reliably stays attached to work objects in normal use.",
+        "Replace or downgrade the Slack comparison because it currently proves attention management more than ownership clarity."
+      ]
+    },
+    {
+      "tool_name": "Front",
+      "page_group": "survivor",
+      "evidence_classification": "externally_verified",
+      "why_it_is_in_group": "Front is one of the strongest ownership-mechanism fits because shared thread assignment and internal comments live directly on the work object, but the current page is borrowing that proof from a neighboring email-inbox category.",
+      "evidence_support": [
+        "Front help docs explicitly say conversations can be assigned to one teammate at a time and use internal comments inside the thread.",
+        "The cited Front vs Gmail comparison directly turns on shared ownership visibility and collaboration inside one thread.",
+        "The category mismatch means the page can use this as strong adjacent evidence, but not as the only publish-proof for a team-collaboration route."
+      ],
+      "external_verification_still_needed": [
+        "Confirm whether the assignment and internal context features used by the page are available in the relevant shared-inbox plans and normal configurations.",
+        "Decide whether Front belongs on this route as an adjacent collaboration tool or whether the page should stay stricter on category boundaries."
+      ]
+    },
+    {
+      "tool_name": "Linear",
+      "page_group": "survivor",
+      "evidence_classification": "externally_verified",
+      "why_it_is_in_group": "Linear is a plausible survivor because current docs explicitly show single-person issue assignment, visible states, assignment history, and triage routing, but the page's internal evidence currently proves workflow rigor more than ownership clarity.",
+      "evidence_support": [
+        "Linear docs state that issues are assigned to a single person at a time for clear ownership and responsibility.",
+        "Docs also describe visible issue states, My Issues views, activity history, and triage assignment rules.",
+        "The cited Linear vs Trello comparison is adjacent rather than exact because it focuses on enforced workflow states."
+      ],
+      "external_verification_still_needed": [
+        "Confirm which assignment and routing behaviors are standard versus Business or Enterprise features.",
+        "Find or create route-pure evidence showing ownership clarity directly, not just workflow consistency."
+      ]
+    },
+    {
+      "tool_name": "Slack",
+      "page_group": "failure",
+      "evidence_classification": "insufficient",
+      "why_it_is_in_group": "Slack cannot be published safely as a clean failure claim on this page because the cited internal comparison is about real-time monitoring, while current official Slack materials show assignable Lists workflows that materially weaken a generic ownership-failure claim.",
+      "evidence_support": [
+        "The page's cited Basecamp vs Slack comparison is already audited locally as a mismatched mechanism about interruption management.",
+        "Current Slack docs say Lists can assign tasks and keep comments on list items, which introduces a durable ownership path inside Slack.",
+        "That means the page's failure claim may still hold for chat-first channel use, but not for Slack generically."
+      ],
+      "external_verification_still_needed": [
+        "Verify whether Slack Lists is broadly available, default enough, and normal enough to count against a generic failure claim.",
+        "Determine whether the page should narrow the claim to channel-first chat workflows instead of Slack as a whole."
+      ]
+    },
+    {
+      "tool_name": "Gmail",
+      "page_group": "failure",
+      "evidence_classification": "insufficient",
+      "why_it_is_in_group": "Gmail has a real ownership weakness in plain shared-thread coordination, but the current page overstates the failure unless it distinguishes core Gmail from delegated inboxes and Google Groups collaborative inbox workflows.",
+      "evidence_support": [
+        "The cited Front vs Gmail comparison is a strong adjacent mechanism match for explicit shared ownership inside one thread.",
+        "Current Gmail docs describe delegation and also point to collaborative inboxes in Google Groups where members can assign conversations and track them as tasks.",
+        "That means 'Gmail fails first' is too broad unless the page is explicitly judging plain Gmail thread collaboration rather than the wider Google mail workflow."
+      ],
+      "external_verification_still_needed": [
+        "Separate plain Gmail, delegated inboxes, and collaborative inboxes before treating Gmail as a generic failure.",
+        "Verify whether the page is allowed to collapse Google Groups collaborative inbox behavior into a Gmail claim."
+      ]
+    },
+    {
+      "tool_name": "Google Chat",
+      "page_group": "failure",
+      "evidence_classification": "insufficient",
+      "why_it_is_in_group": "Google Chat is the closest failure-group candidate internally, but the product now has space tasks with assignment, so the page's generic failure claim needs tighter validation before publish.",
+      "evidence_support": [
+        "The Basecamp vs Google Chat comparison is the best internal route candidate because it shows anchored work context reducing reconstruction.",
+        "Current Google Chat docs say space members can create and assign tasks in Chat spaces, with assignees seeing tasks in Google Tasks.",
+        "Because ownership features now exist, the generic claim that Google Chat fails first on ownership is not settled without checking whether those features are default, durable, and normal in real use."
+      ],
+      "external_verification_still_needed": [
+        "Verify whether tasks in spaces are widely available, admin-gated, or limited in large spaces.",
+        "Decide whether the page is judging thread-only chat behavior or the fuller Chat plus Tasks workflow."
+      ]
+    },
+    {
+      "tool_name": "Microsoft Teams",
+      "page_group": "unplaced",
+      "evidence_classification": "insufficient",
+      "why_it_is_in_group": "Microsoft Teams is not currently named in the survivor or failure lists on the page, and there is not enough route-specific internal evidence to place it confidently even though adjacent Microsoft tools clearly support assignment workflows.",
+      "evidence_support": [
+        "Current Microsoft docs show Planner in Teams supports task assignment and channel-based collaboration on shared plans.",
+        "Teams chat also supports collaborative notes with task assignment through Loop, which suggests ownership can be made visible.",
+        "However, those capabilities often depend on Planner or Loop surfaces rather than proving that baseline Teams chat and channels alone satisfy the route's mechanism."
+      ],
+      "external_verification_still_needed": [
+        "Determine whether Teams should be judged as baseline chat/channels only or as the broader Teams plus Planner/Loop ecosystem.",
+        "Add internal route-level evidence before placing Teams in a survivor or failure group."
+      ]
+    }
+  ],
+  "evidence_audit": [
+    {
+      "slug": "basecamp-vs-slack-for-busy-professional",
+      "claimed_mechanism": "Slack fails when ownership has to be inferred from active chat and continuous monitoring.",
+      "actual_mechanism_supported": "time_scarcity / interruption_management / batch_vs_realtime communication",
+      "evidence_classification": "mismatched_mechanism",
+      "decision": "remove",
+      "reason": "This comparison proves that Slack is demanding to monitor in real time, not that ownership is durably unclear. It should not be used as publish-proof for a clear-ownership route."
+    },
+    {
+      "slug": "basecamp-vs-google-chat-for-minimalist",
+      "claimed_mechanism": "Google Chat fails when conversations must be reconnected manually to the work they belong to.",
+      "actual_mechanism_supported": "comparison_backed context anchoring with partial ownership-reconstruction relevance",
+      "evidence_classification": "comparison_backed",
+      "decision": "rewrite",
+      "reason": "This is the strongest internal route candidate, but it proves anchored context more directly than explicit assignee visibility. Keep only if the page rewrites it as context-linked ownership support rather than full assignment proof."
+    },
+    {
+      "slug": "front-vs-gmail-for-busy-professional",
+      "claimed_mechanism": "Gmail fails when several people need to own, discuss, and reply to the same thread without explicit assignment in the work itself.",
+      "actual_mechanism_supported": "adjacent_evidence for shared ownership visibility inside a shared inbox workflow",
+      "evidence_classification": "adjacent_evidence",
+      "decision": "replace",
+      "reason": "Mechanism fit is strong, but the category is Email / Inbox tools rather than Team Collaboration Tools. It can inform the route, but should not remain as core publish-proof unless the route intentionally allows cross-category evidence."
+    },
+    {
+      "slug": "asana-vs-trello-for-power-user",
+      "claimed_mechanism": "Asana survives because task relationships keep ownership and next action visible.",
+      "actual_mechanism_supported": "control_ceiling / dependency_planning",
+      "evidence_classification": "mismatched_mechanism",
+      "decision": "remove",
+      "reason": "This comparison proves planning depth and visible task sequencing, not clear ownership as the dominant mechanism. It is too indirect to justify an ownership page."
+    },
+    {
+      "slug": "linear-vs-trello-for-power-user",
+      "claimed_mechanism": "Linear survives because ownership and state stay attached to structured issues.",
+      "actual_mechanism_supported": "adjacent_evidence for workflow rigor and visible issue states",
+      "evidence_classification": "adjacent_evidence",
+      "decision": "replace",
+      "reason": "The comparison is closer than Asana vs Trello, but it still proves enforced workflow structure more than ownership clarity itself. Use only after replacing it with evidence that explicitly turns on assignee visibility or handoff accountability."
+    }
+  ],
+  "external_research_requirements": {
+    "tools_considered": [
+      {
+        "tool_name": "Asana",
+        "current_product_behavior": {
+          "finding": "Current first-party docs describe tasks with a single assignee, collaborators, and dependencies that notify assignees when blocked work clears.",
+          "source_urls": [
+            "https://help.asana.com/s/article/different-types-of-tasks?language=en_US",
+            "https://asana.com/features/project-management/tasks",
+            "https://asana.com/resources/why-one-assignee"
+          ],
+          "needs_external_verification": false
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Need to verify how quickly a new team reaches visible ownership in normal use and whether any key handoff features are plan-gated.",
+          "source_urls": [
+            "https://help.asana.com/s/article/different-types-of-tasks?language=en_US"
+          ],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "The page's failure trigger does not appear strongly in Asana's core task model, but current route evidence is still indirect.",
+          "source_urls": [
+            "https://asana.com/features/project-management/tasks"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Yes, but current page support relies more on external facts than on route-pure internal evidence.",
+          "source_urls": [
+            "https://asana.com/features/project-management/tasks",
+            "https://asana.com/resources/why-one-assignee"
+          ],
+          "needs_external_verification": false
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Check plan gating for dependencies because the page's copy currently leans on relationships between tasks.",
+          "source_urls": [
+            "https://help.asana.com/s/article/different-types-of-tasks?language=en_US"
+          ],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Not central unless ownership clarity on this route depends on external inbox or chat integrations.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [
+          "https://help.asana.com/s/article/different-types-of-tasks?language=en_US",
+          "https://asana.com/features/project-management/tasks",
+          "https://asana.com/resources/why-one-assignee"
+        ],
+        "date_checked": "2026-05-09",
+        "evidence_confidence": "medium_high",
+        "research_notes": "Good external ownership signal; weak current internal route evidence."
+      },
+      {
+        "tool_name": "Basecamp",
+        "current_product_behavior": {
+          "finding": "Basecamp's current feature pages present projects as one place for tasks, discussions, deliverables, and assignments, with discussion attached to work objects.",
+          "source_urls": [
+            "https://basecamp.com/features",
+            "https://basecamp.com/"
+          ],
+          "needs_external_verification": false
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Need a more direct first-party source on to-do assignment and comment attachment behavior than marketing copy alone.",
+          "source_urls": [
+            "https://basecamp.com/learn/beyond-the-basics/working-with-to-dos"
+          ],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "The page's failure trigger appears weaker in Basecamp than in chat-first tools because projects and assignments are already work-centered.",
+          "source_urls": [
+            "https://basecamp.com/features"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Likely yes, but still needs direct documentation on assignment visibility to move from plausible to fully publish-safe.",
+          "source_urls": [
+            "https://basecamp.com/features",
+            "https://basecamp.com/learn/beyond-the-basics/working-with-to-dos"
+          ],
+          "needs_external_verification": true
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Only relevant if assignment-heavy workflows differ materially between Basecamp Free and paid plans.",
+          "source_urls": [
+            "https://basecamp.com/pricing/"
+          ],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Not central to the route's mechanism.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [
+          "https://basecamp.com/features",
+          "https://basecamp.com/",
+          "https://basecamp.com/learn/beyond-the-basics/working-with-to-dos"
+        ],
+        "date_checked": "2026-05-09",
+        "evidence_confidence": "medium",
+        "research_notes": "Mechanism plausible; needs stronger direct product documentation than the current route has."
+      },
+      {
+        "tool_name": "Front",
+        "current_product_behavior": {
+          "finding": "Front currently supports assigning conversations to one teammate at a time and keeping internal comments or discussions inside shared thread workflows.",
+          "source_urls": [
+            "https://help.front.com/en/articles/2344",
+            "https://help.front.com/en/articles/2098",
+            "https://help.front.com/en/articles/2257"
+          ],
+          "needs_external_verification": false
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Need to confirm whether clear shared ownership depends on specific shared inbox setup or plan tier rather than default team use.",
+          "source_urls": [
+            "https://help.front.com/en/articles/2344"
+          ],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "The clear-ownership failure trigger is largely addressed in Front's shared-inbox model.",
+          "source_urls": [
+            "https://help.front.com/en/articles/2344"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Yes. Assignment and internal context live on the conversation.",
+          "source_urls": [
+            "https://help.front.com/en/articles/2344",
+            "https://help.front.com/en/articles/2257"
+          ],
+          "needs_external_verification": false
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Need to check whether the specific shared ownership features used by this route vary by plan.",
+          "source_urls": [
+            "https://front.com/"
+          ],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Not central unless the route treats support or CRM integration as part of ownership visibility.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [
+          "https://help.front.com/en/articles/2344",
+          "https://help.front.com/en/articles/2098",
+          "https://help.front.com/en/articles/2257"
+        ],
+        "date_checked": "2026-05-09",
+        "evidence_confidence": "high",
+        "research_notes": "Strong mechanism fit; main issue is category adjacency, not missing product behavior."
+      },
+      {
+        "tool_name": "Linear",
+        "current_product_behavior": {
+          "finding": "Linear docs currently describe single-person issue assignment, visible states, assignment history, My Issues, and triage automation for routing work.",
+          "source_urls": [
+            "https://linear.app/docs/assigning-issues",
+            "https://linear.app/docs/configuring-workflows",
+            "https://linear.app/docs/my-issues"
+          ],
+          "needs_external_verification": false
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Need to verify which ownership-relevant workflows are default versus plan-gated or team-configured.",
+          "source_urls": [
+            "https://linear.app/docs/assigning-issues",
+            "https://linear.app/docs/configuring-workflows"
+          ],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "The page's failure trigger appears weaker in Linear because issues have explicit assignees and visible states.",
+          "source_urls": [
+            "https://linear.app/docs/assigning-issues"
+          ],
+          "needs_external_verification": false
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Yes, but the route still needs internal evidence that proves ownership clarity rather than just issue-tracking rigor.",
+          "source_urls": [
+            "https://linear.app/docs/assigning-issues",
+            "https://linear.app/docs/my-issues"
+          ],
+          "needs_external_verification": false
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Check triage-rule and insight plan gating because some assignment automation is not universal.",
+          "source_urls": [
+            "https://linear.app/docs/assigning-issues"
+          ],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Integrations matter only if the route starts relying on imported issues or support-tool handoffs.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [
+          "https://linear.app/docs/assigning-issues",
+          "https://linear.app/docs/configuring-workflows",
+          "https://linear.app/docs/my-issues"
+        ],
+        "date_checked": "2026-05-09",
+        "evidence_confidence": "high",
+        "research_notes": "Strong external ownership support; current page evidence is still the weak link."
+      },
+      {
+        "tool_name": "Slack",
+        "current_product_behavior": {
+          "finding": "Slack remains chat-first, but current official materials also show Lists where teams can assign tasks and keep focused threads on list items.",
+          "source_urls": [
+            "https://slack.com/help/articles/27588021944339-Slack-lists--Track-project-tasks",
+            "https://slack.com/features/task-list",
+            "https://slack.com/intl/en-gb/help/articles/4412369188627-Automations--Create-and-assign-tasks-in-Slack"
+          ],
+          "needs_external_verification": false
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Need to verify whether Lists is default-enough and common-enough that it should change the route's generic failure claim.",
+          "source_urls": [
+            "https://slack.com/help/articles/27588021944339-Slack-lists--Track-project-tasks"
+          ],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "Yes in ordinary channel chat workflows; not universally once Lists and assignable task workflows are included.",
+          "source_urls": [
+            "https://slack.com/features/task-list",
+            "https://slack.com/help/articles/27588021944339-Slack-lists--Track-project-tasks"
+          ],
+          "needs_external_verification": true
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Partly. Slack now has explicit ownership paths through Lists, which weakens the page's absolute failure framing.",
+          "source_urls": [
+            "https://slack.com/help/articles/27588021944339-Slack-lists--Track-project-tasks"
+          ],
+          "needs_external_verification": false
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Need to verify plan or workspace availability of Lists and related ownership features.",
+          "source_urls": [
+            "https://slack.com/features/task-list"
+          ],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Integration-based task assignment should not be confused with core Slack ownership support unless the page says so.",
+          "source_urls": [
+            "https://slack.com/intl/en-gb/help/articles/4412369188627-Automations--Create-and-assign-tasks-in-Slack"
+          ],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [
+          "https://slack.com/help/articles/27588021944339-Slack-lists--Track-project-tasks",
+          "https://slack.com/features/task-list",
+          "https://slack.com/intl/en-gb/help/articles/4412369188627-Automations--Create-and-assign-tasks-in-Slack"
+        ],
+        "date_checked": "2026-05-09",
+        "evidence_confidence": "medium",
+        "research_notes": "Current generic failure claim is too absolute."
+      },
+      {
+        "tool_name": "Gmail",
+        "current_product_behavior": {
+          "finding": "Gmail supports delegated inbox access, and Gmail Help points users to Google Groups collaborative inboxes for assigned conversation workflows.",
+          "source_urls": [
+            "https://support.google.com/mail/answer/138350",
+            "https://support.google.com/mail/answer/138350?hl=en"
+          ],
+          "needs_external_verification": false
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Need to verify whether collaborative inbox behavior should count as Gmail for this route or as a separate Google Groups workflow.",
+          "source_urls": [
+            "https://support.google.com/mail/answer/138350"
+          ],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "Yes in plain multi-person thread coordination without explicit shared ownership inside the message thread, but not universally across Google's broader mail workflows.",
+          "source_urls": [
+            "https://support.google.com/mail/answer/138350"
+          ],
+          "needs_external_verification": true
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Partly. Delegation and collaborative inbox workflows exist, but the page's current Gmail claim does not distinguish them.",
+          "source_urls": [
+            "https://support.google.com/mail/answer/138350"
+          ],
+          "needs_external_verification": false
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Only relevant if collaborative ownership behaviors depend on Google Workspace rather than consumer Gmail.",
+          "source_urls": [
+            "https://support.google.com/mail/answer/138350?hl=en"
+          ],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Not central unless the page starts relying on external ticketing or inbox overlays.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [
+          "https://support.google.com/mail/answer/138350",
+          "https://support.google.com/mail/answer/138350?hl=en"
+        ],
+        "date_checked": "2026-05-09",
+        "evidence_confidence": "medium",
+        "research_notes": "The plain Gmail failure story is plausible, but the broader Google mail workflow is mixed."
+      },
+      {
+        "tool_name": "Google Chat",
+        "current_product_behavior": {
+          "finding": "Google Chat spaces can currently create and assign group tasks to space members, with tasks visible in the space and in Google Tasks.",
+          "source_urls": [
+            "https://support.google.com/chat/answer/9920628?co=GENIE.Platform%3DAndroid&hl=en"
+          ],
+          "needs_external_verification": false
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Need to verify admin enablement, platform consistency, and whether tasks in spaces are normal enough to override the page's failure framing.",
+          "source_urls": [
+            "https://support.google.com/chat/answer/9920628?co=GENIE.Platform%3DAndroid&hl=en"
+          ],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "Yes in thread-only or message-only workflows; not universally if spaces use assignable tasks effectively.",
+          "source_urls": [
+            "https://support.google.com/chat/answer/9920628?co=GENIE.Platform%3DAndroid&hl=en"
+          ],
+          "needs_external_verification": true
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Partly. Assignable tasks clearly exist, but the page's current copy ignores them.",
+          "source_urls": [
+            "https://support.google.com/chat/answer/9920628?co=GENIE.Platform%3DAndroid&hl=en"
+          ],
+          "needs_external_verification": false
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Need to verify Workspace, admin, or space-size limitations because the docs note assignment limits in large spaces.",
+          "source_urls": [
+            "https://support.google.com/chat/answer/9920628?co=GENIE.Platform%3DAndroid&hl=en"
+          ],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Not central; this is mainly about native space tasks.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [
+          "https://support.google.com/chat/answer/9920628?co=GENIE.Platform%3DAndroid&hl=en"
+        ],
+        "date_checked": "2026-05-09",
+        "evidence_confidence": "medium",
+        "research_notes": "Strongest internal failure candidate, but current product facts make the generic claim incomplete."
+      },
+      {
+        "tool_name": "Microsoft Teams",
+        "current_product_behavior": {
+          "finding": "Teams currently supports shared planning and assignment through Planner tabs, and collaborative notes in chat can assign tasks via Loop.",
+          "source_urls": [
+            "https://support.microsoft.com/en-us/office/add-planner-as-a-tab-in-microsoft-teams-83302f43-f821-47a2-8181-921c36437e22",
+            "https://support.microsoft.com/en-us/office/work-with-app-powered-tasks-in-the-planner-app-in-microsoft-teams-16d2f882-aad5-4346-a459-4dfd9fc9a457",
+            "https://support.microsoft.com/en-us/office/use-collaborative-notes-in-microsoft-teams-chats-6f19dd1f-b37a-47a2-9795-bb5deb4d0f58"
+          ],
+          "needs_external_verification": false
+        },
+        "onboarding_setup_flow_if_relevant": {
+          "finding": "Need to determine whether these ownership mechanisms count as normal Teams behavior or adjacent Microsoft app behavior layered inside Teams.",
+          "source_urls": [
+            "https://support.microsoft.com/en-us/office/add-planner-as-a-tab-in-microsoft-teams-83302f43-f821-47a2-8181-921c36437e22"
+          ],
+          "needs_external_verification": true
+        },
+        "whether_failure_trigger_actually_appears": {
+          "finding": "Unclear as a generic claim because Teams can support ownership workflows, but baseline channel chat may still allow responsibility to drift.",
+          "source_urls": [
+            "https://support.microsoft.com/en-us/office/overview-of-teams-and-channels-c3d63c10-77d5-4204-a566-53ddcf723b46",
+            "https://support.microsoft.com/en-us/office/use-collaborative-notes-in-microsoft-teams-chats-6f19dd1f-b37a-47a2-9795-bb5deb4d0f58"
+          ],
+          "needs_external_verification": true
+        },
+        "whether_survival_mechanism_actually_exists": {
+          "finding": "Yes in Planner and Loop-supported workflows, but not yet proven as the default route behavior the page should judge.",
+          "source_urls": [
+            "https://support.microsoft.com/en-us/office/assign-people-to-tasks-3a1b23f0-4dce-43a2-ae0f-b4c7bc1164b4",
+            "https://support.microsoft.com/en-us/office/use-collaborative-notes-in-microsoft-teams-chats-6f19dd1f-b37a-47a2-9795-bb5deb4d0f58"
+          ],
+          "needs_external_verification": false
+        },
+        "pricing_free_plan_limitations_if_relevant": {
+          "finding": "Need to check license and plan gating for Planner and advanced assignment views.",
+          "source_urls": [
+            "https://support.microsoft.com/en-us/office/manage-your-team-s-plans-with-planner-in-teams-69a7f060-57dd-48bb-829a-55ae39ae2d89"
+          ],
+          "needs_external_verification": true
+        },
+        "integrations_if_relevant": {
+          "finding": "Relevant only insofar as Planner and Loop are treated as native enough to count for this route.",
+          "source_urls": [],
+          "needs_external_verification": true
+        },
+        "official_docs_source_urls_if_available": [
+          "https://support.microsoft.com/en-us/office/add-planner-as-a-tab-in-microsoft-teams-83302f43-f821-47a2-8181-921c36437e22",
+          "https://support.microsoft.com/en-us/office/use-collaborative-notes-in-microsoft-teams-chats-6f19dd1f-b37a-47a2-9795-bb5deb4d0f58",
+          "https://support.microsoft.com/en-us/office/assign-people-to-tasks-3a1b23f0-4dce-43a2-ae0f-b4c7bc1164b4"
+        ],
+        "date_checked": "2026-05-09",
+        "evidence_confidence": "medium",
+        "research_notes": "Not page-ready without clearer product-boundary rules."
+      }
+    ],
+    "missing_research": [
+      {
+        "fact_to_verify": "Whether ownership or assignment is visible inside the default workflow for each named tool, not only in optional add-ons, tabs, or adjacent products.",
+        "why_it_matters": "This is the core route mechanism and the page currently overgeneralizes several mixed-mode tools.",
+        "official_docs_source_urls_needed_later": [
+          "https://help.asana.com/s/article/different-types-of-tasks?language=en_US",
+          "https://basecamp.com/features",
+          "https://help.front.com/en/articles/2344",
+          "https://linear.app/docs/assigning-issues",
+          "https://slack.com/help/articles/27588021944339-Slack-lists--Track-project-tasks",
+          "https://support.google.com/mail/answer/138350",
+          "https://support.google.com/chat/answer/9920628?co=GENIE.Platform%3DAndroid&hl=en",
+          "https://support.microsoft.com/en-us/office/add-planner-as-a-tab-in-microsoft-teams-83302f43-f821-47a2-8181-921c36437e22"
+        ],
+        "date_checked": ""
+      },
+      {
+        "fact_to_verify": "Whether responsibility is attached to work objects or still scattered across messages, comments, labels, or side channels in normal team use.",
+        "why_it_matters": "The page currently mixes explicit assignment mechanisms with mere context organization.",
+        "official_docs_source_urls_needed_later": [
+          "https://basecamp.com/features",
+          "https://help.front.com/en/articles/2344",
+          "https://linear.app/docs/my-issues",
+          "https://support.google.com/mail/answer/138350"
+        ],
+        "date_checked": ""
+      },
+      {
+        "fact_to_verify": "Whether shared inbox ownership is explicit and durable enough to count as direct route evidence, and whether cross-category inbox tools should be allowed as publish-proof.",
+        "why_it_matters": "Front is one of the strongest mechanism fits, but it comes from a neighboring category boundary.",
+        "official_docs_source_urls_needed_later": [
+          "https://help.front.com/en/articles/2344",
+          "https://support.google.com/mail/answer/138350"
+        ],
+        "date_checked": ""
+      },
+      {
+        "fact_to_verify": "Whether project or task ownership is visible without reconstructing context from history, and whether the route should accept workflow-rigor evidence as ownership evidence.",
+        "why_it_matters": "The current Asana and Linear citations are drifting from planning structure into ownership claims.",
+        "official_docs_source_urls_needed_later": [
+          "https://help.asana.com/s/article/different-types-of-tasks?language=en_US",
+          "https://linear.app/docs/assigning-issues",
+          "https://linear.app/docs/configuring-workflows"
+        ],
+        "date_checked": ""
+      },
+      {
+        "fact_to_verify": "Whether chat-first tools such as Slack, Google Chat, and Teams support durable accountability natively enough to invalidate a generic failure grouping, or only improve conversation speed while ownership still drifts.",
+        "why_it_matters": "These are the highest-risk tool claims on the page because current official docs show assignment-capable workflows that the current copy ignores.",
+        "official_docs_source_urls_needed_later": [
+          "https://slack.com/help/articles/27588021944339-Slack-lists--Track-project-tasks",
+          "https://support.google.com/chat/answer/9920628?co=GENIE.Platform%3DAndroid&hl=en",
+          "https://support.microsoft.com/en-us/office/use-collaborative-notes-in-microsoft-teams-chats-6f19dd1f-b37a-47a2-9795-bb5deb4d0f58",
+          "https://support.microsoft.com/en-us/office/add-planner-as-a-tab-in-microsoft-teams-83302f43-f821-47a2-8181-921c36437e22"
+        ],
+        "date_checked": ""
+      }
+    ]
+  },
+  "publish_readiness_assessment": {
+    "decision": "needs_more_research",
+    "reasoning": [
+      "The route mechanism is real and worth evaluating: clear ownership is a distinct way collaboration tools succeed or fail.",
+      "Basecamp vs Google Chat is the only cited evidence item that comes close to the route's dominant mechanism from inside the same broad category.",
+      "Front, Asana, Basecamp, and Linear all have meaningful first-party ownership signals, but the current page is not consistently using route-pure internal proof for them.",
+      "Slack, Gmail, Google Chat, and Microsoft Teams are mixed or ambiguous under current product behavior because official docs now show ownership-capable workflows the page does not account for.",
+      "Multiple current evidence items are mismatched, adjacent, or cross-category, so the page is not publish-safe as a proof page yet."
+    ],
+    "blocking_gaps": [
+      "Slack is supported by the wrong mechanism internally and is externally ambiguous because Slack Lists adds assignment capability.",
+      "Gmail and Google Chat have current Google-owned workflows that complicate the page's generic failure claims.",
+      "Asana and Linear are named as survivors using internal evidence that mainly proves planning or workflow rigor rather than ownership clarity.",
+      "Front is strong adjacent evidence, but the route has not settled whether cross-category shared-inbox proof is allowed as core support."
+    ],
+    "required_next_actions": [
+      "Replace or remove mismatched evidence items, especially Basecamp vs Slack, Asana vs Trello, and Linear vs Trello.",
+      "Decide whether cross-category shared-inbox evidence like Front vs Gmail can count as direct publish-proof for team collaboration pages.",
+      "Externally resolve mixed-mode ownership behavior for Slack, Gmail, Google Chat, and Teams before scaling this page type.",
+      "Keep the page as validation work or template proof until route-pure evidence and product-boundary rules are stronger."
+    ]
+  },
+  "publish_readiness_summary": {
+    "should_index_now": false,
+    "recommended_state": "template_proof_only",
+    "strongest_evidence": [
+      "Current first-party ownership documentation for Front and Linear",
+      "Basecamp vs Google Chat for anchored context and reduced responsibility reconstruction",
+      "Current first-party ownership documentation for Asana and Basecamp"
+    ],
+    "weakest_evidence": [
+      "basecamp-vs-slack-for-busy-professional",
+      "asana-vs-trello-for-power-user",
+      "linear-vs-trello-for-power-user",
+      "The generic Slack, Gmail, and Google Chat failure claims without current product-boundary qualification"
+    ],
+    "tool_claims_needing_external_verification": [
+      "Basecamp assignment visibility details",
+      "Slack generic failure claim",
+      "Gmail generic failure claim",
+      "Google Chat generic failure claim",
+      "Microsoft Teams placement on the route",
+      "Asana plan-gating for ownership-relevant features",
+      "Linear plan-gating for routing and triage features",
+      "Front category-boundary use as route proof"
+    ]
+  },
+  "needs_external_verification": true
+}

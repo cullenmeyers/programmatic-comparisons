@@ -3616,6 +3616,22 @@ function renderTimeTrackingToolsHub() {
       </section>
 
       <section className="content-stack gap-4">
+        <SectionHeading title="Decision guide" />
+        <Card className="space-y-2">
+          <Link
+            href="/time-tracking-tools/without-manual-timers"
+            className="text-base font-semibold text-black underline-offset-4 hover:underline"
+          >
+            Time Tracking Tools Without Manual Timers
+          </Link>
+          <p className="text-sm leading-6 text-black/70">
+            See what fails first when tracking depends on remembering every
+            timer start, stop, or switch.
+          </p>
+        </Card>
+      </section>
+
+      <section className="content-stack gap-4">
         <SectionHeading title="Start By Your Situation" />
         <PersonaSituationGrid personas={personas} />
       </section>
