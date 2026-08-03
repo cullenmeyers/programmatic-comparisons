@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import ButtonLink from "@/components/ui/ButtonLink";
 import Card from "@/components/ui/Card";
 import SectionHeading from "@/components/ui/SectionHeading";
 import PairGateFromCategoryGate from "@/components/gates/PairGateFromCategoryGate";
-import comparisonEvidenceAudit from "../../../../content/seo/comparison-evidence-audit.json";
 import { getCategoryGate } from "@/content/categoryGates";
 import {
   getComparisonDisplayTitle,
@@ -19,16 +19,6 @@ import {
 import { absoluteUrl } from "@/lib/site";
 
 type Params = { slug: string };
-type ComparisonEvidenceAuditEntry = {
-  slug: string;
-  current_status?: string;
-  reuse_allowed?: boolean;
-};
-
-type ComparisonEvidenceAuditFile = {
-  audited_comparisons?: ComparisonEvidenceAuditEntry[];
-};
-
 const SITUATION_FILTERS = [
   { label: "Publish fast", constraintSlug: "setup-tolerance" },
   { label: "Works without upkeep", constraintSlug: "maintenance-load" },
@@ -65,21 +55,6 @@ function isSituationConstraintSlug(value: string): value is SituationConstraintS
   return SITUATION_FILTERS.some((filter) => filter.constraintSlug === value);
 }
 
-const comparisonEvidenceAuditBySlug = new Map(
-  ((comparisonEvidenceAudit as ComparisonEvidenceAuditFile).audited_comparisons ?? []).map(
-    (entry) => [entry.slug, entry]
-  )
-);
-
-function isIndexableLegacyComparison(slug: string) {
-  const auditEntry = comparisonEvidenceAuditBySlug.get(slug);
-
-  return (
-    auditEntry?.current_status === "verified_evidence" &&
-    auditEntry.reuse_allowed === true
-  );
-}
-
 export async function generateStaticParams() {
   return listPageSlugs().map((slug) => ({ slug }));
 }
@@ -106,18 +81,16 @@ export async function generateMetadata({
   const description =
     doc.meta_description?.trim() ||
     `See which option fails first under this constraint and which one is the better pick for ${doc.persona.toLowerCase()}.`;
-  const isIndexable = isIndexableLegacyComparison(slug);
-
   return {
     title: getComparisonSeoTitle(doc),
     description,
     alternates: {
       canonical: absoluteUrl(`/compare/${slug}`),
     },
-    // Legacy comparison pages stay live and crawlable, but only audited
-    // verified evidence pages remain indexable search inventory.
+    // Legacy comparison pages stay live and crawlable so search engines can
+    // process the noindex directive without treating them as public inventory.
     robots: {
-      index: isIndexable,
+      index: false,
       follow: true,
     },
   };
@@ -414,17 +387,7 @@ export default async function ComparePage({
   const doc = loadPageBySlug(slug);
 
   if (!doc) {
-    return (
-      <main className="site-container page-shell content-stack">
-        <h1 className="text-2xl font-semibold tracking-tight">Comparison not found</h1>
-        <p className="text-black/70">
-          That page does not exist yet. Go back to the comparisons list.
-        </p>
-        <ButtonLink href="/compare" variant="ghost" className="px-0 py-0">
-          All comparisons
-        </ButtonLink>
-      </main>
-    );
+    notFound();
   }
 
   const { xName, yName } = getToolNamesFromDoc(doc);

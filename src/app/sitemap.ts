@@ -2,7 +2,7 @@
 import type { MetadataRoute } from "next";
 import fs from "fs";
 import path from "path";
-import { listCategoryIndexes, listPageSlugs } from "@/lib/pages";
+import { listCategoryIndexes } from "@/lib/pages";
 import { getSiteUrl } from "@/lib/site";
 
 type CategoryConstraintStatus = {
@@ -16,28 +16,11 @@ type CategoryConstraintStatusFile = {
   pages?: CategoryConstraintStatus[];
 };
 
-type ComparisonEvidenceAudit = {
-  slug: string;
-  current_status?: string;
-  reuse_allowed?: boolean;
-};
-
-type ComparisonEvidenceAuditFile = {
-  audited_comparisons?: ComparisonEvidenceAudit[];
-};
-
 const CATEGORY_CONSTRAINT_STATUS_PATH = path.join(
   process.cwd(),
   "content",
   "seo",
   "category-constraint-page-status.json"
-);
-
-const COMPARISON_EVIDENCE_AUDIT_PATH = path.join(
-  process.cwd(),
-  "content",
-  "seo",
-  "comparison-evidence-audit.json"
 );
 
 function readJsonFile<T>(filePath: string): T | null {
@@ -64,26 +47,6 @@ function listPublishReadyCategoryConstraintRoutes(): string[] {
     .filter(Boolean);
 }
 
-function listAuditedComparisonSlugs(): string[] {
-  const auditFile = readJsonFile<ComparisonEvidenceAuditFile>(
-    COMPARISON_EVIDENCE_AUDIT_PATH
-  );
-
-  if (!auditFile?.audited_comparisons?.length) {
-    return [];
-  }
-
-  const existingSlugs = new Set(listPageSlugs());
-
-  return auditFile.audited_comparisons
-    .filter(
-      (page) =>
-        page.current_status === "verified_evidence" && page.reuse_allowed === true
-    )
-    .map((page) => page.slug)
-    .filter((slug): slug is string => Boolean(slug && existingSlugs.has(slug)));
-}
-
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = getSiteUrl();
   const now = new Date();
@@ -94,15 +57,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.3 },
     { url: `${siteUrl}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.2 },
   ];
-
-  // Legacy comparison pages are still public; this sitemap policy only reduces
-  // which legacy URLs we actively submit as primary crawl inventory.
-  const compareRoutes: MetadataRoute.Sitemap = listAuditedComparisonSlugs().map((slug) => ({
-    url: `${siteUrl}/compare/${slug}`,
-    lastModified: now,
-    changeFrequency: "weekly",
-    priority: 0.7,
-  }));
 
   const categoryRoutes: MetadataRoute.Sitemap = listCategoryIndexes().map((category) => ({
     url: `${siteUrl}/${category.slug}`,
@@ -122,12 +76,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     }));
 
-  // The sitemap now prioritizes category hubs, publish-ready routes, and
-  // audited legacy comparisons instead of emitting the full frozen corpus.
-  return [
-    ...staticRoutes,
-    ...categoryRoutes,
-    ...categoryConstraintRoutes,
-    ...compareRoutes,
-  ];
+  return [...staticRoutes, ...categoryRoutes, ...categoryConstraintRoutes];
 }

@@ -2,10 +2,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const EXPECTED_INDEXABLE_SLUGS = [
-  'notion-vs-todoist-for-beginner',
-  'rescuetime-vs-toggl-track-for-busy-professional',
-];
+const EXPECTED_INDEXABLE_SLUGS = [];
 
 const VERBOSE_LIMIT = 25;
 const INDEXABLE_WARNING_LIMIT = 10;
@@ -125,9 +122,6 @@ function main() {
       );
     }
 
-    if (entry.current_status === 'verified_evidence' && entry.reuse_allowed === true) {
-      indexableSlugSet.add(slug);
-    }
   });
 
   const expectedIndexableSlugSet = new Set(EXPECTED_INDEXABLE_SLUGS);
