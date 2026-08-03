@@ -23,6 +23,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: absoluteUrl("/compare"),
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 function firstSentence(text: string) {
