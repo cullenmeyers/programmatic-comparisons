@@ -13,7 +13,7 @@ type CategoryLink = {
   sublinks: { label: string; href: string }[];
 };
 
-type ExampleLink = {
+type StartingPointLink = {
   label: string;
   href: string;
 };
@@ -91,18 +91,30 @@ const categories: CategoryLink[] = [
   },
 ];
 
-const examples: ExampleLink[] = [
+const startingPoints: StartingPointLink[] = [
   {
-    label: "Apple Notes vs Notion for beginners",
-    href: "/compare/apple-notes-vs-notion-for-beginner",
+    label: "Time tracking tools",
+    href: "/time-tracking-tools",
   },
   {
-    label: "Apple Notes vs Evernote for non-technical users",
-    href: "/compare/apple-notes-vs-evernote-for-non-technical-user",
+    label: "Time tracking without manual timers",
+    href: "/time-tracking-tools/without-manual-timers",
   },
   {
-    label: "Google Calendar vs Skedda for solo users",
-    href: "/compare/google-calendar-vs-skedda-for-solo-user",
+    label: "Task managers",
+    href: "/task-managers",
+  },
+  {
+    label: "Note-taking apps",
+    href: "/note-taking-apps",
+  },
+  {
+    label: "Project management tools",
+    href: "/project-management-tools",
+  },
+  {
+    label: "Team collaboration tools",
+    href: "/team-collaboration-tools",
   },
 ];
 
@@ -127,11 +139,8 @@ export default function HomePage() {
         </div>
 
         <div className="flex flex-wrap items-center gap-3">
-          <ButtonLink href="/compare" variant="primary">
-            Compare two tools
-          </ButtonLink>
-          <ButtonLink href="/tools" variant="secondary">
-            Pick a tool with quick filters
+          <ButtonLink href="/tools" variant="primary">
+            Find tools by situation
           </ButtonLink>
         </div>
 
@@ -225,15 +234,18 @@ export default function HomePage() {
 
       <section className="content-stack gap-4">
         <SectionHeading
-          title="Popular comparisons"
-          subtitle="Prefer a straight head-to-head? Start here."
+          title="Popular starting points"
+          subtitle="Choose a category or start with a focused guide."
         />
         <Card>
           <ul className="space-y-3 text-sm">
-            {examples.map((example) => (
-              <li key={example.href}>
-                <Link href={example.href} className="text-black/80 hover:text-black">
-                  {example.label}
+            {startingPoints.map((startingPoint) => (
+              <li key={startingPoint.href}>
+                <Link
+                  href={startingPoint.href}
+                  className="text-black/80 hover:text-black"
+                >
+                  {startingPoint.label}
                 </Link>
               </li>
             ))}

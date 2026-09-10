@@ -6,7 +6,6 @@ import { PUBLIC_BRAND_NAME } from "@/lib/site";
 import { cx } from "./classnames";
 
 const navItems = [
-  { href: "/compare", label: "Compare" },
   { href: "/tools", label: "Find Tools" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
