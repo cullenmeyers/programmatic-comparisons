@@ -1929,84 +1929,6 @@ const TEAM_COLLABORATION_TOP_COMPARISONS: TopComparison[] = [
   },
 ];
 
-const TIME_TRACKING_PERSONAS: DecisionPersona[] = [
-  {
-    name: "Beginner",
-    explanation:
-      "Setup breaks first here. If the tool makes you configure billing, teams, or reporting before you start one timer, it already lost.",
-    comparisonSlugs: [
-      "accountsight-vs-clockify-for-beginner",
-      "clockify-vs-journyx-for-beginner",
-      "clockify-vs-replicon-for-beginner",
-      "officetime-vs-toggl-track-for-beginner",
-    ],
-  },
-  {
-    name: "Solo user",
-    explanation:
-      "Maintenance breaks first here. If the tracker needs constant cleanup, subscriptions, or admin care just to keep logging time, it becomes another chore.",
-    comparisonSlugs: [
-      "activitywatch-vs-clockify-for-solo-user",
-      "activitywatch-vs-rescuetime-for-solo-user",
-      "clockify-vs-manictime-for-solo-user",
-      "activitywatch-vs-timely-for-solo-user",
-    ],
-  },
-  {
-    name: "Student",
-    explanation:
-      "Switching cost breaks first here. If the tool asks for more setup than the class or short project lasts, it fails.",
-    comparisonSlugs: [
-      "atracker-vs-kimai-for-student",
-      "buddy-punch-vs-harvest-for-student",
-    ],
-  },
-  {
-    name: "Busy professional",
-    explanation:
-      "Daily friction breaks first here. If starting timers, correcting entries, or feeding a heavier workflow slows the day down, the tool loses.",
-    comparisonSlugs: [
-      "clockify-vs-rescuetime-for-busy-professional",
-      "everhour-vs-timeular-for-busy-professional",
-      "paymo-track-vs-toggl-track-for-busy-professional",
-      "accelo-vs-timely-for-busy-professional",
-    ],
-  },
-  {
-    name: "Power user",
-    explanation:
-      "Ceiling breaks first here. If the tracker caps out on control, reporting depth, automation, or data ownership, it fails later but harder.",
-    comparisonSlugs: [
-      "clockify-vs-kimai-for-power-user",
-      "timely-vs-timingapp-for-power-user",
-      "timing-time-tracking-app-vs-toggl-track-for-power-user",
-      "intervals-vs-timedoctor-for-power-user",
-    ],
-  },
-  {
-    name: "Non-technical user",
-    explanation:
-      "Fear of breaking things breaks first here. If the tool feels knob-heavy, easy to misconfigure, or structurally confusing, trust disappears.",
-    comparisonSlugs: [
-      "clockify-vs-timepanic-for-non-technical-user",
-      "harvest-vs-kimai-for-non-technical-user",
-      "paymo-vs-replicon-for-non-technical-user",
-      "trackingtime-vs-zoho-projects-for-non-technical-user",
-    ],
-  },
-  {
-    name: "Minimalist",
-    explanation:
-      "Feature weight breaks first here. If the tool wraps simple time capture in project suite overhead, planning layers, or extra rituals, it fails.",
-    comparisonSlugs: [
-      "accelo-vs-toggl-track-for-minimalist",
-      "clockify-vs-timely-for-minimalist",
-      "activitywatch-vs-rescuetime-for-minimalist",
-      "ora-vs-toggl-track-for-minimalist",
-    ],
-  },
-];
-
 const TIME_TRACKING_TOP_COMPARISONS: TopComparison[] = [
   {
     slug: "accountsight-vs-clockify-for-beginner",
@@ -3568,77 +3490,167 @@ function renderTeamCollaborationToolsHub() {
 }
 
 function renderTimeTrackingToolsHub() {
-  const personas = buildPersonaSituationCards(TIME_TRACKING_PERSONAS, "time-tracking-tools");
   const topComparisons = buildTopComparisonCards(TIME_TRACKING_TOP_COMPARISONS);
 
   return (
     <main className="site-container page-shell content-stack">
-      <div className="text-sm">
-        <ButtonLink href="/compare" variant="ghost" className="px-0 py-0">
-          All comparisons
-        </ButtonLink>
-      </div>
-
       <header className="max-w-3xl space-y-4">
         <h1 className="text-4xl font-semibold tracking-tight text-black sm:text-5xl">
           Time Tracking Tools
         </h1>
+        <p className="max-w-2xl text-base leading-7 text-black/70">
+          Choose a time-tracking tool by identifying how tracking is most
+          likely to fail in real use: missed timers, misattributed work,
+          privacy concerns, reporting gaps, setup friction, or the cost of
+          switching later.
+        </p>
       </header>
 
       <section className="content-stack gap-4">
-        <SectionHeading title="One-Second Verdict" />
+        <SectionHeading
+          title="Start here"
+          subtitle="Use the path that matches the decision you need to make."
+        />
+        <div className="grid gap-4 md:grid-cols-2">
+          <Card className="space-y-2">
+            <Link
+              href="/time-tracking-tools/without-manual-timers"
+              className="text-base font-semibold text-black underline-offset-4 hover:underline"
+            >
+              Find tools that do not rely on manual timers
+            </Link>
+            <p className="text-sm leading-6 text-black/70">
+              Start here if remembering every timer start, stop, or task switch
+              is the part most likely to break.
+            </p>
+          </Card>
+          <Card className="space-y-2">
+            <Link
+              href="/tools/time-tracking-tools"
+              className="text-base font-semibold text-black underline-offset-4 hover:underline"
+            >
+              Use the time-tracking tool finder
+            </Link>
+            <p className="text-sm leading-6 text-black/70">
+              Work through your constraints when you need help narrowing the
+              category rather than comparing a predetermined pair.
+            </p>
+          </Card>
+        </div>
+      </section>
+
+      <section className="content-stack gap-4">
+        <SectionHeading
+          title="Common failure modes"
+          subtitle="A useful tracker is one whose weak point does not collide with your workflow."
+        />
+        <div className="grid gap-4 md:grid-cols-2">
+          {[
+            {
+              title: "Forgetting to start timers",
+              copy: "A timer can be simple and still fail if starting, stopping, and switching it depends on memory throughout the day.",
+            },
+            {
+              title: "Inaccurate project attribution",
+              copy: "Captured hours are less useful when work is routinely assigned to the wrong client, project, or task and needs later cleanup.",
+            },
+            {
+              title: "Privacy or local-data concerns",
+              copy: "Decide what activity may be captured, where records should live, and what level of visibility is acceptable before adopting a workflow.",
+            },
+            {
+              title: "Team billing and reporting needs",
+              copy: "If tracked time feeds invoices, budgets, or team reporting, confirm that the workflow produces the structure those outputs require.",
+            },
+            {
+              title: "Setup friction",
+              copy: "Projects, clients, permissions, and integrations can improve structure, but too much setup can prevent consistent use from starting.",
+            },
+            {
+              title: "Switching cost",
+              copy: "Consider the effort to move existing records, rebuild project structure, retrain habits, and preserve the reports you depend on.",
+            },
+          ].map((failureMode) => (
+            <Card key={failureMode.title} className="space-y-2">
+              <h2 className="text-lg font-semibold tracking-tight text-black">
+                {failureMode.title}
+              </h2>
+              <p className="text-sm leading-6 text-black/70">
+                {failureMode.copy}
+              </p>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      <section className="content-stack gap-4">
+        <SectionHeading
+          title="Choose by situation"
+          subtitle="These routes narrow the decision without declaring one tool best overall."
+        />
+        <div className="grid gap-4 md:grid-cols-2">
+          {[
+            {
+              href: "/time-tracking-tools/without-manual-timers",
+              title: "You forget to start or switch timers",
+              copy: "Use the focused guide to examine workflows that reduce dependence on manual timer habits.",
+            },
+            {
+              href: "/tools/time-tracking-tools/setup-tolerance",
+              title: "You need to limit setup friction",
+              copy: "Choose according to how much configuration you are willing to complete before tracking becomes useful.",
+            },
+            {
+              href: "/tools/time-tracking-tools/time-scarcity",
+              title: "Daily tracking time is scarce",
+              copy: "Focus on the amount of interaction the tracking workflow adds to a normal workday.",
+            },
+            {
+              href: "/tools/time-tracking-tools/maintenance-load",
+              title: "You want less ongoing cleanup",
+              copy: "Consider how much review, correction, and administration the workflow may require after setup.",
+            },
+          ].map((situation) => (
+            <Card key={situation.href} className="space-y-2">
+              <Link
+                href={situation.href}
+                className="text-base font-semibold text-black underline-offset-4 hover:underline"
+              >
+                {situation.title}
+              </Link>
+              <p className="text-sm leading-6 text-black/70">{situation.copy}</p>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      <section className="content-stack gap-4">
+        <SectionHeading title="How to choose" />
         <Card className="space-y-3">
-          <p className="text-base leading-7 text-black/80">
-            Most time tracking tools fail when logging time takes too much
-            effort or the system grows heavier than the work. What breaks first
-            is usually setup, daily timer friction, maintenance, complexity, or
-            ceiling under reporting and control.
+          <p className="text-sm leading-6 text-black/80">
+            Begin with the failure mode that would make your records incomplete
+            or unusable. A low-friction timer is not enough if work ends up on
+            the wrong project, and detailed reporting is not enough if people
+            stop tracking because setup or daily use is too demanding.
           </p>
-          <p className="text-base leading-7 text-black/80">
-            The winner is the tool that does not fail first under that
-            pressure.
+          <p className="text-sm leading-6 text-black/80">
+            Separate capture from output. First decide how time should be
+            recorded and corrected. Then decide whether you need client
+            billing, team reporting, local data, or a lighter personal record.
           </p>
-        </Card>
-      </section>
-
-      <section className="content-stack gap-4">
-        <SectionHeading title="Quick Decision" />
-        <Card>
-          <ul className="list-disc space-y-2 pl-5 text-sm leading-6 text-black/80">
-            <li>If setup friction is the first thing you will reject -&gt; Clockify</li>
-            <li>If daily manual timer starts are what break the habit -&gt; ActivityWatch</li>
-            <li>If client billing must stay tied to tracked time -&gt; Harvest</li>
-            <li>If control and ownership matter more than hosted convenience -&gt; Kimai</li>
-            <li>If short-term use with low switching cost matters -&gt; ATracker</li>
-            <li>If feature weight is the thing you cannot tolerate -&gt; Toggl Track</li>
-          </ul>
-        </Card>
-      </section>
-
-      <section className="content-stack gap-4">
-        <SectionHeading title="Decision guide" />
-        <Card className="space-y-2">
-          <Link
-            href="/time-tracking-tools/without-manual-timers"
-            className="text-base font-semibold text-black underline-offset-4 hover:underline"
-          >
-            Time Tracking Tools Without Manual Timers
-          </Link>
-          <p className="text-sm leading-6 text-black/70">
-            See what fails first when tracking depends on remembering every
-            timer start, stop, or switch.
+          <p className="text-sm leading-6 text-black/80">
+            Finally, account for adoption: the setup you can tolerate now, the
+            cleanup you can sustain, and the cost of moving away later.
           </p>
         </Card>
       </section>
 
       <section className="content-stack gap-4">
-        <SectionHeading title="Start By Your Situation" />
-        <PersonaSituationGrid personas={personas} />
-      </section>
-
-      <section className="content-stack gap-4">
-        <SectionHeading title="Top Comparisons" />
-        <div className="grid gap-4">
+        <SectionHeading
+          title="Comparison evidence"
+          subtitle="Use these pairwise pages to inspect specific tradeoffs after you identify your failure mode."
+        />
+        <div className="grid gap-4 md:grid-cols-2">
           {topComparisons.map((comparison) => (
             <Card key={comparison.slug} className="space-y-2">
               <p className="text-xs font-semibold uppercase tracking-[0.14em] text-black/55">
@@ -3653,26 +3665,6 @@ function renderTimeTrackingToolsHub() {
             </Card>
           ))}
         </div>
-      </section>
-
-      {renderSituationFilterSection("time-tracking-tools")}
-
-      <section className="content-stack gap-4">
-        <SectionHeading title="How To Choose" />
-        <Card className="space-y-3">
-          <p className="text-sm leading-6 text-black/80">
-            Pick the time tracking tool that does not fail first under your
-            constraint.
-          </p>
-          <p className="text-sm leading-6 text-black/80">
-            Start with the pressure that shows up first: setup, timer friction,
-            maintenance, simplicity, or ceiling.
-          </p>
-          <p className="text-sm leading-6 text-black/80">
-            Then open the comparison where that break point is tested most
-            directly.
-          </p>
-        </Card>
       </section>
     </main>
   );
