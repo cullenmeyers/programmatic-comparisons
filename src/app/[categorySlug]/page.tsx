@@ -3491,6 +3491,180 @@ function renderTeamCollaborationToolsHub() {
 
 function renderTimeTrackingToolsHub() {
   const topComparisons = buildTopComparisonCards(TIME_TRACKING_TOP_COMPARISONS);
+  const toolEvidence = [
+    {
+      tool: "Toggl Track",
+      trackingStyle:
+        "Manual entries and running timers; optional Timeline recording and rule-based autotracking in desktop apps.",
+      fit: "You want timer-first tracking with activity context available for filling gaps.",
+      tradeoff:
+        "Client attribution runs through projects, and automatic capture still needs rules or later conversion into time entries.",
+      dataControl:
+        "Cloud workspace; desktop Timeline activity can remain local when cloud sync is disabled.",
+      billingFit:
+        "Projects, clients, billable entries, reports, and paid team-reporting features are documented.",
+      sources: [
+        {
+          label: "timer and Timeline docs",
+          href: "https://support.toggl.com/en-us/article/toggl-track-desktop-app-for-windows-5w1y5/",
+        },
+        {
+          label: "client workflow docs",
+          href: "https://support.toggl.com/en-us/article/how-to-track-time-for-a-client-rlw6ja/",
+        },
+      ],
+    },
+    {
+      tool: "Clockify",
+      trackingStyle:
+        "Running timer, manual entries, timesheets, and a desktop auto tracker.",
+      fit: "You want several capture methods feeding a project/client reporting workflow.",
+      tradeoff:
+        "Auto-tracked activity stays local and private until the user manually converts it into time entries.",
+      dataControl:
+        "Account time entries sync online; raw auto-tracker records are stored locally and deleted after 45 days.",
+      billingFit:
+        "Projects, clients, billable status, team roles, invoices, and multiple report views are documented; some controls require paid plans.",
+      sources: [
+        {
+          label: "auto-tracker docs",
+          href: "https://clockify.me/help/track-time-and-expenses/auto-tracker",
+        },
+        {
+          label: "reports docs",
+          href: "https://clockify.me/help/getting-started/understand-use-your-reports",
+        },
+      ],
+    },
+    {
+      tool: "RescueTime",
+      trackingStyle:
+        "Automatic computer-activity tracking with suggested project blocks that users review and confirm.",
+      fit: "Forgetting timers is the main failure, but you can still review attribution before reporting.",
+      tradeoff:
+        "Raw activity does not become reportable project time until suggestions are accepted, adjusted, or manually assigned.",
+      dataControl:
+        "Vendor-hosted service; official privacy controls cover collection detail, deletion, and ignored activities.",
+      billingFit:
+        "Timesheets supports clients, projects, tasks, billable rates, exports, and team approvals on the Team+ plan.",
+      sources: [
+        {
+          label: "Timesheets overview",
+          href: "https://help.rescuetime.com/article/400-rescuetime-timesheets",
+        },
+        {
+          label: "team Timesheets docs",
+          href: "https://help.rescuetime.com/article/420-rescuetime-timesheets-for-teams",
+        },
+      ],
+    },
+    {
+      tool: "Timely",
+      trackingStyle:
+        "Automatic activity tracking and AI-drafted timesheets, plus a manual timer.",
+      fit: "You want automatic capture tied to project budgets and team time reporting.",
+      tradeoff:
+        "It is a paid subscription after the trial, and project/user limits vary by plan.",
+      dataControl:
+        "Vendor-hosted cloud service; a self-hosted or on-premise option was not verified in the cited official source.",
+      billingFit:
+        "Billable rates, project budgets, report exports, and progressively deeper team controls are documented by plan.",
+      sources: [
+        {
+          label: "official plans and feature matrix",
+          href: "https://www.timely.com/pricing/",
+        },
+      ],
+    },
+    {
+      tool: "ActivityWatch",
+      trackingStyle:
+        "Automatic app, window, idle, and optional browser activity capture.",
+      fit: "Local, private activity history matters more than a ready-made billing workflow.",
+      tradeoff:
+        "Structured client/project attribution, invoicing, and team billing support are unknown from the reviewed official docs.",
+      dataControl:
+        "Free and open source; data is stored locally in an on-device SQLite database and is not sent to ActivityWatch servers.",
+      billingFit:
+        "Unknown for native client billing and team reporting; raw bucket export is documented.",
+      sources: [
+        {
+          label: "privacy policy",
+          href: "https://docs.activitywatch.net/en/latest/privacy.html",
+        },
+        {
+          label: "getting-started docs",
+          href: "https://docs.activitywatch.net/en/latest/getting-started.html",
+        },
+      ],
+    },
+    {
+      tool: "ManicTime",
+      trackingStyle:
+        "Automatic activity capture with manual or rule-based tags for clients, projects, and tasks.",
+      fit: "You want passive capture with a choice between managed cloud and infrastructure you control.",
+      tradeoff:
+        "Useful billing structure depends on consistent tags or auto-tagging rules; on-premise deployment requires technical administration.",
+      dataControl:
+        "Cloud or on-premise; official docs say on-premise data remains on your hardware.",
+      billingFit:
+        "Tag-based timesheets, reports, team management, invoice workflows, and integrations are documented.",
+      sources: [
+        {
+          label: "cloud versus on-premise",
+          href: "https://www.manictime.com/features/cloud-or-on-premise",
+        },
+        {
+          label: "tagging docs",
+          href: "https://docs.manictime.com/win-client/settings/tagging",
+        },
+      ],
+    },
+    {
+      tool: "Harvest",
+      trackingStyle:
+        "Running timers and after-the-fact daily or weekly time entry.",
+      fit: "Client billing and team/project reporting matter more than passive activity capture.",
+      tradeoff:
+        "Every entry uses a client project and task structure; native passive computer-activity tracking is unknown from the reviewed official docs.",
+      dataControl:
+        "Vendor-hosted account with web, desktop, and mobile apps; a self-hosted option was not verified.",
+      billingFit:
+        "Client projects, billable rates, invoices, budgets, time reports, and paid team reporting are documented.",
+      sources: [
+        {
+          label: "quick-start guide",
+          href: "https://support.getharvest.com/hc/en-us/articles/4411239395341-Quick-start-guide",
+        },
+        {
+          label: "plans and reporting features",
+          href: "https://www.getharvest.com/pricing",
+        },
+      ],
+    },
+    {
+      tool: "Kimai",
+      trackingStyle:
+        "One-click running timer and timesheet entry organized by customer, project, and activity.",
+      fit: "You need explicit billing structure and want either self-hosted control or a managed cloud option.",
+      tradeoff:
+        "Customer, project, and activity are mandatory for every record; self-hosting adds installation, updates, security, and backup work.",
+      dataControl:
+        "Free, open-source self-hosting or paid Kimai Cloud.",
+      billingFit:
+        "Teams, rates, reports, exports, budgets, and customer-based invoices are documented; some extensions are paid plugins.",
+      sources: [
+        {
+          label: "initial-setup docs",
+          href: "https://www.kimai.org/documentation/initial-setup.html",
+        },
+        {
+          label: "deployment options",
+          href: "https://www.kimai.org/en/open-source-time-tracker",
+        },
+      ],
+    },
+  ];
 
   return (
     <main className="site-container page-shell content-stack">
@@ -3541,34 +3715,34 @@ function renderTimeTrackingToolsHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading
-          title="Common failure modes"
-          subtitle="A useful tracker is one whose weak point does not collide with your workflow."
+          title="Choose by failure mode"
+          subtitle="Start with the failure that would make otherwise accurate time data unusable."
         />
         <div className="grid gap-4 md:grid-cols-2">
           {[
             {
-              title: "Forgetting to start timers",
-              copy: "A timer can be simple and still fail if starting, stopping, and switching it depends on memory throughout the day.",
+              title: "Forgetting timers",
+              copy: "Check whether capture runs automatically, whether it merely reminds you to start a timer, and whether captured activity still needs review before it becomes a timesheet.",
             },
             {
-              title: "Inaccurate project attribution",
-              copy: "Captured hours are less useful when work is routinely assigned to the wrong client, project, or task and needs later cleanup.",
+              title: "Attribution cleanup",
+              copy: "Check whether time is assigned during capture, suggested afterward, or organized through tags—and how easily a user can correct several blocks at once.",
             },
             {
-              title: "Privacy or local-data concerns",
-              copy: "Decide what activity may be captured, where records should live, and what level of visibility is acceptable before adopting a workflow.",
+              title: "Local or private data",
+              copy: "Check where raw activity and finished time entries are stored, whether cloud sync is optional, and who can see window titles, URLs, or reports.",
             },
             {
-              title: "Team billing and reporting needs",
-              copy: "If tracked time feeds invoices, budgets, or team reporting, confirm that the workflow produces the structure those outputs require.",
+              title: "Team billing",
+              copy: "Check the client/project hierarchy, billable-rate rules, approvals, invoice flow, exports, and which of those features require a paid plan.",
             },
             {
-              title: "Setup friction",
-              copy: "Projects, clients, permissions, and integrations can improve structure, but too much setup can prevent consistent use from starting.",
+              title: "Low setup tolerance",
+              copy: "Check what must exist before the first useful entry: an installed desktop recorder, projects and clients, tagging rules, integrations, or team permissions.",
             },
             {
-              title: "Switching cost",
-              copy: "Consider the effort to move existing records, rebuild project structure, retrain habits, and preserve the reports you depend on.",
+              title: "Maintenance burden",
+              copy: "Check the recurring review and correction work, plus who owns updates, backups, security, and uptime when self-hosting is involved.",
             },
           ].map((failureMode) => (
             <Card key={failureMode.title} className="space-y-2">
@@ -3585,62 +3759,131 @@ function renderTimeTrackingToolsHub() {
 
       <section className="content-stack gap-4">
         <SectionHeading
-          title="Choose by situation"
-          subtitle="These routes narrow the decision without declaring one tool best overall."
+          title="Time-tracking tools by failure mode"
+          subtitle="This is a tradeoff matrix, not an overall ranking. Every row is based on the linked first-party documentation."
         />
-        <div className="grid gap-4 md:grid-cols-2">
-          {[
-            {
-              href: "/time-tracking-tools/without-manual-timers",
-              title: "You forget to start or switch timers",
-              copy: "Use the focused guide to examine workflows that reduce dependence on manual timer habits.",
-            },
-            {
-              href: "/tools/time-tracking-tools/setup-tolerance",
-              title: "You need to limit setup friction",
-              copy: "Choose according to how much configuration you are willing to complete before tracking becomes useful.",
-            },
-            {
-              href: "/tools/time-tracking-tools/time-scarcity",
-              title: "Daily tracking time is scarce",
-              copy: "Focus on the amount of interaction the tracking workflow adds to a normal workday.",
-            },
-            {
-              href: "/tools/time-tracking-tools/maintenance-load",
-              title: "You want less ongoing cleanup",
-              copy: "Consider how much review, correction, and administration the workflow may require after setup.",
-            },
-          ].map((situation) => (
-            <Card key={situation.href} className="space-y-2">
-              <Link
-                href={situation.href}
-                className="text-base font-semibold text-black underline-offset-4 hover:underline"
-              >
-                {situation.title}
-              </Link>
-              <p className="text-sm leading-6 text-black/70">{situation.copy}</p>
+        <div className="grid gap-4 lg:grid-cols-2">
+          {toolEvidence.map((tool) => (
+            <Card key={tool.tool} className="space-y-4">
+              <div className="space-y-1">
+                <h2 className="text-xl font-semibold tracking-tight text-black">
+                  {tool.tool}
+                </h2>
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-black/55">
+                  Evidence status: verified from official sources
+                </p>
+              </div>
+              <dl className="space-y-3 text-sm leading-6">
+                {[
+                  ["Tracking style", tool.trackingStyle],
+                  ["Best-fit condition", tool.fit],
+                  ["Main tradeoff", tool.tradeoff],
+                  ["Data/control model", tool.dataControl],
+                  ["Billing/team reporting fit", tool.billingFit],
+                ].map(([label, value]) => (
+                  <div key={label}>
+                    <dt className="font-semibold text-black">{label}</dt>
+                    <dd className="text-black/70">{value}</dd>
+                  </div>
+                ))}
+              </dl>
+              <p className="text-xs leading-5 text-black/60">
+                Official evidence: {tool.sources.map((source, index) => (
+                  <span key={source.href}>
+                    {index > 0 ? ", " : ""}
+                    <a
+                      href={source.href}
+                      className="underline underline-offset-4 hover:text-black"
+                    >
+                      {source.label}
+                    </a>
+                  </span>
+                ))}
+              </p>
             </Card>
           ))}
         </div>
       </section>
 
       <section className="content-stack gap-4">
-        <SectionHeading title="How to choose" />
+        <SectionHeading
+          title="Tool evidence notes"
+          subtitle="Facts that change the decision, including the limits of the available evidence."
+        />
+        <div className="grid gap-4 md:grid-cols-2">
+          <Card className="space-y-2">
+            <h2 className="text-lg font-semibold tracking-tight text-black">
+              Automatic capture is not automatic attribution
+            </h2>
+            <p className="text-sm leading-6 text-black/70">
+              Toggl Track and Clockify can record activity context, but their
+              official docs still describe creating time entries from that
+              context. RescueTime suggests project blocks for review. Timely
+              documents AI-drafted timesheets. ManicTime uses tags and rules.
+            </p>
+          </Card>
+          <Card className="space-y-2">
+            <h2 className="text-lg font-semibold tracking-tight text-black">
+              Local capture and local deployment are different
+            </h2>
+            <p className="text-sm leading-6 text-black/70">
+              ActivityWatch keeps its data on the device. ManicTime and Kimai
+              document on-premise or self-hosted deployments. Clockify stores
+              raw auto-tracker activity locally, while completed entries sync
+              to the account. Toggl can keep Timeline activity local when its
+              cloud sync is disabled.
+            </p>
+          </Card>
+          <Card className="space-y-2">
+            <h2 className="text-lg font-semibold tracking-tight text-black">
+              Billing structure creates setup work
+            </h2>
+            <p className="text-sm leading-6 text-black/70">
+              Harvest requires time to be attached to a task inside a client
+              project. Kimai requires customer, project, and activity on every
+              record. Toggl Track connects a client through a project. These
+              structures improve reporting but must be designed and maintained.
+            </p>
+          </Card>
+          <Card className="space-y-2">
+            <h2 className="text-lg font-semibold tracking-tight text-black">
+              Unknown means not verified
+            </h2>
+            <p className="text-sm leading-6 text-black/70">
+              Native passive tracking was not verified for Harvest or Kimai.
+              Native client billing and team reporting were not verified for
+              ActivityWatch. Self-hosted deployment was not verified for
+              Toggl Track, Clockify, RescueTime, Timely, or Harvest. Those
+              points remain unknown here rather than inferred from missing docs.
+            </p>
+          </Card>
+        </div>
+      </section>
+
+      <section className="content-stack gap-4">
+        <SectionHeading title="When manual timers are the failure" />
         <Card className="space-y-3">
           <p className="text-sm leading-6 text-black/80">
-            Begin with the failure mode that would make your records incomplete
-            or unusable. A low-friction timer is not enough if work ends up on
-            the wrong project, and detailed reporting is not enough if people
-            stop tracking because setup or daily use is too demanding.
+            If remembering to start, stop, or switch a timer is already the
+            known problem, use the focused guide. It looks more closely at the
+            difference between passive capture, reminders, suggestions, and a
+            finished timesheet.
           </p>
+          <ButtonLink href="/time-tracking-tools/without-manual-timers">
+            Compare workflows without manual-timer dependence
+          </ButtonLink>
+        </Card>
+      </section>
+
+      <section className="content-stack gap-4">
+        <SectionHeading title="What this page does not decide" />
+        <Card>
           <p className="text-sm leading-6 text-black/80">
-            Separate capture from output. First decide how time should be
-            recorded and corrected. Then decide whether you need client
-            billing, team reporting, local data, or a lighter personal record.
-          </p>
-          <p className="text-sm leading-6 text-black/80">
-            Finally, account for adoption: the setup you can tolerate now, the
-            cleanup you can sustain, and the cost of moving away later.
+            This page does not name one best time-tracking tool. It narrows the
+            tradeoff to inspect next: capture reliability, attribution cleanup,
+            data location, billing structure, setup, or maintenance. Pricing,
+            plan limits, platform support, and privacy settings can change, so
+            confirm the linked official source before adopting a workflow.
           </p>
         </Card>
       </section>
