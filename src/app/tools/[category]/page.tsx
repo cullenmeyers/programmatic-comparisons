@@ -30,6 +30,232 @@ function getCategoryGates(category: string) {
     .sort((a, b) => a.embedBlockTitle.localeCompare(b.embedBlockTitle));
 }
 
+const TIME_TRACKING_FILTER_COPY: Record<
+  string,
+  { title: string; description: string; prompt: string }
+> = {
+  "time-scarcity": {
+    title: "Tracking interrupts the work",
+    description:
+      "Use this when starting, stopping, switching, or correcting entries is the habit most likely to break.",
+    prompt: "Check daily tracking friction",
+  },
+  "setup-tolerance": {
+    title: "Setup delays the first useful entry",
+    description:
+      "Use this when you need a workable tracking routine before you configure projects, rules, or reporting structure.",
+    prompt: "Check setup effort",
+  },
+  "maintenance-load": {
+    title: "Cleanup becomes recurring admin",
+    description:
+      "Use this when forgotten entries, corrections, and ongoing organization are more likely to sink the system than initial setup.",
+    prompt: "Check ongoing upkeep",
+  },
+  "feature-aversion": {
+    title: "Extra features get in the way",
+    description:
+      "Use this when you want the act of recording time to stay simple instead of becoming part of a larger work-management system.",
+    prompt: "Check feature load",
+  },
+  "fear-of-breaking": {
+    title: "The system feels easy to misconfigure",
+    description:
+      "Use this when people may avoid corrections or reporting changes because they are worried about damaging the setup.",
+    prompt: "Check configuration risk",
+  },
+  "ceiling-check": {
+    title: "Reporting needs may outgrow the tool",
+    description:
+      "Use this when clients, projects, billing rules, or reporting depth are likely to become more demanding later.",
+    prompt: "Check room to grow",
+  },
+};
+
+function TimeTrackingToolsPage({
+  gates,
+}: {
+  gates: ReturnType<typeof getCategoryGates>;
+}) {
+  const orderedGates = [
+    ...gates.filter((gate) => gate.constraintSlug === "time-scarcity"),
+    ...gates.filter((gate) => gate.constraintSlug !== "time-scarcity"),
+  ];
+
+  return (
+    <main className="site-container page-shell content-stack">
+      <header className="max-w-3xl space-y-5">
+        <ButtonLink href="/tools" variant="ghost" className="px-0 py-0">
+          All tool pickers
+        </ButtonLink>
+        <div className="space-y-4">
+          <p className="text-sm font-semibold uppercase tracking-wide text-black/55">
+            Interactive time-tracking software picker
+          </p>
+          <h1 className="text-4xl font-semibold tracking-tight text-black sm:text-5xl">
+            Choose a time tracker by what is most likely to go wrong
+          </h1>
+          <p className="max-w-2xl text-base leading-7 text-black/70">
+            Pick the failure mode that matches your work. The picker will let
+            you check one tool or compare two tools against that specific
+            constraint—without declaring one product best overall.
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <ButtonLink
+            href="/tools/time-tracking-tools/time-scarcity"
+            variant="primary"
+          >
+            Start with daily tracking friction
+          </ButtonLink>
+          <ButtonLink href="#failure-modes" variant="ghost">
+            See every decision input
+          </ButtonLink>
+        </div>
+      </header>
+
+      <section className="content-stack gap-4">
+        <SectionHeading title="What this picker helps you decide" />
+        <div className="grid gap-4 sm:grid-cols-2">
+          {[
+            [
+              "Will people keep using it?",
+              "Test whether tracking asks for too much attention during a normal workday.",
+            ],
+            [
+              "How much setup is realistic?",
+              "Separate tools that become useful quickly from tools that ask for more configuration first.",
+            ],
+            [
+              "What upkeep can you tolerate?",
+              "Check whether corrections, organization, and routine maintenance are likely to become the real cost.",
+            ],
+            [
+              "How much headroom do you need?",
+              "Account for future clients, projects, billing rules, and reporting needs without treating complexity as automatically better.",
+            ],
+          ].map(([title, description]) => (
+            <Card key={title} className="space-y-2">
+              <h2 className="text-lg font-semibold tracking-tight text-black">
+                {title}
+              </h2>
+              <p className="text-sm leading-6 text-black/70">{description}</p>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      <section id="failure-modes" className="content-stack scroll-mt-24 gap-4">
+        <div className="max-w-3xl space-y-2">
+          <SectionHeading title="Choose based on your failure mode" />
+          <p className="text-sm leading-6 text-black/70">
+            Start with the problem most likely to make your tracking system
+            fail. Each path opens an interactive check for one tool or a
+            side-by-side check for two tools.
+          </p>
+        </div>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {orderedGates.map((gate) => {
+            const copy = TIME_TRACKING_FILTER_COPY[gate.constraintSlug];
+
+            return (
+              <Card
+                key={`${gate.categorySlug}-${gate.constraintSlug}`}
+                className={`space-y-3 ${
+                  gate.constraintSlug === "time-scarcity"
+                    ? "border-black/20 bg-black/[0.03]"
+                    : ""
+                }`}
+              >
+                <h2 className="text-lg font-semibold tracking-tight text-black">
+                  {copy?.title ?? cleanTitle(gate.embedBlockTitle)}
+                </h2>
+                <p className="text-sm leading-6 text-black/70">
+                  {copy?.description ?? gate.description[0]}
+                </p>
+                <Link
+                  href={`/tools/${gate.categorySlug}/${gate.constraintSlug}`}
+                  className="inline-block text-sm font-medium text-black/80 hover:text-black hover:underline"
+                >
+                  {copy?.prompt ?? "Open this decision check"}
+                </Link>
+              </Card>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="content-stack gap-4">
+        <SectionHeading title="How the picker works" />
+        <ol className="grid gap-4 sm:grid-cols-3">
+          {[
+            ["1", "Name the failure mode", "Choose the constraint that would cause the tracking habit or system to break first."],
+            ["2", "Select one or two tools", "Check a tool you are considering, or put two options through the same constraint."],
+            ["3", "Use the result as a screen", "Rule out an option that fails your non-negotiable, then repeat with another input if needed."],
+          ].map(([step, title, description]) => (
+            <li key={step} className="rounded-xl border border-black/10 bg-white p-5">
+              <p className="text-xs font-semibold uppercase tracking-wide text-black/45">
+                Step {step}
+              </p>
+              <h2 className="mt-2 text-base font-semibold text-black">{title}</h2>
+              <p className="mt-2 text-sm leading-6 text-black/70">{description}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="content-stack gap-4">
+        <SectionHeading title="What inputs matter" />
+        <div className="max-w-3xl space-y-3 text-sm leading-6 text-black/70">
+          <p>
+            The useful inputs are behavioral, not a generic feature count: how
+            often work changes context, who must remember to record time, how
+            much correction is acceptable, how much setup the team will finish,
+            and how detailed reports must become.
+          </p>
+          <p>
+            Choose the input that is genuinely non-negotiable first. A tool can
+            pass one filter and fail another, so the result is a fit check—not a
+            universal ranking.
+          </p>
+        </div>
+      </section>
+
+      <section className="content-stack gap-4">
+        <SectionHeading title="Why manual timers fail for some users" />
+        <Card className="max-w-3xl space-y-3">
+          <p className="text-sm leading-6 text-black/70">
+            A manual timer adds a small decision at every start, stop, and task
+            switch. For people who change context often, those decisions are
+            easy to miss; the missing time then has to be reconstructed later.
+            Other users prefer that deliberate control, so timer dependence is
+            a workflow question rather than a universal flaw.
+          </p>
+          <Link
+            href="/time-tracking-tools/without-manual-timers"
+            className="inline-block text-sm font-medium text-black/80 hover:text-black hover:underline"
+          >
+            Read the deeper guide to time tracking without manual timers
+          </Link>
+        </Card>
+      </section>
+
+      <section className="content-stack gap-4">
+        <SectionHeading title="Need the category overview?" />
+        <p className="max-w-3xl text-sm leading-6 text-black/70">
+          Browse the broader category page when you want orientation across
+          time-tracking use cases before applying a specific failure-mode filter.
+        </p>
+        <div>
+          <ButtonLink href="/time-tracking-tools" variant="ghost">
+            View the time-tracking tools overview
+          </ButtonLink>
+        </div>
+      </section>
+    </main>
+  );
+}
+
 const CATEGORY_PAGE_COPY: Record<string, GateViewModel> = {
   "bookmark-managers": {
     orientation: [
@@ -434,9 +660,14 @@ export async function generateMetadata({
   const pageCopy = CATEGORY_PAGE_COPY[category];
 
   return {
-    title: `${gates[0].categoryLabel} | Tools`,
+    title:
+      category === "time-tracking-tools"
+        ? "Time Tracking Software Picker"
+        : `${gates[0].categoryLabel} | Tools`,
     description:
-      pageCopy?.orientation[0] ?? `Quick filters for ${gates[0].categoryLabel}.`,
+      category === "time-tracking-tools"
+        ? "Use an interactive decision tool to choose time-tracking software by daily friction, setup, upkeep, simplicity, safety, or room to grow."
+        : pageCopy?.orientation[0] ?? `Quick filters for ${gates[0].categoryLabel}.`,
     alternates: {
       canonical: absoluteUrl(`/tools/${category}`),
     },
@@ -454,6 +685,10 @@ export default async function ToolsCategoryPage({
 
   const categoryLabel = gates[0].categoryLabel;
   const pageCopy = CATEGORY_PAGE_COPY[category];
+
+  if (category === "time-tracking-tools") {
+    return <TimeTrackingToolsPage gates={gates} />;
+  }
 
   if (!pageCopy) {
     return (

@@ -64,6 +64,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  // The time-tracking picker is the only /tools route promoted into the
+  // public sitemap for this product-led indexing experiment.
+  const productToolRoutes: MetadataRoute.Sitemap = [
+    {
+      url: `${siteUrl}/tools/time-tracking-tools`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+  ];
+
   // Publish-ready Category + Constraint pages get sitemap priority once they
   // are explicitly allowed for publish and index submission.
   // Proof/internal routes stay excluded until they are publish_ready.
@@ -75,5 +86,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     }));
 
-  return [...staticRoutes, ...categoryRoutes, ...categoryConstraintRoutes];
+  return [
+    ...staticRoutes,
+    ...categoryRoutes,
+    ...productToolRoutes,
+    ...categoryConstraintRoutes,
+  ];
 }
