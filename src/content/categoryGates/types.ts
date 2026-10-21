@@ -35,6 +35,16 @@ export type CategoryGateSpec = {
     name: string;
     fails: boolean;
     note?: string;            // short reason fragment shown in UI
+    assessment?: {
+      status: "verified-fit" | "verified-concern";
+      validated: true;
+      evidence: {
+        sourceUrl: string;
+        sourceTitle: string;
+        attribution: string;
+        reviewedAt: string;
+      };
+    };
   }>;
 
   relatedComparisons?: string[];

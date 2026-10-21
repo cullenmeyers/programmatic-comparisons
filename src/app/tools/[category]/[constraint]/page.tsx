@@ -12,6 +12,7 @@ import {
 } from "@/lib/pages";
 import { absoluteUrl } from "@/lib/site";
 import CategoryGateClient from "./CategoryGateClient";
+import { getGateOutcome } from "@/content/categoryGates/decision";
 
 export const dynamicParams = true;
 
@@ -398,14 +399,25 @@ export default async function CategoryGatePage({
       };
     });
 
-  const failing = uniqueExampleToolNames(
-    gate.tools.filter((tool) => tool.fails).map((tool) => tool.name)
+  const concerns = uniqueExampleToolNames(
+    gate.tools
+      .filter((tool) => {
+        const outcome = getGateOutcome(gate.categorySlug, tool);
+        return outcome === "preliminary-concern" || outcome === "verified-concern";
+      })
+      .map((tool) => tool.name)
   );
-  const safe = uniqueExampleToolNames(
-    gate.tools.filter((tool) => !tool.fails).map((tool) => tool.name)
+  const fitsOrUnknown = uniqueExampleToolNames(
+    gate.tools
+      .filter((tool) => {
+        const outcome = getGateOutcome(gate.categorySlug, tool);
+        return outcome === "unknown" || outcome === "verified-fit";
+      })
+      .map((tool) => tool.name)
   );
-  const failingTop = failing.slice(0, 8);
-  const safeTop = safe.slice(0, 8);
+  const concernTop = concerns.slice(0, 8);
+  const fitOrUnknownTop = fitsOrUnknown.slice(0, 8);
+  const isTimeTracking = gate.categorySlug === "time-tracking-tools";
 
   const manualRelated = gate.relatedComparisons ?? [];
   const topComparisons = getTopComparisonsForSituation(
@@ -509,11 +521,11 @@ export default async function CategoryGatePage({
           <div className="grid gap-5 sm:grid-cols-2">
             <div>
               <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
-                Often fails
+                {isTimeTracking ? "Preliminary concerns" : "Often fails"}
               </h3>
-              {failingTop.length ? (
+              {concernTop.length ? (
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-black/80">
-                  {failingTop.map((name) => (
+                  {concernTop.map((name) => (
                     <li key={name}>{name}</li>
                   ))}
                 </ul>
@@ -527,11 +539,11 @@ export default async function CategoryGatePage({
 
             <div>
               <h3 className="text-xs font-semibold uppercase tracking-wide text-black/60">
-                Usually safe
+                {isTimeTracking ? "Evidence not established" : "Usually safe"}
               </h3>
-              {safeTop.length ? (
+              {fitOrUnknownTop.length ? (
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-black/80">
-                  {safeTop.map((name) => (
+                  {fitOrUnknownTop.map((name) => (
                     <li key={name}>{name}</li>
                   ))}
                 </ul>
@@ -540,7 +552,12 @@ export default async function CategoryGatePage({
               )}
             </div>
           </div>
-          {(failing.length > failingTop.length || safe.length > safeTop.length) && (
+          {isTimeTracking && (
+            <p className="text-xs text-black/55">
+              These labels are evidence statuses, not product endorsements or verified failures.
+            </p>
+          )}
+          {(concerns.length > concernTop.length || fitsOrUnknown.length > fitOrUnknownTop.length) && (
             <p className="text-xs text-black/55">
               This page shows a sample. The dropdown above includes the full mapped
               set.

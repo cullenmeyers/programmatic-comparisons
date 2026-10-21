@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test:category-gates": "node --experimental-strip-types --test src/content/categoryGates/decision.test.mjs",
     "seo:live": "node scripts/seo-live-check.mjs",
     "seo:compare-policy": "node scripts/seo-compare-index-policy.mjs",
     "seo:check": "node scripts/seo-check.mjs",
