@@ -1,0 +1,53 @@
+name: ToolPicker dependency upgrade dry run
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  upgrade-dry-run:
+    if: github.head_ref == 'toolpicker-one-page-buyer-pilot-20261021'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install baseline
+        run: npm ci
+      - name: Upgrade pinned stable Next.js and matching ESLint configuration
+        run: npm install --save-exact next@16.4.2 eslint-config-next@16.4.2
+      - name: Repair remaining dependency versions within stated ranges
+        run: npm audit fix
+      - name: Verify lockfile can be cleanly installed
+        run: npm ci
+      - name: Audit production dependencies
+        run: npm audit --omit=dev --audit-level=high
+      - name: Lint
+        if: success() || failure()
+        run: npm run lint
+      - name: Category gate tests
+        if: success() || failure()
+        run: npm run test:category-gates
+      - name: SEO checks
+        if: success() || failure()
+        run: npm run seo:check
+      - name: Build
+        if: success() || failure()
+        run: npm run build
+      - name: Export proposed manifest and lockfile for manual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: toolpicker-next-16-4-2-proposed-lock
+          path: |
+            package.json
+            package-lock.json
+          retention-days: 3
