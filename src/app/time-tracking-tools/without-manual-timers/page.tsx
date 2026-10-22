@@ -253,7 +253,9 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
             </div>
             <p className="text-sm leading-6 text-black/65">
               <span className="font-medium text-black">Tradeoff:</span> the Memory
-              app must run, and captured activity still needs review.
+              app must run, and captured activity still needs review. Starter
+              supports billable-hour reports, but accounting integrations are
+              listed under Premium; check that plan before assuming invoice sync.
             </p>
             <p className="text-sm text-black/70">
               Starter: $9 per user/month billed annually.
@@ -283,7 +285,8 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
             <p className="text-sm leading-6 text-black/65">
               <span className="font-medium text-black">Tradeoff:</span> Solo+
               is the plan with Timesheets; the lower-cost Solo plan is
-              primarily for focus tracking.
+              primarily for focus tracking. If you need to issue invoices or
+              sync accounting records, verify that workflow separately.
             </p>
             <p className="text-sm text-black/70">
               Solo+: $12/month billed annually.
@@ -311,7 +314,8 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
             </div>
             <p className="text-sm leading-6 text-black/65">
               <span className="font-medium text-black">Tradeoff:</span> it
-              takes more setup and is not a ready-made client billing system.
+              takes more setup, detailed browser-tab tracking uses an optional
+              extension, and it is not a ready-made client billing system.
             </p>
             <p className="text-sm text-black/70">
               Free, open source.
@@ -326,6 +330,19 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
             </a>
           </Card>
         </div>
+
+        <p className="text-sm leading-6 text-black/65">
+          <span className="font-medium text-black">
+            Why these starting points:
+          </span>{" "}
+          Timely focuses on reviewing captured work for client projects;
+          RescueTime Solo+ combines personal focus insights with reviewed
+          project timesheets; ActivityWatch prioritizes free, local activity
+          history. These are not tested rankings or the only viable options.
+          ManicTime is also worth comparing if you need automatic capture,
+          project tagging, and invoice-oriented reporting, especially when
+          cloud versus on-premises deployment matters.
+        </p>
 
         <p className="text-xs leading-5 text-black/60">
           Prices in USD, checked October 21, 2026; annual billing and plan
