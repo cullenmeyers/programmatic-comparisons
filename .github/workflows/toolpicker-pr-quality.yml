@@ -1,0 +1,78 @@
+name: ToolPicker pull request checks
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  pilot-quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Category gate tests
+        if: success() || failure()
+        run: npm run test:category-gates
+
+      - name: SEO policy and live-readiness checks
+        if: success() || failure()
+        run: npm run seo:check
+
+      - name: Build and smoke-test buyer guide
+        if: success() || failure()
+        run: |
+          npm run build
+          PORT=3100 npm run start > /tmp/toolpicker-preview.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          page=''
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent --show-error               http://127.0.0.1:3100/time-tracking-tools/without-manual-timers               -o /tmp/toolpicker-pilot.html; then
+              page='ready'
+              break
+            fi
+            sleep 2
+          done
+          test "$page" = 'ready'
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const html = fs.readFileSync('/tmp/toolpicker-pilot.html', 'utf8');
+          const required = [
+            'Start with the tool that fits your job',
+            'See Timely plans',
+            'See RescueTime plans',
+            'See ActivityWatch downloads',
+            'non-affiliate provider links',
+            'https://www.timely.com/pricing/',
+            'https://www.rescuetime.com/pricing',
+            'https://activitywatch.net/downloads/',
+          ];
+          for (const phrase of required) {
+            if (!html.includes(phrase)) {
+              throw new Error('Rendered buyer guide missing expected phrase: ' + phrase);
+            }
+          }
+          if (html.includes('<meta name="robots" content="noindex')) {
+            throw new Error('Pilot guide unexpectedly marked noindex');
+          }
+          console.log('Rendered buyer guide: all three links, disclosures and indexability confirmed.');
+          JS
