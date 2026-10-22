@@ -329,7 +329,7 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
 
         <p className="text-xs leading-5 text-black/60">
           Prices in USD, checked October 21, 2026; annual billing and plan
-          restrictions apply. Check the provider's current terms before
+          restrictions apply. Check the provider&apos;s current terms before
           signing up. These are direct, non-affiliate provider links;
           ToolPicker earns no commission from these links. If that changes,
           we will clearly disclose it. We have not independently tested the
