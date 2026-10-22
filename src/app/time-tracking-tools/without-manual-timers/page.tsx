@@ -225,6 +225,118 @@ export default function TimeTrackingToolsWithoutManualTimersPage() {
         </Card>
       </section>
 
+      <section className="content-stack gap-4" aria-labelledby="buyer-paths-heading">
+        <div className="space-y-2">
+          <h2 id="buyer-paths-heading" className="text-2xl font-semibold text-black">
+            Start with the tool that fits your job
+          </h2>
+          <p className="max-w-3xl text-sm leading-6 text-black/70">
+            A background activity log, reviewed client timesheets, and personal
+            productivity reports solve different problems. These are conditional
+            starting points based on public product documentation, not hands-on
+            testing by ToolPicker.
+          </p>
+        </div>
+
+        <div className="grid gap-4 lg:grid-cols-3">
+          <Card className="space-y-4">
+            <div className="space-y-2">
+              <p className="text-xs font-medium uppercase tracking-wider text-black/55">
+                You bill clients and need to review captured hours
+              </p>
+              <h3 className="text-lg font-semibold text-black">Start with Timely</h3>
+              <p className="text-sm leading-6 text-black/75">
+                Memory captures work in the background. Review its suggestions and
+                assign time to the correct client or project before submitting
+                your timesheet.
+              </p>
+            </div>
+            <p className="text-sm leading-6 text-black/65">
+              <span className="font-medium text-black">Tradeoff:</span> the Memory
+              app must run, and captured activity still needs review.
+            </p>
+            <p className="text-sm text-black/70">
+              Starter: $9 per user/month billed annually.
+            </p>
+            <a
+              href="https://www.timely.com/pricing/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex rounded-lg bg-black px-4 py-2 text-sm font-medium text-white hover:bg-black/80"
+            >
+              See Timely plans
+            </a>
+          </Card>
+
+          <Card className="space-y-4">
+            <div className="space-y-2">
+              <p className="text-xs font-medium uppercase tracking-wider text-black/55">
+                You want personal focus insights plus project timesheets
+              </p>
+              <h3 className="text-lg font-semibold text-black">Start with RescueTime Solo+</h3>
+              <p className="text-sm leading-6 text-black/75">
+                Background capture and Timesheets suggestions give you a
+                reviewable record while keeping productivity and focus
+                reporting in the same product.
+              </p>
+            </div>
+            <p className="text-sm leading-6 text-black/65">
+              <span className="font-medium text-black">Tradeoff:</span> Solo+
+              is the plan with Timesheets; the lower-cost Solo plan is
+              primarily for focus tracking.
+            </p>
+            <p className="text-sm text-black/70">
+              Solo+: $12/month billed annually.
+            </p>
+            <a
+              href="https://www.rescuetime.com/pricing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex rounded-lg bg-black px-4 py-2 text-sm font-medium text-white hover:bg-black/80"
+            >
+              See RescueTime plans
+            </a>
+          </Card>
+
+          <Card className="space-y-4">
+            <div className="space-y-2">
+              <p className="text-xs font-medium uppercase tracking-wider text-black/55">
+                You want free, local, privacy-first activity history
+              </p>
+              <h3 className="text-lg font-semibold text-black">Start with ActivityWatch</h3>
+              <p className="text-sm leading-6 text-black/75">
+                ActivityWatch records application and website activity on
+                your own device without requiring a paid subscription.
+              </p>
+            </div>
+            <p className="text-sm leading-6 text-black/65">
+              <span className="font-medium text-black">Tradeoff:</span> it
+              takes more setup and is not a ready-made client billing system.
+            </p>
+            <p className="text-sm text-black/70">
+              Free, open source.
+            </p>
+            <a
+              href="https://activitywatch.net/downloads/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex rounded-lg bg-black px-4 py-2 text-sm font-medium text-white hover:bg-black/80"
+            >
+              See ActivityWatch downloads
+            </a>
+          </Card>
+        </div>
+
+        <p className="text-xs leading-5 text-black/60">
+          Prices in USD, checked October 21, 2026; annual billing and plan
+          restrictions apply. Check the provider's current terms before
+          signing up. These are direct, non-affiliate provider links;
+          ToolPicker earns no commission from these links. If that changes,
+          we will clearly disclose it. We have not independently tested the
+          products in this comparison.
+        </p>
+      </section>
+
       <section className="content-stack gap-4">
         <SectionHeading title="Tools that usually fit this constraint" />
         <Card className="space-y-5">
