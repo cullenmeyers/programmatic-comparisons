@@ -1,0 +1,73 @@
+name: ToolPicker pilot visual check
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  render-pilot:
+    if: github.head_ref == 'toolpicker-one-page-buyer-pilot-20261021'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Build site
+        run: |
+          npm ci
+          npm run build
+      - name: Install isolated browser for UI verification
+        run: |
+          npm install --no-save --package-lock=false playwright@1.56.0
+          npx playwright install chromium --with-deps
+      - name: Check layouts and capture desktop/mobile screenshots
+        run: |
+          mkdir -p /tmp/toolpicker-visual
+          PORT=3100 npm run start > /tmp/toolpicker-visual/server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          for i in $(seq 1 30); do
+            curl -fsS http://127.0.0.1:3100/time-tracking-tools/without-manual-timers -o /dev/null && break
+            sleep 2
+          done
+          node --input-type=module <<'JS'
+          import { chromium } from 'playwright';
+          const browser = await chromium.launch({headless: true});
+          try {
+            const path = '/time-tracking-tools/without-manual-timers';
+            for (const [size, width, height] of [['desktop', 1366, 850], ['mobile', 390, 844]]) {
+              const page = await browser.newPage({viewport: {width, height}, deviceScaleFactor: 1});
+              await page.goto('http://127.0.0.1:3100' + path, {waitUntil: 'networkidle'});
+              const report = await page.evaluate(() => ({
+                documentWidth: document.documentElement.scrollWidth,
+                viewportWidth: window.innerWidth,
+                title: document.title,
+                noindex: !!document.querySelector('meta[name="robots"][content*="noindex"]'),
+                cards: [...document.querySelectorAll('a')].filter(a => ['See Timely plans', 'See RescueTime plans', 'See ActivityWatch downloads'].includes(a.textContent?.trim())).map(a => ({text: a.textContent.trim(), href: a.href})),
+              }));
+              console.log(JSON.stringify({size, ...report}));
+              if (report.documentWidth > report.viewportWidth + 2) throw new Error(size + ': unwanted horizontal overflow');
+              if (report.noindex) throw new Error(size + ': guide unexpectedly noindex');
+              if (report.cards.length !== 3) throw new Error(size + ': expected exactly three vendor links');
+              await page.screenshot({path: '/tmp/toolpicker-visual/' + size + '.png', fullPage: true});
+              await page.close();
+            }
+          } finally {
+            await browser.close();
+          }
+          JS
+      - name: Upload layout screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: toolpicker-pilot-layout-review
+          path: /tmp/toolpicker-visual/*.png
+          retention-days: 3
