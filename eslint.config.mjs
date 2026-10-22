@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // One-off historical scripts, not application source.
+    ".tmp_*",
   ]),
 ]);
 
